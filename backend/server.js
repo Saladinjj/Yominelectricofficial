@@ -28,14 +28,15 @@ app.use(cors({
 app.use(express.json({ limit: '1mb' }));
 app.use(express.urlencoded({ extended: true, limit: '1mb' }));
 
-// ─── SERVE STATIC FILES ───
-// Serve frontend from project root
-app.use(express.static(path.join(__dirname, '..')));
+// ─── SERVE STATIC FILES (dev only — Vercel handles this in production) ───
+if (config.isDev) {
+  app.use(express.static(path.join(__dirname, '..')));
+}
 
 // ─── API ROUTES ───
 app.use('/api/products', productRoutes);
 app.use('/api/contact', contactRoutes);
-app.use('/api/quote', contactRoutes); // quote uses same handler (different subject)
+app.use('/api/quote', contactRoutes);
 
 // ─── HEALTH CHECK ───
 app.get('/api/health', (req, res) => {
@@ -47,10 +48,12 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// ─── CATCH-ALL — Serve index.html for SPA-style routing ───
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'index.html'));
-});
+// ─── CATCH-ALL (dev only — Vercel routing handles this in production) ───
+if (config.isDev) {
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'index.html'));
+  });
+}
 
 // ─── ERROR HANDLER ───
 app.use((err, req, res, next) => {
@@ -62,15 +65,13 @@ app.use((err, req, res, next) => {
 });
 
 // ─── START ───
-if (require.main === module) {
+if (config.isDev) {
   app.listen(config.port, () => {
     console.log(`\n🔌 Yomin Electric API running`);
     console.log(`   ➜ http://localhost:${config.port}`);
     console.log(`   ➜ API: http://localhost:${config.port}/api`);
-    console.log(`   ➜ Env: ${config.isDev ? 'development' : 'production'}\n`);
+    console.log(`   ➜ Env: development\n`);
   });
 }
-
-module.exports = app;
 
 module.exports = app;

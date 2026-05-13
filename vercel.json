@@ -1,28 +1,16 @@
 {
-  "functions": {
-    "backend/server.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/backend/server.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
+  "version": 2,
+  "builds": [
+    { "src": "backend/server.js", "use": "@vercel/node" },
+    { "src": "!backend/**/*", "use": "@vercel/static" }
   ],
-  "staticFiles": {
-    "assets": "/assets",
-    "data": "/data",
-    "index.html": "/",
-    "about.html": "/about",
-    "contact.html": "/contact",
-    "products.html": "/products",
-    "product-details.html": "/product-details"
-  },
-  "cleanUrls": true,
-  "trailingSlash": false
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/backend/server.js" },
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/contact", "dest": "/contact.html" },
+    { "src": "/products", "dest": "/products.html" },
+    { "src": "/product-details", "dest": "/product-details.html" },
+    { "src": "/((?!api/).*)", "dest": "/$1" }
+  ]
 }

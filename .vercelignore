@@ -4,3 +4,5 @@ node_modules
 backend/data/
 backend/logs/
 *.log
+.git
+.gitignore
