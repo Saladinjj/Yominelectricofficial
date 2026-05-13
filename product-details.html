@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | Yomin Electric</title>
+  <meta name="description" content="Detailed specifications and information about Yomin Electric products.">
+  <link rel="canonical" href="https://www.yominelectric.com/product-details.html" />
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/product-details.css">
+</head>
+
+<body>
+  <div class="cur"></div>
+  <div class="cur-r"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="index.html" class="n-logo">
+      <img src="logo.png" alt="Yomin Electric" style="height:44px;width:auto;object-fit:contain;filter:brightness(1.1);display:block">
+    </a>
+    <ul class="n-ctr">
+      <li><a href="index.html" data-t="nav_home">Home</a></li>
+      <li><a href="product.html" data-t="nav_products">Products</a></li>
+      <li><a href="solutions.html" data-t="nav_solutions">Solutions</a></li>
+      <li><a href="process.html" data-t="nav_process">Process</a></li>
+      <li><a href="about.html" data-t="nav_about">About</a></li>
+      <li><a href="contact.html" data-t="nav_contact">Contact</a></li>
+    </ul>
+    <div class="n-rt">
+      <div class="lsw">
+        <button class="lbtn">
+          <svg viewBox="0 0 16 16" fill="currentColor" width="11" height="11">
+            <path
+              d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM1.6 8.8h2.07a12.67 12.67 0 0 0 .94 3.53A6.42 6.42 0 0 1 1.6 8.8zm0-1.6a6.42 6.42 0 0 1 3.01-3.53A12.67 12.67 0 0 0 3.67 7.2H1.6zm8.73 4.73a12.67 12.67 0 0 0 .94-3.53h2.07a6.42 6.42 0 0 1-3.01 3.53zm-1.87.46c-.7-.62-1.28-1.8-1.6-3.19h3.2c-.32 1.39-.9 2.57-1.6 3.19zm0-9.38c.7.62 1.28 1.8 1.6 3.19h-3.2c.32-1.39.9-2.57 1.6-3.19zm2.81 3.19a12.67 12.67 0 0 0-.94-3.53 6.42 6.42 0 0 1 3.01 3.53h-2.07zm-5.54-3.53A12.67 12.67 0 0 0 4.8 7.2H2.73a6.42 6.42 0 0 1 3.01-3.53zM4.8 8.8a12.67 12.67 0 0 0 .94 3.53A6.42 6.42 0 0 1 2.73 8.8H4.8zm6.4 0h2.07a6.42 6.42 0 0 1-3.01 3.53A12.67 12.67 0 0 0 11.2 8.8zm0-1.6a12.67 12.67 0 0 0-.94-3.53 6.42 6.42 0 0 1 3.01 3.53H11.2z" />
+            </svg>
+            <span id="lbtn-txt">EN</span>
+          </button>
+          <div class="ldrop" id="ldrop">
+            <button class="lopt" data-lang="en">🇺🇸 English</button>
+            <button class="lopt" data-lang="fr">🇫🇷 Français</button>
+            <button class="lopt" data-lang="ar">🇸🇦 العربية</button>
+          </div>
+        </div>
+        <a href="contact.html" class="ncta" data-t="nav_cta">Get Quote</a>
+        <button class="ham" id="ham"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mob" id="mob">
+    <button class="mob-x" id="mob-x">✕</button>
+    <a href="index.html" data-t="nav_home">Home</a>
+    <a href="product.html" data-t="nav_products">Products</a>
+    <a href="solutions.html" data-t="nav_solutions">Solutions</a>
+    <a href="process.html" data-t="nav_process">Process</a>
+    <a href="about.html" data-t="nav_about">About</a>
+    <a href="contact.html" data-t="nav_contact">Contact</a>
+    <div class="mob-lngs">
+      <button class="mlb" data-lang="en">EN</button>
+      <button class="mlb" data-lang="fr">FR</button>
+      <button class="mlb" data-lang="ar">AR</button>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <span class="ph-tag" data-t="prod_details">Product Details</span>
+    <h1 class="ph-h1" id="product-title">Product Name</h1>
+    <p class="ph-desc" id="product-description">Detailed product information and specifications.</p>
+  </div>
+
+  <!-- PRODUCT DETAILS CONTENT -->
+  <section class="product-detail-section">
+    <div class="product-detail-container">
+      <!-- Product Images -->
+      <div class="product-images">
+        <div class="main-image">
+          <img id="main-product-image" src="" alt="Product Image" loading="lazy">
+        </div>
+        <div class="thumbnail-gallery" id="thumbnail-gallery">
+          <!-- Thumbnails will be populated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Product Information -->
+      <div class="product-info">
+        <div class="product-badge">
+          <span id="product-category-badge"></span>
+        </div>
+        <h1 class="product-title" id="product-detail-title"></h1>
+        <div class="product-price" id="product-price">Get Quote</div>
+        <a href="contact.html" class="quote-btn" id="quote-button">Request Quote →</a>
+        
+        <div class product-description" id="product-detail-description"></div>
+        
+        <!-- Specifications -->
+        <div class="specs-section">
+          <h2 class="section-title" data-t="prod_specs">Specifications</h2>
+          <div class="specs-grid" id="specifications-grid">
+            <!-- Specifications will be populated by JavaScript -->
+          </div>
+        </div>
+        
+        <!-- Applications -->
+        <div class="applications-section">
+          <h2 class="section-title" data-t="prod_applications">Applications</h2>
+          <div class="application-chips" id="application-chips">
+            <!-- Application chips will be populated by JavaScript -->
+          </div>
+        </div>
+        
+        <!-- Additional Info -->
+        <div class="additional-info-section">
+          <h2 class="section-title" data-t="prod_additional_info">Additional Information</h2>
+          <div class="info-rows" id="additional-info-rows">
+            <!-- Additional info rows will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <span style="font-family:var(--sf);font-size:20px;color:var(--tx);">Yomin Electric</span>
+        <p data-t="ft_desc">Precision energy metering solutions for global buyers. Trusted in 95+ countries since 2005.</p>
+      </div>
+      <div class="ft-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="product.html?category=energy-meter">Energy Meters</a></li>
+          <li><a href="product.html?category=current-transformer">Current Transformers</a></li>
+          <li><a href="product.html?category=voltage-protector">Voltage Protectors</a></li>
+          <li><a href="product.html?category=analog-meter">Analog Meters</a></li>
+          <li><a href="product.html?category=smart-gateway">Smart Gateways</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#history">Our History</a></li>
+          <li><a href="about.html#factory">Our Factory</a></li>
+          <li><a href="about.html#certifications">Certifications</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:sales@yominelectric.com">sales@yominelectric.com</a></li>
+          <li><a href="https://wa.me/8618458440466" target="_blank">WhatsApp</a></li>
+          <li><a href="https://alibaba.com" target="_blank">Alibaba Store</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <p data-t="ft_copy">© 2024 Yomin Electric Co., Ltd. All rights reserved.</p>
+      <div class="ft-soc">
+        <a href="https://wa.me/8618458440466" target="_blank" title="WhatsApp">💬</a>
+        <a href="mailto:sales@yominelectric.com" title="Email">✉</a>
+        <a href="https://alibaba.com" target="_blank" title="Alibaba">🏪</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Float buttons -->
+  <div class="float-btns">
+    <button class="float-btn float-btn-wc" id="wc-btn">
+      <span class="float-btn-label">WeChat</span>
+    </button>
+    <button class="float-btn float-btn-tg" id="tg-btn">
+      <span class="float-btn-label">Telegram</span>
+    </button>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script>
+    // Product Details Page Specific JavaScript
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Get product ID from URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get('id');
+      
+      if (!productId) {
+        // Redirect to products page if no ID specified
+        window.location.href = 'product.html';
+        return;
+      }
+      
+      try {
+        // Fetch product data
+        const response = await fetch(`data/products.json`);
+        if (!response.ok) throw new Error('Failed to load products');
+        
+        const products = await response.json();
+        const product = products.find(p => p.id === productId);
+        
+        if (!product) {
+          // Product not found
+          document.title = 'Product Not Found | Yomin Electric';
+          document.querySelector('.page-hero').innerHTML = `
+            <span class="ph-tag" data-t="prod_details">Product Details</span>
+            <h1 class="ph-h1">Product Not Found</h1>
+            <p class="ph-desc">The requested product could not be found.</p>
+          `;
+          document.querySelector('.product-detail-container').innerHTML = `
+            <div class="empty-state">
+              <div style="font-size:40px;opacity:.3;margin-bottom:16px">🔍</div>
+              <h3>Product Not Found</h3>
+              <p>The product with ID "${productId}" does not exist.</p>
+              <a href="product.html" class="ncta">Browse Products</a>
+            </div>
+          `;
+          return;
+        }
+        
+        // Populate product details
+        populateProductDetails(product);
+        
+        // Update quote button with product info
+        const quoteBtn = document.getElementById('quote-button');
+        if (quoteBtn) {
+          quoteBtn.href = `contact.html?product=${encodeURIComponent(product.title)}`;
+        }
+        
+      } catch (error) {
+        console.error('Error loading product details:', error);
+        document.title = 'Error | Yomin Electric';
+        document.querySelector('.page-hero').innerHTML = `
+          <span class="ph-tag" data-t="prod_details">Product Details</span>
+          <h1 class="ph-h1">Loading Error</h1>
+          <p class="ph-desc">Unable to load product details. Please try again later.</p>
+        `;
+        document.querySelector('.product-detail-container').innerHTML = `
+          <div class="empty-state">
+            <div style="font-size:40px;opacity:.3;margin-bottom:16px">⚠️</div>
+            <h3>Loading Error</h3>
+            <p>Unable to load product details. Please try again later.</p>
+            <a href="product.html" class="ncta">Browse Products</a>
+          </div>
+        `;
+      }
+    });
+    
+    function populateProductDetails(product) {
+      // Update basic info
+      document.title = `${product.title} | Yomin Electric`;
+      document.getElementById('product-title').textContent = product.title;
+      document.getElementById('product-detail-title').textContent = product.title;
+      document.getElementById('product-description').textContent = product.description || 'No description available';
+      document.getElementById('product-detail-description').innerHTML = 
+        `<p>${product.description || 'No detailed description available.'}</p>`;
+      document.getElementById('product-price').textContent = product.price || 'Get Quote';
+      
+      // Update category badge
+      const categoryBadge = document.getElementById('product-category-badge');
+      if (categoryBadge) {
+        categoryBadge.textContent = product.category;
+      }
+      
+      // Update main image
+      const mainImage = document.getElementById('main-product-image');
+      if (mainImage && product.image) {
+        mainImage.src = product.image;
+        mainImage.alt = product.title;
+        mainImage.onerror = function() {
+          this.style.display = 'none';
+          this.nextElementSibling.style.display = 'flex';
+        };
+      }
+      
+      // Update thumbnails (if multiple images exist)
+      const thumbnailGallery = document.getElementById('thumbnail-gallery');
+      if (thumbnailGallery) {
+        if (product.images && product.images.length > 0) {
+          thumbnailGallery.innerHTML = product.images.map((img, index) => `
+            <img src="${img}" alt="${product.title} ${index + 1}" 
+                 class="${index === 0 ? 'active' : ''}"
+                 onclick="setMainImage(this.src, this.alt)">
+          `).join('');
+        } else if (product.image) {
+          thumbnailGallery.innerHTML = `
+            <img src="${product.image}" alt="${product.title}" 
+                 class="active"
+                 onclick="setMainImage(this.src, this.alt)">
+          `;
+        }
+      }
+      
+      // Update specifications
+      const specsGrid = document.getElementById('specifications-grid');
+      if (specsGrid) {
+        const specs = product.specs || {};
+        const specRows = [];
+        
+        // Add standard specs
+        const standardSpecs = ['Phase', 'Voltage', 'Current Type', 'Frequency', 'Capacity', 'Power', 'Display', 'Communication', 'Control Type'];
+        standardSpecs.forEach(spec => {
+          if (specs[spec]) {
+            specRows.push(`
+              <div class="spec-row">
+                <span class="spec-label">${spec}:</span>
+                <span class="spec-value">${specs[spec]}</span>
+              </div>
+            `);
+          }
+        });
+        
+        // Add any additional specs not in standard list
+        Object.keys(specs).forEach(key => {
+          if (!standardSpecs.includes(key)) {
+            specRows.push(`
+              <div class="spec-row">
+                <span class="spec-label">${key}:</span>
+                <span class="spec-value">${specs[key]}</span>
+              </div>
+            `);
+          }
+        });
+        
+        // Add default specs if none exist
+        if (specRows.length === 0) {
+          specRows.push(`
+            <div class="spec-row">
+              <span class="spec-label">Category:</span>
+              <span class="spec-value">${product.category}</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Certification:</span>
+              <span class="spec-value">CE, ISO 9001</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Warranty:</span>
+              <span class="spec-value">2 Years</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Lead Time:</span>
+              <span class="spec-value">15–25 days</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Min. Order:</span>
+              <span class="spec-value">100 units</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Origin:</span>
+              <span class="spec-value">Zhejiang, China</span>
+            </div>
+          `);
+        }
+        
+        specsGrid.innerHTML = specRows.join('');
+      }
+      
+      // Update applications
+      const applicationChips = document.getElementById('application-chips');
+      if (applicationChips) {
+        // Import CAT_APPS from products.js or define locally
+        const CAT_APPS = {
+          'Energy Meter':['Residential Buildings','Commercial Premises','Industrial Panels','Sub-metering','Solar Grid-tie','Smart Grid AMI'],
+          'Voltage Stabilizer/Regulator':['Household Appliances','Medical Equipment','CNC Machines','HVAC Systems','Data Centers','Sensitive Electronics'],
+          'Variac/Transformer':['Lab & Testing','Voltage Adjustment','Motor Speed Control','Audio Equipment','R&D Applications','Industrial Testing'],
+          'Current Transformer':['LV Panel Metering','Protection Relays','Revenue Metering','Energy Audits','Sub-metering','SCADA Integration'],
+          'Terminal & Connector':['Panel Wiring','Control Cabinets','DIN Rail Systems','Cable Management','Industrial Installations','Switchboards'],
+          'Fuse & Protection':['Overcurrent Protection','Solar PV Systems','Distribution Boards','Industrial Safety','LV Networks','Panel Protection'],
+          'Solar/PV Products':['Solar Arrays','Grid-tie Systems','Off-grid Power','PV Combiner Boxes','Renewable Energy','EV Charging'],
+          'Tile Leveling System':['Floor Tile Installation','Wall Tiling','Ceramic Tiles','Porcelain Tiles','Construction Projects','Professional Use'],
+          'Voltage Protector':['Household Appliances','Refrigerators & ACs','Small Business','Surge Protection','Motor Protection','Phase Protection'],
+          'Socket & Wiring':['Smart Homes','Office Automation','Kitchen Appliances','EV Charging','Commercial Spaces','App Control'],
+          'Tools & Hardware':['Industrial Control','Machine Tool','Isolation Power','Factory Equipment','Control Panels','OEM Projects'],
+          'Security Seal':['Meter Sealing','Revenue Protection','Anti-tampering','Utility Metering','Smart Grid','Compliance'],
+          'Other':['Industrial Use','Commercial Buildings','Export Ready','OEM Available','CE Certified','ISO9001']
+        };
+        
+        const apps = CAT_APPS[product.category] || CAT_APPS['Other'];
+        const appIcons = ['🏠','🏪','⚡','🏭','🌐','🔌','📡','🔧'];
+        
+        applicationChips.innerHTML = apps.map((app, index) => `
+          <span class="application-chip">${appIcons[index % appIcons.length]} ${app}</span>
+        `).join('');
+      }
+      
+      // Update additional info (bundles if available)
+      const additionalInfoRows = document.getElementById('additional-info-rows');
+      if (additionalInfoRows && product.bundles && product.bundles.length > 0) {
+        const bundleRows = product.bundles.map(bundle => `
+          <div class="info-row">
+            <span class="info-label">${bundle.name}:</span>
+            <span class="info-value">${bundle.price}</span>
+          </div>
+          <div class="info-row bundle-details">
+            <span class="info-label">Features:</span>
+            <span class="info-value">${bundle.features.join(', ')}</span>
+          </div>
+        `).join('');
+        
+        additionalInfoRows.innerHTML = `
+          <div class="info-row">
+            <span class="info-label">Available Packages:</span>
+          </div>
+          ${bundleRows}
+        `;
+      } else if (additionalInfoRows) {
+        // Default additional info
+        additionalInfoRows.innerHTML = `
+          <div class="info-row">
+            <span class="info-label">Certification:</span>
+            <span class="info-value">CE, ISO 9001</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Warranty:</span>
+            <span class="info-value">2 Years</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Lead Time:</span>
+            <span class="info-value">15–25 days</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Min. Order:</span>
+            <span class="info-value">100 units</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Origin:</span>
+            <span class="info-value">Zhejiang, China</span>
+          </div>
+        `;
+      }
+    }
+    
+    // Function to change main image when thumbnail is clicked
+    function setMainImage(src, alt) {
+      const mainImage = document.getElementById('main-product-image');
+      if (mainImage) {
+        mainImage.src = src;
+        mainImage.alt = alt;
+        
+        // Update active thumbnail
+        const thumbnails = document.querySelectorAll('#thumbnail-gallery img');
+        thumbnails.forEach(thumb => {
+          thumb.classList.remove('active');
+          if (thumb.src === src) {
+            thumb.classList.add('active');
+          }
+        });
+      }
+    }
+  </script>
+</body>
+
+</html>

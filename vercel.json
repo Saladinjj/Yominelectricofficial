@@ -1,0 +1,28 @@
+{
+  "functions": {
+    "backend/server.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/backend/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "staticFiles": {
+    "assets": "/assets",
+    "data": "/data",
+    "index.html": "/",
+    "about.html": "/about",
+    "contact.html": "/contact",
+    "products.html": "/products",
+    "product-details.html": "/product-details"
+  },
+  "cleanUrls": true,
+  "trailingSlash": false
+}

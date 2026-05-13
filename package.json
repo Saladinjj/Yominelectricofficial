@@ -1,0 +1,30 @@
+{
+  "name": "yomin-electric",
+  "version": "1.0.0",
+  "description": "Yomin Electric International Trade Website",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saladinjj/yominelectric.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Saladinjj/yominelectric/issues"
+  },
+  "homepage": "https://github.com/Saladinjj/yominelectric#readme"
+}
