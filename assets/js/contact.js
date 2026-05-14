@@ -105,7 +105,7 @@ async function handleSubmit(e) {
         `Subject: ${data.subject || '—'}\n\n` +
         `Message:\n${data.message}`
       );
-      window.open(`mailto:sales@yominelectric.com?subject=${subject}&body=${body}`, '_self');
+      window.open(`mailto:salaheddine@yominelectric.com?subject=${subject}&body=${body}`, '_self');
       
       // Show success message for fallback
       if (formFields) formFields.style.display = 'none';
