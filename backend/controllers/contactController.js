@@ -27,6 +27,9 @@ function validateContactData(data) {
 // In-memory submission log (for development)
 const submissions = [];
 
+let nodemailer = null;
+try { nodemailer = require('nodemailer'); } catch (e) { console.warn('[Contact] nodemailer not available:', e.message); }
+
 // Optional: send email via nodemailer (only if configured)
 async function sendEmail(data, type = 'contact') {
   if (!config.email.user || !config.email.pass) {
@@ -44,14 +47,18 @@ async function sendEmail(data, type = 'contact') {
     return { simulated: true };
   }
 
-  // nodemailer is optional — install with: npm install nodemailer
+  if (!nodemailer) {
+    console.error('[Contact] nodemailer module not loaded — install with: npm install nodemailer');
+    return { sent: false, error: 'nodemailer module not available' };
+  }
+
   try {
-    const nodemailer = require('nodemailer');
     const transporter = nodemailer.createTransport({
       host: config.email.host,
       port: config.email.port,
       secure: config.email.secure,
-      auth: { user: config.email.user, pass: config.email.pass }
+      auth: { user: config.email.user, pass: config.email.pass },
+      tls: { rejectUnauthorized: false }
     });
 
     const subject = type === 'quote'
@@ -130,8 +137,14 @@ const contactController = {
       submissions.push(data);
       if (submissions.length > 500) submissions.shift(); // Keep last 500
 
-      // Send email (non-blocking)
-      sendEmail(data, 'contact').catch(console.error);
+      // Send email (await it so we see the result)
+      const emailResult = await sendEmail(data, 'contact').catch(err => {
+        console.error('[Contact] Email send error:', err.message);
+        return { sent: false, error: err.message };
+      });
+      if (emailResult.sent === false) {
+        console.error('[Contact] Email failed — SMTP details:', JSON.stringify({ host: config.email.host, port: config.email.port, user: config.email.user, to: config.email.to }));
+      }
 
       res.json({
         success: true,
