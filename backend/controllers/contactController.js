@@ -148,6 +148,7 @@ const contactController = {
 
       res.json({
         success: true,
+        emailed: emailResult.sent !== false,
         message: 'Your message has been received. We will respond within 24 hours.',
         id: `msg_${Date.now()}`
       });
