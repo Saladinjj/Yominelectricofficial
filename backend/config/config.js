@@ -23,7 +23,7 @@ const config = {
     user: process.env.EMAIL_USER || '',
     pass: process.env.EMAIL_PASS || '',
     to: process.env.EMAIL_TO || 'salaheddine@yominelectric.com',
-    from: process.env.EMAIL_FROM || 'noreply@yominelectric.com'
+    from: process.env.EMAIL_FROM || 'salaheddine@yominelectric.com'
   },
 
   // Rate limiting
