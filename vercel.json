@@ -33,6 +33,7 @@
     { "source": "/product-details.html", "destination": "/product-details", "statusCode": 301 },
     { "source": "/process.html", "destination": "/process", "statusCode": 301 },
     { "source": "/solutions.html", "destination": "/solutions", "statusCode": 301 },
+    { "source": "/video/company-overview.html", "destination": "/video/company-overview", "statusCode": 301 },
     { "source": "/yominelectric-main/:path*", "destination": "/", "statusCode": 301 }
   ],
   "routes": [
@@ -46,6 +47,7 @@
     { "src": "/product-details", "dest": "/product-details.html" },
     { "src": "/process", "dest": "/process.html" },
     { "src": "/solutions", "dest": "/solutions.html" },
+    { "src": "/video/company-overview", "dest": "/video/company-overview.html" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }

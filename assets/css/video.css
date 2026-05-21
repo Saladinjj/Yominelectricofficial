@@ -1,0 +1,62 @@
+/* Dedicated video watch page */
+.watch-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 120px 24px 80px;
+}
+
+.watch-title {
+  font-family: var(--sf);
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--tx);
+  margin-bottom: 12px;
+}
+
+.watch-desc {
+  color: var(--mt);
+  font-size: 15px;
+  line-height: 1.75;
+  max-width: 720px;
+  margin-bottom: 28px;
+}
+
+.watch-player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 16px;
+  border: 1px solid var(--bdr);
+  overflow: hidden;
+}
+
+.watch-player video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.watch-meta {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  font-size: 13px;
+  color: var(--mt);
+}
+
+.watch-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 36px;
+  font-size: 14px;
+  color: var(--ac);
+}
+
+.watch-back:hover {
+  color: var(--ac2);
+}

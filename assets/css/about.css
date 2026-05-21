@@ -2,6 +2,35 @@
    YOMIN ELECTRIC — ABOUT.CSS
    ═══════════════════════════════════════════════════ */
 
+.video-preview {
+  position: relative;
+  display: block;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.video-preview-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(200, 169, 110, 0.92);
+  color: #0d0d0d;
+  font-size: 22px;
+  line-height: 64px;
+  text-align: center;
+  padding-left: 4px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+
+.video-preview:hover .video-preview-play {
+  background: var(--ac2);
+}
+
 /* ─── COMPANY INTRO ─── */
 .intro-section {
   padding: 100px 60px;
