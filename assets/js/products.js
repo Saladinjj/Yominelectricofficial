@@ -20,6 +20,23 @@ const CATS = [
   { id:'Other',                        label:'Other Products',         icon:'📦', tKey:'prod_cat_other' },
 ];
 
+const CAT_SLUG = {
+  'Energy Meter': 'energy-meter',
+  'Voltage Stabilizer/Regulator': 'voltage-stabilizer-regulator',
+  'Current Transformer': 'current-transformer',
+  'Variac/Transformer': 'variac-transformer',
+  'Terminal & Connector': 'terminal-connector',
+  'Solar/PV Products': 'solar-pv-products',
+  'Fuse & Protection': 'fuse-protection',
+  'Voltage Protector': 'voltage-protector',
+  'Socket & Wiring': 'socket-wiring',
+  'Tile Leveling System': 'tile-leveling-system',
+  'Tools & Hardware': 'tools-hardware',
+  'Security Seal': 'security-seal',
+  'Other': 'other',
+};
+const SLUG_TO_CAT = Object.fromEntries(Object.entries(CAT_SLUG).map(([id, slug]) => [slug, id]));
+
 /* ── Translation helper ── */
 function catLabel(c) {
   const d = (typeof T !== 'undefined' && typeof currentLang !== 'undefined') ? T[currentLang] : null;
@@ -58,8 +75,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     if(m) m.textContent='Load error';
     return;
   }
-  const urlCat = new URLSearchParams(location.search).get('cat')||new URLSearchParams(location.search).get('category');
-  if(urlCat && urlCat!=='all') activeFilter=decodeURIComponent(urlCat);
+  const params = new URLSearchParams(location.search);
+  const legacyCat = params.get('cat');
+  if (legacyCat) {
+    const name = decodeURIComponent(legacyCat.replace(/\+/g, ' '));
+    const slug = CAT_SLUG[name];
+    location.replace(slug ? `/products?category=${slug}` : '/products');
+    return;
+  }
+  const urlCat = params.get('category');
+  if (urlCat && urlCat !== 'all') {
+    const slug = decodeURIComponent(urlCat).toLowerCase();
+    activeFilter = SLUG_TO_CAT[slug] || activeFilter;
+  }
+  syncUrlAndMeta();
 
   buildSidebar(); buildMobileFilter(); initSbSearch(); initSort(); initLoadMore();
   applyAndRender();
@@ -112,6 +141,27 @@ function setFilter(val){
     if(val==='all'){t.textContent=allLbl;}else{const c=CATS.find(c=>c.id===val);t.textContent=c?catLabel(c):val;}
   }
   shown=PAGE; applyAndRender();
+  syncUrlAndMeta();
+}
+
+function syncUrlAndMeta() {
+  const slug = activeFilter === 'all' ? '' : CAT_SLUG[activeFilter];
+  const path = slug ? `/products?category=${slug}` : '/products';
+  if (location.pathname.replace(/\.html$/, '').endsWith('/products') && location.search !== (slug ? `?category=${slug}` : '')) {
+    history.replaceState(null, '', path);
+  }
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) {
+    canonical.href = slug
+      ? `https://www.yominelectric.com/products?category=${slug}`
+      : 'https://www.yominelectric.com/products';
+  }
+  const c = activeFilter === 'all' ? null : CATS.find(x => x.id === activeFilter);
+  if (c) {
+    document.title = `${catLabel(c)} | Yomin Electric Products`;
+    const desc = document.querySelector('meta[name="description"]');
+    if (desc) desc.content = `Browse Yomin Electric ${catLabel(c)} — factory-direct export pricing, ISO9001 certified, low MOQ.`;
+  }
 }
 
 function initSbSearch(){

@@ -8,6 +8,32 @@
   <meta name="description" content="Browse Yomin Electric's full range: single and three phase energy meters, prepaid STS meters, current transformers, split-core CTs and Variac voltage regulators. Factory direct, low MOQ.">
   <link rel="canonical" href="https://www.yominelectric.com/products" />
   <meta name="robots" content="index, follow">
+  <script>
+  (function () {
+    var SLUG = { 'energy meter': 'energy-meter', 'voltage stabilizer/regulator': 'voltage-stabilizer-regulator', 'current transformer': 'current-transformer', 'variac/transformer': 'variac-transformer', 'terminal & connector': 'terminal-connector', 'solar/pv products': 'solar-pv-products', 'fuse & protection': 'fuse-protection', 'voltage protector': 'voltage-protector', 'socket & wiring': 'socket-wiring', 'tile leveling system': 'tile-leveling-system', 'tools & hardware': 'tools-hardware', 'security seal': 'security-seal', 'other': 'other' };
+    var p = new URLSearchParams(location.search);
+    var cat = p.get('cat');
+    var category = p.get('category');
+    var slug = '';
+    if (cat) {
+      slug = SLUG[decodeURIComponent(cat.replace(/\+/g, ' ')).trim().toLowerCase()] || '';
+      location.replace(slug ? '/products?category=' + slug : '/products');
+      return;
+    }
+    if (category) {
+      var c = decodeURIComponent(category.replace(/\+/g, ' ')).trim().toLowerCase();
+      slug = SLUG[c] || (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(c) ? c : '');
+      if (slug && slug !== category.toLowerCase()) {
+        location.replace('/products?category=' + slug);
+        return;
+      }
+    }
+    if (slug) {
+      var canon = document.querySelector('link[rel="canonical"]');
+      if (canon) canon.href = 'https://www.yominelectric.com/products?category=' + slug;
+    }
+  })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -1602,11 +1628,11 @@
       <div class="ft-col">
         <h4>Products</h4>
         <ul>
-          <li><a href="products.html?category=energy-meter">Energy Meters</a></li>
-          <li><a href="products.html?category=current-transformer">Current Transformers</a></li>
-          <li><a href="products.html?category=voltage-protector">Voltage Protectors</a></li>
-          <li><a href="products.html?category=analog-meter">Analog Meters</a></li>
-          <li><a href="products.html?category=smart-gateway">Smart Gateways</a></li>
+          <li><a href="/products?category=energy-meter">Energy Meters</a></li>
+          <li><a href="/products?category=current-transformer">Current Transformers</a></li>
+          <li><a href="/products?category=voltage-protector">Voltage Protectors</a></li>
+          <li><a href="/products?category=analog-meter">Analog Meters</a></li>
+          <li><a href="/products?category=smart-gateway">Smart Gateways</a></li>
         </ul>
       </div>
       <div class="ft-col">
