@@ -92,7 +92,15 @@ async function handleSubmit(e) {
 
   try {
     const result = await window.API.contact.submit(data);
-    
+
+    // API ok but SMTP failed on server (e.g. missing Vercel env vars)
+    if (result.success && result.emailed === false) {
+      submitBtn.classList.remove('loading');
+      submitBtn.innerHTML = '<span data-t="contact_submit">Send Message</span><span class="submit-icon">→</span>';
+      showFormError(result.message || 'Email could not be sent. Please email salaheddine@yominelectric.com directly.');
+      return;
+    }
+
     // Check if we need to fall back to mailto
     if (result.fallback === 'mailto') {
       // Trigger mailto fallback
@@ -132,12 +140,18 @@ async function handleSubmit(e) {
     setTimeout(() => showCelebrationMessage(subjectVal), 1000);
   } catch (err) {
     console.error('Submit error:', err);
-    // Show error but keep form visible
     submitBtn.classList.remove('loading');
-    submitBtn.innerHTML = '<span>Send Message</span><span class="submit-icon">→</span>';
-    showFormError('Failed to send message. Please try emailing us directly.');
+    submitBtn.innerHTML = '<span data-t="contact_submit">Send Message</span><span class="submit-icon">→</span>';
+    if (err.errors) {
+      Object.entries(err.errors).forEach(([field, msg]) => {
+        const input = form.querySelector(`[data-field="${field}"]`);
+        if (input) showFieldError(input, msg);
+      });
+      showFormError('Please fix the highlighted fields and try again.');
+    } else {
+      showFormError(err.message || 'Failed to send message. Please email salaheddine@yominelectric.com directly.');
+    }
   }
-}
 }
 
 function showFormError(msg) {

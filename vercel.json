@@ -4,6 +4,37 @@
     { "src": "backend/server.js", "use": "@vercel/node" },
     { "src": "**/*", "use": "@vercel/static" }
   ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "yominelectric.com" }],
+      "destination": "https://www.yominelectric.com/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "www.yominelectric.com" },
+        { "type": "header", "key": "x-forwarded-proto", "value": "http" }
+      ],
+      "destination": "https://www.yominelectric.com/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "yominelectric.com" }, { "type": "header", "key": "x-forwarded-proto", "value": "http" }],
+      "destination": "https://www.yominelectric.com/:path*",
+      "statusCode": 301
+    },
+    { "source": "/index.html", "destination": "/", "statusCode": 301 },
+    { "source": "/about.html", "destination": "/about", "statusCode": 301 },
+    { "source": "/contact.html", "destination": "/contact", "statusCode": 301 },
+    { "source": "/products.html", "destination": "/products", "statusCode": 301 },
+    { "source": "/product-details.html", "destination": "/product-details", "statusCode": 301 },
+    { "source": "/process.html", "destination": "/process", "statusCode": 301 },
+    { "source": "/solutions.html", "destination": "/solutions", "statusCode": 301 },
+    { "source": "/yominelectric-main/:path*", "destination": "/", "statusCode": 301 }
+  ],
   "routes": [
     { "src": "/wap/(.*)", "status": 410 },
     { "src": "/wap/(.*)\\.asp", "status": 410 },

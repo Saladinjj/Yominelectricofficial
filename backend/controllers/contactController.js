@@ -44,7 +44,8 @@ async function sendEmail(data, type = 'contact') {
       console.log('  Message: ', data.message.substring(0, 200));
       console.log();
     }
-    return { simulated: true };
+    console.warn('[Contact] SMTP not configured — set EMAIL_USER and EMAIL_PASS');
+    return { sent: false, simulated: true };
   }
 
   if (!nodemailer) {
@@ -147,10 +148,13 @@ const contactController = {
         console.error('[Contact] Email failed — SMTP details:', JSON.stringify({ host: config.email.host, port: config.email.port, user: config.email.user, to: config.email.to }));
       }
 
+      const emailed = emailResult.sent === true;
       res.json({
         success: true,
-        emailed: emailResult.sent !== false,
-        message: 'Your message has been received. We will respond within 24 hours.',
+        emailed,
+        message: emailed
+          ? 'Your message has been received. We will respond within 24 hours.'
+          : 'Your message was saved but email delivery failed. Please email us directly at salaheddine@yominelectric.com.',
         id: `msg_${Date.now()}`
       });
 

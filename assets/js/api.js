@@ -25,11 +25,14 @@ const API = {
       },
       body: JSON.stringify(data)
     });
+    const body = await res.json().catch(() => ({}));
     if (!res.ok) {
-      const err = await res.json().catch(() => ({}));
-      throw new Error(err.message || `API error: ${res.status}`);
+      const err = new Error(body.message || `API error: ${res.status}`);
+      err.status = res.status;
+      err.errors = body.errors;
+      throw err;
     }
-    return res.json();
+    return body;
   },
 
   // Product API calls
@@ -49,8 +52,10 @@ const API = {
         try {
           return await API.post('/contact', formData);
         } catch (err) {
-          // Fallback: return fallback signal if backend is unavailable
-          console.warn('API unavailable, falling back to mailto:', err.message);
+          // Validation / server errors — surface to the form (no mailto)
+          if (err.status && err.status !== 0) throw err;
+          // Network failure only — mailto fallback
+          console.warn('API unreachable, falling back to mailto:', err.message);
           return { success: true, fallback: 'mailto', formData };
         }
       }
