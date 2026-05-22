@@ -22,6 +22,7 @@ const CATS = [
   { id:'Energy Meter',                 label:'Energy Meters',          icon:'⚡', tKey:'prod_cat_energy_meter' },
   { id:'Voltage Stabilizer/Regulator', label:'Voltage Stabilizers',    icon:'🔄', tKey:'prod_cat_voltage_stabilizer' },
   { id:'Current Transformer',          label:'Current Transformers',   icon:'🔵', tKey:'prod_cat_current_transformer' },
+  { id:'Screw Machine',                label:'Screw Machines',         icon:'⚙️', tKey:'prod_cat_screw_machine' },
   { id:'Variac/Transformer',           label:'Variac / Transformers',  icon:'🔃', tKey:'prod_cat_variac' },
   { id:'Terminal & Connector',         label:'Terminals & Connectors', icon:'🔩', tKey:'prod_cat_terminal' },
   { id:'Solar/PV Products',            label:'Solar & PV',             icon:'☀️',  tKey:'prod_cat_solar' },
@@ -53,6 +54,7 @@ const CAT_SLUG = {
   'Energy Meter': 'energy-meter',
   'Voltage Stabilizer/Regulator': 'voltage-stabilizer-regulator',
   'Current Transformer': 'current-transformer',
+  'Screw Machine': 'screw-machine',
   [BUSBAR_FILTER]: 'busbar',
   'Flexible Busbar': 'flexible-busbar',
   'Rigid Busbar': 'rigid-busbar',
@@ -86,6 +88,7 @@ const CAT_APPS = {
   'Voltage Stabilizer/Regulator':['Household Appliances','Medical Equipment','CNC Machines','HVAC Systems','Data Centers','Sensitive Electronics'],
   'Variac/Transformer':['Lab & Testing','Voltage Adjustment','Motor Speed Control','Audio Equipment','R&D Applications','Industrial Testing'],
   'Current Transformer':['LV Panel Metering','Protection Relays','Revenue Metering','Energy Audits','Sub-metering','SCADA Integration'],
+  'Screw Machine':['Brass & Aluminum Busbar Processing','Automatic Drilling & Tapping','Screw Assembly Lines','Terminal Block Production','OEM Machine Customization','Factory Automation'],
   'Flexible Busbar':['LiFePO4 Battery Packs','EV Battery Modules','Energy Storage Systems','Power Distribution','Nickel-plated Connections','Custom OEM'],
   'Rigid Busbar':['Battery Pack Interconnect','Industrial Switchgear','EV Power Distribution','High-current Panels','Copper Bus Systems','OEM Projects'],
   'Aluminum Busbar':['Energy Storage','Solar Battery Banks','Lightweight Power Links','EV Applications','Insulated Bus Systems','Custom Fabrication'],
@@ -310,6 +313,7 @@ function applyAndRender(){
       p.title.toLowerCase().includes(q)||
       (p.description||'').toLowerCase().includes(q)||
       p.category.toLowerCase().includes(q)||
+      (p.keywords||[]).some(k=>String(k).toLowerCase().includes(q))||
       Object.values(p.specs||{}).some(v=>String(v).toLowerCase().includes(q))
     );
   }
@@ -399,14 +403,15 @@ function openDetail(p){
   const cfg=getFilterMeta(p.category)||CATS.find(c=>c.id===p.category);
   const icon=cfg?cfg.icon:'📦';
 
-  const imgHtml=p.image
-    ?`<img src="${esc(p.image)}" alt="${esc(p.title)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="dp-img-fb" style="display:none">${catSvg(p.category,90)}</div>`
+  const galleryImgs=(p.images&&p.images.length)?p.images:(p.image?[p.image]:[]);
+  const imgHtml=galleryImgs[0]
+    ?`<img src="${esc(galleryImgs[0])}" alt="${esc(p.title)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="dp-img-fb" style="display:none">${catSvg(p.category,90)}</div>`
     :`<div class="dp-img-fb">${catSvg(p.category,90)}</div>`;
 
-  const specDefs=['Phase','Voltage','Communication','Display','Control Type','Capacity','Frequency','Current Type','Power'];
-  const specRows=specDefs.filter(k=>specs[k]).map(k=>
-    `<div class="dp-spec-row"><span class="dp-spec-key">${esc(k)}</span><span class="dp-spec-val">${esc(specs[k])}</span></div>`
+  const specRows=Object.entries(specs).map(([k,v])=>
+    `<div class="dp-spec-row"><span class="dp-spec-key">${esc(k)}</span><span class="dp-spec-val">${esc(String(v))}</span></div>`
   ).join('');
+  const kwHtml=(p.keywords&&p.keywords.length)?`<div class="dp-section-label" style="margin-top:18px">Keywords</div><div class="dp-apps">${p.keywords.map(k=>`<span class="dp-app-chip">${esc(k)}</span>`).join('')}</div>`:'';
 
   const extraRows=`
     <div class="dp-spec-row"><span class="dp-spec-key">Certification</span><span class="dp-spec-val">CE, ISO 9001</span></div>
@@ -435,7 +440,8 @@ function openDetail(p){
         <h2 class="dp-title">${esc(p.title)}</h2>
         <p class="dp-desc">${esc(p.description||buildAutoDesc(p))}</p>
         <div class="dp-section-label">Specifications</div>
-        <div class="dp-specs-grid">${specRows}${extraRows}</div>
+        <div class="dp-specs-grid">${specRows||'<div class="dp-spec-row"><span class="dp-spec-key">Category</span><span class="dp-spec-val">'+esc(p.category)+'</span></div>'}${extraRows}</div>
+        ${kwHtml}
         <div class="dp-section-label" style="margin-top:22px">Applications</div>
         <div class="dp-apps">${appChips}</div>
       </div>

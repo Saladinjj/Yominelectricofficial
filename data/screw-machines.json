@@ -1,0 +1,104 @@
+[
+  {
+    "id": "ym-sm-001",
+    "title": "Deep Processing Machine for Brass and Aluminum Row",
+    "category": "Screw Machine",
+    "price": "Request Quote",
+    "description": "Automatic compound machining center integrating cutting, drilling, tapping and chamfering for deep processing of brass and aluminum busbar rows. Horizontal PLC-controlled machine with touch screen — send drawings or samples for customization.",
+    "specs": {
+      "Voltage": "3P4W 220/380VAC (customizable), 50/60Hz",
+      "Total Power": "5KW–8KW",
+      "Air Pressure": "0.5–0.6 MPa",
+      "Work Efficiency": "2000–2600 rows/hour",
+      "Cutting Accuracy": "±0.05 mm",
+      "Hole-to-Hole Accuracy": "±0.02 mm",
+      "Max Vertical Drill Hole": "5.5 mm",
+      "Max Tapping": "M6",
+      "Max Side Drill": "10 mm",
+      "Material Size (W×H)": "15×18 mm (custom lengths available)",
+      "Max Finished Length": "21–22 cm",
+      "Control": "Touch screen + PLC",
+      "Dimensions": "3100×1200×1800 mm (L×W×H)",
+      "Weight": "650–900 KG"
+    },
+    "keywords": [
+      "brass busbar processing",
+      "aluminum row machine",
+      "drilling tapping chamfering",
+      "PLC touch screen",
+      "terminal block production",
+      "deep processing machine",
+      "OEM customization"
+    ],
+    "image": "/assets/images/screw-machines/page-003.jpg",
+    "images": [
+      "/assets/images/screw-machines/page-003.jpg",
+      "/assets/images/screw-machines/page-004.jpg"
+    ]
+  },
+  {
+    "id": "ym-sm-002",
+    "title": "Automatic Screw Tightening Machine",
+    "category": "Screw Machine",
+    "price": "Request Quote",
+    "description": "Vertical automatic screwing machine integrating screwing and testing for brass bar assembly. Replaces manual labor with high efficiency, strong reliability and long service life. Custom screw-driving solutions available.",
+    "specs": {
+      "Voltage": "Single phase 220/230/240/254 VAC, 50/60Hz",
+      "Total Power": "1 KW",
+      "Air Pressure": "0.5–0.6 MPa",
+      "Speed": "40–60 screws/minute",
+      "Control": "Touch screen + PLC",
+      "Dimensions": "1600×730×1750 mm",
+      "Weight": "500–600 KG",
+      "Screw Drive": "Electric motor",
+      "Operating System": "Taiwan Weilun"
+    },
+    "keywords": [
+      "automatic screw machine",
+      "busbar screwing",
+      "brass terminal assembly",
+      "screw tightening",
+      "PLC control",
+      "production line automation",
+      "OEM custom design"
+    ],
+    "image": "/assets/images/screw-machines/page-005.jpg",
+    "images": [
+      "/assets/images/screw-machines/page-005.jpg",
+      "/assets/images/screw-machines/page-006.jpg"
+    ]
+  },
+  {
+    "id": "ym-sm-003",
+    "title": "Circulating Rotary Metalworking Machine (TBM-S)",
+    "category": "Screw Machine",
+    "price": "Request Quote",
+    "description": "Vertical metal deep processing machine with turntable flow structure integrating cutting, tapping, drilling and chamfering for semi-finished copper and aluminum parts. High efficiency, strong reliability and long life.",
+    "specs": {
+      "Model": "TBM-S",
+      "Voltage": "3P4W 220/380VAC (customizable), 50/60Hz",
+      "Total Power": "3KW–6KW",
+      "Air Pressure": "0.5–0.6 MPa",
+      "Work Efficiency": "36000 products/24 hours",
+      "Cutting Accuracy": "±0.05 mm",
+      "Control": "Touch screen + PLC",
+      "Dimensions": "1100×1100×1800 mm (L×W×H)",
+      "Weight": "500–800 KG",
+      "Structure": "Rotating metal disc + cylinder clamp"
+    },
+    "keywords": [
+      "rotary metalworking",
+      "turntable flow",
+      "copper aluminum parts",
+      "cutting drilling tapping",
+      "terminal connector manufacturing",
+      "PLC automation",
+      "TBM-S"
+    ],
+    "image": "/assets/images/screw-machines/page-007.jpg",
+    "images": [
+      "/assets/images/screw-machines/page-007.jpg",
+      "/assets/images/screw-machines/page-008.jpg"
+    ]
+  }
+]

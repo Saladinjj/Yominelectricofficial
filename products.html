@@ -10,7 +10,7 @@
   <meta name="robots" content="index, follow">
   <script>
   (function () {
-    var SLUG = { 'energy meter': 'energy-meter', 'voltage stabilizer/regulator': 'voltage-stabilizer-regulator', 'current transformer': 'current-transformer', 'busbar': 'busbar', 'busbars': 'busbar', 'flexible busbar': 'flexible-busbar', 'rigid busbar': 'rigid-busbar', 'aluminum busbar': 'aluminum-busbar', 'composite laminated busbar': 'composite-laminated-busbar', 'ccs integrated busbar': 'ccs-integrated-busbar', 'heavy duty busbar': 'heavy-duty-busbar', 'energy storage busbar': 'energy-storage-busbar', 'busbar protection': 'busbar-protection', 'variac/transformer': 'variac-transformer', 'terminal & connector': 'terminal-connector', 'solar/pv products': 'solar-pv-products', 'fuse & protection': 'fuse-protection', 'voltage protector': 'voltage-protector', 'socket & wiring': 'socket-wiring', 'tile leveling system': 'tile-leveling-system', 'tools & hardware': 'tools-hardware', 'security seal': 'security-seal', 'other': 'other' };
+    var SLUG = { 'energy meter': 'energy-meter', 'voltage stabilizer/regulator': 'voltage-stabilizer-regulator', 'current transformer': 'current-transformer', 'screw machine': 'screw-machine', 'screw machines': 'screw-machine', 'busbar': 'busbar', 'busbars': 'busbar', 'flexible busbar': 'flexible-busbar', 'rigid busbar': 'rigid-busbar', 'aluminum busbar': 'aluminum-busbar', 'composite laminated busbar': 'composite-laminated-busbar', 'ccs integrated busbar': 'ccs-integrated-busbar', 'heavy duty busbar': 'heavy-duty-busbar', 'energy storage busbar': 'energy-storage-busbar', 'busbar protection': 'busbar-protection', 'variac/transformer': 'variac-transformer', 'terminal & connector': 'terminal-connector', 'solar/pv products': 'solar-pv-products', 'fuse & protection': 'fuse-protection', 'voltage protector': 'voltage-protector', 'socket & wiring': 'socket-wiring', 'tile leveling system': 'tile-leveling-system', 'tools & hardware': 'tools-hardware', 'security seal': 'security-seal', 'other': 'other' };
     var p = new URLSearchParams(location.search);
     var cat = p.get('cat');
     var category = p.get('category');
@@ -572,6 +572,22 @@
       color: var(--ac);
       border-color: rgba(200, 169, 110, .45);
       background: rgba(200, 169, 110, .08)
+    }
+
+    .mc-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px
+    }
+
+    .mc-kw-chip {
+      font-size: 11.5px;
+      padding: 5px 10px;
+      border-radius: 14px;
+      background: var(--bgc2);
+      border: 1px solid var(--bds);
+      color: var(--mt)
     }
 
     .sb-count {
@@ -1853,11 +1869,27 @@
       'Busbar Protection': 'busbar-protection',
     };
     const SLUG_TO_FILTER = Object.fromEntries(Object.entries(FILTER_SLUG).map(([id, slug]) => [slug, id]));
+    const CAT_SLUG_EXTRA = {
+      'energy-meter': 'Energy Meter',
+      'voltage-stabilizer-regulator': 'Voltage Stabilizer/Regulator',
+      'current-transformer': 'Current Transformer',
+      'screw-machine': 'Screw Machine',
+      'variac-transformer': 'Variac/Transformer',
+      'terminal-connector': 'Terminal & Connector',
+      'solar-pv-products': 'Solar/PV Products',
+      'fuse-protection': 'Fuse & Protection',
+      'voltage-protector': 'Voltage Protector',
+      'socket-wiring': 'Socket & Wiring',
+      'tools-hardware': 'Tools & Hardware',
+      'security-seal': 'Security Seal',
+      'other': 'Other',
+    };
 
     const CATS = [
       { id: 'Energy Meter', label: 'Energy Meters', icon: '⚡', tkey: 'prod_cat_energy_meter' },
       { id: 'Voltage Stabilizer/Regulator', label: 'Voltage Stabilizers', icon: '🔄', tkey: 'prod_cat_voltage_stabilizer' },
       { id: 'Current Transformer', label: 'Current Transformers', icon: '🔵', tkey: 'prod_cat_current_transformer' },
+      { id: 'Screw Machine', label: 'Screw Machines', icon: '⚙️', tkey: 'prod_cat_screw_machine' },
       { id: 'Variac/Transformer', label: 'Variac / Transformers', icon: '🔃', tkey: 'prod_cat_variac' },
       { id: 'Terminal & Connector', label: 'Terminals & Connectors', icon: '🔩', tkey: 'prod_cat_terminal' },
       { id: 'Solar/PV Products', label: 'Solar & PV', icon: '☀️', tkey: 'prod_cat_solar' },
@@ -1896,6 +1928,7 @@
       'Voltage Stabilizer/Regulator': ['Household Appliances', 'Medical Equipment', 'CNC Machines', 'HVAC Systems', 'Data Centers', 'Sensitive Electronics'],
       'Variac/Transformer': ['Lab & Testing', 'Voltage Adjustment', 'Motor Speed Control', 'Audio Equipment', 'R&D Applications', 'Industrial Testing'],
       'Current Transformer': ['LV Panel Metering', 'Protection Relays', 'Revenue Metering', 'Energy Audits', 'Sub-metering', 'SCADA Integration'],
+      'Screw Machine': ['Brass & Aluminum Busbar Processing', 'Automatic Drilling & Tapping', 'Screw Assembly Lines', 'Terminal Block Production', 'OEM Machine Customization', 'Factory Automation'],
       'Terminal & Connector': ['Panel Wiring', 'Control Cabinets', 'DIN Rail Systems', 'Cable Management', 'Industrial Installations', 'Switchboards'],
       'Fuse & Protection': ['Overcurrent Protection', 'Solar PV Systems', 'Distribution Boards', 'Industrial Safety', 'LV Networks', 'Panel Protection'],
       'Solar/PV Products': ['Solar Arrays', 'Grid-tie Systems', 'Off-grid Power', 'PV Combiner Boxes', 'Renewable Energy', 'EV Charging'],
@@ -1940,6 +1973,8 @@
           description: p.description || p.short_description || '',
           specs: p.specs || p.key_specifications || {},
           image: ((p.image || p.main_image_url || p.img || '')).replace(/via\.placeholder\.com[^\s]*/g, ''),
+          images: p.images || [],
+          keywords: p.keywords || [],
           url: p.url || p.product_url || '',
           bundles: p.bundles || undefined,
         }));
@@ -1955,7 +1990,7 @@
       const urlCat = params.get('cat') || params.get('category');
       if (urlCat && urlCat !== 'all') {
         const key = decodeURIComponent(urlCat.replace(/\+/g, ' ')).trim().toLowerCase();
-        activeFilter = SLUG_TO_FILTER[key] || decodeURIComponent(urlCat);
+        activeFilter = SLUG_TO_FILTER[key] || CAT_SLUG_EXTRA[key] || decodeURIComponent(urlCat);
       }
 
       buildSidebar(); buildMobileFilter(); buildBusbarSubBar(); initSbSearch(); initProdSearch(); initSort(); initLoadMore();
@@ -2194,6 +2229,7 @@
           p.title.toLowerCase().includes(q) ||
           (p.description || '').toLowerCase().includes(q) ||
           p.category.toLowerCase().includes(q) ||
+          (p.keywords || []).some(k => String(k).toLowerCase().includes(q)) ||
           Object.values(p.specs || {}).some(v => String(v).toLowerCase().includes(q))
         );
       }
@@ -2292,8 +2328,9 @@
       const appIcons = ['🏠','🏪','⚡','🏭','🌐','🔌','📡','🔧'];
 
       /* Gallery images */
-      const galleryImgs = (ali.images && ali.images.length)
-        ? ali.images : (p.image ? [p.image] : []);
+      const galleryImgs = (p.images && p.images.length)
+        ? p.images
+        : ((ali.images && ali.images.length) ? ali.images : (p.image ? [p.image] : []));
       const mainImg = galleryImgs[0] || '';
 
       const imgHtml = mainImg
@@ -2421,8 +2458,13 @@
         `<div class="mc-spec"><span class="mc-spec-k">Origin</span><span class="mc-spec-v">Zhejiang, China</span></div>`,
       ].filter(Boolean).join('');
 
+      const kwHtml = (p.keywords && p.keywords.length)
+        ? `<div class="mc-section-label" style="margin-top:20px">Keywords</div><div class="mc-keywords">${p.keywords.map(k => `<span class="mc-kw-chip">${esc(k)}</span>`).join('')}</div>`
+        : '';
       const tabAttr = `
+        <div class="mc-section-label">Specifications</div>
         <div class="mc-specs">${specRows || '<div class="mc-spec" style="grid-column:1/-1"><span class="mc-spec-k">Category</span><span class="mc-spec-v">' + esc(p.category) + '</span></div>'}${extraSpecs}</div>
+        ${kwHtml}
         ${customText ? `<div class="mc-customization-info"><div class="mc-cust-label">✏️ Customization Available</div><p>${esc(customText)}</p></div>` : ''}`;
 
       /* REVIEWS TAB */
