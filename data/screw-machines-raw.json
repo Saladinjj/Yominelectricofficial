@@ -1,0 +1,73 @@
+{
+  "page_count": 8,
+  "products": [
+    {
+      "page": 1,
+      "title": "Screw Machine — Page 1",
+      "description": "Yomin screw machine from catalogue page 1.",
+      "specs": {},
+      "keywords": [],
+      "image": "/assets/images/screw-machines/page-001.jpg"
+    },
+    {
+      "page": 2,
+      "title": "Screw Machine — Page 2",
+      "description": "Yomin screw machine from catalogue page 2.",
+      "specs": {},
+      "keywords": [],
+      "image": "/assets/images/screw-machines/page-002.jpg"
+    },
+    {
+      "page": 3,
+      "title": "Customized according to needs",
+      "description": "Customized according to needs",
+      "specs": {},
+      "keywords": [
+        "Customized according to needs"
+      ],
+      "image": "/assets/images/screw-machines/page-003.jpg"
+    },
+    {
+      "page": 4,
+      "title": "Screw Machine — Page 4",
+      "description": "Yomin screw machine from catalogue page 4.",
+      "specs": {},
+      "keywords": [],
+      "image": "/assets/images/screw-machines/page-004.jpg"
+    },
+    {
+      "page": 5,
+      "title": "Screw Machine — Page 5",
+      "description": "Yomin screw machine from catalogue page 5.",
+      "specs": {},
+      "keywords": [],
+      "image": "/assets/images/screw-machines/page-005.jpg"
+    },
+    {
+      "page": 6,
+      "title": "Screw Machine — Page 6",
+      "description": "Yomin screw machine from catalogue page 6.",
+      "specs": {},
+      "keywords": [],
+      "image": "/assets/images/screw-machines/page-006.jpg"
+    },
+    {
+      "page": 7,
+      "title": "WeChat/ChatsApp:   0086-17398098159",
+      "description": "WeChat/ChatsApp:   0086-17398098159",
+      "specs": {
+        "WeChat/ChatsApp": "0086-17398098159"
+      },
+      "keywords": [],
+      "image": "/assets/images/screw-machines/page-007.jpg"
+    },
+    {
+      "page": 8,
+      "title": "Screw Machine — Page 8",
+      "description": "Yomin screw machine from catalogue page 8.",
+      "specs": {},
+      "keywords": [],
+      "image": "/assets/images/screw-machines/page-008.jpg"
+    }
+  ]
+}
