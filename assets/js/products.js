@@ -4,10 +4,9 @@
    ═══════════════════════════════════════════════════════════════ */
 'use strict';
 
-const CATS = [
-  { id:'Energy Meter',                 label:'Energy Meters',          icon:'⚡', tKey:'prod_cat_energy_meter' },
-  { id:'Voltage Stabilizer/Regulator', label:'Voltage Stabilizers',    icon:'🔄', tKey:'prod_cat_voltage_stabilizer' },
-  { id:'Current Transformer',          label:'Current Transformers',   icon:'🔵', tKey:'prod_cat_current_transformer' },
+const BUSBAR_FILTER = '__busbar__';
+const BUSBAR_PARENT = { id:BUSBAR_FILTER, label:'Busbars', icon:'🔌', tKey:'prod_cat_busbar' };
+const BUSBAR_SUBCATS = [
   { id:'Flexible Busbar',              label:'Flexible Busbar',        icon:'〰️', tKey:'prod_cat_flexible_busbar' },
   { id:'Rigid Busbar',                 label:'Rigid Busbar',           icon:'▬', tKey:'prod_cat_rigid_busbar' },
   { id:'Aluminum Busbar',              label:'Aluminum Busbar',        icon:'🔶', tKey:'prod_cat_aluminum_busbar' },
@@ -16,6 +15,13 @@ const CATS = [
   { id:'Heavy Duty Busbar',            label:'Heavy Duty Busbar',      icon:'⚙️', tKey:'prod_cat_heavy_busbar' },
   { id:'Energy Storage Busbar',        label:'Energy Storage',         icon:'🔋', tKey:'prod_cat_storage_busbar' },
   { id:'Busbar Protection',            label:'Busbar Protection',      icon:'🛡️', tKey:'prod_cat_busbar_protection' },
+];
+const BUSBAR_SUB_IDS = new Set(BUSBAR_SUBCATS.map(c => c.id));
+
+const CATS = [
+  { id:'Energy Meter',                 label:'Energy Meters',          icon:'⚡', tKey:'prod_cat_energy_meter' },
+  { id:'Voltage Stabilizer/Regulator', label:'Voltage Stabilizers',    icon:'🔄', tKey:'prod_cat_voltage_stabilizer' },
+  { id:'Current Transformer',          label:'Current Transformers',   icon:'🔵', tKey:'prod_cat_current_transformer' },
   { id:'Variac/Transformer',           label:'Variac / Transformers',  icon:'🔃', tKey:'prod_cat_variac' },
   { id:'Terminal & Connector',         label:'Terminals & Connectors', icon:'🔩', tKey:'prod_cat_terminal' },
   { id:'Solar/PV Products',            label:'Solar & PV',             icon:'☀️',  tKey:'prod_cat_solar' },
@@ -29,11 +35,25 @@ const CATS = [
 ];
 
 function isQuoteOnly(p){ return p && p.quoteOnly === true; }
+function isBusbarProduct(p){ return isQuoteOnly(p) || BUSBAR_SUB_IDS.has(p.category); }
+function productMatchesFilter(p, filter){
+  if(filter==='all') return true;
+  if(filter===BUSBAR_FILTER) return isBusbarProduct(p);
+  return p.category===filter;
+}
+function busbarTotal(counts){ return BUSBAR_SUBCATS.reduce((n,c)=>n+(counts[c.id]||0),0); }
+function getFilterMeta(val){
+  if(val===BUSBAR_FILTER) return BUSBAR_PARENT;
+  const sub=BUSBAR_SUBCATS.find(c=>c.id===val);
+  if(sub) return sub;
+  return CATS.find(c=>c.id===val);
+}
 
 const CAT_SLUG = {
   'Energy Meter': 'energy-meter',
   'Voltage Stabilizer/Regulator': 'voltage-stabilizer-regulator',
   'Current Transformer': 'current-transformer',
+  [BUSBAR_FILTER]: 'busbar',
   'Flexible Busbar': 'flexible-busbar',
   'Rigid Busbar': 'rigid-busbar',
   'Aluminum Busbar': 'aluminum-busbar',
@@ -74,6 +94,7 @@ const CAT_APPS = {
   'Heavy Duty Busbar':['High-current ESS','Industrial Power','Utility-scale Storage','Welded Connections','Heavy-duty Connectors','Custom Spec'],
   'Energy Storage Busbar':['Container ESS','Commercial Storage','Solar + Storage','Microgrid','DC Distribution','Battery Cabinets'],
   'Busbar Protection':['Insulation Systems','Safety Covers','Thermal Management','Panel Protection','ESS Safety','Compliance'],
+  [BUSBAR_FILTER]:['LiFePO4 Battery Packs','EV Modules','Energy Storage','Power Distribution','Custom OEM','Quote-based Projects'],
   'Terminal & Connector':['Panel Wiring','Control Cabinets','DIN Rail Systems','Cable Management','Industrial Installations','Switchboards'],
   'Fuse & Protection':['Overcurrent Protection','Solar PV Systems','Distribution Boards','Industrial Safety','LV Networks','Panel Protection'],
   'Solar/PV Products':['Solar Arrays','Grid-tie Systems','Off-grid Power','PV Combiner Boxes','Renewable Energy','EV Charging'],
@@ -132,12 +153,29 @@ function buildSidebar(){
   let html=`<button class="sb-all ${activeFilter==='all'?'active':''}" data-filter="all" data-t="prod_all">
     <span style="display:flex;align-items:center;gap:8px"><span style="font-size:14px">🗂</span>${esc(allLabel)}</span>
     <span class="sb-count">${ALL.length}</span></button>`;
+  const appendBusbarSidebar=()=>{
+    const busTotal=busbarTotal(counts);
+    if(!busTotal) return;
+    const subActive=BUSBAR_SUB_IDS.has(activeFilter);
+    html+=`<button class="sb-item sb-item-parent ${activeFilter===BUSBAR_FILTER?'active':''}${subActive?' has-active-sub':''}" data-filter="${esc(BUSBAR_FILTER)}">
+      <span class="sb-item-inner"><span class="sb-item-icon">${BUSBAR_PARENT.icon}</span><span class="sb-item-label">${esc(catLabel(BUSBAR_PARENT))}</span></span>
+      <span class="sb-count">${busTotal}</span></button>`;
+    BUSBAR_SUBCATS.forEach(c=>{
+      const n=counts[c.id]||0; if(!n) return;
+      html+=`<button class="sb-item sb-item-sub ${activeFilter===c.id?'active':''}" data-filter="${esc(c.id)}">
+      <span class="sb-item-inner"><span class="sb-item-icon">${c.icon}</span><span class="sb-item-label">${esc(catLabel(c))}</span></span>
+      <span class="sb-count">${n}</span></button>`;
+    });
+  };
+  let busbarPlaced=false;
   CATS.forEach(c=>{
     const n=counts[c.id]||0; if(!n) return;
     html+=`<button class="sb-item ${activeFilter===c.id?'active':''}" data-filter="${esc(c.id)}">
       <span class="sb-item-inner"><span class="sb-item-icon">${c.icon}</span><span class="sb-item-label">${esc(catLabel(c))}</span></span>
       <span class="sb-count">${n}</span></button>`;
+    if(c.id==='Current Transformer'){ appendBusbarSidebar(); busbarPlaced=true; }
   });
+  if(!busbarPlaced) appendBusbarSidebar();
   list.innerHTML=html;
   list.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>setFilter(b.dataset.filter)));
 }
@@ -148,10 +186,22 @@ function buildMobileFilter(){
   ALL.forEach(p=>{counts[p.category]=(counts[p.category]||0)+1;});
   const mAllLabel = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_all) ? T[currentLang].prod_all : 'All Products';
   let html=`<button class="mfbtn ${activeFilter==='all'?'active':''}" data-filter="all">${esc(mAllLabel)} (${ALL.length})</button>`;
+  const appendBusbarMobile=()=>{
+    const busTotal=busbarTotal(counts);
+    if(!busTotal) return;
+    html+=`<button class="mfbtn ${activeFilter===BUSBAR_FILTER?'active':''}" data-filter="${esc(BUSBAR_FILTER)}">${BUSBAR_PARENT.icon} ${esc(catLabel(BUSBAR_PARENT))} (${busTotal})</button>`;
+    BUSBAR_SUBCATS.forEach(c=>{
+      const n=counts[c.id]||0; if(!n) return;
+      html+=`<button class="mfbtn ${activeFilter===c.id?'active':''}" data-filter="${esc(c.id)}">${c.icon} ${esc(catLabel(c))} (${n})</button>`;
+    });
+  };
+  let busbarMobPlaced=false;
   CATS.forEach(c=>{
     const n=counts[c.id]||0; if(!n) return;
     html+=`<button class="mfbtn ${activeFilter===c.id?'active':''}" data-filter="${esc(c.id)}">${c.icon} ${esc(catLabel(c))} (${n})</button>`;
+    if(c.id==='Current Transformer'){ appendBusbarMobile(); busbarMobPlaced=true; }
   });
+  if(!busbarMobPlaced) appendBusbarMobile();
   bar.innerHTML=html;
   bar.querySelectorAll('.mfbtn').forEach(b=>b.addEventListener('click',()=>setFilter(b.dataset.filter)));
 }
@@ -159,12 +209,17 @@ function buildMobileFilter(){
 function setFilter(val){
   activeFilter=val; searchQuery='';
   const sb=document.getElementById('sb-search'); if(sb) sb.value='';
-  document.querySelectorAll('.sb-item,.sb-all').forEach(b=>b.classList.toggle('active',b.dataset.filter===val));
+  document.querySelectorAll('.sb-item,.sb-all').forEach(b=>{
+    const f=b.dataset.filter;
+    const isParent=b.classList.contains('sb-item-parent');
+    b.classList.toggle('active',f===val);
+    if(isParent) b.classList.toggle('has-active-sub',BUSBAR_SUB_IDS.has(val));
+  });
   document.querySelectorAll('.mfbtn').forEach(b=>b.classList.toggle('active',b.dataset.filter===val));
   const t=document.getElementById('area-title');
   if(t){
     const allLbl = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_all) ? T[currentLang].prod_all : 'All Products';
-    if(val==='all'){t.textContent=allLbl;}else{const c=CATS.find(c=>c.id===val);t.textContent=c?catLabel(c):val;}
+    if(val==='all'){t.textContent=allLbl;}else{const meta=getFilterMeta(val);t.textContent=meta?catLabel(meta):val;}
   }
   shown=PAGE; applyAndRender();
   syncUrlAndMeta();
@@ -182,7 +237,7 @@ function syncUrlAndMeta() {
       ? `https://www.yominelectric.com/products?category=${slug}`
       : 'https://www.yominelectric.com/products';
   }
-  const c = activeFilter === 'all' ? null : CATS.find(x => x.id === activeFilter);
+  const c = activeFilter === 'all' ? null : getFilterMeta(activeFilter);
   if (c) {
     document.title = `${catLabel(c)} | Yomin Electric Products`;
     const desc = document.querySelector('meta[name="description"]');
@@ -223,7 +278,7 @@ function initLoadMore(){
 
 /* ── Apply + Render ── */
 function applyAndRender(){
-  FILTERED=activeFilter==='all'?[...ALL]:ALL.filter(p=>p.category===activeFilter);
+  FILTERED=activeFilter==='all'?[...ALL]:ALL.filter(p=>productMatchesFilter(p,activeFilter));
   if(searchQuery){
     const q=searchQuery;
     FILTERED=FILTERED.filter(p=>
@@ -316,7 +371,7 @@ function openDetail(p){
   const panel=document.getElementById('detail-panel'); if(!panel) return;
   const specs=p.specs||{};
   const apps=CAT_APPS[p.category]||CAT_APPS['Other'];
-  const cfg=CATS.find(c=>c.id===p.category);
+  const cfg=getFilterMeta(p.category)||CATS.find(c=>c.id===p.category);
   const icon=cfg?cfg.icon:'📦';
 
   const imgHtml=p.image
