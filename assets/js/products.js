@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
   syncUrlAndMeta();
 
-  buildSidebar(); buildMobileFilter(); initSbSearch(); initSort(); initLoadMore();
+  buildSidebar(); buildMobileFilter(); buildBusbarSubBar(); initSbSearch(); initSort(); initLoadMore();
   applyAndRender();
 
   const urlId = new URLSearchParams(location.search).get('id');
@@ -156,16 +156,10 @@ function buildSidebar(){
   const appendBusbarSidebar=()=>{
     const busTotal=busbarTotal(counts);
     if(!busTotal) return;
-    const subActive=BUSBAR_SUB_IDS.has(activeFilter);
-    html+=`<button class="sb-item sb-item-parent ${activeFilter===BUSBAR_FILTER?'active':''}${subActive?' has-active-sub':''}" data-filter="${esc(BUSBAR_FILTER)}">
+    const busActive=activeFilter===BUSBAR_FILTER||BUSBAR_SUB_IDS.has(activeFilter);
+    html+=`<button class="sb-item sb-item-parent ${busActive?'active':''}" data-filter="${esc(BUSBAR_FILTER)}">
       <span class="sb-item-inner"><span class="sb-item-icon">${BUSBAR_PARENT.icon}</span><span class="sb-item-label">${esc(catLabel(BUSBAR_PARENT))}</span></span>
       <span class="sb-count">${busTotal}</span></button>`;
-    BUSBAR_SUBCATS.forEach(c=>{
-      const n=counts[c.id]||0; if(!n) return;
-      html+=`<button class="sb-item sb-item-sub ${activeFilter===c.id?'active':''}" data-filter="${esc(c.id)}">
-      <span class="sb-item-inner"><span class="sb-item-icon">${c.icon}</span><span class="sb-item-label">${esc(catLabel(c))}</span></span>
-      <span class="sb-count">${n}</span></button>`;
-    });
   };
   let busbarPlaced=false;
   CATS.forEach(c=>{
@@ -189,11 +183,8 @@ function buildMobileFilter(){
   const appendBusbarMobile=()=>{
     const busTotal=busbarTotal(counts);
     if(!busTotal) return;
-    html+=`<button class="mfbtn ${activeFilter===BUSBAR_FILTER?'active':''}" data-filter="${esc(BUSBAR_FILTER)}">${BUSBAR_PARENT.icon} ${esc(catLabel(BUSBAR_PARENT))} (${busTotal})</button>`;
-    BUSBAR_SUBCATS.forEach(c=>{
-      const n=counts[c.id]||0; if(!n) return;
-      html+=`<button class="mfbtn ${activeFilter===c.id?'active':''}" data-filter="${esc(c.id)}">${c.icon} ${esc(catLabel(c))} (${n})</button>`;
-    });
+    const busActive=activeFilter===BUSBAR_FILTER||BUSBAR_SUB_IDS.has(activeFilter);
+    html+=`<button class="mfbtn ${busActive?'active':''}" data-filter="${esc(BUSBAR_FILTER)}">${BUSBAR_PARENT.icon} ${esc(catLabel(BUSBAR_PARENT))} (${busTotal})</button>`;
   };
   let busbarMobPlaced=false;
   CATS.forEach(c=>{
@@ -206,21 +197,55 @@ function buildMobileFilter(){
   bar.querySelectorAll('.mfbtn').forEach(b=>b.addEventListener('click',()=>setFilter(b.dataset.filter)));
 }
 
+function isBusbarView(filter){
+  return filter===BUSBAR_FILTER||BUSBAR_SUB_IDS.has(filter);
+}
+
+function buildBusbarSubBar(){
+  const wrap=document.getElementById('busbar-sub-wrap');
+  const chips=document.getElementById('busbar-sub-chips');
+  if(!wrap||!chips) return;
+  const inBusbar=isBusbarView(activeFilter);
+  wrap.classList.toggle('show',inBusbar);
+  wrap.hidden=!inBusbar;
+  if(!inBusbar) return;
+  const counts={};
+  ALL.forEach(p=>{if(isBusbarProduct(p)) counts[p.category]=(counts[p.category]||0)+1;});
+  const d=(typeof T!=='undefined'&&typeof currentLang!=='undefined')?T[currentLang]:null;
+  const allLbl=(d&&d.prod_busbar_all)?d.prod_busbar_all:'All Busbars';
+  const busTotal=busbarTotal(counts);
+  let html=`<button type="button" class="busbar-chip ${activeFilter===BUSBAR_FILTER?'active':''}" data-busbar-sub="${esc(BUSBAR_FILTER)}">${BUSBAR_PARENT.icon} ${esc(allLbl)} (${busTotal})</button>`;
+  BUSBAR_SUBCATS.forEach(c=>{
+    const n=counts[c.id]||0; if(!n) return;
+    html+=`<button type="button" class="busbar-chip ${activeFilter===c.id?'active':''}" data-busbar-sub="${esc(c.id)}">${c.icon} ${esc(catLabel(c))} (${n})</button>`;
+  });
+  chips.innerHTML=html;
+  chips.querySelectorAll('.busbar-chip').forEach(btn=>btn.addEventListener('click',()=>setFilter(btn.dataset.busbarSub)));
+}
+
 function setFilter(val){
   activeFilter=val; searchQuery='';
   const sb=document.getElementById('sb-search'); if(sb) sb.value='';
+  const busActive=isBusbarView(val);
   document.querySelectorAll('.sb-item,.sb-all').forEach(b=>{
     const f=b.dataset.filter;
     const isParent=b.classList.contains('sb-item-parent');
-    b.classList.toggle('active',f===val);
-    if(isParent) b.classList.toggle('has-active-sub',BUSBAR_SUB_IDS.has(val));
+    if(isParent) b.classList.toggle('active',busActive);
+    else b.classList.toggle('active',f===val);
   });
-  document.querySelectorAll('.mfbtn').forEach(b=>b.classList.toggle('active',b.dataset.filter===val));
+  document.querySelectorAll('.mfbtn').forEach(b=>{
+    const f=b.dataset.filter;
+    if(f===BUSBAR_FILTER) b.classList.toggle('active',busActive);
+    else b.classList.toggle('active',f===val);
+  });
   const t=document.getElementById('area-title');
   if(t){
     const allLbl = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_all) ? T[currentLang].prod_all : 'All Products';
-    if(val==='all'){t.textContent=allLbl;}else{const meta=getFilterMeta(val);t.textContent=meta?catLabel(meta):val;}
+    if(val==='all'){t.textContent=allLbl;}
+    else if(val===BUSBAR_FILTER){t.textContent=catLabel(BUSBAR_PARENT);}
+    else{const meta=getFilterMeta(val);t.textContent=meta?catLabel(meta):val;}
   }
+  buildBusbarSubBar();
   shown=PAGE; applyAndRender();
   syncUrlAndMeta();
 }
