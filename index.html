@@ -35,8 +35,8 @@ nav.sc{background:rgba(13,13,13,.99)}
 .lbtn{background:rgba(255,255,255,.06);border:1px solid var(--bdr);color:var(--mt);padding:7px 13px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;letter-spacing:.5px;transition:all .2s;display:flex;align-items:center;gap:6px;position:relative;z-index:261}
 .lbtn:hover{background:rgba(255,255,255,.1);color:var(--tx)}
 .lbtn svg{width:11px;height:11px}
-.ldrop{position:absolute;top:calc(100% + 8px);right:0;background:#1e1e1e;border:1px solid var(--bdr);border-radius:10px;overflow:hidden;min-width:140px;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:262}
-.ldrop.op{opacity:1;pointer-events:auto;transform:none}
+.ldrop{position:absolute;top:calc(100% + 8px);right:0;background:#1e1e1e;border:1px solid var(--bdr);border-radius:10px;overflow:hidden;min-width:140px;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:5000}
+.ldrop.op,.lsw:hover .ldrop,.lsw:focus-within .ldrop{opacity:1;pointer-events:all;transform:none}
 .lopt{display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;transition:background .15s,color .15s;border:none;background:none;width:100%;text-align:left}
 .lopt:hover{background:rgba(255,255,255,.06);color:var(--tx)}
 .lopt.act{color:var(--ac)}
@@ -1117,16 +1117,13 @@ document.getElementById('lbtn').addEventListener('click',e=>{
   const d=document.getElementById('ldrop');
   d.classList.toggle('op');
 });
-document.addEventListener('click',e=>{
-  const drop=document.getElementById('ldrop');
-  const btn=document.getElementById('lbtn');
-  if(drop && !drop.contains(e.target) && btn && !btn.contains(e.target)) drop.classList.remove('op');
-});
+document.addEventListener('click',()=>document.getElementById('ldrop').classList.remove('op'));
 document.getElementById('ldrop').addEventListener('click',e=>e.stopPropagation());
 document.querySelectorAll('.lopt').forEach(btn=>{
   btn.addEventListener('click',e=>{
     e.stopPropagation();
     sL(btn.getAttribute('data-l'));
+    document.getElementById('ldrop').classList.remove('op');
   });
 });
 
