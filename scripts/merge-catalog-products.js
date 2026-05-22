@@ -104,11 +104,14 @@ products.forEach((p) => {
   if (n > maxNum) maxNum = n;
 });
 
-const newScrews = screws.filter((s) => !existingIds.has(s.id) && !existingTitles.has(s.title.toLowerCase()));
-const enriched = products.map(enrichBusbar);
-const merged = [...enriched, ...newScrews];
+const screwIds = new Set(screws.map((s) => s.id));
+const withoutScrews = products.filter((p) => !screwIds.has(p.id) && !/^ym-sm-/.test(String(p.id)));
+const newScrews = screws.filter((s) => !existingTitles.has(s.title.toLowerCase()));
+const enriched = withoutScrews.map(enrichBusbar);
+const merged = [...enriched, ...screws];
 
 fs.writeFileSync(productsPath, JSON.stringify(merged, null, 2) + '\n');
-console.log('Added screw machines:', newScrews.length);
+console.log('Screw machine line entries:', screws.length);
+console.log('New screw titles added:', newScrews.length);
 console.log('Total products:', merged.length);
 console.log('Busbar enriched:', enriched.filter((p) => p.quoteOnly).length);
