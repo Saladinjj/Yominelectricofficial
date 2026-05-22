@@ -19,7 +19,11 @@
         "name": "Basic Set",
         "description": "Essential components for standard installation",
         "price": "$1,200",
-        "features": ["10 units", "Basic documentation", "1-year warranty"],
+        "features": [
+          "10 units",
+          "Basic documentation",
+          "1-year warranty"
+        ],
         "recommended": false
       },
       {
@@ -27,7 +31,12 @@
         "name": "Professional Set",
         "description": "Complete package for professional installers",
         "price": "$2,500",
-        "features": ["25 units", "Full documentation", "Installation guide", "3-year warranty"],
+        "features": [
+          "25 units",
+          "Full documentation",
+          "Installation guide",
+          "3-year warranty"
+        ],
         "recommended": true
       },
       {
@@ -35,7 +44,13 @@
         "name": "Enterprise Set",
         "description": "Comprehensive solution for large deployments",
         "price": "$5,000",
-        "features": ["50 units", "Priority support", "Custom branding", "5-year warranty", "Training session"],
+        "features": [
+          "50 units",
+          "Priority support",
+          "Custom branding",
+          "5-year warranty",
+          "Training session"
+        ],
         "recommended": false
       }
     ]
@@ -486,7 +501,11 @@
         "name": "Basic Set",
         "description": "Essential monitoring package for small installations",
         "price": "$800",
-        "features": ["5 units", "Basic monitoring", "1-year warranty"],
+        "features": [
+          "5 units",
+          "Basic monitoring",
+          "1-year warranty"
+        ],
         "recommended": false
       },
       {
@@ -494,7 +513,12 @@
         "name": "Professional Set",
         "description": "Advanced analytics package for professional installers",
         "price": "$1,800",
-        "features": ["15 units", "Advanced analytics", "Installation guide", "3-year warranty"],
+        "features": [
+          "15 units",
+          "Advanced analytics",
+          "Installation guide",
+          "3-year warranty"
+        ],
         "recommended": true
       },
       {
@@ -502,7 +526,13 @@
         "name": "Enterprise Set",
         "description": "Comprehensive solution for large-scale deployments",
         "price": "$3,500",
-        "features": ["30 units", "Priority support", "API access", "Custom reporting", "5-year warranty"],
+        "features": [
+          "30 units",
+          "Priority support",
+          "API access",
+          "Custom reporting",
+          "5-year warranty"
+        ],
         "recommended": false
       }
     ]
@@ -594,7 +624,11 @@
         "name": "Basic Set",
         "description": "Standard current transformers for basic metering applications",
         "price": "$200",
-        "features": ["20 units", "Basic documentation", "1-year warranty"],
+        "features": [
+          "20 units",
+          "Basic documentation",
+          "1-year warranty"
+        ],
         "recommended": false
       },
       {
@@ -602,7 +636,12 @@
         "name": "Professional Set",
         "description": "Calibrated transformers for professional electrical installations",
         "price": "$450",
-        "features": ["50 units", "Calibration certificate", "Installation guide", "3-year warranty"],
+        "features": [
+          "50 units",
+          "Calibration certificate",
+          "Installation guide",
+          "3-year warranty"
+        ],
         "recommended": true
       },
       {
@@ -610,7 +649,13 @@
         "name": "Enterprise Set",
         "description": "Premium solution for large-scale industrial applications",
         "price": "$850",
-        "features": ["100 units", "Priority support", "Custom packaging", "5-year warranty", "Technical training"],
+        "features": [
+          "100 units",
+          "Priority support",
+          "Custom packaging",
+          "5-year warranty",
+          "Technical training"
+        ],
         "recommended": false
       }
     ]
@@ -3802,12 +3847,12 @@
   {
     "id": "ym-0316",
     "title": "YOMIN EL-3M Busbar with EL-600 Insulators 10KV Rated Voltage Support Insulation Materials & Elements",
-    "category": "Other",
-    "price": "$8-10",
+    "category": "Aluminum Busbar",
     "description": "Quality electrical component for industrial and commercial applications.",
     "specs": {},
     "image": "https://s.alicdn.com/@sc04/kf/H5ec051baa96b47aca342f6583e780232H/YOMIN-EL-3M-Busbar-with-EL-600.png_480x480.jpg?hasNWGrade=1",
-    "url": "https://www.alibaba.com/product-detail/YOMIN-EL-3M-Busbar-with-EL_1600383013410.html"
+    "url": "https://www.alibaba.com/product-detail/YOMIN-EL-3M-Busbar-with-EL_1600383013410.html",
+    "quoteOnly": true
   },
   {
     "id": "ym-0317",
@@ -5168,5 +5213,3199 @@
     "specs": {},
     "image": "https://s.alicdn.com/@sc04/kf/HTB1wADCXeOSBuNjy0Fdq6zDnVXad/Guide-Rail-Type-Power-Cable-FJ6D-200.jpg_480x480.jpg?hasNWGrade=1",
     "url": "https://www.alibaba.com/product-detail/Guide-Rail-Type-Power-Cable-FJ6D_60735293943.html"
+  },
+  {
+    "id": "ym-0431",
+    "title": "Flexible Bus of Small Flexible Aluminum Battery Pack with High Conductivity",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H64893a3b0c1f402a8bd55af84d94aef4Q/Flexible-Bus-of-Small-Flexible-Aluminum-Battery.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0432",
+    "title": "LiFePO4 Cells EVE 280k 304Ah Battery-Power Distribution Equipment Flexible",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hbb6597d0ab144b6e8986e16b73b26ab1g/LiFePO4-Cells-EVE-280k-304Ah-Battery-Power.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0433",
+    "title": "Lithium Lifepo4 Battery Nickel-Plated Flexible Copper Busbars Terminal",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H36e7db7c29d74713b4e219a44d3a18cae/Lithium-Lifepo4-Battery-Nickel-Plated-Flexible-Copper.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0434",
+    "title": "High Quality DC 120-500A 1500V Single Pole Lithium Battery Power Connector",
+    "category": "Energy Storage Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "1 piece"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H2dde2c22c8774e8fb13904d9cf4e56c8h/High-Quality-DC-120-500A-1500V-Single.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0435",
+    "title": "High-quality Insulated Aluminum Bus Energy Storage Battery Aluminum bar",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha06dcb02375c4ea3a3b9ba322302f84dz/High-quality-Insulated-Aluminum-Bus-Energy-Storage.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0436",
+    "title": "Manufacturers Sell DC Copper Bus with Holes to Customize Aluminum Materials",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H4e6e875836c542a8a7bdb8bc56df8ea0R/Manufacturers-Sell-DC-Copper-Bus-with-Holes.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0437",
+    "title": "Lifepo4 Solar Energy 12V 100Ah 200Ah 300Ah New Energy Battery Electric",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "1 piece"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H3bf0218e3e904378b54c2f083c8cf48dz/Lifepo4-Solar-Energy-12V-100Ah-200Ah-300Ah.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0438",
+    "title": "Soft-type Aluminum Connectors Directly Sold by Chinese Manufacturers",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hba0bf4acf60440e9a8e0f76838cd6d72L/Soft-type-Aluminum-Connectors-Directly-Sold-by.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0439",
+    "title": "Customizable Aluminum Connectors Directly Sold by Chinese Manufacturers",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hff3cbcc19b5c4e559301b193d5cae247s/Customizable-Aluminum-Connectors-Directly-Sold-by-Chinese.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0440",
+    "title": "Screw Bolt Connectors for High-Current Battery Energy Storage Systems 1P",
+    "category": "Energy Storage Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "1 piece"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H75c3507a9f094f389c32db0e31a53b62p/Screw-Bolt-Connectors-for-High-Current-Battery.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0441",
+    "title": "Battery Busbar",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hea25913a0b2b4cb0997034fe5b3c93f3U/Battery-Busbar-Insulated-Flexible-Busbar-Flexible-Copper.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0442",
+    "title": "Copper Stamping Flexible Busbar for Lithium Battery Pack New Energy Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hf6ab13a8d33f4bbca221180c8c49a6e9m/Copper-Stamping-Flexible-Busbar-for-Lithium-Battery.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0443",
+    "title": "Copper Bus Flat High-current Insulated Hard Aluminum Bus for High-quality",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Cu-Al, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H90d9675dae504a33a059771d41ea79a1r/Copper-Bus-Flat-High-current-Insulated-Hard.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0444",
+    "title": "Power Distribution Equipment of New Energy Battery Flat Rigid Copper Bus",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Heb4442c2fae4462a83f195a81fce04efC/Power-Distribution-Equipment-of-New-Energy-Battery.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0445",
+    "title": "Customized New Energy Battery Soft Copper Soft Bus Flat Insulation Foil High",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "10 pieces",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H4bfb20a8f16847b0ae426ee00c7999b0G/Customized-New-Energy-Battery-Soft-Copper-Soft.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0446",
+    "title": "Factory Direct Sale Hydrogen Car Lifepo4 Battery Busbar Disconnect Unit",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha4faec1eb749402fbb615722f7c7b6c5C/Factory-Direct-Sale-Hydrogen-Car-Lifepo4-Battery.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0447",
+    "title": "New Energy Battery Flexible Bus with 2 Holes LiFePO4 Battery Bus Connector",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb0de620530bf4093848ab71da3dd4933i/New-Energy-Battery-Flexible-Bus-with-2.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0448",
+    "title": "OEM Copper-aluminum Busbar Hardware Battery Pack Aluminum Busbar New Energy",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H7a9747de5e8a4bcc840166cc7e276fe3k/OEM-Copper-aluminum-Busbar-Hardware-Battery-Pack.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0449",
+    "title": "Plated Copper Insulated Battery Busbars",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hbb1e29563b3343bda42b7c6006bfb5cb8/Plated-Copper-Insulated-Battery-Busbars-Flexible-Copper.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0450",
+    "title": "Custom Processed Flexible Copper Busbars for Power Distribution in Energy",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hab7f5a6863834ac3856e95797b2a0a0en/Custom-Processed-Flexible-Copper-Busbars-for-Power.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0451",
+    "title": "Stackable Connectors 50A 60A 70A  3+10 Pins for ESS Storage Motor Drive",
+    "category": "Energy Storage Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "1 piece"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H84a9a1e34d7544dfa386bd96843f4377S/Stackable-Connectors-50A-60A-70A-3-10.jpeg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0452",
+    "title": "High-current Ribbed Steel Busbar Clamp Electrical Connection Accessory for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H0a421bb05f0545358276a237793e4cf1O/High-current-Ribbed-Steel-Busbar-Clamp-Electrical.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0453",
+    "title": "High Quality New Energy",
+    "category": "Energy Storage Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H1000ab00479845ada6a22654fb76ebddZ/High-Quality-New-Energy-High-Current-and.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0454",
+    "title": "Aluminum-copper Bus Flexible Connector for New Energy Battery Soft Bus for",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Cu-Al",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H688b7b80af8444a8a64f9c86ed5123cfz/Aluminum-copper-Bus-Flexible-Connector-for-New.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0455",
+    "title": "Flexible Insulated Bus-Bar 300A Copper Steel Galvanized Aluminium Busbar De",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hc90e9b43577644e388e86ebb46c0ed880/Flexible-Insulated-Bus-Bar-300A-Copper-Steel.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0456",
+    "title": "Customized Copper Busbars for New Energy Vehicles High Electrical",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H643c25d6897845ed9cd5379401cf156ah/Customized-Copper-Busbars-for-New-Energy-Vehicles.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0457",
+    "title": "Copper Busbar for Electric Vehicles with Insulated and Customized",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H3a48476dcd6e49a6b33cc14385c1ece73/Copper-Busbar-for-Electric-Vehicles-with-Insulated.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0458",
+    "title": "The manufacturer-customized rigid copper electrical busbars are used in the",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H0157d33624444a8d8aba5b52213e0077N/The-manufacturer-customized-rigid-copper-electrical-busbars.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0459",
+    "title": "Customizable Flexible Flat Copper Busbar Insulated Power Distribution",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha92f51111aab4897aae2c6be55df43962/Customizable-Flexible-Flat-Copper-Busbar-Insulated-Power.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0460",
+    "title": "Quick and Easy Installation Insulated Braided Copper Conductor Tape (lbs)",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hf1d834a0530a4265a9dce8bf5dad0cacT/Quick-and-Easy-Installation-Insulated-Braided-Copper.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0461",
+    "title": "LiFePO4 Lithium Battery Rigid Busbar Made From Copper and Aluminum Material",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H28f3e448b6b2416ab2731ce3a615d60ej/LiFePO4-Lithium-Battery-Rigid-Busbar-Made-From.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0462",
+    "title": "Customized Size Protective PE PP BPT PC Sheath Energy Storage Metal Part for",
+    "category": "Busbar Protection",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hf63549c95e9246498104c1f69754e088E/Customized-Size-Protective-PE-PP-BPT-PC.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0463",
+    "title": "High Quality Customizable Flexible Copper Busbar Connections High Electrical",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H64a15bb2283a42cc9a7aa20ebba069ceD/High-Quality-Customizable-Flexible-Copper-Busbar-Connections.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0464",
+    "title": "Flexible Copper Busbar for Powder Dipping Manufacturing of New Energy Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H20474f1f60dd4abe85af3ecf5722eed3w/Flexible-Copper-Busbar-for-Powder-Dipping-Manufacturing.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0465",
+    "title": "Direct Sale From Chinese Manufacturer Customizable Aluminum Busbars for New",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hc73b7b0c96c3483d996c70bce00d4133l/Direct-Sale-From-Chinese-Manufacturer-Customizable-Aluminum.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0466",
+    "title": "New Lithium Battery Connector Renewable Energy Is Used for Soft Connection",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H23436f317721446c8764ce220526a07cv/New-Lithium-Battery-Connector-Renewable-Energy-Is.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0467",
+    "title": "High Quality Lifepo4 Battery Flexible Copper Bus Energy Storage Connector",
+    "category": "Energy Storage Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H947dd0fbdcd444d4ac90aff072fbe460i/High-Quality-Lifepo4-Battery-Flexible-Copper-Bus.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0468",
+    "title": "Customized High-quality Insulated Hard Bus New Energy Distribution Equipment",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H25c4c3ddd6dc477795b5eb1a38a4a8deo/Customized-High-quality-Insulated-Hard-Bus-New.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0469",
+    "title": "Soft Connection of Metal Structural Parts of Irregular Hydrogen Fuel New",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H2754b2eb34af47fc973e9c49a01ea15bP/Soft-Connection-of-Metal-Structural-Parts-of.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0470",
+    "title": "High-Voltage Power Distribution Busbar Aluminum Copper Conductive Rows",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H7cfdcb39ae3c414185f2f55682a384bbT/High-Voltage-Power-Distribution-Busbar-Aluminum-Copper.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0471",
+    "title": "Customized Copper Rigid &amp; Flexible Busbar Electrical Laminated Shunts for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H527760811066470391c6d96bb6ed32d6a/Customized-Copper-Rigid-Flexible-Busbar-Electrical-Laminated.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0472",
+    "title": "Custom PVC Insulated Copper Battery Busbar for New Solar System Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hf1b935b292d54d6c9468f13ce28e50b5n/Custom-PVC-Insulated-Copper-Battery-Busbar-for.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0473",
+    "title": "Flexible Copper Flexible Bus Connector Special for Battery Bus Distribution",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H15de3aa1c13d4cda8e242aa5c510ae66U/Flexible-Copper-Flexible-Bus-Connector-Special-for.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0474",
+    "title": "Flexible Nickel-plated Copper Bus Terminal Connector Power Distribution",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Haa31035811fd4d75bc1ac3c953e60132T/Flexible-Nickel-plated-Copper-Bus-Terminal-Connector.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0475",
+    "title": "Power Distribution Equipment of Copper-plated Insulated Epoxy Powder-dipped",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H08ca32cffe464bfab112dfd10419d699r/Power-Distribution-Equipment-of-Copper-plated-Insulated.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0476",
+    "title": "Customizable Insulated Copper Braided Busbars for New Energy Vehicle Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H24a9c45967584297aebf75b87444f006w/Customizable-Insulated-Copper-Braided-Busbars-for-New.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0477",
+    "title": "Customizable Aluminum Flexible Connection Busbars for New Energy Power",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H3e53f2ee493b42248a7ca51a72ecca367/Customizable-Aluminum-Flexible-Connection-Busbars-for-New.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0478",
+    "title": "Customized Tinned Nickel Aluminum Copper Busbars for Power Distribution",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H119ab0be88d845dc9217b19104241159S/Customized-Tinned-Nickel-Aluminum-Copper-Busbars-for.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0479",
+    "title": "Superior Flexibility New Generation Insulated Copper Soft Busbar AC Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/He9a752e70c2f4c38ad53ba1c0ccffb6d2/Superior-Flexibility-New-Generation-Insulated-Copper-Soft.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0480",
+    "title": "High Quality Copper Flexible Connection New Energy Car Battery Soft Busbar",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb51f93872af144dca8a399db20736e70x/High-Quality-Copper-Flexible-Connection-New-Energy.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0481",
+    "title": "Customizable Aluminum Materials Equipped with DC Copper Busbars for New",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H8773ac52d37a47b9a320fb214a2aa515E/Customizable-Aluminum-Materials-Equipped-with-DC-Copper.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0482",
+    "title": "Customized 200A-600A Capacity Multi-Directional Busbar Connectors High",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "1 piece",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H9f6cc94942a24c728ba1b67b0cbe9eb7Y/Customized-200A-600A-Capacity-Multi-Directional-Busbar.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0483",
+    "title": "Directly Sold From Chinese Manufacturers Flexible Insulated Copper Busbars",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Had6fc5811e5348b8beed55927b344335m/Directly-Sold-From-Chinese-Manufacturers-Flexible-Insulated.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0484",
+    "title": "High-Voltage Battery Power Cable Positive Negative Energy Connectors New",
+    "category": "Energy Storage Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "1 piece"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb454806ecce24642bd1b19e43937fe4bh/High-Voltage-Battery-Power-Cable-Positive-Negative.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0485",
+    "title": "Customized Size New Energy Automotive Battery Soft Connection Novel Copper",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H313fec61013c4771bdbd9fd8f7670651v/Customized-Size-New-Energy-Automotive-Battery-Soft.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0486",
+    "title": "Hybrid and Pure Electric Vehicles Rail Transit Busbar Composite Laminated",
+    "category": "Composite Laminated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H4f9a3e50aaa64e13a5957dadef7444cfA/Hybrid-and-Pure-Electric-Vehicles-Rail-Transit.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0487",
+    "title": "Portable Mobile Energy Storage System with Integrated Busbar PET Film Hot",
+    "category": "CCS Integrated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hd7af0e6614b6439287fa703c04e03e8a8/Portable-Mobile-Energy-Storage-System-with-Integrated.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0488",
+    "title": "Customizable Aluminum Busbars for Power Distribution Equipment in the New",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H1610189305164216acd83c7f484eed30R/Customizable-Aluminum-Busbars-for-Power-Distribution-Equipment.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0489",
+    "title": "Customized Copper Hard Busbar Connectors for New Energy Vehicles Power",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H91f9bdc7740441458cc32188e5dd3971E/Customized-Copper-Hard-Busbar-Connectors-for-New.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0490",
+    "title": "Flexible Bus for New Energy Power Insulation Nickel-plated Copper Bus",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hd033d95645b94e368adbd2dfa921d18e3/Flexible-Bus-for-New-Energy-Power-Insulation.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0491",
+    "title": "Insulated Flexible Copper Busbars and Copper Busbar Strips for New Energy",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H9bf6483268df40c7a638cf01bb89e6a6v/Insulated-Flexible-Copper-Busbars-and-Copper-Busbar.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0492",
+    "title": "High-quality Customizable Insulated Flexible Aluminum Busbar Connectors",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H673d57443ad5441ab597b386124350fa4/High-quality-Customizable-Insulated-Flexible-Aluminum-Busbar.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0493",
+    "title": "Customized 200A High-Voltage Automotive EV Harness Power Distribution",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "1 piece",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hbc77fd9f597b4b64b97d9203ad31bd34e/Customized-200A-High-Voltage-Automotive-EV-Harness.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0494",
+    "title": "Copper Solid Copper Soft Bus Distribution Equipment for Bus Connector of",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hd27426c020ca45519e0c82569a7c1ec4y/Copper-Solid-Copper-Soft-Bus-Distribution-Equipment.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0495",
+    "title": "280A D Welding Stud Connecting Strip Power Distribution Equipment with",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H166fdb1b7a5e468d9e88c0c8883c3642t/280A-D-Welding-Stud-Connecting-Strip-Power.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0496",
+    "title": "China Factory Outlet High-quality Customizable Copper Bus Flexible Bus",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hee63232564eb4ae99f0fb3cd42218572v/China-Factory-Outlet-High-quality-Customizable-Copper.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0497",
+    "title": "Soft Connection Distribution Equipment for Copper Bus of Lithium Battery",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb5e7a16fed8f4a9e938b590e13b78813z/Soft-Connection-Distribution-Equipment-for-Copper-Bus.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0498",
+    "title": "Insulating Power Distribution Equipment for New Energy Vehicle Batteries",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hdeaf1c65a97041e28eab13927cff8f807/Insulating-Power-Distribution-Equipment-for-New-Energy.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0499",
+    "title": "Soft Connected Power Distribution Equipment for Tinned Copper Bus of Lithium",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Tin Plated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H8941b7edb6ea4dbf822ed74b9d9e5f53Y/Soft-Connected-Power-Distribution-Equipment-for-Tinned.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0500",
+    "title": "Conductive Flexible Connecte Copper Bus bar for Flexible Connection of New",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H29c159995e7a46f9b1eedd5131f74b18t/Conductive-Flexible-Connecte-Copper-Bus-bar-for.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0501",
+    "title": "Cop Bus Soft Bus Distribution Equipment for Laminated Insulate Flexible",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H0ec21863304a4896bfbd6e683649971fe/Cop-Bus-Soft-Bus-Distribution-Equipment-for.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0502",
+    "title": "China Factory Outlets Are Used for Soft Bus Distribution Equipment of",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H5df94f61b4f04d7bb59b0f7de4330ea2W/China-Factory-Outlets-Are-Used-for-Soft.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0503",
+    "title": "Flexible Cop Bus Used for Connecte Laminated Soft Copper Laminated Bus of",
+    "category": "Composite Laminated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H77c1a68b9d1b4450af1ea5e8025374a6c/Flexible-Cop-Bus-Used-for-Connecte-Laminated.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0504",
+    "title": "China Manufacturers Direct Custom Copper Braided Soft Connector Flexible",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H323729ee89924618b254bfa2edb1418dK/China-Manufacturers-Direct-Custom-Copper-Braided-Soft.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0505",
+    "title": "Small Flexible Aluminum Battery Pack Busbars with Dipped PVC Are Used in New",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H87a7cfffe94b4bc5b6a658dda582e3a1w/Small-Flexible-Aluminum-Battery-Pack-Busbars-with.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0506",
+    "title": "High-quality Customizable Extruded Copper and Aluminum Busbars for New",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H25f07c688ffd448d83f761ffcb1a7cbaK/High-quality-Customizable-Extruded-Copper-and-Aluminum.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0507",
+    "title": "Flexible Insulated Copper-aluminum Laminated Busbar Nickel-coated Copper",
+    "category": "Composite Laminated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hfe14817bf8f1444c839868f330ee7118i/Flexible-Insulated-Copper-aluminum-Laminated-Busbar-Nickel.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0508",
+    "title": "High-quality Soft Connection Distribution Equipment for Insulated Copper Bus",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H3db7de6f46334be8ba139e0c698d52928/High-quality-Soft-Connection-Distribution-Equipment-for.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0509",
+    "title": "High-quality Flexible Bus Customizable Insulated Nickel-plated Copper Soft",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb96a1faa2841428aaca438cd2b215c24n/High-quality-Flexible-Bus-Customizable-Insulated-Nickel.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0510",
+    "title": "China Factory Direct High-quality Insulated Bus Copper bar Soft Connection",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb9468fbb8dc244beb753935d8f7dcf5d0/China-Factory-Direct-High-quality-Insulated-Bus.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0511",
+    "title": "Customizable Copper Bus bar Soft Connection Power Distribution Equipment for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H98f2cdf34ac344e1b1d70e5d289773efe/Customizable-Copper-Bus-bar-Soft-Connection-Power.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0512",
+    "title": "Insulated Tin-plated Copper Bus Connector for Lithium Battery Pack of New",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Tin Plated, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H7bcbc0f2228d481a8246de0fe09f39ddK/Insulated-Tin-plated-Copper-Bus-Connector-for.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0513",
+    "title": "Customized Pure Copper Nickel-plated Insulated Flexible Battery Connector",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H8c6855ae4b6d449cb38368e00a9c9d46W/Customized-Pure-Copper-Nickel-plated-Insulated-Flexible.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0514",
+    "title": "China Manufacturers Sell Customizable Flexible Laminated Aluminum Bus",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hedda46c1be0a40158ad372422f64155a7/China-Manufacturers-Sell-Customizable-Flexible-Laminated-Aluminum.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0515",
+    "title": "High-quality Laminated Flexible Bus Insulation Nickel-plated Copper Soft",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha5191b0406ef4e999af758a1e99392efN/High-quality-Laminated-Flexible-Bus-Insulation-Nickel.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0516",
+    "title": "Insulating Soft Copper Bus Splitter Soft Copper Bus Connector for New Energy",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H2d82498e1dbe48398eff54c20f438775D/Insulating-Soft-Copper-Bus-Splitter-Soft-Copper.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0517",
+    "title": "High-quality Insulated Copper-core Solar Extension Photovoltaic DC Cable for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "5 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H96e2a98f9bc64501b327e3c27bf8b677W/High-quality-Insulated-Copper-core-Solar-Extension.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0518",
+    "title": "Customizable Copper Flexible Busbar Connectors for Insulation protection",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H2f32935c992548d0a7a318c53496d646n/Customizable-Copper-Flexible-Busbar-Connectors-for-Insulation.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0519",
+    "title": "Flexible Copper-Nickel Plated Busbars for New Energy Power Distribution",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H49a0eb018c2545e9babca8cf3292e153N/Flexible-Copper-Nickel-Plated-Busbars-for-New.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0520",
+    "title": "Customizable Aluminum Busbar Connectors Directly Sold by Chinese Manufacturers",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Haa68c9e936b8408f81de37214d493ea7V/Customizable-Aluminum-Busbar-Connectors-Directly-Sold-by.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0521",
+    "title": "Customizable High Quality Flexible Copper Busbars with Nickel Plating",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H954be9e1045e43d584c47b8af220dc16v/Customizable-High-Quality-Flexible-Copper-Busbars-with.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0522",
+    "title": "Hard Nickel-Plated Rigid Busbar Copper Aluminium Busbar for New Grid Power",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H826402e4c6104debb4267c41459e6e81Y/Hard-Nickel-Plated-Rigid-Busbar-Copper-Aluminium.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0523",
+    "title": "Custom High Voltage Wiring Harness for New Energy EV 120A/200A/300A Large",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hff407857aadd4b3c9b2b8a2c53ad9527K/Custom-High-Voltage-Wiring-Harness-for-New.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0524",
+    "title": "High-quality Energy Storage Connector with High-voltage Fuse-equipped MSD",
+    "category": "Energy Storage Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "1 piece"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H9081cd1254884fbbad897ff090444f26Z/High-quality-Energy-Storage-Connector-with-High.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0525",
+    "title": "Insulating Sleeve Copper Connector Busbar for New Energy Car Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hae5e3d39ec7044e69d4818413890b355D/Insulating-Sleeve-Copper-Connector-Busbar-for-New.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0526",
+    "title": "New Energy Automotive Busbar Connector Power Grid Soft Copper Equipment with",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H1035c2369f234d8fbf4d562ed2ce1082c/New-Energy-Automotive-Busbar-Connector-Power-Grid.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0527",
+    "title": "EVE 105AH Customized Copper Busbar for Lifepo4 100AH Battery Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H8465b1427ef14476aa0b9449a540648df/EVE-105AH-Customized-Copper-Busbar-for-Lifepo4.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0528",
+    "title": "280A D-Type Lithium Battery Welding Stud Connection Strip Power Distribution",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hcc1e03021582458ea3403b97010a290cq/280A-D-Type-Lithium-Battery-Welding-Stud.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0529",
+    "title": "Flexible Copper Busbars for Power Distribution of New Energy Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H5dfa02b91ba742ca89cbfd3724f706beu/Flexible-Copper-Busbars-for-Power-Distribution-of.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0530",
+    "title": "Copper Connectors and Busbars for Power Distribution Equipment Used in Soft",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb7d300bfb4ce4edc9b77b3f610b0f8448/Copper-Connectors-and-Busbars-for-Power-Distribution.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0531",
+    "title": "Customizable Aluminum Busbar Connector for Insulated Soft Busbars in Power",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb35cc7fa45d448709164c3e7aa1c0261k/Customizable-Aluminum-Busbar-Connector-for-Insulated-Soft.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0532",
+    "title": "Customizable Insulated Soft Connection of Flexible Copper Busbars for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha10912fe490047cea3eb22e7d6fd1f70M/Customizable-Insulated-Soft-Connection-of-Flexible-Copper.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0533",
+    "title": "Customizable Bent Insulated Flexible Busbar Connector Copper Busbars for New",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hebfa5134077447d48c0e5cdd6d7e6734c/Customizable-Bent-Insulated-Flexible-Busbar-Connector-Copper.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0534",
+    "title": "High Quality Copper Aluminium Injection Moulded Metal Structural Components",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha98be48cd5524fc0809433a074e1b2fbG/High-Quality-Copper-Aluminium-Injection-Moulded-Metal.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0535",
+    "title": "High Quality Flexible Tinned Copper Braid Grounding Wire China",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "5 pieces",
+      "Rating": "Tin Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H35763917c69040a1b77d7e091acc3b59O/High-Quality-Flexible-Tinned-Copper-Braid-Grounding.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0536",
+    "title": "Flexible Nickel-Plated Copper Braided Strap Busbar Various Sizes 72mm Hole",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H00f8c3f95543491ab2b642e159b3e595P/Flexible-Nickel-Plated-Copper-Braided-Strap-Busbar.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0537",
+    "title": "Copper &amp; Aluminium Composite Laminated Busbar System Power Quality Charging",
+    "category": "Composite Laminated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H8abf411d2aa149fcb5ead663dfa637b5G/Copper-Aluminium-Composite-Laminated-Busbar-System-Power.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0538",
+    "title": "High Quality Flexible Insulated Copper Busbar Connectors Customizable for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hf8933ee63a9846bda9f1f506b93bc07ci/High-Quality-Flexible-Insulated-Copper-Busbar-Connectors.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0539",
+    "title": "High Quality Customized Electrical Power Distribution Equipment Flexible",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H4e83b94f261c445db0557ca576cc1c3aF/High-Quality-Customized-Electrical-Power-Distribution-Equipment.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0540",
+    "title": "Customized Factory Tinned Aluminum Busbar Power Distribution Type with Spray",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Tin Plated",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb9d2496b331e48248aae6a34771ebd33a/Customized-Factory-Tinned-Aluminum-Busbar-Power-Distribution.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0541",
+    "title": "Abrasion and Corrosion Protected RTCB/RTCB HL Tinned Copper Round Braided",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Tin Plated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb74257491dc4406f8aabe5446859f959I/Abrasion-and-Corrosion-Protected-RTCB-RTCB-HL.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0542",
+    "title": "High Quality Custom Laminated Busbars Power Distribution Equipment for",
+    "category": "Composite Laminated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H133644ea6faf4e04a908b7720001027bz/High-Quality-Custom-Laminated-Busbars-Power-Distribution.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0543",
+    "title": "High Quality Custom Plastic-Dipped Busbar Connectors with Lightning",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H46798184c49244ad8afa1d4cff6e4c5af/High-Quality-Custom-Plastic-Dipped-Busbar-Connectors.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0544",
+    "title": "High Quality Customized Flexible Aluminium Busbar Soft Connection Power",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hc55d11a03f4f47678ff5600eb5376f8cn/High-Quality-Customized-Flexible-Aluminium-Busbar-Soft.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0545",
+    "title": "High Quality Customizable Soft Aluminum Busbars ISO Certified Power",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H65482a10049d48b787e86fda7264ddbao/High-Quality-Customizable-Soft-Aluminum-Busbars-ISO.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0546",
+    "title": "High Quality Customizable Aluminum Electrical Connectors Power Distribution",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hca762f5689cf4022990522e9cde93fddz/High-Quality-Customizable-Aluminum-Electrical-Connectors-Power.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0547",
+    "title": "High Quality Customizable Insulated Copper Busbar Connectors Strong",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hc570ff41c0a145319481fba57b216858N/High-Quality-Customizable-Insulated-Copper-Busbar-Connectors.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0548",
+    "title": "Withstand Voltage 1500V Protection Grade LP67 120A 200A 300A 400A Special",
+    "category": "Energy Storage Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H10cd3cb8eae944ae8918ccae079bf5cb5/Withstand-Voltage-1500V-Protection-Grade-LP67-120A.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0549",
+    "title": "Customized Flexible Copper Busbar High Voltage GIS Flexible Connector",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hdda5d9eb542c41749e089432caabb003K/Customized-Flexible-Copper-Busbar-High-Voltage-GIS.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0550",
+    "title": "China Supplier Customized Insulation Flexible Laminated Copper Bus bar",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H6c0e6b11906c479d92abfc5b16d756b9J/China-Supplier-Customized-Insulation-Flexible-Laminated-Copper.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0551",
+    "title": "Ground Connection Flat Copper and Stainless Steel Braided Tape (FSSB",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H2479950cda2143a0a5cdf4d9455f4a40H/Ground-Connection-Flat-Copper-and-Stainless-Steel.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0552",
+    "title": "Flexible Copper Busbar in Irregular Shapes Insulated Equipment for Lifepo4",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H0acb3d4ea03a4d7aa14c6352285906a6N/Flexible-Copper-Busbar-in-Irregular-Shapes-Insulated.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0553",
+    "title": "Rhino Power Connector with Protective Cover Plastic Plug Socket for European",
+    "category": "Heavy Duty Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hcd1e5784ebed45f7aa12e381a05857dbt/Rhino-Power-Connector-with-Protective-Cover-Plastic.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0554",
+    "title": "High Quality Customized Laminated Connectors Flexible Nickel Plated Copper",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hdf6fda2eb3d44db491b91172d1e71658R/High-Quality-Customized-Laminated-Connectors-Flexible-Nickel.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0555",
+    "title": "Integrated Grounded Copper Braided Tape with MBJ and BJ Power Distribution",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H855a40de055c4a219da3605a9ca08252l/Integrated-Grounded-Copper-Braided-Tape-with-MBJ.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0556",
+    "title": "Customized Silver Tin Plated Oxygen-Free HDHC Tinned Copper Busbar Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Tin Plated",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H42b5b95ba4f04a4a97742f325e464a9du/Customized-Silver-Tin-Plated-Oxygen-Free-HDHC.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0557",
+    "title": "Customized Insulated Aluminum Flexible Busbar Soft Connectors Copper Strips",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hcaea6a71a953413784c2710aab66c143E/Customized-Insulated-Aluminum-Flexible-Busbar-Soft-Connectors.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0558",
+    "title": "Custom RRCB Pure Copper Circular Braided Ground Strap Flexible Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Had81c22bf2ae48ad87fd6a230bdb7ea4Y/Custom-RRCB-Pure-Copper-Circular-Braided-Ground.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0559",
+    "title": "Customizable Plastic Aluminum Busbar for New Energy Vehicles Flexible Spray",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb0fdf57ec84b4cde82cbd9f11abdd13aw/Customizable-Plastic-Aluminum-Busbar-for-New-Energy.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0560",
+    "title": "OEM Materials EV Car Extruded Copper Aluminum Busbar with Less Installation",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H74dafc4ddd3a4be7b3017571f53147e9Q/OEM-Materials-EV-Car-Extruded-Copper-Aluminum.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0561",
+    "title": "High Tensile Strength Nickel Plated Flexible Laminated Copper Busbar Energy",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hff53a6eb17ee4365a3be05c023872651b/High-Tensile-Strength-Nickel-Plated-Flexible-Laminated.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0562",
+    "title": "Aluminum Hard Insulated Busbar with Exposy Spraying Copper Connectors",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H89e9882f0f9342ccb60b5ae6c6226326Y/Aluminum-Hard-Insulated-Busbar-with-Exposy-Spraying.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0563",
+    "title": "Compact Customized Size Aluminium Battery Pack Connection Solutions Busbar",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha6b9011eef024fa0b847c5d4f9ae72822/Compact-Customized-Size-Aluminium-Battery-Pack-Connection.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0564",
+    "title": "Customized Laminated Flexible Battery Copper Soft Bus Bar New Energy Vehicle",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hf8215d4f6fb5422fa0dd51803761e9f6z/Customized-Laminated-Flexible-Battery-Copper-Soft-Bus.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0565",
+    "title": "High-Voltage Electrical Apparatus Soft Connection Flexible Copper Busbars",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H38ed365886744e078f500f1eaa485014j/High-Voltage-Electrical-Apparatus-Soft-Connection-Flexible.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0566",
+    "title": "Customized Flexible Copper Busbar for Hydrogen Energy Automobiles BDU",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hf5baec5266da4ee5bb301edb01b01c546/Customized-Flexible-Copper-Busbar-for-Hydrogen-Energy.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0567",
+    "title": "Copper PB Connectors for Flat Braided Tape Make Your Own Braided Connections",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha95639e4542e4da6b2b3fe76809cd061X/Copper-PB-Connectors-for-Flat-Braided-Tape.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0568",
+    "title": "Customizable Flexible Copper Bus Bars for Lifepo4 Battery Electric Hole",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H18e10b659b84474bb97897e9de126941A/Customizable-Flexible-Copper-Bus-Bars-for-Lifepo4.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0569",
+    "title": "Customized Flexible Copper Metal Aluminium BDU Internal Connection Busbar",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H277a647114584ba9b0e81b838a3d07345/Customized-Flexible-Copper-Metal-Aluminium-BDU-Internal.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0570",
+    "title": "Hybrid Battery Bus Bar for Electric Vehicles Nickel Plated Copper Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H4d6c63ae2ef14fd9afc81a66ccfbcff4C/Hybrid-Battery-Bus-Bar-for-Electric-Vehicles.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0571",
+    "title": "Energy Storage System Supporting Metal Part Sheath Protective Equipment for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb499ee4b10134bb8b2cf74c6837818d1y/Energy-Storage-System-Supporting-Metal-Part-Sheath.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0572",
+    "title": "New Generation Car Battery Soft Busbar Copper New Energy Grid Connection",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H9f428dd857cc42c88a3d2097d467b75cM/New-Generation-Car-Battery-Soft-Busbar-Copper.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0573",
+    "title": "High Sale Customized Plastic Laminated Flexible Battery Copper Soft Bus Bar",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H18bb7131a6734247b30ec541a49b0d30x/High-Sale-Customized-Plastic-Laminated-Flexible-Battery.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0574",
+    "title": "High Quality Customized Lifepo4 Battery Busbar Flexible Insulated Aluminium",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hac3010a09be642c4b4dab5bafdfff741B/High-Quality-Customized-Lifepo4-Battery-Busbar-Flexible.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0575",
+    "title": "Customized Professional Tin Plate Bending Copper Rigid Busbar Flexible",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/He601bc37e7ae4904be26e3d3c929db1eV/Customized-Professional-Tin-Plate-Bending-Copper-Rigid.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0576",
+    "title": "High Quality Customized Auto Electrical Insulated Soft Copper Busbar for New",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H08ece69b4f3c40e488f7fd8a6821f023a/High-Quality-Customized-Auto-Electrical-Insulated-Soft.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0577",
+    "title": "Industrial Energy Storage ABS Plastic Cover FPC CCS Scheme Cells Contact",
+    "category": "CCS Integrated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H3b1663c983ce43dbb30030ae4e54c2ffW/Industrial-Energy-Storage-ABS-Plastic-Cover-FPC.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0578",
+    "title": "High Current Density High Insulation Value Halogen-free Insulated Flexible",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H97807b48d36d4cd2a61a2e1b5bf36856z/High-Current-Density-High-Insulation-Value-Halogen.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0579",
+    "title": "Automotive Lifepo4 Battery Flexible Busbar New Energy New Type of Power Grid",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H5d04b1a586794160b3fb028ea17735cdA/Automotive-Lifepo4-Battery-Flexible-Busbar-New-Energy.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0580",
+    "title": "Lifepo4 Battery Flexible Busbar BDU Internal Connection Flexible Conductor",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H1f2185739eb746b08854787964d5e91eZ/Lifepo4-Battery-Flexible-Busbar-BDU-Internal-Connection.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0581",
+    "title": "CEE IEC National Standards Rhino Power Connector for Energy Storage Equipment",
+    "category": "Heavy Duty Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H7929becfdc634611a7cefc30929b6f50E/CEE-IEC-National-Standards-Rhino-Power-Connector.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0582",
+    "title": "Chinese Factory Custom Metal Material Bright Copper bar Copper Bus bar",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Had1a7c67ecba4a95b23df76188d287dan/Chinese-Factory-Custom-Metal-Material-Bright-Copper.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0583",
+    "title": "Power Electronic Systems Inverter Busbar Composite Laminated Busbar",
+    "category": "Composite Laminated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H09574f848bbc453db014826999264c69W/Power-Electronic-Systems-Inverter-Busbar-Composite-Laminated.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0584",
+    "title": "Customized Size  Flexible Busbar Inter-module Connection Soft Busbar for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "Flexible, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/He03447acab4c4218a08b07111a84c875b/Customized-Size-Flexible-Busbar-Inter-module-Connection.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0585",
+    "title": "Manufacturer Customized Insulated Rigid Copper Electric Bus bar Electrical",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H90acbf3619dd444587ea92101aa2a7bcK/Manufacturer-Customized-Insulated-Rigid-Copper-Electric-Bus.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0586",
+    "title": "Hot Sale Customized  Copper  Aluminum  Composite Laminated Busbar",
+    "category": "Composite Laminated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha83d2072c7924ae68a508474386d5458m/Hot-Sale-Customized-Copper-Aluminum-Composite-Laminated.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0587",
+    "title": "Customized New Energy Lithium Battery Connection Insulated Ground Copper Busbar",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H3d44e3e0404649d9a957e932db444bf2L/Customized-New-Energy-Lithium-Battery-Connection-Insulated.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0588",
+    "title": "High-Precision Power Distribution Equipment Excellent Quality Powder-Immerse",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H925598af716d4cf0a040b3ab98941366Q/High-Precision-Power-Distribution-Equipment-Excellent-Quality.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0589",
+    "title": "High Quality Customizable Copper Busbar Flexible Connection with",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H9f6d075a7366479d83bc9d567c4bd2713/High-Quality-Customizable-Copper-Busbar-Flexible-Connection.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0590",
+    "title": "Custom Copper Busbar Colorful Insulated Power Distribution Equipment for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H8332774a753e4655b42bae4ba18599ecM/Custom-Copper-Busbar-Colorful-Insulated-Power-Distribution.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0591",
+    "title": "Copper Flexible Connection Busbar Foil Laminated Expansion Connector for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H3ba5d119d0f24f7d9fdec497c0fe3e28s/Copper-Flexible-Connection-Busbar-Foil-Laminated-Expansion.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0592",
+    "title": "High Quality Insulated Flexible Copper Busbar Connectors Customized for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H1754f274c7a041699b7d02b6116a221bZ/High-Quality-Insulated-Flexible-Copper-Busbar-Connectors.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0593",
+    "title": "Customized Flexible Laminated Copper Busbar by China Supplier Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hf189b30e2f1d479f9d90f6a7a202d549q/Customized-Flexible-Laminated-Copper-Busbar-by-China.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0594",
+    "title": "New Energy Power Nickel-Plated Copper Busbar High Quality Copper Busbar for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hc8236916c9e64c08aa5b8103e213df4e8/New-Energy-Power-Nickel-Plated-Copper-Busbar.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0595",
+    "title": "High Quality Aluminum Structural Connectors Power Distribution Equipment",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H8efcd9c22ffb4b8a99528077fd0ce362U/High-Quality-Aluminum-Structural-Connectors-Power-Distribution.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0596",
+    "title": "Customized Flexible Laminated Copper Busbar Power Distribution Equipment by",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hd6b16682a3cc4e22a035b11b1146b6bbB/Customized-Flexible-Laminated-Copper-Busbar-Power-Distribution.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0597",
+    "title": "High Quality Customizable Plastic-Dipped Insulated Copper Busbar Flexible",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H7c637c77d2904dadafc72f645a6b4fc72/High-Quality-Customizable-Plastic-Dipped-Insulated-Copper.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0598",
+    "title": "Hybrid Car Pack Module Cell Battery Terminals Connector Nuts Nickel Plated",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Haee5b67e98d04c57b9d26f424fcd3ef0W/Hybrid-Car-Pack-Module-Cell-Battery-Terminals.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0599",
+    "title": "High Quality Customizable Copper Busbar Flexible Connections Orange PVC",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H2772c6b92ea84c7fbd1ca8bf26a12775T/High-Quality-Customizable-Copper-Busbar-Flexible-Connections.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0600",
+    "title": "Insulated Dipped Plastic Copper Flexible Connectors for Power Distribution",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha5b3ca6832214cfdba9f1cf53de73e6ae/Insulated-Dipped-Plastic-Copper-Flexible-Connectors-for.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0601",
+    "title": "High Quality Custom Soft Busbars Energy Storage Connectors for Power",
+    "category": "Energy Storage Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hdbdce13270f545d5b6f8cfdb11fb9159X/High-Quality-Custom-Soft-Busbars-Energy-Storage.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0602",
+    "title": "Rigid Copper Busbar with Extruded Aluminium Coating Power Distribution",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H14ea45e7a43a46a3ae7ed6c0e4c4b1ebT/Rigid-Copper-Busbar-with-Extruded-Aluminium-Coating.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0603",
+    "title": "High Quality Customized Flexible Laminated Aluminum Busbar Connector Power",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/He80d42e980ef41dd8f9ef9aaae250682Q/High-Quality-Customized-Flexible-Laminated-Aluminum-Busbar.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0604",
+    "title": "High Quality Customizable Aluminum Connectors for Power Distribution Equipment",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hbd8196d5e0a74e99910bfe542626dbaa4/High-Quality-Customizable-Aluminum-Connectors-for-Power.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0605",
+    "title": "Customizable Copper Soft Connections for Power Distribution Equipment High",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/He1ecee49fc88454a970320bbf4520f60h/Customizable-Copper-Soft-Connections-for-Power-Distribution.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0606",
+    "title": "High Quality Customizable Copper Busbar Flexible Power Distribution",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hfa00c3a3e9e84ac799ac6eddaf0bae61W/High-Quality-Customizable-Copper-Busbar-Flexible-Power.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0607",
+    "title": "Solid Busbars for Power Distribution Equipment Superior Quality with",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hcec647be191d4e02bd921e1ad276ba59q/Solid-Busbars-for-Power-Distribution-Equipment-Superior.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0608",
+    "title": "Customized Advanced Battery Pack Connector Components Aluminium Busbar for",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha57ddcb1e7b64848a3bc84eabc18eab5S/Customized-Advanced-Battery-Pack-Connector-Components-Aluminium.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0609",
+    "title": "Nickel-Plated Soft Busbar Power Distribution Equipment Precisely Crafted",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hd21b586c92254492b44271d93d11ef47G/Nickel-Plated-Soft-Busbar-Power-Distribution-Equipment.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0610",
+    "title": "High Quality Custom Soft Busbars for 300A Copper Energy Storage Connectors",
+    "category": "Energy Storage Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H2c9f96bc537f437b85526251af872fb9T/High-Quality-Custom-Soft-Busbars-for-300A.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0611",
+    "title": "Customized Size Industrial Home Storage Battery Pack Connection Piece",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H87fc5bbc261f4da0b160defa1c075289o/Customized-Size-Industrial-Home-Storage-Battery-Pack.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0612",
+    "title": "Advanced IBS/IBSB Insulated Braided Tape Conductor for Quick Easy",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H5fc8929456124d26b192d3adc5cedf7eG/Advanced-IBS-IBSB-Insulated-Braided-Tape-Conductor.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0613",
+    "title": "Durable Aluminium Battery Pack Connection Couplings Customized Size",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb35f1e816c9d450ab33ae9b2dd3e5666Q/Durable-Aluminium-Battery-Pack-Connection-Couplings-Customized.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0614",
+    "title": "Customized Flexible Laminated Copper Busbars Power Distribution Equipment",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hf41e98560ff449a0b1d0256b057f90cev/Customized-Flexible-Laminated-Copper-Busbars-Power-Distribution.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0615",
+    "title": "High Conductivity Customized Copper Bus Bar Soft Connection Flexible for New",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H8f6bd2f9eb5c4a14a2bd4bcb946c4beaW/High-Conductivity-Customized-Copper-Bus-Bar-Soft.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0616",
+    "title": "Copper Earth Strap Electrical Ground Underground Flexible Braided Connectors",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Haa74377f725941ab8ff365cc694179d4S/Copper-Earth-Strap-Electrical-Ground-Underground-Flexible.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0617",
+    "title": "Aluminium Composite Copper Laminated Bus Bar for Wind Power Photovoltaic",
+    "category": "Composite Laminated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H7f0da5218fea428998e99dac19ff2f47u/Aluminium-Composite-Copper-Laminated-Bus-Bar-for.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0618",
+    "title": "High-Voltage Busbar with Aluminum and Copper Conductive Rows Plastic",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hbc75c9eb925d4e0aa1c4de061149a0b9X/High-Voltage-Busbar-with-Aluminum-and-Copper.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0619",
+    "title": "Customized Nickel Plated Soft Connection Copper Aluminum Busbar Lifepo4",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H1cb28f88d0044dffa02fd506f09fe39at/Customized-Nickel-Plated-Soft-Connection-Copper-Aluminum.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0620",
+    "title": "High Flexibility Copper Soft Braided Tape (PBC PBCR PPS) Soft Connection for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/He574ab73077a43129de8b24d5f95e741N/High-Flexibility-Copper-Soft-Braided-Tape-PBC.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0621",
+    "title": "High Quality Auto Electrical Busbar Customized Pure Copper with Nickel",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H57d11abdf2024ee88a9e06a8119ecff1V/High-Quality-Auto-Electrical-Busbar-Customized-Pure.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0622",
+    "title": "Wholesale Customized High Current Electrolytic Al Strips Flexible Insulated",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H15179b126b974d06b9b608ed86f4d39aZ/Wholesale-Customized-High-Current-Electrolytic-Al-Strips.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0623",
+    "title": "Rigid Copper Solid Flat Busbar Tinned Insulated Aluminium Busbar for Battery",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Tin Plated, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H52f849ac3564454184e4b0a884988e7bx/Rigid-Copper-Solid-Flat-Busbar-Tinned-Insulated.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0624",
+    "title": "Small Aluminum Flexible Busbar with PVC Dipping Plastic Battery Pack Busbars",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H90c471854dbb4e20bab763298591dc8av/Small-Aluminum-Flexible-Busbar-with-PVC-Dipping.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0625",
+    "title": "High Quality Copper Braid Ground Connectors for Power Application",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H5cbb92da54a94f238171e1b9f83314a7a/High-Quality-Copper-Braid-Ground-Connectors-for.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0626",
+    "title": "Rhino Power 400A Euro Gauge Connector Online Electricity Male Plug Made of",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H5f6be8ed639744538ae85118f75c3c2at/Rhino-Power-400A-Euro-Gauge-Connector-Online.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0627",
+    "title": "Electric Control Products Hydrogen Car Battery Disconnect Unit Internal",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H19dd8507df8249ae9aafee0bd5a0312aa/Electric-Control-Products-Hydrogen-Car-Battery-Disconnect.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0628",
+    "title": "High Quality Copper and Aluminium Composite Laminated Busbar Environmental",
+    "category": "Composite Laminated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb2ab96c3047343cda4288520023199afB/High-Quality-Copper-and-Aluminium-Composite-Laminated.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0629",
+    "title": "Customized Copper and Aluminum Laminated Busbar Connector Power Distribution",
+    "category": "Composite Laminated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hc047990f4ef7432e8a1d2320e24510411/Customized-Copper-and-Aluminum-Laminated-Busbar-Connector.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0630",
+    "title": "Integrating ABS Material New Energy Vehicles&#x27; CCS Busbar Wire Harness",
+    "category": "CCS Integrated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H359d2ea52f4342ae89bb5ae6945fbce3Y/Integrating-ABS-Material-New-Energy-Vehicles-CCS.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0631",
+    "title": "Integrated ABS Busbar for Communication Energy Storage FFC CCS Scheme Cells",
+    "category": "CCS Integrated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H4deb72f92d8b4acb97e8c5d9b65001e2Y/Integrated-ABS-Busbar-for-Communication-Energy-Storage.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0632",
+    "title": "Hot Selling Flexible Copper Busbar for Power Distribution for Wind Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H6d3c26d0d6384fabaf71790555cf6ed7F/Hot-Selling-Flexible-Copper-Busbar-for-Power.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0633",
+    "title": "Hot Sale Customized Power Distribution Equipment Flexible Insulated Copper",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H4943deb8d56b49e7815e3c58424596b8d/Hot-Sale-Customized-Power-Distribution-Equipment-Flexible.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0634",
+    "title": "Hot Sale Customized Copper Aluminum Composite Laminated Busbar Power",
+    "category": "Composite Laminated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Cu-Al",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hfa6864069c424627a14495287c45f561N/Hot-Sale-Customized-Copper-Aluminum-Composite-Laminated.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0635",
+    "title": "Customized Flexible PVC Copper Busbar for New Energy Vehicle Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H51a52e3ef1e74031814464b0e413c16dm/Customized-Flexible-PVC-Copper-Busbar-for-New.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0636",
+    "title": "Customized Copper Stamping Flexible Busbars Laminated Electrical Connector",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H0336ae72204e42c89dad4adfbcd80508M/Customized-Copper-Stamping-Flexible-Busbars-Laminated-Electrical.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0637",
+    "title": "Direct Selling Innovative Green Energy Automobile Battery with Grid Copper",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha1fb2cdf4a674a429c1c2f3b2ae3aba1n/Direct-Selling-Innovative-Green-Energy-Automobile-Battery.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0638",
+    "title": "Copper &amp; Aluminium Composite Laminated Busbar Power Quality Charging Station",
+    "category": "Composite Laminated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb38c0f1092774c4f8b25ff05607bb53ea/Copper-Aluminium-Composite-Laminated-Busbar-Power-Quality.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0639",
+    "title": "New Energy PV EV Battery Pack Connector Big Current 120A 200A 300A High",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hf1d23404ee18419abcdf20759ba5adack/New-Energy-PV-EV-Battery-Pack-Connector.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0640",
+    "title": "Hot Selling Customized Rigid Copper Busbar Aluminum Foiled Flexible Nickel",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H107e30d75874452699cbbe381f2daae6z/Hot-Selling-Customized-Rigid-Copper-Busbar-Aluminum.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0641",
+    "title": "Aluminium QCC Wiring Clamp Electrical Connection Accessories",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H2c23f3db7d0e48238e4b0ca5bda42916t/Aluminium-QCC-Wiring-Clamp-Electrical-Connection-Accessories.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0642",
+    "title": "Customized Copper Rigid Busbar Flexible Busbar Electrical Laminated Shunts",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H6614cf232b3e4bc3b6f45f90f38fdd564/Customized-Copper-Rigid-Busbar-Flexible-Busbar-Electrical.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0643",
+    "title": "Customized Flexible Copper Electric Braided Strap High-Durable Busbar Connector",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hc6be58ea7022418fa435332fe81c355e8/Customized-Flexible-Copper-Electric-Braided-Strap-High.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0644",
+    "title": "High Quality Copper &amp; Aluminium Injection Moulded Metal Structural",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H301c24477be94165a6f64d701d5bda8ab/High-Quality-Copper-Aluminium-Injection-Moulded-Metal.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0645",
+    "title": "High Current Copper Connector 100A-400A Cable Plug Socket for Energy Storage",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hc50daf0ca6cd4340875bcb3982ddddffR/High-Current-Copper-Connector-100A-400A-Cable.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0646",
+    "title": "Customizable Flat Power Insulated Flexible Bare Copper Wire Braided",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hfc2ca7f511d04af1a81bb28355634fbfz/Customizable-Flat-Power-Insulated-Flexible-Bare-Copper.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0647",
+    "title": "High-Speed Rail and Electric Multiple Unit Train Motor Fields Customized",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H931016be0b0843be8223b39465abaf808/High-Speed-Rail-and-Electric-Multiple-Unit.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0648",
+    "title": "Customized High-Efficiency Aluminium Busbar Connection Pieces for",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H2c35f7583bf845dfaa337ae193649d3bd/Customized-High-Efficiency-Aluminium-Busbar-Connection-Pieces.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0649",
+    "title": "Copper Electrical Connection Accessories Undrilled Connectors for Secure Wiring",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H78f56fcb229e4b0e96e64199d8e021c7L/Copper-Electrical-Connection-Accessories-Undrilled-Connectors-for.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0650",
+    "title": "Durable High Voltage Inflatable Cabinet with Soft Busbar GIS Flexible",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hf4c34be6e5124efeb7332d669a4d96c15/Durable-High-Voltage-Inflatable-Cabinet-with-Soft.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0651",
+    "title": "Copper Busbar for New Energy Vehicles Battery Busbar Rigid Flexible Spray",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H6358728b2e9d4b549089547e891c0f21V/Copper-Busbar-for-New-Energy-Vehicles-Battery.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0652",
+    "title": "Best Quality Customisable Flexible Copper Busbar with Nickel Plated Surface",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hda132d70c4f44289a0c5369e5b5e505bb/Best-Quality-Customisable-Flexible-Copper-Busbar-with.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0653",
+    "title": "Versatile Modular Aluminum Motor Busbars Flexible Installation Durable",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Cu-Al",
+      "Type": "Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H685cd70c390646c78df15108317c636ai/Versatile-Modular-Aluminum-Motor-Busbars-Flexible-Installation.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0654",
+    "title": "Factory Direct Sale Irregular Insulated Busbar Copper Aluminium Flexibility",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H6310a6a6efa8406baf259a21270fdada9/Factory-Direct-Sale-Irregular-Insulated-Busbar-Copper.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0655",
+    "title": "High-Efficient Copper Laminated Busbar for Rail Traffic Durable Aluminium",
+    "category": "Composite Laminated Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H9129db9383ad4d00b2f0e2f6135ec521i/High-Efficient-Copper-Laminated-Busbar-for-Rail.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0656",
+    "title": "Customized Tinned Nickel Aluminum Copper Busbars for Battery Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Nickel Plated",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hee15b1615b8846df9ccb1b9263021266o/Customized-Tinned-Nickel-Aluminum-Copper-Busbars-for.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0657",
+    "title": "High Quality Auto Extruded Copper Aluminum Busbar Customized ABS Materials",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H2673b4508b244575b85e48a7fc2396e6l/High-Quality-Auto-Extruded-Copper-Aluminum-Busbar.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0658",
+    "title": "Grounded Stainless Steel Braided Tape (CPl) Copper Material for Outdoor Use",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H466ee41b563c4e98af5cb88c5eca272c2/Grounded-Stainless-Steel-Braided-Tape-CPl-Copper.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0659",
+    "title": "High Quality Customized Flexible PVC Copper Busbar Insulation Busbar for New",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H826ee64a722d41f68d22e923662effb7s/High-Quality-Customized-Flexible-PVC-Copper-Busbar.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0660",
+    "title": "High Quality Customized Rigid Copper Busbar Power Distribution Equipment for",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hf49ad0826f6b43d9b8f1a23af90213088/High-Quality-Customized-Rigid-Copper-Busbar-Power.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0661",
+    "title": "High Quality Customized Copper Rigid Busbar New Energy Parts Power",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hbbe5b1f7ee22415f826a0e406e1a0015N/High-Quality-Customized-Copper-Rigid-Busbar-New.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0662",
+    "title": "Factory Customized Flexible Plastic Battery Copper Soft Bus Bar Laminated",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H06b10981580549aca9e62647d27bab7dB/Factory-Customized-Flexible-Plastic-Battery-Copper-Soft.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0663",
+    "title": "High Quality Customizable Soft Bus Bar Insulated Copper for New Energy",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H12504cd05cdb45f1862a1ec4ac491908f/High-Quality-Customizable-Soft-Bus-Bar-Insulated.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0664",
+    "title": "Factory Manufactured DC Copper Electrical Busbar for Power Distribution",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hc268489670f64537982fedcdcea17c7bo/Factory-Manufactured-DC-Copper-Electrical-Busbar-for.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0665",
+    "title": "Compact Copper and Aluminium Hollow-Core Motor Busbars Space-Saving Solution",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hbba809a30ff24354bc5eb5b504d6cbb1e/Compact-Copper-and-Aluminium-Hollow-Core-Motor.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0666",
+    "title": "Efficient Installation Integrated Insulated Motor Busbars Enhanced Safety",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Rating": "Aluminum, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb13a8020a761451b92389e1d89d3bdaeI/Efficient-Installation-Integrated-Insulated-Motor-Busbars-Enhanced.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0667",
+    "title": "Customized Flexible Copper Foil Laminated Soft Electrical Busbar",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hd853bff00e524a8fae85619384b24aa4g/Customized-Flexible-Copper-Foil-Laminated-Soft-Electrical.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0668",
+    "title": "Rhino High-Power CAM Power Connector R-lok Single Contact 400A Quick Connect",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha70717e2915349d4970b4b286fc55dd7D/Rhino-High-Power-CAM-Power-Connector-R.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0669",
+    "title": "Customized Insulation Rigid Busbar New Energy Aluminum Strip for Power",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Aluminum",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hf0dffb9a29044e989eecdd5ec4d25e72n/Customized-Insulation-Rigid-Busbar-New-Energy-Aluminum.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0670",
+    "title": "Electric Vehicle Insulated Copper Aluminum Battery Bus Bar Epoxy Resin Spray",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al, Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H660d333be870470f98f75fef0cefd98ac/Electric-Vehicle-Insulated-Copper-Aluminum-Battery-Bus.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0671",
+    "title": "Customized Factory Tinned Aluminum Busbar with Spray Coating Plastic",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Tin Plated",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Heafca7e7ad41416fa07689d37bc7dec2d/Customized-Factory-Tinned-Aluminum-Busbar-with-Spray.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0672",
+    "title": "High Efficiency Automotive Electronic Control System Soft Connection Copper",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Habde4342094a47d4b6a73cd09e8bb16dp/High-Efficiency-Automotive-Electronic-Control-System-Soft.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0673",
+    "title": "High Quality Customized Flexible Plastic Battery Copper Soft Bus Bar",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H939b678ff2de4a70996eb74b3621946a4/High-Quality-Customized-Flexible-Plastic-Battery-Copper.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0674",
+    "title": "Factory Price Copper Aluminum Electrical Injection Molded Metal Parts for",
+    "category": "Aluminum Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Rating": "Cu-Al"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Haddd04551bc84325b017f921d56541a6a/Factory-Price-Copper-Aluminum-Electrical-Injection-Molded.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0675",
+    "title": "Factory Wholesale Customizable Copper Flat Busbar High Temperature Large",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Ha6601463bc1e42b487706d4bf5a83073t/Factory-Wholesale-Customizable-Copper-Flat-Busbar-High.png?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0676",
+    "title": "BD HCT 3-4 Crimping Tool Make Your Own Braided Connections Copper Material",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hd87dcacaef79493db9a69b03f1ef36a9n/BD-HCT-3-4-Crimping-Tool-Make.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0677",
+    "title": "Customized Soft Copper Flexible Electric Busbar Power Distribution Equipment",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H38d2169bf80642dea6cd70f79b327258Y/Customized-Soft-Copper-Flexible-Electric-Busbar-Power.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0678",
+    "title": "Customized Size Energy Storage Metal Part Sheath Protective PE PP BPT PC",
+    "category": "Busbar Protection",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "OEM Custom"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H9d696fe38ce24150b18a39d33399cb1dp/Customized-Size-Energy-Storage-Metal-Part-Sheath.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0679",
+    "title": "Customized Size Soft Connection Internal Flexible Copper Busbar for Electric",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H5eec223d5b5b4afc863a7fc09c9848c9R/Customized-Size-Soft-Connection-Internal-Flexible-Copper.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0680",
+    "title": "Manufacturer Customized Rigid Copper Electric Bus Bar Insulated Electrical",
+    "category": "Rigid Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb0630210f5484ec2bb11df7b1ec0b86cm/Manufacturer-Customized-Rigid-Copper-Electric-Bus-Bar.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0681",
+    "title": "Electric Vehicle Battery Protective Sheath Metal Part Energy Storage; Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H6172f0b846e9491b9d07b1b202540314G/Electric-Vehicle-Battery-Protective-Sheath-Metal-Part.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0682",
+    "title": "Specially Manufactured RRCBI Insulated Pure Copper Circular Braided Tape",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H73a5d3d7895043caafa87b256e41cfb1O/Specially-Manufactured-RRCBI-Insulated-Pure-Copper-Circular.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0683",
+    "title": "Irregular-shaped Hydrogen Fuel Cell Vehicle Metal Structural Components Soft",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb993bd22a87f47a587a926f1e2511288E/Irregular-shaped-Hydrogen-Fuel-Cell-Vehicle-Metal.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0684",
+    "title": "Copper Stamping Laminated Flexible Busbars Bus Link Electrical Connector",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H72c283d32f6f42fdb806e588209e6106U/Copper-Stamping-Laminated-Flexible-Busbars-Bus-Link.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0685",
+    "title": "Customized Flat Copper Busbar Insulated Flexible Power Distribution for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Haded2dd5daf540baab1ec6330fe99e2fu/Customized-Flat-Copper-Busbar-Insulated-Flexible-Power.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0686",
+    "title": "Lightning Protection &amp; Earthing Grounding Copper Wire Ground Earth Wire for",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H986e905ed4d74062ba1d641a8beaae72Q/Lightning-Protection-Earthing-Grounding-Copper-Wire-Ground.png_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0687",
+    "title": "New Trend Vehicle Battery Renewable Energy Grid Copper Flexible Connection",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H577168fb7ce140cfa75e3f3324eba11bY/New-Trend-Vehicle-Battery-Renewable-Energy-Grid.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0688",
+    "title": "Lightning Protection Flat Copper Braided Tape (FTCB FRCB) Flexible Power",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "50 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H509e2b8b63f246f69eaec2897049979dg/Lightning-Protection-Flat-Copper-Braided-Tape-FTCB.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0689",
+    "title": "Hot Selling Customized Copper Braided Flexible Connector Power Distribution",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces",
+      "Type": "99.9% Cu, Flexible"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H9caa2e702ca34c75b870e345142a6ca8R/Hot-Selling-Customized-Copper-Braided-Flexible-Connector.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0690",
+    "title": "Direct Factory Copper Stranded Wire Braid 10mm PVC Insulated Earth Bare",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "5 pieces",
+      "Type": "99.9% Cu",
+      "Rating": "Insulated"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H49e1a80f5b2c42e79a635d4aec548139z/Direct-Factory-Copper-Stranded-Wire-Braid-10mm.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
+  },
+  {
+    "id": "ym-0691",
+    "title": "HA Series Heavy Duty 10A Screw Terminal Connector 3-Pole with Male/Female 4P",
+    "category": "Flexible Busbar",
+    "description": "Custom busbar solution for new energy battery packs and power distribution. Request a quotation first — our team will review your drawings and specifications, then negotiate pricing and lead time for your project.",
+    "specs": {
+      "MOQ": "100 pieces"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hdc4347b16a1a49608ca7b3fdbbbc731ck/HA-Series-Heavy-Duty-10A-Screw-Terminal.jpg_480x480.jpg?hasNWGrade=1",
+    "quoteOnly": true
   }
 ]

@@ -8,6 +8,14 @@ const CATS = [
   { id:'Energy Meter',                 label:'Energy Meters',          icon:'⚡', tKey:'prod_cat_energy_meter' },
   { id:'Voltage Stabilizer/Regulator', label:'Voltage Stabilizers',    icon:'🔄', tKey:'prod_cat_voltage_stabilizer' },
   { id:'Current Transformer',          label:'Current Transformers',   icon:'🔵', tKey:'prod_cat_current_transformer' },
+  { id:'Flexible Busbar',              label:'Flexible Busbar',        icon:'〰️', tKey:'prod_cat_flexible_busbar' },
+  { id:'Rigid Busbar',                 label:'Rigid Busbar',           icon:'▬', tKey:'prod_cat_rigid_busbar' },
+  { id:'Aluminum Busbar',              label:'Aluminum Busbar',        icon:'🔶', tKey:'prod_cat_aluminum_busbar' },
+  { id:'Composite Laminated Busbar',   label:'Composite Laminated',    icon:'🧩', tKey:'prod_cat_composite_busbar' },
+  { id:'CCS Integrated Busbar',        label:'CCS Integrated',         icon:'🔋', tKey:'prod_cat_ccs_busbar' },
+  { id:'Heavy Duty Busbar',            label:'Heavy Duty Busbar',      icon:'⚙️', tKey:'prod_cat_heavy_busbar' },
+  { id:'Energy Storage Busbar',        label:'Energy Storage',         icon:'🔋', tKey:'prod_cat_storage_busbar' },
+  { id:'Busbar Protection',            label:'Busbar Protection',      icon:'🛡️', tKey:'prod_cat_busbar_protection' },
   { id:'Variac/Transformer',           label:'Variac / Transformers',  icon:'🔃', tKey:'prod_cat_variac' },
   { id:'Terminal & Connector',         label:'Terminals & Connectors', icon:'🔩', tKey:'prod_cat_terminal' },
   { id:'Solar/PV Products',            label:'Solar & PV',             icon:'☀️',  tKey:'prod_cat_solar' },
@@ -20,10 +28,20 @@ const CATS = [
   { id:'Other',                        label:'Other Products',         icon:'📦', tKey:'prod_cat_other' },
 ];
 
+function isQuoteOnly(p){ return p && p.quoteOnly === true; }
+
 const CAT_SLUG = {
   'Energy Meter': 'energy-meter',
   'Voltage Stabilizer/Regulator': 'voltage-stabilizer-regulator',
   'Current Transformer': 'current-transformer',
+  'Flexible Busbar': 'flexible-busbar',
+  'Rigid Busbar': 'rigid-busbar',
+  'Aluminum Busbar': 'aluminum-busbar',
+  'Composite Laminated Busbar': 'composite-laminated-busbar',
+  'CCS Integrated Busbar': 'ccs-integrated-busbar',
+  'Heavy Duty Busbar': 'heavy-duty-busbar',
+  'Energy Storage Busbar': 'energy-storage-busbar',
+  'Busbar Protection': 'busbar-protection',
   'Variac/Transformer': 'variac-transformer',
   'Terminal & Connector': 'terminal-connector',
   'Solar/PV Products': 'solar-pv-products',
@@ -48,6 +66,14 @@ const CAT_APPS = {
   'Voltage Stabilizer/Regulator':['Household Appliances','Medical Equipment','CNC Machines','HVAC Systems','Data Centers','Sensitive Electronics'],
   'Variac/Transformer':['Lab & Testing','Voltage Adjustment','Motor Speed Control','Audio Equipment','R&D Applications','Industrial Testing'],
   'Current Transformer':['LV Panel Metering','Protection Relays','Revenue Metering','Energy Audits','Sub-metering','SCADA Integration'],
+  'Flexible Busbar':['LiFePO4 Battery Packs','EV Battery Modules','Energy Storage Systems','Power Distribution','Nickel-plated Connections','Custom OEM'],
+  'Rigid Busbar':['Battery Pack Interconnect','Industrial Switchgear','EV Power Distribution','High-current Panels','Copper Bus Systems','OEM Projects'],
+  'Aluminum Busbar':['Energy Storage','Solar Battery Banks','Lightweight Power Links','EV Applications','Insulated Bus Systems','Custom Fabrication'],
+  'Composite Laminated Busbar':['Hybrid EV','Rail Transit','High-voltage Distribution','Laminated Shunts','Multi-layer Conductors','OEM Design'],
+  'CCS Integrated Busbar':['Cell Contact Systems','Module Integration','Battery Assembly','Automated Production','EV Manufacturing','ESS Plants'],
+  'Heavy Duty Busbar':['High-current ESS','Industrial Power','Utility-scale Storage','Welded Connections','Heavy-duty Connectors','Custom Spec'],
+  'Energy Storage Busbar':['Container ESS','Commercial Storage','Solar + Storage','Microgrid','DC Distribution','Battery Cabinets'],
+  'Busbar Protection':['Insulation Systems','Safety Covers','Thermal Management','Panel Protection','ESS Safety','Compliance'],
   'Terminal & Connector':['Panel Wiring','Control Cabinets','DIN Rail Systems','Cable Management','Industrial Installations','Switchboards'],
   'Fuse & Protection':['Overcurrent Protection','Solar PV Systems','Distribution Boards','Industrial Safety','LV Networks','Panel Protection'],
   'Solar/PV Products':['Solar Arrays','Grid-tie Systems','Off-grid Power','PV Combiner Boxes','Renewable Energy','EV Charging'],
@@ -209,12 +235,18 @@ function applyAndRender(){
   }
   if(sortMode==='az') FILTERED.sort((a,b)=>a.title.localeCompare(b.title));
   else if(sortMode==='za') FILTERED.sort((a,b)=>b.title.localeCompare(a.title));
-  else if(sortMode==='price-asc') FILTERED.sort((a,b)=>priceMin(a.price)-priceMin(b.price));
-  else if(sortMode==='price-desc') FILTERED.sort((a,b)=>priceMin(b.price)-priceMin(a.price));
+  else if(sortMode==='price-asc') FILTERED.sort((a,b)=>priceMin(a)-priceMin(b));
+  else if(sortMode==='price-desc') FILTERED.sort((a,b)=>priceMin(b)-priceMin(a));
   shown=PAGE; renderGrid(true); updateMeta(); updateLoadMore();
 }
 
-function priceMin(s){if(!s) return 9999; const m=String(s).match(/[\d.]+/); return m?parseFloat(m[0]):9999;}
+function priceMin(p){
+  if(isQuoteOnly(p)) return 99999;
+  const s=p.price;
+  if(!s) return 9999;
+  const m=String(s).match(/[\d.]+/);
+  return m?parseFloat(m[0]):9999;
+}
 
 /* ── Grid render ── */
 function renderGrid(animate){
@@ -249,7 +281,10 @@ function productCard(p){
   const imgHtml=p.image
     ?`<img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
     :`<div class="pcard-img-fb">${catSvg(p.category)}</div>`;
-  return `<a class="pcard" href="#" data-id="${esc(p.id)}" title="${esc(p.title)}">
+  const d=(typeof T!=='undefined'&&typeof currentLang!=='undefined')?T[currentLang]:null;
+  const quoteLbl=(d&&d.prod_request_quote)?d.prod_request_quote:'Request Quote';
+  const footPrice=isQuoteOnly(p)?quoteLbl:(p.price||'Get Quote');
+  return `<a class="pcard${isQuoteOnly(p)?' pcard-quote':''}" href="#" data-id="${esc(p.id)}" title="${esc(p.title)}">
     <div class="pcard-img">${imgHtml}</div>
     <div class="pcard-body">
       <div class="pcard-cat">${esc(p.category)}</div>
@@ -257,7 +292,7 @@ function productCard(p){
       ${pills?`<div class="pcard-specs">${pills}</div>`:''}
     </div>
     <div class="pcard-foot">
-      <span class="pcard-price">${esc(p.price||'Get Quote')}</span>
+      <span class="pcard-price">${esc(footPrice)}</span>
       <span class="pcard-arrow">View →</span>
     </div>
   </a>`;
@@ -309,8 +344,10 @@ function openDetail(p){
       <div class="dp-left">
         <div class="dp-img-wrap">${imgHtml}</div>
         <div class="dp-price-wrap">
-          ${p.price?`<div class="dp-price">${esc(p.price)}</div>`:''}
-          <a class="dp-quote-btn" href="contact.html?product=${encodeURIComponent(p.title)}">Request Quote →</a>
+          ${isQuoteOnly(p)
+            ? `<p class="dp-quote-note">${esc((typeof T!=='undefined'&&typeof currentLang!=='undefined'&&T[currentLang]&&T[currentLang].prod_quote_busbar_desc)?T[currentLang].prod_quote_busbar_desc:'Busbar pricing is project-specific. Request a quotation first — we review your specs and negotiate terms with you.')}</p>`
+            : (p.price?`<div class="dp-price">${esc(p.price)}</div>`:'')}
+          <a class="dp-quote-btn" href="contact.html?product=${encodeURIComponent(p.title)}">${esc((typeof T!=='undefined'&&typeof currentLang!=='undefined'&&T[currentLang]&&T[currentLang].prod_request_quote)?T[currentLang].prod_request_quote:'Request Quote')} →</a>
         </div>
       </div>
       <div class="dp-right">
