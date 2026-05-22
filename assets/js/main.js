@@ -6,7 +6,7 @@
 'use strict';
 
 /* ─── TRANSLATIONS ─────────────────────────────────── */
-const T = {
+const _YM_BASE = {
   en: {
     nav_home:'Home', nav_products:'Products', nav_solutions:'Solutions',
     nav_process:'Process', nav_about:'About', nav_contact:'Contact', nav_cta:'Get Quote',
@@ -353,6 +353,14 @@ const T = {
     prod_request_quote:'طلب عرض سعر', prod_quote_busbar_desc:'تسعير القضبان يعتمد على المشروع. أرسل المخططات والمواصفات للحصول على عرض رسمي أولاً — ثم تتفاوض فرقتنا معك على الشروط.', prod_pricing:'التسعير', prod_busbar_choose:'اختر نوع القضيب', prod_busbar_all:'جميع القضبان',
   }
 };
+if (window.__ymT) {
+  for (const lang of ['en', 'fr', 'ar', 'es']) {
+    window.__ymT[lang] = Object.assign({}, _YM_BASE[lang] || {}, window.__ymT[lang] || {});
+  }
+} else {
+  window.__ymT = _YM_BASE;
+}
+const T = window.__ymT; /* shared with index.html via window.__ymT */
 
 /* ─── STATE ─────────────────────────────────────────── */
 let currentLang = localStorage.getItem('ym_lang') || 'en';

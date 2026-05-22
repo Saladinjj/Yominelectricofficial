@@ -15,16 +15,18 @@
     var cat = p.get('cat');
     var category = p.get('category');
     var slug = '';
+    var idParam = p.get('id');
+    var idQs = idParam ? '&id=' + encodeURIComponent(idParam) : '';
     if (cat) {
       slug = SLUG[decodeURIComponent(cat.replace(/\+/g, ' ')).trim().toLowerCase()] || '';
-      location.replace(slug ? '/products?category=' + slug : '/products');
+      location.replace(slug ? '/products?category=' + slug + idQs : '/products' + (idParam ? '?id=' + encodeURIComponent(idParam) : ''));
       return;
     }
     if (category) {
       var c = decodeURIComponent(category.replace(/\+/g, ' ')).trim().toLowerCase();
       slug = SLUG[c] || (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(c) ? c : '');
       if (slug && slug !== category.toLowerCase()) {
-        location.replace('/products?category=' + slug);
+        location.replace('/products?category=' + slug + idQs);
         return;
       }
     }
@@ -1744,6 +1746,7 @@
         <div class="ldrop" id="ldrop">
           <button class="lopt" data-lang="en">🇺🇸 English</button>
           <button class="lopt" data-lang="fr">🇫🇷 Français</button>
+          <button class="lopt" data-lang="es">🇪🇸 Español</button>
           <button class="lopt" data-lang="ar">🇸🇦 العربية</button>
         </div>
       </div>
@@ -1762,6 +1765,7 @@
     <div class="mob-lngs">
       <button class="mlb" data-lang="en">EN</button>
       <button class="mlb" data-lang="fr">FR</button>
+      <button class="mlb" data-lang="es">ES</button>
       <button class="mlb" data-lang="ar">AR</button>
     </div>
   </div>
@@ -1945,6 +1949,7 @@
   </div>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/i18n-es.js"></script>
   <script>
     'use strict';
     const BUSBAR_FILTER = '__busbar__';
@@ -2010,7 +2015,8 @@
     function productPhotos(p, ali) {
       if (p.processes && p.processes.length) {
         const fromProc = p.processes.map(pr => pr.image).filter(u => u && !isPdfSpecImage(u));
-        if (fromProc.length) return fromProc;
+        const extras = (p.images || []).filter(u => u && !isPdfSpecImage(u) && !fromProc.includes(u));
+        if (fromProc.length) return fromProc.concat(extras);
       }
       const raw = (p.images && p.images.length)
         ? p.images.slice()
@@ -2127,7 +2133,12 @@
       }
 
       const params = new URLSearchParams(location.search);
+      const urlId = params.get('id');
       const urlCat = params.get('cat') || params.get('category');
+      if (urlId) {
+        const deep = ALL.find(x => x.id === urlId);
+        if (deep && !urlCat) activeFilter = deep.category;
+      }
       if (urlCat && urlCat !== 'all') {
         const key = decodeURIComponent(urlCat.replace(/\+/g, ' ')).trim().toLowerCase();
         activeFilter = SLUG_TO_FILTER[key] || CAT_SLUG_EXTRA[key] || decodeURIComponent(urlCat);
@@ -2139,8 +2150,20 @@
       /* Rebuild sidebar/mobile filter when language changes */
       new MutationObserver(() => { buildSidebar(); buildMobileFilter(); buildBusbarSubBar(); setFilter(activeFilter); }).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
 
-      const urlId = params.get('id');
-      if (urlId) { const p = ALL.find(x => x.id === urlId); if (p) setTimeout(() => openOverlay(p), 400); }
+      if (urlId) {
+        const p = ALL.find(x => x.id === urlId);
+        if (p) {
+          if (activeFilter !== p.category) {
+            activeFilter = p.category;
+            buildSidebar(); buildMobileFilter();
+            applyAndRender();
+          }
+          setTimeout(() => {
+            openOverlay(p);
+            document.getElementById('product-overlay')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 500);
+        }
+      }
 
       /* Nav scroll */
       window.addEventListener('scroll', () => document.getElementById('nav').classList.toggle('sc', scrollY > 20), { passive: true });

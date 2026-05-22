@@ -106,6 +106,14 @@ h2.stitle{font-family:var(--sf);font-size:clamp(28px,4.5vw,52px);line-height:1.1
 .pimg{width:100%;aspect-ratio:1/1;overflow:hidden;background:#f5f5f5;display:flex;align-items:center;justify-content:center;cursor:pointer;pointer-events:auto}
 .pimg img{width:100%;height:100%;object-fit:contain;padding:10px;transition:transform .5s ease;background:#f5f5f5}
 .pc:hover .pimg img{transform:scale(1.06)}
+.pc.pc-screw{pointer-events:auto;border-color:rgba(200,169,110,.32);box-shadow:0 0 0 1px rgba(200,169,110,.1)}
+.pc.pc-screw:hover{border-color:rgba(200,169,110,.45);box-shadow:0 12px 40px rgba(0,0,0,.45),0 0 0 1px rgba(200,169,110,.2)}
+.pc.pc-screw .pimg-trio{display:grid;grid-template-columns:repeat(3,1fr);width:100%;height:100%;gap:3px;padding:6px;background:#ececec}
+.pc.pc-screw .pimg-trio img{width:100%;height:100%;object-fit:contain;padding:4px;background:#f5f5f5;border-radius:6px;transition:transform .35s ease}
+.pc.pc-screw:hover .pimg-trio img{transform:none}
+.pc.pc-screw .pimg-trio img:hover{transform:scale(1.05);z-index:1;position:relative}
+.pc-featured-badge{position:absolute;top:9px;left:9px;font-size:8px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;background:var(--ac);color:#000;padding:3px 8px;border-radius:4px;z-index:2;pointer-events:none}
+.pstages{font-size:9px;color:var(--mt);margin-top:4px;line-height:1.35;letter-spacing:.2px}
 .pinfo{padding:11px 13px 13px;flex:1}
 .pcat{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--ac);margin-bottom:5px}
 .pname{font-size:12px;font-weight:600;color:var(--tx);line-height:1.3}
@@ -443,6 +451,7 @@ body.light .mob-x{color:#555}
   <div class="mob-lngs">
     <button class="mlb act" onclick="sL('en')" data-l="en">🇬🇧</button>
     <button class="mlb" onclick="sL('fr')" data-l="fr">🇫🇷</button>
+    <button class="mlb" onclick="sL('es')" data-l="es">🇪🇸</button>
     <button class="mlb" onclick="sL('ar')" data-l="ar">🇸🇦</button>
   </div>
 </div>
@@ -469,6 +478,7 @@ body.light .mob-x{color:#555}
       <div class="ldrop" id="ldrop">
         <button class="lopt act" onclick="sL('en')" data-l="en"><span>🇬🇧</span> English</button>
         <button class="lopt" onclick="sL('fr')" data-l="fr"><span>🇫🇷</span> Français</button>
+        <button class="lopt" onclick="sL('es')" data-l="es"><span>🇪🇸</span> Español</button>
         <button class="lopt" onclick="sL('ar')" data-l="ar"><span>🇸🇦</span> العربية</button>
       </div>
     </div>
@@ -508,29 +518,41 @@ body.light .mob-x{color:#555}
 <!-- MARQUEE -->
 <div class="marq">
   <div class="mt">
-    <div class="mi"><span class="dot"></span>Energy Meters</div><div class="mi"><span class="dot"></span>Smart Meters</div><div class="mi"><span class="dot"></span>Current Transformers</div><div class="mi"><span class="dot"></span>Power Meters</div><div class="mi"><span class="dot"></span>Digital Meters</div><div class="mi"><span class="dot"></span>DIN Rail Meters</div><div class="mi"><span class="dot"></span>Prepaid Meters</div><div class="mi"><span class="dot"></span>IoT Solutions</div><div class="mi"><span class="dot"></span>RS485 Communication</div><div class="mi"><span class="dot"></span>Zigbee Meters</div>
-    <div class="mi"><span class="dot"></span>Energy Meters</div><div class="mi"><span class="dot"></span>Smart Meters</div><div class="mi"><span class="dot"></span>Current Transformers</div><div class="mi"><span class="dot"></span>Power Meters</div><div class="mi"><span class="dot"></span>Digital Meters</div><div class="mi"><span class="dot"></span>DIN Rail Meters</div><div class="mi"><span class="dot"></span>Prepaid Meters</div><div class="mi"><span class="dot"></span>IoT Solutions</div><div class="mi"><span class="dot"></span>RS485 Communication</div><div class="mi"><span class="dot"></span>Zigbee Meters</div>
+    <div class="mi"><span class="dot"></span>Screw Machine Line</div><div class="mi"><span class="dot"></span>Energy Meters</div><div class="mi"><span class="dot"></span>Smart Meters</div><div class="mi"><span class="dot"></span>Current Transformers</div><div class="mi"><span class="dot"></span>Power Meters</div><div class="mi"><span class="dot"></span>Digital Meters</div><div class="mi"><span class="dot"></span>DIN Rail Meters</div><div class="mi"><span class="dot"></span>Prepaid Meters</div><div class="mi"><span class="dot"></span>IoT Solutions</div><div class="mi"><span class="dot"></span>RS485 Communication</div><div class="mi"><span class="dot"></span>Zigbee Meters</div>
+    <div class="mi"><span class="dot"></span>Screw Machine Line</div><div class="mi"><span class="dot"></span>Energy Meters</div><div class="mi"><span class="dot"></span>Smart Meters</div><div class="mi"><span class="dot"></span>Current Transformers</div><div class="mi"><span class="dot"></span>Power Meters</div><div class="mi"><span class="dot"></span>Digital Meters</div><div class="mi"><span class="dot"></span>DIN Rail Meters</div><div class="mi"><span class="dot"></span>Prepaid Meters</div><div class="mi"><span class="dot"></span>IoT Solutions</div><div class="mi"><span class="dot"></span>RS485 Communication</div><div class="mi"><span class="dot"></span>Zigbee Meters</div>
   </div>
 </div>
 <!-- PRODUCTS -->
 <section id="prods">
   <div class="ph rv">
     <div><span class="slbl2" data-i18n="p_lbl">Product Catalog</span><h2 class="stitle" data-i18n="p_ttl">Precision-Built Metering Devices</h2></div>
-    <p data-i18n="p_dsc">Ingenuously crafted metering products for every power measurement need — from single-phase to three-phase, DIN rail to panel-mount, standard to smart IoT-enabled.</p>
+    <p data-i18n="p_dsc">Featured: our 3-stage metal deep processing line for brass &amp; aluminum busbars — plus precision energy meters, stabilizers, transformers, and smart IoT devices.</p>
   </div>
   <div class="pg">
-    <a href="/products?category=energy-meter" class="pc rv d1"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H2b163be85d144dceb88bcf708b63209a2/High-Precision-Electric-Energy-Meter-Intelligent-Single.jpg?hasNWGrade=1" alt="Energy Meter" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc1">Energy Meter</div><div class="pname" data-i18n="p1">DIN Rail Energy Meter</div></div><div class="parr">↗</div></a>
-    <a href="/products?category=voltage-stabilizer-regulator" class="pc rv d2"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H1b8fc88a34e4488ebff4386b3e351c04d/TSD-5KVA-Relay-Type-Single-Phase-Series.jpg?hasNWGrade=1" alt="Voltage Stabilizer" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc2">Voltage Stabilizer</div><div class="pname" data-i18n="p2">Automatic Voltage Regulator</div></div><div class="parr">↗</div></a>
-    <a href="/products?category=current-transformer" class="pc rv d3"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/HTB1W.kjXGmgSKJjSspiq6xyJFXaY/Single-Phase-Split-Core-Current-Transformer-720V.jpg?hasNWGrade=1" alt="Current Transformer" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc3">Current Transformer</div><div class="pname" data-i18n="p3">Low Voltage CT</div></div><div class="parr">↗</div></a>
-    <a href="/products?category=energy-meter" class="pc rv d4"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H7aab4e02bbba4b5396d95aaa7f8dfcf4t/Three-Phase-220V-DIN-Rail-Electric-KWH.png?hasNWGrade=1" alt="Smart Meter" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc4">Smart Tech</div><div class="pname" data-i18n="p4">Smart Energy Meter</div></div><div class="parr">↗</div></a>
-    <a href="/products?category=energy-meter" class="pc rv d5"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/HTB1sgKteRoHL1JjSZFwq6z6vpXat/New-Type-Active-Electric-Energy-Measurement-Single.jpg?hasNWGrade=1" alt="Prepaid Meter" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc5">Prepaid</div><div class="pname" data-i18n="p5">Keypad Prepaid Meter</div></div><div class="parr">↗</div></a>
-    <a href="/products?category=voltage-protector" class="pc rv d6"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H7223382241bc4e409b2e86548f2c83378/Single-Phase-63A-Voltage-Protector-WIFI-Access.png?hasNWGrade=1" alt="Voltage Protector" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc6">Protection</div><div class="pname" data-i18n="p6">Voltage Protector</div></div><div class="parr">↗</div></a>
-    <a href="/products?category=fuse-protection" class="pc rv d1"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H5d80f4d47c1a4b5c953a7163a3b4240ae/High-and-Low-Breaking-Capacity-New-Energy.jpg?hasNWGrade=1" alt="Fuse & Protection" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc7">Fuse & Protection</div><div class="pname" data-i18n="p7">PV Solar Fuse</div></div><div class="parr">↗</div></a>
-    <a href="/products?category=variac-transformer" class="pc rv d2"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/HTB1QEACJruWBuNjSszgq6z8jVXaz/Custom-Three-Phase-TSGC2-20KVA-Adjustable-Transformer.jpg?hasNWGrade=1" alt="Variac Transformer" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc8">Transformer</div><div class="pname" data-i18n="p8">Variac Voltage Transformer</div></div><div class="parr">↗</div></a>
-    <a href="/products?category=socket-wiring" class="pc rv d3"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/Hca0d9ca13743422198716b0040d62f726/Wifi-Smart-Socket-Waterproof-Smart-Home-Socket.jpg?hasNWGrade=1" alt="Smart Socket" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc9">Socket & Wiring</div><div class="pname" data-i18n="p9">WiFi Smart Socket</div></div><div class="parr">↗</div></a>
-    <a href="products.html" class="pc rv d4"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H20774d55512e4456b30fc55b4d26eab9n/Single-Phase-Smart-Power-Quality-Meter-Household.jpg?hasNWGrade=1" alt="Data Concentrator" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc10">AMI System</div><div class="pname" data-i18n="p10">Data Concentrator Unit</div></div><div class="parr">↗</div></a>
-    <a href="/products?category=terminal-connector" class="pc rv d5"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H1a9424d669be4d29a751f324e5e4938e1/Automatic-Screw-Tightening-Machine-Integrating-Screwing-and.jpg?hasNWGrade=1" alt="Terminal Connector" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc11">Terminals</div><div class="pname" data-i18n="p11">Terminal & Connector</div></div><div class="parr">↗</div></a>
-    <a href="/products?category=energy-meter" class="pc rv d6"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H1f75d08d8e854902ae7c18b72202f8eeo/YEM021GC-N-Three-Phase-DIN-Rail-Mounted.jpg?hasNWGrade=1" alt="3-Phase Meter" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc12">Three Phase</div><div class="pname" data-i18n="p12">3-Phase DIN Rail Meter</div></div><div class="parr">↗</div></a>
+    <a href="/products?id=ym-sm-001" class="pc pc-screw rv d1">
+      <span class="pc-featured-badge" data-i18n="pc_feat">Featured</span>
+      <div class="pimg">
+        <img src="assets/images/screw-machines/screw-machine-featured.png" alt="Yomin metal deep processing screw machine line" loading="lazy">
+      </div>
+      <div class="pinfo">
+        <div class="pcat" data-i18n="pc0">Screw Machine</div>
+        <div class="pname" data-i18n="p0">Metal Deep Processing Line</div>
+        <div class="pstages" data-i18n="p0_stages">3-stage brass &amp; aluminum production</div>
+      </div>
+      <div class="parr">↗</div>
+    </a>
+    <a href="/products?category=energy-meter" class="pc rv d2"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H2b163be85d144dceb88bcf708b63209a2/High-Precision-Electric-Energy-Meter-Intelligent-Single.jpg?hasNWGrade=1" alt="Energy Meter" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc1">Energy Meter</div><div class="pname" data-i18n="p1">DIN Rail Energy Meter</div></div><div class="parr">↗</div></a>
+    <a href="/products?category=voltage-stabilizer-regulator" class="pc rv d3"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H1b8fc88a34e4488ebff4386b3e351c04d/TSD-5KVA-Relay-Type-Single-Phase-Series.jpg?hasNWGrade=1" alt="Voltage Stabilizer" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc2">Voltage Stabilizer</div><div class="pname" data-i18n="p2">Automatic Voltage Regulator</div></div><div class="parr">↗</div></a>
+    <a href="/products?category=current-transformer" class="pc rv d4"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/HTB1W.kjXGmgSKJjSspiq6xyJFXaY/Single-Phase-Split-Core-Current-Transformer-720V.jpg?hasNWGrade=1" alt="Current Transformer" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc3">Current Transformer</div><div class="pname" data-i18n="p3">Low Voltage CT</div></div><div class="parr">↗</div></a>
+    <a href="/products?category=energy-meter" class="pc rv d5"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H7aab4e02bbba4b5396d95aaa7f8dfcf4t/Three-Phase-220V-DIN-Rail-Electric-KWH.png?hasNWGrade=1" alt="Smart Meter" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc4">Smart Tech</div><div class="pname" data-i18n="p4">Smart Energy Meter</div></div><div class="parr">↗</div></a>
+    <a href="/products?category=energy-meter" class="pc rv d6"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/HTB1sgKteRoHL1JjSZFwq6z6vpXat/New-Type-Active-Electric-Energy-Measurement-Single.jpg?hasNWGrade=1" alt="Prepaid Meter" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc5">Prepaid</div><div class="pname" data-i18n="p5">Keypad Prepaid Meter</div></div><div class="parr">↗</div></a>
+    <a href="/products?category=voltage-protector" class="pc rv d1"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H7223382241bc4e409b2e86548f2c83378/Single-Phase-63A-Voltage-Protector-WIFI-Access.png?hasNWGrade=1" alt="Voltage Protector" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc6">Protection</div><div class="pname" data-i18n="p6">Voltage Protector</div></div><div class="parr">↗</div></a>
+    <a href="/products?category=fuse-protection" class="pc rv d2"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H5d80f4d47c1a4b5c953a7163a3b4240ae/High-and-Low-Breaking-Capacity-New-Energy.jpg?hasNWGrade=1" alt="Fuse & Protection" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc7">Fuse & Protection</div><div class="pname" data-i18n="p7">PV Solar Fuse</div></div><div class="parr">↗</div></a>
+    <a href="/products?category=variac-transformer" class="pc rv d3"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/HTB1QEACJruWBuNjSszgq6z8jVXaz/Custom-Three-Phase-TSGC2-20KVA-Adjustable-Transformer.jpg?hasNWGrade=1" alt="Variac Transformer" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc8">Transformer</div><div class="pname" data-i18n="p8">Variac Voltage Transformer</div></div><div class="parr">↗</div></a>
+    <a href="/products?category=socket-wiring" class="pc rv d4"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/Hca0d9ca13743422198716b0040d62f726/Wifi-Smart-Socket-Waterproof-Smart-Home-Socket.jpg?hasNWGrade=1" alt="Smart Socket" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc9">Socket & Wiring</div><div class="pname" data-i18n="p9">WiFi Smart Socket</div></div><div class="parr">↗</div></a>
+    <a href="products.html" class="pc rv d5"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H20774d55512e4456b30fc55b4d26eab9n/Single-Phase-Smart-Power-Quality-Meter-Household.jpg?hasNWGrade=1" alt="Data Concentrator" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc10">AMI System</div><div class="pname" data-i18n="p10">Data Concentrator Unit</div></div><div class="parr">↗</div></a>
+    <a href="/products?category=terminal-connector" class="pc rv d6"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H1a9424d669be4d29a751f324e5e4938e1/Automatic-Screw-Tightening-Machine-Integrating-Screwing-and.jpg?hasNWGrade=1" alt="Terminal Connector" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc11">Terminals</div><div class="pname" data-i18n="p11">Terminal & Connector</div></div><div class="parr">↗</div></a>
+    <a href="/products?category=energy-meter" class="pc rv d1"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H1f75d08d8e854902ae7c18b72202f8eeo/YEM021GC-N-Three-Phase-DIN-Rail-Mounted.jpg?hasNWGrade=1" alt="3-Phase Meter" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc12">Three Phase</div><div class="pname" data-i18n="p12">3-Phase DIN Rail Meter</div></div><div class="parr">↗</div></a>
   </div>
   <a href="products.html" class="pmore rv" id="pmore" style="display:block;text-decoration:none;">
     <p data-i18n="p_more">Want to see more products? <strong>👉 Click here to explore all our product categories</strong> — including Current Transformers, Voltage Regulators, Multifunction Meters, and more.</p>
@@ -922,7 +944,7 @@ body.light .mob-x{color:#555}
   <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">© 2025 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 · IEC 61036 · ANSI C12 · CE · RoHS</p></div>
 </footer>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-const T={
+window.__ymT={
 en:{
 nav_products:"Products",nav_solutions:"Solutions",nav_process:"Process",nav_about:"About",nav_contact:"Contact",nav_quote:"Get a Quote",
 hero_badge:"Trusted in 95+ Countries Worldwide",hero_ov:"Zhejiang Yomin Electric Co., Ltd. — Est. 1996",
@@ -930,8 +952,9 @@ hero_desc:"30 years of expertise in energy metering technology. From DIN rail me
 hero_cta1:"Explore Products",hero_cta2:"Contact Us",
 s_yr:"Years",s_ct:"Countries",s_em:"Employees",
 buy_lbl:"Buy Online",buy_ttl:"Find Us On Global Marketplaces",buy_dsc:"Purchase Yomin Electric products directly from our official stores on leading e-commerce platforms worldwide.",buy_ali:"Alibaba",buy_ali_d:"International B2B — Wholesale orders, global shipping, Trade Assurance",buy_tao:"Taobao",buy_tao_d:"China Marketplace — Domestic retail, Alipay payment",buy_bai:"Baidu",buy_bai_d:"China Search — Find us via China's leading search engine",buy_shop:"Visit Store →",cert_lbl:"Quality Assured",cert_ttl:"International Certifications",cert_dsc:"Our meters meet IEC, ANSI, CE, RoHS, ISO9001, KEMA, CB, BV, CCC, and CMC requirements.",hero_title:"Precision<br><em>Energy Metering</em><br>Solutions",
-p_lbl:"Product Catalog",p_ttl:"Complete Electrical Solutions",
-p_dsc:"From energy meters to voltage stabilizers, current transformers to smart IoT devices — precision products for every electrical measurement and protection need.",
+p_lbl:"Product Catalog",p_ttl:"Precision-Built Metering Devices",
+p_dsc:"Featured: our 3-stage metal deep processing line for brass & aluminum busbars — plus energy meters, stabilizers, transformers, and smart IoT devices for every electrical need.",
+pc_feat:"Featured",pc0:"Screw Machine",p0:"Metal Deep Processing Line",p0_stages:"3-stage brass & aluminum production",
 p1:"DIN Rail Energy Meter",p2:"Automatic Voltage Regulator",p3:"Low Voltage CT",p4:"Smart Energy Meter",p5:"Keypad Prepaid Meter",p6:"Voltage Protector",p7:"PV Solar Fuse",p8:"Variac Voltage Transformer",p9:"WiFi Smart Socket",p10:"Data Concentrator Unit",p11:"Terminal & Connector",p12:"3-Phase DIN Rail Meter",
 pc1:"Energy Meter",pc2:"Voltage Stabilizer",pc3:"Current Transformer",pc4:"Smart Tech",pc5:"Prepaid",pc6:"Protection",pc7:"Fuse & Protection",pc8:"Transformer",pc9:"Socket & Wiring",pc10:"AMI System",pc11:"Terminals",pc12:"Three Phase",
 p_more:"Want to see more products? <strong>👉 Click here to explore all our product categories</strong> — including Current Transformers, Voltage Regulators, Multifunction Meters, and more.",
@@ -971,7 +994,8 @@ hero_cta1:"Explorer les Produits",hero_cta2:"Nous Contacter",
 s_yr:"Ans",s_ct:"Pays",s_em:"Employés",
 buy_lbl:"Acheter en Ligne",buy_ttl:"Retrouvez-nous sur les Marketplaces",buy_dsc:"Achetez les produits Yomin Electric directement sur nos boutiques officielles.",buy_ali:"Alibaba",buy_ali_d:"B2B International — Commandes en gros, livraison mondiale",buy_tao:"Taobao",buy_tao_d:"Marché Chinois — Vente au détail, paiement Alipay",buy_bai:"Baidu",buy_bai_d:"Recherche Chine — Trouvez Yomin via le moteur de recherche chinois",buy_shop:"Visiter la Boutique →",cert_lbl:"Qualité Garantie",cert_ttl:"Certifications Internationales",cert_dsc:"Nos compteurs répondent aux normes IEC, ANSI, CE, RoHS, ISO9001, KEMA, CB, BV, CCC et CMC.",hero_title:"Solutions de<br><em>Comptage d\'Énergie</em><br>de Précision",
 p_lbl:"Catalogue Produits",p_ttl:"Solutions Électriques Complètes",
-p_dsc:"Des compteurs d'énergie aux stabilisateurs de tension, des transformateurs de courant aux appareils IoT — des produits de précision pour chaque besoin électrique.",
+p_dsc:"À la une : ligne de traitement métal en 3 étapes pour barres cuivre & aluminium — plus compteurs, stabilisateurs, transformateurs et IoT.",
+pc_feat:"À la une",pc0:"Machine à Vis",p0:"Ligne Traitement Métal Profond",p0_stages:"Production laiton & aluminium — 3 étapes",
 p1:"Compteur Rail DIN",p2:"Régulateur de Tension Automatique",p3:"Transformateur de Courant BT",p4:"Compteur Intelligent",p5:"Compteur Prépayé à Clavier",p6:"Protecteur de Tension",p7:"Fusible Solaire PV",p8:"Transformateur Variac",p9:"Prise Intelligente WiFi",p10:"Concentrateur de Données",p11:"Bornier & Connecteur",p12:"Compteur DIN Triphasé",
 pc1:"Compteur d'Énergie",pc2:"Stabilisateur de Tension",pc3:"Transformateur de Courant",pc4:"Technologie Intelligente",pc5:"Prépayé",pc6:"Protection",pc7:"Fusible & Protection",pc8:"Transformateur",pc9:"Prise & Câblage",pc10:"Système AMI",pc11:"Borniers",pc12:"Triphasé",
 p_more:"Vous souhaitez voir plus de produits ? <strong>👉 Cliquez ici pour explorer toutes nos catégories</strong> — transformateurs, régulateurs de tension, compteurs multifonctions, et plus.",
@@ -1010,8 +1034,9 @@ hero_desc:"30 عامًا من الخبرة في تقنية قياس الطاقة
 hero_cta1:"استعرض المنتجات",hero_cta2:"تواصل معنا",
 s_yr:"سنة",s_ct:"دولة",s_em:"موظف",
 buy_lbl:"شراء أونلاين",buy_ttl:"تجدنا على المنصات العالمية",buy_dsc:"اشترِ منتجات Yomin مباشرةً من متاجرنا الرسمية.",buy_ali:"Alibaba",buy_ali_d:"تجارة دولية B2B — طلبات الجملة، شحن عالمي",buy_tao:"Taobao",buy_tao_d:"السوق الصيني — تجزئة، دفع Alipay",buy_bai:"Baidu",buy_bai_d:"بحث في الصين — ابحث عن Yomin عبر محرك Baidu",buy_shop:"زيارة المتجر →",cert_lbl:"الجودة مضمونة",cert_ttl:"الشهادات الدولية",cert_dsc:"منتجاتنا معتمدة وفق IEC وANSI وCE وRoHS وISO9001 وKEMA وCB وBV وCCC وCMC.",hero_title:"حلول قياس الطاقة<br><em>بدقة عالية</em>",
-p_lbl:"كتالوج المنتجات",p_ttl:"حلول كهربائية متكاملة",
-p_dsc:"من عدادات الطاقة إلى مثبتات الجهد، ومن محولات التيار إلى أجهزة إنترنت الأشياء الذكية — منتجات دقيقة لكل احتياج كهربائي.",
+p_lbl:"كتالوج المنتجات",p_ttl:"أجهزة قياس دقيقة الصنع",
+p_dsc:"في المقدمة: خط معالجة معدنية عميقة من 3 مراحل لقضبان النحاس والألومنيوم — بالإضافة إلى عدادات الطاقة والمثبتات والمحولات وأجهزة IoT.",
+pc_feat:"مميز",pc0:"ماكينة البراغي",p0:"خط المعالجة المعدنية العميقة",p0_stages:"إنتاج النحاس والألومنيوم — 3 مراحل",
 p1:"عداد طاقة DIN Rail",p2:"منظم جهد أوتوماتيكي",p3:"محول تيار منخفض الجهد",p4:"عداد طاقة ذكي",p5:"عداد مدفوع مسبقاً بلوحة مفاتيح",p6:"حامي الجهد",p7:"فيوز طاقة شمسية",p8:"محول فارياك",p9:"مقبس ذكي واي فاي",p10:"وحدة تجميع البيانات",p11:"طرف توصيل وموصل",p12:"عداد DIN ثلاثي الطور",
 pc1:"عداد الطاقة",pc2:"مثبت الجهد",pc3:"محول التيار",pc4:"تقنية ذكية",pc5:"مدفوع مسبقاً",pc6:"حماية",pc7:"فيوز وحماية",pc8:"محول",pc9:"مقبس وأسلاك",pc10:"نظام AMI",pc11:"أطراف التوصيل",pc12:"ثلاثي الطور",
 p_more:"هل تريد رؤية المزيد من المنتجات؟ <strong>👉 انقر هنا لاستعراض جميع فئات منتجاتنا</strong> — بما في ذلك محولات التيار، منظمات الجهد، العدادات متعددة الوظائف.",
@@ -1047,8 +1072,10 @@ ft_pr:"المنتجات",ft_co:"الشركة",ft_cn:"التواصل",ft_cp:"© 2
 
 let lang='en';
 function sL(l){
+  if(!window.__ymT[l])return;
   lang=l;
-  const t=T[l];
+  localStorage.setItem('ym_lang',l);
+  const t=window.__ymT[l];
   const html=document.documentElement;
   if(l==='ar'){html.setAttribute('dir','rtl');html.setAttribute('lang','ar');document.body.classList.add('ar')}
   else{html.setAttribute('dir','ltr');html.setAttribute('lang',l);document.body.classList.remove('ar')}
@@ -1056,11 +1083,11 @@ function sL(l){
     const k=el.getAttribute('data-i18n');
     if(t[k]!==undefined) el.innerHTML=t[k];
   });
-  const fl={en:'🇬🇧',fr:'🇫🇷',ar:'🇸🇦'}, cd={en:'EN',fr:'FR',ar:'AR'};
+  const fl={en:'🇬🇧',fr:'🇫🇷',es:'🇪🇸',ar:'🇸🇦'}, cd={en:'EN',fr:'FR',es:'ES',ar:'AR'};
   document.getElementById('lf').textContent=fl[l];
   document.getElementById('lc').textContent=cd[l];
   document.querySelectorAll('.lopt').forEach(b=>b.classList.toggle('act',b.getAttribute('data-l')===l));
-  document.querySelectorAll('.mlb').forEach((b,i)=>b.classList.toggle('act',['en','fr','ar'][i]===l));
+  document.querySelectorAll('.mlb').forEach(b=>b.classList.toggle('act',b.getAttribute('data-l')===l));
   document.getElementById('ldrop').classList.remove('op');
 }
 
@@ -1167,7 +1194,12 @@ document.addEventListener('keydown', e => { if(e.key==='Escape') wcModalIndex.st
 
 
 </script>
+<script src="assets/js/i18n-index-es.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/i18n-es.js"></script>
+<script>
+(function(){const l=localStorage.getItem('ym_lang');if(l&&window.__ymT[l])sL(l);})();
+</script>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

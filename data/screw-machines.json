@@ -18,7 +18,7 @@
         "title": "Deep Processing Machine for Brass and Aluminum Row",
         "title_zh": "黄铜排 / 铝排深加工设备",
         "description": "Automatic compound machining center integrating cutting, drilling, tapping and chamfering for deep processing of brass and aluminum busbar rows. Horizontal PLC-controlled machine with touch screen — conventional products, different hole sizes, aluminum profiles and double-row holes can be customized.",
-        "image": "/assets/images/screw-machines/deep-processing-brass-aluminum-row.png",
+        "image": "/assets/images/screw-machines/screw-machine-featured.png",
         "specs": {
           "Voltage": "3P4W 220/380VAC (customizable), 50/60Hz",
           "Total Power": "5KW–8KW",
@@ -87,11 +87,14 @@
       "OEM customization",
       "professional customization"
     ],
-    "image": "/assets/images/screw-machines/deep-processing-brass-aluminum-row.png",
+    "image": "/assets/images/screw-machines/screw-machine-featured.png",
     "images": [
+      "/assets/images/screw-machines/screw-machine-featured.png",
       "/assets/images/screw-machines/deep-processing-brass-aluminum-row.png",
       "/assets/images/screw-machines/screw-tightening-machine.png",
-      "/assets/images/screw-machines/circulating-rotary-metalworking-machine.png"
+      "/assets/images/screw-machines/circulating-rotary-metalworking-machine.png",
+      "/assets/images/screw-machines/screw-machine-parts.png",
+      "/assets/images/screw-machines/screw-machine-measurements.png"
     ],
     "datasheet": "/assets/docs/yomin-screw-machines.pdf"
   }
