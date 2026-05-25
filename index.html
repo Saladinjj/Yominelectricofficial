@@ -35,9 +35,9 @@ nav.sc{background:rgba(13,13,13,.99)}
 .lbtn{background:rgba(255,255,255,.06);border:1px solid var(--bdr);color:var(--mt);padding:7px 13px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;letter-spacing:.5px;transition:all .2s;display:flex;align-items:center;gap:6px;position:relative;z-index:261}
 .lbtn:hover{background:rgba(255,255,255,.1);color:var(--tx)}
 .lbtn svg{width:11px;height:11px}
-.ldrop{position:absolute;top:calc(100% + 8px);right:0;background:#1e1e1e;border:1px solid var(--bdr);border-radius:10px;overflow:hidden;min-width:140px;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s,visibility .2s;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:5000}
-.ldrop.op{opacity:1;visibility:visible;pointer-events:all;transform:none}
-.lopt{display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;transition:background .15s,color .15s;border:none;background:none;width:100%;text-align:left}
+.ldrop{position:absolute;top:calc(100% + 8px);right:0;background:#1e1e1e;border:1px solid var(--bdr);border-radius:10px;overflow:hidden;min-width:140px;max-height:240px;overflow-y:auto;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:5000}
+.ldrop.op,.lsw:hover .ldrop,.lsw:focus-within .ldrop{opacity:1;pointer-events:all;transform:none}
+.lopt{display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;transition:background .15s,color .15s;border:none;background:none;width:100%;text-align:left;white-space:nowrap}
 .lopt:hover{background:rgba(255,255,255,.06);color:var(--tx)}
 .lopt.act{color:var(--ac)}
 .ncta{background:var(--ac);color:#000;border:none;padding:9px 20px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;text-decoration:none;white-space:nowrap}
@@ -455,7 +455,6 @@ body.light .mob-x{color:#555}
     <button class="mlb" onclick="sL('ar')" data-l="ar">🇸🇦</button>
   </div>
 </div>
-</div>
 <!-- NAV -->
 <nav id="nav">
   <a href="#" class="n-logo">
@@ -551,7 +550,7 @@ body.light .mob-x{color:#555}
     <a href="/products?category=variac-transformer" class="pc rv d3"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/HTB1QEACJruWBuNjSszgq6z8jVXaz/Custom-Three-Phase-TSGC2-20KVA-Adjustable-Transformer.jpg?hasNWGrade=1" alt="Variac Transformer" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc8">Transformer</div><div class="pname" data-i18n="p8">Variac Voltage Transformer</div></div><div class="parr">↗</div></a>
     <a href="/products?category=socket-wiring" class="pc rv d4"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/Hca0d9ca13743422198716b0040d62f726/Wifi-Smart-Socket-Waterproof-Smart-Home-Socket.jpg?hasNWGrade=1" alt="Smart Socket" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc9">Socket & Wiring</div><div class="pname" data-i18n="p9">WiFi Smart Socket</div></div><div class="parr">↗</div></a>
     <a href="products.html" class="pc rv d5"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H20774d55512e4456b30fc55b4d26eab9n/Single-Phase-Smart-Power-Quality-Meter-Household.jpg?hasNWGrade=1" alt="Data Concentrator" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc10">AMI System</div><div class="pname" data-i18n="p10">Data Concentrator Unit</div></div><div class="parr">↗</div></a>
-    <a href="/products?category=terminal-connector" class="pc rv d6"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H1a9424d669be4d29a751f324e5e4938e1/Automatic-Screw-Tightening-Machine-Integrating-Screwing-and.jpg?hasNWGrade=1" alt="Terminal Connector" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc11">Terminals</div><div class="pname" data-i18n="p11">Terminal & Connector</div></div><div class="parr">↗</div></a>
+    <a href="/products?id=ym-sm-001" class="pc rv d6"><div class="pimg"><img src="assets/images/screw-machines/screw-tightening-machine.png" alt="Screw Machines" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc11">Screw Machines</div><div class="pname" data-i18n="p11">Screw Machines</div></div><div class="parr">↗</div></a>
     <a href="/products?category=energy-meter" class="pc rv d1"><div class="pimg"><img src="https://s.alicdn.com/@sc04/kf/H1f75d08d8e854902ae7c18b72202f8eeo/YEM021GC-N-Three-Phase-DIN-Rail-Mounted.jpg?hasNWGrade=1" alt="3-Phase Meter" loading="lazy"></div><div class="pinfo"><div class="pcat" data-i18n="pc12">Three Phase</div><div class="pname" data-i18n="p12">3-Phase DIN Rail Meter</div></div><div class="parr">↗</div></a>
   </div>
   <a href="products.html" class="pmore rv" id="pmore" style="display:block;text-decoration:none;">
@@ -575,7 +574,7 @@ body.light .mob-x{color:#555}
     <div class="gc"><a href="products.html" class="gi"><img src="https://s.alicdn.com/@sc04/kf/HTB1QEACJruWBuNjSszgq6z8jVXaz/Custom-Three-Phase-TSGC2-20KVA-Adjustable-Transformer.jpg?hasNWGrade=1" alt="" loading="lazy"></a><div class="ginfo"><div class="gcat">Transformer</div><div class="gname">Variac Transformer</div></div></div>
     <div class="gc"><a href="products.html" class="gi"><img src="https://s.alicdn.com/@sc04/kf/Hca0d9ca13743422198716b0040d62f726/Wifi-Smart-Socket-Waterproof-Smart-Home-Socket.jpg?hasNWGrade=1" alt="" loading="lazy"></a><div class="ginfo"><div class="gcat">Socket & Wiring</div><div class="gname">WiFi Smart Socket</div></div></div>
     <div class="gc"><a href="products.html" class="gi"><img src="https://s.alicdn.com/@sc04/kf/H20774d55512e4456b30fc55b4d26eab9n/Single-Phase-Smart-Power-Quality-Meter-Household.jpg?hasNWGrade=1" alt="" loading="lazy"></a><div class="ginfo"><div class="gcat">AMI System</div><div class="gname">Data Concentrator</div></div></div>
-    <div class="gc"><a href="products.html" class="gi"><img src="https://s.alicdn.com/@sc04/kf/H1a9424d669be4d29a751f324e5e4938e1/Automatic-Screw-Tightening-Machine-Integrating-Screwing-and.jpg?hasNWGrade=1" alt="" loading="lazy"></a><div class="ginfo"><div class="gcat">Terminals</div><div class="gname">Terminal & Connector</div></div></div>
+    <div class="gc"><a href="products.html?id=ym-sm-001" class="gi"><img src="assets/images/screw-machines/screw-tightening-machine.png" alt="" loading="lazy"></a><div class="ginfo"><div class="gcat">Screw Machines</div><div class="gname">Screw Machines</div></div></div>
     <div class="gc"><a href="products.html" class="gi"><img src="https://s.alicdn.com/@sc04/kf/HTB1W.kjXGmgSKJjSspiq6xyJFXaY/Single-Phase-Split-Core-Current-Transformer-720V.jpg?hasNWGrade=1" alt="" loading="lazy"></a><div class="ginfo"><div class="gcat">Accessories</div><div class="gname">Split Core CT</div></div></div>
     <div class="gc"><a href="products.html" class="gi"><img src="https://s.alicdn.com/@sc04/kf/H8643c11b17e440b6b826c324451c01cfm/80A-Maximum-Current-RS485-Communication-kWh-Power.jpg?hasNWGrade=1" alt="" loading="lazy"></a><div class="ginfo"><div class="gcat">Panel Mount</div><div class="gname">Front Board Meter</div></div></div>
     <div class="gc"><a href="products.html" class="gi"><img src="https://s.alicdn.com/@sc04/kf/H1f75d08d8e854902ae7c18b72202f8eeo/YEM021GC-N-Three-Phase-DIN-Rail-Mounted.jpg?hasNWGrade=1" alt="" loading="lazy"></a><div class="ginfo"><div class="gcat">Three Phase</div><div class="gname">3Ph 4W DIN Rail</div></div></div>
