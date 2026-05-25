@@ -687,6 +687,25 @@
     .mc-pdf-link:hover {
       border-bottom-color: var(--ac)
     }
+    .mc-cert-docs {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .mc-cert-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      color: var(--ac);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      width: fit-content;
+    }
+    .mc-cert-link:hover {
+      border-bottom-color: var(--ac)
+    }
 
     .pcard-stages {
       font-size: 11px;
@@ -2398,6 +2417,7 @@
       else if (sortMode === 'za') FILTERED.sort((a, b) => b.title.localeCompare(a.title));
       else if (sortMode === 'price-asc') FILTERED.sort((a, b) => priceMin(a) - priceMin(b));
       else if (sortMode === 'price-desc') FILTERED.sort((a, b) => priceMin(b) - priceMin(a));
+      else if (activeFilter === 'all') FILTERED.sort((a, b) => (b.category === 'Screw Machine' ? 1 : 0) - (a.category === 'Screw Machine' ? 1 : 0));
       shown = PAGE; renderGrid(true); updateMeta(); updateLoadMore();
     }
 
@@ -2623,6 +2643,12 @@
       const kwHtml = (p.keywords && p.keywords.length)
         ? `<div class="mc-section-label" style="margin-top:20px">Keywords</div><div class="mc-keywords">${p.keywords.map(k => `<span class="mc-kw-chip">${esc(k)}</span>`).join('')}</div>`
         : '';
+      const certDocsHtml = isCatalogMachine ? `<div class="mc-section-label" style="margin-top:20px">Certifications</div>
+        <div class="mc-cert-docs">
+          <a href="/assets/docs/screw-machine-ce-certificate.pdf" target="_blank" rel="noopener" class="mc-cert-link">📄 CE Certificate</a>
+          <a href="/assets/docs/screw-machine-ce-report.pdf" target="_blank" rel="noopener" class="mc-cert-link">📋 CE Report</a>
+          <a href="/assets/docs/screw-machine-technical-construction.pdf" target="_blank" rel="noopener" class="mc-cert-link">📐 Technical Construction File</a>
+        </div>` : '';
       const hasProcesses = p.processes && p.processes.length;
       const lineOverviewRows = hasProcesses ? Object.entries(specs).map(([k,v]) =>
         `<div class="mc-spec"><span class="mc-spec-k">${esc(k)}</span><span class="mc-spec-v">${esc(String(v))}</span></div>`
@@ -2634,10 +2660,12 @@
         <p class="mc-process-flow-intro">One integrated line — each stage below matches the Yomin catalogue (deep processing → screw tightening → rotary finishing).</p>
         ${buildProcessStagesHtml(p.processes)}
         ${p.datasheet ? `<a class="mc-pdf-link" href="${esc(p.datasheet)}" target="_blank" rel="noopener">📄 Full catalogue (PDF)</a>` : ''}
+        ${certDocsHtml}
         ${kwHtml}
         ${customText ? `<div class="mc-customization-info"><div class="mc-cust-label">✏️ Customization Available</div><p>${esc(customText)}</p></div>` : ''}`
         : `<div class="mc-section-label">Specifications</div>
         <div class="mc-specs">${specRows || '<div class="mc-spec" style="grid-column:1/-1"><span class="mc-spec-k">Category</span><span class="mc-spec-v">' + esc(p.category) + '</span></div>'}${extraSpecs}</div>
+        ${certDocsHtml}
         ${kwHtml}
         ${customText ? `<div class="mc-customization-info"><div class="mc-cust-label">✏️ Customization Available</div><p>${esc(customText)}</p></div>` : ''}`;
 

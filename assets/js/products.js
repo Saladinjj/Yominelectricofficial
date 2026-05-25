@@ -321,6 +321,7 @@ function applyAndRender(){
   else if(sortMode==='za') FILTERED.sort((a,b)=>b.title.localeCompare(a.title));
   else if(sortMode==='price-asc') FILTERED.sort((a,b)=>priceMin(a)-priceMin(b));
   else if(sortMode==='price-desc') FILTERED.sort((a,b)=>priceMin(b)-priceMin(a));
+  else if(activeFilter==='all') FILTERED.sort((a,b)=>(b.category==='Screw Machine'?1:0)-(a.category==='Screw Machine'?1:0));
   shown=PAGE; renderGrid(true); updateMeta(); updateLoadMore();
 }
 
@@ -413,6 +414,14 @@ function openDetail(p){
   ).join('');
   const kwHtml=(p.keywords&&p.keywords.length)?`<div class="dp-section-label" style="margin-top:18px">Keywords</div><div class="dp-apps">${p.keywords.map(k=>`<span class="dp-app-chip">${esc(k)}</span>`).join('')}</div>`:'';
 
+  const isScrewMachine = p.category === 'Screw Machine';
+  const certDocLinks = isScrewMachine ? `
+    <div class="dp-section-label" style="margin-top:18px">Certifications</div>
+    <div class="dp-cert-docs">
+      <a href="/assets/docs/screw-machine-ce-certificate.pdf" target="_blank" class="dp-cert-doc-link">📄 CE Certificate</a>
+      <a href="/assets/docs/screw-machine-ce-report.pdf" target="_blank" class="dp-cert-doc-link">📋 CE Report</a>
+      <a href="/assets/docs/screw-machine-technical-construction.pdf" target="_blank" class="dp-cert-doc-link">📐 Technical Construction File</a>
+    </div>` : '';
   const extraRows=`
     <div class="dp-spec-row"><span class="dp-spec-key">Certification</span><span class="dp-spec-val">CE, ISO 9001</span></div>
     <div class="dp-spec-row"><span class="dp-spec-key">Warranty</span><span class="dp-spec-val">2 Years</span></div>
@@ -441,6 +450,7 @@ function openDetail(p){
         <p class="dp-desc">${esc(p.description||buildAutoDesc(p))}</p>
         <div class="dp-section-label">Specifications</div>
         <div class="dp-specs-grid">${specRows||'<div class="dp-spec-row"><span class="dp-spec-key">Category</span><span class="dp-spec-val">'+esc(p.category)+'</span></div>'}${extraRows}</div>
+        ${certDocLinks}
         ${kwHtml}
         <div class="dp-section-label" style="margin-top:22px">Applications</div>
         <div class="dp-apps">${appChips}</div>
