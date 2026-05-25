@@ -64,14 +64,13 @@
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  aspect-ratio: 4/3;
 }
 
 .intro-img img {
   width: 100%;
   display: block;
   border-radius: 20px;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform .6s ease;
 }
 

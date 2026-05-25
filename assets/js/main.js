@@ -484,22 +484,6 @@ function setTheme(t, fromAuto = false) {
   });
 })();
 
-/* ─── CURSOR ─────────────────────────────────────────── */
-(function initCursor() {
-  const cur = document.querySelector('.cur');
-  // Support both class .cur-r (inner pages) and id #curR (index.html)
-  const curR = document.querySelector('.cur-r') || document.getElementById('curR');
-  if (!cur || !curR) return;
-  let mx=0, my=0, rx=0, ry=0;
-  document.addEventListener('mousemove', e => {
-    mx = e.clientX; my = e.clientY;
-    cur.style.transform = `translate(${mx-5}px,${my-5}px)`;
-  });
-  (function loop(){ rx+=(mx-rx)*.12; ry+=(my-ry)*.12; curR.style.transform=`translate(${rx-18}px,${ry-18}px)`; requestAnimationFrame(loop); })();
-  document.addEventListener('mousedown', () => { curR.style.width='28px'; curR.style.height='28px'; });
-  document.addEventListener('mouseup',   () => { curR.style.width='36px'; curR.style.height='36px'; });
-})();
-
 /* ─── SCROLL REVEAL ──────────────────────────────────── */
 (function initReveal() {
   const obs = new IntersectionObserver(es => {
