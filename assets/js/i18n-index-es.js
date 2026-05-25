@@ -44,7 +44,7 @@
     fq4a:"Admitimos los protocolos RS485/MODBUS RTU, Zigbee, GPRS/4G, LoRa y M-Bus. Nuestra DCU es compatible con la mayoría del software de cabecera AMI.",fq5a:"Los productos estándar se envían en un plazo de 15 a 25 días laborables. Los pedidos OEM personalizados requieren entre 30 y 45 días. Envío a través de los puertos de Ningbo/Shanghai o transporte aéreo.",fq6a:"Sí: documentación completa, manuales de integración, herramientas de software y soporte posventa exclusivo.",
     fq7a:"Área industrial de Qiaoqian, ciudad de Liushi, ciudad de Yueqing, provincia de Zhejiang, cerca de los puertos de Ningbo y Shanghai.",fq8a:"Todos los productos vienen con una garantía estándar de 2 años contra defectos de fabricación.",
     ct_ttl:'¿Listo para impulsar <em style="font-style:italic;color:var(--ac)">su próximo proyecto?</em>',ct_dsc:"Póngase en contacto con nuestro equipo técnico y de ventas para obtener especificaciones de productos, precios y consultas sobre OEM.",
-    ct_b1:"Envíenos un correo electrónico ahora",ct_b2:"+86-577-61616259",ft_ab:"Zhejiang Yomin Electric Co., Ltd.: soluciones de medición de energía de precisión en las que confían las empresas de servicios públicos y las industrias de energía en más de 95 países durante 30 años.",
+    ct_b1:"Envíenos un correo electrónico ahora",ct_b2:"+86-184-58440466",ft_ab:"Zhejiang Yomin Electric Co., Ltd.: soluciones de medición de energía de precisión en las que confían las empresas de servicios públicos y las industrias de energía en más de 95 países durante 30 años.",
     ft_pr:"Productos",ft_co:"Compañía",ft_cn:"Contacto",
     ft_cp:"© 2025 Zhejiang Yomin Electric Co., Ltd. Todos los derechos reservados."
   };
