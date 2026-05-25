@@ -1084,16 +1084,6 @@ function sL(l){
   document.getElementById('ldrop').classList.remove('op');
 }
 
-// CURSOR
-const cur=document.getElementById('cur'),curR=document.getElementById('curR');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.transform=`translate(${mx-5}px,${my-5}px)`});
-(function a(){rx+=(mx-rx-18)*.12;ry+=(my-ry-18)*.12;curR.style.transform=`translate(${rx}px,${ry}px)`;requestAnimationFrame(a)})();
-document.querySelectorAll('a,button,.pc,.gc').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{curR.style.width='54px';curR.style.height='54px';curR.style.opacity='.5'});
-  el.addEventListener('mouseleave',()=>{curR.style.width='36px';curR.style.height='36px';curR.style.opacity='1'});
-});
-
 // NAV SCROLL
 const navEl=document.getElementById('nav');
 window.addEventListener('scroll',()=>navEl.classList.toggle('sc',scrollY>40),{passive:true});
