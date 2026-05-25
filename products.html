@@ -2643,7 +2643,8 @@
       const kwHtml = (p.keywords && p.keywords.length)
         ? `<div class="mc-section-label" style="margin-top:20px">Keywords</div><div class="mc-keywords">${p.keywords.map(k => `<span class="mc-kw-chip">${esc(k)}</span>`).join('')}</div>`
         : '';
-      const certDocsHtml = isCatalogMachine ? `<div class="mc-section-label" style="margin-top:20px">Certifications</div>
+      const isScrewMachine = p.category === 'Screw Machine';
+      const certDocsHtml = isScrewMachine ? `<div class="mc-section-label" style="margin-top:20px">Certifications</div>
         <div class="mc-cert-docs">
           <a href="/assets/docs/screw-machine-ce-certificate.pdf" target="_blank" rel="noopener" class="mc-cert-link">📄 CE Certificate</a>
           <a href="/assets/docs/screw-machine-ce-report.pdf" target="_blank" rel="noopener" class="mc-cert-link">📋 CE Report</a>
@@ -2735,8 +2736,7 @@
 
       /* DESCRIPTION TAB */
       const desc = p.description || buildAutoDesc(p);
-      const isCatalogMachine = p.category === 'Screw Machine';
-      const inlineSpecsHtml = isCatalogMachine && (hasProcesses || specRows)
+      const inlineSpecsHtml = isScrewMachine && (hasProcesses || specRows)
         ? (hasProcesses
           ? `<div class="mc-inline-specs">
         <div class="mc-section-label">Production Line — 3 Process Stages</div>
@@ -2764,11 +2764,11 @@
         </div>`;
 
       /* RIGHT PANEL */
-      const attrTabLabel = isCatalogMachine ? 'Specifications' : 'Attributes';
+      const attrTabLabel = isScrewMachine ? 'Specifications' : 'Attributes';
       const rightHtml = `
         <div class="mc-cat-badge">${catIcon} ${esc(p.category)}</div>
         <h2 class="mc-title">${esc(p.title)}</h2>
-        ${isCatalogMachine ? `<p class="mc-lead-desc">${esc(desc)}</p>${inlineSpecsHtml}` : ''}
+        ${isScrewMachine ? `<p class="mc-lead-desc">${esc(desc)}</p>${inlineSpecsHtml}` : ''}
         <div class="mc-tabs" role="tablist">
           <button class="mc-tab active" data-tab="attr" role="tab">${attrTabLabel}</button>
           <button class="mc-tab" data-tab="reviews" role="tab">Reviews</button>
