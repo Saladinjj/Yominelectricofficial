@@ -48,10 +48,33 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// ─── CATCH-ALL (dev only — Vercel routing handles this in production) ───
+// ─── CLEAN URL ROUTING (dev only — Vercel routing handles this in production) ───
+const cleanRoutes = {
+  '/': 'index.html',
+  '/index': 'index.html',
+  '/about': 'about.html',
+  '/contact': 'contact.html',
+  '/products': 'products.html',
+  '/product-details': 'product-details.html',
+  '/process': 'process.html',
+  '/solutions': 'solutions.html',
+};
+
 if (config.isDev) {
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'index.html'));
+  Object.entries(cleanRoutes).forEach(([url, file]) => {
+    app.get(url, (req, res) => {
+      res.sendFile(path.join(__dirname, '..', file));
+    });
+  });
+
+  app.get('/video/company-overview', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'video', 'company-overview.html'));
+  });
+
+  // Redirect .html to clean URLs
+  app.get('/*.html', (req, res) => {
+    const clean = req.path.replace(/\.html$/, '');
+    res.redirect(301, clean || '/');
   });
 }
 
