@@ -21,16 +21,16 @@
 
   <!-- NAV -->
   <nav id="nav">
-    <a href="index.html" class="n-logo">
+    <a href="/" class="n-logo">
       <img src="logo.png" alt="Yomin Electric" style="height:44px;width:auto;object-fit:contain;filter:brightness(1.1);display:block">
     </a>
     <ul class="n-ctr">
-      <li><a href="index.html" data-t="nav_home">Home</a></li>
+      <li><a href="/" data-t="nav_home">Home</a></li>
       <li><a href="/products" data-t="nav_products">Products</a></li>
-      <li><a href="solutions.html" data-t="nav_solutions">Solutions</a></li>
-      <li><a href="process.html" data-t="nav_process">Process</a></li>
-      <li><a href="about.html" data-t="nav_about">About</a></li>
-      <li><a href="contact.html" data-t="nav_contact">Contact</a></li>
+      <li><a href="/solutions" data-t="nav_solutions">Solutions</a></li>
+      <li><a href="/process" data-t="nav_process">Process</a></li>
+      <li><a href="/about" data-t="nav_about">About</a></li>
+      <li><a href="/contact" data-t="nav_contact">Contact</a></li>
     </ul>
     <div class="n-rt">
       <div class="lsw">
@@ -55,12 +55,12 @@
   </nav>
   <div class="mob" id="mob">
     <button class="mob-x" id="mob-x">✕</button>
-    <a href="index.html" data-t="nav_home">Home</a>
+    <a href="/" data-t="nav_home">Home</a>
     <a href="/products" data-t="nav_products">Products</a>
-    <a href="solutions.html" data-t="nav_solutions">Solutions</a>
-    <a href="process.html" data-t="nav_process">Process</a>
-    <a href="about.html" data-t="nav_about">About</a>
-    <a href="contact.html" data-t="nav_contact">Contact</a>
+    <a href="/solutions" data-t="nav_solutions">Solutions</a>
+    <a href="/process" data-t="nav_process">Process</a>
+    <a href="/about" data-t="nav_about">About</a>
+    <a href="/contact" data-t="nav_contact">Contact</a>
     <div class="mob-lngs">
       <button class="mlb" data-lang="en">EN</button>
       <button class="mlb" data-lang="fr">FR</button>
@@ -232,7 +232,7 @@
         // Update quote button with product info
         const quoteBtn = document.getElementById('quote-button');
         if (quoteBtn) {
-          quoteBtn.href = `contact.html?product=${encodeURIComponent(product.title)}`;
+          quoteBtn.href = `/contact?product=${encodeURIComponent(product.title)}`;
         }
         
       } catch (error) {
