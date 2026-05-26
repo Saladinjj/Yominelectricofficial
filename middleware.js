@@ -26,14 +26,15 @@ function slugFromParam(value) {
 export default function middleware(request) {
   const url = new URL(request.url);
   const path = url.pathname.replace(/\/$/, '') || '/';
-  if (path !== '/products' && path !== '/products.html') return;
+  const isProductsPage = path === '/products' || path === '/products.html' || path === '/product' || path === '/product.html';
+  if (!isProductsPage) return;
 
   const legacyCat = url.searchParams.get('cat');
   const category = url.searchParams.get('category');
   const slug = slugFromParam(legacyCat) || slugFromParam(category);
 
-  if (!legacyCat && !category) return;
-  if (category && slug === category.toLowerCase()) return;
+  if (!legacyCat && !category && (path === '/products' || path === '/products.html')) return;
+  if (path === '/products' && category && slug === category.toLowerCase()) return;
 
   const target = new URL('/products', url.origin);
   if (slug) target.searchParams.set('category', slug);
@@ -41,5 +42,5 @@ export default function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/products', '/products.html'],
+  matcher: ['/products', '/products.html', '/product', '/product.html'],
 };
