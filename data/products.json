@@ -11647,5 +11647,79 @@
       "/assets/images/screw-machines/screw-machine-measurements.png"
     ],
     "datasheet": "/assets/docs/yomin-screw-machines.pdf"
+  },
+  {
+    "id": "ym-0233",
+    "title": "4P LCD 230V Rail-mounted Electricity AC Active Meter Three Phase Smart Energy Meters with Transparent Cover and Backlight",
+    "category": "Energy Meter",
+    "price": "$9.80-10.50",
+    "description": "Precision energy metering device for accurate power consumption measurement. Smart connectivity for remote monitoring. Suitable for three-phase power systems.",
+    "specs": {
+      "Phase": "Three Phase",
+      "Voltage": "230V",
+      "Current Type": "AC",
+      "Display": "LCD"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H41ab0e351fc749b4a6f46849dbd69bdb6/4P-LCD-230V-Rail-mounted-Electricity-AC.jpg?hasNWGrade=1",
+    "url": "https://www.alibaba.com/product-detail/4P-LCD-230V-Rail-mounted-Electricity_1601384438747.html"
+  },
+  {
+    "id": "ym-0234",
+    "title": "Wholesale Digital Power Kilowatt Hour Energy Meter Watt Kwh Wattmeter Monitor 220V 40A Electric Single Phase Energy Meter",
+    "category": "Energy Meter",
+    "price": "$2.50-2.90",
+    "description": "Precision energy metering device for accurate power consumption measurement. Designed for single-phase applications.",
+    "specs": {
+      "Phase": "Single Phase",
+      "Voltage": "220V",
+      "Current Type": "AC",
+      "Display": "Digital"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/Hb10da5e84f4a42a4843493b021722c59s/Digital-Power-Kilowatt-Hour-Energy-Meter-Watt.png?hasNWGrade=1",
+    "url": "https://www.alibaba.com/product-detail/Wholesale-Digital-Power-Kilowatt-Hour-Energy_1600955981049.html"
+  },
+  {
+    "id": "ym-0235",
+    "title": "Autotransformer JBK5 100VA Single Phase 220V Electrical Transformer Power Electric Machine Tool Control Transformer",
+    "category": "Tools & Hardware",
+    "price": "$9.83-10.46",
+    "description": "Professional-grade tool for construction and installation work. Designed for single-phase applications.",
+    "specs": {
+      "Phase": "Single Phase",
+      "Voltage": "220V",
+      "Capacity": "100 VA"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H552941b8d44c4f09bf7dfde9258d8b72X/Autotransformer-JBK5-100VA-Single-Phase-Electrical-Transformer.jpg?hasNWGrade=1",
+    "url": "https://www.alibaba.com/product-detail/Autotransformer-JBK5-100VA-Single-Phase-Electrical_60786397362.html"
+  },
+  {
+    "id": "ym-0236",
+    "title": "Three Phase 380V Four Wire 7P Remote Reading and Control WIFI Din Rail Smart Energy Meter With Relay Can Use APP",
+    "category": "Energy Meter",
+    "price": "$32.80-33.70",
+    "description": "Precision energy metering device for accurate power consumption measurement. Smart connectivity for remote monitoring. Suitable for three-phase power systems.",
+    "specs": {
+      "Phase": "Three Phase",
+      "Voltage": "380V",
+      "Communication": "WiFi",
+      "Display": "Digital"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H8d2b4f1a1f8d48cb8c1f5e8d93c3f1e0a/Three-Phase-380V-Four-Wire-7P-Remote.jpg?hasNWGrade=1",
+    "url": "https://www.alibaba.com/product-detail/Three-Phase-380V-Four-Wire-7P_1600918014446.html"
+  },
+  {
+    "id": "ym-0237",
+    "title": "2KVA Voltage Regulator Household Single Phase TDGC2 Variac 0-250V Voltage Converter Power Converter Voltage Variable Transformer",
+    "category": "Voltage Stabilizer/Regulator",
+    "price": "$13.29-28.69",
+    "description": "Automatic voltage regulator for stable power output. Protects appliances from voltage fluctuations. Designed for single-phase applications.",
+    "specs": {
+      "Phase": "Single Phase",
+      "Voltage": "250V",
+      "Capacity": "2 KVA",
+      "Current Type": "AC"
+    },
+    "image": "https://s.alicdn.com/@sc04/kf/H6f3d7819f5f84a8094be1467ce9e5c1c5/2KVA-Voltage-Regulator-Household-Single-Phase.jpg?hasNWGrade=1",
+    "url": "https://www.alibaba.com/product-detail/2KVA-Voltage-Regulator-Household-Single-Phase_60700835250.html"
   }
 ]
