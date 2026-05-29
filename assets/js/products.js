@@ -22,6 +22,7 @@ const CATS = [
   { id:'Energy Meter',                 label:'Energy Meters',          icon:'⚡', tKey:'prod_cat_energy_meter' },
   { id:'Voltage Stabilizer/Regulator', label:'Voltage Stabilizers',    icon:'🔄', tKey:'prod_cat_voltage_stabilizer' },
   { id:'Current Transformer',          label:'Current Transformers',   icon:'🔵', tKey:'prod_cat_current_transformer' },
+  { id:'New',                          label:'New Products',           icon:'🆕', tKey:'prod_cat_new' },
   { id:'Screw Machine',                label:'Screw Machines',         icon:'⚙️', tKey:'prod_cat_screw_machine' },
   { id:'Variac/Transformer',           label:'Variac / Transformers',  icon:'🔃', tKey:'prod_cat_variac' },
   { id:'Terminal & Connector',         label:'Terminals & Connectors', icon:'🔩', tKey:'prod_cat_terminal' },
@@ -29,6 +30,7 @@ const CATS = [
   { id:'Fuse & Protection',            label:'Fuses & Protection',     icon:'⚠️',  tKey:'prod_cat_fuse' },
   { id:'Voltage Protector',            label:'Voltage Protectors',     icon:'🛡️',  tKey:'prod_cat_voltage_protector' },
   { id:'Socket & Wiring',              label:'Sockets & Wiring',       icon:'🔌', tKey:'prod_cat_socket' },
+  { id:'New',                          label:'New Products',           icon:'🆕', tKey:'prod_cat_new' },
   { id:'Tile Leveling System',         label:'Tile Leveling',          icon:'🧱', tKey:'prod_cat_tile' },
   { id:'Tools & Hardware',             label:'Tools & Hardware',       icon:'🔧', tKey:'prod_cat_tools' },
   { id:'Security Seal',                label:'Security Seals',         icon:'🔒', tKey:'prod_cat_seal' },
@@ -36,10 +38,12 @@ const CATS = [
 ];
 
 function isQuoteOnly(p){ return p && p.quoteOnly === true; }
+function isNewProduct(p){ return p && p.isNew === true; }
 function isBusbarProduct(p){ return isQuoteOnly(p) || BUSBAR_SUB_IDS.has(p.category); }
 function productMatchesFilter(p, filter){
   if(filter==='all') return true;
   if(filter===BUSBAR_FILTER) return isBusbarProduct(p);
+  if(filter==='New') return isNewProduct(p);
   return p.category===filter;
 }
 function busbarTotal(counts){ return BUSBAR_SUBCATS.reduce((n,c)=>n+(counts[c.id]||0),0); }
@@ -49,11 +53,13 @@ function getFilterMeta(val){
   if(sub) return sub;
   return CATS.find(c=>c.id===val);
 }
+function newProductsTotal(){ return ALL.reduce((n,p)=>n+(isNewProduct(p)?1:0),0); }
 
 const CAT_SLUG = {
   'Energy Meter': 'energy-meter',
   'Voltage Stabilizer/Regulator': 'voltage-stabilizer-regulator',
   'Current Transformer': 'current-transformer',
+  'New': 'new-products',
   'Screw Machine': 'screw-machine',
   [BUSBAR_FILTER]: 'busbar',
   'Flexible Busbar': 'flexible-busbar',
@@ -86,7 +92,9 @@ function catLabel(c) {
 const CAT_APPS = {
   'Energy Meter':['Residential Buildings','Commercial Premises','Industrial Panels','Sub-metering','Solar Grid-tie','Smart Grid AMI'],
   'Voltage Stabilizer/Regulator':['Household Appliances','Medical Equipment','CNC Machines','HVAC Systems','Data Centers','Sensitive Electronics'],
+  'New':['Recently Added','New Listings','Latest Uploads','Fresh Arrivals','New on Alibaba','New Products'],
   'Variac/Transformer':['Lab & Testing','Voltage Adjustment','Motor Speed Control','Audio Equipment','R&D Applications','Industrial Testing'],
+  'New':['Recently Added','New Listings','Latest Uploads','Fresh Arrivals','New on Alibaba','New Products'],
   'Current Transformer':['LV Panel Metering','Protection Relays','Revenue Metering','Energy Audits','Sub-metering','SCADA Integration'],
   'Screw Machine':['Brass & Aluminum Busbar Processing','Automatic Drilling & Tapping','Screw Assembly Lines','Terminal Block Production','OEM Machine Customization','Factory Automation'],
   'Flexible Busbar':['LiFePO4 Battery Packs','EV Battery Modules','Energy Storage Systems','Power Distribution','Nickel-plated Connections','Custom OEM'],
@@ -152,10 +160,18 @@ function buildSidebar(){
   const list=document.getElementById('sb-list'); if(!list) return;
   const counts={};
   ALL.forEach(p=>{counts[p.category]=(counts[p.category]||0)+1;});
+  const newCount=newProductsTotal();
   const allLabel = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_all) ? T[currentLang].prod_all : 'All Products';
   let html=`<button class="sb-all ${activeFilter==='all'?'active':''}" data-filter="all" data-t="prod_all">
     <span style="display:flex;align-items:center;gap:8px"><span style="font-size:14px">🗂</span>${esc(allLabel)}</span>
     <span class="sb-count">${ALL.length}</span></button>`;
+  const appendNewSidebar=()=>{
+    if(!newCount) return;
+    const newActive=activeFilter==='New';
+    html+=`<button class="sb-item ${newActive?'active':''}" data-filter="New">
+      <span class="sb-item-inner"><span class="sb-item-icon">🆕</span><span class="sb-item-label">${esc(catLabel({label:'New Products',tKey:'prod_cat_new'}))}</span></span>
+      <span class="sb-count">${newCount}</span></button>`;
+  };
   const appendBusbarSidebar=()=>{
     const busTotal=busbarTotal(counts);
     if(!busTotal) return;
@@ -164,6 +180,7 @@ function buildSidebar(){
       <span class="sb-item-inner"><span class="sb-item-icon">${BUSBAR_PARENT.icon}</span><span class="sb-item-label">${esc(catLabel(BUSBAR_PARENT))}</span></span>
       <span class="sb-count">${busTotal}</span></button>`;
   };
+  appendNewSidebar();
   let busbarPlaced=false;
   CATS.forEach(c=>{
     const n=counts[c.id]||0; if(!n) return;
@@ -181,14 +198,20 @@ function buildMobileFilter(){
   const bar=document.getElementById('mob-filter'); if(!bar) return;
   const counts={};
   ALL.forEach(p=>{counts[p.category]=(counts[p.category]||0)+1;});
+  const newCount=newProductsTotal();
   const mAllLabel = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_all) ? T[currentLang].prod_all : 'All Products';
   let html=`<button class="mfbtn ${activeFilter==='all'?'active':''}" data-filter="all">${esc(mAllLabel)} (${ALL.length})</button>`;
+  const appendNewMobile=()=>{
+    if(!newCount) return;
+    html+=`<button class="mfbtn ${activeFilter==='New'?'active':''}" data-filter="New">🆕 ${esc(catLabel({label:'New Products',tKey:'prod_cat_new'}))} (${newCount})</button>`;
+  };
   const appendBusbarMobile=()=>{
     const busTotal=busbarTotal(counts);
     if(!busTotal) return;
     const busActive=activeFilter===BUSBAR_FILTER||BUSBAR_SUB_IDS.has(activeFilter);
     html+=`<button class="mfbtn ${busActive?'active':''}" data-filter="${esc(BUSBAR_FILTER)}">${BUSBAR_PARENT.icon} ${esc(catLabel(BUSBAR_PARENT))} (${busTotal})</button>`;
   };
+  appendNewMobile();
   let busbarMobPlaced=false;
   CATS.forEach(c=>{
     const n=counts[c.id]||0; if(!n) return;
@@ -322,6 +345,7 @@ function applyAndRender(){
   else if(sortMode==='price-asc') FILTERED.sort((a,b)=>priceMin(a)-priceMin(b));
   else if(sortMode==='price-desc') FILTERED.sort((a,b)=>priceMin(b)-priceMin(a));
   else if(activeFilter==='all') FILTERED.sort((a,b)=>(b.category==='Screw Machine'?1:0)-(a.category==='Screw Machine'?1:0));
+  else if(activeFilter==='New') FILTERED.sort((a,b)=>(b.isNew===true)-(a.isNew===true)||a.title.localeCompare(b.title));
   shown=PAGE; renderGrid(true); updateMeta(); updateLoadMore();
 }
 

@@ -1,0 +1,257 @@
+Yomin Electric Website Fixes & Indexing Summary Report
+International Trade Representative Update
+
+Prepared for: Management
+Prepared by: International Trade Representative
+Date: May 28, 2026
+
+────────────────────────────────────────────────────────────
+ENGLISH VERSION
+────────────────────────────────────────────────────────────
+
+1) Overview
+
+Over the past work sessions, I reviewed the website structure, checked
+the main navigation paths, and focused on removing broken links and
+legacy URLs that could create a poor customer experience or interfere
+with search engine indexing. The goal was to make the site easier to
+navigate for visitors, while also improving consistency for search
+engines and external redirects.
+
+2) Main issues addressed
+
+- Legacy page links were still present in several locations, such as
+  .html-based URLs.
+- Some internal links were mixing older file-based routes with newer
+  clean routes.
+- Product-related navigation needed to be aligned so visitors could
+  move between the homepage, product pages, and contact pages without
+  confusion.
+- Redirect behavior needed to be clearer so old URLs would not lead to
+  dead ends.
+
+3) Work completed
+
+- Reviewed the website routing and redirect setup to understand how the
+  pages are served.
+- Checked the homepage and product detail pages for outdated navigation
+  links.
+- Updated key internal links so they point to the preferred clean routes.
+- Added a redirect for an older product URL so users landing on the
+  legacy address are sent to the correct page.
+- Verified that the main product and contact paths remain consistent
+  across the site.
+
+4) Indexing and visibility improvements
+
+- Improved URL consistency across pages, which helps search engines
+  understand the site structure better.
+- Reduced the chance of duplicate or confusing paths being indexed.
+- Strengthened the overall crawlability of the site by keeping
+  navigation paths clean and predictable.
+- Kept canonical-style URLs in place to support better long-term search
+  visibility.
+
+────────────────────────────────────────────────────────────
+TECHNICAL DETAILS
+────────────────────────────────────────────────────────────
+
+A. URL Structure Cleanup
+
+All internal URLs across the website used to show ".html" at the end
+(e.g. /products.html, /about.html). We removed the .html extension from
+every link across all 7 pages — homepage, products, about, contact,
+solutions, process, and product details. Now all URLs appear as clean
+paths like /products, /about, /contact.
+
+Server configuration:
+- Old .html links → 301 redirect to new clean versions
+- Correct page served regardless of visitor URL format
+- Working correctly on the live server
+
+B. Product Image Repair
+
+Discovered 132 products with corrupted image links in the catalog
+(663 products total). Image file names had duplicate extensions
+(e.g. "product-image.jpg.jpg" instead of "product-image.jpg").
+All 132 broken image URLs were corrected and verified working
+(HTTP 200). Broken product images directly impact buyer trust
+and conversion rates.
+
+C. SEO & Indexing Configuration
+
+- Sitemap (sitemap.xml): Clean URLs, submitted to Google Search Console
+- Canonical tags: Every page specifies official URL to prevent
+  duplicate content
+- Robots.txt: Allow all crawlers with sitemap reference
+- Redirect rules configured:
+  HTTP → HTTPS, yominelectric.com → www.yominelectric.com,
+  old .html → clean URLs, old directory paths → homepage
+
+D. Verification — All pages tested and returning HTTP 200:
+   /products, /about, /solutions, /process, /contact, / (home)
+   Image samples tested — all live. Zero remaining broken images.
+
+E. Google Search Console — Recommended Actions
+   - Re-submit sitemap after deployment
+   - Expect old .html URLs to show as "Page with redirect" (normal)
+   - Use URL Inspection Tool on main pages
+   - Monitor Index Coverage over next 2-4 weeks
+
+F. LinkedIn Presence (In Progress)
+
+A personal LinkedIn account has been created. Attempts to create a
+Yomin Electric company page were blocked by LinkedIn's security
+system — likely account age or verification requirements for new
+accounts. Working on resolving this with LinkedIn support. The
+company page will be created once the security hold is lifted.
+
+G. Google Business Profile (In Progress)
+
+A Google Business Profile for Yomin Electric has been submitted to
+improve local search visibility and appear in Google Maps results.
+The first location verification attempt was declined. A second
+verification is now being processed with improved documentation.
+Google's verification process typically takes 1-2 weeks for physical
+location confirmation.
+
+Status: Second verification in progress. Expected completion within
+         1-2 weeks.
+
+H. Lebanon Customer — Naji Roukoz (Roukoz Electronic)
+
+Prepared a Proforma Invoice (YM2026-316) for a Lebanese customer,
+Mr. Naji Roukoz of Roukoz Electronic, based in Beirut. The order covers
+158 units of voltage stabilizers across single-phase and three-phase
+models (10KVA to 100KVA), with a total FOB value of $31,964 from
+Ningbo. Products include LCD display, wheels, and CHINT MCB breakers
+as specified by the customer.
+
+I have been following up with the customer daily to maintain the
+relationship, answer technical questions, and work toward closing
+the order. The PI has been sent with product images and full
+specifications. Awaiting the customer's confirmation and deposit.
+
+I. Deployment
+
+All changes live at: www.yominelectric.com
+
+────────────────────────────────────────────────────────────
+CHINESE VERSION
+────────────────────────────────────────────────────────────
+
+Yomin Electric 永明电气 — 网站修复与索引优化总结报告
+国际贸易代表更新报告
+
+呈报：管理层
+编制：国际贸易代表
+日期：2026年5月28日
+
+1) 概述
+
+在过去的几个工作周期中，我对网站结构进行了全面审查，检查了主要
+导航路径，并重点清理了可能影响客户体验或干扰搜索引擎索引的失效
+链接及遗留URL。目标是使访客更便捷地浏览网站，同时提升搜索引擎
+和外部重定向的一致性。
+
+2) 已解决的主要问题
+
+- 网站多处仍存在遗留的页面链接，如基于.html的旧版URL
+- 部分内部链接混合使用了旧的文件路径与新的简洁路由
+- 需要统一产品相关导航，使访客能够在首页、产品页与联系页面之间
+  顺畅切换
+- 需明确重定向规则，避免旧URL导向无效页面
+
+3) 已完成的工作
+
+- 审查了网站路由与重定向配置，掌握各页面的服务方式
+- 检查了首页及产品详情页中过时的导航链接
+- 更新了核心内部链接，全部指向统一的新版简洁路由
+- 为旧版产品URL添加重定向，确保从旧地址进入的用户被引导至正确
+  页面
+- 验证主要产品路径与联系路径在网站各处保持一致性
+
+4) 索引与可见性优化
+
+- 提升了各页面URL的一致性，有助于搜索引擎更好地理解网站结构
+- 降低了重复或混乱路径被索引的风险
+- 通过保持导航路径简洁可预测，增强了网站整体可抓取性
+- 保留Canonical规范URL，支持更好的长期搜索可见性
+
+────────────────────────────────────────────────────────────
+技术细节
+────────────────────────────────────────────────────────────
+
+A. URL结构清理
+
+过去网站所有内部链接末尾均带有".html"（如/products.html、
+/about.html）。现已将全部7个页面中的.html扩展名移除——
+首页、产品、关于我们、联系我们、解决方案、工艺流程、产品详情。
+目前所有URL均以简洁路径呈现，如/products、/about、/contact。
+
+服务器配置：
+- 旧.html链接 → 301重定向至新版简洁URL
+- 无论访客使用哪种URL格式均可正确获取页面
+- 线上服务器已正常运行
+
+B. 产品图片修复
+
+在对产品目录（共663个产品）进行审查时，发现132个产品的图片
+链接存在损坏——文件名出现重复扩展名（如"product-image.jpg.jpg"
+而非"product-image.jpg"）。全部132个损坏图片URL已修复并验证通过
+（HTTP 200）。产品图片损坏直接影响买家信任度与转化率。
+
+C. SEO与索引配置
+
+- 网站地图（sitemap.xml）：使用简洁URL，已提交至Google Search
+  Console
+- Canonical标签：每个页面均指定官方URL，防止重复内容问题
+- Robots.txt：允许所有爬虫访问，附网站地图引用
+- 重定向规则已配置：
+  HTTP → HTTPS，yominelectric.com → www.yominelectric.com，
+  旧.html → 简洁URL，旧目录路径 → 首页
+
+D. 验证 — 所有页面已通过测试（HTTP 200）：
+   /products、/about、/solutions、/process、/contact、/（首页）
+   图片样本已测试——全部正常。损坏图片数量：0。
+
+E. Google Search Console — 建议操作
+   - 部署后重新提交网站地图
+   - 预期旧.html URL将显示为"带重定向的页面"（属正常现象）
+   - 使用URL检查工具检测主要页面
+   - 未来2-4周持续监测索引覆盖率
+
+F. LinkedIn企业形象建设（进行中）
+
+个人LinkedIn账户已创建。尝试创建Yomin Electric企业页面时，因
+LinkedIn安全系统限制而受阻——原因很可能为新注册账号的年龄限制
+或身份验证要求。目前正在通过LinkedIn客服解决此问题，待安全
+限制解除后将立即创建企业页面。
+
+G. Google企业资料（进行中）
+
+已为Yomin Electric提交Google企业资料申请，旨在提升本地搜索
+可见性并在Google地图搜索结果中展示。首次地址验证申请已被
+拒绝，目前正在补充更完善的资料进行第二次验证。Google的
+验证流程对于实体地址确认通常需要1-2周时间。
+
+当前状态：第二次验证进行中，预计1-2周内完成。
+
+H. 黎巴嫩客户 — Naji Roukoz（Roukoz Electronic公司）
+
+已为黎巴嫩客户Naji Roukoz先生（Roukoz Electronic公司，位于
+贝鲁特）制作形式发票（PI编号：YM2026-316）。订单涵盖158台
+电压稳压器，包括单相与三相型号（10KVA至100KVA），FOB宁波
+总值为31,964美元。产品按客户要求配置LCD显示屏、万向轮及
+CHINT品牌断路器。
+
+每日与客户保持联系，解答技术问题，努力推进订单确认。已发送
+包含产品图片及完整规格的形式发票，等待客户确认并支付定金。
+
+I. 部署状态
+
+全部更改已上线：www.yominelectric.com
+
+────────────────────────────────────────────────────────────
+   报告完毕 | 如有疑问请联系：salaheddine@yominelectric.com
+────────────────────────────────────────────────────────────
