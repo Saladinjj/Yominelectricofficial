@@ -5,6 +5,7 @@
 'use strict';
 
 const CATS = [
+  { id:'New',                          label:'New Products',           icon:'🆕', tKey:'prod_cat_new' },
   { id:'Energy Meter',                 label:'Energy Meters',          icon:'⚡', tKey:'prod_cat_energy_meter' },
   { id:'Voltage Stabilizer/Regulator', label:'Voltage Stabilizers',    icon:'🔄', tKey:'prod_cat_voltage_stabilizer' },
   { id:'Current Transformer',          label:'Current Transformers',   icon:'🔵', tKey:'prod_cat_current_transformer' },
@@ -73,10 +74,16 @@ function buildSidebar(){
   const list=document.getElementById('sb-list'); if(!list) return;
   const counts={};
   ALL.forEach(p=>{counts[p.category]=(counts[p.category]||0)+1;});
+  const newCount=ALL.filter(p=>p.isNew).length;
   const allLabel = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_all) ? T[currentLang].prod_all : 'All Products';
   let html=`<button class="sb-all ${activeFilter==='all'?'active':''}" data-filter="all" data-t="prod_all">
     <span style="display:flex;align-items:center;gap:8px"><span style="font-size:14px">🗂</span>${esc(allLabel)}</span>
     <span class="sb-count">${ALL.length}</span></button>`;
+  if(newCount){
+    html+=`<button class="sb-item ${activeFilter==='New'?'active':''}" data-filter="New">
+      <span class="sb-item-inner"><span class="sb-item-icon">🆕</span><span class="sb-item-label">New Products</span></span>
+      <span class="sb-count">${newCount}</span></button>`;
+  }
   CATS.forEach(c=>{
     const n=counts[c.id]||0; if(!n) return;
     html+=`<button class="sb-item ${activeFilter===c.id?'active':''}" data-filter="${esc(c.id)}">
@@ -93,6 +100,9 @@ function buildMobileFilter(){
   ALL.forEach(p=>{counts[p.category]=(counts[p.category]||0)+1;});
   const mAllLabel = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_all) ? T[currentLang].prod_all : 'All Products';
   let html=`<button class="mfbtn ${activeFilter==='all'?'active':''}" data-filter="all">${esc(mAllLabel)} (${ALL.length})</button>`;
+  if(newCount){
+    html+=`<button class="mfbtn ${activeFilter==='New'?'active':''}" data-filter="New">🆕 New Products (${newCount})</button>`;
+  }
   CATS.forEach(c=>{
     const n=counts[c.id]||0; if(!n) return;
     html+=`<button class="mfbtn ${activeFilter===c.id?'active':''}" data-filter="${esc(c.id)}">${c.icon} ${esc(catLabel(c))} (${n})</button>`;
@@ -147,7 +157,7 @@ function initLoadMore(){
 
 /* ── Apply + Render ── */
 function applyAndRender(){
-  FILTERED=activeFilter==='all'?[...ALL]:ALL.filter(p=>p.category===activeFilter);
+  FILTERED=activeFilter==='all'?[...ALL]:ALL.filter(p=>p.category===activeFilter || (activeFilter==='New' && p.isNew));
   if(searchQuery){
     const q=searchQuery;
     FILTERED=FILTERED.filter(p=>
@@ -161,6 +171,7 @@ function applyAndRender(){
   else if(sortMode==='za') FILTERED.sort((a,b)=>b.title.localeCompare(a.title));
   else if(sortMode==='price-asc') FILTERED.sort((a,b)=>priceMin(a.price)-priceMin(b.price));
   else if(sortMode==='price-desc') FILTERED.sort((a,b)=>priceMin(b.price)-priceMin(a.price));
+  else if(activeFilter==='New') FILTERED.sort((a,b)=>a.title.localeCompare(b.title));
   shown=PAGE; renderGrid(true); updateMeta(); updateLoadMore();
 }
 
