@@ -58,7 +58,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
   <style>
     /* NAV */
     nav {
@@ -1762,7 +1762,7 @@
   <!-- NAV -->
   <nav id="nav">
     <a href="/" class="n-logo">
-      <img src="logo.png" alt="Yomin Electric" style="height:44px;width:auto;object-fit:contain;filter:brightness(1.1);display:block">
+      <img src="/logo.png" alt="Yomin Electric" style="height:44px;width:auto;object-fit:contain;filter:brightness(1.1);display:block">
     </a>
     <ul class="n-ctr">
       <li><a href="/" data-t="nav_home">Home</a></li>
@@ -1933,7 +1933,7 @@
       <div class="wc-modal-icon" style="font-size:36px">💬</div>
       <div class="wc-modal-title">Connect on WeChat</div>
       <div class="wc-modal-sub">Scan the QR code with WeChat to reach our sales team directly.</div>
-      <div class="wc-qr-wrap"><img class="wc-qr-img" src="assets/img/wechat-qr.png"
+      <div class="wc-qr-wrap"><img class="wc-qr-img" src="/assets/img/wechat-qr.png"
           onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=yominelectric'"
           alt="WeChat QR"></div>
       <button class="wc-modal-close" id="wc-close">✕ &nbsp;Close</button>
@@ -1986,8 +1986,8 @@
     </div>
   </div>
 
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/i18n-es.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/i18n-es.js"></script>
   <script>
     'use strict';
     const BUSBAR_FILTER = '__busbar__';
@@ -2138,8 +2138,8 @@
       /* ── Load products.json ── */
       try {
         const [r, ra] = await Promise.all([
-          fetch('data/products.json'),
-          fetch('data/alibaba_enriched.json').catch(() => null)
+          fetch('/data/products.json'),
+          fetch('/data/alibaba_enriched.json').catch(() => null)
         ]);
         if (!r.ok) throw new Error('HTTP ' + r.status);
         const raw = await r.json();
