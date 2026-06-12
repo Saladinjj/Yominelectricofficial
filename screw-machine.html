@@ -2030,6 +2030,7 @@
       'security-seal': 'Security Seal',
       'other': 'Other',
     };
+    const CAT_SLUG_REVERSE = Object.fromEntries(Object.entries(CAT_SLUG_EXTRA).map(([k, v]) => [v, k]));
 
     const CATS = [
       { id: 'Energy Meter', label: 'Energy Meters', icon: 'âš¡', tkey: 'prod_cat_energy_meter' },
@@ -2354,6 +2355,22 @@
         }
       }
       buildBusbarSubBar();
+      // Update browser URL and page meta
+      const slug = FILTER_SLUG[val] || CAT_SLUG_REVERSE[val] || '';
+      const path = slug ? '/products/' + slug : '/products';
+      if (location.pathname.replace(/\/$/, '') !== path) {
+        history.pushState(null, '', path);
+        const meta = getFilterMeta(val);
+        if (meta) {
+          document.title = (typeof getCatLabel === 'function' ? getCatLabel(meta) : meta.label) + ' | Yomin Electric';
+        }
+        const desc = document.querySelector('meta[name="description"]');
+        if (desc && meta) {
+          desc.content = 'Browse Yomin Electric ' + (typeof getCatLabel === 'function' ? getCatLabel(meta) : meta.label) + ' â€” factory-direct export pricing, ISO9001 certified, low MOQ.';
+        }
+        const canon = document.querySelector('link[rel="canonical"]');
+        if (canon) canon.href = 'https://www.yominelectric.com' + path;
+      }
       // Scroll active mobile filter button into center view
       const activeMfBtn = document.querySelector('.mfbtn.active');
       if (activeMfBtn) {
