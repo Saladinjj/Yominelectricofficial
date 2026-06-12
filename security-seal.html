@@ -57,7 +57,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/assets/css/main.css">
   <style>
     /* NAV */
@@ -1986,8 +1987,8 @@
     </div>
   </div>
 
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/i18n-es.js"></script>
+  <script defer src="/assets/js/main.js"></script>
+  <script defer src="/assets/js/i18n-es.js"></script>
   <script>
     'use strict';
     const BUSBAR_FILTER = '__busbar__';
@@ -2927,6 +2928,7 @@
     function esc(s) { return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
   </script>
 <script defer src="/_vercel/insights/script.js"></script>
+<script>(function(){new PerformanceObserver(l=>{l.getEntries().forEach(e=>{let v;if(e.name==='LCP')v=e.startTime;else if(e.name==='CLS'&&!e.hadRecentInput)v=e.value;if(v!=null)navigator.sendBeacon&&navigator.sendBeacon('/api/vitals',JSON.stringify({n:e.name,v:Math.round(v*100)/100,p:location.pathname}))})}).observe({type:'largest-contentful-paint',buffered:!0});})();(function m(){let t=performance.getEntriesByType('navigation')[0];if(t){let fc=performance.getEntriesByName('first-contentful-paint')[0],r=t.responseEnd-t.requestStart;navigator.sendBeacon&&navigator.sendBeacon('/api/vitals',JSON.stringify({n:'FCP',v:Math.round(fc?fc.startTime:0),p:location.pathname}));navigator.sendBeacon&&navigator.sendBeacon('/api/vitals',JSON.stringify({n:'TTFB',v:Math.round(r),p:location.pathname}))}else setTimeout(m,100)})();</script>
 </body>
 
 </html>

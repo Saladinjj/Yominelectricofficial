@@ -45,7 +45,8 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{--bg:#0d0d0d;--bgs:#141414;--bgc:#181818;--bgc2:#1f1f1f;--sur:#242424;--bdr:rgba(255,255,255,0.08);--bds:rgba(255,255,255,0.04);--tx:#f0ede8;--mt:#888;--dm:#555;--ac:#c8a96e;--ac2:#e8d5a3;--sf:'DM Serif Display',Georgia,serif;--ss:'DM Sans',system-ui,sans-serif;--r:16px;--tr:0.4s cubic-bezier(.25,.46,.45,.94)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -195,7 +196,7 @@ a.gi{color:inherit;text-decoration:none}
 .prnb{font-family:var(--sf);font-size:64px;color:var(--ac);opacity:.06;position:absolute;top:-6px;right:12px;line-height:1;pointer-events:none}
 /* Emoji icon perfectly centered */
 .pricon{width:52px;height:52px;background:rgba(200,169,110,.08);border:1px solid rgba(200,169,110,.18);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 20px;line-height:1}
-.prstep h4{font-family:var(--sf);font-size:20px;margin-bottom:10px}
+.prstep strong{font-family:var(--sf);font-size:20px;margin-bottom:10px;display:block;font-weight:700;color:var(--tx)}
 .prstep p{font-size:13px;color:var(--mt);line-height:1.7}
 /* STATS */
 .sband{padding:80px 60px;background:var(--bgc);border-top:1px solid var(--bds);border-bottom:1px solid var(--bds)}
@@ -247,6 +248,7 @@ footer{background:var(--bgc);border-top:1px solid var(--bds);padding:80px 60px 4
 .fci a{color:var(--dm);text-decoration:none;transition:color .2s}
 .fci a:hover{color:var(--ac)}
 .fcol h5{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--mt);margin-bottom:14px;font-weight:600}
+.fcol .fcol-ttl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--mt);margin-bottom:14px;font-weight:600;display:block}
 .fcol ul{list-style:none;display:flex;flex-direction:column;gap:9px}
 .fcol ul a{font-size:13px;color:var(--dm);text-decoration:none;transition:color .2s}
 .fcol ul a:hover{color:var(--tx)}
@@ -465,6 +467,28 @@ body.light .ncta{background:#b8941a}
 body.light .ncta:hover{background:#d4a820}
 body.light .ham span{background:#1a1a1a}
 body.light .mob-x{color:#555}
+/* ── ACCESSIBILITY: Contrast improvements without changing brand colors ── */
+body:not(.light) .fbot p,
+body:not(.light) .fci,
+body:not(.light) .fcol ul a,
+body:not(.light) .fcol h5,
+body:not(.light) .slbl,
+body:not(.light) .sdesc,
+body:not(.light) .stabs .tbtn,
+body:not(.light) .trole,
+body:not(.light) .cert-by,
+body:not(.light) .cert-sub,
+body:not(.light) .mi,
+body:not(.light) .sc2 p,
+body:not(.light) .sf2 li{text-shadow:0 0 0.6px rgba(255,255,255,0.12)}
+body:not(.light) .fcol ul li a{text-shadow:0 0 0.6px rgba(255,255,255,0.18)}
+body.light .fbot p,
+body.light .fci,
+body.light .fcol ul a,
+body.light .fcol h5,
+body.light .trole,
+body.light .cert-by,
+body.light .cert-sub{text-shadow:0 0 0.5px rgba(0,0,0,0.08)}
 
 </style>
 </head>
@@ -488,7 +512,7 @@ body.light .mob-x{color:#555}
 <!-- NAV -->
 <nav id="nav">
   <a href="#" class="n-logo">
-    <img src="logo.png" alt="Yomin Electric" style="height:44px;width:auto;object-fit:contain;filter:brightness(1.1);display:block">
+    <img src="logo.png" alt="Yomin Electric" style="height:44px;width:auto;object-fit:contain;filter:brightness(1.1);display:block" width="44" height="44">
   </a>
   <ul class="n-ctr">
     <li><a href="/" class="active">Home</a></li>
@@ -634,11 +658,11 @@ body.light .mob-x{color:#555}
   </div>
   <div class="sp act" data-panel="0">
     <div class="sc2"><h3 data-i18n="sv0h">Precision Energy Metering</h3><p data-i18n="sv0p">We design and manufacture a complete range of static energy meters compliant with IEC 62053, IEC 61036, and ANSI C12 standards. Suitable for residential, commercial and industrial applications in over 95 countries.</p><ul class="sf2"><li data-i18n="sv0f1">Single-phase &amp; three-phase designs</li><li data-i18n="sv0f2">Class 0.2S, 0.5S, 1 &amp; 2 accuracy</li><li data-i18n="sv0f3">DIN rail, panel &amp; socket mounting</li><li data-i18n="sv0f4">Wide voltage &amp; frequency range</li></ul></div>
-    <div class="simg"><img src="https://www-x-yominelectric-x-com.img.addlink.cn/htmanages/pic/sb/05.jpg" alt="Yomin Electric Factory" onerror="this.style.display='none'"><div class="simo"></div></div>
+    <div class="simg"><img src="https://www-x-yominelectric-x-com.img.addlink.cn/htmanages/pic/sb/05.jpg" alt="Yomin Electric Factory" loading="lazy" onerror="this.style.display='none'"><div class="simo"></div></div>
   </div>
   <div class="sp" data-panel="1">
     <div class="sc2"><h3 data-i18n="sv1h">Smart Grid &amp; IoT Integration</h3><p data-i18n="sv1p">Our smart meters and data concentrators enable Advanced Metering Infrastructure (AMI) deployment. RS485 MODBUS, Zigbee, GPRS, and LoRa communication options ensure compatibility with any head-end system.</p><ul class="sf2"><li data-i18n="sv1f1">RS485 / MODBUS RTU protocol</li><li data-i18n="sv1f2">Zigbee &amp; LoRa wireless options</li><li data-i18n="sv1f3">Data Concentrator Units (DCU)</li><li data-i18n="sv1f4">Remote reading &amp; load control</li></ul></div>
-    <div class="simg"><img src="https://www-x-yominelectric-x-com.img.addlink.cn/htmanages/pic/sb/06.jpg" alt="Yomin Factory Assembly" onerror="this.style.display='none'"><div class="simo"></div></div>
+        <div class="simg"><img src="https://www-x-yominelectric-x-com.img.addlink.cn/htmanages/pic/sb/06.jpg" alt="Yomin Factory Assembly" loading="lazy" onerror="this.style.display='none'"><div class="simo"></div></div>
   </div>
   <div class="sp" data-panel="2">
     <div class="sc2"><h3 data-i18n="sv2h">Prepaid Metering Systems</h3><p data-i18n="sv2p">Complete keypad and smart card prepaid metering solutions for utility revenue protection and energy access programs. Supports STS token systems widely used in Africa, Asia, and the Middle East.</p><ul class="sf2"><li data-i18n="sv2f1">STS-compliant token generation</li><li data-i18n="sv2f2">Keypad &amp; IC card options</li><li data-i18n="sv2f3">Anti-tamper &amp; fraud detection</li><li data-i18n="sv2f4">Remote top-up capability</li></ul></div>
@@ -753,10 +777,10 @@ body.light .mob-x{color:#555}
   <span class="slbl2 rv" data-i18n="pr_lbl">How It Works</span>
   <h2 class="stitle rv d1" data-i18n="pr_ttl">From Inquiry to Delivery</h2>
   <div class="prsteps">
-    <div class="prstep rv d1"><div class="prnb">01</div><div class="pricon">💬</div><h4 data-i18n="pr1h">Consult</h4><p data-i18n="pr1p">Share your specifications and requirements. Our technical team responds within 24 hours.</p></div>
-    <div class="prstep rv d2"><div class="prnb">02</div><div class="pricon">🔧</div><h4 data-i18n="pr2h">Customize</h4><p data-i18n="pr2p">We configure the product to your standards — voltage, communication protocol, branding, and packaging.</p></div>
-    <div class="prstep rv d3"><div class="prnb">03</div><div class="pricon">✅</div><h4 data-i18n="pr3h">Quality Control</h4><p data-i18n="pr3p">Every meter passes rigorous QC testing per IEC, ANSI, and local utility standards before shipping.</p></div>
-    <div class="prstep rv d4"><div class="prnb">04</div><div class="pricon">🚢</div><h4 data-i18n="pr4h">Ship &amp; Support</h4><p data-i18n="pr4p">Products shipped via Shanghai or Ningbo port. Full technical documentation and after-sales support globally.</p></div>
+    <div class="prstep rv d1"><div class="prnb">01</div><div class="pricon">💬</div><strong data-i18n="pr1h">Consult</strong><p data-i18n="pr1p">Share your specifications and requirements. Our technical team responds within 24 hours.</p></div>
+    <div class="prstep rv d2"><div class="prnb">02</div><div class="pricon">🔧</div><strong data-i18n="pr2h">Customize</strong><p data-i18n="pr2p">We configure the product to your standards — voltage, communication protocol, branding, and packaging.</p></div>
+    <div class="prstep rv d3"><div class="prnb">03</div><div class="pricon">✅</div><strong data-i18n="pr3h">Quality Control</strong><p data-i18n="pr3p">Every meter passes rigorous QC testing per IEC, ANSI, and local utility standards before shipping.</p></div>
+    <div class="prstep rv d4"><div class="prnb">04</div><div class="pricon">🚢</div><strong data-i18n="pr4h">Ship &amp; Support</strong><p data-i18n="pr4p">Products shipped via Shanghai or Ningbo port. Full technical documentation and after-sales support globally.</p></div>
   </div>
 </section>
 <!-- TESTIMONIALS -->
@@ -957,16 +981,16 @@ body.light .mob-x{color:#555}
   <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· ENERGY METERING ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· SMART METERS ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· CURRENT TRANSFORMERS ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· POWER QUALITY ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· ENERGY METERING ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· SMART METERS ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· CURRENT TRANSFORMERS ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· POWER QUALITY ·</span></div></div>
   <div class="fgrid">
     <div class="fbrand">
-      <div class="flogo"><img src="logo.png" alt="Yomin Electric" onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<span style=\'font-family:var(--sf);font-size:18px\'>Yomin Electric</span>')"></div>
+      <div class="flogo"><img src="logo.png" alt="Yomin Electric" width="36" height="36" loading="lazy" onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<span style=\'font-family:var(--sf);font-size:18px\'>Yomin Electric</span>')"></div>
       <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. — Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
       <div class="fci">📍 Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
       <div class="fci">📞 <a href="https://wa.me/8618458440466">+86 1845 8440 466</a></div>
       <div class="fci">📠 +86-577-61616258</div>
       <div class="fci">✉️ <a href="mailto:bill@cnyomin.com">bill@cnyomin.com</a></div>
     </div>
-    <div class="fcol"><h5 data-i18n="ft_pr">Products</h5><ul><li><a href="/products?category=screw-machine">Screw Machines</a></li><li><a href="/products?category=energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products?category=energy-meter">Smart Meter</a></li><li><a href="/products?category=energy-meter">Prepaid Meters</a></li><li><a href="/products?category=current-transformer">Current Transformers</a></li><li><a href="/products?category=energy-meter">RS485 Meters</a></li><li><a href="/products?category=smart-gateway">Data Concentrators</a></li></ul></div>
-    <div class="fcol"><h5 data-i18n="ft_co">Company</h5><ul><li><a href="/about">About Yomin</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
-    <div class="fcol"><h5 data-i18n="ft_cn">Contact</h5><ul><li><a href="/contact">Get a Quote</a></li><li><a href="mailto:bill@cnyomin.com">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products?category=screw-machine">Screw Machines</a></li><li><a href="/products?category=energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products?category=energy-meter">Smart Meter</a></li><li><a href="/products?category=energy-meter">Prepaid Meters</a></li><li><a href="/products?category=current-transformer">Current Transformers</a></li><li><a href="/products?category=energy-meter">RS485 Meters</a></li><li><a href="/products?category=smart-gateway">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="mailto:bill@cnyomin.com">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li></ul></div>
   </div>
   <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">© 2025 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 · IEC 61036 · ANSI C12 · CE · RoHS</p></div>
 </footer>
@@ -1222,12 +1246,25 @@ document.addEventListener('keydown', e => { if(e.key==='Escape') wcModalIndex.st
 
 
 </script>
-<script src="assets/js/i18n-index-es.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/i18n-es.js"></script>
+<script defer src="assets/js/i18n-index-es.js"></script>
+<script defer src="assets/js/main.js"></script>
+<script defer src="assets/js/i18n-es.js"></script>
 <script>
 (function(){const l=localStorage.getItem('ym_lang');if(l&&window.__ymT[l])sL(l);})();
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
+<script>
+/* Real User Monitoring - Core Web Vitals */
+new PerformanceObserver(l => {l.getEntries().forEach(e => {
+  let v; if(e.name==='LCP') v=e.startTime; else if(e.name==='CLS'&&!e.hadRecentInput) v=e.value;
+  if(v!=null) navigator.sendBeacon&&navigator.sendBeacon('/api/vitals', JSON.stringify({n:e.name,v:Math.round(v*100)/100,p:location.pathname}));
+})}).observe({type:'largest-contentful-paint',buffered:!0});
+(function m(){let t=performance.getEntriesByType('navigation')[0];if(t){
+  let f=t.domContentLoadedEventEnd-t.fetchStart,r=t.responseEnd-t.requestStart;
+  navigator.sendBeacon&&navigator.sendBeacon('/api/vitals',JSON.stringify({n:'FCP',v:Math.round((performance.getEntriesByName('first-contentful-paint')[0]||{}).startTime||0),p:location.pathname}));
+  navigator.sendBeacon&&navigator.sendBeacon('/api/vitals',JSON.stringify({n:'TTFB',v:Math.round(r),p:location.pathname}));
+  navigator.sendBeacon&&navigator.sendBeacon('/api/vitals',JSON.stringify({n:'DCL',v:Math.round(f),p:location.pathname}));
+}else setTimeout(m,100)})();
+</script>
 </body>
 </html>
