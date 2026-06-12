@@ -13,85 +13,79 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.yominelectric.com/products/energy-meter</loc>
+    <loc>https://www.yominelectric.com/products?category=energy-meter</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yominelectric.com/products/voltage-stabilizer-regulator</loc>
+    <loc>https://www.yominelectric.com/products?category=voltage-stabilizer-regulator</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yominelectric.com/products/current-transformer</loc>
+    <loc>https://www.yominelectric.com/products?category=current-transformer</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yominelectric.com/products/variac-transformer</loc>
+    <loc>https://www.yominelectric.com/products?category=variac-transformer</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.yominelectric.com/products/screw-machine</loc>
+    <loc>https://www.yominelectric.com/products?category=screw-machine</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.yominelectric.com/products/fuse-protection</loc>
+    <loc>https://www.yominelectric.com/products?category=fuse-protection</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.yominelectric.com/products/voltage-protector</loc>
+    <loc>https://www.yominelectric.com/products?category=voltage-protector</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.yominelectric.com/products/socket-wiring</loc>
+    <loc>https://www.yominelectric.com/products?category=socket-wiring</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.yominelectric.com/products/terminal-connector</loc>
+    <loc>https://www.yominelectric.com/products?category=terminal-connector</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.yominelectric.com/products/solar-pv-products</loc>
+    <loc>https://www.yominelectric.com/products?category=solar-pv-products</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.yominelectric.com/products/tools-hardware</loc>
+    <loc>https://www.yominelectric.com/products?category=tools-hardware</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.yominelectric.com/products/security-seal</loc>
+    <loc>https://www.yominelectric.com/products?category=security-seal</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.yominelectric.com/products/other</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.yominelectric.com/products/busbar</loc>
+    <loc>https://www.yominelectric.com/products?category=other</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

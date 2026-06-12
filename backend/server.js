@@ -58,20 +58,6 @@ const cleanRoutes = {
   '/product-details': 'product-details.html',
   '/process': 'process.html',
   '/solutions': 'solutions.html',
-  '/products/energy-meter': 'energy-meter.html',
-  '/products/voltage-stabilizer-regulator': 'voltage-stabilizer-regulator.html',
-  '/products/current-transformer': 'current-transformer.html',
-  '/products/variac-transformer': 'variac-transformer.html',
-  '/products/screw-machine': 'screw-machine.html',
-  '/products/fuse-protection': 'fuse-protection.html',
-  '/products/voltage-protector': 'voltage-protector.html',
-  '/products/socket-wiring': 'socket-wiring.html',
-  '/products/terminal-connector': 'terminal-connector.html',
-  '/products/solar-pv-products': 'solar-pv-products.html',
-  '/products/tools-hardware': 'tools-hardware.html',
-  '/products/security-seal': 'security-seal.html',
-  '/products/other': 'other.html',
-  '/products/busbar': 'busbar.html',
 };
 
 if (config.isDev) {

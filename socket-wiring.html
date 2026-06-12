@@ -8,9 +8,9 @@
 <link rel="apple-touch-icon" href="/logo.png">
 <link rel="shortcut icon" href="/favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Sockets & Wiring Accessories | Yomin Electric</title>
+  <title>Smart Sockets & Wiring | Yomin Electric</title>
   <meta name="description" content="Smart WiFi sockets, switches, and wiring accessories for home automation and office use. App-controlled, CE certified. Factory direct from China with low MOQ for distributors.">
-  <link rel="canonical" href="https://www.yominelectric.com/products/socket-wiring" />
+  <link rel="canonical" href="https://www.yominelectric.com/products?category=socket-wiring" />
   <meta name="robots" content="index, follow">
   <script type="application/ld+json">
 {
@@ -18,10 +18,10 @@
   "@type": "CollectionPage",
   "name": "Sockets & Wiring",
   "description": "Yomin Electric socket and wiring product category: smart sockets, switches, wiring accessories for home automation, office, and EV charging applications.",
-  "url": "https://www.yominelectric.com/products/socket-wiring",
+  "url": "https://www.yominelectric.com/products?category=socket-wiring",
   "mainEntity": {
     "@type": "ItemList",
-    "url": "https://www.yominelectric.com/products/socket-wiring"
+    "url": "https://www.yominelectric.com/products?category=socket-wiring"
   }
 }
 </script>
@@ -36,20 +36,20 @@
     var idQs = idParam ? '&id=' + encodeURIComponent(idParam) : '';
     if (cat) {
       slug = SLUG[decodeURIComponent(cat.replace(/\+/g, ' ')).trim().toLowerCase()] || '';
-      location.replace(slug ? '/products/' + slug + idQs : '/products' + (idParam ? '?id=' + encodeURIComponent(idParam) : ''));
+      location.replace(slug ? '/products?category=' + slug + idQs : '/products' + (idParam ? '?id=' + encodeURIComponent(idParam) : ''));
       return;
     }
     if (category) {
       var c = decodeURIComponent(category.replace(/\+/g, ' ')).trim().toLowerCase();
       slug = SLUG[c] || (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(c) ? c : '');
       if (slug && slug !== category.toLowerCase()) {
-        location.replace('/products/' + slug + idQs);
+        location.replace('/products?category=' + slug + idQs);
         return;
       }
     }
     if (slug) {
       var canon = document.querySelector('link[rel="canonical"]');
-      if (canon) canon.href = 'https://www.yominelectric.com/products/socket-wiring';
+      if (canon) canon.href = 'https://www.yominelectric.com/products?category=socket-wiring';
     }
   })();
   </script>
@@ -1875,11 +1875,11 @@
       <div class="ft-col">
         <h4>Products</h4>
         <ul>
-          <li><a href="/products/energy-meter">Energy Meters</a></li>
-          <li><a href="/products/current-transformer">Current Transformers</a></li>
-          <li><a href="/products/voltage-protector">Voltage Protectors</a></li>
-          <li><a href="/products/variac-transformer">Variac Transformers</a></li>
-          <li><a href="/products/voltage-stabilizer-regulator">Voltage Stabilizers</a></li>
+          <li><a href="/products?category=energy-meter">Energy Meters</a></li>
+          <li><a href="/products?category=current-transformer">Current Transformers</a></li>
+          <li><a href="/products?category=voltage-protector">Voltage Protectors</a></li>
+          <li><a href="/products?category=variac-transformer">Variac Transformers</a></li>
+          <li><a href="/products?category=voltage-stabilizer-regulator">Voltage Stabilizers</a></li>
         </ul>
       </div>
       <div class="ft-col">
@@ -2036,7 +2036,7 @@
       { id: 'Energy Meter', label: 'Energy Meters', icon: 'âš¡', tkey: 'prod_cat_energy_meter' },
       { id: 'Voltage Stabilizer/Regulator', label: 'Voltage Stabilizers', icon: 'ðŸ”„', tkey: 'prod_cat_voltage_stabilizer' },
       { id: 'Current Transformer', label: 'Current Transformers', icon: 'ðŸ”µ', tkey: 'prod_cat_current_transformer' },
-      { id: 'Screw Machine', label: 'Screw Machine', icon: 'âš™ï¸', tkey: 'prod_cat_screw_machine' },
+      { id: 'Screw Machine', label: 'Screw Machines', icon: 'âš™ï¸', tkey: 'prod_cat_screw_machine' },
       { id: 'Variac/Transformer', label: 'Variac / Transformers', icon: 'ðŸ”ƒ', tkey: 'prod_cat_variac' },
       { id: 'Terminal & Connector', label: 'Terminals & Connectors', icon: 'ðŸ”©', tkey: 'prod_cat_terminal' },
       { id: 'Solar/PV Products', label: 'Solar & PV', icon: 'â˜€ï¸', tkey: 'prod_cat_solar' },
@@ -2236,23 +2236,12 @@
       let html = `<button class="sb-all ${activeFilter === 'all' ? 'active' : ''}" data-filter="all">
     <span style="display:flex;align-items:center;gap:8px"><span style="font-size:14px">ðŸ—‚</span>${esc(allLabel)}</span>
     <span class="sb-count">${ALL.length}</span></button>`;
-      const appendBusbarSidebar = () => {
-        const busTotal = busbarTotal(counts);
-        if (!busTotal) return;
-        const busActive = activeFilter === BUSBAR_FILTER || BUSBAR_SUB_IDS.has(activeFilter);
-        html += `<button class="sb-item sb-item-parent ${busActive ? 'active' : ''}" data-filter="${esc(BUSBAR_FILTER)}">
-      <span class="sb-item-inner"><span class="sb-item-icon">${BUSBAR_PARENT.icon}</span><span class="sb-item-label">${esc(getCatLabel(BUSBAR_PARENT))}</span></span>
-      <span class="sb-count">${busTotal}</span></button>`;
-      };
-      let busbarPlaced = false;
       CATS.forEach(c => {
         const n = counts[c.id] || 0; if (!n) return;
         html += `<button class="sb-item ${activeFilter === c.id ? 'active' : ''}" data-filter="${esc(c.id)}">
       <span class="sb-item-inner"><span class="sb-item-icon">${c.icon}</span><span class="sb-item-label">${esc(getCatLabel(c))}</span></span>
       <span class="sb-count">${n}</span></button>`;
-        if (c.id === 'Current Transformer') { appendBusbarSidebar(); busbarPlaced = true; }
       });
-      if (!busbarPlaced) appendBusbarSidebar();
       list.innerHTML = html;
       list.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', (e) => {
         addRipple(b, e);
@@ -2278,19 +2267,10 @@
       ALL.forEach(p => { counts[p.category] = (counts[p.category] || 0) + 1; });
       const allLabel = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_all) ? T[currentLang].prod_all : 'All';
       let html = `<button class="mfbtn ${activeFilter === 'all' ? 'active' : ''}" data-filter="all">ðŸ—‚ ${esc(allLabel)} (${ALL.length})</button>`;
-      const appendBusbarMobile = () => {
-        const busTotal = busbarTotal(counts);
-        if (!busTotal) return;
-        const busActive = activeFilter === BUSBAR_FILTER || BUSBAR_SUB_IDS.has(activeFilter);
-        html += `<button class="mfbtn ${busActive ? 'active' : ''}" data-filter="${esc(BUSBAR_FILTER)}">${BUSBAR_PARENT.icon} ${esc(getCatLabel(BUSBAR_PARENT))} (${busTotal})</button>`;
-      };
-      let busbarMobPlaced = false;
       CATS.forEach(c => {
         const n = counts[c.id] || 0; if (!n) return;
         html += `<button class="mfbtn ${activeFilter === c.id ? 'active' : ''}" data-filter="${esc(c.id)}">${c.icon} ${esc(getCatLabel(c))} (${n})</button>`;
-        if (c.id === 'Current Transformer') { appendBusbarMobile(); busbarMobPlaced = true; }
       });
-      if (!busbarMobPlaced) appendBusbarMobile();
       bar.innerHTML = html;
       bar.querySelectorAll('.mfbtn').forEach(b => b.addEventListener('click', (e) => {
         addRipple(b, e);
@@ -2330,35 +2310,26 @@
       activeFilter = val; searchQuery = '';
       const sb = document.getElementById('sb-search'); if (sb) sb.value = '';
       const ps = document.getElementById('prod-search'); if (ps) { ps.value = ''; toggleClear(ps); }
-      const busActive = isBusbarView(val);
       document.querySelectorAll('.sb-item,.sb-all').forEach(b => {
-        const f = b.dataset.filter;
-        const isParent = b.classList.contains('sb-item-parent');
-        if (isParent) b.classList.toggle('active', busActive);
-        else b.classList.toggle('active', f === val);
+        b.classList.toggle('active', b.dataset.filter === val);
       });
       document.querySelectorAll('.mfbtn').forEach(b => {
-        const f = b.dataset.filter;
-        if (f === BUSBAR_FILTER) b.classList.toggle('active', busActive);
-        else b.classList.toggle('active', f === val);
+        b.classList.toggle('active', b.dataset.filter === val);
       });
       const t = document.getElementById('area-title');
       if (t) {
         if (val === 'all') {
           const allLabel = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_all) ? T[currentLang].prod_all : 'All Products';
           t.textContent = allLabel;
-        } else if (val === BUSBAR_FILTER) {
-          t.textContent = getCatLabel(BUSBAR_PARENT);
         } else {
           const meta = getFilterMeta(val);
           t.textContent = meta ? getCatLabel(meta) : val;
         }
       }
-      buildBusbarSubBar();
       // Update browser URL and page meta
       const slug = FILTER_SLUG[val] || CAT_SLUG_REVERSE[val] || '';
-      const path = slug ? '/products/' + slug : '/products';
-      if (location.pathname.replace(/\/$/, '') !== path) {
+      const path = slug ? '/products?category=' + slug : '/products';
+      if (location.pathname + location.search !== path) {
         history.pushState(null, '', path);
         const meta = getFilterMeta(val);
         if (meta) {
@@ -2368,8 +2339,8 @@
         if (desc && meta) {
           desc.content = 'Browse Yomin Electric ' + (typeof getCatLabel === 'function' ? getCatLabel(meta) : meta.label) + ' â€” factory-direct export pricing, ISO9001 certified, low MOQ.';
         }
-        const canon = document.querySelector('link[rel="canonical"]');
-        if (canon) canon.href = 'https://www.yominelectric.com' + path;
+        const can = document.querySelector('link[rel="canonical"]');
+        if (can) can.href = 'https://www.yominelectric.com' + path;
       }
       // Scroll active mobile filter button into center view
       const activeMfBtn = document.querySelector('.mfbtn.active');
