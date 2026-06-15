@@ -355,7 +355,7 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
 </style>
 </head>
 <body>
-<a href="#main-content" class="skiplink">Skip to main content</a>
+<a href="#main-content" class="skiplink" data-i18n="blog_skip">Skip to main content</a>
 
 <!-- MOBILE MENU -->
 <div class="mob" id="mob" aria-label="Mobile navigation menu" hidden>
@@ -415,25 +415,25 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
 
 <!-- BLOG HERO -->
 <section class="blog-hero">
-  <span class="blog-hero-badge">⚡ Factory Floor Updates</span>
-  <h1>Factory Floor &amp; Production Updates</h1>
-  <p>Daily updates from our production lines — new products, quality testing, shipments, and behind-the-scenes at Yomin Electric.</p>
+  <span class="blog-hero-badge" data-i18n="blog_badge">⚡ Factory Floor Updates</span>
+  <h1 data-i18n="blog_title">Factory Floor &amp; Production Updates</h1>
+  <p data-i18n="blog_desc">Daily updates from our production lines — new products, quality testing, shipments, and behind-the-scenes at Yomin Electric.</p>
   <div class="blog-search-wrap">
-    <input type="text" id="blogSearch" placeholder="Search updates...">
-    <button id="blogSearchBtn">Search</button>
+    <input type="text" id="blogSearch" data-i18n="blog_search_ph" placeholder="Search updates...">
+    <button id="blogSearchBtn" data-i18n="blog_search_btn">Search</button>
   </div>
 </section>
 
 <!-- FILTER TABS -->
 <div class="filter-tabs-wrap">
   <div class="filter-tabs" id="filterTabs">
-    <button class="filter-tab active" data-category="all">All Updates</button>
-    <button class="filter-tab" data-category="production">Production Updates</button>
-    <button class="filter-tab" data-category="video">Factory Videos</button>
-    <button class="filter-tab" data-category="products">New Products</button>
-    <button class="filter-tab" data-category="quality">Quality &amp; Testing</button>
-    <button class="filter-tab" data-category="shipments">Shipments &amp; Orders</button>
-    <button class="filter-tab" data-category="news">Company News</button>
+    <button class="filter-tab active" data-category="all" data-i18n="blog_filter_all">All Updates</button>
+    <button class="filter-tab" data-category="production" data-i18n="blog_filter_production">Production Updates</button>
+    <button class="filter-tab" data-category="video" data-i18n="blog_filter_video">Factory Videos</button>
+    <button class="filter-tab" data-category="products" data-i18n="blog_filter_products">New Products</button>
+    <button class="filter-tab" data-category="quality" data-i18n="blog_filter_quality">Quality &amp; Testing</button>
+    <button class="filter-tab" data-category="shipments" data-i18n="blog_filter_shipments">Shipments &amp; Orders</button>
+    <button class="filter-tab" data-category="news" data-i18n="blog_filter_news">Company News</button>
   </div>
 </div>
 
@@ -445,17 +445,17 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
   <!-- FEATURED POST -->
   <article class="featured-post" data-category="quality">
     <div class="featured-img-wrap">
-      <span class="featured-live-badge"><span class="pulse-dot"></span>Live from the floor</span>
+      <span class="featured-live-badge" data-i18n="blog_live_badge"><span class="pulse-dot"></span>Live from the floor</span>
       <div class="featured-img-placeholder">🔬</div>
     </div>
     <div class="featured-info">
-      <span class="tag-pill tag-quality">Quality &amp; Testing</span>
+      <span class="tag-pill tag-quality" data-i18n="cat_quality">Quality &amp; Testing</span>
       <h2>QC Spot-Check: YEM021GC Batch Passes EN 50470 Accuracy Verification</h2>
       <p class="excerpt">This morning's spot check on the YEM021GC three-phase batch showed all 50 units within Class B accuracy limits across all test points. Full report and test data available.</p>
       <div class="featured-meta">
         <div class="avatar-circle">QC</div>
         <div class="meta-text">
-          <div class="team-name">QC Team</div>
+          <div class="team-name" data-i18n="team_qc">QC Team</div>
           <div class="read-time">2 min read · June 12, 2025</div>
         </div>
       </div>
@@ -469,15 +469,15 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
     <article class="post-card" data-category="production">
       <div class="post-card-img">🏭</div>
       <div class="post-card-body">
-        <span class="tag-pill tag-production">Production</span>
+        <span class="tag-pill tag-production" data-i18n="cat_production">Production</span>
         <h3>New 3-Phase Smart Meter Calibration Bench Installed — 360 Units/Hour</h3>
         <p class="excerpt">Our second 3-phase calibration bench went live this week, doubling our hourly throughput for smart meter calibration to 360 units per hour.</p>
         <div class="post-card-footer">
           <div class="post-card-author">
             <div class="avatar-circle-sm">PT</div>
-            <span class="team-sm">Production Team</span>
+            <span class="team-sm" data-i18n="team_pt">Production Team</span>
           </div>
-          <span class="post-card-read">Read More →</span>
+          <span class="post-card-read" data-i18n="blog_read_more">Read More →</span>
         </div>
       </div>
     </article>
@@ -486,15 +486,15 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
     <article class="post-card" data-category="shipments">
       <div class="post-card-img">🚢</div>
       <div class="post-card-body">
-        <span class="tag-pill tag-shipments">Shipments</span>
+        <span class="tag-pill tag-shipments" data-i18n="cat_shipments">Shipments</span>
         <h3>Shipping Day: 2,000 DIN Rail Meters to Kenya via Ningbo Port</h3>
         <p class="excerpt">200 cartons of single-phase DIN rail energy meters loaded this morning. Container departs Ningbo for Mombasa on Friday.</p>
         <div class="post-card-footer">
           <div class="post-card-author">
             <div class="avatar-circle-sm">LG</div>
-            <span class="team-sm">Logistics Team</span>
+            <span class="team-sm" data-i18n="team_lg">Logistics Team</span>
           </div>
-          <span class="post-card-read">Read More →</span>
+          <span class="post-card-read" data-i18n="blog_read_more">Read More →</span>
         </div>
       </div>
     </article>
@@ -503,15 +503,15 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
     <article class="post-card" data-category="video">
       <div class="post-card-img">🎬</div>
       <div class="post-card-body">
-        <span class="tag-pill tag-video">Video</span>
+        <span class="tag-pill tag-video" data-i18n="cat_video">Video</span>
         <h3>Behind the Scenes: SMT Pick-and-Place PCB Assembly Line</h3>
         <p class="excerpt">Tour our SMT production line in action — 6 lines producing 2 million PCB assemblies per month with AOI inspection.</p>
         <div class="post-card-footer">
           <div class="post-card-author">
             <div class="avatar-circle-sm">ED</div>
-            <span class="team-sm">Engineering Dept.</span>
+            <span class="team-sm" data-i18n="team_ed">Engineering Dept.</span>
           </div>
-          <span class="post-card-read">Read More →</span>
+          <span class="post-card-read" data-i18n="blog_read_more">Read More →</span>
         </div>
       </div>
     </article>
@@ -520,15 +520,15 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
     <article class="post-card" data-category="products">
       <div class="post-card-img">🆕</div>
       <div class="post-card-body">
-        <span class="tag-pill tag-products">New Product</span>
+        <span class="tag-pill tag-products" data-i18n="cat_products">New Product</span>
         <h3>Introducing the YEM040P: 4-Channel Prepaid Keypad Meter</h3>
         <p class="excerpt">Now available: a multi-user prepaid meter supporting 4 independent channels with STS token compliance. Ideal for apartment sub-metering.</p>
         <div class="post-card-footer">
           <div class="post-card-author">
             <div class="avatar-circle-sm">ET</div>
-            <span class="team-sm">Engineering Team</span>
+            <span class="team-sm" data-i18n="team_et">Engineering Team</span>
           </div>
-          <span class="post-card-read">Read More →</span>
+          <span class="post-card-read" data-i18n="blog_read_more">Read More →</span>
         </div>
       </div>
     </article>
@@ -537,15 +537,15 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
     <article class="post-card" data-category="news">
       <div class="post-card-img">📋</div>
       <div class="post-card-body">
-        <span class="tag-pill tag-news">Company News</span>
+        <span class="tag-pill tag-news" data-i18n="cat_news">Company News</span>
         <h3>ISO 9001:2015 Recertification — Audit Passed with Zero Non-Conformities</h3>
         <p class="excerpt">External auditor confirmed: no non-conformities found across all 8 audit areas. Our quality management system continues to meet the highest standards.</p>
         <div class="post-card-footer">
           <div class="post-card-author">
             <div class="avatar-circle-sm">ED</div>
-            <span class="team-sm">Engineering Dept.</span>
+            <span class="team-sm" data-i18n="team_ed">Engineering Dept.</span>
           </div>
-          <span class="post-card-read">Read More →</span>
+          <span class="post-card-read" data-i18n="blog_read_more">Read More →</span>
         </div>
       </div>
     </article>
@@ -554,15 +554,15 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
     <article class="post-card" data-category="production">
       <div class="post-card-img">⚙️</div>
       <div class="post-card-body">
-        <span class="tag-pill tag-production">Production</span>
+        <span class="tag-pill tag-production" data-i18n="cat_production">Production</span>
         <h3>Weekend Production Run: 5,000 Units for Saudi Arabia Order</h3>
         <p class="excerpt">Overtime production schedule activated to meet a large utility order deadline. 5,000 single-phase prepaid meters to ship by end of month.</p>
         <div class="post-card-footer">
           <div class="post-card-author">
             <div class="avatar-circle-sm">PT</div>
-            <span class="team-sm">Production Team</span>
+            <span class="team-sm" data-i18n="team_pt">Production Team</span>
           </div>
-          <span class="post-card-read">Read More →</span>
+          <span class="post-card-read" data-i18n="blog_read_more">Read More →</span>
         </div>
       </div>
     </article>
@@ -571,15 +571,15 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
     <article class="post-card" data-category="products">
       <div class="post-card-img">📐</div>
       <div class="post-card-body">
-        <span class="tag-pill tag-products">New Product</span>
+        <span class="tag-pill tag-products" data-i18n="cat_products">New Product</span>
         <h3>New Product: Split Core Current Transformer Range 50A–5000A</h3>
         <p class="excerpt">Expanded CT range now covers 50A to 5000A with Class 0.5 and Class 1 accuracy options. Suitable for retrofitting and new installations.</p>
         <div class="post-card-footer">
           <div class="post-card-author">
             <div class="avatar-circle-sm">ET</div>
-            <span class="team-sm">Engineering Team</span>
+            <span class="team-sm" data-i18n="team_et">Engineering Team</span>
           </div>
-          <span class="post-card-read">Read More →</span>
+          <span class="post-card-read" data-i18n="blog_read_more">Read More →</span>
         </div>
       </div>
     </article>
@@ -588,15 +588,15 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
     <article class="post-card" data-category="video">
       <div class="post-card-img">🏗️</div>
       <div class="post-card-body">
-        <span class="tag-pill tag-video">Video</span>
+        <span class="tag-pill tag-video" data-i18n="cat_video">Video</span>
         <h3>Factory Tour: Our 18,000m² Wenzhou Facility in 2 Minutes</h3>
         <p class="excerpt">Quick walkthrough of our manufacturing campus — from incoming inspection through assembly, calibration, and final packing.</p>
         <div class="post-card-footer">
           <div class="post-card-author">
             <div class="avatar-circle-sm">ED</div>
-            <span class="team-sm">Engineering Dept.</span>
+            <span class="team-sm" data-i18n="team_ed">Engineering Dept.</span>
           </div>
-          <span class="post-card-read">Read More →</span>
+          <span class="post-card-read" data-i18n="blog_read_more">Read More →</span>
         </div>
       </div>
     </article>
@@ -605,15 +605,15 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
     <article class="post-card" data-category="quality">
       <div class="post-card-img">🌡️</div>
       <div class="post-card-body">
-        <span class="tag-pill tag-quality">Quality &amp; Testing</span>
+        <span class="tag-pill tag-quality" data-i18n="cat_quality">Quality &amp; Testing</span>
         <h3>Temperature Chamber Testing: Voltage Regulators at 55°C Ambient</h3>
         <p class="excerpt">Batch of 200 AVR units undergoing 72-hour continuous operation at 55°C ambient. All units maintaining output stability within ±1%.</p>
         <div class="post-card-footer">
           <div class="post-card-author">
             <div class="avatar-circle-sm">QC</div>
-            <span class="team-sm">QC Team</span>
+            <span class="team-sm" data-i18n="team_qc">QC Team</span>
           </div>
-          <span class="post-card-read">Read More →</span>
+          <span class="post-card-read" data-i18n="blog_read_more">Read More →</span>
         </div>
       </div>
     </article>
@@ -622,15 +622,15 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
     <article class="post-card" data-category="shipments">
       <div class="post-card-img">📦</div>
       <div class="post-card-body">
-        <span class="tag-pill tag-shipments">Shipments</span>
+        <span class="tag-pill tag-shipments" data-i18n="cat_shipments">Shipments</span>
         <h3>Container Loading: Nigeria Utility Order Ready for Dispatch</h3>
         <p class="excerpt">3,500 prepaid meters + 500 data concentrators packed and loaded. Full documentation package prepared for customs clearance at Lagos port.</p>
         <div class="post-card-footer">
           <div class="post-card-author">
             <div class="avatar-circle-sm">LG</div>
-            <span class="team-sm">Logistics Team</span>
+            <span class="team-sm" data-i18n="team_lg">Logistics Team</span>
           </div>
-          <span class="post-card-read">Read More →</span>
+          <span class="post-card-read" data-i18n="blog_read_more">Read More →</span>
         </div>
       </div>
     </article>
@@ -639,15 +639,15 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
     <article class="post-card" data-category="products">
       <div class="post-card-img">🔌</div>
       <div class="post-card-body">
-        <span class="tag-pill tag-products">New Product</span>
+        <span class="tag-pill tag-products" data-i18n="cat_products">New Product</span>
         <h3>RS485 Communication Module Upgrade — Full MODBUS Compatibility</h3>
         <p class="excerpt">New firmware release v3.2 for RS485-enabled meters adds full MODBUS RTU register map, faster baud rates up to 115200 bps, and DL/T645 support.</p>
         <div class="post-card-footer">
           <div class="post-card-author">
             <div class="avatar-circle-sm">ET</div>
-            <span class="team-sm">Engineering Team</span>
+            <span class="team-sm" data-i18n="team_et">Engineering Team</span>
           </div>
-          <span class="post-card-read">Read More →</span>
+          <span class="post-card-read" data-i18n="blog_read_more">Read More →</span>
         </div>
       </div>
     </article>
@@ -656,15 +656,15 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
     <article class="post-card" data-category="production">
       <div class="post-card-img">🔄</div>
       <div class="post-card-body">
-        <span class="tag-pill tag-production">Production</span>
+        <span class="tag-pill tag-production" data-i18n="cat_production">Production</span>
         <h3>Monthly Production Report: June Output Exceeds 120,000 Units</h3>
         <p class="excerpt">Combined production across all lines reached 122,400 units in June — a 15% increase YoY. Energy meters lead with 68% of total output.</p>
         <div class="post-card-footer">
           <div class="post-card-author">
             <div class="avatar-circle-sm">PT</div>
-            <span class="team-sm">Production Team</span>
+            <span class="team-sm" data-i18n="team_pt">Production Team</span>
           </div>
-          <span class="post-card-read">Read More →</span>
+          <span class="post-card-read" data-i18n="blog_read_more">Read More →</span>
         </div>
       </div>
     </article>
@@ -673,13 +673,13 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
 
   <!-- PAGINATION -->
   <div class="pagination">
-    <button>← Prev</button>
+    <button data-i18n="blog_prev">← Prev</button>
     <span class="page-num active">1</span>
     <span class="page-num">2</span>
     <span class="page-num">3</span>
     <span class="page-dots">...</span>
     <span class="page-num">8</span>
-    <button>Next →</button>
+    <button data-i18n="blog_next">Next →</button>
   </div>
 
 </div>
@@ -689,16 +689,16 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
 
   <!-- Search Widget -->
   <div class="sidebar-widget">
-    <h4>Search Blog</h4>
+    <h4 data-i18n="blog_sidebar_search">Search Blog</h4>
     <div class="sidebar-search">
-      <input type="text" id="sidebarSearch" placeholder="Search posts...">
-      <button id="sidebarSearchBtn">Go</button>
+      <input type="text" id="sidebarSearch" data-i18n="blog_sidebar_search_ph" placeholder="Search posts...">
+      <button id="sidebarSearchBtn" data-i18n="blog_sidebar_search_btn">Go</button>
     </div>
   </div>
 
   <!-- Popular Posts -->
   <div class="sidebar-widget">
-    <h4>Popular Posts</h4>
+    <h4 data-i18n="blog_popular">Popular Posts</h4>
     <div class="popular-post">
       <div class="pp-thumb">🔬</div>
       <div class="pp-info">
@@ -738,32 +738,32 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
 
   <!-- Categories -->
   <div class="sidebar-widget">
-    <h4>Categories</h4>
+    <h4 data-i18n="blog_categories">Categories</h4>
     <ul class="cat-list">
-      <li><a href="#" data-cat-filter="production">Production Updates <span class="cat-count">24</span></a></li>
-      <li><a href="#" data-cat-filter="video">Factory Videos <span class="cat-count">18</span></a></li>
-      <li><a href="#" data-cat-filter="products">New Products <span class="cat-count">15</span></a></li>
-      <li><a href="#" data-cat-filter="quality">Quality &amp; Testing <span class="cat-count">12</span></a></li>
-      <li><a href="#" data-cat-filter="shipments">Shipments &amp; Orders <span class="cat-count">20</span></a></li>
-      <li><a href="#" data-cat-filter="news">Company News <span class="cat-count">8</span></a></li>
+      <li><a href="#" data-cat-filter="production" data-i18n="blog_filter_production">Production Updates <span class="cat-count">24</span></a></li>
+      <li><a href="#" data-cat-filter="video" data-i18n="blog_filter_video">Factory Videos <span class="cat-count">18</span></a></li>
+      <li><a href="#" data-cat-filter="products" data-i18n="blog_filter_products">New Products <span class="cat-count">15</span></a></li>
+      <li><a href="#" data-cat-filter="quality" data-i18n="blog_filter_quality">Quality &amp; Testing <span class="cat-count">12</span></a></li>
+      <li><a href="#" data-cat-filter="shipments" data-i18n="blog_filter_shipments">Shipments &amp; Orders <span class="cat-count">20</span></a></li>
+      <li><a href="#" data-cat-filter="news" data-i18n="blog_filter_news">Company News <span class="cat-count">8</span></a></li>
     </ul>
   </div>
 
   <!-- Newsletter -->
   <div class="sidebar-widget newsletter-widget">
-    <h4>Newsletter</h4>
-    <p>Get weekly production insights, product launches, and factory floor updates directly in your inbox.</p>
+    <h4 data-i18n="blog_newsletter">Newsletter</h4>
+    <p data-i18n="blog_newsletter_desc">Get weekly production insights, product launches, and factory floor updates directly in your inbox.</p>
     <div class="nl-form">
-      <input type="email" placeholder="Your email address">
-      <button>Subscribe</button>
+      <input type="email" data-i18n="blog_newsletter_ph" placeholder="Your email address">
+      <button data-i18n="blog_newsletter_btn">Subscribe</button>
     </div>
   </div>
 
   <!-- Product Catalog CTA -->
   <div class="cta-banner">
-    <h4>Explore Our Products</h4>
-    <p>Energy meters, current transformers, voltage regulators &amp; more — CE certified, trusted in 95+ countries.</p>
-    <a href="/products">Explore Products →</a>
+    <h4 data-i18n="blog_cta_title">Explore Our Products</h4>
+    <p data-i18n="blog_cta_desc">Energy meters, current transformers, voltage regulators &amp; more — CE certified, trusted in 95+ countries.</p>
+    <a href="/products" data-i18n="blog_cta_link">Explore Products →</a>
   </div>
 
 </aside>
@@ -772,11 +772,11 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
 
 <!-- NEWSLETTER CTA -->
 <section class="newsletter-cta">
-  <h2>Never Miss an Update</h2>
-  <p>Subscribe for weekly production insights, product launches, and factory updates from Yomin Electric.</p>
+  <h2 data-i18n="blog_nl_title">Never Miss an Update</h2>
+  <p data-i18n="blog_nl_desc">Subscribe for weekly production insights, product launches, and factory updates from Yomin Electric.</p>
   <div class="nl-cta-form">
-    <input type="email" placeholder="Enter your email address">
-    <button>Subscribe Now</button>
+    <input type="email" data-i18n="blog_nl_ph" placeholder="Enter your email address">
+    <button data-i18n="blog_nl_btn">Subscribe Now</button>
   </div>
 </section>
 
@@ -819,32 +819,120 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
   var autoTheme = (hour >= 6 && hour < 18) ? 'light' : 'dark';
   var currentTheme = storedTheme || autoTheme;
 
-  /* ─── Translations (minimal for blog page) ─── */
+  /* ─── Translations ─── */
   window.__ymT = window.__ymT || {};
   var base = {
     en: {
       nav_products:'Products', nav_solutions:'Solutions', nav_process:'Process',
       nav_about:'About', nav_contact:'Contact', nav_quote:'Get a Quote',
       ft_ab:'Zhejiang Yomin Electric Co., Ltd. — Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.',
-      ft_pr:'Products', ft_co:'Company', ft_cn:'Contact'
+      ft_pr:'Products', ft_co:'Company', ft_cn:'Contact',
+      blog_skip:'Skip to main content', blog_badge:'⚡ Factory Floor Updates',
+      blog_title:'Factory Floor &amp; Production Updates',
+      blog_desc:'Daily updates from our production lines — new products, quality testing, shipments, and behind-the-scenes at Yomin Electric.',
+      blog_search_ph:'Search updates...', blog_search_btn:'Search',
+      blog_filter_all:'All Updates', blog_filter_production:'Production Updates', blog_filter_video:'Factory Videos',
+      blog_filter_products:'New Products', blog_filter_quality:'Quality &amp; Testing',
+      blog_filter_shipments:'Shipments &amp; Orders', blog_filter_news:'Company News',
+      blog_live_badge:'Live from the floor',
+      blog_read_more:'Read More →', blog_prev:'← Prev', blog_next:'Next →',
+      blog_sidebar_search:'Search Blog', blog_sidebar_search_ph:'Search posts...', blog_sidebar_search_btn:'Go',
+      blog_popular:'Popular Posts', blog_categories:'Categories',
+      blog_newsletter:'Newsletter', blog_newsletter_desc:'Get weekly production insights, product launches, and factory floor updates directly in your inbox.',
+      blog_newsletter_ph:'Your email address', blog_newsletter_btn:'Subscribe',
+      blog_cta_title:'Explore Our Products', blog_cta_desc:'Energy meters, current transformers, voltage regulators &amp; more — CE certified, trusted in 95+ countries.',
+      blog_cta_link:'Explore Products →',
+      blog_nl_title:'Never Miss an Update', blog_nl_desc:'Subscribe for weekly production insights, product launches, and factory updates from Yomin Electric.',
+      blog_nl_ph:'Enter your email address', blog_nl_btn:'Subscribe Now',
+      blog_no_results:'No posts found for this category.',
+      cat_production:'Production', cat_video:'Video', cat_news:'Company News',
+      cat_products:'New Product', cat_quality:'Quality &amp; Testing', cat_shipments:'Shipments',
+      team_pt:'Production Team', team_qc:'QC Team', team_et:'Engineering Team',
+      team_lg:'Logistics Team', team_ed:'Engineering Dept.'
     },
     fr: {
       nav_products:'Produits', nav_solutions:'Solutions', nav_process:'Processus',
       nav_about:'À Propos', nav_contact:'Contact', nav_quote:'Devis',
-      ft_ab:'Zhejiang Yomin Electric Co., Ltd. — Solutions de comptage de précision. Présents dans plus de 95 pays depuis 2005.',
-      ft_pr:'Produits', ft_co:'Entreprise', ft_cn:'Contact'
+      ft_ab:'Zhejiang Yomin Electric Co., Ltd. — Solutions de comptage de précision. Présents dans plus de 95 pays.',
+      ft_pr:'Produits', ft_co:'Entreprise', ft_cn:'Contact',
+      blog_skip:'Aller au contenu principal', blog_badge:'⚡ Mises à jour de l\'usine',
+      blog_title:'Mises à jour de l\'usine et de la production',
+      blog_desc:'Mises à jour quotidiennes de nos lignes de production — nouveaux produits, tests qualité, expéditions et coulisses chez Yomin Electric.',
+      blog_search_ph:'Rechercher des mises à jour...', blog_search_btn:'Rechercher',
+      blog_filter_all:'Toutes les mises à jour', blog_filter_production:'Mises à jour production', blog_filter_video:'Vidéos d\'usine',
+      blog_filter_products:'Nouveaux produits', blog_filter_quality:'Qualité et tests',
+      blog_filter_shipments:'Expéditions et commandes', blog_filter_news:'Actualités de l\'entreprise',
+      blog_live_badge:'En direct de l\'atelier',
+      blog_read_more:'Lire la suite →', blog_prev:'← Précédent', blog_next:'Suivant →',
+      blog_sidebar_search:'Rechercher dans le blog', blog_sidebar_search_ph:'Rechercher des articles...', blog_sidebar_search_btn:'OK',
+      blog_popular:'Articles populaires', blog_categories:'Catégories',
+      blog_newsletter:'Newsletter', blog_newsletter_desc:'Recevez chaque semaine des informations sur la production, les lancements de produits et les mises à jour de l\'usine.',
+      blog_newsletter_ph:'Votre adresse email', blog_newsletter_btn:'S\'abonner',
+      blog_cta_title:'Découvrez nos produits', blog_cta_desc:'Compteurs d\'énergie, transformateurs de courant, régulateurs de tension et plus — certifiés CE, présents dans plus de 95 pays.',
+      blog_cta_link:'Découvrir les produits →',
+      blog_nl_title:'Ne manquez aucune mise à jour', blog_nl_desc:'Abonnez-vous pour recevoir des informations hebdomadaires sur la production, les lancements de produits et les mises à jour de l\'usine Yomin Electric.',
+      blog_nl_ph:'Entrez votre adresse email', blog_nl_btn:'S\'abonner maintenant',
+      blog_no_results:'Aucun article trouvé pour cette catégorie.',
+      cat_production:'Production', cat_video:'Vidéo', cat_news:'Actualités',
+      cat_products:'Nouveau produit', cat_quality:'Qualité et tests', cat_shipments:'Expéditions',
+      team_pt:'Équipe de production', team_qc:'Équipe CQ', team_et:'Équipe d\'ingénierie',
+      team_lg:'Équipe logistique', team_ed:'Département ingénierie'
     },
     es: {
       nav_products:'Productos', nav_solutions:'Soluciones', nav_process:'Proceso',
       nav_about:'Nosotros', nav_contact:'Contacto', nav_quote:'Cotización',
       ft_ab:'Zhejiang Yomin Electric Co., Ltd. — Soluciones de medición de energía de precisión. Presentes en más de 95 países.',
-      ft_pr:'Productos', ft_co:'Empresa', ft_cn:'Contacto'
+      ft_pr:'Productos', ft_co:'Empresa', ft_cn:'Contacto',
+      blog_skip:'Saltar al contenido principal', blog_badge:'⚡ Actualizaciones de fábrica',
+      blog_title:'Actualizaciones de fábrica y producción',
+      blog_desc:'Actualizaciones diarias de nuestras líneas de producción — nuevos productos, pruebas de calidad, envíos y entre bastidores en Yomin Electric.',
+      blog_search_ph:'Buscar actualizaciones...', blog_search_btn:'Buscar',
+      blog_filter_all:'Todas las actualizaciones', blog_filter_production:'Actualizaciones de producción', blog_filter_video:'Videos de fábrica',
+      blog_filter_products:'Nuevos productos', blog_filter_quality:'Calidad y pruebas',
+      blog_filter_shipments:'Envíos y pedidos', blog_filter_news:'Noticias de la empresa',
+      blog_live_badge:'En vivo desde la planta',
+      blog_read_more:'Leer más →', blog_prev:'← Anterior', blog_next:'Siguiente →',
+      blog_sidebar_search:'Buscar en el blog', blog_sidebar_search_ph:'Buscar artículos...', blog_sidebar_search_btn:'Ir',
+      blog_popular:'Artículos populares', blog_categories:'Categorías',
+      blog_newsletter:'Boletín', blog_newsletter_desc:'Reciba semanalmente información de producción, lanzamientos de productos y actualizaciones de fábrica.',
+      blog_newsletter_ph:'Su dirección de correo', blog_newsletter_btn:'Suscribirse',
+      blog_cta_title:'Explore nuestros productos', blog_cta_desc:'Medidores de energía, transformadores de corriente, reguladores de voltaje y más — certificado CE, confiable en más de 95 países.',
+      blog_cta_link:'Explorar productos →',
+      blog_nl_title:'No se pierda ninguna actualización', blog_nl_desc:'Suscríbase para recibir información semanal de producción, lanzamientos de productos y actualizaciones de fábrica de Yomin Electric.',
+      blog_nl_ph:'Ingrese su dirección de correo', blog_nl_btn:'Suscríbase ahora',
+      blog_no_results:'No se encontraron artículos para esta categoría.',
+      cat_production:'Producción', cat_video:'Video', cat_news:'Noticias',
+      cat_products:'Nuevo producto', cat_quality:'Calidad y pruebas', cat_shipments:'Envíos',
+      team_pt:'Equipo de producción', team_qc:'Equipo CC', team_et:'Equipo de ingeniería',
+      team_lg:'Equipo de logística', team_ed:'Departamento de ingeniería'
     },
     ar: {
       nav_products:'المنتجات', nav_solutions:'الحلول', nav_process:'العملية',
       nav_about:'عن الشركة', nav_contact:'اتصل بنا', nav_quote:'طلب عرض سعر',
       ft_ab:'شركة يومين إلكتريك — حلول قياس الطاقة الدقيقة. موثوق به في أكثر من 95 دولة.',
-      ft_pr:'المنتجات', ft_co:'الشركة', ft_cn:'التواصل'
+      ft_pr:'المنتجات', ft_co:'الشركة', ft_cn:'التواصل',
+      blog_skip:'تخطى إلى المحتوى الرئيسي', blog_badge:'⚡ تحديثات أرضية المصنع',
+      blog_title:'تحديثات أرضية المصنع والإنتاج',
+      blog_desc:'تحديثات يومية من خطوط الإنتاج لدينا — منتجات جديدة، اختبارات الجودة، الشحنات، وكواليس يومين إلكتريك.',
+      blog_search_ph:'البحث في التحديثات...', blog_search_btn:'بحث',
+      blog_filter_all:'جميع التحديثات', blog_filter_production:'تحديثات الإنتاج', blog_filter_video:'فيديوهات المصنع',
+      blog_filter_products:'منتجات جديدة', blog_filter_quality:'الجودة والاختبار',
+      blog_filter_shipments:'الشحنات والطلبات', blog_filter_news:'أخبار الشركة',
+      blog_live_badge:'مباشر من أرضية المصنع',
+      blog_read_more:'اقرأ المزيد ←', blog_prev:'السابق ←', blog_next:'→ التالي',
+      blog_sidebar_search:'البحث في المدونة', blog_sidebar_search_ph:'البحث في المقالات...', blog_sidebar_search_btn:'ابحث',
+      blog_popular:'المقالات الشائعة', blog_categories:'الفئات',
+      blog_newsletter:'النشرة الإخبارية', blog_newsletter_desc:'احصل على رؤى الإنتاج الأسبوعية وإطلاقات المنتجات وتحديثات أرضية المصنع مباشرة في بريدك الوارد.',
+      blog_newsletter_ph:'عنوان بريدك الإلكتروني', blog_newsletter_btn:'اشتراك',
+      blog_cta_title:'استكشف منتجاتنا', blog_cta_desc:'عدادات الطاقة، محولات التيار، منظمات الجهد والمزيد — معتمد CE، موثوق به في أكثر من 95 دولة.',
+      blog_cta_link:'استكشف المنتجات ←',
+      blog_nl_title:'لا تفوت أي تحديث', blog_nl_desc:'اشترك للحصول على رؤى الإنتاج الأسبوعية وإطلاقات المنتجات وتحديثات المصنع من يومين إلكتريك.',
+      blog_nl_ph:'أدخل عنوان بريدك الإلكتروني', blog_nl_btn:'اشترك الآن',
+      blog_no_results:'لم يتم العثور على مقالات لهذه الفئة.',
+      cat_production:'إنتاج', cat_video:'فيديو', cat_news:'أخبار',
+      cat_products:'منتج جديد', cat_quality:'الجودة والاختبار', cat_shipments:'شحنات',
+      team_pt:'فريق الإنتاج', team_qc:'فريق مراقبة الجودة', team_et:'فريق الهندسة',
+      team_lg:'فريق اللوجستيات', team_ed:'قسم الهندسة'
     }
   };
   for (var l in base) {
@@ -959,7 +1047,7 @@ body:has(.mob.op) .wa-btn{opacity:0;pointer-events:none}
         noResults = document.createElement('div');
         noResults.id = 'noResults';
         noResults.style.cssText = 'text-align:center;padding:40px 20px;color:var(--mt);font-size:14px;grid-column:1/-1';
-        noResults.textContent = 'No posts found for this category.';
+        noResults.textContent = window.__ymT[currentLang] && window.__ymT[currentLang].blog_no_results ? window.__ymT[currentLang].blog_no_results : 'No posts found for this category.';
         document.getElementById('postGrid').appendChild(noResults);
       }
       noResults.style.display = '';
