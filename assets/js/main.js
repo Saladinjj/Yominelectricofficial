@@ -495,7 +495,7 @@ function setTheme(t, fromAuto = false) {
 /* ─── FLOAT BUTTONS (WeChat + WhatsApp) ─────────────── */
 (function injectFloatButtons() {
   // If a page already provides the shared float buttons, keep them.
-  if (document.querySelector('.wa-btn') || document.querySelector('.float-btn-wa') || document.getElementById('wc-btn') || document.getElementById('wechat-float-btn')) return;
+  if (document.querySelector('.wa-btn') || document.querySelector('.float-btn-wa') || document.getElementById('wc-btn') || document.getElementById('wechat-float-btn') || document.getElementById('wc-modal')) return;
 
   // WeChat QR modal
   const overlay = document.createElement('div');
@@ -509,7 +509,7 @@ function setTheme(t, fromAuto = false) {
       <div class="wc-modal-title">WeChat / 微信</div>
       <div class="wc-modal-sub">Scan with WeChat to connect with us</div>
       <div class="wc-qr-wrap">
-        <img src="assets/wechat-qr.jpg" alt="WeChat QR Code" class="wc-qr-img"/>
+        <img src="/wechat-qr.jpg" alt="WeChat QR Code" class="wc-qr-img"/>
       </div>
       <button class="wc-modal-close" id="wc-close">✕ Close</button>
     </div>`;
