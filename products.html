@@ -594,6 +594,28 @@
       background: rgba(200, 169, 110, .08)
     }
 
+    @media(max-width:600px) {
+      .busbar-sub-wrap {
+        margin-left: -16px;
+        margin-right: -16px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        padding: 12px 16px
+      }
+      .busbar-sub-chips {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -webkit-mask-image: linear-gradient(to right, transparent 0, black 16px, black calc(100% - 20px), transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0, black 16px, black calc(100% - 20px), transparent 100%);
+        padding-bottom: 2px
+      }
+      .busbar-sub-chips::-webkit-scrollbar { display: none }
+      .busbar-chip { flex-shrink: 0 }
+    }
+
     .mc-keywords {
       display: flex;
       flex-wrap: wrap;
@@ -2237,12 +2259,23 @@
       let html = `<button class="sb-all ${activeFilter === 'all' ? 'active' : ''}" data-filter="all">
     <span style="display:flex;align-items:center;gap:8px"><span style="font-size:14px">🗂</span>${esc(allLabel)}</span>
     <span class="sb-count">${ALL.length}</span></button>`;
+      const addBusbarSidebar = () => {
+        const busTotal = busbarTotal(counts);
+        if (!busTotal) return;
+        const busActive = activeFilter === BUSBAR_FILTER || BUSBAR_SUB_IDS.has(activeFilter);
+        html += `<button class="sb-item sb-item-parent ${busActive ? 'active' : ''}" data-filter="${esc(BUSBAR_FILTER)}">
+      <span class="sb-item-inner"><span class="sb-item-icon">${BUSBAR_PARENT.icon}</span><span class="sb-item-label">${esc(getCatLabel(BUSBAR_PARENT))}</span></span>
+      <span class="sb-count">${busTotal}</span></button>`;
+      };
+      let busbarPlaced = false;
       CATS.forEach(c => {
         const n = counts[c.id] || 0; if (!n) return;
         html += `<button class="sb-item ${activeFilter === c.id ? 'active' : ''}" data-filter="${esc(c.id)}">
       <span class="sb-item-inner"><span class="sb-item-icon">${c.icon}</span><span class="sb-item-label">${esc(getCatLabel(c))}</span></span>
       <span class="sb-count">${n}</span></button>`;
+        if (c.id === 'Current Transformer') { addBusbarSidebar(); busbarPlaced = true; }
       });
+      if (!busbarPlaced) addBusbarSidebar();
       list.innerHTML = html;
       list.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', (e) => {
         addRipple(b, e);
@@ -2268,10 +2301,19 @@
       ALL.forEach(p => { counts[p.category] = (counts[p.category] || 0) + 1; });
       const allLabel = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_all) ? T[currentLang].prod_all : 'All';
       let html = `<button class="mfbtn ${activeFilter === 'all' ? 'active' : ''}" data-filter="all">🗂 ${esc(allLabel)} (${ALL.length})</button>`;
+      const addBusbarMobile = () => {
+        const busTotal = busbarTotal(counts);
+        if (!busTotal) return;
+        const busActive = activeFilter === BUSBAR_FILTER || BUSBAR_SUB_IDS.has(activeFilter);
+        html += `<button class="mfbtn ${busActive ? 'active' : ''}" data-filter="${esc(BUSBAR_FILTER)}">${BUSBAR_PARENT.icon} ${esc(getCatLabel(BUSBAR_PARENT))} (${busTotal})</button>`;
+      };
+      let busbarMobPlaced = false;
       CATS.forEach(c => {
         const n = counts[c.id] || 0; if (!n) return;
         html += `<button class="mfbtn ${activeFilter === c.id ? 'active' : ''}" data-filter="${esc(c.id)}">${c.icon} ${esc(getCatLabel(c))} (${n})</button>`;
+        if (c.id === 'Current Transformer') { addBusbarMobile(); busbarMobPlaced = true; }
       });
+      if (!busbarMobPlaced) addBusbarMobile();
       bar.innerHTML = html;
       bar.querySelectorAll('.mfbtn').forEach(b => b.addEventListener('click', (e) => {
         addRipple(b, e);
@@ -2311,11 +2353,17 @@
       activeFilter = val; searchQuery = '';
       const sb = document.getElementById('sb-search'); if (sb) sb.value = '';
       const ps = document.getElementById('prod-search'); if (ps) { ps.value = ''; toggleClear(ps); }
+      const busActive = isBusbarView(val);
       document.querySelectorAll('.sb-item,.sb-all').forEach(b => {
-        b.classList.toggle('active', b.dataset.filter === val);
+        const f = b.dataset.filter;
+        const isParent = b.classList.contains('sb-item-parent');
+        if (isParent) b.classList.toggle('active', busActive);
+        else b.classList.toggle('active', f === val);
       });
       document.querySelectorAll('.mfbtn').forEach(b => {
-        b.classList.toggle('active', b.dataset.filter === val);
+        const f = b.dataset.filter;
+        if (f === BUSBAR_FILTER) b.classList.toggle('active', busActive);
+        else b.classList.toggle('active', f === val);
       });
       const t = document.getElementById('area-title');
       if (t) {
@@ -2357,6 +2405,7 @@
       // Scroll active sidebar item into view (desktop)
       const activeSbItem = document.querySelector('.sb-item.active, .sb-all.active');
       if (activeSbItem) activeSbItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      buildBusbarSubBar();
       shown = PAGE; applyAndRender();
     }
 

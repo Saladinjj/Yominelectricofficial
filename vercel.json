@@ -50,6 +50,7 @@
       { "source": "/tools-hardware.html", "destination": "/products?category=tools-hardware", "statusCode": 301 },
       { "source": "/security-seal.html", "destination": "/products?category=security-seal", "statusCode": 301 },
       { "source": "/other.html", "destination": "/products?category=other", "statusCode": 301 },
+      { "source": "/busbar.html", "destination": "/products?category=busbar", "statusCode": 301 },
       { "source": "/yominelectric-main/:path*", "destination": "/", "statusCode": 301 }
   ],
   "routes": [
