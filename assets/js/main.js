@@ -494,8 +494,8 @@ function setTheme(t, fromAuto = false) {
 
 /* ─── FLOAT BUTTONS (WeChat + WhatsApp) ─────────────── */
 (function injectFloatButtons() {
-  // Don't inject if index.html already has its own float buttons
-  if (document.querySelector('.wa-btn') || document.querySelector('.float-btn-wa')) return;
+  // If a page already provides the shared float buttons, keep them.
+  if (document.querySelector('.wa-btn') || document.querySelector('.float-btn-wa') || document.getElementById('wc-btn') || document.getElementById('wechat-float-btn')) return;
 
   // WeChat QR modal
   const overlay = document.createElement('div');
