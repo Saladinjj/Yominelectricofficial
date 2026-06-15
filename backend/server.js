@@ -58,6 +58,7 @@ const cleanRoutes = {
   '/product-details': 'product-details.html',
   '/process': 'process.html',
   '/solutions': 'solutions.html',
+  '/blog': 'blog.html',
 };
 
 if (config.isDev) {

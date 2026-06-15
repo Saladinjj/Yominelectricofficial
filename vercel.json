@@ -36,6 +36,7 @@
       { "source": "/product-details.html", "destination": "/product-details", "statusCode": 301 },
       { "source": "/process.html", "destination": "/process", "statusCode": 301 },
       { "source": "/solutions.html", "destination": "/solutions", "statusCode": 301 },
+      { "source": "/blog.html", "destination": "/blog", "statusCode": 301 },
       { "source": "/video/company-overview.html", "destination": "/video/company-overview", "statusCode": 301 },
       { "source": "/energy-meter.html", "destination": "/products?category=energy-meter", "statusCode": 301 },
       { "source": "/voltage-stabilizer-regulator.html", "destination": "/products?category=voltage-stabilizer-regulator", "statusCode": 301 },
@@ -65,6 +66,7 @@
     { "src": "/product-details", "dest": "/product-details.html" },
     { "src": "/process", "dest": "/process.html" },
     { "src": "/solutions", "dest": "/solutions.html" },
+    { "src": "/blog", "dest": "/blog.html" },
     { "src": "/video/company-overview", "dest": "/video/company-overview.html" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
