@@ -1121,6 +1121,10 @@
       -webkit-overflow-scrolling: touch;
       scrollbar-width: none;
       -ms-overflow-style: none;
+      position: sticky;
+      top: 68px;
+      z-index: 99;
+      backdrop-filter: blur(16px);
       /* Fade hint on edges to show scrollability */
       -webkit-mask-image: linear-gradient(to right, transparent 0, black 20px, black calc(100% - 20px), transparent 100%);
       mask-image: linear-gradient(to right, transparent 0, black 20px, black calc(100% - 20px), transparent 100%);
@@ -1202,6 +1206,7 @@
     }
 
     @media(max-width:768px) {
+      .mob-filter { top: 60px; }
       .page-hero {
         padding: 90px 20px 40px
       }
@@ -1784,7 +1789,9 @@
     .om-submit:hover { opacity: .85 }
     .om-note { font-size: 11px; color: var(--mt); text-align: center; line-height: 1.5 }
     @media(max-width:800px) { .mc-why-grid { grid-template-columns: repeat(2,1fr) } .mc-sup-stats { grid-template-columns: repeat(2,1fr) } .mc-rating-summary { flex-direction: column; gap: 14px } .mc-tier-grid { grid-template-columns: 1fr 1fr } .mc-bundle-grid { grid-template-columns: repeat(2, 1fr) } .mc-tab { padding: 8px 12px; font-size: 12px } }
-    @media(max-width:480px) { .mc-why-grid { grid-template-columns: 1fr 1fr } .mc-action-row { grid-template-columns: 1fr 1fr } .mc-bundle-grid { grid-template-columns: 1fr } }
+    @media(max-width:480px) {
+      .mob-filter { top: 56px; }
+      .mc-why-grid { grid-template-columns: 1fr 1fr } .mc-action-row { grid-template-columns: 1fr 1fr } .mc-bundle-grid { grid-template-columns: 1fr } }
   </style>
 </head>
 
