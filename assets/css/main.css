@@ -320,20 +320,6 @@ body.light .lopt:hover { background: rgba(0,0,0,.05); }
 .mlb.act { background: rgba(200,169,110,.15); color: var(--ac); border-color: rgba(200,169,110,.3); }
 body.light .mlb { background: rgba(0,0,0,.06); border-color: rgba(0,0,0,.12); }
 
-/* ─── SCROLL TO TOP ─── */
-.ttop {
-  position: fixed; bottom: 100px; right: 28px; z-index: 400;
-  width: 44px; height: 44px; border-radius: 50%;
-  background: var(--bgc); border: 1px solid var(--bdr);
-  color: var(--mt); font-size: 18px; cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  opacity: 0; pointer-events: none;
-  transition: opacity .3s, transform .3s, border-color .2s, color .2s;
-  box-shadow: 0 4px 16px rgba(0,0,0,.35);
-}
-.ttop.vis { opacity: 1; pointer-events: all; }
-.ttop:hover { border-color: rgba(200,169,110,.35); color: var(--ac); transform: translateY(-3px); }
-
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {
   /* Mobile header layout - logo left, buttons right */
@@ -406,7 +392,6 @@ body.light .mlb { background: rgba(0,0,0,.06); border-color: rgba(0,0,0,.12); }
     margin-left: 0 !important;
   }
   
-  .ttop { bottom: 80px; right: 14px; width: 36px; height: 36px; font-size: 15px; }
   /* Floating buttons - smaller and closer */
   .float-btns { 
     bottom: 16px !important; 
