@@ -538,4 +538,14 @@ function setTheme(t, fromAuto = false) {
 document.addEventListener('DOMContentLoaded', () => {
   setTheme(currentTheme, !storedTheme);
   setLang(currentLang);
+
+  const ttop = document.createElement('button');
+  ttop.className = 'ttop';
+  ttop.innerHTML = '&#8593;';
+  ttop.setAttribute('aria-label', 'Scroll to top');
+  ttop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  window.addEventListener('scroll', () => {
+    ttop.classList.toggle('vis', window.scrollY > 500);
+  });
+  document.body.appendChild(ttop);
 });
