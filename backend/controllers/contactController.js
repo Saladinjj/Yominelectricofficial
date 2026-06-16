@@ -154,7 +154,7 @@ const contactController = {
         emailed,
         message: emailed
           ? 'Your message has been received. We will respond within 24 hours.'
-          : 'Your message was saved but email delivery failed. Please email us directly at salaheddine@yominelectric.com.',
+          : 'Your message was saved but email delivery failed. Please email us directly at salah.eddine@cnyomin.com.',
         id: `msg_${Date.now()}`
       });
 

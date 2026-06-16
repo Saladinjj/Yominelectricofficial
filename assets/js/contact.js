@@ -97,7 +97,7 @@ async function handleSubmit(e) {
     if (result.success && result.emailed === false) {
       submitBtn.classList.remove('loading');
       submitBtn.innerHTML = '<span data-t="contact_submit">Send Message</span><span class="submit-icon">→</span>';
-      showFormError(result.message || 'Email could not be sent. Please email salaheddine@yominelectric.com directly.');
+      showFormError(result.message || 'Email could not be sent. Please email salah.eddine@cnyomin.com directly.');
       return;
     }
 
@@ -113,7 +113,7 @@ async function handleSubmit(e) {
         `Subject: ${data.subject || '—'}\n\n` +
         `Message:\n${data.message}`
       );
-      window.open(`mailto:salaheddine@yominelectric.com?subject=${subject}&body=${body}`, '_self');
+      window.open(`mailto:salah.eddine@cnyomin.com?subject=${subject}&body=${body}`, '_self');
       
       // Show success message for fallback
       if (formFields) formFields.style.display = 'none';
@@ -149,7 +149,7 @@ async function handleSubmit(e) {
       });
       showFormError('Please fix the highlighted fields and try again.');
     } else {
-      showFormError(err.message || 'Failed to send message. Please email salaheddine@yominelectric.com directly.');
+      showFormError(err.message || 'Failed to send message. Please email salah.eddine@cnyomin.com directly.');
     }
   }
 }
