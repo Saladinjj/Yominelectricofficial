@@ -395,7 +395,7 @@ function applyTranslations() {
     const tag = el.tagName;
     if ((tag === 'INPUT' || tag === 'TEXTAREA') && el.type !== 'submit') {
       el.placeholder = d[k];
-    } else if (d[k].includes('<')) {
+    } else if (d[k].includes('<') || d[k].includes('&')) {
       el.innerHTML = d[k];
     } else {
       el.textContent = d[k];
