@@ -978,7 +978,6 @@
       object-fit: contain;
       padding: 12px;
       box-sizing: border-box;
-      mix-blend-mode: multiply;
       transition: transform .4s;
       display: block
     }
@@ -1051,9 +1050,13 @@
     }
 
     .pcard-price {
-      font-size: 12.5px;
+      font-size: 11.5px;
       color: var(--ac);
-      font-weight: 600
+      font-weight: 600;
+      background: rgba(200,169,110,.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+      white-space: nowrap
     }
 
     .pcard-arrow {
@@ -1436,6 +1439,23 @@
       opacity: .88;
       transform: translateY(-1px)
     }
+
+    .mc-wa-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #25D366;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: opacity .2s, transform .2s;
+    }
+    .mc-wa-btn:hover { opacity: .9; transform: translateY(-1px); }
+    .mc-wa-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
 
     .mc-meta-rows {
       display: flex;
@@ -2557,7 +2577,7 @@
         ? `<img src="${esc(cardImg)}" alt="${esc(p.title)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
         : `<div class="pcard-img-fb">${catSvg(p.category)}</div>`;
       const quoteLbl = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_request_quote) ? T[currentLang].prod_request_quote : 'Request Quote';
-      const footPrice = isQuoteOnly(p) ? quoteLbl : (p.price ? esc(p.price) : 'Get Quote');
+      const inquiryLbl = quoteLbl.replace('Request Quote','Inquiry for Price');
       return `<a class="pcard${isQuoteOnly(p) ? ' pcard-quote' : ''}" href="#" data-id="${esc(p.id)}" title="${esc(p.title)}">
     <div class="pcard-img">${imgHtml}</div>
     <div class="pcard-body">
@@ -2567,7 +2587,7 @@
       ${pills ? `<div class="pcard-specs">${pills}</div>` : ''}
     </div>
     <div class="pcard-foot">
-      <span class="pcard-price">${esc(footPrice)}</span>
+      <span class="pcard-price">${inquiryLbl}</span>
       <span class="pcard-arrow">→</span>
     </div>
   </a>`;
@@ -2617,14 +2637,8 @@
       /* Pricing */
       const quoteOnly = isQuoteOnly(p);
       let priceRange = quoteOnly ? '' : (ali.price_range || p.price || '');
-      let tier199 = quoteOnly ? '' : (ali.price_tier_1_99 || '');
-      let tier100 = quoteOnly ? '' : (ali.price_tier_100plus || '');
-      const moq = ali.moq || '';
 
       let pricingHtml = '';
-      let bundleHtml = '';
-      let tierHtml = '';
-      // Translation helper
       const tr = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang]) ? T[currentLang] : null;
       const t = (key, fallback) => tr && tr[key] !== undefined ? tr[key] : fallback;
 
@@ -2633,57 +2647,12 @@
           <div class="mc-quote-only-title">${t('prod_request_quote', 'Request Quote')}</div>
           <p class="mc-quote-only-desc">${t('prod_quote_busbar_desc', 'Busbar pricing is project-specific. Submit your drawings and specifications for a formal quotation first — our team will review and negotiate terms with you.')}</p>
         </div>`;
-      }
-
-      // Generate bundle HTML if product has bundles
-      if (!quoteOnly && p.bundles && p.bundles.length > 0) {
-        bundleHtml = `<div class="mc-bundle-grid">${p.bundles.map(b => `
-          <div class="mc-bundle ${b.recommended ? 'mc-bundle-recommended' : ''}" data-bundle-id="${esc(b.id)}">
-            ${b.recommended ? `<div class="mc-bundle-badge">${t('bundle_recommended', 'Recommended')}</div>` : ''}
-            <div class="mc-bundle-name">${esc(b.name)}</div>
-            <div class="mc-bundle-desc">${esc(b.description)}</div>
-            <div class="mc-bundle-price">${esc(b.price)}</div>
-            <ul class="mc-bundle-features">${b.features.map(f => `<li class="mc-bundle-feature">${esc(f)}</li>`).join('')}</ul>
-            <button class="mc-bundle-select" onclick="selectBundle('${esc(p.id)}', '${esc(b.id)}', this)">${t('bundle_select', 'Select')}</button>
-          </div>`).join('')}</div>`;
-      }
-
-      // Generate tier HTML if tier pricing exists
-      if (!quoteOnly && tier199 && tier100) {
-        tierHtml = `<div class="mc-tier-grid">
-          <div class="mc-tier">
-            <div class="mc-tier-qty">1–99 pcs</div>
-            <div class="mc-tier-price">${esc(tier199)}</div>
-            <div class="mc-tier-label">per unit</div>
-          </div>
-          <div class="mc-tier mc-tier-best">
-            <div class="mc-tier-badge">Best Value</div>
-            <div class="mc-tier-qty">100+ pcs</div>
-            <div class="mc-tier-price">${esc(tier100)}</div>
-            <div class="mc-tier-label">per unit</div>
-          </div>
+      } else {
+        pricingHtml = `<div class="mc-quote-only">
+          <div class="mc-quote-only-title">Inquiry for Price</div>
+          <p class="mc-quote-only-desc">Contact us for the latest pricing on this product. We offer competitive factory-direct prices with OEM/ODM available.</p>
         </div>`;
-      } else if (!quoteOnly && priceRange) {
-        tierHtml = `<div class="mc-price-single">${esc(priceRange)} <span class="mc-price-note">/ unit</span></div>`;
       }
-
-      // Combine bundle and tier HTML
-      if (!quoteOnly && bundleHtml && tierHtml) {
-        pricingHtml = `<div class="mc-pricing-section">
-          <div class="mc-section-label">${t('bundle_package_options', 'Package Options')}</div>
-          ${bundleHtml}
-          <div class="mc-section-label" style="margin-top: 24px">${t('bundle_quantity_pricing', 'Quantity‑Based Pricing')}</div>
-          ${tierHtml}
-        </div>`;
-      } else if (!quoteOnly && bundleHtml) {
-        pricingHtml = `<div class="mc-pricing-section">
-          <div class="mc-section-label">${t('bundle_package_options', 'Package Options')}</div>
-          ${bundleHtml}
-        </div>`;
-      } else if (!quoteOnly && tierHtml) {
-        pricingHtml = tierHtml;
-      }
-
       /* Shipping */
       const shippingFee = (ali.shipping_fee || '').replace(/^shipping fee:\s*/i,'').trim() || 'Est. $0.84/kg ocean freight';
       const transitTime = (ali.transit_time || '').replace(/^transit time:\s*/i,'').trim() || '15–25 days';
@@ -2700,7 +2669,6 @@
         <div class="mc-price-box">
           <div class="mc-fob-label">${quoteOnly ? t('prod_pricing', 'Pricing') : 'FOB Price'}</div>
           ${pricingHtml || `<div class="mc-price-single">${esc(quoteOnly ? t('prod_request_quote', 'Request Quote') : (priceRange || 'Get Quote'))}</div>`}
-          ${!quoteOnly && moq ? `<div class="mc-moq">📦 ${esc(moq)}</div>` : ''}
         </div>
         <div class="mc-action-btns">
           ${quoteOnly
@@ -2710,6 +2678,10 @@
             <button class="mc-wholesale-btn" onclick="openOrderModal('wholesale','${p.id}','${safeTitle}')">📦 Wholesale</button>
             <button class="mc-custom-btn" onclick="openOrderModal('custom','${p.id}','${safeTitle}')">🎨 Customize</button>
           </div>`}
+          <a class="mc-wa-btn" href="https://wa.me/8619016543301?text=${encodeURIComponent('Hi Yomin Electric, I am interested in: '+p.title+' (ID: '+p.id+')')}" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Inquire by WhatsApp
+          </a>
         </div>
         <div class="mc-shipping-box">
           <div class="mc-ship-row"><span>🚢 Shipping</span><span>${esc(shippingFee.substring(0,55))}</span></div>
