@@ -388,7 +388,7 @@ function productCard(p){
   const specs=p.specs||{};
   const pills=Object.keys(specs).slice(0,3).map(k=>`<span class="spec-pill">${esc(specs[k])}</span>`).join('');
   const imgHtml=p.image
-    ?`<img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
+    ?`<img src="${esc(p.image)}" alt="${esc(p.title)}" onerror="var fb=this.nextElementSibling;this.style.display='none';fb.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
     :`<div class="pcard-img-fb">${catSvg(p.category)}</div>`;
   const d=(typeof T!=='undefined'&&typeof currentLang!=='undefined')?T[currentLang]:null;
   const quoteLbl=(d&&d.prod_request_quote)?d.prod_request_quote:'Request Quote';

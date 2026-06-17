@@ -1353,7 +1353,6 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
-      mix-blend-mode: multiply;
       transition: transform .4s
     }
 
@@ -1707,7 +1706,7 @@
     .mc-gallery { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px }
     .mc-gallery-thumb { width: 52px; height: 52px; border-radius: 8px; overflow: hidden; border: 2px solid var(--bds); cursor: pointer; flex-shrink: 0; transition: border-color .2s; background: #ffffff }
     .mc-gallery-thumb:hover, .mc-gallery-thumb.active { border-color: var(--ac) }
-    .mc-gallery-thumb img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply }
+    .mc-gallery-thumb img { width: 100%; height: 100%; object-fit: cover }
     .mc-fob-label { font-size: 10px; color: var(--mt); text-transform: uppercase; letter-spacing: .8px; margin-bottom: 8px }
     .mc-tier-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px }
     .mc-tier { background: var(--bgc2); border: 1px solid var(--bds); border-radius: 10px; padding: 10px 12px; position: relative; text-align: center }
@@ -2563,6 +2562,16 @@
           }, Math.min(i * 18, 500)));
         });
       }
+      /* Fallback: replace any unloaded images with SVG after 6 sec */
+      const fallbackId = 'imgFallback_' + Date.now();
+      window[fallbackId] = setTimeout(() => {
+        grid.querySelectorAll('.pcard-img img').forEach(img => {
+          if (!img.complete && img.naturalWidth === 0) {
+            img.style.display = 'none';
+            if (img.nextElementSibling) img.nextElementSibling.style.display = 'flex';
+          }
+        });
+      }, 6000);
     }
 
     function productCard(p) {
@@ -2574,7 +2583,7 @@
         ? `<div class="pcard-stages">${p.processes.length}-stage production line</div>` : '';
       const pills = Object.entries(specs).slice(0, 3).map(([k, v]) => `<span class="spec-pill">${esc(String(v))}</span>`).join('');
       const imgHtml = cardImg
-        ? `<img src="${esc(cardImg)}" alt="${esc(p.title)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
+        ? `<img src="${esc(cardImg)}" alt="${esc(p.title)}" onerror="var fb=this.nextElementSibling;this.style.display='none';fb.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
         : `<div class="pcard-img-fb">${catSvg(p.category)}</div>`;
       const quoteLbl = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_request_quote) ? T[currentLang].prod_request_quote : 'Request Quote';
       const inquiryLbl = quoteLbl.replace('Request Quote','Inquiry for Price');
@@ -2631,7 +2640,7 @@
       const thumbsHtml = galleryImgs.length > 1
         ? `<div class="mc-gallery">${galleryImgs.slice(0,6).map((img,i) =>
             `<div class="mc-gallery-thumb${i===0?" active":""}" onclick="setMainImg(\'${esc(img)}\',this)">
-              <img src="${esc(img)}" alt="" loading="lazy">
+              <img src="${esc(img)}" alt="">
             </div>`).join("")}</div>` : "";
 
       /* Pricing */
