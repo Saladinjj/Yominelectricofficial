@@ -389,7 +389,7 @@ function productCard(p){
   const pills=Object.keys(specs).slice(0,3).map(k=>`<span class="spec-pill">${esc(specs[k])}</span>`).join('');
   const thumb=(p.image|| (Array.isArray(p.images) && p.images[0]) || '');
   const imgHtml=thumb
-    ?`<img src="${esc(thumb)}" alt="${esc(p.title)}" loading="lazy" decoding="async" onerror="var fb=this.nextElementSibling;this.style.display='none';fb.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
+    ?`<img src="${esc(thumb)}" alt="${esc(p.title)}" referrerpolicy="no-referrer" decoding="async" onerror="var fb=this.nextElementSibling;this.style.display='none';fb.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
     :`<div class="pcard-img-fb">${catSvg(p.category)}</div>`;
   const d=(typeof T!=='undefined'&&typeof currentLang!=='undefined')?T[currentLang]:null;
   const inquiryLbl=(d&&d.prod_request_quote)?d.prod_request_quote.replace('Request Quote','Inquiry for Price'):'Inquiry for Price';
@@ -430,7 +430,7 @@ function openDetail(p){
 
   const galleryImgs=(p.images&&p.images.length)?p.images:(p.image?[p.image]:[]);
   const imgHtml=galleryImgs[0]
-    ?`<img src="${esc(galleryImgs[0])}" alt="${esc(p.title)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="dp-img-fb" style="display:none">${catSvg(p.category,90)}</div>`
+    ?`<img src="${esc(galleryImgs[0])}" alt="${esc(p.title)}" referrerpolicy="no-referrer" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="dp-img-fb" style="display:none">${catSvg(p.category,90)}</div>`
     :`<div class="dp-img-fb">${catSvg(p.category,90)}</div>`;
 
   const specRows=Object.entries(specs).map(([k,v])=>
