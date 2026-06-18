@@ -387,11 +387,11 @@ function renderGrid(animate){
 function productCard(p){
   const specs=p.specs||{};
   const pills=Object.keys(specs).slice(0,3).map(k=>`<span class="spec-pill">${esc(specs[k])}</span>`).join('');
-  const imgHtml=p.image
-    ?`<img src="${esc(p.image)}" alt="${esc(p.title)}" onerror="var fb=this.nextElementSibling;this.style.display='none';fb.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
+  const thumb=(p.image|| (Array.isArray(p.images) && p.images[0]) || '');
+  const imgHtml=thumb
+    ?`<img src="${esc(thumb)}" alt="${esc(p.title)}" loading="lazy" decoding="async" onerror="var fb=this.nextElementSibling;this.style.display='none';fb.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
     :`<div class="pcard-img-fb">${catSvg(p.category)}</div>`;
   const d=(typeof T!=='undefined'&&typeof currentLang!=='undefined')?T[currentLang]:null;
-  const quoteLbl=(d&&d.prod_request_quote)?d.prod_request_quote:'Request Quote';
   const inquiryLbl=(d&&d.prod_request_quote)?d.prod_request_quote.replace('Request Quote','Inquiry for Price'):'Inquiry for Price';
   return `<a class="pcard${isQuoteOnly(p)?' pcard-quote':''}" href="#" data-id="${esc(p.id)}" title="${esc(p.title)}">
     <div class="pcard-img">${imgHtml}</div>
