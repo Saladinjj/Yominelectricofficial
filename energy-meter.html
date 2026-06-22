@@ -2498,7 +2498,7 @@
         ? `<div class="pcard-stages">${p.processes.length}-stage production line</div>` : '';
       const pills = Object.entries(specs).slice(0, 3).map(([k, v]) => `<span class="spec-pill">${esc(String(v))}</span>`).join('');
       const imgHtml = cardImg
-        ? `<img src="${esc(cardImg)}" alt="${esc(p.title)}" referrerpolicy="no-referrer"  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
+        ? `<img src="${esc(cardImg)}" alt="${esc(p.title)}" loading="lazy" referrerpolicy="no-referrer" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
         : `<div class="pcard-img-fb">${catSvg(p.category)}</div>`;
       const quoteLbl = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_request_quote) ? T[currentLang].prod_request_quote : 'Request Quote';
       const footPrice = isQuoteOnly(p) ? quoteLbl : (p.price ? esc(p.price) : 'Get Quote');
@@ -2549,13 +2549,13 @@
       const mainImg = galleryImgs[0] || '';
 
       const imgHtml = mainImg
-        ? `<img id="mc-main-img" src="${esc(mainImg)}" alt="${esc(p.title)}" referrerpolicy="no-referrer" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><div class="mc-img-fb" style="display:none">${catSvg(p.category, 90)}</div>`
+        ? `<img id="mc-main-img" src="${esc(mainImg)}" alt="${esc(p.title)}" loading="lazy" referrerpolicy="no-referrer" decoding="async" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><div class="mc-img-fb" style="display:none">${catSvg(p.category, 90)}</div>`
         : `<div class="mc-img-fb">${catSvg(p.category, 90)}</div>`;
 
       const thumbsHtml = galleryImgs.length > 1
         ? `<div class="mc-gallery">${galleryImgs.slice(0,6).map((img,i) =>
             `<div class="mc-gallery-thumb${i===0?" active":""}" onclick="setMainImg(\'${esc(img)}\',this)">
-              <img src="${esc(img)}" alt="" >
+              <img src="${esc(img)}" alt="" loading="lazy" decoding="async">
             </div>`).join("")}</div>` : "";
 
       /* Pricing */
