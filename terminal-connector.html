@@ -2160,8 +2160,8 @@
       /* â”€â”€ Load products.json â”€â”€ */
       try {
         const [r, ra] = await Promise.all([
-          fetch('/data/products.json'),
-          fetch('/data/alibaba_enriched.json').catch(() => null)
+          fetch('data/products.json'),
+          fetch('data/alibaba_enriched.json').catch(() => null)
         ]);
         if (!r.ok) throw new Error('HTTP ' + r.status);
         const raw = await r.json();
