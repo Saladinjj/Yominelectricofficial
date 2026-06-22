@@ -509,7 +509,7 @@ function setTheme(t, fromAuto = false) {
       <div class="wc-modal-title">WeChat / 微信</div>
       <div class="wc-modal-sub">Scan with WeChat to connect with us</div>
       <div class="wc-qr-wrap">
-        <img src="/wechat-qr.jpg" alt="WeChat QR Code" class="wc-qr-img"/>
+        <img src="/assets/images/qr-wechat.jpg" alt="WeChat QR Code" class="wc-qr-img"/>
       </div>
       <button class="wc-modal-close" id="wc-close">✕ Close</button>
     </div>`;
