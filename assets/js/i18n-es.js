@@ -114,7 +114,7 @@ if (typeof T !== 'undefined') {
     prod_cat_heavy_busbar:'Barra colectora de servicio pesado',prod_cat_storage_busbar:'Almacenamiento de energía',prod_cat_busbar_protection:'Protección de barras',
     prod_cat_variac:'Variac / Transformadores',prod_cat_terminal:'Terminales y conectores',prod_cat_solar:'Energía solar y fotovoltaica',
     prod_cat_fuse:'Fusibles y protección',prod_cat_voltage_protector:'Protectores de voltaje',prod_cat_socket:'Enchufes y cableado',
-    prod_cat_tile:'Nivelación de azulejos',prod_cat_tools:'Herramientas y ferretería',prod_cat_seal:'Sellos de seguridad',
+    prod_cat_tools:'Herramientas y ferretería',prod_cat_seal:'Sellos de seguridad',
     prod_cat_other:'Otros productos',prod_request_quote:'Solicitar Cotización',prod_quote_busbar_desc:'El precio de las barras colectoras es específico del proyecto. Envíe primero sus dibujos y especificaciones para obtener una cotización formal; nuestro equipo revisará y negociará los términos con usted.',
     prod_pricing:'Precios',prod_busbar_choose:'Elija el tipo de barra colectora',prod_busbar_all:'Todas las barras colectoras',
     bundle_package_options:'Opciones de paquete',bundle_quantity_pricing:'Precios basados ​​en la cantidad',bundle_select:'Seleccionar',
