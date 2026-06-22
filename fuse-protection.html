@@ -2785,6 +2785,12 @@
       const tabDesc = `
         <div class="mc-desc-content">
           <p class="mc-desc">${esc(desc)}</p>
+          ${p.description_images && p.description_images.length ? `
+            <div class="mc-section-label">Product Details</div>
+            <div class="mc-desc-gallery" style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
+              ${p.description_images.map(img => `<img src="${esc(img)}" alt="Product Detail" style="width:100%;height:auto;border-radius:8px;border:1px solid var(--bds)">`).join('')}
+            </div>
+          ` : ''}
           <div class="mc-section-label">Applications</div>
           <div class="mc-apps">${apps.map((a,i) => `<span class="mc-app">${appIcons[i%appIcons.length]} ${esc(a)}</span>`).join('')}</div>
           <div class="mc-section-label">Why Choose Yomin?</div>
