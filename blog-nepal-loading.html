@@ -147,6 +147,17 @@ footer{padding:48px 60px;border-top:1px solid var(--bds);display:flex;align-item
   .bh-title{font-size:clamp(24px,6vw,36px)}
 }
 
+/* RTL */
+[dir=rtl] nav,[dir=rtl] .n-logo,[dir=rtl] .n-ctr,[dir=rtl] .n-rt{direction:ltr}
+[dir=rtl] .blog-hero,[dir=rtl] .content-section{direction:rtl;text-align:right}
+[dir=rtl] .bh-meta{justify-content:flex-start}
+[dir=rtl] .pt-step{text-align:right}
+[dir=rtl] .pg-spec{text-align:right}
+[dir=rtl] footer{direction:rtl;text-align:right}
+[dir=rtl] .float-btns{right:28px;left:auto}
+[dir=rtl] .wa-btn{left:28px;right:auto}
+[dir=rtl] .cta-section{direction:rtl}
+
 /* Lightbox */
 #lightbox{display:none;position:fixed;inset:0;z-index:600;background:rgba(0,0,0,.92);align-items:center;justify-content:center;cursor:pointer}
 #lightbox img{max-width:90vw;max-height:90vh;border-radius:8px}
@@ -176,6 +187,7 @@ footer{padding:48px 60px;border-top:1px solid var(--bds);display:flex;align-item
       </button>
       <div class="ldrop" id="ldrop" style="position:absolute;top:calc(100% + 8px);right:0;background:#1e1e1e;border:1px solid var(--bdr);border-radius:10px;min-width:140px;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:500;overflow:hidden">
         <button class="lopt act" data-lang="en" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span>🇬🇧</span> English</button>
+        <button class="lopt" data-lang="ar" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:'Noto Sans Arabic',var(--ss),sans-serif;white-space:nowrap"><span>🇸🇦</span> العربية</button>
         <button class="lopt" data-lang="fr" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span>🇫🇷</span> Français</button>
         <button class="lopt" data-lang="es" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span>🇪🇸</span> Español</button>
       </div>
@@ -379,6 +391,7 @@ document.getElementById('wc-overlay')?.addEventListener('click', function(e) {
 /* i18n translations */
 (function(){
   var lang = localStorage.getItem('ym_lang') || 'en';
+  if (lang === 'ar') document.documentElement.dir = 'rtl';
   var T = {
     en: {
       nav_home:'Home',
@@ -487,6 +500,42 @@ document.getElementById('wc-overlay')?.addEventListener('click', function(e) {
       wc_title:'Conectar en WeChat',
       wc_desc:'Escanee el código QR con WeChat para contactar a nuestro equipo.',
       wc_close:'✕ Cerrar'
+    },
+    ar: {
+      nav_home:'الرئيسية',
+      nav_products:'المنتجات', nav_solutions:'الحلول', nav_process:'العملية',
+      nav_about:'من نحن', nav_contact:'اتصل بنا', nav_quote:'طلب عرض سعر',
+      blog_breadcrumb:'الرئيسية · المدونة · شحن نيبال',
+      blog_tag:'الشحنات',
+      blog_title:'شحن نيبال: محولات التيار الأولية والثانوية',
+      blog_meta_author:'فريق اللوجستيات',
+      blog_overview_title:'نظرة عامة على الشحنة',
+      blog_overview_p1:'تم تحميل وإرسال عدة حاويات من محولات التيار الأولية والثانوية إلى نيبال.',
+      blog_overview_p2:'تم تحميل كل حاوية تحت إشراف فرق اللوجستيات ومراقبة الجودة.',
+      blog_products_title:'المنتجات المشحونة',
+      blog_primary_title:'محولات التيار الأولية',
+      blog_primary_desc:'محولات عالية الدقة مصممة للقياس والحماية في شبكات الجهد المتوسط.',
+      blog_secondary_title:'محولات التيار الثانوية',
+      blog_secondary_desc:'محولات ثانوية موثوقة لقياس الطاقة والمراقبة والحماية.',
+      blog_process_title:'عملية التحميل',
+      blog_step1_title:'فحص الجودة والاختبارات النهائية',
+      blog_step1_desc:'خضعت كل وحدة لفحص الجودة النهائي والاختبار قبل التعبئة.',
+      blog_step2_title:'التغليف والتوسيم الآمن',
+      blog_step2_desc:'تم تعبئة جميع المحولات في كراتين تصدير مع حماية من الرغوة.',
+      blog_step3_title:'التنضيد وتحميل الحاوية',
+      blog_step3_desc:'تم تنضيد الكراتين على منصات خشبية وتحميلها بتوزيع وزن صحيح.',
+      blog_step4_title:'التوثيق والتخليص الجمركي',
+      blog_step4_desc:'تم تجهيز الفاتورة التجارية وقائمة التعبئة وشهادة المنشأ.',
+      blog_step5_title:'الإرسال وتتبع الشحنة',
+      blog_step5_desc:'غادرت الحاويات ميناء نينغبو مع تفعيل تتبع الشحنة بالكامل.',
+      blog_gallery_title:'صور التحميل',
+      blog_gallery_desc:'صور مفصلة توثق عملية تحميل الحاوية بالكامل.',
+      blog_cta_title:'هل تحتاج محولات تيار؟ دعنا نتحدث.',
+      blog_cta_desc:'نقوم بتصنيع وتصدير محولات التيار على مستوى العالم.',
+      blog_cta_btn:'طلب عرض سعر →',
+      wc_title:'تواصل عبر وي شات',
+      wc_desc:'امسح رمز QR للتواصل مع فريق المبيعات.',
+      wc_close:'✕ إغلاق'
     }
   };
   var d = T[lang] || T.en;
@@ -506,8 +555,9 @@ document.getElementById('wc-overlay')?.addEventListener('click', function(e) {
     btn.addEventListener('click', function() {
       lang = btn.getAttribute('data-lang');
       localStorage.setItem('ym_lang', lang);
-      document.getElementById('lf').textContent = {'en':'🇬🇧','fr':'🇫🇷','es':'🇪🇸'}[lang] || '🇬🇧';
+      document.getElementById('lf').textContent = {'en':'🇬🇧','ar':'🇸🇦','fr':'🇫🇷','es':'🇪🇸'}[lang] || '🇬🇧';
       document.getElementById('lc').textContent = lang.toUpperCase();
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
       d = T[lang] || T.en;
       document.querySelectorAll('[data-i18n]').forEach(function(el) {
         var key = el.getAttribute('data-i18n');
