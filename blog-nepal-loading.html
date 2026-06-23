@@ -55,6 +55,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .n-ctr a:hover,.n-ctr a.active{color:var(--tx);background:rgba(255,255,255,.05)}
 .n-ctr a.active{color:var(--ac)}
 .n-rt{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.lopt:hover{background:rgba(255,255,255,.06);color:var(--tx)}
+.lopt.act{color:var(--ac)}
 .ncta{background:var(--ac);color:#000;border:none;padding:9px 20px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;text-decoration:none;white-space:nowrap}
 .ncta:hover{background:var(--ac2)}
 .ham{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
@@ -167,7 +169,17 @@ footer{padding:48px 60px;border-top:1px solid var(--bds);display:flex;align-item
     <li><a href="/contact" data-i18n="nav_contact">Contact</a></li>
   </ul>
   <div class="n-rt">
-    <button class="lsw-btn" id="langBtn" style="background:rgba(255,255,255,.06);border:1px solid var(--bdr);color:var(--mt);padding:7px 13px;border-radius:8px;font-size:12px;cursor:pointer;font-family:var(--ss)">EN ▾</button>
+    <div class="lsw" style="position:relative">
+      <button class="lbtn" id="lbtn" style="background:rgba(255,255,255,.06);border:1px solid var(--bdr);color:var(--mt);padding:7px 13px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;font-family:var(--ss)">
+        <span id="lf">🇬🇧</span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5" width="10" height="10"><path d="M1 1l5 5 5-5"/></svg>
+      </button>
+      <div class="ldrop" id="ldrop" style="position:absolute;top:calc(100% + 8px);right:0;background:#1e1e1e;border:1px solid var(--bdr);border-radius:10px;min-width:140px;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:500;overflow:hidden">
+        <button class="lopt act" data-lang="en" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span>🇬🇧</span> English</button>
+        <button class="lopt" data-lang="fr" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span>🇫🇷</span> Français</button>
+        <button class="lopt" data-lang="es" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span>🇪🇸</span> Español</button>
+      </div>
+    </div>
     <a href="/contact" class="ncta" data-i18n="nav_quote">Get Quote</a>
     <button class="ham" id="ham"><span></span><span></span><span></span></button>
   </div>
@@ -483,24 +495,29 @@ document.getElementById('wc-overlay')?.addEventListener('click', function(e) {
     if (d[key]) el.textContent = d[key];
   });
 
-  /* Language switch */
-  var langBtn = document.getElementById('langBtn');
-  if (langBtn) {
-    var langs = ['EN','FR','ES'];
-    var idx = langs.indexOf(lang.toUpperCase());
-    langBtn.textContent = (langs[idx] || 'EN') + ' ▾';
-    langBtn.addEventListener('click', function() {
-      idx = (idx + 1) % langs.length;
-      lang = langs[idx].toLowerCase();
+  /* Language drop */
+  var lbtn = document.getElementById('lbtn');
+  var ldrop = document.getElementById('ldrop');
+  if (lbtn && ldrop) {
+    lbtn.addEventListener('click', function(e) { e.stopPropagation(); ldrop.style.opacity = '1'; ldrop.style.pointerEvents = 'all'; ldrop.style.transform = 'none'; });
+    document.addEventListener('click', function(e) { if (!lbtn.contains(e.target)) { ldrop.style.opacity = '0'; ldrop.style.pointerEvents = 'none'; ldrop.style.transform = 'translateY(-6px)'; } });
+  }
+  document.querySelectorAll('.lopt').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      lang = btn.getAttribute('data-lang');
       localStorage.setItem('ym_lang', lang);
-      langBtn.textContent = langs[idx] + ' ▾';
+      document.getElementById('lf').textContent = {'en':'🇬🇧','fr':'🇫🇷','es':'🇪🇸'}[lang] || '🇬🇧';
+      document.getElementById('lc').textContent = lang.toUpperCase();
       d = T[lang] || T.en;
       document.querySelectorAll('[data-i18n]').forEach(function(el) {
         var key = el.getAttribute('data-i18n');
         if (d[key]) el.textContent = d[key];
       });
+      ldrop.style.opacity = '0'; ldrop.style.pointerEvents = 'none'; ldrop.style.transform = 'translateY(-6px)';
+      document.querySelectorAll('.lopt').forEach(function(o) { o.classList.remove('act'); });
+      btn.classList.add('act');
     });
-  }
+  });
 })();
 </script>
 
