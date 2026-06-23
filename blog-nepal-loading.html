@@ -158,39 +158,40 @@ footer{padding:48px 60px;border-top:1px solid var(--bds);display:flex;align-item
     <img src="/logo.png" alt="Yomin Electric" width="44" height="44">
   </a>
   <ul class="n-ctr">
-    <li><a href="/">Home</a></li>
-    <li><a href="/products">Products</a></li>
-    <li><a href="/solutions">Solutions</a></li>
+    <li><a href="/" data-i18n="nav_home">Home</a></li>
+    <li><a href="/products" data-i18n="nav_products">Products</a></li>
+    <li><a href="/solutions" data-i18n="nav_solutions">Solutions</a></li>
     <li><a href="/blog.html" class="active">Blog</a></li>
-    <li><a href="/process">Process</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
+    <li><a href="/process" data-i18n="nav_process">Process</a></li>
+    <li><a href="/about" data-i18n="nav_about">About</a></li>
+    <li><a href="/contact" data-i18n="nav_contact">Contact</a></li>
   </ul>
   <div class="n-rt">
-    <a href="/contact" class="ncta">Get Quote</a>
+    <button class="lsw-btn" id="langBtn" style="background:rgba(255,255,255,.06);border:1px solid var(--bdr);color:var(--mt);padding:7px 13px;border-radius:8px;font-size:12px;cursor:pointer;font-family:var(--ss)">EN ▾</button>
+    <a href="/contact" class="ncta" data-i18n="nav_quote">Get Quote</a>
     <button class="ham" id="ham"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <div class="mob" id="mob">
   <button class="mob-x" id="mob-x">✕</button>
-  <a href="/">Home</a>
-  <a href="/products">Products</a>
-  <a href="/solutions">Solutions</a>
+  <a href="/" data-i18n="nav_home">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
   <a href="/blog.html" class="active">Blog</a>
-  <a href="/process">Process</a>
-  <a href="/about">About</a>
-  <a href="/contact">Contact</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
 </div>
 
 <main>
   <section class="blog-hero">
-    <div class="bh-breadcrumb"><a href="/">Home</a> · <a href="/blog.html">Blog</a> · Nepal Container Loading</div>
-    <span class="bh-tag">Shipments</span>
-    <h1 class="bh-title">Nepal Container Loading: Primary &amp; Secondary Current Transformers Shipped</h1>
+    <div class="bh-breadcrumb"><a href="/">Home</a> · <a href="/blog.html">Blog</a> · <span data-i18n="blog_breadcrumb">Nepal Container Loading</span></div>
+    <span class="bh-tag" data-i18n="blog_tag">Shipments</span>
+    <h1 class="bh-title" data-i18n="blog_title">Nepal Container Loading: Primary &amp; Secondary Current Transformers Shipped</h1>
     <div class="bh-meta">
       <div class="avatar">LG</div>
-      <strong style="color:var(--tx)">Logistics Team</strong>
+      <strong style="color:var(--tx)" data-i18n="blog_meta_author">Logistics Team</strong>
       <span class="divider"></span>
       <span>3 min read</span>
       <span class="divider"></span>
@@ -201,15 +202,15 @@ footer{padding:48px 60px;border-top:1px solid var(--bds);display:flex;align-item
   <section class="content-section">
     <img class="hero-img" src="/assets/images/blog/nepal-loading/Weixin%20Image_20260623145546_4_9.jpg" alt="Nepal container loading — current transformers ready for shipment" loading="eager">
 
-    <h2>Shipment Overview</h2>
-    <p>We successfully loaded and dispatched multiple containers of <strong>primary and secondary current transformers</strong> to Nepal. This shipment represents a significant order that was manufactured at our ISO 9001:2015 certified facility in Wenzhou, Zhejiang, and packed for export with full quality documentation.</p>
-    <p>Each container was loaded under the supervision of our logistics and QC teams to ensure proper handling, secure packaging, and accurate inventory verification before dispatch.</p>
+    <h2 data-i18n="blog_overview_title">Shipment Overview</h2>
+    <p data-i18n="blog_overview_p1">We successfully loaded and dispatched multiple containers of <strong>primary and secondary current transformers</strong> to Nepal. This shipment represents a significant order that was manufactured at our ISO 9001:2015 certified facility in Wenzhou, Zhejiang, and packed for export with full quality documentation.</p>
+    <p data-i18n="blog_overview_p2">Each container was loaded under the supervision of our logistics and QC teams to ensure proper handling, secure packaging, and accurate inventory verification before dispatch.</p>
 
-    <h2>Products Shipped</h2>
+    <h2 data-i18n="blog_products_title">Products Shipped</h2>
     <div class="product-grid">
       <div class="pg-card">
-        <h3>Primary Current Transformers</h3>
-        <p>High-precision CTs designed for metering and protection applications in medium-voltage networks.</p>
+        <h3 data-i18n="blog_primary_title">Primary Current Transformers</h3>
+        <p data-i18n="blog_primary_desc">High-precision CTs designed for metering and protection applications in medium-voltage networks.</p>
         <div class="pg-specs">
           <div class="pg-spec"><span class="pg-spec-key">Type</span><span class="pg-spec-val">Primary Current Transformer</span></div>
           <div class="pg-spec"><span class="pg-spec-key">Accuracy</span><span class="pg-spec-val">Class 0.5 / Class 1.0</span></div>
@@ -218,8 +219,8 @@ footer{padding:48px 60px;border-top:1px solid var(--bds);display:flex;align-item
         </div>
       </div>
       <div class="pg-card">
-        <h3>Secondary Current Transformers</h3>
-        <p>Reliable secondary-side CTs for energy metering, monitoring, and protective relaying.</p>
+        <h3 data-i18n="blog_secondary_title">Secondary Current Transformers</h3>
+        <p data-i18n="blog_secondary_desc">Reliable secondary-side CTs for energy metering, monitoring, and protective relaying.</p>
         <div class="pg-specs">
           <div class="pg-spec"><span class="pg-spec-key">Type</span><span class="pg-spec-val">Secondary Current Transformer</span></div>
           <div class="pg-spec"><span class="pg-spec-key">Accuracy</span><span class="pg-spec-val">Class 0.5S / Class 1.0</span></div>
@@ -229,41 +230,41 @@ footer{padding:48px 60px;border-top:1px solid var(--bds);display:flex;align-item
       </div>
     </div>
 
-    <h2>Loading Process</h2>
+    <h2 data-i18n="blog_process_title">Loading Process</h2>
     <div class="process-timeline">
       <div class="pt-step">
         <div class="pt-num">1</div>
         <div class="pt-content">
-          <h4>Quality Inspection & Final Testing</h4>
-          <p>Every unit underwent final QC inspection and testing before packing. Accuracy verification, insulation resistance, and visual inspection were completed per our standard export protocol.</p>
+          <h4 data-i18n="blog_step1_title">Quality Inspection & Final Testing</h4>
+          <p data-i18n="blog_step1_desc">Every unit underwent final QC inspection and testing before packing. Accuracy verification, insulation resistance, and visual inspection were completed per our standard export protocol.</p>
         </div>
       </div>
       <div class="pt-step">
         <div class="pt-num">2</div>
         <div class="pt-content">
-          <h4>Secure Packaging & Labeling</h4>
-          <p>All CTs were packed in export-grade cartons with foam cushioning, moisture-resistant wrapping, and clear labeling showing product codes, quantities, and handling instructions.</p>
+          <h4 data-i18n="blog_step2_title">Secure Packaging & Labeling</h4>
+          <p data-i18n="blog_step2_desc">All CTs were packed in export-grade cartons with foam cushioning, moisture-resistant wrapping, and clear labeling showing product codes, quantities, and handling instructions.</p>
         </div>
       </div>
       <div class="pt-step">
         <div class="pt-num">3</div>
         <div class="pt-content">
-          <h4>Palletizing & Container Loading</h4>
-          <p>Cartons were palletized on wooden pallets, stretch-wrapped for stability, and loaded into containers with proper weight distribution. Dock-level loading ensured safe handling.</p>
+          <h4 data-i18n="blog_step3_title">Palletizing & Container Loading</h4>
+          <p data-i18n="blog_step3_desc">Cartons were palletized on wooden pallets, stretch-wrapped for stability, and loaded into containers with proper weight distribution. Dock-level loading ensured safe handling.</p>
         </div>
       </div>
       <div class="pt-step">
         <div class="pt-num">4</div>
         <div class="pt-content">
-          <h4>Documentation & Customs Clearance</h4>
-          <p>Commercial invoice, packing list, certificate of origin, bill of lading, and test reports were prepared for Nepal customs clearance. All documentation aligned with export requirements.</p>
+          <h4 data-i18n="blog_step4_title">Documentation & Customs Clearance</h4>
+          <p data-i18n="blog_step4_desc">Commercial invoice, packing list, certificate of origin, bill of lading, and test reports were prepared for Nepal customs clearance. All documentation aligned with export requirements.</p>
         </div>
       </div>
       <div class="pt-step">
         <div class="pt-num">5</div>
         <div class="pt-content">
-          <h4>Dispatch & Shipment Tracking</h4>
-          <p>Containers departed from Ningbo/Zhejiang port with full shipment tracking enabled. Estimated transit time to Nepal is 15–20 days depending on the route.</p>
+          <h4 data-i18n="blog_step5_title">Dispatch & Shipment Tracking</h4>
+          <p data-i18n="blog_step5_desc">Containers departed from Ningbo/Zhejiang port with full shipment tracking enabled. Estimated transit time to Nepal is 15–20 days depending on the route.</p>
         </div>
       </div>
     </div>
@@ -271,8 +272,8 @@ footer{padding:48px 60px;border-top:1px solid var(--bds);display:flex;align-item
 
   <section class="content-section" style="background:var(--bgs);max-width:100%;padding:60px 60px">
     <div style="max-width:960px;margin:0 auto">
-      <h2>Loading Photos</h2>
-      <p>Below are detailed photos documenting the entire container loading process — from packing verification to final container closure.</p>
+      <h2 data-i18n="blog_gallery_title">Loading Photos</h2>
+      <p data-i18n="blog_gallery_desc">Below are detailed photos documenting the entire container loading process — from packing verification to final container closure.</p>
     </div>
     <div class="gallery-grid">
       <div class="gallery-item" onclick="openLightbox(this)"><img src="/assets/images/blog/nepal-loading/Weixin%20Image_20260623145546_4_9.jpg" loading="lazy" alt="Container loading photo 1"></div>
@@ -296,9 +297,9 @@ footer{padding:48px 60px;border-top:1px solid var(--bds);display:flex;align-item
   </section>
 
   <section class="cta-section">
-    <h2>Need Current Transformers? Let's Talk.</h2>
-    <p>We manufacture and export primary & secondary CTs globally. Contact us for a custom quote — low MOQ, fast delivery.</p>
-    <a href="/contact?product=Current%20Transformers" class="cta-btn">Request a Quote →</a>
+    <h2 data-i18n="blog_cta_title">Need Current Transformers? Let's Talk.</h2>
+    <p data-i18n="blog_cta_desc">We manufacture and export primary & secondary CTs globally. Contact us for a custom quote — low MOQ, fast delivery.</p>
+    <a href="/contact?product=Current%20Transformers" class="cta-btn" data-i18n="blog_cta_btn">Request a Quote →</a>
   </section>
 </main>
 
@@ -316,9 +317,26 @@ footer{padding:48px 60px;border-top:1px solid var(--bds);display:flex;align-item
   </div>
 </footer>
 
-<a href="https://wa.me/8619016543301" target="_blank" rel="noopener" class="wa-btn" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
+<!-- Float buttons -->
+<div class="float-btns" style="position:fixed;bottom:28px;right:28px;z-index:500;display:flex;flex-direction:column;gap:12px">
+  <button class="float-btn float-btn-wc" id="wc-btn" style="width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,.5);border:none;cursor:pointer;background:#07C160;transition:transform .25s" onmouseover="this.style.transform='translateY(-4px) scale(1.05)'" onmouseout="this.style.transform=''">
+    <svg viewBox="0 0 24 24" fill="white" width="26" height="26"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-3.895-6.348-7.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm4.315 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>
+  </button>
+  <a class="float-btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener" style="width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,.5);background:#25D366;text-decoration:none;transition:transform .25s" onmouseover="this.style.transform='translateY(-4px) scale(1.05)'" onmouseout="this.style.transform=''">
+    <svg viewBox="0 0 24 24" fill="white" width="26" height="26"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+  </a>
+</div>
+
+<!-- WeChat Modal -->
+<div class="wc-modal-overlay" id="wc-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);z-index:800;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s">
+  <div class="wc-modal" style="background:var(--bgc);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:36px 32px 28px;text-align:center;max-width:340px;width:calc(100% - 48px);box-shadow:0 24px 80px rgba(0,0,0,.6);transform:translateY(20px);transition:transform .25s">
+    <div style="font-size:36px;margin-bottom:12px">💬</div>
+    <div style="font-family:var(--sf);font-size:20px;color:var(--tx);margin-bottom:6px">Connect on WeChat</div>
+    <div style="font-size:13px;color:var(--mt);margin-bottom:20px;line-height:1.5">Scan the QR code with WeChat to reach our sales team directly.</div>
+    <div style="width:140px;height:140px;margin:0 auto 20px;border-radius:12px;overflow:hidden;border:1px solid var(--bds)"><img src="/assets/images/qr-wechat.jpg" alt="WeChat QR" style="width:100%;height:100%;object-fit:cover"></div>
+    <button class="wc-modal-close" id="wc-close" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08);color:var(--mt);padding:9px 28px;border-radius:8px;font-size:13px;cursor:pointer">✕ &nbsp;Close</button>
+  </div>
+</div>
 
 <div id="lightbox" onclick="this.style.display='none'">
   <button class="lb-close" onclick="document.getElementById('lightbox').style.display='none'">&times;</button>
@@ -329,6 +347,161 @@ footer{padding:48px 60px;border-top:1px solid var(--bds);display:flex;align-item
 document.getElementById('ham').addEventListener('click',function(){document.getElementById('mob').classList.toggle('op')});
 document.getElementById('mob-x').addEventListener('click',function(){document.getElementById('mob').classList.remove('op')});
 function openLightbox(el){var lb=document.getElementById('lightbox');var img=el.querySelector('img');document.getElementById('lightbox-img').src=img.src;lb.style.display='flex'}
+
+/* WeChat popup */
+document.getElementById('wc-btn')?.addEventListener('click', function() {
+  document.getElementById('wc-overlay').style.opacity = '1';
+  document.getElementById('wc-overlay').style.pointerEvents = 'all';
+});
+document.getElementById('wc-close')?.addEventListener('click', function() {
+  document.getElementById('wc-overlay').style.opacity = '0';
+  document.getElementById('wc-overlay').style.pointerEvents = 'none';
+});
+document.getElementById('wc-overlay')?.addEventListener('click', function(e) {
+  if (e.target === e.currentTarget) {
+    e.currentTarget.style.opacity = '0';
+    e.currentTarget.style.pointerEvents = 'none';
+  }
+});
+
+/* i18n translations */
+(function(){
+  var lang = localStorage.getItem('ym_lang') || 'en';
+  var T = {
+    en: {
+      nav_home:'Home',
+      nav_products:'Products', nav_solutions:'Solutions', nav_process:'Process',
+      nav_about:'About', nav_contact:'Contact', nav_quote:'Get Quote',
+      blog_breadcrumb:'Home · Blog · Nepal Container Loading',
+      blog_tag:'Shipments',
+      blog_title:'Nepal Container Loading: Primary & Secondary Current Transformers Shipped',
+      blog_meta_author:'Logistics Team',
+      blog_overview_title:'Shipment Overview',
+      blog_overview_p1:'We successfully loaded and dispatched multiple containers of primary and secondary current transformers to Nepal. This shipment represents a significant order that was manufactured at our ISO 9001:2015 certified facility in Wenzhou, Zhejiang, and packed for export with full quality documentation.',
+      blog_overview_p2:'Each container was loaded under the supervision of our logistics and QC teams to ensure proper handling, secure packaging, and accurate inventory verification before dispatch.',
+      blog_products_title:'Products Shipped',
+      blog_primary_title:'Primary Current Transformers',
+      blog_primary_desc:'High-precision CTs designed for metering and protection applications in medium-voltage networks.',
+      blog_secondary_title:'Secondary Current Transformers',
+      blog_secondary_desc:'Reliable secondary-side CTs for energy metering, monitoring, and protective relaying.',
+      blog_process_title:'Loading Process',
+      blog_step1_title:'Quality Inspection & Final Testing',
+      blog_step1_desc:'Every unit underwent final QC inspection and testing before packing. Accuracy verification, insulation resistance, and visual inspection were completed per our standard export protocol.',
+      blog_step2_title:'Secure Packaging & Labeling',
+      blog_step2_desc:'All CTs were packed in export-grade cartons with foam cushioning, moisture-resistant wrapping, and clear labeling showing product codes, quantities, and handling instructions.',
+      blog_step3_title:'Palletizing & Container Loading',
+      blog_step3_desc:'Cartons were palletized on wooden pallets, stretch-wrapped for stability, and loaded into containers with proper weight distribution. Dock-level loading ensured safe handling.',
+      blog_step4_title:'Documentation & Customs Clearance',
+      blog_step4_desc:'Commercial invoice, packing list, certificate of origin, bill of lading, and test reports were prepared for Nepal customs clearance.',
+      blog_step5_title:'Dispatch & Shipment Tracking',
+      blog_step5_desc:'Containers departed from Ningbo/Zhejiang port with full shipment tracking enabled. Estimated transit time to Nepal is 15–20 days.',
+      blog_gallery_title:'Loading Photos',
+      blog_gallery_desc:'Below are detailed photos documenting the entire container loading process.',
+      blog_cta_title:'Need Current Transformers? Let\'s Talk.',
+      blog_cta_desc:'We manufacture and export primary & secondary CTs globally. Contact us for a custom quote — low MOQ, fast delivery.',
+      blog_cta_btn:'Request a Quote →',
+      wc_title:'Connect on WeChat',
+      wc_desc:'Scan the QR code with WeChat to reach our sales team directly.',
+      wc_close:'✕ Close'
+    },
+    fr: {
+      nav_home:'Accueil',
+      nav_products:'Produits', nav_solutions:'Solutions', nav_process:'Processus',
+      nav_about:'À Propos', nav_contact:'Contact', nav_quote:'Devis',
+      blog_breadcrumb:'Accueil · Blog · Chargement Népal',
+      blog_tag:'Expéditions',
+      blog_title:'Chargement Népal : Transformateurs de courant primaires et secondaires expédiés',
+      blog_meta_author:'Équipe Logistique',
+      blog_overview_title:'Aperçu de l\'expédition',
+      blog_overview_p1:'Plusieurs conteneurs de transformateurs de courant primaires et secondaires ont été chargés et expédiés au Népal.',
+      blog_overview_p2:'Chaque conteneur a été chargé sous la supervision de nos équipes logistique et CQ.',
+      blog_products_title:'Produits expédiés',
+      blog_primary_title:'Transformateurs de courant primaires',
+      blog_primary_desc:'TC de haute précision conçus pour le comptage et la protection.',
+      blog_secondary_title:'Transformateurs de courant secondaires',
+      blog_secondary_desc:'TC côté secondaire fiables pour le comptage d\'énergie et la surveillance.',
+      blog_process_title:'Processus de chargement',
+      blog_step1_title:'Inspection qualité et tests finaux',
+      blog_step1_desc:'Chaque unité a subi une inspection CQ finale avant emballage.',
+      blog_step2_title:'Emballage et étiquetage sécurisés',
+      blog_step2_desc:'Tous les TC ont été emballés dans des cartons d\'exportation avec protection.',
+      blog_step3_title:'Palettisation et chargement du conteneur',
+      blog_step3_desc:'Les cartons ont été palettisés et chargés avec une répartition correcte du poids.',
+      blog_step4_title:'Documentation et dédouanement',
+      blog_step4_desc:'Facture commerciale, liste de colisage et certificat d\'origine préparés.',
+      blog_step5_title:'Expédition et suivi',
+      blog_step5_desc:'Conteneurs partis du port de Ningbo avec suivi complet.',
+      blog_gallery_title:'Photos de chargement',
+      blog_gallery_desc:'Photos détaillées documentant le processus de chargement.',
+      blog_cta_title:'Besoin de transformateurs ? Parlons-en.',
+      blog_cta_desc:'Nous fabriquons et exportons des TC dans le monde entier.',
+      blog_cta_btn:'Demander un devis →',
+      wc_title:'Connectez-vous sur WeChat',
+      wc_desc:'Scannez le QR code avec WeChat pour contacter notre équipe.',
+      wc_close:'✕ Fermer'
+    },
+    es: {
+      nav_home:'Inicio',
+      nav_products:'Productos', nav_solutions:'Soluciones', nav_process:'Proceso',
+      nav_about:'Nosotros', nav_contact:'Contacto', nav_quote:'Cotización',
+      blog_breadcrumb:'Inicio · Blog · Carga Nepal',
+      blog_tag:'Envíos',
+      blog_title:'Carga en Nepal: Transformadores de corriente enviados',
+      blog_meta_author:'Equipo de Logística',
+      blog_overview_title:'Resumen del envío',
+      blog_overview_p1:'Múltiples contenedores de transformadores de corriente cargados y enviados a Nepal.',
+      blog_overview_p2:'Cada contenedor fue cargado bajo supervisión de nuestros equipos.',
+      blog_products_title:'Productos enviados',
+      blog_primary_title:'Transformadores de corriente primarios',
+      blog_primary_desc:'TC de alta precisión para medición y protección.',
+      blog_secondary_title:'Transformadores de corriente secundarios',
+      blog_secondary_desc:'TC secundarios confiables para medición de energía.',
+      blog_process_title:'Proceso de carga',
+      blog_step1_title:'Inspección de calidad y pruebas finales',
+      blog_step1_desc:'Cada unidad pasó inspección CQ final antes del embalaje.',
+      blog_step2_title:'Embalaje y etiquetado seguro',
+      blog_step2_desc:'Todos los TC se embalaron en cajas de exportación con protección.',
+      blog_step3_title:'Paletización y carga del contenedor',
+      blog_step3_desc:'Las cajas se paletizaron y cargaron con distribución adecuada de peso.',
+      blog_step4_title:'Documentación y despacho aduanero',
+      blog_step4_desc:'Factura comercial, lista de empaque y certificado de origen preparados.',
+      blog_step5_title:'Despacho y seguimiento',
+      blog_step5_desc:'Contenedores salieron del puerto de Ningbo con seguimiento completo.',
+      blog_gallery_title:'Fotos de carga',
+      blog_gallery_desc:'Fotos detalladas del proceso de carga.',
+      blog_cta_title:'¿Necesita transformadores? Hablemos.',
+      blog_cta_desc:'Fabricamos y exportamos TC a nivel mundial.',
+      blog_cta_btn:'Solicitar cotización →',
+      wc_title:'Conectar en WeChat',
+      wc_desc:'Escanee el código QR con WeChat para contactar a nuestro equipo.',
+      wc_close:'✕ Cerrar'
+    }
+  };
+  var d = T[lang] || T.en;
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (d[key]) el.textContent = d[key];
+  });
+
+  /* Language switch */
+  var langBtn = document.getElementById('langBtn');
+  if (langBtn) {
+    var langs = ['EN','FR','ES'];
+    var idx = langs.indexOf(lang.toUpperCase());
+    langBtn.textContent = (langs[idx] || 'EN') + ' ▾';
+    langBtn.addEventListener('click', function() {
+      idx = (idx + 1) % langs.length;
+      lang = langs[idx].toLowerCase();
+      localStorage.setItem('ym_lang', lang);
+      langBtn.textContent = langs[idx] + ' ▾';
+      d = T[lang] || T.en;
+      document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (d[key]) el.textContent = d[key];
+      });
+    });
+  }
+})();
 </script>
 
 </body>
