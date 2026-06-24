@@ -2551,7 +2551,11 @@
         card.addEventListener('click', e => {
           e.preventDefault();
           const p = ALL.find(x => x.id === card.dataset.id);
-          if (p) openOverlay(p);
+          if (!p) return;
+          const catSlug = CAT_SLUG_EXTRA[p.category] || '';
+          const nameSlug = encodeURIComponent(p.title.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,'-').substring(0,80));
+          history.pushState({productId:p.id}, '', '/products?category=' + catSlug + '&id=' + p.id + '&product=' + nameSlug);
+          openOverlay(p);
         });
       });
       if (animate) {
@@ -2956,6 +2960,10 @@
       document.body.style.overflow = '';
       setTimeout(() => { overlay.style.display = 'none'; }, 380);
       document.querySelectorAll('.pcard').forEach(c => c.classList.remove('pcard-active'));
+      // Restore URL to category page without product params
+      const slug = CAT_SLUG_EXTRA[activeFilter] || '';
+      const url = slug ? '/products?category=' + slug : '/products';
+      history.replaceState(null, '', url);
     }
 
     function buildAutoDesc(p) {
