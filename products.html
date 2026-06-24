@@ -2620,9 +2620,57 @@
     }
 
     /* ══════════════════════════════════════════════
+       SEO META — update page title/desc/keywords
+    ══════════════════════════════════════════════ */
+    function setProductMeta(p) {
+      const title = p.title + ' | Yomin Electric';
+      document.title = title;
+      let desc = document.querySelector('meta[name="description"]');
+      const d = (p.description || buildAutoDesc(p)).substring(0, 160);
+      if (desc) desc.content = d;
+      let kw = document.querySelector('meta[name="keywords"]');
+      const keywords = (p.keywords || []).slice(0, 15).join(', ');
+      if (!kw) {
+        kw = document.createElement('meta');
+        kw.name = 'keywords';
+        kw.content = keywords;
+        document.head.appendChild(kw);
+      } else { kw.content = keywords; }
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) canonical.href = 'https://www.yominelectric.com/products?id=' + p.id;
+      // Update og tags
+      let ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.content = title;
+      let ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.content = d;
+      let ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogUrl) ogUrl.content = 'https://www.yominelectric.com/products?id=' + p.id;
+      // Remove old JSON-LD product schema, add new one
+      let oldLd = document.querySelector('script[data-ld="product"]');
+      if (oldLd) oldLd.remove();
+      const ld = document.createElement('script');
+      ld.type = 'application/ld+json';
+      ld.setAttribute('data-ld', 'product');
+      ld.textContent = JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        'name': p.title,
+        'description': d,
+        'category': p.category,
+        'image': p.image || (p.images && p.images[0]) || '',
+        'sku': p.id,
+        'brand': { '@type': 'Brand', 'name': 'Yomin Electric' },
+        'manufacturer': { '@type': 'Organization', 'name': 'Zhejiang Yomin Electric Co., Ltd.' },
+        'offers': { '@type': 'Offer', 'availability': 'https://schema.org/InStock', 'price': p.price || '0', 'priceCurrency': 'USD' }
+      });
+      document.head.appendChild(ld);
+    }
+
+    /* ══════════════════════════════════════════════
        BLUR OVERLAY — open / close
     ══════════════════════════════════════════════ */
     function openOverlay(p) {
+      setProductMeta(p);
       const overlay = document.getElementById('product-overlay');
       const body = document.getElementById('mc-body');
       if (!overlay || !body) return;
@@ -2964,6 +3012,20 @@
       const slug = FILTER_SLUG[activeFilter] || CAT_SLUG_REVERSE[activeFilter] || '';
       const url = slug ? '/products?category=' + slug : '/products';
       history.replaceState(null, '', url);
+      // Restore default SEO meta
+      document.title = 'Energy Meters, CTs & Voltage Regulators | Yomin Electric';
+      let desc = document.querySelector('meta[name="description"]');
+      if (desc) desc.content = 'Browse Yomin Electric\'s full range: single and three phase energy meters, prepaid STS meters, current transformers, split-core CTs and Variac voltage regulators. Factory direct, low MOQ.';
+      let kw = document.querySelector('meta[name="keywords"]');
+      if (kw) kw.remove();
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) canonical.href = slug ? 'https://www.yominelectric.com/products?category=' + slug : 'https://www.yominelectric.com/products';
+      let ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.content = 'Energy Meters, CTs and Voltage Regulators | Yomin Electric';
+      let ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogUrl) ogUrl.content = canonical ? canonical.href : 'https://www.yominelectric.com/products';
+      let productLd = document.querySelector('script[data-ld="product"]');
+      if (productLd) productLd.remove();
     }
 
     function buildAutoDesc(p) {
