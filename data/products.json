@@ -11488,10 +11488,10 @@
     "title": "Yomin Metal Deep Processing Machine",
     "category": "Screw Machine",
     "price": "Request Quote",
-    "description": "One integrated brass and aluminum busbar production line â€” not three separate machines. Material flows through deep row processing (cutting, drilling, tapping, chamfering), automatic screw tightening and testing, then rotary metal finishing on a turntable station. Each stage is PLC-controlled with a touch screen; layout and parameters are customized to your drawings or samples.",
+    "description": "One integrated brass and aluminum busbar production line — not three separate machines. Material flows through deep row processing (cutting, drilling, tapping, chamfering), automatic screw tightening and testing, then rotary metal finishing on a turntable station. Each stage is PLC-controlled with a touch screen; layout and parameters are customized to your drawings or samples.",
     "specs": {
       "Product Type": "Integrated metal deep processing line",
-      "Production Stages": "3 â€” deep processing â†’ screw tightening â†’ rotary finishing",
+      "Production Stages": "3 — deep processing → screw tightening → rotary finishing",
       "Materials": "Brass and aluminum busbar rows / terminals",
       "Control": "Touch screen + PLC (Taiwan Weilun) per station",
       "Customization": "Professional customization per drawings or samples"
@@ -11501,17 +11501,42 @@
         "step": 1,
         "title": "Deep Processing Machine for Brass and Aluminum Row",
         "title_zh": "é»„é“œæŽ’ / é“æŽ’æ·±åŠ å·¥è®¾å¤‡",
-        "description": "Automatic compound machining center integrating cutting, drilling, tapping and chamfering for deep processing of brass and aluminum busbar rows. Horizontal PLC-controlled machine with touch screen â€” conventional products, different hole sizes, aluminum profiles and double-row holes can be customized.",
+        "description": "Automatic compound machining center integrating cutting, drilling, tapping and chamfering for deep processing of brass and aluminum busbar rows. Horizontal PLC-controlled machine with touch screen — conventional products, different hole sizes, aluminum profiles and double-row holes can be customized.",
         "image": "/assets/images/screw-machines/screw-machine-featured.png",
-        "specs": "@{Voltage=3P4W 220/380VAC (customizable), 50/60Hz; Total Power=5KWâ€“8KW; Air Pressure=0.5â€“0.6 MPa; Work Efficiency=2000â€“2600 rows/hour; Cutting Accuracy=Â±0.05 mm; Hole-to-Hole Accuracy=Â±0.02 mm; Max Vertical Drill Hole=5.5 mm; Max Tapping=M6; Max Side Drill=10 mm; Material Size (WÃ—H)=15Ã—18 mm (custom lengths available); Max Finished Length=21â€“22 cm; Control=Touch screen + PLC; Dimensions=3100Ã—1200Ã—1800 mm (LÃ—WÃ—H); Weight=650â€“900 KG}"
+        "specs": {
+          "Voltage": "3P4W 220/380VAC (customizable), 50/60Hz",
+          "Total Power": "5KW–8KW",
+          "Air Pressure": "0.5–0.6 MPa",
+          "Work Efficiency": "2000–2600 rows/hour",
+          "Cutting Accuracy": "±0.05 mm",
+          "Hole-to-Hole Accuracy": "±0.02 mm",
+          "Max Vertical Drill Hole": "5.5 mm",
+          "Max Tapping": "M6",
+          "Max Side Drill": "10 mm",
+          "Material Size (W×H)": "15×18 mm (custom lengths available)",
+          "Max Finished Length": "21–22 cm",
+          "Control": "Touch screen + PLC",
+          "Dimensions": "3100×1200×1800 mm (L×W×H)",
+          "Weight": "650–900 KG"
+        }
       },
       {
         "step": 2,
         "title": "Screw Tightening Machine",
         "title_zh": "æ‹§èžºä¸æœºå™¨",
-        "description": "Vertical automatic screwing machine integrating screwing and testing for brass bar assembly. Replaces manual labor with high efficiency, strong reliability and long service life. Conveyor-fed station for pre-drilled busbars â€” custom screw-driving layouts available.",
+        "description": "Vertical automatic screwing machine integrating screwing and testing for brass bar assembly. Replaces manual labor with high efficiency, strong reliability and long service life. Conveyor-fed station for pre-drilled busbars — custom screw-driving layouts available.",
         "image": "/assets/images/screw-machines/screw-tightening-machine.png",
-        "specs": "@{Voltage=Single phase 220/230/240/254 VAC, 50/60Hz; Total Power=1 KW; Air Pressure=0.5â€“0.6 MPa; Speed=40â€“60 screws/minute; Control=Touch screen + PLC; Dimensions=1600Ã—730Ã—1750 mm; Weight=500â€“600 KG; Screw Drive=Electric motor; Operating System=Taiwan Weilun}"
+        "specs": {
+          "Voltage": "Single phase 220/230/240/254 VAC, 50/60Hz",
+          "Total Power": "1 KW",
+          "Air Pressure": "0.5–0.6 MPa",
+          "Speed": "40–60 screws/minute",
+          "Control": "Touch screen + PLC",
+          "Dimensions": "1600×730×1750 mm",
+          "Weight": "500–600 KG",
+          "Screw Drive": "Electric motor",
+          "Operating System": "Taiwan Weilun"
+        }
       },
       {
         "step": 3,
@@ -11520,7 +11545,18 @@
         "model": "TBM-S",
         "description": "Vertical metal deep processing machine with turntable flow structure integrating cutting, tapping, drilling and chamfering for semi-finished copper and aluminum parts. High efficiency, strong reliability and long service life.",
         "image": "/assets/images/screw-machines/circulating-rotary-metalworking-machine.png",
-        "specs": "@{Model=TBM-S; Voltage=3P4W 220/380VAC (customizable), 50/60Hz; Total Power=3KWâ€“6KW; Air Pressure=0.5â€“0.6 MPa; Work Efficiency=36000 products/24 hours; Cutting Accuracy=Â±0.05 mm; Control=Touch screen + PLC; Dimensions=1100Ã—1100Ã—1800 mm (LÃ—WÃ—H); Weight=500â€“800 KG; Structure=Rotating metal disc + cylinder clamp}"
+        "specs": {
+          "Model": "TBM-S",
+          "Voltage": "3P4W 220/380VAC (customizable), 50/60Hz",
+          "Total Power": "3KW–6KW",
+          "Air Pressure": "0.5–0.6 MPa",
+          "Work Efficiency": "36000 products/24 hours",
+          "Cutting Accuracy": "±0.05 mm",
+          "Control": "Touch screen + PLC",
+          "Dimensions": "1100×1100×1800 mm (L×W×H)",
+          "Weight": "500–800 KG",
+          "Structure": "Rotating metal disc + cylinder clamp"
+        }
       }
     ],
     "keywords": [
