@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   applyAndRender();
 
   const urlId = new URLSearchParams(location.search).get('id');
-  if(urlId){ const p=ALL.find(x=>x.id===urlId); if(p) setTimeout(()=>openDetail(p),400); }
+  if(urlId){ const p=ALL.find(x=>x.id===urlId); if(p) setTimeout(()=>openDetail(p),500); }
 });
 
 /* ── Sidebar ── */
@@ -367,7 +367,11 @@ function renderGrid(animate){
     card.addEventListener('click',e=>{
       e.preventDefault();
       const p=ALL.find(x=>x.id===card.dataset.id);
-      if(p) openDetail(p);
+      if(!p) return;
+      const catSlug = CAT_SLUG[p.category] || '';
+      const nameSlug = encodeURIComponent(p.title.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,'-').substring(0,80));
+      history.pushState({productId:p.id}, '', '/products?category=' + catSlug + '&id=' + p.id + '&product=' + nameSlug);
+      openDetail(p);
     });
   });
   if(animate){
@@ -495,6 +499,10 @@ function closeDetail(){
   panel.classList.remove('dp-visible');
   setTimeout(()=>{panel.style.display='none';panel.innerHTML='';},320);
   document.querySelectorAll('.pcard').forEach(c=>c.classList.remove('pcard-active'));
+  // Restore URL to category page without product params
+  const slug = activeFilter === 'all' ? '' : CAT_SLUG[activeFilter];
+  const url = slug ? '/products?category=' + slug : '/products';
+  history.replaceState(null, '', url);
 }
 
 function buildAutoDesc(p){
