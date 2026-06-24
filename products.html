@@ -2552,7 +2552,7 @@
           e.preventDefault();
           const p = ALL.find(x => x.id === card.dataset.id);
           if (!p) return;
-          const catSlug = CAT_SLUG_EXTRA[p.category] || '';
+          const catSlug = FILTER_SLUG[p.category] || CAT_SLUG_REVERSE[p.category] || '';
           const nameSlug = encodeURIComponent(p.title.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,'-').substring(0,80));
           history.pushState({productId:p.id}, '', '/products?category=' + catSlug + '&id=' + p.id + '&product=' + nameSlug);
           openOverlay(p);
@@ -2961,7 +2961,7 @@
       setTimeout(() => { overlay.style.display = 'none'; }, 380);
       document.querySelectorAll('.pcard').forEach(c => c.classList.remove('pcard-active'));
       // Restore URL to category page without product params
-      const slug = CAT_SLUG_EXTRA[activeFilter] || '';
+      const slug = FILTER_SLUG[activeFilter] || CAT_SLUG_REVERSE[activeFilter] || '';
       const url = slug ? '/products?category=' + slug : '/products';
       history.replaceState(null, '', url);
     }
