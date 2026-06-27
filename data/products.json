@@ -31067,15 +31067,17 @@
   },
   {
     "id": "ym-1127",
-    "title": "Single Phase Din Rail LCD Display Digital Energy Meter KWh Electric Power Meter",
+    "title": "Single Phase Din Rail LCD Display Key Reset Electric Meter Household Rail-Mounted 5(80)A 230V KWH Meter Energy Meter",
     "category": "Energy Meter",
     "price": "Inquiry for Price",
-    "description": "High-quality Single Phase Din Rail LCD Display Digital Energy Meter KWh Electric Power Meter for industrial and commercial applications. DIN rail mountable design for easy installation. LCD display for clear reading. Reliable performance and easy installation.",
+    "description": "High-quality Single Phase Din Rail LCD Display Key Reset Electric Meter for household and commercial applications. DIN rail mountable design for easy installation. 5(80)A, 230V rated. LCD display with key reset function for clear reading and management. Reliable performance and easy installation.",
     "specs": {
       "Phase": "Single Phase",
+      "Voltage": "230V",
+      "Current": "5(80)A",
       "Display": "LCD"
     },
-    "image": "https://s.alicdn.com/@sc04/kf/H1601408485380/Single-Phase-Din-Rail-LCD-Display.jpg?hasNWGrade=1",
+    "image": "assets/images/products/ym-1127.png",
     "url": "https://www.alibaba.com/product-detail/Single-Phase-Din-Rail-LCD-Display_1601408485380.html",
     "isNew": true,
     "keywords": [
