@@ -2672,7 +2672,42 @@
           '@type': 'Offer', 
           'availability': 'https://schema.org/InStock', 
           'price': cleanPrice(p.price), 
-          'priceCurrency': 'USD' 
+          'priceCurrency': 'USD',
+          'hasMerchantReturnPolicy': {
+            '@type': 'MerchantReturnPolicy',
+            'applicableCountry': 'US',
+            'returnPolicyCategory': 'https://schema.org/MerchantReturnFiniteReturnPeriod',
+            'merchantReturnDays': 30,
+            'returnMethod': 'https://schema.org/ReturnByMail',
+            'returnFees': 'https://schema.org/FreeReturn'
+          },
+          'shippingDetails': {
+            '@type': 'OfferShippingDetails',
+            'shippingRate': {
+              '@type': 'MonetaryAmount',
+              'value': 0.84,
+              'currency': 'USD'
+            },
+            'shippingDestination': {
+              '@type': 'DefinedRegion',
+              'addressCountry': 'US'
+            },
+            'deliveryTime': {
+              '@type': 'ShippingDeliveryTime',
+              'handlingTime': {
+                '@type': 'QuantitativeValue',
+                'minValue': 3,
+                'maxValue': 7,
+                'unitCode': 'DAY'
+              },
+              'transitTime': {
+                '@type': 'QuantitativeValue',
+                'minValue': 15,
+                'maxValue': 25,
+                'unitCode': 'DAY'
+              }
+            }
+          }
         }
       });
       document.head.appendChild(ld);
