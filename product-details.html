@@ -465,6 +465,38 @@
           </div>
         `;
       }
+
+      // Add dynamic JSON-LD product schema
+      const cleanPrice = (val) => {
+        if (!val || typeof val !== 'string') return '0';
+        const m = val.match(/[\d.]+/);
+        return m ? m[0] : '0';
+      };
+
+      let oldLd = document.querySelector('script[data-ld="product"]');
+      if (oldLd) oldLd.remove();
+      
+      const ld = document.createElement('script');
+      ld.type = 'application/ld+json';
+      ld.setAttribute('data-ld', 'product');
+      ld.textContent = JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        'name': product.title,
+        'description': product.description || document.querySelector('meta[name="description"]')?.content,
+        'category': product.category,
+        'image': product.image || (product.images && product.images[0]) || '',
+        'sku': product.id,
+        'brand': { '@type': 'Brand', 'name': 'Yomin Electric' },
+        'manufacturer': { '@type': 'Organization', 'name': 'Zhejiang Yomin Electric Co., Ltd.' },
+        'offers': { 
+          '@type': 'Offer', 
+          'availability': 'https://schema.org/InStock', 
+          'price': cleanPrice(product.price), 
+          'priceCurrency': 'USD' 
+        }
+      });
+      document.head.appendChild(ld);
     }
     
     // Function to change main image when thumbnail is clicked

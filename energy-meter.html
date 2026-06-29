@@ -11,8 +11,8 @@
   gtag('config', 'G-T0HYWYQ6NF');
 </script>
   <meta charset="UTF-8">
-<meta name="p:domain_verify" content="744fec106751115b25bc974541f1541a"/>
   <script>window.YOMIN_ACTIVE_CATEGORY = 'Energy Meter';</script>
+<meta name="p:domain_verify" content="744fec106751115b25bc974541f1541a"/>
   <link rel="icon" type="image/png" href="/logo.png">
 <link rel="apple-touch-icon" href="/logo.png">
 <link rel="shortcut icon" href="/favicon.ico">
@@ -20,15 +20,15 @@
   <title>Energy Meters - Single & Three Phase | Yomin Electric</title>
   <meta name="description" content="Factory-direct energy meters: single phase, three phase, prepaid STS keypad meters. DIN rail, LCD backlit, RS485 MODBUS. CE certified, ISO9001. Low MOQ from 100 units.">
   <link rel="canonical" href="https://www.yominelectric.com/products?category=energy-meter" />
-<meta property="og:title" content="Energy Meters - Single and Three Phase | Yomin Electric" />
-<meta property="og:description" content="Factory-direct energy meters: single phase and three phase kWh meters, prepaid STS meters, RS485 Modbus communication. CE certified manufacturer with low MOQ for distributors worldwide." />
-<meta property="og:url" content="https://www.yominelectric.com/products?category=energy-meter" />
+<meta property="og:title" content="Energy Meters, CTs and Voltage Regulators | Yomin Electric" />
+<meta property="og:description" content="Browse Yomins full range: single and three phase energy meters, prepaid STS meters, current transformers, split-core CTs and Variac voltage regulators. Factory direct, low MOQ." />
+<meta property="og:url" content="https://www.yominelectric.com/products" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://www.yominelectric.com/logo.png" />
 <meta property="og:site_name" content="Yomin Electric" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Energy Meters - Single and Three Phase | Yomin Electric" />
-<meta name="twitter:description" content="Factory-direct energy meters: single phase and three phase kWh meters, prepaid STS meters, RS485 Modbus communication. CE certified manufacturer with low MOQ for distributors worldwide." />
+<meta name="twitter:title" content="Energy Meters, CTs and Voltage Regulators | Yomin Electric" />
+<meta name="twitter:description" content="Browse Yomins full range: single and three phase energy meters, prepaid STS meters, current transformers, split-core CTs and Variac voltage regulators. Factory direct, low MOQ." />
 <meta name="twitter:image" content="https://www.yominelectric.com/logo.png" />
   <meta name="robots" content="index, follow">
   <script type="application/ld+json">
@@ -613,6 +613,28 @@
       background: rgba(200, 169, 110, .08)
     }
 
+    @media(max-width:600px) {
+      .busbar-sub-wrap {
+        margin-left: -16px;
+        margin-right: -16px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        padding: 12px 16px
+      }
+      .busbar-sub-chips {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -webkit-mask-image: linear-gradient(to right, transparent 0, black 16px, black calc(100% - 20px), transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0, black 16px, black calc(100% - 20px), transparent 100%);
+        padding-bottom: 2px
+      }
+      .busbar-sub-chips::-webkit-scrollbar { display: none }
+      .busbar-chip { flex-shrink: 0 }
+    }
+
     .mc-keywords {
       display: flex;
       flex-wrap: wrap;
@@ -762,7 +784,7 @@
 
     /* PRODUCT AREA */
     .prod-area {
-      padding: 32px 40px 60px;
+      padding: 88px 40px 60px;
       min-width: 0
     }
 
@@ -957,7 +979,6 @@
       object-fit: contain;
       padding: 12px;
       box-sizing: border-box;
-      
       transition: transform .4s;
       display: block
     }
@@ -1030,9 +1051,13 @@
     }
 
     .pcard-price {
-      font-size: 12.5px;
+      font-size: 11.5px;
       color: var(--ac);
-      font-weight: 600
+      font-weight: 600;
+      background: rgba(200,169,110,.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+      white-space: nowrap
     }
 
     .pcard-arrow {
@@ -1110,6 +1135,10 @@
       -webkit-overflow-scrolling: touch;
       scrollbar-width: none;
       -ms-overflow-style: none;
+      position: sticky;
+      top: 68px;
+      z-index: 99;
+      backdrop-filter: blur(16px);
       /* Fade hint on edges to show scrollability */
       -webkit-mask-image: linear-gradient(to right, transparent 0, black 20px, black calc(100% - 20px), transparent 100%);
       mask-image: linear-gradient(to right, transparent 0, black 20px, black calc(100% - 20px), transparent 100%);
@@ -1191,6 +1220,7 @@
     }
 
     @media(max-width:768px) {
+      .mob-filter { top: 60px; }
       .page-hero {
         padding: 90px 20px 40px
       }
@@ -1324,7 +1354,6 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
-      
       transition: transform .4s
     }
 
@@ -1410,6 +1439,23 @@
       opacity: .88;
       transform: translateY(-1px)
     }
+
+    .mc-wa-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #25D366;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: opacity .2s, transform .2s;
+    }
+    .mc-wa-btn:hover { opacity: .9; transform: translateY(-1px); }
+    .mc-wa-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
 
     .mc-meta-rows {
       display: flex;
@@ -1661,7 +1707,7 @@
     .mc-gallery { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px }
     .mc-gallery-thumb { width: 52px; height: 52px; border-radius: 8px; overflow: hidden; border: 2px solid var(--bds); cursor: pointer; flex-shrink: 0; transition: border-color .2s; background: #ffffff }
     .mc-gallery-thumb:hover, .mc-gallery-thumb.active { border-color: var(--ac) }
-    .mc-gallery-thumb img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply }
+    .mc-gallery-thumb img { width: 100%; height: 100%; object-fit: cover }
     .mc-fob-label { font-size: 10px; color: var(--mt); text-transform: uppercase; letter-spacing: .8px; margin-bottom: 8px }
     .mc-tier-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px }
     .mc-tier { background: var(--bgc2); border: 1px solid var(--bds); border-radius: 10px; padding: 10px 12px; position: relative; text-align: center }
@@ -1773,7 +1819,9 @@
     .om-submit:hover { opacity: .85 }
     .om-note { font-size: 11px; color: var(--mt); text-align: center; line-height: 1.5 }
     @media(max-width:800px) { .mc-why-grid { grid-template-columns: repeat(2,1fr) } .mc-sup-stats { grid-template-columns: repeat(2,1fr) } .mc-rating-summary { flex-direction: column; gap: 14px } .mc-tier-grid { grid-template-columns: 1fr 1fr } .mc-bundle-grid { grid-template-columns: repeat(2, 1fr) } .mc-tab { padding: 8px 12px; font-size: 12px } }
-    @media(max-width:480px) { .mc-why-grid { grid-template-columns: 1fr 1fr } .mc-action-row { grid-template-columns: 1fr 1fr } .mc-bundle-grid { grid-template-columns: 1fr } }
+    @media(max-width:480px) {
+      .mob-filter { top: 56px; }
+      .mc-why-grid { grid-template-columns: 1fr 1fr } .mc-action-row { grid-template-columns: 1fr 1fr } .mc-bundle-grid { grid-template-columns: 1fr } }
   </style>
 </head>
 
@@ -2258,12 +2306,23 @@
       let html = `<button class="sb-all ${activeFilter === 'all' ? 'active' : ''}" data-filter="all">
     <span style="display:flex;align-items:center;gap:8px"><span style="font-size:14px">ðŸ—‚</span>${esc(allLabel)}</span>
     <span class="sb-count">${ALL.length}</span></button>`;
+      const addBusbarSidebar = () => {
+        const busTotal = busbarTotal(counts);
+        if (!busTotal) return;
+        const busActive = activeFilter === BUSBAR_FILTER || BUSBAR_SUB_IDS.has(activeFilter);
+        html += `<button class="sb-item sb-item-parent ${busActive ? 'active' : ''}" data-filter="${esc(BUSBAR_FILTER)}">
+      <span class="sb-item-inner"><span class="sb-item-icon">${BUSBAR_PARENT.icon}</span><span class="sb-item-label">${esc(getCatLabel(BUSBAR_PARENT))}</span></span>
+      <span class="sb-count">${busTotal}</span></button>`;
+      };
+      let busbarPlaced = false;
       CATS.forEach(c => {
         const n = counts[c.id] || 0; if (!n) return;
         html += `<button class="sb-item ${activeFilter === c.id ? 'active' : ''}" data-filter="${esc(c.id)}">
       <span class="sb-item-inner"><span class="sb-item-icon">${c.icon}</span><span class="sb-item-label">${esc(getCatLabel(c))}</span></span>
       <span class="sb-count">${n}</span></button>`;
+        if (c.id === 'Current Transformer') { addBusbarSidebar(); busbarPlaced = true; }
       });
+      if (!busbarPlaced) addBusbarSidebar();
       list.innerHTML = html;
       list.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', (e) => {
         addRipple(b, e);
@@ -2289,10 +2348,19 @@
       ALL.forEach(p => { counts[p.category] = (counts[p.category] || 0) + 1; });
       const allLabel = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_all) ? T[currentLang].prod_all : 'All';
       let html = `<button class="mfbtn ${activeFilter === 'all' ? 'active' : ''}" data-filter="all">ðŸ—‚ ${esc(allLabel)} (${ALL.length})</button>`;
+      const addBusbarMobile = () => {
+        const busTotal = busbarTotal(counts);
+        if (!busTotal) return;
+        const busActive = activeFilter === BUSBAR_FILTER || BUSBAR_SUB_IDS.has(activeFilter);
+        html += `<button class="mfbtn ${busActive ? 'active' : ''}" data-filter="${esc(BUSBAR_FILTER)}">${BUSBAR_PARENT.icon} ${esc(getCatLabel(BUSBAR_PARENT))} (${busTotal})</button>`;
+      };
+      let busbarMobPlaced = false;
       CATS.forEach(c => {
         const n = counts[c.id] || 0; if (!n) return;
         html += `<button class="mfbtn ${activeFilter === c.id ? 'active' : ''}" data-filter="${esc(c.id)}">${c.icon} ${esc(getCatLabel(c))} (${n})</button>`;
+        if (c.id === 'Current Transformer') { addBusbarMobile(); busbarMobPlaced = true; }
       });
+      if (!busbarMobPlaced) addBusbarMobile();
       bar.innerHTML = html;
       bar.querySelectorAll('.mfbtn').forEach(b => b.addEventListener('click', (e) => {
         addRipple(b, e);
@@ -2332,11 +2400,17 @@
       activeFilter = val; searchQuery = '';
       const sb = document.getElementById('sb-search'); if (sb) sb.value = '';
       const ps = document.getElementById('prod-search'); if (ps) { ps.value = ''; toggleClear(ps); }
+      const busActive = isBusbarView(val);
       document.querySelectorAll('.sb-item,.sb-all').forEach(b => {
-        b.classList.toggle('active', b.dataset.filter === val);
+        const f = b.dataset.filter;
+        const isParent = b.classList.contains('sb-item-parent');
+        if (isParent) b.classList.toggle('active', busActive);
+        else b.classList.toggle('active', f === val);
       });
       document.querySelectorAll('.mfbtn').forEach(b => {
-        b.classList.toggle('active', b.dataset.filter === val);
+        const f = b.dataset.filter;
+        if (f === BUSBAR_FILTER) b.classList.toggle('active', busActive);
+        else b.classList.toggle('active', f === val);
       });
       const t = document.getElementById('area-title');
       if (t) {
@@ -2378,6 +2452,7 @@
       // Scroll active sidebar item into view (desktop)
       const activeSbItem = document.querySelector('.sb-item.active, .sb-all.active');
       if (activeSbItem) activeSbItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      buildBusbarSubBar();
       shown = PAGE; applyAndRender();
     }
 
@@ -2476,7 +2551,11 @@
         card.addEventListener('click', e => {
           e.preventDefault();
           const p = ALL.find(x => x.id === card.dataset.id);
-          if (p) openOverlay(p);
+          if (!p) return;
+          const catSlug = FILTER_SLUG[p.category] || CAT_SLUG_REVERSE[p.category] || '';
+          const nameSlug = encodeURIComponent(p.title.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,'-').substring(0,80));
+          history.pushState({productId:p.id}, '', '/products?category=' + catSlug + '&id=' + p.id + '&product=' + nameSlug);
+          openOverlay(p);
         });
       });
       if (animate) {
@@ -2488,6 +2567,16 @@
           }, Math.min(i * 18, 500)));
         });
       }
+      /* Fallback: replace any unloaded images with SVG after 3 sec */
+      const fallbackId = 'imgFallback_' + Date.now();
+      window[fallbackId] = setTimeout(() => {
+        grid.querySelectorAll('.pcard-img img').forEach(img => {
+          if (!img.complete && img.naturalWidth === 0) {
+            img.style.display = 'none';
+            if (img.nextElementSibling) img.nextElementSibling.style.display = 'flex';
+          }
+        });
+      }, 3000);
     }
 
     function productCard(p) {
@@ -2499,10 +2588,10 @@
         ? `<div class="pcard-stages">${p.processes.length}-stage production line</div>` : '';
       const pills = Object.entries(specs).slice(0, 3).map(([k, v]) => `<span class="spec-pill">${esc(String(v))}</span>`).join('');
       const imgHtml = cardImg
-        ? `<img src="${esc(cardImg)}" alt="${esc(p.title)}" loading="lazy" referrerpolicy="no-referrer" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
+        ? `<img src="${esc(cardImg)}" alt="${esc(p.title)}" loading="lazy" referrerpolicy="no-referrer" decoding="async" onerror="var fb=this.nextElementSibling;this.style.display='none';fb.style.display='flex'"><div class="pcard-img-fb" style="display:none">${catSvg(p.category)}</div>`
         : `<div class="pcard-img-fb">${catSvg(p.category)}</div>`;
       const quoteLbl = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_request_quote) ? T[currentLang].prod_request_quote : 'Request Quote';
-      const footPrice = isQuoteOnly(p) ? quoteLbl : (p.price ? esc(p.price) : 'Get Quote');
+      const inquiryLbl = quoteLbl.replace('Request Quote','Inquiry for Price');
       return `<a class="pcard${isQuoteOnly(p) ? ' pcard-quote' : ''}" href="#" data-id="${esc(p.id)}" title="${esc(p.title)}">
     <div class="pcard-img">${imgHtml}</div>
     <div class="pcard-body">
@@ -2512,7 +2601,7 @@
       ${pills ? `<div class="pcard-specs">${pills}</div>` : ''}
     </div>
     <div class="pcard-foot">
-      <span class="pcard-price">${esc(footPrice)}</span>
+      <span class="pcard-price">${inquiryLbl}</span>
       <span class="pcard-arrow">â†’</span>
     </div>
   </a>`;
@@ -2531,9 +2620,69 @@
     }
 
     /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       SEO META â€” update page title/desc/keywords
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+    function setProductMeta(p) {
+      const title = p.title + ' | Yomin Electric';
+      document.title = title;
+      let desc = document.querySelector('meta[name="description"]');
+      const d = (p.description || buildAutoDesc(p)).substring(0, 160);
+      if (desc) desc.content = d;
+      let kw = document.querySelector('meta[name="keywords"]');
+      const keywords = (p.keywords || []).slice(0, 15).join(', ');
+      if (!kw) {
+        kw = document.createElement('meta');
+        kw.name = 'keywords';
+        kw.content = keywords;
+        document.head.appendChild(kw);
+      } else { kw.content = keywords; }
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) canonical.href = 'https://www.yominelectric.com/products?id=' + p.id;
+      // Update og tags
+      let ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.content = title;
+      let ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.content = d;
+      let ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogUrl) ogUrl.content = 'https://www.yominelectric.com/products?id=' + p.id;
+      // Remove old JSON-LD product schema, add new one
+      let oldLd = document.querySelector('script[data-ld="product"]');
+      if (oldLd) oldLd.remove();
+      
+      const cleanPrice = (val) => {
+        if (!val || typeof val !== 'string') return '0';
+        const m = val.match(/[\d.]+/);
+        return m ? m[0] : '0';
+      };
+
+      const ld = document.createElement('script');
+      ld.type = 'application/ld+json';
+      ld.setAttribute('data-ld', 'product');
+      ld.textContent = JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        'name': p.title,
+        'description': d,
+        'category': p.category,
+        'image': p.image || (p.images && p.images[0]) || '',
+        'sku': p.id,
+        'brand': { '@type': 'Brand', 'name': 'Yomin Electric' },
+        'manufacturer': { '@type': 'Organization', 'name': 'Zhejiang Yomin Electric Co., Ltd.' },
+        'offers': { 
+          '@type': 'Offer', 
+          'availability': 'https://schema.org/InStock', 
+          'price': cleanPrice(p.price), 
+          'priceCurrency': 'USD' 
+        }
+      });
+      document.head.appendChild(ld);
+    }
+
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        BLUR OVERLAY â€” open / close
     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     function openOverlay(p) {
+      setProductMeta(p);
       const overlay = document.getElementById('product-overlay');
       const body = document.getElementById('mc-body');
       if (!overlay || !body) return;
@@ -2556,20 +2705,14 @@
       const thumbsHtml = galleryImgs.length > 1
         ? `<div class="mc-gallery">${galleryImgs.slice(0,6).map((img,i) =>
             `<div class="mc-gallery-thumb${i===0?" active":""}" onclick="setMainImg(\'${esc(img)}\',this)">
-              <img src="${esc(img)}" alt="" loading="lazy" decoding="async">
+              <img src="${esc(img)}" alt="" referrerpolicy="no-referrer">
             </div>`).join("")}</div>` : "";
 
       /* Pricing */
       const quoteOnly = isQuoteOnly(p);
       let priceRange = quoteOnly ? '' : (ali.price_range || p.price || '');
-      let tier199 = quoteOnly ? '' : (ali.price_tier_1_99 || '');
-      let tier100 = quoteOnly ? '' : (ali.price_tier_100plus || '');
-      const moq = ali.moq || '';
 
       let pricingHtml = '';
-      let bundleHtml = '';
-      let tierHtml = '';
-      // Translation helper
       const tr = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang]) ? T[currentLang] : null;
       const t = (key, fallback) => tr && tr[key] !== undefined ? tr[key] : fallback;
 
@@ -2578,57 +2721,12 @@
           <div class="mc-quote-only-title">${t('prod_request_quote', 'Request Quote')}</div>
           <p class="mc-quote-only-desc">${t('prod_quote_busbar_desc', 'Busbar pricing is project-specific. Submit your drawings and specifications for a formal quotation first â€” our team will review and negotiate terms with you.')}</p>
         </div>`;
-      }
-
-      // Generate bundle HTML if product has bundles
-      if (!quoteOnly && p.bundles && p.bundles.length > 0) {
-        bundleHtml = `<div class="mc-bundle-grid">${p.bundles.map(b => `
-          <div class="mc-bundle ${b.recommended ? 'mc-bundle-recommended' : ''}" data-bundle-id="${esc(b.id)}">
-            ${b.recommended ? `<div class="mc-bundle-badge">${t('bundle_recommended', 'Recommended')}</div>` : ''}
-            <div class="mc-bundle-name">${esc(b.name)}</div>
-            <div class="mc-bundle-desc">${esc(b.description)}</div>
-            <div class="mc-bundle-price">${esc(b.price)}</div>
-            <ul class="mc-bundle-features">${b.features.map(f => `<li class="mc-bundle-feature">${esc(f)}</li>`).join('')}</ul>
-            <button class="mc-bundle-select" onclick="selectBundle('${esc(p.id)}', '${esc(b.id)}', this)">${t('bundle_select', 'Select')}</button>
-          </div>`).join('')}</div>`;
-      }
-
-      // Generate tier HTML if tier pricing exists
-      if (!quoteOnly && tier199 && tier100) {
-        tierHtml = `<div class="mc-tier-grid">
-          <div class="mc-tier">
-            <div class="mc-tier-qty">1â€“99 pcs</div>
-            <div class="mc-tier-price">${esc(tier199)}</div>
-            <div class="mc-tier-label">per unit</div>
-          </div>
-          <div class="mc-tier mc-tier-best">
-            <div class="mc-tier-badge">Best Value</div>
-            <div class="mc-tier-qty">100+ pcs</div>
-            <div class="mc-tier-price">${esc(tier100)}</div>
-            <div class="mc-tier-label">per unit</div>
-          </div>
+      } else {
+        pricingHtml = `<div class="mc-quote-only">
+          <div class="mc-quote-only-title">Inquiry for Price</div>
+          <p class="mc-quote-only-desc">Contact us for the latest pricing on this product. We offer competitive factory-direct prices with OEM/ODM available.</p>
         </div>`;
-      } else if (!quoteOnly && priceRange) {
-        tierHtml = `<div class="mc-price-single">${esc(priceRange)} <span class="mc-price-note">/ unit</span></div>`;
       }
-
-      // Combine bundle and tier HTML
-      if (!quoteOnly && bundleHtml && tierHtml) {
-        pricingHtml = `<div class="mc-pricing-section">
-          <div class="mc-section-label">${t('bundle_package_options', 'Package Options')}</div>
-          ${bundleHtml}
-          <div class="mc-section-label" style="margin-top: 24px">${t('bundle_quantity_pricing', 'Quantityâ€‘Based Pricing')}</div>
-          ${tierHtml}
-        </div>`;
-      } else if (!quoteOnly && bundleHtml) {
-        pricingHtml = `<div class="mc-pricing-section">
-          <div class="mc-section-label">${t('bundle_package_options', 'Package Options')}</div>
-          ${bundleHtml}
-        </div>`;
-      } else if (!quoteOnly && tierHtml) {
-        pricingHtml = tierHtml;
-      }
-
       /* Shipping */
       const shippingFee = (ali.shipping_fee || '').replace(/^shipping fee:\s*/i,'').trim() || 'Est. $0.84/kg ocean freight';
       const transitTime = (ali.transit_time || '').replace(/^transit time:\s*/i,'').trim() || '15â€“25 days';
@@ -2645,7 +2743,6 @@
         <div class="mc-price-box">
           <div class="mc-fob-label">${quoteOnly ? t('prod_pricing', 'Pricing') : 'FOB Price'}</div>
           ${pricingHtml || `<div class="mc-price-single">${esc(quoteOnly ? t('prod_request_quote', 'Request Quote') : (priceRange || 'Get Quote'))}</div>`}
-          ${!quoteOnly && moq ? `<div class="mc-moq">ðŸ“¦ ${esc(moq)}</div>` : ''}
         </div>
         <div class="mc-action-btns">
           ${quoteOnly
@@ -2655,6 +2752,10 @@
             <button class="mc-wholesale-btn" onclick="openOrderModal('wholesale','${p.id}','${safeTitle}')">ðŸ“¦ Wholesale</button>
             <button class="mc-custom-btn" onclick="openOrderModal('custom','${p.id}','${safeTitle}')">ðŸŽ¨ Customize</button>
           </div>`}
+          <a class="mc-wa-btn" href="https://wa.me/8619016543301?text=${encodeURIComponent('Hi Yomin Electric, I am interested in: '+p.title+' (ID: '+p.id+')')}" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Inquire by WhatsApp
+          </a>
         </div>
         <div class="mc-shipping-box">
           <div class="mc-ship-row"><span>ðŸš¢ Shipping</span><span>${esc(shippingFee.substring(0,55))}</span></div>
@@ -2919,6 +3020,24 @@
       document.body.style.overflow = '';
       setTimeout(() => { overlay.style.display = 'none'; }, 380);
       document.querySelectorAll('.pcard').forEach(c => c.classList.remove('pcard-active'));
+      // Restore URL to category page without product params
+      const slug = FILTER_SLUG[activeFilter] || CAT_SLUG_REVERSE[activeFilter] || '';
+      const url = slug ? '/products?category=' + slug : '/products';
+      history.replaceState(null, '', url);
+      // Restore default SEO meta
+      document.title = 'Energy Meters, CTs & Voltage Regulators | Yomin Electric';
+      let desc = document.querySelector('meta[name="description"]');
+      if (desc) desc.content = 'Browse Yomin Electric\'s full range: single and three phase energy meters, prepaid STS meters, current transformers, split-core CTs and Variac voltage regulators. Factory direct, low MOQ.';
+      let kw = document.querySelector('meta[name="keywords"]');
+      if (kw) kw.remove();
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) canonical.href = slug ? 'https://www.yominelectric.com/products?category=' + slug : 'https://www.yominelectric.com/products';
+      let ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.content = 'Energy Meters, CTs and Voltage Regulators | Yomin Electric';
+      let ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogUrl) ogUrl.content = canonical ? canonical.href : 'https://www.yominelectric.com/products';
+      let productLd = document.querySelector('script[data-ld="product"]');
+      if (productLd) productLd.remove();
     }
 
     function buildAutoDesc(p) {

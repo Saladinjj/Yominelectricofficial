@@ -2648,6 +2648,13 @@
       // Remove old JSON-LD product schema, add new one
       let oldLd = document.querySelector('script[data-ld="product"]');
       if (oldLd) oldLd.remove();
+      
+      const cleanPrice = (val) => {
+        if (!val || typeof val !== 'string') return '0';
+        const m = val.match(/[\d.]+/);
+        return m ? m[0] : '0';
+      };
+
       const ld = document.createElement('script');
       ld.type = 'application/ld+json';
       ld.setAttribute('data-ld', 'product');
@@ -2661,7 +2668,12 @@
         'sku': p.id,
         'brand': { '@type': 'Brand', 'name': 'Yomin Electric' },
         'manufacturer': { '@type': 'Organization', 'name': 'Zhejiang Yomin Electric Co., Ltd.' },
-        'offers': { '@type': 'Offer', 'availability': 'https://schema.org/InStock', 'price': p.price || '0', 'priceCurrency': 'USD' }
+        'offers': { 
+          '@type': 'Offer', 
+          'availability': 'https://schema.org/InStock', 
+          'price': cleanPrice(p.price), 
+          'priceCurrency': 'USD' 
+        }
       });
       document.head.appendChild(ld);
     }
