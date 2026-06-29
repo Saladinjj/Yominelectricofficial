@@ -487,6 +487,7 @@
         'category': product.category,
         'image': product.image || (product.images && product.images[0]) || '',
         'sku': product.id,
+        'mpn': product.id,
         'brand': { '@type': 'Brand', 'name': 'Yomin Electric' },
         'manufacturer': { '@type': 'Organization', 'name': 'Zhejiang Yomin Electric Co., Ltd.' },
         'offers': { 
@@ -494,6 +495,7 @@
           'availability': 'https://schema.org/InStock', 
           'price': cleanPrice(product.price), 
           'priceCurrency': 'USD',
+          'priceValidUntil': '2026-12-31',
           'hasMerchantReturnPolicy': {
             '@type': 'MerchantReturnPolicy',
             'applicableCountry': 'US',
