@@ -91,79 +91,43 @@ async function handleSubmit(e) {
   };
 
   try {
-    const result = await window.API.contact.submit(data);
+    // Send via Web3Forms — no backend/SMTP needed
+    const WEB3FORMS_KEY = 'f8ddaccf-8378-4291-a8c2-c6f5a4082f35';
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_KEY,
+        subject: `[Yomin Website] ${data.subject || 'Contact Form'} — ${data.country}`,
+        from_name: data.name,
+        name: data.name,
+        email: data.email,
+        company: data.company || '—',
+        country: data.country,
+        inquiry_subject: data.subject || '—',
+        message: data.message,
+        botcheck: ''
+      })
+    });
 
-    // API ok but SMTP failed — silently fall back to mailto so user still gets a response
-    if (result.success && result.emailed === false) {
-      const subject = encodeURIComponent(data.subject || 'Contact Form Submission');
-      const body = encodeURIComponent(
-        `Name: ${data.name}\n` +
-        `Email: ${data.email}\n` +
-        `Company: ${data.company || '—'}\n` +
-        `Country: ${data.country}\n` +
-        `Subject: ${data.subject || '—'}\n\n` +
-        `Message:\n${data.message}`
-      );
-      window.open(`mailto:salah.eddine@cnyomin.com?subject=${subject}&body=${body}`, '_blank');
+    const result = await res.json();
+
+    if (result.success) {
       if (formFields) formFields.style.display = 'none';
       if (formSuccess) formSuccess.classList.add('show');
       submitBtn.classList.remove('loading');
       submitBtn.innerHTML = '<span data-t="contact_submit">Send Message</span><span class="submit-icon">→</span>';
       launchFireworks();
       setTimeout(() => showCelebrationMessage(data.subject || ''), 1000);
-      return;
+    } else {
+      throw new Error(result.message || 'Submission failed');
     }
 
-    // Check if we need to fall back to mailto
-    if (result.fallback === 'mailto') {
-      // Trigger mailto fallback
-      const subject = encodeURIComponent(data.subject || 'Contact Form Submission');
-      const body = encodeURIComponent(
-        `Name: ${data.name}\n` +
-        `Email: ${data.email}\n` +
-        `Company: ${data.company || '—'}\n` +
-        `Country: ${data.country}\n` +
-        `Subject: ${data.subject || '—'}\n\n` +
-        `Message:\n${data.message}`
-      );
-      window.open(`mailto:salah.eddine@cnyomin.com?subject=${subject}&body=${body}`, '_self');
-      
-      // Show success message for fallback
-      if (formFields) formFields.style.display = 'none';
-      if (formSuccess) formSuccess.classList.add('show');
-      
-      // Reset button state
-      submitBtn.classList.remove('loading');
-      submitBtn.innerHTML = '<span data-t="contact_submit">Send Message</span><span class="submit-icon">→</span>';
-      
-      // Launch fireworks and celebration message for fallback too
-      launchFireworks();
-      setTimeout(() => showCelebrationMessage(data.subject || ''), 1000);
-      return;
-    }
-    
-    // Normal API success
-    // Show success
-    if (formFields) formFields.style.display = 'none';
-    if (formSuccess) formSuccess.classList.add('show');
-
-    // Launch fireworks and celebration message
-    const subjectVal = form.querySelector('[data-field="subject"]')?.value || '';
-    launchFireworks();
-    setTimeout(() => showCelebrationMessage(subjectVal), 1000);
   } catch (err) {
     console.error('Submit error:', err);
     submitBtn.classList.remove('loading');
     submitBtn.innerHTML = '<span data-t="contact_submit">Send Message</span><span class="submit-icon">→</span>';
-    if (err.errors) {
-      Object.entries(err.errors).forEach(([field, msg]) => {
-        const input = form.querySelector(`[data-field="${field}"]`);
-        if (input) showFieldError(input, msg);
-      });
-      showFormError('Please fix the highlighted fields and try again.');
-    } else {
-      showFormError(err.message || 'Failed to send message. Please email salah.eddine@cnyomin.com directly.');
-    }
+    showFormError('Failed to send message. Please email salah.eddine@cnyomin.com directly.');
   }
 }
 
