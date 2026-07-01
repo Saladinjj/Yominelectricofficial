@@ -93,11 +93,24 @@ async function handleSubmit(e) {
   try {
     const result = await window.API.contact.submit(data);
 
-    // API ok but SMTP failed on server (e.g. missing Vercel env vars)
+    // API ok but SMTP failed — silently fall back to mailto so user still gets a response
     if (result.success && result.emailed === false) {
+      const subject = encodeURIComponent(data.subject || 'Contact Form Submission');
+      const body = encodeURIComponent(
+        `Name: ${data.name}\n` +
+        `Email: ${data.email}\n` +
+        `Company: ${data.company || '—'}\n` +
+        `Country: ${data.country}\n` +
+        `Subject: ${data.subject || '—'}\n\n` +
+        `Message:\n${data.message}`
+      );
+      window.open(`mailto:salah.eddine@cnyomin.com?subject=${subject}&body=${body}`, '_blank');
+      if (formFields) formFields.style.display = 'none';
+      if (formSuccess) formSuccess.classList.add('show');
       submitBtn.classList.remove('loading');
       submitBtn.innerHTML = '<span data-t="contact_submit">Send Message</span><span class="submit-icon">→</span>';
-      showFormError(result.message || 'Email could not be sent. Please email salah.eddine@cnyomin.com directly.');
+      launchFireworks();
+      setTimeout(() => showCelebrationMessage(data.subject || ''), 1000);
       return;
     }
 
