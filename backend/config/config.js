@@ -17,13 +17,13 @@ const config = {
 
   // Email (for contact form forwarding)
   email: {
-    host: process.env.EMAIL_HOST || 'mail.privateemail.com',
-    port: parseInt(process.env.EMAIL_PORT) || 587,
-    secure: process.env.EMAIL_SECURE === 'true',
+    host: process.env.EMAIL_HOST || 'smtpw.263.net',  // overseas SMTP for 263.net
+    port: parseInt(process.env.EMAIL_PORT) || 465,
+    secure: process.env.EMAIL_SECURE !== 'false',      // true for port 465 (SSL)
     user: process.env.EMAIL_USER || '',
     pass: process.env.EMAIL_PASS || '',
     to: process.env.EMAIL_TO || 'salah.eddine@cnyomin.com',
-    from: process.env.EMAIL_FROM || 'salaheddine@yominelectric.com'
+    from: process.env.EMAIL_FROM || 'salah.eddine@cnyomin.com'
   },
 
   // Rate limiting
