@@ -2801,7 +2801,7 @@
         </div>
         <div class="mc-action-btns">
           ${quoteOnly
-            ? `<a class="mc-ali-btn" href="contact.html?product=${encodeURIComponent(p.title)}">ðŸ“© ${t('prod_request_quote', 'Request Quote')} â†’</a>`
+            ? `<a class="mc-ali-btn" href="/contact?product=${encodeURIComponent(p.title)}">ðŸ“© ${t('prod_request_quote', 'Request Quote')} â†’</a>`
             : `<a class="mc-ali-btn" href="${esc(aliUrl)}" target="_blank" rel="noopener">ðŸ›’ Order on Alibaba</a>
           <div class="mc-action-row">
             <button class="mc-wholesale-btn" onclick="openOrderModal('wholesale','${p.id}','${safeTitle}')">ðŸ“¦ Wholesale</button>
@@ -3067,7 +3067,7 @@
         (data.logo ? '\nLogo/Brand: ' + data.logo : '') +
         (data.message ? '\nNotes: ' + data.message : '')
       );
-      window.location.href = `contact.html?subject=${subject}&msg=${body}`;
+      window.location.href = `/contact?subject=${subject}&msg=${body}`;
     }
 
     function closeOverlay() {
