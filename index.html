@@ -284,6 +284,7 @@ footer{background:var(--bgc);border-top:1px solid var(--bds);padding:80px 60px 4
 /* RTL */
 [dir=rtl] .h-l{padding:80px 40px 80px 60px}
 [dir=rtl] .h-r::after{background:linear-gradient(to left,#0d0d0d 0%,transparent 28%),linear-gradient(to top,rgba(13,13,13,.45) 0%,transparent 40%)}
+body.light [dir=rtl] .h-r::after{background:linear-gradient(to left,#f8f7f4 0%,transparent 28%),linear-gradient(to top,rgba(248,247,244,.45) 0%,transparent 40%)}
 [dir=rtl] .fq{text-align:right}
 [dir=rtl] .ldrop{right:auto;left:0}
 [dir=rtl] nav,[dir=rtl] .n-logo,[dir=rtl] .n-ctr,[dir=rtl] .n-rt{direction:ltr}
@@ -300,6 +301,8 @@ body.light nav{background:rgba(248,247,244,.92);border-bottom-color:rgba(0,0,0,.
 body.light nav.sc{background:rgba(248,247,244,.99)}
 body.light .hbg{background:linear-gradient(135deg,#f8f7f4 0%,#efefeb 50%,#f2f0ec 100%)}
 body.light .hbg::before{background:radial-gradient(ellipse 60% 70% at 30% 60%,rgba(196,118,47,.08) 0%,transparent 65%)}
+body.light .h-r img{filter:brightness(1) saturate(1)}
+body.light .h-r::after{background:linear-gradient(to right,#f8f7f4 0%,transparent 28%),linear-gradient(to top,rgba(248,247,244,.45) 0%,transparent 40%)}
 body.light .mob{background:rgba(248,247,244,.98)}
 body.light .mob a{color:#1a1a1a}
 body.light .mob a:hover{color:#C4762F}
