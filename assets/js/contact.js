@@ -113,6 +113,7 @@ async function handleSubmit(e) {
     const result = await res.json();
 
     if (result.success) {
+      if (typeof gtag === 'function') gtag('event', 'generate_lead', { method: 'contact_form', page_location: location.pathname });
       if (formFields) formFields.style.display = 'none';
       if (formSuccess) formSuccess.classList.add('show');
       submitBtn.classList.remove('loading');

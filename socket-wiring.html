@@ -3054,6 +3054,7 @@
 
     function submitOrderForm(e) {
       e.preventDefault();
+      if (typeof gtag === 'function') gtag('event', 'generate_lead', { method: 'wholesale_form', page_location: location.pathname, product: (new FormData(e.target)).get('productId') || '' });
       const form = e.target;
       const data = Object.fromEntries(new FormData(form));
       const subject = encodeURIComponent((data.type === 'custom' ? 'Customization Request: ' : 'Wholesale Order: ') + data.productId);

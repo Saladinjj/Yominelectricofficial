@@ -46,7 +46,7 @@
     ct_ttl:'¿Listo para impulsar <em style="font-style:italic;color:var(--ac)">su próximo proyecto?</em>',ct_dsc:"Póngase en contacto con nuestro equipo técnico y de ventas para obtener especificaciones de productos, precios y consultas sobre OEM.",
     ct_b1:"Envíenos un correo electrónico ahora",ct_b2:"+86-184-58440466",ft_ab:"Zhejiang Yomin Electric Co., Ltd.: soluciones de medición de energía de precisión en las que confían las empresas de servicios públicos y las industrias de energía en más de 95 países durante 30 años.",
     ft_pr:"Productos",ft_co:"Compañía",ft_cn:"Contacto",
-    ft_cp:"© 2025 Zhejiang Yomin Electric Co., Ltd. Todos los derechos reservados."
+    ft_cp:"© 2026 Zhejiang Yomin Electric Co., Ltd. Todos los derechos reservados."
   };
   if (window.__ymT) {
     window.__ymT.es = Object.assign({}, _esHome, window.__ymT.es || {});

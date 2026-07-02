@@ -46,25 +46,33 @@
   "logo": "https://www.yominelectric.com/logo_transparent.png",
   "sameAs": [
     "https://yomin.en.alibaba.com/",
-    "https://yomin.goldsupplier.com/",
     "https://www.facebook.com/p/Zhejiang-Yomin-Electric-CoLtd-100063808157830/"
   ],
   "contactPoint": [{
     "@type": "ContactPoint",
     "contactType": "sales",
     "telephone": "+86-184-5844-0466",
-    "email": "salah.eddine@cnyomin.com",
     "availableLanguage": ["en", "fr", "es", "ar"]
   }],
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "Qiaoqian Industry Area, Liushi Town",
     "addressLocality": "Yueqing",
     "addressRegion": "Zhejiang",
     "addressCountry": "CN"
   },
   "foundingDate": "1996",
-  "founders": [{"@type": "Person", "name": "Zhejiang Yomin Electric"}],
-  "description": "Manufacturer of energy meters, voltage regulators, current transformers, busbars, and power quality solutions."
+  "foundingLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Wenzhou",
+      "addressRegion": "Zhejiang",
+      "addressCountry": "CN"
+    }
+  },
+  "numberOfEmployees": {"@type": "QuantitativeValue", "value": 370},
+  "description": "Manufacturer of energy meters, voltage regulators, current transformers, busbars, and power quality solutions. ISO9001 certified, exporting to 95+ countries."
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -841,6 +849,22 @@ body.light .cert-sub{text-shadow:0 0 0.5px rgba(0,0,0,0.08)}
     <div class="fi"><button class="fq" data-i18n="fq8q">What warranty do you offer? <span class="ficon">+</span></button><div class="fa" data-i18n="fq8a">All products come with a standard 2-year warranty against manufacturing defects.</div></div>
   </div>
 </section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What certifications do your meters have?", "acceptedAnswer": {"@type": "Answer", "text": "Our energy meters are certified to IEC 62053-21/22/23, IEC 61036, ANSI C12, and MID standards. We also hold CE, RoHS, and country-specific utility approvals."}},
+    {"@type": "Question", "name": "What is the minimum order quantity?", "acceptedAnswer": {"@type": "Answer", "text": "MOQ varies by product — typically 100 units for standard models and 500 units for OEM/custom designs."}},
+    {"@type": "Question", "name": "Can you customize meters with our branding?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we offer full OEM/ODM services including custom logos, firmware settings, communication configurations, and custom packaging."}},
+    {"@type": "Question", "name": "What communication protocols are supported?", "acceptedAnswer": {"@type": "Answer", "text": "We support RS485/MODBUS RTU, Zigbee, GPRS/4G, LoRa, and M-Bus protocols. Our DCU is compatible with most AMI head-end software."}},
+    {"@type": "Question", "name": "How long does delivery take?", "acceptedAnswer": {"@type": "Answer", "text": "Standard products ship within 15-25 working days. Custom OEM orders require 30-45 days. Shipping via Ningbo/Shanghai ports or air freight."}},
+    {"@type": "Question", "name": "Do you provide technical support?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — comprehensive documentation, integration manuals, software tools, and dedicated after-sales support."}},
+    {"@type": "Question", "name": "Where is your factory located?", "acceptedAnswer": {"@type": "Answer", "text": "Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang Province — close to Ningbo and Shanghai ports."}},
+    {"@type": "Question", "name": "What warranty do you offer?", "acceptedAnswer": {"@type": "Answer", "text": "All products come with a standard 2-year warranty against manufacturing defects."}}
+  ]
+}
+</script>
 
 <!-- STORE LINKS -->
 <div class="store-sec">
@@ -1070,7 +1094,7 @@ fq7q:'Where is your factory located? <span class="ficon">+</span>',fq7a:"Qiaoqia
 fq8q:'What warranty do you offer? <span class="ficon">+</span>',fq8a:"All products come with a standard 2-year warranty against manufacturing defects.",
 ct_ttl:'Ready to Power Your <em style="font-style:italic;color:var(--ac)">Next Project?</em>',ct_dsc:"Get in touch with our sales and technical team for product specifications, pricing, and OEM inquiries.",ct_b1:"Contact Us",ct_b2:"+86 190 1654 3301",
 ft_ab:"Zhejiang Yomin Electric Co., Ltd. — Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.",
-ft_pr:"Products",ft_co:"Company",ft_cn:"Contact",ft_cp:"© 2025 Zhejiang Yomin Electric Co., Ltd. All rights reserved."
+ft_pr:"Products",ft_co:"Company",ft_cn:"Contact",ft_cp:"© 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved."
 },
 fr:{
 nav_products:"Produits",nav_solutions:"Solutions",nav_process:"Processus",nav_about:"À Propos",nav_contact:"Contact",nav_quote:"Obtenir un Devis",
@@ -1279,6 +1303,18 @@ document.getElementById('wc-close-index').addEventListener('click', () => { wcMo
 wcModalIndex.addEventListener('click', e => { if(e.target === wcModalIndex) wcModalIndex.style.display = 'none'; });
 document.addEventListener('keydown', e => { if(e.key==='Escape') wcModalIndex.style.display = 'none'; });
 
+// ─── GA4 EVENT TRACKING ─────────────────────────────────────
+(function(){
+  function ev(n,p){ if(typeof gtag==='function') gtag('event',n,p); }
+  var n=document.querySelector('.ncta'),h=document.querySelector('.h-act .bghost'),hp=document.querySelector('.h-act .bpri'),c=document.querySelector('.cta-a .bpri'),w=document.querySelector('.cta-a .bghost');
+  if(n) n.addEventListener('click',function(){ev('generate_lead',{button_location:'header',button_text:this.textContent.trim(),page_location:location.pathname})});
+  if(h) h.addEventListener('click',function(){ev('generate_lead',{button_location:'hero',button_text:this.textContent.trim(),page_location:location.pathname})});
+  if(hp) hp.addEventListener('click',function(){ev('select_content',{content_type:'cta',button_location:'hero',button_text:this.textContent.trim()})});
+  if(c) c.addEventListener('click',function(){ev('generate_lead',{button_location:'cta_section',button_text:this.textContent.trim(),page_location:location.pathname})});
+  if(w&&w.href&&w.href.includes('wa.me')) w.addEventListener('click',function(){ev('contact',{method:'whatsapp',button_location:'cta_section',page_location:location.pathname})});
+  document.querySelectorAll('footer a[href*="wa.me"]').forEach(function(a){a.addEventListener('click',function(){ev('contact',{method:'whatsapp',button_location:'footer',page_location:location.pathname})})});
+  document.querySelectorAll('footer a[href="/contact"]').forEach(function(a){a.addEventListener('click',function(){ev('generate_lead',{button_location:'footer',button_text:this.textContent.trim(),page_location:location.pathname})})});
+})();
 
 </script>
 <script defer src="assets/js/i18n-index-es.js"></script>
