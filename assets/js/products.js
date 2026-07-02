@@ -394,7 +394,8 @@ function productCard(p){
     :`<div class="pcard-img-fb">${catSvg(p.category)}</div>`;
   const d=(typeof T!=='undefined'&&typeof currentLang!=='undefined')?T[currentLang]:null;
   const inquiryLbl=(d&&d.prod_request_quote)?d.prod_request_quote.replace('Request Quote','Inquiry for Price'):'Inquiry for Price';
-  return `<a class="pcard${isQuoteOnly(p)?' pcard-quote':''}" href="#" data-id="${esc(p.id)}" title="${esc(p.title)}">
+  const catSlug = CAT_SLUG[p.category] || '';
+  return `<a class="pcard${isQuoteOnly(p)?' pcard-quote':''}" href="/products?category=${catSlug}&id=${esc(p.id)}" data-id="${esc(p.id)}" title="${esc(p.title)}">
     <div class="pcard-img">${imgHtml}</div>
     <div class="pcard-body">
       <div class="pcard-cat">${esc(p.category)}</div>
