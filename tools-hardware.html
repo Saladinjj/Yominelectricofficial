@@ -2654,18 +2654,16 @@
       let oldLd = document.querySelector('script[data-ld="product"]');
       if (oldLd) oldLd.remove();
       
-      const cleanPrice = (val) => {
-        if (!val || typeof val !== 'string') return '1.00';
+      const getPrice = (val) => {
+        if (!val || typeof val !== 'string') return null;
         const m = val.replace(/,/g, '').match(/[\d.]+/);
-        if (!m) return '1.00';
+        if (!m) return null;
         let num = parseFloat(m[0]);
-        return isNaN(num) || num <= 0 ? '1.00' : num.toFixed(2);
+        return isNaN(num) || num <= 0 ? null : num.toFixed(2);
       };
 
-      const ld = document.createElement('script');
-      ld.type = 'application/ld+json';
-      ld.setAttribute('data-ld', 'product');
-      ld.textContent = JSON.stringify({
+      const priceVal = getPrice(p.price);
+      const obj = {
         '@context': 'https://schema.org',
         '@type': 'Product',
         'name': p.title,
@@ -2686,11 +2684,13 @@
           'author': { '@type': 'Person', 'name': 'Verified Buyer' },
           'reviewRating': { '@type': 'Rating', 'ratingValue': '5' },
           'reviewBody': 'High-quality product, matches specifications exactly. Fast shipping and excellent support.'
-        },
-        'offers': { 
-          '@type': 'Offer', 
-          'availability': 'https://schema.org/InStock', 
-          'price': cleanPrice(p.price), 
+        }
+      };
+      if (priceVal) {
+        obj.offers = {
+          '@type': 'Offer',
+          'availability': 'https://schema.org/InStock',
+          'price': priceVal,
           'priceCurrency': 'USD',
           'priceValidUntil': '2026-12-31',
           'hasMerchantReturnPolicy': {
@@ -2728,8 +2728,12 @@
               }
             }
           }
-        }
-      });
+        };
+      }
+      const ld = document.createElement('script');
+      ld.type = 'application/ld+json';
+      ld.setAttribute('data-ld', 'product');
+      ld.textContent = JSON.stringify(obj);
       document.head.appendChild(ld);
     }
 
