@@ -186,14 +186,14 @@ footer{padding:48px 60px;border-top:1px solid var(--bds);display:flex;align-item
   <div class="n-rt">
     <div class="lsw" style="position:relative">
       <button class="lbtn" id="lbtn" style="background:rgba(255,255,255,.06);border:1px solid var(--bdr);color:var(--mt);padding:7px 13px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;font-family:var(--ss)">
-        <span id="lf">🇬🇧</span><span id="lc">EN</span>
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
         <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5" width="10" height="10"><path d="M1 1l5 5 5-5"/></svg>
       </button>
       <div class="ldrop" id="ldrop" style="position:absolute;top:calc(100% + 8px);right:0;background:#1e1e1e;border:1px solid var(--bdr);border-radius:10px;min-width:140px;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:500;overflow:hidden">
-        <button class="lopt act" data-lang="en" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span>🇬🇧</span> English</button>
-        <button class="lopt" data-lang="ar" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:'Noto Sans Arabic',var(--ss),sans-serif;white-space:nowrap"><span>🇸🇦</span> العربية</button>
-        <button class="lopt" data-lang="fr" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span>🇫🇷</span> Français</button>
-        <button class="lopt" data-lang="es" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span>🇪🇸</span> Español</button>
+        <button class="lopt act" data-lang="en" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="ar" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:'Noto Sans Arabic',var(--ss),sans-serif;white-space:nowrap"><span><img src="https://flagcdn.com/16x12/sa.png" class="flag" alt="AR"></span> العربية</button>
+        <button class="lopt" data-lang="fr" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Français</button>
+        <button class="lopt" data-lang="es" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Español</button>
       </div>
     </div>
     <a href="/contact" class="ncta" data-i18n="nav_quote">Get Quote</a>
@@ -559,7 +559,7 @@ document.getElementById('wc-overlay')?.addEventListener('click', function(e) {
     btn.addEventListener('click', function() {
       lang = btn.getAttribute('data-lang');
       localStorage.setItem('ym_lang', lang);
-      document.getElementById('lf').textContent = {'en':'🇬🇧','ar':'🇸🇦','fr':'🇫🇷','es':'🇪🇸'}[lang] || '🇬🇧';
+      document.getElementById('lf').innerHTML = {'en':'<img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN">','ar':'<img src="https://flagcdn.com/16x12/sa.png" class="flag" alt="AR">','fr':'<img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR">','es':'<img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES">'}[lang] || '<img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN">';
       document.getElementById('lc').textContent = lang.toUpperCase();
       document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
       d = T[lang] || T.en;

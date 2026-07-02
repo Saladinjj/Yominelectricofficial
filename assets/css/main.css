@@ -90,6 +90,8 @@ h2.stitle { font-family: var(--sf); font-size: clamp(28px, 4.5vw, 52px); line-he
 .ph-title em { font-style: italic; color: var(--ac); }
 .ph-desc { color: var(--mt); font-size: 15px; line-height: 1.8; max-width: 520px; }
 
+.flag { width: 16px; height: 12px; vertical-align: middle; border-radius: 1px; display: inline-block; flex-shrink: 0; }
+
 /* ─── FOOTER ─── */
 footer { background: var(--bgs); border-top: 1px solid var(--bds); padding: 60px 60px 36px; }
 .ft-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }

@@ -535,10 +535,10 @@ body.light .cert-sub{text-shadow:0 0 0.5px rgba(0,0,0,0.08)}
   <a href="/about" data-i18n="nav_about">About</a>
   <a href="/contact" data-i18n="nav_contact">Contact</a>
   <div class="mob-lngs">
-    <button class="mlb act" onclick="sL('en')" data-l="en">🇬🇧</button>
-    <button class="mlb" onclick="sL('fr')" data-l="fr">🇫🇷</button>
-    <button class="mlb" onclick="sL('es')" data-l="es">🇪🇸</button>
-    <button class="mlb" onclick="sL('ar')" data-l="ar">🇸🇦</button>
+    <button class="mlb act" onclick="sL('en')" data-l="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" onclick="sL('fr')" data-l="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" onclick="sL('es')" data-l="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" onclick="sL('ar')" data-l="ar">AR</button>
   </div>
 </div>
 <!-- NAV -->
@@ -558,14 +558,14 @@ body.light .cert-sub{text-shadow:0 0 0.5px rgba(0,0,0,0.08)}
   <div class="n-rt">
     <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
       <button class="lbtn" id="lbtn" aria-label="Current language: English">
-        <span id="lf">🇬🇧</span><span id="lc">EN</span>
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
         <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"/></svg>
       </button>
       <div class="ldrop" id="ldrop" role="listbox">
-        <button class="lopt act" onclick="sL('en')" role="option" data-l="en"><span>🇬🇧</span> English</button>
-        <button class="lopt" onclick="sL('fr')" role="option" data-l="fr"><span>🇫🇷</span> Français</button>
-        <button class="lopt" onclick="sL('es')" role="option" data-l="es"><span>🇪🇸</span> Español</button>
-        <button class="lopt" onclick="sL('ar')" role="option" data-l="ar"><span>🇸🇦</span> العربية</button>
+        <button class="lopt act" onclick="sL('en')" role="option" data-l="en"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" onclick="sL('fr')" role="option" data-l="fr"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Français</button>
+        <button class="lopt" onclick="sL('es')" role="option" data-l="es"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Español</button>
+        <button class="lopt" onclick="sL('ar')" role="option" data-l="ar"><span>AR</span> العربية</button>
       </div>
     </div>
     <!-- THEME BUTTONS -->
@@ -1169,8 +1169,8 @@ function sL(l){
     const k=el.getAttribute('data-i18n');
     if(t[k]!==undefined) el.innerHTML=t[k];
   });
-  const fl={en:'🇬🇧',fr:'🇫🇷',es:'🇪🇸',ar:'🇸🇦'}, cd={en:'EN',fr:'FR',es:'ES',ar:'AR'};
-  document.getElementById('lf').textContent=fl[l];
+  const fl={en:'<img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN">',fr:'<img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR">',es:'<img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES">',ar:'<img src="https://flagcdn.com/16x12/sa.png" class="flag" alt="AR">'}, cd={en:'EN',fr:'FR',es:'ES',ar:'AR'};
+  document.getElementById('lf').innerHTML=fl[l];
   document.getElementById('lc').textContent=cd[l];
   document.querySelectorAll('.lopt').forEach(b=>b.classList.toggle('act',b.getAttribute('data-l')===l));
   document.querySelectorAll('.mlb').forEach(b=>b.classList.toggle('act',b.getAttribute('data-l')===l));
