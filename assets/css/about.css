@@ -1,4 +1,4 @@
-/* ═══════════════════════════════════════════════════
+﻿/* ═══════════════════════════════════════════════════
    YOMIN ELECTRIC — ABOUT.CSS
    ═══════════════════════════════════════════════════ */
 
@@ -17,7 +17,7 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: rgba(200, 169, 110, 0.92);
+  background: rgba(232, 148, 74, 0.92);
   color: #0d0d0d;
   font-size: 22px;
   line-height: 64px;
@@ -93,7 +93,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(200,169,110,.06) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(232,148,74,.06) 0%, transparent 60%);
   border-radius: 20px;
   pointer-events: none;
 }
@@ -200,7 +200,7 @@
 }
 
 .stat-item:hover {
-  background: rgba(200,169,110,.03);
+  background: rgba(232,148,74,.03);
 }
 
 .stat-item:last-child { border-right: none; }
@@ -294,7 +294,7 @@
   transition: border-color .3s;
 }
 
-.tl-content:hover { border-color: rgba(200,169,110,.2); }
+.tl-content:hover { border-color: rgba(232,148,74,.2); }
 
 .tl-content h4 {
   font-family: var(--sf);
@@ -333,7 +333,7 @@
 }
 
 .value-card:hover {
-  border-color: rgba(200,169,110,.18);
+  border-color: rgba(232,148,74,.18);
   transform: translateY(-3px);
 }
 
@@ -352,8 +352,8 @@
 .val-icon {
   width: 48px;
   height: 48px;
-  background: rgba(200,169,110,.1);
-  border: 1px solid rgba(200,169,110,.2);
+  background: rgba(232,148,74,.1);
+  border: 1px solid rgba(232,148,74,.2);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -416,7 +416,7 @@
 }
 
 .cert-card:hover {
-  border-color: rgba(200,169,110,.2);
+  border-color: rgba(232,148,74,.2);
   transform: translateY(-3px);
 }
 
@@ -478,7 +478,7 @@
   transition: border-color .2s, transform .2s;
 }
 .market-chip:hover {
-  border-color: rgba(200,169,110,.4);
+  border-color: rgba(232,148,74,.4);
   transform: translateY(-2px);
 }
 .market-name {

@@ -1,4 +1,4 @@
-/* ═══════════════════════════════════════════════════
+﻿/* ═══════════════════════════════════════════════════
    YOMIN ELECTRIC — PRODUCT-DETAILS.CSS
    ═══════════════════════════════════════════════════ */
 
@@ -86,7 +86,7 @@
 }
 
 .thumb.active { border-color: var(--ac); }
-.thumb:hover { border-color: rgba(200,169,110,.5); }
+.thumb:hover { border-color: rgba(232,148,74,.5); }
 
 .thumb img {
   width: 100%;
@@ -113,8 +113,8 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--ac);
-  background: rgba(200,169,110,.1);
-  border: 1px solid rgba(200,169,110,.2);
+  background: rgba(232,148,74,.1);
+  border: 1px solid rgba(232,148,74,.2);
   padding: 4px 12px;
   border-radius: 20px;
 }
@@ -251,7 +251,7 @@
 .btn-quote:hover {
   background: var(--ac2);
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(200,169,110,.25);
+  box-shadow: 0 8px 30px rgba(232,148,74,.25);
   color: #000;
 }
 

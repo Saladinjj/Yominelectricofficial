@@ -1,4 +1,4 @@
-/* ═══════════════════════════════════════════════════
+﻿/* ═══════════════════════════════════════════════════
    YOMIN ELECTRIC — PRODUCTS.CSS
    ═══════════════════════════════════════════════════ */
 
@@ -47,8 +47,8 @@
 }
 
 .filter-btn.active {
-  background: rgba(200,169,110,.12);
-  border-color: rgba(200,169,110,.35);
+  background: rgba(232,148,74,.12);
+  border-color: rgba(232,148,74,.35);
   color: var(--ac);
 }
 
@@ -78,7 +78,7 @@
 
 .cat-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(200,169,110,.25);
+  border-color: rgba(232,148,74,.25);
   box-shadow: 0 20px 60px rgba(0,0,0,.5);
 }
 
@@ -141,8 +141,8 @@
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: var(--ac);
-  background: rgba(200,169,110,.1);
-  border: 1px solid rgba(200,169,110,.2);
+  background: rgba(232,148,74,.1);
+  border: 1px solid rgba(232,148,74,.2);
   padding: 4px 10px;
   border-radius: 20px;
   margin-bottom: 12px;
@@ -178,8 +178,8 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: rgba(200,169,110,.1);
-  border: 1px solid rgba(200,169,110,.2);
+  background: rgba(232,148,74,.1);
+  border: 1px solid rgba(232,148,74,.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,7 +231,7 @@
 
 .prod-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(200,169,110,.22);
+  border-color: rgba(232,148,74,.22);
   box-shadow: 0 16px 48px rgba(0,0,0,.4);
 }
 
@@ -322,8 +322,8 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: rgba(200,169,110,.15);
-  border: 1px solid rgba(200,169,110,.25);
+  background: rgba(232,148,74,.15);
+  border: 1px solid rgba(232,148,74,.25);
   display: flex;
   align-items: center;
   justify-content: center;

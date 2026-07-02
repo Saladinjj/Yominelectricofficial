@@ -1,4 +1,4 @@
-/* ═══════════════════════════════════════════════════
+﻿/* ═══════════════════════════════════════════════════
    YOMIN ELECTRIC — CONTACT.JS
    Form validation, submission, success state
    ═══════════════════════════════════════════════════ */
@@ -224,7 +224,7 @@ function launchFireworks() {
   document.body.appendChild(canvas);
   const ctx = canvas.getContext('2d');
   const particles = [];
-  const colors = ['#c8a96e','#ffd700','#ff6b6b','#4ecdc4','#45b7d1','#f7b731','#a29bfe','#fd79a8','#00b894','#e17055'];
+  const colors = ['#E8944A','#ffd700','#ff6b6b','#4ecdc4','#45b7d1','#f7b731','#a29bfe','#fd79a8','#00b894','#e17055'];
   function createBurst(x, y) {
     for (let i = 0; i < 60; i++) {
       const angle = (Math.PI * 2 / 60) * i;
@@ -287,13 +287,13 @@ function showCelebrationMessage(subject) {
   overlay.id = 'celebration-msg';
   overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);opacity:0;transition:opacity 0.5s;';
   overlay.innerHTML = `
-    <div style="background:var(--bgc,#181818);border:2px solid var(--ac,#c8a96e);border-radius:24px;padding:48px;max-width:520px;text-align:center;transform:scale(0.8);transition:transform 0.5s;animation:celebPop 0.5s 0.2s forwards;">
+    <div style="background:var(--bgc,#181818);border:2px solid var(--ac,#E8944A);border-radius:24px;padding:48px;max-width:520px;text-align:center;transform:scale(0.8);transition:transform 0.5s;animation:celebPop 0.5s 0.2s forwards;">
       <div style="font-size:48px;margin-bottom:16px;">&#127881;&#127882;&#127878;</div>
       <h2 style="font-family:'DM Serif Display',serif;font-size:28px;color:#f0ede8;margin-bottom:12px;">Congratulations!</h2>
-      <p style="font-size:16px;color:#c8a96e;line-height:1.8;margin-bottom:8px;">You have reached the <strong>best company</strong> for</p>
+      <p style="font-size:16px;color:#E8944A;line-height:1.8;margin-bottom:8px;">You have reached the <strong>best company</strong> for</p>
       <p style="font-size:22px;font-family:'DM Serif Display',serif;color:#f0ede8;margin-bottom:16px;"><em>${topic}</em></p>
       <p style="font-size:14px;color:#888;line-height:1.7;">in the world! Our team will get back to you shortly.</p>
-      <button onclick="this.closest('#celebration-msg').remove()" style="margin-top:24px;background:#c8a96e;color:#000;border:none;padding:12px 32px;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;">Thank You! &#10024;</button>
+      <button onclick="this.closest('#celebration-msg').remove()" style="margin-top:24px;background:#E8944A;color:#000;border:none;padding:12px 32px;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;">Thank You! &#10024;</button>
     </div>
   `;
   document.body.appendChild(overlay);

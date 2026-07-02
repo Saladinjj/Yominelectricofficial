@@ -117,7 +117,7 @@ The site uses a consistent dark-mode design system:
 | `--bgc` | `#181818` | Card background |
 | `--tx` | `#f0ede8` | Primary text |
 | `--mt` | `#888` | Muted text |
-| `--ac` | `#c8a96e` | Gold accent |
+| `--ac` | `#E8944A` | Amber-orange accent |
 | `--sf` | DM Serif Display | Heading font |
 | `--ss` | DM Sans | Body font |
 
