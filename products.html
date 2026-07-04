@@ -21,7 +21,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Energy Meters, CTs & Voltage Regulators | Yomin Electric</title>
   <meta name="description" content="Browse Yomin Electric's full range: single and three phase energy meters, prepaid STS meters, current transformers, split-core CTs and Variac voltage regulators. Factory direct, low MOQ.">
-  <link rel="canonical" href="https://www.yominelectric.com/products" />
+  <script>
+  (function () {
+    var SLUG = { 'energy meter': 'energy-meter', 'voltage stabilizer/regulator': 'voltage-stabilizer-regulator', 'current transformer': 'current-transformer', 'screw machine': 'screw-machine', 'screw machines': 'screw-machine', 'busbar': 'busbar', 'busbars': 'busbar', 'flexible busbar': 'flexible-busbar', 'rigid busbar': 'rigid-busbar', 'aluminum busbar': 'aluminum-busbar', 'composite laminated busbar': 'composite-laminated-busbar', 'ccs integrated busbar': 'ccs-integrated-busbar', 'heavy duty busbar': 'heavy-duty-busbar', 'energy storage busbar': 'energy-storage-busbar', 'busbar protection': 'busbar-protection', 'variac/transformer': 'variac-transformer', 'terminal & connector': 'terminal-connector', 'solar/pv products': 'solar-pv-products', 'fuse & protection': 'fuse-protection', 'voltage protector': 'voltage-protector', 'socket & wiring': 'socket-wiring', 'tools & hardware': 'tools-hardware', 'security seal': 'security-seal', 'other': 'other' };
+    var p = new URLSearchParams(location.search);
+    var cat = p.get('cat');
+    var category = p.get('category');
+    var slug = '';
+    var idParam = p.get('id');
+    var idQs = idParam ? '&id=' + encodeURIComponent(idParam) : '';
+    if (cat) {
+      slug = SLUG[decodeURIComponent(cat.replace(/\+/g, ' ')).trim().toLowerCase()] || '';
+      location.replace(slug ? '/products?category=' + slug + idQs : '/products' + (idParam ? '?id=' + encodeURIComponent(idParam) : ''));
+      return;
+    }
+    if (category) {
+      var c = decodeURIComponent(category.replace(/\+/g, ' ')).trim().toLowerCase();
+      slug = SLUG[c] || (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(c) ? c : '');
+      if (slug && slug !== category.toLowerCase()) {
+        location.replace('/products?category=' + slug + idQs);
+        return;
+      }
+    }
+    var canonUrl = 'https://www.yominelectric.com/products' + (slug ? '?category=' + slug : '') + (!slug && idParam ? '?id=' + encodeURIComponent(idParam) : '');
+    document.write('<link rel="canonical" href="' + canonUrl + '" />');
+  })();
+  </script>
 <meta property="og:title" content="Energy Meters, CTs and Voltage Regulators | Yomin Electric" />
 <meta property="og:description" content="Browse Yomins full range: single and three phase energy meters, prepaid STS meters, current transformers, split-core CTs and Variac voltage regulators. Factory direct, low MOQ." />
 <meta property="og:url" content="https://www.yominelectric.com/products" />
@@ -46,34 +71,6 @@
       {"@type": "ListItem", "position": 4, "name": "Busbar", "url": "https://www.yominelectric.com/products/busbar"}
     ]
   }
-  </script>
-  <script>
-  (function () {
-    var SLUG = { 'energy meter': 'energy-meter', 'voltage stabilizer/regulator': 'voltage-stabilizer-regulator', 'current transformer': 'current-transformer', 'screw machine': 'screw-machine', 'screw machines': 'screw-machine', 'busbar': 'busbar', 'busbars': 'busbar', 'flexible busbar': 'flexible-busbar', 'rigid busbar': 'rigid-busbar', 'aluminum busbar': 'aluminum-busbar', 'composite laminated busbar': 'composite-laminated-busbar', 'ccs integrated busbar': 'ccs-integrated-busbar', 'heavy duty busbar': 'heavy-duty-busbar', 'energy storage busbar': 'energy-storage-busbar', 'busbar protection': 'busbar-protection', 'variac/transformer': 'variac-transformer', 'terminal & connector': 'terminal-connector', 'solar/pv products': 'solar-pv-products', 'fuse & protection': 'fuse-protection', 'voltage protector': 'voltage-protector', 'socket & wiring': 'socket-wiring', 'tools & hardware': 'tools-hardware', 'security seal': 'security-seal', 'other': 'other' };
-    var p = new URLSearchParams(location.search);
-    var cat = p.get('cat');
-    var category = p.get('category');
-    var slug = '';
-    var idParam = p.get('id');
-    var idQs = idParam ? '&id=' + encodeURIComponent(idParam) : '';
-    if (cat) {
-      slug = SLUG[decodeURIComponent(cat.replace(/\+/g, ' ')).trim().toLowerCase()] || '';
-      location.replace(slug ? '/products?category=' + slug + idQs : '/products' + (idParam ? '?id=' + encodeURIComponent(idParam) : ''));
-      return;
-    }
-    if (category) {
-      var c = decodeURIComponent(category.replace(/\+/g, ' ')).trim().toLowerCase();
-      slug = SLUG[c] || (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(c) ? c : '');
-      if (slug && slug !== category.toLowerCase()) {
-        location.replace('/products?category=' + slug + idQs);
-        return;
-      }
-    }
-    if (slug) {
-      var canon = document.querySelector('link[rel="canonical"]');
-      if (canon) canon.href = 'https://www.yominelectric.com/products?category=' + slug;
-    }
-  })();
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

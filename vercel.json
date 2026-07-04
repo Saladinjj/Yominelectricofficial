@@ -14,45 +14,112 @@
       "statusCode": 301
     },
     {
-      "source": "/:path*",
-      "has": [
-        { "type": "host", "value": "www.yominelectric.com" },
-        { "type": "header", "key": "x-forwarded-proto", "value": "http" }
-      ],
-      "destination": "https://www.yominelectric.com/:path*",
+      "source": "/yominelectric-main/:path*",
+      "destination": "/",
       "statusCode": 301
     },
     {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "yominelectric.com" }, { "type": "header", "key": "x-forwarded-proto", "value": "http" }],
-      "destination": "https://www.yominelectric.com/:path*",
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Energy Meter"}],
+      "destination": "/products?category=energy-meter",
       "statusCode": 301
     },
-    { "source": "/index.html", "destination": "/", "statusCode": 301 },
-    { "source": "/about.html", "destination": "/about", "statusCode": 301 },
-    { "source": "/contact.html", "destination": "/contact", "statusCode": 301 },
-      { "source": "/products.html", "destination": "/products", "statusCode": 301 },
-      { "source": "/product.html", "destination": "/products", "statusCode": 301 },
-      { "source": "/product-details.html", "destination": "/product-details", "statusCode": 301 },
-      { "source": "/process.html", "destination": "/process", "statusCode": 301 },
-      { "source": "/solutions.html", "destination": "/solutions", "statusCode": 301 },
-      { "source": "/blog.html", "destination": "/blog", "statusCode": 301 },
-      { "source": "/video/company-overview.html", "destination": "/video/company-overview", "statusCode": 301 },
-      { "source": "/energy-meter.html", "destination": "/products?category=energy-meter", "statusCode": 301 },
-      { "source": "/voltage-stabilizer-regulator.html", "destination": "/products?category=voltage-stabilizer-regulator", "statusCode": 301 },
-      { "source": "/current-transformer.html", "destination": "/products?category=current-transformer", "statusCode": 301 },
-      { "source": "/variac-transformer.html", "destination": "/products?category=variac-transformer", "statusCode": 301 },
-      { "source": "/screw-machine.html", "destination": "/products?category=screw-machine", "statusCode": 301 },
-      { "source": "/fuse-protection.html", "destination": "/products?category=fuse-protection", "statusCode": 301 },
-      { "source": "/voltage-protector.html", "destination": "/products?category=voltage-protector", "statusCode": 301 },
-      { "source": "/socket-wiring.html", "destination": "/products?category=socket-wiring", "statusCode": 301 },
-      { "source": "/terminal-connector.html", "destination": "/products?category=terminal-connector", "statusCode": 301 },
-      { "source": "/solar-pv-products.html", "destination": "/products?category=solar-pv-products", "statusCode": 301 },
-      { "source": "/tools-hardware.html", "destination": "/products?category=tools-hardware", "statusCode": 301 },
-      { "source": "/security-seal.html", "destination": "/products?category=security-seal", "statusCode": 301 },
-      { "source": "/other.html", "destination": "/products?category=other", "statusCode": 301 },
-      { "source": "/busbar.html", "destination": "/products?category=busbar", "statusCode": 301 },
-      { "source": "/yominelectric-main/:path*", "destination": "/", "statusCode": 301 }
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Energy+Meter"}],
+      "destination": "/products?category=energy-meter",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Voltage Stabilizer/Regulator"}],
+      "destination": "/products?category=voltage-stabilizer-regulator",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Voltage+Stabilizer%2FRegulator"}],
+      "destination": "/products?category=voltage-stabilizer-regulator",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Current Transformer"}],
+      "destination": "/products?category=current-transformer",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Current+Transformer"}],
+      "destination": "/products?category=current-transformer",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Variac/Transformer"}],
+      "destination": "/products?category=variac-transformer",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Fuse & Protection"}],
+      "destination": "/products?category=fuse-protection",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Voltage Protector"}],
+      "destination": "/products?category=voltage-protector",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Socket & Wiring"}],
+      "destination": "/products?category=socket-wiring",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Terminal & Connector"}],
+      "destination": "/products?category=terminal-connector",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Solar/PV Products"}],
+      "destination": "/products?category=solar-pv-products",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Tools & Hardware"}],
+      "destination": "/products?category=tools-hardware",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Security Seal"}],
+      "destination": "/products?category=security-seal",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [{"type": "query", "key": "cat", "value": "Other"}],
+      "destination": "/products?category=other",
+      "statusCode": 301
+    },
+    {
+      "source": "/products.html",
+      "has": [{"type": "query", "key": "category", "value": "energy-meter"}],
+      "destination": "/products?category=energy-meter",
+      "statusCode": 301
+    },
+    {
+      "source": "/products.html",
+      "has": [{"type": "query", "key": "category", "value": "voltage-stabilizer-regulator"}],
+      "destination": "/products?category=voltage-stabilizer-regulator",
+      "statusCode": 301
+    }
   ],
   "routes": [
     { "src": "/wap/(.*)", "status": 410 },
