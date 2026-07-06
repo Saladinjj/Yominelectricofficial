@@ -119,9 +119,19 @@ const PAGE=60;
 
 document.addEventListener('DOMContentLoaded', async () => {
   try {
-    const r = await fetch('data/products.json');
-    if (!r.ok) throw new Error('HTTP '+r.status);
-    ALL = await r.json();
+    const [mainRes, fuseRes] = await Promise.all([
+      fetch('data/products.json'),
+      fetch('data/fuse-protection.json').catch(() => null)
+    ]);
+    if (!mainRes.ok) throw new Error('HTTP '+mainRes.status);
+    ALL = await mainRes.json();
+    // Merge fuse-protection.json: overwrite matching products with local-image versions
+    if (fuseRes && fuseRes.ok) {
+      const fuseData = await fuseRes.json();
+      const fuseMap = {};
+      fuseData.forEach(p => { fuseMap[p.id] = p; });
+      ALL = ALL.map(p => fuseMap[p.id] ? Object.assign({}, p, fuseMap[p.id]) : p);
+    }
   } catch(e) {
     console.warn('products.json failed:', e);
     const g = document.getElementById('prod-grid');
