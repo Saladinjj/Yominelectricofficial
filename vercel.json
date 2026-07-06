@@ -97,18 +97,6 @@
       "statusCode": 301
     },
     {
-      "source": "/products",
-      "has": [{"type": "query", "key": "cat", "value": "Security Seal"}],
-      "destination": "/products?category=security-seal",
-      "statusCode": 301
-    },
-    {
-      "source": "/products",
-      "has": [{"type": "query", "key": "cat", "value": "Other"}],
-      "destination": "/products?category=other",
-      "statusCode": 301
-    },
-    {
       "source": "/products.html",
       "has": [{"type": "query", "key": "category", "value": "energy-meter"}],
       "destination": "/products?category=energy-meter",
@@ -118,6 +106,48 @@
       "source": "/products.html",
       "has": [{"type": "query", "key": "category", "value": "voltage-stabilizer-regulator"}],
       "destination": "/products?category=voltage-stabilizer-regulator",
+      "statusCode": 301
+    },
+    {
+      "source": "/products.html",
+      "has": [{"type": "query", "key": "cat", "value": "Energy Meter"}],
+      "destination": "/products?category=energy-meter",
+      "statusCode": 301
+    },
+    {
+      "source": "/products.html",
+      "has": [{"type": "query", "key": "cat", "value": "Energy+Meter"}],
+      "destination": "/products?category=energy-meter",
+      "statusCode": 301
+    },
+    {
+      "source": "/products.html",
+      "has": [{"type": "query", "key": "cat", "value": "Voltage Stabilizer/Regulator"}],
+      "destination": "/products?category=voltage-stabilizer-regulator",
+      "statusCode": 301
+    },
+    {
+      "source": "/products.html",
+      "has": [{"type": "query", "key": "cat", "value": "Voltage+Stabilizer%2FRegulator"}],
+      "destination": "/products?category=voltage-stabilizer-regulator",
+      "statusCode": 301
+    },
+    {
+      "source": "/products.html",
+      "has": [{"type": "query", "key": "cat", "value": "Voltage+Stabilizer/Regulator"}],
+      "destination": "/products?category=voltage-stabilizer-regulator",
+      "statusCode": 301
+    },
+    {
+      "source": "/products.html",
+      "has": [{"type": "query", "key": "cat", "value": "Current Transformer"}],
+      "destination": "/products?category=current-transformer",
+      "statusCode": 301
+    },
+    {
+      "source": "/products.html",
+      "has": [{"type": "query", "key": "cat", "value": "Current+Transformer"}],
+      "destination": "/products?category=current-transformer",
       "statusCode": 301
     }
   ],
