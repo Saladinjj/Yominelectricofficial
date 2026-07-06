@@ -2576,16 +2576,9 @@
           }, Math.min(i * 18, 500)));
         });
       }
-      /* Fallback: replace any unloaded images with SVG after 3 sec */
-      const fallbackId = 'imgFallback_' + Date.now();
-      window[fallbackId] = setTimeout(() => {
-        grid.querySelectorAll('.pcard-img img').forEach(img => {
-          if (!img.complete && img.naturalWidth === 0) {
-            img.style.display = 'none';
-            if (img.nextElementSibling) img.nextElementSibling.style.display = 'flex';
-          }
-        });
-      }, 3000);
+      /* Do not force-hide lazy images on a timer — loading="lazy" defers below-the-fold requests,
+         so a global timer would incorrectly hide every off-screen image. Rely on the per-image
+         onerror handler; images in viewport that genuinely fail will swap to the SVG fallback. */
     }
 
     function productCard(p) {
