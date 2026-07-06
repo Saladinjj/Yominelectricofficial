@@ -2638,15 +2638,17 @@
         kw.content = keywords;
         document.head.appendChild(kw);
       } else { kw.content = keywords; }
+      const catSlug = FILTER_SLUG[p.category] || CAT_SLUG_REVERSE[p.category] || 'other';
+      const productCanonUrl = 'https://www.yominelectric.com/products?category=' + catSlug + '&id=' + p.id;
       let canonical = document.querySelector('link[rel="canonical"]');
-      if (canonical) canonical.href = 'https://www.yominelectric.com/products?id=' + p.id;
+      if (canonical) canonical.href = productCanonUrl;
       // Update og tags
       let ogTitle = document.querySelector('meta[property="og:title"]');
       if (ogTitle) ogTitle.content = title;
       let ogDesc = document.querySelector('meta[property="og:description"]');
       if (ogDesc) ogDesc.content = d;
       let ogUrl = document.querySelector('meta[property="og:url"]');
-      if (ogUrl) ogUrl.content = 'https://www.yominelectric.com/products?id=' + p.id;
+      if (ogUrl) ogUrl.content = productCanonUrl;
       // Remove old JSON-LD product schema, add new one
       let oldLd = document.querySelector('script[data-ld="product"]');
       if (oldLd) oldLd.remove();
