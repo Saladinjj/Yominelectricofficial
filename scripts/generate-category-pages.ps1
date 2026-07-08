@@ -119,6 +119,78 @@ $categories = @(
     canonical = "https://www.yominelectric.com/products?category=other"
     ldName = "Other Products"
     ldDesc = "Yomin Electric additional electrical products: industrial components, accessories, and specialized electrical equipment for export markets worldwide."
+  },
+  @{
+    slug = "aluminum-busbar"
+    filter = "Aluminum Busbar"
+    title = "Aluminum Busbars for Power Distribution | Yomin Electric"
+    desc = "High-conductivity aluminum busbars for switchgear, panel boards, and power distribution. Custom sizes available. Factory direct from China with competitive pricing."
+    canonical = "https://www.yominelectric.com/products?category=aluminum-busbar"
+    ldName = "Aluminum Busbars"
+    ldDesc = "Yomin Electric aluminum busbar product category: high-conductivity aluminum busbars for LV and MV switchgear, power distribution panels, and electrical enclosures."
+  },
+  @{
+    slug = "flexible-busbar"
+    filter = "Flexible Busbar"
+    title = "Flexible Busbars for Battery & EV | Yomin Electric"
+    desc = "Flexible laminated copper and aluminum busbars for battery packs, EV power distribution, and energy storage. ISO9001 certified, custom designs."
+    canonical = "https://www.yominelectric.com/products?category=flexible-busbar"
+    ldName = "Flexible Busbars"
+    ldDesc = "Yomin Electric flexible busbar product category: laminated flexible busbars for EV battery packs, energy storage systems, and power electronics."
+  },
+  @{
+    slug = "rigid-busbar"
+    filter = "Rigid Busbar"
+    title = "Rigid Busbars for Panel Boards | Yomin Electric"
+    desc = "Rigid copper and aluminum busbars for LV panel boards, switchgear, and distribution cabinets. Insulated and bare options. Factory direct pricing."
+    canonical = "https://www.yominelectric.com/products?category=rigid-busbar"
+    ldName = "Rigid Busbars"
+    ldDesc = "Yomin Electric rigid busbar product category: rigid copper and aluminum busbars for switchgear, panel boards, and industrial power distribution."
+  },
+  @{
+    slug = "energy-storage-busbar"
+    filter = "Energy Storage Busbar"
+    title = "Energy Storage Busbars for BESS | Yomin Electric"
+    desc = "High-current busbars for battery energy storage systems (BESS). Custom configurations for Li-ion battery racks and containerized storage. OEM/ODM available."
+    canonical = "https://www.yominelectric.com/products?category=energy-storage-busbar"
+    ldName = "Energy Storage Busbars"
+    ldDesc = "Yomin Electric energy storage busbar product category: high-current busbars for battery energy storage systems, Li-ion racks, and grid-scale storage solutions."
+  },
+  @{
+    slug = "busbar-protection"
+    filter = "Busbar Protection"
+    title = "Busbar Protection Systems | Yomin Electric"
+    desc = "Busbar differential protection relays, arc flash detection, and insulation monitoring for LV and MV busbar systems. IEC 61850 compliant, factory direct."
+    canonical = "https://www.yominelectric.com/products?category=busbar-protection"
+    ldName = "Busbar Protection"
+    ldDesc = "Yomin Electric busbar protection product category: differential protection relays, arc flash detection, insulation monitoring for power distribution busbar systems."
+  },
+  @{
+    slug = "composite-laminated-busbar"
+    filter = "Composite Laminated Busbar"
+    title = "Composite Laminated Busbars | Yomin Electric"
+    desc = "Composite laminated busbars for compact power distribution. Lightweight, high insulation, low inductance design. Custom engineering available."
+    canonical = "https://www.yominelectric.com/products?category=composite-laminated-busbar"
+    ldName = "Composite Laminated Busbars"
+    ldDesc = "Yomin Electric composite laminated busbar product category: lightweight laminated busbars for compact power electronics, converters, and inverters."
+  },
+  @{
+    slug = "ccs-integrated-busbar"
+    filter = "CCS Integrated Busbar"
+    title = "CCS Integrated Busbars | Yomin Electric"
+    desc = "Cell Contacting System (CCS) integrated busbars for battery modules. Precision welding, FPC/FFC integration. Designed for EV and ESS battery pack assembly."
+    canonical = "https://www.yominelectric.com/products?category=ccs-integrated-busbar"
+    ldName = "CCS Integrated Busbars"
+    ldDesc = "Yomin Electric CCS integrated busbar product category: cell contacting system busbars for EV battery modules and energy storage pack assembly."
+  },
+  @{
+    slug = "heavy-duty-busbar"
+    filter = "Heavy Duty Busbar"
+    title = "Heavy Duty Busbars for High Current | Yomin Electric"
+    desc = "Heavy duty copper busbars rated for high current applications up to 6300A. Fabricated to IEC 61439 standards. Custom bending, drilling, and plating."
+    canonical = "https://www.yominelectric.com/products?category=heavy-duty-busbar"
+    ldName = "Heavy Duty Busbars"
+    ldDesc = "Yomin Electric heavy duty busbar product category: high-current copper busbars for main distribution boards, generator connections, and industrial power systems."
   }
 )
 

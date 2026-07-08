@@ -14,8 +14,48 @@
       "statusCode": 301
     },
     {
-      "source": "/yominelectric-main/:path*",
-      "destination": "/",
+      "source": "/aluminum-busbar.html",
+      "destination": "/products?category=aluminum-busbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/flexible-busbar.html",
+      "destination": "/products?category=flexible-busbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/rigid-busbar.html",
+      "destination": "/products?category=rigid-busbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/energy-storage-busbar.html",
+      "destination": "/products?category=energy-storage-busbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/busbar-protection.html",
+      "destination": "/products?category=busbar-protection",
+      "statusCode": 301
+    },
+    {
+      "source": "/composite-laminated-busbar.html",
+      "destination": "/products?category=composite-laminated-busbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/ccs-integrated-busbar.html",
+      "destination": "/products?category=ccs-integrated-busbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/heavy-duty-busbar.html",
+      "destination": "/products?category=heavy-duty-busbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/busbar.html",
+      "destination": "/products?category=busbar",
       "statusCode": 301
     },
     {
