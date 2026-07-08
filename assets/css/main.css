@@ -41,6 +41,15 @@ nav.sc { background: rgba(13,13,13,.99); }
 .n-ctr a { text-decoration: none; color: var(--mt); font-size: 13px; font-weight: 500; letter-spacing: .3px; padding: 8px 14px; border-radius: 8px; transition: color .2s, background .2s; }
 .n-ctr a:hover, .n-ctr a.active { color: var(--tx); background: rgba(255,255,255,.05); }
 .n-ctr a.active { color: var(--ac); }
+/* Mega menu */
+.n-drop { position: relative }
+.n-mega { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(8px); background: var(--bgc); border: 1px solid var(--bds); border-radius: 14px; padding: 24px 28px; min-width: 680px; display: none; grid-template-columns: repeat(3,1fr); gap: 6px 32px; z-index: 300; box-shadow: 0 20px 60px rgba(0,0,0,.5); opacity: 0; transition: opacity .2s, transform .2s }
+.n-drop:hover .n-mega, .n-mega.show { display: grid; opacity: 1; transform: translateX(-50%) translateY(4px) }
+.n-mega a { display: flex; align-items: center; gap: 10px; padding: 9px 12px !important; border-radius: 8px !important; font-size: 12.5px !important; color: var(--mt); white-space: nowrap; transition: background .15s, color .15s }
+.n-mega a:hover { background: rgba(232,148,74,.1); color: var(--ac) !important }
+.mega-icon { font-size: 18px; flex-shrink: 0; width: 26px; text-align: center }
+.mega-name { flex: 1 }
+@media (max-width: 1024px) { .n-mega { display: none !important } .n-drop .n-arrow { display: none } }
 .n-rt { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .lsw { position: relative; }
 .lbtn { background: rgba(255,255,255,.06); border: 1px solid var(--bdr); color: var(--mt); padding: 7px 13px; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; letter-spacing: .5px; transition: all .2s; display: flex; align-items: center; gap: 6px; }

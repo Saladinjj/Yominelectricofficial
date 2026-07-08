@@ -95,6 +95,15 @@ nav.sc{background:rgba(13,13,13,.99)}
 .n-ctr{flex:1;display:flex;align-items:center;justify-content:center;gap:2px;list-style:none}
 .n-ctr a{text-decoration:none;color:var(--mt);font-size:13px;font-weight:500;letter-spacing:.3px;padding:8px 14px;border-radius:8px;transition:color .2s,background .2s}
 .n-ctr a:hover{color:var(--tx);background:rgba(255,255,255,.05)}
+/* Mega menu dropdown */
+.n-drop{position:relative}
+.n-mega{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(8px);background:var(--bgc);border:1px solid var(--bds);border-radius:14px;padding:24px 28px;min-width:680px;display:none;grid-template-columns:repeat(3,1fr);gap:6px 32px;z-index:300;box-shadow:0 20px 60px rgba(0,0,0,.5);opacity:0;transition:opacity .2s,transform .2s}
+.n-drop:hover .n-mega,.n-mega.show{display:grid;opacity:1;transform:translateX(-50%) translateY(4px)}
+.n-mega a{display:flex;align-items:center;gap:10px;padding:9px 12px !important;border-radius:8px !important;font-size:12.5px !important;color:var(--mt);white-space:nowrap;transition:background .15s,color .15s}
+.n-mega a:hover{background:rgba(232,148,74,.1);color:var(--ac) !important}
+.n-mega .mega-icon{font-size:18px;flex-shrink:0;width:26px;text-align:center}
+.n-mega .mega-name{flex:1}
+@media(max-width:1024px){.n-mega{display:none !important}.n-drop .n-arrow{display:none}}
 .n-rt{display:flex;align-items:center;gap:10px;flex-shrink:0}
 /* LANG */
 .lsw{position:relative;z-index:260;overflow:visible}
@@ -557,7 +566,24 @@ body.light .cert-sub{text-shadow:0 0 0.5px rgba(0,0,0,0.08)}
   </a>
   <ul class="n-ctr" role="menubar">
     <li role="none"><a href="/" class="active" role="menuitem">Home</a></li>
-    <li role="none"><a href="/products" role="menuitem" data-i18n="nav_products">Products</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">▾</span></a>
+      <div class="n-mega">
+        <a href="/products?category=energy-meter"><span class="mega-icon">⚡</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products?category=voltage-stabilizer-regulator"><span class="mega-icon">🔃</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products?category=current-transformer"><span class="mega-icon">🔄</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products?category=variac-transformer"><span class="mega-icon">⚙️</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products?category=screw-machine"><span class="mega-icon">🔩</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products?category=terminal-connector"><span class="mega-icon">🔌</span><span class="mega-name">Terminals & Connectors</span></a>
+        <a href="/products?category=solar-pv-products"><span class="mega-icon">☀️</span><span class="mega-name">Solar & PV Products</span></a>
+        <a href="/products?category=fuse-protection"><span class="mega-icon">⚠️</span><span class="mega-name">Fuses & Protection</span></a>
+        <a href="/products?category=voltage-protector"><span class="mega-icon">🛡️</span><span class="mega-name">Voltage Protectors</span></a>
+        <a href="/products?category=socket-wiring"><span class="mega-icon">🔧</span><span class="mega-name">Sockets & Wiring</span></a>
+        <a href="/products?category=tools-hardware"><span class="mega-icon">🛠️</span><span class="mega-name">Tools & Hardware</span></a>
+        <a href="/products?category=security-seal"><span class="mega-icon">🔒</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products?category=other"><span class="mega-icon">📦</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">🗂️</span><span class="mega-name">View All Products →</span></a>
+      </div>
+    </li>
     <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
     <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
     <li role="none"><a href="/blog" role="menuitem">Blog</a></li>
