@@ -204,7 +204,7 @@ foreach ($cat in $categories) {
   $content = $content -replace '<meta name="description" content="Browse[^"]*">', "<meta name=`"description`" content=`"$($cat.desc)`">"
 
   # 3) Canonical
-  $content = $content -replace '<link rel="canonical" href="https://www\.yominelectric\.com/products[^"]*" />', "<link rel=`"canonical`" href=`"$($cat.canonical)`" />"
+  $content = $content -replace '<link rel="canonical" href="https://www\.yominelectric\.com/products" />', "<link rel=`"canonical`" href=`"$($cat.canonical)`" />"
 
   # 4) Structured data
   $ldJson = @"

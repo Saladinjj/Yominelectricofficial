@@ -192,19 +192,67 @@
     }
   ],
   "routes": [
-    { "src": "/wap/(.*)", "status": 410 },
-    { "src": "/wap/(.*)\\.asp", "status": 410 },
-    { "src": "/api/(.*)", "dest": "/backend/server.js" },
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/about", "dest": "/about.html" },
-    { "src": "/contact", "dest": "/contact.html" },
-    { "src": "/products", "dest": "/products.html" },
-    { "src": "/product.html", "dest": "/products.html" },
-    { "src": "/product-details", "dest": "/product-details.html" },
-    { "src": "/process", "dest": "/process.html" },
-    { "src": "/solutions", "dest": "/solutions.html" },
-    { "src": "/blog", "dest": "/blog.html" },
-    { "src": "/video/company-overview", "dest": "/video/company-overview.html" },
-    { "src": "/(.*)", "dest": "/$1" }
+    {
+      "src": "/wap/(.*)",
+      "status": 410
+    },
+    {
+      "src": "/wap/(.*)\\.asp",
+      "status": 410
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/backend/server.js"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/about",
+      "dest": "/about.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/contact.html"
+    },
+    {
+      "src": "/products",
+      "dest": "/products.html"
+    },
+    {
+      "src": "/product.html",
+      "dest": "/products.html"
+    },
+    {
+      "src": "/product-details",
+      "dest": "/product-details.html"
+    },
+    {
+      "src": "/process",
+      "dest": "/process.html"
+    },
+    {
+      "src": "/solutions",
+      "dest": "/solutions.html"
+    },
+    {
+      "src": "/blog",
+      "dest": "/blog.html"
+    },
+    {
+      "src": "/video/company-overview",
+      "dest": "/video/company-overview.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1",
+      "check": true
+    },
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "dest": "/"
+    }
   ]
 }

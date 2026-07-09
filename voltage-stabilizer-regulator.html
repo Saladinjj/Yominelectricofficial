@@ -22,6 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Voltage Stabilizers & Regulators | Yomin Electric</title>
   <meta name="description" content="Factory-direct voltage stabilizers and automatic voltage regulators (AVR). Single & three phase, servo motor control, LED display, 50/60Hz. Home and industrial use. Low MOQ from China.">
+  <link rel="canonical" href="https://www.yominelectric.com/products?category=voltage-stabilizer-regulator" />
   <script>
   (function () {
     var SLUG = { 'energy meter': 'energy-meter', 'voltage stabilizer/regulator': 'voltage-stabilizer-regulator', 'current transformer': 'current-transformer', 'screw machine': 'screw-machine', 'screw machines': 'screw-machine', 'busbar': 'busbar', 'busbars': 'busbar', 'flexible busbar': 'flexible-busbar', 'rigid busbar': 'rigid-busbar', 'aluminum busbar': 'aluminum-busbar', 'composite laminated busbar': 'composite-laminated-busbar', 'ccs integrated busbar': 'ccs-integrated-busbar', 'heavy duty busbar': 'heavy-duty-busbar', 'energy storage busbar': 'energy-storage-busbar', 'busbar protection': 'busbar-protection', 'variac/transformer': 'variac-transformer', 'terminal & connector': 'terminal-connector', 'solar/pv products': 'solar-pv-products', 'fuse & protection': 'fuse-protection', 'voltage protector': 'voltage-protector', 'socket & wiring': 'socket-wiring', 'tools & hardware': 'tools-hardware', 'security seal': 'security-seal', 'other': 'other' };
@@ -45,7 +46,9 @@
       }
     }
     var canonUrl = 'https://www.yominelectric.com/products' + (slug ? '?category=' + slug : '') + (!slug && idParam ? '?id=' + encodeURIComponent(idParam) : '');
-    document.write('<link rel="canonical" href="' + canonUrl + '" />');
+    // Update static canonical if needed
+    var staticCanon = document.querySelector('link[rel="canonical"]');
+    if (staticCanon) staticCanon.href = canonUrl;
   })();
   </script>
 <meta property="og:title" content="Energy Meters, CTs and Voltage Regulators | Yomin Electric" />
