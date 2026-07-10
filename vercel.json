@@ -245,6 +245,22 @@
       "dest": "/video/company-overview.html"
     },
     {
+      "src": "/privacy-policy",
+      "dest": "/privacy-policy.html"
+    },
+    {
+      "src": "/shipping-policy",
+      "dest": "/shipping-policy.html"
+    },
+    {
+      "src": "/return-policy",
+      "dest": "/return-policy.html"
+    },
+    {
+      "src": "/terms-and-conditions",
+      "dest": "/terms-and-conditions.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1",
       "check": true
