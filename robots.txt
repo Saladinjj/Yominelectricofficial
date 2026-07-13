@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /temp/
+Disallow: /LibreChat/
+Disallow: /MARK/
+Disallow: /curl/
+Disallow: /隔离开关-英文版/
+Disallow: /*?category=other
+Disallow: /*?category=other$
 
 Sitemap: https://www.yominelectric.com/sitemap.xml
