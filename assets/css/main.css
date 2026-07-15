@@ -92,7 +92,7 @@ h2.stitle { font-family: var(--sf); font-size: clamp(28px, 4.5vw, 52px); line-he
 
 /* ─── PAGE HERO ─── */
 .page-hero { padding: 140px 60px 80px; background: var(--bgs); position: relative; overflow: hidden; }
-.page-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 20% 50%, rgba(232,148,74,.05) 0%, transparent 70%); pointer-events: none; }
+.page-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 20% 50%, rgba(232,148,74,.14) 0%, rgba(232,148,74,.03) 45%, transparent 75%); pointer-events: none; }
 .page-hero-in { position: relative; z-index: 1; max-width: 700px; }
 .ph-eyebrow { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--ac); margin-bottom: 16px; display: block; }
 .ph-title { font-family: var(--sf); font-size: clamp(36px, 5vw, 72px); line-height: .95; letter-spacing: -2px; color: var(--tx); margin-bottom: 20px; }
