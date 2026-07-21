@@ -387,6 +387,11 @@ function setLang(l) {
   document.body.classList.toggle('ar', isRTL);
   applyTranslations();
   updateLangUI();
+  // Reload to re-render product titles in new language
+  const onProductPage = document.querySelector('[class*="pcard"]') || document.querySelector('[class*="prod-grid"]');
+  if (onProductPage) {
+    location.reload();
+  }
 }
 
 function applyTranslations() {
