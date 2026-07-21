@@ -365,6 +365,8 @@ const T = window.__ymT; /* shared with index.html via window.__ymT */
 
 /* ─── STATE ─────────────────────────────────────────── */
 let currentLang = localStorage.getItem('ym_lang') || 'en';
+window.ymLang = currentLang;
+window.ymTr = function(pid, fallback) { return T[currentLang] && T[currentLang][pid] || fallback; };
 let storedTheme = localStorage.getItem('ym_theme');
 let autoTheme = (() => {
   const hour = new Date().getHours();
@@ -376,6 +378,7 @@ let currentTheme = storedTheme || autoTheme;
 function setLang(l) {
   if (!T[l]) return;
   currentLang = l;
+  window.ymLang = l;
   localStorage.setItem('ym_lang', l);
   const isRTL = l === 'ar';
   document.documentElement.lang = l;
