@@ -375,8 +375,9 @@ let autoTheme = (() => {
 let currentTheme = storedTheme || autoTheme;
 
 /* ─── LANGUAGE ──────────────────────────────────────── */
-function setLang(l) {
+function setLang(l, fromInit) {
   if (!T[l]) return;
+  const prevLang = currentLang;
   currentLang = l;
   window.ymLang = l;
   localStorage.setItem('ym_lang', l);
@@ -387,10 +388,10 @@ function setLang(l) {
   document.body.classList.toggle('ar', isRTL);
   applyTranslations();
   updateLangUI();
-  // Reload to re-render product titles in new language
-  const onProductPage = document.querySelector('[class*="pcard"]') || document.querySelector('[class*="prod-grid"]');
-  if (onProductPage) {
-    location.reload();
+  // Reload product pages only on manual language switch, not initial load
+  if (!fromInit && prevLang !== l) {
+    const onProductPage = document.querySelector('[class*="pcard"]') || document.querySelector('[class*="prod-grid"]');
+    if (onProductPage) location.reload();
   }
 }
 
@@ -549,5 +550,5 @@ function setTheme(t, fromAuto = false) {
 /* ─── INIT ───────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   setTheme(currentTheme, !storedTheme);
-  setLang(currentLang);
+  setLang(currentLang, true);
 });
