@@ -7,8 +7,6 @@
   <url><loc>https://www.yominelectric.com/about</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.yominelectric.com/contact</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.yominelectric.com/socket-wiring</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://www.yominelectric.com/aluminum-busbar</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://www.yominelectric.com/brass-busbar</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.yominelectric.com/privacy-policy</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://www.yominelectric.com/shipping-policy</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://www.yominelectric.com/return-policy</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
@@ -17,6 +15,7 @@
   <url><loc>https://www.yominelectric.com/products?category=screw-machine</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://www.yominelectric.com/products?category=energy-meter</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://www.yominelectric.com/products?category=voltage-stabilizer-regulator</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://www.yominelectric.com/products?category=socket-and-wiring</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://www.yominelectric.com/products?category=aluminum-busbar</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://www.yominelectric.com/products?category=busbar-protection</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
@@ -48,6 +47,19 @@
   <url><loc>https://www.yominelectric.com/products?category=voltage-stabilizer-regulator&amp;id=ym-0005</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.yominelectric.com/products?category=voltage-stabilizer-regulator&amp;id=ym-0006</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.yominelectric.com/products?category=voltage-stabilizer-regulator&amp;id=ym-0007</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting&amp;id=ym-el-2000</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting&amp;id=ym-el-2001</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting&amp;id=ym-el-2002</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting&amp;id=ym-el-2003</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting&amp;id=ym-el-2004</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting&amp;id=ym-el-2005</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting&amp;id=ym-el-2006</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting&amp;id=ym-el-2007</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting&amp;id=ym-el-2008</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting&amp;id=ym-el-2009</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting&amp;id=ym-el-2010</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting&amp;id=ym-el-2011</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.yominelectric.com/products?category=emergency-lighting&amp;id=ym-el-2012</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.yominelectric.com/products?category=socket-and-wiring&amp;id=ym-sw-wallmountedangledsocketyme001</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.yominelectric.com/products?category=socket-and-wiring&amp;id=ym-sw-wallmountedangledsocketyme002</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.yominelectric.com/products?category=socket-and-wiring&amp;id=ym-sw-wallmountedangledsocketyme004</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
