@@ -5,6 +5,22 @@ Disallow: /scripts/
 Disallow: /LibreChat/
 Disallow: /image_generate/
 Disallow: /LINKEDIN/
+Disallow: /MARK/
+Disallow: /generative designs/
+Disallow: /excel sheets data/
+Disallow: /curl/
+Disallow: /plans/
+Disallow: /backend/
+Disallow: /data/
 Disallow: /*.asp
+Disallow: /*.py
+Disallow: /*.json
+Disallow: /*.tsv
+Disallow: /pro_ok.asp
+Disallow: /pro_s.asp
+
+# Crawl-delay for polite crawling
+User-agent: PetalBot
+Crawl-delay: 10
 
 Sitemap: https://www.yominelectric.com/sitemap.xml
