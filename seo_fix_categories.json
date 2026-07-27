@@ -1,0 +1,45 @@
+﻿import re, json, os
+
+CATEGORIES = {
+    "energy-meter.html": {
+        "title": "Energy Meters — Single & Three Phase DIN Rail kWh Meter Supplier",
+        "desc": "ISO9001 factory-direct single and three phase energy meters. STS prepaid, DIN rail, RS485 MODBUS, LCD backlit. CE & IEC 62053 certified. Low MOQ 100 units. Global shipping.",
+        "og_title": "Energy Meters — Single & Three Phase DIN Rail Meter | Yomin Electric",
+        "og_desc": "Factory-direct energy meters from China: single phase, three phase, STS prepaid keypad. CE, IEC 62053 certified. RS485 MODBUS. Low MOQ. Ship worldwide.",
+        "og_url": "https://www.yominelectric.com/products?category=energy-meter",
+        "h1": "Energy Meters",
+        "seo_text": """<h3>DIN Rail Single Phase Energy Meter</h3><p>Yomin Electric produces precision single-phase energy meters built around Class 1 accuracy and IEC 62053-21 compliance. Each unit features backlit LCD, pulse output, and RS485 MODBUS connectivity — ideal for residential and commercial sub-metering across Africa, Middle East, and Asia. With our ISO9001 18,000m² facility and in-house calibration labs, we deliver consistent quality at factory-direct pricing with OEM/ODM support from 100 units.</p>
+<h3>Three Phase Smart Energy Meter</h3><p>Our three-phase meters support direct-connect up to 100A and CT-operated configurations for larger loads. IEC 62053-22 Class 0.5S accuracy makes them suitable for revenue-grade applications in industrial facilities and utility deployments. Available with RS485, Zigbee, GPRS/4G, and WiFi communication modules for seamless AMI/AMR integration.</p>"""
+    },
+    "voltage-stabilizer-regulator.html": {
+        "title": "Voltage Stabilizers & Regulators — AVR, Servo Motor | Yomin Electric",
+        "desc": "Automatic voltage stabilizers and regulators: single & three phase, relay type and servo motor control. 0.5kVA-100kVA. Home & industrial use. CE & ISO9001. Factory direct from China.",
+        "og_title": "Voltage Stabilizers & Regulators — AVR, Servo Motor | Yomin Electric",
+        "og_desc": "Automatic voltage regulators (AVR) for home and industry. Relay type, servo motor, wall-mount & floor-standing. 0.5-100kVA. Factory-direct pricing with low MOQ. Global shipping.",
+        "og_url": "https://www.yominelectric.com/products?category=voltage-stabilizer-regulator",
+        "h1": "Voltage Stabilizers & Regulators",
+        "seo_text": """<h3>Relay-Type Automatic Voltage Regulator (AVR)</h3><p>Yomin Electric manufactures CPU-controlled relay-type AVRs from 500VA to 30kVA for residential and light commercial use. These stabilizers use microprocessor-based switching to maintain stable output voltage during grid fluctuations — protecting refrigerators, air conditioners, computers, and medical equipment. Available as wall-mount and portable designs with LED/LCD display, overload protection, and time-delay restart. CE certified, shipped from our Wenzhou factory with OEM branding options from 50 units.</p>
+<h3>Servo Motor Voltage Stabilizer</h3><p>Our TND/SVC series servo motor stabilizers provide precise ±1% voltage regulation for industrial machinery, CNC equipment, printing presses, and laboratory instruments. Single-phase to 30kVA and three-phase to 100kVA configurations available. Carbon brush servo mechanism with continuous adjustment ensures smooth, spike-free output. Built with pure copper windings, high-grade silicon steel cores, and industrial-grade enclosures — trusted by factories across 95+ countries.</p>"""
+    },
+    "current-transformer.html": {
+        "title": "Current Transformers (CT) — Split Core, LV, Metering Class 0.5 | Yomin",
+        "desc": "Low voltage current transformers: split core, molded case, busbar type. 50A-5000A primary, Class 0.2S/0.5/1 accuracy. IEC 61869-2. OEM/ODM available. Factory direct from China.",
+        "og_title": "Current Transformers — Split Core, LV, Metering CT | Yomin Electric",
+        "og_desc": "Precision LV current transformers: 5A, 1A, 333mV output. Split core, molded case, busbar types. 50A-5000A. Class 0.5, IEC 61869-2. Factory-direct pricing. Global shipping.",
+        "og_url": "https://www.yominelectric.com/products?category=current-transformer",
+        "h1": "Current Transformers",
+        "seo_text": """<h3>Low Voltage Current Transformers for Metering</h3><p>Yomin Electric produces LV current transformers in molded case, rectangular window, and busbar-type configurations — rated from 50A to 5000A primary with 5A or 1A secondary output. Every CT is tested for IEC 61869-2 Class 0.5 or Class 0.2S accuracy at our in-house calibration lab. These CTs are used globally by panel builders, energy management companies, and utility metering projects for accurate load monitoring and billing. Custom cable lengths, terminal types, and branded enclosures available at low MOQ from 50 units.</p>
+<h3>Split Core CT for Retrofit Installations</h3><p>Our hinged split-core CTs clamp around existing cables without disconnecting conductors — designed for building energy audits, retrofit sub-metering, and BMS integration. Compatible with all major meter brands via 333mV, 1A, or 5A output options. Accuracy Class 0.5 or 1.0, with primary ranges from 5A to 5000A. ISO9001-certified manufacturing ensures consistent quality for system integrators in 95+ countries.</p>"""
+    },
+    "variac-transformer.html": {
+        "title": "Variac Transformers — Variable AC Voltage 0.5-30kVA | Yomin Electric",
+        "desc": "Single & three phase Variac variable transformers. 0.5kVA-30kVA, 0-250V or 0-430V output. Copper winding, analog/digital meter. Lab & industrial use. OEM available.",
+        "og_title": "Variac Transformers — Variable AC Voltage 0.5-30kVA | Yomin Electric",
+        "og_desc": "Variable AC voltage transformers (Variac) for lab testing, industrial control, R&D. Single & three phase, 0.5-30kVA. Copper winding. Factory-direct from China. Low MOQ.",
+        "og_url": "https://www.yominelectric.com/products?category=variac-transformer",
+        "h1": "Variac Transformers",
+        "seo_text": """<h3>Single Phase Variac Transformer (TDGC2 Series)</h3><p>Yomin Electric's TDGC2 series provides smooth, continuous 0-250V AC output from 0.5kVA to 30kVA. Each unit features pure copper windings on high-grade toroidal cores with precision carbon brush assemblies for long service life. Analog or digital voltmeter display, ventilated metal enclosure, and overload protection. Used in university labs, R&D centers, industrial test benches, and equipment OEMs worldwide. CE and ISO9001 certified, available with custom voltage ranges, plug types, and OEM branding from just 10 units.</p>
+<h3>Three Phase Variac Transformer (TSGC2 Series)</h3><p>Three-phase variable transformers rated 3kVA to 60kVA with 0-430V output. Gang-mounted single-phase units on a common shaft for synchronized voltage adjustment across all three phases. Ideal for motor testing, three-phase equipment calibration, and industrial process control. Built at our Wenzhou factory with German-grade silicon steel cores for consistent performance and low temperature rise.</p>"""
+    },
+}
+print("SEO batch fix script ready -", len(CATEGORIES), "categories defined")
