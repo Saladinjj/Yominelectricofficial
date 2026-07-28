@@ -45,6 +45,11 @@
         return;
       }
     }
+    var productParam = p.get('product');
+    if (idParam && !productParam) {
+      var rMeta = document.querySelector('meta[name="robots"]');
+      if (rMeta) rMeta.content = 'noindex, follow';
+    }
     var canonUrl = 'https://www.yominelectric.com/products' + (slug ? '?category=' + slug : '') + (!slug && idParam ? '?id=' + encodeURIComponent(idParam) : '');
     // Update static canonical if needed
     var staticCanon = document.querySelector('link[rel="canonical"]');

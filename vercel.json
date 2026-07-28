@@ -14,6 +14,17 @@
   ],
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "smallclassid"
+        }
+      ],
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
       "source": "/:path*",
       "has": [
         {
@@ -67,6 +78,11 @@
     {
       "source": "/busbar.html",
       "destination": "/products?category=busbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/socket-wiring",
+      "destination": "/products?category=socket-wiring",
       "statusCode": 301
     },
     {
