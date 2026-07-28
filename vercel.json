@@ -490,6 +490,34 @@
       "dest": "/terms-and-conditions.html"
     },
     {
+      "src": "/guide/energy-meter-types",
+      "dest": "/guide/energy-meter-types.html"
+    },
+    {
+      "src": "/guide/current-transformer-selection",
+      "dest": "/guide/current-transformer-selection.html"
+    },
+    {
+      "src": "/guide/voltage-stabilizer-buying-guide",
+      "dest": "/guide/voltage-stabilizer-buying-guide.html"
+    },
+    {
+      "src": "/compare/single-phase-vs-three-phase-meter",
+      "dest": "/compare/single-phase-vs-three-phase-meter.html"
+    },
+    {
+      "src": "/compare/prepaid-vs-postpaid-meter",
+      "dest": "/compare/prepaid-vs-postpaid-meter.html"
+    },
+    {
+      "src": "/guide",
+      "dest": "/guide/energy-meter-types.html"
+    },
+    {
+      "src": "/compare",
+      "dest": "/compare/single-phase-vs-three-phase-meter.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1",
       "check": true
