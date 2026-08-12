@@ -87,14 +87,15 @@ a{text-decoration:none}html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--tx);font-family:var(--ss);font-size:16px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 body.ar{font-family:'Noto Sans Arabic',var(--ss),sans-serif}
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;padding:0 36px;height:68px;background:rgba(13,13,13,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--bds);transition:background var(--tr);gap:0}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 36px;height:68px;background:rgba(13,13,13,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--bds);transition:background var(--tr)}
 nav.sc{background:rgba(13,13,13,.99)}
 .n-logo{display:flex;align-items:center;gap:8px;text-decoration:none;flex-shrink:0}
 .n-logo img{height:44px;width:auto;object-fit:contain;filter:brightness(1.1)}
 .n-logo-fb{display:none;font-family:var(--sf);font-size:17px;color:var(--tx)}
-.n-ctr{flex:1;display:flex;align-items:center;justify-content:center;gap:2px;list-style:none}
+.n-ctr{position:absolute;left:48%;transform:translateX(-50%);display:flex;align-items:center;gap:2px;list-style:none}
 .n-ctr a{text-decoration:none;color:var(--mt);font-size:13px;font-weight:500;letter-spacing:.3px;padding:8px 14px;border-radius:8px;transition:color .2s,background .2s}
-.n-ctr a:hover{color:var(--tx);background:rgba(255,255,255,.05)}
+.n-ctr a:hover,.n-ctr a.active{color:var(--tx);background:rgba(255,255,255,.05)}
+.n-ctr a.active{color:var(--ac)}
 /* Mega menu dropdown */
 .n-drop{position:relative}
 .n-mega{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(8px);background:var(--bgc);border:1px solid var(--bds);border-radius:14px;padding:24px 28px;min-width:680px;display:none;grid-template-columns:repeat(3,1fr);gap:6px 32px;z-index:300;box-shadow:0 20px 60px rgba(0,0,0,.5);opacity:0;transition:opacity .2s,transform .2s}
@@ -328,7 +329,8 @@ body.light .lbtn{background:rgba(0,0,0,.05);border-color:rgba(0,0,0,.12);color:#
 body.light .ldrop{background:#fff;border-color:rgba(0,0,0,.1)}
 body.light .lopt:hover{background:rgba(0,0,0,.04);color:#1a1a1a}
 body.light .n-ctr a{color:#555}
-body.light .n-ctr a:hover{color:#1a1a1a;background:rgba(0,0,0,.05)}
+body.light .n-ctr a:hover,body.light .n-ctr a.active{color:#1a1a1a;background:rgba(0,0,0,.05)}
+body.light .n-ctr a.active{color:var(--ac)}
 body.light .marq{border-color:rgba(0,0,0,.1)}
 body.light .sband{background:#e8e6e1;border-color:rgba(0,0,0,.08)}
 body.light .sgrid{background:rgba(0,0,0,.06)}
@@ -391,8 +393,7 @@ body.light .tpbtn-act{background:rgba(196,118,47,.15) !important;border-color:rg
 @media(max-width:768px){.cert-grid{grid-template-columns:repeat(3,1fr)}.cert-img-row{grid-template-columns:repeat(3,1fr)}.store-grid{grid-template-columns:repeat(2,1fr)}.gr-regions{grid-template-columns:1fr 1fr}.gr-sec{padding:60px 24px}}
 @media(max-width:480px){.cert-grid{grid-template-columns:repeat(2,1fr)}.cert-img-row{grid-template-columns:repeat(2,1fr)}.store-grid{grid-template-columns:1fr}.wa-btn{bottom:20px;right:20px}.theme-btn{bottom:84px;right:20px}.gr-regions{grid-template-columns:1fr}.gr-sec{padding:48px 16px}}
 
-/* Desktop nav position for homepage with split hero */
-@media(min-width:961px){body:not(.page-nav) .n-ctr{left:auto!important;right:160px!important;transform:none!important}}
+/* Nav menu is centered site-wide (matches main.css / blog pages) */
 
 /* RESPONSIVE */
 @media(max-width:1200px){.pg{grid-template-columns:repeat(4,1fr)}section{padding:80px 40px}.gh{padding:0 40px}.sband{padding:70px 40px}footer{padding:70px 40px 36px}.fmq{margin:0 -40px 50px}}
@@ -1329,7 +1330,10 @@ function setTheme(light) {
   document.getElementById('btnLight').classList.toggle('tpbtn-act', light);
   localStorage.setItem('ym_theme', light ? 'light' : 'dark');
 }
-setTheme(localStorage.getItem('ym_theme') === 'light');
+var storedTheme = localStorage.getItem('ym_theme');
+var hour = new Date().getHours();
+var autoTheme = (hour >= 6 && hour < 18) ? 'light' : 'dark';
+setTheme((storedTheme || autoTheme) === 'light');
 
 // ─── WECHAT MODAL ────────────────────────────────────────────
 const wcModalIndex = document.getElementById('wc-modal-index');
