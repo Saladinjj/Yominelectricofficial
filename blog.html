@@ -223,15 +223,14 @@ nav.sc{background:rgba(13,13,13,.99)}
 .meta-text .read-time{font-size:11px;color:var(--dm)}
 
 /* ─── POST GRID ─── */
-.post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:40px}
+.post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:40px}
 .post-card{background:var(--bgc);border:1px solid var(--bds);border-radius:14px;overflow:hidden;transition:transform var(--tr),border-color var(--tr),box-shadow var(--tr);display:flex;flex-direction:column}
 .post-card:hover{transform:translateY(-5px);border-color:rgba(232,148,74,.22);box-shadow:0 16px 48px rgba(0,0,0,.4)}
-.post-card-img{width:100%;height:140px;background:linear-gradient(135deg,var(--bgc2),var(--sur));display:flex;align-items:center;justify-content:center;font-size:42px;position:relative;overflow:hidden}
+.post-card-img{width:100%;height:210px;background:linear-gradient(135deg,var(--bgc2),var(--sur));display:flex;align-items:center;justify-content:center;font-size:42px;position:relative;overflow:hidden}
 .post-card-img::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(232,148,74,.06) 0%,transparent 70%)}
-.post-card-body{padding:16px 18px 18px;flex:1;display:flex;flex-direction:column}
-.post-card-body .tag-pill{display:inline-block;font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:14px;width:fit-content;margin-bottom:10px}
-.post-card-body h3{font-size:14px;font-weight:600;color:var(--tx);line-height:1.35;margin-bottom:8px}
-.post-card-body .excerpt{font-size:12px;color:var(--mt);line-height:1.6;margin-bottom:14px;flex:1}
+.post-card-body{padding:20px 22px 22px;flex:1;display:flex;flex-direction:column}
+.post-card-body h3{font-size:15px;font-weight:600;color:var(--tx);line-height:1.4;margin-bottom:10px}
+.post-card-body .excerpt{font-size:13px;color:var(--mt);line-height:1.65;margin-bottom:16px;flex:1}
 .post-card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
 .post-card-author{display:flex;align-items:center;gap:8px}
 .post-card-author .avatar-circle-sm{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--ac),var(--ac2));display:flex;align-items:center;justify-content:center;font-family:var(--sf);font-size:11px;color:#000;font-weight:700;flex-shrink:0}
@@ -438,26 +437,6 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
 
 .wa-btn{display:none}
 </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  "name": "Nepal Container Loading: Current Transformers Shipment",
-  "description": "Video documentation of the container loading process for primary and secondary current transformers bound for Nepal.",
-  "thumbnailUrl": "https://www.yominelectric.com/assets/images/blog/nepal-loading/Weixin%20Image_20260623145546_4_9.jpg",
-  "uploadDate": "2026-06-23T14:55:46+08:00",
-  "contentUrl": "https://www.yominelectric.com/assets/images/blog/nepal-loading/d200ac10f402bb3f751ecfa841217c5b.mp4",
-  "embedUrl": "https://www.yominelectric.com/blog-nepal-loading",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Yomin Electric Co., Ltd.",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.yominelectric.com/logo_transparent.png"
-    }
-  }
-}
-</script>
 </head>
 <body>
 <a href="#main-content" class="skiplink" data-i18n="blog_skip">Skip to main content</a>
@@ -547,29 +526,6 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
 <div class="blog-main">
 
 <div class="blog-content">
-
-  <!-- FEATURED POST — Nepal Container Loading -->
-  <a href="/blog-nepal-loading" style="display:block;text-decoration:none;color:inherit">
-  <article class="featured-post" data-category="shipments">
-    <div class="featured-img-wrap" style="padding:0;overflow:hidden">
-      <span class="featured-live-badge" data-i18n="blog_live_badge"><span class="pulse-dot"></span>Just Shipped</span>
-      <video src="/assets/images/blog/nepal-loading/d200ac10f402bb3f751ecfa841217c5b.mp4" style="width:100%;height:100%;object-fit:cover;position:relative;z-index:1" autoplay muted loop playsinline onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"></video>
-      <div class="featured-img-placeholder" style="display:none">🚢</div>
-    </div>
-    <div class="featured-info">
-      <span class="tag-pill tag-shipments" data-i18n="cat_shipments">Shipments</span>
-      <h2 data-i18n="blog_feat_title">Nepal Container Loading: Primary &amp; Secondary Current Transformers Shipped</h2>
-      <p class="excerpt" data-i18n="blog_feat_excerpt">Multiple containers of primary and secondary current transformers loaded and dispatched to Nepal. Complete shipment with detailed loading photos, inspection videos, and export documentation.</p>
-      <div class="featured-meta">
-        <div class="avatar-circle">LG</div>
-        <div class="meta-text">
-          <div class="team-name" data-i18n="team_lg">Logistics Team</div>
-          <div class="read-time">3 min read · June 23, 2026</div>
-        </div>
-      </div>
-    </div>
-  </article>
-  </a>
 
   <!-- POST GRID -->
   <div class="post-grid" id="postGrid">
@@ -904,27 +860,6 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
       </div>
     </article>
 
-    <!-- Post 13 - Shipments: Nepal Transformer Loading -->
-    <a href="/blog-nepal-loading" style="display:block;text-decoration:none;color:inherit">
-    <article class="post-card" data-category="shipments">
-      <div class="post-card-img" style="padding:0;overflow:hidden">
-        <img src="/assets/images/blog/nepal-loading/Weixin%20Image_20260623145555_8_9.jpg" alt="Nepal container loading" style="width:100%;height:100%;object-fit:cover" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent='🚢'">
-      </div>
-      <div class="post-card-body">
-        <span class="tag-pill tag-shipments" data-i18n="cat_shipments">Shipments</span>
-        <h3 data-i18n="blog_p13_title">Nepal Container Loading: Primary &amp; Secondary Current Transformers Shipped</h3>
-        <p class="excerpt" data-i18n="blog_p13_excerpt">Multiple containers of primary and secondary current transformers loaded and shipped to Nepal. Detailed photos and inspection videos show the full loading process and quality verification.</p>
-        <div class="post-card-footer">
-          <div class="post-card-author">
-            <div class="avatar-circle-sm">LG</div>
-            <span class="team-sm" data-i18n="team_lg">Logistics Team</span>
-          </div>
-          <span class="post-card-read" data-i18n="blog_read_more">Read More →</span>
-        </div>
-      </div>
-    </article>
-    </a>
-
   </div>
 
   <!-- PAGINATION -->
@@ -955,15 +890,6 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
   <!-- Popular Posts -->
   <div class="sidebar-widget">
     <h4 data-i18n="blog_popular">Popular Posts</h4>
-    <a href="/blog-nepal-loading" style="text-decoration:none;color:inherit">
-    <div class="popular-post">
-      <div class="pp-thumb">🚢</div>
-      <div class="pp-info">
-        <h5>Nepal Container Loading: CTs Shipped</h5>
-        <span>3 min read · June 23</span>
-      </div>
-    </div>
-    </a>
     <div class="popular-post">
       <div class="pp-thumb">🔬</div>
       <div class="pp-info">
