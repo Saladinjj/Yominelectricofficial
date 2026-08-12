@@ -8,3 +8,20 @@ Thumbs.db
 .claude/launch.json
 
 .vercel
+.opencode/
+.cursor/
+
+# Scratch / generated output (not part of the website)
+media-output/
+screenshots/
+temp_images/
+temp_pins/
+curl/
+-L/
+-o/
+-p/
+socket/
+Socket Box English Detail Page/
+隔离开关-英文版/
+LibreChat/
+
