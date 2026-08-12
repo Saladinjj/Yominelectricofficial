@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<meta name="p:domain_verify" content="744fec106751115b25bc974541f1541a"/>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Is a Current Transformer? Explained in Plain Language | Zhejiang Yomin Electric</title>
+<meta name="description" content="What is a current transformer and why does every accurate meter need one? A simple, visual explanation of CTs, ratios, and how they protect equipment.">
+<link rel="canonical" href="https://www.yominelectric.com/blog/what-is-a-current-transformer">
+<meta property="og:title" content="What Is a Current Transformer? Explained in Plain Language">
+<meta property="og:description" content="A simple explanation of current transformers: what they are, how they work, where they are used, and why accuracy classes matter.">
+<meta property="og:url" content="https://www.yominelectric.com/blog/what-is-a-current-transformer">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/blog-what-is-a-current-transformer/hero.jpg">
+<meta property="og:site_name" content="Yomin Electric">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Prepaid vs Postpaid Electricity Meters: Which One Is Better for You?">
+<meta name="twitter:description" content="Compare prepaid (pay-as-you-go) and postpaid electricity meters — how they work, pros and cons, and which suits homes, landlords, and utilities.">
+<meta name="twitter:image" content="https://www.yominelectric.com/assets/images/blog/blog-prepaid-vs-postpaid-meters/hero.jpg">
+<meta name="robots" content="index, follow">
+<meta name="google-site-verification" content="003d37053b3f964e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is a Current Transformer? Explained in Plain Language",
+    "url": "https://www.yominelectric.com/blog/what-is-a-current-transformer",
+    "datePublished": "2026-07-28",
+    "author": { "@type": "Person", "name": "Engineering Department" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Zhejiang Yomin Electric Co., Ltd.",
+      "url": "https://www.yominelectric.com/"
+    },
+    "description": "A simple explanation of current transformers: what they are, how they work, where they are used, and why accuracy classes matter.",
+    "image": "https://www.yominelectric.com/assets/images/blog/blog-what-is-a-current-transformer/hero.jpg",
+    "keywords": ["what is a current transformer", "current transformer explained", "how current transformers work", "CT transformer", "current transformer ratio"]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why do current transformers have a ratio like 500/5?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The ratio describes how much the transformer scales the current down. A 500/5 CT means that when 500 amperes flow in the main cable, exactly 5 amperes flow in the secondary circuit — a safe, measurable level for meters and relays." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do current transformers need their own power supply?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Measuring CTs are passive devices — the current flowing in the cable creates the signal by itself. This is why they work even in old installations with no auxiliary power." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between measuring and protection CTs?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Measuring CTs are optimized for accuracy at normal loads (for billing and monitoring). Protection CTs are designed to stay accurate even at very high fault currents, so protective relays can detect problems quickly." }
+      },
+      {
+        "@type": "Question",
+        "name": "What does accuracy class 0.5 mean on a current transformer?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It means the CT reproduces the primary current with a maximum error of 0.5 percent at rated conditions. Class 0.5 and better are recommended for revenue metering, while Class 1 is acceptable for general monitoring." }
+      }
+    ]
+  }
+]
+</script>
+
+<style>
+:root{--bg:#0d0d0d;--bgs:#141414;--bgc:#181818;--bgc2:#1f1f1f;--sur:#242424;--bdr:rgba(255,255,255,.08);--bds:rgba(255,255,255,.04);--tx:#f0ede8;--mt:#888;--dm:#555;--ac:#E8944A;--ac2:#F2A968;--sf:'DM Serif Display',Georgia,serif;--ss:'DM Sans',system-ui,sans-serif;--r:16px;--tr:.4s cubic-bezier(.25,.46,.45,.94)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:var(--ss);font-size:16px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 36px;height:68px;background:rgba(13,13,13,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--bds);transition:background var(--tr)}
+nav.sc{background:rgba(13,13,13,.99)}
+.n-logo{display:flex;align-items:center;gap:8px;text-decoration:none;flex-shrink:0}
+.n-logo img{height:44px;width:auto;object-fit:contain;filter:brightness(1.1)}
+.n-ctr{position:absolute;left:48%;transform:translateX(-50%);display:flex;align-items:center;gap:2px;list-style:none}
+.n-ctr a{color:var(--mt);font-size:13px;font-weight:500;letter-spacing:.3px;padding:8px 14px;border-radius:8px;transition:color .2s,background .2s}
+.n-ctr a:hover,.n-ctr a.active{color:var(--tx);background:rgba(255,255,255,.05)}
+.n-ctr a.active{color:var(--ac)}
+.n-rt{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.theme-pair{display:flex;background:rgba(255,255,255,.06);border:1px solid var(--bdr);border-radius:8px;overflow:hidden}
+.theme-btn-s{width:30px;height:30px;display:flex;align-items:center;justify-content:center;background:none;border:none;cursor:pointer;font-size:13px;transition:background .2s,color .2s;color:var(--mt)}
+.theme-btn-s.active{background:var(--ac);color:#000}
+.theme-btn-s:not(.active):hover{color:var(--tx);background:rgba(255,255,255,.05)}
+.lopt:hover{background:rgba(255,255,255,.06);color:var(--tx)}
+.lopt.act{color:var(--ac)}
+.ncta{background:var(--ac);color:#000;border:none;padding:9px 20px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;text-decoration:none;white-space:nowrap}
+.ncta:hover{background:var(--ac2)}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.ham span{width:22px;height:1.5px;background:var(--tx)}
+.mob{position:fixed;inset:0;z-index:300;background:rgba(13,13,13,.98);backdrop-filter:blur(20px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mob.op{opacity:1;pointer-events:all}
+.mob a{font-family:var(--sf);font-size:32px;color:var(--tx)}
+.mob a:hover{color:var(--ac)}
+.mob-x{position:absolute;top:22px;right:24px;background:none;border:none;color:var(--mt);font-size:26px;cursor:pointer}
+
+.blog-hero{padding:140px 60px 80px;position:relative;overflow:hidden;background:var(--bgs);text-align:center}
+.blog-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 60% at 50% 40%,rgba(232,148,74,.06) 0%,transparent 70%);pointer-events:none}
+.bh-breadcrumb{font-size:12px;color:var(--dm);margin-bottom:20px;position:relative;z-index:1}
+.bh-breadcrumb a{color:var(--ac);transition:color .2s}
+.bh-breadcrumb a:hover{color:var(--ac2)}
+.bh-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(52,152,219,.12);color:#3498db;border:1px solid rgba(52,152,219,.25);margin-bottom:18px;position:relative;z-index:1}
+.bh-title{font-family:var(--sf);font-size:clamp(30px,4.5vw,54px);line-height:1.1;letter-spacing:-1.5px;color:var(--tx);margin-bottom:20px;position:relative;z-index:1;max-width:820px;margin-left:auto;margin-right:auto}
+.bh-meta{display:flex;align-items:center;justify-content:center;gap:16px;font-size:13px;color:var(--mt);position:relative;z-index:1;flex-wrap:wrap}
+.bh-meta .avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--ac),var(--ac2));display:flex;align-items:center;justify-content:center;font-family:var(--sf);font-size:16px;color:#000;font-weight:700}
+.bh-meta .divider{width:4px;height:4px;border-radius:50%;background:var(--dm)}
+
+.content-section{padding:60px 60px;max-width:960px;margin:0 auto}
+.content-section h2{font-family:var(--sf);font-size:28px;color:var(--tx);margin:44px 0 16px;letter-spacing:-.5px}
+.content-section h2:first-of-type{margin-top:0}
+.content-section h3{font-size:17px;color:var(--tx);margin:24px 0 10px;font-weight:600}
+.content-section p{font-size:15px;color:var(--mt);line-height:1.85;margin-bottom:20px}
+.content-section strong{color:var(--tx)}
+.content-section ul{margin:0 0 20px 0;color:var(--mt);font-size:15px;line-height:2;text-align:left;padding-left:20px}
+.content-section ul li{margin-bottom:4px}
+.content-section ul li::marker{color:var(--ac)}
+.content-section a{color:var(--ac);border-bottom:1px solid rgba(232,148,74,.3);transition:color .2s}
+.content-section a:hover{color:var(--ac2)}
+.hero-img{width:100%;max-width:820px;max-height:400px;object-fit:cover;border-radius:16px;margin:0 auto 20px;display:block;border:1px solid var(--bds)}
+
+.compare-box{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:28px 0}
+.cmp-card{background:var(--bgc);border:1px solid var(--bds);border-radius:14px;padding:24px}
+.cmp-card h3{font-size:16px;font-weight:600;color:var(--tx);margin-bottom:12px}
+.cmp-card ul{margin:0;padding-left:18px;font-size:13px;color:var(--mt);line-height:1.9}
+.cmp-card ul li::marker{color:var(--ac)}
+.cmp-good{color:#2ecc71;font-weight:600}
+.cmp-bad{color:#e74c3c;font-weight:600}
+
+.faq-item{background:var(--bgc);border:1px solid var(--bds);border-radius:12px;padding:20px 24px;margin-bottom:14px;text-align:left}
+.faq-item h3{font-size:15px;font-weight:600;color:var(--tx);margin:0 0 8px}
+.faq-item p{font-size:14px;color:var(--mt);line-height:1.75;margin:0}
+
+.cta-section{padding:60px;background:var(--bgs);border-top:1px solid var(--bds);text-align:center}
+.cta-section h2{font-family:var(--sf);font-size:32px;color:var(--tx);margin-bottom:12px}
+.cta-section p{color:var(--mt);font-size:14px;margin-bottom:24px}
+.cta-btn{display:inline-flex;align-items:center;gap:8px;background:var(--ac);color:#000;padding:14px 32px;border-radius:10px;font-size:14px;font-weight:700;transition:background .2s,transform .2s}
+.cta-btn:hover{background:var(--ac2);transform:translateY(-2px)}
+
+footer{padding:48px 60px;border-top:1px solid var(--bds);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
+.ft-brand-n{font-family:var(--sf);font-size:20px;color:var(--tx)}
+.ft-sub{font-size:12px;color:var(--dm)}
+.ft-links{display:flex;gap:20px;flex-wrap:wrap}
+.ft-links a{font-size:13px;color:var(--mt);transition:color .2s}
+.ft-links a:hover{color:var(--ac)}
+
+.float-btns{position:fixed;bottom:28px;right:28px;z-index:500;display:flex;flex-direction:column;gap:12px}
+.float-btn{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,.5);transition:transform .25s;text-decoration:none;border:none;cursor:pointer}
+.float-btn:hover{transform:translateY(-4px) scale(1.05)}
+.float-btn-wa{background:#25D366}
+.float-btn-wc{background:#07C160}
+.wc-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);z-index:800;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s}
+.wc-modal-overlay.op{opacity:1;pointer-events:all}
+.wc-modal{background:var(--bgc);border:1px solid var(--bdr);border-radius:20px;padding:36px 32px 28px;text-align:center;max-width:340px;width:calc(100% - 48px);box-shadow:0 24px 80px rgba(0,0,0,.6)}
+.wc-modal-icon{margin-bottom:12px;font-size:36px}
+.wc-modal-title{font-family:var(--sf);font-size:20px;color:var(--tx);margin-bottom:6px}
+.wc-modal-sub{font-size:13px;color:var(--mt);margin-bottom:20px;line-height:1.5}
+.wc-qr-wrap{width:140px;height:140px;margin:0 auto 20px;border-radius:12px;overflow:hidden;border:1px solid var(--bds)}
+.wc-qr-wrap img{width:100%;height:100%;object-fit:cover}
+.wc-modal-close{background:rgba(255,255,255,.07);border:1px solid var(--bdr);color:var(--mt);padding:9px 28px;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s}
+.wc-modal-close:hover{color:var(--tx);background:rgba(255,255,255,.12)}
+
+/* LIGHT MODE */
+body.light{--bg:#f8f7f4;--bgs:#efefeb;--bgc:#ffffff;--bgc2:#f2f0ec;--sur:#e5e3de;--bdr:rgba(0,0,0,0.1);--bds:rgba(0,0,0,0.07);--tx:#1a1a1a;--mt:#555;--dm:#888;--ac:#C4762F;--ac2:#B06B2A}
+body.light nav{background:rgba(248,247,244,.92);border-bottom-color:rgba(0,0,0,.1)}
+body.light nav.sc{background:rgba(248,247,244,.99)}
+body.light .n-ctr a{color:#555}
+body.light .n-ctr a:hover,body.light .n-ctr a.active{color:#1a1a1a;background:rgba(0,0,0,.05)}
+body.light .n-ctr a.active{color:var(--ac)}
+body.light .blog-hero::before{background:radial-gradient(ellipse 50% 60% at 50% 40%,rgba(196,118,47,.08) 0%,transparent 70%)}
+body.light .cta-section{background:var(--bgs)}
+body.light .wc-modal{background:var(--bgc)}
+body.light .wc-modal-close{background:rgba(0,0,0,.05);color:var(--mt)}
+
+@media(max-width:960px){
+  .content-section,.cta-section{padding:40px 24px}
+  .blog-hero{padding:110px 24px 50px}
+  .n-ctr{display:none}
+  .ham{display:flex}
+  footer{padding:32px 24px}
+  .compare-box{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  nav{padding:0 16px;height:60px}
+  .blog-hero{padding:90px 16px 36px}
+  .content-section,.cta-section{padding:28px 16px}
+  .bh-title{font-size:clamp(24px,6vw,36px)}
+}
+[dir=rtl] nav,[dir=rtl] .n-logo,[dir=rtl] .n-ctr,[dir=rtl] .n-rt{direction:ltr}
+[dir=rtl] .blog-hero,[dir=rtl] .content-section{direction:rtl;text-align:right}
+[dir=rtl] .bh-meta{justify-content:flex-start}
+[dir=rtl] footer{direction:rtl;text-align:right}
+[dir=rtl] .float-btns{right:auto;left:28px}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" width="44" height="44">
+  </a>
+  <ul class="n-ctr">
+    <li><a href="/" data-i18n="nav_home">Home</a></li>
+    <li><a href="/products" data-i18n="nav_products">Products</a></li>
+    <li><a href="/solutions" data-i18n="nav_solutions">Solutions</a></li>
+    <li><a href="/blog" class="active">Blog</a></li>
+    <li><a href="/process" data-i18n="nav_process">Process</a></li>
+    <li><a href="/about" data-i18n="nav_about">About</a></li>
+    <li><a href="/contact" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="theme-pair">
+      <button class="theme-btn-s" id="btnDark" aria-label="Dark mode"><span class="t-ic">☾</span></button>
+      <button class="theme-btn-s active" id="btnLight" aria-label="Light mode"><span class="t-ic">☀</span></button>
+    </div>
+    <div class="lsw" style="position:relative">
+      <button class="lbtn" id="lbtn" style="background:rgba(255,255,255,.06);border:1px solid var(--bdr);color:var(--mt);padding:7px 13px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;font-family:var(--ss)">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5" width="10" height="10"><path d="M1 1l5 5 5-5"/></svg>
+      </button>
+      <div class="ldrop" id="ldrop" style="position:absolute;top:calc(100% + 8px);right:0;background:#1e1e1e;border:1px solid var(--bdr);border-radius:10px;min-width:140px;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:500;overflow:hidden">
+        <button class="lopt act" data-lang="en" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="ar" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:'Noto Sans Arabic',var(--ss),sans-serif;white-space:nowrap"><span><img src="https://flagcdn.com/16x12/sa.png" class="flag" alt="AR"></span> العربية</button>
+        <button class="lopt" data-lang="fr" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Français</button>
+        <button class="lopt" data-lang="es" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Español</button>
+      </div>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_quote">Get Quote</a>
+    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob">
+  <button class="mob-x" id="mob-x">✕</button>
+  <a href="/" data-i18n="nav_home">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+</div>
+
+<main>
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> · <a href="/blog">Blog</a> · <span data-i18n="blog_breadcrumb">What Is a Current Transformer?</span></div>
+    <span class="bh-tag" data-i18n="blog_tag">Guides</span>
+    <h1 class="bh-title" data-i18n="blog_title">What Is a Current Transformer? Explained in Plain Language</h1>
+    <div class="bh-meta">
+      <div class="avatar">ED</div>
+      <strong style="color:var(--tx)" data-i18n="blog_meta_author">Engineering Department</strong>
+      <span class="divider"></span>
+      <span>6 min read</span>
+      <span class="divider"></span>
+      <span>July 28, 2026</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <img class="hero-img" src="/assets/images/blog/blog-what-is-a-current-transformer/hero.jpg" alt="Ring-shaped current transformer clamped around a power cable" loading="eager">
+
+    <p data-i18n="intro1">Have you ever noticed a donut-shaped device clamped around a thick electric cable? That is a <strong>current transformer (CT)</strong> — one of the most important, yet least understood, pieces of equipment in the electrical world. It makes huge currents measurable, keeps meters and relays safe, and helps bill billions of kilowatt-hours correctly every single day.</p>
+    <p data-i18n="intro2">In this guide, we explain what a current transformer is, how it works, and why it matters for your home, your factory, or your utility — in words everyone can understand.</p>
+
+    <h2 data-i18n="sec_problem">The Problem: Measuring Huge Currents Is Hard</h2>
+    <p data-i18n="sec_problem_p1">Imagine you need to weigh a truck, but your scale can only handle 50 kilograms. You would not build a bigger scale — you would weigh one wheel, then multiply. A current transformer works on exactly this idea.</p>
+    <p data-i18n="sec_problem_p2">A factory line might draw <strong>1,000 amperes</strong> of current. You cannot connect an energy meter directly to a cable carrying that much power — it would be dangerous, expensive, and the meter would have to be enormous. Instead, a current transformer takes a tiny, safe "sample" of that current and sends it to the meter.</p>
+
+    <h2 data-i18n="sec_what">What Is a Current Transformer?</h2>
+    <p data-i18n="sec_what_p1">A current transformer is a simple device with one cable passing through a ring of magnetic material, surrounded by a coil of thin wire. It steps large currents down to a small, standard level — usually <strong>5 amperes or 1 ampere</strong> — that instruments can safely handle.</p>
+    <p data-i18n="sec_what_p2">Every CT has a <strong>ratio</strong> written on it, like 100/5 or 500/5. When 500 amperes flow through the main cable, the CT produces exactly 5 amperes in its secondary wires. Multiply the meter reading by the ratio, and you know the true current. This is why CTs are the standard partner of <a href="/blog/how-do-electricity-meters-work">electricity meters</a> in commercial and industrial installations.</p>
+
+    <h2 data-i18n="sec_how">How Does a Current Transformer Work?</h2>
+    <p data-i18n="sec_how_p1">Current creates a magnetic field around a wire — the stronger the current, the stronger the field. A current transformer wraps a coil around that magnetic field. The field "pushes" electricity through the coil, creating a small current that is always proportional to the big current in the cable.</p>
+    <p data-i18n="sec_how_p2">In other words, the CT does the heavy lifting so the meter only sees a small, safe copy of the real current. And because the CT is a passive device, it needs no power supply of its own — it works using the energy of the current it measures.</p>
+
+    <h2 data-i18n="sec_where">Where Are Current Transformers Used?</h2>
+    <ul>
+      <li data-i18n="where_l1"><strong>Energy metering:</strong> every three-phase commercial meter and many <a href="/blog/smart-meters-explained">smart meters</a> rely on CTs to measure large loads accurately for billing.</li>
+      <li data-i18n="where_l2"><strong>Protection:</strong> protective relays use CTs to detect dangerously high currents and trip circuit breakers in milliseconds, preventing fires and equipment damage.</li>
+      <li data-i18n="where_l3"><strong>Monitoring:</strong> factories and data centers use CTs to track power use per machine, machine line, or building floor.</li>
+      <li data-i18n="where_l4"><strong>Solar and storage:</strong> CTs measure the flow between solar inverters, batteries, and the grid for net metering.</li>
+    </ul>
+
+    <h2 data-i18n="sec_acc">Accuracy Classes and Ratios</h2>
+    <p data-i18n="sec_acc_p1">Not all CTs are created equal. The <strong>accuracy class</strong> tells you how truthful the CT is:</p>
+    <ul>
+      <li data-i18n="sec_acc_l1"><strong>Class 0.5 and 0.5S:</strong> maximum error of 0.5 percent — recommended for revenue billing.</li>
+      <li data-i18n="sec_acc_l2"><strong>Class 1.0:</strong> maximum error of 1 percent — fine for monitoring and general use.</li>
+    </ul>
+    <p data-i18n="sec_acc_p2">Choosing the right ratio is also important: the CT should be sized so your normal load sits between about 20% and 100% of its rating. A 500/5 CT on a line that only draws 50 amperes will measure poorly, because the transformer works best in its designed range. For a practical step-by-step process, see our <a href="/guide/current-transformer-selection">current transformer selection guide</a>.</p>
+
+    <h2 data-i18n="sec_core">Solid-Core or Split-Core: Which One Do You Need?</h2>
+    <p data-i18n="sec_core_p1">Solid-core CTs are the classic ring — the cable must be threaded through them, which usually means disconnecting the power to install. <strong>Split-core CTs</strong> open like a clamshell and clip around an existing cable without cutting the power. That makes them the first choice for retrofits and live installations, while solid-core models remain the most accurate and economical choice for new projects.</p>
+    <p data-i18n="sec_core_p2">Both types are available in Class 0.5 and Class 1, with ratios from 5A to 5000A, and both are certified to international standards such as IEC 61869.</p>
+
+    <h2 data-i18n="sec_faq">Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3 data-i18n="f1q">Why do current transformers have a ratio like 500/5?</h3>
+      <p data-i18n="f1a">The ratio describes how much the transformer scales the current down. A 500/5 CT means that when 500 amperes flow in the main cable, exactly 5 amperes flow in the secondary circuit — a safe, measurable level for meters and relays.</p>
+    </div>
+    <div class="faq-item">
+      <h3 data-i18n="f2q">Do current transformers need their own power supply?</h3>
+      <p data-i18n="f2a">No. Measuring CTs are passive devices — the current flowing in the cable creates the signal by itself. This is why they work even in old installations with no auxiliary power.</p>
+    </div>
+    <div class="faq-item">
+      <h3 data-i18n="f3q">What is the difference between measuring and protection CTs?</h3>
+      <p data-i18n="f3a">Measuring CTs are optimized for accuracy at normal loads (for billing and monitoring). Protection CTs are designed to stay accurate even at very high fault currents, so protective relays can detect problems quickly.</p>
+    </div>
+    <div class="faq-item">
+      <h3 data-i18n="f4q">What does accuracy class 0.5 mean on a current transformer?</h3>
+      <p data-i18n="f4a">It means the CT reproduces the primary current with a maximum error of 0.5 percent at rated conditions. Class 0.5 and better are recommended for revenue metering, while Class 1 is acceptable for general monitoring.</p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2 data-i18n="blog_cta_title">Need Current Transformers for Your Project?</h2>
+    <p data-i18n="blog_cta_desc">We manufacture solid-core and split-core CTs from 5A to 5000A, in Class 0.5 and Class 1 — CE certified and export-ready.</p>
+    <a href="/contact?product=Current%20Transformers" class="cta-btn" data-i18n="blog_cta_btn">Request a Quote →</a>
+  </section>
+
+</main>
+
+<footer>
+  <div>
+    <div class="ft-brand-n">Yomin Electric</div>
+    <div class="ft-sub">Zhejiang Yomin Electric Co., Ltd. — Precision energy metering solutions since 1996.</div>
+  </div>
+  <div class="ft-links">
+    <a href="/">Home</a>
+    <a href="/products">Products</a>
+    <a href="/blog">Blog</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </div>
+</footer>
+
+<!-- Float buttons -->
+<div class="float-btns">
+  <button class="float-btn float-btn-wc" id="wc-btn">
+    <svg viewBox="0 0 24 24" fill="white" width="26" height="26"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-3.895-6.348-7.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm4.315 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>
+  </button>
+  <a class="float-btn float-btn-wa" href="https://wa.me/8619016543301" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="white" width="26" height="26"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+  </a>
+</div>
+
+<!-- WeChat Modal -->
+<div class="wc-modal-overlay" id="wc-overlay">
+  <div class="wc-modal">
+    <div class="wc-modal-icon">💬</div>
+    <div class="wc-modal-title" data-i18n="wc_title">Connect on WeChat</div>
+    <div class="wc-modal-sub" data-i18n="wc_desc">Scan the QR code with WeChat to reach our sales team directly.</div>
+    <div class="wc-qr-wrap"><img src="/assets/images/qr-wechat.jpg" alt="WeChat QR"></div>
+    <button class="wc-modal-close" id="wc-close" data-i18n="wc_close">✕ Close</button>
+  </div>
+</div>
+
+<script>
+/* ── Theme ─────────────────────────────────────────────── */
+var storedTheme = localStorage.getItem('ym_theme');
+var hour = new Date().getHours();
+var autoTheme = (hour >= 6 && hour < 18) ? 'light' : 'dark';
+var isLight = (storedTheme || autoTheme) === 'light';
+function setTheme(light) {
+  document.body.classList.toggle('light', light);
+  var b = document.querySelectorAll('.theme-btn-s');
+  if (b.length >= 2) { b[0].classList.toggle('active', !light); b[1].classList.toggle('active', light); }
+}
+setTheme(isLight);
+document.getElementById('btnDark')?.addEventListener('click', function(){ setTheme(false); localStorage.setItem('ym_theme', 'dark'); });
+document.getElementById('btnLight')?.addEventListener('click', function(){ setTheme(true); localStorage.setItem('ym_theme', 'light'); });
+
+/* ── Nav / mobile ──────────────────────────────────────── */
+document.getElementById('ham').addEventListener('click',function(){document.getElementById('mob').classList.toggle('op')});
+document.getElementById('mob-x').addEventListener('click',function(){document.getElementById('mob').classList.remove('op')});
+window.addEventListener('scroll', function(){ document.getElementById('nav').classList.toggle('sc', window.scrollY > 40); });
+
+/* ── WeChat popup ──────────────────────────────────────── */
+document.getElementById('wc-btn')?.addEventListener('click', function() { document.getElementById('wc-overlay').classList.add('op'); });
+document.getElementById('wc-close')?.addEventListener('click', function() { document.getElementById('wc-overlay').classList.remove('op'); });
+document.getElementById('wc-overlay')?.addEventListener('click', function(e) { if (e.target === e.currentTarget) e.currentTarget.classList.remove('op'); });
+
+/* ── i18n translations (EN lives in the HTML; FR/ES/AR here) ── */
+(function(){
+  var lang = localStorage.getItem('ym_lang') || 'en';
+  if (lang === 'ar') document.documentElement.dir = 'rtl';
+  var T = {
+    fr: {
+      nav_home:'Accueil',
+      nav_products:'Produits',
+      nav_solutions:'Solutions',
+      nav_process:'Processus',
+      nav_about:'À propos',
+      nav_contact:'Contact',
+      nav_quote:'Demander un devis',
+      blog_breadcrumb:'Qu\'est-ce qu\'un transformateur de courant ?',
+      blog_tag:'Guides',
+      blog_title:'Qu\'est-ce qu\'un transformateur de courant ? Expliqué en langage simple',
+      blog_meta_author:'Service ingénierie',
+      intro1:'Avez-vous déjà remarqué un appareil en forme de beignet fixé autour d\'un gros câble électrique ? C\'est un <strong>transformateur de courant (TC)</strong> — l\'un des équipements les plus importants, et pourtant les moins connus, du monde électrique. Il rend mesurables des courants énormes, protège les compteurs et les relais, et aide à facturer correctement des milliards de kilowattheures chaque jour.',
+      intro2:'Dans ce guide, nous expliquons ce qu\'est un transformateur de courant, comment il fonctionne et pourquoi il compte pour votre maison, votre usine ou votre fournisseur d\'électricité — en des mots que tout le monde peut comprendre.',
+      sec_problem:'Le problème : mesurer de très gros courants est difficile',
+      sec_problem_p1:'Imaginez que vous deviez peser un camion, mais que votre balance ne supporte que 50 kilogrammes. Vous ne construiriez pas une balance plus grande — vous pèseriez une roue, puis multiplieriez. Un transformateur de courant fonctionne exactement sur ce principe.',
+      sec_problem_p2:'Une ligne d\'usine peut consommer <strong>1 000 ampères</strong> de courant. Vous ne pouvez pas brancher un compteur d\'énergie directement sur un câble qui transporte une telle puissance — ce serait dangereux, coûteux, et le compteur devrait être énorme. À la place, un transformateur de courant prélève un minuscule et sûr « échantillon » de ce courant et l\'envoie au compteur.',
+      sec_what:'Qu\'est-ce qu\'un transformateur de courant ?',
+      sec_what_p1:'Un transformateur de courant est un appareil simple : un câble traverse un anneau de matériau magnétique, entouré d\'une bobine de fil fin. Il réduit les grands courants à un petit niveau standard — généralement <strong>5 ampères ou 1 ampère</strong> — que les instruments peuvent supporter en toute sécurité.',
+      sec_what_p2:'Chaque TC porte un <strong>rapport</strong> inscrit dessus, comme 100/5 ou 500/5. Lorsque 500 ampères circulent dans le câble principal, le TC produit exactement 5 ampères dans ses fils secondaires. Multipliez la lecture du compteur par le rapport et vous connaîtrez le courant réel. C\'est pourquoi les TC sont le partenaire standard des <a href="/blog/how-do-electricity-meters-work">compteurs d\'électricité</a> dans les installations commerciales et industrielles.',
+      sec_how:'Comment fonctionne un transformateur de courant ?',
+      sec_how_p1:'Le courant crée un champ magnétique autour d\'un fil — plus le courant est fort, plus le champ est fort. Un transformateur de courant enroule une bobine autour de ce champ magnétique. Le champ « pousse » l\'électricité à travers la bobine, créant un petit courant toujours proportionnel au grand courant du câble.',
+      sec_how_p2:'En d\'autres termes, le TC fait le gros du travail pour que le compteur ne voie qu\'une petite copie sûre du courant réel. Et comme le TC est un appareil passif, il n\'a besoin d\'aucune alimentation propre — il fonctionne grâce à l\'énergie du courant qu\'il mesure.',
+      sec_where:'Où utilise-t-on les transformateurs de courant ?',
+      where_l1:'<strong>Comptage de l\'énergie :</strong> chaque compteur triphasé commercial et de nombreux <a href="/blog/smart-meters-explained">compteurs intelligents</a> s\'appuient sur des TC pour mesurer avec précision les grandes charges à des fins de facturation.',
+      where_l2:'<strong>Protection :</strong> les relais de protection utilisent les TC pour détecter les courants dangereusement élevés et déclencher les disjoncteurs en quelques millisecondes, évitant ainsi les incendies et les dommages matériels.',
+      where_l3:'<strong>Surveillance :</strong> les usines et les centres de données utilisent les TC pour suivre la consommation électrique par machine, par ligne de machines ou par étage de bâtiment.',
+      where_l4:'<strong>Solaire et stockage :</strong> les TC mesurent le flux entre les onduleurs solaires, les batteries et le réseau pour la facturation nette.',
+      sec_acc:'Classes de précision et rapports',
+      sec_acc_p1:'Tous les TC ne se valent pas. La <strong>classe de précision</strong> indique à quel point le TC est fidèle :',
+      sec_acc_l1:'<strong>Classe 0,5 et 0,5S :</strong> erreur maximale de 0,5 pour cent — recommandée pour la facturation des revenus.',
+      sec_acc_l2:'<strong>Classe 1,0 :</strong> erreur maximale de 1 pour cent — parfaite pour la surveillance et l\'usage général.',
+      sec_acc_p2:'Choisir le bon rapport est aussi important : le TC doit être dimensionné pour que votre charge normale se situe entre environ 20 % et 100 % de sa valeur nominale. Un TC 500/5 sur une ligne qui ne consomme que 50 ampères mesurera mal, car le transformateur fonctionne au mieux dans sa plage prévue. Pour une démarche pratique étape par étape, consultez notre <a href="/guide/current-transformer-selection">guide de sélection des transformateurs de courant</a>.',
+      sec_core:'Noyau plein ou noyau ouvert : lequel vous faut-il ?',
+      sec_core_p1:'Les TC à noyau plein sont l\'anneau classique — le câble doit y être enfilé, ce qui signifie généralement de couper le courant pour l\'installation. Les <strong>TC à noyau ouvert</strong> s\'ouvrent comme une coquille et se fixent autour d\'un câble existant sans couper le courant. C\'est pourquoi ils sont le premier choix pour les rénovations et les installations sous tension, tandis que les modèles à noyau plein restent les plus précis et les plus économiques pour les nouveaux projets.',
+      sec_core_p2:'Les deux types sont disponibles en classe 0,5 et classe 1, avec des rapports de 5 A à 5 000 A, et les deux sont certifiés selon des normes internationales telles que la CEI 61869.',
+      sec_faq:'Questions fréquentes',
+      f1q:'Pourquoi les transformateurs de courant ont-ils un rapport comme 500/5 ?',
+      f1a:'Le rapport décrit à quel point le transformateur réduit le courant. Un TC 500/5 signifie que lorsque 500 ampères circulent dans le câble principal, exactement 5 ampères circulent dans le circuit secondaire — un niveau sûr et mesurable pour les compteurs et les relais.',
+      f2q:'Les transformateurs de courant ont-ils besoin de leur propre alimentation électrique ?',
+      f2a:'Non. Les TC de mesure sont des appareils passifs — le courant qui circule dans le câble crée le signal tout seul. C\'est pourquoi ils fonctionnent même dans les anciennes installations sans alimentation auxiliaire.',
+      f3q:'Quelle est la différence entre les TC de mesure et les TC de protection ?',
+      f3a:'Les TC de mesure sont optimisés pour la précision aux charges normales (pour la facturation et la surveillance). Les TC de protection sont conçus pour rester précis même à des courants de défaut très élevés, afin que les relais de protection puissent détecter rapidement les problèmes.',
+      f4q:'Que signifie la classe de précision 0,5 sur un transformateur de courant ?',
+      f4a:'Cela signifie que le TC reproduit le courant primaire avec une erreur maximale de 0,5 pour cent dans les conditions nominales. La classe 0,5 et les classes supérieures sont recommandées pour le comptage de facturation, tandis que la classe 1 est acceptable pour la surveillance générale.',
+      blog_cta_title:'Besoin de transformateurs de courant pour votre projet ?',
+      blog_cta_desc:'Nous fabriquons des TC à noyau plein et à noyau ouvert de 5 A à 5 000 A, en classe 0,5 et classe 1 — certifiés CE et prêts à l\'exportation.',
+      blog_cta_btn:'Demander un devis →',
+      wc_title:'Connectez-vous sur WeChat',
+      wc_desc:'Scannez le code QR avec WeChat pour joindre directement notre équipe commerciale.',
+      wc_close:'✕ Fermer'
+    },
+    es: {
+      nav_home:'Inicio',
+      nav_products:'Productos',
+      nav_solutions:'Soluciones',
+      nav_process:'Proceso',
+      nav_about:'Nosotros',
+      nav_contact:'Contacto',
+      nav_quote:'Solicitar presupuesto',
+      blog_breadcrumb:'¿Qué es un transformador de corriente?',
+      blog_tag:'Guías',
+      blog_title:'¿Qué es un transformador de corriente? Explicado en lenguaje sencillo',
+      blog_meta_author:'Departamento de Ingeniería',
+      intro1:'¿Alguna vez has visto un dispositivo con forma de rosquilla sujeto alrededor de un cable eléctrico grueso? Ese es un <strong>transformador de corriente (TC)</strong>, uno de los equipos más importantes y, sin embargo, menos conocidos del mundo eléctrico. Hace que las corrientes enormes se puedan medir, mantiene a salvo los medidores y los relés, y ayuda a facturar correctamente miles de millones de kilovatios-hora cada día.',
+      intro2:'En esta guía explicamos qué es un transformador de corriente, cómo funciona y por qué es importante para tu casa, tu fábrica o tu empresa eléctrica, con palabras que todos pueden entender.',
+      sec_problem:'El problema: medir corrientes enormes es difícil',
+      sec_problem_p1:'Imagina que necesitas pesar un camión, pero tu báscula solo aguanta 50 kilogramos. No construirías una báscula más grande: pesarías una rueda y luego multiplicarías. Un transformador de corriente funciona exactamente con esta idea.',
+      sec_problem_p2:'Una línea de fábrica puede consumir <strong>1.000 amperios</strong> de corriente. No puedes conectar un medidor de energía directamente a un cable que transporta tanta potencia: sería peligroso, costoso y el medidor tendría que ser enorme. En su lugar, un transformador de corriente toma una pequeña y segura «muestra» de esa corriente y la envía al medidor.',
+      sec_what:'¿Qué es un transformador de corriente?',
+      sec_what_p1:'Un transformador de corriente es un dispositivo sencillo: un cable pasa por un anillo de material magnético rodeado por una bobina de hilo fino. Reduce las corrientes grandes a un nivel pequeño y estándar, normalmente <strong>5 amperios o 1 amperio</strong>, que los instrumentos pueden manejar con seguridad.',
+      sec_what_p2:'Cada TC tiene una <strong>relación</strong> escrita en él, como 100/5 o 500/5. Cuando 500 amperios circulan por el cable principal, el TC produce exactamente 5 amperios en sus cables secundarios. Multiplica la lectura del medidor por la relación y sabrás la corriente real. Por eso los TC son el compañero habitual de los <a href="/blog/how-do-electricity-meters-work">medidores de electricidad</a> en instalaciones comerciales e industriales.',
+      sec_how:'¿Cómo funciona un transformador de corriente?',
+      sec_how_p1:'La corriente crea un campo magnético alrededor de un cable: cuanto más fuerte es la corriente, más fuerte es el campo. Un transformador de corriente enrolla una bobina alrededor de ese campo magnético. El campo «empuja» la electricidad a través de la bobina, creando una corriente pequeña que siempre es proporcional a la corriente grande del cable.',
+      sec_how_p2:'En otras palabras, el TC hace el trabajo pesado para que el medidor solo vea una copia pequeña y segura de la corriente real. Y como el TC es un dispositivo pasivo, no necesita su propia fuente de alimentación: funciona con la energía de la corriente que mide.',
+      sec_where:'¿Dónde se utilizan los transformadores de corriente?',
+      where_l1:'<strong>Medición de energía:</strong> todos los medidores comerciales trifásicos y muchos <a href="/blog/smart-meters-explained">medidores inteligentes</a> dependen de los TC para medir con precisión cargas grandes con fines de facturación.',
+      where_l2:'<strong>Protección:</strong> los relés de protección usan TC para detectar corrientes peligrosamente altas y disparar los interruptores automáticos en milisegundos, evitando incendios y daños en los equipos.',
+      where_l3:'<strong>Monitoreo:</strong> las fábricas y los centros de datos usan TC para controlar el uso de energía por máquina, línea de máquinas o piso del edificio.',
+      where_l4:'<strong>Solar y almacenamiento:</strong> los TC miden el flujo entre los inversores solares, las baterías y la red para la medición neta.',
+      sec_acc:'Clases de precisión y relaciones',
+      sec_acc_p1:'No todos los TC son iguales. La <strong>clase de precisión</strong> te dice qué tan fiel es el TC:',
+      sec_acc_l1:'<strong>Clase 0,5 y 0,5S:</strong> error máximo del 0,5 por ciento; recomendada para la facturación de ingresos.',
+      sec_acc_l2:'<strong>Clase 1,0:</strong> error máximo del 1 por ciento; adecuada para monitoreo y uso general.',
+      sec_acc_p2:'Elegir la relación correcta también es importante: el TC debe dimensionarse para que tu carga normal se sitúe entre el 20 % y el 100 % de su valor nominal. Un TC de 500/5 en una línea que solo consume 50 amperios medirá mal, porque el transformador funciona mejor dentro de su rango de diseño. Para un proceso práctico paso a paso, consulta nuestra <a href="/guide/current-transformer-selection">guía de selección de transformadores de corriente</a>.',
+      sec_core:'¿Núcleo sólido o núcleo partido: cuál necesitas?',
+      sec_core_p1:'Los TC de núcleo sólido son el anillo clásico: el cable debe pasar a través de ellos, lo que normalmente significa cortar la energía para instalarlos. Los <strong>TC de núcleo partido</strong> se abren como una concha y se fijan alrededor de un cable existente sin cortar la energía. Por eso son la primera opción para reformas e instalaciones en vivo, mientras que los modelos de núcleo sólido siguen siendo la opción más precisa y económica para proyectos nuevos.',
+      sec_core_p2:'Ambos tipos están disponibles en clase 0,5 y clase 1, con relaciones de 5 A a 5.000 A, y ambos están certificados según normas internacionales como la IEC 61869.',
+      sec_faq:'Preguntas frecuentes',
+      f1q:'¿Por qué los transformadores de corriente tienen una relación como 500/5?',
+      f1a:'La relación describe cuánto reduce el transformador la corriente. Un TC de 500/5 significa que cuando circulan 500 amperios por el cable principal, exactamente 5 amperios circulan por el circuito secundario: un nivel seguro y medible para medidores y relés.',
+      f2q:'¿Los transformadores de corriente necesitan su propia fuente de alimentación?',
+      f2a:'No. Los TC de medición son dispositivos pasivos: la corriente que circula por el cable crea la señal por sí misma. Por eso funcionan incluso en instalaciones antiguas sin alimentación auxiliar.',
+      f3q:'¿Cuál es la diferencia entre los TC de medición y los TC de protección?',
+      f3a:'Los TC de medición están optimizados para la precisión con cargas normales (para facturación y monitoreo). Los TC de protección están diseñados para seguir siendo precisos incluso con corrientes de falla muy altas, para que los relés de protección puedan detectar los problemas rápidamente.',
+      f4q:'¿Qué significa la clase de precisión 0,5 en un transformador de corriente?',
+      f4a:'Significa que el TC reproduce la corriente primaria con un error máximo del 0,5 por ciento en condiciones nominales. Se recomiendan la clase 0,5 y superiores para la medición de facturación, mientras que la clase 1 es aceptable para el monitoreo general.',
+      blog_cta_title:'¿Necesitas transformadores de corriente para tu proyecto?',
+      blog_cta_desc:'Fabricamos TC de núcleo sólido y núcleo partido de 5 A a 5.000 A, en clase 0,5 y clase 1, certificados CE y listos para exportar.',
+      blog_cta_btn:'Solicitar presupuesto →',
+      wc_title:'Conecta por WeChat',
+      wc_desc:'Escanea el código QR con WeChat para contactar directamente con nuestro equipo de ventas.',
+      wc_close:'✕ Cerrar'
+    },
+    ar: {
+      nav_home:'الرئيسية',
+      nav_products:'المنتجات',
+      nav_solutions:'الحلول',
+      nav_process:'كيف نعمل',
+      nav_about:'من نحن',
+      nav_contact:'اتصل بنا',
+      nav_quote:'اطلب عرض سعر',
+      blog_breadcrumb:'ما هو محول التيار؟',
+      blog_tag:'أدلة',
+      blog_title:'ما هو محول التيار؟ شرح بلغة بسيطة',
+      blog_meta_author:'قسم الهندسة',
+      intro1:'هل لاحظت يوماً جهازاً على شكل كعكة دائرية مثبتاً حول كابل كهرباء سميك؟ هذا هو <strong>محول التيار (CT)</strong> — أحد أهم القطع في عالم الكهرباء، ومع ذلك من أقلها فهماً. فهو يجعل التيارات الضخمة قابلة للقياس، ويحافظ على سلامة العدادات والمرحلات، ويساعد في فوترة مليارات الكيلوواط/ساعة بشكل صحيح كل يوم.',
+      intro2:'في هذا الدليل نشرح ما هو محول التيار، وكيف يعمل، ولماذا يهم منزلك أو مصنعك أو شركة الكهرباء — بكلمات يفهمها الجميع.',
+      sec_problem:'المشكلة: قياس التيارات الضخمة أمر صعب',
+      sec_problem_p1:'تخيل أنك بحاجة إلى وزن شاحنة، لكن ميزانك لا يتحمل سوى 50 كيلوغراماً. لن تصنع ميزاناً أكبر — بل ستزن عجلة واحدة ثم تضرب الناتج. محول التيار يعمل بنفس هذه الفكرة تماماً.',
+      sec_problem_p2:'قد يسحب خط إنتاج في مصنع <strong>1000 أمبير</strong> من التيار. لا يمكنك توصيل عداد كهرباء مباشرة بكابل يحمل هذا القدر الكبير من الطاقة — سيكون الأمر خطيراً ومكلفاً، وسيكون العداد ضخماً جداً. بدلاً من ذلك، يأخذ محول التيار «عينة» صغيرة وآمنة من هذا التيار ويرسلها إلى العداد.',
+      sec_what:'ما هو محول التيار؟',
+      sec_what_p1:'محول التيار جهاز بسيط يمر من خلاله كابل واحد داخل حلقة من مادة مغناطيسية، محاطة بملف من سلك رفيع. وهو يخفض التيارات الكبيرة إلى مستوى صغير وقياسي — عادةً <strong>5 أمبير أو 1 أمبير</strong> — يمكن للأجهزة التعامل معه بأمان.',
+      sec_what_p2:'كل محول تيار يحمل <strong>نسبة تحويل</strong> مكتوبة عليه، مثل 100/5 أو 500/5. فعندما يمر 500 أمبير عبر الكابل الرئيسي، ينتج المحول 5 أمبير بالضبط في أسلاكه الثانوية. اضرب قراءة العداد في النسبة لتعرف التيار الحقيقي. لهذا السبب تُعد محولات التيار الشريك المعتاد لـ<a href="/blog/how-do-electricity-meters-work">عدادات الكهرباء</a> في المنشآت التجارية والصناعية.',
+      sec_how:'كيف يعمل محول التيار؟',
+      sec_how_p1:'التيار يولّد حقلاً مغناطيسياً حول السلك — فكلما كان التيار أقوى كان المجال أقوى. يلف محول التيار ملفاً حول هذا المجال المغناطيسي. والمجال «يدفع» الكهرباء عبر الملف، منتجاً تياراً صغيراً يتناسب دائماً مع التيار الكبير في الكابل.',
+      sec_how_p2:'بعبارة أخرى، يقوم المحول بالعمل الشاق بحيث يرى العداد نسخة صغيرة وآمنة فقط من التيار الحقيقي. ولأن المحول جهاز سلبي، فهو لا يحتاج إلى مصدر طاقة خاص به — فهو يعمل بطاقة التيار الذي يقيسه.',
+      sec_where:'أين تُستخدم محولات التيار؟',
+      where_l1:'<strong>قياس الطاقة:</strong> كل عداد تجاري ثلاثي الأطوار والعديد من <a href="/blog/smart-meters-explained">العدادات الذكية</a> تعتمد على محولات التيار لقياس الأحمال الكبيرة بدقة لأغراض الفوترة.',
+      where_l2:'<strong>الحماية:</strong> تستخدم المرحلات الواقية محولات التيار لاكتشاف التيارات المرتفعة بشكل خطير وفصل قواطع الدائرة في أجزاء من الثانية، مما يمنع الحرائق وتلف المعدات.',
+      where_l3:'<strong>المراقبة:</strong> تستخدم المصانع ومراكز البيانات محولات التيار لتتبع استهلاك الطاقة لكل آلة أو خط إنتاج أو طابق في المبنى.',
+      where_l4:'<strong>الطاقة الشمسية والتخزين:</strong> تقيس محولات التيار التدفق بين العواكس الشمسية والبطاريات والشبكة لأغراض القياس الصافي.',
+      sec_acc:'فئات الدقة والنِسَب',
+      sec_acc_p1:'ليست كل محولات التيار متساوية. <strong>فئة الدقة</strong> تخبرك بمدى دقة المحول:',
+      sec_acc_l1:'<strong>الفئة 0.5 و0.5S:</strong> خطأ أقصى قدره 0.5 بالمئة — موصى بها للفوترة الرسمية.',
+      sec_acc_l2:'<strong>الفئة 1.0:</strong> خطأ أقصى قدره 1 بالمئة — مناسبة للمراقبة والاستخدام العام.',
+      sec_acc_p2:'اختيار النسبة الصحيحة مهم أيضاً: يجب أن يكون حجم المحول بحيث يقع حملك الطبيعي بين حوالي 20% و100% من تصنيفه. فمحول 500/5 على خط يسحب 50 أمبير فقط سيقيس بشكل سيئ، لأن المحول يعمل بأفضل أداء ضمن نطاقه المصمم له. للحصول على عملية خطوة بخطوة، راجع <a href="/guide/current-transformer-selection">دليل اختيار محول التيار</a>.',
+      sec_core:'النواة الصلبة أم النواة المنقسمة: أيهما تحتاج؟',
+      sec_core_p1:'محولات النواة الصلبة هي الحلقة التقليدية — يجب تمرير الكابل من خلالها، وهو ما يعني عادةً فصل التيار الكهربائي للتثبيت. أما <strong>محولات النواة المنقسمة</strong> فتفتح مثل صدفة المحار وتُثبَّت حول كابل موجود دون قطع التيار. وهذا يجعلها الخيار الأول للتحديثات والتركيبات أثناء عمل الكهرباء، بينما تبقى نماذج النواة الصلبة الخيار الأكثر دقة واقتصادية للمشاريع الجديدة.',
+      sec_core_p2:'كلا النوعين متوفر بفئتي الدقة 0.5 و1، وبنسَب من 5 أمبير إلى 5000 أمبير، وكلاهما معتمد وفق المعايير الدولية مثل IEC 61869.',
+      sec_faq:'الأسئلة الشائعة',
+      f1q:'لماذا تمتلك محولات التيار نسبة مثل 500/5؟',
+      f1a:'تصف النسبة مقدار التيار الذي يخفضه المحول. فمحول 500/5 يعني أنه عندما يمر 500 أمبير في الكابل الرئيسي، يمر 5 أمبير بالضبط في الدائرة الثانوية — وهو مستوى آمن وقابل للقياس للعدادات والمرحلات.',
+      f2q:'هل تحتاج محولات التيار إلى مصدر طاقة خاص بها؟',
+      f2a:'لا. محولات القياس أجهزة سلبية — فالتيار المار في الكابل ينتج الإشارة بنفسه. ولهذا تعمل حتى في التركيبات القديمة التي لا تملك طاقة مساعدة.',
+      f3q:'ما الفرق بين محولات القياس ومحولات الحماية؟',
+      f3a:'محولات القياس محسّنة للدقة عند الأحمال العادية (للفوترة والمراقبة). أما محولات الحماية فمصممة لتبقى دقيقة حتى عند تيارات الأعطال المرتفعة جداً، حتى تتمكن المرحلات الواقية من اكتشاف المشاكل بسرعة.',
+      f4q:'ماذا تعني فئة الدقة 0.5 على محول التيار؟',
+      f4a:'تعني أن المحول يعيد إنتاج التيار الأساسي بخطأ أقصاه 0.5 بالمئة في ظروف التشغيل المصنفة. الفئة 0.5 وما هو أفضل منها موصى بها لقياس الفوترة، بينما الفئة 1 مقبولة للمراقبة العامة.',
+      blog_cta_title:'هل تحتاج محولات تيار لمشروعك؟',
+      blog_cta_desc:'نصنع محولات تيار بنواة صلبة ومنقسمة من 5 أمبير إلى 5000 أمبير، بفئتي الدقة 0.5 و1 — معتمدة بشهادة CE وجاهزة للتصدير.',
+      blog_cta_btn:'اطلب عرض سعر →',
+      wc_title:'تواصل معنا عبر وي شات',
+      wc_desc:'امسح رمز الاستجابة السريعة باستخدام وي شات للتواصل المباشر مع فريق المبيعات لدينا.',
+      wc_close:'✕ إغلاق'
+    }
+  };
+  var d = T[lang] || {};
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (d[key]) el.innerHTML = d[key];
+  });
+
+  /* Language drop */
+  var lbtn = document.getElementById('lbtn');
+  var ldrop = document.getElementById('ldrop');
+  if (lbtn && ldrop) {
+    lbtn.addEventListener('click', function(e) { e.stopPropagation(); ldrop.style.opacity = '1'; ldrop.style.pointerEvents = 'all'; ldrop.style.transform = 'none'; });
+    document.addEventListener('click', function(e) { if (!lbtn.contains(e.target)) { ldrop.style.opacity = '0'; ldrop.style.pointerEvents = 'none'; ldrop.style.transform = 'translateY(-6px)'; } });
+  }
+  document.querySelectorAll('.lopt').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      lang = btn.getAttribute('data-lang');
+      localStorage.setItem('ym_lang', lang);
+      document.getElementById('lf').innerHTML = {'en':'<img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN">','ar':'<img src="https://flagcdn.com/16x12/sa.png" class="flag" alt="AR">','fr':'<img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR">','es':'<img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES">'}[lang] || '<img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN">';
+      document.getElementById('lc').textContent = lang.toUpperCase();
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      d = T[lang] || {};
+      document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (d[key]) el.innerHTML = d[key];
+      });
+      ldrop.style.opacity = '0'; ldrop.style.pointerEvents = 'none'; ldrop.style.transform = 'translateY(-6px)';
+      document.querySelectorAll('.lopt').forEach(function(o) { o.classList.remove('act'); });
+      btn.classList.add('act');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

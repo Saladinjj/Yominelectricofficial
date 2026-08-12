@@ -418,6 +418,41 @@
       ],
       "destination": "/products?category=current-transformer",
       "statusCode": 301
+    },
+    {
+      "source": "/blog-how-do-electricity-meters-work",
+      "destination": "/blog/how-do-electricity-meters-work",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-prepaid-vs-postpaid-meters",
+      "destination": "/blog/prepaid-vs-postpaid-meters",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-what-is-a-current-transformer",
+      "destination": "/blog/what-is-a-current-transformer",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-smart-meters-explained",
+      "destination": "/blog/smart-meters-explained",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-solar-power-beginners-guide",
+      "destination": "/blog/solar-power-beginners-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-voltage-stabilizer-guide",
+      "destination": "/blog/voltage-stabilizer-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-nepal-loading",
+      "destination": "/blog/nepal-loading",
+      "statusCode": 301
     }
   ],
   "routes": [
