@@ -12,6 +12,7 @@ Disallow: /curl/
 Disallow: /plans/
 Disallow: /backend/
 Disallow: /data/
+Allow: /data/products.json
 Disallow: /*.asp
 Disallow: /*.py
 Disallow: /*.json
