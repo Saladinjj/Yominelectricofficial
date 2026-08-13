@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Understanding kWh: What You Are Actually Paying For | Yomin Electric Blog</title>
+<meta name="description" content="A simple breakdown of kilowatt-hours, billing and how to read your meter.">
+<link rel="canonical" href="https://www.yominelectric.com/blog/understanding-kwh">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Understanding kWh: What You Are Actually Paying For","datePublished":"August 5, 2026","author":{"@type":"Organization","name":"Yomin Electric"},"publisher":{"@type":"Organization","name":"Yomin Electric","logo":{"@type":"ImageObject","url":"https://www.yominelectric.com/logo_transparent.png"}},"image":"https://www.yominelectric.com/assets/images/blog/understanding-kwh/hero.jpg"}</script>
+</head>
+<body>
+<nav id="nav">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" width="44" height="44">
+  </a>
+  <ul class="n-ctr">
+    <li><a href="/" data-i18n="nav_home">Home</a></li>
+    <li><a href="/products" data-i18n="nav_products">Products</a></li>
+    <li><a href="/solutions" data-i18n="nav_solutions">Solutions</a></li>
+    <li><a href="/blog" class="active">Blog</a></li>
+    <li><a href="/process" data-i18n="nav_process">Process</a></li>
+    <li><a href="/about" data-i18n="nav_about">About</a></li>
+    <li><a href="/contact" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="theme-pair">
+      <button class="theme-btn-s" id="btnDark" aria-label="Dark mode"><span class="t-ic">☾</span></button>
+      <button class="theme-btn-s active" id="btnLight" aria-label="Light mode"><span class="t-ic">☀</span></button>
+    </div>
+    <div class="lsw" style="position:relative">
+      <button class="lbtn" id="lbtn" style="background:rgba(255,255,255,.06);border:1px solid var(--bdr);color:var(--mt);padding:7px 13px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;font-family:var(--ss)">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5" width="10" height="10"><path d="M1 1l5 5 5-5"/></svg>
+      </button>
+      <div class="ldrop" id="ldrop" style="position:absolute;top:calc(100% + 8px);right:0;background:#1e1e1e;border:1px solid var(--bdr);border-radius:10px;min-width:140px;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:500;overflow:hidden">
+        <button class="lopt act" data-lang="en" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="ar" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:'Noto Sans Arabic',var(--ss),sans-serif;white-space:nowrap"><span><span class="flag flag-txt">AR</span></span> العربية</button>
+        <button class="lopt" data-lang="fr" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Français</button>
+        <button class="lopt" data-lang="es" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Español</button>
+      </div>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_quote">Get Quote</a>
+    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob" id="mob">
+  <button class="mob-x" id="mob-x">✕</button>
+  <a href="/" data-i18n="nav_home">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+</div>
+<main>
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> · <a href="/blog">Blog</a> · <span>Understanding kWh: What You Are Actually Paying For</span></div>
+    <span class="bh-tag">Guides</span>
+    <h1 class="bh-title">Understanding kWh: What You Are Actually Paying For</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>5 min read</span>
+      <span class="divider"></span>
+      <span>August 5, 2026</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <img class="hero-img" src="/assets/images/blog/understanding-kwh/hero.jpg" alt="Understanding kWh: What You Are Actually Paying For" loading="eager">
+    <p>Every electricity bill lists a number of kilowatt-hours (kWh), but few people know what the unit really means — or how to use it to cut their bill.</p><h2>What Is a Kilowatt-Hour?</h2><p>A kWh is the energy consumed by a 1,000-watt device running for one hour. A 2 kW air conditioner running 5 hours consumes 10 kWh. It is a measure of energy, not power — power is the rate, energy is the total.</p><h2>Why Meters Count kWh</h2><p>Meters integrate power over time, exactly matching how utilities bill: usage multiplied by the tariff. Understanding this explains why a high-power device used briefly can cost the same as a low-power device run all day.</p><h2>Reading Your Meter</h2><p>Digital meters show a cumulative kWh reading. Subtract last month's reading from this month's to get your consumption. Prepaid meters display remaining credit, which is the same energy ledger in reverse.</p><h2>How to Lower Your kWh</h2><p>Target the big loads: heating, cooling and water heating. Shift usage to off-peak hours if your tariff supports it, and eliminate standby loads that quietly consume energy 24 hours a day.</p><h2>Conclusion</h2><p>Once you think in kWh, every appliance and every bill becomes clear. A reliable meter — mechanical, digital or smart — is the first tool for managing it.</p>
+  </section>
+</main>
+<footer>
+  <div>
+    <div class="ft-brand-n">Yomin Electric</div>
+    <div class="ft-sub">Zhejiang Yomin Electric Co., Ltd. — Precision energy metering solutions since 1996.</div>
+  </div>
+  <div class="ft-links">
+    <a href="/">Home</a>
+    <a href="/products">Products</a>
+    <a href="/blog">Blog</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </div>
+</footer>
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Busbar Design Basics: How to Choose the Right Material and Size | Yomin Electric Blog</title>
+<meta name="description" content="Material, cross-section and insulation choices explained for busbar systems.">
+<link rel="canonical" href="https://www.yominelectric.com/blog/busbar-design-basics">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Busbar Design Basics: How to Choose the Right Material and Size","datePublished":"August 10, 2026","author":{"@type":"Organization","name":"Yomin Electric"},"publisher":{"@type":"Organization","name":"Yomin Electric","logo":{"@type":"ImageObject","url":"https://www.yominelectric.com/logo_transparent.png"}},"image":"https://www.yominelectric.com/assets/images/blog/busbar-design-basics/hero.jpg"}</script>
+</head>
+<body>
+<nav id="nav">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" width="44" height="44">
+  </a>
+  <ul class="n-ctr">
+    <li><a href="/" data-i18n="nav_home">Home</a></li>
+    <li><a href="/products" data-i18n="nav_products">Products</a></li>
+    <li><a href="/solutions" data-i18n="nav_solutions">Solutions</a></li>
+    <li><a href="/blog" class="active">Blog</a></li>
+    <li><a href="/process" data-i18n="nav_process">Process</a></li>
+    <li><a href="/about" data-i18n="nav_about">About</a></li>
+    <li><a href="/contact" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="theme-pair">
+      <button class="theme-btn-s" id="btnDark" aria-label="Dark mode"><span class="t-ic">☾</span></button>
+      <button class="theme-btn-s active" id="btnLight" aria-label="Light mode"><span class="t-ic">☀</span></button>
+    </div>
+    <div class="lsw" style="position:relative">
+      <button class="lbtn" id="lbtn" style="background:rgba(255,255,255,.06);border:1px solid var(--bdr);color:var(--mt);padding:7px 13px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;font-family:var(--ss)">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5" width="10" height="10"><path d="M1 1l5 5 5-5"/></svg>
+      </button>
+      <div class="ldrop" id="ldrop" style="position:absolute;top:calc(100% + 8px);right:0;background:#1e1e1e;border:1px solid var(--bdr);border-radius:10px;min-width:140px;opacity:0;pointer-events:none;transform:translateY(-6px);transition:opacity .2s,transform .2s;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:500;overflow:hidden">
+        <button class="lopt act" data-lang="en" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="ar" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:'Noto Sans Arabic',var(--ss),sans-serif;white-space:nowrap"><span><span class="flag flag-txt">AR</span></span> العربية</button>
+        <button class="lopt" data-lang="fr" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Français</button>
+        <button class="lopt" data-lang="es" style="display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;color:var(--mt);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:var(--ss);white-space:nowrap"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Español</button>
+      </div>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_quote">Get Quote</a>
+    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob" id="mob">
+  <button class="mob-x" id="mob-x">✕</button>
+  <a href="/" data-i18n="nav_home">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+</div>
+<main>
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> · <a href="/blog">Blog</a> · <span>Busbar Design Basics: How to Choose the Right Material and Size</span></div>
+    <span class="bh-tag">Guides</span>
+    <h1 class="bh-title">Busbar Design Basics: How to Choose the Right Material and Size</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>7 min read</span>
+      <span class="divider"></span>
+      <span>August 10, 2026</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <img class="hero-img" src="/assets/images/blog/busbar-design-basics/hero.jpg" alt="Busbar Design Basics: How to Choose the Right Material and Size" loading="eager">
+    <p>Busbars are the backbone of every switchboard, battery pack, and distribution panel. Choosing the right material and cross-section is what separates a reliable system from a recurring maintenance headache.</p><h2>Copper vs Aluminum: The Core Trade-Off</h2><p>Copper has roughly 60% lower resistance than aluminum of the same size, which means less heat and lower losses at high currents. Aluminum, however, weighs about one-third of copper and costs significantly less, making it the standard for utility-scale distribution where weight and budget dominate.</p><h2>Sizing the Cross-Section</h2><p>Cross-section is determined by the continuous current the bar must carry and the allowable temperature rise. As a rule of thumb, a 1 mm² copper bar carries roughly 2–4 A depending on ventilation and duty cycle. Always confirm with the manufacturer's current-carrying tables for your exact configuration.</p><h2>Insulation and Plating</h2><p>Bare bars need clearance distances; insulated or sleeved bars allow compact layouts and prevent accidental contact. Nickel plating on copper terminals improves corrosion resistance and maintains low contact resistance in humid environments.</p><h2>Application-Specific Guidance</h2><p>For EV battery packs and energy storage, flexible laminated busbars absorb vibration and simplify assembly. For switchgear, rigid bars with proper support spacing minimize mechanical stress during short circuits.</p><h2>Conclusion</h2><p>Match material to cost and weight needs, size cross-section from real current and temperature data, and choose the right insulation for your environment. When in doubt, consult the busbar supplier's engineering tables — they exist for a reason.</p>
+  </section>
+</main>
+<footer>
+  <div>
+    <div class="ft-brand-n">Yomin Electric</div>
+    <div class="ft-sub">Zhejiang Yomin Electric Co., Ltd. — Precision energy metering solutions since 1996.</div>
+  </div>
+  <div class="ft-links">
+    <a href="/">Home</a>
+    <a href="/products">Products</a>
+    <a href="/blog">Blog</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </div>
+</footer>
+
