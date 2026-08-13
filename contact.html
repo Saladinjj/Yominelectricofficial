@@ -62,66 +62,73 @@
 
 
 <!-- NAV -->
-<nav id="nav">
+<nav id="nav" aria-label="Main navigation">
   <a href="/" class="n-logo">
-    <img src="logo_transparent.png" alt="Yomin Electric" style="height:44px;width:auto;object-fit:contain;filter:brightness(1.1);display:block">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
   </a>
-  <ul class="n-ctr"><li><a href="/" data-t="nav_home">Home</a></li>
-        <li class="n-drop"><a href="/products" data-t="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">▾</span></a>
-        <div class="n-mega">
-          <a href="/products/energy-meter"><span class="mega-icon">⚡</span><span class="mega-name">Energy Meters</span></a>
-          <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">🔃</span><span class="mega-name">Voltage Stabilizers</span></a>
-          <a href="/products/current-transformer"><span class="mega-icon">🔄</span><span class="mega-name">Current Transformers</span></a>
-          <a href="/products/variac-transformer"><span class="mega-icon">⚙️</span><span class="mega-name">Variac Transformers</span></a>
-          <a href="/products/screw-machine"><span class="mega-icon">🔩</span><span class="mega-name">Screw Machines</span></a>
-          <a href="/products/terminal-connector"><span class="mega-icon">🔌</span><span class="mega-name">Terminals & Connectors</span></a>
-          <a href="/products/solar-pv-products"><span class="mega-icon">☀️</span><span class="mega-name">Solar & PV Products</span></a>
-          <a href="/products/fuse-protection"><span class="mega-icon">⚠️</span><span class="mega-name">Fuses & Protection</span></a>
-          <a href="/products/voltage-protector"><span class="mega-icon">🛡️</span><span class="mega-name">Voltage Protectors</span></a>
-          <a href="/products/socket-wiring"><span class="mega-icon">🔧</span><span class="mega-name">Sockets & Wiring</span></a>
-          <a href="/products/tools-hardware"><span class="mega-icon">🛠️</span><span class="mega-name">Tools & Hardware</span></a>
-          <a href="/products/security-seal"><span class="mega-icon">🔒</span><span class="mega-name">Security Seals</span></a>
-          <a href="/products/other"><span class="mega-icon">📦</span><span class="mega-name">Other Products</span></a>
-          <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">🗂️</span><span class="mega-name">View All Products →</span></a>
-        </div>
-      </li>
-        <li><a href="/solutions" data-t="nav_solutions">Solutions</a></li>
-        <li><a href="/process" data-t="nav_process">Process</a></li>
-        <li role="none"><a href="/blog" role="menuitem">Blog</a></li>
-        <li><a href="/about" data-t="nav_about">About</a></li>
-        <li><a href="/contact" class="active" data-t="nav_contact">Contact</a></li></ul>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/voltage-protector"><span class="mega-icon">&#128737;&#65039;</span><span class="mega-name">Voltage Protectors</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact" class="active">Contact</a></li>
+  </ul>
   <div class="n-rt">
-    <div class="lsw">
-      <button class="lbtn" aria-label="Language"><span id="lbtn-txt">EN</span>
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
       </button>
-      <div class="ldrop">
-        <button class="lopt" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"> English</button>
-        <button class="lopt" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"> Français</button>
-        <button class="lopt" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"> Español</button>
-        <button class="lopt" data-lang="ar"><span class="flag flag-txt">AR</span> العربية</button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
       </div>
     </div>
-    <button class="ham" id="ham" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <!-- MOBILE MENU -->
-<div class="mob" id="mob">
-  <button class="mob-x" id="mobX">✕</button>
-  <a href="/" data-t="nav_home">Home</a>
-  <a href="/products" data-t="nav_products">Products</a>
-  <a href="/solutions" data-t="nav_solutions">Solutions</a>
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
   <a href="/blog">Blog</a>
-  <a href="/process" data-t="nav_process">Process</a>
-  <a href="/about" data-t="nav_about">About</a>
-  <a href="/contact" class="active" data-t="nav_contact">Contact</a>
-<div class="mob-lngs">
-    <button class="mlb" data-lang="en">EN</button>
-    <button class="mlb" data-lang="fr">FR</button>
-    <button class="mlb" data-lang="es">ES</button>
-    <button class="mlb" data-lang="ar"><span class="flag flag-txt">AR</span></button>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact" class="active">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar">AR</button>
   </div>
 </div>
 
@@ -405,60 +412,22 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="ft-grid">
-    <div class="ft-brand">
-      <span style="font-family:var(--sf);font-size:20px;color:var(--tx);">Yomin Electric</span>
-      <p data-t="ft_desc">Precision energy metering solutions for global buyers. Trusted in 95+ countries since 2005.</p>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
     </div>
-    <div class="ft-col">
-      <h4>Products</h4>
-      <ul>
-        <li><a href="/products/energy-meter">Energy Meters</a></li>
-        <li><a href="/products/current-transformer">Current Transformers</a></li>
-        <li><a href="/products/voltage-protector">Voltage Protectors</a></li>
-        <li><a href="/products/voltage-stabilizer-regulator">Voltage Stabilizers</a></li>
-        <li><a href="/products/variac-transformer">Variac Transformers</a></li>
-      </ul>
-    </div>
-    <div class="ft-col">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/about#factory">Factory</a></li>
-        <li><a href="/about#certifications">Certifications</a></li>
-      </ul>
-    </div>
-    <div class="ft-col">
-      <h4>Support</h4>
-      <ul>
-        <li><a href="/privacy-policy">Privacy Policy</a></li>
-        <li><a href="/shipping-policy">Shipping Policy</a></li>
-        <li><a href="/return-policy">Return Policy</a></li>
-        <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
-      </ul>
-    </div>
-    <div class="ft-col">
-      <h4>Contact</h4>
-      <ul>
-        <li><a href="mailto:salah.eddine@cnyomin.com">salah.eddine@cnyomin.com</a></li>
-        <li><a href="https://wa.me/8619016543301">+86 190 1654 3301</a></li>
-        <li>Hangzhou & Wenzhou, Zhejiang, China</li>
-      </ul>
-    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
   </div>
-  <div class="ft-bot">
-    <p data-t="ft_copy">© 2024 Yomin Electric Co., Ltd. All rights reserved.</p>
-    <div class="ft-soc">
-      <a href="https://wa.me/8619016543301" target="_blank" class="ft-soc-btn" aria-label="WhatsApp">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.173-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-      <a href="#" class="ft-soc-btn" aria-label="WeChat">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-3.895-6.348-7.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm4.315 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm4.969 4.31c-3.019 0-5.478 2.146-5.478 4.798 0 2.652 2.459 4.798 5.478 4.798.658 0 1.282-.107 1.863-.298a.607.607 0 0 1 .497.068l1.339.782a.228.228 0 0 0 .116.038.207.207 0 0 0 .204-.204.282.282 0 0 0-.034-.148l-.272-1.032a.413.413 0 0 1 .148-.462C18.893 18.993 20 17.52 20 15.9c0-2.652-2.459-4.799-5.478-4.799zm-2.058 2.532c.447 0 .81.37.81.824 0 .456-.363.824-.81.824a.817.817 0 0 1-.811-.824c0-.455.363-.824.81-.824zm4.114 0c.447 0 .81.37.81.824 0 .456-.363.824-.81.824a.817.817 0 0 1-.81-.824c0-.455.362-.824.81-.824z"/></svg>
-      </a>
-      <a href="mailto:salah.eddine@cnyomin.com" class="ft-soc-btn" aria-label="Email">✉</a>
-      <a href="https://alibaba.com" target="_blank" class="ft-soc-btn" aria-label="Alibaba">🏪</a>
-    </div>
-  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2025 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
 </footer>
 
 <script src="assets/js/api.js"></script>
