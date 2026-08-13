@@ -381,16 +381,16 @@ function setLang(l, fromInit) {
   currentLang = l;
   window.ymLang = l;
   localStorage.setItem('ym_lang', l);
-  const isRTL = l === 'ar';
+  const isRTL = false; /* Arabic stays LTR per user preference */
   document.documentElement.lang = l;
-  document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
-  document.body.dir = isRTL ? 'rtl' : 'ltr';
-  document.body.classList.toggle('ar', isRTL);
+  document.documentElement.dir = 'ltr';
+  document.body.dir = 'ltr';
+  document.body.classList.toggle('ar', l === 'ar');
   applyTranslations();
   updateLangUI();
   // Reload product pages only on manual language switch, not initial load
   if (!fromInit && prevLang !== l) {
-    const onProductPage = document.querySelector('[class*="pcard"]') || document.querySelector('[class*="prod-grid"]');
+    const onProductPage = document.querySelector('[class*="pcard"]') || document.querySelector('[class*="prod-grid"]') || document.getElementById('mainImg');
     if (onProductPage) location.reload();
   }
 }
@@ -411,6 +411,24 @@ function applyTranslations() {
       el.textContent = d[k];
     }
   });
+  // Static product pages: translate description / features / specs table
+  const pidEl = document.querySelector('[data-pid]');
+  if (pidEl) {
+    const pid = pidEl.getAttribute('data-pid');
+    const feats = d[pid + '-feats'];
+    if (Array.isArray(feats)) {
+      const ul = document.querySelector('.p-features ul');
+      if (ul) ul.innerHTML = feats.map(f => '<li>' + String(f).replace(/</g, '&lt;') + '</li>').join('');
+    }
+    const specs = d[pid + '-specs'];
+    if (Array.isArray(specs)) {
+      const tbody = document.querySelector('.specs tbody');
+      if (tbody) {
+        tbody.innerHTML = specs.map(s => '<tr><th>' + String(s[0]).replace(/</g, '&lt;') +
+          '</th><td>' + String(s[1]).replace(/</g, '&lt;') + '</td></tr>').join('');
+      }
+    }
+  }
 }
 
 function updateLangUI() {

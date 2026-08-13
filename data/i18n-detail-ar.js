@@ -1,0 +1,24481 @@
+/* Yomin Electric - full product translations (ar) */
+if (typeof T !== "undefined") {
+  T.ar = Object.assign({}, T.ar || {}, {
+"ym-sm-001-desc": "آلة شد براغي تلقائية لإنتاج المكونات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Product Type : Integrated metal deep processing line; Production Stages : 3 — deep processing → screw tightening → rotary finishing; Materials : Brass and aluminum busbar rows / terminals; Control : Touch screen + PLC (Taiwan Weilun) per station. الميزات الرئيسية: metal deep processing machine, brass busbar production line, aluminum terminal assembly, automatic drilling tapping.",
+"ym-sm-001-feats": [
+"metal deep processing machine",
+"brass busbar production line",
+"aluminum terminal assembly",
+"automatic drilling tapping",
+"screw tightening station",
+"rotary metalworking tbm-s"
+],
+"ym-sm-001-specs": [
+[
+"Product Type",
+"Integrated metal deep processing line"
+],
+[
+"Production Stages",
+"3 — deep processing → screw tightening → rotary finishing"
+],
+[
+"Materials",
+"Brass and aluminum busbar rows / terminals"
+],
+[
+"Control",
+"Touch screen + PLC (Taiwan Weilun) per station"
+],
+[
+"Customization",
+"Professional customization per drawings or samples"
+]
+],
+"ym-0058-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الاتصال : واي فاي; نوع التحكم : نوع المرحل; الشاشة : رقمي. الميزات الرئيسية: واي فاي, مرحل, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0058-feats": [
+"واي فاي",
+"مرحل",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0058-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0060-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; نوع التيار : تيار متردد; الشاشة : شاشة LED. الميزات الرئيسية: تناظري, front, board, installed.",
+"ym-0060-feats": [
+"تناظري",
+"front",
+"board",
+"installed",
+"cover",
+"نشط"
+],
+"ym-0060-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LED"
+]
+],
+"ym-0067-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي. الميزات الرئيسية: electromechanical, monitor, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0067-feats": [
+"electromechanical",
+"monitor",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0067-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0068-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: كهرباء, working, watt, hour.",
+"ym-0068-feats": [
+"كهرباء",
+"working",
+"watt",
+"hour",
+"mechanical",
+"عداد الطاقة"
+],
+"ym-0068-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0069-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: mechanical, kilowatt-hour, bakelite, عداد الطاقة.",
+"ym-0069-feats": [
+"mechanical",
+"kilowatt-hour",
+"bakelite",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0069-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0070-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد; الشاشة : رقمي. الميزات الرئيسية: electronmechanical, نشط, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0070-feats": [
+"electronmechanical",
+"نشط",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0070-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0002-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; التردد : 50 هرتز; نوع التيار : تيار مستمر; الشاشة : شاشة LED. الميزات الرئيسية: home, fully, مثبت الجهد, منظم الجهد.",
+"ym-0002-feats": [
+"home",
+"fully",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي",
+"servo stabilizer"
+],
+"ym-0002-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"التردد",
+"50 هرتز"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+],
+[
+"الشاشة",
+"شاشة LED"
+]
+],
+"ym-0003-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 110 فولت; السعة : 15 KVA; الطاقة : 10 KW. الميزات الرئيسية: نحاس, servo, محرك, مثبت الجهد.",
+"ym-0003-feats": [
+"نحاس",
+"servo",
+"محرك",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي"
+],
+"ym-0003-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"110 فولت"
+],
+[
+"السعة",
+"15 KVA"
+],
+[
+"الطاقة",
+"10 KW"
+],
+[
+"نوع التحكم",
+"Servo Motor"
+]
+],
+"ym-0004-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد; الشاشة : شاشة LED. الميزات الرئيسية: mini, مثبت, منظم, مثبت الجهد.",
+"ym-0004-feats": [
+"mini",
+"مثبت",
+"منظم",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي"
+],
+"ym-0004-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LED"
+]
+],
+"ym-0005-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; نوع التيار : تيار مستمر. الميزات الرئيسية: dual, screen, مثبت الجهد, منظم الجهد.",
+"ym-0005-feats": [
+"dual",
+"screen",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي",
+"servo stabilizer"
+],
+"ym-0005-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0006-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد; نوع التحكم : Servo Motor. الميزات الرئيسية: servo, محرك, تحكم, home.",
+"ym-0006-feats": [
+"servo",
+"محرك",
+"تحكم",
+"home",
+"مثبت",
+"منظم"
+],
+"ym-0006-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"Servo Motor"
+]
+],
+"ym-0007-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 3000V; السعة : 3000 VA; نوع التحكم : نوع المرحل. الميزات الرئيسية: تحكم, مرحل, wps3000va, conditioning.",
+"ym-0007-feats": [
+"تحكم",
+"مرحل",
+"wps3000va",
+"conditioning",
+"wall",
+"تركيب"
+],
+"ym-0007-specs": [
+[
+"الجهد",
+"3000V"
+],
+[
+"السعة",
+"3000 VA"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+]
+],
+"ym-el-2000-desc": "نظام إمداد طاقة طوارئ (EPS) للإضاءة أثناء انقطاع التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Emergency Lighting Power Supply; التطبيق : Commercial, Industrial, Institutional; الشهادة : CE, ISO9001; التركيب : Wall / Floor (model dependent). الميزات الرئيسية: إضاءة الطوارئ, طوارئ قدرة إمداد, centralized power, backup power.",
+"ym-el-2000-feats": [
+"إضاءة الطوارئ",
+"طوارئ قدرة إمداد",
+"centralized power",
+"backup power",
+"emergency exit",
+"fire safety"
+],
+"ym-el-2000-specs": [
+[
+"النوع",
+"Emergency Lighting Power Supply"
+],
+[
+"التطبيق",
+"Commercial, Industrial, Institutional"
+],
+[
+"الشهادة",
+"CE, ISO9001"
+],
+[
+"التركيب",
+"Wall / Floor (model dependent)"
+]
+],
+"ym-el-2001-desc": "نظام إمداد طاقة طوارئ (EPS) للإضاءة أثناء انقطاع التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Emergency Lighting Power Supply; التطبيق : Commercial, Industrial, Institutional; الشهادة : CE, ISO9001; التركيب : Wall / Floor (model dependent). الميزات الرئيسية: إضاءة الطوارئ, طوارئ قدرة إمداد, centralized power, backup power.",
+"ym-el-2001-feats": [
+"إضاءة الطوارئ",
+"طوارئ قدرة إمداد",
+"centralized power",
+"backup power",
+"emergency exit",
+"fire safety"
+],
+"ym-el-2001-specs": [
+[
+"النوع",
+"Emergency Lighting Power Supply"
+],
+[
+"التطبيق",
+"Commercial, Industrial, Institutional"
+],
+[
+"الشهادة",
+"CE, ISO9001"
+],
+[
+"التركيب",
+"Wall / Floor (model dependent)"
+]
+],
+"ym-el-2002-desc": "نظام إمداد طاقة طوارئ (EPS) للإضاءة أثناء انقطاع التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Emergency Lighting Power Supply; التطبيق : Commercial, Industrial, Institutional; الشهادة : CE, ISO9001; التركيب : Wall / Floor (model dependent). الميزات الرئيسية: إضاءة الطوارئ, طوارئ قدرة إمداد, centralized power, backup power.",
+"ym-el-2002-feats": [
+"إضاءة الطوارئ",
+"طوارئ قدرة إمداد",
+"centralized power",
+"backup power",
+"emergency exit",
+"fire safety"
+],
+"ym-el-2002-specs": [
+[
+"النوع",
+"Emergency Lighting Power Supply"
+],
+[
+"التطبيق",
+"Commercial, Industrial, Institutional"
+],
+[
+"الشهادة",
+"CE, ISO9001"
+],
+[
+"التركيب",
+"Wall / Floor (model dependent)"
+]
+],
+"ym-el-2003-desc": "نظام إمداد طاقة طوارئ (EPS) للإضاءة أثناء انقطاع التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Emergency Lighting Power Supply; التطبيق : Commercial, Industrial, Institutional; الشهادة : CE, ISO9001; التركيب : Wall / Floor (model dependent). الميزات الرئيسية: إضاءة الطوارئ, طوارئ قدرة إمداد, centralized power, backup power.",
+"ym-el-2003-feats": [
+"إضاءة الطوارئ",
+"طوارئ قدرة إمداد",
+"centralized power",
+"backup power",
+"emergency exit",
+"fire safety"
+],
+"ym-el-2003-specs": [
+[
+"النوع",
+"Emergency Lighting Power Supply"
+],
+[
+"التطبيق",
+"Commercial, Industrial, Institutional"
+],
+[
+"الشهادة",
+"CE, ISO9001"
+],
+[
+"التركيب",
+"Wall / Floor (model dependent)"
+]
+],
+"ym-el-2004-desc": "نظام إمداد طاقة طوارئ (EPS) للإضاءة أثناء انقطاع التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Emergency Lighting Power Supply; التطبيق : Commercial, Industrial, Institutional; الشهادة : CE, ISO9001; التركيب : Wall / Floor (model dependent). الميزات الرئيسية: إضاءة الطوارئ, طوارئ قدرة إمداد, centralized power, backup power.",
+"ym-el-2004-feats": [
+"إضاءة الطوارئ",
+"طوارئ قدرة إمداد",
+"centralized power",
+"backup power",
+"emergency exit",
+"fire safety"
+],
+"ym-el-2004-specs": [
+[
+"النوع",
+"Emergency Lighting Power Supply"
+],
+[
+"التطبيق",
+"Commercial, Industrial, Institutional"
+],
+[
+"الشهادة",
+"CE, ISO9001"
+],
+[
+"التركيب",
+"Wall / Floor (model dependent)"
+]
+],
+"ym-el-2005-desc": "نظام إمداد طاقة طوارئ (EPS) للإضاءة أثناء انقطاع التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Emergency Lighting Power Supply; التطبيق : Commercial, Industrial, Institutional; الشهادة : CE, ISO9001; التركيب : Wall / Floor (model dependent). الميزات الرئيسية: إضاءة الطوارئ, طوارئ قدرة إمداد, centralized power, backup power.",
+"ym-el-2005-feats": [
+"إضاءة الطوارئ",
+"طوارئ قدرة إمداد",
+"centralized power",
+"backup power",
+"emergency exit",
+"fire safety"
+],
+"ym-el-2005-specs": [
+[
+"النوع",
+"Emergency Lighting Power Supply"
+],
+[
+"التطبيق",
+"Commercial, Industrial, Institutional"
+],
+[
+"الشهادة",
+"CE, ISO9001"
+],
+[
+"التركيب",
+"Wall / Floor (model dependent)"
+]
+],
+"ym-el-2006-desc": "نظام إمداد طاقة طوارئ (EPS) للإضاءة أثناء انقطاع التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Emergency Lighting Power Supply; التطبيق : Commercial, Industrial, Institutional; الشهادة : CE, ISO9001; التركيب : Wall / Floor (model dependent). الميزات الرئيسية: إضاءة الطوارئ, طوارئ قدرة إمداد, centralized power, backup power.",
+"ym-el-2006-feats": [
+"إضاءة الطوارئ",
+"طوارئ قدرة إمداد",
+"centralized power",
+"backup power",
+"emergency exit",
+"fire safety"
+],
+"ym-el-2006-specs": [
+[
+"النوع",
+"Emergency Lighting Power Supply"
+],
+[
+"التطبيق",
+"Commercial, Industrial, Institutional"
+],
+[
+"الشهادة",
+"CE, ISO9001"
+],
+[
+"التركيب",
+"Wall / Floor (model dependent)"
+]
+],
+"ym-el-2007-desc": "نظام إمداد طاقة طوارئ (EPS) للإضاءة أثناء انقطاع التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Emergency Lighting Power Supply; التطبيق : Commercial, Industrial, Institutional; الشهادة : CE, ISO9001; التركيب : Wall / Floor (model dependent). الميزات الرئيسية: إضاءة الطوارئ, طوارئ قدرة إمداد, centralized power, backup power.",
+"ym-el-2007-feats": [
+"إضاءة الطوارئ",
+"طوارئ قدرة إمداد",
+"centralized power",
+"backup power",
+"emergency exit",
+"fire safety"
+],
+"ym-el-2007-specs": [
+[
+"النوع",
+"Emergency Lighting Power Supply"
+],
+[
+"التطبيق",
+"Commercial, Industrial, Institutional"
+],
+[
+"الشهادة",
+"CE, ISO9001"
+],
+[
+"التركيب",
+"Wall / Floor (model dependent)"
+]
+],
+"ym-el-2008-desc": "نظام إمداد طاقة طوارئ (EPS) للإضاءة أثناء انقطاع التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Emergency Lighting Power Supply; التطبيق : Commercial, Industrial, Institutional; الشهادة : CE, ISO9001; التركيب : Wall / Floor (model dependent). الميزات الرئيسية: إضاءة الطوارئ, طوارئ قدرة إمداد, centralized power, backup power.",
+"ym-el-2008-feats": [
+"إضاءة الطوارئ",
+"طوارئ قدرة إمداد",
+"centralized power",
+"backup power",
+"emergency exit",
+"fire safety"
+],
+"ym-el-2008-specs": [
+[
+"النوع",
+"Emergency Lighting Power Supply"
+],
+[
+"التطبيق",
+"Commercial, Industrial, Institutional"
+],
+[
+"الشهادة",
+"CE, ISO9001"
+],
+[
+"التركيب",
+"Wall / Floor (model dependent)"
+]
+],
+"ym-el-2009-desc": "نظام إمداد طاقة طوارئ (EPS) للإضاءة أثناء انقطاع التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Emergency Lighting Power Supply; التطبيق : Commercial, Industrial, Institutional; الشهادة : CE, ISO9001; التركيب : Wall / Floor (model dependent). الميزات الرئيسية: إضاءة الطوارئ, طوارئ قدرة إمداد, centralized power, backup power.",
+"ym-el-2009-feats": [
+"إضاءة الطوارئ",
+"طوارئ قدرة إمداد",
+"centralized power",
+"backup power",
+"emergency exit",
+"fire safety"
+],
+"ym-el-2009-specs": [
+[
+"النوع",
+"Emergency Lighting Power Supply"
+],
+[
+"التطبيق",
+"Commercial, Industrial, Institutional"
+],
+[
+"الشهادة",
+"CE, ISO9001"
+],
+[
+"التركيب",
+"Wall / Floor (model dependent)"
+]
+],
+"ym-el-2010-desc": "نظام إمداد طاقة طوارئ (EPS) للإضاءة أثناء انقطاع التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Emergency Lighting Power Supply; التطبيق : Commercial, Industrial, Institutional; الشهادة : CE, ISO9001; التركيب : Wall / Floor (model dependent). الميزات الرئيسية: إضاءة الطوارئ, طوارئ قدرة إمداد, centralized power, backup power.",
+"ym-el-2010-feats": [
+"إضاءة الطوارئ",
+"طوارئ قدرة إمداد",
+"centralized power",
+"backup power",
+"emergency exit",
+"fire safety"
+],
+"ym-el-2010-specs": [
+[
+"النوع",
+"Emergency Lighting Power Supply"
+],
+[
+"التطبيق",
+"Commercial, Industrial, Institutional"
+],
+[
+"الشهادة",
+"CE, ISO9001"
+],
+[
+"التركيب",
+"Wall / Floor (model dependent)"
+]
+],
+"ym-el-2011-desc": "نظام إمداد طاقة طوارئ (EPS) للإضاءة أثناء انقطاع التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Emergency Lighting Power Supply; التطبيق : Commercial, Industrial, Institutional; الشهادة : CE, ISO9001; التركيب : Wall / Floor (model dependent). الميزات الرئيسية: إضاءة الطوارئ, طوارئ قدرة إمداد, centralized power, backup power.",
+"ym-el-2011-feats": [
+"إضاءة الطوارئ",
+"طوارئ قدرة إمداد",
+"centralized power",
+"backup power",
+"emergency exit",
+"fire safety"
+],
+"ym-el-2011-specs": [
+[
+"النوع",
+"Emergency Lighting Power Supply"
+],
+[
+"التطبيق",
+"Commercial, Industrial, Institutional"
+],
+[
+"الشهادة",
+"CE, ISO9001"
+],
+[
+"التركيب",
+"Wall / Floor (model dependent)"
+]
+],
+"ym-el-2012-desc": "نظام إمداد طاقة طوارئ (EPS) للإضاءة أثناء انقطاع التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Emergency Lighting Power Supply; التطبيق : Commercial, Industrial, Institutional; الشهادة : CE, ISO9001; التركيب : Wall / Floor (model dependent). الميزات الرئيسية: إضاءة الطوارئ, طوارئ قدرة إمداد, centralized power, backup power.",
+"ym-el-2012-feats": [
+"إضاءة الطوارئ",
+"طوارئ قدرة إمداد",
+"centralized power",
+"backup power",
+"emergency exit",
+"fire safety"
+],
+"ym-el-2012-specs": [
+[
+"النوع",
+"Emergency Lighting Power Supply"
+],
+[
+"التطبيق",
+"Commercial, Industrial, Institutional"
+],
+[
+"الشهادة",
+"CE, ISO9001"
+],
+[
+"التركيب",
+"Wall / Floor (model dependent)"
+]
+],
+"ym-sw-wallmountedangledsocketyme001-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E001; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-wallmountedangledsocketyme001-feats": [],
+"ym-sw-wallmountedangledsocketyme001-specs": [
+[
+"الطراز",
+"YM-E001"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-wallmountedangledsocketyme002-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E002; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-wallmountedangledsocketyme002-feats": [],
+"ym-sw-wallmountedangledsocketyme002-specs": [
+[
+"الطراز",
+"YM-E002"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-wallmountedangledsocketyme004-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E004; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-wallmountedangledsocketyme004-feats": [],
+"ym-sw-wallmountedangledsocketyme004-specs": [
+[
+"الطراز",
+"YM-E004"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-wallmountedangledsocketyme005-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E005; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-wallmountedangledsocketyme005-feats": [],
+"ym-sw-wallmountedangledsocketyme005-specs": [
+[
+"الطراز",
+"YM-E005"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-wallmountedangledsocketyme006-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E006; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-wallmountedangledsocketyme006-feats": [],
+"ym-sw-wallmountedangledsocketyme006-specs": [
+[
+"الطراز",
+"YM-E006"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-wallmountedangledsocketyme007-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E007; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-wallmountedangledsocketyme007-feats": [],
+"ym-sw-wallmountedangledsocketyme007-specs": [
+[
+"الطراز",
+"YM-E007"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-wallmountedbevelsocketyme002-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E002; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-wallmountedbevelsocketyme002-feats": [],
+"ym-sw-wallmountedbevelsocketyme002-specs": [
+[
+"الطراز",
+"YM-E002"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-portablesocketboxymax801-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-801; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-portablesocketboxymax801-feats": [],
+"ym-sw-portablesocketboxymax801-specs": [
+[
+"الطراز",
+"YMAX-801"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-portablesocketboxymax802-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-802; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-portablesocketboxymax802-feats": [],
+"ym-sw-portablesocketboxymax802-specs": [
+[
+"الطراز",
+"YMAX-802"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-portablesocketboxymax803-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-803; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-portablesocketboxymax803-feats": [],
+"ym-sw-portablesocketboxymax803-specs": [
+[
+"الطراز",
+"YMAX-803"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-portablesocketboxymax804-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-804; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-portablesocketboxymax804-feats": [],
+"ym-sw-portablesocketboxymax804-specs": [
+[
+"الطراز",
+"YMAX-804"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-portablesocketboxymax805-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-805; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-portablesocketboxymax805-feats": [],
+"ym-sw-portablesocketboxymax805-specs": [
+[
+"الطراز",
+"YMAX-805"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-portablesocketboxymax806-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-806; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-portablesocketboxymax806-feats": [],
+"ym-sw-portablesocketboxymax806-specs": [
+[
+"الطراز",
+"YMAX-806"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-portablesocketboxymax807-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-807; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-portablesocketboxymax807-feats": [],
+"ym-sw-portablesocketboxymax807-specs": [
+[
+"الطراز",
+"YMAX-807"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-wallmountedangledsocketymg001-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-G001; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-wallmountedangledsocketymg001-feats": [],
+"ym-sw-wallmountedangledsocketymg001-specs": [
+[
+"الطراز",
+"YM-G001"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-wallmountedangledsocketymg002-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-G002; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-wallmountedangledsocketymg002-feats": [],
+"ym-sw-wallmountedangledsocketymg002-specs": [
+[
+"الطراز",
+"YM-G002"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym001-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-001; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym001-feats": [],
+"ym-sw-industrialwaterproofsocketboxym001-specs": [
+[
+"الطراز",
+"YM-001"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym002-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-002; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym002-feats": [],
+"ym-sw-industrialwaterproofsocketboxym002-specs": [
+[
+"الطراز",
+"YM-002"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym003-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-003; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym003-feats": [],
+"ym-sw-industrialwaterproofsocketboxym003-specs": [
+[
+"الطراز",
+"YM-003"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym004-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-004; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym004-feats": [],
+"ym-sw-industrialwaterproofsocketboxym004-specs": [
+[
+"الطراز",
+"YM-004"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym005-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-005; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym005-feats": [],
+"ym-sw-industrialwaterproofsocketboxym005-specs": [
+[
+"الطراز",
+"YM-005"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym006-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-006; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym006-feats": [],
+"ym-sw-industrialwaterproofsocketboxym006-specs": [
+[
+"الطراز",
+"YM-006"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym007-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-007; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym007-feats": [],
+"ym-sw-industrialwaterproofsocketboxym007-specs": [
+[
+"الطراز",
+"YM-007"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym008-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-008; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym008-feats": [],
+"ym-sw-industrialwaterproofsocketboxym008-specs": [
+[
+"الطراز",
+"YM-008"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym009-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-009; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym009-feats": [],
+"ym-sw-industrialwaterproofsocketboxym009-specs": [
+[
+"الطراز",
+"YM-009"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym010-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-010; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym010-feats": [],
+"ym-sw-industrialwaterproofsocketboxym010-specs": [
+[
+"الطراز",
+"YM-010"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym011-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-011; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym011-feats": [],
+"ym-sw-industrialwaterproofsocketboxym011-specs": [
+[
+"الطراز",
+"YM-011"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym012-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-012; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym012-feats": [],
+"ym-sw-industrialwaterproofsocketboxym012-specs": [
+[
+"الطراز",
+"YM-012"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym013-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-013; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym013-feats": [],
+"ym-sw-industrialwaterproofsocketboxym013-specs": [
+[
+"الطراز",
+"YM-013"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym014-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-014; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym014-feats": [],
+"ym-sw-industrialwaterproofsocketboxym014-specs": [
+[
+"الطراز",
+"YM-014"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym015-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-015; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym015-feats": [],
+"ym-sw-industrialwaterproofsocketboxym015-specs": [
+[
+"الطراز",
+"YM-015"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym016-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-016; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym016-feats": [],
+"ym-sw-industrialwaterproofsocketboxym016-specs": [
+[
+"الطراز",
+"YM-016"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym017-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-017; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym017-feats": [],
+"ym-sw-industrialwaterproofsocketboxym017-specs": [
+[
+"الطراز",
+"YM-017"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym018-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-018; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym018-feats": [],
+"ym-sw-industrialwaterproofsocketboxym018-specs": [
+[
+"الطراز",
+"YM-018"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym019-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-019; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym019-feats": [],
+"ym-sw-industrialwaterproofsocketboxym019-specs": [
+[
+"الطراز",
+"YM-019"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym020-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-020; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym020-feats": [],
+"ym-sw-industrialwaterproofsocketboxym020-specs": [
+[
+"الطراز",
+"YM-020"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym021-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-021; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym021-feats": [],
+"ym-sw-industrialwaterproofsocketboxym021-specs": [
+[
+"الطراز",
+"YM-021"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym023-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-023; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym023-feats": [],
+"ym-sw-industrialwaterproofsocketboxym023-specs": [
+[
+"الطراز",
+"YM-023"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym024-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-024; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym024-feats": [],
+"ym-sw-industrialwaterproofsocketboxym024-specs": [
+[
+"الطراز",
+"YM-024"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym025-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-025; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym025-feats": [],
+"ym-sw-industrialwaterproofsocketboxym025-specs": [
+[
+"الطراز",
+"YM-025"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-industrialwaterproofsocketboxym027-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-027; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-industrialwaterproofsocketboxym027-feats": [],
+"ym-sw-industrialwaterproofsocketboxym027-specs": [
+[
+"الطراز",
+"YM-027"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-wallmountedangledsocketymg001-1-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-G001; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-wallmountedangledsocketymg001-1-feats": [],
+"ym-sw-wallmountedangledsocketymg001-1-specs": [
+[
+"الطراز",
+"YM-G001"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-wallmountedangledsocketymg002-1-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-G002; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-wallmountedangledsocketymg002-1-feats": [],
+"ym-sw-wallmountedangledsocketymg002-1-specs": [
+[
+"الطراز",
+"YM-G002"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-wallmountedangledsocketymg003-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-G003; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-wallmountedangledsocketymg003-feats": [],
+"ym-sw-wallmountedangledsocketymg003-specs": [
+[
+"الطراز",
+"YM-G003"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-portablesocketboxym801-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-801; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-portablesocketboxym801-feats": [],
+"ym-sw-portablesocketboxym801-specs": [
+[
+"الطراز",
+"YM-801"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-sw-portablesocketboxymu802-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : Portable Socket Box YM-U802; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
+"ym-sw-portablesocketboxymu802-feats": [],
+"ym-sw-portablesocketboxymu802-specs": [
+[
+"الطراز",
+"Portable Socket Box YM-U802"
+],
+[
+"المادة",
+"بلاستيك PC"
+],
+[
+"النوع",
+"توزيع صناعي"
+],
+[
+"الحماية",
+"مقاوم للماء / درجة صناعية"
+]
+],
+"ym-0141-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الاتصال : واي فاي. الميزات الرئيسية: واي فاي, مقبس, مقاوم للماء, home.",
+"ym-0141-feats": [
+"واي فاي",
+"مقبس",
+"مقاوم للماء",
+"home",
+"life",
+"in-wall"
+],
+"ym-0141-specs": [
+[
+"الاتصال",
+"واي فاي"
+]
+],
+"ym-0333-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : شاشة LCD. الميزات الرئيسية: days, weekly, programmable, mini.",
+"ym-0333-feats": [
+"days",
+"weekly",
+"programmable",
+"mini",
+"timer",
+"مفتاح"
+],
+"ym-0333-specs": [
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0357-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Industrial and household power delivery; المادة : Flame-retardant ABS / PC. الميزات الرئيسية: customize, portable, مقبس, توزيع.",
+"ym-0357-feats": [
+"customize",
+"portable",
+"مقبس",
+"توزيع",
+"صناعي",
+"plug"
+],
+"ym-0357-specs": [
+[
+"التطبيق",
+"Industrial and household power delivery"
+],
+[
+"المادة",
+"Flame-retardant ABS / PC"
+]
+],
+"ym-0374-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Industrial and household power delivery; المادة : Flame-retardant ABS / PC. الميزات الرئيسية: صناعي, مقاوم للماء, مقبس, توزيع.",
+"ym-0374-feats": [
+"صناعي",
+"مقاوم للماء",
+"مقبس",
+"توزيع",
+"plug",
+"outlet"
+],
+"ym-0374-specs": [
+[
+"التطبيق",
+"Industrial and household power delivery"
+],
+[
+"المادة",
+"Flame-retardant ABS / PC"
+]
+],
+"ym-0380-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Industrial and household power delivery; المادة : Flame-retardant ABS / PC. الميزات الرئيسية: industry, plastic, مقاوم للماء, wall.",
+"ym-0380-feats": [
+"industry",
+"plastic",
+"مقاوم للماء",
+"wall",
+"mounted",
+"inclined"
+],
+"ym-0380-specs": [
+[
+"التطبيق",
+"Industrial and household power delivery"
+],
+[
+"المادة",
+"Flame-retardant ABS / PC"
+]
+],
+"ym-0715-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : WiFi Smart Waterproof Socket; الحماية : IP66 Waterproof; Smart Control : Alexa, Google Home, Smart Life App; Plug Type : EU, UK, Universal. الميزات الرئيسية: different, واي فاي, مقاوم للماء, مقبس.",
+"ym-0715-feats": [
+"different",
+"واي فاي",
+"مقاوم للماء",
+"مقبس",
+"home",
+"plug"
+],
+"ym-0715-specs": [
+[
+"النوع",
+"WiFi Smart Waterproof Socket"
+],
+[
+"الحماية",
+"IP66 Waterproof"
+],
+[
+"Smart Control",
+"Alexa, Google Home, Smart Life App"
+],
+[
+"Plug Type",
+"EU, UK, Universal"
+],
+[
+"Connectivity",
+"2.4GHz WiFi"
+],
+[
+"التطبيق",
+"Outdoor/Home Smart Power"
+]
+],
+"ym-0076-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 230 فولت; نوع التيار : تيار متردد; الشاشة : شاشة LCD. الميزات الرئيسية: rail-mounted, كهرباء, نشط, عداد الطاقة.",
+"ym-0076-feats": [
+"rail-mounted",
+"كهرباء",
+"نشط",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0076-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"230 فولت"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0078-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; الشاشة : شاشة LCD. الميزات الرئيسية: intelligent, high-precision, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0078-feats": [
+"intelligent",
+"high-precision",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0078-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0079-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: mini, نشط, عدادات, عداد الطاقة.",
+"ym-0079-feats": [
+"mini",
+"نشط",
+"عدادات",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0079-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0080-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد. الميزات الرئيسية: ثلاثي الطور, m-bus, نشط, تفاعلي.",
+"ym-0080-feats": [
+"ثلاثي الطور",
+"m-bus",
+"نشط",
+"تفاعلي",
+"infrared",
+"included"
+],
+"ym-0080-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0081-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: advanced, مراقبة, system/power, consumption.",
+"ym-0081-feats": [
+"advanced",
+"مراقبة",
+"system/power",
+"consumption",
+"عداد طاقة",
+"yem011ag-n"
+],
+"ym-0081-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0083-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : شاشة LED. الميزات الرئيسية: selling, watt, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0083-feats": [
+"selling",
+"watt",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0083-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"شاشة LED"
+]
+],
+"ym-0084-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي. الميزات الرئيسية: كهرباء, قراءة, tampering, عداد الطاقة.",
+"ym-0084-feats": [
+"كهرباء",
+"قراءة",
+"tampering",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0084-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0085-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : شاشة LED. الميزات الرئيسية: front, board, installed, card.",
+"ym-0085-feats": [
+"front",
+"board",
+"installed",
+"card",
+"مدفوع مسبقًا",
+"كهرباء"
+],
+"ym-0085-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"شاشة LED"
+]
+],
+"ym-0086-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485. الميزات الرئيسية: maximum, RS485, اتصال, consumption.",
+"ym-0086-feats": [
+"maximum",
+"RS485",
+"اتصال",
+"consumption",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0086-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+]
+],
+"ym-0087-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 200V; الشاشة : رقمي. الميزات الرئيسية: تردد, consumption, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0087-feats": [
+"تردد",
+"consumption",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0087-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"200V"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0088-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت. الميزات الرئيسية: safety, كهرباء, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0088-feats": [
+"safety",
+"كهرباء",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0088-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+]
+],
+"ym-0089-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : شاشة LCD. الميزات الرئيسية: miniature, navigation, easy, عداد الطاقة.",
+"ym-0089-feats": [
+"miniature",
+"navigation",
+"easy",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0089-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0090-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الاتصال : GPRS; الشاشة : رقمي. الميزات الرئيسية: مدفوع مسبقًا, gprs, كهرباء, عداد الطاقة.",
+"ym-0090-feats": [
+"مدفوع مسبقًا",
+"gprs",
+"كهرباء",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0090-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الاتصال",
+"GPRS"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0091-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : واي فاي; الشاشة : رقمي. الميزات الرئيسية: ضوء, consumption, واي فاي, عداد الطاقة.",
+"ym-0091-feats": [
+"ضوء",
+"consumption",
+"واي فاي",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0091-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0092-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485; الشاشة : رقمي. الميزات الرئيسية: مودبوس, كهرباء, multi-rate, RS485.",
+"ym-0092-feats": [
+"مودبوس",
+"كهرباء",
+"multi-rate",
+"RS485",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0092-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0093-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : شاشة LCD. الميزات الرئيسية: bidirectional, eletronic, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0093-feats": [
+"bidirectional",
+"eletronic",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0093-specs": [
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0094-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: stock, تناظري, manufacturers, watt.",
+"ym-0094-feats": [
+"stock",
+"تناظري",
+"manufacturers",
+"watt",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0094-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0095-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 127V. الميزات الرئيسية: front, board, installation, تناظري.",
+"ym-0095-feats": [
+"front",
+"board",
+"installation",
+"تناظري",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0095-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"127V"
+]
+],
+"ym-0096-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: stock, manufacturer, easy, installation.",
+"ym-0096-feats": [
+"stock",
+"manufacturer",
+"easy",
+"installation",
+"دقة",
+"عداد الطاقة"
+],
+"ym-0096-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0097-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 380 فولت; التردد : 50 هرتز; نوع التيار : تيار متردد. الميزات الرئيسية: 5-80a, backlight, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0097-feats": [
+"5-80a",
+"backlight",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0097-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"380 فولت"
+],
+[
+"التردد",
+"50 هرتز"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0098-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485; الشاشة : شاشة LCD. الميزات الرئيسية: LCD عداد, كهرباء, RS485, عداد الطاقة.",
+"ym-0098-feats": [
+"LCD عداد",
+"كهرباء",
+"RS485",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0098-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0099-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: direct, sale, كهرباء, mounting.",
+"ym-0099-feats": [
+"direct",
+"sale",
+"كهرباء",
+"mounting",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0099-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0100-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد; الشاشة : شاشة LCD. الميزات الرئيسية: نشط, عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي.",
+"ym-0100-feats": [
+"نشط",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN"
+],
+"ym-0100-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0101-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد; الشاشة : شاشة LCD. الميزات الرئيسية: pulse, خرج, نشط, عداد الطاقة.",
+"ym-0101-feats": [
+"pulse",
+"خرج",
+"نشط",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0101-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0102-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : تناظري; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: transparent, cover, front, board.",
+"ym-0102-feats": [
+"transparent",
+"cover",
+"front",
+"board",
+"installation",
+"تناظري"
+],
+"ym-0102-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"تناظري"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0103-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الاتصال : RS485. الميزات الرئيسية: approved, multifunctional, RS485, اتصال.",
+"ym-0103-feats": [
+"approved",
+"multifunctional",
+"RS485",
+"اتصال",
+"function",
+"efficient"
+],
+"ym-0103-specs": [
+[
+"الاتصال",
+"RS485"
+]
+],
+"ym-0104-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي. الميزات الرئيسية: precise, measurement, consumption, analysis.",
+"ym-0104-feats": [
+"precise",
+"measurement",
+"consumption",
+"analysis",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0104-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0105-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد; الشاشة : شاشة LCD. الميزات الرئيسية: عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي, عداد القدرة.",
+"ym-0105-feats": [
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN",
+"أحادي الطور عداد"
+],
+"ym-0105-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0106-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 400V; التردد : 60 هرتز; نوع التيار : تيار متردد. الميزات الرئيسية: transparent, cover, backlight, rail-.",
+"ym-0106-feats": [
+"transparent",
+"cover",
+"backlight",
+"rail-",
+"mounted",
+"230/400v"
+],
+"ym-0106-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"400V"
+],
+[
+"التردد",
+"60 هرتز"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0107-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الاتصال : RS485; الشاشة : شاشة LCD. الميزات الرئيسية: stock, مدفوع مسبقًا, card, كهرباء.",
+"ym-0107-feats": [
+"stock",
+"مدفوع مسبقًا",
+"card",
+"كهرباء",
+"RS485",
+"عداد الطاقة"
+],
+"ym-0107-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0111-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي. الميزات الرئيسية: high-precision, intelligent, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0111-feats": [
+"high-precision",
+"intelligent",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0111-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0115-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; الشاشة : رقمي. الميزات الرئيسية: kilowatt, hour, watt, wattmeter.",
+"ym-0115-feats": [
+"kilowatt",
+"hour",
+"watt",
+"wattmeter",
+"monitor",
+"عداد الطاقة"
+],
+"ym-0115-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0118-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 230 فولت; الشاشة : شاشة LCD. الميزات الرئيسية: كهرباء, analysis, digi, عداد الطاقة.",
+"ym-0118-feats": [
+"كهرباء",
+"analysis",
+"digi",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0118-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"230 فولت"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0122-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : واي فاي; نوع التحكم : نوع المرحل. الميزات الرئيسية: two-wire, without, مرحل, واي فاي.",
+"ym-0122-feats": [
+"two-wire",
+"without",
+"مرحل",
+"واي فاي",
+"connectivity",
+"عداد الطاقة"
+],
+"ym-0122-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+]
+],
+"ym-0124-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد; الشاشة : شاشة LCD. الميزات الرئيسية: mini, تناظري, wattmeter, consumption.",
+"ym-0124-feats": [
+"mini",
+"تناظري",
+"wattmeter",
+"consumption",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0124-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0125-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485; الشاشة : رقمي. الميزات الرئيسية: high-precision, class1, RS485, عداد الطاقة.",
+"ym-0125-feats": [
+"high-precision",
+"class1",
+"RS485",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0125-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0134-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي. الميزات الرئيسية: تناظري, kilo, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0134-feats": [
+"تناظري",
+"kilo",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0134-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0143-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 110 فولت. الميزات الرئيسية: outdoor, msq-60, محول, خرج.",
+"ym-0143-feats": [
+"outdoor",
+"msq-60",
+"محول",
+"خرج",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0143-specs": [
+[
+"الجهد",
+"110 فولت"
+]
+],
+"ym-0144-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: نشط, قياس, كهرباء, عداد الطاقة.",
+"ym-0144-feats": [
+"نشط",
+"قياس",
+"كهرباء",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0144-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0146-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور. الميزات الرئيسية: yem021gc-n, mounted, enercon, عن بعد.",
+"ym-0146-feats": [
+"yem021gc-n",
+"mounted",
+"enercon",
+"عن بعد",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0146-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+]
+],
+"ym-0156-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: منزلي, mini, نشط, عداد الطاقة.",
+"ym-0156-feats": [
+"منزلي",
+"mini",
+"نشط",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0156-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0157-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: كهرباء, kilowatt, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0157-feats": [
+"كهرباء",
+"kilowatt",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0157-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0158-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الشاشة : رقمي. الميزات الرئيسية: stock, تناظري, كهرباء, home.",
+"ym-0158-feats": [
+"stock",
+"تناظري",
+"كهرباء",
+"home",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0158-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0159-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور. الميزات الرئيسية: stock, عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي.",
+"ym-0159-feats": [
+"stock",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN"
+],
+"ym-0159-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+]
+],
+"ym-0160-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التردد : 60 هرتز; الشاشة : شاشة LCD. الميزات الرئيسية: كهرباء, 50hz/60hz, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0160-feats": [
+"كهرباء",
+"50hz/60hz",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0160-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التردد",
+"60 هرتز"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0161-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 230 فولت; السعة : 230 VA; التردد : 50 هرتز; نوع التيار : تيار متردد. الميزات الرئيسية: أحادي الطور, wireless, kilowatt-hour, condition.",
+"ym-0161-feats": [
+"أحادي الطور",
+"wireless",
+"kilowatt-hour",
+"condition",
+"din-rail",
+"installation"
+],
+"ym-0161-specs": [
+[
+"الجهد",
+"230 فولت"
+],
+[
+"السعة",
+"230 VA"
+],
+[
+"التردد",
+"50 هرتز"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0162-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : واي فاي; الشاشة : رقمي. الميزات الرئيسية: stock, home, واي فاي, عداد الطاقة.",
+"ym-0162-feats": [
+"stock",
+"home",
+"واي فاي",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0162-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0163-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الاتصال : RS485; الشاشة : رقمي. الميزات الرئيسية: stock, RS485, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0163-feats": [
+"stock",
+"RS485",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0163-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0164-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485; الشاشة : رقمي. الميزات الرئيسية: mini, تناظري, RS485, اتصال.",
+"ym-0164-feats": [
+"mini",
+"تناظري",
+"RS485",
+"اتصال",
+"تردد",
+"عداد الطاقة"
+],
+"ym-0164-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0165-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 230 فولت; الشاشة : شاشة LCD. الميزات الرئيسية: خرج, consumption, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0165-feats": [
+"خرج",
+"consumption",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0165-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"230 فولت"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0166-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : شاشة LCD. الميزات الرئيسية: أحادي الطور, two-wire, wattmeter, kilowatt-hour.",
+"ym-0166-feats": [
+"أحادي الطور",
+"two-wire",
+"wattmeter",
+"kilowatt-hour",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0166-specs": [
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0167-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي. الميزات الرئيسية: home, تناظري, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0167-feats": [
+"home",
+"تناظري",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0167-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0168-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التيار : 40A; الشاشة : Counter; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: أحادي الطور, wireless, maximum, تردد.",
+"ym-0168-feats": [
+"أحادي الطور",
+"wireless",
+"maximum",
+"تردد",
+"watt-hour",
+"عداد الطاقة"
+],
+"ym-0168-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التيار",
+"40A"
+],
+[
+"الشاشة",
+"Counter"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0169-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الاتصال : واي فاي; الشاشة : رقمي. الميزات الرئيسية: واي فاي, عن بعد, تحكم, مفتاح.",
+"ym-0169-feats": [
+"واي فاي",
+"عن بعد",
+"تحكم",
+"مفتاح",
+"circuit",
+"قاطع"
+],
+"ym-0169-specs": [
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0186-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت. الميزات الرئيسية: electromechanical, monitor, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0186-feats": [
+"electromechanical",
+"monitor",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0186-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+]
+],
+"ym-0188-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485; الشاشة : رقمي. الميزات الرئيسية: multi-function, RS485, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0188-feats": [
+"multi-function",
+"RS485",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0188-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0189-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485; الشاشة : شاشة LCD. الميزات الرئيسية: yem015, RS485, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0189-feats": [
+"yem015",
+"RS485",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0189-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0199-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: msq-30-75/5, 75/5a, محول, عداد الطاقة.",
+"ym-0199-feats": [
+"msq-30-75/5",
+"75/5a",
+"محول",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0199-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0206-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور. الميزات الرئيسية: كهرباء, level, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0206-feats": [
+"كهرباء",
+"level",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0206-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+]
+],
+"ym-0207-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : واي فاي; الشاشة : رقمي. الميزات الرئيسية: كهرباء, wireless, واي فاي, عداد الطاقة.",
+"ym-0207-feats": [
+"كهرباء",
+"wireless",
+"واي فاي",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0207-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0208-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 230 فولت; الشاشة : رقمي. الميزات الرئيسية: تناظري, mountable, خرج, عداد الطاقة.",
+"ym-0208-feats": [
+"تناظري",
+"mountable",
+"خرج",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0208-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"230 فولت"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0210-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 230 فولت; الاتصال : واي فاي; الشاشة : شاشة LCD. الميزات الرئيسية: واي فاي, كهرباء, monitor, عداد الطاقة.",
+"ym-0210-feats": [
+"واي فاي",
+"كهرباء",
+"monitor",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0210-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"230 فولت"
+],
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0211-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي. الميزات الرئيسية: تناظري, kilo, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0211-feats": [
+"تناظري",
+"kilo",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0211-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0213-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : واي فاي. الميزات الرئيسية: yomin, wireless, installation, كهرباء.",
+"ym-0213-feats": [
+"yomin",
+"wireless",
+"installation",
+"كهرباء",
+"واي فاي",
+"عداد الطاقة"
+],
+"ym-0213-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"واي فاي"
+]
+],
+"ym-0223-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد; الشاشة : شاشة LCD. الميزات الرئيسية: version, ثلاثي الطور, نشط, عداد الطاقة.",
+"ym-0223-feats": [
+"version",
+"ثلاثي الطور",
+"نشط",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0223-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0229-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الاتصال : RS485; الشاشة : شاشة LCD. الميزات الرئيسية: أحادي الطور, din-rail, مودبوس, RS485.",
+"ym-0229-feats": [
+"أحادي الطور",
+"din-rail",
+"مودبوس",
+"RS485",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0229-specs": [
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0230-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN; الدقة : فئة 1.0. الميزات الرئيسية: أحادي الطور, reset, button, عداد الطاقة.",
+"ym-0230-feats": [
+"أحادي الطور",
+"reset",
+"button",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0230-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0231-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : ميكانيكي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: factorys, أحادي الطور, plastic, good.",
+"ym-0231-feats": [
+"factorys",
+"أحادي الطور",
+"plastic",
+"good",
+"mechanical",
+"عداد الطاقة"
+],
+"ym-0231-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"ميكانيكي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0232-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الاتصال : RS485. الميزات الرئيسية: approved, multifunctional, ثلاثي الطور, RS485.",
+"ym-0232-feats": [
+"approved",
+"multifunctional",
+"ثلاثي الطور",
+"RS485",
+"اتصال",
+"function"
+],
+"ym-0232-specs": [
+[
+"الاتصال",
+"RS485"
+]
+],
+"ym-0233-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 230 فولت; نوع التيار : تيار متردد; الشاشة : شاشة LCD. الميزات الرئيسية: rail-mounted, كهرباء, نشط, عداد الطاقة.",
+"ym-0233-feats": [
+"rail-mounted",
+"كهرباء",
+"نشط",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0233-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"230 فولت"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0234-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; نوع التيار : تيار متردد; الشاشة : رقمي. الميزات الرئيسية: kilowatt, hour, watt, wattmeter.",
+"ym-0234-feats": [
+"kilowatt",
+"hour",
+"watt",
+"wattmeter",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0234-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0235-desc": "أدوات ومعدات صناعية للتركيب والصيانة الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; السعة : 100 VA. الميزات الرئيسية: autotransformer, jbk5, محول, electrical tool.",
+"ym-0235-feats": [
+"autotransformer",
+"jbk5",
+"محول",
+"electrical tool",
+"hardware",
+"تحكم محول"
+],
+"ym-0235-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"السعة",
+"100 VA"
+]
+],
+"ym-0237-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 250V; السعة : 2 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: منظم, منزلي, TDGC2, فارياك.",
+"ym-0237-feats": [
+"منظم",
+"منزلي",
+"TDGC2",
+"فارياك",
+"0-250v",
+"converter"
+],
+"ym-0237-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"250V"
+],
+[
+"السعة",
+"2 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0238-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد. الميزات الرئيسية: أحادي الطور, تناظري, نشط, step.",
+"ym-0238-feats": [
+"أحادي الطور",
+"تناظري",
+"نشط",
+"step",
+"محرك",
+"impulse"
+],
+"ym-0238-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0241-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : رقمي. الميزات الرئيسية: أحادي الطور, mould, منزلي, yem015sd-n.",
+"ym-0241-feats": [
+"أحادي الطور",
+"mould",
+"منزلي",
+"yem015sd-n",
+"reset",
+"button"
+],
+"ym-0241-specs": [
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0244-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 220 فولت; الشاشة : شاشة LCD. الميزات الرئيسية: ثلاثي الطور, 4-wire, multirate, عداد الطاقة.",
+"ym-0244-feats": [
+"ثلاثي الطور",
+"4-wire",
+"multirate",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0244-specs": [
+[
+"الجهد",
+"220 فولت"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0245-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: factorys, smallest, نشط, قياس.",
+"ym-0245-feats": [
+"factorys",
+"smallest",
+"نشط",
+"قياس",
+"yem015sd",
+"عداد الطاقة"
+],
+"ym-0245-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0260-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : رقمي. الميزات الرئيسية: أحادي الطور, 2-pole, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0260-feats": [
+"أحادي الطور",
+"2-pole",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0260-specs": [
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0261-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN; الدقة : فئة 1.0. الميزات الرئيسية: dtsd666, multi-function, ثلاثي الطور, four-wire.",
+"ym-0261-feats": [
+"dtsd666",
+"multi-function",
+"ثلاثي الطور",
+"four-wire",
+"voltmeter",
+"performance"
+],
+"ym-0261-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0263-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التيار : 100A; الاتصال : مودبوس; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: أحادي الطور, مودبوس, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0263-feats": [
+"أحادي الطور",
+"مودبوس",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0263-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التيار",
+"100A"
+],
+[
+"الاتصال",
+"مودبوس"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0265-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 127V; نوع التيار : تيار متردد. الميزات الرئيسية: 127v/230v, نشط, pulse, خرج.",
+"ym-0265-feats": [
+"127v/230v",
+"نشط",
+"pulse",
+"خرج",
+"تناظري",
+"عداد الطاقة"
+],
+"ym-0265-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"127V"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0271-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : شاشة LCD. الميزات الرئيسية: عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي, عداد القدرة.",
+"ym-0271-feats": [
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN",
+"أحادي الطور عداد"
+],
+"ym-0271-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0274-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي. الميزات الرئيسية: عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي, عداد القدرة.",
+"ym-0274-feats": [
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN",
+"أحادي الطور عداد"
+],
+"ym-0274-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0275-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الشاشة : رقمي. الميزات الرئيسية: عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي, عداد القدرة.",
+"ym-0275-feats": [
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN",
+"أحادي الطور عداد"
+],
+"ym-0275-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0278-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور. الميزات الرئيسية: مودبوس, efficient, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0278-feats": [
+"مودبوس",
+"efficient",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0278-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+]
+],
+"ym-0283-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485; الشاشة : شاشة LCD. الميزات الرئيسية: دفع مسبق, RS485, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0283-feats": [
+"دفع مسبق",
+"RS485",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0283-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0284-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد; الشاشة : شاشة LCD. الميزات الرئيسية: نشط, عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي.",
+"ym-0284-feats": [
+"نشط",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN"
+],
+"ym-0284-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0286-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الاتصال : RS485; الشاشة : رقمي. الميزات الرئيسية: أحادي الطور, mini, RS485, عداد الطاقة.",
+"ym-0286-feats": [
+"أحادي الطور",
+"mini",
+"RS485",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0286-specs": [
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0288-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: diverse, offerings, كهرباء, مدفوع مسبقًا.",
+"ym-0288-feats": [
+"diverse",
+"offerings",
+"كهرباء",
+"مدفوع مسبقًا",
+"keypad",
+"دفع مسبق"
+],
+"ym-0288-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0289-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: نشط, measurement, split, دفع مسبق.",
+"ym-0289-feats": [
+"نشط",
+"measurement",
+"split",
+"دفع مسبق",
+"keypad",
+"عداد الطاقة"
+],
+"ym-0289-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0290-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: ddsy666, keypad, cash, عداد الطاقة.",
+"ym-0290-feats": [
+"ddsy666",
+"keypad",
+"cash",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0290-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0292-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الشاشة : شاشة LCD. الميزات الرئيسية: محول, connect, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0292-feats": [
+"محول",
+"connect",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0292-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0293-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: نشط, register, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0293-feats": [
+"نشط",
+"register",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0293-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0299-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : واي فاي. الميزات الرئيسية: واي فاي, memory, function, عداد الطاقة.",
+"ym-0299-feats": [
+"واي فاي",
+"memory",
+"function",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0299-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"واي فاي"
+]
+],
+"ym-0307-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي. الميزات الرئيسية: ddsy666, مدفوع مسبقًا, كهرباء, card.",
+"ym-0307-feats": [
+"ddsy666",
+"مدفوع مسبقًا",
+"كهرباء",
+"card",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0307-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0308-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: selling, din-rail, register, watt.",
+"ym-0308-feats": [
+"selling",
+"din-rail",
+"register",
+"watt",
+"hour",
+"عداد"
+],
+"ym-0308-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0309-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي. الميزات الرئيسية: مدفوع مسبقًا, كهرباء, payment, عداد الطاقة.",
+"ym-0309-feats": [
+"مدفوع مسبقًا",
+"كهرباء",
+"payment",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0309-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0310-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : GPRS. الميزات الرئيسية: gprs, دفع مسبق, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0310-feats": [
+"gprs",
+"دفع مسبق",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0310-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"GPRS"
+]
+],
+"ym-0320-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الشاشة : رقمي. الميزات الرئيسية: reverse, detection, kilowatt, عداد الطاقة.",
+"ym-0320-feats": [
+"reverse",
+"detection",
+"kilowatt",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0320-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0331-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الاتصال : واي فاي. الميزات الرئيسية: واي فاي, mini, timer, مفتاح.",
+"ym-0331-feats": [
+"واي فاي",
+"mini",
+"timer",
+"مفتاح",
+"تحكم",
+"programmable"
+],
+"ym-0331-specs": [
+[
+"الاتصال",
+"واي فاي"
+]
+],
+"ym-0341-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي. الميزات الرئيسية: كهرباء, عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي.",
+"ym-0341-feats": [
+"كهرباء",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN"
+],
+"ym-0341-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0342-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: selling, مقبس, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0342-feats": [
+"selling",
+"مقبس",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0342-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0344-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الشاشة : رقمي. الميزات الرئيسية: عداد كيلوواط ساعة, عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي.",
+"ym-0344-feats": [
+"عداد كيلوواط ساعة",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN"
+],
+"ym-0344-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0347-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : رقمي. الميزات الرئيسية: good, yem313, أحادي الطور, كهرباء.",
+"ym-0347-feats": [
+"good",
+"yem313",
+"أحادي الطور",
+"كهرباء",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0347-specs": [
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0352-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور. الميزات الرئيسية: عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي, عداد القدرة.",
+"ym-0352-feats": [
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN",
+"أحادي الطور عداد"
+],
+"ym-0352-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+]
+],
+"ym-0362-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 380 فولت; نوع التيار : تيار متردد; الشاشة : شاشة LCD. الميزات الرئيسية: نشط, عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي.",
+"ym-0362-feats": [
+"نشط",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN"
+],
+"ym-0362-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"380 فولت"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0363-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : شاشة LCD. الميزات الرئيسية: yem321, كهرباء, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0363-feats": [
+"yem321",
+"كهرباء",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0363-specs": [
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0364-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 380 فولت; الشاشة : شاشة LCD. الميزات الرئيسية: yem321, عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي.",
+"ym-0364-feats": [
+"yem321",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN"
+],
+"ym-0364-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"380 فولت"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0365-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار مستمر; الاتصال : واي فاي; الشاشة : شاشة LCD. الميزات الرئيسية: أحادي الطور, واي فاي, screen, timer.",
+"ym-0365-feats": [
+"أحادي الطور",
+"واي فاي",
+"screen",
+"timer",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0365-specs": [
+[
+"نوع التيار",
+"تيار مستمر"
+],
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0366-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 230 فولت; الاتصال : واي فاي; الشاشة : شاشة LCD. الميزات الرئيسية: أحادي الطور, كهرباء, monitor, واي فاي.",
+"ym-0366-feats": [
+"أحادي الطور",
+"كهرباء",
+"monitor",
+"واي فاي",
+"gprs",
+"عداد الطاقة"
+],
+"ym-0366-specs": [
+[
+"الجهد",
+"230 فولت"
+],
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0368-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; الاتصال : RS485; الشاشة : شاشة LCD. الميزات الرئيسية: مدفوع مسبقًا, monitor, RS485, عداد الطاقة.",
+"ym-0368-feats": [
+"مدفوع مسبقًا",
+"monitor",
+"RS485",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0368-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0369-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الاتصال : RS485; الشاشة : رقمي. الميزات الرئيسية: ثلاثي الطور, مودبوس, عدادات, RS485.",
+"ym-0369-feats": [
+"ثلاثي الطور",
+"مودبوس",
+"عدادات",
+"RS485",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0369-specs": [
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0376-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: round, kilowatt-hour, digits, uses.",
+"ym-0376-feats": [
+"round",
+"kilowatt-hour",
+"digits",
+"uses",
+"large",
+"عداد الطاقة"
+],
+"ym-0376-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0377-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الاتصال : واي فاي; الشاشة : شاشة LCD. الميزات الرئيسية: واي فاي, timer, home, screen.",
+"ym-0377-feats": [
+"واي فاي",
+"timer",
+"home",
+"screen",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0377-specs": [
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0381-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد. الميزات الرئيسية: محول, عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي.",
+"ym-0381-feats": [
+"محول",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN"
+],
+"ym-0381-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0395-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : شاشة LCD. الميزات الرئيسية: أحادي الطور, watt-hour, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0395-feats": [
+"أحادي الطور",
+"watt-hour",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0395-specs": [
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0236-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : Three Phase Four Wire; الجهد : 3×220/380V AC; التيار : 3×5(80)A; التردد : 50/60 Hz. الميزات الرئيسية: ثلاثي الطور طاقة عداد, واي فاي ذكي عداد, 7p din rail meter, عن بعد قراءة عداد.",
+"ym-0236-feats": [
+"ثلاثي الطور طاقة عداد",
+"واي فاي ذكي عداد",
+"7p din rail meter",
+"عن بعد قراءة عداد",
+"380v energy meter",
+"ذكي طاقة عداد"
+],
+"ym-0236-specs": [
+[
+"الطور",
+"Three Phase Four Wire"
+],
+[
+"الجهد",
+"3×220/380V AC"
+],
+[
+"التيار",
+"3×5(80)A"
+],
+[
+"التردد",
+"50/60 Hz"
+],
+[
+"الدقة",
+"فئة 1.0"
+],
+[
+"الاتصال",
+"WiFi (2.4GHz)"
+],
+[
+"الشاشة",
+"LCD Backlight"
+],
+[
+"Control",
+"Built-in Relay (Remote On/Off)"
+],
+[
+"Poles",
+"7P Wide Body"
+],
+[
+"التركيب",
+"DIN Rail (35mm)"
+],
+[
+"APP Control",
+"iOS & Android Compatible"
+],
+[
+"Measurement",
+"Voltage, Current, Power, kWh, Hz, PF"
+],
+[
+"Certificate",
+"CE, RoHS"
+],
+[
+"المعيار",
+"IEC 62053-21"
+]
+],
+"ym-0692-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الشاشة : Counter; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي, عداد القدرة.",
+"ym-0692-feats": [
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN",
+"أحادي الطور عداد"
+],
+"ym-0692-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الشاشة",
+"Counter"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0693-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: cheap, medidor, energia, عداد الطاقة.",
+"ym-0693-feats": [
+"cheap",
+"medidor",
+"energia",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0693-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0694-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : تناظري; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: تناظري, home, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0694-feats": [
+"تناظري",
+"home",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0694-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"تناظري"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0695-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الاتصال : واي فاي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN; الدقة : فئة 1.0. الميزات الرئيسية: tuya, timer, تحكم, واي فاي.",
+"ym-0695-feats": [
+"tuya",
+"timer",
+"تحكم",
+"واي فاي",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0695-specs": [
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0696-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : واي فاي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: home, واي فاي, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0696-feats": [
+"home",
+"واي فاي",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0696-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0698-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي, عداد القدرة.",
+"ym-0698-feats": [
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN",
+"أحادي الطور عداد"
+],
+"ym-0698-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0699-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : شاشة LCD; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي, عداد القدرة.",
+"ym-0699-feats": [
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN",
+"أحادي الطور عداد"
+],
+"ym-0699-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"شاشة LCD"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0700-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الشاشة : شاشة LCD; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: yem021jc, عداد, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0700-feats": [
+"yem021jc",
+"عداد",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0700-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الشاشة",
+"شاشة LCD"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0701-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الاتصال : RS485; الشاشة : شاشة LCD; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: ctoperated, عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي.",
+"ym-0701-feats": [
+"ctoperated",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN"
+],
+"ym-0701-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"شاشة LCD"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0702-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الاتصال : RS485; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: RS485, عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي.",
+"ym-0702-feats": [
+"RS485",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN"
+],
+"ym-0702-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0703-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التيار : 120A; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: smallest, كهربائي كهربائي طاقة, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0703-feats": [
+"smallest",
+"كهربائي كهربائي طاقة",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0703-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التيار",
+"120A"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0704-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الاتصال : RS485; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: yem021gc, RS485, infrared, meter/amr.",
+"ym-0704-feats": [
+"yem021gc",
+"RS485",
+"infrared",
+"meter/amr",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0704-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0705-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التيار : 100A; الاتصال : مودبوس; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: smallest, مودبوس, rs485/100a, عداد الطاقة.",
+"ym-0705-feats": [
+"smallest",
+"مودبوس",
+"rs485/100a",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0705-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التيار",
+"100A"
+],
+[
+"الاتصال",
+"مودبوس"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0711-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الاتصال : RS485; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: home, RS485, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0711-feats": [
+"home",
+"RS485",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0711-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0712-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN; الدقة : فئة 1.0. الميزات الرئيسية: عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي, عداد القدرة.",
+"ym-0712-feats": [
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN",
+"أحادي الطور عداد"
+],
+"ym-0712-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0713-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN; الدقة : فئة 1.0. الميزات الرئيسية: keypad, مدفوع مسبقًا, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0713-feats": [
+"keypad",
+"مدفوع مسبقًا",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0713-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0714-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: sale, RS485, tariff, كهرباء.",
+"ym-0714-feats": [
+"sale",
+"RS485",
+"tariff",
+"كهرباء",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0714-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0716-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الشاشة : تناظري; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: تناظري, pulse, خرج, عداد الطاقة.",
+"ym-0716-feats": [
+"تناظري",
+"pulse",
+"خرج",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0716-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الشاشة",
+"تناظري"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0717-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الاتصال : واي فاي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: yomin, واي فاي, كهرباء, عداد الطاقة.",
+"ym-0717-feats": [
+"yomin",
+"واي فاي",
+"كهرباء",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0717-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0718-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الاتصال : RS485; الشاشة : شاشة LCD; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: RS485, multifunction, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0718-feats": [
+"RS485",
+"multifunction",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0718-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"شاشة LCD"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0719-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الاتصال : مودبوس; الشاشة : شاشة LCD; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: typers485, مودبوس, gprs, عداد الطاقة.",
+"ym-0719-feats": [
+"typers485",
+"مودبوس",
+"gprs",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0719-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الاتصال",
+"مودبوس"
+],
+[
+"الشاشة",
+"شاشة LCD"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0720-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : تناظري; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: yem313ah, تناظري, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0720-feats": [
+"yem313ah",
+"تناظري",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0720-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"تناظري"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0721-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: yem313, كهرباء, نشط, meterdigital.",
+"ym-0721-feats": [
+"yem313",
+"كهرباء",
+"نشط",
+"meterdigital",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0721-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0722-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الاتصال : RS485; الشاشة : شاشة LCD; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: ptct, عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي.",
+"ym-0722-feats": [
+"ptct",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN"
+],
+"ym-0722-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"شاشة LCD"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0723-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الشاشة : شاشة LCD; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: yem021jc, عداد, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0723-feats": [
+"yem021jc",
+"عداد",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0723-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الشاشة",
+"شاشة LCD"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0724-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: multifunction, maximum, demand, عداد الطاقة.",
+"ym-0724-feats": [
+"multifunction",
+"maximum",
+"demand",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0724-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0725-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN; الدقة : فئة 1.0. الميزات الرئيسية: watt-hour, عداد طاقة, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0725-feats": [
+"watt-hour",
+"عداد طاقة",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0725-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0726-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN; الدقة : فئة 1.0. الميزات الرئيسية: recommended, golden, supplier, normal.",
+"ym-0726-feats": [
+"recommended",
+"golden",
+"supplier",
+"normal",
+"كهرباء طاقة",
+"عداد الطاقة"
+],
+"ym-0726-specs": [
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0728-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : تناظري; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: تناظري, عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي.",
+"ym-0728-feats": [
+"تناظري",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN"
+],
+"ym-0728-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"تناظري"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0736-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 32. الميزات الرئيسية: منزلي, watt-hour, pieces, عداد الطاقة.",
+"ym-0736-feats": [
+"منزلي",
+"watt-hour",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0736-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"32"
+]
+],
+"ym-0737-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 32. الميزات الرئيسية: ddsy666, دفع مسبق, pieces, عداد الطاقة.",
+"ym-0737-feats": [
+"ddsy666",
+"دفع مسبق",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0737-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"32"
+]
+],
+"ym-0738-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 31. الميزات الرئيسية: tuya, timer, تحكم, واي فاي.",
+"ym-0738-feats": [
+"tuya",
+"timer",
+"تحكم",
+"واي فاي",
+"pieces",
+"عداد الطاقة"
+],
+"ym-0738-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"31"
+]
+],
+"ym-0740-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 31. الميزات الرئيسية: monitor, digi, pieces, عداد الطاقة.",
+"ym-0740-feats": [
+"monitor",
+"digi",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0740-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"31"
+]
+],
+"ym-0741-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 10 pieces; Lead Time : 34. الميزات الرئيسية: كهرباء, pieces, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0741-feats": [
+"كهرباء",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0741-specs": [
+[
+"Min. Order",
+"5 - 10 pieces"
+],
+[
+"Lead Time",
+"34"
+]
+],
+"ym-0742-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 31. الميزات الرئيسية: yem313ds, watt, hour, pieces.",
+"ym-0742-feats": [
+"yem313ds",
+"watt",
+"hour",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0742-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"31"
+]
+],
+"ym-0743-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 32. الميزات الرئيسية: photovoltatic, instrument, pieces, عداد الطاقة.",
+"ym-0743-feats": [
+"photovoltatic",
+"instrument",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0743-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"32"
+]
+],
+"ym-0744-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 50 - 99 pieces; Lead Time : 32. الميزات الرئيسية: RS485, watt, pieces, عداد الطاقة.",
+"ym-0744-feats": [
+"RS485",
+"watt",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0744-specs": [
+[
+"Min. Order",
+"50 - 99 pieces"
+],
+[
+"Lead Time",
+"32"
+]
+],
+"ym-0749-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: مدفوع مسبقًا, watt, hour, عداد الطاقة.",
+"ym-0749-feats": [
+"مدفوع مسبقًا",
+"watt",
+"hour",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0749-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0750-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : تناظري; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: yem073uk, electromechanical, نشط, عداد الطاقة.",
+"ym-0750-feats": [
+"yem073uk",
+"electromechanical",
+"نشط",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0750-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"تناظري"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0751-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN; الدقة : فئة 1.0. الميزات الرئيسية: dtsy666-n, split, دفع مسبق, عداد الطاقة.",
+"ym-0751-feats": [
+"dtsy666-n",
+"split",
+"دفع مسبق",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0751-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0752-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: front, board, installed, multi-functional.",
+"ym-0752-feats": [
+"front",
+"board",
+"installed",
+"multi-functional",
+"عداد كهرباء",
+"عداد الطاقة"
+],
+"ym-0752-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0753-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : شاشة LCD; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: أحادي الطور, نشط, pulse, خرج.",
+"ym-0753-feats": [
+"أحادي الطور",
+"نشط",
+"pulse",
+"خرج",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0753-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"شاشة LCD"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0754-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN; الدقة : فئة 1.0. الميزات الرئيسية: showing, كهرباء, alternating, عداد الطاقة.",
+"ym-0754-feats": [
+"showing",
+"كهرباء",
+"alternating",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0754-specs": [
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0755-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: high-precision, أحادي الطور, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0755-feats": [
+"high-precision",
+"أحادي الطور",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0755-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0756-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: أحادي الطور, large, screen, reset.",
+"ym-0756-feats": [
+"أحادي الطور",
+"large",
+"screen",
+"reset",
+"button",
+"pulse"
+],
+"ym-0756-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0757-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485; الشاشة : شاشة LCD; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: أحادي الطور, two-wire, kilowatt, عداد الطاقة.",
+"ym-0757-feats": [
+"أحادي الطور",
+"two-wire",
+"kilowatt",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0757-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"شاشة LCD"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0758-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التردد : 50 هرتز; الشاشة : تناظري; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: أحادي الطور, تناظري, wireless, kilowatt-hour.",
+"ym-0758-feats": [
+"أحادي الطور",
+"تناظري",
+"wireless",
+"kilowatt-hour",
+"din-rail",
+"condition"
+],
+"ym-0758-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التردد",
+"50 هرتز"
+],
+[
+"الشاشة",
+"تناظري"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0759-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التيار : 80A; الشاشة : شاشة LCD; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: أحادي الطور, تردد, pulse, خرج.",
+"ym-0759-feats": [
+"أحادي الطور",
+"تردد",
+"pulse",
+"خرج",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0759-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التيار",
+"80A"
+],
+[
+"الشاشة",
+"شاشة LCD"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0760-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 230 فولت; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: أحادي الطور, rail-mounted, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0760-feats": [
+"أحادي الطور",
+"rail-mounted",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0760-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"230 فولت"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0761-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: yem015sj, أحادي الطور, 2-pole, modules.",
+"ym-0761-feats": [
+"yem015sj",
+"أحادي الطور",
+"2-pole",
+"modules",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0761-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0763-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485; الشاشة : رقمي; الدقة : Class1. الميزات الرئيسية: class1, عداد الطاقة, عداد كيلوواط/ساعة, عداد كهربائي.",
+"ym-0763-feats": [
+"class1",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة",
+"عداد سكة DIN"
+],
+"ym-0763-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"الدقة",
+"Class1"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+]
+],
+"ym-0764-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : RS485; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: long-tail, pulse, port, 35-mm.",
+"ym-0764-feats": [
+"long-tail",
+"pulse",
+"port",
+"35-mm",
+"RS485",
+"kilowatt-hour"
+],
+"ym-0764-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0765-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN; الدقة : فئة 1.0. الميزات الرئيسية: نشط, modules, watt-hour, عداد الطاقة.",
+"ym-0765-feats": [
+"نشط",
+"modules",
+"watt-hour",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0765-specs": [
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0766-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: yem313ds, watt, hour, عداد الطاقة.",
+"ym-0766-feats": [
+"yem313ds",
+"watt",
+"hour",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0766-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0767-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التيار : 100A; الاتصال : RS485; الشاشة : شاشة LCD. الميزات الرئيسية: أحادي الطور, two-wire, kilowatt, hour.",
+"ym-0767-feats": [
+"أحادي الطور",
+"two-wire",
+"kilowatt",
+"hour",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0767-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التيار",
+"100A"
+],
+[
+"الاتصال",
+"RS485"
+],
+[
+"الشاشة",
+"شاشة LCD"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0768-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: أحادي الطور, two-wire, 1-pole, عداد الطاقة.",
+"ym-0768-feats": [
+"أحادي الطور",
+"two-wire",
+"1-pole",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0768-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0770-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; التيار : 100A; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: ثلاثي الطور, high-power, نشط, محول.",
+"ym-0770-feats": [
+"ثلاثي الطور",
+"high-power",
+"نشط",
+"محول",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0770-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"التيار",
+"100A"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0771-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 31. الميزات الرئيسية: أحادي الطور, واي فاي, تحكم, pieces.",
+"ym-0771-feats": [
+"أحادي الطور",
+"واي فاي",
+"تحكم",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0771-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"31"
+]
+],
+"ym-0772-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 7. الميزات الرئيسية: أحادي الطور, backlight, pieces, عداد الطاقة.",
+"ym-0772-feats": [
+"أحادي الطور",
+"backlight",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0772-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0773-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 7. الميزات الرئيسية: أحادي الطور, efficient, watt-hour, measure.",
+"ym-0773-feats": [
+"أحادي الطور",
+"efficient",
+"watt-hour",
+"measure",
+"دقة",
+"pieces"
+],
+"ym-0773-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0774-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 7. الميزات الرئيسية: أحادي الطور, watt-hour, pieces, عداد الطاقة.",
+"ym-0774-feats": [
+"أحادي الطور",
+"watt-hour",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0774-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0775-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 7. الميزات الرئيسية: 200/5a, محول, خرج, pieces.",
+"ym-0775-feats": [
+"200/5a",
+"محول",
+"خرج",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0775-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0776-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 32. الميزات الرئيسية: home, hour, pieces, عداد الطاقة.",
+"ym-0776-feats": [
+"home",
+"hour",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0776-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"32"
+]
+],
+"ym-0777-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 7. الميزات الرئيسية: mini, home, pieces, عداد الطاقة.",
+"ym-0777-feats": [
+"mini",
+"home",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0777-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0778-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 35. الميزات الرئيسية: stock, materminal, pieces, عداد الطاقة.",
+"ym-0778-feats": [
+"stock",
+"materminal",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0778-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"35"
+]
+],
+"ym-0780-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN; الدقة : فئة 1.0. الميزات الرئيسية: stock, كهرباء, mounting, عداد الطاقة.",
+"ym-0780-feats": [
+"stock",
+"كهرباء",
+"mounting",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0780-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0781-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 9 pieces; Lead Time : 5. الميزات الرئيسية: تناظري, اتصال, تردد, pieces.",
+"ym-0781-feats": [
+"تناظري",
+"اتصال",
+"تردد",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0781-specs": [
+[
+"Min. Order",
+"1 - 9 pieces"
+],
+[
+"Lead Time",
+"5"
+]
+],
+"ym-0782-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 10 pieces; Lead Time : 7. الميزات الرئيسية: rail-mounted, transparent, cover, backlight.",
+"ym-0782-feats": [
+"rail-mounted",
+"transparent",
+"cover",
+"backlight",
+"safety-compliant",
+"pieces"
+],
+"ym-0782-specs": [
+[
+"Min. Order",
+"1 - 10 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0783-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: high-precision, مراقبة, device, yem015.",
+"ym-0783-feats": [
+"high-precision",
+"مراقبة",
+"device",
+"yem015",
+"pieces",
+"عداد الطاقة"
+],
+"ym-0783-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0784-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : Quantity (pieces)\n\n1 - 100\n\n> 100; Lead Time : 30. الميزات الرئيسية: real-time, consumption, analytics, مراقبة.",
+"ym-0784-feats": [
+"real-time",
+"consumption",
+"analytics",
+"مراقبة",
+"كهرباء",
+"mounting"
+],
+"ym-0784-specs": [
+[
+"Min. Order",
+"Quantity (pieces)\n\n1 - 100\n\n> 100"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0785-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: تناظري, عدادات, pieces, عداد الطاقة.",
+"ym-0785-feats": [
+"تناظري",
+"عدادات",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0785-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0787-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 9 pieces; Lead Time : 5. الميزات الرئيسية: consumption, تناظري, mini, pieces.",
+"ym-0787-feats": [
+"consumption",
+"تناظري",
+"mini",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0787-specs": [
+[
+"Min. Order",
+"1 - 9 pieces"
+],
+[
+"Lead Time",
+"5"
+]
+],
+"ym-0788-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 7. الميزات الرئيسية: تناظري, pieces, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0788-feats": [
+"تناظري",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0788-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0789-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: stock, track, RS485, pieces.",
+"ym-0789-feats": [
+"stock",
+"track",
+"RS485",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0789-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0791-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 999 pieces; Lead Time : 30. الميزات الرئيسية: متين, industrial-grade, تناظري, كهرباء.",
+"ym-0791-feats": [
+"متين",
+"industrial-grade",
+"تناظري",
+"كهرباء",
+"mechanical",
+"monitor"
+],
+"ym-0791-specs": [
+[
+"Min. Order",
+"10 - 999 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0792-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 100 - 199 pieces; Lead Time : 30. الميزات الرئيسية: دقيق, مراقبة, kilowatt, hour.",
+"ym-0792-feats": [
+"دقيق",
+"مراقبة",
+"kilowatt",
+"hour",
+"pieces",
+"عداد الطاقة"
+],
+"ym-0792-specs": [
+[
+"Min. Order",
+"100 - 199 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0793-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 9 pieces; Lead Time : 30. الميزات الرئيسية: high-accuracy, نشط, قياس, measurement.",
+"ym-0793-feats": [
+"high-accuracy",
+"نشط",
+"قياس",
+"measurement",
+"split",
+"دفع مسبق"
+],
+"ym-0793-specs": [
+[
+"Min. Order",
+"5 - 9 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0794-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 30. الميزات الرئيسية: مراقبة, كهرباء, materminal, pieces.",
+"ym-0794-feats": [
+"مراقبة",
+"كهرباء",
+"materminal",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0794-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0797-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 199 pieces; Lead Time : 30. الميزات الرئيسية: تردد, pieces, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0797-feats": [
+"تردد",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0797-specs": [
+[
+"Min. Order",
+"5 - 199 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0798-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 7. الميزات الرئيسية: عدادات, كهرباء, mechanical, pieces.",
+"ym-0798-feats": [
+"عدادات",
+"كهرباء",
+"mechanical",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0798-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0799-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 999 pieces; Lead Time : 30. الميزات الرئيسية: متين, industrial-grade, 3-phase, تناظري.",
+"ym-0799-feats": [
+"متين",
+"industrial-grade",
+"3-phase",
+"تناظري",
+"كهرباء",
+"mechanical"
+],
+"ym-0799-specs": [
+[
+"Min. Order",
+"10 - 999 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0800-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: high-precision, مدفوع مسبقًا, card, كهرباء.",
+"ym-0800-feats": [
+"high-precision",
+"مدفوع مسبقًا",
+"card",
+"كهرباء",
+"RS485",
+"pieces"
+],
+"ym-0800-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0801-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 30. الميزات الرئيسية: wall, mounted, أحادي الطور, front.",
+"ym-0801-feats": [
+"wall",
+"mounted",
+"أحادي الطور",
+"front",
+"board",
+"تناظري"
+],
+"ym-0801-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0802-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: pulse, خرج, نشط, standard.",
+"ym-0802-feats": [
+"pulse",
+"خرج",
+"نشط",
+"standard",
+"pieces",
+"عداد الطاقة"
+],
+"ym-0802-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0803-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: توزيع, كهرباء, level, pieces.",
+"ym-0803-feats": [
+"توزيع",
+"كهرباء",
+"level",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0803-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0804-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : Quantity (pieces)\n\n1 - 100\n\n> 100; Lead Time : 30. الميزات الرئيسية: مراقبة, كهرباء, mounting, quantity.",
+"ym-0804-feats": [
+"مراقبة",
+"كهرباء",
+"mounting",
+"quantity",
+"pieces",
+"عداد الطاقة"
+],
+"ym-0804-specs": [
+[
+"Min. Order",
+"Quantity (pieces)\n\n1 - 100\n\n> 100"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0805-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : Quantity (pieces)\n\n1 - 10,000\n\n> 10,000; Lead Time : 30. الميزات الرئيسية: transparent, cover, 230/400v, wattmeter.",
+"ym-0805-feats": [
+"transparent",
+"cover",
+"230/400v",
+"wattmeter",
+"quantity",
+"pieces"
+],
+"ym-0805-specs": [
+[
+"Min. Order",
+"Quantity (pieces)\n\n1 - 10,000\n\n> 10,000"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0806-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: دفع مسبق, RS485, pieces, عداد الطاقة.",
+"ym-0806-feats": [
+"دفع مسبق",
+"RS485",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0806-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0807-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: direct, sale, مدفوع مسبقًا, card.",
+"ym-0807-feats": [
+"direct",
+"sale",
+"مدفوع مسبقًا",
+"card",
+"كهرباء",
+"pieces"
+],
+"ym-0807-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0808-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : Quantity (pieces)\n\n1 - 1\n\n> 1; Lead Time : 2. الميزات الرئيسية: مراقبة, transparent, cover, backlight.",
+"ym-0808-feats": [
+"مراقبة",
+"transparent",
+"cover",
+"backlight",
+"rail-mounted",
+"كهرباء"
+],
+"ym-0808-specs": [
+[
+"Min. Order",
+"Quantity (pieces)\n\n1 - 1\n\n> 1"
+],
+[
+"Lead Time",
+"2"
+]
+],
+"ym-0809-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 499 pieces; Lead Time : 30. الميزات الرئيسية: sale, yem015, pieces, عداد الطاقة.",
+"ym-0809-feats": [
+"sale",
+"yem015",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0809-specs": [
+[
+"Min. Order",
+"5 - 499 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0810-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الاتصال : واي فاي; الشاشة : رقمي; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: ضوء, واي فاي, consumption, عداد الطاقة.",
+"ym-0810-feats": [
+"ضوء",
+"واي فاي",
+"consumption",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0810-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0811-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 230 فولت; التيار : 80A; التطبيق : قياس الطاقة السكنية والتجارية والصناعية. الميزات الرئيسية: أحادي الطور, reset, منزلي, rail-mounted.",
+"ym-0811-feats": [
+"أحادي الطور",
+"reset",
+"منزلي",
+"rail-mounted",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0811-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"230 فولت"
+],
+[
+"التيار",
+"80A"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0812-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 pieces; Lead Time : 40. الميزات الرئيسية: front, board, indoor, outdoor.",
+"ym-0812-feats": [
+"front",
+"board",
+"indoor",
+"outdoor",
+"dd862",
+"pieces"
+],
+"ym-0812-specs": [
+[
+"Min. Order",
+"5 pieces"
+],
+[
+"Lead Time",
+"40"
+]
+],
+"ym-0813-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 999 pieces; Lead Time : 5. الميزات الرئيسية: yem024sj-n, poles, modules, size.",
+"ym-0813-feats": [
+"yem024sj-n",
+"poles",
+"modules",
+"size",
+"كهرباء",
+"pieces"
+],
+"ym-0813-specs": [
+[
+"Min. Order",
+"10 - 999 pieces"
+],
+[
+"Lead Time",
+"5"
+]
+],
+"ym-0814-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 999 pieces; Lead Time : 5. الميزات الرئيسية: yem015sj, pieces, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0814-feats": [
+"yem015sj",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0814-specs": [
+[
+"Min. Order",
+"10 - 999 pieces"
+],
+[
+"Lead Time",
+"5"
+]
+],
+"ym-0815-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 8. الميزات الرئيسية: كهرباء, pieces, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0815-feats": [
+"كهرباء",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0815-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"8"
+]
+],
+"ym-0851-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: factorys, yem015sd, standard, pieces.",
+"ym-0851-feats": [
+"factorys",
+"yem015sd",
+"standard",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0851-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0852-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 100 - 199 pieces; Lead Time : 30. الميزات الرئيسية: watt, wattmeter, monitor, kilowatt.",
+"ym-0852-feats": [
+"watt",
+"wattmeter",
+"monitor",
+"kilowatt",
+"hour",
+"pieces"
+],
+"ym-0852-specs": [
+[
+"Min. Order",
+"100 - 199 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0856-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 piece; Lead Time : 5. الميزات الرئيسية: msq-30-75/5, 75/5a, محول, through-type.",
+"ym-0856-feats": [
+"msq-30-75/5",
+"75/5a",
+"محول",
+"through-type",
+"piece",
+"عداد الطاقة"
+],
+"ym-0856-specs": [
+[
+"Min. Order",
+"1 piece"
+],
+[
+"Lead Time",
+"5"
+]
+],
+"ym-0858-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 7. الميزات الرئيسية: أحادي الطور, efficient, watt-hour, measure.",
+"ym-0858-feats": [
+"أحادي الطور",
+"efficient",
+"watt-hour",
+"measure",
+"دقة",
+"pieces"
+],
+"ym-0858-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0860-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 32. الميزات الرئيسية: ثلاثي الطور, مدفوع مسبقًا, installed, front.",
+"ym-0860-feats": [
+"ثلاثي الطور",
+"مدفوع مسبقًا",
+"installed",
+"front",
+"board",
+"front-loaded"
+],
+"ym-0860-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"32"
+]
+],
+"ym-0863-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 7. الميزات الرئيسية: wattmeter, تناظري, pieces, عداد الطاقة.",
+"ym-0863-feats": [
+"wattmeter",
+"تناظري",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0863-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0864-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 7. الميزات الرئيسية: دقة, measurement, 3x230v/400v, pole.",
+"ym-0864-feats": [
+"دقة",
+"measurement",
+"3x230v/400v",
+"pole",
+"size",
+"kilowatt"
+],
+"ym-0864-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0865-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: front, board, installation, تناظري.",
+"ym-0865-feats": [
+"front",
+"board",
+"installation",
+"تناظري",
+"pieces",
+"عداد الطاقة"
+],
+"ym-0865-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0866-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 10 pieces; Lead Time : 7. الميزات الرئيسية: RS485, pieces, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0866-feats": [
+"RS485",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0866-specs": [
+[
+"Min. Order",
+"1 - 10 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0867-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الشاشة : Counter; التطبيق : قياس الطاقة السكنية والتجارية والصناعية; التركيب : تركيب على سكة DIN. الميزات الرئيسية: yem082rp, electromechanical, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0867-feats": [
+"yem082rp",
+"electromechanical",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0867-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الشاشة",
+"Counter"
+],
+[
+"التطبيق",
+"قياس الطاقة السكنية والتجارية والصناعية"
+],
+[
+"التركيب",
+"تركيب على سكة DIN"
+],
+[
+"الدقة",
+"فئة 1.0"
+]
+],
+"ym-0898-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 32. الميزات الرئيسية: دفع مسبق, pieces, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0898-feats": [
+"دفع مسبق",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0898-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"32"
+]
+],
+"ym-0899-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 7. الميزات الرئيسية: compact, تركيب, monitor, pieces.",
+"ym-0899-feats": [
+"compact",
+"تركيب",
+"monitor",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0899-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0900-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 8. الميزات الرئيسية: selling, 1phase, pieces, عداد الطاقة.",
+"ym-0900-feats": [
+"selling",
+"1phase",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0900-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"8"
+]
+],
+"ym-0901-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 7. الميزات الرئيسية: تركيب, monitor, pieces, عداد الطاقة.",
+"ym-0901-feats": [
+"تركيب",
+"monitor",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي"
+],
+"ym-0901-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0907-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: LCD عداد, كهرباء, RS485, pieces.",
+"ym-0907-feats": [
+"LCD عداد",
+"كهرباء",
+"RS485",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة"
+],
+"ym-0907-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0909-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 999 pieces; Lead Time : 31. الميزات الرئيسية: مراقبة, equipment, msq-60, محول.",
+"ym-0909-feats": [
+"مراقبة",
+"equipment",
+"msq-60",
+"محول",
+"خرج",
+"pieces"
+],
+"ym-0909-specs": [
+[
+"Min. Order",
+"5 - 999 pieces"
+],
+[
+"Lead Time",
+"31"
+]
+],
+"ym-0910-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: multi-specification, مدفوع مسبقًا, card, كهرباء.",
+"ym-0910-feats": [
+"multi-specification",
+"مدفوع مسبقًا",
+"card",
+"كهرباء",
+"RS485",
+"pieces"
+],
+"ym-0910-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0911-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: high-precision, تناظري, split, keypad.",
+"ym-0911-feats": [
+"high-precision",
+"تناظري",
+"split",
+"keypad",
+"pieces",
+"عداد الطاقة"
+],
+"ym-0911-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0914-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 8. الميزات الرئيسية: high-precision, measurement, كهرباء, working.",
+"ym-0914-feats": [
+"high-precision",
+"measurement",
+"كهرباء",
+"working",
+"watt",
+"pieces"
+],
+"ym-0914-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"8"
+]
+],
+"ym-0915-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 7. الميزات الرئيسية: منزلي, pieces, عداد الطاقة, عداد كيلوواط/ساعة.",
+"ym-0915-feats": [
+"منزلي",
+"pieces",
+"عداد الطاقة",
+"عداد كيلوواط/ساعة",
+"عداد كهربائي",
+"عداد القدرة"
+],
+"ym-0915-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0008-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد; نوع التحكم : CPU/Microcomputer Control. الميزات الرئيسية: microcomputer, تحكم, منظمات, مثبت.",
+"ym-0008-feats": [
+"microcomputer",
+"تحكم",
+"منظمات",
+"مثبت",
+"cpu/microcomputer",
+"مثبت الجهد"
+],
+"ym-0008-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"CPU/Microcomputer Control"
+]
+],
+"ym-0009-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 220 فولت; نوع التيار : تيار متردد; نوع التحكم : نوع المرحل. الميزات الرئيسية: تحكم, classic, plastic, panel.",
+"ym-0009-feats": [
+"تحكم",
+"classic",
+"plastic",
+"panel",
+"مرحل",
+"types"
+],
+"ym-0009-specs": [
+[
+"الجهد",
+"220 فولت"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+]
+],
+"ym-0010-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; السعة : 3 KVA; نوع التحكم : نوع المرحل; الشاشة : رقمي. الميزات الرئيسية: wall, mounted, مرحل, منظم.",
+"ym-0010-feats": [
+"wall",
+"mounted",
+"مرحل",
+"منظم",
+"مثبت",
+"مثبت الجهد"
+],
+"ym-0010-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"السعة",
+"3 KVA"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0011-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد; نوع التحكم : Servo Motor. الميزات الرئيسية: tnd/svc, servo, محرك, منظمات مثبتات.",
+"ym-0011-feats": [
+"tnd/svc",
+"servo",
+"محرك",
+"منظمات مثبتات",
+"مثبت",
+"مثبت الجهد"
+],
+"ym-0011-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"Servo Motor"
+]
+],
+"ym-0012-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; السعة : 15 KVA. الميزات الرئيسية: tnd/, مثبت, مثبت الجهد, منظم الجهد.",
+"ym-0012-feats": [
+"tnd/",
+"مثبت",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي",
+"servo stabilizer"
+],
+"ym-0012-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"السعة",
+"15 KVA"
+]
+],
+"ym-0013-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; السعة : 30 KVA; نوع التيار : تيار متردد; نوع التحكم : نوع المرحل. الميزات الرئيسية: مرحل, fully, صناعي, مثبت الجهد.",
+"ym-0013-feats": [
+"مرحل",
+"fully",
+"صناعي",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي"
+],
+"ym-0013-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"السعة",
+"30 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+]
+],
+"ym-0014-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 1000V; السعة : 1000 VA; نوع التيار : تيار متردد; نوع التحكم : نوع المرحل. الميزات الرئيسية: wall, تركيب, مرحل, تحكم.",
+"ym-0014-feats": [
+"wall",
+"تركيب",
+"مرحل",
+"تحكم",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0014-specs": [
+[
+"الجهد",
+"1000V"
+],
+[
+"السعة",
+"1000 VA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+]
+],
+"ym-0015-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد; نوع التحكم : نوع المرحل. الميزات الرئيسية: تحكم, مرحل, منظم, مثبت.",
+"ym-0015-feats": [
+"تحكم",
+"مرحل",
+"منظم",
+"مثبت",
+"home",
+"مثبت الجهد"
+],
+"ym-0015-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+]
+],
+"ym-0016-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; السعة : 15 KVA. الميزات الرئيسية: qualified, dtr45--15kva, منظمات, مثبتات.",
+"ym-0016-feats": [
+"qualified",
+"dtr45--15kva",
+"منظمات",
+"مثبتات",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0016-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"السعة",
+"15 KVA"
+]
+],
+"ym-0017-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: السعة : 15 KVA; نوع التحكم : نوع المرحل. الميزات الرئيسية: home, مرحل, منظم, مثبت.",
+"ym-0017-feats": [
+"home",
+"مرحل",
+"منظم",
+"مثبت",
+"صناعي",
+"مثبت الجهد"
+],
+"ym-0017-specs": [
+[
+"السعة",
+"15 KVA"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+]
+],
+"ym-0018-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 500V; السعة : 500 VA; نوع التيار : تيار متردد. الميزات الرئيسية: selling, black, color, mini.",
+"ym-0018-feats": [
+"selling",
+"black",
+"color",
+"mini",
+"utility",
+"tv-fridge"
+],
+"ym-0018-specs": [
+[
+"الجهد",
+"500V"
+],
+[
+"السعة",
+"500 VA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0019-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التحكم : نوع المرحل. الميزات الرئيسية: مرحل, مثبت, منظم, تحكم.",
+"ym-0019-feats": [
+"مرحل",
+"مثبت",
+"منظم",
+"تحكم",
+"plastic",
+"panel"
+],
+"ym-0019-specs": [
+[
+"نوع التحكم",
+"نوع المرحل"
+]
+],
+"ym-0020-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: svc/tnd, precise, مثبت, منظم.",
+"ym-0020-feats": [
+"svc/tnd",
+"precise",
+"مثبت",
+"منظم",
+"منزلي",
+"مثبت الجهد"
+],
+"ym-0020-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0021-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: مثبت, منظم, مثبت الجهد, منظم الجهد.",
+"ym-0021-feats": [
+"مثبت",
+"منظم",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي",
+"servo stabilizer"
+],
+"ym-0021-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0022-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 5000V; السعة : 5000 VA; نوع التيار : تيار متردد. الميزات الرئيسية: servo, محرك, مثبت الجهد, منظم الجهد.",
+"ym-0022-feats": [
+"servo",
+"محرك",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي",
+"servo stabilizer"
+],
+"ym-0022-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"5000V"
+],
+[
+"السعة",
+"5000 VA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"Servo Motor"
+]
+],
+"ym-0023-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 110 فولت; السعة : 15 KVA; الطاقة : 10 KW. الميزات الرئيسية: نحاس, servo, محرك, مثبت الجهد.",
+"ym-0023-feats": [
+"نحاس",
+"servo",
+"محرك",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي"
+],
+"ym-0023-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"110 فولت"
+],
+[
+"السعة",
+"15 KVA"
+],
+[
+"الطاقة",
+"10 KW"
+],
+[
+"التردد",
+"50 هرتز"
+],
+[
+"نوع التحكم",
+"Servo Motor"
+]
+],
+"ym-0024-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 1600V; السعة : 1600 VA. الميزات الرئيسية: intelligent, regulation, مثبت, مثبت الجهد.",
+"ym-0024-feats": [
+"intelligent",
+"regulation",
+"مثبت",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي"
+],
+"ym-0024-specs": [
+[
+"الجهد",
+"1600V"
+],
+[
+"السعة",
+"1600 VA"
+]
+],
+"ym-0025-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : شاشة LCD. الميزات الرئيسية: technology, ثلاثي الطور, منظم, مثبت.",
+"ym-0025-feats": [
+"technology",
+"ثلاثي الطور",
+"منظم",
+"مثبت",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0025-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0026-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; السعة : 15 KVA. الميزات الرئيسية: منظم, مثبت, مثبت الجهد, منظم الجهد.",
+"ym-0026-feats": [
+"منظم",
+"مثبت",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي",
+"servo stabilizer"
+],
+"ym-0026-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"السعة",
+"15 KVA"
+]
+],
+"ym-0027-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: tnd/svc, كهرباء, منظم, مثبت.",
+"ym-0027-feats": [
+"tnd/svc",
+"كهرباء",
+"منظم",
+"مثبت",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0027-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0028-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد; نوع التحكم : نوع المرحل. الميزات الرئيسية: efficient, صناعي, حماية, wall.",
+"ym-0028-feats": [
+"efficient",
+"صناعي",
+"حماية",
+"wall",
+"mounted",
+"مرحل"
+],
+"ym-0028-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+]
+],
+"ym-0029-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; نوع التيار : تيار متردد. الميزات الرئيسية: مثبت, home, appliances, مثبت الجهد.",
+"ym-0029-feats": [
+"مثبت",
+"home",
+"appliances",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي"
+],
+"ym-0029-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0030-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; السعة : 10 KVA; نوع التحكم : Servo Motor. الميزات الرئيسية: full, servo, محرك, تحكم.",
+"ym-0030-feats": [
+"full",
+"servo",
+"محرك",
+"تحكم",
+"wall",
+"تركيب"
+],
+"ym-0030-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"السعة",
+"10 KVA"
+],
+[
+"نوع التحكم",
+"Servo Motor"
+]
+],
+"ym-0031-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 110 فولت; السعة : 15 KVA; الطاقة : 10 KW. الميزات الرئيسية: نحاس, servo, محرك, مثبت الجهد.",
+"ym-0031-feats": [
+"نحاس",
+"servo",
+"محرك",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي"
+],
+"ym-0031-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"110 فولت"
+],
+[
+"السعة",
+"15 KVA"
+],
+[
+"الطاقة",
+"10 KW"
+],
+[
+"التردد",
+"50 هرتز"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"Servo Motor"
+]
+],
+"ym-0032-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; السعة : 5 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: مرحل, مثبتات, مثبت الجهد, منظم الجهد.",
+"ym-0032-feats": [
+"مرحل",
+"مثبتات",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي",
+"servo stabilizer"
+],
+"ym-0032-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"السعة",
+"5 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0059-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 380 فولت; نوع التيار : تيار متردد. الميزات الرئيسية: tsgc2-30k, مدخل, فارياك, محول.",
+"ym-0059-feats": [
+"tsgc2-30k",
+"مدخل",
+"فارياك",
+"محول",
+"منظم",
+"مثبت الجهد"
+],
+"ym-0059-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"380 فولت"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0063-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 1000V; السعة : 1000 VA; نوع التيار : تيار متردد. الميزات الرئيسية: منظم, فارياك, TDGC2, قابل للتعديل.",
+"ym-0063-feats": [
+"منظم",
+"فارياك",
+"TDGC2",
+"قابل للتعديل",
+"محول",
+"مثبت الجهد"
+],
+"ym-0063-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"1000V"
+],
+[
+"السعة",
+"1000 VA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0072-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 5000V; السعة : 5000 VA; نوع التيار : تيار متردد. الميزات الرئيسية: manufacturer, tdgc2-5, خرج, auto.",
+"ym-0072-feats": [
+"manufacturer",
+"tdgc2-5",
+"خرج",
+"auto",
+"محول",
+"مثبت الجهد"
+],
+"ym-0072-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"5000V"
+],
+[
+"السعة",
+"5000 VA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0075-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 450V; السعة : 40 KVA; نوع التيار : تيار متردد; الشاشة : شاشة LED. الميزات الرئيسية: tsgc2-40kva, ثلاثي الطور, contact-type, نحاس.",
+"ym-0075-feats": [
+"tsgc2-40kva",
+"ثلاثي الطور",
+"contact-type",
+"نحاس",
+"0-450v",
+"خرج"
+],
+"ym-0075-specs": [
+[
+"الجهد",
+"450V"
+],
+[
+"السعة",
+"40 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LED"
+]
+],
+"ym-0112-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 250V; السعة : 2 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: high-efficiency, stable, manual, محول.",
+"ym-0112-feats": [
+"high-efficiency",
+"stable",
+"manual",
+"محول",
+"tdgc",
+"فارياك"
+],
+"ym-0112-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"250V"
+],
+[
+"السعة",
+"2 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0113-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 250V; السعة : 200 VA; نوع التيار : تيار متردد. الميزات الرئيسية: supplier, 0-250v, منظم, فارياك.",
+"ym-0113-feats": [
+"supplier",
+"0-250v",
+"منظم",
+"فارياك",
+"أحادي الطور",
+"مثبت الجهد"
+],
+"ym-0113-specs": [
+[
+"الجهد",
+"250V"
+],
+[
+"السعة",
+"200 VA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0114-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 380 فولت; السعة : 5 KVA. الميزات الرئيسية: دقة, regulation, قابل للتعديل, محول.",
+"ym-0114-feats": [
+"دقة",
+"regulation",
+"قابل للتعديل",
+"محول",
+"tdgc2-5",
+"منظم"
+],
+"ym-0114-specs": [
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"5 KVA"
+]
+],
+"ym-0116-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 220 فولت; السعة : 2 KVA; الطاقة : 3 KW; نوع التيار : تيار متردد. الميزات الرئيسية: فارياك, contact-regulator, transformer220v, induction.",
+"ym-0116-feats": [
+"فارياك",
+"contact-regulator",
+"transformer220v",
+"induction",
+"منظم",
+"مثبت الجهد"
+],
+"ym-0116-specs": [
+[
+"الجهد",
+"220 فولت"
+],
+[
+"السعة",
+"2 KVA"
+],
+[
+"الطاقة",
+"3 KW"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0121-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: السعة : 30 KVA; التردد : 50 هرتز. الميزات الرئيسية: TSGC2, منظم, black, ثلاثي الطور.",
+"ym-0121-feats": [
+"TSGC2",
+"منظم",
+"black",
+"ثلاثي الطور",
+"نحاس",
+"محول"
+],
+"ym-0121-specs": [
+[
+"السعة",
+"30 KVA"
+],
+[
+"التردد",
+"50 هرتز"
+]
+],
+"ym-0127-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 230 فولت; السعة : 3 KVA; التردد : 50 هرتز; نوع التيار : تيار متردد. الميزات الرئيسية: tdgc2-3, nominal, أحادي الطور, مثبت الجهد.",
+"ym-0127-feats": [
+"tdgc2-3",
+"nominal",
+"أحادي الطور",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي"
+],
+"ym-0127-specs": [
+[
+"الجهد",
+"230 فولت"
+],
+[
+"السعة",
+"3 KVA"
+],
+[
+"التردد",
+"50 هرتز"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0129-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 1000V; نوع التيار : تيار متردد; نوع التحكم : نوع المرحل; الشاشة : رقمي. الميزات الرئيسية: مرحل, تحكم, منزلي, stabilized.",
+"ym-0129-feats": [
+"مرحل",
+"تحكم",
+"منزلي",
+"stabilized",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0129-specs": [
+[
+"الجهد",
+"1000V"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0131-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 380 فولت; نوع التيار : تيار متردد. الميزات الرئيسية: TSGC2, contact, منظم, متغير.",
+"ym-0131-feats": [
+"TSGC2",
+"contact",
+"منظم",
+"متغير",
+"محول",
+"فارياك"
+],
+"ym-0131-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"380 فولت"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0132-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: manufacturer, tsgc2-15, منظم, فارياك.",
+"ym-0132-feats": [
+"manufacturer",
+"tsgc2-15",
+"منظم",
+"فارياك",
+"خرج",
+"محول"
+],
+"ym-0132-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0133-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 380 فولت; السعة : 10 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: manual, contact, manufacturer, tsgc2-10.",
+"ym-0133-feats": [
+"manual",
+"contact",
+"manufacturer",
+"tsgc2-10",
+"مدخل",
+"فارياك"
+],
+"ym-0133-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"10 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0136-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: فارياك, تناظري, tdgc2-1k, منظم.",
+"ym-0136-feats": [
+"فارياك",
+"تناظري",
+"tdgc2-1k",
+"منظم",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0136-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0139-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 200V; السعة : 200 VA. الميزات الرئيسية: manufacturer, tdgc2-02, powerstat, متغير.",
+"ym-0139-feats": [
+"manufacturer",
+"tdgc2-02",
+"powerstat",
+"متغير",
+"autotransformer",
+"قابل للتعديل"
+],
+"ym-0139-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"200V"
+],
+[
+"السعة",
+"200 VA"
+]
+],
+"ym-0183-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; السعة : 30 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: manual, tdgc2-30kva, فارياك, محول.",
+"ym-0183-feats": [
+"manual",
+"tdgc2-30kva",
+"فارياك",
+"محول",
+"خرج",
+"نحاس"
+],
+"ym-0183-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"السعة",
+"30 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0185-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; السعة : 3 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: قابل للتعديل, TSGC2, فارياك, متغير.",
+"ym-0185-feats": [
+"قابل للتعديل",
+"TSGC2",
+"فارياك",
+"متغير",
+"محول",
+"مثبت الجهد"
+],
+"ym-0185-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"السعة",
+"3 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0187-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 230 فولت; السعة : 3 KVA; التردد : 50 هرتز; نوع التيار : تيار متردد. الميزات الرئيسية: TSGC2, 3-phase, فارياك, نحاس.",
+"ym-0187-feats": [
+"TSGC2",
+"3-phase",
+"فارياك",
+"نحاس",
+"متغير",
+"محول"
+],
+"ym-0187-specs": [
+[
+"الجهد",
+"230 فولت"
+],
+[
+"السعة",
+"3 KVA"
+],
+[
+"التردد",
+"50 هرتز"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0202-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 380 فولت; السعة : 5 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: manufacturer, مدخل, منظم, فارياك.",
+"ym-0202-feats": [
+"manufacturer",
+"مدخل",
+"منظم",
+"فارياك",
+"متغير",
+"مثبت الجهد"
+],
+"ym-0202-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"5 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0203-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 240V; السعة : 1 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: TDGC2, منظم, فارياك, محول.",
+"ym-0203-feats": [
+"TDGC2",
+"منظم",
+"فارياك",
+"محول",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0203-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"240V"
+],
+[
+"السعة",
+"1 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0204-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 380 فولت; السعة : 15 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: tsgc2-15k, مدخل, قابل للتعديل, منظم.",
+"ym-0204-feats": [
+"tsgc2-15k",
+"مدخل",
+"قابل للتعديل",
+"منظم",
+"متغير",
+"مثبت الجهد"
+],
+"ym-0204-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"15 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0205-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد; الشاشة : شاشة LED. الميزات الرئيسية: قابل للتعديل, contact, TSGC2, manual.",
+"ym-0205-feats": [
+"قابل للتعديل",
+"contact",
+"TSGC2",
+"manual",
+"ثلاثي الطور",
+"مثبت"
+],
+"ym-0205-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LED"
+]
+],
+"ym-0214-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 1000V; السعة : 1000 VA; نوع التيار : تيار متردد. الميزات الرئيسية: قابل للتعديل, تناظري, contact, مثبت الجهد.",
+"ym-0214-feats": [
+"قابل للتعديل",
+"تناظري",
+"contact",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي"
+],
+"ym-0214-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"1000V"
+],
+[
+"السعة",
+"1000 VA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0228-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: direct, tsgc2---15k, فارياك, مثبت.",
+"ym-0228-feats": [
+"direct",
+"tsgc2---15k",
+"فارياك",
+"مثبت",
+"محول",
+"مثبت الجهد"
+],
+"ym-0228-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0240-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 300V; السعة : 1 KVA; التردد : 50 هرتز; نوع التيار : تيار متردد. الميزات الرئيسية: tdgc2-1kva, فارياك, أحادي الطور, متغير.",
+"ym-0240-feats": [
+"tdgc2-1kva",
+"فارياك",
+"أحادي الطور",
+"متغير",
+"محول",
+"خرج"
+],
+"ym-0240-specs": [
+[
+"الجهد",
+"300V"
+],
+[
+"السعة",
+"1 KVA"
+],
+[
+"التردد",
+"50 هرتز"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0242-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد. الميزات الرئيسية: tdgc2-30kk, أحادي الطور, منظم, alternator.",
+"ym-0242-feats": [
+"tdgc2-30kk",
+"أحادي الطور",
+"منظم",
+"alternator",
+"فارياك",
+"مثبت الجهد"
+],
+"ym-0242-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0243-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 220 فولت; نوع التيار : تيار متردد. الميزات الرئيسية: أحادي الطور, TDGC2, manual, منظم.",
+"ym-0243-feats": [
+"أحادي الطور",
+"TDGC2",
+"manual",
+"منظم",
+"متغير",
+"محول"
+],
+"ym-0243-specs": [
+[
+"الجهد",
+"220 فولت"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0246-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 380 فولت; السعة : 15 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: tsgc2--20k, مدخل, sعة, منظم.",
+"ym-0246-feats": [
+"tsgc2--20k",
+"مدخل",
+"sعة",
+"منظم",
+"متغير",
+"مثبت الجهد"
+],
+"ym-0246-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"15 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0247-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار مستمر; الشاشة : شاشة LCD. الميزات الرئيسية: أحادي الطور, تحت, حامي, led/lcd.",
+"ym-0247-feats": [
+"أحادي الطور",
+"تحت",
+"حامي",
+"led/lcd",
+"نحاس",
+"electronics"
+],
+"ym-0247-specs": [
+[
+"نوع التيار",
+"تيار مستمر"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0248-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: tdgc2-05k, منظم, alternator, فارياك.",
+"ym-0248-feats": [
+"tdgc2-05k",
+"منظم",
+"alternator",
+"فارياك",
+"regulation",
+"manufactured"
+],
+"ym-0248-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0249-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: tdgc2--20k, تناظري, فارياك, منظم.",
+"ym-0249-feats": [
+"tdgc2--20k",
+"تناظري",
+"فارياك",
+"منظم",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0249-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0256-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: tdgc2-5k, alternator, فارياك, منظم.",
+"ym-0256-feats": [
+"tdgc2-5k",
+"alternator",
+"فارياك",
+"منظم",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0256-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0270-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 430V; نوع التيار : تيار متردد. الميزات الرئيسية: manufacturer, 0-430v, ثلاثي الطور, منظم.",
+"ym-0270-feats": [
+"manufacturer",
+"0-430v",
+"ثلاثي الطور",
+"منظم",
+"فارياك",
+"مثبت الجهد"
+],
+"ym-0270-specs": [
+[
+"الجهد",
+"430V"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0272-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 380 فولت; السعة : 15 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: tsgc2--6k, مدخل, sعة, منظم.",
+"ym-0272-feats": [
+"tsgc2--6k",
+"مدخل",
+"sعة",
+"منظم",
+"متغير",
+"مثبت الجهد"
+],
+"ym-0272-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"15 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0276-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 380 فولت; السعة : 60 KVA; نوع التيار : تيار متردد; الشاشة : شاشة LCD. الميزات الرئيسية: tsgc2-60kva, منظم, ثلاثي الطور, 380v/220v.",
+"ym-0276-feats": [
+"tsgc2-60kva",
+"منظم",
+"ثلاثي الطور",
+"380v/220v",
+"خرج",
+"نحاس"
+],
+"ym-0276-specs": [
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"60 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0277-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 380 فولت; السعة : 30 KVA; التردد : 50 هرتز; نوع التيار : تيار متردد. الميزات الرئيسية: TSGC2, صناعي, منظم, black.",
+"ym-0277-feats": [
+"TSGC2",
+"صناعي",
+"منظم",
+"black",
+"ثلاثي الطور",
+"نحاس"
+],
+"ym-0277-specs": [
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"30 KVA"
+],
+[
+"التردد",
+"50 هرتز"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0279-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 230 فولت; السعة : 3 KVA; التردد : 50 هرتز; نوع التيار : تيار متردد. الميزات الرئيسية: tdgc2-3, أحادي الطور, manual-adjustable, محولات.",
+"ym-0279-feats": [
+"tdgc2-3",
+"أحادي الطور",
+"manual-adjustable",
+"محولات",
+"nominal",
+"مثبت الجهد"
+],
+"ym-0279-specs": [
+[
+"الجهد",
+"230 فولت"
+],
+[
+"السعة",
+"3 KVA"
+],
+[
+"التردد",
+"50 هرتز"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0280-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 380 فولت; السعة : 10 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: TSGC2, ثلاثي الطور, نحاس, مثبت.",
+"ym-0280-feats": [
+"TSGC2",
+"ثلاثي الطور",
+"نحاس",
+"مثبت",
+"منظم",
+"مثبت الجهد"
+],
+"ym-0280-specs": [
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"10 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0294-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 380 فولت; السعة : 10 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: TSGC2, ثلاثي الطور, black, منظم.",
+"ym-0294-feats": [
+"TSGC2",
+"ثلاثي الطور",
+"black",
+"منظم",
+"نحاس",
+"محول"
+],
+"ym-0294-specs": [
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"10 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0297-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; السعة : 5 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: tdgc2-5kva, قابل للتعديل, manual, toroidal.",
+"ym-0297-feats": [
+"tdgc2-5kva",
+"قابل للتعديل",
+"manual",
+"toroidal",
+"فارياك",
+"محول"
+],
+"ym-0297-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"السعة",
+"5 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0302-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 230 فولت; التردد : 50 هرتز; نوع التيار : تيار مستمر. الميزات الرئيسية: قابل للتعديل, تحت, حامي, مثبت الجهد.",
+"ym-0302-feats": [
+"قابل للتعديل",
+"تحت",
+"حامي",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي"
+],
+"ym-0302-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"230 فولت"
+],
+[
+"التردد",
+"50 هرتز"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0335-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: السعة : 7 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: TDGC2, manual, منظم, فارياك.",
+"ym-0335-feats": [
+"TDGC2",
+"manual",
+"منظم",
+"فارياك",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0335-specs": [
+[
+"السعة",
+"7 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0336-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 2V; السعة : 2 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: TDGC2, منظم, فارياك, cheap.",
+"ym-0336-feats": [
+"TDGC2",
+"منظم",
+"فارياك",
+"cheap",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0336-specs": [
+[
+"الجهد",
+"2V"
+],
+[
+"السعة",
+"2 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0339-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; السعة : 5 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: TDGC2, منظم, volt, فارياك.",
+"ym-0339-feats": [
+"TDGC2",
+"منظم",
+"volt",
+"فارياك",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0339-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"السعة",
+"5 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0340-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; السعة : 2 KVA. الميزات الرئيسية: TDGC2, منظم, منزلي, فارياك.",
+"ym-0340-feats": [
+"TDGC2",
+"منظم",
+"منزلي",
+"فارياك",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0340-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"السعة",
+"2 KVA"
+]
+],
+"ym-0351-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 1500V; السعة : 1500 VA; نوع التحكم : Servo Motor. الميزات الرئيسية: manufacturer, ymsvc-15, servo, محرك.",
+"ym-0351-feats": [
+"manufacturer",
+"ymsvc-15",
+"servo",
+"محرك",
+"مثبت",
+"مثبت الجهد"
+],
+"ym-0351-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"1500V"
+],
+[
+"السعة",
+"1500 VA"
+],
+[
+"نوع التحكم",
+"Servo Motor"
+]
+],
+"ym-0371-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; السعة : 3 KVA. الميزات الرئيسية: TDGC2, منظم, فارياك, مثبت الجهد.",
+"ym-0371-feats": [
+"TDGC2",
+"منظم",
+"فارياك",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي"
+],
+"ym-0371-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"السعة",
+"3 KVA"
+]
+],
+"ym-0372-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 2V; السعة : 2 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: منظم, منزلي, TDGC2, فارياك.",
+"ym-0372-feats": [
+"منظم",
+"منزلي",
+"TDGC2",
+"فارياك",
+"0-250v",
+"converter"
+],
+"ym-0372-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"2V"
+],
+[
+"السعة",
+"2 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0383-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد; الشاشة : شاشة LED. الميزات الرئيسية: TSGC2, --3k, منظم, self-cooled.",
+"ym-0383-feats": [
+"TSGC2",
+"--3k",
+"منظم",
+"self-cooled",
+"قابل للتعديل",
+"contact"
+],
+"ym-0383-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"شاشة LED"
+]
+],
+"ym-0390-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 250V; السعة : 5000 VA; نوع التيار : تيار متردد. الميزات الرئيسية: manufacturer, 0-250v, خرج, منظم.",
+"ym-0390-feats": [
+"manufacturer",
+"0-250v",
+"خرج",
+"منظم",
+"فارياك",
+"مثبت الجهد"
+],
+"ym-0390-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"250V"
+],
+[
+"السعة",
+"5000 VA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0391-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 5000V; السعة : 5000 VA; نوع التحكم : Servo Motor. الميزات الرئيسية: manufacturer, ymsvc-5, servo, محرك.",
+"ym-0391-feats": [
+"manufacturer",
+"ymsvc-5",
+"servo",
+"محرك",
+"مثبت",
+"مثبت الجهد"
+],
+"ym-0391-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"5000V"
+],
+[
+"السعة",
+"5000 VA"
+],
+[
+"نوع التحكم",
+"Servo Motor"
+]
+],
+"ym-0392-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 250V; نوع التيار : تيار متردد. الميزات الرئيسية: TDGC2, فارياك, متغير, محول.",
+"ym-0392-feats": [
+"TDGC2",
+"فارياك",
+"متغير",
+"محول",
+"محرك",
+"مثبت الجهد"
+],
+"ym-0392-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"250V"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0398-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 3000V; السعة : 3000 VA; نوع التيار : تيار متردد. الميزات الرئيسية: manufacturer, tdgc2-3, منظم, فارياك.",
+"ym-0398-feats": [
+"manufacturer",
+"tdgc2-3",
+"منظم",
+"فارياك",
+"متغير",
+"محول"
+],
+"ym-0398-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"3000V"
+],
+[
+"السعة",
+"3000 VA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0399-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; السعة : 5 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: manufacturer, tdgc2-05, منظم, فارياك.",
+"ym-0399-feats": [
+"manufacturer",
+"tdgc2-05",
+"منظم",
+"فارياك",
+"متغير",
+"محول"
+],
+"ym-0399-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"السعة",
+"5 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0414-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: manufacturer, tdgc2-1, منظم, فارياك.",
+"ym-0414-feats": [
+"manufacturer",
+"tdgc2-1",
+"منظم",
+"فارياك",
+"متغير",
+"محول"
+],
+"ym-0414-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0419-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 250V; السعة : 500 VA. الميزات الرئيسية: manufacturer, 0-250v, منظم, فارياك.",
+"ym-0419-feats": [
+"manufacturer",
+"0-250v",
+"منظم",
+"فارياك",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0419-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"250V"
+],
+[
+"السعة",
+"500 VA"
+]
+],
+"ym-0420-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: manufacturer, tdgc2-10, dropout, منظم.",
+"ym-0420-feats": [
+"manufacturer",
+"tdgc2-10",
+"dropout",
+"منظم",
+"فارياك",
+"خرج"
+],
+"ym-0420-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0727-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; التطبيق : Voltage protection for home and industrial equipment; جهد الخرج : 220V / 230V. الميزات الرئيسية: manufacturer, tdgc2-3, فارياك, transformator.",
+"ym-0727-feats": [
+"manufacturer",
+"tdgc2-3",
+"فارياك",
+"transformator",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0727-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"التطبيق",
+"Voltage protection for home and industrial equipment"
+],
+[
+"جهد الخرج",
+"220V / 230V"
+],
+[
+"التردد",
+"50/60 هرتز"
+]
+],
+"ym-0729-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 250V; التيار : 60A; التطبيق : Voltage protection for home and industrial equipment. الميزات الرئيسية: manufacturer, 0-250v, خرج, منظم.",
+"ym-0729-feats": [
+"manufacturer",
+"0-250v",
+"خرج",
+"منظم",
+"فارياك",
+"مثبت الجهد"
+],
+"ym-0729-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"250V"
+],
+[
+"التيار",
+"60A"
+],
+[
+"التطبيق",
+"Voltage protection for home and industrial equipment"
+],
+[
+"جهد الخرج",
+"220V / 230V"
+],
+[
+"التردد",
+"50/60 هرتز"
+]
+],
+"ym-0731-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 45. الميزات الرئيسية: مدخل, خرج, tsgc, dimmerstat.",
+"ym-0731-feats": [
+"مدخل",
+"خرج",
+"tsgc",
+"dimmerstat",
+"متغير",
+"فارياك"
+],
+"ym-0731-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"45"
+]
+],
+"ym-0732-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 46. الميزات الرئيسية: manufacturer, tdgc2-3, منظم, فارياك.",
+"ym-0732-feats": [
+"manufacturer",
+"tdgc2-3",
+"منظم",
+"فارياك",
+"متغير",
+"varivolt"
+],
+"ym-0732-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"46"
+]
+],
+"ym-0733-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 36. الميزات الرئيسية: manufacturer, alternator, منظم, فارياك.",
+"ym-0733-feats": [
+"manufacturer",
+"alternator",
+"منظم",
+"فارياك",
+"تناظري",
+"pieces"
+],
+"ym-0733-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"36"
+]
+],
+"ym-0735-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 36. الميزات الرئيسية: manufacturer, 0-430v, منظم, فارياك.",
+"ym-0735-feats": [
+"manufacturer",
+"0-430v",
+"منظم",
+"فارياك",
+"متغير",
+"محول"
+],
+"ym-0735-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"36"
+]
+],
+"ym-0745-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 9 pieces; Lead Time : 40. الميزات الرئيسية: TSGC2, فارياك, محول, supplier.",
+"ym-0745-feats": [
+"TSGC2",
+"فارياك",
+"محول",
+"supplier",
+"pieces",
+"مثبت الجهد"
+],
+"ym-0745-specs": [
+[
+"Min. Order",
+"1 - 9 pieces"
+],
+[
+"Lead Time",
+"40"
+]
+],
+"ym-0769-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الشاشة : تناظري; التطبيق : Voltage protection for home and industrial equipment; جهد الخرج : 220V / 230V. الميزات الرئيسية: tdgc2--2k, تناظري, فارياك, منظم.",
+"ym-0769-feats": [
+"tdgc2--2k",
+"تناظري",
+"فارياك",
+"منظم",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0769-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الشاشة",
+"تناظري"
+],
+[
+"التطبيق",
+"Voltage protection for home and industrial equipment"
+],
+[
+"جهد الخرج",
+"220V / 230V"
+],
+[
+"التردد",
+"50/60 هرتز"
+]
+],
+"ym-0790-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 30. الميزات الرئيسية: قابل للتعديل, ثلاثي الطور, حامي, تحت فوق.",
+"ym-0790-feats": [
+"قابل للتعديل",
+"ثلاثي الطور",
+"حامي",
+"تحت فوق",
+"pieces",
+"مثبت الجهد"
+],
+"ym-0790-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0847-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 20. الميزات الرئيسية: manufacturer, tdgc2-05, منظم, فارياك.",
+"ym-0847-feats": [
+"manufacturer",
+"tdgc2-05",
+"منظم",
+"فارياك",
+"متغير",
+"pieces"
+],
+"ym-0847-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"20"
+]
+],
+"ym-0848-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 40. الميزات الرئيسية: مدخل, manual, label, printing.",
+"ym-0848-feats": [
+"مدخل",
+"manual",
+"label",
+"printing",
+"فارياك",
+"pieces"
+],
+"ym-0848-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"40"
+]
+],
+"ym-0849-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 9 pieces; Lead Time : 30. الميزات الرئيسية: TDGC2, manual, منظم, متغير.",
+"ym-0849-feats": [
+"TDGC2",
+"manual",
+"منظم",
+"متغير",
+"منظمات",
+"pieces"
+],
+"ym-0849-specs": [
+[
+"Min. Order",
+"1 - 9 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0850-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 30. الميزات الرئيسية: tsgc2-30k, مدخل, فارياك, محول.",
+"ym-0850-feats": [
+"tsgc2-30k",
+"مدخل",
+"فارياك",
+"محول",
+"pieces",
+"مثبت الجهد"
+],
+"ym-0850-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0859-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 35. الميزات الرئيسية: tsgc2--20k, مدخل, sعة, خرج.",
+"ym-0859-feats": [
+"tsgc2--20k",
+"مدخل",
+"sعة",
+"خرج",
+"pieces",
+"مثبت الجهد"
+],
+"ym-0859-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"35"
+]
+],
+"ym-0868-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; التطبيق : Voltage protection for home and industrial equipment; جهد الخرج : 220V / 230V. الميزات الرئيسية: manufacturer, TDGC2, خرج, متغير.",
+"ym-0868-feats": [
+"manufacturer",
+"TDGC2",
+"خرج",
+"متغير",
+"أحادي الطور",
+"فارياك"
+],
+"ym-0868-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"التطبيق",
+"Voltage protection for home and industrial equipment"
+],
+[
+"جهد الخرج",
+"220V / 230V"
+],
+[
+"التردد",
+"50/60 هرتز"
+]
+],
+"ym-0869-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 500V; التطبيق : Voltage protection for home and industrial equipment; جهد الخرج : 220V / 230V. الميزات الرئيسية: TSGC2, خرج, محرك, motorized.",
+"ym-0869-feats": [
+"TSGC2",
+"خرج",
+"محرك",
+"motorized",
+"فارياك",
+"قابل للتعديل"
+],
+"ym-0869-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"500V"
+],
+[
+"التطبيق",
+"Voltage protection for home and industrial equipment"
+],
+[
+"جهد الخرج",
+"220V / 230V"
+],
+[
+"التردد",
+"50/60 هرتز"
+]
+],
+"ym-0870-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 220 فولت; التطبيق : Voltage protection for home and industrial equipment; جهد الخرج : 220V / 230V; التردد : 50/60 هرتز. الميزات الرئيسية: فارياك, contact-regulator, محول, induction.",
+"ym-0870-feats": [
+"فارياك",
+"contact-regulator",
+"محول",
+"induction",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0870-specs": [
+[
+"الجهد",
+"220 فولت"
+],
+[
+"التطبيق",
+"Voltage protection for home and industrial equipment"
+],
+[
+"جهد الخرج",
+"220V / 230V"
+],
+[
+"التردد",
+"50/60 هرتز"
+]
+],
+"ym-0872-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 30. الميزات الرئيسية: تناظري, tdgc2-1k, منظم, auto.",
+"ym-0872-feats": [
+"تناظري",
+"tdgc2-1k",
+"منظم",
+"auto",
+"pieces",
+"مثبت الجهد"
+],
+"ym-0872-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0873-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 9 pieces; Lead Time : 40. الميزات الرئيسية: قابل للتعديل, TSGC2, فارياك, متغير.",
+"ym-0873-feats": [
+"قابل للتعديل",
+"TSGC2",
+"فارياك",
+"متغير",
+"محول",
+"pieces"
+],
+"ym-0873-specs": [
+[
+"Min. Order",
+"1 - 9 pieces"
+],
+[
+"Lead Time",
+"40"
+]
+],
+"ym-0874-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 31. الميزات الرئيسية: TSGC2, فارياك, قابل للتعديل, auto.",
+"ym-0874-feats": [
+"TSGC2",
+"فارياك",
+"قابل للتعديل",
+"auto",
+"pieces",
+"مثبت الجهد"
+],
+"ym-0874-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"31"
+]
+],
+"ym-0875-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 31. الميزات الرئيسية: tsgc2-40kva, ثلاثي الطور, contact-type, نحاس.",
+"ym-0875-feats": [
+"tsgc2-40kva",
+"ثلاثي الطور",
+"contact-type",
+"نحاس",
+"0-450v",
+"خرج"
+],
+"ym-0875-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"31"
+]
+],
+"ym-0876-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 15. الميزات الرئيسية: manufacturer, tdgc2-5, خرج, auto.",
+"ym-0876-feats": [
+"manufacturer",
+"tdgc2-5",
+"خرج",
+"auto",
+"محول",
+"pieces"
+],
+"ym-0876-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"15"
+]
+],
+"ym-0877-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 40. الميزات الرئيسية: منظم, فارياك, محرك, قابل للتعديل.",
+"ym-0877-feats": [
+"منظم",
+"فارياك",
+"محرك",
+"قابل للتعديل",
+"متغير",
+"pieces"
+],
+"ym-0877-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"40"
+]
+],
+"ym-0879-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 36. الميزات الرئيسية: TDGC2, 0-250v, common, contact.",
+"ym-0879-feats": [
+"TDGC2",
+"0-250v",
+"common",
+"contact",
+"قابل للتعديل",
+"pieces"
+],
+"ym-0879-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"36"
+]
+],
+"ym-0880-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 32. الميزات الرئيسية: manufacturer, قابل للتعديل, 0-430v, ثلاثي الطور.",
+"ym-0880-feats": [
+"manufacturer",
+"قابل للتعديل",
+"0-430v",
+"ثلاثي الطور",
+"منظم",
+"فارياك"
+],
+"ym-0880-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"32"
+]
+],
+"ym-0881-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 20. الميزات الرئيسية: manufacturer, tdgc2-05, 0-250v, منظم.",
+"ym-0881-feats": [
+"manufacturer",
+"tdgc2-05",
+"0-250v",
+"منظم",
+"فارياك",
+"pieces"
+],
+"ym-0881-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"20"
+]
+],
+"ym-0882-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 9 pieces; Lead Time : 40. الميزات الرئيسية: TSGC2, 3-phase, فارياك, نحاس.",
+"ym-0882-feats": [
+"TSGC2",
+"3-phase",
+"فارياك",
+"نحاس",
+"nominal",
+"pieces"
+],
+"ym-0882-specs": [
+[
+"Min. Order",
+"1 - 9 pieces"
+],
+[
+"Lead Time",
+"40"
+]
+],
+"ym-0883-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 100 - 999 pieces; Lead Time : 31. الميزات الرئيسية: jbk5, أحادي الطور, insulation, محول.",
+"ym-0883-feats": [
+"jbk5",
+"أحادي الطور",
+"insulation",
+"محول",
+"مدخل",
+"pieces"
+],
+"ym-0883-specs": [
+[
+"Min. Order",
+"100 - 999 pieces"
+],
+[
+"Lead Time",
+"31"
+]
+],
+"ym-0884-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 45. الميزات الرئيسية: قابل للتعديل, contact, TSGC2, manual.",
+"ym-0884-feats": [
+"قابل للتعديل",
+"contact",
+"TSGC2",
+"manual",
+"ثلاثي الطور",
+"مثبت"
+],
+"ym-0884-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"45"
+]
+],
+"ym-0885-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 4 pieces; Lead Time : 31. الميزات الرئيسية: manufacturer, قابل للتعديل, auto, مدخل.",
+"ym-0885-feats": [
+"manufacturer",
+"قابل للتعديل",
+"auto",
+"مدخل",
+"منظم",
+"pieces"
+],
+"ym-0885-specs": [
+[
+"Min. Order",
+"1 - 4 pieces"
+],
+[
+"Lead Time",
+"31"
+]
+],
+"ym-0886-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 499 pieces; Lead Time : 40. الميزات الرئيسية: manufacturer, TDGC2, 05-20kva, volt.",
+"ym-0886-feats": [
+"manufacturer",
+"TDGC2",
+"05-20kva",
+"volt",
+"slide",
+"منظم"
+],
+"ym-0886-specs": [
+[
+"Min. Order",
+"5 - 499 pieces"
+],
+[
+"Lead Time",
+"40"
+]
+],
+"ym-0887-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 7. الميزات الرئيسية: 0-430v, قابل للتعديل, pieces, مثبت الجهد.",
+"ym-0887-feats": [
+"0-430v",
+"قابل للتعديل",
+"pieces",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي"
+],
+"ym-0887-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0888-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 15. الميزات الرئيسية: دقة, regulation, قابل للتعديل, محول.",
+"ym-0888-feats": [
+"دقة",
+"regulation",
+"قابل للتعديل",
+"محول",
+"TDGC2",
+"pieces"
+],
+"ym-0888-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"15"
+]
+],
+"ym-0889-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 4 pieces; Lead Time : 31. الميزات الرئيسية: تناظري, contact, قابل للتعديل, pieces.",
+"ym-0889-feats": [
+"تناظري",
+"contact",
+"قابل للتعديل",
+"pieces",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0889-specs": [
+[
+"Min. Order",
+"1 - 4 pieces"
+],
+[
+"Lead Time",
+"31"
+]
+],
+"ym-0890-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 piece; Lead Time : 35. الميزات الرئيسية: instrument, usage, 50hz/60hz, powerstat.",
+"ym-0890-feats": [
+"instrument",
+"usage",
+"50hz/60hz",
+"powerstat",
+"piece",
+"مثبت الجهد"
+],
+"ym-0890-specs": [
+[
+"Min. Order",
+"1 piece"
+],
+[
+"Lead Time",
+"35"
+]
+],
+"ym-0891-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 15. الميزات الرئيسية: long, service, life, فارياك.",
+"ym-0891-feats": [
+"long",
+"service",
+"life",
+"فارياك",
+"tsgc2-15",
+"pieces"
+],
+"ym-0891-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"15"
+]
+],
+"ym-0892-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 30. الميزات الرئيسية: manufacturer, tsgc2-15, منظم, pieces.",
+"ym-0892-feats": [
+"manufacturer",
+"tsgc2-15",
+"منظم",
+"pieces",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0892-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0894-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 35. الميزات الرئيسية: tsgc2-15k, مدخل, قابل للتعديل, pieces.",
+"ym-0894-feats": [
+"tsgc2-15k",
+"مدخل",
+"قابل للتعديل",
+"pieces",
+"مثبت الجهد",
+"منظم الجهد"
+],
+"ym-0894-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"35"
+]
+],
+"ym-0895-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 36. الميزات الرئيسية: صناعي, 0-300v, خرج, تحكم.",
+"ym-0895-feats": [
+"صناعي",
+"0-300v",
+"خرج",
+"تحكم",
+"منظم",
+"pieces"
+],
+"ym-0895-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"36"
+]
+],
+"ym-0904-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 pieces; Lead Time : 10. الميزات الرئيسية: auto, محول, pieces, مثبت الجهد.",
+"ym-0904-feats": [
+"auto",
+"محول",
+"pieces",
+"مثبت الجهد",
+"منظم الجهد",
+"منظم جهد تلقائي"
+],
+"ym-0904-specs": [
+[
+"Min. Order",
+"5 pieces"
+],
+[
+"Lead Time",
+"10"
+]
+],
+"ym-0912-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 9 pieces; Lead Time : 31. الميزات الرئيسية: TDGC2, منظم, فارياك, منظمات مثبتات.",
+"ym-0912-feats": [
+"TDGC2",
+"منظم",
+"فارياك",
+"منظمات مثبتات",
+"pieces",
+"مثبت الجهد"
+],
+"ym-0912-specs": [
+[
+"Min. Order",
+"1 - 9 pieces"
+],
+[
+"Lead Time",
+"31"
+]
+],
+"ym-0913-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 30. الميزات الرئيسية: tdgc2-5kva, قابل للتعديل, manual, toroidal.",
+"ym-0913-feats": [
+"tdgc2-5kva",
+"قابل للتعديل",
+"manual",
+"toroidal",
+"فارياك",
+"محول"
+],
+"ym-0913-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0977-desc": "منظم تلقائي يثبت جهد الإمداد ويحمي المعدات. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 5 pieces; List Price : $12-30; Lead Time : Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., جهد مثبت منظم, indoor 12kv voltage 50hz ht hrc type high-voltage.",
+"ym-0977-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"جهد مثبت منظم",
+"indoor 12kv voltage 50hz ht hrc type high-voltage"
+],
+"ym-0977-specs": [
+[
+"MOQ",
+"5 pieces"
+],
+[
+"List Price",
+"$12-30"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0316-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0316-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0316-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+]
+],
+"ym-0431-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0431-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0431-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0435-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Aluminum, Insulated. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0435-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0435-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Aluminum, Insulated"
+]
+],
+"ym-0436-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Cu-Al. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0436-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0436-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0438-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0438-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0438-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0439-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0439-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0439-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0441-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Cu-Al, Insulated. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0441-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0441-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Cu-Al, Insulated"
+]
+],
+"ym-0448-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Cu-Al. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0448-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0448-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0454-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Cu-Al. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0454-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0454-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0455-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Aluminum, Insulated. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0455-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0455-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Aluminum, Insulated"
+]
+],
+"ym-0465-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0465-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0465-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0468-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Aluminum, Insulated. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0468-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0468-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Aluminum, Insulated"
+]
+],
+"ym-0477-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0477-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0477-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0481-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Cu-Al. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0481-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0481-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0488-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0488-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0488-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0492-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Aluminum, Insulated. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0492-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0492-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Aluminum, Insulated"
+]
+],
+"ym-0505-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0505-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0505-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0506-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Cu-Al. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0506-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0506-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0520-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0520-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0520-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0522-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0522-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0522-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0531-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Aluminum, Insulated. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0531-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0531-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Aluminum, Insulated"
+]
+],
+"ym-0540-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Tin Plated. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0540-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0540-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Tin Plated"
+]
+],
+"ym-0544-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0544-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0544-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0545-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0545-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0545-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0546-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0546-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0546-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0557-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Cu-Al, Insulated. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0557-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0557-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Cu-Al, Insulated"
+]
+],
+"ym-0559-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0559-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0559-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0560-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Cu-Al. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0560-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0560-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0563-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0563-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0563-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0603-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0603-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0603-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0604-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0604-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0604-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0608-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0608-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0608-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0613-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0613-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0613-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0619-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0619-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0619-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0623-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Tin Plated, Insulated. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0623-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0623-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Tin Plated, Insulated"
+]
+],
+"ym-0624-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0624-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0624-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0647-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0647-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0647-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0648-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0648-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0648-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0657-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Cu-Al. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0657-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0657-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0670-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Cu-Al, Insulated. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0670-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0670-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Cu-Al, Insulated"
+]
+],
+"ym-0671-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Tin Plated. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0671-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0671-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Tin Plated"
+]
+],
+"ym-0674-desc": "قضيب ألومنيوم خفيف ومقاوم للتآكل لتوزيع الطاقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة; المادة : ألومنيوم; النوع : معزول / عاري; التصنيف : Cu-Al. الميزات الرئيسية: قضيب ألومنيوم, electrical aluminum flat bar/busbar, موصل خفيف, تخزين الطاقة.",
+"ym-0674-feats": [
+"قضيب ألومنيوم",
+"electrical aluminum flat bar/busbar",
+"موصل خفيف",
+"تخزين الطاقة",
+"بطارية شمسية",
+"مقاوم للتآكل"
+],
+"ym-0674-specs": [
+[
+"التطبيق",
+"أنظمة التخزين والألواح الشمسية ووصلات طاقة خفيفة"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"النوع",
+"معزول / عاري"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0462-desc": "مكون حماية يكتشف الأعطال ويمنع انتشارها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Terminal protection, ESS safety; المادة : PVC / insulation; النوع : Protection. الميزات الرئيسية: pvc battery terminal covers, pvc battery post covers, قضيب حماية, pvc terminal cover.",
+"ym-0462-feats": [
+"pvc battery terminal covers",
+"pvc battery post covers",
+"قضيب حماية",
+"pvc terminal cover",
+"insulation cover",
+"battery safety"
+],
+"ym-0462-specs": [
+[
+"التطبيق",
+"Terminal protection, ESS safety"
+],
+[
+"المادة",
+"PVC / insulation"
+],
+[
+"النوع",
+"Protection"
+]
+],
+"ym-0678-desc": "مكون حماية يكتشف الأعطال ويمنع انتشارها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Terminal protection, ESS safety; المادة : PVC / insulation; النوع : Protection. الميزات الرئيسية: pvc battery terminal covers, pvc battery post covers, قضيب حماية, pvc terminal cover.",
+"ym-0678-feats": [
+"pvc battery terminal covers",
+"pvc battery post covers",
+"قضيب حماية",
+"pvc terminal cover",
+"insulation cover",
+"battery safety"
+],
+"ym-0678-specs": [
+[
+"التطبيق",
+"Terminal protection, ESS safety"
+],
+[
+"المادة",
+"PVC / insulation"
+],
+[
+"النوع",
+"Protection"
+]
+],
+"ym-0487-desc": "قضيب CCS مدمج لوحدات بطاريات المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Cell contact systems, module integration; المادة : نحاس / ألومنيوم; النوع : CCS integrated. الميزات الرئيسية: solid connection, electrical solid insulated busbar, ccs busbar, cell contact system.",
+"ym-0487-feats": [
+"solid connection",
+"electrical solid insulated busbar",
+"ccs busbar",
+"cell contact system",
+"module integration",
+"battery assembly"
+],
+"ym-0487-specs": [
+[
+"التطبيق",
+"Cell contact systems, module integration"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"CCS integrated"
+]
+],
+"ym-0577-desc": "قضيب CCS مدمج لوحدات بطاريات المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Cell contact systems, module integration; المادة : نحاس / ألومنيوم; النوع : CCS integrated. الميزات الرئيسية: solid connection, electrical solid insulated busbar, ccs busbar, cell contact system.",
+"ym-0577-feats": [
+"solid connection",
+"electrical solid insulated busbar",
+"ccs busbar",
+"cell contact system",
+"module integration",
+"battery assembly"
+],
+"ym-0577-specs": [
+[
+"التطبيق",
+"Cell contact systems, module integration"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"CCS integrated"
+]
+],
+"ym-0630-desc": "قضيب CCS مدمج لوحدات بطاريات المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Cell contact systems, module integration; المادة : نحاس / ألومنيوم; النوع : CCS integrated. الميزات الرئيسية: solid connection, electrical solid insulated busbar, ccs busbar, cell contact system.",
+"ym-0630-feats": [
+"solid connection",
+"electrical solid insulated busbar",
+"ccs busbar",
+"cell contact system",
+"module integration",
+"battery assembly"
+],
+"ym-0630-specs": [
+[
+"التطبيق",
+"Cell contact systems, module integration"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"CCS integrated"
+]
+],
+"ym-0631-desc": "قضيب CCS مدمج لوحدات بطاريات المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Cell contact systems, module integration; المادة : نحاس / ألومنيوم; النوع : CCS integrated. الميزات الرئيسية: solid connection, electrical solid insulated busbar, ccs busbar, cell contact system.",
+"ym-0631-feats": [
+"solid connection",
+"electrical solid insulated busbar",
+"ccs busbar",
+"cell contact system",
+"module integration",
+"battery assembly"
+],
+"ym-0631-specs": [
+[
+"التطبيق",
+"Cell contact systems, module integration"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"CCS integrated"
+]
+],
+"ym-0486-desc": "تجميع قضبان مصفحة منخفضة الحث للتوزيع المضغوط. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Hybrid EV, rail, high-voltage distribution; المادة : Copper-aluminum laminated; النوع : Composite. الميزات الرئيسية: مركب مصفح قضيب, laminated shunt, hybrid ev, rail transit.",
+"ym-0486-feats": [
+"مركب مصفح قضيب",
+"laminated shunt",
+"hybrid ev",
+"rail transit",
+"multi-layer conductor",
+"vibration tolerant"
+],
+"ym-0486-specs": [
+[
+"التطبيق",
+"Hybrid EV, rail, high-voltage distribution"
+],
+[
+"المادة",
+"Copper-aluminum laminated"
+],
+[
+"النوع",
+"Composite"
+]
+],
+"ym-0503-desc": "تجميع قضبان مصفحة منخفضة الحث للتوزيع المضغوط. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Hybrid EV, rail, high-voltage distribution; المادة : Copper-aluminum laminated; النوع : Composite. الميزات الرئيسية: مركب مصفح قضيب, laminated shunt, hybrid ev, rail transit.",
+"ym-0503-feats": [
+"مركب مصفح قضيب",
+"laminated shunt",
+"hybrid ev",
+"rail transit",
+"multi-layer conductor",
+"vibration tolerant"
+],
+"ym-0503-specs": [
+[
+"التطبيق",
+"Hybrid EV, rail, high-voltage distribution"
+],
+[
+"المادة",
+"Copper-aluminum laminated"
+],
+[
+"النوع",
+"Composite"
+]
+],
+"ym-0507-desc": "تجميع قضبان مصفحة منخفضة الحث للتوزيع المضغوط. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Hybrid EV, rail, high-voltage distribution; المادة : Copper-aluminum laminated; النوع : Composite; التصنيف : Nickel Plated, Insulated. الميزات الرئيسية: مركب مصفح قضيب, laminated shunt, hybrid ev, rail transit.",
+"ym-0507-feats": [
+"مركب مصفح قضيب",
+"laminated shunt",
+"hybrid ev",
+"rail transit",
+"multi-layer conductor",
+"vibration tolerant"
+],
+"ym-0507-specs": [
+[
+"التطبيق",
+"Hybrid EV, rail, high-voltage distribution"
+],
+[
+"المادة",
+"Copper-aluminum laminated"
+],
+[
+"النوع",
+"Composite"
+],
+[
+"التصنيف",
+"Nickel Plated, Insulated"
+]
+],
+"ym-0537-desc": "تجميع قضبان مصفحة منخفضة الحث للتوزيع المضغوط. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Hybrid EV, rail, high-voltage distribution; المادة : Copper-aluminum laminated; النوع : Composite; التصنيف : ألومنيوم. الميزات الرئيسية: مركب مصفح قضيب, laminated shunt, hybrid ev, rail transit.",
+"ym-0537-feats": [
+"مركب مصفح قضيب",
+"laminated shunt",
+"hybrid ev",
+"rail transit",
+"multi-layer conductor",
+"vibration tolerant"
+],
+"ym-0537-specs": [
+[
+"التطبيق",
+"Hybrid EV, rail, high-voltage distribution"
+],
+[
+"المادة",
+"Copper-aluminum laminated"
+],
+[
+"النوع",
+"Composite"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0542-desc": "تجميع قضبان مصفحة منخفضة الحث للتوزيع المضغوط. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Hybrid EV, rail, high-voltage distribution; المادة : Copper-aluminum laminated; النوع : Composite. الميزات الرئيسية: مركب مصفح قضيب, laminated shunt, hybrid ev, rail transit.",
+"ym-0542-feats": [
+"مركب مصفح قضيب",
+"laminated shunt",
+"hybrid ev",
+"rail transit",
+"multi-layer conductor",
+"vibration tolerant"
+],
+"ym-0542-specs": [
+[
+"التطبيق",
+"Hybrid EV, rail, high-voltage distribution"
+],
+[
+"المادة",
+"Copper-aluminum laminated"
+],
+[
+"النوع",
+"Composite"
+]
+],
+"ym-0583-desc": "تجميع قضبان مصفحة منخفضة الحث للتوزيع المضغوط. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Hybrid EV, rail, high-voltage distribution; المادة : Copper-aluminum laminated; النوع : Composite. الميزات الرئيسية: مركب مصفح قضيب, laminated shunt, hybrid ev, rail transit.",
+"ym-0583-feats": [
+"مركب مصفح قضيب",
+"laminated shunt",
+"hybrid ev",
+"rail transit",
+"multi-layer conductor",
+"vibration tolerant"
+],
+"ym-0583-specs": [
+[
+"التطبيق",
+"Hybrid EV, rail, high-voltage distribution"
+],
+[
+"المادة",
+"Copper-aluminum laminated"
+],
+[
+"النوع",
+"Composite"
+]
+],
+"ym-0586-desc": "تجميع قضبان مصفحة منخفضة الحث للتوزيع المضغوط. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Hybrid EV, rail, high-voltage distribution; المادة : Copper-aluminum laminated; النوع : Composite; التصنيف : Cu-Al. الميزات الرئيسية: مركب مصفح قضيب, laminated shunt, hybrid ev, rail transit.",
+"ym-0586-feats": [
+"مركب مصفح قضيب",
+"laminated shunt",
+"hybrid ev",
+"rail transit",
+"multi-layer conductor",
+"vibration tolerant"
+],
+"ym-0586-specs": [
+[
+"التطبيق",
+"Hybrid EV, rail, high-voltage distribution"
+],
+[
+"المادة",
+"Copper-aluminum laminated"
+],
+[
+"النوع",
+"Composite"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0617-desc": "تجميع قضبان مصفحة منخفضة الحث للتوزيع المضغوط. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Hybrid EV, rail, high-voltage distribution; المادة : Copper-aluminum laminated; النوع : Composite; التصنيف : ألومنيوم. الميزات الرئيسية: مركب مصفح قضيب, laminated shunt, hybrid ev, rail transit.",
+"ym-0617-feats": [
+"مركب مصفح قضيب",
+"laminated shunt",
+"hybrid ev",
+"rail transit",
+"multi-layer conductor",
+"vibration tolerant"
+],
+"ym-0617-specs": [
+[
+"التطبيق",
+"Hybrid EV, rail, high-voltage distribution"
+],
+[
+"المادة",
+"Copper-aluminum laminated"
+],
+[
+"النوع",
+"Composite"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0628-desc": "تجميع قضبان مصفحة منخفضة الحث للتوزيع المضغوط. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Hybrid EV, rail, high-voltage distribution; المادة : Copper-aluminum laminated; النوع : Composite; التصنيف : ألومنيوم. الميزات الرئيسية: مركب مصفح قضيب, laminated shunt, hybrid ev, rail transit.",
+"ym-0628-feats": [
+"مركب مصفح قضيب",
+"laminated shunt",
+"hybrid ev",
+"rail transit",
+"multi-layer conductor",
+"vibration tolerant"
+],
+"ym-0628-specs": [
+[
+"التطبيق",
+"Hybrid EV, rail, high-voltage distribution"
+],
+[
+"المادة",
+"Copper-aluminum laminated"
+],
+[
+"النوع",
+"Composite"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0629-desc": "تجميع قضبان مصفحة منخفضة الحث للتوزيع المضغوط. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Hybrid EV, rail, high-voltage distribution; المادة : Copper-aluminum laminated; النوع : Composite; التصنيف : Cu-Al. الميزات الرئيسية: مركب مصفح قضيب, laminated shunt, hybrid ev, rail transit.",
+"ym-0629-feats": [
+"مركب مصفح قضيب",
+"laminated shunt",
+"hybrid ev",
+"rail transit",
+"multi-layer conductor",
+"vibration tolerant"
+],
+"ym-0629-specs": [
+[
+"التطبيق",
+"Hybrid EV, rail, high-voltage distribution"
+],
+[
+"المادة",
+"Copper-aluminum laminated"
+],
+[
+"النوع",
+"Composite"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0634-desc": "تجميع قضبان مصفحة منخفضة الحث للتوزيع المضغوط. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Hybrid EV, rail, high-voltage distribution; المادة : Copper-aluminum laminated; النوع : Composite; التصنيف : Cu-Al. الميزات الرئيسية: مركب مصفح قضيب, laminated shunt, hybrid ev, rail transit.",
+"ym-0634-feats": [
+"مركب مصفح قضيب",
+"laminated shunt",
+"hybrid ev",
+"rail transit",
+"multi-layer conductor",
+"vibration tolerant"
+],
+"ym-0634-specs": [
+[
+"التطبيق",
+"Hybrid EV, rail, high-voltage distribution"
+],
+[
+"المادة",
+"Copper-aluminum laminated"
+],
+[
+"النوع",
+"Composite"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0638-desc": "تجميع قضبان مصفحة منخفضة الحث للتوزيع المضغوط. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Hybrid EV, rail, high-voltage distribution; المادة : Copper-aluminum laminated; النوع : Composite; التصنيف : ألومنيوم. الميزات الرئيسية: مركب مصفح قضيب, laminated shunt, hybrid ev, rail transit.",
+"ym-0638-feats": [
+"مركب مصفح قضيب",
+"laminated shunt",
+"hybrid ev",
+"rail transit",
+"multi-layer conductor",
+"vibration tolerant"
+],
+"ym-0638-specs": [
+[
+"التطبيق",
+"Hybrid EV, rail, high-voltage distribution"
+],
+[
+"المادة",
+"Copper-aluminum laminated"
+],
+[
+"النوع",
+"Composite"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0655-desc": "تجميع قضبان مصفحة منخفضة الحث للتوزيع المضغوط. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Hybrid EV, rail, high-voltage distribution; المادة : Copper-aluminum laminated; النوع : Composite; التصنيف : ألومنيوم. الميزات الرئيسية: مركب مصفح قضيب, laminated shunt, hybrid ev, rail transit.",
+"ym-0655-feats": [
+"مركب مصفح قضيب",
+"laminated shunt",
+"hybrid ev",
+"rail transit",
+"multi-layer conductor",
+"vibration tolerant"
+],
+"ym-0655-specs": [
+[
+"التطبيق",
+"Hybrid EV, rail, high-voltage distribution"
+],
+[
+"المادة",
+"Copper-aluminum laminated"
+],
+[
+"النوع",
+"Composite"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0064-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 720V; نوع التيار : تيار متردد. الميزات الرئيسية: sense, محولات, 1600/5a, محول.",
+"ym-0064-feats": [
+"sense",
+"محولات",
+"1600/5a",
+"محول",
+"قياس",
+"محول تيار"
+],
+"ym-0064-specs": [
+[
+"الجهد",
+"720V"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0073-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 720V; نوع التيار : تيار متردد. الميزات الرئيسية: 2000/5a, split, core, محول.",
+"ym-0073-feats": [
+"2000/5a",
+"split",
+"core",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة"
+],
+"ym-0073-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"720V"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0074-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: turns, 250/5a, محولات, محول.",
+"ym-0074-feats": [
+"turns",
+"250/5a",
+"محولات",
+"محول",
+"قياس",
+"محول تيار"
+],
+"ym-0074-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0077-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: دقة, نحاس, محولات, محول تيار.",
+"ym-0077-feats": [
+"دقة",
+"نحاس",
+"محولات",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض"
+],
+"ym-0077-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0082-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 720V; نوع التيار : تيار متردد. الميزات الرئيسية: dp-816-1000/5a, split, core, محول.",
+"ym-0082-feats": [
+"dp-816-1000/5a",
+"split",
+"core",
+"محول",
+"قياس",
+"محول تيار"
+],
+"ym-0082-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"720V"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0117-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: mr-85, 5000/5a, محول, محول تيار.",
+"ym-0117-feats": [
+"mr-85",
+"5000/5a",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض"
+],
+"ym-0117-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0120-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التردد : 50 هرتز. الميزات الرئيسية: كهرباء, مراقبة, msq-85, محول.",
+"ym-0120-feats": [
+"كهرباء",
+"مراقبة",
+"msq-85",
+"محول",
+"تردد",
+"مدخل"
+],
+"ym-0120-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التردد",
+"50 هرتز"
+]
+],
+"ym-0126-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: خرج, مدخل, محول تيار, محول تيار بنواة مقسمة.",
+"ym-0126-feats": [
+"خرج",
+"مدخل",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار"
+],
+"ym-0126-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0145-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; نوع التيار : تيار متردد. الميزات الرئيسية: مدخل, قضيب توصيل, محول تيار, محول تيار بنواة مقسمة.",
+"ym-0145-feats": [
+"مدخل",
+"قضيب توصيل",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار"
+],
+"ym-0145-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0155-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التيار : 5A; الدقة : فئة 0.5; التطبيق : قياس وحماية في توزيع الكهرباء. الميزات الرئيسية: system, مراقبة, أحادي الطور, bus-bar.",
+"ym-0155-feats": [
+"system",
+"مراقبة",
+"أحادي الطور",
+"bus-bar",
+"10/5a",
+"محول"
+],
+"ym-0155-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 0.5"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0179-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد. الميزات الرئيسية: bh-066, msq-066-30i150/5a, محول, toroidal.",
+"ym-0179-feats": [
+"bh-066",
+"msq-066-30i150/5a",
+"محول",
+"toroidal",
+"autotransformer",
+"صناعي"
+],
+"ym-0179-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0180-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التردد : 60 هرتز. الميزات الرئيسية: high-precision, toroidal, plastic, محول.",
+"ym-0180-feats": [
+"high-precision",
+"toroidal",
+"plastic",
+"محول",
+"50hz/60hz",
+"محول تيار"
+],
+"ym-0180-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التردد",
+"60 هرتز"
+]
+],
+"ym-0196-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التردد : 60 هرتز. الميزات الرئيسية: manufacturer, dp-816-4000/5, 50hz/60hz, autotransformer.",
+"ym-0196-feats": [
+"manufacturer",
+"dp-816-4000/5",
+"50hz/60hz",
+"autotransformer",
+"split",
+"core"
+],
+"ym-0196-specs": [
+[
+"التردد",
+"60 هرتز"
+]
+],
+"ym-0200-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 720V; التردد : 60 هرتز; نوع التيار : تيار متردد. الميزات الرئيسية: split, core, محول, 50/60hz.",
+"ym-0200-feats": [
+"split",
+"core",
+"محول",
+"50/60hz",
+"3000/5a",
+"محول تيار"
+],
+"ym-0200-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"720V"
+],
+[
+"التردد",
+"60 هرتز"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0250-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 9V. الميزات الرئيسية: split, core, محول, محول تيار.",
+"ym-0250-feats": [
+"split",
+"core",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض"
+],
+"ym-0250-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"9V"
+]
+],
+"ym-0251-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: msq-40-200/5, manufacturers, مدخل, محول.",
+"ym-0251-feats": [
+"msq-40-200/5",
+"manufacturers",
+"مدخل",
+"محول",
+"casing",
+"محول تيار"
+],
+"ym-0251-specs": [
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+]
+],
+"ym-0253-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التردد : 50 هرتز. الميزات الرئيسية: msq-80, محول, تردد, مدخل.",
+"ym-0253-feats": [
+"msq-80",
+"محول",
+"تردد",
+"مدخل",
+"voltages",
+"محول تيار"
+],
+"ym-0253-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التردد",
+"50 هرتز"
+]
+],
+"ym-0257-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: manufacturer, أحادي الطور, toroidal, محول.",
+"ym-0257-feats": [
+"manufacturer",
+"أحادي الطور",
+"toroidal",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة"
+],
+"ym-0257-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+]
+],
+"ym-0258-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: toroidal, محول, محول تيار, محول تيار بنواة مقسمة.",
+"ym-0258-feats": [
+"toroidal",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار"
+],
+"ym-0258-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0259-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التردد : 60 هرتز. الميزات الرئيسية: msq-30-300/5, manufacturers, casing, محول.",
+"ym-0259-feats": [
+"msq-30-300/5",
+"manufacturers",
+"casing",
+"محول",
+"300/5a",
+"محول تيار"
+],
+"ym-0259-specs": [
+[
+"التردد",
+"60 هرتز"
+]
+],
+"ym-0262-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: دقة, أحادي الطور, محول, zero.",
+"ym-0262-feats": [
+"دقة",
+"أحادي الطور",
+"محول",
+"zero",
+"sequence",
+"sensor"
+],
+"ym-0262-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+]
+],
+"ym-0267-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 48V. الميزات الرئيسية: ems-62/40, inductor, قياس, tools.",
+"ym-0267-feats": [
+"ems-62/40",
+"inductor",
+"قياس",
+"tools",
+"low-voltage",
+"دقة"
+],
+"ym-0267-specs": [
+[
+"الجهد",
+"48V"
+]
+],
+"ym-0268-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد. الميزات الرئيسية: 100/5a, محول, مدخل, محول تيار.",
+"ym-0268-feats": [
+"100/5a",
+"محول",
+"مدخل",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض"
+],
+"ym-0268-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0269-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 9V. الميزات الرئيسية: محول, محول تيار, محول تيار بنواة مقسمة, محول تيار جهد منخفض.",
+"ym-0269-feats": [
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار",
+"حماية محول تيار"
+],
+"ym-0269-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"9V"
+]
+],
+"ym-0285-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 110 فولت. الميزات الرئيسية: manufacture, خرج, محول, مدخل.",
+"ym-0285-feats": [
+"manufacture",
+"خرج",
+"محول",
+"مدخل",
+"محول تيار",
+"محول تيار بنواة مقسمة"
+],
+"ym-0285-specs": [
+[
+"الجهد",
+"110 فولت"
+]
+],
+"ym-0291-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: manufacturer, msq-40-400/5, casing, محول.",
+"ym-0291-feats": [
+"manufacturer",
+"msq-40-400/5",
+"casing",
+"محول",
+"400/5a",
+"محول تيار"
+],
+"ym-0291-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0319-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التردد : 60 هرتز. الميزات الرئيسية: outdoor, potential, محول, تردد.",
+"ym-0319-feats": [
+"outdoor",
+"potential",
+"محول",
+"تردد",
+"محول تيار",
+"محول تيار بنواة مقسمة"
+],
+"ym-0319-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التردد",
+"60 هرتز"
+]
+],
+"ym-0323-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: yomin, outdoor, محول, محول تيار.",
+"ym-0323-feats": [
+"yomin",
+"outdoor",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض"
+],
+"ym-0323-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0353-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: zero, sequence, toroidal, محول.",
+"ym-0353-feats": [
+"zero",
+"sequence",
+"toroidal",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة"
+],
+"ym-0353-specs": [
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+]
+],
+"ym-0354-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: toroidal, محول, محول تيار, محول تيار بنواة مقسمة.",
+"ym-0354-feats": [
+"toroidal",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار"
+],
+"ym-0354-specs": [
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+]
+],
+"ym-0358-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: manufacturer, msq-30b-20/5, casing, محول.",
+"ym-0358-feats": [
+"manufacturer",
+"msq-30b-20/5",
+"casing",
+"محول",
+"20/5a",
+"محول تيار"
+],
+"ym-0358-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0359-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 0.5; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: محول, 200/5a, محول تيار, محول تيار بنواة مقسمة.",
+"ym-0359-feats": [
+"محول",
+"200/5a",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار"
+],
+"ym-0359-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 0.5"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+]
+],
+"ym-0385-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد. الميزات الرئيسية: 800/5a, transformerct, toroidal/current, محول.",
+"ym-0385-feats": [
+"800/5a",
+"transformerct",
+"toroidal/current",
+"محول",
+"manufacturer",
+"محول تيار"
+],
+"ym-0385-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0386-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 0.5; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 150/5a, محول, محول تيار, محول تيار بنواة مقسمة.",
+"ym-0386-feats": [
+"150/5a",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار"
+],
+"ym-0386-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 0.5"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0387-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: manufacturer, msq-30-100/5, casing, محول.",
+"ym-0387-feats": [
+"manufacturer",
+"msq-30-100/5",
+"casing",
+"محول",
+"100/5a",
+"محول"
+],
+"ym-0387-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0396-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 0.5; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 25/5a, محول, محول تيار, محول تيار بنواة مقسمة.",
+"ym-0396-feats": [
+"25/5a",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار"
+],
+"ym-0396-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 0.5"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0402-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الدقة : فئة 1.0; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: محول, محول تيار, محول تيار بنواة مقسمة, محول تيار جهد منخفض.",
+"ym-0402-feats": [
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار",
+"حماية محول تيار"
+],
+"ym-0402-specs": [
+[
+"الدقة",
+"فئة 1.0"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+]
+],
+"ym-0403-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: 1200/5a, محول, measuring, محول تيار.",
+"ym-0403-feats": [
+"1200/5a",
+"محول",
+"measuring",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض"
+],
+"ym-0403-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0404-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 1.0; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 600/5a, محول, محول, محول تيار.",
+"ym-0404-feats": [
+"600/5a",
+"محول",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض"
+],
+"ym-0404-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 1.0"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0405-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 0.5; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 800/5a, محول, قياس, محول تيار.",
+"ym-0405-feats": [
+"800/5a",
+"محول",
+"قياس",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض"
+],
+"ym-0405-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 0.5"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0406-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: manufacturer, dp-58-800/5, split, core.",
+"ym-0406-feats": [
+"manufacturer",
+"dp-58-800/5",
+"split",
+"core",
+"محول",
+"800/5a"
+],
+"ym-0406-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0407-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: manufacturer, dp-812-1500/5, split, core.",
+"ym-0407-feats": [
+"manufacturer",
+"dp-812-1500/5",
+"split",
+"core",
+"محول",
+"محول تيار"
+],
+"ym-0407-specs": [
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+]
+],
+"ym-0408-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: manufacturer, msq-40-300/5, casing, محول.",
+"ym-0408-feats": [
+"manufacturer",
+"msq-40-300/5",
+"casing",
+"محول",
+"300/5a",
+"محول تيار"
+],
+"ym-0408-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0409-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: manufacturer, msq-30-150/5, casing, محول.",
+"ym-0409-feats": [
+"manufacturer",
+"msq-30-150/5",
+"casing",
+"محول",
+"150/5a",
+"محول تيار"
+],
+"ym-0409-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0410-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 0.5; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 1250/5a, split, core, محول.",
+"ym-0410-feats": [
+"1250/5a",
+"split",
+"core",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة"
+],
+"ym-0410-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 0.5"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0411-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 1.0; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 150/5a, محول, محول تيار, محول تيار بنواة مقسمة.",
+"ym-0411-feats": [
+"150/5a",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار"
+],
+"ym-0411-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 1.0"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0412-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 1.0; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 5000/5a, محول, محول تيار, محول تيار بنواة مقسمة.",
+"ym-0412-feats": [
+"5000/5a",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار"
+],
+"ym-0412-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 1.0"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0413-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 1.0; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 400/5a, split, core, محول.",
+"ym-0413-feats": [
+"400/5a",
+"split",
+"core",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة"
+],
+"ym-0413-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 1.0"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0415-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 0.5; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: good, 1200/5a, split, core.",
+"ym-0415-feats": [
+"good",
+"1200/5a",
+"split",
+"core",
+"محول",
+"محول تيار"
+],
+"ym-0415-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 0.5"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0416-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 0.5; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 1500/5a, محول, indoor, محول تيار.",
+"ym-0416-feats": [
+"1500/5a",
+"محول",
+"indoor",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض"
+],
+"ym-0416-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 0.5"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0417-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 1.0; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 6000/5a, محول, محول تيار, محول تيار بنواة مقسمة.",
+"ym-0417-feats": [
+"6000/5a",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار"
+],
+"ym-0417-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 1.0"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0418-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الدقة : Class 0.1; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: split, core, محول, محول تيار.",
+"ym-0418-feats": [
+"split",
+"core",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض"
+],
+"ym-0418-specs": [
+[
+"الدقة",
+"Class 0.1"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+]
+],
+"ym-0707-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 1.0; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 800/5a, محول, measuring, محول تيار.",
+"ym-0707-feats": [
+"800/5a",
+"محول",
+"measuring",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض"
+],
+"ym-0707-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 1.0"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0708-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 0.5; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 600/5a, محول, محول تيار, محول تيار بنواة مقسمة.",
+"ym-0708-feats": [
+"600/5a",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار"
+],
+"ym-0708-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 0.5"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0709-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 0.5; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 1600/5a, محول, measuring, محول تيار.",
+"ym-0709-feats": [
+"1600/5a",
+"محول",
+"measuring",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض"
+],
+"ym-0709-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 0.5"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0710-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 5A; الدقة : فئة 0.5; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز. الميزات الرئيسية: 800/5a, محول, محول تيار, محول تيار بنواة مقسمة.",
+"ym-0710-feats": [
+"800/5a",
+"محول",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض",
+"قياس محول تيار"
+],
+"ym-0710-specs": [
+[
+"التيار",
+"5A"
+],
+[
+"الدقة",
+"فئة 0.5"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+],
+[
+"الطاقة المقدرة",
+"5 A"
+]
+],
+"ym-0739-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 31. الميزات الرئيسية: 1200/5a, محول, measuring, pieces.",
+"ym-0739-feats": [
+"1200/5a",
+"محول",
+"measuring",
+"pieces",
+"محول تيار",
+"محول تيار بنواة مقسمة"
+],
+"ym-0739-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"31"
+]
+],
+"ym-0779-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 110 فولت; التطبيق : قياس وحماية في توزيع الكهرباء; التردد : 50/60 هرتز; النوع : نوع ملفوف / قضيب. الميزات الرئيسية: صناعي, قياس, خرج, توزيع.",
+"ym-0779-feats": [
+"صناعي",
+"قياس",
+"خرج",
+"توزيع",
+"محول تيار",
+"محول تيار بنواة مقسمة"
+],
+"ym-0779-specs": [
+[
+"الجهد",
+"110 فولت"
+],
+[
+"التطبيق",
+"قياس وحماية في توزيع الكهرباء"
+],
+[
+"التردد",
+"50/60 هرتز"
+],
+[
+"النوع",
+"نوع ملفوف / قضيب"
+]
+],
+"ym-0853-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 pieces; Lead Time : 30. الميزات الرئيسية: manufacturer, dp-816-4000/5, 50hz/60hz, autotransformer.",
+"ym-0853-feats": [
+"manufacturer",
+"dp-816-4000/5",
+"50hz/60hz",
+"autotransformer",
+"split",
+"core"
+],
+"ym-0853-specs": [
+[
+"Min. Order",
+"10 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0854-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 piece; Lead Time : 7. الميزات الرئيسية: direct, sale, split-core, 2000/5a.",
+"ym-0854-feats": [
+"direct",
+"sale",
+"split-core",
+"2000/5a",
+"split",
+"core"
+],
+"ym-0854-specs": [
+[
+"Min. Order",
+"1 piece"
+],
+[
+"Lead Time",
+"7"
+]
+],
+"ym-0855-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 100 pieces; Lead Time : 20. الميزات الرئيسية: 25/5a, محول, window-type, pieces.",
+"ym-0855-feats": [
+"25/5a",
+"محول",
+"window-type",
+"pieces",
+"محول تيار",
+"محول تيار بنواة مقسمة"
+],
+"ym-0855-specs": [
+[
+"Min. Order",
+"100 pieces"
+],
+[
+"Lead Time",
+"20"
+]
+],
+"ym-0871-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 10. الميزات الرئيسية: lmz1-05, rresin, material, محول.",
+"ym-0871-feats": [
+"lmz1-05",
+"rresin",
+"material",
+"محول",
+"صناعي",
+"مراقبة"
+],
+"ym-0871-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"10"
+]
+],
+"ym-0902-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 30. الميزات الرئيسية: خرج, مدخل, pieces, محول تيار.",
+"ym-0902-feats": [
+"خرج",
+"مدخل",
+"pieces",
+"محول تيار",
+"محول تيار بنواة مقسمة",
+"محول تيار جهد منخفض"
+],
+"ym-0902-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0903-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 5 - 99 pieces; Lead Time : 32. الميزات الرئيسية: msq-85, مدخل, voltages, measuring.",
+"ym-0903-feats": [
+"msq-85",
+"مدخل",
+"voltages",
+"measuring",
+"كهرباء",
+"pieces"
+],
+"ym-0903-specs": [
+[
+"Min. Order",
+"5 - 99 pieces"
+],
+[
+"Lead Time",
+"32"
+]
+],
+"ym-0908-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 100 - 9,999 pieces; Lead Time : 30. الميزات الرئيسية: 100/5a, مدخل, خرج, نحاس.",
+"ym-0908-feats": [
+"100/5a",
+"مدخل",
+"خرج",
+"نحاس",
+"pieces",
+"محول تيار"
+],
+"ym-0908-specs": [
+[
+"Min. Order",
+"100 - 9,999 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0916-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 100 - 999 pieces; Lead Time : 32. الميزات الرئيسية: مدخل, محول, خرج, pieces.",
+"ym-0916-feats": [
+"مدخل",
+"محول",
+"خرج",
+"pieces",
+"محول تيار",
+"محول تيار بنواة مقسمة"
+],
+"ym-0916-specs": [
+[
+"Min. Order",
+"100 - 999 pieces"
+],
+[
+"Lead Time",
+"32"
+]
+],
+"ym-0917-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 piece; Lead Time : 20. الميزات الرئيسية: 50/60hz, turns, 250/5a, محولات.",
+"ym-0917-feats": [
+"50/60hz",
+"turns",
+"250/5a",
+"محولات",
+"piece",
+"محول تيار"
+],
+"ym-0917-specs": [
+[
+"Min. Order",
+"1 piece"
+],
+[
+"Lead Time",
+"20"
+]
+],
+"ym-0982-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Rated Current 1 : 5 - 10A; السعة المقدرة : 5 - 10A. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, outdoor high-voltage current transformer lzw32-10.",
+"ym-0982-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"outdoor high-voltage current transformer lzw32-10"
+],
+"ym-0982-specs": [
+[
+"Rated Current 1",
+"5 - 10A"
+],
+[
+"السعة المقدرة",
+"5 - 10A"
+]
+],
+"ym-0984-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $200; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, new red 10kv outdoor high voltage current transfor.",
+"ym-0984-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"new red 10kv outdoor high voltage current transfor"
+],
+"ym-0984-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$200"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0985-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $667; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, high voltage circuit breaker power supply pt dry m.",
+"ym-0985-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"high voltage circuit breaker power supply pt dry m"
+],
+"ym-0985-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$667"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0987-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $430; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, lzzbj71-35 type high voltage current transformer 3.",
+"ym-0987-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"lzzbj71-35 type high voltage current transformer 3"
+],
+"ym-0987-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$430"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0988-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $25.88-26.88; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, outdoor current transformer lzw32-10 silicone rubb.",
+"ym-0988-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"outdoor current transformer lzw32-10 silicone rubb"
+],
+"ym-0988-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$25.88-26.88"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0991-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $20; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, 10kv high voltage open type lmzk-10 special curren.",
+"ym-0991-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"10kv high voltage open type lmzk-10 special curren"
+],
+"ym-0991-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$20"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0992-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $111; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, new genuine quality assurance semi-enclosed claw t.",
+"ym-0992-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"new genuine quality assurance semi-enclosed claw t"
+],
+"ym-0992-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$111"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0994-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $74; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, laj-10q high voltage cabinet through the wall curr.",
+"ym-0994-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"laj-10q high voltage cabinet through the wall curr"
+],
+"ym-0994-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$74"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0996-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $430; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, lzzbj71-35 35kv outdoor dry current transformer fa.",
+"ym-0996-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"lzzbj71-35 35kv outdoor dry current transformer fa"
+],
+"ym-0996-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$430"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1000-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $80; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, 10kv indoor high voltage current transformer lzzbj.",
+"ym-1000-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"10kv indoor high voltage current transformer lzzbj"
+],
+"ym-1000-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$80"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1001-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $373; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, factory direct sales of new genuine quality dry-ty.",
+"ym-1001-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"factory direct sales of new genuine quality dry-ty"
+],
+"ym-1001-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$373"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1002-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $297; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, customized three phase high voltage potential tran.",
+"ym-1002-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"customized three phase high voltage potential tran"
+],
+"ym-1002-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$297"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1006-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $200; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, 10kv ct industrial controls outdoor high voltage c.",
+"ym-1006-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"10kv ct industrial controls outdoor high voltage c"
+],
+"ym-1006-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$200"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1008-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $190; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, 10kv indoor high voltage current transformer.",
+"ym-1008-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"10kv indoor high voltage current transformer"
+],
+"ym-1008-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$190"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1010-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $297; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, 10kv 3 phase casting insulation voltage transforme.",
+"ym-1010-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"10kv 3 phase casting insulation voltage transforme"
+],
+"ym-1010-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$297"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1013-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $110; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, 10kv high voltage voltage transformer jdz10-10 sin.",
+"ym-1013-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"10kv high voltage voltage transformer jdz10-10 sin"
+],
+"ym-1013-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$110"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1015-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Rated Current 1 : 10 kVA; السعة المقدرة : 10 kVA. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, jdzw-10r high voltage potential transformer 10kv s.",
+"ym-1015-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"jdzw-10r high voltage potential transformer 10kv s"
+],
+"ym-1015-specs": [
+[
+"Rated Current 1",
+"10 kVA"
+],
+[
+"السعة المقدرة",
+"10 kVA"
+]
+],
+"ym-1017-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Rated Current 1 : 30-3000kva; السعة المقدرة : 30-3000kva. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, outdoor high voltage residual open-closed type ac/.",
+"ym-1017-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"outdoor high voltage residual open-closed type ac/"
+],
+"ym-1017-specs": [
+[
+"Rated Current 1",
+"30-3000kva"
+],
+[
+"السعة المقدرة",
+"30-3000kva"
+]
+],
+"ym-1020-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Rated Current 1 : 10 kVA; السعة المقدرة : 10 kVA. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, wenzhou lzzb6-10 high voltage current transformer.",
+"ym-1020-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"wenzhou lzzb6-10 high voltage current transformer"
+],
+"ym-1020-specs": [
+[
+"Rated Current 1",
+"10 kVA"
+],
+[
+"السعة المقدرة",
+"10 kVA"
+]
+],
+"ym-1021-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Rated Current 1 : 10 kVA; السعة المقدرة : 10 kVA. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, professional manufacturers' 10kv toroidal high cur.",
+"ym-1021-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"professional manufacturers' 10kv toroidal high cur"
+],
+"ym-1021-specs": [
+[
+"Rated Current 1",
+"10 kVA"
+],
+[
+"السعة المقدرة",
+"10 kVA"
+]
+],
+"ym-1022-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Rated Current 1 : 10 kVA; السعة المقدرة : 10 kVA. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, outdoor single-phase 3kv 6kv 10kv voltage transfor.",
+"ym-1022-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"outdoor single-phase 3kv 6kv 10kv voltage transfor"
+],
+"ym-1022-specs": [
+[
+"Rated Current 1",
+"10 kVA"
+],
+[
+"السعة المقدرة",
+"10 kVA"
+]
+],
+"ym-1023-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Rated Current 1 : 35 kVA; السعة المقدرة : 35 kVA. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, single phase outdoor oil-immersed power transforme.",
+"ym-1023-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"single phase outdoor oil-immersed power transforme"
+],
+"ym-1023-specs": [
+[
+"Rated Current 1",
+"35 kVA"
+],
+[
+"السعة المقدرة",
+"35 kVA"
+]
+],
+"ym-1024-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Rated Current 1 : 35 kVA; السعة المقدرة : 35 kVA. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, jdjj2-35 35kv single-phase high voltage transforme.",
+"ym-1024-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"jdjj2-35 35kv single-phase high voltage transforme"
+],
+"ym-1024-specs": [
+[
+"Rated Current 1",
+"35 kVA"
+],
+[
+"السعة المقدرة",
+"35 kVA"
+]
+],
+"ym-1026-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $357.20; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, outdoor 10kv jls-10 five-column oil metering box t.",
+"ym-1026-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"outdoor 10kv jls-10 five-column oil metering box t"
+],
+"ym-1026-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$357.20"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1027-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $177; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, jdzc-6 high voltage 10kv indoor single-phase volta.",
+"ym-1027-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"jdzc-6 high voltage 10kv indoor single-phase volta"
+],
+"ym-1027-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$177"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1028-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $111; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, jdz(j)-3 6 10q semi-enclosed single phase voltage.",
+"ym-1028-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"jdz(j)-3 6 10q semi-enclosed single phase voltage"
+],
+"ym-1028-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$111"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1029-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $460; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, 35kv indoor high voltage jdzx9-35 transformer high.",
+"ym-1029-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"35kv indoor high voltage jdzx9-35 transformer high"
+],
+"ym-1029-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$460"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1030-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Rated Current 1 : 10 kVA; السعة المقدرة : 10 kVA. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, wenzhou high voltage 10kv dc ac current transforme.",
+"ym-1030-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"wenzhou high voltage 10kv dc ac current transforme"
+],
+"ym-1030-specs": [
+[
+"Rated Current 1",
+"10 kVA"
+],
+[
+"السعة المقدرة",
+"10 kVA"
+]
+],
+"ym-1031-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $50; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, lsy-10/107 integrated three-phase current transfor.",
+"ym-1031-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"lsy-10/107 integrated three-phase current transfor"
+],
+"ym-1031-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$50"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1032-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $533; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, indoor/outdoor high precision single and three pha.",
+"ym-1032-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"indoor/outdoor high precision single and three pha"
+],
+"ym-1032-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$533"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1033-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $179.25; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, 12kv lzzbj9-12c2 high-voltage electrical current t.",
+"ym-1033-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"12kv lzzbj9-12c2 high-voltage electrical current t"
+],
+"ym-1033-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$179.25"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1034-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $300; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, high instrument voltage transformer single-phase 1.",
+"ym-1034-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"high instrument voltage transformer single-phase 1"
+],
+"ym-1034-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$300"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1035-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Rated Current 1 : 30-3000kva; السعة المقدرة : 30-3000kva. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, high quality lxk-80~240 open type indoor three-pha.",
+"ym-1035-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"high quality lxk-80~240 open type indoor three-pha"
+],
+"ym-1035-specs": [
+[
+"Rated Current 1",
+"30-3000kva"
+],
+[
+"السعة المقدرة",
+"30-3000kva"
+]
+],
+"ym-1038-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $80; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, lzzbj9-10a high voltage transformer outdoor potent.",
+"ym-1038-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"lzzbj9-10a high voltage transformer outdoor potent"
+],
+"ym-1038-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$80"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1039-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $460; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, single-phase 35kv cast resin epoxy vacuum voltage.",
+"ym-1039-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"single-phase 35kv cast resin epoxy vacuum voltage"
+],
+"ym-1039-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$460"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1040-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $20; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, yongtai wufang open current transformer high-power.",
+"ym-1040-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"yongtai wufang open current transformer high-power"
+],
+"ym-1040-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$20"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1041-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $140; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., محول تيار, lmzj1-10q 10kv epoxy resin ct current transformer.",
+"ym-1041-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"محول تيار",
+"lmzj1-10q 10kv epoxy resin ct current transformer"
+],
+"ym-1041-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$140"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1042-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $177. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, jdzc-6/10 indoor single-phase power source voltage.",
+"ym-1042-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"jdzc-6/10 indoor single-phase power source voltage"
+],
+"ym-1042-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$177"
+]
+],
+"ym-1044-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $177. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, jdzc-6 high voltage transformer indoor single and.",
+"ym-1044-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"jdzc-6 high voltage transformer indoor single and"
+],
+"ym-1044-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$177"
+]
+],
+"ym-1045-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $430. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, lzzbj71-35 35kv outdoor dry current transformer fa.",
+"ym-1045-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"lzzbj71-35 35kv outdoor dry current transformer fa"
+],
+"ym-1045-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$430"
+]
+],
+"ym-1046-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $534. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, outdoor 10kv jlszy-10 combined metering and high-v.",
+"ym-1046-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"outdoor 10kv jlszy-10 combined metering and high-v"
+],
+"ym-1046-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$534"
+]
+],
+"ym-1047-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $300. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, factory direct 15kv indoor dry single-phase jdz11-.",
+"ym-1047-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"factory direct 15kv indoor dry single-phase jdz11-"
+],
+"ym-1047-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$300"
+]
+],
+"ym-1049-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $163. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, latest jdz8-10r fuse voltage transformer brown col.",
+"ym-1049-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"latest jdz8-10r fuse voltage transformer brown col"
+],
+"ym-1049-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$163"
+]
+],
+"ym-1050-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $200. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, lzzw-10q outdoor three-phase current transformer 1.",
+"ym-1050-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"lzzw-10q outdoor three-phase current transformer 1"
+],
+"ym-1050-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$200"
+]
+],
+"ym-1053-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $80. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, lzzbj9-10a indoor high voltage transformer 10kv me.",
+"ym-1053-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"lzzbj9-10a indoor high voltage transformer 10kv me"
+],
+"ym-1053-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$80"
+]
+],
+"ym-1054-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $179.25. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, lzzbj9-12c2 fully enclosed 12kv indoor high voltag.",
+"ym-1054-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"lzzbj9-12c2 fully enclosed 12kv indoor high voltag"
+],
+"ym-1054-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$179.25"
+]
+],
+"ym-1055-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $389. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, jlszv-10 three-phase dry type instrument transform.",
+"ym-1055-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"jlszv-10 three-phase dry type instrument transform"
+],
+"ym-1055-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$389"
+]
+],
+"ym-1056-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $667. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, jdzw9-35q outdoor single-phase voltage transformer.",
+"ym-1056-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"jdzw9-35q outdoor single-phase voltage transformer"
+],
+"ym-1056-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$667"
+]
+],
+"ym-1057-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $163. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, jdz8-10r high voltage single-phase dry type transf.",
+"ym-1057-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"jdz8-10r high voltage single-phase dry type transf"
+],
+"ym-1057-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$163"
+]
+],
+"ym-1058-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $163. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, factory direct single-phase 10kv dry fully enclose.",
+"ym-1058-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"factory direct single-phase 10kv dry fully enclose"
+],
+"ym-1058-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$163"
+]
+],
+"ym-1059-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $59. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, latest 12kv high voltage lzzb9-10s current transfo.",
+"ym-1059-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"latest 12kv high voltage lzzb9-10s current transfo"
+],
+"ym-1059-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$59"
+]
+],
+"ym-1060-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $118. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, factory direct high quality jdzw-10r single-phase.",
+"ym-1060-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"factory direct high quality jdzw-10r single-phase"
+],
+"ym-1060-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$118"
+]
+],
+"ym-1061-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $533. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, outdoor dry single-phase 35kv high voltage transfo.",
+"ym-1061-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"outdoor dry single-phase 35kv high voltage transfo"
+],
+"ym-1061-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$533"
+]
+],
+"ym-1062-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $163. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, jdz18-10r power transformer in-house fully enclose.",
+"ym-1062-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"jdz18-10r power transformer in-house fully enclose"
+],
+"ym-1062-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$163"
+]
+],
+"ym-1063-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $59. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, hot selling high quality 10kv transformer three-ph.",
+"ym-1063-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"hot selling high quality 10kv transformer three-ph"
+],
+"ym-1063-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$59"
+]
+],
+"ym-1064-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $96. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, lzzbj6-10 indoor single-phase epoxy resin casting.",
+"ym-1064-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"lzzbj6-10 indoor single-phase epoxy resin casting"
+],
+"ym-1064-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$96"
+]
+],
+"ym-1066-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $59. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, lzzb9-10s high voltage 10kv current sensor transfo.",
+"ym-1066-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"lzzb9-10s high voltage 10kv current sensor transfo"
+],
+"ym-1066-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$59"
+]
+],
+"ym-1067-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $24. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, lxk-120 open zero sequence current transformer lj-.",
+"ym-1067-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"lxk-120 open zero sequence current transformer lj-"
+],
+"ym-1067-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$24"
+]
+],
+"ym-1068-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $118. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, jdzw9-35q outdoor 35kv voltage transformer high vo.",
+"ym-1068-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"jdzw9-35q outdoor 35kv voltage transformer high vo"
+],
+"ym-1068-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$118"
+]
+],
+"ym-1069-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $80. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, lzzbj9-10a indoor high voltage current transformer.",
+"ym-1069-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"lzzbj9-10a indoor high voltage current transformer"
+],
+"ym-1069-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$80"
+]
+],
+"ym-1071-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $74. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, single phase high voltage current transformer 10kv.",
+"ym-1071-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"single phase high voltage current transformer 10kv"
+],
+"ym-1071-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$74"
+]
+],
+"ym-1072-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $177. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, jdzc-6/10 single-phase copper casting insulation v.",
+"ym-1072-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"jdzc-6/10 single-phase copper casting insulation v"
+],
+"ym-1072-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$177"
+]
+],
+"ym-1073-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $754. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, single-phase five-column high-voltage transformer.",
+"ym-1073-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"single-phase five-column high-voltage transformer"
+],
+"ym-1073-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$754"
+]
+],
+"ym-1074-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $111. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, jdz-3/6/10q single-phase three-phase semi-closed c.",
+"ym-1074-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"jdz-3/6/10q single-phase three-phase semi-closed c"
+],
+"ym-1074-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$111"
+]
+],
+"ym-1076-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $74. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, authentic laj-10q through-wall high-voltage curren.",
+"ym-1076-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"authentic laj-10q through-wall high-voltage curren"
+],
+"ym-1076-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$74"
+]
+],
+"ym-1077-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $533. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, jdzxw-35(r) high quality three-phase fully enclose.",
+"ym-1077-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"jdzxw-35(r) high quality three-phase fully enclose"
+],
+"ym-1077-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$533"
+]
+],
+"ym-1078-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $118. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, outdoor high voltage vt pt transformer copper swit.",
+"ym-1078-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"outdoor high voltage vt pt transformer copper swit"
+],
+"ym-1078-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$118"
+]
+],
+"ym-1079-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $460. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, jlsgwv-10 outdoor three-phase dry combination tran.",
+"ym-1079-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"jlsgwv-10 outdoor three-phase dry combination tran"
+],
+"ym-1079-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$460"
+]
+],
+"ym-1080-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $96. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, indoor high-tension current transformer ct 100/5 2.",
+"ym-1080-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"indoor high-tension current transformer ct 100/5 2"
+],
+"ym-1080-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$96"
+]
+],
+"ym-1081-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 30 pieces; List Price : $30-40. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, customized size high precise zero-sequence instrum.",
+"ym-1081-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"customized size high precise zero-sequence instrum"
+],
+"ym-1081-specs": [
+[
+"MOQ",
+"30 pieces"
+],
+[
+"List Price",
+"$30-40"
+]
+],
+"ym-1082-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $200. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, lzzw-10q latest 10kv outdoor high voltage current.",
+"ym-1082-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"lzzw-10q latest 10kv outdoor high voltage current"
+],
+"ym-1082-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$200"
+]
+],
+"ym-1083-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $110. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, indoor voltage measuring instrument 10kv potential.",
+"ym-1083-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"indoor voltage measuring instrument 10kv potential"
+],
+"ym-1083-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$110"
+]
+],
+"ym-1084-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $20. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, lmzt8-10 10kv bushing type toroid current transfor.",
+"ym-1084-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"lmzt8-10 10kv bushing type toroid current transfor"
+],
+"ym-1084-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$20"
+]
+],
+"ym-1086-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $430. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, lzzbj71-35w outdoor type high voltage single phase.",
+"ym-1086-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"lzzbj71-35w outdoor type high voltage single phase"
+],
+"ym-1086-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$430"
+]
+],
+"ym-1087-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $96. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, high voltage 10kv input three-phase ac current tra.",
+"ym-1087-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"high voltage 10kv input three-phase ac current tra"
+],
+"ym-1087-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$96"
+]
+],
+"ym-1088-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $20. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, lmzk-10 10kv high voltage open current ring networ.",
+"ym-1088-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"lmzk-10 10kv high voltage open current ring networ"
+],
+"ym-1088-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$20"
+]
+],
+"ym-1089-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $59. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, high voltage current transformer lzzb9-10s power u.",
+"ym-1089-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"high voltage current transformer lzzb9-10s power u"
+],
+"ym-1089-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$59"
+]
+],
+"ym-1091-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $125. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, voltage transformer jdzx10-10 fully enclosed 10kv.",
+"ym-1091-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"voltage transformer jdzx10-10 fully enclosed 10kv"
+],
+"ym-1091-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$125"
+]
+],
+"ym-1092-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $300. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, jdzx11-15,20 type power transformer with single ph.",
+"ym-1092-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"jdzx11-15,20 type power transformer with single ph"
+],
+"ym-1092-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$300"
+]
+],
+"ym-1094-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $200. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, nanhu 10kv outdoor high voltage oil immersed three.",
+"ym-1094-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"nanhu 10kv outdoor high voltage oil immersed three"
+],
+"ym-1094-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$200"
+]
+],
+"ym-1097-desc": "محول قياس يخفض التيارات الأولية العالية إلى مستويات آمنة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $85. الميزات الرئيسية: alibaba, محولات تيار وجهد, محول تيار, 10kv high voltage ct current transformer wall type.",
+"ym-1097-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"محول تيار",
+"10kv high voltage ct current transformer wall type"
+],
+"ym-1097-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$85"
+]
+],
+"ym-0434-desc": "قضيب عالي التيار مصمم لأنظمة تخزين الطاقة وحزم المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Container ESS, commercial storage; المادة : نحاس / ألومنيوم; النوع : Storage connector. الميزات الرئيسية: طاقة تخزين موصل, energy storage coupling connector, قضيب تخزين الطاقة, بطارية موصل.",
+"ym-0434-feats": [
+"طاقة تخزين موصل",
+"energy storage coupling connector",
+"قضيب تخزين الطاقة",
+"بطارية موصل",
+"container ess",
+"dc distribution"
+],
+"ym-0434-specs": [
+[
+"التطبيق",
+"Container ESS, commercial storage"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"Storage connector"
+]
+],
+"ym-0440-desc": "قضيب عالي التيار مصمم لأنظمة تخزين الطاقة وحزم المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Container ESS, commercial storage; المادة : نحاس / ألومنيوم; النوع : Storage connector. الميزات الرئيسية: طاقة تخزين موصل, energy storage coupling connector, قضيب تخزين الطاقة, بطارية موصل.",
+"ym-0440-feats": [
+"طاقة تخزين موصل",
+"energy storage coupling connector",
+"قضيب تخزين الطاقة",
+"بطارية موصل",
+"container ess",
+"dc distribution"
+],
+"ym-0440-specs": [
+[
+"التطبيق",
+"Container ESS, commercial storage"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"Storage connector"
+]
+],
+"ym-0451-desc": "قضيب عالي التيار مصمم لأنظمة تخزين الطاقة وحزم المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Container ESS, commercial storage; المادة : نحاس / ألومنيوم; النوع : Storage connector. الميزات الرئيسية: طاقة تخزين موصل, energy storage coupling connector, قضيب تخزين الطاقة, بطارية موصل.",
+"ym-0451-feats": [
+"طاقة تخزين موصل",
+"energy storage coupling connector",
+"قضيب تخزين الطاقة",
+"بطارية موصل",
+"container ess",
+"dc distribution"
+],
+"ym-0451-specs": [
+[
+"التطبيق",
+"Container ESS, commercial storage"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"Storage connector"
+]
+],
+"ym-0453-desc": "قضيب عالي التيار مصمم لأنظمة تخزين الطاقة وحزم المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Container ESS, commercial storage; المادة : نحاس / ألومنيوم; النوع : Storage connector. الميزات الرئيسية: طاقة تخزين موصل, energy storage coupling connector, قضيب تخزين الطاقة, بطارية موصل.",
+"ym-0453-feats": [
+"طاقة تخزين موصل",
+"energy storage coupling connector",
+"قضيب تخزين الطاقة",
+"بطارية موصل",
+"container ess",
+"dc distribution"
+],
+"ym-0453-specs": [
+[
+"التطبيق",
+"Container ESS, commercial storage"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"Storage connector"
+]
+],
+"ym-0467-desc": "قضيب عالي التيار مصمم لأنظمة تخزين الطاقة وحزم المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Container ESS, commercial storage; المادة : نحاس / ألومنيوم; النوع : Storage connector. الميزات الرئيسية: طاقة تخزين موصل, energy storage coupling connector, قضيب تخزين الطاقة, بطارية موصل.",
+"ym-0467-feats": [
+"طاقة تخزين موصل",
+"energy storage coupling connector",
+"قضيب تخزين الطاقة",
+"بطارية موصل",
+"container ess",
+"dc distribution"
+],
+"ym-0467-specs": [
+[
+"التطبيق",
+"Container ESS, commercial storage"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"Storage connector"
+]
+],
+"ym-0484-desc": "قضيب عالي التيار مصمم لأنظمة تخزين الطاقة وحزم المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Container ESS, commercial storage; المادة : نحاس / ألومنيوم; النوع : Storage connector. الميزات الرئيسية: طاقة تخزين موصل, energy storage coupling connector, قضيب تخزين الطاقة, بطارية موصل.",
+"ym-0484-feats": [
+"طاقة تخزين موصل",
+"energy storage coupling connector",
+"قضيب تخزين الطاقة",
+"بطارية موصل",
+"container ess",
+"dc distribution"
+],
+"ym-0484-specs": [
+[
+"التطبيق",
+"Container ESS, commercial storage"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"Storage connector"
+]
+],
+"ym-0524-desc": "قضيب عالي التيار مصمم لأنظمة تخزين الطاقة وحزم المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Container ESS, commercial storage; المادة : نحاس / ألومنيوم; النوع : Storage connector. الميزات الرئيسية: طاقة تخزين موصل, energy storage coupling connector, قضيب تخزين الطاقة, بطارية موصل.",
+"ym-0524-feats": [
+"طاقة تخزين موصل",
+"energy storage coupling connector",
+"قضيب تخزين الطاقة",
+"بطارية موصل",
+"container ess",
+"dc distribution"
+],
+"ym-0524-specs": [
+[
+"التطبيق",
+"Container ESS, commercial storage"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"Storage connector"
+]
+],
+"ym-0548-desc": "قضيب عالي التيار مصمم لأنظمة تخزين الطاقة وحزم المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Container ESS, commercial storage; المادة : نحاس / ألومنيوم; النوع : Storage connector. الميزات الرئيسية: طاقة تخزين موصل, energy storage coupling connector, قضيب تخزين الطاقة, بطارية موصل.",
+"ym-0548-feats": [
+"طاقة تخزين موصل",
+"energy storage coupling connector",
+"قضيب تخزين الطاقة",
+"بطارية موصل",
+"container ess",
+"dc distribution"
+],
+"ym-0548-specs": [
+[
+"التطبيق",
+"Container ESS, commercial storage"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"Storage connector"
+]
+],
+"ym-0601-desc": "قضيب عالي التيار مصمم لأنظمة تخزين الطاقة وحزم المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Container ESS, commercial storage; المادة : نحاس / ألومنيوم; النوع : Storage connector. الميزات الرئيسية: طاقة تخزين موصل, energy storage coupling connector, قضيب تخزين الطاقة, بطارية موصل.",
+"ym-0601-feats": [
+"طاقة تخزين موصل",
+"energy storage coupling connector",
+"قضيب تخزين الطاقة",
+"بطارية موصل",
+"container ess",
+"dc distribution"
+],
+"ym-0601-specs": [
+[
+"التطبيق",
+"Container ESS, commercial storage"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"Storage connector"
+]
+],
+"ym-0610-desc": "قضيب عالي التيار مصمم لأنظمة تخزين الطاقة وحزم المركبات الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Container ESS, commercial storage; المادة : نحاس / ألومنيوم; النوع : Storage connector. الميزات الرئيسية: طاقة تخزين موصل, energy storage coupling connector, قضيب تخزين الطاقة, بطارية موصل.",
+"ym-0610-feats": [
+"طاقة تخزين موصل",
+"energy storage coupling connector",
+"قضيب تخزين الطاقة",
+"بطارية موصل",
+"container ess",
+"dc distribution"
+],
+"ym-0610-specs": [
+[
+"التطبيق",
+"Container ESS, commercial storage"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"Storage connector"
+]
+],
+"ym-0432-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0432-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0432-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0433-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0433-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0433-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0437-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0437-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0437-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0442-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0442-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0442-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0445-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0445-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0445-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0446-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0446-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0446-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0447-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0447-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0447-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0449-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0449-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0449-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0450-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0450-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0450-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0452-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0452-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0452-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0456-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0456-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0456-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0457-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Nickel Plated, Insulated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0457-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0457-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Nickel Plated, Insulated"
+]
+],
+"ym-0459-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0459-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0459-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0460-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0460-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0460-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0463-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0463-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0463-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0464-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0464-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0464-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0466-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0466-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0466-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0469-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0469-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0469-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0470-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Cu-Al. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0470-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0470-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0471-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0471-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0471-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0472-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0472-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0472-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0473-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0473-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0473-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0474-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0474-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0474-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0476-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0476-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0476-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0478-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0478-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0478-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0479-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0479-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0479-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0480-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0480-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0480-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0482-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0482-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0482-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0483-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0483-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0483-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0485-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0485-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0485-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0490-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0490-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0490-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0491-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0491-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0491-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0493-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0493-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0493-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0494-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0494-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0494-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0495-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0495-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0495-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0496-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0496-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0496-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0497-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0497-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0497-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0498-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0498-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0498-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0499-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Tin Plated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0499-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0499-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Tin Plated"
+]
+],
+"ym-0500-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0500-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0500-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0501-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0501-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0501-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0502-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0502-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0502-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0504-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0504-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0504-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0508-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0508-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0508-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0509-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Nickel Plated, Insulated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0509-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0509-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Nickel Plated, Insulated"
+]
+],
+"ym-0510-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0510-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0510-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0511-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0511-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0511-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0512-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Tin Plated, Insulated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0512-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0512-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Tin Plated, Insulated"
+]
+],
+"ym-0513-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Nickel Plated, Insulated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0513-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0513-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Nickel Plated, Insulated"
+]
+],
+"ym-0514-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Cu-Al. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0514-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0514-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0515-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0515-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0515-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0516-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0516-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0516-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0517-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0517-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0517-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0518-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0518-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0518-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0519-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0519-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0519-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0521-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0521-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0521-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0523-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0523-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0523-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0525-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0525-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0525-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0526-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0526-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0526-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0527-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0527-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0527-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0528-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0528-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0528-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0529-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0529-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0529-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0530-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0530-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0530-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0532-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0532-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0532-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0533-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0533-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0533-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0534-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0534-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0534-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0535-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Tin Plated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0535-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0535-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Tin Plated"
+]
+],
+"ym-0536-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0536-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0536-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0538-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0538-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0538-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0539-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0539-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0539-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0541-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Tin Plated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0541-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0541-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Tin Plated"
+]
+],
+"ym-0543-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0543-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0543-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0547-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0547-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0547-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0549-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0549-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0549-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0550-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0550-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0550-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0551-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0551-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0551-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0552-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0552-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0552-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0554-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0554-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0554-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0555-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0555-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0555-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0556-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Tin Plated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0556-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0556-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Tin Plated"
+]
+],
+"ym-0558-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0558-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0558-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0561-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0561-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0561-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0562-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Cu-Al, Insulated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0562-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0562-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Cu-Al, Insulated"
+]
+],
+"ym-0564-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0564-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0564-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0565-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0565-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0565-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0566-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0566-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0566-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0567-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0567-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0567-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0568-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0568-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0568-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0569-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0569-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0569-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0570-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0570-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0570-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0571-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0571-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0571-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0572-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0572-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0572-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0573-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0573-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0573-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0574-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Aluminum, Insulated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0574-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0574-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Aluminum, Insulated"
+]
+],
+"ym-0576-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0576-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0576-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0578-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0578-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0578-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0579-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0579-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0579-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0580-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0580-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0580-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0582-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0582-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0582-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0584-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0584-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0584-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0587-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0587-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0587-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0588-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0588-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0588-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0589-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0589-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0589-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0590-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0590-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0590-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0591-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0591-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0591-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0592-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Nickel Plated, Insulated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0592-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0592-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Nickel Plated, Insulated"
+]
+],
+"ym-0593-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0593-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0593-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0594-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0594-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0594-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0595-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0595-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0595-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0596-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0596-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0596-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0597-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0597-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0597-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0598-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0598-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0598-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0599-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0599-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0599-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0600-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0600-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0600-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0605-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0605-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0605-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0606-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0606-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0606-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0607-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0607-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0607-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0609-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0609-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0609-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0611-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0611-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0611-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0612-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0612-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0612-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0614-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0614-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0614-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0615-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0615-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0615-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0616-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0616-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0616-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0618-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Cu-Al. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0618-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0618-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0620-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0620-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0620-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0621-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Nickel Plated, Insulated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0621-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0621-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Nickel Plated, Insulated"
+]
+],
+"ym-0622-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0622-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0622-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0625-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0625-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0625-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0626-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0626-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0626-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0627-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0627-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0627-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0632-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0632-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0632-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0633-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0633-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0633-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0635-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0635-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0635-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0636-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0636-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0636-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0637-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0637-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0637-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0639-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0639-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0639-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0641-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0641-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0641-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0643-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0643-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0643-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0644-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0644-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0644-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0645-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0645-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0645-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0646-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0646-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0646-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0649-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0649-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0649-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0650-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0650-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0650-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0651-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0651-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0651-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0652-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0652-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0652-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0654-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Aluminum, Insulated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0654-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0654-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Aluminum, Insulated"
+]
+],
+"ym-0656-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0656-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0656-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0658-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0658-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0658-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0659-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0659-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0659-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0662-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0662-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0662-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0663-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0663-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0663-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0664-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0664-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0664-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0665-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0665-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0665-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0666-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : Aluminum, Insulated. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0666-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0666-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"Aluminum, Insulated"
+]
+],
+"ym-0667-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0667-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0667-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0668-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0668-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0668-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0672-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0672-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0672-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0673-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0673-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0673-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0675-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0675-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0675-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0676-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0676-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0676-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0677-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0677-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0677-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0679-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0679-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0679-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0681-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0681-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0681-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0682-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0682-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0682-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0683-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0683-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0683-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0684-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0684-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0684-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0685-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0685-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0685-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0686-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0686-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0686-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0687-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0687-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0687-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0688-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0688-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0688-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0689-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0689-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0689-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0690-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن; التصنيف : معزول. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0690-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0690-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0691-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين; المادة : نحاس / مطلي بالنيكل; النوع : مرن. الميزات الرئيسية: قضيب مرن, نحاس مطلي بالنيكل, بطارية LiFePO4, حزمة بطارية سيارة كهربائية.",
+"ym-0691-feats": [
+"قضيب مرن",
+"نحاس مطلي بالنيكل",
+"بطارية LiFePO4",
+"حزمة بطارية سيارة كهربائية",
+"تخزين الطاقة",
+"توزيع الطاقة"
+],
+"ym-0691-specs": [
+[
+"التطبيق",
+"حزم بطاريات الطاقة الجديدة ووحدات السيارات الكهربائية وأنظمة التخزين"
+],
+[
+"المادة",
+"نحاس / مطلي بالنيكل"
+],
+[
+"النوع",
+"مرن"
+]
+],
+"ym-0795-desc": "موصل قضيب مرن من النحاس أو الألومنيوم لتوصيلات التيار العالي. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 9 boxes; Lead Time : 45. الميزات الرئيسية: brass, قضيب توصيل, أطراف, tapping.",
+"ym-0795-feats": [
+"brass",
+"قضيب توصيل",
+"أطراف",
+"tapping",
+"آلة",
+"cutting"
+],
+"ym-0795-specs": [
+[
+"Min. Order",
+"1 - 9 boxes"
+],
+[
+"Lead Time",
+"45"
+]
+],
+"ym-0066-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 48V; نوع التيار : تيار مستمر. الميزات الرئيسية: شمسي, فيوز, توزيع, قاطع الدائرة.",
+"ym-0066-feats": [
+"شمسي",
+"فيوز",
+"توزيع",
+"قاطع الدائرة",
+"disconnect switch",
+"isolating switch"
+],
+"ym-0066-specs": [
+[
+"الجهد",
+"48V"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0135-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 500V. الميزات الرئيسية: high-capacity, pole, bakelite, فيوز.",
+"ym-0135-feats": [
+"high-capacity",
+"pole",
+"bakelite",
+"فيوز",
+"cutout",
+"قاطع الدائرة"
+],
+"ym-0135-specs": [
+[
+"الجهد",
+"500V"
+]
+],
+"ym-0174-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: breaking, sعة, مقدر, bakelite.",
+"ym-0174-feats": [
+"breaking",
+"sعة",
+"مقدر",
+"bakelite",
+"فيوز",
+"قاطع الدائرة"
+],
+"ym-0174-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0266-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 500V. الميزات الرئيسية: high-low, breaking, sعة, 60/80a.",
+"ym-0266-feats": [
+"high-low",
+"breaking",
+"sعة",
+"60/80a",
+"cut-out",
+"فيوز"
+],
+"ym-0266-specs": [
+[
+"الجهد",
+"500V"
+]
+],
+"ym-0321-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: breaking, sعة, فيوز, usage.",
+"ym-0321-feats": [
+"breaking",
+"sعة",
+"فيوز",
+"usage",
+"replaceable",
+"holder"
+],
+"ym-0321-specs": [
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0330-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: فيوز, knife-shape, contact, عالي منخفض.",
+"ym-0330-feats": [
+"فيوز",
+"knife-shape",
+"contact",
+"عالي منخفض",
+"breaking",
+"sعة"
+],
+"ym-0330-specs": [
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0378-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: nh00, نحاس, polyester, knife.",
+"ym-0378-feats": [
+"nh00",
+"نحاس",
+"polyester",
+"knife",
+"blade",
+"فيوز"
+],
+"ym-0378-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0429-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 300A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل; الطاقة المقدرة : 300 A. الميزات الرئيسية: ثقيل, الخدمة, فيوز, base.",
+"ym-0429-feats": [
+"ثقيل",
+"الخدمة",
+"فيوز",
+"base",
+"مفتاح",
+"disconnector"
+],
+"ym-0429-specs": [
+[
+"التيار",
+"300A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+],
+[
+"الطاقة المقدرة",
+"300 A"
+]
+],
+"ym-0746-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 pieces; Lead Time : 5. الميزات الرئيسية: bakelite, 60/80a, high-breaking, sعة.",
+"ym-0746-feats": [
+"bakelite",
+"60/80a",
+"high-breaking",
+"sعة",
+"house",
+"service"
+],
+"ym-0746-specs": [
+[
+"Min. Order",
+"10 pieces"
+],
+[
+"Lead Time",
+"5"
+]
+],
+"ym-0920-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, miniature thermal aerosol fire extinguisher, automatic fire.",
+"ym-0920-feats": [
+"yomin electric",
+"fuse & protection",
+"miniature thermal aerosol fire extinguisher, automatic fire"
+],
+"ym-0920-specs": [
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0942-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 100A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct sales bp32 series white isolating switch 100a.",
+"ym-0942-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct sales bp32 series white isolating switch 100a"
+],
+"ym-0942-specs": [
+[
+"التيار",
+"100A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0943-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 250A; المادة : نحاس; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, manufacturer pnc fuse isolating switch 250a knife switch pur.",
+"ym-0943-feats": [
+"yomin electric",
+"fuse & protection",
+"manufacturer pnc fuse isolating switch 250a knife switch pur"
+],
+"ym-0943-specs": [
+[
+"التيار",
+"250A"
+],
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0944-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 250A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, open type pnc fuse isolating switch 250a anti-accidental tou.",
+"ym-0944-feats": [
+"yomin electric",
+"fuse & protection",
+"open type pnc fuse isolating switch 250a anti-accidental tou"
+],
+"ym-0944-specs": [
+[
+"التيار",
+"250A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0945-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 100A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct sales bp32 series flame retardant isolating s.",
+"ym-0945-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct sales bp32 series flame retardant isolating s"
+],
+"ym-0945-specs": [
+[
+"التيار",
+"100A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0946-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 100A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, bp32 isolating switch 100a 250a 400a 630a negative pole isol.",
+"ym-0946-feats": [
+"yomin electric",
+"fuse & protection",
+"bp32 isolating switch 100a 250a 400a 630a negative pole isol"
+],
+"ym-0946-specs": [
+[
+"التيار",
+"100A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0947-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, bp32 series 100a250a400a630a negative pole isolating switch.",
+"ym-0947-feats": [
+"yomin electric",
+"fuse & protection",
+"bp32 series 100a250a400a630a negative pole isolating switch"
+],
+"ym-0947-specs": [
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0948-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 250A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, manufacturer pnc fuse isolating switch 250a knife switch ant.",
+"ym-0948-feats": [
+"yomin electric",
+"fuse & protection",
+"manufacturer pnc fuse isolating switch 250a knife switch ant"
+],
+"ym-0948-specs": [
+[
+"التيار",
+"250A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0949-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 250A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct supply pnc fuse isolator switch 250a anti-acc.",
+"ym-0949-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct supply pnc fuse isolator switch 250a anti-acc"
+],
+"ym-0949-specs": [
+[
+"التيار",
+"250A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0950-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 250A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct sales pnc fuse disconnect switch 250a anti-ac.",
+"ym-0950-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct sales pnc fuse disconnect switch 250a anti-ac"
+],
+"ym-0950-specs": [
+[
+"التيار",
+"250A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0951-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 250A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, manufacturer's fuse disconnect switch pnc series disconnect.",
+"ym-0951-feats": [
+"yomin electric",
+"fuse & protection",
+"manufacturer's fuse disconnect switch pnc series disconnect"
+],
+"ym-0951-specs": [
+[
+"التيار",
+"250A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0952-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 250A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct sales fuse disconnect switch pnc 250a anti-ac.",
+"ym-0952-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct sales fuse disconnect switch pnc 250a anti-ac"
+],
+"ym-0952-specs": [
+[
+"التيار",
+"250A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0953-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, manufacturer bp32 series 100a250a400a630a negative pole isol.",
+"ym-0953-feats": [
+"yomin electric",
+"fuse & protection",
+"manufacturer bp32 series 100a250a400a630a negative pole isol"
+],
+"ym-0953-specs": [
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0954-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 100A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct bp32 series isolating switch 100a 250a 400a 6.",
+"ym-0954-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct bp32 series isolating switch 100a 250a 400a 6"
+],
+"ym-0954-specs": [
+[
+"التيار",
+"100A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0955-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, bp32 series 100a250a400a630a negative pole isolating switch.",
+"ym-0955-feats": [
+"yomin electric",
+"fuse & protection",
+"bp32 series 100a250a400a630a negative pole isolating switch"
+],
+"ym-0955-specs": [
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0956-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 100A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, source manufacturer bp32 series isolating switch 100a 250a 4.",
+"ym-0956-feats": [
+"yomin electric",
+"fuse & protection",
+"source manufacturer bp32 series isolating switch 100a 250a 4"
+],
+"ym-0956-specs": [
+[
+"التيار",
+"100A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0957-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 100A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct sales bp32 series isolating switch 100a 250a.",
+"ym-0957-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct sales bp32 series isolating switch 100a 250a"
+],
+"ym-0957-specs": [
+[
+"التيار",
+"100A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0958-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 250A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, anti-accidental touch isolating switch pnc fuse isolating sw.",
+"ym-0958-feats": [
+"yomin electric",
+"fuse & protection",
+"anti-accidental touch isolating switch pnc fuse isolating sw"
+],
+"ym-0958-specs": [
+[
+"التيار",
+"250A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0959-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct sales anti-accidental touch knife switch isol.",
+"ym-0959-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct sales anti-accidental touch knife switch isol"
+],
+"ym-0959-specs": [
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0960-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 400A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct sales anti-accidental touch isolating switch.",
+"ym-0960-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct sales anti-accidental touch isolating switch"
+],
+"ym-0960-specs": [
+[
+"التيار",
+"400A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0961-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 30A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct sales of vietnamese nt50 miniature circuit br.",
+"ym-0961-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct sales of vietnamese nt50 miniature circuit br"
+],
+"ym-0961-specs": [
+[
+"التيار",
+"30A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0962-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 30A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct vietnam-style nt50 miniature circuit breaker.",
+"ym-0962-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct vietnam-style nt50 miniature circuit breaker"
+],
+"ym-0962-specs": [
+[
+"التيار",
+"30A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0963-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 30A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct sales of vietnamese nt50 miniature circuit br.",
+"ym-0963-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct sales of vietnamese nt50 miniature circuit br"
+],
+"ym-0963-specs": [
+[
+"التيار",
+"30A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0964-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 63A; التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, source manufacturer isolation manual transfer switch 1p modu.",
+"ym-0964-feats": [
+"yomin electric",
+"fuse & protection",
+"source manufacturer isolation manual transfer switch 1p modu"
+],
+"ym-0964-specs": [
+[
+"التيار",
+"63A"
+],
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0965-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct sales bp32 series isolating switch 100a250a40.",
+"ym-0965-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct sales bp32 series isolating switch 100a250a40"
+],
+"ym-0965-specs": [
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0966-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, factory direct supply bp32 series isolating switch 100a250a4.",
+"ym-0966-feats": [
+"yomin electric",
+"fuse & protection",
+"factory direct supply bp32 series isolating switch 100a250a4"
+],
+"ym-0966-specs": [
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0967-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, bp32 series 100a250a400a630a negative pole isolating switch.",
+"ym-0967-feats": [
+"yomin electric",
+"fuse & protection",
+"bp32 series 100a250a400a630a negative pole isolating switch"
+],
+"ym-0967-specs": [
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0968-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : حماية من الحمل الزائد والدوائر القصيرة; النوع : فيوز / مفتاح عزل. الميزات الرئيسية: yomin electric, fuse & protection, source manufacturer bp32 series 100a250a400a630a negative is.",
+"ym-0968-feats": [
+"yomin electric",
+"fuse & protection",
+"source manufacturer bp32 series 100a250a400a630a negative is"
+],
+"ym-0968-specs": [
+[
+"التطبيق",
+"حماية من الحمل الزائد والدوائر القصيرة"
+],
+[
+"النوع",
+"فيوز / مفتاح عزل"
+]
+],
+"ym-0974-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 set; List Price : $800-1,500; Lead Time : Quantity (sets)1 - 2 > 2 Lead time (days)30To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, stable performance and long life zn63(vs1) series.",
+"ym-0974-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"stable performance and long life zn63(vs1) series"
+],
+"ym-0974-specs": [
+[
+"MOQ",
+"1 set"
+],
+[
+"List Price",
+"$800-1,500"
+],
+[
+"Lead Time",
+"Quantity (sets)1 - 2 > 2 Lead time (days)30To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0975-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 5 pieces; List Price : $20-50; Lead Time : Quantity (pieces)1 - 2 > 2 Lead time (days)30To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, professional electric high voltage fuse electrical.",
+"ym-0975-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"professional electric high voltage fuse electrical"
+],
+"ym-0975-specs": [
+[
+"MOQ",
+"5 pieces"
+],
+[
+"List Price",
+"$20-50"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 2 > 2 Lead time (days)30To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0976-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 5 pieces; List Price : $0.45-1.50; Lead Time : Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, 200ka stainless steel lightning rod lightning arre.",
+"ym-0976-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"200ka stainless steel lightning rod lightning arre"
+],
+"ym-0976-specs": [
+[
+"MOQ",
+"5 pieces"
+],
+[
+"List Price",
+"$0.45-1.50"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0978-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 5 pieces; List Price : $0.45-1.50; Lead Time : Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, copper lightning arrester rod for lightning protec.",
+"ym-0978-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"copper lightning arrester rod for lightning protec"
+],
+"ym-0978-specs": [
+[
+"MOQ",
+"5 pieces"
+],
+[
+"List Price",
+"$0.45-1.50"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0993-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $400; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, 10kv high voltage vacuum circuit breaker zw32-12g.",
+"ym-0993-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"10kv high voltage vacuum circuit breaker zw32-12g"
+],
+"ym-0993-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$400"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0997-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $591; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, vs1-12/630a fixed/handcart side mounted and sealed.",
+"ym-0997-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"vs1-12/630a fixed/handcart side mounted and sealed"
+],
+"ym-0997-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$591"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0998-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $591; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, solid sealed circuit breaker handcart type indoor.",
+"ym-0998-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"solid sealed circuit breaker handcart type indoor"
+],
+"ym-0998-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$591"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0999-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $474; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, outdoor high voltage vacuum circuit breaker 10kv c.",
+"ym-0999-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"outdoor high voltage vacuum circuit breaker 10kv c"
+],
+"ym-0999-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$474"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1003-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $918; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, 10kv vacuum circuit breaker zw20-12fg/630a outdoor.",
+"ym-1003-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"10kv vacuum circuit breaker zw20-12fg/630a outdoor"
+],
+"ym-1003-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$918"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1004-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $755; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, zw7-35/1250-31.5 high voltage vacuum circuit break.",
+"ym-1004-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"zw7-35/1250-31.5 high voltage vacuum circuit break"
+],
+"ym-1004-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$755"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1007-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $4,369; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, 35kv outdoor high-voltage vacuum circuit breaker z.",
+"ym-1007-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"35kv outdoor high-voltage vacuum circuit breaker z"
+],
+"ym-1007-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$4,369"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1009-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $918; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, zw32-12fg/630a outdoor high voltage vacuum circuit.",
+"ym-1009-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"zw32-12fg/630a outdoor high voltage vacuum circuit"
+],
+"ym-1009-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$918"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1011-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $457; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, 10kv high voltage indoor vacuum circuit breaker vs.",
+"ym-1011-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"10kv high voltage indoor vacuum circuit breaker vs"
+],
+"ym-1011-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$457"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1012-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $400; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, outdoor high voltage vacuum circuit breaker 10kv c.",
+"ym-1012-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"outdoor high voltage vacuum circuit breaker 10kv c"
+],
+"ym-1012-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$400"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1016-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 5 pieces; List Price : $90-300; Lead Time : Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, high voltage station type lightning surge arrester.",
+"ym-1016-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"high voltage station type lightning surge arrester"
+],
+"ym-1016-specs": [
+[
+"MOQ",
+"5 pieces"
+],
+[
+"List Price",
+"$90-300"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1018-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 5 pieces; List Price : $12-30; Lead Time : Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, 11kv 15kv 24kv porcelain fuse high voltage copper.",
+"ym-1018-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"11kv 15kv 24kv porcelain fuse high voltage copper"
+],
+"ym-1018-specs": [
+[
+"MOQ",
+"5 pieces"
+],
+[
+"List Price",
+"$12-30"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1036-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 10 pieces; List Price : $20-100; Lead Time : Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., fuse & protection, h.v.dofc series outdoor high voltage distribution.",
+"ym-1036-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"fuse & protection",
+"h.v.dofc series outdoor high voltage distribution"
+],
+"ym-1036-specs": [
+[
+"MOQ",
+"10 pieces"
+],
+[
+"List Price",
+"$20-100"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1075-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 5 pieces; List Price : $0.45-1.50. الميزات الرئيسية: alibaba, محولات تيار وجهد, fuse & protection, superior performance high voltage thermal explode.",
+"ym-1075-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"fuse & protection",
+"superior performance high voltage thermal explode"
+],
+"ym-1075-specs": [
+[
+"MOQ",
+"5 pieces"
+],
+[
+"List Price",
+"$0.45-1.50"
+]
+],
+"ym-1090-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 5 pieces; List Price : $12-30. الميزات الرئيسية: alibaba, محولات تيار وجهد, fuse & protection, 33kv high voltage windproof cutout switch copper c.",
+"ym-1090-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"fuse & protection",
+"33kv high voltage windproof cutout switch copper c"
+],
+"ym-1090-specs": [
+[
+"MOQ",
+"5 pieces"
+],
+[
+"List Price",
+"$12-30"
+]
+],
+"ym-1093-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 set; List Price : $1,000-6,000. الميزات الرئيسية: alibaba, محولات تيار وجهد, fuse & protection, high reliability outdoor type three phase high vol.",
+"ym-1093-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"fuse & protection",
+"high reliability outdoor type three phase high vol"
+],
+"ym-1093-specs": [
+[
+"MOQ",
+"1 set"
+],
+[
+"List Price",
+"$1,000-6,000"
+]
+],
+"ym-1095-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 5 pieces; List Price : $0.45-1.50. الميزات الرئيسية: alibaba, محولات تيار وجهد, fuse & protection, building lightning rod copper conductor surge prot.",
+"ym-1095-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"fuse & protection",
+"building lightning rod copper conductor surge prot"
+],
+"ym-1095-specs": [
+[
+"MOQ",
+"5 pieces"
+],
+[
+"List Price",
+"$0.45-1.50"
+]
+],
+"ym-1096-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $457. الميزات الرئيسية: alibaba, محولات تيار وجهد, fuse & protection, vs1-12 indoor high voltage three phase 12kv stainl.",
+"ym-1096-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"fuse & protection",
+"vs1-12 indoor high voltage three phase 12kv stainl"
+],
+"ym-1096-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$457"
+]
+],
+"ym-1098-desc": "جهاز حماية يقطع التيار عند الحمل الزائد أو القصر. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $400. الميزات الرئيسية: alibaba, محولات تيار وجهد, fuse & protection, 10kv outdoor high voltage three phase stainless st.",
+"ym-1098-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"fuse & protection",
+"10kv outdoor high voltage three phase stainless st"
+],
+"ym-1098-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$400"
+]
+],
+"ym-0553-desc": "قضيب للخدمة الشاقة للبيئات الصناعية عالية التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : High-current ESS, industrial power; المادة : نحاس; النوع : Heavy duty. الميزات الرئيسية: ثقيل الخدمة موصلات, ثقيل كهربائي الخدمة موصلات, ثقيل الخدمة قضيب, عالي تيار موصل.",
+"ym-0553-feats": [
+"ثقيل الخدمة موصلات",
+"ثقيل كهربائي الخدمة موصلات",
+"ثقيل الخدمة قضيب",
+"عالي تيار موصل",
+"صناعي قدرة",
+"welded busbar"
+],
+"ym-0553-specs": [
+[
+"التطبيق",
+"High-current ESS, industrial power"
+],
+[
+"المادة",
+"نحاس"
+],
+[
+"النوع",
+"Heavy duty"
+]
+],
+"ym-0581-desc": "قضيب للخدمة الشاقة للبيئات الصناعية عالية التيار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : High-current ESS, industrial power; المادة : نحاس; النوع : Heavy duty. الميزات الرئيسية: ثقيل الخدمة موصلات, ثقيل كهربائي الخدمة موصلات, ثقيل الخدمة قضيب, عالي تيار موصل.",
+"ym-0581-feats": [
+"ثقيل الخدمة موصلات",
+"ثقيل كهربائي الخدمة موصلات",
+"ثقيل الخدمة قضيب",
+"عالي تيار موصل",
+"صناعي قدرة",
+"welded busbar"
+],
+"ym-0581-specs": [
+[
+"التطبيق",
+"High-current ESS, industrial power"
+],
+[
+"المادة",
+"نحاس"
+],
+[
+"النوع",
+"Heavy duty"
+]
+],
+"ym-0061-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : رقمي. الميزات الرئيسية: ep12d, mechanical, أحادي الطور, watt-hour.",
+"ym-0061-feats": [
+"ep12d",
+"mechanical",
+"أحادي الطور",
+"watt-hour",
+"effectively",
+"منتج كهربائي"
+],
+"ym-0061-specs": [
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0062-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 2000V; السعة : 10 KVA. الميزات الرئيسية: step, down, محول, 220v/110v/240v.",
+"ym-0062-feats": [
+"step",
+"down",
+"محول",
+"220v/110v/240v",
+"مدخل",
+"منتج كهربائي"
+],
+"ym-0062-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"2000V"
+],
+[
+"السعة",
+"10 KVA"
+]
+],
+"ym-0065-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 50V; السعة : 50 VA. الميزات الرئيسية: manufacturer, مدخل, تحكم, منتج كهربائي.",
+"ym-0065-feats": [
+"manufacturer",
+"مدخل",
+"تحكم",
+"منتج كهربائي",
+"مكون كهربائي",
+"electrical equipment"
+],
+"ym-0065-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"50V"
+],
+[
+"السعة",
+"50 VA"
+]
+],
+"ym-0071-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 240V; السعة : 5000 VA. الميزات الرئيسية: manufacturer, step, down, 110/120/220/230/240v.",
+"ym-0071-feats": [
+"manufacturer",
+"step",
+"down",
+"110/120/220/230/240v",
+"محول",
+"منتج كهربائي"
+],
+"ym-0071-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"240V"
+],
+[
+"السعة",
+"5000 VA"
+]
+],
+"ym-0110-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 1000V; السعة : 1000 VA. الميزات الرئيسية: manufacturer, محول, step, down.",
+"ym-0110-feats": [
+"manufacturer",
+"محول",
+"step",
+"down",
+"منتج كهربائي",
+"مكون كهربائي"
+],
+"ym-0110-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"1000V"
+],
+[
+"السعة",
+"1000 VA"
+]
+],
+"ym-0123-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد. الميزات الرئيسية: high-interrupting, sعة, intelligent, universal.",
+"ym-0123-feats": [
+"high-interrupting",
+"sعة",
+"intelligent",
+"universal",
+"circuit",
+"قاطع"
+],
+"ym-0123-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0137-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: تحكم, jbk5, محول, منتج كهربائي.",
+"ym-0137-feats": [
+"تحكم",
+"jbk5",
+"محول",
+"منتج كهربائي",
+"مكون كهربائي",
+"electrical equipment"
+],
+"ym-0137-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0140-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 2000V; السعة : 30 KVA. الميزات الرئيسية: ymst-2, step, تردد, coil.",
+"ym-0140-feats": [
+"ymst-2",
+"step",
+"تردد",
+"coil",
+"220v/110v/240v",
+"منتج كهربائي"
+],
+"ym-0140-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"2000V"
+],
+[
+"السعة",
+"30 KVA"
+]
+],
+"ym-0142-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد. الميزات الرئيسية: yomin, ac30, outlet, منتج كهربائي.",
+"ym-0142-feats": [
+"yomin",
+"ac30",
+"outlet",
+"منتج كهربائي",
+"مكون كهربائي",
+"electrical equipment"
+],
+"ym-0142-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0148-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; السعة : 30 KVA. الميزات الرئيسية: ymst-2, تردد, coil, 220v/110v/240v.",
+"ym-0148-feats": [
+"ymst-2",
+"تردد",
+"coil",
+"220v/110v/240v",
+"مقدر",
+"sعة"
+],
+"ym-0148-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"السعة",
+"30 KVA"
+]
+],
+"ym-0149-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 450V; السعة : 450 VA. الميزات الرئيسية: manufacturer, toroidal, محول, audio.",
+"ym-0149-feats": [
+"manufacturer",
+"toroidal",
+"محول",
+"audio",
+"منتج كهربائي",
+"مكون كهربائي"
+],
+"ym-0149-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"450V"
+],
+[
+"السعة",
+"450 VA"
+]
+],
+"ym-0154-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 400V; السعة : 400 VA. الميزات الرئيسية: jbk5, أحادي الطور, محولات, منتج كهربائي.",
+"ym-0154-feats": [
+"jbk5",
+"أحادي الطور",
+"محولات",
+"منتج كهربائي",
+"مكون كهربائي",
+"electrical equipment"
+],
+"ym-0154-specs": [
+[
+"الجهد",
+"400V"
+],
+[
+"السعة",
+"400 VA"
+]
+],
+"ym-0190-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 110 فولت. الميزات الرئيسية: مدخل, محول, خرج, منتج كهربائي.",
+"ym-0190-feats": [
+"مدخل",
+"محول",
+"خرج",
+"منتج كهربائي",
+"مكون كهربائي",
+"electrical equipment"
+],
+"ym-0190-specs": [
+[
+"الجهد",
+"110 فولت"
+]
+],
+"ym-0191-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : Pvc; التطبيق : Industrial electrical distribution. الميزات الرئيسية: nylon, metric, thread, gland.",
+"ym-0191-feats": [
+"nylon",
+"metric",
+"thread",
+"gland",
+"ip68",
+"حماية"
+],
+"ym-0191-specs": [
+[
+"المادة",
+"Pvc"
+],
+[
+"التطبيق",
+"Industrial electrical distribution"
+]
+],
+"ym-0198-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : رقمي. الميزات الرئيسية: time, تحكم, مفتاح, transfer.",
+"ym-0198-feats": [
+"time",
+"تحكم",
+"مفتاح",
+"transfer",
+"tc01",
+"منتج كهربائي"
+],
+"ym-0198-specs": [
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0212-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 220 فولت; نوع التيار : تيار متردد; الشاشة : رقمي. الميزات الرئيسية: weekly, days, programmable, منتج كهربائي.",
+"ym-0212-feats": [
+"weekly",
+"days",
+"programmable",
+"منتج كهربائي",
+"مكون كهربائي",
+"electrical equipment"
+],
+"ym-0212-specs": [
+[
+"الجهد",
+"220 فولت"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0218-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 1000V; السعة : 200 KVA; التردد : 60 هرتز. الميزات الرئيسية: toroidal, محول, نحاس, منتج كهربائي.",
+"ym-0218-feats": [
+"toroidal",
+"محول",
+"نحاس",
+"منتج كهربائي",
+"مكون كهربائي",
+"electrical equipment"
+],
+"ym-0218-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"1000V"
+],
+[
+"السعة",
+"200 KVA"
+],
+[
+"التردد",
+"60 هرتز"
+]
+],
+"ym-0255-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 100V; السعة : 100 VA. الميزات الرئيسية: jbk5, أحادي الطور, insulation, محول.",
+"ym-0255-feats": [
+"jbk5",
+"أحادي الطور",
+"insulation",
+"محول",
+"مدخل",
+"منتج كهربائي"
+],
+"ym-0255-specs": [
+[
+"الجهد",
+"100V"
+],
+[
+"السعة",
+"100 VA"
+]
+],
+"ym-0273-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التطبيق : Industrial electrical distribution. الميزات الرئيسية: أحادي الطور, منزلي, yem011tg, management.",
+"ym-0273-feats": [
+"أحادي الطور",
+"منزلي",
+"yem011tg",
+"management",
+"system",
+"منتج كهربائي"
+],
+"ym-0273-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التطبيق",
+"Industrial electrical distribution"
+]
+],
+"ym-0281-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار مستمر. الميزات الرئيسية: manufacturers, circuit, قاطع, مفتاح.",
+"ym-0281-feats": [
+"manufacturers",
+"circuit",
+"قاطع",
+"مفتاح",
+"equipment",
+"منتج كهربائي"
+],
+"ym-0281-specs": [
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0282-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 220 فولت; نوع التيار : تيار مستمر. الميزات الرئيسية: convert, step, down, miniature.",
+"ym-0282-feats": [
+"convert",
+"step",
+"down",
+"miniature",
+"منتج كهربائي",
+"مكون كهربائي"
+],
+"ym-0282-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0301-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار مستمر. الميزات الرئيسية: circuit, قاطع, ship, مفتاح.",
+"ym-0301-feats": [
+"circuit",
+"قاطع",
+"ship",
+"مفتاح",
+"material",
+"equipment"
+],
+"ym-0301-specs": [
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0343-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الشاشة : شاشة LED. الميزات الرئيسية: immersed, oil-immersed, محول, oil-filled.",
+"ym-0343-feats": [
+"immersed",
+"oil-immersed",
+"محول",
+"oil-filled",
+"منتج كهربائي",
+"مكون كهربائي"
+],
+"ym-0343-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الشاشة",
+"شاشة LED"
+]
+],
+"ym-0349-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 40V; السعة : 40 VA. الميزات الرئيسية: manufacturer, تحكم, محول, isolation.",
+"ym-0349-feats": [
+"manufacturer",
+"تحكم",
+"محول",
+"isolation",
+"منتج كهربائي",
+"مكون كهربائي"
+],
+"ym-0349-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"40V"
+],
+[
+"السعة",
+"40 VA"
+]
+],
+"ym-0355-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Industrial electrical distribution. الميزات الرئيسية: manufacturer, outdoor, low-voltage, portable.",
+"ym-0355-feats": [
+"manufacturer",
+"outdoor",
+"low-voltage",
+"portable",
+"محول",
+"منتج كهربائي"
+],
+"ym-0355-specs": [
+[
+"التطبيق",
+"Industrial electrical distribution"
+]
+],
+"ym-0360-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 100V; السعة : 100 VA. الميزات الرئيسية: manufacturer, jbk5, insulation, محول.",
+"ym-0360-feats": [
+"manufacturer",
+"jbk5",
+"insulation",
+"محول",
+"منتج كهربائي",
+"مكون كهربائي"
+],
+"ym-0360-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"100V"
+],
+[
+"السعة",
+"100 VA"
+]
+],
+"ym-0361-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 660V. الميزات الرئيسية: sales, good, jbk5, تحكم.",
+"ym-0361-feats": [
+"sales",
+"good",
+"jbk5",
+"تحكم",
+"منتج كهربائي",
+"مكون كهربائي"
+],
+"ym-0361-specs": [
+[
+"الجهد",
+"660V"
+]
+],
+"ym-0367-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الاتصال : GPRS. الميزات الرئيسية: dtsy666, مدفوع مسبقًا, gprs, منتج كهربائي.",
+"ym-0367-feats": [
+"dtsy666",
+"مدفوع مسبقًا",
+"gprs",
+"منتج كهربائي",
+"مكون كهربائي",
+"electrical equipment"
+],
+"ym-0367-specs": [
+[
+"الاتصال",
+"GPRS"
+]
+],
+"ym-0370-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Industrial electrical distribution. الميزات الرئيسية: toroidal, محول, core, winding.",
+"ym-0370-feats": [
+"toroidal",
+"محول",
+"core",
+"winding",
+"آلة",
+"audio"
+],
+"ym-0370-specs": [
+[
+"التطبيق",
+"Industrial electrical distribution"
+]
+],
+"ym-0375-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : Industrial electrical distribution. الميزات الرئيسية: نحاس, isolation, toroidal, محول.",
+"ym-0375-feats": [
+"نحاس",
+"isolation",
+"toroidal",
+"محول",
+"منتج كهربائي",
+"مكون كهربائي"
+],
+"ym-0375-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"Industrial electrical distribution"
+]
+],
+"ym-0382-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد. الميزات الرئيسية: ثلاثي الطور, high-power, نشط, محول.",
+"ym-0382-feats": [
+"ثلاثي الطور",
+"high-power",
+"نشط",
+"محول",
+"منتج كهربائي",
+"مكون كهربائي"
+],
+"ym-0382-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0384-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : شاشة LCD. الميزات الرئيسية: dts666, wall-mounted, منتج كهربائي, مكون كهربائي.",
+"ym-0384-feats": [
+"dts666",
+"wall-mounted",
+"منتج كهربائي",
+"مكون كهربائي",
+"electrical equipment",
+"صناعي كهربائي"
+],
+"ym-0384-specs": [
+[
+"الشاشة",
+"شاشة LCD"
+]
+],
+"ym-0388-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; التردد : 50 هرتز. الميزات الرئيسية: منزلي, منتج كهربائي, مكون كهربائي, electrical equipment.",
+"ym-0388-feats": [
+"منزلي",
+"منتج كهربائي",
+"مكون كهربائي",
+"electrical equipment",
+"صناعي كهربائي",
+"china manufacturer"
+],
+"ym-0388-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"التردد",
+"50 هرتز"
+]
+],
+"ym-0424-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد; نوع التحكم : نوع المرحل. الميزات الرئيسية: multi-specification, مرحل, accessories, تحكم.",
+"ym-0424-feats": [
+"multi-specification",
+"مرحل",
+"accessories",
+"تحكم",
+"system",
+"منتج كهربائي"
+],
+"ym-0424-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+]
+],
+"ym-0427-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد. الميزات الرئيسية: superior, intelligent, universal, circuit.",
+"ym-0427-feats": [
+"superior",
+"intelligent",
+"universal",
+"circuit",
+"قاطع",
+"breakers"
+],
+"ym-0427-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0706-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : Steel; التطبيق : Industrial electrical distribution. الميزات الرئيسية: thicker, performance, full, size.",
+"ym-0706-feats": [
+"thicker",
+"performance",
+"full",
+"size",
+"round",
+"cable"
+],
+"ym-0706-specs": [
+[
+"المادة",
+"Steel"
+],
+[
+"التطبيق",
+"Industrial electrical distribution"
+]
+],
+"ym-0734-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 36. الميزات الرئيسية: motorized, متغير, محول, vaclinear.",
+"ym-0734-feats": [
+"motorized",
+"متغير",
+"محول",
+"vaclinear",
+"differential",
+"pieces"
+],
+"ym-0734-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"36"
+]
+],
+"ym-0786-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 99 pieces; Lead Time : 5. الميزات الرئيسية: soft, comfortable, garden, knee.",
+"ym-0786-feats": [
+"soft",
+"comfortable",
+"garden",
+"knee",
+"مقاوم للماء",
+"work"
+],
+"ym-0786-specs": [
+[
+"Min. Order",
+"10 - 99 pieces"
+],
+[
+"Lead Time",
+"5"
+]
+],
+"ym-0857-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : Quantity (kilograms)\n\n1 - 100\n\n> 100; Lead Time : 6. الميزات الرئيسية: trunking, goulotte, quantity, kilograms.",
+"ym-0857-feats": [
+"trunking",
+"goulotte",
+"quantity",
+"kilograms",
+"منتج كهربائي",
+"مكون كهربائي"
+],
+"ym-0857-specs": [
+[
+"Min. Order",
+"Quantity (kilograms)\n\n1 - 100\n\n> 100"
+],
+[
+"Lead Time",
+"6"
+]
+],
+"ym-0878-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 999 pieces; Lead Time : 30. الميزات الرئيسية: good, jbk5, مدخل, pieces.",
+"ym-0878-feats": [
+"good",
+"jbk5",
+"مدخل",
+"pieces",
+"منتج كهربائي",
+"مكون كهربائي"
+],
+"ym-0878-specs": [
+[
+"Min. Order",
+"10 - 999 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0905-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 100 - 999 pieces; Lead Time : 31. الميزات الرئيسية: manufacturer, jbk5, insulation, محول.",
+"ym-0905-feats": [
+"manufacturer",
+"jbk5",
+"insulation",
+"محول",
+"autotransformer",
+"pieces"
+],
+"ym-0905-specs": [
+[
+"Min. Order",
+"100 - 999 pieces"
+],
+[
+"Lead Time",
+"31"
+]
+],
+"ym-0906-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 10 - 999 pieces; Lead Time : 30. الميزات الرئيسية: stable, conversion, jbk5, manufacturers.",
+"ym-0906-feats": [
+"stable",
+"conversion",
+"jbk5",
+"manufacturers",
+"pieces",
+"منتج كهربائي"
+],
+"ym-0906-specs": [
+[
+"Min. Order",
+"10 - 999 pieces"
+],
+[
+"Lead Time",
+"30"
+]
+],
+"ym-0983-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 5 pieces; List Price : $20-50; Lead Time : Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., other, 11kv high voltage silver fuse link type k fuse lin.",
+"ym-0983-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"other",
+"11kv high voltage silver fuse link type k fuse lin"
+],
+"ym-0983-specs": [
+[
+"MOQ",
+"5 pieces"
+],
+[
+"List Price",
+"$20-50"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0986-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $534; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., other, outdoor combined metering box three-phase four-wir.",
+"ym-0986-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"other",
+"outdoor combined metering box three-phase four-wir"
+],
+"ym-0986-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$534"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1019-desc": "منتج كهربائي متخصص لتوزيع الطاقة وحمايتها. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 5 pieces; List Price : $20-50; Lead Time : Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., other, hot sales h.v.dofc series outdoor high voltage dis.",
+"ym-1019-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"other",
+"hot sales h.v.dofc series outdoor high voltage dis"
+],
+"ym-1019-specs": [
+[
+"MOQ",
+"5 pieces"
+],
+[
+"List Price",
+"$20-50"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 2 > 2 Lead time (days)25To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0443-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب; التصنيف : Cu-Al, Insulated. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0443-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0443-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+],
+[
+"التصنيف",
+"Cu-Al, Insulated"
+]
+],
+"ym-0444-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب; التصنيف : معزول. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0444-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0444-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0458-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0458-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0458-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+]
+],
+"ym-0461-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب; التصنيف : Cu-Al. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0461-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0461-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+],
+[
+"التصنيف",
+"Cu-Al"
+]
+],
+"ym-0475-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب; التصنيف : معزول. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0475-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0475-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0489-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0489-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0489-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+]
+],
+"ym-0575-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0575-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0575-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+]
+],
+"ym-0585-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب; التصنيف : معزول. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0585-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0585-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0602-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0602-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0602-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0640-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب; التصنيف : مطلي بالنيكل. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0640-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0640-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+],
+[
+"التصنيف",
+"مطلي بالنيكل"
+]
+],
+"ym-0642-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0642-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0642-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+]
+],
+"ym-0660-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0660-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0660-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+]
+],
+"ym-0661-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0661-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0661-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+]
+],
+"ym-0669-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب; التصنيف : ألومنيوم. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0669-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0669-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+],
+[
+"التصنيف",
+"ألومنيوم"
+]
+],
+"ym-0680-desc": "قضيب صلب من النحاس أو الألومنيوم لتوزيع منخفض المعاوقة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Fixed installations, battery packs, switchgear; المادة : نحاس / ألومنيوم; النوع : صلب; التصنيف : معزول. الميزات الرئيسية: قضيب صلب, inflexible busbar, copper bus bar, نحاس قضيب.",
+"ym-0680-feats": [
+"قضيب صلب",
+"inflexible busbar",
+"copper bus bar",
+"نحاس قضيب",
+"battery interconnect",
+"تيار عالٍ"
+],
+"ym-0680-specs": [
+[
+"التطبيق",
+"Fixed installations, battery packs, switchgear"
+],
+[
+"المادة",
+"نحاس / ألومنيوم"
+],
+[
+"النوع",
+"صلب"
+],
+[
+"التصنيف",
+"معزول"
+]
+],
+"ym-0306-desc": "أختام مضادة للعبث للعدادات والحاويات والبضائع القيمة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : Plastic / nylon; التطبيق : Tamper-evident sealing. الميزات الرئيسية: logo, أختام, أمان, plastic.",
+"ym-0306-feats": [
+"logo",
+"أختام",
+"أمان",
+"plastic",
+"ختم",
+"twist"
+],
+"ym-0306-specs": [
+[
+"المادة",
+"Plastic / nylon"
+],
+[
+"التطبيق",
+"Tamper-evident sealing"
+]
+],
+"ym-0318-desc": "أختام مضادة للعبث للعدادات والحاويات والبضائع القيمة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 12V; نوع التحكم : نوع المرحل; الشاشة : شاشة LED. الميزات الرئيسية: miniature, 12v/24v, black, مرحل.",
+"ym-0318-feats": [
+"miniature",
+"12v/24v",
+"black",
+"مرحل",
+"electromagnetic",
+"theory"
+],
+"ym-0318-specs": [
+[
+"الجهد",
+"12V"
+],
+[
+"نوع التحكم",
+"نوع المرحل"
+],
+[
+"الشاشة",
+"شاشة LED"
+]
+],
+"ym-1099-desc": "أختام مضادة للعبث للعدادات والحاويات والبضائع القيمة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : Q235A steel and ABS; الوزن : 74g; Tension : >15KN; Box Size : 61x37x13cm. الميزات الرئيسية: pm-bs9201, أمان, bolt, ختم.",
+"ym-1099-feats": [
+"pm-bs9201",
+"أمان",
+"bolt",
+"ختم",
+"q235a",
+"steel"
+],
+"ym-1099-specs": [
+[
+"المادة",
+"Q235A steel and ABS"
+],
+[
+"الوزن",
+"74g"
+],
+[
+"Tension",
+">15KN"
+],
+[
+"Box Size",
+"61x37x13cm"
+]
+],
+"ym-0119-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 1000V. الميزات الرئيسية: معتمد, system, مقدر, sعة.",
+"ym-0119-feats": [
+"معتمد",
+"system",
+"مقدر",
+"sعة",
+"شمسي",
+"كهروضوئي"
+],
+"ym-0119-specs": [
+[
+"الجهد",
+"1000V"
+]
+],
+"ym-0130-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 500V; نوع التيار : تيار مستمر. الميزات الرئيسية: قاطع, كهروضوئي, شمسي, combiner box.",
+"ym-0130-feats": [
+"قاطع",
+"كهروضوئي",
+"شمسي",
+"combiner box",
+"dc breaker",
+"solar panel"
+],
+"ym-0130-specs": [
+[
+"الجهد",
+"500V"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0147-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 63A; التطبيق : Photovoltaic power generation and DC distribution; الطاقة المقدرة : 63 A. الميزات الرئيسية: outdoor, metal, مقاوم للماء, شمسي.",
+"ym-0147-feats": [
+"outdoor",
+"metal",
+"مقاوم للماء",
+"شمسي",
+"combiner",
+"4input"
+],
+"ym-0147-specs": [
+[
+"التيار",
+"63A"
+],
+[
+"التطبيق",
+"Photovoltaic power generation and DC distribution"
+],
+[
+"الطاقة المقدرة",
+"63 A"
+]
+],
+"ym-0152-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 1000V; نوع التيار : تيار مستمر. الميزات الرئيسية: مقاوم للماء, plastic, شمسي, combiner.",
+"ym-0152-feats": [
+"مقاوم للماء",
+"plastic",
+"شمسي",
+"combiner",
+"مدخل",
+"خرج"
+],
+"ym-0152-specs": [
+[
+"الجهد",
+"1000V"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0153-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 1000V; نوع التيار : تيار مستمر. الميزات الرئيسية: شمسي, panel, combiner, معتمد.",
+"ym-0153-feats": [
+"شمسي",
+"panel",
+"combiner",
+"معتمد",
+"strings",
+"freezer"
+],
+"ym-0153-specs": [
+[
+"الجهد",
+"1000V"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0311-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 1000V. الميزات الرئيسية: شمسي, surge, حامي, مقدر.",
+"ym-0311-feats": [
+"شمسي",
+"surge",
+"حامي",
+"مقدر",
+"sعة",
+"كهروضوئي"
+],
+"ym-0311-specs": [
+[
+"الجهد",
+"1000V"
+]
+],
+"ym-0315-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 1500V; نوع التيار : تيار مستمر. الميزات الرئيسية: outdoor, شمسي, ip66, isolating.",
+"ym-0315-feats": [
+"outdoor",
+"شمسي",
+"ip66",
+"isolating",
+"disconnect",
+"isolator"
+],
+"ym-0315-specs": [
+[
+"الجهد",
+"1500V"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0317-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 1200V; نوع التيار : تيار مستمر. الميزات الرئيسية: elr2, isolation, مفتاح, مقاوم للماء.",
+"ym-0317-feats": [
+"elr2",
+"isolation",
+"مفتاح",
+"مقاوم للماء",
+"ip66",
+"level"
+],
+"ym-0317-specs": [
+[
+"الجهد",
+"1200V"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0322-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 1000V. الميزات الرئيسية: كهروضوئي, combiner, 3-in-1, شمسي.",
+"ym-0322-feats": [
+"كهروضوئي",
+"combiner",
+"3-in-1",
+"شمسي",
+"panel",
+"array"
+],
+"ym-0322-specs": [
+[
+"الجهد",
+"1000V"
+]
+],
+"ym-0389-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار مستمر. الميزات الرئيسية: circuit, قاطع, poles, شمسي.",
+"ym-0389-feats": [
+"circuit",
+"قاطع",
+"poles",
+"شمسي",
+"كهروضوئي",
+"mini"
+],
+"ym-0389-specs": [
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0421-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 1000V; نوع التيار : تيار مستمر. الميزات الرئيسية: شمسي, system, curve, miniature.",
+"ym-0421-feats": [
+"شمسي",
+"system",
+"curve",
+"miniature",
+"circuit",
+"كهروضوئي"
+],
+"ym-0421-specs": [
+[
+"الجهد",
+"1000V"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0422-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 500V; نوع التيار : تيار مستمر. الميزات الرئيسية: قاطع, شمسي, panel, system.",
+"ym-0422-feats": [
+"قاطع",
+"شمسي",
+"panel",
+"system",
+"كهروضوئي",
+"combiner box"
+],
+"ym-0422-specs": [
+[
+"الجهد",
+"500V"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0423-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 500V; نوع التيار : تيار مستمر. الميزات الرئيسية: قاطع, disjuntor, disyuntor, شمسي.",
+"ym-0423-feats": [
+"قاطع",
+"disjuntor",
+"disyuntor",
+"شمسي",
+"كهروضوئي",
+"combiner box"
+],
+"ym-0423-specs": [
+[
+"الجهد",
+"500V"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0697-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 1000V; التطبيق : Photovoltaic power generation and DC distribution. الميزات الرئيسية: مقاوم للماء, isolation, مفتاح, isolator.",
+"ym-0697-feats": [
+"مقاوم للماء",
+"isolation",
+"مفتاح",
+"isolator",
+"disconnect",
+"شمسي"
+],
+"ym-0697-specs": [
+[
+"الجهد",
+"1000V"
+],
+[
+"التطبيق",
+"Photovoltaic power generation and DC distribution"
+]
+],
+"ym-0730-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 99 pieces; Lead Time : 5. الميزات الرئيسية: sale, 2-in-1, combiner, string.",
+"ym-0730-feats": [
+"sale",
+"2-in-1",
+"combiner",
+"string",
+"isolation",
+"junction"
+],
+"ym-0730-specs": [
+[
+"Min. Order",
+"1 - 99 pieces"
+],
+[
+"Lead Time",
+"5"
+]
+],
+"ym-0748-desc": "مكونات كهروضوئية لتوليد الطاقة المتجددة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 1000V; التيار : 32A; التطبيق : Photovoltaic power generation and DC distribution. الميزات الرئيسية: 4pole, مقاوم للماء, isolation, مفتاح.",
+"ym-0748-feats": [
+"4pole",
+"مقاوم للماء",
+"isolation",
+"مفتاح",
+"system",
+"16a/30a"
+],
+"ym-0748-specs": [
+[
+"الجهد",
+"1000V"
+],
+[
+"التيار",
+"32A"
+],
+[
+"التطبيق",
+"Photovoltaic power generation and DC distribution"
+]
+],
+"ym-0150-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 2000V; السعة : 2000 VA. الميزات الرئيسية: stock, manufacturer, rbk-2000, تحكم.",
+"ym-0150-feats": [
+"stock",
+"manufacturer",
+"rbk-2000",
+"تحكم",
+"panel",
+"محولات"
+],
+"ym-0150-specs": [
+[
+"الجهد",
+"2000V"
+],
+[
+"السعة",
+"2000 VA"
+]
+],
+"ym-0171-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : Brass; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: brass, parts, machinery, drilling.",
+"ym-0171-feats": [
+"brass",
+"parts",
+"machinery",
+"drilling",
+"featuring",
+"محرك"
+],
+"ym-0171-specs": [
+[
+"المادة",
+"Brass"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0172-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : Brass; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: brass, طرفي, آلة, block.",
+"ym-0172-feats": [
+"brass",
+"طرفي",
+"آلة",
+"block",
+"production",
+"crimping"
+],
+"ym-0172-specs": [
+[
+"المادة",
+"Brass"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0173-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : ألومنيوم; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: customizable, ألومنيوم, برغي, طرفي.",
+"ym-0173-feats": [
+"customizable",
+"ألومنيوم",
+"برغي",
+"طرفي",
+"neutral",
+"ground"
+],
+"ym-0173-specs": [
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0175-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : ألومنيوم; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: متين, high-strength, ألومنيوم, three-conductor.",
+"ym-0175-feats": [
+"متين",
+"high-strength",
+"ألومنيوم",
+"three-conductor",
+"برغي",
+"أطراف"
+],
+"ym-0175-specs": [
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0176-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : ميكانيكي; المادة : ألومنيوم; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: dual-conductor, high-strength, alloy, برغي.",
+"ym-0176-feats": [
+"dual-conductor",
+"high-strength",
+"alloy",
+"برغي",
+"طرفي",
+"cable"
+],
+"ym-0176-specs": [
+[
+"الشاشة",
+"ميكانيكي"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0177-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : ألومنيوم; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: manufactures, متين, ألومنيوم, alloy.",
+"ym-0177-feats": [
+"manufactures",
+"متين",
+"ألومنيوم",
+"alloy",
+"طرفي",
+"lugs"
+],
+"ym-0177-specs": [
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0178-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : ميكانيكي; المادة : ألومنيوم; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: ta-250, 250mcm-6, ألومنيوم, mechanical.",
+"ym-0178-feats": [
+"ta-250",
+"250mcm-6",
+"ألومنيوم",
+"mechanical",
+"lugs",
+"برغي"
+],
+"ym-0178-specs": [
+[
+"الشاشة",
+"ميكانيكي"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0192-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : ميكانيكي; المادة : ألومنيوم; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: دقة, porous, installation, hole.",
+"ym-0192-feats": [
+"دقة",
+"porous",
+"installation",
+"hole",
+"ألومنيوم",
+"alloy"
+],
+"ym-0192-specs": [
+[
+"الشاشة",
+"ميكانيكي"
+],
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0193-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : ألومنيوم; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: hole, ألومنيوم, alloy, طرفي.",
+"ym-0193-feats": [
+"hole",
+"ألومنيوم",
+"alloy",
+"طرفي",
+"block",
+"برغي"
+],
+"ym-0193-specs": [
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0194-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار متردد. الميزات الرئيسية: hole, ألومنيوم, نحاس, alloy.",
+"ym-0194-feats": [
+"hole",
+"ألومنيوم",
+"نحاس",
+"alloy",
+"طرفي",
+"cable"
+],
+"ym-0194-specs": [
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0195-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : Brass; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: supplier, metalworking, integrating, cutting.",
+"ym-0195-feats": [
+"supplier",
+"metalworking",
+"integrating",
+"cutting",
+"drilling",
+"tapping"
+],
+"ym-0195-specs": [
+[
+"المادة",
+"Brass"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0209-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : Brass; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: متين, brass, plastic, نحاس.",
+"ym-0209-feats": [
+"متين",
+"brass",
+"plastic",
+"نحاس",
+"طرفي",
+"block"
+],
+"ym-0209-specs": [
+[
+"المادة",
+"Brass"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0215-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : Brass; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: brass/plastic/pc, material, طرفي, block.",
+"ym-0215-feats": [
+"brass/plastic/pc",
+"material",
+"طرفي",
+"block",
+"موصل",
+"plastic"
+],
+"ym-0215-specs": [
+[
+"المادة",
+"Brass"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0216-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: self-locking, طرفي, block, متين.",
+"ym-0216-feats": [
+"self-locking",
+"طرفي",
+"block",
+"متين",
+"نحاس",
+"material"
+],
+"ym-0216-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0217-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : Brass; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: طرفي, block, موصل, brass.",
+"ym-0217-feats": [
+"طرفي",
+"block",
+"موصل",
+"brass",
+"برغي",
+"متين"
+],
+"ym-0217-specs": [
+[
+"المادة",
+"Brass"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0219-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : Brass; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: brass, قضيب توصيل, barrier, طرفي.",
+"ym-0219-feats": [
+"brass",
+"قضيب توصيل",
+"barrier",
+"طرفي",
+"blocks",
+"كتلة طرفية"
+],
+"ym-0219-specs": [
+[
+"المادة",
+"Brass"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0220-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: معتمد, 2-hole, cable, lugs.",
+"ym-0220-feats": [
+"معتمد",
+"2-hole",
+"cable",
+"lugs",
+"crimp",
+"نحاس"
+],
+"ym-0220-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0221-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: معتمد, نحاس, non-crimp, معزول.",
+"ym-0221-feats": [
+"معتمد",
+"نحاس",
+"non-crimp",
+"معزول",
+"ring",
+"طرفي"
+],
+"ym-0221-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0222-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : ألومنيوم; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: ألومنيوم, cable, طرفي, lugs.",
+"ym-0222-feats": [
+"ألومنيوم",
+"cable",
+"طرفي",
+"lugs",
+"أطراف",
+"wires"
+],
+"ym-0222-specs": [
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0224-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: ring, نحاس, cable, connecting.",
+"ym-0224-feats": [
+"ring",
+"نحاس",
+"cable",
+"connecting",
+"طرفي",
+"ألومنيوم"
+],
+"ym-0224-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0225-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: نحاس, cable, lugs, أطراف.",
+"ym-0225-feats": [
+"نحاس",
+"cable",
+"lugs",
+"أطراف",
+"category",
+"طرفي"
+],
+"ym-0225-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0226-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 100A; المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان; الطاقة المقدرة : 100 A. الميزات الرئيسية: fork, نحاس, قضيب توصيل, معزول.",
+"ym-0226-feats": [
+"fork",
+"نحاس",
+"قضيب توصيل",
+"معزول",
+"comb",
+"طرفي"
+],
+"ym-0226-specs": [
+[
+"التيار",
+"100A"
+],
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"الطاقة المقدرة",
+"100 A"
+]
+],
+"ym-0227-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: معتمد, نحاس, موصلات, cable.",
+"ym-0227-feats": [
+"معتمد",
+"نحاس",
+"موصلات",
+"cable",
+"lugs",
+"crimp"
+],
+"ym-0227-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0239-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: نحاس, طرفي, block, blocks.",
+"ym-0239-feats": [
+"نحاس",
+"طرفي",
+"block",
+"blocks",
+"كتلة طرفية",
+"موصل"
+],
+"ym-0239-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0264-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: نحاس, cable, lugs, crimp.",
+"ym-0264-feats": [
+"نحاس",
+"cable",
+"lugs",
+"crimp",
+"طرفي",
+"specification"
+],
+"ym-0264-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0300-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: connecter, cable, size, نحاس.",
+"ym-0300-feats": [
+"connecter",
+"cable",
+"size",
+"نحاس",
+"ألومنيوم",
+"silver"
+],
+"ym-0300-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0303-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التيار : 80A; المادة : Brass; التطبيق : توصيلات آمنة للأسلاك والقضبان; الطاقة المقدرة : 80 A. الميزات الرئيسية: blue, cover, مقاوم للماء, multiple-output.",
+"ym-0303-feats": [
+"blue",
+"cover",
+"مقاوم للماء",
+"multiple-output",
+"كتلة طرفية",
+"موصل"
+],
+"ym-0303-specs": [
+[
+"التيار",
+"80A"
+],
+[
+"المادة",
+"Brass"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"الطاقة المقدرة",
+"80 A"
+]
+],
+"ym-0304-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : Brass; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: crimp, طرفي, lugs, brass.",
+"ym-0304-feats": [
+"crimp",
+"طرفي",
+"lugs",
+"brass",
+"cable",
+"finish"
+],
+"ym-0304-specs": [
+[
+"المادة",
+"Brass"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0305-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : Brass; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: brass, طرفي, production, آلة.",
+"ym-0305-feats": [
+"brass",
+"طرفي",
+"production",
+"آلة",
+"drilling",
+"tapping"
+],
+"ym-0305-specs": [
+[
+"المادة",
+"Brass"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0312-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: diverse, solder, splice, heat.",
+"ym-0312-feats": [
+"diverse",
+"solder",
+"splice",
+"heat",
+"shrink",
+"plastic"
+],
+"ym-0312-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0313-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: silver, مطلي, نحاس, طرفي.",
+"ym-0313-feats": [
+"silver",
+"مطلي",
+"نحاس",
+"طرفي",
+"bell-end",
+"موصل"
+],
+"ym-0313-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0314-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: dtl-2, bimetal, ring, cable.",
+"ym-0314-feats": [
+"dtl-2",
+"bimetal",
+"ring",
+"cable",
+"أطراف",
+"نحاس"
+],
+"ym-0314-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0324-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: نوع التيار : تيار مستمر. الميزات الرئيسية: elr1, مقاوم للماء, isolation, مفتاح.",
+"ym-0324-feats": [
+"elr1",
+"مقاوم للماء",
+"isolation",
+"مفتاح",
+"easy-to-install",
+"earth"
+],
+"ym-0324-specs": [
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0325-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: dtl-2-35/2-70, bimetallic, crimp, طرفي.",
+"ym-0325-feats": [
+"dtl-2-35/2-70",
+"bimetallic",
+"crimp",
+"طرفي",
+"نحاس",
+"ألومنيوم"
+],
+"ym-0325-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0326-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: نحاس, برغي, طرفي, block.",
+"ym-0326-feats": [
+"نحاس",
+"برغي",
+"طرفي",
+"block",
+"موصل",
+"brass"
+],
+"ym-0326-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0327-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: performance, tinned, نحاس, cable.",
+"ym-0327-feats": [
+"performance",
+"tinned",
+"نحاس",
+"cable",
+"lugs",
+"good"
+],
+"ym-0327-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0332-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 600V. الميزات الرئيسية: بطارية, tubular, cable, bell-end.",
+"ym-0332-feats": [
+"بطارية",
+"tubular",
+"cable",
+"bell-end",
+"ألومنيوم",
+"ring"
+],
+"ym-0332-specs": [
+[
+"الجهد",
+"600V"
+]
+],
+"ym-0426-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: موصلات, cable, طرفي, نحاس.",
+"ym-0426-feats": [
+"موصلات",
+"cable",
+"طرفي",
+"نحاس",
+"كتلة طرفية",
+"موصل"
+],
+"ym-0426-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0428-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : نحاس; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: square, head, round, copper-aluminum.",
+"ym-0428-feats": [
+"square",
+"head",
+"round",
+"copper-aluminum",
+"طرفي",
+"نحاس"
+],
+"ym-0428-specs": [
+[
+"المادة",
+"نحاس"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0430-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: guide, cable, fj6d-200, connection.",
+"ym-0430-feats": [
+"guide",
+"cable",
+"fj6d-200",
+"connection",
+"طرفي",
+"كتلة طرفية"
+],
+"ym-0430-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0796-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: Min. Order : 1 - 2 sets; Lead Time : 45. الميزات الرئيسية: برغي, tightening, آلة, integrating.",
+"ym-0796-feats": [
+"برغي",
+"tightening",
+"آلة",
+"integrating",
+"screwing",
+"testing"
+],
+"ym-0796-specs": [
+[
+"Min. Order",
+"1 - 2 sets"
+],
+[
+"Lead Time",
+"45"
+]
+],
+"ym-0921-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, manufacturer s270 type insulated wire clamp thickened conduc.",
+"ym-0921-feats": [
+"yomin electric",
+"terminal & connector",
+"manufacturer s270 type insulated wire clamp thickened conduc"
+],
+"ym-0921-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0922-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, factory direct insulated suspension wire clamps - flame reta.",
+"ym-0922-feats": [
+"yomin electric",
+"terminal & connector",
+"factory direct insulated suspension wire clamps - flame reta"
+],
+"ym-0922-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0923-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, insulated wire clamp outdoor waterproof wire-free cable term.",
+"ym-0923-feats": [
+"yomin electric",
+"terminal & connector",
+"insulated wire clamp outdoor waterproof wire-free cable term"
+],
+"ym-0923-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0924-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, manufacturer pc1 insulated piercing clamp cable free wire br.",
+"ym-0924-feats": [
+"yomin electric",
+"terminal & connector",
+"manufacturer pc1 insulated piercing clamp cable free wire br"
+],
+"ym-0924-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0925-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : ألومنيوم; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: yomin electric, terminal & connector, pa-1500 tension clamp aluminum alloy overhead cable clamp se.",
+"ym-0925-feats": [
+"yomin electric",
+"terminal & connector",
+"pa-1500 tension clamp aluminum alloy overhead cable clamp se"
+],
+"ym-0925-specs": [
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0926-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, factory direct tt2d82f insulated wire connector - no-strip c.",
+"ym-0926-feats": [
+"yomin electric",
+"terminal & connector",
+"factory direct tt2d82f insulated wire connector - no-strip c"
+],
+"ym-0926-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0927-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, factory direct sales ps40 insulated wire clamp suspension wi.",
+"ym-0927-feats": [
+"yomin electric",
+"terminal & connector",
+"factory direct sales ps40 insulated wire clamp suspension wi"
+],
+"ym-0927-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0928-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, factory direct jnc2-95tl insulated piercing wire connector c.",
+"ym-0928-feats": [
+"yomin electric",
+"terminal & connector",
+"factory direct jnc2-95tl insulated piercing wire connector c"
+],
+"ym-0928-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0929-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, manufacturer pa series tension clamp bundled insulated tensi.",
+"ym-0929-feats": [
+"yomin electric",
+"terminal & connector",
+"manufacturer pa series tension clamp bundled insulated tensi"
+],
+"ym-0929-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0930-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, manufacturer tension wire clamp pa1 bundled wire clamp insul.",
+"ym-0930-feats": [
+"yomin electric",
+"terminal & connector",
+"manufacturer tension wire clamp pa1 bundled wire clamp insul"
+],
+"ym-0930-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0931-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, factory direct insulated splice wire clamp, insulated wedge.",
+"ym-0931-feats": [
+"yomin electric",
+"terminal & connector",
+"factory direct insulated splice wire clamp, insulated wedge"
+],
+"ym-0931-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0932-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : ألومنيوم; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: yomin electric, terminal & connector, pal aluminum alloy tension clamp optical cable insulating we.",
+"ym-0932-feats": [
+"yomin electric",
+"terminal & connector",
+"pal aluminum alloy tension clamp optical cable insulating we"
+],
+"ym-0932-specs": [
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0933-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, factory direct sales s170 insulated wire clamp flame retarda.",
+"ym-0933-feats": [
+"yomin electric",
+"terminal & connector",
+"factory direct sales s170 insulated wire clamp flame retarda"
+],
+"ym-0933-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0934-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, source manufacturer insulated piercing clamp cable free wire.",
+"ym-0934-feats": [
+"yomin electric",
+"terminal & connector",
+"source manufacturer insulated piercing clamp cable free wire"
+],
+"ym-0934-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0935-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : ألومنيوم; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: yomin electric, terminal & connector, factory direct sales wedge type tension tension clamp pal150.",
+"ym-0935-feats": [
+"yomin electric",
+"terminal & connector",
+"factory direct sales wedge type tension tension clamp pal150"
+],
+"ym-0935-specs": [
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0936-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : ألومنيوم; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: yomin electric, terminal & connector, factory direct pt258 insulated splice wire connector, alumin.",
+"ym-0936-feats": [
+"yomin electric",
+"terminal & connector",
+"factory direct pt258 insulated splice wire connector, alumin"
+],
+"ym-0936-specs": [
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0937-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, manufacturer double wire insulated piercing clamp cable free.",
+"ym-0937-feats": [
+"yomin electric",
+"terminal & connector",
+"manufacturer double wire insulated piercing clamp cable free"
+],
+"ym-0937-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0938-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, manufacturer pat120 insulated wire clamp export type cluster.",
+"ym-0938-feats": [
+"yomin electric",
+"terminal & connector",
+"manufacturer pat120 insulated wire clamp export type cluster"
+],
+"ym-0938-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0939-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, manufacturer 18f insulated piercing clamp cable branch cross.",
+"ym-0939-feats": [
+"yomin electric",
+"terminal & connector",
+"manufacturer 18f insulated piercing clamp cable branch cross"
+],
+"ym-0939-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0940-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, source manufacturer insulated piercing clamp cable free wire.",
+"ym-0940-feats": [
+"yomin electric",
+"terminal & connector",
+"source manufacturer insulated piercing clamp cable free wire"
+],
+"ym-0940-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0941-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: المادة : ألومنيوم; التطبيق : توصيلات آمنة للأسلاك والقضبان. الميزات الرئيسية: yomin electric, terminal & connector, factory direct sales mjpt series aluminum connecting pipe ca.",
+"ym-0941-feats": [
+"yomin electric",
+"terminal & connector",
+"factory direct sales mjpt series aluminum connecting pipe ca"
+],
+"ym-0941-specs": [
+[
+"المادة",
+"ألومنيوم"
+],
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+]
+],
+"ym-0969-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, source manufacturer jjc2 insulated piercing wire clamp 1kv b.",
+"ym-0969-feats": [
+"yomin electric",
+"terminal & connector",
+"source manufacturer jjc2 insulated piercing wire clamp 1kv b"
+],
+"ym-0969-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0970-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, factory direct sales jbc1 insulated piercing clamp jbc1 cabl.",
+"ym-0970-feats": [
+"yomin electric",
+"terminal & connector",
+"factory direct sales jbc1 insulated piercing clamp jbc1 cabl"
+],
+"ym-0970-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0971-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, factory direct sales pc3 wire clamp t-shaped wire-free cable.",
+"ym-0971-feats": [
+"yomin electric",
+"terminal & connector",
+"factory direct sales pc3 wire clamp t-shaped wire-free cable"
+],
+"ym-0971-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0972-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, source manufacturer pc2 insulated wire piercing clamp 1kv ou.",
+"ym-0972-feats": [
+"yomin electric",
+"terminal & connector",
+"source manufacturer pc2 insulated wire piercing clamp 1kv ou"
+],
+"ym-0972-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0973-desc": "أطراف وموصلات لتوصيلات كهربائية موثوقة ومنخفضة المقاومة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : توصيلات آمنة للأسلاك والقضبان; المادة : Copper alloy. الميزات الرئيسية: yomin electric, terminal & connector, pc1 insulated wire piercing connector 1kv, no-strip cable te.",
+"ym-0973-feats": [
+"yomin electric",
+"terminal & connector",
+"pc1 insulated wire piercing connector 1kv, no-strip cable te"
+],
+"ym-0973-specs": [
+[
+"التطبيق",
+"توصيلات آمنة للأسلاك والقضبان"
+],
+[
+"المادة",
+"Copper alloy"
+]
+],
+"ym-0128-desc": "أدوات ومعدات صناعية للتركيب والصيانة الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 400V; السعة : 400 VA. الميزات الرئيسية: jbk5, أحادي الطور, isolation, step.",
+"ym-0128-feats": [
+"jbk5",
+"أحادي الطور",
+"isolation",
+"step",
+"down",
+"تحكم"
+],
+"ym-0128-specs": [
+[
+"الجهد",
+"400V"
+],
+[
+"السعة",
+"400 VA"
+]
+],
+"ym-0151-desc": "أدوات ومعدات صناعية للتركيب والصيانة الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 100V; السعة : 100 VA. الميزات الرئيسية: autotransformer, jbk5, محول, آلة.",
+"ym-0151-feats": [
+"autotransformer",
+"jbk5",
+"محول",
+"آلة",
+"electrical tool",
+"hardware"
+],
+"ym-0151-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"100V"
+],
+[
+"السعة",
+"100 VA"
+]
+],
+"ym-0252-desc": "أدوات ومعدات صناعية للتركيب والصيانة الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 400V; السعة : 400 VA. الميزات الرئيسية: jbk5, أحادي الطور, تحكم, محول.",
+"ym-0252-feats": [
+"jbk5",
+"أحادي الطور",
+"تحكم",
+"محول",
+"آلة",
+"tool"
+],
+"ym-0252-specs": [
+[
+"الجهد",
+"400V"
+],
+[
+"السعة",
+"400 VA"
+]
+],
+"ym-0345-desc": "أدوات ومعدات صناعية للتركيب والصيانة الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 400V; السعة : 400 VA. الميزات الرئيسية: manufacturer, آلة, tool, تحكم.",
+"ym-0345-feats": [
+"manufacturer",
+"آلة",
+"tool",
+"تحكم",
+"transformerisolation",
+"محول"
+],
+"ym-0345-specs": [
+[
+"الجهد",
+"400V"
+],
+[
+"السعة",
+"400 VA"
+]
+],
+"ym-0350-desc": "أدوات ومعدات صناعية للتركيب والصيانة الكهربائية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 220 فولت; السعة : 100 VA. الميزات الرئيسية: manufacturer, آلة, tool, محول.",
+"ym-0350-feats": [
+"manufacturer",
+"آلة",
+"tool",
+"محول",
+"تحكم",
+"capacity100va"
+],
+"ym-0350-specs": [
+[
+"الجهد",
+"220 فولت"
+],
+[
+"السعة",
+"100 VA"
+]
+],
+"ym-0181-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; السعة : 30 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: TSGC2, قابل للتعديل, محول, فارياك.",
+"ym-0181-feats": [
+"TSGC2",
+"قابل للتعديل",
+"محول",
+"فارياك",
+"محول متغير",
+"جهد محول"
+],
+"ym-0181-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"السعة",
+"30 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0182-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 380 فولت; السعة : 20 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: TSGC2, قابل للتعديل, محول, فارياك.",
+"ym-0182-feats": [
+"TSGC2",
+"قابل للتعديل",
+"محول",
+"فارياك",
+"محول متغير",
+"جهد محول"
+],
+"ym-0182-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"20 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0184-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; السعة : 6 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: TSGC2, قابل للتعديل, فارياك, متغير.",
+"ym-0184-feats": [
+"TSGC2",
+"قابل للتعديل",
+"فارياك",
+"متغير",
+"محول",
+"operation"
+],
+"ym-0184-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"السعة",
+"6 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0197-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 220 فولت; السعة : 2 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: مدخل, manual, label, printing.",
+"ym-0197-feats": [
+"مدخل",
+"manual",
+"label",
+"printing",
+"فارياك",
+"محول متغير"
+],
+"ym-0197-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"الجهد",
+"220 فولت"
+],
+[
+"السعة",
+"2 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0201-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; السعة : 10 KVA; التردد : 60 هرتز; نوع التيار : تيار متردد. الميزات الرئيسية: instrument, usage, superior, 50hz/60hz.",
+"ym-0201-feats": [
+"instrument",
+"usage",
+"superior",
+"50hz/60hz",
+"powerstat",
+"فارياك"
+],
+"ym-0201-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"السعة",
+"10 KVA"
+],
+[
+"التردد",
+"60 هرتز"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0254-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 500V; السعة : 500 VA; نوع التيار : تيار متردد. الميزات الرئيسية: TDGC2, أحادي الطور, فارياك, محول.",
+"ym-0254-feats": [
+"TDGC2",
+"أحادي الطور",
+"فارياك",
+"محول",
+"نحاس",
+"material"
+],
+"ym-0254-specs": [
+[
+"الجهد",
+"500V"
+],
+[
+"السعة",
+"500 VA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0295-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 380 فولت; السعة : 6 KVA; نوع التيار : تيار متردد; نوع التحكم : Servo Motor. الميزات الرئيسية: tsgc2-6kva, high-power, ثلاثي الطور, servo.",
+"ym-0295-feats": [
+"tsgc2-6kva",
+"high-power",
+"ثلاثي الطور",
+"servo",
+"محرك",
+"تحكم"
+],
+"ym-0295-specs": [
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"6 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"Servo Motor"
+]
+],
+"ym-0296-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 380 فولت; السعة : 3 KVA; نوع التيار : تيار متردد; نوع التحكم : Servo Motor. الميزات الرئيسية: tsgc2-3kva, high-power, ثلاثي الطور, قابل للتعديل.",
+"ym-0296-feats": [
+"tsgc2-3kva",
+"high-power",
+"ثلاثي الطور",
+"قابل للتعديل",
+"contact",
+"فارياك"
+],
+"ym-0296-specs": [
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"3 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+],
+[
+"نوع التحكم",
+"Servo Motor"
+]
+],
+"ym-0298-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 300V; السعة : 5 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: tdgc2-05kva, فارياك, أحادي الطور, متغير.",
+"ym-0298-feats": [
+"tdgc2-05kva",
+"فارياك",
+"أحادي الطور",
+"متغير",
+"محول",
+"نحاس"
+],
+"ym-0298-specs": [
+[
+"الجهد",
+"300V"
+],
+[
+"السعة",
+"5 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0334-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار متردد. الميزات الرئيسية: tdgc2-1, فارياك, محول متغير, جهد محول.",
+"ym-0334-feats": [
+"tdgc2-1",
+"فارياك",
+"محول متغير",
+"جهد محول",
+"ac transformer",
+"auto transformer"
+],
+"ym-0334-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0337-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 230 فولت; السعة : 10 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: TDGC2, فارياك, محول, محول متغير.",
+"ym-0337-feats": [
+"TDGC2",
+"فارياك",
+"محول",
+"محول متغير",
+"جهد محول",
+"ac transformer"
+],
+"ym-0337-specs": [
+[
+"الجهد",
+"230 فولت"
+],
+[
+"السعة",
+"10 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0338-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 220 فولت; السعة : 20 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: TDGC2, voltageregulator220vvariac, فارياك, محول متغير.",
+"ym-0338-feats": [
+"TDGC2",
+"voltageregulator220vvariac",
+"فارياك",
+"محول متغير",
+"جهد محول",
+"ac transformer"
+],
+"ym-0338-specs": [
+[
+"الجهد",
+"220 فولت"
+],
+[
+"السعة",
+"20 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0346-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور. الميزات الرئيسية: manufacturer, TDGC2, volt, slide.",
+"ym-0346-feats": [
+"manufacturer",
+"TDGC2",
+"volt",
+"slide",
+"منظم",
+"autotransformer"
+],
+"ym-0346-specs": [
+[
+"الطور",
+"أحادي الطور"
+]
+],
+"ym-0356-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Voltage control, testing and calibration; جهد الدخل : 220 فولت; التردد : 50/60 هرتز. الميزات الرئيسية: manufacturer, متغير, laboratory, autotransformer.",
+"ym-0356-feats": [
+"manufacturer",
+"متغير",
+"laboratory",
+"autotransformer",
+"فارياك",
+"powertech"
+],
+"ym-0356-specs": [
+[
+"التطبيق",
+"Voltage control, testing and calibration"
+],
+[
+"جهد الدخل",
+"220 فولت"
+],
+[
+"التردد",
+"50/60 هرتز"
+]
+],
+"ym-0373-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; السعة : 5 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: TSGC2, فارياك, متغير, محول.",
+"ym-0373-feats": [
+"TSGC2",
+"فارياك",
+"متغير",
+"محول",
+"محول متغير",
+"جهد محول"
+],
+"ym-0373-specs": [
+[
+"الطور",
+"ثلاثي الطور"
+],
+[
+"السعة",
+"5 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0379-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 300V; نوع التيار : تيار متردد. الميزات الرئيسية: manual, فارياك, تحكم, محول متغير.",
+"ym-0379-feats": [
+"manual",
+"فارياك",
+"تحكم",
+"محول متغير",
+"جهد محول",
+"ac transformer"
+],
+"ym-0379-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"300V"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0393-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 220 فولت; الطاقة : 1 KW; نوع التيار : تيار متردد. الميزات الرئيسية: manual, فارياك, wbt-4000wvariac, محول متغير.",
+"ym-0393-feats": [
+"manual",
+"فارياك",
+"wbt-4000wvariac",
+"محول متغير",
+"جهد محول",
+"ac transformer"
+],
+"ym-0393-specs": [
+[
+"الجهد",
+"220 فولت"
+],
+[
+"الطاقة",
+"1 KW"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0394-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 380 فولت; السعة : 10 KVA. الميزات الرئيسية: manufacturer, tsgc2-10, مدخل, فارياك.",
+"ym-0394-feats": [
+"manufacturer",
+"tsgc2-10",
+"مدخل",
+"فارياك",
+"محول متغير",
+"جهد محول"
+],
+"ym-0394-specs": [
+[
+"الجهد",
+"380 فولت"
+],
+[
+"السعة",
+"10 KVA"
+]
+],
+"ym-0397-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; السعة : 5 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: manufacturer, tdgc2-05kva, varyak, فارياك.",
+"ym-0397-feats": [
+"manufacturer",
+"tdgc2-05kva",
+"varyak",
+"فارياك",
+"متغير",
+"محول"
+],
+"ym-0397-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"السعة",
+"5 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0400-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 500V; السعة : 10 KVA; نوع التيار : تيار متردد. الميزات الرئيسية: TSGC2, خرج, محرك, motorized.",
+"ym-0400-feats": [
+"TSGC2",
+"خرج",
+"محرك",
+"motorized",
+"فارياك",
+"محول متغير"
+],
+"ym-0400-specs": [
+[
+"الجهد",
+"500V"
+],
+[
+"السعة",
+"10 KVA"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0401-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الجهد : 220 فولت; نوع التيار : تيار متردد. الميزات الرئيسية: manufacturer, TDGC2, خرج, متغير.",
+"ym-0401-feats": [
+"manufacturer",
+"TDGC2",
+"خرج",
+"متغير",
+"أحادي الطور",
+"فارياك"
+],
+"ym-0401-specs": [
+[
+"الجهد",
+"220 فولت"
+],
+[
+"نوع التيار",
+"تيار متردد"
+]
+],
+"ym-0979-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 set; List Price : $2,600-10,000; Lead Time : Quantity (sets)1 - 2 > 2 Lead time (days)25To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., variac/transformer, electric electricity distribution transformer 100k.",
+"ym-0979-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"variac/transformer",
+"electric electricity distribution transformer 100k"
+],
+"ym-0979-specs": [
+[
+"MOQ",
+"1 set"
+],
+[
+"List Price",
+"$2,600-10,000"
+],
+[
+"Lead Time",
+"Quantity (sets)1 - 2 > 2 Lead time (days)25To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0980-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 set; List Price : $5,000-250,000; Lead Time : Quantity (sets)1 - 2 > 2 Lead time (days)25To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., variac/transformer, electric electricity distribution transformer 100k.",
+"ym-0980-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"variac/transformer",
+"electric electricity distribution transformer 100k"
+],
+"ym-0980-specs": [
+[
+"MOQ",
+"1 set"
+],
+[
+"List Price",
+"$5,000-250,000"
+],
+[
+"Lead Time",
+"Quantity (sets)1 - 2 > 2 Lead time (days)25To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0981-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 set; List Price : $2,000-10,000; Lead Time : Quantity (sets)1 - 2 > 2 Lead time (days)25To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., variac/transformer, factory price oil-immersed distribution transforme.",
+"ym-0981-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"variac/transformer",
+"factory price oil-immersed distribution transforme"
+],
+"ym-0981-specs": [
+[
+"MOQ",
+"1 set"
+],
+[
+"List Price",
+"$2,000-10,000"
+],
+[
+"Lead Time",
+"Quantity (sets)1 - 2 > 2 Lead time (days)25To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0989-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $2,668; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., variac/transformer, jlszw-35kv current and voltage dry combined transf.",
+"ym-0989-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"variac/transformer",
+"jlszw-35kv current and voltage dry combined transf"
+],
+"ym-0989-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$2,668"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0990-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $2,367; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., variac/transformer, 35kv dry combined transformer jlszv-35 outdoor thr.",
+"ym-0990-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"variac/transformer",
+"35kv dry combined transformer jlszv-35 outdoor thr"
+],
+"ym-0990-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$2,367"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-0995-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $1,409; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., variac/transformer, type b combined transformer 35kv dual element thre.",
+"ym-0995-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"variac/transformer",
+"type b combined transformer 35kv dual element thre"
+],
+"ym-0995-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$1,409"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1005-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $290; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., variac/transformer, 10kv high pressure oil metering box jls-6-10 three.",
+"ym-1005-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"variac/transformer",
+"10kv high pressure oil metering box jls-6-10 three"
+],
+"ym-1005-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$290"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1014-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $354; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., variac/transformer, authentic new indoor dry three-phase high voltage.",
+"ym-1014-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"variac/transformer",
+"authentic new indoor dry three-phase high voltage"
+],
+"ym-1014-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$354"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1025-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $389; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., variac/transformer, jlszv-10 outdoor dry combined transformer high vol.",
+"ym-1025-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"variac/transformer",
+"jlszv-10 outdoor dry combined transformer high vol"
+],
+"ym-1025-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$389"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1037-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $357.20; Lead Time : Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated; Supplier : Nahu Electrical Technology Co., Ltd.. الميزات الرئيسية: alibaba, nahu electrical technology co., ltd., variac/transformer, the new jls-10 type combined transformer metering.",
+"ym-1037-feats": [
+"alibaba",
+"nahu electrical technology co., ltd.",
+"variac/transformer",
+"the new jls-10 type combined transformer metering"
+],
+"ym-1037-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$357.20"
+],
+[
+"Lead Time",
+"Quantity (pieces)1 - 10 > 10 Lead time (days)31To be negotiated"
+],
+[
+"Supplier",
+"Nahu Electrical Technology Co., Ltd."
+]
+],
+"ym-1043-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $1,409. الميزات الرئيسية: alibaba, محولات تيار وجهد, variac/transformer, jls-35 outdoor measuring box single phase coil sha.",
+"ym-1043-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"variac/transformer",
+"jls-35 outdoor measuring box single phase coil sha"
+],
+"ym-1043-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$1,409"
+]
+],
+"ym-1048-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $460. الميزات الرئيسية: alibaba, محولات تيار وجهد, variac/transformer, jlszw-10 high pressure dry metering box three-phas.",
+"ym-1048-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"variac/transformer",
+"jlszw-10 high pressure dry metering box three-phas"
+],
+"ym-1048-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$460"
+]
+],
+"ym-1051-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $389. الميزات الرئيسية: alibaba, محولات تيار وجهد, variac/transformer, new 10kv high pressure dry metering box jlszv-10 j.",
+"ym-1051-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"variac/transformer",
+"new 10kv high pressure dry metering box jlszv-10 j"
+],
+"ym-1051-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$389"
+]
+],
+"ym-1052-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $357.20. الميزات الرئيسية: alibaba, محولات تيار وجهد, variac/transformer, jls-10 type high power 10kv three-element three-ph.",
+"ym-1052-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"variac/transformer",
+"jls-10 type high power 10kv three-element three-ph"
+],
+"ym-1052-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$357.20"
+]
+],
+"ym-1065-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $389. الميزات الرئيسية: alibaba, محولات تيار وجهد, variac/transformer, jlszv-10 outdoor transformer metering box wholesal.",
+"ym-1065-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"variac/transformer",
+"jlszv-10 outdoor transformer metering box wholesal"
+],
+"ym-1065-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$389"
+]
+],
+"ym-1070-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 piece; List Price : $111. الميزات الرئيسية: alibaba, محولات تيار وجهد, variac/transformer, high-efficiency 3kv 6kv 10kv single-phase full ope.",
+"ym-1070-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"variac/transformer",
+"high-efficiency 3kv 6kv 10kv single-phase full ope"
+],
+"ym-1070-specs": [
+[
+"MOQ",
+"1 piece"
+],
+[
+"List Price",
+"$111"
+]
+],
+"ym-1085-desc": "محول ذاتي متغير يوفر جهد خرج متردد قابل للضبط باستمرار. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: MOQ : 1 set; List Price : $2,000-12,000. الميزات الرئيسية: alibaba, محولات تيار وجهد, variac/transformer, s11 series fully sealed oil immersed powertransfor.",
+"ym-1085-feats": [
+"alibaba",
+"محولات تيار وجهد",
+"variac/transformer",
+"s11 series fully sealed oil immersed powertransfor"
+],
+"ym-1085-specs": [
+[
+"MOQ",
+"1 set"
+],
+[
+"List Price",
+"$2,000-12,000"
+]
+],
+"ym-0138-desc": "جهاز يحمي الأجهزة من ارتفاع وانخفاض الجهد والتيارات العابرة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار مستمر. الميزات الرئيسية: قابل للتعديل, تحت, حامي, حامي الجهد.",
+"ym-0138-feats": [
+"قابل للتعديل",
+"تحت",
+"حامي",
+"حامي الجهد",
+"فوق جهد حماية",
+"تحت جهد حماية"
+],
+"ym-0138-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0170-desc": "جهاز يحمي الأجهزة من ارتفاع وانخفاض الجهد والتيارات العابرة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; الجهد : 230 فولت; نوع التيار : تيار مستمر; الاتصال : واي فاي. الميزات الرئيسية: حامي, واي فاي, access, حامي الجهد.",
+"ym-0170-feats": [
+"حامي",
+"واي فاي",
+"access",
+"حامي الجهد",
+"فوق جهد حماية",
+"تحت جهد حماية"
+],
+"ym-0170-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"الجهد",
+"230 فولت"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+],
+[
+"الاتصال",
+"واي فاي"
+],
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0287-desc": "جهاز يحمي الأجهزة من ارتفاع وانخفاض الجهد والتيارات العابرة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : أحادي الطور; نوع التيار : تيار مستمر. الميزات الرئيسية: حامي, قابل للتعديل, تحت, حامي الجهد.",
+"ym-0287-feats": [
+"حامي",
+"قابل للتعديل",
+"تحت",
+"حامي الجهد",
+"فوق جهد حماية",
+"تحت جهد حماية"
+],
+"ym-0287-specs": [
+[
+"الطور",
+"أحادي الطور"
+],
+[
+"نوع التيار",
+"تيار مستمر"
+]
+],
+"ym-0348-desc": "جهاز يحمي الأجهزة من ارتفاع وانخفاض الجهد والتيارات العابرة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : رقمي. الميزات الرئيسية: حامي, home, surge, حامي الجهد.",
+"ym-0348-feats": [
+"حامي",
+"home",
+"surge",
+"حامي الجهد",
+"فوق جهد حماية",
+"تحت جهد حماية"
+],
+"ym-0348-specs": [
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0425-desc": "جهاز يحمي الأجهزة من ارتفاع وانخفاض الجهد والتيارات العابرة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : رقمي. الميزات الرئيسية: قابل للتعديل, تحت, حماية, حامي.",
+"ym-0425-feats": [
+"قابل للتعديل",
+"تحت",
+"حماية",
+"حامي",
+"home",
+"حامي الجهد"
+],
+"ym-0425-specs": [
+[
+"الشاشة",
+"رقمي"
+]
+],
+"ym-0918-desc": "جهاز يحمي الأجهزة من ارتفاع وانخفاض الجهد والتيارات العابرة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Over-voltage and under-voltage protection; النوع : Protection device. الميزات الرئيسية: yomin electric, حامي الجهد, manufacturer vap2p dual display self-restoring over-voltage.",
+"ym-0918-feats": [
+"yomin electric",
+"حامي الجهد",
+"manufacturer vap2p dual display self-restoring over-voltage"
+],
+"ym-0918-specs": [
+[
+"التطبيق",
+"Over-voltage and under-voltage protection"
+],
+[
+"النوع",
+"Protection device"
+]
+],
+"ym-0919-desc": "جهاز يحمي الأجهزة من ارتفاع وانخفاض الجهد والتيارات العابرة. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : رقمي; التطبيق : Over-voltage and under-voltage protection; النوع : Protection device. الميزات الرئيسية: yomin electric, حامي الجهد, digital display self-resetting over/under voltage protector,.",
+"ym-0919-feats": [
+"yomin electric",
+"حامي الجهد",
+"digital display self-resetting over/under voltage protector,"
+],
+"ym-0919-specs": [
+[
+"الشاشة",
+"رقمي"
+],
+[
+"التطبيق",
+"Over-voltage and under-voltage protection"
+],
+[
+"النوع",
+"Protection device"
+]
+],
+"sec-specs": "المواصفات الفنية",
+"sec-feats": "الميزات الرئيسية",
+"crumb-home": "الرئيسية",
+"crumb-products": "المنتجات",
+"cat-energy-meter": "عدادات الطاقة",
+"cat-voltage-stabilizer-regulator": "مثبتات/منظمات الجهد",
+"cat-current-transformer": "محولات التيار",
+"cat-variac-transformer": "فارياك/محولات",
+"cat-fuse-protection": "الفيوزات والحماية",
+"cat-voltage-protector": "حماة الجهد",
+"cat-socket-wiring": "المقابس والتوصيلات",
+"cat-terminal-connector": "الأطراف والموصلات",
+"cat-solar-pv-products": "منتجات الطاقة الشمسية",
+"cat-tools-hardware": "الأدوات والمعدات",
+"cat-security-seal": "أختام الأمان",
+"cat-other": "أخرى",
+"cat-aluminum-busbar": "قضبان الألومنيوم",
+"cat-flexible-busbar": "قضبان مرنة",
+"cat-rigid-busbar": "قضبان صلبة",
+"cat-energy-storage-busbar": "قضبان تخزين الطاقة",
+"cat-busbar-protection": "حماية القضبان",
+"cat-composite-laminated-busbar": "قضبان مركبة مصفحة",
+"cat-ccs-integrated-busbar": "قضيب CCS مدمج",
+"cat-heavy-duty-busbar": "قضبان الخدمة الشاقة",
+"cat-screw-machine": "آلات شد البراغي",
+"cat-emergency-lighting": "إضاءة الطوارئ"
+});
+}

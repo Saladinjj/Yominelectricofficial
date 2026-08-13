@@ -85,7 +85,7 @@
 :root{--bg:#0d0d0d;--bgs:#141414;--bgc:#181818;--bgc2:#1f1f1f;--sur:#242424;--bdr:rgba(255,255,255,0.08);--bds:rgba(255,255,255,0.04);--tx:#f0ede8;--mt:#888;--dm:#555;--ac:#E8944A;--ac2:#F2A968;--sf:'DM Serif Display',Georgia,serif;--ss:'DM Sans',system-ui,sans-serif;--r:16px;--tr:0.4s cubic-bezier(.25,.46,.45,.94)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 a{text-decoration:none}html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--tx);font-family:var(--ss);font-size:17px;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--tx);font-family:var(--ss);font-size:17px;line-height:1.65;overflow-x: clip;-webkit-font-smoothing:antialiased}
 body.ar{font-family:'Noto Sans Arabic',var(--ss),sans-serif}
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 36px;height:68px;background:rgba(13,13,13,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--bds);transition:background var(--tr)}
