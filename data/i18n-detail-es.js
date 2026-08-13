@@ -655,1048 +655,6 @@ if (typeof T !== "undefined") {
 "Wall / Floor (model dependent)"
 ]
 ],
-"ym-sw-wallmountedangledsocketyme001-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-E001; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-wallmountedangledsocketyme001-feats": [],
-"ym-sw-wallmountedangledsocketyme001-specs": [
-[
-"Modelo",
-"YM-E001"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-wallmountedangledsocketyme002-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-E002; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-wallmountedangledsocketyme002-feats": [],
-"ym-sw-wallmountedangledsocketyme002-specs": [
-[
-"Modelo",
-"YM-E002"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-wallmountedangledsocketyme004-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-E004; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-wallmountedangledsocketyme004-feats": [],
-"ym-sw-wallmountedangledsocketyme004-specs": [
-[
-"Modelo",
-"YM-E004"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-wallmountedangledsocketyme005-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-E005; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-wallmountedangledsocketyme005-feats": [],
-"ym-sw-wallmountedangledsocketyme005-specs": [
-[
-"Modelo",
-"YM-E005"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-wallmountedangledsocketyme006-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-E006; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-wallmountedangledsocketyme006-feats": [],
-"ym-sw-wallmountedangledsocketyme006-specs": [
-[
-"Modelo",
-"YM-E006"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-wallmountedangledsocketyme007-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-E007; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-wallmountedangledsocketyme007-feats": [],
-"ym-sw-wallmountedangledsocketyme007-specs": [
-[
-"Modelo",
-"YM-E007"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-wallmountedbevelsocketyme002-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-E002; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-wallmountedbevelsocketyme002-feats": [],
-"ym-sw-wallmountedbevelsocketyme002-specs": [
-[
-"Modelo",
-"YM-E002"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-portablesocketboxymax801-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YMAX-801; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-portablesocketboxymax801-feats": [],
-"ym-sw-portablesocketboxymax801-specs": [
-[
-"Modelo",
-"YMAX-801"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-portablesocketboxymax802-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YMAX-802; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-portablesocketboxymax802-feats": [],
-"ym-sw-portablesocketboxymax802-specs": [
-[
-"Modelo",
-"YMAX-802"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-portablesocketboxymax803-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YMAX-803; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-portablesocketboxymax803-feats": [],
-"ym-sw-portablesocketboxymax803-specs": [
-[
-"Modelo",
-"YMAX-803"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-portablesocketboxymax804-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YMAX-804; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-portablesocketboxymax804-feats": [],
-"ym-sw-portablesocketboxymax804-specs": [
-[
-"Modelo",
-"YMAX-804"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-portablesocketboxymax805-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YMAX-805; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-portablesocketboxymax805-feats": [],
-"ym-sw-portablesocketboxymax805-specs": [
-[
-"Modelo",
-"YMAX-805"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-portablesocketboxymax806-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YMAX-806; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-portablesocketboxymax806-feats": [],
-"ym-sw-portablesocketboxymax806-specs": [
-[
-"Modelo",
-"YMAX-806"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-portablesocketboxymax807-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YMAX-807; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-portablesocketboxymax807-feats": [],
-"ym-sw-portablesocketboxymax807-specs": [
-[
-"Modelo",
-"YMAX-807"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-wallmountedangledsocketymg001-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-G001; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-wallmountedangledsocketymg001-feats": [],
-"ym-sw-wallmountedangledsocketymg001-specs": [
-[
-"Modelo",
-"YM-G001"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-wallmountedangledsocketymg002-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-G002; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-wallmountedangledsocketymg002-feats": [],
-"ym-sw-wallmountedangledsocketymg002-specs": [
-[
-"Modelo",
-"YM-G002"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym001-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-001; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym001-feats": [],
-"ym-sw-industrialwaterproofsocketboxym001-specs": [
-[
-"Modelo",
-"YM-001"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym002-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-002; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym002-feats": [],
-"ym-sw-industrialwaterproofsocketboxym002-specs": [
-[
-"Modelo",
-"YM-002"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym003-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-003; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym003-feats": [],
-"ym-sw-industrialwaterproofsocketboxym003-specs": [
-[
-"Modelo",
-"YM-003"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym004-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-004; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym004-feats": [],
-"ym-sw-industrialwaterproofsocketboxym004-specs": [
-[
-"Modelo",
-"YM-004"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym005-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-005; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym005-feats": [],
-"ym-sw-industrialwaterproofsocketboxym005-specs": [
-[
-"Modelo",
-"YM-005"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym006-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-006; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym006-feats": [],
-"ym-sw-industrialwaterproofsocketboxym006-specs": [
-[
-"Modelo",
-"YM-006"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym007-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-007; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym007-feats": [],
-"ym-sw-industrialwaterproofsocketboxym007-specs": [
-[
-"Modelo",
-"YM-007"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym008-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-008; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym008-feats": [],
-"ym-sw-industrialwaterproofsocketboxym008-specs": [
-[
-"Modelo",
-"YM-008"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym009-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-009; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym009-feats": [],
-"ym-sw-industrialwaterproofsocketboxym009-specs": [
-[
-"Modelo",
-"YM-009"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym010-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-010; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym010-feats": [],
-"ym-sw-industrialwaterproofsocketboxym010-specs": [
-[
-"Modelo",
-"YM-010"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym011-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-011; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym011-feats": [],
-"ym-sw-industrialwaterproofsocketboxym011-specs": [
-[
-"Modelo",
-"YM-011"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym012-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-012; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym012-feats": [],
-"ym-sw-industrialwaterproofsocketboxym012-specs": [
-[
-"Modelo",
-"YM-012"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym013-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-013; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym013-feats": [],
-"ym-sw-industrialwaterproofsocketboxym013-specs": [
-[
-"Modelo",
-"YM-013"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym014-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-014; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym014-feats": [],
-"ym-sw-industrialwaterproofsocketboxym014-specs": [
-[
-"Modelo",
-"YM-014"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym015-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-015; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym015-feats": [],
-"ym-sw-industrialwaterproofsocketboxym015-specs": [
-[
-"Modelo",
-"YM-015"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym016-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-016; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym016-feats": [],
-"ym-sw-industrialwaterproofsocketboxym016-specs": [
-[
-"Modelo",
-"YM-016"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym017-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-017; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym017-feats": [],
-"ym-sw-industrialwaterproofsocketboxym017-specs": [
-[
-"Modelo",
-"YM-017"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym018-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-018; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym018-feats": [],
-"ym-sw-industrialwaterproofsocketboxym018-specs": [
-[
-"Modelo",
-"YM-018"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym019-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-019; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym019-feats": [],
-"ym-sw-industrialwaterproofsocketboxym019-specs": [
-[
-"Modelo",
-"YM-019"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym020-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-020; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym020-feats": [],
-"ym-sw-industrialwaterproofsocketboxym020-specs": [
-[
-"Modelo",
-"YM-020"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym021-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-021; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym021-feats": [],
-"ym-sw-industrialwaterproofsocketboxym021-specs": [
-[
-"Modelo",
-"YM-021"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym023-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-023; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym023-feats": [],
-"ym-sw-industrialwaterproofsocketboxym023-specs": [
-[
-"Modelo",
-"YM-023"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym024-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-024; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym024-feats": [],
-"ym-sw-industrialwaterproofsocketboxym024-specs": [
-[
-"Modelo",
-"YM-024"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym025-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-025; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym025-feats": [],
-"ym-sw-industrialwaterproofsocketboxym025-specs": [
-[
-"Modelo",
-"YM-025"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym027-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-027; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-industrialwaterproofsocketboxym027-feats": [],
-"ym-sw-industrialwaterproofsocketboxym027-specs": [
-[
-"Modelo",
-"YM-027"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-wallmountedangledsocketymg001-1-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-G001; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-wallmountedangledsocketymg001-1-feats": [],
-"ym-sw-wallmountedangledsocketymg001-1-specs": [
-[
-"Modelo",
-"YM-G001"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-wallmountedangledsocketymg002-1-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-G002; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-wallmountedangledsocketymg002-1-feats": [],
-"ym-sw-wallmountedangledsocketymg002-1-specs": [
-[
-"Modelo",
-"YM-G002"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-wallmountedangledsocketymg003-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-G003; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-wallmountedangledsocketymg003-feats": [],
-"ym-sw-wallmountedangledsocketymg003-specs": [
-[
-"Modelo",
-"YM-G003"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-portablesocketboxym801-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : YM-801; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-portablesocketboxym801-feats": [],
-"ym-sw-portablesocketboxym801-specs": [
-[
-"Modelo",
-"YM-801"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-sw-portablesocketboxymu802-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Modelo : Portable Socket Box YM-U802; Material : plástico PC; Tipo : distribución industrial; Protección : impermeable / grado industrial.",
-"ym-sw-portablesocketboxymu802-feats": [],
-"ym-sw-portablesocketboxymu802-specs": [
-[
-"Modelo",
-"Portable Socket Box YM-U802"
-],
-[
-"Material",
-"plástico PC"
-],
-[
-"Tipo",
-"distribución industrial"
-],
-[
-"Protección",
-"impermeable / grado industrial"
-]
-],
-"ym-0141-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Comunicación : WiFi. Características clave: WiFi, toma, impermeable, home.",
-"ym-0141-feats": [
-"WiFi",
-"toma",
-"impermeable",
-"home",
-"life",
-"in-wall"
-],
-"ym-0141-specs": [
-[
-"Comunicación",
-"WiFi"
-]
-],
-"ym-0333-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Pantalla : LCD. Características clave: days, weekly, programmable, mini.",
-"ym-0333-feats": [
-"days",
-"weekly",
-"programmable",
-"mini",
-"timer",
-"interruptor"
-],
-"ym-0333-specs": [
-[
-"Pantalla",
-"LCD"
-]
-],
-"ym-0357-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Aplicación : Industrial and household power delivery; Material : Flame-retardant ABS / PC. Características clave: customize, portable, toma, distribución.",
-"ym-0357-feats": [
-"customize",
-"portable",
-"toma",
-"distribución",
-"industrial",
-"plug"
-],
-"ym-0357-specs": [
-[
-"Aplicación",
-"Industrial and household power delivery"
-],
-[
-"Material",
-"Flame-retardant ABS / PC"
-]
-],
-"ym-0374-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Aplicación : Industrial and household power delivery; Material : Flame-retardant ABS / PC. Características clave: industrial, impermeable, toma, distribución.",
-"ym-0374-feats": [
-"industrial",
-"impermeable",
-"toma",
-"distribución",
-"plug",
-"outlet"
-],
-"ym-0374-specs": [
-[
-"Aplicación",
-"Industrial and household power delivery"
-],
-[
-"Material",
-"Flame-retardant ABS / PC"
-]
-],
-"ym-0380-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Aplicación : Industrial and household power delivery; Material : Flame-retardant ABS / PC. Características clave: industry, plastic, impermeable, wall.",
-"ym-0380-feats": [
-"industry",
-"plastic",
-"impermeable",
-"wall",
-"mounted",
-"inclined"
-],
-"ym-0380-specs": [
-[
-"Aplicación",
-"Industrial and household power delivery"
-],
-[
-"Material",
-"Flame-retardant ABS / PC"
-]
-],
-"ym-0715-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : WiFi Smart Waterproof Socket; Protección : IP66 Waterproof; Smart Control : Alexa, Google Home, Smart Life App; Plug Type : EU, UK, Universal. Características clave: different, WiFi, impermeable, toma.",
-"ym-0715-feats": [
-"different",
-"WiFi",
-"impermeable",
-"toma",
-"home",
-"plug"
-],
-"ym-0715-specs": [
-[
-"Tipo",
-"WiFi Smart Waterproof Socket"
-],
-[
-"Protección",
-"IP66 Waterproof"
-],
-[
-"Smart Control",
-"Alexa, Google Home, Smart Life App"
-],
-[
-"Plug Type",
-"EU, UK, Universal"
-],
-[
-"Connectivity",
-"2.4GHz WiFi"
-],
-[
-"Aplicación",
-"Outdoor/Home Smart Power"
-]
-],
 "ym-0076-desc": "Un dispositivo de medición de energía de precisión para circuitos residenciales, comerciales e industriales. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Fase : trifásico; Tensión : 230 V; Tipo de corriente : CA; Pantalla : LCD. Características clave: rail-mounted, electricidad, activo, medidor de energía.",
 "ym-0076-feats": [
 "rail-mounted",
@@ -24449,6 +23407,1259 @@ if (typeof T !== "undefined") {
 [
 "Tipo",
 "Protection device"
+]
+],
+"ym-sw-portable-socket-box-ymax-801-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Portable Socket Box; Modelo : YMAX-801; Material : Flame-retardant PC; Aplicación : Temporary and portable power distribution. Características clave: portable socket box, retardante de llama, protección contra sobrecargas, easy carry.",
+"ym-sw-portable-socket-box-ymax-801-feats": [
+"portable socket box",
+"retardante de llama",
+"protección contra sobrecargas",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-801-specs": [
+[
+"Tipo",
+"Portable Socket Box"
+],
+[
+"Modelo",
+"YMAX-801"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-802-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Portable Socket Box; Modelo : YMAX-802; Material : Flame-retardant PC; Aplicación : Temporary and portable power distribution. Características clave: portable socket box, retardante de llama, protección contra sobrecargas, easy carry.",
+"ym-sw-portable-socket-box-ymax-802-feats": [
+"portable socket box",
+"retardante de llama",
+"protección contra sobrecargas",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-802-specs": [
+[
+"Tipo",
+"Portable Socket Box"
+],
+[
+"Modelo",
+"YMAX-802"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-803-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Portable Socket Box; Modelo : YMAX-803; Material : Flame-retardant PC; Aplicación : Temporary and portable power distribution. Características clave: portable socket box, retardante de llama, protección contra sobrecargas, easy carry.",
+"ym-sw-portable-socket-box-ymax-803-feats": [
+"portable socket box",
+"retardante de llama",
+"protección contra sobrecargas",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-803-specs": [
+[
+"Tipo",
+"Portable Socket Box"
+],
+[
+"Modelo",
+"YMAX-803"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-804-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Portable Socket Box; Modelo : YMAX-804; Material : Flame-retardant PC; Aplicación : Temporary and portable power distribution. Características clave: portable socket box, retardante de llama, protección contra sobrecargas, easy carry.",
+"ym-sw-portable-socket-box-ymax-804-feats": [
+"portable socket box",
+"retardante de llama",
+"protección contra sobrecargas",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-804-specs": [
+[
+"Tipo",
+"Portable Socket Box"
+],
+[
+"Modelo",
+"YMAX-804"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-805-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Portable Socket Box; Modelo : YMAX-805; Material : Flame-retardant PC; Aplicación : Temporary and portable power distribution. Características clave: portable socket box, retardante de llama, protección contra sobrecargas, easy carry.",
+"ym-sw-portable-socket-box-ymax-805-feats": [
+"portable socket box",
+"retardante de llama",
+"protección contra sobrecargas",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-805-specs": [
+[
+"Tipo",
+"Portable Socket Box"
+],
+[
+"Modelo",
+"YMAX-805"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-806-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Portable Socket Box; Modelo : YMAX-806; Material : Flame-retardant PC; Aplicación : Temporary and portable power distribution. Características clave: portable socket box, retardante de llama, protección contra sobrecargas, easy carry.",
+"ym-sw-portable-socket-box-ymax-806-feats": [
+"portable socket box",
+"retardante de llama",
+"protección contra sobrecargas",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-806-specs": [
+[
+"Tipo",
+"Portable Socket Box"
+],
+[
+"Modelo",
+"YMAX-806"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-807-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Portable Socket Box; Modelo : YMAX-807; Material : Flame-retardant PC; Aplicación : Temporary and portable power distribution. Características clave: portable socket box, retardante de llama, protección contra sobrecargas, easy carry.",
+"ym-sw-portable-socket-box-ymax-807-feats": [
+"portable socket box",
+"retardante de llama",
+"protección contra sobrecargas",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-807-specs": [
+[
+"Tipo",
+"Portable Socket Box"
+],
+[
+"Modelo",
+"YMAX-807"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-wall-mounted-bevel-socket-ym-e002-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Wall Mounted Socket; Modelo : YM-E002; Material : PC / ABS; Aplicación : Wall-mounted power outlets for workshops and homes. Características clave: wall mounted socket, retardante de llama, secure wiring, diseño compacto.",
+"ym-sw-wall-mounted-bevel-socket-ym-e002-feats": [
+"wall mounted socket",
+"retardante de llama",
+"secure wiring",
+"diseño compacto",
+"durable shell"
+],
+"ym-sw-wall-mounted-bevel-socket-ym-e002-specs": [
+[
+"Tipo",
+"Wall Mounted Socket"
+],
+[
+"Modelo",
+"YM-E002"
+],
+[
+"Material",
+"PC / ABS"
+],
+[
+"Aplicación",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e001-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Wall Mounted Socket; Modelo : YM-E001; Material : PC / ABS; Aplicación : Wall-mounted power outlets for workshops and homes. Características clave: wall mounted socket, retardante de llama, secure wiring, diseño compacto.",
+"ym-sw-wall-mounted-angled-socket-ym-e001-feats": [
+"wall mounted socket",
+"retardante de llama",
+"secure wiring",
+"diseño compacto",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e001-specs": [
+[
+"Tipo",
+"Wall Mounted Socket"
+],
+[
+"Modelo",
+"YM-E001"
+],
+[
+"Material",
+"PC / ABS"
+],
+[
+"Aplicación",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e004-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Wall Mounted Socket; Modelo : YM-E004; Material : PC / ABS; Aplicación : Wall-mounted power outlets for workshops and homes. Características clave: wall mounted socket, retardante de llama, secure wiring, diseño compacto.",
+"ym-sw-wall-mounted-angled-socket-ym-e004-feats": [
+"wall mounted socket",
+"retardante de llama",
+"secure wiring",
+"diseño compacto",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e004-specs": [
+[
+"Tipo",
+"Wall Mounted Socket"
+],
+[
+"Modelo",
+"YM-E004"
+],
+[
+"Material",
+"PC / ABS"
+],
+[
+"Aplicación",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e005-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Wall Mounted Socket; Modelo : YM-E005; Material : PC / ABS; Aplicación : Wall-mounted power outlets for workshops and homes. Características clave: wall mounted socket, retardante de llama, secure wiring, diseño compacto.",
+"ym-sw-wall-mounted-angled-socket-ym-e005-feats": [
+"wall mounted socket",
+"retardante de llama",
+"secure wiring",
+"diseño compacto",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e005-specs": [
+[
+"Tipo",
+"Wall Mounted Socket"
+],
+[
+"Modelo",
+"YM-E005"
+],
+[
+"Material",
+"PC / ABS"
+],
+[
+"Aplicación",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e006-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Wall Mounted Socket; Modelo : YM-E006; Material : PC / ABS; Aplicación : Wall-mounted power outlets for workshops and homes. Características clave: wall mounted socket, retardante de llama, secure wiring, diseño compacto.",
+"ym-sw-wall-mounted-angled-socket-ym-e006-feats": [
+"wall mounted socket",
+"retardante de llama",
+"secure wiring",
+"diseño compacto",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e006-specs": [
+[
+"Tipo",
+"Wall Mounted Socket"
+],
+[
+"Modelo",
+"YM-E006"
+],
+[
+"Material",
+"PC / ABS"
+],
+[
+"Aplicación",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e007-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Wall Mounted Socket; Modelo : YM-E007; Material : PC / ABS; Aplicación : Wall-mounted power outlets for workshops and homes. Características clave: wall mounted socket, retardante de llama, secure wiring, diseño compacto.",
+"ym-sw-wall-mounted-angled-socket-ym-e007-feats": [
+"wall mounted socket",
+"retardante de llama",
+"secure wiring",
+"diseño compacto",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e007-specs": [
+[
+"Tipo",
+"Wall Mounted Socket"
+],
+[
+"Modelo",
+"YM-E007"
+],
+[
+"Material",
+"PC / ABS"
+],
+[
+"Aplicación",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-001-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-001; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-001-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-001-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-001"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-002-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-002; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-002-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-002-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-002"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-003-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-003; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-003-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-003-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-003"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-004-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-004; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-004-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-004-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-004"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-005-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-005; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-005-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-005-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-005"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-006-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-006; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-006-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-006-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-006"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-007-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-007; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-007-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-007-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-007"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-008-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-008; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-008-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-008-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-008"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-009-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-009; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-009-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-009-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-009"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-010-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-010; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-010-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-010-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-010"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-011-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-011; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-011-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-011-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-011"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-012-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-012; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-012-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-012-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-012"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-013-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-013; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-013-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-013-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-013"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-014-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-014; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-014-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-014-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-014"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-015-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-015; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-015-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-015-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-015"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-016-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-016; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-016-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-016-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-016"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-017-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-017; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-017-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-017-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-017"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-018-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-018; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-018-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-018-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-018"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-019-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-019; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-019-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-019-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-019"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-020-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-020; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-020-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-020-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-020"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-021-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-021; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-021-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-021-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-021"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-023-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-023; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-023-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-023-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-023"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-024-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-024; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-024-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-024-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-024"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-025-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-025; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-025-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-025-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-025"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-027-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-027; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-027-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-027-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-027"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-g001-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-G001; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-wall-mounted-angled-socket-ym-g001-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-wall-mounted-angled-socket-ym-g001-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-G001"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-g002-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-G002; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-wall-mounted-angled-socket-ym-g002-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-wall-mounted-angled-socket-ym-g002-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-G002"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-g003-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Industrial Waterproof Socket Box; Modelo : YM-G003; Protección : IP65; Material : Flame-retardant PC. Características clave: impermeable, retardante de llama, industrial grade, ip65 protection.",
+"ym-sw-wall-mounted-angled-socket-ym-g003-feats": [
+"impermeable",
+"retardante de llama",
+"industrial grade",
+"ip65 protection",
+"resistente a la corrosión"
+],
+"ym-sw-wall-mounted-angled-socket-ym-g003-specs": [
+[
+"Tipo",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modelo",
+"YM-G003"
+],
+[
+"Protección",
+"IP65"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-portable-socket-box-ym-801-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Portable Socket Box; Modelo : YM-801; Material : Flame-retardant PC; Aplicación : Portable power distribution on construction sites. Características clave: portable socket box, retardante de llama, durable shell, safe outlets.",
+"ym-sw-portable-socket-box-ym-801-feats": [
+"portable socket box",
+"retardante de llama",
+"durable shell",
+"safe outlets"
+],
+"ym-sw-portable-socket-box-ym-801-specs": [
+[
+"Tipo",
+"Portable Socket Box"
+],
+[
+"Modelo",
+"YM-801"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Portable power distribution on construction sites"
+]
+],
+"ym-sw-portable-socket-box-ym-u802-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Portable Socket Box; Modelo : YM-U802; Material : Flame-retardant PC; Aplicación : Portable power distribution on construction sites. Características clave: portable socket box, retardante de llama, durable shell, safe outlets.",
+"ym-sw-portable-socket-box-ym-u802-feats": [
+"portable socket box",
+"retardante de llama",
+"durable shell",
+"safe outlets"
+],
+"ym-sw-portable-socket-box-ym-u802-specs": [
+[
+"Tipo",
+"Portable Socket Box"
+],
+[
+"Modelo",
+"YM-U802"
+],
+[
+"Material",
+"Flame-retardant PC"
+],
+[
+"Aplicación",
+"Portable power distribution on construction sites"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e002-desc": "Tomas y accesorios de cableado para una distribución eléctrica segura. Diseñado para un funcionamiento fiable y duradero a largo plazo. Principales especificaciones: Tipo : Wall Mounted Socket; Modelo : YM-E002; Material : PC / ABS; Aplicación : Wall-mounted power outlets for workshops and homes. Características clave: wall mounted socket, retardante de llama, secure wiring, diseño compacto.",
+"ym-sw-wall-mounted-angled-socket-ym-e002-feats": [
+"wall mounted socket",
+"retardante de llama",
+"secure wiring",
+"diseño compacto"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e002-specs": [
+[
+"Tipo",
+"Wall Mounted Socket"
+],
+[
+"Modelo",
+"YM-E002"
+],
+[
+"Material",
+"PC / ABS"
+],
+[
+"Aplicación",
+"Wall-mounted power outlets for workshops and homes"
 ]
 ],
 "sec-specs": "Especificaciones técnicas",

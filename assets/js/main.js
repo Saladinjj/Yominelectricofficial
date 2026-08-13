@@ -361,6 +361,18 @@ if (window.__ymT) {
 } else {
   window.__ymT = _YM_BASE;
 }
+/* ES / AR base translations (nav + shared UI) */
+const _NAV_MORE = {
+  es: { nav_home:'Inicio', nav_products:'Productos', nav_solutions:'Soluciones', nav_process:'Proceso', nav_about:'Acerca de', nav_contact:'Contacto', nav_blog:'Blog', nav_cta:'Obtener Cotizaci\u00f3n', ft_desc:'Soluciones de medici\u00f3n de energ\u00eda de precisi\u00f3n para compradores globales.', ft_copy:'\u00a9 2026 Yomin Electric Co., Ltd.' },
+  ar: { nav_home:'\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629', nav_products:'\u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a', nav_solutions:'\u0627\u0644\u062d\u0644\u0648\u0644', nav_process:'\u0627\u0644\u0639\u0645\u0644\u064a\u0629', nav_about:'\u0645\u0646 \u0646\u062d\u0646', nav_contact:'\u0627\u062a\u0635\u0644 \u0628\u0646\u0627', nav_blog:'\u0627\u0644\u0645\u062f\u0648\u0646\u0629', nav_cta:'\u0627\u0637\u0644\u0628 \u0639\u0631\u0636 \u0633\u0639\u0631', ft_desc:'\u062d\u0644\u0648\u0644 \u0642\u064a\u0627\u0633 \u0627\u0644\u0637\u0627\u0642\u0629 \u0627\u0644\u062f\u0642\u064a\u0642\u0629 \u0644\u0644\u0645\u0634\u062a\u0631\u064a\u0646 \u0639\u0627\u0644\u0645\u064a\u0627\u064b.', ft_copy:'\u00a9 2026 Yomin Electric Co., Ltd.' },
+  fr: { nav_blog:'Blog' }
+};
+if (typeof window.__ymT !== 'undefined') {
+  for (const _lg in _NAV_MORE) {
+    window.__ymT[_lg] = Object.assign({}, window.__ymT[_lg] || {}, _NAV_MORE[_lg]);
+  }
+}
+
 const T = window.__ymT; /* shared with index.html via window.__ymT */
 
 /* ─── STATE ─────────────────────────────────────────── */

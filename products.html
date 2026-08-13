@@ -33,14 +33,14 @@
     var idQs = idParam ? '&id=' + encodeURIComponent(idParam) : '';
     if (cat) {
       slug = SLUG[decodeURIComponent(cat.replace(/\+/g, ' ')).trim().toLowerCase()] || '';
-      location.replace(slug ? '/products?category=' + slug + idQs : '/products' + (idParam ? '?id=' + encodeURIComponent(idParam) : ''));
+      location.replace(slug ? '/products/' + slug + idQs : '/products' + (idParam ? '?id=' + encodeURIComponent(idParam) : ''));
       return;
     }
     if (category) {
       var c = decodeURIComponent(category.replace(/\+/g, ' ')).trim().toLowerCase();
       slug = SLUG[c] || (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(c) ? c : '');
       if (slug && slug !== category.toLowerCase()) {
-        location.replace('/products?category=' + slug + idQs);
+        location.replace('/products/' + slug + idQs);
         return;
       }
     }
@@ -49,7 +49,7 @@
       var rMeta = document.querySelector('meta[name="robots"]');
       if (rMeta) rMeta.content = 'noindex, follow';
     }
-    var canonUrl = 'https://www.yominelectric.com/products' + (slug ? '?category=' + slug : '') + (!slug && idParam ? '?id=' + encodeURIComponent(idParam) : '');
+    var canonUrl = 'https://www.yominelectric.com/products' + (slug ? '/' + slug : '') + (!slug && idParam ? '?id=' + encodeURIComponent(idParam) : '');
     // Update static canonical if needed
     var staticCanon = document.querySelector('link[rel="canonical"]');
     if (staticCanon) staticCanon.href = canonUrl;
@@ -2506,7 +2506,7 @@
       }
       // Update browser URL and page meta
       const slug = FILTER_SLUG[val] || CAT_SLUG_REVERSE[val] || '';
-      const path = slug ? '/products?category=' + slug : '/products';
+      const path = slug ? '/products/' + slug : '/products';
       if (location.pathname + location.search !== path) {
         history.pushState(null, '', path);
         const meta = getFilterMeta(val);
@@ -2714,7 +2714,7 @@
         document.head.appendChild(kw);
       } else { kw.content = keywords; }
       const catSlug = FILTER_SLUG[p.category] || CAT_SLUG_REVERSE[p.category] || 'other';
-      const productCanonUrl = 'https://www.yominelectric.com/products?category=' + catSlug + '&id=' + p.id;
+      const productCanonUrl = 'https://www.yominelectric.com/products/' + catSlug + '/' + nameSlug;
       let canonical = document.querySelector('link[rel="canonical"]');
       if (canonical) canonical.href = productCanonUrl;
       // Update og tags
@@ -3147,7 +3147,7 @@
       document.querySelectorAll('.pcard').forEach(c => c.classList.remove('pcard-active'));
       // Restore URL to category page without product params
       const slug = FILTER_SLUG[activeFilter] || CAT_SLUG_REVERSE[activeFilter] || '';
-      const url = slug ? '/products?category=' + slug : '/products';
+      const url = slug ? '/products/' + slug : '/products';
       history.replaceState(null, '', url);
       // Restore default SEO meta
       document.title = 'Energy Meters, CTs & Voltage Regulators | Yomin Electric';
@@ -3156,7 +3156,7 @@
       let kw = document.querySelector('meta[name="keywords"]');
       if (kw) kw.remove();
       let canonical = document.querySelector('link[rel="canonical"]');
-      if (canonical) canonical.href = slug ? 'https://www.yominelectric.com/products?category=' + slug : 'https://www.yominelectric.com/products';
+      if (canonical) canonical.href = slug ? 'https://www.yominelectric.com/products/' + slug : 'https://www.yominelectric.com/products';
       let ogTitle = document.querySelector('meta[property="og:title"]');
       if (ogTitle) ogTitle.content = 'Energy Meters, CTs and Voltage Regulators | Yomin Electric';
       let ogUrl = document.querySelector('meta[property="og:url"]');

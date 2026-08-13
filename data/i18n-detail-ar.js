@@ -655,1048 +655,6 @@ if (typeof T !== "undefined") {
 "Wall / Floor (model dependent)"
 ]
 ],
-"ym-sw-wallmountedangledsocketyme001-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E001; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-wallmountedangledsocketyme001-feats": [],
-"ym-sw-wallmountedangledsocketyme001-specs": [
-[
-"الطراز",
-"YM-E001"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-wallmountedangledsocketyme002-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E002; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-wallmountedangledsocketyme002-feats": [],
-"ym-sw-wallmountedangledsocketyme002-specs": [
-[
-"الطراز",
-"YM-E002"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-wallmountedangledsocketyme004-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E004; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-wallmountedangledsocketyme004-feats": [],
-"ym-sw-wallmountedangledsocketyme004-specs": [
-[
-"الطراز",
-"YM-E004"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-wallmountedangledsocketyme005-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E005; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-wallmountedangledsocketyme005-feats": [],
-"ym-sw-wallmountedangledsocketyme005-specs": [
-[
-"الطراز",
-"YM-E005"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-wallmountedangledsocketyme006-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E006; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-wallmountedangledsocketyme006-feats": [],
-"ym-sw-wallmountedangledsocketyme006-specs": [
-[
-"الطراز",
-"YM-E006"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-wallmountedangledsocketyme007-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E007; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-wallmountedangledsocketyme007-feats": [],
-"ym-sw-wallmountedangledsocketyme007-specs": [
-[
-"الطراز",
-"YM-E007"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-wallmountedbevelsocketyme002-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-E002; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-wallmountedbevelsocketyme002-feats": [],
-"ym-sw-wallmountedbevelsocketyme002-specs": [
-[
-"الطراز",
-"YM-E002"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-portablesocketboxymax801-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-801; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-portablesocketboxymax801-feats": [],
-"ym-sw-portablesocketboxymax801-specs": [
-[
-"الطراز",
-"YMAX-801"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-portablesocketboxymax802-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-802; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-portablesocketboxymax802-feats": [],
-"ym-sw-portablesocketboxymax802-specs": [
-[
-"الطراز",
-"YMAX-802"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-portablesocketboxymax803-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-803; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-portablesocketboxymax803-feats": [],
-"ym-sw-portablesocketboxymax803-specs": [
-[
-"الطراز",
-"YMAX-803"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-portablesocketboxymax804-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-804; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-portablesocketboxymax804-feats": [],
-"ym-sw-portablesocketboxymax804-specs": [
-[
-"الطراز",
-"YMAX-804"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-portablesocketboxymax805-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-805; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-portablesocketboxymax805-feats": [],
-"ym-sw-portablesocketboxymax805-specs": [
-[
-"الطراز",
-"YMAX-805"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-portablesocketboxymax806-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-806; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-portablesocketboxymax806-feats": [],
-"ym-sw-portablesocketboxymax806-specs": [
-[
-"الطراز",
-"YMAX-806"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-portablesocketboxymax807-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YMAX-807; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-portablesocketboxymax807-feats": [],
-"ym-sw-portablesocketboxymax807-specs": [
-[
-"الطراز",
-"YMAX-807"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-wallmountedangledsocketymg001-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-G001; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-wallmountedangledsocketymg001-feats": [],
-"ym-sw-wallmountedangledsocketymg001-specs": [
-[
-"الطراز",
-"YM-G001"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-wallmountedangledsocketymg002-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-G002; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-wallmountedangledsocketymg002-feats": [],
-"ym-sw-wallmountedangledsocketymg002-specs": [
-[
-"الطراز",
-"YM-G002"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym001-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-001; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym001-feats": [],
-"ym-sw-industrialwaterproofsocketboxym001-specs": [
-[
-"الطراز",
-"YM-001"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym002-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-002; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym002-feats": [],
-"ym-sw-industrialwaterproofsocketboxym002-specs": [
-[
-"الطراز",
-"YM-002"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym003-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-003; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym003-feats": [],
-"ym-sw-industrialwaterproofsocketboxym003-specs": [
-[
-"الطراز",
-"YM-003"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym004-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-004; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym004-feats": [],
-"ym-sw-industrialwaterproofsocketboxym004-specs": [
-[
-"الطراز",
-"YM-004"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym005-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-005; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym005-feats": [],
-"ym-sw-industrialwaterproofsocketboxym005-specs": [
-[
-"الطراز",
-"YM-005"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym006-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-006; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym006-feats": [],
-"ym-sw-industrialwaterproofsocketboxym006-specs": [
-[
-"الطراز",
-"YM-006"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym007-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-007; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym007-feats": [],
-"ym-sw-industrialwaterproofsocketboxym007-specs": [
-[
-"الطراز",
-"YM-007"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym008-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-008; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym008-feats": [],
-"ym-sw-industrialwaterproofsocketboxym008-specs": [
-[
-"الطراز",
-"YM-008"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym009-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-009; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym009-feats": [],
-"ym-sw-industrialwaterproofsocketboxym009-specs": [
-[
-"الطراز",
-"YM-009"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym010-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-010; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym010-feats": [],
-"ym-sw-industrialwaterproofsocketboxym010-specs": [
-[
-"الطراز",
-"YM-010"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym011-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-011; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym011-feats": [],
-"ym-sw-industrialwaterproofsocketboxym011-specs": [
-[
-"الطراز",
-"YM-011"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym012-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-012; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym012-feats": [],
-"ym-sw-industrialwaterproofsocketboxym012-specs": [
-[
-"الطراز",
-"YM-012"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym013-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-013; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym013-feats": [],
-"ym-sw-industrialwaterproofsocketboxym013-specs": [
-[
-"الطراز",
-"YM-013"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym014-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-014; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym014-feats": [],
-"ym-sw-industrialwaterproofsocketboxym014-specs": [
-[
-"الطراز",
-"YM-014"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym015-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-015; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym015-feats": [],
-"ym-sw-industrialwaterproofsocketboxym015-specs": [
-[
-"الطراز",
-"YM-015"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym016-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-016; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym016-feats": [],
-"ym-sw-industrialwaterproofsocketboxym016-specs": [
-[
-"الطراز",
-"YM-016"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym017-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-017; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym017-feats": [],
-"ym-sw-industrialwaterproofsocketboxym017-specs": [
-[
-"الطراز",
-"YM-017"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym018-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-018; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym018-feats": [],
-"ym-sw-industrialwaterproofsocketboxym018-specs": [
-[
-"الطراز",
-"YM-018"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym019-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-019; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym019-feats": [],
-"ym-sw-industrialwaterproofsocketboxym019-specs": [
-[
-"الطراز",
-"YM-019"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym020-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-020; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym020-feats": [],
-"ym-sw-industrialwaterproofsocketboxym020-specs": [
-[
-"الطراز",
-"YM-020"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym021-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-021; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym021-feats": [],
-"ym-sw-industrialwaterproofsocketboxym021-specs": [
-[
-"الطراز",
-"YM-021"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym023-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-023; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym023-feats": [],
-"ym-sw-industrialwaterproofsocketboxym023-specs": [
-[
-"الطراز",
-"YM-023"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym024-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-024; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym024-feats": [],
-"ym-sw-industrialwaterproofsocketboxym024-specs": [
-[
-"الطراز",
-"YM-024"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym025-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-025; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym025-feats": [],
-"ym-sw-industrialwaterproofsocketboxym025-specs": [
-[
-"الطراز",
-"YM-025"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym027-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-027; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-industrialwaterproofsocketboxym027-feats": [],
-"ym-sw-industrialwaterproofsocketboxym027-specs": [
-[
-"الطراز",
-"YM-027"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-wallmountedangledsocketymg001-1-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-G001; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-wallmountedangledsocketymg001-1-feats": [],
-"ym-sw-wallmountedangledsocketymg001-1-specs": [
-[
-"الطراز",
-"YM-G001"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-wallmountedangledsocketymg002-1-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-G002; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-wallmountedangledsocketymg002-1-feats": [],
-"ym-sw-wallmountedangledsocketymg002-1-specs": [
-[
-"الطراز",
-"YM-G002"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-wallmountedangledsocketymg003-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-G003; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-wallmountedangledsocketymg003-feats": [],
-"ym-sw-wallmountedangledsocketymg003-specs": [
-[
-"الطراز",
-"YM-G003"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-portablesocketboxym801-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : YM-801; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-portablesocketboxym801-feats": [],
-"ym-sw-portablesocketboxym801-specs": [
-[
-"الطراز",
-"YM-801"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-sw-portablesocketboxymu802-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطراز : Portable Socket Box YM-U802; المادة : بلاستيك PC; النوع : توزيع صناعي; الحماية : مقاوم للماء / درجة صناعية.",
-"ym-sw-portablesocketboxymu802-feats": [],
-"ym-sw-portablesocketboxymu802-specs": [
-[
-"الطراز",
-"Portable Socket Box YM-U802"
-],
-[
-"المادة",
-"بلاستيك PC"
-],
-[
-"النوع",
-"توزيع صناعي"
-],
-[
-"الحماية",
-"مقاوم للماء / درجة صناعية"
-]
-],
-"ym-0141-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الاتصال : واي فاي. الميزات الرئيسية: واي فاي, مقبس, مقاوم للماء, home.",
-"ym-0141-feats": [
-"واي فاي",
-"مقبس",
-"مقاوم للماء",
-"home",
-"life",
-"in-wall"
-],
-"ym-0141-specs": [
-[
-"الاتصال",
-"واي فاي"
-]
-],
-"ym-0333-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الشاشة : شاشة LCD. الميزات الرئيسية: days, weekly, programmable, mini.",
-"ym-0333-feats": [
-"days",
-"weekly",
-"programmable",
-"mini",
-"timer",
-"مفتاح"
-],
-"ym-0333-specs": [
-[
-"الشاشة",
-"شاشة LCD"
-]
-],
-"ym-0357-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Industrial and household power delivery; المادة : Flame-retardant ABS / PC. الميزات الرئيسية: customize, portable, مقبس, توزيع.",
-"ym-0357-feats": [
-"customize",
-"portable",
-"مقبس",
-"توزيع",
-"صناعي",
-"plug"
-],
-"ym-0357-specs": [
-[
-"التطبيق",
-"Industrial and household power delivery"
-],
-[
-"المادة",
-"Flame-retardant ABS / PC"
-]
-],
-"ym-0374-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Industrial and household power delivery; المادة : Flame-retardant ABS / PC. الميزات الرئيسية: صناعي, مقاوم للماء, مقبس, توزيع.",
-"ym-0374-feats": [
-"صناعي",
-"مقاوم للماء",
-"مقبس",
-"توزيع",
-"plug",
-"outlet"
-],
-"ym-0374-specs": [
-[
-"التطبيق",
-"Industrial and household power delivery"
-],
-[
-"المادة",
-"Flame-retardant ABS / PC"
-]
-],
-"ym-0380-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: التطبيق : Industrial and household power delivery; المادة : Flame-retardant ABS / PC. الميزات الرئيسية: industry, plastic, مقاوم للماء, wall.",
-"ym-0380-feats": [
-"industry",
-"plastic",
-"مقاوم للماء",
-"wall",
-"mounted",
-"inclined"
-],
-"ym-0380-specs": [
-[
-"التطبيق",
-"Industrial and household power delivery"
-],
-[
-"المادة",
-"Flame-retardant ABS / PC"
-]
-],
-"ym-0715-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : WiFi Smart Waterproof Socket; الحماية : IP66 Waterproof; Smart Control : Alexa, Google Home, Smart Life App; Plug Type : EU, UK, Universal. الميزات الرئيسية: different, واي فاي, مقاوم للماء, مقبس.",
-"ym-0715-feats": [
-"different",
-"واي فاي",
-"مقاوم للماء",
-"مقبس",
-"home",
-"plug"
-],
-"ym-0715-specs": [
-[
-"النوع",
-"WiFi Smart Waterproof Socket"
-],
-[
-"الحماية",
-"IP66 Waterproof"
-],
-[
-"Smart Control",
-"Alexa, Google Home, Smart Life App"
-],
-[
-"Plug Type",
-"EU, UK, Universal"
-],
-[
-"Connectivity",
-"2.4GHz WiFi"
-],
-[
-"التطبيق",
-"Outdoor/Home Smart Power"
-]
-],
 "ym-0076-desc": "جهاز قياس طاقة دقيق للدوائر السكنية والتجارية والصناعية. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: الطور : ثلاثي الطور; الجهد : 230 فولت; نوع التيار : تيار متردد; الشاشة : شاشة LCD. الميزات الرئيسية: rail-mounted, كهرباء, نشط, عداد الطاقة.",
 "ym-0076-feats": [
 "rail-mounted",
@@ -24449,6 +23407,1259 @@ if (typeof T !== "undefined") {
 [
 "النوع",
 "Protection device"
+]
+],
+"ym-sw-portable-socket-box-ymax-801-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Portable Socket Box; الطراز : YMAX-801; المادة : Flame-retardant PC; التطبيق : Temporary and portable power distribution. الميزات الرئيسية: portable socket box, مقاوم للهب, حماية من الحمل الزائد, easy carry.",
+"ym-sw-portable-socket-box-ymax-801-feats": [
+"portable socket box",
+"مقاوم للهب",
+"حماية من الحمل الزائد",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-801-specs": [
+[
+"النوع",
+"Portable Socket Box"
+],
+[
+"الطراز",
+"YMAX-801"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-802-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Portable Socket Box; الطراز : YMAX-802; المادة : Flame-retardant PC; التطبيق : Temporary and portable power distribution. الميزات الرئيسية: portable socket box, مقاوم للهب, حماية من الحمل الزائد, easy carry.",
+"ym-sw-portable-socket-box-ymax-802-feats": [
+"portable socket box",
+"مقاوم للهب",
+"حماية من الحمل الزائد",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-802-specs": [
+[
+"النوع",
+"Portable Socket Box"
+],
+[
+"الطراز",
+"YMAX-802"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-803-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Portable Socket Box; الطراز : YMAX-803; المادة : Flame-retardant PC; التطبيق : Temporary and portable power distribution. الميزات الرئيسية: portable socket box, مقاوم للهب, حماية من الحمل الزائد, easy carry.",
+"ym-sw-portable-socket-box-ymax-803-feats": [
+"portable socket box",
+"مقاوم للهب",
+"حماية من الحمل الزائد",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-803-specs": [
+[
+"النوع",
+"Portable Socket Box"
+],
+[
+"الطراز",
+"YMAX-803"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-804-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Portable Socket Box; الطراز : YMAX-804; المادة : Flame-retardant PC; التطبيق : Temporary and portable power distribution. الميزات الرئيسية: portable socket box, مقاوم للهب, حماية من الحمل الزائد, easy carry.",
+"ym-sw-portable-socket-box-ymax-804-feats": [
+"portable socket box",
+"مقاوم للهب",
+"حماية من الحمل الزائد",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-804-specs": [
+[
+"النوع",
+"Portable Socket Box"
+],
+[
+"الطراز",
+"YMAX-804"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-805-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Portable Socket Box; الطراز : YMAX-805; المادة : Flame-retardant PC; التطبيق : Temporary and portable power distribution. الميزات الرئيسية: portable socket box, مقاوم للهب, حماية من الحمل الزائد, easy carry.",
+"ym-sw-portable-socket-box-ymax-805-feats": [
+"portable socket box",
+"مقاوم للهب",
+"حماية من الحمل الزائد",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-805-specs": [
+[
+"النوع",
+"Portable Socket Box"
+],
+[
+"الطراز",
+"YMAX-805"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-806-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Portable Socket Box; الطراز : YMAX-806; المادة : Flame-retardant PC; التطبيق : Temporary and portable power distribution. الميزات الرئيسية: portable socket box, مقاوم للهب, حماية من الحمل الزائد, easy carry.",
+"ym-sw-portable-socket-box-ymax-806-feats": [
+"portable socket box",
+"مقاوم للهب",
+"حماية من الحمل الزائد",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-806-specs": [
+[
+"النوع",
+"Portable Socket Box"
+],
+[
+"الطراز",
+"YMAX-806"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-807-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Portable Socket Box; الطراز : YMAX-807; المادة : Flame-retardant PC; التطبيق : Temporary and portable power distribution. الميزات الرئيسية: portable socket box, مقاوم للهب, حماية من الحمل الزائد, easy carry.",
+"ym-sw-portable-socket-box-ymax-807-feats": [
+"portable socket box",
+"مقاوم للهب",
+"حماية من الحمل الزائد",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-807-specs": [
+[
+"النوع",
+"Portable Socket Box"
+],
+[
+"الطراز",
+"YMAX-807"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-wall-mounted-bevel-socket-ym-e002-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Wall Mounted Socket; الطراز : YM-E002; المادة : PC / ABS; التطبيق : Wall-mounted power outlets for workshops and homes. الميزات الرئيسية: wall mounted socket, مقاوم للهب, secure wiring, تصميم مضغوط.",
+"ym-sw-wall-mounted-bevel-socket-ym-e002-feats": [
+"wall mounted socket",
+"مقاوم للهب",
+"secure wiring",
+"تصميم مضغوط",
+"durable shell"
+],
+"ym-sw-wall-mounted-bevel-socket-ym-e002-specs": [
+[
+"النوع",
+"Wall Mounted Socket"
+],
+[
+"الطراز",
+"YM-E002"
+],
+[
+"المادة",
+"PC / ABS"
+],
+[
+"التطبيق",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e001-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Wall Mounted Socket; الطراز : YM-E001; المادة : PC / ABS; التطبيق : Wall-mounted power outlets for workshops and homes. الميزات الرئيسية: wall mounted socket, مقاوم للهب, secure wiring, تصميم مضغوط.",
+"ym-sw-wall-mounted-angled-socket-ym-e001-feats": [
+"wall mounted socket",
+"مقاوم للهب",
+"secure wiring",
+"تصميم مضغوط",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e001-specs": [
+[
+"النوع",
+"Wall Mounted Socket"
+],
+[
+"الطراز",
+"YM-E001"
+],
+[
+"المادة",
+"PC / ABS"
+],
+[
+"التطبيق",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e004-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Wall Mounted Socket; الطراز : YM-E004; المادة : PC / ABS; التطبيق : Wall-mounted power outlets for workshops and homes. الميزات الرئيسية: wall mounted socket, مقاوم للهب, secure wiring, تصميم مضغوط.",
+"ym-sw-wall-mounted-angled-socket-ym-e004-feats": [
+"wall mounted socket",
+"مقاوم للهب",
+"secure wiring",
+"تصميم مضغوط",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e004-specs": [
+[
+"النوع",
+"Wall Mounted Socket"
+],
+[
+"الطراز",
+"YM-E004"
+],
+[
+"المادة",
+"PC / ABS"
+],
+[
+"التطبيق",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e005-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Wall Mounted Socket; الطراز : YM-E005; المادة : PC / ABS; التطبيق : Wall-mounted power outlets for workshops and homes. الميزات الرئيسية: wall mounted socket, مقاوم للهب, secure wiring, تصميم مضغوط.",
+"ym-sw-wall-mounted-angled-socket-ym-e005-feats": [
+"wall mounted socket",
+"مقاوم للهب",
+"secure wiring",
+"تصميم مضغوط",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e005-specs": [
+[
+"النوع",
+"Wall Mounted Socket"
+],
+[
+"الطراز",
+"YM-E005"
+],
+[
+"المادة",
+"PC / ABS"
+],
+[
+"التطبيق",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e006-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Wall Mounted Socket; الطراز : YM-E006; المادة : PC / ABS; التطبيق : Wall-mounted power outlets for workshops and homes. الميزات الرئيسية: wall mounted socket, مقاوم للهب, secure wiring, تصميم مضغوط.",
+"ym-sw-wall-mounted-angled-socket-ym-e006-feats": [
+"wall mounted socket",
+"مقاوم للهب",
+"secure wiring",
+"تصميم مضغوط",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e006-specs": [
+[
+"النوع",
+"Wall Mounted Socket"
+],
+[
+"الطراز",
+"YM-E006"
+],
+[
+"المادة",
+"PC / ABS"
+],
+[
+"التطبيق",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e007-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Wall Mounted Socket; الطراز : YM-E007; المادة : PC / ABS; التطبيق : Wall-mounted power outlets for workshops and homes. الميزات الرئيسية: wall mounted socket, مقاوم للهب, secure wiring, تصميم مضغوط.",
+"ym-sw-wall-mounted-angled-socket-ym-e007-feats": [
+"wall mounted socket",
+"مقاوم للهب",
+"secure wiring",
+"تصميم مضغوط",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e007-specs": [
+[
+"النوع",
+"Wall Mounted Socket"
+],
+[
+"الطراز",
+"YM-E007"
+],
+[
+"المادة",
+"PC / ABS"
+],
+[
+"التطبيق",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-001-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-001; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-001-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-001-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-001"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-002-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-002; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-002-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-002-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-002"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-003-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-003; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-003-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-003-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-003"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-004-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-004; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-004-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-004-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-004"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-005-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-005; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-005-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-005-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-005"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-006-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-006; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-006-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-006-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-006"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-007-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-007; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-007-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-007-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-007"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-008-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-008; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-008-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-008-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-008"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-009-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-009; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-009-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-009-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-009"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-010-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-010; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-010-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-010-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-010"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-011-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-011; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-011-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-011-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-011"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-012-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-012; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-012-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-012-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-012"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-013-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-013; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-013-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-013-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-013"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-014-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-014; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-014-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-014-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-014"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-015-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-015; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-015-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-015-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-015"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-016-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-016; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-016-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-016-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-016"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-017-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-017; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-017-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-017-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-017"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-018-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-018; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-018-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-018-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-018"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-019-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-019; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-019-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-019-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-019"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-020-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-020; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-020-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-020-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-020"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-021-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-021; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-021-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-021-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-021"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-023-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-023; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-023-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-023-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-023"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-024-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-024; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-024-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-024-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-024"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-025-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-025; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-025-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-025-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-025"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-027-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-027; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-027-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-027-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-027"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-g001-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-G001; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-wall-mounted-angled-socket-ym-g001-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-wall-mounted-angled-socket-ym-g001-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-G001"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-g002-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-G002; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-wall-mounted-angled-socket-ym-g002-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-wall-mounted-angled-socket-ym-g002-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-G002"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-g003-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Industrial Waterproof Socket Box; الطراز : YM-G003; الحماية : IP65; المادة : Flame-retardant PC. الميزات الرئيسية: مقاوم للماء, مقاوم للهب, industrial grade, ip65 protection.",
+"ym-sw-wall-mounted-angled-socket-ym-g003-feats": [
+"مقاوم للماء",
+"مقاوم للهب",
+"industrial grade",
+"ip65 protection",
+"مقاوم للتآكل"
+],
+"ym-sw-wall-mounted-angled-socket-ym-g003-specs": [
+[
+"النوع",
+"Industrial Waterproof Socket Box"
+],
+[
+"الطراز",
+"YM-G003"
+],
+[
+"الحماية",
+"IP65"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-portable-socket-box-ym-801-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Portable Socket Box; الطراز : YM-801; المادة : Flame-retardant PC; التطبيق : Portable power distribution on construction sites. الميزات الرئيسية: portable socket box, مقاوم للهب, durable shell, safe outlets.",
+"ym-sw-portable-socket-box-ym-801-feats": [
+"portable socket box",
+"مقاوم للهب",
+"durable shell",
+"safe outlets"
+],
+"ym-sw-portable-socket-box-ym-801-specs": [
+[
+"النوع",
+"Portable Socket Box"
+],
+[
+"الطراز",
+"YM-801"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Portable power distribution on construction sites"
+]
+],
+"ym-sw-portable-socket-box-ym-u802-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Portable Socket Box; الطراز : YM-U802; المادة : Flame-retardant PC; التطبيق : Portable power distribution on construction sites. الميزات الرئيسية: portable socket box, مقاوم للهب, durable shell, safe outlets.",
+"ym-sw-portable-socket-box-ym-u802-feats": [
+"portable socket box",
+"مقاوم للهب",
+"durable shell",
+"safe outlets"
+],
+"ym-sw-portable-socket-box-ym-u802-specs": [
+[
+"النوع",
+"Portable Socket Box"
+],
+[
+"الطراز",
+"YM-U802"
+],
+[
+"المادة",
+"Flame-retardant PC"
+],
+[
+"التطبيق",
+"Portable power distribution on construction sites"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e002-desc": "مقابس وملحقات توصيل لتوزيع كهربائي آمن. مصمم لتشغيل موثوق وطويل الأمد. المواصفات الرئيسية: النوع : Wall Mounted Socket; الطراز : YM-E002; المادة : PC / ABS; التطبيق : Wall-mounted power outlets for workshops and homes. الميزات الرئيسية: wall mounted socket, مقاوم للهب, secure wiring, تصميم مضغوط.",
+"ym-sw-wall-mounted-angled-socket-ym-e002-feats": [
+"wall mounted socket",
+"مقاوم للهب",
+"secure wiring",
+"تصميم مضغوط"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e002-specs": [
+[
+"النوع",
+"Wall Mounted Socket"
+],
+[
+"الطراز",
+"YM-E002"
+],
+[
+"المادة",
+"PC / ABS"
+],
+[
+"التطبيق",
+"Wall-mounted power outlets for workshops and homes"
 ]
 ],
 "sec-specs": "المواصفات الفنية",

@@ -655,1048 +655,6 @@ if (typeof T !== "undefined") {
 "Wall / Floor (model dependent)"
 ]
 ],
-"ym-sw-wallmountedangledsocketyme001-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-E001; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-wallmountedangledsocketyme001-feats": [],
-"ym-sw-wallmountedangledsocketyme001-specs": [
-[
-"Modèle",
-"YM-E001"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-wallmountedangledsocketyme002-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-E002; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-wallmountedangledsocketyme002-feats": [],
-"ym-sw-wallmountedangledsocketyme002-specs": [
-[
-"Modèle",
-"YM-E002"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-wallmountedangledsocketyme004-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-E004; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-wallmountedangledsocketyme004-feats": [],
-"ym-sw-wallmountedangledsocketyme004-specs": [
-[
-"Modèle",
-"YM-E004"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-wallmountedangledsocketyme005-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-E005; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-wallmountedangledsocketyme005-feats": [],
-"ym-sw-wallmountedangledsocketyme005-specs": [
-[
-"Modèle",
-"YM-E005"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-wallmountedangledsocketyme006-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-E006; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-wallmountedangledsocketyme006-feats": [],
-"ym-sw-wallmountedangledsocketyme006-specs": [
-[
-"Modèle",
-"YM-E006"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-wallmountedangledsocketyme007-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-E007; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-wallmountedangledsocketyme007-feats": [],
-"ym-sw-wallmountedangledsocketyme007-specs": [
-[
-"Modèle",
-"YM-E007"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-wallmountedbevelsocketyme002-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-E002; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-wallmountedbevelsocketyme002-feats": [],
-"ym-sw-wallmountedbevelsocketyme002-specs": [
-[
-"Modèle",
-"YM-E002"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-portablesocketboxymax801-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YMAX-801; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-portablesocketboxymax801-feats": [],
-"ym-sw-portablesocketboxymax801-specs": [
-[
-"Modèle",
-"YMAX-801"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-portablesocketboxymax802-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YMAX-802; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-portablesocketboxymax802-feats": [],
-"ym-sw-portablesocketboxymax802-specs": [
-[
-"Modèle",
-"YMAX-802"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-portablesocketboxymax803-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YMAX-803; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-portablesocketboxymax803-feats": [],
-"ym-sw-portablesocketboxymax803-specs": [
-[
-"Modèle",
-"YMAX-803"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-portablesocketboxymax804-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YMAX-804; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-portablesocketboxymax804-feats": [],
-"ym-sw-portablesocketboxymax804-specs": [
-[
-"Modèle",
-"YMAX-804"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-portablesocketboxymax805-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YMAX-805; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-portablesocketboxymax805-feats": [],
-"ym-sw-portablesocketboxymax805-specs": [
-[
-"Modèle",
-"YMAX-805"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-portablesocketboxymax806-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YMAX-806; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-portablesocketboxymax806-feats": [],
-"ym-sw-portablesocketboxymax806-specs": [
-[
-"Modèle",
-"YMAX-806"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-portablesocketboxymax807-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YMAX-807; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-portablesocketboxymax807-feats": [],
-"ym-sw-portablesocketboxymax807-specs": [
-[
-"Modèle",
-"YMAX-807"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-wallmountedangledsocketymg001-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-G001; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-wallmountedangledsocketymg001-feats": [],
-"ym-sw-wallmountedangledsocketymg001-specs": [
-[
-"Modèle",
-"YM-G001"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-wallmountedangledsocketymg002-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-G002; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-wallmountedangledsocketymg002-feats": [],
-"ym-sw-wallmountedangledsocketymg002-specs": [
-[
-"Modèle",
-"YM-G002"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym001-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-001; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym001-feats": [],
-"ym-sw-industrialwaterproofsocketboxym001-specs": [
-[
-"Modèle",
-"YM-001"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym002-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-002; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym002-feats": [],
-"ym-sw-industrialwaterproofsocketboxym002-specs": [
-[
-"Modèle",
-"YM-002"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym003-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-003; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym003-feats": [],
-"ym-sw-industrialwaterproofsocketboxym003-specs": [
-[
-"Modèle",
-"YM-003"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym004-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-004; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym004-feats": [],
-"ym-sw-industrialwaterproofsocketboxym004-specs": [
-[
-"Modèle",
-"YM-004"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym005-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-005; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym005-feats": [],
-"ym-sw-industrialwaterproofsocketboxym005-specs": [
-[
-"Modèle",
-"YM-005"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym006-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-006; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym006-feats": [],
-"ym-sw-industrialwaterproofsocketboxym006-specs": [
-[
-"Modèle",
-"YM-006"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym007-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-007; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym007-feats": [],
-"ym-sw-industrialwaterproofsocketboxym007-specs": [
-[
-"Modèle",
-"YM-007"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym008-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-008; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym008-feats": [],
-"ym-sw-industrialwaterproofsocketboxym008-specs": [
-[
-"Modèle",
-"YM-008"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym009-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-009; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym009-feats": [],
-"ym-sw-industrialwaterproofsocketboxym009-specs": [
-[
-"Modèle",
-"YM-009"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym010-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-010; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym010-feats": [],
-"ym-sw-industrialwaterproofsocketboxym010-specs": [
-[
-"Modèle",
-"YM-010"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym011-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-011; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym011-feats": [],
-"ym-sw-industrialwaterproofsocketboxym011-specs": [
-[
-"Modèle",
-"YM-011"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym012-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-012; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym012-feats": [],
-"ym-sw-industrialwaterproofsocketboxym012-specs": [
-[
-"Modèle",
-"YM-012"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym013-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-013; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym013-feats": [],
-"ym-sw-industrialwaterproofsocketboxym013-specs": [
-[
-"Modèle",
-"YM-013"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym014-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-014; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym014-feats": [],
-"ym-sw-industrialwaterproofsocketboxym014-specs": [
-[
-"Modèle",
-"YM-014"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym015-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-015; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym015-feats": [],
-"ym-sw-industrialwaterproofsocketboxym015-specs": [
-[
-"Modèle",
-"YM-015"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym016-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-016; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym016-feats": [],
-"ym-sw-industrialwaterproofsocketboxym016-specs": [
-[
-"Modèle",
-"YM-016"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym017-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-017; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym017-feats": [],
-"ym-sw-industrialwaterproofsocketboxym017-specs": [
-[
-"Modèle",
-"YM-017"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym018-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-018; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym018-feats": [],
-"ym-sw-industrialwaterproofsocketboxym018-specs": [
-[
-"Modèle",
-"YM-018"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym019-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-019; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym019-feats": [],
-"ym-sw-industrialwaterproofsocketboxym019-specs": [
-[
-"Modèle",
-"YM-019"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym020-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-020; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym020-feats": [],
-"ym-sw-industrialwaterproofsocketboxym020-specs": [
-[
-"Modèle",
-"YM-020"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym021-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-021; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym021-feats": [],
-"ym-sw-industrialwaterproofsocketboxym021-specs": [
-[
-"Modèle",
-"YM-021"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym023-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-023; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym023-feats": [],
-"ym-sw-industrialwaterproofsocketboxym023-specs": [
-[
-"Modèle",
-"YM-023"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym024-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-024; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym024-feats": [],
-"ym-sw-industrialwaterproofsocketboxym024-specs": [
-[
-"Modèle",
-"YM-024"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym025-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-025; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym025-feats": [],
-"ym-sw-industrialwaterproofsocketboxym025-specs": [
-[
-"Modèle",
-"YM-025"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-industrialwaterproofsocketboxym027-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-027; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-industrialwaterproofsocketboxym027-feats": [],
-"ym-sw-industrialwaterproofsocketboxym027-specs": [
-[
-"Modèle",
-"YM-027"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-wallmountedangledsocketymg001-1-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-G001; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-wallmountedangledsocketymg001-1-feats": [],
-"ym-sw-wallmountedangledsocketymg001-1-specs": [
-[
-"Modèle",
-"YM-G001"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-wallmountedangledsocketymg002-1-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-G002; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-wallmountedangledsocketymg002-1-feats": [],
-"ym-sw-wallmountedangledsocketymg002-1-specs": [
-[
-"Modèle",
-"YM-G002"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-wallmountedangledsocketymg003-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-G003; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-wallmountedangledsocketymg003-feats": [],
-"ym-sw-wallmountedangledsocketymg003-specs": [
-[
-"Modèle",
-"YM-G003"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-portablesocketboxym801-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : YM-801; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-portablesocketboxym801-feats": [],
-"ym-sw-portablesocketboxym801-specs": [
-[
-"Modèle",
-"YM-801"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-sw-portablesocketboxymu802-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Modèle : Portable Socket Box YM-U802; Matériau : plastique PC; Type : distribution industrielle; Protection : étanche / qualité industrielle.",
-"ym-sw-portablesocketboxymu802-feats": [],
-"ym-sw-portablesocketboxymu802-specs": [
-[
-"Modèle",
-"Portable Socket Box YM-U802"
-],
-[
-"Matériau",
-"plastique PC"
-],
-[
-"Type",
-"distribution industrielle"
-],
-[
-"Protection",
-"étanche / qualité industrielle"
-]
-],
-"ym-0141-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Communication : WiFi. Caractéristiques clés : WiFi, prise, étanche, home.",
-"ym-0141-feats": [
-"WiFi",
-"prise",
-"étanche",
-"home",
-"life",
-"in-wall"
-],
-"ym-0141-specs": [
-[
-"Communication",
-"WiFi"
-]
-],
-"ym-0333-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Affichage : LCD. Caractéristiques clés : days, weekly, programmable, mini.",
-"ym-0333-feats": [
-"days",
-"weekly",
-"programmable",
-"mini",
-"timer",
-"interrupteur"
-],
-"ym-0333-specs": [
-[
-"Affichage",
-"LCD"
-]
-],
-"ym-0357-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Application : Industrial and household power delivery; Matériau : Flame-retardant ABS / PC. Caractéristiques clés : customize, portable, prise, distribution.",
-"ym-0357-feats": [
-"customize",
-"portable",
-"prise",
-"distribution",
-"industriel",
-"plug"
-],
-"ym-0357-specs": [
-[
-"Application",
-"Industrial and household power delivery"
-],
-[
-"Matériau",
-"Flame-retardant ABS / PC"
-]
-],
-"ym-0374-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Application : Industrial and household power delivery; Matériau : Flame-retardant ABS / PC. Caractéristiques clés : industriel, étanche, prise, distribution.",
-"ym-0374-feats": [
-"industriel",
-"étanche",
-"prise",
-"distribution",
-"plug",
-"outlet"
-],
-"ym-0374-specs": [
-[
-"Application",
-"Industrial and household power delivery"
-],
-[
-"Matériau",
-"Flame-retardant ABS / PC"
-]
-],
-"ym-0380-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Application : Industrial and household power delivery; Matériau : Flame-retardant ABS / PC. Caractéristiques clés : industry, plastic, étanche, wall.",
-"ym-0380-feats": [
-"industry",
-"plastic",
-"étanche",
-"wall",
-"mounted",
-"inclined"
-],
-"ym-0380-specs": [
-[
-"Application",
-"Industrial and household power delivery"
-],
-[
-"Matériau",
-"Flame-retardant ABS / PC"
-]
-],
-"ym-0715-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : WiFi Smart Waterproof Socket; Protection : IP66 Waterproof; Smart Control : Alexa, Google Home, Smart Life App; Plug Type : EU, UK, Universal. Caractéristiques clés : different, WiFi, étanche, prise.",
-"ym-0715-feats": [
-"different",
-"WiFi",
-"étanche",
-"prise",
-"home",
-"plug"
-],
-"ym-0715-specs": [
-[
-"Type",
-"WiFi Smart Waterproof Socket"
-],
-[
-"Protection",
-"IP66 Waterproof"
-],
-[
-"Smart Control",
-"Alexa, Google Home, Smart Life App"
-],
-[
-"Plug Type",
-"EU, UK, Universal"
-],
-[
-"Connectivity",
-"2.4GHz WiFi"
-],
-[
-"Application",
-"Outdoor/Home Smart Power"
-]
-],
 "ym-0076-desc": "Un dispositif de mesure d'énergie de précision pour circuits résidentiels, commerciaux et industriels. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Phase : triphasé; Tension : 230 V; Type de courant : CA; Affichage : LCD. Caractéristiques clés : rail-mounted, électricité, actif, compteur d'énergie.",
 "ym-0076-feats": [
 "rail-mounted",
@@ -24449,6 +23407,1259 @@ if (typeof T !== "undefined") {
 [
 "Type",
 "Protection device"
+]
+],
+"ym-sw-portable-socket-box-ymax-801-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Portable Socket Box; Modèle : YMAX-801; Matériau : Flame-retardant PC; Application : Temporary and portable power distribution. Caractéristiques clés : portable socket box, ignifuge, protection contre les surcharges, easy carry.",
+"ym-sw-portable-socket-box-ymax-801-feats": [
+"portable socket box",
+"ignifuge",
+"protection contre les surcharges",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-801-specs": [
+[
+"Type",
+"Portable Socket Box"
+],
+[
+"Modèle",
+"YMAX-801"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-802-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Portable Socket Box; Modèle : YMAX-802; Matériau : Flame-retardant PC; Application : Temporary and portable power distribution. Caractéristiques clés : portable socket box, ignifuge, protection contre les surcharges, easy carry.",
+"ym-sw-portable-socket-box-ymax-802-feats": [
+"portable socket box",
+"ignifuge",
+"protection contre les surcharges",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-802-specs": [
+[
+"Type",
+"Portable Socket Box"
+],
+[
+"Modèle",
+"YMAX-802"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-803-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Portable Socket Box; Modèle : YMAX-803; Matériau : Flame-retardant PC; Application : Temporary and portable power distribution. Caractéristiques clés : portable socket box, ignifuge, protection contre les surcharges, easy carry.",
+"ym-sw-portable-socket-box-ymax-803-feats": [
+"portable socket box",
+"ignifuge",
+"protection contre les surcharges",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-803-specs": [
+[
+"Type",
+"Portable Socket Box"
+],
+[
+"Modèle",
+"YMAX-803"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-804-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Portable Socket Box; Modèle : YMAX-804; Matériau : Flame-retardant PC; Application : Temporary and portable power distribution. Caractéristiques clés : portable socket box, ignifuge, protection contre les surcharges, easy carry.",
+"ym-sw-portable-socket-box-ymax-804-feats": [
+"portable socket box",
+"ignifuge",
+"protection contre les surcharges",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-804-specs": [
+[
+"Type",
+"Portable Socket Box"
+],
+[
+"Modèle",
+"YMAX-804"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-805-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Portable Socket Box; Modèle : YMAX-805; Matériau : Flame-retardant PC; Application : Temporary and portable power distribution. Caractéristiques clés : portable socket box, ignifuge, protection contre les surcharges, easy carry.",
+"ym-sw-portable-socket-box-ymax-805-feats": [
+"portable socket box",
+"ignifuge",
+"protection contre les surcharges",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-805-specs": [
+[
+"Type",
+"Portable Socket Box"
+],
+[
+"Modèle",
+"YMAX-805"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-806-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Portable Socket Box; Modèle : YMAX-806; Matériau : Flame-retardant PC; Application : Temporary and portable power distribution. Caractéristiques clés : portable socket box, ignifuge, protection contre les surcharges, easy carry.",
+"ym-sw-portable-socket-box-ymax-806-feats": [
+"portable socket box",
+"ignifuge",
+"protection contre les surcharges",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-806-specs": [
+[
+"Type",
+"Portable Socket Box"
+],
+[
+"Modèle",
+"YMAX-806"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-portable-socket-box-ymax-807-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Portable Socket Box; Modèle : YMAX-807; Matériau : Flame-retardant PC; Application : Temporary and portable power distribution. Caractéristiques clés : portable socket box, ignifuge, protection contre les surcharges, easy carry.",
+"ym-sw-portable-socket-box-ymax-807-feats": [
+"portable socket box",
+"ignifuge",
+"protection contre les surcharges",
+"easy carry",
+"industrial grade"
+],
+"ym-sw-portable-socket-box-ymax-807-specs": [
+[
+"Type",
+"Portable Socket Box"
+],
+[
+"Modèle",
+"YMAX-807"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Temporary and portable power distribution"
+]
+],
+"ym-sw-wall-mounted-bevel-socket-ym-e002-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Wall Mounted Socket; Modèle : YM-E002; Matériau : PC / ABS; Application : Wall-mounted power outlets for workshops and homes. Caractéristiques clés : wall mounted socket, ignifuge, secure wiring, conception compacte.",
+"ym-sw-wall-mounted-bevel-socket-ym-e002-feats": [
+"wall mounted socket",
+"ignifuge",
+"secure wiring",
+"conception compacte",
+"durable shell"
+],
+"ym-sw-wall-mounted-bevel-socket-ym-e002-specs": [
+[
+"Type",
+"Wall Mounted Socket"
+],
+[
+"Modèle",
+"YM-E002"
+],
+[
+"Matériau",
+"PC / ABS"
+],
+[
+"Application",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e001-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Wall Mounted Socket; Modèle : YM-E001; Matériau : PC / ABS; Application : Wall-mounted power outlets for workshops and homes. Caractéristiques clés : wall mounted socket, ignifuge, secure wiring, conception compacte.",
+"ym-sw-wall-mounted-angled-socket-ym-e001-feats": [
+"wall mounted socket",
+"ignifuge",
+"secure wiring",
+"conception compacte",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e001-specs": [
+[
+"Type",
+"Wall Mounted Socket"
+],
+[
+"Modèle",
+"YM-E001"
+],
+[
+"Matériau",
+"PC / ABS"
+],
+[
+"Application",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e004-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Wall Mounted Socket; Modèle : YM-E004; Matériau : PC / ABS; Application : Wall-mounted power outlets for workshops and homes. Caractéristiques clés : wall mounted socket, ignifuge, secure wiring, conception compacte.",
+"ym-sw-wall-mounted-angled-socket-ym-e004-feats": [
+"wall mounted socket",
+"ignifuge",
+"secure wiring",
+"conception compacte",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e004-specs": [
+[
+"Type",
+"Wall Mounted Socket"
+],
+[
+"Modèle",
+"YM-E004"
+],
+[
+"Matériau",
+"PC / ABS"
+],
+[
+"Application",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e005-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Wall Mounted Socket; Modèle : YM-E005; Matériau : PC / ABS; Application : Wall-mounted power outlets for workshops and homes. Caractéristiques clés : wall mounted socket, ignifuge, secure wiring, conception compacte.",
+"ym-sw-wall-mounted-angled-socket-ym-e005-feats": [
+"wall mounted socket",
+"ignifuge",
+"secure wiring",
+"conception compacte",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e005-specs": [
+[
+"Type",
+"Wall Mounted Socket"
+],
+[
+"Modèle",
+"YM-E005"
+],
+[
+"Matériau",
+"PC / ABS"
+],
+[
+"Application",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e006-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Wall Mounted Socket; Modèle : YM-E006; Matériau : PC / ABS; Application : Wall-mounted power outlets for workshops and homes. Caractéristiques clés : wall mounted socket, ignifuge, secure wiring, conception compacte.",
+"ym-sw-wall-mounted-angled-socket-ym-e006-feats": [
+"wall mounted socket",
+"ignifuge",
+"secure wiring",
+"conception compacte",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e006-specs": [
+[
+"Type",
+"Wall Mounted Socket"
+],
+[
+"Modèle",
+"YM-E006"
+],
+[
+"Matériau",
+"PC / ABS"
+],
+[
+"Application",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e007-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Wall Mounted Socket; Modèle : YM-E007; Matériau : PC / ABS; Application : Wall-mounted power outlets for workshops and homes. Caractéristiques clés : wall mounted socket, ignifuge, secure wiring, conception compacte.",
+"ym-sw-wall-mounted-angled-socket-ym-e007-feats": [
+"wall mounted socket",
+"ignifuge",
+"secure wiring",
+"conception compacte",
+"durable shell"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e007-specs": [
+[
+"Type",
+"Wall Mounted Socket"
+],
+[
+"Modèle",
+"YM-E007"
+],
+[
+"Matériau",
+"PC / ABS"
+],
+[
+"Application",
+"Wall-mounted power outlets for workshops and homes"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-001-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-001; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-001-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-001-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-001"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-002-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-002; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-002-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-002-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-002"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-003-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-003; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-003-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-003-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-003"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-004-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-004; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-004-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-004-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-004"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-005-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-005; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-005-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-005-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-005"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-006-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-006; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-006-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-006-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-006"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-007-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-007; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-007-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-007-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-007"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-008-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-008; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-008-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-008-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-008"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-009-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-009; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-009-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-009-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-009"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-010-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-010; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-010-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-010-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-010"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-011-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-011; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-011-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-011-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-011"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-012-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-012; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-012-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-012-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-012"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-013-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-013; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-013-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-013-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-013"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-014-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-014; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-014-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-014-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-014"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-015-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-015; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-015-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-015-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-015"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-016-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-016; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-016-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-016-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-016"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-017-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-017; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-017-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-017-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-017"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-018-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-018; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-018-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-018-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-018"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-019-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-019; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-019-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-019-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-019"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-020-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-020; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-020-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-020-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-020"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-021-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-021; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-021-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-021-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-021"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-023-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-023; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-023-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-023-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-023"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-024-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-024; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-024-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-024-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-024"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-025-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-025; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-025-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-025-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-025"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-industrial-waterproof-socket-box-ym-027-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-027; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-industrial-waterproof-socket-box-ym-027-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-industrial-waterproof-socket-box-ym-027-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-027"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-g001-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-G001; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-wall-mounted-angled-socket-ym-g001-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-wall-mounted-angled-socket-ym-g001-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-G001"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-g002-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-G002; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-wall-mounted-angled-socket-ym-g002-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-wall-mounted-angled-socket-ym-g002-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-G002"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-g003-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Industrial Waterproof Socket Box; Modèle : YM-G003; Protection : IP65; Matériau : Flame-retardant PC. Caractéristiques clés : étanche, ignifuge, industrial grade, ip65 protection.",
+"ym-sw-wall-mounted-angled-socket-ym-g003-feats": [
+"étanche",
+"ignifuge",
+"industrial grade",
+"ip65 protection",
+"résistant à la corrosion"
+],
+"ym-sw-wall-mounted-angled-socket-ym-g003-specs": [
+[
+"Type",
+"Industrial Waterproof Socket Box"
+],
+[
+"Modèle",
+"YM-G003"
+],
+[
+"Protection",
+"IP65"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Outdoor and industrial power distribution"
+]
+],
+"ym-sw-portable-socket-box-ym-801-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Portable Socket Box; Modèle : YM-801; Matériau : Flame-retardant PC; Application : Portable power distribution on construction sites. Caractéristiques clés : portable socket box, ignifuge, durable shell, safe outlets.",
+"ym-sw-portable-socket-box-ym-801-feats": [
+"portable socket box",
+"ignifuge",
+"durable shell",
+"safe outlets"
+],
+"ym-sw-portable-socket-box-ym-801-specs": [
+[
+"Type",
+"Portable Socket Box"
+],
+[
+"Modèle",
+"YM-801"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Portable power distribution on construction sites"
+]
+],
+"ym-sw-portable-socket-box-ym-u802-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Portable Socket Box; Modèle : YM-U802; Matériau : Flame-retardant PC; Application : Portable power distribution on construction sites. Caractéristiques clés : portable socket box, ignifuge, durable shell, safe outlets.",
+"ym-sw-portable-socket-box-ym-u802-feats": [
+"portable socket box",
+"ignifuge",
+"durable shell",
+"safe outlets"
+],
+"ym-sw-portable-socket-box-ym-u802-specs": [
+[
+"Type",
+"Portable Socket Box"
+],
+[
+"Modèle",
+"YM-U802"
+],
+[
+"Matériau",
+"Flame-retardant PC"
+],
+[
+"Application",
+"Portable power distribution on construction sites"
+]
+],
+"ym-sw-wall-mounted-angled-socket-ym-e002-desc": "Des prises et accessoires de câblage pour une distribution électrique sûre. Conçu pour un fonctionnement fiable et durable à long terme. Principales spécifications : Type : Wall Mounted Socket; Modèle : YM-E002; Matériau : PC / ABS; Application : Wall-mounted power outlets for workshops and homes. Caractéristiques clés : wall mounted socket, ignifuge, secure wiring, conception compacte.",
+"ym-sw-wall-mounted-angled-socket-ym-e002-feats": [
+"wall mounted socket",
+"ignifuge",
+"secure wiring",
+"conception compacte"
+],
+"ym-sw-wall-mounted-angled-socket-ym-e002-specs": [
+[
+"Type",
+"Wall Mounted Socket"
+],
+[
+"Modèle",
+"YM-E002"
+],
+[
+"Matériau",
+"PC / ABS"
+],
+[
+"Application",
+"Wall-mounted power outlets for workshops and homes"
 ]
 ],
 "sec-specs": "Spécifications techniques",
