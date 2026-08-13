@@ -225,37 +225,41 @@ body.light .n-logo-fb { color: #1a1a1a; }
   align-items: flex-end;
 }
 .float-btn {
-  width: 54px; height: 54px;
+  width: 56px; height: 56px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 6px 24px rgba(0,0,0,.5);
+  box-shadow: 0 8px 28px rgba(0,0,0,.45), inset 0 0 0 2px rgba(255,255,255,.22);
   transition: transform .25s, box-shadow .25s;
   text-decoration: none;
   position: relative;
 }
-.float-btn:hover { transform: translateY(-4px) scale(1.05); box-shadow: 0 12px 36px rgba(0,0,0,.6); }
-.float-btn-wa { background: #25D366; }
-.float-btn-wc { background: #07C160; }
+.float-btn:hover { transform: translateY(-4px) scale(1.06); box-shadow: 0 12px 34px rgba(0,0,0,.5), inset 0 0 0 2px rgba(255,255,255,.35); }
+.float-btn-wa { background: linear-gradient(135deg,#25D366,#1DA851); }
+.float-btn-wc { background: linear-gradient(135deg,#07C160,#06AD56); }
 .float-btn svg { width: 28px; height: 28px; filter: drop-shadow(0 1px 2px rgba(0,0,0,.2)); }
+.float-btn-wa::after { content:""; position:absolute; inset:-4px; border-radius:50%; background:rgba(37,211,102,.35); z-index:-1; animation:wa-pulse 2.2s ease-out infinite; }
+@keyframes wa-pulse { 0%{transform:scale(.7);opacity:.8} 70%{transform:scale(1.25);opacity:0} 100%{opacity:0} }
 .float-btn-label {
   position: absolute;
-  right: 60px;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%) translateX(6px);
   background: rgba(20,20,20,.9);
   color: #fff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: .5px;
-  padding: 5px 10px;
-  border-radius: 6px;
+  letter-spacing: .3px;
+  padding: 7px 13px;
+  border-radius: 8px;
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
-  transition: opacity .2s;
+  transition: opacity .2s, transform .2s;
 }
 body.light .float-btn-label { background: rgba(30,30,30,.88); }
-.float-btn:hover .float-btn-label { opacity: 1; }
+.float-btn:hover .float-btn-label { opacity: 1; transform: translateY(-50%) translateX(0); }
 
 /* WeChat QR Modal */
 .wc-modal-overlay {
