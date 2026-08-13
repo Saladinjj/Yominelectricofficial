@@ -120,8 +120,8 @@ const PAGE=60;
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     const [mainRes, fuseRes] = await Promise.all([
-      fetch('data/products.json'),
-      fetch('data/fuse-protection.json').catch(() => null)
+      fetch('/data/products.json'),
+      fetch('/data/fuse-protection.json').catch(() => null)
     ]);
     if (!mainRes.ok) throw new Error('HTTP '+mainRes.status);
     ALL = await mainRes.json();

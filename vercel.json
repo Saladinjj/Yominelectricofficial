@@ -553,13 +553,13 @@
       "dest": "/compare/single-phase-vs-three-phase-meter.html"
     },
     {
+      "src": "^/products/([a-z0-9-]+)$",
+      "dest": "/products.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1",
       "check": true
-    },
-    {
-      "src": "^/products/([a-z0-9-]+)$",
-      "dest": "/products.html"
     },
     {
       "src": "/(.*)",
