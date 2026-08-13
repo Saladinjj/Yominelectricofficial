@@ -153,12 +153,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const slug = decodeURIComponent(urlCat).toLowerCase();
     activeFilter = SLUG_TO_CAT[slug] || activeFilter;
   }
-  // also support the path form /products/<category-slug>
-  const pathSeg = location.pathname.replace(/\.html$/, '').split('/').filter(Boolean);
-  if (pathSeg[0] === 'products' && pathSeg.length === 2) {
-    const slug = pathSeg[1].toLowerCase();
-    activeFilter = SLUG_TO_CAT[slug] || activeFilter;
-  }
   syncUrlAndMeta();
 
   buildSidebar(); buildMobileFilter(); buildBusbarSubBar(); initSbSearch(); initSort(); initLoadMore();
@@ -265,7 +259,7 @@ function buildBusbarSubBar(){
 function setFilter(val){
   /* Category filters navigate to their dedicated static page */
   if (val !== 'all' && val !== 'New' && val !== BUSBAR_FILTER && CAT_SLUG[val]) {
-    location.href = '/products/' + CAT_SLUG[val];
+    location.href = '/products?category=' + CAT_SLUG[val];
     return;
   }
   activeFilter=val; searchQuery='';

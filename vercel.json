@@ -453,6 +453,11 @@
       "source": "/blog-nepal-loading",
       "destination": "/blog/nepal-loading",
       "statusCode": 301
+    },
+    {
+      "source": "/products/:slug",
+      "destination": "/products?category=:slug",
+      "statusCode": 301
     }
   ],
   "routes": [
@@ -551,10 +556,6 @@
     {
       "src": "/compare",
       "dest": "/compare/single-phase-vs-three-phase-meter.html"
-    },
-    {
-      "src": "/products/([a-z0-9-]+)",
-      "dest": "/products.html"
     },
     {
       "src": "/(.*)",
