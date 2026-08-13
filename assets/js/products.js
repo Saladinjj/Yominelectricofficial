@@ -153,6 +153,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     const slug = decodeURIComponent(urlCat).toLowerCase();
     activeFilter = SLUG_TO_CAT[slug] || activeFilter;
   }
+  // also support the path form /products/<category-slug>
+  const pathSeg = location.pathname.replace(/\.html$/, '').split('/').filter(Boolean);
+  if (pathSeg[0] === 'products' && pathSeg.length === 2) {
+    const slug = pathSeg[1].toLowerCase();
+    activeFilter = SLUG_TO_CAT[slug] || activeFilter;
+  }
   syncUrlAndMeta();
 
   buildSidebar(); buildMobileFilter(); buildBusbarSubBar(); initSbSearch(); initSort(); initLoadMore();
