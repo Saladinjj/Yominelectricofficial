@@ -405,7 +405,7 @@ function productCard(p){
   const d=(typeof T!=='undefined'&&typeof currentLang!=='undefined')?T[currentLang]:null;
   const inquiryLbl=(d&&d.prod_request_quote)?d.prod_request_quote.replace('Request Quote','Inquiry for Price'):'Inquiry for Price';
   const catSlug = CAT_SLUG[p.category] || '';
-  return `<a class="pcard${isQuoteOnly(p)?' pcard-quote':''}" href="/products?category=${catSlug}&id=${esc(p.id)}" data-id="${esc(p.id)}" title="${esc(p.title)}">
+  return `<a class="pcard${isQuoteOnly(p)?' pcard-quote':''}" href="/products/${catSlug}/${esc(p.slug || slugify(p.title))}" data-id="${esc(p.id)}" title="${esc(p.title)}">
     <div class="pcard-img">${imgHtml}</div>
     <div class="pcard-body">
       <div class="pcard-cat">${esc(p.category)}</div>
@@ -541,4 +541,5 @@ function catSvg(cat,size=64){
   return `<svg viewBox="0 0 64 64" fill="none" width="${size}" height="${size}">${d}</svg>`;
 }
 
+function slugify(s){return String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');}
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}

@@ -2162,6 +2162,7 @@
     };
     const SLUG_TO_FILTER = Object.fromEntries(Object.entries(FILTER_SLUG).map(([id, slug]) => [slug, id]));
     const CAT_SLUG_EXTRA = {
+      'emergency-lighting': 'Emergency Lighting',
       'energy-meter': 'Energy Meter',
       'voltage-stabilizer-regulator': 'Voltage Stabilizer/Regulator',
       'current-transformer': 'Current Transformer',
@@ -2316,6 +2317,15 @@
           datasheet: p.datasheet || '',
           bundles: p.bundles || undefined,
         }));
+        /* Product slugs for static pages (/products/<cat>/<slug>) — same algorithm as tools/generate-product-pages.ps1 */
+        const PROD_SLUG_SEEN = {};
+        function slugify(s) { return String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''); }
+        ALL.forEach(p => {
+          let s = slugify(p.title);
+          if (PROD_SLUG_SEEN[s]) s = s + '-' + p.id;
+          PROD_SLUG_SEEN[s] = true;
+          p.slug = s;
+        });
       } catch (e) {
         console.error('Load failed:', e);
         const g = document.getElementById('prod-grid');
@@ -2348,15 +2358,8 @@
       if (urlId) {
         const p = ALL.find(x => x.id === urlId);
         if (p) {
-          if (activeFilter !== p.category) {
-            activeFilter = p.category;
-            buildSidebar(); buildMobileFilter();
-            applyAndRender();
-          }
-          setTimeout(() => {
-            openOverlay(p);
-            document.getElementById('product-overlay')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }, 500);
+          const catSlug = FILTER_SLUG[p.category] || CAT_SLUG_REVERSE[p.category] || 'other';
+          window.location.replace('/products/' + catSlug + '/' + (p.slug || slugify(p.title)));
         }
       }
 
@@ -2632,13 +2635,13 @@
       grid.innerHTML = slice.map(p => productCard(p)).join('');
       grid.querySelectorAll('.pcard').forEach(card => {
         card.addEventListener('click', e => {
+          const href = card.getAttribute('href');
+          if (href && href !== '#') return; /* natural navigation to the static product page */
           e.preventDefault();
           const p = ALL.find(x => x.id === card.dataset.id);
           if (!p) return;
-          const catSlug = FILTER_SLUG[p.category] || CAT_SLUG_REVERSE[p.category] || '';
-          const nameSlug = encodeURIComponent(p.title.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,'-').substring(0,80));
-          history.pushState({productId:p.id}, '', '/products?category=' + catSlug + '&id=' + p.id + '&product=' + nameSlug);
-          openOverlay(p);
+          const catSlug = FILTER_SLUG[p.category] || CAT_SLUG_REVERSE[p.category] || 'other';
+          window.location.href = '/products/' + catSlug + '/' + (p.slug || slugify(p.title));
         });
       });
       if (animate) {
@@ -2668,7 +2671,9 @@
         : `<div class="pcard-img-fb">${catSvg(p.category)}</div>`;
       const quoteLbl = (typeof T !== 'undefined' && typeof currentLang !== 'undefined' && T[currentLang] && T[currentLang].prod_request_quote) ? T[currentLang].prod_request_quote : 'Request Quote';
       const inquiryLbl = quoteLbl.replace('Request Quote','Inquiry for Price');
-      return `<a class="pcard${isQuoteOnly(p) ? ' pcard-quote' : ''}" href="#" data-id="${esc(p.id)}" title="${esc(window.ymTr(p.id,p.title))}">
+      const cardCatSlug = FILTER_SLUG[p.category] || CAT_SLUG_REVERSE[p.category] || 'other';
+      const cardHref = '/products/' + cardCatSlug + '/' + (p.slug || slugify(p.title));
+      return `<a class="pcard${isQuoteOnly(p) ? ' pcard-quote' : ''}" href="${esc(cardHref)}" data-id="${esc(p.id)}" title="${esc(window.ymTr(p.id,p.title))}">
     <div class="pcard-img">${imgHtml}</div>
     <div class="pcard-body">
       <div class="pcard-cat">${esc(p.category)}</div>
