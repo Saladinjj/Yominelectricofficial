@@ -257,6 +257,11 @@ function buildBusbarSubBar(){
 }
 
 function setFilter(val){
+  /* Category filters navigate to their dedicated static page */
+  if (val !== 'all' && val !== 'New' && val !== BUSBAR_FILTER && CAT_SLUG[val]) {
+    location.href = '/products/' + CAT_SLUG[val];
+    return;
+  }
   activeFilter=val; searchQuery='';
   const sb=document.getElementById('sb-search'); if(sb) sb.value='';
   const busActive=isBusbarView(val);
@@ -380,7 +385,7 @@ function renderGrid(animate){
       if(!p) return;
       const catSlug = CAT_SLUG[p.category] || '';
       const nameSlug = encodeURIComponent(p.title.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,'-').substring(0,80));
-      history.pushState({productId:p.id}, '', '/products?category=' + catSlug + '&id=' + p.id + '&product=' + nameSlug);
+      history.pushState({productId:p.id}, '', '/products/' + catSlug + '/' + nameSlug);
       openDetail(p);
     });
   });
@@ -512,7 +517,7 @@ function closeDetail(){
   document.querySelectorAll('.pcard').forEach(c=>c.classList.remove('pcard-active'));
   // Restore URL to category page without product params
   const slug = activeFilter === 'all' ? '' : CAT_SLUG[activeFilter];
-  const url = slug ? '/products?category=' + slug : '/products';
+  const url = slug ? '/products/' + slug : '/products';
   history.replaceState(null, '', url);
 }
 

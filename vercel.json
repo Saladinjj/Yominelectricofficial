@@ -37,52 +37,52 @@
     },
     {
       "source": "/aluminum-busbar.html",
-      "destination": "/products?category=aluminum-busbar",
+      "destination": "/products/aluminum-busbar",
       "statusCode": 301
     },
     {
       "source": "/flexible-busbar.html",
-      "destination": "/products?category=flexible-busbar",
+      "destination": "/products/flexible-busbar",
       "statusCode": 301
     },
     {
       "source": "/rigid-busbar.html",
-      "destination": "/products?category=rigid-busbar",
+      "destination": "/products/rigid-busbar",
       "statusCode": 301
     },
     {
       "source": "/energy-storage-busbar.html",
-      "destination": "/products?category=energy-storage-busbar",
+      "destination": "/products/energy-storage-busbar",
       "statusCode": 301
     },
     {
       "source": "/busbar-protection.html",
-      "destination": "/products?category=busbar-protection",
+      "destination": "/products/busbar-protection",
       "statusCode": 301
     },
     {
       "source": "/composite-laminated-busbar.html",
-      "destination": "/products?category=composite-laminated-busbar",
+      "destination": "/products/composite-laminated-busbar",
       "statusCode": 301
     },
     {
       "source": "/ccs-integrated-busbar.html",
-      "destination": "/products?category=ccs-integrated-busbar",
+      "destination": "/products/ccs-integrated-busbar",
       "statusCode": 301
     },
     {
       "source": "/heavy-duty-busbar.html",
-      "destination": "/products?category=heavy-duty-busbar",
+      "destination": "/products/heavy-duty-busbar",
       "statusCode": 301
     },
     {
       "source": "/busbar.html",
-      "destination": "/products?category=busbar",
+      "destination": "/products/busbar",
       "statusCode": 301
     },
     {
       "source": "/socket-wiring",
-      "destination": "/products?category=socket-wiring",
+      "destination": "/products/socket-wiring",
       "statusCode": 301
     },
     {
@@ -92,67 +92,67 @@
     },
     {
       "source": "/other.html",
-      "destination": "/products?category=other",
+      "destination": "/products/other",
       "statusCode": 301
     },
     {
       "source": "/security-seal.html",
-      "destination": "/products?category=security-seal",
+      "destination": "/products/security-seal",
       "statusCode": 301
     },
     {
       "source": "/tools-hardware.html",
-      "destination": "/products?category=tools-hardware",
+      "destination": "/products/tools-hardware",
       "statusCode": 301
     },
     {
       "source": "/socket-wiring.html",
-      "destination": "/products?category=socket-wiring",
+      "destination": "/products/socket-wiring",
       "statusCode": 301
     },
     {
       "source": "/voltage-protector.html",
-      "destination": "/products?category=voltage-protector",
+      "destination": "/products/voltage-protector",
       "statusCode": 301
     },
     {
       "source": "/fuse-protection.html",
-      "destination": "/products?category=fuse-protection",
+      "destination": "/products/fuse-protection",
       "statusCode": 301
     },
     {
       "source": "/solar-pv-products.html",
-      "destination": "/products?category=solar-pv-products",
+      "destination": "/products/solar-pv-products",
       "statusCode": 301
     },
     {
       "source": "/terminal-connector.html",
-      "destination": "/products?category=terminal-connector",
+      "destination": "/products/terminal-connector",
       "statusCode": 301
     },
     {
       "source": "/screw-machine.html",
-      "destination": "/products?category=screw-machine",
+      "destination": "/products/screw-machine",
       "statusCode": 301
     },
     {
       "source": "/variac-transformer.html",
-      "destination": "/products?category=variac-transformer",
+      "destination": "/products/variac-transformer",
       "statusCode": 301
     },
     {
       "source": "/current-transformer.html",
-      "destination": "/products?category=current-transformer",
+      "destination": "/products/current-transformer",
       "statusCode": 301
     },
     {
       "source": "/voltage-stabilizer-regulator.html",
-      "destination": "/products?category=voltage-stabilizer-regulator",
+      "destination": "/products/voltage-stabilizer-regulator",
       "statusCode": 301
     },
     {
       "source": "/energy-meter.html",
-      "destination": "/products?category=energy-meter",
+      "destination": "/products/energy-meter",
       "statusCode": 301
     },
     {
@@ -164,7 +164,7 @@
           "value": "Energy Meter"
         }
       ],
-      "destination": "/products?category=energy-meter",
+      "destination": "/products/energy-meter",
       "statusCode": 301
     },
     {
@@ -176,7 +176,7 @@
           "value": "Energy+Meter"
         }
       ],
-      "destination": "/products?category=energy-meter",
+      "destination": "/products/energy-meter",
       "statusCode": 301
     },
     {
@@ -188,7 +188,7 @@
           "value": "Voltage Stabilizer/Regulator"
         }
       ],
-      "destination": "/products?category=voltage-stabilizer-regulator",
+      "destination": "/products/voltage-stabilizer-regulator",
       "statusCode": 301
     },
     {
@@ -200,7 +200,7 @@
           "value": "Voltage+Stabilizer%2FRegulator"
         }
       ],
-      "destination": "/products?category=voltage-stabilizer-regulator",
+      "destination": "/products/voltage-stabilizer-regulator",
       "statusCode": 301
     },
     {
@@ -212,7 +212,7 @@
           "value": "Current Transformer"
         }
       ],
-      "destination": "/products?category=current-transformer",
+      "destination": "/products/current-transformer",
       "statusCode": 301
     },
     {
@@ -224,7 +224,7 @@
           "value": "Current+Transformer"
         }
       ],
-      "destination": "/products?category=current-transformer",
+      "destination": "/products/current-transformer",
       "statusCode": 301
     },
     {
@@ -236,7 +236,7 @@
           "value": "Variac/Transformer"
         }
       ],
-      "destination": "/products?category=variac-transformer",
+      "destination": "/products/variac-transformer",
       "statusCode": 301
     },
     {
@@ -248,7 +248,7 @@
           "value": "Fuse & Protection"
         }
       ],
-      "destination": "/products?category=fuse-protection",
+      "destination": "/products/fuse-protection",
       "statusCode": 301
     },
     {
@@ -260,7 +260,7 @@
           "value": "Voltage Protector"
         }
       ],
-      "destination": "/products?category=voltage-protector",
+      "destination": "/products/voltage-protector",
       "statusCode": 301
     },
     {
@@ -272,7 +272,7 @@
           "value": "Socket & Wiring"
         }
       ],
-      "destination": "/products?category=socket-wiring",
+      "destination": "/products/socket-wiring",
       "statusCode": 301
     },
     {
@@ -284,7 +284,7 @@
           "value": "Terminal & Connector"
         }
       ],
-      "destination": "/products?category=terminal-connector",
+      "destination": "/products/terminal-connector",
       "statusCode": 301
     },
     {
@@ -296,7 +296,7 @@
           "value": "Solar/PV Products"
         }
       ],
-      "destination": "/products?category=solar-pv-products",
+      "destination": "/products/solar-pv-products",
       "statusCode": 301
     },
     {
@@ -308,7 +308,7 @@
           "value": "Tools & Hardware"
         }
       ],
-      "destination": "/products?category=tools-hardware",
+      "destination": "/products/tools-hardware",
       "statusCode": 301
     },
     {
@@ -320,7 +320,7 @@
           "value": "energy-meter"
         }
       ],
-      "destination": "/products?category=energy-meter",
+      "destination": "/products/energy-meter",
       "statusCode": 301
     },
     {
@@ -332,7 +332,7 @@
           "value": "voltage-stabilizer-regulator"
         }
       ],
-      "destination": "/products?category=voltage-stabilizer-regulator",
+      "destination": "/products/voltage-stabilizer-regulator",
       "statusCode": 301
     },
     {
@@ -344,7 +344,7 @@
           "value": "Energy Meter"
         }
       ],
-      "destination": "/products?category=energy-meter",
+      "destination": "/products/energy-meter",
       "statusCode": 301
     },
     {
@@ -356,7 +356,7 @@
           "value": "Energy+Meter"
         }
       ],
-      "destination": "/products?category=energy-meter",
+      "destination": "/products/energy-meter",
       "statusCode": 301
     },
     {
@@ -368,7 +368,7 @@
           "value": "Voltage Stabilizer/Regulator"
         }
       ],
-      "destination": "/products?category=voltage-stabilizer-regulator",
+      "destination": "/products/voltage-stabilizer-regulator",
       "statusCode": 301
     },
     {
@@ -380,7 +380,7 @@
           "value": "Voltage+Stabilizer%2FRegulator"
         }
       ],
-      "destination": "/products?category=voltage-stabilizer-regulator",
+      "destination": "/products/voltage-stabilizer-regulator",
       "statusCode": 301
     },
     {
@@ -392,7 +392,7 @@
           "value": "Voltage+Stabilizer/Regulator"
         }
       ],
-      "destination": "/products?category=voltage-stabilizer-regulator",
+      "destination": "/products/voltage-stabilizer-regulator",
       "statusCode": 301
     },
     {
@@ -404,7 +404,7 @@
           "value": "Current Transformer"
         }
       ],
-      "destination": "/products?category=current-transformer",
+      "destination": "/products/current-transformer",
       "statusCode": 301
     },
     {
@@ -416,7 +416,7 @@
           "value": "Current+Transformer"
         }
       ],
-      "destination": "/products?category=current-transformer",
+      "destination": "/products/current-transformer",
       "statusCode": 301
     },
     {
