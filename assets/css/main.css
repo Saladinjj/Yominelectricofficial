@@ -532,3 +532,17 @@ footer{padding:80px 60px 40px;border-top:1px solid var(--bds)}
 @media (max-width:640px){.fgrid{grid-template-columns:1fr;gap:28px}}
 /* END CANONICAL SITE UNIFY */
 
+/* CTA section (blog posts) */
+.cta-section{padding:52px 24px;background:var(--bgc,#0f1012);border:1px solid var(--bds,#26282c);border-radius:18px;text-align:center;margin:48px 0 0}
+.cta-section h2{font-family:var(--sf,Georgia,serif);font-size:clamp(22px,3vw,30px);color:var(--tx,#f2f2f2);margin-bottom:10px}
+.cta-section p{color:var(--mt,#9a9a9a);font-size:14px;line-height:1.7;margin-bottom:22px;max-width:600px;margin-left:auto;margin-right:auto}
+.cta-wrap{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta-btn{display:inline-flex;align-items:center;gap:8px;background:var(--ac,#e8944a);color:#111;padding:13px 28px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;transition:background .2s,transform .2s}
+.cta-btn:hover{background:#d17f36;transform:translateY(-2px)}
+.cta-btn.ghost{background:transparent;color:var(--tx,#f2f2f2);border:1px solid var(--bdr,#333)}
+/* article tables */
+.content-section table{width:100%;border-collapse:collapse;margin:18px 0;font-size:13.5px}
+.content-section table th{background:rgba(255,255,255,.04);color:var(--tx,#f2f2f2);padding:10px 12px;text-align:left;border:1px solid var(--bds,#26282c);font-weight:600}
+.content-section table td{padding:9px 12px;border:1px solid var(--bds,#26282c);color:var(--mt,#9a9a9a)}
+.content-section table tr:nth-child(even) td{background:rgba(255,255,255,.02)}
+/* CTA section */
