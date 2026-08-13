@@ -252,7 +252,7 @@ nav.sc{background:rgba(13,13,13,.99)}
 
 /* ─── POST GRID ─── */
 .post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:40px}
-.post-card{background:var(--bgc);border:1px solid var(--bds);border-radius:14px;overflow:hidden;transition:transform var(--tr),border-color var(--tr),box-shadow var(--tr);display:flex;flex-direction:column}
+.post-card{background:var(--bgc);border:1px solid var(--bds);border-radius:14px;overflow:hidden;position:relative;transition:transform var(--tr),border-color var(--tr),box-shadow var(--tr);display:flex;flex-direction:column}
 .post-card:hover{transform:translateY(-5px);border-color:rgba(232,148,74,.22);box-shadow:0 16px 48px rgba(0,0,0,.4)}
 .post-card-img{width:100%;height:210px;background:linear-gradient(135deg,var(--bgc2),var(--sur));display:flex;align-items:center;justify-content:center;font-size:42px;position:relative;overflow:hidden}
 .post-card-img::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(232,148,74,.06) 0%,transparent 70%)}
@@ -464,6 +464,7 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
 .wc-modal-close:hover{color:var(--tx);background:rgba(255,255,255,.12)}
 
 .wa-btn{display:none}
+.flag-txt{display:inline-flex;align-items:center;justify-content:center;width:16px;height:12px;background:rgba(232,148,74,.16);border:1px solid rgba(232,148,74,.35);color:#E8944A;font-size:8px;font-weight:700;border-radius:2px;letter-spacing:.5px}
 </style>
 </head>
 <body>
@@ -483,7 +484,7 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
     <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
     <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
     <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
-    <button class="mlb" data-lang="ar"><img src="https://flagcdn.com/16x12/sa.png" class="flag" alt="AR"></button>
+    <button class="mlb" data-lang="ar"><span class="flag flag-txt">AR</span></button>
   </div>
 </div>
 
@@ -1100,7 +1101,7 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
       <div class="fci">📞 <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
       <div class="fci">✉️ <a href="mailto:salah.eddine@cnyomin.com">salah.eddine@cnyomin.com</a></div>
     </div>
-    <div class="fcol"><span class="fcol-ttl" style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--mt);margin-bottom:14px;font-weight:600;display:block" data-i18n="ft_pr">Products</span><ul><li><a href="/products?category=screw-machine">Screw Machines</a></li><li><a href="/products?category=energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products?category=energy-meter">Smart Meter</a></li><li><a href="/products?category=energy-meter">Prepaid Meters</a></li><li><a href="/products?category=current-transformer">Current Transformers</a></li><li><a href="/products?category=energy-meter">RS485 Meters</a></li><li><a href="/products?category=smart-gateway">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--mt);margin-bottom:14px;font-weight:600;display:block" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/smart-gateway">Data Concentrators</a></li></ul></div>
     <div class="fcol"><span class="fcol-ttl" style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--mt);margin-bottom:14px;font-weight:600;display:block" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Factory Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
     <div class="fcol"><span class="fcol-ttl" style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--mt);margin-bottom:14px;font-weight:600;display:block" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="mailto:salah.eddine@cnyomin.com">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li>
           <li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">📍 View on Google Maps</a></li></ul></div>

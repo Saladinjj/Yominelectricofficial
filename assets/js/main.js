@@ -417,6 +417,23 @@ function updateLangUI() {
   document.querySelectorAll('.lopt, .mlb').forEach(b => b.classList.toggle('act', b.dataset.lang === currentLang));
   const lbtnTxt = document.getElementById('lbtn-txt');
   if (lbtnTxt) lbtnTxt.textContent = currentLang.toUpperCase();
+  // Flag display in the language button (shared with index.html's #lf)
+  let flagEl = document.getElementById('lf') || document.getElementById('lbtn-flag');
+  const lbtn = document.querySelector('.lbtn');
+  if (!flagEl && lbtn) {
+    flagEl = document.createElement('span');
+    flagEl.id = 'lbtn-flag';
+    lbtn.insertBefore(flagEl, lbtn.firstChild);
+  }
+  if (flagEl && currentLang) {
+    const flags = {
+      en: '<img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN">',
+      fr: '<img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR">',
+      es: '<img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES">',
+      ar: '<span class="flag flag-txt">AR</span>'
+    };
+    flagEl.innerHTML = flags[currentLang] || '';
+  }
 }
 
 /* ─── THEME ─────────────────────────────────────────── */
@@ -545,6 +562,24 @@ function setTheme(t, fromAuto = false) {
   // GA4 tracking for WhatsApp float button
   var waFloat = document.querySelector('.float-btn-wa');
   if (waFloat) waFloat.addEventListener('click', function(){ if (typeof gtag === 'function') gtag('event', 'contact', { method: 'whatsapp', button_location: 'float_widget', page_location: location.pathname }); });
+})();
+
+/* Wire pre-existing float button markup (category / products / index pages
+   that already ship .float-btns + #wc-modal but never got click handlers). */
+(function wireExistingFloat() {
+  const overlay = document.getElementById('wc-modal') || document.querySelector('.wc-modal-overlay');
+  const wcBtn = document.getElementById('wc-btn') || document.querySelector('.float-btn-wc');
+  if (overlay && wcBtn) {
+    wcBtn.addEventListener('click', () => overlay.classList.add('op'));
+    const close = document.getElementById('wc-close') || document.querySelector('.wc-modal-close');
+    if (close) close.addEventListener('click', () => overlay.classList.remove('op'));
+    overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('op'); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') overlay.classList.remove('op'); });
+  }
+  const waFloat = document.querySelector('.float-btn-wa');
+  if (waFloat) waFloat.addEventListener('click', function () {
+    if (typeof gtag === 'function') gtag('event', 'contact', { method: 'whatsapp', button_location: 'float_widget', page_location: location.pathname });
+  });
 })();
 
 /* ─── INIT ───────────────────────────────────────────── */

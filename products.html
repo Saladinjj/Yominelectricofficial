@@ -1875,7 +1875,8 @@
     @media(max-width:480px) {
       .mob-filter { top: 56px; }
       .mc-why-grid { grid-template-columns: 1fr 1fr } .mc-action-row { grid-template-columns: 1fr 1fr } .mc-bundle-grid { grid-template-columns: 1fr } }
-  </style>
+  @media(max-width:640px){.prod-grid{grid-template-columns:repeat(2,1fr)!important;gap:10px}}
+</style>
 </head>
 
 <body>
@@ -1924,7 +1925,7 @@
           <button class="lopt" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"> English</button>
           <button class="lopt" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"> Français</button>
           <button class="lopt" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"> Español</button>
-          <button class="lopt" data-lang="ar"><img src="https://flagcdn.com/16x12/sa.png" class="flag" alt="AR"> العربية</button>
+          <button class="lopt" data-lang="ar"><span class="flag flag-txt">AR</span> العربية</button>
         </div>
       </div>
       <a href="/contact" class="ncta" data-t="nav_cta">Get Quote</a>
@@ -1944,7 +1945,7 @@
       <button class="mlb" data-lang="en">EN</button>
       <button class="mlb" data-lang="fr">FR</button>
       <button class="mlb" data-lang="es">ES</button>
-      <button class="mlb" data-lang="ar"><img src="https://flagcdn.com/16x12/sa.png" class="flag" alt="AR"></button>
+      <button class="mlb" data-lang="ar"><span class="flag flag-txt">AR</span></button>
     </div>
   </div>
 

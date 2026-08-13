@@ -127,3 +127,4 @@ body.light .wc-modal-close{background:rgba(0,0,0,.05);color:var(--mt)}
 [dir=rtl] .container,[dir=rtl] footer{direction:rtl;text-align:right}
 [dir=rtl] .crumbs{direction:rtl}
 [dir=rtl] .float-btns{right:auto;left:28px}
+.flag-txt{display:inline-flex;align-items:center;justify-content:center;width:16px;height:12px;background:rgba(232,148,74,.16);border:1px solid rgba(232,148,74,.35);color:#E8944A;font-size:8px;font-weight:700;border-radius:2px;letter-spacing:.5px}
