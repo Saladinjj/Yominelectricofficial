@@ -453,11 +453,6 @@
       "source": "/blog-nepal-loading",
       "destination": "/blog/nepal-loading",
       "statusCode": 301
-    },
-    {
-      "source": "/products/:slug",
-      "destination": "/products?category=:slug",
-      "statusCode": 301
     }
   ],
   "routes": [
@@ -556,6 +551,94 @@
     {
       "src": "/compare",
       "dest": "/compare/single-phase-vs-three-phase-meter.html"
+    },
+    {
+      "src": "/products/energy-meter",
+      "dest": "/products/energy-meter.html"
+    },
+    {
+      "src": "/products/voltage-stabilizer-regulator",
+      "dest": "/products/voltage-stabilizer-regulator.html"
+    },
+    {
+      "src": "/products/current-transformer",
+      "dest": "/products/current-transformer.html"
+    },
+    {
+      "src": "/products/variac-transformer",
+      "dest": "/products/variac-transformer.html"
+    },
+    {
+      "src": "/products/fuse-protection",
+      "dest": "/products/fuse-protection.html"
+    },
+    {
+      "src": "/products/voltage-protector",
+      "dest": "/products/voltage-protector.html"
+    },
+    {
+      "src": "/products/socket-wiring",
+      "dest": "/products/socket-wiring.html"
+    },
+    {
+      "src": "/products/terminal-connector",
+      "dest": "/products/terminal-connector.html"
+    },
+    {
+      "src": "/products/solar-pv-products",
+      "dest": "/products/solar-pv-products.html"
+    },
+    {
+      "src": "/products/tools-hardware",
+      "dest": "/products/tools-hardware.html"
+    },
+    {
+      "src": "/products/security-seal",
+      "dest": "/products/security-seal.html"
+    },
+    {
+      "src": "/products/other",
+      "dest": "/products/other.html"
+    },
+    {
+      "src": "/products/aluminum-busbar",
+      "dest": "/products/aluminum-busbar.html"
+    },
+    {
+      "src": "/products/flexible-busbar",
+      "dest": "/products/flexible-busbar.html"
+    },
+    {
+      "src": "/products/rigid-busbar",
+      "dest": "/products/rigid-busbar.html"
+    },
+    {
+      "src": "/products/energy-storage-busbar",
+      "dest": "/products/energy-storage-busbar.html"
+    },
+    {
+      "src": "/products/busbar-protection",
+      "dest": "/products/busbar-protection.html"
+    },
+    {
+      "src": "/products/composite-laminated-busbar",
+      "dest": "/products/composite-laminated-busbar.html"
+    },
+    {
+      "src": "/products/ccs-integrated-busbar",
+      "dest": "/products/ccs-integrated-busbar.html"
+    },
+    {
+      "src": "/products/heavy-duty-busbar",
+      "dest": "/products/heavy-duty-busbar.html"
+    },
+    {
+      "src": "/products/screw-machine",
+      "dest": "/products/screw-machine.html"
+    },
+    {
+      "src": "/products/emergency-lighting",
+      "dest": "/products/emergency-lighting.html"
     },
     {
       "src": "/(.*)",

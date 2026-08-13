@@ -259,7 +259,7 @@ function buildBusbarSubBar(){
 function setFilter(val){
   /* Category filters navigate to their dedicated static page */
   if (val !== 'all' && val !== 'New' && val !== BUSBAR_FILTER && CAT_SLUG[val]) {
-    location.href = '/products?category=' + CAT_SLUG[val];
+    location.href = '/products/' + CAT_SLUG[val];
     return;
   }
   activeFilter=val; searchQuery='';
