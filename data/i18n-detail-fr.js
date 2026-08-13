@@ -24476,6 +24476,162 @@ if (typeof T !== "undefined") {
 "cat-ccs-integrated-busbar": "Barre CCS intégrée",
 "cat-heavy-duty-busbar": "Barres de service intensif",
 "cat-screw-machine": "Machines à visser",
-"cat-emergency-lighting": "Éclairage de secours"
+"cat-emergency-lighting": "Éclairage de secours",
+"apps-energy-meter": [
+"Facturation et suivi de l'énergie résidentielle",
+"Sous-comptage commercial et industriel",
+"Tableaux de distribution sur rail DIN",
+"Gestion d'énergie pour maisons intelligentes",
+"Relevé à distance et systèmes de prépaiement"
+],
+"apps-voltage-stabilizer-regulator": [
+"Protection de tension pour appareils ménagers",
+"Conditionnement de puissance pour équipements industriels",
+"Systèmes de réfrigération et CVC",
+"Machines CNC et outils de précision",
+"Équipements médicaux et de laboratoire"
+],
+"apps-current-transformer": [
+"Mesure et facturation d'énergie",
+"Relais de protection et appareillage",
+"Surveillance de la qualité de l'énergie",
+"Instrumentation de tableaux de distribution",
+"Contrôle moteur industriel"
+],
+"apps-variac-transformer": [
+"Tests et calibration de tension",
+"Contrôle de vitesse de moteurs",
+"Alimentations de laboratoire",
+"Contrôle de chauffage et d'éclairage",
+"Équipements audio et électroniques"
+],
+"apps-fuse-protection": [
+"Protection DC photovoltaïque",
+"Tableaux de distribution industriels",
+"Protection moteurs et circuits",
+"Systèmes de batteries et de stockage",
+"Tableaux résidentiels"
+],
+"apps-voltage-protector": [
+"Protection de tension pour appareils ménagers",
+"Conditionnement de puissance pour équipements industriels",
+"Systèmes de réfrigération et CVC",
+"Machines CNC et outils de précision",
+"Équipements médicaux et de laboratoire"
+],
+"apps-socket-wiring": [
+"Distribution de puissance en ateliers industriels",
+"Alimentation de chantiers",
+"Installations extérieures étanches",
+"Prises pour équipements mobiles",
+"Environnements marins et difficiles"
+],
+"apps-terminal-connector": [
+"Connexions câble-à-barre",
+"Câblage de panneaux de contrôle",
+"Jonctions de distribution",
+"Connexions de bornes batteries",
+"Mise à la terre"
+],
+"apps-solar-pv-products": [
+"Systèmes de connexion de panneaux solaires",
+"Boîtes de combinaison PV",
+"Intégration de stockage d'énergie",
+"Systèmes hors réseau",
+"Pompage et éclairage solaires"
+],
+"apps-tools-hardware": [
+"Distribution électrique industrielle",
+"Produits électriques OEM sur mesure",
+"Projets d'exportation"
+],
+"apps-security-seal": [
+"Scellés anti-fraude pour compteurs électriques",
+"Scellés de conteneurs et marchandises",
+"Scellés de compteurs de gaz",
+"Protection de compteurs d'eau",
+"Protection des marchandises de valeur"
+],
+"apps-other": [
+"Distribution électrique industrielle",
+"Produits électriques OEM sur mesure",
+"Projets d'exportation"
+],
+"apps-aluminum-busbar": [
+"Distribution dans les tableaux électriques",
+"Connexions de packs batteries",
+"Systèmes solaires et renouvelables",
+"Liaisons de puissance légères",
+"Appareillage et armoires de contrôle"
+],
+"apps-flexible-busbar": [
+"Packs et modules de batteries VE",
+"Systèmes de stockage d'énergie (BESS)",
+"Appareillage et électronique de puissance",
+"Serveurs et centres de données",
+"Onduleurs d'énergie renouvelable"
+],
+"apps-rigid-busbar": [
+"Packs et modules de batteries VE",
+"Systèmes de stockage d'énergie (BESS)",
+"Appareillage et électronique de puissance",
+"Serveurs et centres de données",
+"Onduleurs d'énergie renouvelable"
+],
+"apps-energy-storage-busbar": [
+"Packs et modules de batteries VE",
+"Systèmes de stockage d'énergie (BESS)",
+"Appareillage et électronique de puissance",
+"Serveurs et centres de données",
+"Onduleurs d'énergie renouvelable"
+],
+"apps-busbar-protection": [
+"Protection DC photovoltaïque",
+"Tableaux de distribution industriels",
+"Protection moteurs et circuits",
+"Systèmes de batteries et de stockage",
+"Tableaux résidentiels"
+],
+"apps-composite-laminated-busbar": [
+"Packs et modules de batteries VE",
+"Systèmes de stockage d'énergie (BESS)",
+"Appareillage et électronique de puissance",
+"Serveurs et centres de données",
+"Onduleurs d'énergie renouvelable"
+],
+"apps-ccs-integrated-busbar": [
+"Packs et modules de batteries VE",
+"Systèmes de stockage d'énergie (BESS)",
+"Appareillage et électronique de puissance",
+"Serveurs et centres de données",
+"Onduleurs d'énergie renouvelable"
+],
+"apps-heavy-duty-busbar": [
+"Packs et modules de batteries VE",
+"Systèmes de stockage d'énergie (BESS)",
+"Appareillage et électronique de puissance",
+"Serveurs et centres de données",
+"Onduleurs d'énergie renouvelable"
+],
+"apps-screw-machine": [
+"Lignes de vissage de barres",
+"Automatisation d'assemblage de bornes",
+"Production de composants électriques",
+"Intégration CNC",
+"Solutions d'automatisation sur mesure"
+],
+"apps-emergency-lighting": [
+"Éclairage de secours résidentiel",
+"Éclairage de sécurité commercial",
+"Éclairage d'évacuation hôtels et hôpitaux",
+"Puissance de secours industrielle",
+"Théâtres et salles d'événements"
+],
+"why-ttl": "Pourquoi choisir Yomin Electric",
+"why-p": "Zhejiang Yomin Electric Co., Ltd. est un fabricant direct d'usine de produits électriques de précision depuis 1996, apprécié dans plus de 60 pays.",
+"why-1": "Fabrication certifiée ISO 9001 et CE",
+"why-2": "Prix direct usine avec support OEM/ODM",
+"why-3": "Contrôle qualité strict - chaque unité testée avant expédition",
+"why-4": "Logistique d'exportation fiable vers 60+ pays"
 });
 }

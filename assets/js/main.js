@@ -428,6 +428,12 @@ function applyTranslations() {
           '</th><td>' + String(s[1]).replace(/</g, '&lt;') + '</td></tr>').join('');
       }
     }
+    const cat = pidEl.getAttribute('data-cat');
+    const apps = cat && d['apps-' + cat];
+    if (Array.isArray(apps)) {
+      const ul = document.querySelector('.p-apps ul');
+      if (ul) ul.innerHTML = apps.map(a => '<li>' + String(a).replace(/</g, '&lt;') + '</li>').join('');
+    }
   }
 }
 
