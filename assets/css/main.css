@@ -172,9 +172,9 @@ body.light {
   --sur: #e5e3de; --bdr: rgba(0,0,0,0.1); --bds: rgba(0,0,0,0.07);
   --tx: #1a1a1a; --mt: #555; --dm: #888; --ac: #C4762F; --ac2: #E8944A;
 }
-body.light nav { background: rgba(248,247,244,.92); border-bottom-color: rgba(0,0,0,.1); }
-body.light nav.sc { background: rgba(248,247,244,.99); }
-body.light .mob { background: rgba(248,247,244,.98); }
+body.light nav { background: #ffe9a7fc; border-bottom-color: rgba(0,0,0,.1); }
+body.light nav.sc { background: #ffe9a7fc; }
+body.light .mob { background: #ffe9a7fc; }
 body.light .mob a { color: #1a1a1a; }
 body.light .lbtn { background: rgba(0,0,0,.05); border-color: rgba(0,0,0,.12); color: #555; }
 body.light .ldrop { background: #fff; border-color: rgba(0,0,0,.1); }
