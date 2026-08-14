@@ -667,7 +667,7 @@ body.light .cert-sub{text-shadow:0 0 0.5px rgba(0,0,0,0.08)}
     <div><span class="slbl2" data-i18n="p_lbl">Product Catalog</span><h2 class="stitle" data-i18n="p_ttl">Precision-Built Metering Devices</h2></div>
     <p data-i18n="p_dsc">Featured: our 3-stage metal deep processing line for brass &amp; aluminum busbars — plus precision energy meters, stabilizers, transformers, and smart IoT devices.</p>
   </div>
-  <div class="pg"><a href="/products?id=ym-sm-001" class="pc pc-screw rv d1">
+  <div class="pg"><a href="/products/screw-machine" class="pc pc-screw rv d1">
       <span class="pc-featured-badge" data-i18n="pc_feat">Featured</span>
       <div class="pimg">
         <img src="assets/images/screw-machines/screw-machine-featured.png" alt="Yomin metal deep processing screw machine line" loading="lazy">
@@ -1279,16 +1279,18 @@ window.addEventListener('scroll',()=>{
 
 <script>
 // ─── THEME TOGGLE ────────────────────────────────────────────
-function setTheme(light) {
-  document.body.classList.toggle('light', light);
-  document.getElementById('btnDark').classList.toggle('tpbtn-act', !light);
-  document.getElementById('btnLight').classList.toggle('tpbtn-act', light);
-  localStorage.setItem('ym_theme', light ? 'light' : 'dark');
-}
-var storedTheme = localStorage.getItem('ym_theme');
-var hour = new Date().getHours();
-var autoTheme = (hour >= 6 && hour < 18) ? 'light' : 'dark';
-setTheme((storedTheme || autoTheme) === 'light');
+(function () {
+  function setTheme(light) {
+    document.body.classList.toggle('light', light);
+    document.getElementById('btnDark').classList.toggle('tpbtn-act', !light);
+    document.getElementById('btnLight').classList.toggle('tpbtn-act', light);
+    localStorage.setItem('ym_theme', light ? 'light' : 'dark');
+  }
+  var storedTheme = localStorage.getItem('ym_theme');
+  var hour = new Date().getHours();
+  var autoTheme = (hour >= 6 && hour < 18) ? 'light' : 'dark';
+  setTheme((storedTheme || autoTheme) === 'light');
+})();
 
 // ─── WECHAT MODAL ────────────────────────────────────────────
 const wcModalIndex = document.getElementById('wc-modal-index');
