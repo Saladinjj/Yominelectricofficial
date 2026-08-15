@@ -35,7 +35,7 @@
 .pgn-btn:hover,.pgn-btn.pgn-act{background:var(--ac);color:#000;border-color:var(--ac)}
 .pgn-btn[disabled]{opacity:.35;cursor:default}
 /* ── Cat page layout ─────────────────────── */
-.cat-layout{display:grid;grid-template-columns:220px 1fr;gap:0;min-height:80vh}
+.cat-layout{display:grid;grid-template-columns:220px 1fr;gap:0;min-height:80vh;padding-top:68px}
 .cat-sidebar{border-right:1px solid var(--bds);padding:0;position:sticky;top:68px;height:calc(100vh - 68px);overflow-y:auto}
 .sb-header{padding:20px 18px 10px;border-bottom:1px solid var(--bds)}
 .sb-title{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--dm);font-weight:700}
@@ -48,7 +48,7 @@
 .cat-hero p{color:var(--mt);font-size:14px;line-height:1.7;max-width:680px;margin:0 0 12px}
 .cat-count-tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--dm);background:var(--bgc);border:1px solid var(--bds);border-radius:20px;padding:4px 12px;display:inline-block}
 /* ── Products index extra ───────────────── */
-.page-hero{padding:110px 60px 52px;border-bottom:1px solid var(--bds);background:linear-gradient(135deg,var(--bg) 0%,var(--bgs) 100%);position:relative;overflow:hidden}
+.page-hero{padding:120px 60px 52px;border-bottom:1px solid var(--bds);background:linear-gradient(135deg,var(--bg) 0%,var(--bgs) 100%);position:relative;overflow:hidden}
 .page-hero::after{content:'';position:absolute;top:-60px;right:-60px;width:400px;height:400px;background:radial-gradient(circle,rgba(232,148,74,.06) 0%,transparent 70%);pointer-events:none}
 .ph-tag{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--ac);margin-bottom:14px;display:block}
 .ph-h1{font-family:var(--sf);font-size:clamp(34px,5vw,60px);line-height:1;letter-spacing:-2px;color:var(--tx);margin-bottom:16px}
@@ -56,7 +56,7 @@
 .ph-stats{display:flex;gap:32px;margin-top:32px;flex-wrap:wrap}
 .ph-stat-num{font-family:var(--sf);font-size:28px;color:var(--ac);letter-spacing:-1px}
 .ph-stat-lbl{font-size:10px;color:var(--dm);letter-spacing:1.5px;text-transform:uppercase;margin-top:2px}
-.shop-layout{display:grid;grid-template-columns:220px 1fr;gap:0;min-height:80vh}
+.shop-layout{display:grid;grid-template-columns:220px 1fr;gap:0;min-height:80vh;margin-top:0}
 .shop-sidebar{border-right:1px solid var(--bds);position:sticky;top:68px;height:calc(100vh - 68px);overflow-y:auto}
 .shop-body{padding:0}
 .cat-section{padding:44px 36px 12px}
