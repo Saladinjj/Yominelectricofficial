@@ -1,27 +1,16 @@
 User-agent: *
 Allow: /
-Disallow: /temp/
-Disallow: /scripts/
-Disallow: /LibreChat/
-Disallow: /image_generate/
-Disallow: /LINKEDIN/
-Disallow: /MARK/
-Disallow: /generative designs/
-Disallow: /excel sheets data/
-Disallow: /curl/
-Disallow: /plans/
-Disallow: /backend/
-Disallow: /data/
-Allow: /data/products.json
-Disallow: /*.asp
-Disallow: /*.py
-Disallow: /*.json
-Disallow: /*.tsv
-Disallow: /pro_ok.asp
-Disallow: /pro_s.asp
 
-# Crawl-delay for polite crawling
-User-agent: PetalBot
-Crawl-delay: 10
-
+# Sitemaps
+Sitemap: https://www.yominelectric.com/sitemap_index.xml
 Sitemap: https://www.yominelectric.com/sitemap.xml
+
+# Disallow non-public paths
+Disallow: /temp/
+Disallow: /assets/js/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow product images
+Allow: /assets/images/
+Allow: /assets/css/
