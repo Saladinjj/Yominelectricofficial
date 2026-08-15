@@ -96,12 +96,23 @@ window.__ymPagesI18n['es'] = {
     }
   }
   /* Apply on load if language already set */
-  var stored = localStorage.getItem('ym_lang');
-  if (stored && stored !== 'en') applyLang(stored);
+  function applyStored() {
+    var stored = localStorage.getItem('ym_lang') || window.ymLang;
+    if (stored && stored !== 'en') applyLang(stored);
+  }
+  /* Apply immediately */
+  applyStored();
+  /* Apply after DOM fully loaded */
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyStored);
+  }
   /* Re-apply whenever user switches language */
   document.addEventListener('langChanged', function(e) { applyLang(e.detail); });
+  window.addEventListener('langChanged', function(e) { applyLang(e.detail); });
   /* Also watch storage changes (multi-tab) */
   window.addEventListener('storage', function(e) {
     if (e.key === 'ym_lang' && e.newValue && e.newValue !== 'en') applyLang(e.newValue);
   });
+  /* Retry after main.js sets window.ymLang */
+  window.addEventListener('load', applyStored);
 })();

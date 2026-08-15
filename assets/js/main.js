@@ -398,7 +398,7 @@ function setLang(l, fromInit) {
   document.documentElement.dir = 'ltr';
   document.body.dir = 'ltr';
   document.body.classList.toggle('ar', l === 'ar');
-  applyTranslations();
+  applyTranslations(); document.dispatchEvent(new CustomEvent("langChanged", {detail: l})); window.dispatchEvent(new CustomEvent("langChanged", {detail: l}));
   updateLangUI();
   // Reload product pages only on manual language switch, not initial load
   if (!fromInit && prevLang !== l) {
