@@ -1,64 +1,90 @@
 'use strict';
 if (typeof window.__ymPagesI18n === 'undefined') window.__ymPagesI18n = {};
 window.__ymPagesI18n['es'] = {
-    'browse_cat': 'Por Categoría',
+    'browse_cat': 'Explorar por Categoría',
     'view_all': 'Ver todo',
+    'all_products': 'Todos los Productos',
+    'products': 'Productos',
+    'home': 'Inicio',
+    'prev': '← Anterior',
+    'next': 'Siguiente →',
+    'page': 'Página',
     'inquiry_price': 'Consultar Precio',
+    'min_order': 'Pedido mín.:',
+    'products_count': 'productos',
     'request_quote': 'Solicitar Cotización',
     'whatsapp': 'WhatsApp',
-    'more_in': 'Más en',
+    'more_in_cat': 'Más en esta categoría',
+    'tech_specs': 'Especificaciones Técnicas',
+    'key_features': 'Características Principales',
     'applications': 'Aplicaciones',
     'why_yomin': 'Por Qué Elegir Yomin Electric',
-    'tech_specs': 'Especificaciones Técnicas',
-    'key_features': 'Características Clave',
-    'worldwide_ship': 'Envío Mundial',
-    'ship_time': '15–25 días hábiles',
-    'ship_countries': '95+ países atendidos',
-    'ship_free_consult': 'Consulta gratuita de envío',
-    'ship_returns': 'Política de 30 días',
-    'min_order': 'Pedido Mín.:',
-    'products': 'Productos',
-    'all_products': 'Todos los Productos',
-    'yomin_tagline': 'Productos eléctricos de fábrica — en más de 95 países',
-    'certified': 'Certificado ISO 9001 &amp; CE',
-    'oem_odm': 'OEM / ODM Disponible',
+    'worldwide_ship': '🌍 Envío Mundial',
+    'ship_time': '15 a 25 días hábiles',
+    'ship_countries': 'Envío a más de 95 países',
+    'ship_packaging': 'Embalaje de exportación seguro',
+    'ship_returns': 'Devolución en 30 días',
+    'ship_free_consult': 'Consulta de envío gratuita',
+    'ship_incoterms': 'DDP / FOB / CIF disponibles',
+    'certified': 'Certificado ISO 9001 & CE',
     'factory_direct': 'Directo de Fábrica',
-    'prev': 'Ant',
-    'next': 'Sig',
-    'cat_screw-machine': 'Screw Machines',
-    'cat_energy-meter': 'Energy Meters',
-    'cat_current-transformer': 'Current Transformers',
-    'cat_voltage-stabilizer-regulator': 'Voltage Stabilizers',
-    'cat_variac-transformer': 'Variac Transformers',
-    'cat_terminal-connector': 'Terminals &amp; Connectors',
-    'cat_fuse-protection': 'Fuses &amp; Protection',
-    'cat_socket-wiring': 'Sockets &amp; Wiring',
-    'cat_solar-pv-products': 'Solar &amp; PV Products',
-    'cat_tools-hardware': 'Tools &amp; Hardware',
-    'cat_aluminum-busbar': 'Aluminum Busbars',
-    'cat_flexible-busbar': 'Flexible Busbars',
-    'cat_security-seal': 'Security Seals',
-    'cat_other': 'Other Products'
+    'oem_odm': 'OEM / ODM Disponible',
+    'since_1996': 'Desde 1996',
+    '95_countries': '95+ Países',
+    'yomin_tagline': 'Productos eléctricos de fábrica — confiados en más de 95 países',
+    'why_body': 'Zhejiang Yomin Electric Co., Ltd. fabrica productos eléctricos de precisión desde 1996, con la confianza de compradores en más de 95 países. Cada unidad se prueba antes del envío.',
+    'cat_screw-machine': 'Máquinas de Tornillos',
+    'cat_energy-meter': 'Contadores de Energía',
+    'cat_current-transformer': 'Transformadores de Corriente',
+    'cat_voltage-stabilizer-regulator': 'Estabilizadores de Tensión',
+    'cat_variac-transformer': 'Transformadores Variac',
+    'cat_terminal-connector': 'Terminales & Conectores',
+    'cat_fuse-protection': 'Fusibles & Protección',
+    'cat_socket-wiring': 'Enchufes & Cableado',
+    'cat_solar-pv-products': 'Productos Solares y FV',
+    'cat_tools-hardware': 'Herramientas & Hardware',
+    'cat_aluminum-busbar': 'Barras de Bus de Aluminio',
+    'cat_flexible-busbar': 'Barras de Bus Flexibles',
+    'cat_security-seal': 'Sellos de Seguridad',
+    'cat_other': 'Otros Productos'
 };
-// Apply translations on DOMContentLoaded
 (function(){
   function applyLang(l){
-    var d=window.__ymPagesI18n&&window.__ymPagesI18n[l];
-    if(!d)return;
+    var d = window.__ymPagesI18n && window.__ymPagesI18n[l];
+    if (!d) return;
+    /* Static UI strings */
     document.querySelectorAll('[data-i18n]').forEach(function(el){
-      var k=el.getAttribute('data-i18n');
-      if(d[k])el.textContent=d[k];
+      var k = el.getAttribute('data-i18n');
+      if (d[k] !== undefined) el.textContent = d[k];
     });
-    // RTL
-    if(l==='ar'){document.documentElement.setAttribute('dir','rtl');}
-    else{document.documentElement.removeAttribute('dir');}
-  }
-  var stored=localStorage.getItem('ym_lang');
-  if(stored&&stored!=='en'){
-    if(typeof T!=='undefined'&&T[stored]){
-      // product titles handled by main i18n
+    /* Product titles in cards (data-pid attribute) */
+    if (typeof T !== 'undefined' && T[l]) {
+      document.querySelectorAll('[data-pid]').forEach(function(el){
+        var pid = el.getAttribute('data-pid');
+        if (T[l][pid]) el.textContent = T[l][pid];
+      });
     }
-    applyLang(stored);
+    /* Category sidebar labels */
+    document.querySelectorAll('[data-i18n^="cat_"]').forEach(function(el){
+      var k = el.getAttribute('data-i18n');
+      if (d[k]) el.textContent = d[k];
+    });
+    /* RTL for Arabic */
+    if (l === 'ar') {
+      document.documentElement.setAttribute('dir', 'rtl');
+      document.documentElement.setAttribute('lang', 'ar');
+    } else {
+      document.documentElement.removeAttribute('dir');
+      document.documentElement.setAttribute('lang', l === 'fr' ? 'fr' : l === 'es' ? 'es' : 'en');
+    }
   }
-  document.addEventListener('langChanged',function(e){applyLang(e.detail);});
+  /* Apply on load if language already set */
+  var stored = localStorage.getItem('ym_lang');
+  if (stored && stored !== 'en') applyLang(stored);
+  /* Re-apply whenever user switches language */
+  document.addEventListener('langChanged', function(e) { applyLang(e.detail); });
+  /* Also watch storage changes (multi-tab) */
+  window.addEventListener('storage', function(e) {
+    if (e.key === 'ym_lang' && e.newValue && e.newValue !== 'en') applyLang(e.newValue);
+  });
 })();
