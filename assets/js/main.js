@@ -406,6 +406,9 @@ function setLang(l, fromInit) {
     if (onProductPage) location.reload();
   }
 }
+window.sL = setLang; // alias used by nav language buttons
+window.setLang = setLang; // expose for i18n-global.js
+
 
 function applyTranslations() {
   const d = T[currentLang];
