@@ -286,7 +286,7 @@
       document.querySelectorAll('[data-i18n]').forEach(function(el) {
         var k = el.getAttribute('data-i18n');
         var val = (T['en'] || PKG['en'])[k];
-        if (val) el.textContent = val;
+        if (val) { if (/<[a-z]/i.test(val)) { el.innerHTML = val; } else { el.textContent = val; } }
       });
       document.documentElement.setAttribute('lang', 'en');
       document.documentElement.removeAttribute('dir');
@@ -298,7 +298,7 @@
     // Static UI strings via data-i18n
     document.querySelectorAll('[data-i18n]').forEach(function(el) {
       var k = el.getAttribute('data-i18n');
-      if (d[k] !== undefined) el.textContent = d[k];
+      if (d[k] !== undefined) { if (/<[a-z]/i.test(d[k])) { el.innerHTML = d[k]; } else { el.textContent = d[k]; } }
     });
 
     // Product titles via data-pid (uses window.T from main.js)
