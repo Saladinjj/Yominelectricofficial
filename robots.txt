@@ -2,15 +2,10 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.yominelectric.com/sitemap_index.xml
 Sitemap: https://www.yominelectric.com/sitemap.xml
+Sitemap: https://www.yominelectric.com/sitemap_index.xml
 
 # Disallow non-public paths
 Disallow: /temp/
-Disallow: /assets/js/
 Disallow: /.git/
 Disallow: /node_modules/
-
-# Allow product images
-Allow: /assets/images/
-Allow: /assets/css/
