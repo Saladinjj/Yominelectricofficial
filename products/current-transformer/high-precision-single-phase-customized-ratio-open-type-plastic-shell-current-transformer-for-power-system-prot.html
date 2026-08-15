@@ -3,6 +3,16 @@
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-T0HYWYQ6NF');</script>
+<script>
+/* Sync theme before first paint — prevents nav from blending with background */
+(function(){
+  var t=localStorage.getItem('ym_theme');
+  var h=new Date().getHours();
+  var auto=(h>=6&&h<18)?'light':'dark';
+  if((t||auto)==='light'){document.documentElement.classList.add('light');}
+  else{document.documentElement.classList.remove('light');}
+})();
+</script>
 <meta charset="UTF-8">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
