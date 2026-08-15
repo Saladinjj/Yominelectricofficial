@@ -310,10 +310,8 @@
     }
 
     // Arabic RTL
-    if (l === 'ar') {
-      document.documentElement.setAttribute('dir', 'rtl');
-      document.documentElement.setAttribute('lang', 'ar');
-    } else {
+    if (false) { // RTL disabled per user request
+  } else {
       document.documentElement.removeAttribute('dir');
       document.documentElement.setAttribute('lang', l);
     }

@@ -208,7 +208,7 @@ nav.sc{background:rgba(13,13,13,.99)}
 /* ═══════════════════ BLOG STYLES ═══════════════════ */
 
 /* ─── BLOG HERO ─── */
-.blog-hero{padding:140px 60px 60px;text-align:center;position:relative;overflow:hidden;background:var(--bgs)}
+.blog-hero{width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;position:relative;width:100%;box-sizing:border-box;padding:140px 60px 60px;text-align:center;position:relative;overflow:hidden;background:var(--bgs)}
 .blog-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 60% at 50% 40%,rgba(232,148,74,.06) 0%,transparent 70%);pointer-events:none}
 .blog-hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(232,148,74,.1);border:1px solid rgba(232,148,74,.22);color:var(--ac);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:30px;margin-bottom:20px}
 .blog-hero h1{font-family:var(--sf);font-size:clamp(30px,4.5vw,56px);line-height:1.1;letter-spacing:-1.5px;color:var(--tx);margin-bottom:16px}
@@ -376,7 +376,7 @@ body.light .mob-x{color:#555}
 body.light .ncta{background:#C4762F}
 body.light .ncta:hover{background:#E8944A}
 body.light .mlb{background:rgba(0,0,0,.06);border-color:rgba(0,0,0,.12)}
-body.light .blog-hero{background:#efefeb}
+body.light .blog-hero{width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;position:relative;width:100%;box-sizing:border-box;background:#efefeb}
 body.light .post-card{background:#fff;border-color:rgba(0,0,0,.1)}
 body.light .sidebar-widget{background:#fff;border-color:rgba(0,0,0,.1)}
 body.light .featured-post{background:#fff;border-color:rgba(196,118,47,.18)}
@@ -401,14 +401,14 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
 @media(max-width:1200px){
   .post-grid{grid-template-columns:repeat(2,1fr)}
   .blog-main{padding:40px 40px 50px}
-  .blog-hero{padding:120px 40px 50px}
+  .blog-hero{width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;position:relative;width:100%;box-sizing:border-box;padding:120px 40px 50px}
   .filter-tabs-wrap{padding:24px 40px 0}
   footer{padding:70px 40px 36px}
   .fmq{margin:0 -40px 50px}
 }
 @media(max-width:960px){
   .blog-main{grid-template-columns:1fr}
-  .blog-hero{padding:110px 40px 44px}
+  .blog-hero{width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;position:relative;width:100%;box-sizing:border-box;padding:110px 40px 44px}
   .featured-post{grid-template-columns:1fr}
   .featured-img-wrap{min-height:180px}
   .post-grid{grid-template-columns:repeat(2,1fr)}
@@ -421,7 +421,7 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
   nav{padding:0 16px;height:60px}
   .n-logo img{height:36px}
   .post-grid{grid-template-columns:1fr}
-  .blog-hero{padding:100px 20px 40px}
+  .blog-hero{width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;position:relative;width:100%;box-sizing:border-box;padding:100px 20px 40px}
   .blog-hero h1{font-size:clamp(24px,7vw,36px)}
   .blog-main{padding:28px 20px 40px;gap:28px}
   .filter-tabs-wrap{padding:20px 20px 0}
@@ -437,7 +437,7 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
 @media(max-width:480px){
   nav{padding:0 12px;height:56px}
   .n-logo img{height:32px}
-  .blog-hero{padding:90px 16px 32px}
+  .blog-hero{width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;position:relative;width:100%;box-sizing:border-box;padding:90px 16px 32px}
   .blog-main{padding:22px 16px 32px}
   .filter-tabs-wrap{padding:16px 16px 0}
   .blog-hero h1{font-size:clamp(22px,8vw,32px)}
@@ -445,11 +445,11 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
 
 /* ─── FLOATING BUTTONS ─── */
 .float-btns{position:fixed;bottom:28px;right:28px;z-index:500;display:flex;flex-direction:column;gap:12px}
-.float-btn{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,.5);transition:transform .25s;text-decoration:none;border:none;cursor:pointer;position:relative}
+.float-btn{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative;border:none;transition:transform .2s}
 .float-btn:hover{transform:translateY(-4px) scale(1.05)}
-.float-btn-wa{background:#25D366}
+.float-btn-wa{background:linear-gradient(135deg,#25D366,#1DA851)}
 .float-btn-wc{background:#07C160}
-.float-btn svg{width:26px;height:26px}
+.float-btn svg{width:28px;height:28px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.2))}
 .float-btn-label{position:absolute;right:64px;background:var(--bgc);color:var(--tx);font-size:11px;padding:6px 12px;border-radius:6px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}
 .float-btn:hover .float-btn-label{opacity:1}
 
@@ -468,8 +468,14 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
 .wa-btn{display:none}
 .flag-txt{display:inline-flex;align-items:center;justify-content:center;width:16px;height:12px;background:rgba(232,148,74,.16);border:1px solid rgba(232,148,74,.35);color:#E8944A;font-size:8px;font-weight:700;border-radius:2px;letter-spacing:.5px}
 </style>
+<style>
+/* Blog page full-width fix */
+body{overflow-x:hidden!important;max-width:100vw}
+.blog-hero{width:100vw!important;position:relative!important;left:50%!important;right:50%!important;margin-left:-50vw!important;margin-right:-50vw!important;padding-left:20px!important;padding-right:20px!important;box-sizing:border-box!important}
+.b-layout,.b-wrap,.updates-wrap{max-width:100%!important;width:100%!important}
+/* blog-hero-fullwidth marker */</style>
 </head>
-<body>
+<body style="overflow-x:hidden;width:100%;max-width:100vw">
 <a href="#main-content" class="skiplink" data-i18n="blog_skip">Skip to main content</a>
 
 <!-- MOBILE MENU -->
@@ -486,7 +492,7 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
     <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
     <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
     <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
-    <button class="mlb" data-lang="ar">AR</button>
+    <button class="mlb" data-lang="ar"><img src="https://flagcdn.com/16x12/sa.png" class="flag" alt="AR"> AR</button>
   </div>
 </div>
 
@@ -1300,7 +1306,7 @@ body.light .fbot p,body.light .fci,body.light .fcol ul a{text-shadow:0 0 .5px rg
     <span class="float-btn-label">WeChat</span>
     <svg viewBox="0 0 24 24" fill="white" width="26" height="26"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-3.895-6.348-7.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm4.315 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>
   </button>
-  <a class="float-btn float-btn-wa" href="https://wa.me/8619016543301" target="_blank" rel="noopener">
+  <a class="float-btn float-btn-wa" href="https://wa.me/8619016543301" target="_blank" rel="noopener" aria-label="WhatsApp">
     <span class="float-btn-label">WhatsApp</span>
     <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
   </a>
