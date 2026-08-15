@@ -31,6 +31,23 @@ window.__ymPagesI18n['ar'] = {
     'oem_odm': 'OEM / ODM متاح',
     'since_1996': 'منذ 1996',
     '95_countries': '٩٥+ دولة',
+    'ship_freight': 'شحن بحري وجوي',
+    'ship_global': 'توزيع عالمي',
+    'ship_cartons': 'كراتين تصدير عالية الجودة',
+    'ship_guarantee': 'ضمان الجودة',
+    'ship_contact': 'اتصل بفريقنا',
+    'ship_incoterms_sub': 'جميع شروط Incoterms متاحة',
+    'app_residential': 'التركيبات السكنية والتجارية',
+    'app_industrial': 'أنظمة الطاقة الصناعية',
+    'app_energy_mon': 'مراقبة وإدارة الطاقة',
+    'app_oem': 'إنتاج OEM / ODM',
+    'app_export': 'مشاريع التصدير والمرافق',
+    'why_iso': 'تصنيع معتمد بـ ISO 9001 & CE',
+    'why_pricing': 'أسعار تنافسية مباشرة من المصنع',
+    'why_oem': 'دعم تخصيص OEM/ODM الكامل',
+    'why_qc': 'مراقبة الجودة الصارمة — كل وحدة تُختبر قبل الشحن',
+    'why_logistics': 'لوجستيات تصدير سريعة إلى أكثر من 95 دولة',
+    'why_support': 'فريق الدعم الفني المتجاوب',
     'yomin_tagline': 'منتجات كهربائية مباشرة من المصنع — موثوق بها في أكثر من 95 دولة',
     'why_body': 'تصنع شركة Zhejiang Yomin Electric Co., Ltd. منتجات كهربائية دقيقة منذ عام 1996، وتحظى بثقة المشترين في أكثر من 95 دولة. يتم اختبار كل وحدة قبل الشحن.',
     'cat_screw-machine': 'ماكينات البراغي',
@@ -57,7 +74,7 @@ window.__ymPagesI18n['ar'] = {
       var k = el.getAttribute('data-i18n');
       if (d[k] !== undefined) el.textContent = d[k];
     });
-    /* Product titles in cards (data-pid attribute) */
+    /* Product titles in cards, breadcrumbs, and h1 (data-pid attribute) */
     if (typeof T !== 'undefined' && T[l]) {
       document.querySelectorAll('[data-pid]').forEach(function(el){
         var pid = el.getAttribute('data-pid');

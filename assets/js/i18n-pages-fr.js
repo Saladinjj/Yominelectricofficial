@@ -31,6 +31,23 @@ window.__ymPagesI18n['fr'] = {
     'oem_odm': 'OEM / ODM Disponible',
     'since_1996': 'Depuis 1996',
     '95_countries': '95+ Pays',
+    'ship_freight': 'Fret maritime et aérien',
+    'ship_global': 'Distribution mondiale',
+    'ship_cartons': 'Cartons d\'exportation',
+    'ship_guarantee': 'Garantie de qualité',
+    'ship_contact': 'Contactez notre équipe',
+    'ship_incoterms_sub': 'Tous les Incoterms disponibles',
+    'app_residential': 'Installations résidentielles et commerciales',
+    'app_industrial': 'Systèmes d\'alimentation industriels',
+    'app_energy_mon': 'Surveillance et gestion de l\'énergie',
+    'app_oem': 'Production OEM / ODM',
+    'app_export': 'Projets d\'exportation et d\'utilité',
+    'why_iso': 'Fabrication certifiée ISO 9001 & CE',
+    'why_pricing': 'Tarification compétitive directe usine',
+    'why_oem': 'Support complet de personnalisation OEM/ODM',
+    'why_qc': 'Contrôle qualité strict — chaque unité testée avant expédition',
+    'why_logistics': 'Logistique d\'exportation rapide vers 95+ pays',
+    'why_support': 'Équipe de support technique réactive',
     'yomin_tagline': 'Produits électriques d\'usine — approuvés dans plus de 95 pays',
     'why_body': 'Zhejiang Yomin Electric Co., Ltd. fabrique des produits électriques de précision depuis 1996, reconnus par les acheteurs dans plus de 95 pays. Chaque unité est testée avant expédition.',
     'cat_screw-machine': 'Machines à Vis',
@@ -57,7 +74,7 @@ window.__ymPagesI18n['fr'] = {
       var k = el.getAttribute('data-i18n');
       if (d[k] !== undefined) el.textContent = d[k];
     });
-    /* Product titles in cards (data-pid attribute) */
+    /* Product titles in cards, breadcrumbs, and h1 (data-pid attribute) */
     if (typeof T !== 'undefined' && T[l]) {
       document.querySelectorAll('[data-pid]').forEach(function(el){
         var pid = el.getAttribute('data-pid');

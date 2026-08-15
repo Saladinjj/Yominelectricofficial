@@ -31,6 +31,23 @@ window.__ymPagesI18n['es'] = {
     'oem_odm': 'OEM / ODM Disponible',
     'since_1996': 'Desde 1996',
     '95_countries': '95+ Países',
+    'ship_freight': 'Flete marítimo y aéreo',
+    'ship_global': 'Distribución global',
+    'ship_cartons': 'Cajas de exportación',
+    'ship_guarantee': 'Garantía de calidad',
+    'ship_contact': 'Contacte nuestro equipo',
+    'ship_incoterms_sub': 'Todos los Incoterms disponibles',
+    'app_residential': 'Instalaciones residenciales y comerciales',
+    'app_industrial': 'Sistemas de energía industrial',
+    'app_energy_mon': 'Monitoreo y gestión de energía',
+    'app_oem': 'Producción OEM / ODM',
+    'app_export': 'Proyectos de exportación y servicios públicos',
+    'why_iso': 'Fabricación certificada ISO 9001 & CE',
+    'why_pricing': 'Precios competitivos directos de fábrica',
+    'why_oem': 'Soporte completo de personalización OEM/ODM',
+    'why_qc': 'Control de calidad estricto — cada unidad probada antes del envío',
+    'why_logistics': 'Logística de exportación rápida a más de 95 países',
+    'why_support': 'Equipo de soporte técnico receptivo',
     'yomin_tagline': 'Productos eléctricos de fábrica — confiados en más de 95 países',
     'why_body': 'Zhejiang Yomin Electric Co., Ltd. fabrica productos eléctricos de precisión desde 1996, con la confianza de compradores en más de 95 países. Cada unidad se prueba antes del envío.',
     'cat_screw-machine': 'Máquinas de Tornillos',
@@ -57,7 +74,7 @@ window.__ymPagesI18n['es'] = {
       var k = el.getAttribute('data-i18n');
       if (d[k] !== undefined) el.textContent = d[k];
     });
-    /* Product titles in cards (data-pid attribute) */
+    /* Product titles in cards, breadcrumbs, and h1 (data-pid attribute) */
     if (typeof T !== 'undefined' && T[l]) {
       document.querySelectorAll('[data-pid]').forEach(function(el){
         var pid = el.getAttribute('data-pid');
