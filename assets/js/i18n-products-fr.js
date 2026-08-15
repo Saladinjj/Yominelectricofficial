@@ -1135,5 +1135,9 @@ if (typeof T !== 'undefined') {
     'ym-sw-portable-socket-box-ym-801': 'Portable Socket Box YM-801',
     'ym-sw-portable-socket-box-ym-u802': 'Portable Socket Box YM-U802',
     'ym-sw-wall-mounted-angled-socket-ym-e002': 'Wall mounted angled socket YM-E002',
+
+    'ym-sm-stm-001': 'Machine à visser automatique',
+    'ym-sm-crm-002': 'Machine rotative pour métaux',
+    'ym-sm-dpm-003': 'Machine de traitement profond laiton/aluminium',
 }, T.fr || {});
 }

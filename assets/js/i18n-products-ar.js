@@ -1135,5 +1135,9 @@ if (typeof T !== 'undefined') {
     'ym-sw-portable-socket-box-ym-801': 'Portable Socket Box YM-801',
     'ym-sw-portable-socket-box-ym-u802': 'Portable Socket Box YM-U802',
     'ym-sw-wall-mounted-angled-socket-ym-e002': 'Wall mounted angled socket YM-E002',
+
+    'ym-sm-stm-001': 'ماكينة تثبيت البراغي الأوتوماتيكية',
+    'ym-sm-crm-002': 'ماكينة معالجة المعادن الدوارة',
+    'ym-sm-dpm-003': 'ماكينة معالجة النحاس والألومنيوم',
 }, T.ar || {});
 }
