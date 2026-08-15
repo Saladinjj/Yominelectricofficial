@@ -32,7 +32,7 @@ a { text-decoration: none; color: inherit; }
 .cur-r { width: 36px; height: 36px; border: 1px solid rgba(232,148,74,.5); border-radius: 50%; position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9998; transition: transform .18s ease, width .3s, height .3s, opacity .3s; }
 
 /* ─── NAV ─── */
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 0 36px; height: 68px; background: rgba(13,13,13,.88); backdrop-filter: blur(20px); border-bottom: 1px solid var(--bds); transition: background var(--tr); }
+#nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 0 36px; height: 68px; background: rgba(20,20,20,.97); backdrop-filter: blur(20px); border-bottom: 1px solid var(--bds); transition: background var(--tr); }
 nav.sc { background: rgba(13,13,13,.99); }
 .n-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; flex-shrink: 0; }
 .n-logo img { height: 44px; width: auto; object-fit: contain; filter: brightness(1.1); }
