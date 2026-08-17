@@ -50,6 +50,13 @@
 .pgn-btn{min-width:38px;height:38px;padding:0 12px;border:1.5px solid var(--bds);border-radius:9px;background:var(--bgc);color:var(--mt);font-size:13px;font-weight:600;cursor:pointer;transition:all .18s;display:flex;align-items:center;justify-content:center}
 .pgn-btn:hover,.pgn-btn.pgn-act{background:var(--ac);color:#000;border-color:var(--ac)}
 .pgn-btn[disabled]{opacity:.35;cursor:default}
+.pgn-ell{min-width:28px;height:38px;display:flex;align-items:center;justify-content:center;color:var(--dm);font-size:13px;letter-spacing:2px;user-select:none}
+.p-search{max-width:560px;margin:0 auto 28px;position:relative}
+.p-search svg{position:absolute;left:31px;top:50%;transform:translateY(-50%);opacity:.55;pointer-events:none}
+.p-search input{width:100%;padding:13px 18px 13px 46px;border:1.5px solid var(--bds);border-radius:24px;background:var(--bgc);color:var(--mt);font-size:14px;outline:none;transition:border-color .18s;box-sizing:border-box;-webkit-appearance:none}
+.p-search input:focus{border-color:var(--ac)}
+.p-search input::placeholder{color:var(--dm);opacity:.75}
+
 /* ── Cat page layout ─────────────────────── */
 .cat-layout{display:grid;grid-template-columns:220px 1fr;gap:0;min-height:80vh;padding-top:68px}
 .cat-sidebar{border-right:1px solid var(--bds);padding:0;position:sticky;top:68px;height:calc(100vh - 68px);overflow-y:auto}
@@ -130,10 +137,11 @@
 .skip-link:focus{top:0}
 /* ── Responsive ──────────────────────────── */
 @media(max-width:1200px){.cat-grid{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:900px){.cat-layout,.shop-layout{grid-template-columns:1fr}.cat-sidebar,.shop-sidebar{display:none}.cat-body{padding:28px 20px}.cat-grid{grid-template-columns:repeat(3,1fr)}.product-layout{grid-template-columns:1fr}}
+@media(max-width:900px){.cat-layout,.shop-layout{grid-template-columns:1fr}.cat-sidebar,.shop-sidebar{display:flex;height:auto;overflow-x:auto;overflow-y:hidden;border:none;border-bottom:1px solid var(--bds);padding:10px 14px;gap:8px;background:var(--bg);z-index:50;-webkit-overflow-scrolling:touch;scrollbar-width:none}.cat-sidebar::-webkit-scrollbar,.shop-sidebar::-webkit-scrollbar{display:none}.sb-header{display:none}.sb-item{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border:1px solid var(--bds);border-radius:20px;margin:0;white-space:nowrap;flex-shrink:0}.sb-item:hover,.sb-item.act{border-color:var(--ac);background:rgba(232,148,74,.06)}.sb-item-count{display:none}.cat-body{padding:28px 20px}.cat-grid{grid-template-columns:repeat(3,1fr)}.product-layout{grid-template-columns:1fr}}
 @media(max-width:640px){.cat-grid{grid-template-columns:repeat(2,1fr)!important;gap:10px}.p-actions{flex-direction:column}.page-hero{padding:80px 24px 40px}}
 [dir=rtl] .sb-item{border-left:none;border-right:2px solid transparent}
 [dir=rtl] .sb-item:hover,[dir=rtl] .sb-item.act{border-right-color:var(--ac)}
+@media(max-width:900px){[dir=rtl] .sb-item{border:1px solid var(--bds)}[dir=rtl] .sb-item:hover,[dir=rtl] .sb-item.act{border-color:var(--ac);background:rgba(232,148,74,.06)}}
 [dir=rtl] .feat-list li{padding-left:0;padding-right:18px}
 [dir=rtl] .feat-list li::before{left:auto;right:0}
 </style>
@@ -220,6 +228,11 @@
         <p>Tamper-evident security seals for metering enclosures and electrical protection.</p>
         <span class="cat-count-tag">2 products</span>
       </div>
+      <div class="p-search">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="search" id="prodSearch" placeholder="Search products..." aria-label="Search products" autocomplete="off">
+        </div>
+        
       <div class="cat-grid"><a class="prod-card pgn-card" href="/products/security-seal/high-quality-custom-logo-meter-seals-wire-high-security-plastic-seal-twist-tite-wire-meter-seal-with-cable-wir"><div class="pimg"><img src="/assets/images/products/20dd6d59d60cf684.png" alt="High Quality Custom logo Meter Seals Wire, High Security Plastic Seal Twist Tite Wire Meter Seal With Cable Wire" loading="lazy"></div><div class="pbody"><div class="pcat">Security Seals</div><div class="ptitle" data-pid="60227401684">High Quality Custom logo Meter Seals Wire, High Security Plastic Seal Twist Tite Wire Meter Seal With Cable Wire</div><div class="pspecs">Material: Plastic / nylon · Application: Tamper-evident sealing</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/security-seal/miniature-12v-24v-black-power-relay-electromagnetic-theory-relay-1a-contact-form-sealed-protective-feature-ref"><div class="pimg"><img src="/assets/images/products/b7fe9aa417e52951.jpg" alt="Miniature 12V/24V Black Power Relay Electromagnetic Theory Relay 1A Contact Form Sealed Protective Feature Refrigerator PCB Use" loading="lazy"></div><div class="pbody"><div class="pcat">Security Seals</div><div class="ptitle" data-pid="1600337970575">Miniature 12V/24V Black Power Relay Electromagnetic Theory Relay 1A Contact Form Sealed Protective Feature Refrigerator PCB Use</div><div class="pspecs">Voltage: 12V · Control Type: Relay Type</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a></div>
       <div class="pgn"></div>
     </div>
@@ -276,28 +289,55 @@
   var pp = 24;
   var total = Math.ceil(cards.length / pp);
   var cur = 1;
+  var pgn = document.querySelector('.pgn');
+  if(!pgn){pgn=document.createElement('div');pgn.className='pgn';document.querySelector('.cat-grid').after(pgn);}
+  function pageNums(c,t){
+    var s={1:1};s[t]=t;
+    for(var i=Math.max(1,c-3);i<=Math.min(t,c+3);i++){s[i]=i;}
+    return Object.keys(s).map(Number).sort(function(a,b){return a-b;});
+  }
+  function render(pgn){
+    pgn.innerHTML='';
+    var prev=document.createElement('button');prev.className='pgn-btn';prev.textContent='\u2190';prev.disabled=cur<=1;prev.setAttribute('aria-label','Previous page');
+    prev.addEventListener('click',function(){if(cur>1){cur--;render(pgn);}});pgn.appendChild(prev);
+    var nums=pageNums(cur,total),last=0;
+    for(var k=0;k<nums.length;k++){
+      var n=nums[k];
+      if(last&&n-last>1){var el=document.createElement('span');el.className='pgn-ell';el.textContent='\u2026';pgn.appendChild(el);}
+      var b=document.createElement('button');b.className='pgn-btn'+(n===cur?' pgn-act':'');b.textContent=n;b.dataset.p=n;
+      b.addEventListener('click',(function(pg){return function(){cur=pg;render(pgn);};})(n));
+      pgn.appendChild(b);
+      last=n;
+    }
+    var nxt=document.createElement('button');nxt.className='pgn-btn';nxt.textContent='\u2192';nxt.disabled=cur>=total;nxt.setAttribute('aria-label','Next page');
+    nxt.addEventListener('click',function(){if(cur<total){cur++;render(pgn);}});pgn.appendChild(nxt);
+  }
   function show(p){
-    cur = p;
+    cur=p;
     var start=(p-1)*pp, end=p*pp;
     cards.forEach(function(c,i){c.style.display=(i>=start&&i<end)?'':'none';});
-    document.querySelectorAll('.pgn-btn').forEach(function(b){
-      b.classList.toggle('pgn-act', parseInt(b.dataset.p)===p);
-    });
+    render(pgn);
     window.scrollTo({top:document.querySelector('.cat-grid')?document.querySelector('.cat-grid').offsetTop-80:0,behavior:'smooth'});
   }
-  if(total>1){
-    var pgn=document.querySelector('.pgn');
-    if(!pgn){pgn=document.createElement('div');pgn.className='pgn';document.querySelector('.cat-grid').after(pgn);}
-    pgn.innerHTML='';
-    var prev=document.createElement('button');prev.className='pgn-btn';prev.textContent='‹';prev.addEventListener('click',function(){if(cur>1)show(cur-1);});pgn.appendChild(prev);
-    for(var i=1;i<=total;i++){
-      var b=document.createElement('button');b.className='pgn-btn';b.textContent=i;b.dataset.p=i;
-      b.addEventListener('click',(function(pg){return function(){show(pg);};})(i));
-      pgn.appendChild(b);
+  if(total>1){render(pgn);show(1);}
+  window.__ymPgn={show:show,cards:cards,restore:function(){show(cur);}};
+})();
+</script>
+<script>
+(function(){
+  var inp=document.getElementById('prodSearch');
+  if(!inp) return;
+  var pgn=window.__ymPgn;
+  var cards=pgn?pgn.cards:document.querySelectorAll('.pgn-card');
+  inp.addEventListener('input',function(){
+    var q=this.value.trim().toLowerCase();
+    document.querySelectorAll('.pgn').forEach(function(p){p.style.display=q?'none':'';});
+    if(!q){
+      if(pgn){pgn.restore();}else{cards.forEach(function(c){c.style.display='';});}
+      return;
     }
-    var nxt=document.createElement('button');nxt.className='pgn-btn';nxt.textContent='›';nxt.addEventListener('click',function(){if(cur<total)show(cur+1);});pgn.appendChild(nxt);
-    show(1);
-  }
+    cards.forEach(function(c){c.style.display=(c.textContent.toLowerCase().indexOf(q)>-1)?'':'none';});
+  });
 })();
 </script>
 </body></html>
