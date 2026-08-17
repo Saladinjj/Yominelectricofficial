@@ -1,0 +1,56 @@
+/* French translations for homepage (loaded after inline T) */
+'use strict';
+(function () {
+  const _frHome = {
+    nav_products:"Produits",nav_solutions:"Solutions",nav_process:"Processus",
+    nav_about:"À propos",nav_contact:"Contact",nav_quote:"Obtenir un devis",
+    hero_badge:"Approuvé dans plus de 95 pays dans le monde",hero_ov:"Zhejiang Yomin Electric Co., Ltd. - Fondée en 1996",hero_desc:"30 ans d'expertise en technologie de mesure d'énergie. Des compteurs sur rail DIN aux systèmes IoT intelligents, conçus pour les compagnies d'électricité, les industries et les réseaux intelligents du monde entier.",
+    hero_cta1:"Explorer les produits",hero_cta2:"Contactez-nous",s_yr:"Années",
+    s_ct:"Pays",s_em:"Employés",buy_lbl:"Acheter en ligne",
+    buy_ttl:"Retrouvez-nous sur les marchés mondiaux",buy_dsc:"Achetez les produits Yomin Electric directement dans nos boutiques officielles sur les principales plateformes de commerce électronique mondiales.",buy_ali:"Alibaba",
+    buy_ali_d:"B2B international : commandes en gros, expédition mondiale, garantie commerciale",buy_tao:"taobao",buy_tao_d:"Marché chinois : vente au détail nationale, paiement Alipay",
+    buy_bai:"Baidu",buy_bai_d:"Recherche chinoise : trouvez-nous via le principal moteur de recherche chinois",buy_shop:"Visiter la boutique →",
+    buy_fb:"Facebook",buy_fb_d:"Suivez-nous — Actualités de l'entreprise, nouveautés produits & perspectives du secteur",buy_gs:"GoldSupplier",
+    buy_gs_d:"B2B mondial — Fournisseur vérifié, demandes de gros & OEM",buy_nh:"Nanhu Electric",buy_nh_d:"Boutique officielle Alibaba — Parcourez les produits, échantillons et commandes directes",
+    cert_lbl:"Qualité garantie",cert_ttl:"Certifications internationales",cert_dsc:"Nos compteurs répondent aux exigences IEC, ANSI, CE, RoHS, ISO9001, KEMA, CB, BV, CCC et CMC.",
+    hero_title:"Solutions<br><em>de mesure d'énergie</em><br>de précision",p_lbl:"Catalogue de produits",p_ttl:"Dispositifs de mesure construits avec précision",
+    p_dsc:"En vedette : notre ligne de transformation profonde des métaux en 3 étapes pour barres omnibus en laiton et aluminium, ainsi que des compteurs d'énergie, stabilisateurs, transformateurs et dispositifs IoT intelligents pour chaque besoin électrique.",pc_feat:"En vedette",pc0:"Machine à vis",
+    p0:"Ligne de transformation profonde des métaux",p0_stages:"Production de laiton et aluminium en 3 étapes.",p1:"Compteur d'énergie sur rail DIN",
+    p2:"Régulateur de tension automatique",p3:"TC basse tension",p4:"Compteur d'énergie intelligent",
+    p5:"Compteur prépayé à clavier",p6:"Protecteur de tension",p7:"Fusible solaire photovoltaïque",
+    p8:"Transformateur de tension variable",p9:"Prise intelligente WiFi",p10:"Concentrateur de données",
+    p11:"Borne et connecteur",p12:"Compteur triphasé sur rail DIN",pc1:"Compteur d'énergie",
+    pc2:"Stabilisateur de tension",pc3:"Transformateur de courant",pc4:"Technologie intelligente",
+    pc5:"Prépayé",pc6:"Protection",pc7:"Fusible et protection",
+    pc8:"Transformateur",pc9:"Prise et câblage",pc10:"Système IAM",
+    pc11:"Bornes",pc12:"Triphasé",p_more:"Vous voulez voir plus de produits ? <strong>👉 Cliquez ici pour explorer toutes nos catégories de produits</strong>, y compris transformateurs de courant, régulateurs de tension, compteurs multifonctions et plus.",
+    g_lbl:"Toutes les catégories",g_ttl:"Galerie complète de produits",g_dsc:"Toutes les gammes de produits : conformes IEC, ANSI et DIN, approuvées par les compagnies d'électricité de plus de 95 pays.",
+    sv_lbl:"Nos solutions",sv_ttl:"Technologie de mesure de bout en bout",sv_t1:"Mesure d'énergie",
+    sv_t2:"Réseau intelligent",sv_t3:"Systèmes prépayés",sv0h:"Mesure d'énergie de précision",
+    sv0p:"Nous concevons et fabriquons une gamme complète de compteurs d'énergie statiques conformes aux normes IEC 62053, IEC 61036 et ANSI C12. Convient aux applications résidentielles, commerciales et industrielles dans plus de 95 pays.",sv0f1:"Conceptions monophasées et triphasées.",sv0f2:"Précision classe 0.2S, 0.5S, 1 et 2",
+    sv0f3:"Montage sur rail DIN, panneau et socle",sv0f4:"Large plage de tension et fréquence",sv1h:"Intégration réseau intelligent et IoT",
+    sv1p:"Nos compteurs intelligents et concentrateurs de données permettent le déploiement d'une infrastructure de comptage avancée (AMI). Les options de communication RS485 MODBUS, Zigbee, GPRS et LoRa garantissent la compatibilité avec tout système central.",sv1f1:"Protocole RS485/MODBUS RTU",sv1f2:"Options sans fil Zigbee et LoRa",
+    sv1f3:"Concentrateurs de données (DCU)",sv1f4:"Lecture à distance et contrôle de charge",sv2h:"Systèmes de comptage prépayé",
+    sv2p:"Solutions complètes de comptage prépayé à clavier et carte à puce pour les programmes de protection des revenus des services publics et l'accès à l'énergie. Prend en charge les systèmes de jetons STS largement utilisés en Afrique, en Asie et au Moyen-Orient.",sv2f1:"Génération de jetons compatible STS",sv2f2:"Options clavier et carte IC",
+    sv2f3:"Détection de fraude et anti-sabotage",sv2f4:"Capacité de recharge à distance",s_yrf:"Années d'expérience",
+    s_ctf:"Pays desservis",s_emf:"Employés",s_ar:"Zone de fabrication",
+    pr_lbl:"Comment ça marche",pr_ttl:"De la demande à la livraison",pr1h:"Consulter",
+    pr1p:"Partagez vos spécifications et exigences. Notre équipe technique répond sous 24 heures.",pr2h:"Personnaliser",pr2p:"Nous configurons le produit selon vos normes : tension, protocole de communication, marque et emballage.",
+    pr3h:"Contrôle qualité",pr3p:"Chaque compteur passe des tests de contrôle qualité rigoureux selon IEC, ANSI et les normes locales des services publics avant expédition.",pr4h:"Expédition et support",
+    pr4p:"Produits expédiés via les ports de Shanghai ou Ningbo. Documentation technique complète et support après-vente mondial.",te_lbl:"Témoignages clients",te_ttl:"Approuvé par les compagnies d'électricité du monde entier",
+    fq_lbl:"Questions fréquentes",fq_ttl:"Questions fréquentes",fq_sub:"Tout ce que vous devez savoir sur nos produits, le processus de commande et le support après-vente.",
+    fq1q:'Quelles certifications possèdent vos compteurs ? <span class="ficon">+</span>',fq2q:'Quelle est la quantité minimale de commande ? <span class="ficon">+</span>',fq3q:'Pouvez-vous personnaliser les compteurs avec notre marque ? <span class="ficon">+</span>',
+    fq4q:'Quels protocoles de communication sont pris en charge ? <span class="ficon">+</span>',fq5q:'Combien de temps prend la livraison ? <span class="ficon">+</span>',fq6q:'Offrez-vous un support technique ? <span class="ficon">+</span>',
+    fq7q:'Où se trouve votre usine ? <span class="ficon">+</span>',fq8q:'Quelle garantie offrez-vous ? <span class="ficon">+</span>',
+    fq1a:"Nos compteurs d'énergie sont certifiés selon les normes IEC 62053-21/22/23, IEC 61036, ANSI C12 et MID. Nous disposons également d'approbations CE, RoHS et spécifiques à chaque pays.",fq2a:"La quantité minimale de commande varie selon le produit : généralement 100 unités pour les modèles standard et 500 unités pour les conceptions OEM/personnalisées.",fq3a:"Oui, nous proposons des services OEM/ODM complets comprenant logos personnalisés, configurations de firmware, réglages de communication et emballages personnalisés.",
+    fq4a:"Nous prenons en charge les protocoles RS485/MODBUS RTU, Zigbee, GPRS/4G, LoRa et M-Bus. Notre DCU est compatible avec la plupart des logiciels centraux AMI.",fq5a:"Les produits standard sont expédiés sous 15 à 25 jours ouvrés. Les commandes OEM personnalisées nécessitent 30 à 45 jours. Expédition via les ports de Ningbo/Shanghai ou fret aérien.",fq6a:"Oui : documentation complète, manuels d'intégration, outils logiciels et support après-vente dédié.",
+    fq7a:"Zone industrielle de Qiaoqian, ville de Liushi, ville de Yueqing, province du Zhejiang, près des ports de Ningbo et Shanghai.",fq8a:"Tous les produits sont couverts par une garantie standard de 2 ans contre les défauts de fabrication.",
+    ct_ttl:'Prêt à propulser <em style="font-style:italic;color:var(--ac)">votre prochain projet ?</em>',ct_dsc:"Contactez nos équipes technique et commerciale pour les spécifications produits, les prix et les demandes OEM.",
+    ct_b1:"Envoyez-nous un e-mail maintenant",ct_b2:"+86-184-58440466",ft_ab:"Zhejiang Yomin Electric Co., Ltd. — Des solutions de mesure d'énergie de précision, approuvées par les compagnies d'électricité et les industries de plus de 95 pays depuis 30 ans.",
+    ft_pr:"Produits",ft_co:"Entreprise",ft_cn:"Contact",
+    ft_cp:"© 2025 Zhejiang Yomin Electric Co., Ltd. Tous droits réservés."
+  };
+  if (window.__ymT) {
+    window.__ymT.fr = Object.assign({}, _frHome, window.__ymT.fr || {});
+  }
+})();

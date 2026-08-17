@@ -10,6 +10,8 @@
     buy_ttl:"Encuéntrenos en los mercados globales",buy_dsc:"Compre productos Yomin Electric directamente en nuestras tiendas oficiales en las principales plataformas de comercio electrónico a nivel mundial.",buy_ali:"Alibaba",
     buy_ali_d:"B2B internacional: pedidos al por mayor, envíos globales, garantía comercial",buy_tao:"taobao",buy_tao_d:"Mercado de China: venta minorista nacional, pago Alipay",
     buy_bai:"Baidu",buy_bai_d:"Búsqueda de China: encuéntrenos a través del principal motor de búsqueda de China",buy_shop:"Visitar tienda →",
+    buy_fb:"Facebook",buy_fb_d:"Síguenos — Novedades de la empresa, noticias de productos y perspectivas del sector",buy_gs:"GoldSupplier",
+    buy_gs_d:"B2B global — Proveedor verificado, consultas mayoristas y OEM",buy_nh:"Nanhu Electric",buy_nh_d:"Tienda oficial de Alibaba — Explora productos, muestras y pedidos directos",
     cert_lbl:"Calidad garantizada",cert_ttl:"Certificaciones internacionales",cert_dsc:"Nuestros medidores cumplen con los requisitos IEC, ANSI, CE, RoHS, ISO9001, KEMA, CB, BV, CCC y CMC.",
     hero_title:"Soluciones<br><em>de medición de energía</em><br>de precisión",p_lbl:"Catálogo de productos",p_ttl:"Dispositivos de medición construidos con precisión",
     p_dsc:"Destacado: nuestra línea de procesamiento profundo de metal de 3 etapas para barras colectoras de latón y aluminio, además de medidores de energía, estabilizadores, transformadores y dispositivos IoT inteligentes para cada necesidad eléctrica.",pc_feat:"Presentado",pc0:"Máquina de tornillo",

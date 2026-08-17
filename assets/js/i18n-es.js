@@ -119,6 +119,22 @@ if (typeof T !== 'undefined') {
     prod_pricing:'Precios',prod_busbar_choose:'Elija el tipo de barra colectora',prod_busbar_all:'Todas las barras colectoras',
     bundle_package_options:'Opciones de paquete',bundle_quantity_pricing:'Precios basados ​​en la cantidad',bundle_select:'Seleccionar',
     bundle_selected:'Seleccionado',bundle_recommended:'Recomendado',bundle_number_of_sets:'Número de juegos'
-  };
+  ,
+    ft_ab:'Zhejiang Yomin Electric Co., Ltd. — Soluciones de medición de energía de precisión en las que confían las empresas de servicios públicos y las industrias de más de 95 países durante 30 años.',
+    ft_cn:'Contacto',
+    ft_cp:'© 2025 Zhejiang Yomin Electric Co., Ltd. Todos los derechos reservados.',
+    process_s5_detail1:'Trazabilidad NIST/PTB',
+    process_s5_detail2:'Calibración de múltiples cargas',
+    process_s5_detail3:'Prueba unitaria al 100 %',
+    process_s5_detail4:'Verificación IEC 62053',
+    process_s5_detail5:'Registros digitales',
+    process_s5_detail6:'Prueba de relación CT y fase',
+    process_s6_detail1:'Visual y dimensional',
+    process_s6_detail2:'Prueba de ciclo de temperatura',
+    process_s6_detail3:'Prueba de humedad',
+    process_s6_detail4:'Tensión de impulso 6 kV',
+    process_s6_detail5:'Prueba de vibración',
+    process_s6_detail6:'Tasa de defectos <0,1 %'
+};
   T.es = Object.assign({}, _esInner, T.es || {});
 }
