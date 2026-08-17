@@ -92,6 +92,7 @@ footer{padding:48px 36px;border-top:1px solid var(--bds);display:flex;align-item
 .float-btn:hover{transform:translateY(-4px) scale(1.06);box-shadow:0 12px 34px rgba(0,0,0,.5),inset 0 0 0 2px rgba(255,255,255,.35)}
 .float-btn-wa{background:linear-gradient(135deg,#25D366,#1DA851)}
 .float-btn-wc{background:linear-gradient(135deg,#07C160,#06AD56)}
+.float-btn-li{background:linear-gradient(135deg,#22C55E,#15803D)}
 .float-btn-label{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%) translateX(6px);background:rgba(0,0,0,.88);color:#fff;font-size:12px;font-weight:600;padding:7px 13px;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;letter-spacing:.3px}
 .float-btn:hover .float-btn-label{opacity:1;transform:translateY(-50%) translateX(0)}
 .float-btn-wa::after{content:"";position:absolute;inset:-4px;border-radius:50%;background:rgba(37,211,102,.35);z-index:-1;animation:wa-pulse 2.2s ease-out infinite}
