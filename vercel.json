@@ -91,6 +91,40 @@
       "statusCode": 301
     },
     {
+      "source": "/product.html",
+      "destination": "/products",
+      "statusCode": 301
+    },
+    {
+      "source": "/product",
+      "destination": "/products",
+      "statusCode": 301
+    },
+    {
+      "source": "/products",
+      "has": [
+        {
+          "type": "query",
+          "key": "category",
+          "value": "current-transformer"
+        }
+      ],
+      "destination": "/category/current-transformer",
+      "statusCode": 301
+    },
+    {
+      "source": "/products.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "category",
+          "value": "current-transformer"
+        }
+      ],
+      "destination": "/category/current-transformer",
+      "statusCode": 301
+    },
+    {
       "source": "/other.html",
       "destination": "/products/other",
       "statusCode": 301
@@ -487,6 +521,10 @@
     {
       "src": "/product.html",
       "dest": "/products.html"
+    },
+    {
+      "src": "/category/:slug",
+      "dest": "/products/:slug.html"
     },
     {
       "src": "/product-details",

@@ -515,7 +515,7 @@ body.light .mlb { background: rgba(0,0,0,.06); border-color: rgba(0,0,0,.12); }
 .fmqt{display:flex;animation:mq 18s linear infinite;width:max-content}
 .fmqi{font-family:var(--sf);font-size:clamp(24px,4vw,52px);color:rgba(255,255,255,.025);letter-spacing:-1px;padding:0 32px;user-select:none}
 .fmqi.a{color:rgba(232,148,74,.05)}
-.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:52px;margin-bottom:52px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:40px;margin-bottom:52px}
 .flogo{display:flex;align-items:center;gap:8px;margin-bottom:14px}
 .flogo img{height:36px;width:auto;object-fit:contain;filter:brightness(1.05)}
 .fbrand p{font-size:14px;color:var(--mt);line-height:1.7;max-width:250px;margin-bottom:16px}
