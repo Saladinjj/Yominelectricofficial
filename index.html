@@ -372,6 +372,9 @@ body.light ::-webkit-scrollbar-thumb{background:#d0cdc6}
 .float-btn-label{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%) translateX(6px);background:rgba(20,20,20,.9);color:#fff;font-size:12px;font-weight:600;letter-spacing:.3px;padding:7px 13px;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
 .float-btn:hover .float-btn-label{opacity:1;transform:translateY(-50%) translateX(0)}
 @keyframes wa-pulse{0%{transform:scale(.7);opacity:.8}70%{transform:scale(1.25);opacity:0}100%{opacity:0}}
+.wc-modal-overlay{display:none;position:fixed;inset:0;z-index:800;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);align-items:center;justify-content:center}
+.wc-modal-overlay.op{display:flex}
+.wc-modal-overlay .wc-qr-img{max-width:320px;width:100%;height:auto;border-radius:12px}
 /* FLOATING BUTTONS */
 .wa-btn{position:fixed;bottom:28px;right:28px;z-index:500;width:54px;height:54px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,.5);transition:transform .25s,box-shadow .25s,opacity .2s;text-decoration:none}
 .wa-btn:hover{transform:translateY(-4px) scale(1.05);box-shadow:0 12px 36px rgba(0,0,0,.6)}
