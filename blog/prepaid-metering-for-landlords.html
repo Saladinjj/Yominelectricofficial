@@ -1,30 +1,57 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
+
 <head>
+
 <!-- Google tag (gtag.js) -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+
 <script>
+
   window.dataLayer = window.dataLayer || [];
+
   function gtag(){dataLayer.push(arguments);}
+
   gtag('js', new Date());
+
   gtag('config', 'G-T0HYWYQ6NF');
+
 </script>
+
 <meta charset="UTF-8">
+
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
 <link rel="apple-touch-icon" href="/logo_transparent.png">
+
 <link rel="shortcut icon" href="/favicon.ico">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Prepaid Metering for Landlords: Benefits and Implementation Tips | Yomin Electric Blog</title>
+
 <meta name="description" content="Why prepaid keypad meters simplify tenant billing and collections.">
+
 <link rel="canonical" href="https://www.yominelectric.com/blog/prepaid-metering-for-landlords">
+
 <link rel="stylesheet" href="/assets/css/main.css">
+
 <link rel="icon" href="/logo_transparent.png" type="image/png">
+
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Prepaid Metering for Landlords: Benefits and Implementation Tips","datePublished":"July 30, 2026","author":{"@type":"Organization","name":"Yomin Electric"},"publisher":{"@type":"Organization","name":"Yomin Electric","logo":{"@type":"ImageObject","url":"https://www.yominelectric.com/logo_transparent.png"}},"image":"https://www.yominelectric.com/assets/images/blog/prepaid-metering-for-landlords/hero.jpg"}</script>
+
 </head>
+
 <body>
+
 <nav id="nav" aria-label="Main navigation">
   <a href="/" class="n-logo">
     <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
@@ -41,7 +68,6 @@
         <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
         <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
         <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
-        <a href="/products/voltage-protector"><span class="mega-icon">&#128737;&#65039;</span><span class="mega-name">Voltage Protectors</span></a>
         <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
         <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
         <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
@@ -76,6 +102,7 @@
     <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
   </div>
 </nav>
+
 <div class="mob" id="mob" aria-label="Mobile navigation menu">
   <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
   <a href="/">Home</a>
@@ -92,99 +119,193 @@
     <button class="mlb" data-lang="ar">AR</button>
   </div>
 </div>
+
 <main>
+
   <section class="blog-hero">
+
     <div class="bh-breadcrumb"><a href="/">Home</a> · <a href="/blog">Blog</a> · <span>Prepaid Metering for Landlords: Benefits and Implementation Tips</span></div>
+
     <span class="bh-tag">Guides</span>
+
     <h1 class="bh-title">Prepaid Metering for Landlords: Benefits and Implementation Tips</h1>
+
     <div class="bh-meta">
+
       <div class="avatar">ET</div>
+
       <strong style="color:var(--tx)">ET Engineering Team</strong>
+
       <span class="divider"></span>
+
       <span>6 min read</span>
+
       <span class="divider"></span>
+
       <span>July 30, 2026</span>
+
     </div>
+
   </section>
+
   <section class="content-section">
+
     <img class="hero-img" src="/assets/images/blog/prepaid-metering-for-landlords/hero.jpg" alt="Prepaid Metering for Landlords: Benefits and Implementation Tips" loading="eager">
+
     
+
+
 
     <p>Every landlord who rents apartments, rooms or offices knows the pain: splitting utility bills, chasing payments, and arguing about who used what. Prepaid metering solves the problem at the meter itself — tenants buy credits before they use electricity, and the supply cuts off when credit runs out. No invoices, no chasing, no disputes.</p>
 
+
+
     <h2>Why Landlords Switch to Prepaid Meters</h2>
+
     <ul>
+
       <li><strong>Zero unpaid bills</strong> — consumption is paid in advance; the meter stops at zero credit.</li>
+
       <li><strong>Fair billing</strong> — every tenant pays exactly for their own kWh, eliminating "shared bill" arguments.</li>
+
       <li><strong>No reading rounds</strong> — the meter displays remaining credit; you never need to visit for a reading.</li>
+
       <li><strong>Deposit protection</strong> — tenants pre-load credit, so your risk is capped at whatever credit you choose to extend.</li>
+
       <li><strong>Tamper alarms</strong> — most meters flag attempted bypass, protecting your revenue.</li>
+
     </ul>
+
+
 
     <h2>How Prepaid Metering Works</h2>
+
     <p>The meter works on the STS (Standard Transfer Specification) protocol: the tenant buys a credit token (vending code) from you, the utility, or an agent, types the 20-digit code into the meter keypad, and the credit is added to the meter. The meter subtracts kWh at the configured tariff and disconnects when the balance reaches zero. Because STS tokens are calculated offline from the meter number and a secure key, no network connection is needed — the system works everywhere, even without mobile signal.</p>
 
+
+
     <h2>Single-Phase or Three-Phase?</h2>
+
     <table>
+
       <thead><tr><th>Property type</th><th>Meter</th><th>Notes</th></tr></thead>
+
       <tbody>
+
         <tr><td>Studio / 1-bedroom flat</td><td>Single-phase prepaid</td><td>40&ndash;80 A rating typical</td></tr>
+
         <tr><td>Large apartment / small shop</td><td>Single-phase high current</td><td>100 A for high-load kitchens or AC</td></tr>
+
         <tr><td>Office floor / workshop</td><td>Three-phase prepaid</td><td>Balanced load across phases</td></tr>
+
         <tr><td>Whole building mains</td><td>Three-phase + sub-meters</td><td>Prepaid at tenant level</td></tr>
+
       </tbody>
+
     </table>
 
+
+
     <h2>Tariff and Credit Management</h2>
+
     <p>Set the tariff per kWh in the meter (or in your vending software) to recover your bulk electricity rate plus a small margin for administration. Most prepaid meters support:</p>
+
     <ul>
+
       <li>Single or multi-tier tariffs (e.g. first 100 kWh at one rate, above at another).</li>
+
       <li>Emergency credit — a configurable amount tenants can use before hard disconnect.</li>
+
       <li>Low-credit warning (beeps or display prompt at a set threshold).</li>
+
       <li>Maximum load limiting to protect your wiring.</li>
+
     </ul>
+
     <p>Vending can be as simple as a vending machine app on your phone, or a full agent network for larger portfolios. The meter number (also called the PAN) is unique per meter and printed on the meter body.</p>
 
+
+
     <h2>Installation Considerations</h2>
+
     <ul>
+
       <li>Install the meter on the tenant's dedicated circuit, after the building main isolator.</li>
+
       <li>Use a licensed electrician; the supply must be switched off during installation.</li>
+
       <li>Place the keypad at a height and position the tenant can access easily.</li>
+
       <li>Seal the meter terminal cover with a tamper-evident seal — most prepaid meters come with a sealing provision.</li>
+
       <li>For multi-tenant buildings, run separate sub-circuits per unit so each meter only measures its own tenant.</li>
+
     </ul>
 
+
+
     <h2>Handling Common Issues</h2>
+
     <h3>Tenant says "the meter shows less than I bought"</h3>
+
     <p>Check the tariff setting — a higher tariff consumes credit faster. Also verify the meter was not reset; the meter stores total kWh purchased and remaining credit, which should match vending records.</p>
+
     <h3>Meter won't accept a token</h3>
+
     <p>Tokens are 20 digits and meter-specific. Confirm the token was generated for the correct meter number, then re-enter carefully. Repeated wrong entries trigger a token-enter delay — wait it out rather than forcing entries.</p>
+
     <h3>Someone is bypassing the meter</h3>
+
     <p>Check for tamper flags in the meter menu (most models log open-cover events), inspect the seals, and compare building total consumption against the sum of tenant meters.</p>
 
+
+
     <h2>Prepaid vs Postpaid for Rentals</h2>
+
     <p>Postpaid keeps billing with the utility and works well for long-term tenants, but leaves the landlord chasing reimbursements. Prepaid shifts the burden entirely to the meter. Our comparison of <a href="/blog/prepaid-vs-postpaid-meters">prepaid vs postpaid meters</a> covers the trade-offs in detail — including the fact that prepaid meters also record historical consumption, so you still get the data postpaid would give you.</p>
 
+
+
     <h2>FAQ</h2>
+
     <h3>Do prepaid meters need internet?</h3>
+
     <p>No — STS prepaid meters work offline. Vending is offline too (tokens are calculated locally), which is why STS is the global standard for prepaid metering.</p>
+
     <h3>Can I change the tariff later?</h3>
+
     <p>Yes. Tariff parameters are set via configuration tokens or the meter menu (depending on model) and can be updated as electricity prices change.</p>
+
     <h3>What happens when credit runs out at night?</h3>
+
     <p>The meter disconnects. If you configure emergency credit, the tenant can keep essentials running until they top up the next day.</p>
 
+
+
     <h2>Conclusion</h2>
+
     <p>Prepaid metering turns rent collection from a monthly headache into a simple "buy before you use" model. Choose single-phase for apartments and three-phase for larger units, set a fair tariff, and use vending software to track the whole portfolio. Yomin Electric manufactures STS single-phase and three-phase prepaid meters with tamper alerts and multi-tier tariffs. <a href="/products/energy-meter">Browse the prepaid meter range</a> or <a href="/contact">talk to us</a> about a vending setup for your buildings.</p>
+
   </section>
+
 <section class="cta-section">
+
     <h2>Need Help Choosing the Right Product?</h2>
+
     <p>Our engineers can recommend the exact model, rating and configuration for your project. Tell us your requirements and get a factory-direct quote within 24 hours.</p>
+
     <div class="cta-wrap">
+
       <a href="/contact" class="cta-btn">Get a Quote</a>
+
       <a href="https://wa.me/8619016543301" class="cta-btn ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+
     </div>
+
   </section>
+
   </main>
+
 <footer>
   <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
   <div class="fgrid">
@@ -203,7 +324,11 @@
   </div>
   <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2025 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
 </footer>
+
 <script defer src="/assets/js/main.js"></script>
+
 <script defer src="/assets/js/i18n-es.js"></script>
+
 </body>
+
 </html>

@@ -38,6 +38,12 @@ const PRODUCT_REDIRECTS = {
   "/products/voltage-stabilizer-regulator/50-pieces-t-shape-tile-locator-height-regulator-spacers-porcelain-reusable-anti-lippage-tile-leveling-system": "/products/tools-hardware/50-pieces-t-shape-tile-locator-height-regulator-spacers-porcelain-reusable-anti-lippage-tile-leveling-system",
 };
 
+/* Empty placeholder categories removed from nav/sitemap until they have products */
+const CATEGORY_REDIRECTS = {
+  '/products/flexible-busbar': '/products',
+  '/products/voltage-protector': '/products',
+};
+
 export default function middleware(request) {
   const url = new URL(request.url);
   const path = url.pathname.replace(/\/$/, '') || '/';
@@ -46,6 +52,12 @@ export default function middleware(request) {
   const redirectTarget = PRODUCT_REDIRECTS[path];
   if (redirectTarget) {
     return Response.redirect(new URL(redirectTarget, url.origin), 301);
+  }
+
+  /* Removed empty categories -> products index */
+  const catTarget = CATEGORY_REDIRECTS[path];
+  if (catTarget) {
+    return Response.redirect(new URL(catTarget, url.origin), 301);
   }
 
   /* Redirect /products.html and /product.html to /products */

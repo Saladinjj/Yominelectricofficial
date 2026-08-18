@@ -1,0 +1,59 @@
+(() => { const cmEl = document.querySelector(".CodeMirror"); if (!cmEl || !cmEl.CodeMirror) return {err: "no codemirror"}; const cm = cmEl.CodeMirror; cm.setValue(`<p><strong>Short answer:</strong> Busbar trunking is the better choice above roughly 630 A — it delivers lower total installed cost, faster installation, better thermal management, and easy reconfiguration, which is why it dominates data centers and large commercial risers. Traditional cable and tray wins on low first cost and flexibility in small, distributed, low-current installations. For high-density, high-current distribution, busbar is usually the right answer; for short low-current runs, cable is.</p>
+<h2>The decision in one table</h2>
+<table>
+<tr><th>Factor</th><th>Busbar trunking</th><th>Cable & tray</th></tr>
+<tr><td>Total installed cost above ~630 A</td><td>Lower (less material, fewer terminations)</td><td>Higher (large cable sizes, multiple runs)</td></tr>
+<tr><td>Total installed cost below ~200 A</td><td>Higher</td><td>Lower</td></tr>
+<tr><td>Installation speed</td><td>Fast — prefabricated sections bolt together</td><td>Slow — pulling, lugs, derating calc</td></tr>
+<tr><td>Space requirement</td><td>Compact, flat profile</td><td>Large bend radii, tray space</td></tr>
+<tr><td>Thermal performance</td><td>Better — lower energy losses, structured heat dissipation</td><td>Derating required in bundles</td></tr>
+<tr><td>Reconfiguration</td><td>Tap-off points anywhere along the run</td><td>Reroute = new cable pulls</td></tr>
+<tr><td>Fire behavior</td><td>Available in flame-retardant/low-smoke builds</td><td>Cable trays need fire stops at floors</td></tr>
+<tr><td>Fault tolerance</td><td>Sectional replacement</td><td>Often full-run replacement</td></tr>
+<tr><td>Best applications</td><td>Data centers, malls, high-rise risers, factories</td><td>Homes, small panels, short runs</td></tr>
+</table>
+<h2>When busbar wins: the case above 630 A</h2>
+<p>Industry analyses consistently find busbar trunking is more economical than parallel cabling once current demand passes roughly 630 A. Three reasons dominate:</p>
+<p>1. <strong>Material efficiency.</strong> At 1,000 A+, a busbar run uses less copper than the equivalent bank of parallel cables — and arrives prefabricated, eliminating on-site lug work, phase checks, and pulling tension calculations. 2. <strong>Lower losses and better heat management.</strong> Busbar systems report lower energy losses and superior thermal management versus cable installations. That shows up both on the energy bill and in the temperature of the distribution room. 3. <strong>Tap-offs instead of junction boxes.</strong> A busway lets you add a take-off point at almost any position along the run — a five-minute change — where a cable system requires a new junction box and cable pull.</p>
+<h2>When cable still makes sense</h2>
+<p>Do not over-apply busbar. Traditional cable remains the right call when:</p>
+<ul>
+<li><strong>Current is below ~200 A</strong> — cable and tray is significantly cheaper.</li>
+<li><strong>The run is short and simple</strong> — a panel-to-machine feed of a few meters rarely justifies busway.</li>
+<li><strong>The route is irregular</strong> — busbar likes straight, planned routes; cable follows walls, ceilings, and awkward corners.</li>
+<li><strong>Budget is tight and load is static</strong> — if the layout will never change, cable's lower first cost wins.</li>
+</ul>
+<p>The crossover zone (roughly 200–630 A) depends on run length, local copper prices, and labor rates — a proper cost comparison should be run for your specific route.</p>
+<h2>Data centers and high-rise risers: the busbar strongholds</h2>
+<ul>
+<li><strong>Data centers</strong> build on busway because IT loads change constantly. Modular busway sections arrive prefabricated and connect fast — installation time drops significantly compared with traditional cabling — and tap-offs follow racks, not fixed junction boxes.</li>
+<li><strong>High-rise risers</strong> use busbar because a single busway riser feeds every floor with tap-off boxes, versus parallel cables that multiply through every floor's fire-stop.</li>
+<li><strong>Industrial plants</strong> with large motors and process lines prefer busbar for fault containment and the ability to sectionalize: a faulted section is replaced in hours, not days.</li>
+</ul>
+<h2>Cost model: what actually drives the decision</h2>
+<table>
+<tr><th>Cost driver</th><th>Busbar</th><th>Cable</th></tr>
+<tr><td>Material</td><td>Copper/aluminum bars + enclosure</td><td>Cables + tray + lugs + glands</td></tr>
+<tr><td>Installation labor</td><td>Low (bolt together)</td><td>High (pull, terminate, test)</td></tr>
+<tr><td>Space cost</td><td>Low (compact)</td><td>High (tray runs, bend radii)</td></tr>
+<tr><td>Change cost</td><td>Low (tap-offs)</td><td>High (re-pull)</td></tr>
+<tr><td>Losses over life</td><td>Lower</td><td>Higher in bundled runs</td></tr>
+</table>
+<p>Above 630 A, busbar's material and labor advantages flip the total-cost curve; below 200 A, cable's low component cost wins. The middle zone is where engineering judgment and a real quote matter.</p>
+<h2>FAQ: Busbar vs cable</h2>
+<p><strong>Q: At what current rating does busbar become cheaper than cable?</strong> A: Industry guidance typically puts the crossover around 630 A — above it, busbar trunking tends to have lower total installed cost; below roughly 200 A, cable and tray is clearly cheaper.</p>
+<p><strong>Q: Is busbar installation faster than cable installation?</strong> A: Yes. Prefabricated busway sections bolt together in place, which significantly cuts installation time versus pulling and terminating large parallel cables.</p>
+<p><strong>Q: Do busbars have lower energy losses than cables?</strong> A: In most comparisons, yes — busbar systems report lower energy losses and better thermal management, especially at high currents where cable bundling forces derating.</p>
+<p><strong>Q: Can I add a new load to an existing busbar run?</strong> A: Easily — busway systems offer tap-off boxes that can be added at points along the run. With cable, adding a load usually means a new junction box and cable pull.</p>
+<p><strong>Q: When should I definitely use cable instead of busbar?</strong> A: For short, low-current (below ~200 A), irregular, or static layouts where first cost dominates — homes, small panels, and simple machine feeds.</p>
+<p><strong>Q: What types of busbar exist for different projects?</strong> A: The main families are rigid laminated busbars (switchgear), flexible busbars (vibration and tight spaces), and enclosed busway/trunking (risers and long distribution runs). Yomin Electric supplies all three.</p>
+<p><strong>Q: Are busbar systems safe in fire scenarios?</strong> A: Yes, when specified correctly — flame-retardant, low-smoke busway with proper fire-rated floor penetrations is standard in commercial construction.</p>
+<h2>Conclusion</h2>
+<p>The busbar-vs-cable decision is a total-cost curve, not a brand preference: cable for small, short, static runs; busbar for high-current, high-density, reconfigurable distribution — with the crossover commonly around 630 A and a judgment zone in between. Data centers, high-rises, and industrial plants have already voted with their specifications: busway where loads change and currents run high.</p>
+<p>Yomin Electric manufactures <a href="https://www.yominelectric.com/products?category=busbar" rel="noopener" target="_blank">aluminum and copper busbars</a>, including flexible, laminated, and heavy-duty busbar for switchgear, energy storage, and data-center applications — factory-direct with ISO9001 and CE certification. <a href="https://www.yominelectric.com/contact.html" rel="noopener" target="_blank">Send your load schedule and layout</a> for a busbar vs cable cost comparison on your actual route.</p>
+<h2>Sources</h2>
+<ul>
+<li>Paya Press, "Busbar vs Cable: Why Busbars Win Above 630 A" (2026)</li>
+<li>Grand View Research, "Busbar Trunking Market Size & Share Report" — lower energy losses, better thermal management</li>
+<li>Wille Electric, "Busbar Applications in Data Center Power Distribution" — reduced installation time with prefabricated busway</li>
+</ul>`); cm.save(); const hta = document.querySelector("textarea.Fdco1c"); if (hta) hta.dispatchEvent(new Event("input", {bubbles:true})); return {len: cm.getValue().length, head: cm.getValue().slice(0,60)}; })()

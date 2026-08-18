@@ -50,13 +50,6 @@
 .pgn-btn{min-width:38px;height:38px;padding:0 12px;border:1.5px solid var(--bds);border-radius:9px;background:var(--bgc);color:var(--mt);font-size:13px;font-weight:600;cursor:pointer;transition:all .18s;display:flex;align-items:center;justify-content:center}
 .pgn-btn:hover,.pgn-btn.pgn-act{background:var(--ac);color:#000;border-color:var(--ac)}
 .pgn-btn[disabled]{opacity:.35;cursor:default}
-.pgn-ell{min-width:28px;height:38px;display:flex;align-items:center;justify-content:center;color:var(--dm);font-size:13px;letter-spacing:2px;user-select:none}
-.p-search{max-width:560px;margin:0 auto 28px;position:relative}
-.p-search svg{position:absolute;left:31px;top:50%;transform:translateY(-50%);opacity:.55;pointer-events:none}
-.p-search input{width:100%;padding:13px 18px 13px 46px;border:1.5px solid var(--bds);border-radius:24px;background:var(--bgc);color:var(--mt);font-size:14px;outline:none;transition:border-color .18s;box-sizing:border-box;-webkit-appearance:none}
-.p-search input:focus{border-color:var(--ac)}
-.p-search input::placeholder{color:var(--dm);opacity:.75}
-
 /* ── Cat page layout ─────────────────────── */
 .cat-layout{display:grid;grid-template-columns:220px 1fr;gap:0;min-height:80vh;padding-top:68px}
 .cat-sidebar{border-right:1px solid var(--bds);padding:0;position:sticky;top:68px;height:calc(100vh - 68px);overflow-y:auto}
@@ -137,11 +130,10 @@
 .skip-link:focus{top:0}
 /* ── Responsive ──────────────────────────── */
 @media(max-width:1200px){.cat-grid{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:900px){.cat-layout,.shop-layout{grid-template-columns:1fr}.cat-sidebar,.shop-sidebar{display:flex;height:auto;overflow-x:auto;overflow-y:hidden;border:none;border-bottom:1px solid var(--bds);padding:10px 14px;gap:8px;background:var(--bg);z-index:50;-webkit-overflow-scrolling:touch;scrollbar-width:none}.cat-sidebar::-webkit-scrollbar,.shop-sidebar::-webkit-scrollbar{display:none}.sb-header{display:none}.sb-item{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border:1px solid var(--bds);border-radius:20px;margin:0;white-space:nowrap;flex-shrink:0}.sb-item:hover,.sb-item.act{border-color:var(--ac);background:rgba(232,148,74,.06)}.sb-item-count{display:none}.cat-body{padding:28px 20px}.cat-grid{grid-template-columns:repeat(3,1fr)}.product-layout{grid-template-columns:1fr}}
+@media(max-width:900px){.cat-layout,.shop-layout{grid-template-columns:1fr}.cat-sidebar,.shop-sidebar{display:none}.cat-body{padding:28px 20px}.cat-grid{grid-template-columns:repeat(3,1fr)}.product-layout{grid-template-columns:1fr}}
 @media(max-width:640px){.cat-grid{grid-template-columns:repeat(2,1fr)!important;gap:10px}.p-actions{flex-direction:column}.page-hero{padding:80px 24px 40px}}
 [dir=rtl] .sb-item{border-left:none;border-right:2px solid transparent}
 [dir=rtl] .sb-item:hover,[dir=rtl] .sb-item.act{border-right-color:var(--ac)}
-@media(max-width:900px){[dir=rtl] .sb-item{border:1px solid var(--bds)}[dir=rtl] .sb-item:hover,[dir=rtl] .sb-item.act{border-color:var(--ac);background:rgba(232,148,74,.06)}}
 [dir=rtl] .feat-list li{padding-left:0;padding-right:18px}
 [dir=rtl] .feat-list li::before{left:auto;right:0}
 </style>
@@ -152,26 +144,25 @@
 <a class="skip-link" href="#cat-main">Skip to content</a>
 <nav id="nav" aria-label="Main navigation">
   <a href="/" class="n-logo">
-    <img src="/logo_transparent.png" alt="Yomin Electric" style="height: 33px; width: auto; object-fit: contain; display: block;" width="44" height="44">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
   </a>
   <ul class="n-ctr" role="menubar">
     <li role="none"><a href="/" role="menuitem">Home</a></li>
-    <li role="none" class="n-drop"><a href="/products" class="active" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">▾</span></a>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products" class="active">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
       <div class="n-mega">
-        <a href="/products/energy-meter"><span class="mega-icon">⚡</span><span class="mega-name">Energy Meters</span></a>
-        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">🔃</span><span class="mega-name">Voltage Stabilizers</span></a>
-        <a href="/products/current-transformer"><span class="mega-icon">🔄</span><span class="mega-name">Current Transformers</span></a>
-        <a href="/products/variac-transformer"><span class="mega-icon">⚙️</span><span class="mega-name">Variac Transformers</span></a>
-        <a href="/products/screw-machine"><span class="mega-icon">🔩</span><span class="mega-name">Screw Machines</span></a>
-        <a href="/products/terminal-connector"><span class="mega-icon">🔌</span><span class="mega-name">Terminals &amp; Connectors</span></a>
-        <a href="/products/solar-pv-products"><span class="mega-icon">☀️</span><span class="mega-name">Solar &amp; PV Products</span></a>
-        <a href="/products/fuse-protection"><span class="mega-icon">⚠️</span><span class="mega-name">Fuses &amp; Protection</span></a>
-        <a href="/products/voltage-protector"><span class="mega-icon">🛡️</span><span class="mega-name">Voltage Protectors</span></a>
-        <a href="/products/socket-wiring"><span class="mega-icon">🔧</span><span class="mega-name">Sockets &amp; Wiring</span></a>
-        <a href="/products/tools-hardware"><span class="mega-icon">🛠️</span><span class="mega-name">Tools &amp; Hardware</span></a>
-        <a href="/products/security-seal"><span class="mega-icon">🔒</span><span class="mega-name">Security Seals</span></a>
-        <a href="/products/other"><span class="mega-icon">📦</span><span class="mega-name">Other Products</span></a>
-        <a href="/products" class="active" style="color:var(--ac);font-weight:600"><span class="mega-icon">🗂️</span><span class="mega-name">View All Products →</span></a>
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
       </div>
     </li>
     <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
@@ -187,18 +178,17 @@
         <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
       </button>
       <div class="ldrop" id="ldrop" role="listbox">
-        <button class="lopt act" onclick="sL('en')" role="option" data-l="en"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
-        <button class="lopt" onclick="sL('fr')" role="option" data-l="fr"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Français</button>
-        <button class="lopt" onclick="sL('es')" role="option" data-l="es"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Español</button>
-        <button class="lopt" onclick="sL('ar')" role="option" data-l="ar"><span>AR</span> العربية</button>
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
       </div>
     </div>
-    <!-- THEME BUTTONS -->
     <div class="theme-pair">
-      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode" onclick="setTheme(false)">🌙</button>
-      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode" onclick="setTheme(true)">☀️</button>
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
     </div>
-    <a href="/contact" class="ncta" data-i18n="nav_quote">Get a Quote</a>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
     <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -206,17 +196,17 @@
 <div class="mob" id="mob" aria-label="Mobile navigation menu">
   <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
   <a href="/">Home</a>
-  <a href="/products" class="active" data-i18n="nav_products">Products</a>
+  <a href="/products" data-i18n="nav_products" class="active">Products</a>
   <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
-  <a href="/blog">Blog</a>
   <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog">Blog</a>
   <a href="/about" data-i18n="nav_about">About</a>
   <a href="/contact" data-i18n="nav_contact">Contact</a>
   <div class="mob-lngs">
     <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
     <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
     <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
-    <button class="mlb" data-lang="ar"><img src="https://flagcdn.com/16x12/sa.png" class="flag" alt="AR"> AR</button>
+    <button class="mlb" data-lang="ar">AR</button>
   </div>
 </div>
 <main>
@@ -228,40 +218,30 @@
         <p>Solar photovoltaic products, DC combiner boxes and renewable energy components.</p>
         <span class="cat-count-tag">12 products</span>
       </div>
-      <div class="p-search">
-        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-        <input type="search" id="prodSearch" placeholder="Search products..." aria-label="Search products" autocomplete="off">
-        </div>
-        
       <div class="cat-grid"><a class="prod-card pgn-card" href="/products/solar-pv-products/1000v-waterproof-plastic-solar-pv-ac-dc-combiner-box-3-input-3-output-string-junction-certificate-solar-cooker"><div class="pimg"><img src="/assets/images/products/538e44967fbd1590.jpg" alt="1000V Waterproof Plastic Solar PV AC + DC Combiner Box 3 Input 3 Output String Junction  Certificate Solar Cooker Freezer" loading="lazy"></div><div class="pbody"><div class="pcat">Solar &amp; PV Products</div><div class="ptitle" data-pid="1600955827974">1000V Waterproof Plastic Solar PV AC + DC Combiner Box 3 Input 3 Output String Junction  Certificate Solar Cooker Freezer</div><div class="pspecs">Place of Origin: Zhejiang, China · Brand Name: YOMIN</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/solar-pv-products/1000v-dc-solar-panel-combiner-box-certified-pv-combiner-box-with-2-in-and-2-out-strings-solar-freezer-type"><div class="pimg"><img src="/assets/images/products/d23962852c32bc47.jpg" alt="1000V DC Solar Panel Combiner Box  Certified PV Combiner Box With 2 in and 2 Out Strings Solar Freezer Type" loading="lazy"></div><div class="pbody"><div class="pcat">Solar &amp; PV Products</div><div class="ptitle" data-pid="1600917126289">1000V DC Solar Panel Combiner Box  Certified PV Combiner Box With 2 in and 2 Out Strings Solar Freezer Type</div><div class="pspecs">Place of Origin: Zhejiang, China · Brand Name: YOMIN</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/solar-pv-products/outdoor-solar-power-ip66-1500vdc-100a-isolating-disconnect-pv-dc-isolator-switch-max-current-16a-30a"><div class="pimg"><img src="/assets/images/products/86450e9524a02b1b.jpg" alt="Outdoor Solar Power IP66 1500VDC 100A Isolating Disconnect PV DC Isolator Switch Max Current 16A/30A" loading="lazy"></div><div class="pbody"><div class="pcat">Solar &amp; PV Products</div><div class="ptitle" data-pid="1600956011491">Outdoor Solar Power IP66 1500VDC 100A Isolating Disconnect PV DC Isolator Switch Max Current 16A/30A</div><div class="pspecs">Voltage: 1500V · Current Type: DC</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/solar-pv-products/elr2-series-dc-isolation-switch-pv-1200v-waterproof-ip66-level-with-16a-30a-max-current-capacity"><div class="pimg"><img src="/assets/images/products/c3c6dcf1bb9278f8.png" alt="ELR2 Series DC Isolation Switch PV 1200v Waterproof IP66 Level With 16A/30A Max Current Capacity" loading="lazy"></div><div class="pbody"><div class="pcat">Solar &amp; PV Products</div><div class="ptitle" data-pid="1600678047690">ELR2 Series DC Isolation Switch PV 1200v Waterproof IP66 Level With 16A/30A Max Current Capacity</div><div class="pspecs">Voltage: 1200V · Current Type: DC</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/solar-pv-products/new-energy-1000v-photovoltaic-combiner-box-3-in-1-out-solar-panel-array-lightning-protection-for-solar-freezer"><div class="pimg"><img src="/assets/images/products/7625dc6ab28d4577.jpg" alt="New Energy 1000V Photovoltaic Combiner Box 3-in-1 Out Solar Panel Array Lightning Protection for Solar Freezer" loading="lazy"></div><div class="pbody"><div class="pcat">Solar &amp; PV Products</div><div class="ptitle" data-pid="1600955869858">New Energy 1000V Photovoltaic Combiner Box 3-in-1 Out Solar Panel Array Lightning Protection for Solar Freezer</div><div class="pspecs">Voltage: 1000V</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/solar-pv-products/4pole-32a-1000v-waterproof-pv-isolation-switch-for-pv-system-max-current-16a-30a-changeover-switch"><div class="pimg"><img src="/assets/images/products/9d775ccd28a1ba81.jpg" alt="4Pole 32A 1000V Waterproof PV Isolation Switch for PV System Max Current 16A/30A Changeover Switch" loading="lazy"></div><div class="pbody"><div class="pcat">Solar &amp; PV Products</div><div class="ptitle" data-pid="1600956011482">4Pole 32A 1000V Waterproof PV Isolation Switch for PV System Max Current 16A/30A Changeover Switch</div><div class="pspecs">Voltage: 1000V · Current: 32A</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/solar-pv-products/dc-4p-32a-circuit-breaker-mcb-2-poles-solar-energy-photovoltaic-pv-mini-air-switch-circuit-breaker"><div class="pimg"><img src="/assets/images/products/4411beae31556893.png" alt="DC 4P 32A Circuit Breaker MCB 2 Poles Solar Energy Photovoltaic PV Mini Air Switch Circuit Breaker" loading="lazy"></div><div class="pbody"><div class="pcat">Solar &amp; PV Products</div><div class="ptitle" data-pid="1600956010305">DC 4P 32A Circuit Breaker MCB 2 Poles Solar Energy Photovoltaic PV Mini Air Switch Circuit Breaker</div><div class="pspecs">Current Type: DC</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/solar-pv-products/factory-sale-2-in-1-dc-combiner-pv-string-isolation-box-1000v-electrical-junction-box-photovoltaic-solar-freez"><div class="pimg"><img src="/assets/images/products/fc36bf286fc78936.jpg" alt="Factory Sale 2-in-1 DC Combiner &amp; PV String Isolation Box 1000V Electrical Junction Box Photovoltaic Solar Freezer Made Plastic" loading="lazy"></div><div class="pbody"><div class="pcat">Solar &amp; PV Products</div><div class="ptitle" data-pid="1600848658065">Factory Sale 2-in-1 DC Combiner &amp; PV String Isolation Box 1000V Electrical Junction Box Photovoltaic Solar Freezer Made Plastic</div><div class="pspecs">Min. Order: 1 - 99 pieces · Lead Time: 5</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/solar-pv-products/waterproof-pv-dc-isolation-switch-l2-series-1000v-32-amp-isolator-disconnect-switch-dc-solar-off-switch"><div class="pimg"><img src="/assets/images/products/f3005ef4d6315d2f.png" alt="Waterproof PV DC Isolation Switch L2 Series 1000v 32 Amp Isolator Disconnect Switch DC Solar off Switch" loading="lazy"></div><div class="pbody"><div class="pcat">Solar &amp; PV Products</div><div class="ptitle" data-pid="1600678081650">Waterproof PV DC Isolation Switch L2 Series 1000v 32 Amp Isolator Disconnect Switch DC Solar off Switch</div><div class="pspecs">Voltage: 1000V · Application: Photovoltaic power generation and DC distribution</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/solar-pv-products/solar-system-dc-mcb-1000v-1p-2p-3p-4p-10a-16a-63a-curve-dc-miniature-circuit-breaker-mcb-rail-mountable-circui"><div class="pimg"><img src="/assets/images/products/e83ad2b32f97fcc9.jpg" alt="Solar System DC Mcb 1000V 1p 2P 3p 4p 10A 16A 63A Curve DC Miniature Circuit Breaker Mcb Rail Mountable Circuit Breaker Molde" loading="lazy"></div><div class="pbody"><div class="pcat">Solar &amp; PV Products</div><div class="ptitle" data-pid="1600956088064">Solar System DC Mcb 1000V 1p 2P 3p 4p 10A 16A 63A Curve DC Miniature Circuit Breaker Mcb Rail Mountable Circuit Breaker Molde</div><div class="pspecs">Voltage: 1000V · Current Type: DC</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/solar-pv-products/dc-breaker-63a-80a-100a-125a-500vdc-1000v-dc-for-solar-panel-pv-system-photovoltaic-breaker"><div class="pimg"><img src="/assets/images/products/03145a700c01ad31.jpg" alt="DC Breaker 63A 80A 100A 125A 500Vdc 1000V Dc for Solar Panel Pv System Photovoltaic Breaker" loading="lazy"></div><div class="pbody"><div class="pcat">Solar &amp; PV Products</div><div class="ptitle" data-pid="1600955866987">DC Breaker 63A 80A 100A 125A 500Vdc 1000V Dc for Solar Panel Pv System Photovoltaic Breaker</div><div class="pspecs">Voltage: 500V · Current Type: DC</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/solar-pv-products/dc-breaker-2p-32a-dc-mcb-2p-500v-dc-disjuntor-disyuntor-solar-pv-breaker-solar-mcb"><div class="pimg"><img src="/assets/images/products/ecd0d0a0d7445d15.jpg" alt="DC Breaker 2P 32A DC MCB 2P 500V DC Disjuntor Disyuntor Solar PV Breaker Solar MCB" loading="lazy"></div><div class="pbody"><div class="pcat">Solar &amp; PV Products</div><div class="ptitle" data-pid="1600955919731">DC Breaker 2P 32A DC MCB 2P 500V DC Disjuntor Disyuntor Solar PV Breaker Solar MCB</div><div class="pspecs">Voltage: 500V · Current Type: DC</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a></div>
       <div class="pgn"></div>
     </div>
   </div>
 </main>
 <footer>
-  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· ENERGY METERING ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· SMART METERS ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· CURRENT TRANSFORMERS ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· POWER QUALITY ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· ENERGY METERING ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· SMART METERS ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· CURRENT TRANSFORMERS ·</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">· POWER QUALITY ·</span></div></div>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
   <div class="fgrid">
     <div class="fbrand">
-      <div class="flogo"><img src="logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy" onerror="this.style.display='none';this.insertAdjacentHTML('afterend','&lt;span style=\'font-family:var(--sf);font-size:18px\'&gt;Yomin Electric&lt;/span&gt;')"></div>
-      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. — Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
-      <div class="fci">📍 Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
-      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">🗺️ View on Google Maps</a> — Hong Kong Office</div>
-      <div class="fci">📞 <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
-      <div class="fci">✉️ <a href="/contact">salah.eddine@cnyomin.com</a></div>
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
     </div>
     <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
     <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
-        <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div><div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li>
-          <li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">📍 View on Google Maps</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
   </div>
-  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">© 2025 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 · IEC 61036 · ANSI C12 · CE · RoHS</p></div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2025 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
 </footer>
 <div class="float-btns">
-  <a class="float-btn float-btn-li" href="https://www.linkedin.com/company/yominelectric" target="_blank" rel="noopener" aria-label="LinkedIn">
-    <span class="float-btn-label">LinkedIn</span>
-    <svg viewBox="0 0 24 24" fill="white" width="26" height="26"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-  </a>
-
   <button class="float-btn float-btn-wc" id="wc-btn" aria-label="WeChat">
     <svg viewBox="0 0 24 24" width="26" height="26" fill="white"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-3.895-6.348-7.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 01-.023-.156.49.49 0 01.201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-7.063-6.122zm-3.89 3.049c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.969-.982z"></path></svg>
     <span class="float-btn-label">WeChat</span>
@@ -294,55 +274,28 @@
   var pp = 24;
   var total = Math.ceil(cards.length / pp);
   var cur = 1;
-  var pgn = document.querySelector('.pgn');
-  if(!pgn){pgn=document.createElement('div');pgn.className='pgn';document.querySelector('.cat-grid').after(pgn);}
-  function pageNums(c,t){
-    var s={1:1};s[t]=t;
-    for(var i=Math.max(1,c-3);i<=Math.min(t,c+3);i++){s[i]=i;}
-    return Object.keys(s).map(Number).sort(function(a,b){return a-b;});
-  }
-  function render(pgn){
-    pgn.innerHTML='';
-    var prev=document.createElement('button');prev.className='pgn-btn';prev.textContent='\u2190';prev.disabled=cur<=1;prev.setAttribute('aria-label','Previous page');
-    prev.addEventListener('click',function(){if(cur>1){show(cur-1);}});pgn.appendChild(prev);
-    var nums=pageNums(cur,total),last=0;
-    for(var k=0;k<nums.length;k++){
-      var n=nums[k];
-      if(last&&n-last>1){var el=document.createElement('span');el.className='pgn-ell';el.textContent='\u2026';pgn.appendChild(el);}
-      var b=document.createElement('button');b.className='pgn-btn'+(n===cur?' pgn-act':'');b.textContent=n;b.dataset.p=n;
-      b.addEventListener('click',(function(pg){return function(){show(pg);};})(n));
-      pgn.appendChild(b);
-      last=n;
-    }
-    var nxt=document.createElement('button');nxt.className='pgn-btn';nxt.textContent='\u2192';nxt.disabled=cur>=total;nxt.setAttribute('aria-label','Next page');
-    nxt.addEventListener('click',function(){if(cur<total){show(cur+1);}});pgn.appendChild(nxt);
-  }
   function show(p){
-    cur=p;
+    cur = p;
     var start=(p-1)*pp, end=p*pp;
     cards.forEach(function(c,i){c.style.display=(i>=start&&i<end)?'':'none';});
-    render(pgn);
+    document.querySelectorAll('.pgn-btn').forEach(function(b){
+      b.classList.toggle('pgn-act', parseInt(b.dataset.p)===p);
+    });
     window.scrollTo({top:document.querySelector('.cat-grid')?document.querySelector('.cat-grid').offsetTop-80:0,behavior:'smooth'});
   }
-  if(total>1){render(pgn);show(1);}
-  window.__ymPgn={show:show,cards:cards,restore:function(){show(cur);}};
-})();
-</script>
-<script>
-(function(){
-  var inp=document.getElementById('prodSearch');
-  if(!inp) return;
-  var pgn=window.__ymPgn;
-  var cards=pgn?pgn.cards:document.querySelectorAll('.pgn-card');
-  inp.addEventListener('input',function(){
-    var q=this.value.trim().toLowerCase();
-    document.querySelectorAll('.pgn').forEach(function(p){p.style.display=q?'none':'';});
-    if(!q){
-      if(pgn){pgn.restore();}else{cards.forEach(function(c){c.style.display='';});}
-      return;
+  if(total>1){
+    var pgn=document.querySelector('.pgn');
+    if(!pgn){pgn=document.createElement('div');pgn.className='pgn';document.querySelector('.cat-grid').after(pgn);}
+    pgn.innerHTML='';
+    var prev=document.createElement('button');prev.className='pgn-btn';prev.textContent='‹';prev.addEventListener('click',function(){if(cur>1)show(cur-1);});pgn.appendChild(prev);
+    for(var i=1;i<=total;i++){
+      var b=document.createElement('button');b.className='pgn-btn';b.textContent=i;b.dataset.p=i;
+      b.addEventListener('click',(function(pg){return function(){show(pg);};})(i));
+      pgn.appendChild(b);
     }
-    cards.forEach(function(c){c.style.display=(c.textContent.toLowerCase().indexOf(q)>-1)?'':'none';});
-  });
+    var nxt=document.createElement('button');nxt.className='pgn-btn';nxt.textContent='›';nxt.addEventListener('click',function(){if(cur<total)show(cur+1);});pgn.appendChild(nxt);
+    show(1);
+  }
 })();
 </script>
 </body></html>
