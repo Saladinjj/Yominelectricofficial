@@ -241,3 +241,5 @@ footer{padding:80px 60px 40px;border-top:1px solid var(--bds)}
 /* Skip link (a11y) */
 .skip-link{position:absolute;top:-48px;left:16px;z-index:9999;background:#e8944a;color:#000;padding:12px 18px;border-radius:0 0 10px 10px;font-weight:700;font-size:14px;text-decoration:none;transition:top .2s}.skip-link:focus{top:0}
 
+
+.detail-imgs img{width:100%;display:block;margin:0 0 12px;border-radius:10px;background:var(--bgs)}
