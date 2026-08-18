@@ -198,8 +198,8 @@ h2.stitle{font-family:var(--sf);font-size:clamp(28px,4.5vw,52px);line-height:1.1
 .pc{background:var(--bgc);border:1px solid var(--bds);border-radius:14px;overflow:hidden;cursor:default;transition:transform var(--tr),border-color var(--tr),box-shadow var(--tr);position:relative;display:flex;flex-direction:column;text-decoration:none;color:inherit;pointer-events:none}.pc .pcat,.pc .pname{pointer-events:none}
 .pc:hover{transform:translateY(-5px);border-color:rgba(232,148,74,.22);box-shadow:0 16px 48px rgba(0,0,0,.4)}
 /* Full image with contain — no cropping */
-.pimg{width:100%;aspect-ratio:1/1;overflow:hidden;background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;pointer-events:auto}
-.pimg img{width:100%;height:100%;object-fit:contain;padding:0;transition:transform .5s ease;background:transparent}
+.pimg{width:100%;aspect-ratio:1/1;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;pointer-events:auto}
+.pimg img{width:100%;height:100%;object-fit:contain;padding:10px;transition:transform .5s ease;background:#fff}
 .pc:hover .pimg img{transform:scale(1.06)}
 .pc.pc-screw{pointer-events:auto;border-color:rgba(232,148,74,.32);box-shadow:0 0 0 1px rgba(232,148,74,.1)}
 .pc.pc-screw:hover{border-color:rgba(232,148,74,.45);box-shadow:0 12px 40px rgba(0,0,0,.45),0 0 0 1px rgba(232,148,74,.2)}
@@ -257,7 +257,7 @@ a.gi{color:inherit;text-decoration:none}
 .prstep:hover{background:var(--bgc2)}
 .prnb{font-family:var(--sf);font-size:64px;color:var(--ac);opacity:.06;position:absolute;top:-6px;right:12px;line-height:1;pointer-events:none}
 /* Emoji icon perfectly centered */
-.pricon{width:52px;height:52px;background:rgba(232,148,74,.08);border:1px solid rgba(232,148,74,.18);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 20px;line-height:1}
+.pricon{width:52px;height:52px;background:transparent;border:none;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 20px;line-height:1}
 .prstep strong{font-family:var(--sf);font-size:20px;margin-bottom:10px;display:block;font-weight:700;color:var(--tx)}
 .prstep p{font-size:13px;color:var(--mt);line-height:1.7}
 /* STATS */
@@ -493,7 +493,7 @@ body.light .prstep{background:#fff;border-color:rgba(0,0,0,.1)}
 body.light .prstep:hover{background:#f9f8f5}
 body.light .prstep h4{color:#1a1a1a}
 body.light .prstep p{color:#555}
-body.light .pricon{background:rgba(196,118,47,.08);border-color:rgba(196,118,47,.2)}
+body.light .pricon{background:transparent;border-color:transparent}
 body.light .tc{background:#fff;border-color:rgba(0,0,0,.1)}
 body.light .tc:hover{border-color:rgba(196,118,47,.2)}
 body.light .tt{color:#555}
