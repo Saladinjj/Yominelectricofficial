@@ -2,6 +2,26 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=0, must-revalidate"
+        }
+      ]
+    }
+  ],
   "builds": [
     {
       "src": "backend/server.js",
