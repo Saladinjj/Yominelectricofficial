@@ -53,6 +53,13 @@
   "blogPost": [
     {
       "@type": "BlogPosting",
+      "headline": "Maximizing Efficiency: Choosing Solar Batteries",
+      "url": "https://www.yominelectric.com/blog/maximizing-efficiency-choosing-solar-batteries",
+      "datePublished": "2026-08-19",
+      "author": { "@type": "Person", "name": "Engineering Team" }
+    },
+    {
+      "@type": "BlogPosting",
       "headline": "Comprendre le fonctionnement des compteurs électriques",
       "url": "https://www.yominelectric.com/blog/comprendre-le-fonctionnement-des-compteurs-electriques",
       "datePublished": "2026-08-18",
@@ -74,7 +81,7 @@
     },
     {
       "@type": "BlogPosting",
-      "headline": "how does a smart electricity meter work ?",
+      "headline": "How Does a Smart Electricity Meter Work?",
       "url": "https://www.yominelectric.com/blog/how_does_a_smart_electricity_meter_work",
       "datePublished": "2026-08-17",
       "author": { "@type": "Person", "name": "Engineering Team" }
@@ -374,6 +381,8 @@ nav.sc{background:rgba(13,13,13,.99)}
 .blog-line-body{min-width:0}
 .blog-line-title{font-size:15px;font-weight:600;color:var(--tx);line-height:1.4;margin:0 0 4px}
 .blog-line-kw{font-size:12px;color:var(--dm);line-height:1.5;margin:0}
+.blog-line-lang{display:none;flex-shrink:0;margin-left:auto;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:3px 8px;border-radius:6px;background:rgba(232,148,74,.12);border:1px solid rgba(232,148,74,.3);color:var(--ac);white-space:nowrap}
+body.light .blog-line-lang{background:rgba(196,118,47,.1);border-color:rgba(196,118,47,.3)}
 @media(max-width:640px){.blog-line{padding:10px 12px}.blog-line-img{width:64px;height:48px}}
 
 /* ─── CATEGORY TAG PILLS ─── */
@@ -388,8 +397,9 @@ nav.sc{background:rgba(13,13,13,.99)}
 
 /* ─── PAGINATION ─── */
 .pagination{display:flex;align-items:center;justify-content:center;gap:6px;padding:20px 0 0}
-.pagination button,.pagination span.page-num{background:rgba(255,255,255,.05);border:1px solid var(--bdr);color:var(--mt);padding:9px 16px;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;font-family:var(--ss)}
+.pagination button,.pagination .page-num{background:rgba(255,255,255,.05);border:1px solid var(--bdr);color:var(--mt);padding:9px 16px;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;font-family:var(--ss)}
 .pagination button:hover{background:rgba(255,255,255,.1);color:var(--tx)}
+.pagination button:disabled{opacity:.35;cursor:default;background:rgba(255,255,255,.03)}
 .pagination .page-num.active{background:var(--ac);border-color:var(--ac);color:#000;font-weight:600}
 .pagination .page-dots{color:var(--dm);padding:9px 4px;font-size:13px}
 
@@ -433,6 +443,9 @@ a.popular-post{text-decoration:none;color:inherit}
 .newsletter-cta .nl-cta-form input::placeholder{color:var(--dm)}
 .newsletter-cta .nl-cta-form button{background:var(--ac);color:#000;border:none;padding:15px 28px;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s;font-family:var(--ss);white-space:nowrap}
 .newsletter-cta .nl-cta-form button:hover{background:var(--ac2)}
+.nl-status{display:none;margin:14px auto 0;max-width:440px;font-size:13px;line-height:1.6;position:relative;z-index:1}
+.nl-status.ok{color:#2ecc71}
+.nl-status.err{color:#e74c3c}
 
 /* ─── RTL ─── */
 [dir=rtl] nav,[dir=rtl] .n-logo,[dir=rtl] .n-ctr,[dir=rtl] .n-rt{direction:ltr}
@@ -471,7 +484,7 @@ body.light .post-card{background:#fff;border-color:rgba(0,0,0,.1)}
 body.light .sidebar-widget{background:#fff;border-color:rgba(0,0,0,.1)}
 body.light .featured-post{background:#fff;border-color:rgba(196,118,47,.18)}
 body.light .filter-tab.active{background:#f8f7f4}
-body.light .pagination button,.pagination span.page-num{background:rgba(0,0,0,.04);border-color:rgba(0,0,0,.12)}
+body.light .pagination button,.pagination .page-num{background:rgba(0,0,0,.04);border-color:rgba(0,0,0,.12)}
 body.light .newsletter-cta{background:#f8f7f4;border-color:rgba(0,0,0,.08)}
 
 
@@ -660,14 +673,21 @@ body{overflow-x:hidden!important;max-width:100vw}
     <!-- POST GRID — LINE FORMAT (newest first) -->
     <!-- POST GRID — LINE FORMAT (newest first — ADD NEW POSTS AT THE TOP) -->
   <div class="post-grid" id="post-grid">
-    <a class="blog-line" data-category="guides" href="/blog/comprendre-le-fonctionnement-des-compteurs-electriques">
+    <a class="blog-line" data-category="guides" data-lang="en" href="/blog/maximizing-efficiency-choosing-solar-batteries">
+      <img class="blog-line-img" src="/assets/images/blog/maximizing-efficiency-choosing-solar-batteries/hero.jpg" alt="Maximizing Efficiency: Choosing Solar Batteries" loading="lazy" onerror="this.style.display='none'">
+      <div class="blog-line-body">
+        <h3 class="blog-line-title">Maximizing Efficiency: Choosing Solar Batteries</h3>
+        <p class="blog-line-kw">solar batteries &middot; solar power batteries &middot; solar energy storage &middot; lithium solar batteries 5-20kWh 48V &middot; how long do solar batteries last</p>
+      </div>
+    </a>
+    <a class="blog-line" data-category="guides" data-lang="fr" href="/blog/comprendre-le-fonctionnement-des-compteurs-electriques">
       <img class="blog-line-img" src="/assets/images/blog/comprendre-le-fonctionnement-des-compteurs-electriques/hero.jpg" alt="Comprendre le fonctionnement des compteurs &eacute;lectriques" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Comprendre le fonctionnement des compteurs &eacute;lectriques</h3>
         <p class="blog-line-kw">compteur &eacute;lectrique &middot; electricity meter &middot; facture d'&eacute;lectricit&eacute; &middot; compteur intelligent &middot; &eacute;conomie d'&eacute;nergie</p>
       </div>
     </a>
-    <a class="blog-line" data-category="guides" href="/blog/o-que-e-eletricidade">
+    <a class="blog-line" data-category="guides" data-lang="pt" href="/blog/o-que-e-eletricidade">
       <img class="blog-line-img" src="/assets/images/blog/o-que-e-eletricidade/hero.jpg" alt="O que &eacute; Eletricidade? Guia Completo de F&iacute;sica e Energia El&eacute;trica" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">O que &eacute; Eletricidade? Guia Completo de F&iacute;sica e Energia El&eacute;trica</h3>
@@ -682,9 +702,9 @@ body{overflow-x:hidden!important;max-width:100vw}
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/how_does_a_smart_electricity_meter_work">
-      <img class="blog-line-img" src="/assets/images/blog/how_does_a_smart_electricity_meter_work/hero.jpg" alt="how does a smart electricity meter work ?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/how_does_a_smart_electricity_meter_work/hero.jpg" alt="How Does a Smart Electricity Meter Work?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
-        <h3 class="blog-line-title">how does a smart electricity meter work ?</h3>
+        <h3 class="blog-line-title">How Does a Smart Electricity Meter Work?</h3>
         <p class="blog-line-kw">smart energy meter · energy monitoring · smart grid technology · smart home energy · home energy management</p>
       </div>
     </a>
@@ -922,16 +942,6 @@ body{overflow-x:hidden!important;max-width:100vw}
     </ul>
   </div>
 
-  <!-- Newsletter -->
-  <div class="sidebar-widget newsletter-widget">
-    <h4 data-i18n="blog_newsletter">Newsletter</h4>
-    <p data-i18n="blog_newsletter_desc">Get weekly production insights, product launches, and factory floor updates directly in your inbox.</p>
-    <div class="nl-form">
-      <input type="email" data-i18n="blog_newsletter_ph" placeholder="Your email address">
-      <button data-i18n="blog_newsletter_btn">Subscribe</button>
-    </div>
-  </div>
-
   <!-- Product Catalog CTA -->
   <div class="cta-banner">
     <h4 data-i18n="blog_cta_title">Explore Our Products</h4>
@@ -947,10 +957,15 @@ body{overflow-x:hidden!important;max-width:100vw}
 <section class="newsletter-cta">
   <h2 data-i18n="blog_nl_title">Never Miss an Update</h2>
   <p data-i18n="blog_nl_desc">Subscribe for weekly production insights, product launches, and factory updates from Yomin Electric.</p>
-  <div class="nl-cta-form">
-    <input type="email" data-i18n="blog_nl_ph" placeholder="Enter your email address">
-    <button data-i18n="blog_nl_btn">Subscribe Now</button>
-  </div>
+  <form class="nl-cta-form" id="nlForm" novalidate>
+    <input type="email" name="email" data-i18n="blog_nl_ph" placeholder="Enter your email address" required>
+    <input type="hidden" name="access_key" value="f8ddaccf-8378-4291-a8c2-c6f5a4082f35">
+    <input type="hidden" name="subject" value="Newsletter subscription — Yomin Electric">
+    <input type="hidden" name="from_name" value="Yomin Electric Blog">
+    <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" aria-hidden="true">
+    <button type="submit" data-i18n="blog_nl_btn">Subscribe Now</button>
+  </form>
+  <p class="nl-status" id="nlStatus" role="status" aria-live="polite"></p>
 </section>
 
 </main>
@@ -972,7 +987,7 @@ body{overflow-x:hidden!important;max-width:100vw}
     <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
     <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
   </div>
-  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2025 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
 </footer>
 
 <!-- Float buttons -->
@@ -1039,6 +1054,8 @@ body{overflow-x:hidden!important;max-width:100vw}
       blog_cta_link:'Explore Products →',
       blog_nl_title:'Never Miss an Update', blog_nl_desc:'Subscribe for weekly production insights, product launches, and factory updates from Yomin Electric.',
       blog_nl_ph:'Enter your email address', blog_nl_btn:'Subscribe Now',
+      blog_nl_sending:'Subscribing…', blog_nl_ok:'Subscribed! Weekly updates will land in your inbox.',
+      blog_nl_err:'Please enter a valid email address.', blog_nl_fail:'Something went wrong — please try again or email us at salah.eddine@cnyomin.com.',
       blog_no_results:'No posts found for this category.',
       cat_production:'Production', cat_video:'Video', cat_news:'Company News',
       cat_products:'New Product', cat_quality:'Quality &amp; Testing', cat_shipments:'Shipments',
@@ -1118,6 +1135,8 @@ body{overflow-x:hidden!important;max-width:100vw}
       blog_cta_link:'Découvrir les produits →',
       blog_nl_title:'Ne manquez aucune mise à jour', blog_nl_desc:'Abonnez-vous pour recevoir des informations hebdomadaires sur la production, les lancements de produits et les mises à jour de l\'usine Yomin Electric.',
       blog_nl_ph:'Entrez votre adresse email', blog_nl_btn:'S\'abonner maintenant',
+      blog_nl_sending:'Abonnement…', blog_nl_ok:'Abonné ! Les mises à jour hebdomadaires arriveront dans votre boîte mail.',
+      blog_nl_err:'Veuillez saisir une adresse email valide.', blog_nl_fail:'Une erreur est survenue — réessayez ou écrivez-nous à salah.eddine@cnyomin.com.',
       blog_no_results:'Aucun article trouvé pour cette catégorie.',
       cat_production:'Production', cat_video:'Vidéo', cat_news:'Actualités',
       cat_products:'Nouveau produit', cat_quality:'Qualité et tests', cat_shipments:'Expéditions',
@@ -1197,6 +1216,8 @@ body{overflow-x:hidden!important;max-width:100vw}
       blog_cta_link:'Explorar productos →',
       blog_nl_title:'No se pierda ninguna actualización', blog_nl_desc:'Suscríbase para recibir información semanal de producción, lanzamientos de productos y actualizaciones de fábrica de Yomin Electric.',
       blog_nl_ph:'Ingrese su dirección de correo', blog_nl_btn:'Suscríbase ahora',
+      blog_nl_sending:'Suscribiendo…', blog_nl_ok:'¡Suscrito! Recibirá las actualizaciones semanales.',
+      blog_nl_err:'Ingrese una dirección de correo válida.', blog_nl_fail:'Algo salió mal — inténtelo de nuevo o escríbanos a salah.eddine@cnyomin.com.',
       blog_no_results:'No se encontraron artículos para esta categoría.',
       cat_production:'Producción', cat_video:'Video', cat_news:'Noticias',
       cat_products:'Nuevo producto', cat_quality:'Calidad y pruebas', cat_shipments:'Envíos',
@@ -1276,6 +1297,8 @@ body{overflow-x:hidden!important;max-width:100vw}
       blog_cta_link:'استكشف المنتجات ←',
       blog_nl_title:'لا تفوت أي تحديث', blog_nl_desc:'اشترك للحصول على رؤى الإنتاج الأسبوعية وإطلاقات المنتجات وتحديثات المصنع من يومين إلكتريك.',
       blog_nl_ph:'أدخل عنوان بريدك الإلكتروني', blog_nl_btn:'اشترك الآن',
+      blog_nl_sending:'جارٍ الاشتراك…', blog_nl_ok:'تم الاشتراك! ستصل التحديثات الأسبوعية إلى بريدك.',
+      blog_nl_err:'يرجى إدخال عنوان بريد إلكتروني صالح.', blog_nl_fail:'حدث خطأ ما — حاول مرة أخرى أو راسلنا على salah.eddine@cnyomin.com.',
       blog_no_results:'لم يتم العثور على مقالات لهذه الفئة.',
       cat_production:'إنتاج', cat_video:'فيديو', cat_news:'أخبار',
       cat_products:'منتج جديد', cat_quality:'الجودة والاختبار', cat_shipments:'شحنات',
@@ -1364,6 +1387,25 @@ body{overflow-x:hidden!important;max-width:100vw}
     if (lf) lf.innerHTML = ({en:'<img src=\"https://flagcdn.com/16x12/gb.png\" class=\"flag\" alt=\"EN\">',fr:'<img src=\"https://flagcdn.com/16x12/fr.png\" class=\"flag\" alt=\"FR\">',es:'<img src=\"https://flagcdn.com/16x12/es.png\" class=\"flag\" alt=\"ES\">',ar:'AR'})[currentLang] || '';
   }
 
+  /* ─── POST LANGUAGE BADGES ─── */
+  function updateLangBadges() {
+    document.querySelectorAll('#post-grid .blog-line').forEach(function(el) {
+      var postLang = el.getAttribute('data-lang') || 'en';
+      var badge = el.querySelector('.blog-line-lang');
+      if (postLang === currentLang) {
+        if (badge) badge.style.display = 'none';
+        return;
+      }
+      if (!badge) {
+        badge = document.createElement('span');
+        badge.className = 'blog-line-lang';
+        el.appendChild(badge);
+      }
+      badge.textContent = ({fr:'FR',es:'ES',ar:'AR',pt:'PT',en:'EN'})[postLang] || postLang.toUpperCase();
+      badge.style.display = '';
+    });
+  }
+
   function setLang(l) {
     if (!window.__ymT[l]) return;
     currentLang = l;
@@ -1374,6 +1416,7 @@ body{overflow-x:hidden!important;max-width:100vw}
     document.body.classList.remove('ar');
     applyTranslations();
     updateLangUI();
+    updateLangBadges();
   }
 
   /* ─── THEME ─── */
@@ -1476,6 +1519,40 @@ body{overflow-x:hidden!important;max-width:100vw}
   if (sidebarSearch) sidebarSearch.addEventListener('input', function() { performSearch(this.value); });
   if (sidebarSearchBtn) sidebarSearchBtn.addEventListener('click', function() { performSearch(sidebarSearch.value); });
 
+  /* ─── NEWSLETTER (Web3Forms) ─── */
+  var nlForm = document.getElementById('nlForm');
+  var nlStatus = document.getElementById('nlStatus');
+  if (nlForm && nlStatus) {
+    var nlBtn = nlForm.querySelector('button[type="submit"]');
+    var nlBtnLabel = nlBtn ? nlBtn.textContent : '';
+    function nlMsg(key, isErr) {
+      var d = window.__ymT[currentLang] || {};
+      nlStatus.textContent = d[key] || key;
+      nlStatus.className = 'nl-status' + (isErr ? ' err' : ' ok');
+      nlStatus.style.display = '';
+    }
+    nlForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var email = nlForm.querySelector('input[name="email"]');
+      if (!email.value || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+        nlMsg('blog_nl_err', true);
+        email.focus();
+        return;
+      }
+      if (nlBtn) { nlBtn.disabled = true; nlBtn.textContent = (window.__ymT[currentLang] || {}).blog_nl_sending || 'Subscribing…'; }
+      fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(nlForm) })
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+          if (data && data.success) { nlForm.reset(); nlMsg('blog_nl_ok', false); }
+          else { nlMsg('blog_nl_fail', true); }
+        })
+        .catch(function() { nlMsg('blog_nl_fail', true); })
+        .finally(function() {
+          if (nlBtn) { nlBtn.disabled = false; nlBtn.textContent = nlBtnLabel; }
+        });
+    });
+  }
+
   /* ─── INIT ─── */
   document.addEventListener('DOMContentLoaded', function() {
     setTheme(currentTheme);
@@ -1545,19 +1622,25 @@ document.getElementById('wc-overlay')?.addEventListener('click', e => { if (e.ta
     pgn.innerHTML = '';
     if (totalPages <= 1) return;
     var prev = document.createElement('button');
+    prev.type = 'button';
     prev.textContent = '←';
+    prev.setAttribute('aria-label', 'Previous page');
     prev.disabled = currentPage === 1;
     prev.addEventListener('click', function() { if (currentPage > 1) renderPage(currentPage - 1); });
     pgn.appendChild(prev);
     for (var i = 1; i <= totalPages; i++) {
-      var btn = document.createElement('span');
+      var btn = document.createElement('button');
+      btn.type = 'button';
       btn.className = 'page-num' + (i === currentPage ? ' active' : '');
       btn.textContent = i;
+      if (i === currentPage) btn.setAttribute('aria-current', 'page');
       btn.addEventListener('click', (function(p) { return function() { renderPage(p); }; })(i));
       pgn.appendChild(btn);
     }
     var next = document.createElement('button');
+    next.type = 'button';
     next.textContent = '→';
+    next.setAttribute('aria-label', 'Next page');
     next.disabled = currentPage === totalPages;
     next.addEventListener('click', function() { if (currentPage < totalPages) renderPage(currentPage + 1); });
     pgn.appendChild(next);
