@@ -618,17 +618,17 @@ nav.sc{background:rgba(13,13,13,.99)}
 .post-card:hover .post-card-read{color:var(--ac2)}
 .post-card-time{font-size:10px;color:var(--dm);margin-left:4px}
 
-/* ─── BLOG LINE LIST ─── */
-#post-grid{display:block}
-.blog-line{display:flex;align-items:center;gap:16px;padding:12px 16px;border:1px solid var(--bds);border-radius:12px;background:var(--bgc);margin-bottom:10px;transition:border-color var(--tr),transform var(--tr),box-shadow var(--tr)}
-.blog-line:hover{border-color:rgba(232,148,74,.35);transform:translateX(4px);box-shadow:0 10px 32px rgba(0,0,0,.35)}
-.blog-line-img{width:88px;height:62px;object-fit:cover;border-radius:8px;flex-shrink:0;background:var(--bgc2)}
-.blog-line-body{min-width:0}
-.blog-line-title{font-size:15px;font-weight:600;color:var(--tx);line-height:1.4;margin:0 0 4px}
-.blog-line-kw{font-size:12px;color:var(--dm);line-height:1.5;margin:0}
-.blog-line-lang{display:none;flex-shrink:0;margin-left:auto;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:3px 8px;border-radius:6px;background:rgba(232,148,74,.12);border:1px solid rgba(232,148,74,.3);color:var(--ac);white-space:nowrap}
+/* ─── BLOG CARD GRID (2 columns) ─── */
+#post-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:40px}
+.blog-line{display:flex;flex-direction:column;padding:0;border:1px solid var(--bds);border-radius:14px;background:var(--bgc);overflow:hidden;margin-bottom:0;transition:border-color var(--tr),transform var(--tr),box-shadow var(--tr)}
+.blog-line:hover{border-color:rgba(232,148,74,.35);transform:translateY(-5px);box-shadow:0 16px 40px rgba(0,0,0,.35)}
+.blog-line-img{width:100%;height:230px;object-fit:cover;display:block;flex-shrink:0;background:var(--bgc2)}
+.blog-line-body{padding:20px 22px 24px;min-width:0}
+.blog-line-title{font-size:18px;font-weight:600;color:var(--tx);line-height:1.35;margin:0 0 8px}
+.blog-line-kw{font-size:13px;color:var(--dm);line-height:1.6;margin:0}
+.blog-line-lang{display:none;align-self:flex-start;margin:0 22px 18px;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:3px 8px;border-radius:6px;background:rgba(232,148,74,.12);border:1px solid rgba(232,148,74,.3);color:var(--ac);white-space:nowrap}
 body.light .blog-line-lang{background:rgba(196,118,47,.1);border-color:rgba(196,118,47,.3)}
-@media(max-width:640px){.blog-line{padding:10px 12px}.blog-line-img{width:64px;height:48px}}
+@media(max-width:640px){.blog-line-img{height:180px}}
 
 /* ─── CATEGORY TAG PILLS ─── */
 .tag-production{background:rgba(230,126,34,.12);color:#e67e22;border:1px solid rgba(230,126,34,.25)}
@@ -915,8 +915,8 @@ body{overflow-x:hidden!important;max-width:100vw}
 <div class="blog-content">
 
   <!-- POST GRID -->
-    <!-- POST GRID — LINE FORMAT (newest first) -->
-    <!-- POST GRID — LINE FORMAT (newest first — ADD NEW POSTS AT THE TOP) -->
+    <!-- POST GRID — CARD FORMAT (newest first) -->
+    <!-- POST GRID — CARD FORMAT (newest first — ADD NEW POSTS AT THE TOP) -->
   <div class="post-grid" id="post-grid">
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/how-much-does-a-current-transformer-cost">
       <img class="blog-line-img" src="/assets/images/blog/how-much-does-a-current-transformer-cost/hero.jpg" alt="How Much Does a Current Transformer Cost" loading="lazy" onerror="this.style.display='none'">
