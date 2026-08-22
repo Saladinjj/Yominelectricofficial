@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="/logo_transparent.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modbus and RS485 Energy Meters: A Buyer's Guide for Facility Managers | Yomin Electric</title>
+<meta name="description" content="How RS485 Modbus energy meters work, how to wire and address them, and what to check when buying meters for SCADA, EMS or Home Assistant integration.">
+<link rel="canonical" href="https://www.yominelectric.com/blog/modbus-rs485-energy-meters-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Modbus and RS485 Energy Meters: A Buyer's Guide for Facility Managers","datePublished":"2026-08-22","inLanguage":"en","author":{"@type":"Organization","name":"Yomin Electric"},"publisher":{"@type":"Organization","name":"Yomin Electric","logo":{"@type":"ImageObject","url":"https://www.yominelectric.com/logo_transparent.png"}},"image":"https://www.yominelectric.com/assets/images/blog/modbus-rs485-energy-meters-guide/hero.jpg"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is an RS485 Modbus energy meter?", "acceptedAnswer": {"@type": "Answer", "text": "It is an electricity meter with an RS485 serial port that speaks the Modbus RTU protocol, so it can report voltage, current, power, energy and other readings to a controller, gateway, or monitoring system over a two-wire bus."}}, {"@type": "Question", "name": "What is the difference between Modbus RTU and Modbus TCP?", "acceptedAnswer": {"@type": "Answer", "text": "Modbus RTU runs over RS485 serial wiring (two wires, daisy-chained devices) while Modbus TCP runs over Ethernet/IP networks. RTU is common for meters inside panels; TCP is used when meters have Ethernet or when a gateway converts RS485 to IP."}}, {"@type": "Question", "name": "How many devices can be connected on one RS485 bus?", "acceptedAnswer": {"@type": "Answer", "text": "Typically up to 32 devices per bus segment without a repeater, each with a unique address (1–247 in Modbus). Longer runs may need repeaters or lower baud rates."}}, {"@type": "Question", "name": "Can I read a Modbus energy meter with Home Assistant?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Home Assistant supports Modbus via a serial port or a TCP gateway, and many users integrate DIN-rail Modbus meters to track household or EV-charger consumption."}}]}</script>
+</head>
+<body><nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/voltage-protector"><span class="mega-icon">&#128737;&#65039;</span><span class="mega-name">Voltage Protectors</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar">AR</button>
+  </div>
+</div><main>
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> · <a href="/blog">Blog</a> · <span>Modbus &amp; RS485 Energy Meters Guide</span></div>
+    <span class="bh-tag">Guides</span>
+    <h1 class="bh-title">Modbus and RS485 Energy Meters: A Buyer's Guide for Facility Managers</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>9 min read</span>
+      <span class="divider"></span>
+      <span>August 22, 2026</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <img class="hero-img" src="/assets/images/blog/modbus-rs485-energy-meters-guide/hero.jpg" alt="Modbus and RS485 Energy Meters Guide" loading="eager">
+<p><strong>An RS485 Modbus energy meter is an electricity meter that can report voltage, current, power, energy and dozens of other parameters to a controller or monitoring system over a two-wire serial bus.</strong> For facility managers, this turns every meter into a data source for energy dashboards, SCADA, and automated billing &mdash; without walking around with a clipboard.</p>
+
+<h2>What are RS485 and Modbus?</h2>
+<p><strong>RS485</strong> is a physical wiring standard: a two-wire (A/B) balanced bus that can carry data over hundreds of metres and support many devices on one cable. It is the de-facto serial backbone of industrial and building automation.</p>
+<p><strong>Modbus</strong> is the protocol that runs on top of it. Modbus RTU (the most common form on meters) sends data in compact binary frames over RS485. Each device has an address, and a master (PLC, gateway, or PC software) polls each address for readings. Modbus TCP is the same protocol over Ethernet, usually via a gateway that converts RS485 to IP.</p>
+
+<h2>Why choose a Modbus energy meter?</h2>
+<ul>
+  <li><strong>Real data, no manual reads:</strong> automatically collect kWh, kW, V, A, PF and frequency from every feeder.</li>
+  <li><strong>Standard and open:</strong> Modbus is public, vendor-neutral, and supported by virtually every SCADA, EMS, BMS, and even Home Assistant.</li>
+  <li><strong>Cost-effective:</strong> one RS485 bus can carry dozens of meters on a single cable run &mdash; ideal for multi-feeder panels and submetering.</li>
+  <li><strong>Reliable in industry:</strong> RS485 is immune to most electrical noise when wired correctly, which matters inside switchboards.</li>
+</ul>
+
+<h2>Wiring basics</h2>
+<ol>
+  <li><strong>Daisy-chain, don't star:</strong> connect meters A-to-A and B-to-B in a single chain from the master.</li>
+  <li><strong>Terminate the ends:</strong> place a 120 &Omega; termination resistor at both physical ends of the bus.</li>
+  <li><strong>Ground and shield:</strong> use shielded twisted pair and ground the shield at one end only.</li>
+  <li><strong>Unique addresses:</strong> set each meter to a unique Modbus address (1&ndash;247).</li>
+  <li><strong>Keep runs sensible:</strong> up to ~1,200 m total length; reduce baud rate or add repeaters for very long runs.</li>
+</ol>
+<p>Typical configuration: 9,600 or 19,200 baud, 8 data bits, even parity, 1 stop bit (8E1) &mdash; always check the meter&rsquo;s datasheet, as defaults vary.</p>
+
+<h2>What data can you read?</h2>
+<table>
+  <thead><tr><th>Parameter group</th><th>Typical registers</th><th>Use</th></tr></thead>
+  <tbody>
+    <tr><td>Instantaneous</td><td>Voltage, current, active/reactive power, PF, frequency</td><td>Live load monitoring</td></tr>
+    <tr><td>Energy</td><td>Import/export kWh, kVARh, quadrant registers</td><td>Billing and verification</td></tr>
+    <tr><td>Demand</td><td>Max demand, timestamped demand windows</td><td>Tariff and peak analysis</td></tr>
+    <tr><td>Power quality</td><td>THD per phase (on advanced meters)</td><td>Troubleshooting and compliance</td></tr>
+  </tbody>
+</table>
+<p>Every parameter maps to a specific Modbus register address documented in the meter manual. A gateway or software package (Modbus Poll, Node-RED, Home Assistant, SCADA) reads these registers on a schedule and stores them.</p>
+
+<h2>Buyer's checklist</h2>
+<ul>
+  <li><strong>Accuracy and certification:</strong> Class 1 (or 0.5s) per IEC 62053-21; MID certification if billing use is planned.</li>
+  <li><strong>Measurement method:</strong> direct-connect (up to ~100 A) vs CT-operated meters using <a href="/products/current-transformer">current transformers</a> for large feeders.</li>
+  <li><strong>Communication options:</strong> RS485 Modbus RTU standard; check whether RS485-to-Ethernet (Modbus TCP) or wireless options are available.</li>
+  <li><strong>Parameter coverage:</strong> confirm the register map includes the parameters you need (especially demand and TOU if relevant).</li>
+  <li><strong>Display and local read:</strong> a backlit display still helps during commissioning even if everything is remote.</li>
+  <li><strong>Form factor:</strong> <a href="/products/energy-meter">DIN-rail meters</a> install quickly in standard distribution boards.</li>
+</ul>
+
+<h2>Integration examples</h2>
+<ul>
+  <li><strong>Factory energy monitoring:</strong> meters on each line feed an EMS dashboard; anomalies trigger alerts.</li>
+  <li><strong>Building submetering:</strong> per-tenant RS485 meters report to billing software automatically.</li>
+  <li><strong>EV charging:</strong> a Modbus meter behind the charger measures session energy for cost allocation.</li>
+  <li><strong>Home Assistant:</strong> hobbyists and prosumers read DIN-rail Modbus meters over a USB-RS485 adapter or TCP gateway to track whole-home and per-circuit use.</li>
+</ul>
+
+<h2>FAQ</h2>
+<h3>What is an RS485 Modbus energy meter?</h3>
+<p>It is an electricity meter with an RS485 serial port that speaks the Modbus RTU protocol, so it can report voltage, current, power, energy and other readings to a controller, gateway, or monitoring system over a two-wire bus.</p>
+<h3>What is the difference between Modbus RTU and Modbus TCP?</h3>
+<p>Modbus RTU runs over RS485 serial wiring (two wires, daisy-chained devices) while Modbus TCP runs over Ethernet/IP networks. RTU is common for meters inside panels; TCP is used when meters have Ethernet or when a gateway converts RS485 to IP.</p>
+<h3>How many devices can be connected on one RS485 bus?</h3>
+<p>Typically up to 32 devices per bus segment without a repeater, each with a unique address (1&ndash;247 in Modbus). Longer runs may need repeaters or lower baud rates.</p>
+<h3>Can I read a Modbus energy meter with Home Assistant?</h3>
+<p>Yes. Home Assistant supports Modbus via a serial port or a TCP gateway, and many users integrate DIN-rail Modbus meters to track household or EV-charger consumption.</p>
+
+<h2>Final Thoughts</h2>
+<p>If your facility already has a monitoring system &mdash; or you are tired of manual meter rounds &mdash; RS485 Modbus meters are the standard, open, cost-effective answer. Buy on accuracy class, register coverage, and certified production, and wire the bus properly once. Yomin Electric&rsquo;s <a href="/products/energy-meter">Modbus RS485 meter range</a> covers Class 1 DIN-rail meters with full register maps for EMS, SCADA, and submetering projects, backed by factory testing on every unit.</p>
+<p>Related reading: <a href="/blog/factory-energy-monitoring">Factory Energy Monitoring: Cut Costs with Real-Time Data</a> and <a href="/blog/din-rail-vs-panel-meters">DIN Rail vs Panel Meters</a>.</p>
+  </section>
+<section class="cta-section">
+    <h2>Need Help Choosing the Right Product?</h2>
+    <p>Our engineers can recommend the exact model, rating and configuration for your project. Tell us your requirements and get a factory-direct quote within 24 hours.</p>
+    <div class="cta-wrap">
+      <a href="/contact" class="cta-btn">Get a Quote</a>
+      <a href="https://wa.me/8619016543301" class="cta-btn ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </section><footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2025 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+</footer>
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
