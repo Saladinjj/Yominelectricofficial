@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="/logo_transparent.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Variac Transformer Selection Guide: Voltage, Current and Duty | Yomin Electric</title>
+<meta name="description" content="How to choose a variac: output voltage range, current rating, single vs three phase, continuous vs intermittent duty, brush design and mounting options.">
+<link rel="canonical" href="https://www.yominelectric.com/blog/variac-transformer-selection-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Variac Transformer Selection Guide","datePublished":"2026-08-24","inLanguage":"en","author":{"@type":"Organization","name":"Yomin Electric"},"publisher":{"@type":"Organization","name":"Yomin Electric","logo":{"@type":"ImageObject","url":"https://www.yominelectric.com/logo_transparent.png"}},"image":"https://www.yominelectric.com/assets/images/blog/variac-transformer-selection-guide/hero.jpg"}</script>
+</head>
+<body>
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/voltage-protector"><span class="mega-icon">&#128737;&#65039;</span><span class="mega-name">Voltage Protectors</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar">AR</button>
+  </div>
+</div>
+<main>
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> · <a href="/blog">Blog</a> · <span>Variac Transformer Selection Guide</span></div>
+    <span class="bh-tag">Guides</span>
+    <h1 class="bh-title">Variac Transformer Selection Guide</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>8 min read</span>
+      <span class="divider"></span>
+      <span>August 24, 2026</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <img class="hero-img" src="/assets/images/blog/variac-transformer-selection-guide/hero.jpg" alt="Variac variable transformer on a clean workbench in a test laboratory" loading="eager">
+
+    <p>A variac (variable autotransformer) delivers a continuously adjustable AC voltage from zero to roughly line voltage, which makes it the standard tool for test labs, burn-in stations, motor speed control, lighting dimming, and equipment servicing. Choosing the right one is simpler than it looks: match the input voltage, decide the output range, then size by current, not by watts alone. This variac transformer selection guide covers each step and the common mistakes to avoid.</p>
+
+    <h2>Step 1: Match the Input Voltage</h2>
+    <p>Variacs are wound for a specific input voltage. The most common ratings are 110&ndash;120&nbsp;V (North America) and 220&ndash;240&nbsp;V (most other markets), with 220&nbsp;V and 380&ndash;415&nbsp;V three-phase units for industrial use. Check your line voltage before ordering: feeding a 120&nbsp;V variac from a 240&nbsp;V line will burn the winding, and feeding 240&nbsp;V into a 220&nbsp;V-rated unit leaves no margin for line rises.</p>
+    <p>Single-phase variac selection therefore starts with two numbers: your line voltage and the voltage you need at the load. If the application only needs to reduce voltage, a standard 0&ndash;input unit is enough. If it needs to boost above line voltage, look for a unit with a boost tap or an output above 100%.</p>
+
+    <h2>Step 2: Define the Output Voltage Range</h2>
+    <p>Most single-phase variacs provide 0&ndash;100% of input voltage (for example 0&ndash;240&nbsp;V from a 240&nbsp;V line). Three-phase units do the same per phase. Common output options include:</p>
+    <table>
+      <thead><tr><th>Output range</th><th>Typical use</th></tr></thead>
+      <tbody>
+        <tr><td>0&ndash;100% of input</td><td>General lab power, testing, dimming, speed control</td></tr>
+        <tr><td>0&ndash;110% or boost tap</td><td>Testing above nominal voltage, aging tests</td></tr>
+        <tr><td>0&ndash;130&nbsp;V from 120&nbsp;V line</td><td>North American universal testing</td></tr>
+        <tr><td>Fixed percentage steps</td><td>Motor starting, heating control, simple level control</td></tr>
+      </tbody>
+    </table>
+    <p>For a test bench that must simulate supply dips and swells, choose a unit that covers the full 0&ndash;100% range smoothly. For fixed industrial control, a tapped unit may be cheaper and more reliable.</p>
+
+    <h2>Step 3: Size by Current, Not Just by kVA</h2>
+    <p>Variac transformer sizing is a current exercise. The output current rating is set by the winding and brush contact, and it is roughly constant across the adjustment range. At low output voltage you can draw the rated current, but the kVA delivered is lower. If you select only on kVA, you may overheat the unit when running at a reduced voltage with a large current draw.</p>
+    <p>Use this rule: <strong>kVA = output voltage &times; rated current</strong>. A 2&nbsp;kVA, 240&nbsp;V variac is rated around 8.3&nbsp;A. At 100&nbsp;V output it still handles about 8.3&nbsp;A, which is only 0.83&nbsp;kVA. If your load draws 10&nbsp;A at 100&nbsp;V, the 2&nbsp;kVA unit is undersized even though 10&nbsp;A &times; 100&nbsp;V is only 1&nbsp;kVA.</p>
+    <ul>
+      <li>List the load current at the lowest operating voltage you will use.</li>
+      <li>Select a variac whose current rating is above that value.</li>
+      <li>For motor loads, allow for 3&ndash;5&times; starting current on the setting you use most.</li>
+    </ul>
+    <p>This single habit prevents most field failures with variable transformers.</p>
+
+    <h2>Step 4: Single Phase or Three Phase</h2>
+    <p>Single-phase variacs suit bench testing, one machine, lighting, or a single heater. Three-phase variacs are built from three matched single-phase units, often with a common shaft or ganged brushes, and are used for three-phase motors, whole production lines, and three-phase test rigs. When ordering three-phase, confirm whether the application is balanced (all phases adjusted together) or needs independent per-phase adjustment.</p>
+
+    <h2>Step 5: Check the Duty Cycle</h2>
+    <p>Duty is the factor most buyers overlook. A variac rated for continuous operation can run at full rated current all day. Many benchtop units are rated for intermittent use (for example 50% duty or a time limit at full output). If your process runs continuously, specify a continuously rated model or derate the intermittent one to around 60&ndash;70% of its nameplate current.</p>
+    <p>Ambient temperature also derates the unit: above 40&nbsp;&deg;C, reduce the continuous current further. Enclosed and panel-mounted units run hotter than open bench units and need more derating or forced ventilation.</p>
+
+    <h2>Step 6: Consider the Brush and Contact Design</h2>
+    <p>The carbon brush rides on the exposed winding and transfers current. For how to choose a variac with a long service life, look at the brush design:</p>
+    <ul>
+      <li><strong>Brush material and pressure:</strong> Quality carbon brushes with proper spring pressure wear slowly and stay clean.</li>
+      <li><strong>Winding surface:</strong> Silver-plated or well-finished contact tracks reduce sparking and heating.</li>
+      <li><strong>Wear indicators:</strong> Some units show brush wear so maintenance is scheduled instead of reactive.</li>
+      <li><strong>Knob or motor drive:</strong> Manual units for benches; motorized (servo-driven) units for remote or automated control.</li>
+    </ul>
+    <p>Sparking, noise, and hot spots at the brush are the first signs of a worn or poor-quality contact system.</p>
+
+    <h2>Step 7: Choose Mounting and Accessories</h2>
+    <p>Variacs come as open units (for panels), enclosed bench boxes with output socket and voltmeter, rack-mount units, and motorized assemblies. For a lab, an enclosed unit with a voltage meter, fuse, and output socket is the practical choice. For integration into equipment, order the open frame unit and protect the primary with a fuse or breaker sized to the unit&rsquo;s rating.</p>
+    <p>When the application is part of a larger test system, pair the variac with a <a href="/products/energy-meter">power meter</a> to log voltage, current, and power during tests, and protect the bench with the right <a href="/products/fuse-protection">fuse and protection</a> components so a fault in the unit under test does not damage the variac.</p>
+
+    <h2>Variac Selection Quick Checklist</h2>
+    <table>
+      <thead><tr><th>Parameter</th><th>How to determine it</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td>Input voltage</td><td>Line voltage at site</td><td>240&nbsp;V single phase</td></tr>
+        <tr><td>Output range</td><td>Test or control requirement</td><td>0&ndash;240&nbsp;V (0&ndash;100%)</td></tr>
+        <tr><td>Current rating</td><td>Load current at lowest voltage</td><td>10&nbsp;A &rarr; 12&nbsp;A unit</td></tr>
+        <tr><td>Phases</td><td>Supply and load type</td><td>Single phase</td></tr>
+        <tr><td>Duty</td><td>Run pattern</td><td>Continuous, derate &gt;40&nbsp;&deg;C</td></tr>
+        <tr><td>Drive</td><td>Manual or automated</td><td>Manual knob for bench</td></tr>
+        <tr><td>Form</td><td>Open, enclosed, rack</td><td>Enclosed with meter + fuse</td></tr>
+      </tbody>
+    </table>
+    <p>Working through these seven steps takes minutes. When in doubt about current at low voltage or three-phase ganging, send your load details to our engineers and they will confirm the right unit from the <a href="/products/variac-transformer">variac transformer range</a>.</p>
+
+    <h2>Q&amp;A</h2>
+    <h3>How do I size a variac transformer for my load?</h3>
+    <p><strong>Short answer:</strong> Size by output current, not kVA. Determine the load current at the lowest output voltage you will use, then choose a variac rated above that current. Remember the unit&rsquo;s current rating stays constant across the range, so low-voltage operation delivers less kVA.</p>
+    <h3>Can I use a variac to boost voltage above the line voltage?</h3>
+    <p><strong>Short answer:</strong> Only with a unit that has a boost tap or is rated to output above 100% of input. A standard variac delivers 0&ndash;100% of the input voltage. For tests above nominal voltage, order a model with the boost winding or tap.</p>
+    <h3>What is the difference between a variac and a voltage stabilizer?</h3>
+    <p><strong>Short answer:</strong> A variac is a manually or motor-adjustable variable transformer that provides a set output voltage; it does not automatically correct for supply fluctuations. A voltage stabilizer automatically maintains a constant output voltage against input variation. Use a stabilizer when the supply is unstable and a variac when you need a specific adjustable test or control voltage.</p>
+    <h3>Why does my variac overheat at low output voltage?</h3>
+    <p><strong>Short answer:</strong> Because the current rating is constant across the range. If you draw near-rated current at a low voltage setting, the winding still carries full current and heats the same as at full voltage. Derate the unit or choose a higher current rating for low-voltage, high-current operation.</p>
+    <h3>Can three-phase loads be supplied from three single-phase variacs?</h3>
+    <p><strong>Short answer:</strong> Yes, and that is how most three-phase variac assemblies are built. For balanced loads, ganged units with a common shaft keep the phases in step. For unbalanced or independent control, use per-phase units with separate adjustment, which is what a three-phase variac panel provides.</p>
+  </section>
+<section class="cta-section">
+    <h2>Need Help Choosing the Right Product?</h2>
+    <p>Our engineers can recommend the exact model, rating and configuration for your project. Tell us your requirements and get a factory-direct quote within 24 hours.</p>
+    <div class="cta-wrap">
+      <a href="/contact" class="cta-btn">Get a Quote</a>
+      <a href="https://wa.me/8619016543301" class="cta-btn ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </section>
+  </main>
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2025 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+</footer>
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

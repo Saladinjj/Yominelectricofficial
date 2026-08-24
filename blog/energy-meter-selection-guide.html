@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="/logo_transparent.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Energy Meter Selection Guide: How to Choose the Right Meter | Yomin Electric</title>
+<meta name="description" content="A practical energy meter selection guide covering single vs three phase, DIN rail vs panel meters, accuracy class, CT connections, communication and billing features.">
+<link rel="canonical" href="https://www.yominelectric.com/blog/energy-meter-selection-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Energy Meter Selection Guide","datePublished":"2026-08-24","inLanguage":"en","author":{"@type":"Organization","name":"Yomin Electric"},"publisher":{"@type":"Organization","name":"Yomin Electric","logo":{"@type":"ImageObject","url":"https://www.yominelectric.com/logo_transparent.png"}},"image":"https://www.yominelectric.com/assets/images/blog/energy-meter-selection-guide/hero.jpg"}</script>
+</head>
+<body>
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/voltage-protector"><span class="mega-icon">&#128737;&#65039;</span><span class="mega-name">Voltage Protectors</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar">AR</button>
+  </div>
+</div>
+<main>
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> · <a href="/blog">Blog</a> · <span>Energy Meter Selection Guide</span></div>
+    <span class="bh-tag">Guides</span>
+    <h1 class="bh-title">Energy Meter Selection Guide</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>9 min read</span>
+      <span class="divider"></span>
+      <span>August 24, 2026</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <img class="hero-img" src="/assets/images/blog/energy-meter-selection-guide/hero.jpg" alt="DIN rail energy meters installed in a clean electrical panel" loading="eager">
+
+    <p>Choosing the right energy meter comes down to five questions: what circuit is being measured, how accurate the reading must be, how the meter will be installed, what data is needed, and which billing or compliance rules apply. Answering those questions before buying saves money, avoids rework, and prevents meters that are either oversized, undersized, or missing a required feature. This energy meter selection guide walks through each step with practical criteria you can apply to a home, a factory, a solar plant, or a utility project.</p>
+
+    <h2>Start With the Service Type: Single Phase or Three Phase</h2>
+    <p>The first decision in any how to choose an energy meter process is the supply type. A <strong>single-phase energy meter</strong> is used on 120&ndash;240&nbsp;V two-wire supplies, which covers most homes, small shops, and light commercial circuits. A <strong>three-phase energy meter</strong> is used on 3-phase 4-wire or 3-wire supplies, which covers factories, commercial buildings, pumps, elevators, and large HVAC loads.</p>
+    <table>
+      <thead><tr><th>Supply type</th><th>Typical voltage</th><th>Best for</th><th>Meter form</th></tr></thead>
+      <tbody>
+        <tr><td>Single phase</td><td>120&ndash;240&nbsp;V</td><td>Homes, apartments, small offices, retail</td><td>1P2W, direct or CT-connected</td></tr>
+        <tr><td>Three phase</td><td>208&ndash;480&nbsp;V (up to 690&nbsp;V)</td><td>Factories, malls, solar plants, substations</td><td>3P3W or 3P4W, direct or CT-connected</td></tr>
+        <tr><td>Split phase</td><td>120/240&nbsp;V</td><td>North American homes with large loads</td><td>1P3W</td></tr>
+      </tbody>
+    </table>
+    <p>If the panel has a 3-phase breaker and a neutral, plan for a 3P4W meter. If there is no neutral, a 3P3W (two-element) meter is the normal choice. When in doubt, check the main breaker rating and the number of conductors feeding the panel.</p>
+
+    <h2>Choose the Meter Form: DIN Rail, Panel, or Socket</h2>
+    <p>Energy meter types are usually defined by how they mount and how they connect. The most common forms in new installations are:</p>
+    <ul>
+      <li><strong>DIN rail meters:</strong> Snap onto standard 35&nbsp;mm DIN rail inside a distribution board. Compact, easy to retrofit, widely used in commercial and light industrial sub-metering.</li>
+      <li><strong>Panel meters:</strong> Fit into a panel cutout with a front display. Used where the meter is part of a control or switchboard face.</li>
+      <li><strong>Socket meters:</strong> Plug into a utility socket base. Common for utility revenue metering in North America.</li>
+    </ul>
+    <p>For most buyers reading this guide, a <a href="/products/energy-meter">DIN rail energy meter</a> is the right starting point: it installs quickly, supports direct or CT connection, and covers everything from a single shop to a whole floor of a building.</p>
+
+    <h2>Set the Accuracy Class and Billing Requirements</h2>
+    <p>Accuracy determines whether the meter is acceptable for revenue billing, for allocation, or only for monitoring. The relevant standards for kWh meters are IEC 62053-21 (active energy, class 1 and 2), IEC 62053-22 (class 0.2S and 0.5S), and IEC 62053-23 (reactive energy).</p>
+    <table>
+      <thead><tr><th>Accuracy class</th><th>Typical error limit</th><th>Common use</th></tr></thead>
+      <tbody>
+        <tr><td>Class 2.0</td><td>&plusmn;2%</td><td>Basic monitoring, small consumer billing in some regions</td></tr>
+        <tr><td>Class 1.0</td><td>&plusmn;1%</td><td>Standard residential and commercial billing</td></tr>
+        <tr><td>Class 0.5S</td><td>&plusmn;0.5%</td><td>Industrial metering, allocation, sub-billing</td></tr>
+        <tr><td>Class 0.2S</td><td>&plusmn;0.2%</td><td>Utility boundary metering, fiscal metering, large plants</td></tr>
+      </tbody>
+    </table>
+    <p>If the meter will be used for tenant billing or utility revenue, check whether the local regulator requires MID (Measuring Instruments Directive) approval in Europe, or an equivalent pattern approval in your market. A MID-certified class 1.0 meter is the safe default for most commercial billing applications.</p>
+
+    <h2>Match the Current Rating: Direct or CT-Connected</h2>
+    <p>Energy meters are rated for current in two ways. <strong>Direct-connected</strong> meters carry the full load current through the meter and are typical for loads up to about 100&nbsp;A. <strong>CT-connected</strong> meters read the secondary of current transformers and are used above roughly 100&nbsp;A or where the meter must be separated from the main conductors.</p>
+    <p>As a rule of thumb:</p>
+    <ul>
+      <li>Load up to 80&ndash;100&nbsp;A &rarr; direct-connected meter (e.g., 5(80)&nbsp;A, 10(100)&nbsp;A).</li>
+      <li>Load above 100&nbsp;A &rarr; meter with CT input (e.g., 1.5(6)&nbsp;A or 5(6)&nbsp;A secondary) plus properly rated current transformers.</li>
+      <li>Variable or high starting loads (motors, welding) &rarr; oversize the CT so the meter stays in its linear range.</li>
+    </ul>
+    <p>When you need CT-based measurement, make sure the <a href="/products/current-transformer">current transformer</a> ratio, burden, and accuracy class match the meter input, and that the secondary is never left open while energized.</p>
+
+    <h2>Decide Which Features Matter: Billing, TOU, Prepaid, and Communication</h2>
+    <p>Beyond basic kWh, modern meters differ mainly in the features they carry. List the must-haves before comparing models:</p>
+    <ul>
+      <li><strong>Tariff / TOU:</strong> Multi-tariff registers for peak/off-peak billing (usually 2&ndash;4 tariffs).</li>
+      <li><strong>Prepaid:</strong> STS token or keypad prepaid operation, common for utilities in Africa, Asia, and Latin America.</li>
+      <li><strong>Communication:</strong> RS485 + Modbus RTU, pulse output, infrared port, or Wi-Fi/4G for remote reading.</li>
+      <li><strong>Demand logging:</strong> Load profile recording at 15/30/60-minute intervals for analysis or demand tariffs.</li>
+      <li><strong>Alarms and events:</strong> Reverse power, tamper, cover-open, neutral-loss detection.</li>
+    </ul>
+    <p>For facility managers, an RS485/Modbus meter is usually the most useful: it connects to an energy management system, a BMS, or a data concentrator, and it still works standalone if the network is down.</p>
+
+    <h2>Check the Environment and the Metering Standards</h2>
+    <p>A meter that lives in a clean, dry indoor distribution board has different needs than one installed in a dusty workshop, an outdoor kiosk, or a tropical utility box. Confirm the operating temperature range, the IP rating of the enclosure, and whether the location exposes the meter to condensation, dust, or direct sun. For utility and industrial projects, also confirm compliance with the local metering code before ordering in volume.</p>
+
+    <h2>A Simple Energy Meter Selection Checklist</h2>
+    <table>
+      <thead><tr><th>Selection step</th><th>Question to answer</th><th>Typical result</th></tr></thead>
+      <tbody>
+        <tr><td>1. Supply type</td><td>Single or three phase? Neutral present?</td><td>1P2W or 3P4W form</td></tr>
+        <tr><td>2. Mounting</td><td>DIN rail, panel, or socket?</td><td>DIN rail for most retrofit</td></tr>
+        <tr><td>3. Accuracy</td><td>Billing, allocation, or monitoring?</td><td>Class 1.0 MID for billing</td></tr>
+        <tr><td>4. Current</td><td>Direct or via CT?</td><td>5(80)A direct or 1.5(6)A CT</td></tr>
+        <tr><td>5. Features</td><td>TOU, prepaid, demand, comms?</td><td>RS485/Modbus for EMS</td></tr>
+        <tr><td>6. Environment</td><td>Indoor, outdoor, temperature?</td><td>IP51+ indoor or IP54 outdoor</td></tr>
+        <tr><td>7. Approval</td><td>MID, IEC, local pattern approval?</td><td>MID + IEC 62053 for EU</td></tr>
+      </tbody>
+    </table>
+    <p>Working through this checklist takes minutes and prevents most ordering mistakes. If you already know the supply type and current range, a <a href="/products/energy-meter">Yomin energy meter</a> can be selected directly from the datasheet; if the installation is unusual, send the panel details to our engineers and they will confirm the correct model, CT ratio, and communication option.</p>
+
+    <h2>Q&amp;A</h2>
+    <h3>How do I know if I need a single-phase or three-phase energy meter?</h3>
+    <p><strong>Short answer:</strong> Check the main supply. If the panel is fed by two conductors (phase + neutral), use a single-phase meter. If it is fed by three phases (with or without neutral), use a three-phase meter. Most homes are single phase; most industrial and commercial panels are three phase.</p>
+    <h3>What accuracy class should a commercial energy meter have?</h3>
+    <p><strong>Short answer:</strong> Class 1.0 is the standard for most commercial billing and sub-metering. Use class 0.5S or 0.2S where energy is traded, allocated between tenants, or measured at a utility boundary, and confirm MID or local pattern approval where required by law.</p>
+    <h3>When do I need a CT-connected energy meter instead of a direct-connected one?</h3>
+    <p><strong>Short answer:</strong> When the load exceeds the direct-connected rating (usually above 80&ndash;100&nbsp;A), or when the meter must be installed away from the main conductors. CT-connected meters also let you re-range the installation by changing the CT ratio without replacing the meter.</p>
+    <h3>Does an energy meter need RS485/Modbus communication?</h3>
+    <p><strong>Short answer:</strong> Only if you want remote reading or integration with an energy management system. For standalone billing, a meter with a pulse output or an optical port is enough. For automation, monitoring, or data analysis, choose RS485/Modbus RTU so the meter can talk to your BMS or software.</p>
+    <h3>What is MID certification and does my meter need it?</h3>
+    <p><strong>Short answer:</strong> MID (Measuring Instruments Directive) is the European legal requirement for meters used in billing and trade. If you bill tenants or utilities based on the meter reading inside the EU/EEA, choose a MID-certified meter. Outside the EU, check whether your local utility or regulator has its own approval list.</p>
+  </section>
+<section class="cta-section">
+    <h2>Need Help Choosing the Right Product?</h2>
+    <p>Our engineers can recommend the exact model, rating and configuration for your project. Tell us your requirements and get a factory-direct quote within 24 hours.</p>
+    <div class="cta-wrap">
+      <a href="/contact" class="cta-btn">Get a Quote</a>
+      <a href="https://wa.me/8619016543301" class="cta-btn ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </section>
+  </main>
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2025 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+</footer>
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
