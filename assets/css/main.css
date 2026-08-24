@@ -32,8 +32,8 @@ a { text-decoration: none; color: inherit; }
 .cur-r { width: 36px; height: 36px; border: 1px solid rgba(232,148,74,.5); border-radius: 50%; position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9998; transition: transform .18s ease, width .3s, height .3s, opacity .3s; }
 
 /* ─── NAV ─── */
-#nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 0 36px; height: 68px; background: rgba(20,20,20,.97); backdrop-filter: blur(20px); border-bottom: 1px solid var(--bds); transition: background var(--tr); }
-nav.sc { background: rgba(13,13,13,.99); }
+#nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 0 36px; height: 68px; background: transparent; backdrop-filter: blur(20px) saturate(160%); -webkit-backdrop-filter: blur(20px) saturate(160%); border-bottom: 1px solid transparent; transition: background .35s ease, border-color .35s ease, box-shadow .35s ease; }
+#nav.sc { background: rgba(13,13,13,.68); border-bottom-color: rgba(255,255,255,.07); box-shadow: 0 4px 24px rgba(0,0,0,.22); }
 .n-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; flex-shrink: 0; }
 .n-logo img { height: 44px; width: auto; object-fit: contain; filter: brightness(1.1); }
 .n-logo-fb { font-family: var(--ss); font-size: 18px; font-weight: 600; letter-spacing: .2px; color: var(--tx); }
@@ -172,10 +172,19 @@ body.light {
   --sur: #e5e3de; --bdr: rgba(0,0,0,0.1); --bds: rgba(0,0,0,0.07);
   --tx: #1a1a1a; --mt: #555; --dm: #888; --ac: #C4762F; --ac2: #E8944A;
 }
-body.light nav { background: #ffe9a7fc; border-bottom-color: rgba(0,0,0,.1); }
-body.light nav.sc { background: #ffe9a7fc; }
-body.light .mob { background: #ffe9a7fc; }
-body.light .mob a { color: #1a1a1a; }
+body.light nav { background: transparent; border-bottom-color: transparent; }
+body.light #nav.sc { background: rgba(16,54,40,.85); border-bottom-color: rgba(255,255,255,.12); box-shadow: 0 4px 24px rgba(0,0,0,.15); }
+body.light nav.sc .n-ctr > li > a { color: rgba(255,255,255,.86); }
+body.light nav.sc .n-ctr > li > a:hover, body.light nav.sc .n-ctr > li > a.active { color: #fff; background: rgba(255,255,255,.1); }
+body.light nav.sc .n-ctr > li > a.active { color: #E8944A; }
+body.light nav.sc .lbtn { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.18); color: #fff; }
+body.light nav.sc .tpbtn { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.18); color: #fff; }
+body.light nav.sc .tpbtn:hover { background: rgba(255,255,255,.18); color: #fff; }
+body.light nav.sc .tpbtn-act { background: rgba(232,148,74,.25) !important; border-color: rgba(232,148,74,.55) !important; color: #E8944A !important; }
+body.light nav.sc .ham span { background: #fff; }
+body.light nav.sc .n-logo-fb { color: #fff; }
+body.light .mob { background: rgba(14,46,34,.97); }
+body.light .mob a { color: #fff; }
 body.light .lbtn { background: rgba(0,0,0,.05); border-color: rgba(0,0,0,.12); color: #555; }
 body.light .ldrop { background: #fff; border-color: rgba(0,0,0,.1); }
 body.light .lopt:hover { background: rgba(0,0,0,.04); color: #1a1a1a; }
