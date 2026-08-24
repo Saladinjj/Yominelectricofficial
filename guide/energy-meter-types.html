@@ -55,7 +55,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 a{text-decoration:none}html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--tx);font-family:var(--ss);font-size:16px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;padding:0 36px;height:68px;background:rgba(13,13,13,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--bds)}
+#nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;padding:0 36px;height:68px;background:rgba(13,13,13,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--bds)}
 .n-logo{display:flex;align-items:center;gap:8px;flex-shrink:0}
 .n-logo img{height:44px;width:auto;object-fit:contain;filter:brightness(1.1)}
 .n-ctr{flex:1;display:flex;align-items:center;justify-content:center;gap:2px;list-style:none}
@@ -95,7 +95,7 @@ footer p{font-size:12px;color:var(--dm)}
 footer a{color:var(--mt);text-decoration:none}
 footer a:hover{color:var(--ac)}
 @media(max-width:768px){
-  nav{padding:0 20px}.n-ctr{display:none}
+  #nav{padding:0 20px}.n-ctr{display:none}
   .guide-hero,.guide-body,.breadcrumb{padding-left:20px;padding-right:20px}
   .comparison-table{font-size:12px}
   .comparison-table th,.comparison-table td{padding:10px 8px}

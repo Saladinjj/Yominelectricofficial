@@ -597,3 +597,28 @@ footer{padding:80px 60px 40px;border-top:1px solid var(--bds)}
 .wc-modal-overlay{display:none;position:fixed;inset:0;z-index:800;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);align-items:center;justify-content:center}
 .wc-modal-overlay.op{display:flex}
 .wc-modal-overlay .wc-qr-img{max-width:320px;width:100%;height:auto;border-radius:12px}
+
+/* ─── BREADCRUMB NAV GUARD ─── */
+/* Breadcrumb nav elements must never inherit fixed-header styling from
+   bare `nav` rules (responsive blocks in this file or page inline styles),
+   otherwise the breadcrumb paints over the fixed header's center links. */
+nav.breadcrumb {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  z-index: auto !important;
+  display: block !important;
+  height: auto !important;
+  align-items: normal !important;
+  justify-content: normal !important;
+  gap: normal !important;
+  padding: 110px 40px 0 !important;
+  background: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: none !important;
+}
+@media (max-width: 768px) {
+  nav.breadcrumb { padding: 110px 20px 0 !important; }
+}
