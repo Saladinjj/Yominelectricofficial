@@ -129,6 +129,20 @@
 .skip-link{position:absolute;top:-48px;left:16px;z-index:9999;background:var(--ac);color:#000;padding:12px 18px;border-radius:0 0 10px 10px;font-weight:700;font-size:14px;text-decoration:none;transition:top .2s}
 .skip-link:focus{top:0}
 /* ── Responsive ──────────────────────────── */
+/* ── Search bar ─────────────────────────── */
+.psearch-wrap{position:relative;margin:0 0 26px}
+.psearch{width:100%;box-sizing:border-box;padding:13px 16px 13px 42px;border:1.5px solid var(--bds);border-radius:12px;background:var(--bgc);color:var(--tx);font-size:14px;font-family:var(--ss);outline:none;-webkit-appearance:none;appearance:none;transition:border-color .18s,box-shadow .18s}
+.psearch::-webkit-search-cancel-button{-webkit-appearance:none}
+.psearch::placeholder{color:var(--dm)}
+.psearch:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(232,148,74,.14)}
+.psearch-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--dm);pointer-events:none;display:flex}
+.psearch-empty{padding:36px 0;text-align:center;color:var(--mt);font-size:14px;display:none}
+/* ── Phone hero stats — numbers on one level ── */
+@media(max-width:640px){
+  .ph-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;width:100%;margin-top:22px}
+  .ph-stat-num{font-size:18px}
+  .ph-stat-lbl{font-size:7.5px;letter-spacing:.8px;white-space:nowrap}
+}
 @media(max-width:1200px){.cat-grid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:900px){.cat-layout,.shop-layout{grid-template-columns:1fr}.cat-sidebar,.shop-sidebar{display:none}.cat-body{padding:28px 20px}.cat-grid{grid-template-columns:repeat(3,1fr)}.product-layout{grid-template-columns:1fr}}
 @media(max-width:640px){.cat-grid{grid-template-columns:repeat(2,1fr)!important;gap:10px}.p-actions{flex-direction:column}.page-hero{padding:80px 24px 40px}}
@@ -217,7 +231,12 @@
         <h1>Other Products</h1>
         <p>Additional Yomin Electric products including tile leveling systems and specialty electrical items.</p>
         <span class="cat-count-tag">8 products</span>
+      </div>      <div class="psearch-wrap">
+        <span class="psearch-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.35-4.35"></path></svg></span>
+        <input type="search" id="psearch" class="psearch" placeholder="Search products…" autocomplete="off" aria-label="Search products">
       </div>
+      <div class="psearch-empty" id="psearch-empty">No products found</div>
+
       <div class="cat-grid"><a class="prod-card pgn-card" href="/products/other/automatic-shoe-cover-machine-shoe-covers-machine"><div class="pimg"><img src="/assets/images/products/872e5a92099939e0.jpg" alt="Automatic shoe cover machine/Shoe covers machine" loading="lazy"></div><div class="pbody"><div class="pcat">Other Products</div><div class="ptitle" data-pid="111733150">Automatic shoe cover machine/Shoe covers machine</div><div class="pspecs">Yomin-XTJ-001 · Plastic</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/other/pvc-trunking-goulotte"><div class="pimg"><img src="/assets/images/products/93b652b083cf39c2.png" alt="PVC Trunking (Goulotte)" loading="lazy"></div><div class="pbody"><div class="pcat">Other Products</div><div class="ptitle" data-pid="1601763444078">PVC Trunking (Goulotte)</div><div class="pspecs">Application: Electric Wires Installation · Material: PVC</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/other/aluminum-tile-edge-strip-l-shape-decoration-trim-edge-tile-accessories-floor-transition-strip-tile-trim-corner"><div class="pimg"><img src="/assets/images/products/c012231eac85e4ce.jpg" alt="Aluminum Tile Edge Strip L Shape Decoration Trim Edge Tile Accessories Floor Transition Strip Tile Trim Corner" loading="lazy"></div><div class="pbody"><div class="pcat">Other Products</div><div class="ptitle" data-pid="1600655852657">Aluminum Tile Edge Strip L Shape Decoration Trim Edge Tile Accessories Floor Transition Strip Tile Trim Corner</div><div class="pspecs">Warranty: N/A · After-sale Service: N/A</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/other/soft-and-comfortable-garden-knee-pad-waterproof-work-knee-protector-tiling-knee-pads"><div class="pimg"><img src="/assets/images/products/fc95aaca4770788a.jpg" alt="Soft and Comfortable Garden Knee Pad Waterproof Work Knee Protector Tiling Knee Pads" loading="lazy"></div><div class="pbody"><div class="pcat">Other Products</div><div class="ptitle" data-pid="1600529395115">Soft and Comfortable Garden Knee Pad Waterproof Work Knee Protector Tiling Knee Pads</div><div class="pspecs">Material: Neoprene · Place of Origin: Zhejiang, China</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/other/nylon-metric-thread-mg-gland-ip68-protection-level-rohs-certified-pvc-cable-gland"><div class="pimg"><img src="/assets/images/products/63aa1c911b6e60f5.jpg" alt="Nylon Metric Thread MG Gland IP68 Protection Level ROHS Certified PVC Cable Gland" loading="lazy"></div><div class="pbody"><div class="pcat">Other Products</div><div class="ptitle" data-pid="60207743047">Nylon Metric Thread MG Gland IP68 Protection Level ROHS Certified PVC Cable Gland</div><div class="pspecs">Material: Pvc · Application: Industrial electrical distribution</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/other/5va-international-manufacturer-s-small-electric-transformer-220v-input-voltage"><div class="pimg"><img src="/assets/images/products/6c1e57f8a365c1c9.jpg" alt="5VA International Manufacturer&#x27;s Small Electric Transformer 220V Input Voltage" loading="lazy"></div><div class="pbody"><div class="pcat">Other Products</div><div class="ptitle" data-pid="60034251587">5VA International Manufacturer&#x27;s Small Electric Transformer 220V Input Voltage</div><div class="pspecs">Phase: Three Phase Four Wire · Voltage: 3×220/380V AC</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/other/low-voltage-hot-sales-good-price-jbk5-series-660v-control-power-voltage-transformer"><div class="pimg"><img src="/assets/images/products/17e76eac7a09eb1c.png" alt="Low Voltage Hot Sales Good Price JBK5 Series 660V Control Power Voltage Transformer" loading="lazy"></div><div class="pbody"><div class="pcat">Other Products</div><div class="ptitle" data-pid="1601261725003">Low Voltage Hot Sales Good Price JBK5 Series 660V Control Power Voltage Transformer</div><div class="pspecs">Voltage: 660V</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/other/thicker-performance-full-size-round-cable-clips-with-steel-nail"><div class="pimg"><img src="/assets/images/products/3a71508cbd9d2d4d.png" alt="Thicker Performance Full Size Round  Cable Clips With Steel Nail" loading="lazy"></div><div class="pbody"><div class="pcat">Other Products</div><div class="ptitle" data-pid="62502799408">Thicker Performance Full Size Round  Cable Clips With Steel Nail</div><div class="pspecs">Material: Steel · Application: Industrial electrical distribution</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/other/multi-specification-relay-accessories-relay-control-system"><div class="pimg"><img src="/assets/images/products/2ffb203039fd9a6e.jpg" alt="Multi-specification Relay Accessories Relay Control System" loading="lazy"></div><div class="pbody"><div class="pcat">Other Products</div><div class="ptitle" data-pid="1600628440159">Multi-specification Relay Accessories Relay Control System</div><div class="pspecs">Current Type: AC · Control Type: Relay Type</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a></div>
       <div class="pgn"></div>
     </div>
@@ -275,32 +294,66 @@
 <script src="/assets/js/product-page.js"></script>
 <script>
 (function(){
-  var cards = document.querySelectorAll('.pgn-card');
-  var pp = 24;
-  var total = Math.ceil(cards.length / pp);
-  var cur = 1;
-  function show(p){
-    cur = p;
-    var start=(p-1)*pp, end=p*pp;
-    cards.forEach(function(c,i){c.style.display=(i>=start&&i<end)?'':'none';});
-    document.querySelectorAll('.pgn-btn').forEach(function(b){
-      b.classList.toggle('pgn-act', parseInt(b.dataset.p)===p);
-    });
-    window.scrollTo({top:document.querySelector('.cat-grid')?document.querySelector('.cat-grid').offsetTop-80:0,behavior:'smooth'});
+  var grid = document.getElementById('all-grid') || document.querySelector('.cat-grid');
+  var pgn = document.getElementById('main-pgn') || document.querySelector('.pgn');
+  if (!grid || !pgn) return;
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.pgn-card'));
+  var pp = 24, cur = 1;
+  var input = document.getElementById('psearch');
+  var empty = document.getElementById('psearch-empty');
+  function visible(){
+    var qs = input ? input.value.trim().toLowerCase() : '';
+    if (!qs) return cards;
+    return cards.filter(function(c){ return c.textContent.toLowerCase().indexOf(qs) !== -1; });
   }
-  if(total>1){
-    var pgn=document.querySelector('.pgn');
-    if(!pgn){pgn=document.createElement('div');pgn.className='pgn';document.querySelector('.cat-grid').after(pgn);}
-    pgn.innerHTML='';
-    var prev=document.createElement('button');prev.className='pgn-btn';prev.textContent='‹';prev.addEventListener('click',function(){if(cur>1)show(cur-1);});pgn.appendChild(prev);
-    for(var i=1;i<=total;i++){
-      var b=document.createElement('button');b.className='pgn-btn';b.textContent=i;b.dataset.p=i;
-      b.addEventListener('click',(function(pg){return function(){show(pg);};})(i));
+  function scrollTop(){
+    var top = grid.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop) - 80;
+    window.scrollTo({top: top > 0 ? top : 0, behavior: 'smooth'});
+  }
+  function build(total){
+    pgn.innerHTML = '';
+    if (total <= 1){ pgn.style.display = 'none'; return; }
+    pgn.style.display = '';
+    function mk(html, cls, fn){
+      var b = document.createElement('button');
+      b.className = 'pgn-btn' + (cls ? ' ' + cls : '');
+      b.innerHTML = html;
+      b.addEventListener('click', fn);
       pgn.appendChild(b);
+      return b;
     }
-    var nxt=document.createElement('button');nxt.className='pgn-btn';nxt.textContent='›';nxt.addEventListener('click',function(){if(cur<total)show(cur+1);});pgn.appendChild(nxt);
-    show(1);
+    mk('&#8249;', '', function(){ if (cur > 1) { cur--; render(); scrollTop(); } });
+    var start = Math.max(1, Math.min(cur - 1, total - 2));
+    var end = Math.min(total, start + 2);
+    for (var i = start; i <= end; i++) {
+      (function(pg){
+        var b = mk(String(pg), pg === cur ? 'pgn-act' : '', function(){ cur = pg; render(); scrollTop(); });
+        b.dataset.p = pg;
+      })(i);
+    }
+    mk('&#8250;', '', function(){ if (cur < total) { cur++; render(); scrollTop(); } });
   }
+  function l10n(){
+    if (!input) return;
+    var l = localStorage.getItem('ym_lang') || 'en';
+    var d = (window.__ymT && window.__ymT[l]) || {};
+    input.placeholder = d.search_placeholder || 'Search products…';
+    if (empty) empty.textContent = d.no_results || 'No products found';
+  }
+  function render(){
+    var list = visible();
+    var total = Math.max(1, Math.ceil(list.length / pp));
+    if (cur > total) cur = total;
+    cards.forEach(function(c){ c.style.display = 'none'; });
+    list.forEach(function(c, i){ if (i >= (cur - 1) * pp && i < cur * pp) c.style.display = ''; });
+    if (empty) empty.style.display = list.length ? 'none' : 'block';
+    build(total);
+  }
+  if (input) input.addEventListener('input', function(){ cur = 1; render(); });
+  l10n();
+  document.addEventListener('langChanged', l10n);
+  window.addEventListener('langChanged', l10n);
+  render();
 })();
 </script>
 </body></html>

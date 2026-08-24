@@ -129,6 +129,20 @@
 .skip-link{position:absolute;top:-48px;left:16px;z-index:9999;background:var(--ac);color:#000;padding:12px 18px;border-radius:0 0 10px 10px;font-weight:700;font-size:14px;text-decoration:none;transition:top .2s}
 .skip-link:focus{top:0}
 /* ── Responsive ──────────────────────────── */
+/* ── Search bar ─────────────────────────── */
+.psearch-wrap{position:relative;margin:0 0 26px}
+.psearch{width:100%;box-sizing:border-box;padding:13px 16px 13px 42px;border:1.5px solid var(--bds);border-radius:12px;background:var(--bgc);color:var(--tx);font-size:14px;font-family:var(--ss);outline:none;-webkit-appearance:none;appearance:none;transition:border-color .18s,box-shadow .18s}
+.psearch::-webkit-search-cancel-button{-webkit-appearance:none}
+.psearch::placeholder{color:var(--dm)}
+.psearch:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(232,148,74,.14)}
+.psearch-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--dm);pointer-events:none;display:flex}
+.psearch-empty{padding:36px 0;text-align:center;color:var(--mt);font-size:14px;display:none}
+/* ── Phone hero stats — numbers on one level ── */
+@media(max-width:640px){
+  .ph-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;width:100%;margin-top:22px}
+  .ph-stat-num{font-size:18px}
+  .ph-stat-lbl{font-size:7.5px;letter-spacing:.8px;white-space:nowrap}
+}
 @media(max-width:1200px){.cat-grid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:900px){.cat-layout,.shop-layout{grid-template-columns:1fr}.cat-sidebar,.shop-sidebar{display:none}.cat-body{padding:28px 20px}.cat-grid{grid-template-columns:repeat(3,1fr)}.product-layout{grid-template-columns:1fr}}
 @media(max-width:640px){.cat-grid{grid-template-columns:repeat(2,1fr)!important;gap:10px}.p-actions{flex-direction:column}.page-hero{padding:80px 24px 40px}}
@@ -217,7 +231,12 @@
         <h1>Sockets &amp; Wiring</h1>
         <p>Industrial sockets, plugs, switches, timers and wiring accessories for residential and industrial installation.</p>
         <span class="cat-count-tag">6 products</span>
+      </div>      <div class="psearch-wrap">
+        <span class="psearch-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.35-4.35"></path></svg></span>
+        <input type="search" id="psearch" class="psearch" placeholder="Search products…" autocomplete="off" aria-label="Search products">
       </div>
+      <div class="psearch-empty" id="psearch-empty">No products found</div>
+
       <div class="cat-grid"><a class="prod-card pgn-card" href="/products/socket-wiring/cable-tie-wall-nail-clip-electrical-cable-clamp-suspension-clamp-expansion-pipe-wall-cable-clamp"><div class="pimg"><img src="/assets/images/products/36d1a0189ee7af1f.jpg" alt="Cable Tie Wall Nail Clip Electrical Cable Clamp Suspension Clamp Expansion Pipe Wall Cable Clamp" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733128">Cable Tie Wall Nail Clip Electrical Cable Clamp Suspension Clamp Expansion Pipe Wall Cable Clamp</div><div class="pspecs">YM-NC021 · Metal, Plastic</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/top-quality-spring-wire-cable-puller-10m-fish-tape-wire-puller-cable"><div class="pimg"><img src="/assets/images/products/755a94e2cbb630f8.jpg" alt="Top Quality Spring Wire Cable Puller 10M Fish Tape Wire Puller Cable" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733156">Top Quality Spring Wire Cable Puller 10M Fish Tape Wire Puller Cable</div><div class="pspecs">YM-CP003 · Metel</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/spring-steel-cable-puller-fish-tape-wire-puller-through-wall"><div class="pimg"><img src="/assets/images/products/7234abb69ae8576c.jpg" alt="Spring Steel Cable Puller Fish Tape Wire Puller Through Wall" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733267">Spring Steel Cable Puller Fish Tape Wire Puller Through Wall</div><div class="pspecs">YM-CP003 · Golden</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/electric-cable-puller-machine-magnetic-cable-puller-fiberglass-running-wire-cable"><div class="pimg"><img src="/assets/images/products/46093601dd70f2ed.jpg" alt="Electric Cable Puller Machine Magnetic Cable Puller Fiberglass Running Wire Cable" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733268">Electric Cable Puller Machine Magnetic Cable Puller Fiberglass Running Wire Cable</div><div class="pspecs">YM-CP002 · Yellow / Blue</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/pull-wire-fish-tape-nylon-cable-push-puller-electric-wire-puller-machine"><div class="pimg"><img src="/assets/images/products/4b30c8077609e611.jpg" alt="Pull Wire Fish Tape Nylon Cable Push Puller Electric Wire Puller Machine" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733269">Pull Wire Fish Tape Nylon Cable Push Puller Electric Wire Puller Machine</div><div class="pspecs">YM-CP001 · White</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/varisized-nylon-cable-puller-electrician-wire-fish-tape"><div class="pimg"><img src="/assets/images/products/c3693471807eb04d.jpg" alt="Varisized Nylon Cable Puller Electrician Wire Fish Tape" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733270">Varisized Nylon Cable Puller Electrician Wire Fish Tape</div><div class="pspecs">YM-CP001 · White</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/fiberglass-cable-puller-electrical-cable-puller-wire-puller-rod-fish-tape"><div class="pimg"><img src="/assets/images/products/ef16ebb58b2ec131.jpg" alt="Fiberglass Cable Puller Electrical Cable Puller Wire Puller Rod Fish Tape" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733271">Fiberglass Cable Puller Electrical Cable Puller Wire Puller Rod Fish Tape</div><div class="pspecs">YM-CP002 · Yellow / Blue</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/various-types-of-waterproof-sealed-water-tank-electric-box-flower-box"><div class="pimg"><img src="/assets/images/products/78824fd72ffb0ef9.jpg" alt="Various types of waterproof sealed water tank, electric box, flower box" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733272">Various types of waterproof sealed water tank, electric box, flower box</div><div class="pspecs">YMFS-1 · 150*150*70</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/customized-ip67-high-end-sealed-waterproof-junction-box"><div class="pimg"><img src="/assets/images/products/04c3d68c85965456.jpg" alt="Customized IP67 high-end sealed waterproof junction box" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733273">Customized IP67 high-end sealed waterproof junction box</div><div class="pspecs">YMFS-1 · 125*125*100</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/china-factory-directly-provide-pull-lock-adjustable-loop-self-locking-nylon-cable-zip-ties"><div class="pimg"><img src="/assets/images/products/79a0ce8692f4095e.jpg" alt="China Factory Directly Provide Pull Lock Adjustable Loop Self Locking Nylon Cable Zip Ties" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733274">China Factory Directly Provide Pull Lock Adjustable Loop Self Locking Nylon Cable Zip Ties</div><div class="pspecs">YM0953, YM0953 · Nylon, Nylon, Nylon 6/6</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/china-factory-reusable-self-locking-heat-resistant-gripping-plastic-nylon-cable-tie-for-bundle-cables"><div class="pimg"><img src="/assets/images/products/643b029d97bdb59b.jpg" alt="China Factory Reusable Self-Locking Heat-Resistant Gripping Plastic Nylon Cable Tie For bundle Cables" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733275">China Factory Reusable Self-Locking Heat-Resistant Gripping Plastic Nylon Cable Tie For bundle Cables</div><div class="pspecs">YM4830, YM4830 · Nylon, Nylon, Nylon66</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/water-proof-nylon66-pg-cable-gland-with-different-thread-size-flat-washercable-gland"><div class="pimg"><img src="/assets/images/products/1cc65815d10667df.jpg" alt="Water-proof Nylon66 pg cable gland with different thread size ,flat washer cable Gland" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733276">Water-proof Nylon66 pg cable gland with different thread size ,flat washer cable Gland</div><div class="pspecs">PG, PG · thread length 9-22, All Size</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/top-quality-stainless-steel-waterproof-ip68cable-gland"><div class="pimg"><img src="/assets/images/products/caaae02a419d6210.jpg" alt="Top quality stainless steel waterproof IP68cable gland" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733277">Top quality stainless steel waterproof IP68cable gland</div><div class="pspecs">M25, M25 · thread length 9-22, All Size</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/outdoor-explosion-proof-and-waterproof-junction-box"><div class="pimg"><img src="/assets/images/products/2a706ba23430de69.jpg" alt="Outdoor Explosion Proof and Waterproof Junction Box" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733278">Outdoor Explosion Proof and Waterproof Junction Box</div><div class="pspecs">YMFS-1 · 150x35x31</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/ball-lock-stainless-steel-cable-ties"><div class="pimg"><img src="/assets/images/products/d066a150f4d8ee94.jpg" alt="Ball Lock Stainless Steel Cable Ties" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733394">Ball Lock Stainless Steel Cable Ties</div><div class="pspecs">YOM-SSCT · Steel, stainless steel</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/yomin-125a-single-phase-square-meter-socket"><div class="pimg"><img src="/assets/images/products/257346bd164ca2c1.jpg" alt="YOMIN 125A Single Phase Square Meter Socket" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733264">YOMIN 125A Single Phase Square Meter Socket</div><div class="pspecs">Rated Current: 125A · Rated Voltage: 600V</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/yomin-4jaws-4j-320a-single-phase-square-electric-meter-socket-box"><div class="pimg"><img src="/assets/images/products/1307480dfe86b04d.jpg" alt="YOMIN 4Jaws/4J 320A Single Phase Square Electric Meter Socket Box" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="111733265">YOMIN 4Jaws/4J 320A Single Phase Square Electric Meter Socket Box</div><div class="pspecs">Rated Current: 320A · Rated Voltage: 600V AC</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/7-days-weekly-programmable-mini-lcd-display-digital-timer-switch-multi-functional-automatic-plug-sockets-for-h"><div class="pimg"><img src="/assets/images/products/d14111d8a09c9584.png" alt="7 Days Weekly Programmable Mini LCD Display Digital Timer Switch Multi-Functional Automatic Plug Sockets for Home Use" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="1600599927211">7 Days Weekly Programmable Mini LCD Display Digital Timer Switch Multi-Functional Automatic Plug Sockets for Home Use</div><div class="pspecs">Max.Setting Time: 12hours · Mechanical Life: /</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/wifi-smart-socket-waterproof-smart-home-socket-smart-life-in-wall-plug"><div class="pimg"><img src="/assets/images/products/2b94d0bc49c8355e.jpg" alt="Wifi Smart Socket Waterproof Smart Home Socket Smart Life In-wall Plug" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="1600210386253">Wifi Smart Socket Waterproof Smart Home Socket Smart Life In-wall Plug</div><div class="pspecs">AC Outlets Quantity: 2 Outlets · Rated Current: 2 A, 10A</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/multifunction-office-application-socket-wifi-smart-motorized-pop-up-socket-usb-smart-table-plugs"><div class="pimg"><img src="/assets/images/products/7c72b46567d90f67.jpg" alt="Multifunction Office Application Socket WIFI Smart Motorized Pop up Socket USB Smart Table Plugs" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="1600453299920">Multifunction Office Application Socket WIFI Smart Motorized Pop up Socket USB Smart Table Plugs</div><div class="pspecs">AC Outlets Quantity: 1 Outlets · Rated Current: 2 A, 10A</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/customize-portable-power-socket-distribution-box-with-industrial-plug"><div class="pimg"><img src="/assets/images/products/9c58889be3aaf25d.png" alt="Customize  Portable  Power  Socket  Distribution  Box With Industrial Plug" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="1601132753885">Customize  Portable  Power  Socket  Distribution  Box With Industrial Plug</div><div class="pspecs">AC Outlets Quantity: 3 Outlets · Rated Current: 16 A</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/industry-plastic-pc-waterproof-wall-mounted-inclined-socket-box"><div class="pimg"><img src="/assets/images/products/9f3af2500075e2ba.png" alt="Industry Plastic PC Waterproof   Wall Mounted Inclined Socket Box" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="1601155022691">Industry Plastic PC Waterproof   Wall Mounted Inclined Socket Box</div><div class="pspecs">AC Outlets Quantity: 3 Outlets · Rated Current: 16 A</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a><a class="prod-card pgn-card" href="/products/socket-wiring/different-type-wifi-smart-waterproof-socket-single-home-smart-plug-alexa-wifi-socket-eu-uk"><div class="pimg"><img src="/assets/images/products/a0121dc50e06f337.jpg" alt="Different Type Wifi Smart Waterproof Socket Single Home Smart Plug Alexa WIFI Socket EU UK" loading="lazy"></div><div class="pbody"><div class="pcat">Sockets &amp; Wiring</div><div class="ptitle" data-pid="1600261692268">Different Type Wifi Smart Waterproof Socket Single Home Smart Plug Alexa WIFI Socket EU UK</div><div class="pspecs">AC Outlets Quantity: 2 Outlets · Rated Current: 10A-16A</div><div class="pinq" data-i18n="inquiry_price">Inquiry for Price</div></div></a></div>
       <div class="pgn"></div>
     </div>
@@ -275,32 +294,66 @@
 <script src="/assets/js/product-page.js"></script>
 <script>
 (function(){
-  var cards = document.querySelectorAll('.pgn-card');
-  var pp = 24;
-  var total = Math.ceil(cards.length / pp);
-  var cur = 1;
-  function show(p){
-    cur = p;
-    var start=(p-1)*pp, end=p*pp;
-    cards.forEach(function(c,i){c.style.display=(i>=start&&i<end)?'':'none';});
-    document.querySelectorAll('.pgn-btn').forEach(function(b){
-      b.classList.toggle('pgn-act', parseInt(b.dataset.p)===p);
-    });
-    window.scrollTo({top:document.querySelector('.cat-grid')?document.querySelector('.cat-grid').offsetTop-80:0,behavior:'smooth'});
+  var grid = document.getElementById('all-grid') || document.querySelector('.cat-grid');
+  var pgn = document.getElementById('main-pgn') || document.querySelector('.pgn');
+  if (!grid || !pgn) return;
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.pgn-card'));
+  var pp = 24, cur = 1;
+  var input = document.getElementById('psearch');
+  var empty = document.getElementById('psearch-empty');
+  function visible(){
+    var qs = input ? input.value.trim().toLowerCase() : '';
+    if (!qs) return cards;
+    return cards.filter(function(c){ return c.textContent.toLowerCase().indexOf(qs) !== -1; });
   }
-  if(total>1){
-    var pgn=document.querySelector('.pgn');
-    if(!pgn){pgn=document.createElement('div');pgn.className='pgn';document.querySelector('.cat-grid').after(pgn);}
-    pgn.innerHTML='';
-    var prev=document.createElement('button');prev.className='pgn-btn';prev.textContent='‹';prev.addEventListener('click',function(){if(cur>1)show(cur-1);});pgn.appendChild(prev);
-    for(var i=1;i<=total;i++){
-      var b=document.createElement('button');b.className='pgn-btn';b.textContent=i;b.dataset.p=i;
-      b.addEventListener('click',(function(pg){return function(){show(pg);};})(i));
+  function scrollTop(){
+    var top = grid.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop) - 80;
+    window.scrollTo({top: top > 0 ? top : 0, behavior: 'smooth'});
+  }
+  function build(total){
+    pgn.innerHTML = '';
+    if (total <= 1){ pgn.style.display = 'none'; return; }
+    pgn.style.display = '';
+    function mk(html, cls, fn){
+      var b = document.createElement('button');
+      b.className = 'pgn-btn' + (cls ? ' ' + cls : '');
+      b.innerHTML = html;
+      b.addEventListener('click', fn);
       pgn.appendChild(b);
+      return b;
     }
-    var nxt=document.createElement('button');nxt.className='pgn-btn';nxt.textContent='›';nxt.addEventListener('click',function(){if(cur<total)show(cur+1);});pgn.appendChild(nxt);
-    show(1);
+    mk('&#8249;', '', function(){ if (cur > 1) { cur--; render(); scrollTop(); } });
+    var start = Math.max(1, Math.min(cur - 1, total - 2));
+    var end = Math.min(total, start + 2);
+    for (var i = start; i <= end; i++) {
+      (function(pg){
+        var b = mk(String(pg), pg === cur ? 'pgn-act' : '', function(){ cur = pg; render(); scrollTop(); });
+        b.dataset.p = pg;
+      })(i);
+    }
+    mk('&#8250;', '', function(){ if (cur < total) { cur++; render(); scrollTop(); } });
   }
+  function l10n(){
+    if (!input) return;
+    var l = localStorage.getItem('ym_lang') || 'en';
+    var d = (window.__ymT && window.__ymT[l]) || {};
+    input.placeholder = d.search_placeholder || 'Search products…';
+    if (empty) empty.textContent = d.no_results || 'No products found';
+  }
+  function render(){
+    var list = visible();
+    var total = Math.max(1, Math.ceil(list.length / pp));
+    if (cur > total) cur = total;
+    cards.forEach(function(c){ c.style.display = 'none'; });
+    list.forEach(function(c, i){ if (i >= (cur - 1) * pp && i < cur * pp) c.style.display = ''; });
+    if (empty) empty.style.display = list.length ? 'none' : 'block';
+    build(total);
+  }
+  if (input) input.addEventListener('input', function(){ cur = 1; render(); });
+  l10n();
+  document.addEventListener('langChanged', l10n);
+  window.addEventListener('langChanged', l10n);
+  render();
 })();
 </script>
 </body></html>

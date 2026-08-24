@@ -64,6 +64,8 @@
   "browse_cat": "Browse by Category",
   "view_all": "View all",
   "inquiry_price": "Inquire for Price",
+  "search_placeholder": "Search products\u2026",
+  "no_results": "No products found",
   "products_count": "products",
   "yomin_tagline": "Factory-direct electrical products \u2014 trusted in 95+ countries"
   },
@@ -126,6 +128,8 @@
   "browse_cat": "Parcourir par Cat\u00e9gorie",
   "view_all": "Voir tout",
   "inquiry_price": "Demander un Prix",
+  "search_placeholder": "Rechercher des produits\u2026",
+  "no_results": "Aucun produit trouv\u00e9",
   "products_count": "produits",
   "yomin_tagline": "Produits \u00e9lectriques d'usine \u2014 approuv\u00e9s dans plus de 95 pays"
   },
@@ -188,6 +192,8 @@
   "browse_cat": "Explorar por Categor\u00eda",
   "view_all": "Ver todo",
   "inquiry_price": "Consultar Precio",
+  "search_placeholder": "Buscar productos\u2026",
+  "no_results": "No se encontraron productos",
   "products_count": "productos",
   "yomin_tagline": "Productos el\u00e9ctricos de f\u00e1brica \u2014 confiados en m\u00e1s de 95 pa\u00edses"
   },
@@ -250,6 +256,8 @@
   "browse_cat": "\u062a\u0635\u0641\u062d \u062d\u0633\u0628 \u0627\u0644\u0641\u0626\u0629",
   "view_all": "\u0639\u0631\u0636 \u0627\u0644\u0643\u0644",
   "inquiry_price": "\u0627\u0633\u062a\u0641\u0633\u0631 \u0639\u0646 \u0627\u0644\u0633\u0639\u0631",
+  "search_placeholder": "\u0627\u0628\u062d\u062b \u0639\u0646 \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a\u2026",
+  "no_results": "\u0644\u0645 \u064a\u062a\u0645 \u0627\u0644\u0639\u062b\u0648\u0631 \u0639\u0644\u0649 \u0645\u0646\u062a\u062c\u0627\u062a",
   "products_count": "\u0645\u0646\u062a\u062c\u0627\u062a",
   "yomin_tagline": "\u0645\u0646\u062a\u062c\u0627\u062a \u0643\u0647\u0631\u0628\u0627\u0626\u064a\u0629 \u0645\u0628\u0627\u0634\u0631\u0629 \u0645\u0646 \u0627\u0644\u0645\u0635\u0646\u0639 \u2014 \u0645\u0648\u062b\u0648\u0642 \u0628\u0647\u0627 \u0641\u064a \u0623\u0643\u062b\u0631 \u0645\u0646 95 \u062f\u0648\u0644\u0629"
   }
