@@ -174,7 +174,7 @@ for (const f of files) {
       }
       out = out.replace(/<link rel="canonical" href="[^"]*"/, '<link rel="canonical" href="' + SITE + '/blog/' + slug + '-' + L.code + '"');
       out = out.replace(/<meta property="og:url" content="[^"]*"/, '<meta property="og:url" content="' + SITE + '/blog/' + slug + '-' + L.code + '"');
-      out = out.replace(/<link rel="canonical"[^>]*>/, '$&\n' + makeHreflang(slug));
+      if (!out.includes('hreflang=')) out = out.replace(/<link rel="canonical"[^>]*>/, '$&\n' + makeHreflang(slug));
       out = out.replace(/("@type"\s*:\s*"BlogPosting")/, '$1,\n    "inLanguage": "' + L.code + '"');
       // Active language button state.
       for (const cls of ['lopt', 'mlb']) {
@@ -190,8 +190,10 @@ for (const f of files) {
       out = out.replace(/<span id="lc">[A-Za-z]{2}<\/span>/, '<span id="lc">' + L.code.toUpperCase() + '</span>');
       // In-content language bar.
       out = out.replace(/(<section class="content-section">)/, '$1\n    ' + makeReadBar(slug, L.code, L.read));
-      // Nav script + persist language.
-      out = out.replace(/<\/body>/, makeNavScript(L.code, true) + '\n</body>');
+      // Nav script + persist language (only if not already present).
+      if (!out.includes('stopImmediatePropagation')) {
+        out = out.replace(/<\/body>/, makeNavScript(L.code, true) + '\n</body>');
+      }
       const outFile = path.join(BLOG_DIR, slug + '-' + L.code + '.html');
       fs.writeFileSync(outFile, out, 'utf8');
       generated.push(path.basename(outFile));
