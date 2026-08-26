@@ -54,6 +54,7 @@
   "cat_variac-transformer": "Variac Transformers",
   "cat_terminal-connector": "Terminals & Connectors",
   "cat_fuse-protection": "Fuses & Protection",
+    "cat_emergency-lighting": "Emergency Lighting",
   "cat_socket-wiring": "Sockets & Wiring",
   "cat_solar-pv-products": "Solar & PV Products",
   "cat_tools-hardware": "Tools & Hardware",

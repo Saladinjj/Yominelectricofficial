@@ -692,473 +692,677 @@
   ]
  },
  {
-  "id": "ym-el-2000",
-  "title": "Energy-Saving EPS Cabinet",
-  "category": "Emergency Lighting",
-  "price": "Inquiry for Price",
-  "description": "An emergency lighting power supply (EPS) system that provides reliable backup illumination during mains power failure. The energy-saving eps cabinet is designed for dependable, long-service operation. Key specifications include Type: Emergency Lighting Power Supply; Application: Commercial, Industrial, Institutional; Certification: CE, ISO9001. Key features: emergency lighting, emergency power supply, centralized power, backup power. Manufactured with CE, ISO9001 compliance for international markets.",
-  "specs": {
-   "Type": "Emergency Lighting Power Supply",
-   "Application": "Commercial, Industrial, Institutional",
-   "Certification": "CE, ISO9001",
-   "Mounting": "Wall / Floor (model dependent)"
-  },
-  "image": "/assets/images/products/emergency-lighting/energy-saving-eps.jpg",
-  "url": "https://yomin.en.alibaba.com/",
-  "isNew": true,
-  "keywords": [
-   "emergency lighting",
-   "EPS",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety",
-   "building code",
-   "energy-saving eps cabinet"
-  ],
-  "images": [],
-  "features": [
-   "emergency lighting",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety"
-  ]
+ "id": "ym-el-2000",
+ "title": "Energy-Saving Lighting Emergency Power Supply EPS Cabinet",
+ "category": "Emergency Lighting",
+ "price": "Inquiry for Price",
+ "description": "Energy-saving lighting emergency power supply (EPS) cabinet from Yomin Electric. Floor-standing steel enclosure with digital LCD display and status indicators, designed for reliable backup illumination when mains power fails. Ideal for commercial, industrial and institutional buildings. CE certified, OEM/ODM available, factory-direct supply.",
+ "specs": {
+  "Type": "EPS Emergency Power Supply (Lighting)",
+  "Mounting": "Floor-standing steel cabinet",
+  "Doors": "Dual-door, lockable",
+  "Display": "Digital LCD + status indicators",
+  "Application": "Commercial, Industrial, Institutional",
+  "Certification": "CE, ISO9001"
  },
+ "image": "/assets/images/products/emergency-lighting/el-2000-1.jpg",
+ "url": "https://yomin.en.alibaba.com/",
+ "isNew": true,
+ "keywords": [
+  "emergency lighting",
+  "EPS",
+  "emergency power supply",
+  "energy-saving lighting",
+  "backup power",
+  "fire safety",
+  "EPS cabinet"
+ ],
+ "images": [
+  "/assets/images/products/emergency-lighting/el-2000-2.jpg",
+  "/assets/images/products/emergency-lighting/el-2000-3.jpg",
+  "/assets/images/products/emergency-lighting/el-2000-4.jpg",
+  "/assets/images/products/emergency-lighting/el-2000-5.jpg"
+ ],
+ "features": [
+  "CE certified for international export",
+  "Energy-saving standby mode",
+  "Digital LCD status display",
+  "Safe and reliable backup power",
+  "Wide range of models available"
+ ],
+ "description_images": [
+  "/assets/images/products/emergency-lighting/el-2000-detail-01.jpg",
+  "/assets/images/products/emergency-lighting/el-2000-detail-02.jpg",
+  "/assets/images/products/emergency-lighting/el-2000-detail-03.jpg",
+  "/assets/images/products/emergency-lighting/el-2000-detail-04.jpg",
+  "/assets/images/products/emergency-lighting/el-2000-detail-05.jpg",
+  "/assets/images/products/emergency-lighting/el-2000-detail-06.jpg",
+  "/assets/images/products/emergency-lighting/el-2000-detail-07.jpg",
+  "/assets/images/products/emergency-lighting/el-2000-detail-08.jpg",
+  "/assets/images/products/emergency-lighting/el-2000-detail-09.jpg",
+  "/assets/images/products/emergency-lighting/el-2000-detail-10.jpg"
+ ]
+},
  {
-  "id": "ym-el-2001",
-  "title": "Type A Centralized Power Supply",
-  "category": "Emergency Lighting",
-  "price": "Inquiry for Price",
-  "description": "An emergency lighting power supply (EPS) system that provides reliable backup illumination during mains power failure. The type a centralized power supply is designed for dependable, long-service operation. Key specifications include Type: Emergency Lighting Power Supply; Application: Commercial, Industrial, Institutional; Certification: CE, ISO9001. Key features: emergency lighting, emergency power supply, centralized power, backup power. Manufactured with CE, ISO9001 compliance for international markets.",
-  "specs": {
-   "Type": "Emergency Lighting Power Supply",
-   "Application": "Commercial, Industrial, Institutional",
-   "Certification": "CE, ISO9001",
-   "Mounting": "Wall / Floor (model dependent)"
-  },
-  "image": "/assets/images/products/efficient-industrial-power-protection-single-phase-wall-mounted-relay-type-ac-avr-automatic-voltage-stabilizer.png",
-  "url": "https://yomin.en.alibaba.com/",
-  "isNew": true,
-  "keywords": [
-   "emergency lighting",
-   "EPS",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety",
-   "building code",
-   "type a centralized power supply"
-  ],
-  "images": [],
-  "features": [
-   "emergency lighting",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety"
-  ]
+ "id": "ym-el-2001",
+ "title": "Type A Emergency Lighting Centralized Power Supply Lead-Acid Battery Series",
+ "category": "Emergency Lighting",
+ "price": "Inquiry for Price",
+ "description": "Type A emergency lighting centralized power supply with maintenance-free lead-acid battery series from Yomin Electric. Centralized control power source for fire emergency lighting and exit signs, delivering safe low-voltage DC output during mains failure. Floor-standing single-door cabinet with digital control panel. CE certified, factory-direct supply.",
+ "specs": {
+  "Type": "Type A Centralized Power Supply (EPS)",
+  "Battery": "Maintenance-free lead-acid series",
+  "Output": "Safety extra-low voltage DC (Type A)",
+  "Mounting": "Floor-standing cabinet",
+  "Control": "Digital display + status LEDs",
+  "Application": "Fire emergency lighting, exit signs",
+  "Certification": "CE, ISO9001"
  },
+ "image": "/assets/images/products/emergency-lighting/el-2001-1.jpg",
+ "url": "https://yomin.en.alibaba.com/",
+ "isNew": true,
+ "keywords": [
+  "emergency lighting",
+  "Type A",
+  "centralized power supply",
+  "lead-acid battery",
+  "EPS",
+  "fire emergency lighting",
+  "exit sign power"
+ ],
+ "images": [
+  "/assets/images/products/emergency-lighting/el-2001-2.jpg",
+  "/assets/images/products/emergency-lighting/el-2001-3.jpg",
+  "/assets/images/products/emergency-lighting/el-2001-4.jpg",
+  "/assets/images/products/emergency-lighting/el-2001-5.jpg"
+ ],
+ "features": [
+  "Type A centralized emergency lighting standard",
+  "Maintenance-free lead-acid batteries",
+  "Automatic mains failure switching",
+  "Digital monitoring panel",
+  "Wide range of models available"
+ ],
+ "description_images": [
+  "/assets/images/products/emergency-lighting/el-2001-detail-01.jpg",
+  "/assets/images/products/emergency-lighting/el-2001-detail-02.jpg",
+  "/assets/images/products/emergency-lighting/el-2001-detail-03.jpg",
+  "/assets/images/products/emergency-lighting/el-2001-detail-04.jpg",
+  "/assets/images/products/emergency-lighting/el-2001-detail-05.jpg",
+  "/assets/images/products/emergency-lighting/el-2001-detail-06.jpg",
+  "/assets/images/products/emergency-lighting/el-2001-detail-07.jpg",
+  "/assets/images/products/emergency-lighting/el-2001-detail-08.jpg",
+  "/assets/images/products/emergency-lighting/el-2001-detail-09.jpg",
+  "/assets/images/products/emergency-lighting/el-2001-detail-10.jpg",
+  "/assets/images/products/emergency-lighting/el-2001-detail-11.jpg"
+ ]
+},
  {
-  "id": "ym-el-2002",
-  "title": "Emergency Lighting Centralized EPS",
-  "category": "Emergency Lighting",
-  "price": "Inquiry for Price",
-  "description": "An emergency lighting power supply (EPS) system that provides reliable backup illumination during mains power failure. The emergency lighting centralized eps is designed for dependable, long-service operation. Key specifications include Type: Emergency Lighting Power Supply; Application: Commercial, Industrial, Institutional; Certification: CE, ISO9001. Key features: emergency lighting, emergency power supply, centralized power, backup power. Manufactured with CE, ISO9001 compliance for international markets.",
-  "specs": {
-   "Type": "Emergency Lighting Power Supply",
-   "Application": "Commercial, Industrial, Institutional",
-   "Certification": "CE, ISO9001",
-   "Mounting": "Wall / Floor (model dependent)"
-  },
-  "image": "/assets/images/products/emergency-lighting/energy-saving-eps.jpg",
-  "url": "https://yomin.en.alibaba.com/",
-  "isNew": true,
-  "keywords": [
-   "emergency lighting",
-   "EPS",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety",
-   "building code",
-   "emergency lighting centralized eps"
-  ],
-  "images": [],
-  "features": [
-   "emergency lighting",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety"
-  ]
+ "id": "ym-el-2002",
+ "title": "Type A Emergency Lighting Centralized Power Supply Lithium Iron Phosphate Battery Series",
+ "category": "Emergency Lighting",
+ "price": "Inquiry for Price",
+ "description": "Type A emergency lighting centralized power supply built with power lithium iron phosphate (LiFePO4) battery cells from Yomin Electric. Long-life, high-cycle lithium battery series delivers reliable centralized power for fire emergency lighting systems during mains failure. Floor-standing cabinet with digital control panel. CE certified, factory-direct supply.",
+ "specs": {
+  "Type": "Type A Centralized Power Supply (EPS)",
+  "Battery": "Power LiFePO4 (lithium iron phosphate)",
+  "Output": "Safety extra-low voltage DC (Type A)",
+  "Mounting": "Floor-standing cabinet",
+  "Control": "Digital display + status LEDs",
+  "Application": "Fire emergency lighting, exit signs",
+  "Certification": "CE, ISO9001"
  },
+ "image": "/assets/images/products/emergency-lighting/el-2002-1.jpg",
+ "url": "https://yomin.en.alibaba.com/",
+ "isNew": true,
+ "keywords": [
+  "emergency lighting",
+  "Type A",
+  "centralized power supply",
+  "LiFePO4",
+  "lithium battery",
+  "EPS",
+  "fire emergency lighting"
+ ],
+ "images": [
+  "/assets/images/products/emergency-lighting/el-2002-2.jpg",
+  "/assets/images/products/emergency-lighting/el-2002-3.jpg",
+  "/assets/images/products/emergency-lighting/el-2002-4.jpg",
+  "/assets/images/products/emergency-lighting/el-2002-5.jpg"
+ ],
+ "features": [
+  "Power lithium iron phosphate (LiFePO4) cells",
+  "Long battery cycle life",
+  "Type A centralized control",
+  "Automatic mains failure switching",
+  "Wide range of models available"
+ ],
+ "description_images": [
+  "/assets/images/products/emergency-lighting/el-2002-detail-01.jpg",
+  "/assets/images/products/emergency-lighting/el-2002-detail-02.jpg",
+  "/assets/images/products/emergency-lighting/el-2002-detail-03.jpg",
+  "/assets/images/products/emergency-lighting/el-2002-detail-04.jpg",
+  "/assets/images/products/emergency-lighting/el-2002-detail-05.jpg",
+  "/assets/images/products/emergency-lighting/el-2002-detail-06.jpg",
+  "/assets/images/products/emergency-lighting/el-2002-detail-07.jpg",
+  "/assets/images/products/emergency-lighting/el-2002-detail-08.jpg",
+  "/assets/images/products/emergency-lighting/el-2002-detail-09.jpg",
+  "/assets/images/products/emergency-lighting/el-2002-detail-10.jpg",
+  "/assets/images/products/emergency-lighting/el-2002-detail-11.jpg"
+ ]
+},
  {
-  "id": "ym-el-2003",
-  "title": "Emergency Lighting EPS Cabinet",
-  "category": "Emergency Lighting",
-  "price": "Inquiry for Price",
-  "description": "An emergency lighting power supply (EPS) system that provides reliable backup illumination during mains power failure. The emergency lighting eps cabinet is designed for dependable, long-service operation. Key specifications include Type: Emergency Lighting Power Supply; Application: Commercial, Industrial, Institutional; Certification: CE, ISO9001. Key features: emergency lighting, emergency power supply, centralized power, backup power. Manufactured with CE, ISO9001 compliance for international markets.",
-  "specs": {
-   "Type": "Emergency Lighting Power Supply",
-   "Application": "Commercial, Industrial, Institutional",
-   "Certification": "CE, ISO9001",
-   "Mounting": "Wall / Floor (model dependent)"
-  },
-  "image": "/assets/images/products/emergency-lighting/energy-saving-eps.jpg",
-  "url": "https://yomin.en.alibaba.com/",
-  "isNew": true,
-  "keywords": [
-   "emergency lighting",
-   "EPS",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety",
-   "building code",
-   "emergency lighting eps cabinet"
-  ],
-  "images": [],
-  "features": [
-   "emergency lighting",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety"
-  ]
+ "id": "ym-el-2003",
+ "title": "CYS Series Energy-Saving Emergency Power Supply EPS",
+ "category": "Emergency Lighting",
+ "price": "Inquiry for Price",
+ "description": "CYS series energy-saving emergency power supply (EPS) from Yomin Electric. Floor-standing cabinet with central LCD control panel and ventilation grilles, providing reliable backup power for lighting and fire protection loads during mains failure. Suitable for commercial and industrial applications. CE certified, OEM/ODM available, factory-direct supply.",
+ "specs": {
+  "Series": "CYS",
+  "Type": "Energy-Saving EPS",
+  "Mounting": "Floor-standing cabinet",
+  "Display": "Central LCD control panel",
+  "Application": "Emergency lighting, fire protection",
+  "Certification": "CE, ISO9001"
  },
+ "image": "/assets/images/products/emergency-lighting/el-2003-1.jpg",
+ "url": "https://yomin.en.alibaba.com/",
+ "isNew": true,
+ "keywords": [
+  "emergency power supply",
+  "CYS series",
+  "EPS",
+  "energy-saving",
+  "backup power",
+  "lighting inverter"
+ ],
+ "images": [
+  "/assets/images/products/emergency-lighting/el-2003-2.jpg",
+  "/assets/images/products/emergency-lighting/el-2003-3.jpg",
+  "/assets/images/products/emergency-lighting/el-2003-4.jpg",
+  "/assets/images/products/emergency-lighting/el-2003-5.jpg"
+ ],
+ "features": [
+  "Energy-saving CYS series",
+  "Central LCD control panel",
+  "Safe and reliable backup power",
+  "Wide range of models available",
+  "CE certified for export"
+ ],
+ "description_images": [
+  "/assets/images/products/emergency-lighting/el-2003-detail-01.jpg",
+  "/assets/images/products/emergency-lighting/el-2003-detail-02.jpg",
+  "/assets/images/products/emergency-lighting/el-2003-detail-03.jpg",
+  "/assets/images/products/emergency-lighting/el-2003-detail-04.jpg",
+  "/assets/images/products/emergency-lighting/el-2003-detail-05.jpg",
+  "/assets/images/products/emergency-lighting/el-2003-detail-06.jpg",
+  "/assets/images/products/emergency-lighting/el-2003-detail-07.jpg",
+  "/assets/images/products/emergency-lighting/el-2003-detail-08.jpg",
+  "/assets/images/products/emergency-lighting/el-2003-detail-09.jpg",
+  "/assets/images/products/emergency-lighting/el-2003-detail-10.jpg"
+ ]
+},
  {
-  "id": "ym-el-2004",
-  "title": "Emergency Power Supply Cabinet",
-  "category": "Emergency Lighting",
-  "price": "Inquiry for Price",
-  "description": "An emergency lighting power supply (EPS) system that provides reliable backup illumination during mains power failure. The emergency power supply cabinet is designed for dependable, long-service operation. Key specifications include Type: Emergency Lighting Power Supply; Application: Commercial, Industrial, Institutional; Certification: CE, ISO9001. Key features: emergency lighting, emergency power supply, centralized power, backup power. Manufactured with CE, ISO9001 compliance for international markets.",
-  "specs": {
-   "Type": "Emergency Lighting Power Supply",
-   "Application": "Commercial, Industrial, Institutional",
-   "Certification": "CE, ISO9001",
-   "Mounting": "Wall / Floor (model dependent)"
-  },
-  "image": "/assets/images/products/factory-supply-4p-din-rail-digital-lcd-electric-power-energy-meter-single-phase-2-wire.jpg",
-  "url": "https://yomin.en.alibaba.com/",
-  "isNew": true,
-  "keywords": [
-   "emergency lighting",
-   "EPS",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety",
-   "building code",
-   "emergency power supply cabinet"
-  ],
-  "images": [],
-  "features": [
-   "emergency lighting",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety"
-  ]
+ "id": "ym-el-2004",
+ "title": "EPS Fire Protection Emergency Power Supply Cabinet",
+ "category": "Emergency Lighting",
+ "price": "Inquiry for Price",
+ "description": "Fire protection emergency power supply (EPS) cabinet from Yomin Electric. Floor-standing double-door enclosure engineered for fire-fighting equipment, smoke extraction fans and emergency lighting, keeping critical systems powered during mains failure. Robust industrial construction with ventilation louvers. CE certified, factory-direct supply.",
+ "specs": {
+  "Type": "Fire Protection EPS (EPS Emergency Power)",
+  "Mounting": "Floor-standing double-door cabinet",
+  "Application": "Fire-fighting equipment, smoke extraction, emergency lighting",
+  "Ventilation": "Built-in louvers",
+  "Certification": "CE, ISO9001"
  },
+ "image": "/assets/images/products/emergency-lighting/el-2004-1.jpg",
+ "url": "https://yomin.en.alibaba.com/",
+ "isNew": true,
+ "keywords": [
+  "EPS",
+  "fire protection",
+  "emergency power supply",
+  "fire fighting power",
+  "smoke extraction",
+  "backup power"
+ ],
+ "images": [
+  "/assets/images/products/emergency-lighting/el-2004-2.jpg",
+  "/assets/images/products/emergency-lighting/el-2004-3.jpg",
+  "/assets/images/products/emergency-lighting/el-2004-4.jpg",
+  "/assets/images/products/emergency-lighting/el-2004-5.jpg"
+ ],
+ "features": [
+  "Dedicated fire protection EPS design",
+  "Powers fire-fighting and smoke extraction loads",
+  "Floor-standing double-door cabinet",
+  "Safe and reliable construction",
+  "Wide range of models available"
+ ],
+ "description_images": [
+  "/assets/images/products/emergency-lighting/el-2004-detail-01.jpg",
+  "/assets/images/products/emergency-lighting/el-2004-detail-02.jpg",
+  "/assets/images/products/emergency-lighting/el-2004-detail-03.jpg",
+  "/assets/images/products/emergency-lighting/el-2004-detail-04.jpg",
+  "/assets/images/products/emergency-lighting/el-2004-detail-05.jpg",
+  "/assets/images/products/emergency-lighting/el-2004-detail-06.jpg",
+  "/assets/images/products/emergency-lighting/el-2004-detail-07.jpg",
+  "/assets/images/products/emergency-lighting/el-2004-detail-08.jpg",
+  "/assets/images/products/emergency-lighting/el-2004-detail-09.jpg",
+  "/assets/images/products/emergency-lighting/el-2004-detail-10.jpg",
+  "/assets/images/products/emergency-lighting/el-2004-detail-11.jpg"
+ ]
+},
  {
-  "id": "ym-el-2005",
-  "title": "Centralized Emergency Lighting Power",
-  "category": "Emergency Lighting",
-  "price": "Inquiry for Price",
-  "description": "An emergency lighting power supply (EPS) system that provides reliable backup illumination during mains power failure. The centralized emergency lighting power is designed for dependable, long-service operation. Key specifications include Type: Emergency Lighting Power Supply; Application: Commercial, Industrial, Institutional; Certification: CE, ISO9001. Key features: emergency lighting, emergency power supply, centralized power, backup power. Manufactured with CE, ISO9001 compliance for international markets.",
-  "specs": {
-   "Type": "Emergency Lighting Power Supply",
-   "Application": "Commercial, Industrial, Institutional",
-   "Certification": "CE, ISO9001",
-   "Mounting": "Wall / Floor (model dependent)"
-  },
-  "image": "/assets/images/products/customized-flexible-laminated-copper-busbar-by-china-supplier-power.jpg",
-  "url": "https://yomin.en.alibaba.com/",
-  "isNew": true,
-  "keywords": [
-   "emergency lighting",
-   "EPS",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety",
-   "building code",
-   "centralized emergency lighting power"
-  ],
-  "images": [],
-  "features": [
-   "emergency lighting",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety"
-  ]
+ "id": "ym-el-2005",
+ "title": "KGP Series Emergency Power Supply EPS Lighting Inverter Cabinet",
+ "category": "Emergency Lighting",
+ "price": "Inquiry for Price",
+ "description": "KGP series emergency power supply (EPS) lighting inverter cabinet from Yomin Electric, available as KGP3116C (3-phase input, 1-phase output) and KGP3316C (3-phase input, 3-phase output). Floor-standing cabinet with casters and backlit LCD display. Converts mains to backup power for lighting systems during outages. CE certified, factory-direct supply.",
+ "specs": {
+  "Models": "KGP3116C / KGP3316C",
+  "Input / Output": "3-phase in / 1-phase out (3116) · 3-phase in / 3-phase out (3316)",
+  "Type": "EPS Lighting Inverter",
+  "Mounting": "Floor-standing with casters",
+  "Display": "Backlit LCD + function keys",
+  "Certification": "CE, ISO9001"
  },
+ "image": "/assets/images/products/emergency-lighting/el-2005-1.jpg",
+ "url": "https://yomin.en.alibaba.com/",
+ "isNew": true,
+ "keywords": [
+  "KGP series",
+  "EPS",
+  "lighting inverter",
+  "emergency power supply",
+  "3-phase",
+  "backup power"
+ ],
+ "images": [
+  "/assets/images/products/emergency-lighting/el-2005-2.jpg",
+  "/assets/images/products/emergency-lighting/el-2005-3.jpg",
+  "/assets/images/products/emergency-lighting/el-2005-4.jpg",
+  "/assets/images/products/emergency-lighting/el-2005-5.jpg"
+ ],
+ "features": [
+  "KGP3116C: 3-phase input / 1-phase output",
+  "KGP3316C: 3-phase input / 3-phase output",
+  "Backlit LCD control display",
+  "Caster-mounted for easy positioning",
+  "Wide range of models available"
+ ],
+ "description_images": [
+  "/assets/images/products/emergency-lighting/el-2005-detail-01.jpg",
+  "/assets/images/products/emergency-lighting/el-2005-detail-02.jpg",
+  "/assets/images/products/emergency-lighting/el-2005-detail-03.jpg",
+  "/assets/images/products/emergency-lighting/el-2005-detail-04.jpg",
+  "/assets/images/products/emergency-lighting/el-2005-detail-05.jpg",
+  "/assets/images/products/emergency-lighting/el-2005-detail-06.jpg",
+  "/assets/images/products/emergency-lighting/el-2005-detail-07.jpg",
+  "/assets/images/products/emergency-lighting/el-2005-detail-08.jpg",
+  "/assets/images/products/emergency-lighting/el-2005-detail-09.jpg",
+  "/assets/images/products/emergency-lighting/el-2005-detail-10.jpg"
+ ]
+},
  {
-  "id": "ym-el-2006",
-  "title": "Wall-Mounted Emergency Power Supply",
-  "category": "Emergency Lighting",
-  "price": "Inquiry for Price",
-  "description": "An emergency lighting power supply (EPS) system that provides reliable backup illumination during mains power failure. The wall-mounted emergency power supply is designed for dependable, long-service operation. Key specifications include Type: Emergency Lighting Power Supply; Application: Commercial, Industrial, Institutional; Certification: CE, ISO9001. Key features: emergency lighting, emergency power supply, centralized power, backup power. Manufactured with CE, ISO9001 compliance for international markets.",
-  "specs": {
-   "Type": "Emergency Lighting Power Supply",
-   "Application": "Commercial, Industrial, Institutional",
-   "Certification": "CE, ISO9001",
-   "Mounting": "Wall / Floor (model dependent)"
-  },
-  "image": "/assets/images/products/dts666-wall-mounted-three-phase-four-wire-lcd-display-power-digital-kwh-meter-household-electric-energy-meter.jpg",
-  "url": "https://yomin.en.alibaba.com/",
-  "isNew": true,
-  "keywords": [
-   "emergency lighting",
-   "EPS",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety",
-   "building code",
-   "wall-mounted emergency power supply"
-  ],
-  "images": [],
-  "features": [
-   "emergency lighting",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety"
-  ]
+ "id": "ym-el-2006",
+ "title": "KR Series Energy-Saving Lighting Emergency Power Supply",
+ "category": "Emergency Lighting",
+ "price": "Inquiry for Price",
+ "description": "KR series energy-saving lighting emergency power supply from Yomin Electric. Floor-standing dual-door cabinet with digital control panel and ventilation louvers, delivering reliable backup power for emergency lighting circuits during mains failure. Built for commercial, industrial and institutional projects. CE certified, OEM/ODM available, factory-direct supply.",
+ "specs": {
+  "Series": "KR",
+  "Type": "Energy-Saving Lighting EPS",
+  "Mounting": "Floor-standing dual-door cabinet",
+  "Control": "Digital panel + secondary switch panel",
+  "Application": "Emergency lighting circuits",
+  "Certification": "CE, ISO9001"
  },
+ "image": "/assets/images/products/emergency-lighting/el-2006-1.jpg",
+ "url": "https://yomin.en.alibaba.com/",
+ "isNew": true,
+ "keywords": [
+  "KR series",
+  "lighting emergency power supply",
+  "EPS",
+  "energy-saving",
+  "backup power",
+  "emergency lighting"
+ ],
+ "images": [
+  "/assets/images/products/emergency-lighting/el-2006-2.jpg",
+  "/assets/images/products/emergency-lighting/el-2006-3.jpg",
+  "/assets/images/products/emergency-lighting/el-2006-4.jpg",
+  "/assets/images/products/emergency-lighting/el-2006-5.jpg"
+ ],
+ "features": [
+  "KR series lighting EPS",
+  "Energy-saving operation",
+  "Dual-door steel cabinet",
+  "Digital monitoring panel",
+  "Wide range of models available"
+ ],
+ "description_images": [
+  "/assets/images/products/emergency-lighting/el-2006-detail-01.jpg",
+  "/assets/images/products/emergency-lighting/el-2006-detail-02.jpg",
+  "/assets/images/products/emergency-lighting/el-2006-detail-03.jpg",
+  "/assets/images/products/emergency-lighting/el-2006-detail-04.jpg",
+  "/assets/images/products/emergency-lighting/el-2006-detail-05.jpg",
+  "/assets/images/products/emergency-lighting/el-2006-detail-06.jpg",
+  "/assets/images/products/emergency-lighting/el-2006-detail-07.jpg",
+  "/assets/images/products/emergency-lighting/el-2006-detail-08.jpg",
+  "/assets/images/products/emergency-lighting/el-2006-detail-09.jpg",
+  "/assets/images/products/emergency-lighting/el-2006-detail-10.jpg",
+  "/assets/images/products/emergency-lighting/el-2006-detail-11.jpg"
+ ]
+},
  {
-  "id": "ym-el-2007",
-  "title": "Industrial EPS Emergency Cabinet",
-  "category": "Emergency Lighting",
-  "price": "Inquiry for Price",
-  "description": "An emergency lighting power supply (EPS) system that provides reliable backup illumination during mains power failure. The eps emergency cabinet is designed for dependable, long-service operation. Key specifications include Type: Emergency Lighting Power Supply; Application: Commercial, Industrial, Institutional; Certification: CE, ISO9001. Key features: emergency lighting, emergency power supply, centralized power, backup power. Manufactured with CE, ISO9001 compliance for international markets.",
-  "specs": {
-   "Type": "Emergency Lighting Power Supply",
-   "Application": "Commercial, Industrial, Institutional",
-   "Certification": "CE, ISO9001",
-   "Mounting": "Wall / Floor (model dependent)"
-  },
-  "image": "/assets/images/products/industrial-energy-storage-abs-plastic-cover-fpc-ccs-scheme-cells-contact.jpg",
-  "url": "https://yomin.en.alibaba.com/",
-  "isNew": true,
-  "keywords": [
-   "emergency lighting",
-   "EPS",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety",
-   "building code",
-   "industrial eps emergency cabinet"
-  ],
-  "images": [],
-  "features": [
-   "emergency lighting",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety"
-  ]
+ "id": "ym-el-2007",
+ "title": "KR-C-25W Emergency Lighting Controller Wall-Mounted",
+ "category": "Emergency Lighting",
+ "price": "Inquiry for Price",
+ "description": "KR-C-25W emergency lighting controller from Yomin Electric. Wall-mounted central controller that monitors and manages the centralized emergency lighting system, with digital display screen and LED status indicators. Ideal for building fire emergency lighting control. CE certified, factory-direct supply.",
+ "specs": {
+  "Model": "KR-C-25W",
+  "Type": "Emergency Lighting Controller (central host)",
+  "Mounting": "Wall-mounted enclosure",
+  "Display": "Digital screen + LED indicators",
+  "Application": "Centralized emergency lighting control",
+  "Certification": "CE, ISO9001"
  },
+ "image": "/assets/images/products/emergency-lighting/el-2007-1.jpg",
+ "url": "https://yomin.en.alibaba.com/",
+ "isNew": true,
+ "keywords": [
+  "emergency lighting controller",
+  "KR-C-25W",
+  "central controller",
+  "wall-mounted",
+  "fire emergency lighting",
+  "monitoring"
+ ],
+ "images": [
+  "/assets/images/products/emergency-lighting/el-2007-2.jpg",
+  "/assets/images/products/emergency-lighting/el-2007-3.jpg",
+  "/assets/images/products/emergency-lighting/el-2007-4.jpg",
+  "/assets/images/products/emergency-lighting/el-2007-5.jpg"
+ ],
+ "features": [
+  "Centralized emergency lighting controller",
+  "Wall-mounted compact enclosure",
+  "Digital display + LED status",
+  "Reliable fire safety monitoring",
+  "Wide range of models available"
+ ],
+ "description_images": [
+  "/assets/images/products/emergency-lighting/el-2007-detail-01.jpg",
+  "/assets/images/products/emergency-lighting/el-2007-detail-02.jpg",
+  "/assets/images/products/emergency-lighting/el-2007-detail-03.jpg",
+  "/assets/images/products/emergency-lighting/el-2007-detail-04.jpg",
+  "/assets/images/products/emergency-lighting/el-2007-detail-05.jpg",
+  "/assets/images/products/emergency-lighting/el-2007-detail-06.jpg",
+  "/assets/images/products/emergency-lighting/el-2007-detail-07.jpg",
+  "/assets/images/products/emergency-lighting/el-2007-detail-08.jpg",
+  "/assets/images/products/emergency-lighting/el-2007-detail-09.jpg",
+  "/assets/images/products/emergency-lighting/el-2007-detail-10.jpg",
+  "/assets/images/products/emergency-lighting/el-2007-detail-11.jpg"
+ ]
+},
  {
-  "id": "ym-el-2008",
-  "title": "Emergency Lighting Power System",
-  "category": "Emergency Lighting",
-  "price": "Inquiry for Price",
-  "description": "An emergency lighting power supply (EPS) system that provides reliable backup illumination during mains power failure. The emergency lighting power system is designed for dependable, long-service operation. Key specifications include Type: Emergency Lighting Power Supply; Application: Commercial, Industrial, Institutional; Certification: CE, ISO9001. Key features: emergency lighting, emergency power supply, centralized power, backup power. Manufactured with CE, ISO9001 compliance for international markets.",
-  "specs": {
-   "Type": "Emergency Lighting Power Supply",
-   "Application": "Commercial, Industrial, Institutional",
-   "Certification": "CE, ISO9001",
-   "Mounting": "Wall / Floor (model dependent)"
-  },
-  "image": "/assets/images/products/fast-delivery-high-power-control-single-phase-jbk5-series-electrical-transformer.jpg",
-  "url": "https://yomin.en.alibaba.com/",
-  "isNew": true,
-  "keywords": [
-   "emergency lighting",
-   "EPS",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety",
-   "building code",
-   "emergency lighting power system"
-  ],
-  "images": [],
-  "features": [
-   "emergency lighting",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety"
-  ]
+ "id": "ym-el-2008",
+ "title": "KR-C-50W Emergency Lighting Controller",
+ "category": "Emergency Lighting",
+ "price": "Inquiry for Price",
+ "description": "KR-C-50W emergency lighting controller from Yomin Electric. Floor-standing controller cabinet with large touchscreen display showing system status, plus status LED row and keyed access door. Manages the centralized emergency lighting system for larger buildings. CE certified, factory-direct supply.",
+ "specs": {
+  "Model": "KR-C-50W",
+  "Type": "Emergency Lighting Controller (central host)",
+  "Mounting": "Floor-standing cabinet",
+  "Display": "Large touchscreen + status LEDs",
+  "Application": "Centralized emergency lighting control",
+  "Certification": "CE, ISO9001"
  },
+ "image": "/assets/images/products/emergency-lighting/el-2008-1.jpg",
+ "url": "https://yomin.en.alibaba.com/",
+ "isNew": true,
+ "keywords": [
+  "emergency lighting controller",
+  "KR-C-50W",
+  "touchscreen",
+  "central controller",
+  "fire emergency lighting"
+ ],
+ "images": [
+  "/assets/images/products/emergency-lighting/el-2008-2.jpg",
+  "/assets/images/products/emergency-lighting/el-2008-3.jpg",
+  "/assets/images/products/emergency-lighting/el-2008-4.jpg",
+  "/assets/images/products/emergency-lighting/el-2008-5.jpg"
+ ],
+ "features": [
+  "Large touchscreen status display",
+  "Centralized emergency lighting control",
+  "Status LED row + keyed door",
+  "Floor-standing steel cabinet",
+  "Wide range of models available"
+ ],
+ "description_images": [
+  "/assets/images/products/emergency-lighting/el-2008-detail-01.jpg",
+  "/assets/images/products/emergency-lighting/el-2008-detail-02.jpg",
+  "/assets/images/products/emergency-lighting/el-2008-detail-03.jpg",
+  "/assets/images/products/emergency-lighting/el-2008-detail-04.jpg",
+  "/assets/images/products/emergency-lighting/el-2008-detail-05.jpg",
+  "/assets/images/products/emergency-lighting/el-2008-detail-06.jpg",
+  "/assets/images/products/emergency-lighting/el-2008-detail-07.jpg",
+  "/assets/images/products/emergency-lighting/el-2008-detail-08.jpg",
+  "/assets/images/products/emergency-lighting/el-2008-detail-09.jpg",
+  "/assets/images/products/emergency-lighting/el-2008-detail-10.jpg",
+  "/assets/images/products/emergency-lighting/el-2008-detail-11.jpg"
+ ]
+},
  {
-  "id": "ym-el-2009",
-  "title": "Centralized EPS Power Cabinet",
-  "category": "Emergency Lighting",
-  "price": "Inquiry for Price",
-  "description": "An emergency lighting power supply (EPS) system that provides reliable backup illumination during mains power failure. The centralized eps power cabinet is designed for dependable, long-service operation. Key specifications include Type: Emergency Lighting Power Supply; Application: Commercial, Industrial, Institutional; Certification: CE, ISO9001. Key features: emergency lighting, emergency power supply, centralized power, backup power. Manufactured with CE, ISO9001 compliance for international markets.",
-  "specs": {
-   "Type": "Emergency Lighting Power Supply",
-   "Application": "Commercial, Industrial, Institutional",
-   "Certification": "CE, ISO9001",
-   "Mounting": "Wall / Floor (model dependent)"
-  },
-  "image": "/assets/images/products/guide-rail-type-power-cable-fj6d-200-connection-terminal.jpg",
-  "url": "https://yomin.en.alibaba.com/",
-  "isNew": true,
-  "keywords": [
-   "emergency lighting",
-   "EPS",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety",
-   "building code",
-   "centralized eps power cabinet"
-  ],
-  "images": [],
-  "features": [
-   "emergency lighting",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety"
-  ]
+ "id": "ym-el-2009",
+ "title": "KR-C-2000 Emergency Lighting Controller",
+ "category": "Emergency Lighting",
+ "price": "Inquiry for Price",
+ "description": "KR-C-2000 emergency lighting controller from Yomin Electric. Floor-standing controller with caster wheels, integrated digital display and status indicator lights, and ventilated door section. Central monitoring host for fire emergency lighting systems in commercial and industrial buildings. CE certified, factory-direct supply.",
+ "specs": {
+  "Model": "KR-C-2000",
+  "Type": "Emergency Lighting Controller (central host)",
+  "Mounting": "Floor-standing cabinet with casters",
+  "Display": "Digital display + status LEDs",
+  "Application": "Centralized emergency lighting control",
+  "Certification": "CE, ISO9001"
  },
+ "image": "/assets/images/products/emergency-lighting/el-2009-1.jpg",
+ "url": "https://yomin.en.alibaba.com/",
+ "isNew": true,
+ "keywords": [
+  "emergency lighting controller",
+  "KR-C-2000",
+  "central controller",
+  "fire emergency lighting",
+  "monitoring host"
+ ],
+ "images": [
+  "/assets/images/products/emergency-lighting/el-2009-2.jpg",
+  "/assets/images/products/emergency-lighting/el-2009-3.jpg",
+  "/assets/images/products/emergency-lighting/el-2009-4.jpg",
+  "/assets/images/products/emergency-lighting/el-2009-5.jpg"
+ ],
+ "features": [
+  "KR-C-2000 central controller",
+  "Caster-mounted floor cabinet",
+  "Digital display + status LEDs",
+  "Ventilated door section",
+  "Wide range of models available"
+ ],
+ "description_images": [
+  "/assets/images/products/emergency-lighting/el-2009-detail-01.jpg",
+  "/assets/images/products/emergency-lighting/el-2009-detail-02.jpg",
+  "/assets/images/products/emergency-lighting/el-2009-detail-03.jpg",
+  "/assets/images/products/emergency-lighting/el-2009-detail-04.jpg",
+  "/assets/images/products/emergency-lighting/el-2009-detail-05.jpg",
+  "/assets/images/products/emergency-lighting/el-2009-detail-06.jpg",
+  "/assets/images/products/emergency-lighting/el-2009-detail-07.jpg",
+  "/assets/images/products/emergency-lighting/el-2009-detail-08.jpg",
+  "/assets/images/products/emergency-lighting/el-2009-detail-09.jpg",
+  "/assets/images/products/emergency-lighting/el-2009-detail-10.jpg",
+  "/assets/images/products/emergency-lighting/el-2009-detail-11.jpg"
+ ]
+},
  {
-  "id": "ym-el-2010",
-  "title": "Emergency Standby Power Cabinet",
-  "category": "Emergency Lighting",
-  "price": "Inquiry for Price",
-  "description": "An emergency lighting power supply (EPS) system that provides reliable backup illumination during mains power failure. The emergency standby power cabinet is designed for dependable, long-service operation. Key specifications include Type: Emergency Lighting Power Supply; Application: Commercial, Industrial, Institutional; Certification: CE, ISO9001. Key features: emergency lighting, emergency power supply, centralized power, backup power. Manufactured with CE, ISO9001 compliance for international markets.",
-  "specs": {
-   "Type": "Emergency Lighting Power Supply",
-   "Application": "Commercial, Industrial, Institutional",
-   "Certification": "CE, ISO9001",
-   "Mounting": "Wall / Floor (model dependent)"
-  },
-  "image": "/assets/images/products/new-energy-power-nickel-plated-copper-busbar-high-quality-copper-busbar-for.png",
-  "url": "https://yomin.en.alibaba.com/",
-  "isNew": true,
-  "keywords": [
-   "emergency lighting",
-   "EPS",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety",
-   "building code",
-   "emergency standby power cabinet"
-  ],
-  "images": [],
-  "features": [
-   "emergency lighting",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety"
-  ]
+ "id": "ym-el-2010",
+ "title": "KR-GZDW Series Maintenance-Free Microcomputer-Controlled DC Power Panel",
+ "category": "Emergency Lighting",
+ "price": "Inquiry for Price",
+ "description": "KR-GZDW series maintenance-free microcomputer-controlled DC power panel (integrated DC power supply) from Yomin Electric. Floor-standing cabinet combining analog meters, microcomputer display, breaker controls and transparent battery compartments for maintenance-free battery packs. Powers DC loads such as switchgear and substation control circuits. CE certified, factory-direct supply.",
+ "specs": {
+  "Series": "KR-GZDW",
+  "Type": "Microcomputer-Controlled DC Panel (Integrated DC Power Supply)",
+  "Battery": "Maintenance-free, transparent battery compartments",
+  "Control": "Microcomputer display + analog meters + breakers",
+  "Output": "DC 110V / 220V (customizable)",
+  "Mounting": "Floor-standing cabinet",
+  "Certification": "CE, ISO9001"
  },
+ "image": "/assets/images/products/emergency-lighting/el-2010-1.jpg",
+ "url": "https://yomin.en.alibaba.com/",
+ "isNew": true,
+ "keywords": [
+  "KR-GZDW",
+  "DC power panel",
+  "microcomputer controlled",
+  "maintenance-free battery",
+  "DC power supply",
+  "substation"
+ ],
+ "images": [
+  "/assets/images/products/emergency-lighting/el-2010-2.jpg",
+  "/assets/images/products/emergency-lighting/el-2010-3.jpg",
+  "/assets/images/products/emergency-lighting/el-2010-4.jpg",
+  "/assets/images/products/emergency-lighting/el-2010-5.jpg"
+ ],
+ "features": [
+  "Microcomputer-controlled DC power",
+  "Maintenance-free battery compartments",
+  "Analog meters + digital display",
+  "Switchgear and substation control loads",
+  "Wide range of models available"
+ ],
+ "description_images": [
+  "/assets/images/products/emergency-lighting/el-2010-detail-01.jpg",
+  "/assets/images/products/emergency-lighting/el-2010-detail-02.jpg",
+  "/assets/images/products/emergency-lighting/el-2010-detail-03.jpg",
+  "/assets/images/products/emergency-lighting/el-2010-detail-04.jpg",
+  "/assets/images/products/emergency-lighting/el-2010-detail-05.jpg",
+  "/assets/images/products/emergency-lighting/el-2010-detail-06.jpg",
+  "/assets/images/products/emergency-lighting/el-2010-detail-07.jpg",
+  "/assets/images/products/emergency-lighting/el-2010-detail-08.jpg",
+  "/assets/images/products/emergency-lighting/el-2010-detail-09.jpg",
+  "/assets/images/products/emergency-lighting/el-2010-detail-10.jpg",
+  "/assets/images/products/emergency-lighting/el-2010-detail-11.jpg"
+ ]
+},
  {
-  "id": "ym-el-2011",
-  "title": "Floor-Standing Emergency EPS Cabinet",
-  "category": "Emergency Lighting",
-  "price": "Inquiry for Price",
-  "description": "An emergency lighting power supply (EPS) system that provides reliable backup illumination during mains power failure. The floor-standing emergency eps cabinet is designed for dependable, long-service operation. Key specifications include Type: Emergency Lighting Power Supply; Application: Commercial, Industrial, Institutional; Certification: CE, ISO9001. Key features: emergency lighting, emergency power supply, centralized power, backup power. Manufactured with CE, ISO9001 compliance for international markets.",
-  "specs": {
-   "Type": "Emergency Lighting Power Supply",
-   "Application": "Commercial, Industrial, Institutional",
-   "Certification": "CE, ISO9001",
-   "Mounting": "Wall / Floor (model dependent)"
-  },
-  "image": "/assets/images/products/copper-stamping-flexible-busbar-for-lithium-battery-pack-new-energy-power.png",
-  "url": "https://yomin.en.alibaba.com/",
-  "isNew": true,
-  "keywords": [
-   "emergency lighting",
-   "EPS",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety",
-   "building code",
-   "floor-standing emergency eps cabinet"
-  ],
-  "images": [],
-  "features": [
-   "emergency lighting",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety"
-  ]
+ "id": "ym-el-2011",
+ "title": "KR-XFXJ Intelligent Fire Inspection System Cabinet",
+ "category": "Emergency Lighting",
+ "price": "Inquiry for Price",
+ "description": "KR-XFXJ intelligent fire inspection system cabinet from Yomin Electric. Floor-standing control cabinet with large HMI touchscreen, dual rows of green/red status indicators and selector controls, designed for automated inspection and testing of fire protection systems. CE certified, factory-direct supply.",
+ "specs": {
+  "Model": "KR-XFXJ",
+  "Type": "Intelligent Fire Inspection System",
+  "Display": "HMI touchscreen",
+  "Indicators": "Dual status LED rows",
+  "Mounting": "Floor-standing cabinet",
+  "Certification": "CE, ISO9001"
  },
+ "image": "/assets/images/products/emergency-lighting/el-2011-1.jpg",
+ "url": "https://yomin.en.alibaba.com/",
+ "isNew": true,
+ "keywords": [
+  "KR-XFXJ",
+  "fire inspection system",
+  "fire pump inspection",
+  "intelligent fire control",
+  "HMI touchscreen"
+ ],
+ "images": [
+  "/assets/images/products/emergency-lighting/el-2011-2.jpg",
+  "/assets/images/products/emergency-lighting/el-2011-3.jpg",
+  "/assets/images/products/emergency-lighting/el-2011-4.jpg",
+  "/assets/images/products/emergency-lighting/el-2011-5.jpg"
+ ],
+ "features": [
+  "Intelligent fire inspection automation",
+  "Large HMI touchscreen",
+  "Green/red status indicator rows",
+  "Floor-standing steel cabinet",
+  "Wide range of models available"
+ ],
+ "description_images": [
+  "/assets/images/products/emergency-lighting/el-2011-detail-01.jpg",
+  "/assets/images/products/emergency-lighting/el-2011-detail-02.jpg",
+  "/assets/images/products/emergency-lighting/el-2011-detail-03.jpg",
+  "/assets/images/products/emergency-lighting/el-2011-detail-04.jpg",
+  "/assets/images/products/emergency-lighting/el-2011-detail-05.jpg",
+  "/assets/images/products/emergency-lighting/el-2011-detail-06.jpg",
+  "/assets/images/products/emergency-lighting/el-2011-detail-07.jpg",
+  "/assets/images/products/emergency-lighting/el-2011-detail-08.jpg",
+  "/assets/images/products/emergency-lighting/el-2011-detail-09.jpg",
+  "/assets/images/products/emergency-lighting/el-2011-detail-10.jpg",
+  "/assets/images/products/emergency-lighting/el-2011-detail-11.jpg"
+ ]
+},
  {
-  "id": "ym-el-2012",
-  "title": "EPS Emergency Lighting Power Unit",
-  "category": "Emergency Lighting",
-  "price": "Inquiry for Price",
-  "description": "An emergency lighting power supply (EPS) system that provides reliable backup illumination during mains power failure. The eps emergency lighting power unit is designed for dependable, long-service operation. Key specifications include Type: Emergency Lighting Power Supply; Application: Commercial, Industrial, Institutional; Certification: CE, ISO9001. Key features: emergency lighting, emergency power supply, centralized power, backup power. Manufactured with CE, ISO9001 compliance for international markets.",
-  "specs": {
-   "Type": "Emergency Lighting Power Supply",
-   "Application": "Commercial, Industrial, Institutional",
-   "Certification": "CE, ISO9001",
-   "Mounting": "Wall / Floor (model dependent)"
-  },
-  "image": "/assets/images/products/emergency-lighting/energy-saving-eps.jpg",
-  "url": "https://yomin.en.alibaba.com/",
-  "isNew": true,
-  "keywords": [
-   "emergency lighting",
-   "EPS",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety",
-   "building code",
-   "eps emergency lighting power unit"
-  ],
-  "images": [],
-  "features": [
-   "emergency lighting",
-   "emergency power supply",
-   "centralized power",
-   "backup power",
-   "emergency exit",
-   "fire safety"
-  ]
+ "id": "ym-el-2012",
+ "title": "UPS Uninterruptible Power Supply Cabinet",
+ "category": "Emergency Lighting",
+ "price": "Inquiry for Price",
+ "description": "Uninterruptible power supply (UPS) cabinet from Yomin Electric. Floor-standing industrial enclosure with front digital control panel and ventilated door, providing continuous clean power for critical loads during mains failure and fluctuation. Ideal for data centers, hospitals and industrial processes. CE certified, OEM/ODM available, factory-direct supply.",
+ "specs": {
+  "Type": "UPS Uninterruptible Power Supply",
+  "Mounting": "Floor-standing industrial cabinet",
+  "Display": "Front digital control panel",
+  "Application": "Data centers, hospitals, industrial processes",
+  "Certification": "CE, ISO9001"
  },
+ "image": "/assets/images/products/emergency-lighting/el-2012-1.jpg",
+ "url": "https://yomin.en.alibaba.com/",
+ "isNew": true,
+ "keywords": [
+  "UPS",
+  "uninterruptible power supply",
+  "backup power",
+  "industrial UPS",
+  "power protection"
+ ],
+ "images": [
+  "/assets/images/products/emergency-lighting/el-2012-2.jpg",
+  "/assets/images/products/emergency-lighting/el-2012-3.jpg",
+  "/assets/images/products/emergency-lighting/el-2012-4.jpg",
+  "/assets/images/products/emergency-lighting/el-2012-5.jpg"
+ ],
+ "features": [
+  "Continuous clean power output",
+  "Industrial floor-standing cabinet",
+  "Front digital control panel",
+  "Critical load protection",
+  "Wide range of models available"
+ ],
+ "description_images": [
+  "/assets/images/products/emergency-lighting/el-2012-detail-01.jpg",
+  "/assets/images/products/emergency-lighting/el-2012-detail-02.jpg",
+  "/assets/images/products/emergency-lighting/el-2012-detail-03.jpg",
+  "/assets/images/products/emergency-lighting/el-2012-detail-04.jpg",
+  "/assets/images/products/emergency-lighting/el-2012-detail-05.jpg",
+  "/assets/images/products/emergency-lighting/el-2012-detail-06.jpg",
+  "/assets/images/products/emergency-lighting/el-2012-detail-07.jpg",
+  "/assets/images/products/emergency-lighting/el-2012-detail-08.jpg",
+  "/assets/images/products/emergency-lighting/el-2012-detail-09.jpg",
+  "/assets/images/products/emergency-lighting/el-2012-detail-10.jpg"
+ ]
+},
  {
   "id": "ym-0076",
   "title": "4P LCD 230V Rail-mounted Electricity AC Active Meter Three Phase Smart Energy Meters with Transparent Cover and Backlight",

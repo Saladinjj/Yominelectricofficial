@@ -29,6 +29,7 @@ const CATS = [
   { id:'Solar/PV Products',            label:'Solar & PV',             icon:'☀️',  tKey:'prod_cat_solar' },
   { id:'Fuse & Protection',            label:'Fuses & Protection',     icon:'⚠️',  tKey:'prod_cat_fuse' },
   { id:'Voltage Protector',            label:'Voltage Protectors',     icon:'🛡️',  tKey:'prod_cat_voltage_protector' },
+  { id:'Emergency Lighting',          label:'Emergency Lighting',     icon:'💡', tKey:'prod_cat_emergency' },
   { id:'Socket & Wiring',              label:'Sockets & Wiring',       icon:'🔌', tKey:'prod_cat_socket' },
   { id:'New',                          label:'New Products',           icon:'🆕', tKey:'prod_cat_new' },
   { id:'Tools & Hardware',             label:'Tools & Hardware',       icon:'🔧', tKey:'prod_cat_tools' },
