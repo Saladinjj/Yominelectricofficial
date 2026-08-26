@@ -84,7 +84,7 @@ def convert(md):
     flush_para(); flush_list()
     return "\n".join(out)
 
-for md_path in sorted(glob.glob(os.path.join(SRC, "0*.md"))):
+for md_path in sorted(glob.glob(os.path.join(SRC, "*.md"))):
     with open(md_path, encoding="utf-8") as f:
         md = f.read()
     # first line = title

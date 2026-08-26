@@ -97,8 +97,8 @@ html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--tx);font-family:var(--ss);font-size:16px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 a{text-decoration:none;color:inherit}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 36px;height:68px;background:rgba(13,13,13,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--bds);transition:background var(--tr)}
-nav.sc{background:rgba(13,13,13,.99)}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 36px;height:68px;background:transparent;backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border-bottom:1px solid transparent;transition:background .35s ease,border-color .35s ease,box-shadow .35s ease}
+nav.sc{background:rgba(13,13,13,.68);border-bottom-color:rgba(255,255,255,.07);box-shadow:0 4px 24px rgba(0,0,0,.22)}
 .n-logo{display:flex;align-items:center;gap:8px;text-decoration:none;flex-shrink:0}
 .n-logo img{height:44px;width:auto;object-fit:contain;filter:brightness(1.1)}
 .n-ctr{position:absolute;left:48%;transform:translateX(-50%);display:flex;align-items:center;gap:2px;list-style:none}
