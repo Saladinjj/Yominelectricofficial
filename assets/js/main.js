@@ -557,7 +557,7 @@ function setTheme(t, fromAuto = false) {
   if (!fromAuto || storedTheme) localStorage.setItem('ym_theme', t);
   document.body.classList.toggle('light', t === 'light');
   // Sync Google Preferred Sources badge theme with site theme
-  document.querySelectorAll('google-add-preferred-source-btn').forEach(el => el.setAttribute('data-theme', t));
+  document.querySelectorAll('[google-add-preferred-source-btn]').forEach(el => el.setAttribute('data-theme', t));
   // Update theme-pair buttons (both index.html's and injected ones)
   const btnDark = document.getElementById('btnDark');
   const btnLight = document.getElementById('btnLight');
