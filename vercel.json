@@ -139,6 +139,42 @@
     },
     {
       "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "Variac/Transformer"
+        }
+      ],
+      "destination": "/products/variac-transformer",
+      "statusCode": 301
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "Current+Transformer"
+        }
+      ],
+      "destination": "/products/current-transformer",
+      "statusCode": 301
+    },
+    {
+      "source": "/product.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "category",
+          "value": "current-transformer"
+        }
+      ],
+      "destination": "/products/current-transformer",
+      "statusCode": 301
+    },
+    {
+      "source": "/product.html",
       "destination": "/products",
       "statusCode": 301
     },
