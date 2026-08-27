@@ -138,7 +138,7 @@
       "statusCode": 301
     },
     {
-      "source": "/product.html",
+      "source": "/product",
       "has": [
         {
           "type": "query",
@@ -150,7 +150,19 @@
       "statusCode": 301
     },
     {
-      "source": "/product.html",
+      "source": "/product",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "Current Transformer"
+        }
+      ],
+      "destination": "/products/current-transformer",
+      "statusCode": 301
+    },
+    {
+      "source": "/product",
       "has": [
         {
           "type": "query",
@@ -162,7 +174,7 @@
       "statusCode": 301
     },
     {
-      "source": "/product.html",
+      "source": "/product",
       "has": [
         {
           "type": "query",
@@ -174,7 +186,7 @@
       "statusCode": 301
     },
     {
-      "source": "/product.html",
+      "source": "/product",
       "destination": "/products",
       "statusCode": 301
     },
