@@ -692,13 +692,13 @@ nav.sc{background:rgba(13,13,13,.68);border-bottom-color:rgba(255,255,255,.07);b
 #post-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:40px}
 .blog-line{display:flex;flex-direction:column;padding:0;border:1px solid var(--bds);border-radius:14px;background:var(--bgc);overflow:hidden;margin-bottom:0;transition:border-color var(--tr),transform var(--tr),box-shadow var(--tr)}
 .blog-line:hover{border-color:rgba(232,148,74,.35);transform:translateY(-5px);box-shadow:0 16px 40px rgba(0,0,0,.35)}
-.blog-line-img{width:100%;height:230px;object-fit:cover;display:block;flex-shrink:0;background:var(--bgc2)}
+.blog-line-img{width:100%;aspect-ratio:16/9;height:auto;object-fit:cover;display:block;flex-shrink:0;background:var(--bgc2)}
 .blog-line-body{padding:20px 22px 24px;min-width:0}
 .blog-line-title{font-size:18px;font-weight:600;color:var(--tx);line-height:1.35;margin:0 0 8px}
 .blog-line-kw{font-size:13px;color:var(--dm);line-height:1.6;margin:0}
 .blog-line-lang{display:none;align-self:flex-start;margin:0 22px 18px;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:3px 8px;border-radius:6px;background:rgba(232,148,74,.12);border:1px solid rgba(232,148,74,.3);color:var(--ac);white-space:nowrap}
 body.light .blog-line-lang{background:rgba(196,118,47,.1);border-color:rgba(196,118,47,.3)}
-@media(max-width:640px){.blog-line-img{height:180px}}
+@media(max-width:640px){.blog-line-img{height:auto}.blog-line-body{padding:16px 16px 20px}.blog-line-title{font-size:16px}}
 
 /* ─── CATEGORY TAG PILLS ─── */
 .tag-production{background:rgba(230,126,34,.12);color:#e67e22;border:1px solid rgba(230,126,34,.25)}
@@ -999,21 +999,21 @@ body{overflow-x:hidden!important;max-width:100vw}
     <!-- POST GRID — CARD FORMAT (newest first — ADD NEW POSTS AT THE TOP) -->
   <div class="post-grid" id="post-grid">
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/exit-signs-and-emergency-lighting-guide">
-      <img class="blog-line-img" src="/assets/images/blog/exit-signs-and-emergency-lighting-guide/hero.jpg" alt="Exit Signs and Emergency Lighting: A Complete Guide" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/exit-signs-and-emergency-lighting-guide/card.jpg" alt="Exit Signs and Emergency Lighting: A Complete Guide" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Exit Signs and Emergency Lighting: A Complete Guide</h3>
         <p class="blog-line-kw">exit signs and emergency lighting &middot; emergency exit light &middot; emergency &amp; exit lights &middot; emergency exit lighting</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/emergency-lighting-fixtures-guide">
-      <img class="blog-line-img" src="/assets/images/blog/emergency-lighting-fixtures-guide/hero.jpg" alt="Emergency Lighting Fixtures: Types, Standards and How to Choose" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/emergency-lighting-fixtures-guide/card.jpg" alt="Emergency Lighting Fixtures: Types, Standards and How to Choose" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Emergency Lighting Fixtures: Types, Standards and How to Choose</h3>
         <p class="blog-line-kw">emergency lighting fixtures &middot; emergency lighting units &middot; emergency exit lighting fixtures &middot; emergency lighting products</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/eps-vs-ups-emergency-power-supply">
-      <img class="blog-line-img" src="/assets/images/blog/eps-vs-ups-emergency-power-supply/hero.jpg" alt="Emergency Power Supply (EPS) vs UPS: What’s the Difference?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/eps-vs-ups-emergency-power-supply/card.jpg" alt="Emergency Power Supply (EPS) vs UPS: What’s the Difference?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Emergency Power Supply (EPS) vs UPS: What’s the Difference?</h3>
         <p class="blog-line-kw">emergency power supply &middot; EPS &middot; UPS &middot; emergency lighting units &middot; backup power</p>
@@ -1021,497 +1021,497 @@ body{overflow-x:hidden!important;max-width:100vw}
     </a>
     
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/energy-meters">
-      <img class="blog-line-img" src="/assets/images/blog/energy-meters/hero.jpg" alt="Energy Meters: A Complete Guide" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/energy-meters/card.jpg" alt="Energy Meters: A Complete Guide" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Energy Meters: A Complete Guide</h3>
         <p class="blog-line-kw">energy meter &middot; energy meters &middot; what is an energy meter &middot; energy meter types &middot; smart energy meter &middot; three phase energy meter</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/energy-meter-selection-guide">
-      <img class="blog-line-img" src="/assets/images/blog/energy-meter-selection-guide/hero.jpg" alt="Energy Meter Selection Guide" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/energy-meter-selection-guide/card.jpg" alt="Energy Meter Selection Guide" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Energy Meter Selection Guide: How to Choose the Right Meter</h3>
         <p class="blog-line-kw">energy meter selection &middot; how to choose an energy meter &middot; energy meter types &middot; single phase vs three phase energy meter &middot; kWh meter selection</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/voltage-regulator-selection-guide">
-      <img class="blog-line-img" src="/assets/images/blog/voltage-regulator-selection-guide/hero.jpg" alt="Voltage Regulator Selection Guide" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/voltage-regulator-selection-guide/card.jpg" alt="Voltage Regulator Selection Guide" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Voltage Regulator Selection Guide: Size and Type Explained</h3>
         <p class="blog-line-kw">voltage regulator selection &middot; voltage stabilizer selection &middot; how to choose a voltage stabilizer &middot; servo voltage stabilizer &middot; AVR selection</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/variac-transformer-selection-guide">
-      <img class="blog-line-img" src="/assets/images/blog/variac-transformer-selection-guide/hero.jpg" alt="Variac Transformer Selection Guide" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/variac-transformer-selection-guide/card.jpg" alt="Variac Transformer Selection Guide" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Variac Transformer Selection Guide: Voltage, Current and Duty</h3>
         <p class="blog-line-kw">variac selection &middot; variable transformer selection &middot; how to choose a variac &middot; variable autotransformer &middot; variac transformer sizing</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/screw-machine-selection-guide">
-      <img class="blog-line-img" src="/assets/images/blog/screw-machine-selection-guide/hero.jpg" alt="Screw Machine Selection Guide" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/screw-machine-selection-guide/card.jpg" alt="Screw Machine Selection Guide" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Screw Machine Selection Guide: Tightening, Feeding and Automation</h3>
         <p class="blog-line-kw">screw machine selection &middot; automatic screw machine &middot; screw tightening machine &middot; screw feeding machine &middot; how to choose a screw machine</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/fuse-and-protection-selection-guide">
-      <img class="blog-line-img" src="/assets/images/blog/fuse-and-protection-selection-guide/hero.jpg" alt="Fuse and Protection Selection Guide" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/fuse-and-protection-selection-guide/card.jpg" alt="Fuse and Protection Selection Guide" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Fuse and Protection Selection Guide: Types, Sizing and Coordination</h3>
         <p class="blog-line-kw">fuse selection &middot; fuse sizing &middot; how to choose a fuse &middot; fuse types &middot; overcurrent protection</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/static-charge-measurement-techniques">
-      <img class="blog-line-img" src="/assets/images/blog/static-charge-measurement-techniques/hero.jpg" alt="Static Charge Measurement Techniques" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/static-charge-measurement-techniques/card.jpg" alt="Static Charge Measurement Techniques" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Static Charge Measurement Techniques</h3>
         <p class="blog-line-kw">static charge measurement &middot; electrostatic testing equipment &middot; static electricity measurement</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/how-much-does-a-current-transformer-cost">
-      <img class="blog-line-img" src="/assets/images/blog/how-much-does-a-current-transformer-cost/hero.jpg" alt="How Much Does a Current Transformer Cost" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/how-much-does-a-current-transformer-cost/card.jpg" alt="How Much Does a Current Transformer Cost" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">How Much Does a Current Transformer Cost? A Pricing Guide for Buyers</h3>
         <p class="blog-line-kw">cost of current transformer &middot; ct price &middot; ct pricing &middot; current transformer cost</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-an-energy-audit">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-an-energy-audit/hero.jpg" alt="What Is an Energy Audit" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-an-energy-audit/card.jpg" alt="What Is an Energy Audit" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is an Energy Audit? How It Works and What It Costs</h3>
         <p class="blog-line-kw">energy audit &middot; home energy audit &middot; energy audit cost &middot; what is an energy audit</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/kva-vs-kw-whats-the-difference">
-      <img class="blog-line-img" src="/assets/images/blog/kva-vs-kw-whats-the-difference/hero.jpg" alt="kVA vs kW" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/kva-vs-kw-whats-the-difference/card.jpg" alt="kVA vs kW" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">kVA vs kW: What's the Difference and How to Convert</h3>
         <p class="blog-line-kw">kva vs kw &middot; kw vs kva &middot; apparent power &middot; generator sizing</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-a-split-core-current-transformer">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-a-split-core-current-transformer/hero.jpg" alt="Split-Core Current Transformer" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-a-split-core-current-transformer/card.jpg" alt="Split-Core Current Transformer" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is a Split-Core Current Transformer? Installation Without Downtime</h3>
         <p class="blog-line-kw">split core ct &middot; split core current transformer &middot; clamp ct &middot; retrofit metering</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/ct-ratio-explained">
-      <img class="blog-line-img" src="/assets/images/blog/ct-ratio-explained/hero.jpg" alt="CT Ratio Explained" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/ct-ratio-explained/card.jpg" alt="CT Ratio Explained" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">CT Ratio Explained: How to Choose the Right Current Transformer Ratio</h3>
         <p class="blog-line-kw">ct ratio &middot; current transformer ratio &middot; 100:5 &middot; metering ct</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-a-bidirectional-meter">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-a-bidirectional-meter/hero.jpg" alt="Bidirectional Meter" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-a-bidirectional-meter/card.jpg" alt="Bidirectional Meter" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is a Bidirectional Meter? How It Enables Solar Net Metering</h3>
         <p class="blog-line-kw">bidirectional meter &middot; two way meter &middot; net metering &middot; solar export meter</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/kw-vs-kwh-whats-the-difference">
-      <img class="blog-line-img" src="/assets/images/blog/kw-vs-kwh-whats-the-difference/hero.jpg" alt="kW vs kWh: What's the Difference" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/kw-vs-kwh-whats-the-difference/card.jpg" alt="kW vs kWh: What's the Difference" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">kW vs kWh: What's the Difference and Why It Matters for Your Energy Bill</h3>
         <p class="blog-line-kw">kw vs kwh &middot; kwh meaning &middot; power vs energy &middot; electricity bill</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/are-smart-meters-safe">
-      <img class="blog-line-img" src="/assets/images/blog/are-smart-meters-safe/hero.jpg" alt="Are Smart Meters Safe" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/are-smart-meters-safe/card.jpg" alt="Are Smart Meters Safe" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Are Smart Meters Safe? What the Evidence Actually Says</h3>
         <p class="blog-line-kw">smart meter safety &middot; smart meter radiation &middot; are smart meters safe</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-power-factor-and-why-it-matters">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-power-factor-and-why-it-matters/hero.jpg" alt="What Is Power Factor and Why Does It Matter" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-power-factor-and-why-it-matters/card.jpg" alt="What Is Power Factor and Why Does It Matter" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is Power Factor and Why Does It Matter for Your Business?</h3>
         <p class="blog-line-kw">power factor &middot; power factor formula &middot; power factor correction &middot; cos phi</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-submetering-a-guide-for-landlords">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-submetering-a-guide-for-landlords/hero.jpg" alt="What Is Submetering" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-submetering-a-guide-for-landlords/card.jpg" alt="What Is Submetering" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is Submetering? A Practical Guide for Landlords and Property Managers</h3>
         <p class="blog-line-kw">submetering &middot; submeter &middot; tenant billing &middot; landlord energy</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/modbus-rs485-energy-meters-guide">
-      <img class="blog-line-img" src="/assets/images/blog/modbus-rs485-energy-meters-guide/hero.jpg" alt="Modbus and RS485 Energy Meters Guide" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/modbus-rs485-energy-meters-guide/card.jpg" alt="Modbus and RS485 Energy Meters Guide" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Modbus and RS485 Energy Meters: A Buyer's Guide for Facility Managers</h3>
         <p class="blog-line-kw">modbus energy meter &middot; rs485 meter &middot; modbus rtu &middot; energy monitoring</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/time-of-use-metering-guide">
-      <img class="blog-line-img" src="/assets/images/blog/time-of-use-metering-guide/hero.jpg" alt="Time-of-Use Metering Guide" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/time-of-use-metering-guide/card.jpg" alt="Time-of-Use Metering Guide" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Time-of-Use (TOU) Metering: How It Works and Whether It Saves You Money</h3>
         <p class="blog-line-kw">time of use meter &middot; tou tariff &middot; peak off-peak &middot; smart meter</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-the-difference-between-a-power-meter-and-an-energy-meter">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-the-difference-between-a-power-meter-and-an-energy-meter/hero.jpg" alt="What Is the Difference Between a Power Meter and an Energy Meter" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-the-difference-between-a-power-meter-and-an-energy-meter/card.jpg" alt="What Is the Difference Between a Power Meter and an Energy Meter" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is the Difference Between a Power Meter and an Energy Meter</h3>
         <p class="blog-line-kw">power meter vs energy meter &middot; energy meter &middot; power meter &middot; kWh</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-a-smart-panel-meter-and-how-does-it-differ-from-a-traditional-panel-meter">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-a-smart-panel-meter-and-how-does-it-differ-from-a-traditional-panel-meter/hero.jpg" alt="What Is a Smart Panel Meter and How Does It Differ from a Traditional Panel Meter" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-a-smart-panel-meter-and-how-does-it-differ-from-a-traditional-panel-meter/card.jpg" alt="What Is a Smart Panel Meter and How Does It Differ from a Traditional Panel Meter" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is a Smart Panel Meter and How Does It Differ from a Traditional Panel Meter</h3>
         <p class="blog-line-kw">smart panel meter &middot; panel meter &middot; DIN rail meter &middot; power monitoring</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-a-current-transformer-ring-used-for">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-a-current-transformer-ring-used-for/hero.jpg" alt="What Is a Current Transformer Ring Used For" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-a-current-transformer-ring-used-for/card.jpg" alt="What Is a Current Transformer Ring Used For" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is a Current Transformer Ring Used For</h3>
         <p class="blog-line-kw">current transformer ring &middot; CT ring &middot; split core CT &middot; current measurement</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/powering-the-future-how-solar-pv-meters-are-revolutionizing-renewable-energy-management">
-      <img class="blog-line-img" src="/assets/images/blog/powering-the-future-how-solar-pv-meters-are-revolutionizing-renewable-energy-management/hero.jpg" alt="Powering the Future: How Solar PV Meters Are Revolutionizing Renewable Energy Management" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/powering-the-future-how-solar-pv-meters-are-revolutionizing-renewable-energy-management/card.jpg" alt="Powering the Future: How Solar PV Meters Are Revolutionizing Renewable Energy Management" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Powering the Future: How Solar PV Meters Are Revolutionizing Renewable Energy Management</h3>
         <p class="blog-line-kw">solar PV meter &middot; solar energy monitoring &middot; PV metering &middot; net metering</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/dc-energy-meters-the-future-of-precision-power-monitoring-in-renewable-energy-systems">
-      <img class="blog-line-img" src="/assets/images/blog/dc-energy-meters-the-future-of-precision-power-monitoring-in-renewable-energy-systems/hero.jpg" alt="DC Energy Meters: The Future of Precision Power Monitoring in Renewable Energy Systems" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/dc-energy-meters-the-future-of-precision-power-monitoring-in-renewable-energy-systems/card.jpg" alt="DC Energy Meters: The Future of Precision Power Monitoring in Renewable Energy Systems" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">DC Energy Meters: The Future of Precision Power Monitoring in Renewable Energy Systems</h3>
         <p class="blog-line-kw">DC energy meter &middot; DC metering &middot; renewable monitoring &middot; battery storage</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/precision-in-power-monitoring-a-comprehensive-overview-of-din-rail-energy-meters">
-      <img class="blog-line-img" src="/assets/images/blog/precision-in-power-monitoring-a-comprehensive-overview-of-din-rail-energy-meters/hero.jpg" alt="Precision in Power Monitoring: A Comprehensive Overview of DIN Rail Energy Meters" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/precision-in-power-monitoring-a-comprehensive-overview-of-din-rail-energy-meters/card.jpg" alt="Precision in Power Monitoring: A Comprehensive Overview of DIN Rail Energy Meters" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Precision in Power Monitoring: A Comprehensive Overview of DIN Rail Energy Meters</h3>
         <p class="blog-line-kw">DIN rail energy meter &middot; DIN rail meter &middot; power monitoring &middot; kWh</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-the-difference-between-a-prepaid-meter-and-a-postpaid-meter">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-the-difference-between-a-prepaid-meter-and-a-postpaid-meter/hero.jpg" alt="What Is the Difference Between a Prepaid Meter and a Postpaid Meter" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-the-difference-between-a-prepaid-meter-and-a-postpaid-meter/card.jpg" alt="What Is the Difference Between a Prepaid Meter and a Postpaid Meter" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is the Difference Between a Prepaid Meter and a Postpaid Meter</h3>
         <p class="blog-line-kw">prepaid meter &middot; postpaid meter &middot; prepaid electricity meter &middot; STS token</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/understanding-how-energy-meters-work-and-why-it-matters-for-your-home-or-business">
-      <img class="blog-line-img" src="/assets/images/blog/understanding-how-energy-meters-work-and-why-it-matters-for-your-home-or-business/hero.jpg" alt="Understanding How Energy Meters Work and Why It Matters for Your Home or Business" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/understanding-how-energy-meters-work-and-why-it-matters-for-your-home-or-business/card.jpg" alt="Understanding How Energy Meters Work and Why It Matters for Your Home or Business" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Understanding How Energy Meters Work and Why It Matters for Your Home or Business</h3>
         <p class="blog-line-kw">energy meters &middot; e meters &middot; kWh &middot; energy monitoring</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/power-meter-vs-power-analyzer-understanding-the-key-differences">
-      <img class="blog-line-img" src="/assets/images/blog/power-meter-vs-power-analyzer-understanding-the-key-differences/hero.jpg" alt="Power Meter vs Power Analyzer: Understanding the Key Differences" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/power-meter-vs-power-analyzer-understanding-the-key-differences/card.jpg" alt="Power Meter vs Power Analyzer: Understanding the Key Differences" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Power Meter vs Power Analyzer: Understanding the Key Differences</h3>
         <p class="blog-line-kw">power analyzer &middot; power meter &middot; power quality &middot; harmonics</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/how-to-read-your-electric-meter-and-measure-usage">
-      <img class="blog-line-img" src="/assets/images/blog/how-to-read-your-electric-meter-and-measure-usage/hero.jpg" alt="How to Read Your Electric Meter and Measure Usage" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/how-to-read-your-electric-meter-and-measure-usage/card.jpg" alt="How to Read Your Electric Meter and Measure Usage" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">How to Read Your Electric Meter and Measure Usage</h3>
         <p class="blog-line-kw">how to read a power meter &middot; electric meter reading &middot; kWh &middot; measure usage</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/power-distribution-system-what-it-is-and-the-different-types">
-      <img class="blog-line-img" src="/assets/images/blog/power-distribution-system-what-it-is-and-the-different-types/hero.jpg" alt="Power Distribution System: What It Is and the Different Types" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/power-distribution-system-what-it-is-and-the-different-types/card.jpg" alt="Power Distribution System: What It Is and the Different Types" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Power Distribution System: What It Is and the Different Types</h3>
         <p class="blog-line-kw">power distribution &middot; distribution system types &middot; radial ring mesh &middot; current transformer</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-a-current-transformer-meter">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-a-current-transformer-meter/hero.jpg" alt="What Is a Current Transformer Meter" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-a-current-transformer-meter/card.jpg" alt="What Is a Current Transformer Meter" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is a Current Transformer Meter</h3>
         <p class="blog-line-kw">current transformer &middot; CT meter &middot; split core &middot; rogowski</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-the-difference-between-a-prepaid-meter-and-a-smart-meter">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-the-difference-between-a-prepaid-meter-and-a-smart-meter/hero.jpg" alt="What Is the Difference Between a Prepaid Meter and a Smart Meter?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-the-difference-between-a-prepaid-meter-and-a-smart-meter/card.jpg" alt="What Is the Difference Between a Prepaid Meter and a Smart Meter?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is the Difference Between a Prepaid Meter and a Smart Meter?</h3>
         <p class="blog-line-kw">prepaid meter &middot; smart meter &middot; prepaid electricity meter &middot; smart prepaid meter</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/how-to-read-an-electricity-meter-and-monitor-energy-use">
-      <img class="blog-line-img" src="/assets/images/blog/how-to-read-an-electricity-meter-and-monitor-energy-use/hero.jpg" alt="How to Read an Electricity Meter and Monitor Energy Use" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/how-to-read-an-electricity-meter-and-monitor-energy-use/card.jpg" alt="How to Read an Electricity Meter and Monitor Energy Use" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">How to Read an Electricity Meter and Monitor Energy Use</h3>
         <p class="blog-line-kw">how to read an electricity meter &middot; electricity meter reading &middot; kWh &middot; monitor energy use</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-a-single-phase-electronic-kwh-meter">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-a-single-phase-electronic-kwh-meter/hero.jpg" alt="What Is a Single Phase Electronic kWh Meter?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-a-single-phase-electronic-kwh-meter/card.jpg" alt="What Is a Single Phase Electronic kWh Meter?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is a Single Phase Electronic kWh Meter?</h3>
         <p class="blog-line-kw">electronic kWh meter &middot; single phase meter &middot; energy meters &middot; e meters</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-does-mid-certification-actually-mean">
-      <img class="blog-line-img" src="/assets/images/blog/what-does-mid-certification-actually-mean/hero.jpg" alt="What Does MID Certification Actually Mean?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-does-mid-certification-actually-mean/card.jpg" alt="What Does MID Certification Actually Mean?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Does MID Certification Actually Mean?</h3>
         <p class="blog-line-kw">MID certification &middot; MID energy meter &middot; Measuring Instruments Directive &middot; mid e</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-a-dc-energy-meter-and-why-does-it-matter">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-a-dc-energy-meter-and-why-does-it-matter/hero.jpg" alt="What Is a DC Energy Meter and Why Does It Matter?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-a-dc-energy-meter-and-why-does-it-matter/card.jpg" alt="What Is a DC Energy Meter and Why Does It Matter?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is a DC Energy Meter and Why Does It Matter?</h3>
         <p class="blog-line-kw">DC energy meter &middot; DC metering &middot; solar battery &middot; e meters</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/why-the-energy-meter-is-a-critical-component-in-ev-charging">
-      <img class="blog-line-img" src="/assets/images/blog/why-the-energy-meter-is-a-critical-component-in-ev-charging/hero.jpg" alt="Why the Energy Meter Is a Critical Component in EV Charging" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/why-the-energy-meter-is-a-critical-component-in-ev-charging/card.jpg" alt="Why the Energy Meter Is a Critical Component in EV Charging" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Why the Energy Meter Is a Critical Component in EV Charging</h3>
         <p class="blog-line-kw">energy meter &middot; EV charging meter &middot; MID billing &middot; load management</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/how-to-select-the-right-current-transformer-for-electrical-measurement">
-      <img class="blog-line-img" src="/assets/images/blog/how-to-select-the-right-current-transformer-for-electrical-measurement/hero.jpg" alt="How to Select the Right Current Transformer for Electrical Measurement" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/how-to-select-the-right-current-transformer-for-electrical-measurement/card.jpg" alt="How to Select the Right Current Transformer for Electrical Measurement" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">How to Select the Right Current Transformer for Electrical Measurement</h3>
         <p class="blog-line-kw">current transformer &middot; CT selection &middot; CT ratio &middot; accuracy class</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/how-are-current-transformers-used-in-protection-systems-for-power-distribution">
-      <img class="blog-line-img" src="/assets/images/blog/how-are-current-transformers-used-in-protection-systems-for-power-distribution/hero.jpg" alt="How Are Current Transformers Used in Protection Systems for Power Distribution?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/how-are-current-transformers-used-in-protection-systems-for-power-distribution/card.jpg" alt="How Are Current Transformers Used in Protection Systems for Power Distribution?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">How Are Current Transformers Used in Protection Systems for Power Distribution?</h3>
         <p class="blog-line-kw">power distribution &middot; current transformer &middot; protection relay &middot; CT class</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/how-energy-meters-help-improve-energy-efficiency-in-homes">
-      <img class="blog-line-img" src="/assets/images/blog/how-energy-meters-help-improve-energy-efficiency-in-homes/hero.jpg" alt="How Energy Meters Help Improve Energy Efficiency in Homes" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/how-energy-meters-help-improve-energy-efficiency-in-homes/card.jpg" alt="How Energy Meters Help Improve Energy Efficiency in Homes" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">How Energy Meters Help Improve Energy Efficiency in Homes</h3>
         <p class="blog-line-kw">home energy efficiency &middot; energy meter &middot; monitor usage &middot; home forest ec meter</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/what-is-a-power-analyzer">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-a-power-analyzer/hero.jpg" alt="What is a Power Analyzer?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-a-power-analyzer/card.jpg" alt="What is a Power Analyzer?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What is a Power Analyzer?</h3>
         <p class="blog-line-kw">power analyzer &middot; power quality &middot; harmonics &middot; energy audit</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/the-influence-of-shape-and-winding-density-on-rogowski-coil-accuracy-and-sensitivity">
-      <img class="blog-line-img" src="/assets/images/blog/the-influence-of-shape-and-winding-density-on-rogowski-coil-accuracy-and-sensitivity/hero.jpg" alt="The Influence of Shape and Winding Density on Rogowski Coil Accuracy and Sensitivity" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/the-influence-of-shape-and-winding-density-on-rogowski-coil-accuracy-and-sensitivity/card.jpg" alt="The Influence of Shape and Winding Density on Rogowski Coil Accuracy and Sensitivity" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">The Influence of Shape and Winding Density on Rogowski Coil Accuracy and Sensitivity</h3>
         <p class="blog-line-kw">Rogowski coil &middot; current measurement &middot; winding density &middot; rogowski</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="en" href="/blog/maximizing-efficiency-choosing-solar-batteries">
-      <img class="blog-line-img" src="/assets/images/blog/maximizing-efficiency-choosing-solar-batteries/hero.jpg" alt="Maximizing Efficiency: Choosing Solar Batteries" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/maximizing-efficiency-choosing-solar-batteries/card.jpg" alt="Maximizing Efficiency: Choosing Solar Batteries" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Maximizing Efficiency: Choosing Solar Batteries</h3>
         <p class="blog-line-kw">solar batteries &middot; solar power batteries &middot; solar energy storage &middot; lithium solar batteries 5-20kWh 48V &middot; how long do solar batteries last</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="fr" href="/blog/comprendre-le-fonctionnement-des-compteurs-electriques">
-      <img class="blog-line-img" src="/assets/images/blog/comprendre-le-fonctionnement-des-compteurs-electriques/hero.jpg" alt="Comprendre le fonctionnement des compteurs &eacute;lectriques" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/comprendre-le-fonctionnement-des-compteurs-electriques/card.jpg" alt="Comprendre le fonctionnement des compteurs &eacute;lectriques" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Comprendre le fonctionnement des compteurs &eacute;lectriques</h3>
         <p class="blog-line-kw">compteur &eacute;lectrique &middot; electricity meter &middot; facture d'&eacute;lectricit&eacute; &middot; compteur intelligent &middot; &eacute;conomie d'&eacute;nergie</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" data-lang="pt" href="/blog/o-que-e-eletricidade">
-      <img class="blog-line-img" src="/assets/images/blog/o-que-e-eletricidade/hero.jpg" alt="O que &eacute; Eletricidade? Guia Completo de F&iacute;sica e Energia El&eacute;trica" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/o-que-e-eletricidade/card.jpg" alt="O que &eacute; Eletricidade? Guia Completo de F&iacute;sica e Energia El&eacute;trica" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">O que &eacute; Eletricidade? Guia Completo de F&iacute;sica e Energia El&eacute;trica</h3>
         <p class="blog-line-kw">o que &eacute; eletricidade &middot; tipos de eletricidade &middot; eletricidade est&aacute;tica &middot; eletricidade e magnetismo &middot; energia</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/what-is-electricity">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-electricity/hero.jpg" alt="What Is Electricity? Complete Physics &amp; Electric Energy Guide" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-electricity/card.jpg" alt="What Is Electricity? Complete Physics &amp; Electric Energy Guide" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is Electricity? Complete Physics &amp; Electric Energy Guide</h3>
         <p class="blog-line-kw">what is electricity &middot; types of electricity &middot; static electricity &middot; electricity and magnetism &middot; electric energy</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/how_does_a_smart_electricity_meter_work">
-      <img class="blog-line-img" src="/assets/images/blog/how_does_a_smart_electricity_meter_work/hero.jpg" alt="How Does a Smart Electricity Meter Work?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/how_does_a_smart_electricity_meter_work/card.jpg" alt="How Does a Smart Electricity Meter Work?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">How Does a Smart Electricity Meter Work?</h3>
         <p class="blog-line-kw">smart energy meter · energy monitoring · smart grid technology · smart home energy · home energy management</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/what-is-prepaid-meter">
-      <img class="blog-line-img" src="/assets/images/blog/understanding-prepaid-meters/hero.jpg" alt="What Is a Prepaid Meter?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/understanding-prepaid-meters/card.jpg" alt="What Is a Prepaid Meter?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is a Prepaid Meter?</h3>
         <p class="blog-line-kw">understanding prepaid meters · prepaid utility meters · how prepaid meters work · smart prepaid meters · prepaid electricity meter</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/what-is-a-prepaid-meter">
-      <img class="blog-line-img" src="/assets/images/blog/what-is-a-prepaid-meter/hero.jpg" alt="What Is a Prepaid Meter? A Comprehensive Guide" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-is-a-prepaid-meter/card.jpg" alt="What Is a Prepaid Meter? A Comprehensive Guide" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is a Prepaid Meter? A Comprehensive Guide</h3>
         <p class="blog-line-kw">what is a prepaid meter · prepaid electricity meter · smart prepaid meter · prepaid utility meter · prepaid energy meter</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/understanding-the-basics-of-ac-contactors">
-      <img class="blog-line-img" src="/assets/images/blog/blog-understanding-the-basics-of-ac-contactors/hero.jpg" alt="Understanding the Basics of AC Contactors" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/blog-understanding-the-basics-of-ac-contactors/card.jpg" alt="Understanding the Basics of AC Contactors" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Understanding the Basics of AC Contactors</h3>
         <p class="blog-line-kw">power contactor · electrical switching · ac contactor · industrial contactor · contactor relay</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/what-size-wire-for-a-50-amp-breaker">
-      <img class="blog-line-img" src="/assets/images/blog/what-size-wire-for-a-50-amp-breaker/hero.jpg" alt="Understanding 50 Amp Wire Size Requirements" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-size-wire-for-a-50-amp-breaker/card.jpg" alt="Understanding 50 Amp Wire Size Requirements" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Understanding 50 Amp Wire Size Requirements</h3>
         <p class="blog-line-kw">50 amp wire size · 50 amp breaker wire gauge · 6 AWG wire · EV charger wiring · RV outlet wiring</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/what-size-wire-for-a-60-amp-breaker">
-      <img class="blog-line-img" src="/assets/images/blog/what-size-wire-for-a-60-amp-breaker/hero.jpg" alt="What Size Wire for a 60 Amp Breaker? Complete NEC Guide" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/what-size-wire-for-a-60-amp-breaker/card.jpg" alt="What Size Wire for a 60 Amp Breaker? Complete NEC Guide" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Size Wire for a 60 Amp Breaker? Complete NEC Guide</h3>
         <p class="blog-line-kw">60 amp wire size · 60 amp breaker wire gauge · 6 AWG copper · subpanel wiring · voltage drop</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/10-ways-to-lower-your-electricity-bill">
-      <img class="blog-line-img" src="/assets/images/blog/blog-10-ways-to-lower-your-electricity-bill/hero.jpg" alt="10 Simple Ways to Lower Your Electricity Bill" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/blog-10-ways-to-lower-your-electricity-bill/card.jpg" alt="10 Simple Ways to Lower Your Electricity Bill" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">10 Simple Ways to Lower Your Electricity Bill</h3>
         <p class="blog-line-kw">energy saving tips · reduce electricity bill · kWh savings · smart meter tips</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/digital-vs-electromechanical-meters">
-      <img class="blog-line-img" src="/assets/images/blog/blog-digital-vs-electromechanical-meters/hero.jpg" alt="Digital vs Electromechanical Meters: What's the Difference?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/blog-digital-vs-electromechanical-meters/card.jpg" alt="Digital vs Electromechanical Meters: What's the Difference?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Digital vs Electromechanical Meters: What's the Difference?</h3>
         <p class="blog-line-kw">digital vs electromechanical meter · energy meter types · meter accuracy · smart metering</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/how-to-read-your-electricity-bill">
-      <img class="blog-line-img" src="/assets/images/blog/blog-how-to-read-your-electricity-bill/hero.jpg" alt="How to Read Your Electricity Bill: A Beginner's Guide" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/blog-how-to-read-your-electricity-bill/card.jpg" alt="How to Read Your Electricity Bill: A Beginner's Guide" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">How to Read Your Electricity Bill: A Beginner's Guide</h3>
         <p class="blog-line-kw">read electricity bill · kWh explained · tariff rates · energy billing</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/busbar-design-basics">
-      <img class="blog-line-img" src="/assets/images/blog/busbar-design-basics/hero.jpg" alt="Busbar Design Basics: How to Choose the Right Material and Size" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/busbar-design-basics/card.jpg" alt="Busbar Design Basics: How to Choose the Right Material and Size" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Busbar Design Basics: How to Choose the Right Material and Size</h3>
         <p class="blog-line-kw">busbar design · busbar sizing · copper vs aluminum busbar · switchgear</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/three-phase-meters-explained">
-      <img class="blog-line-img" src="/assets/images/blog/blog-three-phase-meters-explained/hero.jpg" alt="Three-Phase Meters Explained: Do You Need One?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/blog-three-phase-meters-explained/card.jpg" alt="Three-Phase Meters Explained: Do You Need One?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Three-Phase Meters Explained: Do You Need One?</h3>
         <p class="blog-line-kw">three phase meter · 3-phase energy meter · commercial metering · phase electricity</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/prepaid-vs-postpaid-meters">
-      <img class="blog-line-img" src="/assets/images/blog/blog-prepaid-vs-postpaid-meters/hero.jpg" alt="Prepaid vs Postpaid Electricity Meters: Which Is Better for You?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/blog-prepaid-vs-postpaid-meters/card.jpg" alt="Prepaid vs Postpaid Electricity Meters: Which Is Better for You?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Prepaid vs Postpaid Electricity Meters: Which Is Better for You?</h3>
         <p class="blog-line-kw">prepaid vs postpaid · prepaid electricity · STS prepaid meter · pay as you go</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/din-rail-vs-panel-meters">
-      <img class="blog-line-img" src="/assets/images/blog/din-rail-vs-panel-meters/hero.jpg" alt="DIN Rail vs Panel Meters: Which Installation Is Right for You?" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/din-rail-vs-panel-meters/card.jpg" alt="DIN Rail vs Panel Meters: Which Installation Is Right for You?" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">DIN Rail vs Panel Meters: Which Installation Is Right for You?</h3>
         <p class="blog-line-kw">DIN rail meter · panel meter · meter mounting · switchboard metering</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/how-do-electricity-meters-work">
-      <img class="blog-line-img" src="/assets/images/blog/blog-how-do-electricity-meters-work/hero.jpg" alt="How Do Electricity Meters Work? A Simple Guide for Everyone" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/blog-how-do-electricity-meters-work/card.jpg" alt="How Do Electricity Meters Work? A Simple Guide for Everyone" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">How Do Electricity Meters Work? A Simple Guide for Everyone</h3>
         <p class="blog-line-kw">how electricity meters work · kWh explained · meter types · energy measurement</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/understanding-kwh">
-      <img class="blog-line-img" src="/assets/images/blog/understanding-kwh/hero.jpg" alt="Understanding kWh: What You Are Actually Paying For" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/understanding-kwh/card.jpg" alt="Understanding kWh: What You Are Actually Paying For" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Understanding kWh: What You Are Actually Paying For</h3>
         <p class="blog-line-kw">kWh explained · kilowatt hour · electricity units · energy consumption</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/solar-power-beginners-guide">
-      <img class="blog-line-img" src="/assets/images/blog/blog-solar-power-beginners-guide/hero.jpg" alt="Solar Power for Beginners: How Panels and Net Metering Work" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/blog-solar-power-beginners-guide/card.jpg" alt="Solar Power for Beginners: How Panels and Net Metering Work" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Solar Power for Beginners: How Panels and Net Metering Work</h3>
         <p class="blog-line-kw">solar panels for beginners · net metering · solar energy · PV system</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/choosing-a-current-transformer">
-      <img class="blog-line-img" src="/assets/images/blog/choosing-a-current-transformer/hero.jpg" alt="How to Choose a Current Transformer: Ratio, Class and Burden" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/choosing-a-current-transformer/card.jpg" alt="How to Choose a Current Transformer: Ratio, Class and Burden" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">How to Choose a Current Transformer: Ratio, Class and Burden</h3>
         <p class="blog-line-kw">CT selection · CT ratio · burden · current transformer sizing</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/smart-meters-explained">
-      <img class="blog-line-img" src="/assets/images/blog/blog-smart-meters-explained/hero.jpg" alt="Smart Meters Explained: What They Do and How They Save You Money" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/blog-smart-meters-explained/card.jpg" alt="Smart Meters Explained: What They Do and How They Save You Money" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Smart Meters Explained: What They Do and How They Save You Money</h3>
         <p class="blog-line-kw">smart meter benefits · smart electricity meter · real-time monitoring · AMI</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/prepaid-metering-for-landlords">
-      <img class="blog-line-img" src="/assets/images/blog/prepaid-metering-for-landlords/hero.jpg" alt="Prepaid Metering for Landlords: Benefits and Implementation Tips" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/prepaid-metering-for-landlords/card.jpg" alt="Prepaid Metering for Landlords: Benefits and Implementation Tips" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Prepaid Metering for Landlords: Benefits and Implementation Tips</h3>
         <p class="blog-line-kw">prepaid meter landlord · sub-metering · tenant billing · property management</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/what-is-a-current-transformer">
-      <img class="blog-line-img" src="/assets/images/blog/blog-what-is-a-current-transformer/hero.jpg" alt="What Is a Current Transformer? Explained in Plain Language" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/blog-what-is-a-current-transformer/card.jpg" alt="What Is a Current Transformer? Explained in Plain Language" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">What Is a Current Transformer? Explained in Plain Language</h3>
         <p class="blog-line-kw">current transformer · CT accuracy class · metering transformer · energy metering</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/factory-energy-monitoring">
-      <img class="blog-line-img" src="/assets/images/blog/factory-energy-monitoring/hero.jpg" alt="Factory Energy Monitoring: Cut Costs with Real-Time Data" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/factory-energy-monitoring/card.jpg" alt="Factory Energy Monitoring: Cut Costs with Real-Time Data" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Factory Energy Monitoring: Cut Costs with Real-Time Data</h3>
         <p class="blog-line-kw">factory energy monitoring · industrial energy management · submetering</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/voltage-stabilizer-guide">
-      <img class="blog-line-img" src="/assets/images/blog/blog-voltage-stabilizer-guide/hero.jpg" alt="Voltage Stabilizers Explained: How to Protect Your Appliances" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/blog-voltage-stabilizer-guide/card.jpg" alt="Voltage Stabilizers Explained: How to Protect Your Appliances" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Voltage Stabilizers Explained: How to Protect Your Appliances</h3>
         <p class="blog-line-kw">voltage stabilizer · AVR · voltage fluctuation · appliance protection</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/voltage-stabilizer-sizing-guide">
-      <img class="blog-line-img" src="/assets/images/blog/voltage-stabilizer-sizing-guide/hero.jpg" alt="Voltage Stabilizer Sizing: Matching the Right kVA to Your Load" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/voltage-stabilizer-sizing-guide/card.jpg" alt="Voltage Stabilizer Sizing: Matching the Right kVA to Your Load" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Voltage Stabilizer Sizing: Matching the Right kVA to Your Load</h3>
         <p class="blog-line-kw">voltage stabilizer sizing · AVR kVA · stabilizer capacity · load calculation</p>
       </div>
     </a>
     <a class="blog-line" data-category="guides" href="/blog/exporting-electrical-products-guide">
-      <img class="blog-line-img" src="/assets/images/blog/exporting-electrical-products-guide/hero.jpg" alt="The Complete Guide to Exporting Electrical Products from China" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/exporting-electrical-products-guide/card.jpg" alt="The Complete Guide to Exporting Electrical Products from China" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">The Complete Guide to Exporting Electrical Products from China</h3>
         <p class="blog-line-kw">electrical products export · CE certification · meter supplier China · international trade</p>
       </div>
     </a>
     <a class="blog-line" data-category="shipments" href="/blog/nepal-loading">
-      <img class="blog-line-img" src="/logo_transparent.png" alt="Nepal Container Loading: Primary & Secondary Current Transformers Shipped" loading="lazy" onerror="this.style.display='none'">
+      <img class="blog-line-img" src="/assets/images/blog/nepal-loading/card.jpg" alt="Nepal Container Loading: Primary & Secondary Current Transformers Shipped" loading="lazy" onerror="this.style.display='none'">
       <div class="blog-line-body">
         <h3 class="blog-line-title">Nepal Container Loading: Primary &amp; Secondary Current Transformers Shipped</h3>
         <p class="blog-line-kw">current transformer shipment · container loading · Nepal · export logistics</p>
