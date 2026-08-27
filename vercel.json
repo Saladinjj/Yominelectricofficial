@@ -618,6 +618,10 @@
       "dest": "/products.html"
     },
     {
+      "src": "/product",
+      "dest": "/products.html"
+    },
+    {
       "src": "/category/:slug",
       "dest": "/products/:slug.html"
     },
