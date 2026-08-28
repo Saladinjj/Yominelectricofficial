@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-T0HYWYQ6NF');
+
+</script>
+
+<meta charset="UTF-8">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Power Meter with CT: How Metering with Current Transformers Works | Yomin Electric Blog</title>
+
+<meta name="description" content="Why power and energy meters above 100A use external current transformers: CT ratios, accuracy classes, split-core vs solid CTs, and how to pair a meter with the right CT.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/power-meter-with-ct-guide/hero.jpg">
+
+<link rel="canonical" href="https://www.yominelectric.com/blog/power-meter-with-ct-guide">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Power Meter with CT: How Metering with Current Transformers Works","datePublished":"2026-08-28","author":{"@type":"Organization","name":"Yomin Electric"},"publisher":{"@type":"Organization","name":"Yomin Electric","logo":{"@type":"ImageObject","url":"https://www.yominelectric.com/logo_transparent.png"}},"image":"https://www.yominelectric.com/assets/images/blog/power-meter-with-ct-guide/hero.jpg"}</script>
+
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+
+    <div class="bh-breadcrumb"><a href="/">Home</a> · <a href="/blog">Blog</a> · <span>Power Meter with CT: How Metering with Current Transformers Works</span></div>
+
+    <span class="bh-tag">Technical Guides</span>
+
+    <h1 class="bh-title">Power Meter with CT: How Metering with Current Transformers Works</h1>
+
+    <div class="bh-meta">
+
+      <div class="avatar">ET</div>
+
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+
+      <span class="divider"></span>
+
+      <span>8 min read</span>
+
+      <span class="divider"></span>
+
+      <span>August 28, 2026</span>
+
+    </div>
+
+  </section>
+
+  <section class="content-section">
+
+    <img class="hero-img" src="/assets/images/blog/power-meter-with-ct-guide/hero.jpg" alt="Power meter wired with current transformers in an electrical panel" loading="eager">
+
+    <p>A <strong>power meter with CT</strong> is an energy or power meter that measures through external current transformers (CTs) instead of carrying the full load current directly. CTs step the feeder current down to a safe, standard secondary &mdash; typically 5 A (or 1 A) &mdash; so the meter can safely and accurately measure feeders of any size. Above roughly 100 A, CT-operated metering is the standard method.</p>
+
+    <p>This guide explains why CT metering exists, how to choose the CT ratio and class, and how to pair a meter with the right transformer for accurate, billing-grade measurement.</p>
+
+    <h2>Why Meters Need CTs</h2>
+
+    <p>Direct-connected meters carry full load current through their terminals, which limits them to roughly 60&ndash;100 A. Industrial feeders, main incomers and large machines exceed this by far &mdash; 200 A, 600 A or 2000 A are common. Current transformers solve the problem in three ways:</p>
+
+    <ul>
+
+      <li><strong>Safety</strong> &mdash; the meter sees a small, isolated secondary current instead of the full feeder current.</li>
+
+      <li><strong>Standardization</strong> &mdash; one meter design covers any feeder size; the CT ratio does the scaling.</li>
+
+      <li><strong>Retrofitability</strong> &mdash; CTs clamp or wrap around existing cables and busbars without cutting the feeder.</li>
+
+    </ul>
+
+    <p>For the fundamentals of what a CT is, see our <a href="/blog/what-is-a-current-transformer">what is a current transformer</a> explainer.</p>
+
+    <h2>How CT Metering Works: Ratio, Secondary and Scaling</h2>
+
+    <p>A CT is a transformer with a primary (the conductor being measured) and a secondary (typically rated 5 A or 1 A). A <strong>2000/5 A</strong> CT means that when 2000 A flows in the primary, 5 A flows in the secondary. The meter measures the secondary and multiplies by the ratio to display the true value:</p>
+
+    <ul>
+
+      <li>Reading = secondary current &times; CT ratio (e.g. 3 A &times; 400 = 1200 A).</li>
+
+      <li>Energy displayed in kWh is already ratio-corrected by the meter when the CT ratio is programmed correctly.</li>
+
+    </ul>
+
+    <p>The meter must be configured with the correct CT ratio &mdash; get this wrong and every reading is wrong by the same factor. Always record the ratio on the panel label.</p>
+
+    <h2>CT Types: Solid (Ring) vs Split-Core</h2>
+
+    <table>
+
+      <thead><tr><th>Type</th><th>Installation</th><th>Best for</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Solid / ring CT</td><td>Feed the cable or busbar through the window before terminating</td><td>New builds, panels under construction, highest accuracy</td></tr>
+
+        <tr><td>Split-core CT</td><td>Open the CT, clamp it around an existing cable, close</td><td>Retrofits, live feeders, no need to disconnect</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Split-core CTs sacrifice a little accuracy for installation convenience &mdash; typically Class 0.5 to 1.0 &mdash; which is perfectly adequate for monitoring and most sub-metering. For revenue-grade metering on new installations, solid ring CTs in Class 0.5S are preferred.</p>
+
+    <h2>Choosing the CT Ratio</h2>
+
+    <p>The ratio should place the feeder's normal operating current in the CT's accurate range. A simple rule:</p>
+
+    <ol>
+
+      <li>Estimate the feeder's full-load current (e.g. a 160 kVA, 400 V three-phase feeder draws about 230 A).</li>
+
+      <li>Pick the next standard CT primary above that &mdash; e.g. 250/5 A or 300/5 A.</li>
+
+      <li>Check the expected load sits at 30&ndash;100% of the CT primary for the best accuracy.</li>
+
+    </ol>
+
+    <p>Common standard primaries: 100, 150, 200, 250, 300, 400, 500, 600, 800, 1000, 1500, 2000 A and above. See our <a href="/blog/ct-ratio-explained">CT ratio explained</a> article for the worked examples.</p>
+
+    <h2>Accuracy Class: Matching CT to Meter</h2>
+
+    <p>The system accuracy is only as good as the weakest link. Pairing rules of thumb:</p>
+
+    <table>
+
+      <thead><tr><th>Application</th><th>Meter class</th><th>CT class</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Energy monitoring / sub-metering</td><td>Class 1.0</td><td>Class 1.0 or 0.5</td></tr>
+
+        <tr><td>Cost allocation between departments/tenants</td><td>Class 0.5S</td><td>Class 0.5 / 0.5S</td></tr>
+
+        <tr><td>Utility revenue billing</td><td>Class 0.5S (per utility spec)</td><td>Class 0.5S metering CTs</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Never put a Class 2.0 CT in front of a Class 0.5S meter &mdash; the CT error dominates and the expensive meter is wasted. Our <a href="/blog/how-to-select-the-right-current-transformer-for-electrical-measurement">CT selection guide</a> covers this in depth.</p>
+
+    <h2>Wiring the Meter and CTs</h2>
+
+    <ul>
+
+      <li>Connect CT secondaries to the meter's current inputs (usually terminals labelled S1/S2 per phase).</li>
+
+      <li>For three-phase, three CTs (one per phase) or a two-CT (Aron) connection per the meter manual.</li>
+
+      <li>Connect voltage inputs from the busbars or a small fuse-protected tap &mdash; the meter calculates power from voltage and current inputs together.</li>
+
+      <li><strong>Never open the secondary circuit of an energized CT</strong> &mdash; it can develop lethal voltage. Short the secondary before disconnecting.</li>
+
+      <li>Ground one secondary terminal per safety codes where required.</li>
+
+    </ul>
+
+    <h2>Common Applications</h2>
+
+    <ul>
+
+      <li><strong>Main incomers</strong> in commercial buildings and factories &mdash; where the utility meter is too small to sub-meter from.</li>
+
+      <li><strong>Large machines and processes</strong> &mdash; motor control centres, compressors, furnaces.</li>
+
+      <li><strong>Solar and storage systems</strong> &mdash; CTs on the grid connection for bidirectional metering; read about <a href="/blog/what-is-a-bidirectional-meter">bidirectional meters</a>.</li>
+
+      <li><strong>Data centres</strong> &mdash; PUE tracking at switchboard level.</li>
+
+      <li><strong>Tenant sub-metering</strong> &mdash; where individual tenant loads exceed direct-connection limits.</li>
+
+    </ul>
+
+    <h2>Yomin Electric Meter + CT Solutions</h2>
+
+    <p>Yomin Electric supplies complete metering packages: meters with CT/CT&amp;PT connection modes matched with the right current transformers. A proven combination is the <a href="/products/energy-meter/three-phase-four-wire-digital-multifunction-electric-meter-with-maximum-demand-and-energy-management-system">Three-Phase Multifunction Meter (YEM061AL)</a> &mdash; Class 1.0, RS485 communication, six tariffs and maximum-demand recording, with direct, CT or CT&amp;PT connection modes &mdash; paired with Yomin <a href="/products/current-transformer">current transformers</a> in solid ring and split-core types, from 1000/5 A up in Class 0.5/0.5S.</p>
+
+    <p>Tell us the feeder current, system voltage and whether it is a new build or retrofit, and our engineers will specify the exact meter + CT pair. Browse the <a href="/products/energy-meter">energy meter range</a>, the <a href="/products/current-transformer">CT range</a>, or <a href="/contact?product=Current%20Transformers">request a meter + CT quotation</a>.</p>
+
+    <h2>FAQ</h2>
+
+    <h3>At what current do I need a CT-operated meter?</h3>
+
+    <p>As a rule, above 60&ndash;100 A you should move from direct connection to CT metering. Check the meter's maximum direct rating and the available wire size &mdash; large conductors are impractical to terminate in small meters.</p>
+
+    <h3>What does 2000/5A mean on a CT?</h3>
+
+    <p>It means the CT's primary is rated 2000 A and its secondary outputs 5 A at full rating. The meter uses this ratio to scale its readings to the actual primary current.</p>
+
+    <h3>Can a split-core CT be used for billing?</h3>
+
+    <p>Split-core CTs are generally Class 0.5&ndash;1.0, acceptable for monitoring and internal cost allocation. For revenue billing, utilities typically require Class 0.5S solid metering CTs on new installations.</p>
+
+    <h3>What happens if the CT ratio is set wrong in the meter?</h3>
+
+    <p>All current, power and energy readings are scaled by the wrong factor &mdash; e.g. a 400/5 CT programmed as 200/5 reads double the actual energy. Always verify the programmed ratio against the installed CT after commissioning.</p>
+
+    <h2>Conclusion</h2>
+
+    <p>CT-operated metering is how large loads get measured safely and accurately. Choose solid ring CTs for new installations, split-core for retrofits, match the ratio to the feeder load, and keep the CT class at or above the meter class. Yomin Electric supplies meters and CTs as matched packages with engineering support to confirm the specification. <a href="/contact?product=Current%20Transformers">Contact us with your feeder details</a> and we will recommend the right pair within 24 hours.</p>
+  </section>
+<section class="cta-section">
+
+    <h2>Need Help Choosing the Right Product?</h2>
+
+    <p>Our engineers can recommend the exact model, rating and configuration for your project. Tell us your requirements and get a factory-direct quote within 24 hours.</p>
+    <div class="cta-wrap">
+
+      <a href="/contact" class="cta-btn">Get a Quote</a>
+
+      <a href="https://wa.me/8619016543301" class="cta-btn ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+
+    </div>
+  </section>
+
+  </main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+
+<script defer src="/assets/js/i18n-es.js"></script>
+
+</body>
+
+</html>
