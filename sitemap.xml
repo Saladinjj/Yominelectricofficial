@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Yomin Electric Sitemap | Generated 2026-08-28 | 1176 URLs -->
+<!-- Yomin Electric Sitemap | Generated 2026-08-28 | 1187 URLs -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.yominelectric.com/</loc>
@@ -3758,6 +3758,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.yominelectric.com/products/fuse-protection/din-rail-time-control-electric-switch-digital-automatic-transfer-switch-tc01-timer-switch</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.yominelectric.com/products/fuse-protection/factory-direct-bp32-series-isolating-switch-100a-250a-400a-630a-flame-retardant-negative-pole-isolating-switch</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -3897,6 +3903,12 @@
   </url>
   <url>
     <loc>https://www.yominelectric.com/products/fuse-protection/manufacturer-s-fuse-disconnect-switch-pnc-series-disconnect-switch-250a-knife-switch-anti-accidental-touch-dis</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yominelectric.com/products/fuse-protection/manufacturers-63a-dc-current-electronic-circuit-breaker-switch-pc-power-supply-equipment-voltage-protective-st</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4448,6 +4460,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.yominelectric.com/products/solar-pv-products/certified-new-energy-system-t2-2p-pv-1000v-rated-voltage-40ka-max-current-capacity-3p-solar-surge-protector</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.yominelectric.com/products/solar-pv-products/dc-4p-32a-circuit-breaker-mcb-2-poles-solar-energy-photovoltaic-pv-mini-air-switch-circuit-breaker</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -4484,7 +4502,25 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.yominelectric.com/products/solar-pv-products/fast-delivery-dc-breaker-63a-80a-100a-125a-500v-1000v-dc-photovoltaic-breaker-circuit-breaker-for-solar-panel-</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yominelectric.com/products/solar-pv-products/high-and-low-breaking-capacity-new-energy-pv-fuse-series-for-low-voltage-usage-replaceable-fuse-holder</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.yominelectric.com/products/solar-pv-products/new-energy-1000v-photovoltaic-combiner-box-3-in-1-out-solar-panel-array-lightning-protection-for-solar-freezer</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yominelectric.com/products/solar-pv-products/nh1-80a-125a-250a-48v-pv-dc-solar-fuse-for-distribution-box</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4502,7 +4538,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.yominelectric.com/products/solar-pv-products/pv-fuse-series-box-knife-shape-contact-fg-series-high-low-breaking-capacity-fuse-holder-for-low-voltage-usage</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.yominelectric.com/products/solar-pv-products/solar-system-dc-mcb-1000v-1p-2p-3p-4p-10a-16a-63a-curve-dc-miniature-circuit-breaker-mcb-rail-mountable-circui</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yominelectric.com/products/solar-pv-products/t2-2p-pv-solar-surge-protector-1000v-rated-voltage-40ka-max-current-capacity-3p-solar-protector-tuv-certified-</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5379,6 +5427,12 @@
   </url>
   <url>
     <loc>https://www.yominelectric.com/products/tools-hardware/ruler-full-metal-angle-measuring-tool-aluminum-alloy-multi-functional-ruler-template-tool</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yominelectric.com/products/tools-hardware/soft-and-comfortable-garden-knee-pad-waterproof-work-knee-protector-tiling-knee-pads</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6261,6 +6315,18 @@
   </url>
   <url>
     <loc>https://www.yominelectric.com/products/voltage-stabilizer-regulator/high-quality-1600va-ppt-series-automatic-220v-intelligent-automatic-voltage-regulation-and-stabilizer-voltage-</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yominelectric.com/products/voltage-stabilizer-regulator/high-quality-adjustable-over-under-voltage-protector-single-phase-electric-power-protector-made-of-pc-dc-curre</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yominelectric.com/products/voltage-stabilizer-regulator/high-quality-dc-single-phase-voltage-protector-adjustable-over-under-electric-power-voltage-protector</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
