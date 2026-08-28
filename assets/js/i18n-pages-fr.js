@@ -57,7 +57,6 @@ window.__ymPagesI18n['fr'] = {
     'cat_variac-transformer': 'Transformateurs Variac',
     'cat_terminal-connector': 'Bornes & Connecteurs',
     'cat_fuse-protection': 'Fusibles & Protection',
-    'cat_emergency-lighting': 'Éclairage de Secours',
     'cat_socket-wiring': 'Prises & Câblage',
     'cat_solar-pv-products': 'Produits Solaires & PV',
     'cat_tools-hardware': 'Outils & Quincaillerie',

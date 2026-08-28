@@ -57,7 +57,6 @@ window.__ymPagesI18n['ar'] = {
     'cat_variac-transformer': 'محولات فاريك',
     'cat_terminal-connector': 'طرفيات وموصلات',
     'cat_fuse-protection': 'المنصهرات والحماية',
-    'cat_emergency-lighting': 'إضاءة الطوارئ',
     'cat_socket-wiring': 'مقابس وأسلاك',
     'cat_solar-pv-products': 'منتجات الطاقة الشمسية',
     'cat_tools-hardware': 'أدوات ومعدات',
