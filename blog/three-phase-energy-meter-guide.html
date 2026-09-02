@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-T0HYWYQ6NF');
+
+</script>
+
+<meta charset="UTF-8">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Three-Phase Energy Meters: 3-Wire vs 4-Wire, Direct vs CT, and How to Specify</title>
+
+<meta name="description" content="Three phase energy meter guide: three-wire vs four-wire, direct-connected vs CT-operated, accuracy class, DIN rail mounting and the YEM024SJ-N specification.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/three-phase-energy-meter-guide/hero.png">
+
+<link rel="canonical" href="https://www.yominelectric.com/blog/three-phase-energy-meter-guide">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline": "Three-Phase Energy Meters: 3-Wire vs 4-Wire, Direct vs CT, and How to Specify","datePublished": "2026-09-02","author":{"@type":"Organization","name":"Yomin Electric"},"publisher":{"@type":"Organization","name":"Yomin Electric","logo":{"@type":"ImageObject","url":"https://www.yominelectric.com/logo_transparent.png"}},"image":"https://www.yominelectric.com/assets/images/blog/prepaid-meter-supplier-guide/hero.jpg"}</script>
+
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; Energy Meters</div>
+    <div class="bh-tag">Buyer's Guides</div>
+    <h1>Three-Phase Energy Meters: 3-Wire vs 4-Wire, Direct vs CT, and How to Specify</h1>
+    <div class="bh-meta"><img class="bh-avatar" src="/assets/images/et-avatar.png" alt="ET Engineering Team"><span><strong>ET Engineering Team</strong> 9 min read &middot; September 2, 2026</span></div>
+
+  </section>
+
+  <section class="content-section">
+
+    <img class="hero-img" src="/assets/images/blog/three-phase-energy-meter-guide/hero.png" alt="Three phase energy meter guide: three-wire vs four-wire, direct-connected vs CT-operated, accuracy class, DIN rail mounting and the YEM024SJ-N specification." loading="lazy">
+
+    <p><strong>Direct answer:</strong> "three-phase energy meter" is a category, not a specification. Before ordering you need four decisions: three-wire or four-wire, direct-connected or CT-operated, accuracy class, and communication. Get any of them wrong and the problem usually surfaces at commissioning, not at ordering.</p>
+
+    <p>We supply three-phase meters to distributors and contractors across India, the UK, the Philippines and Pakistan, and the same specification mistakes recur. Here is what each decision actually means.</p>
+
+    <h2>Decision 1: Three-Wire or Four-Wire</h2>
+    <table>
+      <tr><th></th><th>3-phase 3-wire</th><th>3-phase 4-wire</th></tr>
+      <tr><td>Neutral</td><td>No neutral</td><td>Neutral present</td></tr>
+      <tr><td>Measuring elements</td><td>Two</td><td>Three</td></tr>
+      <tr><td>Typical loads</td><td>Motors, delta-connected industrial</td><td>Mixed commercial, any single-phase loads</td></tr>
+      <tr><td>Common supply</td><td>3&times;400&nbsp;V delta</td><td>3&times;230/400&nbsp;V star</td></tr>
+    </table>
+    <p>The practical rule: if any single-phase load is fed from this supply, you need four-wire. A three-wire meter on a four-wire system with unbalanced single-phase loading will not measure correctly, because the neutral current has nowhere to be accounted for.</p>
+
+    <h2>Decision 2: Direct-Connected or CT-Operated</h2>
+    <p><strong>Direct-connected</strong> means the load current flows through the meter itself. Simple, fewer components, no CT error contribution &mdash; but limited by the meter's current rating. A 3&times;5(80)&nbsp;A meter handles up to 80&nbsp;A continuous.</p>
+    <p><strong>CT-operated</strong> means current transformers step the current down and the meter measures the secondary. Necessary above roughly 100&nbsp;A, and required wherever the conductors are too large to route through a meter.</p>
+    <p>The notation matters: <strong>3&times;5(80)A</strong> means a basic current of 5&nbsp;A with a maximum of 80&nbsp;A. The first number is where the meter is calibrated; the second is the ceiling. Buyers frequently read only the larger number.</p>
+
+    <h2>Decision 3: Accuracy Class</h2>
+    <ul>
+      <li><strong>Class 1.0</strong> &mdash; the standard for commercial and industrial billing under IEC 62053-21. Suits the large majority of applications.</li>
+      <li><strong>Class 0.5S</strong> &mdash; higher precision, holds accuracy down to 1% of rated current. Specify where the load profile has deep troughs or the utility demands it.</li>
+      <li><strong>Class 2.0</strong> &mdash; monitoring only, not billing.</li>
+    </ul>
+
+    <h2>Decision 4: Communication</h2>
+    <ul>
+      <li><strong>Pulse output</strong> &mdash; simplest; one pulse per defined energy increment, read by an external system.</li>
+      <li><strong>RS485 / Modbus RTU</strong> &mdash; the workhorse for BMS and SCADA integration. Multi-drop on one bus.</li>
+      <li><strong>Wi-Fi</strong> &mdash; convenient for buildings with reliable coverage; watch panel-enclosure signal attenuation.</li>
+      <li><strong>GPRS / 4G / LoRa</strong> &mdash; remote sites with no local network.</li>
+    </ul>
+    <p>Do not pay for communication you will not commission. An unused RS485 port costs little; an unused cellular module costs real money per unit and may carry ongoing connectivity fees.</p>
+
+    <h2>A Concrete Reference: YEM024SJ-N</h2>
+    <p>To make the above tangible, here is one of our standard three-phase DIN-rail meters:</p>
+    <table>
+      <tr><th>Specification</th><th>Value</th></tr>
+      <tr><td>Configuration</td><td>Three-phase four-wire</td></tr>
+      <tr><td>Voltage</td><td>3&times;230&nbsp;V / 400&nbsp;V</td></tr>
+      <tr><td>Current</td><td>3&times;5(80)&nbsp;A</td></tr>
+      <tr><td>Accuracy class</td><td>Class 1.0</td></tr>
+      <tr><td>Standard</td><td>IEC 62053-21</td></tr>
+      <tr><td>Dimensions</td><td>88 &times; 75 &times; 73&nbsp;mm</td></tr>
+      <tr><td>Mounting</td><td>35&nbsp;mm standard DIN rail</td></tr>
+      <tr><td>Operating temperature</td><td>&minus;20&nbsp;&deg;C to +70&nbsp;&deg;C</td></tr>
+      <tr><td>Connection mode</td><td>Direct / CT / CT&amp;PT</td></tr>
+      <tr><td>Case material</td><td>PC (polycarbonate)</td></tr>
+      <tr><td>Display</td><td>Digital LCD</td></tr>
+    </table>
+
+    <h2>Sizing: Use Demand, Not Breaker Rating</h2>
+    <p>A recurring error is sizing the meter to the incoming breaker. The breaker is a protection device sized for fault handling and future headroom; it is not a statement of actual load. Size the meter to measured or calculated peak demand with sensible margin. Over-sizing pushes normal operation into the bottom of the measuring range, which is exactly where accuracy is weakest.</p>
+
+    <h2>Installation Checklist</h2>
+    <ol>
+      <li>Confirm phase rotation before energising.</li>
+      <li>Verify CT polarity &mdash; reversed polarity produces negative or wildly wrong readings on that phase.</li>
+      <li>Check DIN rail is the 35&nbsp;mm standard type.</li>
+      <li>Confirm each phase indicator illuminates after energising.</li>
+      <li>Cross-check the first reading against a clamp meter on a known load.</li>
+    </ol>
+
+    <h2>FAQ</h2>
+    <h3>Can I use a three-phase meter on a single-phase supply?</h3>
+    <p>Technically it will run on one element, but it is the wrong tool and wastes cost. Use a single-phase meter.</p>
+    <h3>What does 3&times;5(80)A mean?</h3>
+    <p>Basic current 5&nbsp;A, maximum current 80&nbsp;A, on each of three phases. The meter is calibrated around the basic current and rated to handle up to the maximum continuously.</p>
+    <h3>Is Class 1.0 accepted for billing?</h3>
+    <p>Yes in most markets under IEC 62053-21. Some utilities require Class 0.5S for larger connections &mdash; check the local requirement before ordering.</p>
+    <h3>Do you offer OEM branding?</h3>
+    <p>Yes &mdash; custom logo, firmware configuration, communication protocol and packaging. MOQ is typically higher for OEM than for standard models; we confirm exact figures with the quotation.</p>
+
+    <h2>Factory-Direct Supply</h2>
+    <p>Zhejiang Yomin Electric has manufactured energy meters since 1996, shipping to 95+ countries with every unit tested before dispatch. <a href="/products/energy-meter">Browse the three-phase range</a> or <a href="/contact">send your specification</a> &mdash; voltage, wiring configuration, current, accuracy class and communication &mdash; for a quotation within 24 hours.</p>
+
+  </section>
+
+  <section class="cta-section">
+    <h2>Need a Quote or Want to Talk Specs?</h2>
+    <p>Our engineers answer within 24 hours with a factory-direct quotation, MOQ and lead time for your exact requirement.</p>
+    <div class="cta-wrap">
+      <a href="/contact" class="cta-btn">Get a Quote</a>
+      <a href="https://wa.me/8619016543301" class="cta-btn ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+
+<script defer src="/assets/js/i18n-es.js"></script>
+
+</body>
+
+</html>
