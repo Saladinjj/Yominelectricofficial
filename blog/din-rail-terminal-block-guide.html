@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-T0HYWYQ6NF');
+
+</script>
+
+<meta charset="UTF-8">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>DIN Rail Terminal Blocks: Sizing, Rail Standards and Screw vs Spring Clamp</title>
+
+<meta name="description" content="DIN rail terminal block guide: TS35 vs TS15 rail standards, conductor sizing, current and voltage rating, screw vs spring-clamp vs push-in, and derating in full enclosures.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/din-rail-terminal-block-guide/hero.png">
+
+<link rel="canonical" href="https://www.yominelectric.com/blog/din-rail-terminal-block-guide">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline": "DIN Rail Terminal Blocks: Sizing, Rail Standards and Screw vs Spring Clamp","datePublished": "2026-09-03","author":{"@type":"Organization","name":"Yomin Electric"},"publisher":{"@type":"Organization","name":"Yomin Electric","logo":{"@type":"ImageObject","url":"https://www.yominelectric.com/logo_transparent.png"}},"image":"https://www.yominelectric.com/assets/images/blog/prepaid-meter-supplier-guide/hero.jpg"}</script>
+
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; Terminals & Connectors</div>
+    <div class="bh-tag">Buyer's Guides</div>
+    <h1>DIN Rail Terminal Blocks: Sizing, Rail Standards and Screw vs Spring Clamp</h1>
+    <div class="bh-meta"><img class="bh-avatar" src="/assets/images/et-avatar.png" alt="ET Engineering Team"><span><strong>ET Engineering Team</strong> 9 min read &middot; September 3, 2026</span></div>
+
+  </section>
+
+  <section class="content-section">
+
+    <img class="hero-img" src="/assets/images/blog/din-rail-terminal-block-guide/hero.png" alt="DIN rail terminal block guide: TS35 vs TS15 rail standards, conductor sizing, current and voltage rating, screw vs spring-clamp vs push-in, and derating in full enclosures." loading="lazy">
+
+    <p><strong>Direct answer:</strong> a DIN rail terminal block is a modular connector that clips onto a standardised metal rail inside a panel, joining incoming and outgoing conductors at a defined, inspectable point. You select one by conductor cross-section, current and voltage rating, rail standard and clamping technology.</p>
+
+    <p>Terminal blocks are the least glamorous component in a panel and one of the most common sources of callbacks. A loose terminal generates heat, and heat loosens it further. Getting the selection right at design time removes an entire category of field failure.</p>
+
+    <h2>Rail Standards &mdash; Check Before You Order</h2>
+    <table>
+      <tr><th>Designation</th><th>Width</th><th>Common name</th><th>Where used</th></tr>
+      <tr><td>TS35 / TH35</td><td>35&nbsp;mm</td><td>"Top hat"</td><td>The default for most industrial panels</td></tr>
+      <tr><td>TS15</td><td>15&nbsp;mm</td><td>Miniature top hat</td><td>Compact enclosures</td></tr>
+      <tr><td>TS32</td><td>32&nbsp;mm</td><td>"G" profile</td><td>Older and some specialist installations</td></tr>
+    </table>
+    <p>TS35 is so dominant that people say "DIN rail" and mean it &mdash; but 15&nbsp;mm and G-profile rails are still out there, particularly in retrofit work. Confirm the rail before ordering a batch of blocks that will not clip on.</p>
+    <p>Rail depth matters too: 7.5&nbsp;mm and 15&nbsp;mm deep variants exist, and deep rails are used where mechanical loading is higher.</p>
+
+    <h2>Clamping Technology</h2>
+    <table>
+      <tr><th></th><th>Screw clamp</th><th>Spring clamp</th><th>Push-in</th></tr>
+      <tr><td>Installation speed</td><td>Slowest</td><td>Fast</td><td>Fastest</td></tr>
+      <tr><td>Vibration resistance</td><td>Needs re-torque checks</td><td>Excellent</td><td>Excellent</td></tr>
+      <tr><td>Re-termination</td><td>Easy, many cycles</td><td>Easy</td><td>Easy with release tool</td></tr>
+      <tr><td>Fine stranded wire</td><td>Ferrule recommended</td><td>Handles well</td><td>Ferrule usually required</td></tr>
+      <tr><td>Cost</td><td>Lowest</td><td>Moderate</td><td>Moderate</td></tr>
+    </table>
+    <p>The vibration row is the one that decides most industrial jobs. A screw terminal on a machine that vibrates continuously will need periodic re-torquing, and in practice that maintenance often does not happen. Spring-clamp designs maintain contact force as the joint relaxes and are the safer default in that environment.</p>
+
+    <h2>Sizing to the Conductor</h2>
+    <p>Terminal blocks are rated for a conductor cross-section range, not a single size. Both ends of that range matter:</p>
+    <ul>
+      <li><strong>Too large a conductor</strong> will not seat properly &mdash; the clamp cannot close on it correctly.</li>
+      <li><strong>Too small a conductor</strong> in an oversized clamp gives inadequate contact pressure and a high-resistance joint.</li>
+      <li><strong>Fine-stranded conductors</strong> should be ferruled for screw and push-in terminals. Bare strands splay, and splayed strands escape the clamp.</li>
+    </ul>
+
+    <h2>Current Rating and the Derating Everyone Forgets</h2>
+    <p>The printed current rating assumes defined conditions &mdash; typically a single block at a reference ambient temperature with free air around it. Real panels violate all of that.</p>
+    <p>Three derating factors apply in combination:</p>
+    <ol>
+      <li><strong>Ambient temperature.</strong> A panel in direct sun or beside a heat source runs far above the reference figure.</li>
+      <li><strong>Block density.</strong> Fifty blocks packed on a rail heat each other. This is the factor most often ignored.</li>
+      <li><strong>Enclosure ventilation.</strong> A sealed IP66 box behaves very differently from a louvred cabinet.</li>
+    </ol>
+    <p>A conservative design leaves genuine margin on current rating rather than specifying to the nameplate figure and hoping.</p>
+
+    <h2>The Accessories That Make an Installation Maintainable</h2>
+    <ul>
+      <li><strong>End brackets</strong> &mdash; without them the assembly slides along the rail.</li>
+      <li><strong>End plates</strong> &mdash; close off the last block and maintain insulation.</li>
+      <li><strong>Jumper bars</strong> &mdash; distribute a common potential cleanly instead of daisy-chaining loops of wire.</li>
+      <li><strong>Marking strips</strong> &mdash; the difference between a five-minute fault trace and an hour of continuity testing.</li>
+      <li><strong>Neutral and ground bars</strong> &mdash; dedicated bars for star points and earthing.</li>
+    </ul>
+
+    <h2>Yomin's Terminal &amp; Connector Range</h2>
+    <p>Our Terminal &amp; Connector range includes aluminium screw terminals, neutral and ground bars, mechanical lugs such as the TA-250 (250&nbsp;mcm&ndash;6) splice connector, and multi-hole aluminium alloy terminal lugs &mdash; with custom configurations manufactured to order.</p>
+    <p>For a visual walk-through of the whole connector family, see our <a href="/blog/terminal-blocks-connectors-identification-guide">terminal blocks, lugs and bars identification chart</a>.</p>
+
+    <h2>FAQ</h2>
+    <h3>Can I mix terminal block brands on one rail?</h3>
+    <p>Mechanically they will usually clip on together, but jumper bars and end plates are generally not interchangeable between manufacturers. Keep one family per rail section.</p>
+    <h3>How tight should a screw terminal be?</h3>
+    <p>To the manufacturer's stated torque &mdash; use a torque screwdriver. Over-tightening damages fine strands and can crack the housing; under-tightening leaves a resistive joint.</p>
+    <h3>Do I need ferrules?</h3>
+    <p>For fine-stranded conductors in screw or push-in terminals, yes. Spring-clamp terminals tolerate bare fine strands better, but ferrules remain good practice.</p>
+    <h3>What size DIN rail do I need?</h3>
+    <p>TS35 covers the large majority of industrial work. Verify against your existing enclosure before ordering.</p>
+
+    <h2>Factory-Direct Supply</h2>
+    <p>Zhejiang Yomin Electric manufactures terminals, connectors, neutral and ground bars and mechanical lugs, shipping to 95+ countries since 1996. <a href="/products/terminal-connector">Browse the terminal and connector range</a> or <a href="/contact">send your conductor size, current rating and rail type</a> for a quotation within 24 hours.</p>
+
+  </section>
+
+  <section class="cta-section">
+    <h2>Need a Quote or Want to Talk Specs?</h2>
+    <p>Our engineers answer within 24 hours with a factory-direct quotation, MOQ and lead time for your exact requirement.</p>
+    <div class="cta-wrap">
+      <a href="/contact" class="cta-btn">Get a Quote</a>
+      <a href="https://wa.me/8619016543301" class="cta-btn ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+
+<script defer src="/assets/js/i18n-es.js"></script>
+
+</body>
+
+</html>

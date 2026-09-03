@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-T0HYWYQ6NF');
+
+</script>
+
+<meta charset="UTF-8">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Rogowski Coil vs Current Transformer: Which One Should You Specify?</title>
+
+<meta name="description" content="Rogowski coil vs current transformer: how each works, saturation and linearity, accuracy class, output signal, cost and the applications where each is the correct choice.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/rogowski-coil-vs-current-transformer/hero.png">
+
+<link rel="canonical" href="https://www.yominelectric.com/blog/rogowski-coil-vs-current-transformer">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline": "Rogowski Coil vs Current Transformer: Which One Should You Specify?","datePublished": "2026-09-03","author":{"@type":"Organization","name":"Yomin Electric"},"publisher":{"@type":"Organization","name":"Yomin Electric","logo":{"@type":"ImageObject","url":"https://www.yominelectric.com/logo_transparent.png"}},"image":"https://www.yominelectric.com/assets/images/blog/prepaid-meter-supplier-guide/hero.jpg"}</script>
+
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; Current Transformers</div>
+    <div class="bh-tag">Buyer's Guides</div>
+    <h1>Rogowski Coil vs Current Transformer: Which One Should You Specify?</h1>
+    <div class="bh-meta"><img class="bh-avatar" src="/assets/images/et-avatar.png" alt="ET Engineering Team"><span><strong>ET Engineering Team</strong> 9 min read &middot; September 3, 2026</span></div>
+
+  </section>
+
+  <section class="content-section">
+
+    <img class="hero-img" src="/assets/images/blog/rogowski-coil-vs-current-transformer/hero.png" alt="Rogowski coil vs current transformer: how each works, saturation and linearity, accuracy class, output signal, cost and the applications where each is the correct choice." loading="lazy">
+
+    <p><strong>Direct answer:</strong> a current transformer uses an iron core and outputs a proportional current (typically 5&nbsp;A or 1&nbsp;A) that can drive a meter directly. A Rogowski coil has an air core, outputs a low-level voltage proportional to the <em>rate of change</em> of current, and needs an integrator. CTs win for revenue metering and direct meter connection; Rogowski coils win for very high currents, wide dynamic range and awkward conductor geometry.</p>
+
+    <p>A note on where we stand: <strong>Yomin manufactures current transformers, not Rogowski coils.</strong> This guide is written as a genuine comparison rather than a sales piece, and it says plainly where a Rogowski coil is the better engineering answer. If your application calls for one, you should use one.</p>
+
+    <h2>How Each One Works</h2>
+    <p>A <strong>current transformer</strong> is a transformer. Primary current through the core induces a proportional current in the secondary winding. The iron core is what makes the ratio stable and the output strong enough to drive a burden directly.</p>
+    <p>A <strong>Rogowski coil</strong> is a helical winding on a non-magnetic (air) core. Because there is no iron, there is nothing to saturate &mdash; but there is also no transformer action producing usable current. The coil outputs a voltage proportional to di/dt, and an integrating circuit converts that back into a current-proportional signal.</p>
+
+    <h2>The Comparison That Matters</h2>
+    <table>
+      <tr><th>Factor</th><th>Current transformer</th><th>Rogowski coil</th></tr>
+      <tr><td>Core</td><td>Iron / silicon steel</td><td>Air (non-magnetic)</td></tr>
+      <tr><td>Saturation</td><td>Saturates at high fault current</td><td>Cannot saturate</td></tr>
+      <tr><td>Output</td><td>5&nbsp;A / 1&nbsp;A current</td><td>Low-level voltage (mV)</td></tr>
+      <tr><td>Needs electronics?</td><td>No &mdash; drives a meter directly</td><td>Yes &mdash; integrator required</td></tr>
+      <tr><td>Linearity range</td><td>Good within rated range</td><td>Excellent, very wide</td></tr>
+      <tr><td>Revenue metering</td><td>Widely approved, Class 0.2 / 0.5</td><td>Approval varies by jurisdiction</td></tr>
+      <tr><td>Weight at high current</td><td>Heavy &mdash; iron scales with rating</td><td>Light regardless of rating</td></tr>
+      <tr><td>Conductor geometry</td><td>Window must fit the conductor</td><td>Flexible &mdash; wraps irregular shapes</td></tr>
+      <tr><td>DC component</td><td>Handles poorly</td><td>Cannot measure DC at all</td></tr>
+      <tr><td>Relative cost</td><td>Lower at typical LV ratings</td><td>Higher once electronics included</td></tr>
+    </table>
+
+    <h2>When the CT Is the Right Answer</h2>
+    <ul>
+      <li><strong>Revenue and billing metering.</strong> Utility approval frameworks are built around CT accuracy classes. A Class 0.5 CT is a known, accepted quantity.</li>
+      <li><strong>Direct meter connection with no added electronics.</strong> A CT's 5&nbsp;A output drives a standard meter with nothing in between &mdash; fewer components, fewer failure points, no auxiliary supply.</li>
+      <li><strong>Standard LV panel work.</strong> At 100&ndash;4000&nbsp;A with normal busbar or cable geometry, a CT is simpler and cheaper.</li>
+      <li><strong>Long service life with zero maintenance.</strong> A passive iron-core device with no electronics has very little to go wrong.</li>
+    </ul>
+
+    <h2>When the Rogowski Coil Is the Right Answer</h2>
+    <ul>
+      <li><strong>Very high fault currents where saturation is the problem.</strong> No core, no saturation &mdash; the output stays linear where a CT would flat-top.</li>
+      <li><strong>Very wide dynamic range</strong> in one device, without switching ranges.</li>
+      <li><strong>Awkward or very large conductors.</strong> A flexible coil wraps a bundle or an irregular bar that no practical CT window would accept.</li>
+      <li><strong>Weight- or space-constrained installations at high current</strong>, where an equivalent CT would be impractically heavy.</li>
+      <li><strong>Transient and power-quality analysis</strong>, where wide bandwidth matters more than steady-state billing accuracy.</li>
+    </ul>
+
+    <h2>Two Practical Cautions</h2>
+    <p><strong>Neither device measures DC.</strong> Both rely on a changing magnetic field. For DC measurement you need a Hall-effect or fluxgate sensor &mdash; a different technology entirely.</p>
+    <p><strong>A Rogowski coil's integrator needs power.</strong> That means an auxiliary supply and active electronics in the measurement chain. On a site where supply reliability is uncertain, a passive CT has a real robustness advantage.</p>
+
+    <h2>Yomin's CT Range</h2>
+    <p>For applications where the CT is the correct choice, our range covers:</p>
+    <ul>
+      <li><strong>Split-core</strong> &mdash; NLH Series, clamps around a live conductor for retrofit without shutdown. See the <a href="/blog/split-core-current-transformer-guide">split-core CT guide</a>.</li>
+      <li><strong>Solid-core / toroidal</strong> &mdash; MSQ, NSQ, MES series.</li>
+      <li><strong>Range</strong> &mdash; 5&ndash;4000&nbsp;A, Class 0.5 and 1.0, 50/60&nbsp;Hz.</li>
+      <li>Custom ratios and window dimensions to order.</li>
+    </ul>
+    <p>On choosing between accuracy classes, see our <a href="/blog/ct-accuracy-class-guide">CT accuracy class guide</a>. For the deeper physics of coil geometry, our earlier piece on <a href="/blog/the-influence-of-shape-and-winding-density-on-rogowski-coil-accuracy-and-sensitivity">shape and winding density in Rogowski coils</a> goes further into the theory.</p>
+
+    <h2>FAQ</h2>
+    <h3>Can a Rogowski coil replace a CT for billing?</h3>
+    <p>Sometimes, but approval is jurisdiction-specific and CT-based metering has far broader acceptance. Check with the utility before designing around one.</p>
+    <h3>Which is more accurate?</h3>
+    <p>Neither wins outright. A good CT is more accurate within its rated range; a Rogowski coil holds linearity across a far wider range. Match the device to the range you actually need to measure.</p>
+    <h3>Why does my CT read wrong during faults?</h3>
+    <p>Almost certainly saturation &mdash; expected behaviour for a metering CT, which is deliberately designed to saturate and protect the meter. If you need accurate fault-current measurement, use a protection-class CT or a Rogowski coil.</p>
+    <h3>Does Yomin supply Rogowski coils?</h3>
+    <p>No. We manufacture current transformers. If your application genuinely needs a Rogowski coil, we would rather tell you so than sell you the wrong instrument.</p>
+
+    <h2>Talk to the Factory</h2>
+    <p>Yomin Electric has manufactured current transformers since 1996, shipping to 95+ countries with every unit tested before dispatch. <a href="/products/current-transformer">Browse the CT range</a> or <a href="/contact">send your current range, accuracy class and conductor dimensions</a> &mdash; we will tell you honestly whether a CT is the right fit.</p>
+
+  </section>
+
+  <section class="cta-section">
+    <h2>Need a Quote or Want to Talk Specs?</h2>
+    <p>Our engineers answer within 24 hours with a factory-direct quotation, MOQ and lead time for your exact requirement.</p>
+    <div class="cta-wrap">
+      <a href="/contact" class="cta-btn">Get a Quote</a>
+      <a href="https://wa.me/8619016543301" class="cta-btn ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+
+<script defer src="/assets/js/i18n-es.js"></script>
+
+</body>
+
+</html>

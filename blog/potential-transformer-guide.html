@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-T0HYWYQ6NF');
+
+</script>
+
+<meta charset="UTF-8">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Potential Transformers: Ratios, Accuracy Classes and How to Specify One</title>
+
+<meta name="description" content="Potential transformer guide: what a PT does, standard ratios like 10kV/100V, accuracy classes 0.2 and 0.5, burden, PT vs CT, and epoxy-cast vs oil-immersed selection.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/potential-transformer-guide/hero.png">
+
+<link rel="canonical" href="https://www.yominelectric.com/blog/potential-transformer-guide">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline": "Potential Transformers: Ratios, Accuracy Classes and How to Specify One","datePublished": "2026-09-03","author":{"@type":"Organization","name":"Yomin Electric"},"publisher":{"@type":"Organization","name":"Yomin Electric","logo":{"@type":"ImageObject","url":"https://www.yominelectric.com/logo_transparent.png"}},"image":"https://www.yominelectric.com/assets/images/blog/prepaid-meter-supplier-guide/hero.jpg"}</script>
+
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; Voltage Transformers</div>
+    <div class="bh-tag">Buyer's Guides</div>
+    <h1>Potential Transformers: Ratios, Accuracy Classes and How to Specify One</h1>
+    <div class="bh-meta"><img class="bh-avatar" src="/assets/images/et-avatar.png" alt="ET Engineering Team"><span><strong>ET Engineering Team</strong> 10 min read &middot; September 3, 2026</span></div>
+
+  </section>
+
+  <section class="content-section">
+
+    <img class="hero-img" src="/assets/images/blog/potential-transformer-guide/hero.png" alt="Potential transformer guide: what a PT does, standard ratios like 10kV/100V, accuracy classes 0.2 and 0.5, burden, PT vs CT, and epoxy-cast vs oil-immersed selection." loading="lazy">
+
+    <p><strong>Direct answer:</strong> a potential transformer (PT), also called a voltage transformer (VT), steps a high system voltage down to a low, standardised value &mdash; typically 100&nbsp;V or 110&nbsp;V &mdash; so that meters and protection relays can measure it safely. You specify one by system voltage, ratio, accuracy class, burden and insulation type.</p>
+
+    <p>One clarification first, because it causes real confusion when buying. A <strong>potential transformer is a measuring instrument</strong>. It is not a variac, not a voltage regulator, and not a control transformer. Those devices exist to <em>supply</em> power at an adjusted voltage. A PT exists to <em>represent</em> a voltage accurately at a level an instrument can handle. Ordering the wrong family is one of the more expensive mistakes in this category, and the product names overlap enough to make it easy.</p>
+
+    <h2>What the Ratio Actually Means</h2>
+    <p>A PT ratio is written as primary over secondary: <strong>10000/100&nbsp;V</strong>, often shortened to 10&nbsp;kV/100&nbsp;V. That is a 100:1 ratio. Feed 10&nbsp;kV into the primary and the secondary presents 100&nbsp;V to your meter.</p>
+    <p>Standard secondary values are 100&nbsp;V, 110&nbsp;V, and 120&nbsp;V depending on regional practice, with 100&nbsp;V and 110&nbsp;V dominant across IEC markets. Three-phase units are frequently specified as 10000/&radic;3 over 100/&radic;3 for phase-to-neutral connection &mdash; the &radic;3 notation trips people up, but it simply reflects star connection rather than a different device.</p>
+
+    <h2>Accuracy Classes</h2>
+    <table>
+      <tr><th>Class</th><th>Voltage error at rated</th><th>Typical use</th></tr>
+      <tr><td>0.2</td><td>&plusmn;0.2%</td><td>High-value revenue metering, interchange points</td></tr>
+      <tr><td>0.5</td><td>&plusmn;0.5%</td><td>Standard billing and tariff metering</td></tr>
+      <tr><td>1.0</td><td>&plusmn;1.0%</td><td>Indication, monitoring, general instrumentation</td></tr>
+      <tr><td>3P / 6P</td><td>Protection classes</td><td>Relay circuits &mdash; different requirement entirely</td></tr>
+    </table>
+    <p>As with current transformers, metering classes and protection classes solve opposite problems. A metering PT is optimised for precision at normal operating voltage. A protection PT (3P, 6P) must stay usable during voltage collapse and fault conditions, where a metering unit's guaranteed band no longer applies. Do not substitute one for the other.</p>
+
+    <h2>Burden &mdash; The Number Buyers Skip</h2>
+    <p>A PT's accuracy class is only valid within its rated burden, expressed in VA. Burden here is the total load on the secondary: the meter, the relay coils, and the secondary wiring.</p>
+    <p>The practical failure mode is cumulative. One meter draws little. Add a second meter, a transducer and a relay to the same secondary and the total can exceed the rated VA &mdash; at which point the PT is no longer performing to its stated class even though nothing is broken. Add up the actual burden before ordering, and leave headroom for future additions.</p>
+
+    <h2>PT vs CT &mdash; They Are Not Interchangeable</h2>
+    <table>
+      <tr><th></th><th>Potential transformer (PT/VT)</th><th>Current transformer (CT)</th></tr>
+      <tr><td>Measures</td><td>Voltage</td><td>Current</td></tr>
+      <tr><td>Connection</td><td>In parallel, across the circuit</td><td>In series, around the conductor</td></tr>
+      <tr><td>Secondary standard</td><td>100&nbsp;V / 110&nbsp;V</td><td>5&nbsp;A / 1&nbsp;A</td></tr>
+      <tr><td>Dangerous condition</td><td>Short-circuiting the secondary</td><td>Open-circuiting the secondary</td></tr>
+    </table>
+    <p>Note the last row carefully, because the hazards are inverted. <strong>Never short a PT secondary</strong> &mdash; it behaves like a shorted voltage source and draws destructive current. <strong>Never open a CT secondary</strong> under load &mdash; it develops dangerously high voltage. Applying CT habits to a PT, or the reverse, is genuinely hazardous.</p>
+    <p>For the current-side equivalent of this guide, see our <a href="/blog/ct-accuracy-class-guide">CT accuracy class guide</a>.</p>
+
+    <h2>Epoxy-Cast vs Oil-Immersed</h2>
+    <table>
+      <tr><th></th><th>Epoxy-cast (dry type)</th><th>Oil-immersed</th></tr>
+      <tr><td>Typical placement</td><td>Indoor switchgear</td><td>Outdoor, pole and substation</td></tr>
+      <tr><td>Maintenance</td><td>Essentially none</td><td>Oil condition monitoring</td></tr>
+      <tr><td>Fire behaviour</td><td>Self-extinguishing resin</td><td>Contains flammable oil</td></tr>
+      <tr><td>Environmental tolerance</td><td>Good indoors; check IP for damp</td><td>Built for outdoor exposure</td></tr>
+      <tr><td>Yomin example</td><td>JDZ10-10, JDZW-10R</td><td>JDJJ2-35</td></tr>
+    </table>
+
+    <h2>Real Reference Models</h2>
+    <ul>
+      <li><strong>JDZ10-10</strong> &mdash; 10&nbsp;kV single-phase, epoxy resin fully enclosed, Class 0.2 / 0.5. Indoor switchgear metering.</li>
+      <li><strong>JDZW-10R</strong> &mdash; 10&nbsp;kV single-phase with fuse, coil type.</li>
+      <li><strong>JDZW-35/0.2</strong> &mdash; 35&nbsp;kV dry type for measurement and protection duty.</li>
+      <li><strong>JDJJ2-35</strong> &mdash; 35&nbsp;kV single-phase oil-immersed, outdoor.</li>
+      <li><strong>JLS-10</strong> &mdash; 10&nbsp;kV five-column combined metering box (PT and CT in one outdoor unit).</li>
+      <li>Three-phase cast-insulation units with fuse protection are also produced to order.</li>
+    </ul>
+
+    <h2>Specification Checklist</h2>
+    <ol>
+      <li><strong>System voltage</strong> &mdash; 3, 6, 10, 35&nbsp;kV.</li>
+      <li><strong>Ratio</strong> &mdash; and whether phase-to-phase or phase-to-neutral (&radic;3).</li>
+      <li><strong>Accuracy class</strong> &mdash; 0.2 or 0.5 for metering; 3P/6P if protection.</li>
+      <li><strong>Burden in VA</strong> &mdash; total, with headroom.</li>
+      <li><strong>Indoor or outdoor</strong> &mdash; drives epoxy-cast vs oil-immersed.</li>
+      <li><strong>Single or three phase.</strong></li>
+      <li><strong>Fuse protection</strong> &mdash; required on many MV installations.</li>
+      <li><strong>Frequency</strong> &mdash; 50 or 60&nbsp;Hz.</li>
+    </ol>
+
+    <h2>FAQ</h2>
+    <h3>Is a potential transformer the same as a voltage transformer?</h3>
+    <p>Yes. "PT" is common in North American and Indian practice, "VT" in IEC/European usage. Same device. Both differ entirely from a variac or voltage regulator.</p>
+    <h3>Can I use a PT to power a small load?</h3>
+    <p>No. It is an instrument transformer sized for a measurement burden in VA, not a supply transformer. Loading it like a power source destroys its accuracy and can damage it.</p>
+    <h3>Why does my PT read slightly low?</h3>
+    <p>Most often the secondary burden exceeds the rated VA. Total up every connected instrument. Also verify the secondary wiring is sized adequately for the run length.</p>
+    <h3>What is ferroresonance and should I worry about it?</h3>
+    <p>It is an oscillation that can occur between a PT's magnetising inductance and system capacitance in ungrounded systems, producing damaging overvoltages. It is a real design consideration on MV networks &mdash; discuss your system earthing arrangement with us when specifying.</p>
+    <h3>Do you supply test certificates?</h3>
+    <p>Yes. Units are tested before dispatch and documentation is available for utility submission on request.</p>
+
+    <h2>Factory-Direct Supply</h2>
+    <p>Zhejiang Yomin Electric has manufactured instrument transformers since 1996 and ships to 95+ countries. Our potential transformer range covers 3&ndash;35&nbsp;kV in epoxy-cast and oil-immersed construction, single and three phase, Class 0.2 and 0.5. <a href="/products">Browse the range</a> or <a href="/contact">send your system voltage, ratio, class and burden</a> for a quotation within 24 hours.</p>
+
+  </section>
+
+  <section class="cta-section">
+    <h2>Need a Quote or Want to Talk Specs?</h2>
+    <p>Our engineers answer within 24 hours with a factory-direct quotation, MOQ and lead time for your exact requirement.</p>
+    <div class="cta-wrap">
+      <a href="/contact" class="cta-btn">Get a Quote</a>
+      <a href="https://wa.me/8619016543301" class="cta-btn ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+
+<script defer src="/assets/js/i18n-es.js"></script>
+
+</body>
+
+</html>
