@@ -622,3 +622,39 @@ nav.breadcrumb {
 @media (max-width: 768px) {
   nav.breadcrumb { padding: 110px 20px 0 !important; }
 }
+
+/* ─── BLOG CTA BUTTON (btn / btn-primary) ─── */
+/* All generated blog posts use class="btn btn-primary"; map to the
+   canonical cta-btn style so the button renders correctly site-wide. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 30px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: filter .2s, transform .2s;
+  font-family: var(--ss);
+  line-height: 1;
+  border: none;
+}
+.btn-primary {
+  background: var(--ac, #e8944a);
+  color: #111;
+}
+.btn-primary:hover {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--tx, #f2f2f2);
+  border: 1.5px solid var(--bds, #26282c);
+}
+.btn-secondary:hover {
+  border-color: var(--ac, #e8944a);
+  color: var(--ac, #e8944a);
+}
