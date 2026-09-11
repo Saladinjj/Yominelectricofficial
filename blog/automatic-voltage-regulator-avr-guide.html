@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-T0HYWYQ6NF');
+
+</script>
+
+<meta charset="UTF-8">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Automatic Voltage Regulators (AVR): How They Work, Types and How to Size One</title>
+
+<meta name="description" content="How an automatic voltage regulator (AVR) differs from a voltage stabilizer and a UPS, what relay-type and servo-type AVRs each do, and how to calculate the VA size you need.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/prepaid-meter-supplier-guide/hero.jpg">
+
+<link rel="canonical" href="https://www.yominelectric.com/blog/prepaid-meter-supplier-guide">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Prepaid Meter Supplier Guide: What Importers and Utilities Should Look For","datePublished":"2026-08-28","author":{"@type":"Organization","name":"Yomin Electric"},"publisher":{"@type":"Organization","name":"Yomin Electric","logo":{"@type":"ImageObject","url":"https://www.yominelectric.com/logo_transparent.png"}},"image":"https://www.yominelectric.com/assets/images/blog/prepaid-meter-supplier-guide/hero.jpg"}</script>
+
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Automatic Voltage Regulators (AVR): How They Work, Types and How to Size One",
+      "description": "How AVRs work, the difference between relay-type and servo-type, and how to size one for your load.",
+      "datePublished": "2026-09-12",
+      "dateModified": "2026-09-12",
+      "author": {
+        "@type": "Organization",
+        "name": "Zhejiang Yomin Electric Co., Ltd.",
+        "url": "https://www.yominelectric.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zhejiang Yomin Electric Co., Ltd.",
+        "url": "https://www.yominelectric.com"
+      },
+      "image": "https://www.yominelectric.com/assets/images/blog/automatic-voltage-regulator-avr-guide/hero.png",
+      "mainEntityOfPage": "https://www.yominelectric.com/blog/automatic-voltage-regulator-avr-guide"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an automatic voltage regulator (AVR)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An automatic voltage regulator (AVR) is a device that monitors an AC supply voltage and automatically corrects it to a stable nominal output — typically 220V or 230V — when the input voltage fluctuates above or below the nominal value. AVRs are used in regions where grid supply is unstable: brownouts (under-voltage), surges (over-voltage) and slow voltage drift are all corrected continuously without interrupting the load."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between an AVR and a voltage stabilizer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The terms are used interchangeably in most markets. An AVR (automatic voltage regulator) and a voltage stabilizer are the same category of product: both monitor and regulate AC output voltage. The distinction sometimes made is that AVR refers to relay-switching designs (stepped regulation) while stabilizer refers to servo-motor or continuously variable designs, but in product catalogues the terms overlap completely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a relay-type AVR and a servo-type stabilizer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A relay-type AVR uses a set of relays to switch tapped windings on an autotransformer, providing voltage correction in discrete steps (typically 5–10V increments). Correction is fast (milliseconds) but not smooth. A servo-type stabilizer uses a servo motor to drive a variable autotransformer (variac), providing continuous stepless correction. Servo types regulate more precisely but are slower and contain a moving mechanical part. Relay types are cheaper and suitable for most home and office loads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I size an AVR for my air conditioner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An air conditioner's starting current (inrush) is typically 5–7 times its running current. Use the air conditioner's compressor kVA rating (from the nameplate) and multiply by 3 to account for starting current. Round up to the next standard AVR size. Example: 1.5 HP (1.1 kW) air conditioner ≈ 1.5 kVA running → select a 5000 VA (5 kVA) AVR to handle starting current safely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What input voltage range do AVRs work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most relay-type AVRs accept an input range of 80–260V AC and regulate to 220V ±10% output. The TM series operates from 80–250V input, making it suitable for grids that experience severe brownouts below 100V. Some servo stabilizers have a narrower input range (140–260V) but better output precision (±1%). Check the nameplate input range against the worst-case voltage at your installation."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+  <section class="hero-section" style="background-image: url('assets/images/blog/automatic-voltage-regulator-avr-guide/hero.png');">
+    <div class="hero-content">
+      <span class="hero-category">Power Protection</span>
+      <h1>Automatic Voltage Regulators (AVR): How They Work, Types and How to Size One</h1>
+      <div class="hero-meta"><span>September 12, 2026</span><span>8 min read</span></div>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="content-inner">
+
+      <p>In large parts of Africa, South Asia, Southeast Asia and the Middle East, grid supply voltage is not the stable 220–240V shown on the nameplate of imported appliances. Brownouts (sustained under-voltage) and surges are common, and they silently shorten the life of compressors, motors, LED drivers and electronics. An automatic voltage regulator (AVR) is the front-line protection device that corrects these fluctuations before they reach the load.</p>
+
+      <h2>How an AVR works</h2>
+      <p>An AVR continuously samples the incoming AC voltage and compares it to a set point (typically 220V or 230V). When the measured voltage deviates from the set point by more than the dead band (usually ±5–10%), the AVR corrects the output by switching taps on an autotransformer (relay type) or by adjusting a servo-driven variable transformer (servo type). The correction happens fast enough that connected loads see a nearly stable output voltage, even as the supply fluctuates over a wide range.</p>
+
+      <h2>Relay-type vs servo-type: which is right for your load?</h2>
+      <table>
+        <thead><tr><th>Feature</th><th>Relay-type AVR</th><th>Servo-type stabilizer</th></tr></thead>
+        <tbody>
+          <tr><td>Regulation method</td><td>Stepped (relay switching)</td><td>Continuous (servo motor)</td></tr>
+          <tr><td>Correction speed</td><td>Fast (20–40 ms)</td><td>Slow (1–2 sec)</td></tr>
+          <tr><td>Output accuracy</td><td>±5–8%</td><td>±1–2%</td></tr>
+          <tr><td>Maintenance</td><td>None (solid state)</td><td>Motor brushes, every 2–3 years</td></tr>
+          <tr><td>Best for</td><td>Home appliances, office, retail</td><td>CNC machines, medical, precision labs</td></tr>
+          <tr><td>Price point</td><td>Lower</td><td>Higher</td></tr>
+        </tbody>
+      </table>
+
+      <h2>AVR vs voltage protector vs UPS: where each belongs</h2>
+      <p>These three devices are often confused in procurement discussions:</p>
+      <ul>
+        <li><strong>AVR / voltage stabilizer:</strong> regulates sustained voltage fluctuations continuously. No battery. Supply must be present.</li>
+        <li><strong>Voltage protector (over/under relay):</strong> monitors voltage and disconnects the load when limits are exceeded; reconnects when supply recovers. Does not regulate — it cuts and restores. No battery. Faster acting than an AVR on dangerous overvoltage events.</li>
+        <li><strong>UPS (uninterruptible power supply):</strong> provides battery backup during power cuts in addition to voltage regulation. Much more expensive. Battery adds weight, cost and replacement cycles.</li>
+      </ul>
+      <p>For a market with unstable voltage but no extended power cuts, an AVR is sufficient and far more cost-effective than a UPS. If power cuts are also a problem, size a UPS to include an AVR function.</p>
+
+      <h2>Sizing an AVR: the VA calculation</h2>
+      <ol>
+        <li>Identify the total rated wattage of all loads to be protected.</li>
+        <li>For motor loads (air conditioners, refrigerators, pumps): multiply the motor wattage by 3 to account for starting current inrush.</li>
+        <li>Sum all adjusted loads and multiply by 1.25 safety factor.</li>
+        <li>Round up to the next standard VA size.</li>
+      </ol>
+      <p>Our TM and AVR relay series are available from 500VA to 30kVA in single-phase wall-mount and floor-stand configurations, and from 9kVA to 90kVA in three-phase floor configurations. The front-panel triple LED display shows input voltage, output voltage and output current simultaneously.</p>
+
+      <h2>FAQ</h2>
+      <h3>What is an automatic voltage regulator (AVR)?</h3>
+      <p>A device that monitors AC supply voltage and automatically corrects it to a stable output — protecting connected equipment from brownouts, surges and slow voltage drift.</p>
+      <h3>What is the difference between an AVR and a voltage stabilizer?</h3>
+      <p>In most markets the terms are interchangeable — both regulate AC output voltage automatically. Relay-type AVRs use switched taps; servo stabilizers use a continuously variable motor-driven autotransformer.</p>
+      <h3>How do I size an AVR for an air conditioner?</h3>
+      <p>Multiply the AC nameplate kVA by 3 (for starting current), then by 1.25 (safety factor). Round up to the next standard size. A 1.5 kVA AC needs at least a 5 kVA AVR.</p>
+      <h3>What input voltage range do AVRs work with?</h3>
+      <p>The TM series accepts 80–250V AC input, suitable for grids with severe brownouts. Check the nameplate input range against the worst-case voltage at your site.</p>
+
+    </div>
+  </section>
+  <section class="cta-section">
+    <h2>Protecting equipment from unstable grid voltage?</h2>
+    <p>We manufacture relay-type automatic voltage regulators from 500VA to 30kVA (single-phase) and 9–90kVA (three-phase), with input ranges down to 80V AC and triple LED display. Send us the load list, supply voltage range and installation location — we confirm the right model within one working day.</p>
+    <a href="https://www.yominelectric.com/products/voltage-stabilizer" class="btn btn-primary">Browse the Range</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+
+<script defer src="/assets/js/i18n-es.js"></script>
+
+</body>
+
+</html>

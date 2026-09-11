@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-T0HYWYQ6NF');
+
+</script>
+
+<meta charset="UTF-8">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CT Ratio Explained: 200/5, 1200/5 and 4000/5 — How to Read and Select a Current Transformer</title>
+
+<meta name="description" content="What 200/5, 1200/5 and 4000/5 CT ratios mean, how to choose the right ratio for your load, and what accuracy class and burden VA to specify alongside it.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/prepaid-meter-supplier-guide/hero.jpg">
+
+<link rel="canonical" href="https://www.yominelectric.com/blog/prepaid-meter-supplier-guide">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Prepaid Meter Supplier Guide: What Importers and Utilities Should Look For","datePublished":"2026-08-28","author":{"@type":"Organization","name":"Yomin Electric"},"publisher":{"@type":"Organization","name":"Yomin Electric","logo":{"@type":"ImageObject","url":"https://www.yominelectric.com/logo_transparent.png"}},"image":"https://www.yominelectric.com/assets/images/blog/prepaid-meter-supplier-guide/hero.jpg"}</script>
+
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "CT Ratio Explained: 200/5, 1200/5 and 4000/5 — How to Read and Select a Current Transformer",
+      "description": "What 200/5, 1200/5 and 4000/5 CT ratios mean, how to choose the right ratio for your load, and what accuracy class and burden VA to specify.",
+      "datePublished": "2026-09-12",
+      "dateModified": "2026-09-12",
+      "author": {
+        "@type": "Organization",
+        "name": "Zhejiang Yomin Electric Co., Ltd.",
+        "url": "https://www.yominelectric.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zhejiang Yomin Electric Co., Ltd.",
+        "url": "https://www.yominelectric.com"
+      },
+      "image": "https://www.yominelectric.com/assets/images/blog/ct-ratio-guide/hero.png",
+      "mainEntityOfPage": "https://www.yominelectric.com/blog/ct-ratio-guide"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does 200/5 CT ratio mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 200/5 CT ratio means the primary winding carries up to 200 A and the secondary winding outputs 5 A at full load. Every CT ratio is written as primary/secondary current (both in amperes). A 200 A line current becomes 5 A at the secondary terminals — safe for meters, relays and instruments rated at 5 A."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between 1200/5 and 4000/5 CT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only the primary rating differs. A 1200/5 CT is used on circuits carrying up to 1200 A; a 4000/5 CT on circuits up to 4000 A. Both produce a 5 A secondary output at full load. Select the ratio whose primary rating is at or above your maximum expected line current."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What accuracy class should I specify for a metering CT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For revenue metering (billing) specify Class 0.2S or Class 0.5S (IEC 60044-1). Class 0.2S maintains 0.2% error from 1% to 120% of rated current, making it suitable for utility-grade billing. Class 1 and Class 3 are acceptable for monitoring and indication only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does CT burden VA mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Burden VA is the maximum impedance the CT secondary circuit can drive while maintaining its stated accuracy. If the connected wiring and instrument load exceeds the rated burden (e.g. 5 VA or 10 VA), the CT error increases beyond the accuracy class limit. Always verify that the meter's input impedance plus lead resistance stays within the CT burden rating."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a 200/5 CT on a 150 A circuit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A 200/5 CT on a 150 A circuit will output 3.75 A at full load (150/200 × 5 = 3.75 A). The meter must be programmed with the CT ratio so it scales the reading correctly. Running a CT below its rated primary current is normal; running it above the rated primary (overloading) risks core saturation and inaccurate readings."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+  <section class="hero-section" style="background-image: url('assets/images/blog/ct-ratio-guide/hero.png');">
+    <div class="hero-content">
+      <span class="hero-category">Current Transformers</span>
+      <h1>CT Ratio Explained: 200/5, 1200/5 and 4000/5 — How to Read and Select a Current Transformer</h1>
+      <div class="hero-meta"><span>September 12, 2026</span><span>9 min read</span></div>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="content-inner">
+
+      <p>When an electrical contractor or metering engineer specifies a CT, the ratio number — 200/5, 1200/5, 4000/5 — is the first piece of information a supplier needs. Yet it is also one of the most frequently misread specifications on purchase orders. This guide explains exactly what those numbers mean, how to choose the right one, and what additional parameters must accompany the ratio for a complete, accurate specification.</p>
+
+      <h2>What a CT ratio number actually says</h2>
+      <p>A CT ratio is written as <strong>primary current / secondary current</strong>, both in amperes. A 200/5 CT produces 5 A at its secondary terminals when 200 A flows through the primary busbar or cable. A 4000/5 CT produces the same 5 A secondary output when 4000 A flows through the primary. The secondary is always standardised at 5 A (or 1 A in some IEC metering systems) so that the meter, relay or recorder can be a universal 5 A input device regardless of the primary current level.</p>
+
+      <h2>Choosing the primary rating: 200/5, 1200/5 or 4000/5?</h2>
+      <p>The primary rating must equal or exceed the maximum continuous current the circuit will carry. Select the next standard ratio above your maximum load:</p>
+      <ul>
+        <li><strong>200/5</strong> — sub-distribution boards, residential services, small commercial feeders (up to 200 A)</li>
+        <li><strong>600/5 or 800/5</strong> — medium commercial loads, distribution transformers up to 400 kVA at 415 V</li>
+        <li><strong>1200/5</strong> — industrial feeders, main incomer boards, 800–1200 A circuits</li>
+        <li><strong>2000/5 or 3000/5</strong> — large industrial plant, bus ties</li>
+        <li><strong>4000/5</strong> — high-current main feeders, generators, utility supply points</li>
+      </ul>
+      <p>Never select a CT whose primary rating is below the maximum circuit current — the CT core will saturate on overloads and both accuracy and safety are compromised.</p>
+
+      <h2>Accuracy class: what each rating means for your application</h2>
+      <p>IEC 60044-1 defines accuracy classes for metering CTs: 0.1, 0.2, 0.2S, 0.5, 0.5S, 1, 3 and 5. The number is the maximum percentage composite error at rated current. The suffix S (Special) means accuracy is maintained from 1% to 120% of rated current — essential for billing meters that must be accurate at light loads.</p>
+      <table>
+        <thead><tr><th>Class</th><th>Max error at In</th><th>Typical use</th></tr></thead>
+        <tbody>
+          <tr><td>0.2S</td><td>0.2%</td><td>Utility revenue billing, tariff meters</td></tr>
+          <tr><td>0.5S</td><td>0.5%</td><td>Commercial billing, sub-metering</td></tr>
+          <tr><td>1</td><td>1.0%</td><td>Panel instruments, industrial monitoring</td></tr>
+          <tr><td>3</td><td>3.0%</td><td>Indication only, protection CTs</td></tr>
+        </tbody>
+      </table>
+      <p>Our MSQ series is available in Class 0.2S, 0.5 and 1. When in doubt, specify 0.5S — it satisfies most commercial metering requirements without the cost premium of 0.2S.</p>
+
+      <h2>Burden VA — the parameter most buyers forget</h2>
+      <p>Burden is the maximum VA load the secondary circuit can impose on the CT while maintaining accuracy. A typical CT burden is 2.5 VA, 5 VA or 10 VA. Calculate your secondary circuit burden: measure the resistance of the connecting leads (R_lead × I²) and add the input impedance of the connected meter. If the total exceeds the CT rated burden, either increase the conductor cross-section or select a higher burden CT.</p>
+
+      <h2>MSQ-60 series: how it covers 200/5 to 4000/5 in one family</h2>
+      <p>The MSQ-60 outdoor low-voltage CT family uses a 60 mm × 60 mm window aperture to accept flat busbars up to 60 × 10 mm or cables up to 50 mm². The same housing accommodates primary ratings from 200/5 to 4000/5, with the ratio achieved by varying the number of primary and secondary turns. Compliance: BS 3938/76 and IEC 185 (superseded by IEC 60044-1), rated for 0.66 kV / 2 kV impulse. Suitable for indoor panel and outdoor enclosure installation.</p>
+
+      <h2>FAQ</h2>
+      <h3>What does 200/5 CT ratio mean?</h3>
+      <p>A 200/5 CT ratio means the primary winding carries up to 200 A and the secondary winding outputs 5 A at full load. A 200 A line current becomes 5 A at the secondary terminals — safe for meters and relays rated at 5 A input.</p>
+      <h3>What is the difference between 1200/5 and 4000/5 CT?</h3>
+      <p>Only the primary rating differs. A 1200/5 CT is used on circuits carrying up to 1200 A; a 4000/5 CT on circuits up to 4000 A. Both produce a 5 A secondary output at full load.</p>
+      <h3>What accuracy class should I specify for a metering CT?</h3>
+      <p>For revenue metering specify Class 0.2S or 0.5S (IEC 60044-1). Class 1 and Class 3 are acceptable for monitoring and indication only.</p>
+      <h3>What does CT burden VA mean?</h3>
+      <p>Burden VA is the maximum impedance the CT secondary circuit can drive while maintaining its accuracy class. If the connected load exceeds the rated burden, the CT error increases beyond the class limit.</p>
+      <h3>Can I use a 200/5 CT on a 150 A circuit?</h3>
+      <p>Yes. The CT will output 3.75 A at full load. Program the meter with the 200/5 ratio so it scales the reading correctly. Never run a CT above its primary rating.</p>
+
+    </div>
+  </section>
+  <section class="cta-section">
+    <h2>Specifying CTs for a metering or protection project?</h2>
+    <p>We manufacture the MSQ series low-voltage current transformers from 100/5 to 4000/5, in Class 0.2S, 0.5 and 1, with 0.66 kV and 2 kV insulation levels. Send us the primary current, accuracy class, burden and application — we confirm the correct model within one working day.</p>
+    <a href="https://www.yominelectric.com/products/current-transformer" class="btn btn-primary">Browse the Range</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+
+<script defer src="/assets/js/i18n-es.js"></script>
+
+</body>
+
+</html>
