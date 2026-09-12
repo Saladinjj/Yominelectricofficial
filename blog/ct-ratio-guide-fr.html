@@ -221,7 +221,7 @@
 
   <section class="content-section">
     <p style="margin-bottom:20px"><em>Lire ce guide en : <a href="https://www.yominelectric.com/blog/ct-ratio-guide">English</a> · <strong>Français</strong> · <a href="https://www.yominelectric.com/blog/ct-ratio-guide-es">Español</a> · <a href="https://www.yominelectric.com/blog/ct-ratio-guide-ar">العربية</a></em></p>
-    <img class="hero-img" src="/assets/images/blog/ct-ratio-guide/hero.png" alt="CT Ratios Explained: 200/5, 1200/5, 4000/5 and How to Select the Right Current Transformer" loading="lazy">
+    <img class="hero-img" src="/assets/images/blog/ct-ratio-guide/hero.png" alt="CT Ratios Explained: 200/5, 1200/5, 4000/5 and How to Select the Right Current Transformer" loading="eager" fetchpriority="high" decoding="async">
 
       <p data-i18n="c_p_1">Lorsqu'un électricien ou un ingénieur en comptage spécifie un TC, le rapport — 200/5, 1200/5, 4000/5 — est la première information dont un fournisseur a besoin. C'est pourtant l'une des spécifications les plus souvent mal interprétées sur les bons de commande. Ce guide explique exactement ce que ces chiffres signifient, comment choisir le bon rapport et quels paramètres supplémentaires doivent accompagner ce rapport pour une spécification complète et précise.</p>
 
@@ -308,7 +308,7 @@
 
 
 <script>(function(){try{localStorage.setItem('ym_lang','fr')}catch(e){}var M={en:'',fr:'-fr',es:'-es',ar:'-ar'};var h=location.pathname.split('/').pop()||'';var b=h.replace(/-(?:fr|es|ar)$/,'').replace(/\.html$/,'');var ext=/\.html$/.test(h)?'.html':'';document.querySelectorAll('.lopt,.mlb').forEach(function(btn){var l=btn.getAttribute('data-lang');if(!l||!M[l])return;btn.addEventListener('click',function(ev){ev.stopImmediatePropagation();ev.preventDefault();try{localStorage.setItem('ym_lang',l)}catch(e){}location.href=b+M[l]+ext;},true);});})();</script>
-<script>(function(){var M={en:'',fr:'-fr',es:'-es',ar:'-ar'};var h=location.pathname.split('/').pop()||'';var b=h.replace(/-(?:fr|es|ar)$/,'').replace(/\.html$/,'');var ext=/\.html$/.test(h)?'.html':'';document.querySelectorAll('.lopt,.mlb').forEach(function(btn){var l=btn.getAttribute('data-lang');if(!l||!M[l])return;btn.addEventListener('click',function(ev){ev.stopImmediatePropagation();ev.preventDefault();try{localStorage.setItem('ym_lang',l)}catch(e){}location.href=b+M[l]+ext;},true);});})();</script>
+<script>(function(){var M={en:'',fr:'-fr',es:'-es',ar:'-ar'};var h=location.pathname.split('/').pop()||'';var b=h.replace(/-(?:fr|es|ar)$/,'').replace(/\.html$/,'');var ext=/\.html$/.test(h)?'.html':'';document.querySelectorAll('.lopt,.mlb').forEach(function(btn){var l=btn.getAttribute('data-lang');if(!l||!(l in M))return;btn.addEventListener('click',function(ev){ev.stopImmediatePropagation();ev.preventDefault();try{localStorage.setItem('ym_lang',l)}catch(e){}location.href=b+M[l]+ext;},true);});})();</script>
 </body>
 
 </html>

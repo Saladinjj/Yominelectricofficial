@@ -452,7 +452,11 @@ if (typeof window.__ymT !== 'undefined') {
 const T = window.__ymT; /* shared with index.html via window.__ymT */
 
 /* ─── STATE ─────────────────────────────────────────── */
-let currentLang = localStorage.getItem('ym_lang') || 'en';
+/* A localized URL (-fr / -es / -ar) decides its own language. Without this the
+   stored preference wins and a French URL can render Arabic chrome (and declare
+   the wrong html lang). The stored preference still applies everywhere else. */
+const _urlLang = (location.pathname.replace(/[.]html$/, '').match(/-(ar|es|fr)$/i) || [])[1];
+let currentLang = (_urlLang || localStorage.getItem('ym_lang') || 'en').toLowerCase();
 window.ymLang = currentLang;
 window.ymTr = function(pid, fallback) { return T[currentLang] && T[currentLang][pid] || fallback; };
 let storedTheme = localStorage.getItem('ym_theme');

@@ -221,7 +221,7 @@
 
   <section class="content-section">
     <p style="margin-bottom:20px"><em>اقرأ هذا الدليل بـ: <a href="https://www.yominelectric.com/blog/ct-ratio-guide">English</a> · <a href="https://www.yominelectric.com/blog/ct-ratio-guide-fr">Français</a> · <a href="https://www.yominelectric.com/blog/ct-ratio-guide-es">Español</a> · <strong>العربية</strong></em></p>
-    <img class="hero-img" src="/assets/images/blog/ct-ratio-guide/hero.png" alt="CT Ratios Explained: 200/5, 1200/5, 4000/5 and How to Select the Right Current Transformer" loading="lazy">
+    <img class="hero-img" src="/assets/images/blog/ct-ratio-guide/hero.png" alt="CT Ratios Explained: 200/5, 1200/5, 4000/5 and How to Select the Right Current Transformer" loading="eager" fetchpriority="high" decoding="async">
 
       <p data-i18n="c_p_1">عندما يقوم مقاول كهربائي أو مهندس قياس بتحديد مواصفات محول تيار، فإن رقم النسبة — 200/5 أو 1200/5 أو 4000/5 — هو أول معلومة يحتاجها المورد. ومع ذلك فهو أيضًا من أكثر المواصفات التي يُخطَأ في قراءتها على أوامر الشراء. يشرح هذا الدليل بالضبط ما تعنيه هذه الأرقام، وكيفية اختيار النسبة الصحيحة، وما المعاملات الإضافية التي يجب أن ترافق النسبة للحصول على مواصفات كاملة ودقيقة.</p>
 
@@ -308,7 +308,7 @@
 
 
 <script>(function(){try{localStorage.setItem('ym_lang','ar')}catch(e){}var M={en:'',fr:'-fr',es:'-es',ar:'-ar'};var h=location.pathname.split('/').pop()||'';var b=h.replace(/-(?:fr|es|ar)$/,'').replace(/\.html$/,'');var ext=/\.html$/.test(h)?'.html':'';document.querySelectorAll('.lopt,.mlb').forEach(function(btn){var l=btn.getAttribute('data-lang');if(!l||!M[l])return;btn.addEventListener('click',function(ev){ev.stopImmediatePropagation();ev.preventDefault();try{localStorage.setItem('ym_lang',l)}catch(e){}location.href=b+M[l]+ext;},true);});})();</script>
-<script>(function(){var M={en:'',fr:'-fr',es:'-es',ar:'-ar'};var h=location.pathname.split('/').pop()||'';var b=h.replace(/-(?:fr|es|ar)$/,'').replace(/\.html$/,'');var ext=/\.html$/.test(h)?'.html':'';document.querySelectorAll('.lopt,.mlb').forEach(function(btn){var l=btn.getAttribute('data-lang');if(!l||!M[l])return;btn.addEventListener('click',function(ev){ev.stopImmediatePropagation();ev.preventDefault();try{localStorage.setItem('ym_lang',l)}catch(e){}location.href=b+M[l]+ext;},true);});})();</script>
+<script>(function(){var M={en:'',fr:'-fr',es:'-es',ar:'-ar'};var h=location.pathname.split('/').pop()||'';var b=h.replace(/-(?:fr|es|ar)$/,'').replace(/\.html$/,'');var ext=/\.html$/.test(h)?'.html':'';document.querySelectorAll('.lopt,.mlb').forEach(function(btn){var l=btn.getAttribute('data-lang');if(!l||!(l in M))return;btn.addEventListener('click',function(ev){ev.stopImmediatePropagation();ev.preventDefault();try{localStorage.setItem('ym_lang',l)}catch(e){}location.href=b+M[l]+ext;},true);});})();</script>
 </body>
 
 </html>

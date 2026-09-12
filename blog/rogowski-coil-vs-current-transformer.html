@@ -139,7 +139,7 @@
 
   <section class="content-section">
 
-    <img class="hero-img" src="/assets/images/blog/rogowski-coil-vs-current-transformer/hero.png" alt="Rogowski coil vs current transformer: how each works, saturation and linearity, accuracy class, output signal, cost and the applications where each is the correct choice." loading="lazy">
+    <img class="hero-img" src="/assets/images/blog/rogowski-coil-vs-current-transformer/hero.png" alt="Rogowski coil vs current transformer: how each works, saturation and linearity, accuracy class, output signal, cost and the applications where each is the correct choice." loading="eager" fetchpriority="high" decoding="async">
 
     <p><strong>Direct answer:</strong> a current transformer uses an iron core and outputs a proportional current (typically 5&nbsp;A or 1&nbsp;A) that can drive a meter directly. A Rogowski coil has an air core, outputs a low-level voltage proportional to the <em>rate of change</em> of current, and needs an integrator. CTs win for revenue metering and direct meter connection; Rogowski coils win for very high currents, wide dynamic range and awkward conductor geometry.</p>
 
