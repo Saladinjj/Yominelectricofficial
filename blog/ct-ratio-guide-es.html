@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="es" dir="ltr">
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-T0HYWYQ6NF');
+
+</script>
+
+<meta charset="UTF-8">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Relaciones de TC explicadas: 200/5, 1200/5, 4000/5 y cómo elegir el transformador de corriente adecuado | Zhejiang Yomin Electric</title>
+
+<meta name="description" content="What 200/5, 1200/5 and 4000/5 CT ratios mean, how to choose the right ratio for your load, and what accuracy class and burden VA to specify alongside it.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/ct-ratio-guide/hero.png">
+
+<link rel="canonical" href="https://www.yominelectric.com/blog/ct-ratio-guide-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/ct-ratio-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/ct-ratio-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/ct-ratio-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/ct-ratio-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/ct-ratio-guide">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+    "inLanguage": "es",
+      "headline": "Relaciones de TC explicadas: 200/5, 1200/5, 4000/5 y cómo elegir el transformador de corriente adecuado",
+      "description": "What 200/5, 1200/5 and 4000/5 CT ratios mean, how to choose the right ratio for your load, and what accuracy class and burden VA to specify.",
+      "datePublished": "2026-09-12",
+      "dateModified": "2026-09-12",
+      "author": {
+        "@type": "Organization",
+        "name": "Zhejiang Yomin Electric Co., Ltd.",
+        "url": "https://www.yominelectric.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zhejiang Yomin Electric Co., Ltd.",
+        "url": "https://www.yominelectric.com"
+      },
+      "image": "https://www.yominelectric.com/assets/images/blog/ct-ratio-guide/hero.png",
+      "mainEntityOfPage": "https://www.yominelectric.com/blog/ct-ratio-guide"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does 200/5 CT ratio mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 200/5 CT ratio means the primary winding carries up to 200 A and the secondary winding outputs 5 A at full load. Every CT ratio is written as primary/secondary current (both in amperes). A 200 A line current becomes 5 A at the secondary terminals — safe for meters, relays and instruments rated at 5 A."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between 1200/5 and 4000/5 CT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only the primary rating differs. A 1200/5 CT is used on circuits carrying up to 1200 A; a 4000/5 CT on circuits up to 4000 A. Both produce a 5 A secondary output at full load. Select the ratio whose primary rating is at or above your maximum expected line current."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What accuracy class should I specify for a metering CT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For revenue metering (billing) specify Class 0.2S or Class 0.5S (IEC 60044-1). Class 0.2S maintains 0.2% error from 1% to 120% of rated current, making it suitable for utility-grade billing. Class 1 and Class 3 are acceptable for monitoring and indication only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does CT burden VA mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Burden VA is the maximum impedance the CT secondary circuit can drive while maintaining its stated accuracy. If the connected wiring and instrument load exceeds the rated burden (e.g. 5 VA or 10 VA), the CT error increases beyond the accuracy class limit. Always verify that the meter's input impedance plus lead resistance stays within the CT burden rating."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a 200/5 CT on a 150 A circuit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A 200/5 CT on a 150 A circuit will output 3.75 A at full load (150/200 × 5 = 3.75 A). The meter must be programmed with the CT ratio so it scales the reading correctly. Running a CT below its rated primary current is normal; running it above the rated primary (overloading) risks core saturation and inaccurate readings."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Productos</a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Soluciones</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Proceso</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">Nosotros</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contacto</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span><span id="lc">ES</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt act" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Solicitar cotización</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Productos</a>
+  <a href="/solutions" data-i18n="nav_solutions">Soluciones</a>
+  <a href="/process" data-i18n="nav_process">Proceso</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">Nosotros</a>
+  <a href="/contact" data-i18n="nav_contact">Contacto</a>
+  <div class="mob-lngs">
+    <button class="mlb" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb act" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> · <a href="/blog">Blog</a> · <span data-i18n="blog_breadcrumb">Transformadores de corriente</span></div>
+    <span class="bh-tag" data-i18n="blog_tag">Guías de compra</span>
+    <h1 class="bh-title" data-i18n="blog_title">Relaciones de TC explicadas: 200/5, 1200/5, 4000/5 y cómo elegir el transformador de corriente adecuado</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)" data-i18n="blog_meta_author">Equipo técnico</strong>
+      <span class="divider"></span>
+      <span data-i18n="blog_meta_read">10 min de lectura</span>
+      <span class="divider"></span>
+      <span>September 12, 2026</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <p style="margin-bottom:20px"><em>Leer esta guía en: <a href="https://www.yominelectric.com/blog/ct-ratio-guide">English</a> · <a href="https://www.yominelectric.com/blog/ct-ratio-guide-fr">Français</a> · <strong>Español</strong> · <a href="https://www.yominelectric.com/blog/ct-ratio-guide-ar">العربية</a></em></p>
+    <img class="hero-img" src="/assets/images/blog/ct-ratio-guide/hero.png" alt="CT Ratios Explained: 200/5, 1200/5, 4000/5 and How to Select the Right Current Transformer" loading="lazy">
+
+      <p data-i18n="c_p_1">Cuando un instalador eléctrico o un ingeniero de medición especifica un TC, la relación — 200/5, 1200/5, 4000/5 — es el primer dato que necesita un proveedor. Sin embargo, también es una de las especificaciones que más se malinterpretan en las órdenes de compra. Esta guía explica exactamente qué significan esas cifras, cómo elegir la relación correcta y qué parámetros adicionales deben acompañarla para lograr una especificación completa y precisa.</p>
+
+      <h2 data-i18n="c_h2_1">Qué dice realmente un número de relación de TC</h2>
+      <p data-i18n="c_p_2">Una relación de TC se escribe como <strong>corriente primaria / corriente secundaria</strong>, ambas en amperios. Un TC 200/5 entrega 5 A en sus bornes secundarios cuando circulan 200 A por la barra colectora o el cable primario. Un TC 4000/5 produce los mismos 5 A en el secundario cuando circulan 4000 A por el primario. El secundario siempre está normalizado a 5 A (o 1 A en algunos sistemas de medición IEC) para que el medidor, el relé o el registrador pueda ser un dispositivo universal de entrada de 5 A, independientemente del nivel de corriente primaria.</p>
+
+      <h2 data-i18n="c_h2_2">Elegir el calibre primario: ¿200/5, 1200/5 o 4000/5?</h2>
+      <p data-i18n="c_p_3">El calibre primario debe ser igual o superior a la corriente continua máxima que transportará el circuito. Elija la relación normalizada inmediatamente superior a su carga máxima:</p>
+      <ul>
+        <li data-i18n="c_li_1"><strong>200/5</strong> — cuadros de subdistribución, acometidas residenciales, pequeños alimentadores comerciales (hasta 200 A)</li>
+        <li data-i18n="c_li_2"><strong>600/5 u 800/5</strong> — cargas comerciales medias, transformadores de distribución de hasta 400 kVA a 415 V</li>
+        <li data-i18n="c_li_3"><strong>1200/5</strong> — alimentadores industriales, cuadros de entrada principales, circuitos de 800 a 1200 A</li>
+        <li data-i18n="c_li_4"><strong>2000/5 o 3000/5</strong> — grandes plantas industriales, enlaces de barras</li>
+        <li data-i18n="c_li_5"><strong>4000/5</strong> — alimentadores principales de alta corriente, generadores, puntos de suministro de la compañía eléctrica</li>
+      </ul>
+      <p data-i18n="c_p_4">Nunca elija un TC cuyo calibre primario sea inferior a la corriente máxima del circuito: el núcleo del TC se saturará con las sobrecargas y tanto la precisión como la seguridad quedarán comprometidas.</p>
+
+      <h2 data-i18n="c_h2_3">Clase de precisión: qué significa cada valor para su aplicación</h2>
+      <p data-i18n="c_p_5">La norma IEC 60044-1 define las clases de precisión de los TC de medida: 0,1, 0,2, 0,2S, 0,5, 0,5S, 1, 3 y 5. El número es el error compuesto máximo, en porcentaje, a la corriente nominal. El sufijo S (Special) significa que la precisión se mantiene del 1 % al 120 % de la corriente nominal, algo esencial para los medidores de facturación que deben ser precisos con cargas ligeras.</p>
+      <table>
+        <thead><tr><th data-i18n="c_th_1">Clase</th><th data-i18n="c_th_2">Error máx. a In</th><th data-i18n="c_th_3">Uso típico</th></tr></thead>
+        <tbody>
+          <tr><td data-i18n="c_td_1">0,2S</td><td data-i18n="c_td_2">0,2 %</td><td data-i18n="c_td_3">Facturación de ingresos de la compañía eléctrica, medidores tarifarios</td></tr>
+          <tr><td data-i18n="c_td_4">0,5S</td><td data-i18n="c_td_5">0,5 %</td><td data-i18n="c_td_6">Facturación comercial, submedición</td></tr>
+          <tr><td data-i18n="c_td_7">1</td><td data-i18n="c_td_8">1,0 %</td><td data-i18n="c_td_9">Instrumentos de panel, monitorización industrial</td></tr>
+          <tr><td data-i18n="c_td_10">3</td><td data-i18n="c_td_11">3,0 %</td><td data-i18n="c_td_12">Solo indicación, TC de protección</td></tr>
+        </tbody>
+      </table>
+      <p data-i18n="c_p_6">Nuestra serie MSQ está disponible en clases 0,2S, 0,5 y 1. En caso de duda, especifique 0,5S: cumple la mayoría de los requisitos de medición comercial sin el sobrecoste de la clase 0,2S.</p>
+
+      <h2 data-i18n="c_h2_4">La carga (VA) — el parámetro que la mayoría de los compradores olvida</h2>
+      <p data-i18n="c_p_7">La carga (burden) es la carga máxima en VA que el circuito secundario puede imponer al TC manteniendo su precisión. Una carga típica de TC es de 2,5 VA, 5 VA o 10 VA. Calcule la carga de su circuito secundario: mida la resistencia de los conductores de conexión (R_conductor × I²) y sume la impedancia de entrada del medidor conectado. Si el total supera la carga nominal del TC, aumente la sección del conductor o elija un TC de mayor carga.</p>
+
+      <h2 data-i18n="c_h2_5">Serie MSQ-60: cómo cubre de 200/5 a 4000/5 en una sola familia</h2>
+      <p data-i18n="c_p_8">La familia de TC de baja tensión para exterior MSQ-60 utiliza una ventana de 60 mm × 60 mm que admite barras colectoras planas de hasta 60 × 10 mm o cables de hasta 50 mm². La misma carcasa admite calibres primarios de 200/5 a 4000/5, y la relación se obtiene variando el número de espiras primarias y secundarias. Conformidad: BS 3938/76 e IEC 185 (sustituida por IEC 60044-1), con tensión nominal de 0,66 kV y rigidez a impulso de 2 kV. Apta para montaje en cuadro interior y en envolvente exterior.</p>
+
+      <h2 data-i18n="c_h2_6">Preguntas frecuentes</h2>
+      <h3 data-i18n="c_h3_1">¿Qué significa una relación de TC 200/5?</h3>
+      <p data-i18n="c_p_9">Una relación de TC 200/5 significa que el devanado primario soporta hasta 200 A y que el devanado secundario entrega 5 A a plena carga. Una corriente de línea de 200 A se convierte en 5 A en los bornes secundarios, algo seguro para medidores y relés de entrada de 5 A.</p>
+      <h3 data-i18n="c_h3_2">¿Cuál es la diferencia entre un TC 1200/5 y un TC 4000/5?</h3>
+      <p data-i18n="c_p_10">Solo difiere el calibre primario. Un TC 1200/5 se usa en circuitos de hasta 1200 A; un TC 4000/5 en circuitos de hasta 4000 A. Ambos producen 5 A en el secundario a plena carga.</p>
+      <h3 data-i18n="c_h3_3">¿Qué clase de precisión debo especificar para un TC de medida?</h3>
+      <p data-i18n="c_p_11">Para facturación, especifique clase 0,2S o 0,5S (IEC 60044-1). Las clases 1 y 3 solo son aceptables para monitorización e indicación.</p>
+      <h3 data-i18n="c_h3_4">¿Qué significa la carga VA de un TC?</h3>
+      <p data-i18n="c_p_12">La carga en VA es la impedancia máxima que el circuito secundario del TC puede excitar manteniendo su clase de precisión. Si la carga conectada supera la carga nominal, el error del TC supera el límite de la clase.</p>
+      <h3 data-i18n="c_h3_5">¿Puedo usar un TC 200/5 en un circuito de 150 A?</h3>
+      <p data-i18n="c_p_13">Sí. El TC entregará 3,75 A a plena carga. Programe el medidor con la relación 200/5 para que escale la lectura correctamente. Nunca haga funcionar un TC por encima de su calibre primario.</p>
+
+    
+  
+  </section>
+
+  <section class="cta-section">
+    <h2 data-i18n="blog_cta_title">¿Está especificando TC para un proyecto de medición o protección?</h2>
+    <p data-i18n="blog_cta_desc">Fabricamos la serie MSQ de transformadores de corriente de baja tensión de 100/5 a 4000/5, en clases 0,2S, 0,5 y 1, con niveles de aislamiento de 0,66 kV y 2 kV. Envíenos la corriente primaria, la clase de precisión, la carga y la aplicación: confirmamos el modelo correcto en un día laborable.</p>
+    <a href="https://www.yominelectric.com/products/current-transformer" class="btn btn-primary" data-i18n="blog_cta_btn">Ver la gama</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. — Soluciones de medición de energía de precisión, utilizadas por empresas eléctricas e industrias de más de 95 países durante 30 años.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Productos</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Empresa</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contacto</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">© 2026 Zhejiang Yomin Electric Co., Ltd. Todos los derechos reservados.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+
+<script defer src="/assets/js/i18n-es.js"></script>
+
+
+<script>(function(){try{localStorage.setItem('ym_lang','es')}catch(e){}var M={en:'',fr:'-fr',es:'-es',ar:'-ar'};var h=location.pathname.split('/').pop()||'';var b=h.replace(/-(?:fr|es|ar)$/,'').replace(/\.html$/,'');var ext=/\.html$/.test(h)?'.html':'';document.querySelectorAll('.lopt,.mlb').forEach(function(btn){var l=btn.getAttribute('data-lang');if(!l||!M[l])return;btn.addEventListener('click',function(ev){ev.stopImmediatePropagation();ev.preventDefault();try{localStorage.setItem('ym_lang',l)}catch(e){}location.href=b+M[l]+ext;},true);});})();</script>
+<script>(function(){var M={en:'',fr:'-fr',es:'-es',ar:'-ar'};var h=location.pathname.split('/').pop()||'';var b=h.replace(/-(?:fr|es|ar)$/,'').replace(/\.html$/,'');var ext=/\.html$/.test(h)?'.html':'';document.querySelectorAll('.lopt,.mlb').forEach(function(btn){var l=btn.getAttribute('data-lang');if(!l||!M[l])return;btn.addEventListener('click',function(ev){ev.stopImmediatePropagation();ev.preventDefault();try{localStorage.setItem('ym_lang',l)}catch(e){}location.href=b+M[l]+ext;},true);});})();</script>
+</body>
+
+</html>

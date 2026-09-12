@@ -200,7 +200,9 @@ for (const f of files) {
     }
     if (patchSource(full, slug)) patched.push(f);
   } else if (/-(?:ar|es|fr)\.html$/.test(f)) {
-    if (patchSource(full, slug)) patched.push(f);
+    // Localized file whose source post carries no dictionary: build hreflang from
+    // the BASE slug, not the already-suffixed filename.
+    if (patchSource(full, f.replace(/-(?:ar|es|fr)\.html$/, ''))) patched.push(f);
   } else {
     skipped.push(f);
   }
