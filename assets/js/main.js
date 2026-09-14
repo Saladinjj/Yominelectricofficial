@@ -689,13 +689,14 @@ function setTheme(t, fromAuto = false) {
   if (waFloat) waFloat.addEventListener('click', function(){ if (typeof gtag === 'function') gtag('event', 'contact', { method: 'whatsapp', button_location: 'float_widget', page_location: location.pathname }); });
 })();
 
-/* Wire pre-existing float button markup (category / products / index pages
-   that already ship .float-btns but may be missing #wc-modal). */
+/* Wire pre-existing float button markup (product/category pages that ship
+   .float-btns in HTML but may be missing the wc-modal and/or LinkedIn btn). */
 (function wireExistingFloat() {
   let overlay = document.getElementById('wc-modal') || document.querySelector('.wc-modal-overlay');
   const wcBtn = document.getElementById('wc-btn') || document.querySelector('.float-btn-wc');
+  const floatWrap = document.querySelector('.float-btns');
 
-  // If wc-btn exists but the modal is missing, inject it so the button works.
+  // Inject the WeChat QR modal when the button exists but the modal doesn't.
   if (wcBtn && !overlay) {
     overlay = document.createElement('div');
     overlay.className = 'wc-modal-overlay';
@@ -716,12 +717,27 @@ function setTheme(t, fromAuto = false) {
     document.addEventListener('keydown', e => { if (e.key === 'Escape') overlay.classList.remove('op'); });
   }
 
+  // Wire WeChat button → modal.
   if (overlay && wcBtn) {
     wcBtn.addEventListener('click', () => overlay.classList.add('op'));
     const close = document.getElementById('wc-close') || document.querySelector('.wc-modal-close');
     if (close) close.addEventListener('click', () => overlay.classList.remove('op'));
     overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('op'); });
   }
+
+  // Prepend LinkedIn button if the container exists but LinkedIn is absent.
+  if (floatWrap && !floatWrap.querySelector('.float-btn-li')) {
+    const li = document.createElement('a');
+    li.href = 'https://www.linkedin.com/company/yominelectric';
+    li.target = '_blank';
+    li.rel = 'noopener';
+    li.className = 'float-btn float-btn-li';
+    li.setAttribute('aria-label', 'LinkedIn');
+    li.innerHTML = `<svg viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><span class="float-btn-label">LinkedIn</span>`;
+    floatWrap.insertBefore(li, floatWrap.firstChild);
+  }
+
+  // GA4 tracking for WhatsApp float button.
   const waFloat = document.querySelector('.float-btn-wa');
   if (waFloat) waFloat.addEventListener('click', function () {
     if (typeof gtag === 'function') gtag('event', 'contact', { method: 'whatsapp', button_location: 'float_widget', page_location: location.pathname });
