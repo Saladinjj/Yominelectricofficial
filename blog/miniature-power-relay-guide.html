@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-T0HYWYQ6NF');
+
+</script>
+
+<meta charset="UTF-8">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Miniature Power Relay Guide: Reading the Nameplate and Specifying a Sealed Relay | Yomin Electric</title>
+
+<meta name="description" content="How to specify a sealed miniature power relay for panel control: reading the contact rating, choosing the coil voltage, understanding sealed construction and checking the approvals that matter.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/miniature-power-relay-guide/hero.png">
+
+<link rel="canonical" href="https://www.yominelectric.com/blog/miniature-power-relay-guide">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Miniature Power Relay Guide: Reading the Nameplate and Specifying a Sealed Relay",
+      "description": "How to specify a sealed miniature power relay for panel control: reading the contact rating, choosing the coil voltage, understanding sealed construction and checking the approvals that matter.",
+      "image": "https://www.yominelectric.com/assets/images/blog/miniature-power-relay-guide/hero.png",
+      "datePublished": "2026-09-15",
+      "dateModified": "2026-09-15",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/miniature-power-relay-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does 10 A 250 V AC / 10 A 30 V DC mean on a relay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is two separate contact ratings. The contact can switch 10 A of alternating current at up to 250 V, or 10 A of direct current at up to 30 V. Because DC arcs do not self-extinguish, the DC voltage rating is much lower than the AC rating."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use an AC-rated relay for a DC load?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not at the same voltage. A relay rated 10 A at 250 V AC is not automatically rated 10 A at 250 V DC. Match the load type and voltage to the correct figure printed on the case, and if the DC figure is not given, treat the relay as unsuitable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why choose a sealed relay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A sealed relay does not breathe, so dust, moisture and airborne contamination cannot reach the contact gap. That keeps contact resistance stable over years of thermal cycling, which matters in workshops, plant rooms, wash-down areas and containerised equipment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do the cURus, CQC and RoHS marks mean on a relay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RoHS confirms compliance with restricted hazardous substances, commonly required for the EU. cURus is recognition under the UL system for North America. CQC is the Chinese certification mark. Export products are often decided by the approval set rather than the electrical rating."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Control Components</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Miniature Power Relay Guide: Reading the Nameplate and Specifying a Sealed Relay</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 15, 2026</span>
+      <span class="divider"></span>
+      <span>7 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <img class="hero-img" src="/assets/images/blog/miniature-power-relay-guide/hero.png" alt="Black sealed miniature power relay MPA-S-112-C with 10A 250VAC contacts and 12V DC coil" loading="eager" fetchpriority="high" decoding="async">
+
+    <p>A <strong>miniature power relay</strong> is a small electromechanical switch that lets a
+low-power control signal operate a higher-power load. It is the standard way a controller &mdash; a PLC, a
+timer, a metering board &mdash; switches something it could not drive directly.</p>
+
+<p>Most selection mistakes with relays are not sophisticated. They come from misreading the nameplate. A
+relay has two completely separate ratings printed on it, and confusing them is how a relay ends up welded
+shut in the field.</p>
+
+<h2>The two ratings on the case</h2>
+
+<p>Take the YOMIN miniature power relay, model <strong>MPA-S-112-C</strong>. Its case carries two contact
+ratings and one coil rating, and all three matter:</p>
+
+<table>
+  <thead><tr><th>Marking</th><th>Meaning</th></tr></thead>
+  <tbody>
+    <tr><td><strong>10 A 250 V AC</strong></td><td>Contact rating for an alternating-current load</td></tr>
+    <tr><td><strong>10 A 30 V DC</strong></td><td>Contact rating for a direct-current load</td></tr>
+    <tr><td><strong>12 V</strong></td><td>Coil voltage &mdash; what the control circuit must supply</td></tr>
+  </tbody>
+</table>
+
+<p>The critical point is that the current rating is not a single number. <strong>10 A at 250 V AC and 10 A
+at 30 V DC are different jobs.</strong> Direct current does not cross zero twice per cycle, so an arc drawn
+when the contacts open has nothing to extinguish it. That is exactly why the DC rating sits at 30 V while
+the AC rating reaches 250 V. A relay rated 10 A AC is not automatically a 10 A DC relay.</p>
+
+<p>So the first question when reading any relay nameplate is: <em>what is my load, AC or DC, and at what
+voltage?</em> Match to the correct figure on the case, not to the larger one.</p>
+
+<h2>Choosing the coil voltage</h2>
+
+<p>The coil is the control side, and it is electrically separate from the contacts. In the MPA-S-112-C the
+coil is <strong>12 V</strong>, which makes it a natural fit for 12 V control and battery-backed systems.</p>
+
+<p>Practical notes that do not appear on the nameplate:</p>
+
+<ul>
+  <li><strong>Coil power has to come from somewhere.</strong> A relay coil is a standing load whenever it
+  is energised. On a battery-backed panel with many relays, that adds up.</li>
+  <li><strong>Do not drive a coil directly from a logic pin.</strong> Use a transistor or driver stage, and
+  fit a flyback diode across the coil to absorb the collapsing field. Without it, the switching transient
+  will eventually damage the driver, not the relay.</li>
+  <li><strong>Hold-in versus pull-in.</strong> A coil needs more voltage to pull in than to stay in.
+  Designs that sit near the threshold will drop out intermittently under brown-out conditions.</li>
+</ul>
+
+<h2>Why "sealed" matters more than it sounds</h2>
+
+<p>The published construction for this relay is <em>sealed, protective</em>. In a control panel that is not
+marketing language &mdash; it is the difference between a relay that works for a decade and one that fails
+in a year.</p>
+
+<p>An unsealed relay breathes. Every thermal cycle draws air in and pushes it out, and with the air comes
+dust, moisture and the airborne contamination that exists in every industrial environment. Inside the
+contact gap, that contamination becomes contact resistance, and contact resistance becomes heat.</p>
+
+<p>A sealed relay is the right choice where:</p>
+
+<ul>
+  <li>the panel is in a workshop, a plant room, or anywhere with airborne dust;</li>
+  <li>humidity or condensation is possible, including outdoor and containerised installations;</li>
+  <li>the enclosure is washed down or cleaned;</li>
+  <li>the relay will be in service for years between maintenance windows.</li>
+</ul>
+
+<p>Sealing also matters for the board itself, because it allows the relay to be cleaned with the assembly
+rather than removed first.</p>
+
+<h2>Check the approvals, not just the rating</h2>
+
+<p>The MPA-S-112-C carries <strong>RoHS</strong> and is listed under <strong>cURus</strong> and
+<strong>CQC</strong>. Those three tell you different things, and for an export product all of them can
+matter:</p>
+
+<ul>
+  <li><strong>RoHS</strong> &mdash; restricted hazardous substances. Increasingly a hard requirement for
+  anything entering the EU.</li>
+  <li><strong>cURus</strong> &mdash; recognition under the UL system for the North American market.</li>
+  <li><strong>CQC</strong> &mdash; the Chinese certification mark.</li>
+</ul>
+
+<p>If your product is exported, the approval set is often what decides the part, not the electrical rating.
+Confirm the approvals on the specific part number you are ordering &mdash; they are not always identical
+across a product family.</p>
+
+<h2>Miniature relays and relay accessories</h2>
+
+<p>A miniature power relay is rarely used bare. The usual companion parts are sockets and DIN-rail bases
+that let the relay be replaced without disturbing the wiring, retaining clips for high-vibration
+installations, and identification labels for maintenance. YOMIN supplies multi-specification relay
+accessories alongside the relay range.</p>
+
+<p>Specifying the socket at the same time as the relay is worth doing. It fixes the pin arrangement, the
+terminal type and the footprint in one decision, and it makes future replacement a plug-in operation
+rather than a re-termination.</p>
+
+<h2>Sourcing</h2>
+
+<p>The miniature power relay range is produced under <strong>ISO 9001 and CE certified manufacturing</strong>.
+Standard lead time is 15&ndash;25 working days, extending to 30&ndash;45 days for OEM and custom work, with
+a minimum order of 100 units (500 for OEM or custom). Units carry a two-year warranty against manufacturing
+defects.</p>
+
+<p>To quote accurately, a supplier needs your coil voltage, contact rating, the load type &mdash; AC or DC,
+and the voltage &mdash; and the approvals your market requires. Those four items settle almost every
+miniature relay selection.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Looking for sealed power relays?</h2>
+    <p>Tell us your coil voltage, contact rating and load type. We supply miniature sealed power relays and relay accessories with ISO 9001 and CE certified production.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+
+<script defer src="/assets/js/i18n-es.js"></script>
+
+<script>(function(){var M={en:'',fr:'-fr',es:'-es',ar:'-ar'};var h=location.pathname.split('/').pop()||'';var b=h.replace(/-(?:fr|es|ar)$/,'').replace(/\.html$/,'');var ext=/\.html$/.test(h)?'.html':'';document.querySelectorAll('.lopt,.mlb').forEach(function(btn){var l=btn.getAttribute('data-lang');if(!l||!(l in M))return;btn.addEventListener('click',function(ev){ev.stopImmediatePropagation();ev.preventDefault();try{localStorage.setItem('ym_lang',l)}catch(e){}location.href=b+M[l]+ext;},true);});})();</script>
+</body>
+
+</html>
