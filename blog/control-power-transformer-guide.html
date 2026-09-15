@@ -36,12 +36,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>WiFi Energy Meter Guide: Connectivity, Specs and Where They Pay Off | Yomin Electric</title>
+<title>Control Power Transformer Guide: Sizing, Taps and EN 61558 | Yomin Electric</title>
 
-<meta name="description" content="A practical guide to WiFi energy meters: what the radio adds to measurement, the specs that actually matter, WiFi vs GPRS vs RS485, network requirements and a selection checklist.">
-<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/wifi-energy-meter-guide/hero.png">
+<meta name="description" content="How to specify a control power transformer: working out the VA you actually need, why voltage taps matter, inrush and short-time rating, and what EN 61558 requires of an isolation control transformer.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/control-power-transformer-guide/hero.png">
 
-<link rel="canonical" href="https://www.yominelectric.com/blog/wifi-energy-meter-guide">
+<link rel="canonical" href="https://www.yominelectric.com/blog/control-power-transformer-guide">
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
@@ -59,9 +59,9 @@
   "@graph": [
     {
       "@type": "BlogPosting",
-      "headline": "WiFi Energy Meter Guide: Connectivity, Specs and Where They Pay Off",
-      "description": "A practical guide to WiFi energy meters: what the radio adds to measurement, the specs that actually matter, WiFi vs GPRS vs RS485, network requirements and a selection checklist.",
-      "image": "https://www.yominelectric.com/assets/images/blog/wifi-energy-meter-guide/hero.png",
+      "headline": "Control Power Transformer Guide: Sizing, Taps and EN 61558",
+      "description": "How to specify a control power transformer: working out the VA you actually need, why voltage taps matter, inrush and short-time rating, and what EN 61558 requires of an isolation control transformer.",
+      "image": "https://www.yominelectric.com/assets/images/blog/control-power-transformer-guide/hero.png",
       "datePublished": "2026-09-14",
       "dateModified": "2026-09-14",
       "inLanguage": "en",
@@ -79,7 +79,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.yominelectric.com/blog/wifi-energy-meter-guide"
+        "@id": "https://www.yominelectric.com/blog/control-power-transformer-guide"
       }
     },
     {
@@ -87,34 +87,34 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is a WiFi energy meter used for?",
+          "name": "What is a control power transformer used for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Measuring electricity consumption and delivering the readings over a WiFi network instead of a manual display read - typically for tenant submetering, solar self-consumption monitoring, small-business energy management and prepaid metering."
+            "text": "Supplying and isolating the control circuit of a machine or panel: contactor and relay coils, indicator lamps, PLC and signalling circuits, at a lower and safer voltage than the main supply."
           }
         },
         {
           "@type": "Question",
-          "name": "Is a WiFi energy meter as accurate as a normal meter?",
+          "name": "How do I size a control power transformer?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Accuracy comes from the metering class, not the radio. A Class 1.0 WiFi meter has the same accuracy obligation as a Class 1.0 meter without connectivity."
+            "text": "Total the holding burden of the devices that operate simultaneously, add the inrush of the largest device that may start while the others are energised, then add margin and round up to the next standard rating. Derate if the enclosure ambient exceeds the rated ambient."
           }
         },
         {
           "@type": "Question",
-          "name": "Does a WiFi energy meter need the internet?",
+          "name": "What do the plus or minus 5 percent taps on the primary do?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Many models serve data to a local app on the same network without any internet connection. Internet access is only needed for remote dashboards or cloud storage."
+            "text": "They compensate for a supply voltage sitting at the edge of its tolerance band. Moving the primary connection one tap step corrects the secondary voltage without changing the transformer."
           }
         },
         {
           "@type": "Question",
-          "name": "Can a WiFi energy meter replace a current transformer setup?",
+          "name": "Is a control transformer the same as an isolation transformer?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Only up to its direct-connected current rating. Above that you still need current transformers and a transformer-operated meter."
+            "text": "A control power transformer with separate primary and secondary windings provides isolation as well as voltage reduction, which is why it is built and tested to a transformer safety standard."
           }
         }
       ]
@@ -197,9 +197,9 @@
 <main>
 
   <section class="blog-hero">
-    <div class="bh-breadcrumb"><a href="/">Home</a> · <a href="/blog">Blog</a> · <span>Energy Meters</span></div>
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Transformers</span></div>
     <span class="bh-tag">Buyer's Guides</span>
-    <h1 class="bh-title">WiFi Energy Meter Guide: Connectivity, Specs and Where They Pay Off</h1>
+    <h1 class="bh-title">Control Power Transformer Guide: Sizing, Taps and EN 61558</h1>
     <div class="bh-meta">
       <div class="avatar">ET</div>
       <strong style="color:var(--tx)">ET Engineering Team</strong>
@@ -211,77 +211,105 @@
   </section>
 
   <section class="content-section">
-    <img class="hero-img" src="/assets/images/blog/wifi-energy-meter-guide/hero.png" alt="Three-phase DIN-rail WiFi energy meter with LCD and keypad" loading="eager" fetchpriority="high" decoding="async">
+    <img class="hero-img" src="/assets/images/blog/control-power-transformer-guide/hero.png" alt="Single-phase JBK5 series control power transformer with orange terminal blocks" loading="eager" fetchpriority="high" decoding="async">
 
-    <p>A WiFi energy meter is an electricity meter with a radio inside it. The measurement part does what every meter does - it samples voltage and current and accumulates kWh. What the radio adds is the ability to hand that data to someone without anyone walking to the panel to read a display. For a landlord splitting bills across tenants, or a plant manager watching a feeder, that single change is usually the whole point.</p>
+    <p>A control power transformer sits between the mains and everything in a panel that is not a
+    motor: contactor coils, relay coils, indicator lamps, PLC inputs and 24 V signalling. Its job is twofold.
+    It steps the voltage down to what the control circuit needs, and it isolates that control circuit from
+    the supply, so a fault in the control wiring does not put mains potential on a terminal that an operator
+    can touch.</p>
 
-    <h2>What a WiFi energy meter actually does</h2>
-    <p>Two jobs run in parallel. The metering front end measures voltage and current per phase and accumulates energy; the specifications that govern its accuracy are the same ones that govern any Class 1 or Class 0.5S meter. The communications side then packages those registers and publishes them over WiFi - typically to a local app on the same network, to a cloud dashboard, or to both.</p>
-    <p>Because the two jobs are independent, a WiFi meter is not automatically more or less accurate than a plain meter. Buy the metering class you need first, and treat connectivity as the second decision. It is common to see buyers pick a cheap connected meter with poor accuracy when what they actually needed was a Class 1 meter that happens to report over WiFi.</p>
+    <h2>Why isolation is the point, not a bonus</h2>
+    <p>It is tempting to treat the transformer as a voltage changer and nothing more, particularly when the
+    control voltage happens to be close to the supply voltage. That misses the safety function. An isolation
+    control transformer with separate primary and secondary windings means the control circuit floats with
+    respect to earth on the primary side. An earth fault on the secondary then has no return path through the
+    transformer, so it does not become a shock hazard or a fire risk in the same way. This is why the
+    standard for these units is a safety standard, not merely a performance one.</p>
 
-    <h2>The specifications that decide whether it fits</h2>
-    <p>The meter in our range that this guide is built around is a three-phase DIN-rail unit with an integrated LCD and keypad. The ratings below are taken from the nameplate:</p>
-    <table>
-      <tr><th>Parameter</th><th>Value</th><th>Why it matters</th></tr>
-      <tr><td>Voltage</td><td>3&times;230/400 V</td><td>Standard three-phase four-wire LV networks</td></tr>
-      <tr><td>Current</td><td>3&times;10(100) A</td><td>Direct-connected to 100 A - no current transformers needed</td></tr>
-      <tr><td>Frequency</td><td>50 Hz</td><td>Matches IEC 50 Hz networks</td></tr>
-      <tr><td>Accuracy class</td><td>Class 1.0</td><td>Sub-billing and monitoring; not revenue-grade billing</td></tr>
-      <tr><td>Standards</td><td>IEC 62052-11, IEC 62053-21, IEC 62055-41</td><td>General requirements, static meters for active energy, and STS prepayment</td></tr>
-      <tr><td>Pulse output</td><td>400 imp/kWh and 400 imp/kvarh</td><td>Active and reactive energy both metered</td></tr>
-      <tr><td>Mounting</td><td>DIN rail</td><td>Fits standard distribution boards and enclosures</td></tr>
-    </table>
-    <p>The current rating is the one buyers misread most often. A 10(100) A meter is direct-connected: the load current passes through the meter terminals, so nothing sits between the load and the measurement. Above that - typically 100 A and up - you move to a transformer-operated meter fed by current transformers, and the accuracy question shifts to the CT's class and burden.</p>
-
-    <h2>WiFi vs GPRS vs RS485 vs LoRa</h2>
-    <p>Connectivity is where most of the confusion lives, because four technologies are sold as if they were interchangeable.</p>
+    <h2>Working out the VA you actually need</h2>
+    <p>Sizing is straightforward arithmetic done properly. Add up the steady-state burden of everything the
+    transformer will feed, then add margin for the two effects that a simple sum ignores:</p>
     <ul>
-      <li><strong>WiFi</strong> - the cheapest route when there is already a network on site: a home, shop, office or small plant. No subscription, no SIM, immediate local access. Its weak point is coverage and provisioning: a meter deep inside a metal enclosure in a plant may not hold a link.</li>
-      <li><strong>GPRS / 4G</strong> - for sites with no network at all: remote pump stations, containers, agricultural sites. Costs a SIM and a data plan, but works anywhere with cellular coverage.</li>
-      <li><strong>RS485 with Modbus</strong> - the industrial default. Wired, deterministic, easy to integrate into a BMS or SCADA system. It needs cabling and a master, which is exactly what WiFi avoids.</li>
-      <li><strong>LoRa / NB-IoT</strong> - long range at low data rates, used where meters are scattered over a wide site and battery life matters.</li>
+      <li><strong>Contactor and relay inrush.</strong> An AC coil draws several times its holding current for
+      the first cycles of pull-in. If several contactors can energise together, that moment defines the peak
+      demand.</li>
+      <li><strong>Simultaneity.</strong> Decide which loads can be on at the same time. Adding every lamp and
+      every coil at full rating and then applying a large margin produces an oversized transformer that
+      costs more and takes more panel space than the job needs.</li>
     </ul>
-    <p>A practical rule: if the meter has a stable WiFi network within reach, use it. If the site is remote or the panel is a Faraday cage, use 4G or RS485 and stop trying to make WiFi work.</p>
+    <p>A practical method: total the holding burdens of the devices that run together, add the inrush of the
+    largest device that may start while the rest are energised, then apply a modest margin. If the result
+    lands between two standard ratings, take the larger one.</p>
 
-    <h2>Where connected metering earns its cost</h2>
-    <ul>
-      <li><strong>Tenant submetering</strong> - each unit reads itself, so the landlord stops walking the building monthly.</li>
-      <li><strong>Solar self-consumption</strong> - seeing import versus export per circuit is the only way to size a battery sensibly.</li>
-      <li><strong>SME energy management</strong> - catching a feeder that runs at 3 a.m. or a compressor degrading slowly.</li>
-      <li><strong>Prepaid and credit metering</strong> - STS-based units let a consumer top up without an operator.</li>
-    </ul>
-
-    <h2>Planning the network before you order</h2>
-    <p>The meter is the easy part; the network is where projects stall. Confirm before purchase: that the site has a 2.4 GHz network where the meter will sit (many meters do not support 5 GHz); that the network can hold the number of extra clients you are adding; who owns the SSID and password, and what happens when they change; whether data leaves the site to a cloud service or stays local; and what integration exists - a documented Modbus TCP register map or a local API is worth far more than a pretty app, because it is what lets the data reach your own system.</p>
-
-    <h2>Selection checklist</h2>
+    <h2>The standard range</h2>
+    <p>The JBK5 series is the common European-pattern isolation control transformer. The published ratings run
+    from 20 VA up to 2500 VA, with rated input voltages around the 110 V and 230 V classes and typical
+    secondary outputs in the 6 V to 36 V range for control, illumination and indication duties, at 50/60 Hz.
+    Input is rated for circuits not exceeding 1000 V and output for circuits not exceeding 600 V, which
+    covers essentially every machine-tool control application.</p>
     <table>
-      <tr><th>Check</th><th>What to confirm</th></tr>
-      <tr><td>Phases and voltage</td><td>Single-phase or three-phase; 230 V or 230/400 V</td></tr>
-      <tr><td>Current</td><td>Direct-connected up to the site's maximum load, or CT-operated above it</td></tr>
-      <tr><td>Accuracy class</td><td>Class 1.0 for monitoring and sub-billing; Class 0.5S where accuracy is contractual</td></tr>
-      <tr><td>Connectivity</td><td>WiFi, 4G, RS485 or LoRa - matched to the site, not to the datasheet</td></tr>
-      <tr><td>Data access</td><td>Local API or Modbus registers, not cloud-only</td></tr>
-      <tr><td>Prepayment</td><td>Needed? Then confirm STS support rather than assuming it</td></tr>
-      <tr><td>Enclosure</td><td>DIN-rail space and WiFi signal at that position</td></tr>
+      <tr><th>Parameter</th><th>Typical value</th><th>Why it matters</th></tr>
+      <tr><td>Rated power</td><td>20 &ndash; 2500 VA</td><td>Pick from the standard ladder, not from a rounded-up guess</td></tr>
+      <tr><td>Rated input voltage</td><td>110 V / 230 V classes</td><td>Match the panel supply and its tolerance</td></tr>
+      <tr><td>Secondary voltages</td><td>6(12) V, 24(36) V and similar</td><td>Control, illumination and indication windings</td></tr>
+      <tr><td>Frequency</td><td>50 / 60 Hz</td><td>Confirm the site frequency before ordering</td></tr>
+      <tr><td>Ambient temperature</td><td>Up to 40 &deg;C, or 55 &deg;C for the higher class</td><td>Drives derating inside a closed enclosure</td></tr>
+      <tr><td>Safety standard</td><td>EN 61558</td><td>The safety-of-transformer standard the unit is built to</td></tr>
+      <tr><td>Protection class</td><td>IP2X on the terminal side</td><td>Finger-safe terminals, fuseless construction</td></tr>
     </table>
+
+    <h2>Voltage taps: the feature buyers skip</h2>
+    <p>On the unit shown in this guide the primary terminal block is marked with taps at 0, &minus;5%, and
+    +5% around the nominal input, alongside the nominal position. Those taps exist for a specific reason:
+    supply voltage at a real installation sits at the top of its tolerance band about as often as the bottom,
+    and a control circuit that is already marginal will fail in one of those conditions. With taps you can
+    move the primary connection one step and correct the secondary without changing the transformer.</p>
+    <p>The secondary side is marked for the output configuration in the same way, so a single frame can serve
+    more than one control voltage. When you compare quotations, check whether the taps are there. Two units
+    at the same VA and the same price are not the same product if one of them cannot be corrected on site.</p>
+
+    <h2>Ambient temperature and derating</h2>
+    <p>A control transformer inside a closed steel enclosure does not see the room temperature. It sees the
+    air in the enclosure, which sits above the room because every contactor coil and every drive in the
+    cabinet is adding heat. If the unit is rated for 40 &deg;C ambient and the panel runs at 55 &deg;C, the
+    rating you can use is lower than the nameplate figure. Either specify the higher ambient class or
+    ventilate the enclosure. This is one of the more common reasons a transformer that is correctly sized on
+    paper runs hot in service.</p>
+
+    <h2>Inrush on the primary</h2>
+    <p>The same effect that affects any transformer applies here: at switch-on the core can saturate briefly
+    and draw a current several times the rated primary current. In a control panel the primary is usually
+    protected by a small circuit breaker or a fuse. If that device is chosen from the steady-state VA alone it
+    may nuisance-trip when the panel is first energised. Choose the curve with the inrush in mind, and if the
+    transformer is fed from a contactor rather than a switch, check that the contacts are rated for the
+    make-current.</p>
 
     <h2>Frequently asked questions</h2>
-    <h3>What is a WiFi energy meter used for?</h3>
-    <p>Measuring electricity consumption and delivering the readings over a WiFi network instead of a manual display read - typically for tenant submetering, solar self-consumption monitoring, small-business energy management and prepaid metering.</p>
-    <h3>Is a WiFi energy meter as accurate as a normal meter?</h3>
-    <p>Accuracy comes from the metering class, not the radio. A Class 1.0 WiFi meter has the same accuracy obligation as a Class 1.0 meter without connectivity. Connectivity changes how data leaves the meter, not how it is measured.</p>
-    <h3>Does a WiFi energy meter need the internet?</h3>
-    <p>No. Many models will serve data to a local app on the same network without any internet connection. Internet access is only required if you want remote dashboards or cloud storage.</p>
-    <h3>Can a WiFi energy meter replace a current transformer setup?</h3>
-    <p>Only up to its direct-connected current rating. The three-phase unit described here is rated 3&times;10(100) A, so it connects directly up to 100 A per phase. Above that you still need current transformers and a transformer-operated meter.</p>
+    <h3>What is a control power transformer used for?</h3>
+    <p>Supplying and isolating the control circuit of a machine or panel &mdash; contactor and relay coils,
+    indicator lamps, PLC and signalling circuits &mdash; at a lower, safer voltage than the main supply.</p>
+    <h3>How do I size a control power transformer?</h3>
+    <p>Total the holding burden of the devices that operate simultaneously, add the inrush of the largest
+    device that may start while the others are energised, then add margin and round up to the next standard
+    rating. Derate if the enclosure ambient exceeds the transformer's rated ambient.</p>
+    <h3>What do the &plusmn;5% taps on the primary do?</h3>
+    <p>They compensate for supply voltage that sits at the edge of its tolerance band. Moving the primary
+    connection one tap step corrects the secondary voltage without changing the transformer, which matters
+    for marginal control circuits.</p>
+    <h3>Is a control transformer the same as an isolation transformer?</h3>
+    <p>A control power transformer with separate primary and secondary windings does provide isolation as
+    well as voltage reduction, which is why it is built and tested to a transformer safety standard rather
+    than only to a performance specification.</p>
 
-    <p>If you are specifying one for a project, send us the phase configuration, maximum load current, whether the site has a 2.4 GHz network, and how the data needs to be consumed. We will confirm the correct model rather than the closest one on the shelf.</p>
+    <p>If you are specifying one, tell us the panel supply voltage and frequency, the list of control loads
+    and which of them run together, the control voltage you need, and the ambient temperature inside the
+    enclosure. We will confirm the rating and the taps rather than leaving you to guess.</p>
   </section>
 
   <section class="cta-section">
-    <h2>Specifying a connected meter for a project?</h2>
-    <p>We manufacture three-phase and single-phase DIN-rail energy meters with WiFi, GPRS and RS485 options, in Class 1.0 and Class 0.5S. Send us the voltage, maximum current and how the data will be consumed - we confirm the right model within one working day.</p>
+    <h2>Specifying a control transformer for a panel build?</h2>
+    <p>We manufacture JBK5 series single-phase isolation control transformers from 20 VA to 2500 VA, with primary voltage taps, finger-safe terminals and EN 61558 construction. Send us your load list and control voltage and we will confirm the rating within one working day.</p>
     <a class="btn btn-primary" href="/contact">Request a quote</a>
   </section>
 </main>
@@ -311,6 +339,7 @@
 
 <script defer src="/assets/js/i18n-es.js"></script>
 
+<script>(function(){var M={en:'',fr:'-fr',es:'-es',ar:'-ar'};var h=location.pathname.split('/').pop()||'';var b=h.replace(/-(?:fr|es|ar)$/,'').replace(/\.html$/,'');var ext=/\.html$/.test(h)?'.html':'';document.querySelectorAll('.lopt,.mlb').forEach(function(btn){var l=btn.getAttribute('data-lang');if(!l||!(l in M))return;btn.addEventListener('click',function(ev){ev.stopImmediatePropagation();ev.preventDefault();try{localStorage.setItem('ym_lang',l)}catch(e){}location.href=b+M[l]+ext;},true);});})();</script>
 </body>
 
 </html>
