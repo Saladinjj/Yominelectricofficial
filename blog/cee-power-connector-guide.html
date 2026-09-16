@@ -42,6 +42,11 @@
 <meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/cee-power-connector-guide/hero.png">
 
 <link rel="canonical" href="https://www.yominelectric.com/blog/cee-power-connector-guide">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/cee-power-connector-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/cee-power-connector-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/cee-power-connector-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/cee-power-connector-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/cee-power-connector-guide">
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
@@ -199,7 +204,7 @@
   <section class="blog-hero">
     <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Connectors</span></div>
     <span class="bh-tag">Buyer's Guides</span>
-    <h1 class="bh-title">CEE / IEC Power Connector Guide: High-Current Connectors for ESS</h1>
+    <h1 class="bh-title" data-t="t1">CEE / IEC Power Connector Guide: High-Current Connectors for ESS</h1>
     <div class="bh-meta">
       <div class="avatar">ET</div>
       <strong style="color:var(--tx)">ET Engineering Team</strong>
@@ -217,92 +222,92 @@
 real current &mdash; not a signal, and not a domestic load. It exists so that a high-current circuit can be
 disconnected and reconnected quickly, by hand, without a tool and without opening the enclosure.</p>
 
-<p>That requirement is what drives every design decision in the part. A bolted busbar joint is electrically
+<p data-t="t2">That requirement is what drives every design decision in the part. A bolted busbar joint is electrically
 better in almost every way, but you cannot undo it in a service window with the panel live. A connector
 trades a little contact resistance for that access.</p>
 
-<h2>Where these connectors are actually used</h2>
+<h2 data-t="t3">Where these connectors are actually used</h2>
 
-<p>The published application for the YOMIN CEE / IEC rhino power connector is <em>high-current ESS and
+<p data-t="t4">The published application for the YOMIN CEE / IEC rhino power connector is <em>high-current ESS and
 industrial power</em>. In practice that means:</p>
 
 <ul>
-  <li><strong>Battery energy storage systems</strong> &mdash; rack-to-rack and system-to-inverter DC
+  <li data-t="t5"><strong>Battery energy storage systems</strong> &mdash; rack-to-rack and system-to-inverter DC
   connections that have to be broken for maintenance or transport.</li>
-  <li><strong>Industrial power distribution</strong> &mdash; high-current feeds to machinery and
+  <li data-t="t6"><strong>Industrial power distribution</strong> &mdash; high-current feeds to machinery and
   distribution units where a plug connection is required rather than a fixed one.</li>
-  <li><strong>Mobile and containerised equipment</strong> &mdash; anything that is assembled on site,
+  <li data-t="t7"><strong>Mobile and containerised equipment</strong> &mdash; anything that is assembled on site,
   moved, or shipped with the power connections separated.</li>
 </ul>
 
-<p>The common thread is that the connection must be repeatable. A connector that is mated once at the
+<p data-t="t8">The common thread is that the connection must be repeatable. A connector that is mated once at the
 factory is a worse choice than a bolted joint; a connector that is mated every time a rack is serviced is
 the only sensible choice.</p>
 
-<h2>Start from the current, then the contacts</h2>
+<h2 data-t="t9">Start from the current, then the contacts</h2>
 
-<p>Choosing a connector is mostly matching three numbers, in this order:</p>
+<p data-t="t10">Choosing a connector is mostly matching three numbers, in this order:</p>
 
 <ol>
-  <li><strong>Continuous current.</strong> The connector must carry the sustained load, not just the
+  <li data-t="t11"><strong>Continuous current.</strong> The connector must carry the sustained load, not just the
   peak. Derate for the ambient inside a closed cabinet, which is usually far hotter than the room.</li>
-  <li><strong>Voltage and system type.</strong> DC energy storage and AC industrial power make different
+  <li data-t="t12"><strong>Voltage and system type.</strong> DC energy storage and AC industrial power make different
   demands, particularly on arc control when the connection is broken under load.</li>
-  <li><strong>Conductor size.</strong> The connector has to accept the cable or bar you are actually
+  <li data-t="t13"><strong>Conductor size.</strong> The connector has to accept the cable or bar you are actually
   using. This is where most late-design surprises appear.</li>
 </ol>
 
-<p>Contacts on the YOMIN range are <strong>copper</strong>. That is the right starting point: copper is
+<p data-t="t14">Contacts on the YOMIN range are <strong>copper</strong>. That is the right starting point: copper is
 the standard high-current contact material, and plating quality on top of it decides whether the contact
 resistance stays low after a hundred mate-and-unmate cycles. A cheap connector with thin or uneven plating
 will measure fine on the bench and then run hot in service, because contact resistance climbs as the
 plating wears through.</p>
 
-<h2>What to check before ordering</h2>
+<h2 data-t="t15">What to check before ordering</h2>
 
 <ul>
-  <li><strong>Colour coding and keying.</strong> Multi-pole systems use colour and mechanical keying to
+  <li data-t="t16"><strong>Colour coding and keying.</strong> Multi-pole systems use colour and mechanical keying to
   prevent mismating. Confirm the coding matches the rest of your installation &mdash; a connector that is
   individually correct but coded differently from everything else on site is a maintenance hazard.</li>
-  <li><strong>Protective cover.</strong> An unused socket is an exposed live part. Where the connector may
+  <li data-t="t17"><strong>Protective cover.</strong> An unused socket is an exposed live part. Where the connector may
   be left unmated, specify the version with a protective cover.</li>
-  <li><strong>Mounting arrangement.</strong> Panel-mount, cable-end and enclosure-mount versions are not
+  <li data-t="t18"><strong>Mounting arrangement.</strong> Panel-mount, cable-end and enclosure-mount versions are not
   interchangeable. Send the panel cut-out drawing, not just a photo.</li>
-  <li><strong>Sealing and environment.</strong> Indoor panel use and outdoor container use need different
+  <li data-t="t19"><strong>Sealing and environment.</strong> Indoor panel use and outdoor container use need different
   protection. Do not assume the indoor part will survive a container roof.</li>
-  <li><strong>Standards compliance.</strong> CEE and IEC designations describe dimensional and safety
+  <li data-t="t20"><strong>Standards compliance.</strong> CEE and IEC designations describe dimensional and safety
   conventions. Confirm which standard the part is built to, and that it matches your market.</li>
 </ul>
 
-<h2>Design the joint, not just the part</h2>
+<h2 data-t="t21">Design the joint, not just the part</h2>
 
-<p>Most connector failures are installation failures. Three rules prevent nearly all of them:</p>
+<p data-t="t22">Most connector failures are installation failures. Three rules prevent nearly all of them:</p>
 
 <ul>
-  <li><strong>Use the correct conductor preparation.</strong> Ferrules or crimped terminations where the
+  <li data-t="t23"><strong>Use the correct conductor preparation.</strong> Ferrules or crimped terminations where the
   terminal is designed for them &mdash; never a twisted strand in a screw clamp.</li>
-  <li><strong>Respect the torque.</strong> Under-torqued terminals run hot; over-torqued terminals crack
+  <li data-t="t24"><strong>Respect the torque.</strong> Under-torqued terminals run hot; over-torqued terminals crack
   or strip. Use a torque wrench and record it.</li>
-  <li><strong>Keep strain off the contact.</strong> Support the cable so the connector is not carrying the
+  <li data-t="t25"><strong>Keep strain off the contact.</strong> Support the cable so the connector is not carrying the
   weight of the loom. This is the single most common cause of a cracked housing.</li>
 </ul>
 
-<h2>Sourcing and production</h2>
+<h2 data-t="t26">Sourcing and production</h2>
 
-<p>YOMIN manufactures CEE / IEC rhino power connectors for energy storage and industrial power under
+<p data-t="t27">YOMIN manufactures CEE / IEC rhino power connectors for energy storage and industrial power under
 <strong>ISO 9001 and CE certified manufacturing</strong>, in copper contact construction. Standard lead
 time is 15&ndash;25 working days, extending to 30&ndash;45 days for OEM and custom variants, with a minimum
 order of 100 units (500 for OEM or custom). Units carry a two-year warranty against manufacturing
 defects.</p>
 
-<p>If you are specifying for a new ESS platform, send the current rating, the system voltage, the conductor
+<p data-t="t28">If you are specifying for a new ESS platform, send the current rating, the system voltage, the conductor
 size and the panel cut-out. Those four items are enough for an accurate quotation &mdash; and for a
 manufacturer to tell you honestly whether a standard part will do or whether you need a custom variant.</p>
   </section>
 
   <section class="cta-section">
-    <h2>Sourcing high-current power connectors?</h2>
-    <p>Tell us your current rating, mounting arrangement and quantity. We supply CEE / IEC rhino power connectors for energy storage and industrial power, with ISO 9001 and CE certified production.</p>
+    <h2 data-t="t29">Sourcing high-current power connectors?</h2>
+    <p data-t="t30">Tell us your current rating, mounting arrangement and quantity. We supply CEE / IEC rhino power connectors for energy storage and industrial power, with ISO 9001 and CE certified production.</p>
     <a class="btn btn-primary" href="/contact">Request a quote</a>
   </section>
 </main>
@@ -331,6 +336,8 @@ manufacturer to tell you honestly whether a standard part will do or whether you
 <script defer src="/assets/js/main.js"></script>
 
 <script defer src="/assets/js/i18n-es.js"></script>
+<script>var _BLOG_T={"fr":{"blog_title":"Guide des connecteurs d'alimentation CEE / IEC : connecteurs à courant élevé pour le stockage d'énergie","t1":"Guide des connecteurs d'alimentation CEE / IEC : connecteurs à courant élevé pour le stockage d'énergie","t2":"C'est cette exigence qui dicte chaque décision de conception de la pièce. Un raccordement de jeu de barres boulonné est électriquement meilleur à presque tous les égards, mais vous ne pouvez pas le défaire pendant une fenêtre de maintenance avec l'armoire sous tension. Un connecteur échange une légère résistance de contact contre cet accès.","t3":"Où ces connecteurs sont réellement utilisés","t4":"L'application publiée du connecteur de puissance rhino CEE / IEC de YOMIN est <em>le stockage d'énergie à courant élevé et la distribution industrielle</em>. En pratique, cela signifie :","t5":"<strong>Systèmes de stockage d'énergie par batterie</strong> &mdash; liaisons DC de rack à rack et de système à onduleur qui doivent être interrompues pour la maintenance ou le transport.","t6":"<strong>Distribution d'énergie industrielle</strong> &mdash; alimentations à courant élevé vers des machines et des unités de distribution où une connexion par fiche est exigée plutôt qu'un raccordement fixe.","t7":"<strong>Équipements mobiles et conteneurisés</strong> &mdash; tout ce qui est assemblé sur site, déplacé ou expédié avec les connexions électriques séparées.","t8":"Le fil conducteur est que la connexion doit être répétable. Un connecteur appairé une seule fois à l'usine est un moins bon choix qu'un joint boulonné ; un connecteur appairé à chaque maintenance de rack est le seul choix sensé.","t9":"Partez du courant, puis des contacts","t10":"Choisir un connecteur consiste surtout à faire correspondre trois chiffres, dans cet ordre :","t11":"<strong>Courant permanent.</strong> Le connecteur doit supporter la charge continue, pas seulement la pointe. Appliquez un déclassement pour l'ambiance à l'intérieur d'une armoire fermée, généralement bien plus chaude que la pièce.","t12":"<strong>Tension et type de réseau.</strong> Le stockage d'énergie DC et la distribution industrielle AC imposent des exigences différentes, notamment sur le contrôle de l'arc lorsque la connexion est interrompue en charge.","t13":"<strong>Section du conducteur.</strong> Le connecteur doit accepter le câble ou la barre que vous utilisez réellement. C'est là que surviennent la plupart des surprises de fin de conception.","t14":"Les contacts de la gamme YOMIN sont en <strong>cuivre</strong>. C'est le bon point de départ : le cuivre est le matériau de contact standard pour les courants élevés, et la qualité du revêtement par-dessus détermine si la résistance de contact reste faible après une centaine de cycles d'accouplement. Un connecteur bon marché au revêtement mince ou irrégulier mesurera correctement au banc puis chauffera en service, car la résistance de contact augmente à mesure que le revêtement s'use.","t15":"Ce qu'il faut vérifier avant de commander","t16":"<strong>Codage couleur et détrompage.</strong> Les systèmes multipolaires utilisent la couleur et un détrompage mécanique pour empêcher les mauvais appairages. Confirmez que le codage correspond au reste de votre installation &mdash; un connecteur individuellement correct mais codé différemment de tout le reste du site est un risque de maintenance.","t17":"<strong>Couvercle de protection.</strong> Une prise inutilisée est une pièce sous tension exposée. Là où le connecteur peut rester non appairé, spécifiez la version avec couvercle de protection.","t18":"<strong>Mode de montage.</strong> Les versions pour montage en panneau, en extrémité de câble et en coffret ne sont pas interchangeables. Envoyez le plan de découpe du panneau, pas seulement une photo.","t19":"<strong>Étanchéité et environnement.</strong> Un usage en armoire intérieure et un usage en conteneur extérieur demandent des protections différentes. Ne supposez pas que la pièce d'intérieur survivra à un toit de conteneur.","t20":"<strong>Conformité aux normes.</strong> Les désignations CEE et IEC décrivent des conventions dimensionnelles et de sécurité. Confirmez la norme selon laquelle la pièce est construite, et qu'elle correspond à votre marché.","t21":"Concevez le raccordement, pas seulement la pièce","t22":"La plupart des défaillances de connecteurs sont des défauts d'installation. Trois règles les évitent presque toutes :","t23":"<strong>Utilisez la préparation de conducteur correcte.</strong> Embouts ou terminaisons serties là où la borne est conçue pour eux &mdash; jamais un toron torsadé dans une borne à vis.","t24":"<strong>Respectez le couple.</strong> Des bornes sous-serrées chauffent ; des bornes trop serrées fissurent ou foirent. Utilisez une clé dynamométrique et consignez le couple.","t25":"<strong>Gardez l'effort hors du contact.</strong> Soutenez le câble pour que le connecteur ne porte pas le poids du faisceau. C'est de loin la cause la plus fréquente de boîtier fissuré.","t26":"Approvisionnement et production","t27":"YOMIN fabrique des connecteurs de puissance rhino CEE / IEC pour le stockage d'énergie et la distribution industrielle selon une <strong>fabrication certifiée ISO 9001 et CE</strong>, avec des contacts en cuivre. Le délai standard est de 15&ndash;25 jours ouvrés, étendu à 30&ndash;45 jours pour les variantes OEM et personnalisées, avec une commande minimale de 100 unités (500 pour l'OEM ou le sur-mesure). Les unités bénéficient d'une garantie de deux ans contre les défauts de fabrication.","t28":"Si vous spécifiez pour une nouvelle plateforme ESS, envoyez le courant assigné, la tension du système, la section du conducteur et la découpe du panneau. Ces quatre éléments suffisent pour un devis précis &mdash; et pour qu'un fabricant vous dise honnêtement si une pièce standard convient ou s'il vous faut une variante personnalisée.","t29":"Vous recherchez des connecteurs d'alimentation à courant élevé ?","t30":"Indiquez-nous votre courant assigné, votre mode de montage et votre quantité. Nous fournissons des connecteurs de puissance rhino CEE / IEC pour le stockage d'énergie et la distribution industrielle, avec une production certifiée ISO 9001 et CE."},"es":{"blog_title":"Guía de conectores de potencia CEE / IEC: conectores de alta corriente para ESS","t1":"Guía de conectores de potencia CEE / IEC: conectores de alta corriente para ESS","t2":"Ese requisito es el que guía cada decisión de diseño de la pieza. Una unión de barra colectora atornillada es eléctricamente mejor en casi todos los aspectos, pero no puede deshacerse en una ventana de mantenimiento con el cuadro en tensión. Un conector cambia un poco de resistencia de contacto por ese acceso.","t3":"Dónde se utilizan realmente estos conectores","t4":"La aplicación publicada del conector de potencia rhino CEE / IEC de YOMIN es <em>ESS de alta corriente y potencia industrial</em>. En la práctica, esto significa:","t5":"<strong>Sistemas de almacenamiento de energía con baterías</strong> &mdash; conexiones DC de rack a rack y de sistema a inversor que deben interrumpirse para mantenimiento o transporte.","t6":"<strong>Distribución de potencia industrial</strong> &mdash; alimentaciones de alta corriente a maquinaria y unidades de distribución donde se exige una conexión por enchufe en lugar de una fija.","t7":"<strong>Equipos móviles y en contenedor</strong> &mdash; cualquier equipo que se monta en obra, se traslada o se envía con las conexiones de potencia separadas.","t8":"El hilo común es que la conexión debe ser repetible. Un conector acoplado una sola vez en fábrica es peor elección que una unión atornillada; un conector que se acopla cada vez que se da servicio a un rack es la única opción sensata.","t9":"Empiece por la corriente y luego los contactos","t10":"Elegir un conector consiste sobre todo en hacer coincidir tres números, en este orden:","t11":"<strong>Corriente continua.</strong> El conector debe soportar la carga sostenida, no solo el pico. Aplique reducción por la temperatura ambiente dentro de un cuadro cerrado, que suele ser mucho más caliente que la sala.","t12":"<strong>Tensión y tipo de sistema.</strong> El almacenamiento DC y la potencia industrial AC imponen exigencias distintas, en particular en el control del arco cuando la conexión se interrumpe en carga.","t13":"<strong>Sección del conductor.</strong> El conector debe admitir el cable o la barra que realmente utiliza. Aquí es donde aparecen la mayoría de las sorpresas de final de diseño.","t14":"Los contactos de la gama YOMIN son de <strong>cobre</strong>. Es el punto de partida correcto: el cobre es el material de contacto estándar para alta corriente, y la calidad del recubrimiento sobre él decide si la resistencia de contacto se mantiene baja tras cien ciclos de acople. Un conector barato con recubrimiento fino o irregular medirá bien en banco y luego se calentará en servicio, porque la resistencia de contacto sube a medida que el recubrimiento se desgasta.","t15":"Qué comprobar antes de pedir","t16":"<strong>Codificación por color y enclavamiento.</strong> Los sistemas multipolares usan color y enclavamiento mecánico para evitar acoples incorrectos. Confirme que la codificación coincide con el resto de su instalación &mdash; un conector correcto por sí solo pero codificado de forma distinta a todo lo demás en la planta es un riesgo de mantenimiento.","t17":"<strong>Tapa protectora.</strong> Una toma sin usar es una parte activa expuesta. Donde el conector pueda quedar sin acoplar, especifique la versión con tapa protectora.","t18":"<strong>Montaje.</strong> Las versiones para panel, extremo de cable y montaje en envolvente no son intercambiables. Envíe el plano del recorte del panel, no solo una foto.","t19":"<strong>Estanqueidad y entorno.</strong> El uso en cuadro interior y en contenedor exterior requieren protecciones distintas. No suponga que la pieza de interior sobrevivirá a un techo de contenedor.","t20":"<strong>Cumplimiento de normas.</strong> Las designaciones CEE e IEC describen convenciones dimensionales y de seguridad. Confirme a qué norma está construida la pieza y que coincide con su mercado.","t21":"Diseñe la unión, no solo la pieza","t22":"La mayoría de los fallos de conectores son fallos de instalación. Tres reglas evitan casi todos:","t23":"<strong>Use la preparación de conductor correcta.</strong> Terminales o terminaciones engastadas donde el borne esté diseñado para ellas &mdash; nunca un conductor trenzado torcido en un borne de tornillo.","t24":"<strong>Respete el par de apriete.</strong> Los bornes poco apretados se calientan; los excesivamente apretados se agrietan o se pasan de rosca. Use una llave dinamométrica y registre el par.","t25":"<strong>Mantenga el esfuerzo fuera del contacto.</strong> Sujete el cable para que el conector no soporte el peso del mazo. Es la causa más común de carcasa agrietada.","t26":"Abastecimiento y producción","t27":"YOMIN fabrica conectores de potencia rhino CEE / IEC para almacenamiento de energía y potencia industrial bajo <strong>fabricación certificada ISO 9001 y CE</strong>, con construcción de contactos de cobre. El plazo estándar es de 15&ndash;25 días laborables, ampliable a 30&ndash;45 días para variantes OEM y personalizadas, con un pedido mínimo de 100 unidades (500 para OEM o personalizado). Las unidades incluyen dos años de garantía contra defectos de fabricación.","t28":"Si está especificando para una nueva plataforma ESS, envíe la corriente asignada, la tensión del sistema, la sección del conductor y el recorte del panel. Esos cuatro datos bastan para un presupuesto preciso &mdash; y para que un fabricante le diga con honestidad si sirve una pieza estándar o si necesita una variante personalizada.","t29":"¿Busca conectores de potencia de alta corriente?","t30":"Indíquenos su corriente asignada, el tipo de montaje y la cantidad. Suministramos conectores de potencia rhino CEE / IEC para almacenamiento de energía y potencia industrial, con producción certificada ISO 9001 y CE."},"ar":{"blog_title":"دليل موصلات الطاقة CEE / IEC: موصلات عالية التيار لأنظمة تخزين الطاقة","t1":"دليل موصلات الطاقة CEE / IEC: موصلات عالية التيار لأنظمة تخزين الطاقة","t2":"هذا المطلب هو ما يحكم كل قرار تصميمي في القطعة. الوصلة المصفحة المربوطة بالبراغي أفضل كهربائياً من كل النواحي تقريباً، لكن لا يمكن فكها في نافذة صيانة ولوحة التوزيع تحت الجهد. الموصل يقايض جزءاً بسيطاً من مقاومة التلامس مقابل إمكانية الوصول هذه.","t3":"أين تُستخدم هذه الموصلات فعلاً","t4":"التطبيق المنشور لموصل الطاقة rhino من YOMIN بمعيار CEE / IEC هو <em>أنظمة تخزين الطاقة عالية التيار والطاقة الصناعية</em>. عملياً يعني ذلك:","t5":"<strong>أنظمة تخزين الطاقة بالبطاريات</strong> &mdash; وصلات التيار المستمر من رف إلى رف ومن النظام إلى العاكس، والتي يجب فصلها للصيانة أو النقل.","t6":"<strong>توزيع الطاقة الصناعية</strong> &mdash; تغذيات عالية التيار للآلات ووحدات التوزيع حيث يُطلب توصيل قابس بدلاً من توصيل ثابت.","t7":"<strong>المعدات المتنقلة والحاويات</strong> &mdash; كل ما يُجمّع في الموقع أو يُنقل أو يُشحن مع فصل وصلات الطاقة.","t8":"القاسم المشترك هو أن التوصيل يجب أن يكون قابلاً للتكرار. الموصل الذي يُقرن مرة واحدة في المصنع خيار أسوأ من وصلة مربوطة بالبراغي؛ أما الموصل الذي يُقرن في كل مرة تُصان فيها الرف فهو الخيار المعقول الوحيد.","t9":"ابدأ من التيار ثم من التلامس","t10":"اختيار الموصل هو في الأساس مطابقة ثلاثة أرقام، بهذا الترتيب:","t11":"<strong>التيار المستمر.</strong> يجب أن يتحمل الموصل الحمل المستمر لا الذروة فقط. طبّق تخفيض القدرة حسب درجة الحرارة داخل لوحة مغلقة، وهي عادة أشد حرارة بكثير من الغرفة.","t12":"<strong>الجهد ونوع النظام.</strong> تخزين الطاقة بالتيار المستمر والطاقة الصناعية بالتيار المتردد يفرضان متطلبات مختلفة، لا سيما في التحكم بالقوس عند فصل التوصيل تحت الحمل.","t13":"<strong>مقطع الموصل.</strong> يجب أن يستوعب الموصل الكابل أو القضيب الذي تستخدمه فعلاً. هنا تظهر معظم مفاجآت نهاية التصميم.","t14":"التلامسات في مجموعة YOMIN من <strong>النحاس</strong>. وهذه نقطة البداية الصحيحة: فالنحاس هو مادة التلامس القياسية للتيارات العالية، وجودة الطلاء فوقه هي التي تحدد بقاء مقاومة التلامس منخفضة بعد مئة دورة قرن وفصل. الموصل الرخيص بطلاء رقيق أو غير منتظم سيُظهر قياسات جيدة على طاولة الاختبار ثم يسخن في الخدمة، لأن مقاومة التلامس ترتفع مع تآكل الطلاء.","t15":"ما يجب التحقق منه قبل الطلب","t16":"<strong>الترميز اللوني والمفتاح الميكانيكي.</strong> تستخدم الأنظمة متعددة الأقطاب اللون والمفتاح الميكانيكي لمنع القران الخاطئ. تأكد من أن الترميز يطابق بقية المنشأة &mdash; فالموصل الصحيح بمفرده لكن بترميز مختلف عن كل ما في الموقع يشكل خطراً على الصيانة.","t17":"<strong>الغطاء الواقي.</strong> المقبس غير المستخدم جزء مكشوف تحت الجهد. حيث قد يبقى الموصل غير مقرون، حدّد النسخة المزودة بغطاء واقٍ.","t18":"<strong>طريقة التركيب.</strong> نسخ التركيب على اللوحة وعلى نهاية الكابل وعلى الحاوية ليست متبادلة. أرسل رسم فتحة اللوحة، لا صورة فقط.","t19":"<strong>الإحكام والبيئة.</strong> الاستخدام الداخلي في لوحة والاستخدام الخارجي في حاوية يتطلبان حماية مختلفة. لا تفترض أن القطعة الداخلية ستصمد على سطح حاوية.","t20":"<strong>الامتثال للمعايير.</strong> تصف تسميات CEE و IEC أعرافاً أبعادية وأمنية. تأكد من المعيار الذي صُنعت القطعة وفقه، ومن مطابقته لسوقك.","t21":"صمّم الوصلة لا القطعة فقط","t22":"معظم أعطال الموصلات هي أعطال تركيب. ثلاث قواعد تمنع جميعها تقريباً:","t23":"<strong>استخدم التحضير الصحيح للموصل.</strong> أطراف أو نهايات معصورة حيث صُمم الطرف لها &mdash; ولا تستخدم أبداً جدلة ملتوية في ملقط برغي.","t24":"<strong>احترم عزم الربط.</strong> الأطراف غير المحكمة تسخن، والمحكمة بإفراط تتشقق أو تتلف أسنانها. استخدم مفتاح عزم وسجّل القيمة.","t25":"<strong>أبعد الإجهاد عن التلامس.</strong> ادعم الكابل حتى لا يتحمل الموصل وزن الضفيرة. هذا هو السبب الأكثر شيوعاً لتشقق الهيكل.","t26":"التوريد والإنتاج","t27":"تصنّع YOMIN موصلات الطاقة rhino بمعيار CEE / IEC لتخزين الطاقة والطاقة الصناعية ضمن <strong>تصنيع معتمد بشهادتي ISO 9001 و CE</strong>، بتلامسات نحاسية. مدة التسليم القياسية 15&ndash;25 يوم عمل، وتمتد إلى 30&ndash;45 يوماً للنسخ المخصصة وتصنيع المعدات الأصلية، بحد أدنى للطلب 100 وحدة (500 للتصنيع الأصلي أو المخصص). وتشمل الوحدات ضماناً لمدة سنتين ضد عيوب التصنيع.","t28":"إن كنت تحدد مواصفات لمنصة تخزين طاقة جديدة، فأرسل التيار المقنن وجهد النظام ومقطع الموصل وفتحة اللوحة. هذه البنود الأربعة كافية لعرض سعر دقيق &mdash; ولكي يخبرك المصنّع بصدق إن كانت قطعة قياسية تكفي أم تحتاج نسخة مخصصة.","t29":"تبحث عن موصلات طاقة عالية التيار؟","t30":"أخبرنا بالتيار المقنن وطريقة التركيب والكمية. نزوّد بموصلات الطاقة rhino بمعيار CEE / IEC لتخزين الطاقة والطاقة الصناعية، بتصنيع معتمد بشهادتي ISO 9001 و CE."}};</script>
+<script>(function(){var M={en:'',fr:'-fr',es:'-es',ar:'-ar'};var h=location.pathname.split('/').pop()||'';var b=h.replace(/-(?:fr|es|ar)$/,'').replace(/\.html$/,'');var ext=/\.html$/.test(h)?'.html':'';document.querySelectorAll('.lopt,.mlb').forEach(function(btn){var l=btn.getAttribute('data-lang');if(!l||!(l in M))return;btn.addEventListener('click',function(ev){ev.stopImmediatePropagation();ev.preventDefault();try{localStorage.setItem('ym_lang',l)}catch(e){}location.href=b+M[l]+ext;},true);});})();</script>
 </body>
 
 </html>

@@ -199,7 +199,7 @@
   <section class="blog-hero">
     <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Transformers</span></div>
     <span class="bh-tag">Buyer's Guides</span>
-    <h1 class="bh-title">Toroidal Transformer Guide: When the Ring Core Is Worth It</h1>
+    <h1 class="bh-title" data-t="t1">Toroidal Transformer Guide: When the Ring Core Is Worth It</h1>
     <div class="bh-meta">
       <div class="avatar">ET</div>
       <strong style="color:var(--tx)">ET Engineering Team</strong>
@@ -220,109 +220,109 @@
     cheaper answer. For isolation supplies, audio, instrumentation and medical equipment it often decides
     whether the product passes.</p>
 
-    <h2>Why the ring core behaves differently</h2>
-    <p>In a conventional laminated (EI) transformer the core is built from stacked plates with an air gap at
+    <h2 data-t="t2">Why the ring core behaves differently</h2>
+    <p data-t="t3">In a conventional laminated (EI) transformer the core is built from stacked plates with an air gap at
     the joints, and the windings sit in bobbins on the outside of the core legs. In a toroidal transformer the
     core is a continuous wound strip of grain-oriented steel, and the windings are wound directly through and
     around that ring. Two consequences follow from the geometry:</p>
     <ul>
-      <li><strong>The magnetic circuit has no joints.</strong> There is no gap for flux to jump, so the core
+      <li data-t="t4"><strong>The magnetic circuit has no joints.</strong> There is no gap for flux to jump, so the core
       works more efficiently and the stray magnetic field is far smaller. The field is largely contained
       inside the ring rather than spilling sideways.</li>
-      <li><strong>The windings are distributed around the whole core.</strong> The magnetic forces on the
+      <li data-t="t5"><strong>The windings are distributed around the whole core.</strong> The magnetic forces on the
       copper are spread evenly instead of being concentrated at the bobbin ends, so the core does not
       physically buzz against its own windings.</li>
     </ul>
-    <p>Practically, that means lower radiated hum and lower electrical noise on the secondary. In an
+    <p data-t="t6">Practically, that means lower radiated hum and lower electrical noise on the secondary. In an
     audio amplifier or a sensitive measurement front end, that difference is audible and measurable. In a
     machine-tool control panel it usually is not.</p>
 
-    <h2>Toroidal versus laminated: the honest comparison</h2>
+    <h2 data-t="t7">Toroidal versus laminated: the honest comparison</h2>
     <table>
-      <tr><th>Consideration</th><th>Toroidal</th><th>Laminated (EI)</th></tr>
-      <tr><td>Stray magnetic field</td><td>Low &mdash; field largely confined to the ring</td><td>Higher &mdash; spills from the core joints</td></tr>
-      <tr><td>Mechanical hum</td><td>Low</td><td>Higher</td></tr>
-      <tr><td>Size and weight for a given VA</td><td>Smaller, lighter</td><td>Larger, heavier</td></tr>
-      <tr><td>Inrush current</td><td>Higher &mdash; the low-loss core saturates fast on switch-on</td><td>Lower</td></tr>
-      <tr><td>Cost for a given VA</td><td>Higher</td><td>Lower</td></tr>
-      <tr><td>Mounting</td><td>Centre bolt through the ring, or a potted enclosure</td><td>Foot brackets or a frame</td></tr>
-      <tr><td>Custom windings</td><td>Easy to wind to order in small quantities</td><td>Needs a bobbin for the size</td></tr>
+      <tr><th data-t="t8">Consideration</th><th data-t="t9">Toroidal</th><th data-t="t10">Laminated (EI)</th></tr>
+      <tr><td data-t="t11">Stray magnetic field</td><td data-t="t12">Low &mdash; field largely confined to the ring</td><td data-t="t13">Higher &mdash; spills from the core joints</td></tr>
+      <tr><td data-t="t14">Mechanical hum</td><td data-t="t15">Low</td><td data-t="t16">Higher</td></tr>
+      <tr><td data-t="t17">Size and weight for a given VA</td><td data-t="t18">Smaller, lighter</td><td data-t="t19">Larger, heavier</td></tr>
+      <tr><td data-t="t20">Inrush current</td><td data-t="t21">Higher &mdash; the low-loss core saturates fast on switch-on</td><td data-t="t22">Lower</td></tr>
+      <tr><td data-t="t23">Cost for a given VA</td><td data-t="t24">Higher</td><td data-t="t25">Lower</td></tr>
+      <tr><td data-t="t26">Mounting</td><td data-t="t27">Centre bolt through the ring, or a potted enclosure</td><td data-t="t28">Foot brackets or a frame</td></tr>
+      <tr><td data-t="t29">Custom windings</td><td data-t="t30">Easy to wind to order in small quantities</td><td data-t="t31">Needs a bobbin for the size</td></tr>
     </table>
-    <p>Two of those rows catch people out. The first is inrush: because a toroidal core is efficient, it can
+    <p data-t="t32">Two of those rows catch people out. The first is inrush: because a toroidal core is efficient, it can
     draw a large current spike for the first cycles after switch-on. If the transformer is fed from a
     breaker or a solid-state relay on the primary, size that protective device with the inrush in mind,
     not just the steady-state VA. The second is mounting: a toroid cannot simply be bolted to a backplate
     at its corners. It is normally held by a single centre bolt through the ring, clamped between metal
     plates, which is exactly how the units in our range are built.</p>
 
-    <h2>Where a toroidal transformer earns its cost</h2>
+    <h2 data-t="t33">Where a toroidal transformer earns its cost</h2>
     <ul>
-      <li><strong>Isolation supplies.</strong> Where a circuit must be galvanically separated from the mains
+      <li data-t="t34"><strong>Isolation supplies.</strong> Where a circuit must be galvanically separated from the mains
       for safety or for noise reasons, and where a stray field would couple into nearby signal wiring.</li>
-      <li><strong>Audio and instrumentation.</strong> Low hum and low radiated field directly improve the
+      <li data-t="t35"><strong>Audio and instrumentation.</strong> Low hum and low radiated field directly improve the
       noise floor, which is why this is the classic application.</li>
-      <li><strong>Medical and laboratory equipment.</strong> Compact, low-leakage construction where the
+      <li data-t="t36"><strong>Medical and laboratory equipment.</strong> Compact, low-leakage construction where the
       enclosure is small and the surrounding electronics are sensitive.</li>
-      <li><strong>Control and signal supplies inside tight enclosures.</strong> Where there is simply not
+      <li data-t="t37"><strong>Control and signal supplies inside tight enclosures.</strong> Where there is simply not
       the depth for a laminated stack plus its bobbin.</li>
     </ul>
 
-    <h2>What to specify</h2>
-    <p>An order for a toroidal transformer is defined by a short list. Give the factory all of it and there
+    <h2 data-t="t38">What to specify</h2>
+    <p data-t="t39">An order for a toroidal transformer is defined by a short list. Give the factory all of it and there
     is nothing left to interpret:</p>
     <table>
-      <tr><th>Parameter</th><th>What to state</th></tr>
-      <tr><td>Rated power</td><td>The VA you need, not the VA of the transformer you found first. Add up the
+      <tr><th data-t="t40">Parameter</th><th data-t="t41">What to state</th></tr>
+      <tr><td data-t="t42">Rated power</td><td data-t="t43">The VA you need, not the VA of the transformer you found first. Add up the
       actual secondary loads, including start-up peaks.</td></tr>
-      <tr><td>Primary voltage</td><td>Nominal mains voltage and frequency at the installation site.</td></tr>
-      <tr><td>Secondary voltage and current</td><td>Every secondary winding, with its own voltage and current.
+      <tr><td data-t="t44">Primary voltage</td><td data-t="t45">Nominal mains voltage and frequency at the installation site.</td></tr>
+      <tr><td data-t="t46">Secondary voltage and current</td><td data-t="t47">Every secondary winding, with its own voltage and current.
       Multiple secondaries are normal on a toroid.</td></tr>
-      <tr><td>Regulation</td><td>How much the output may droop from no-load to full load. A small toroid with
+      <tr><td data-t="t48">Regulation</td><td data-t="t49">How much the output may droop from no-load to full load. A small toroid with
       thin wire can drop noticeably.</td></tr>
-      <tr><td>Insulation and class</td><td>The insulation system and temperature class required by the
+      <tr><td data-t="t50">Insulation and class</td><td data-t="t51">The insulation system and temperature class required by the
       enclosure and the applicable standard.</td></tr>
-      <tr><td>Termination</td><td>Flying leads, screw terminals, or a terminal block; lead length and colour
+      <tr><td data-t="t52">Termination</td><td data-t="t53">Flying leads, screw terminals, or a terminal block; lead length and colour
       coding.</td></tr>
-      <tr><td>Mounting</td><td>Centre-bolt with mounting plates, or a potted/resin-filled enclosure.</td></tr>
-      <tr><td>Compliance</td><td>Which standard the unit must be marked to, and whether a declaration is
+      <tr><td data-t="t54">Mounting</td><td data-t="t55">Centre-bolt with mounting plates, or a potted/resin-filled enclosure.</td></tr>
+      <tr><td data-t="t56">Compliance</td><td data-t="t57">Which standard the unit must be marked to, and whether a declaration is
       needed with the shipment.</td></tr>
     </table>
 
-    <h2>Reading the nameplate</h2>
-    <p>A toroidal transformer nameplate normally carries the brand, the model code, the VA rating, the
+    <h2 data-t="t58">Reading the nameplate</h2>
+    <p data-t="t59">A toroidal transformer nameplate normally carries the brand, the model code, the VA rating, the
     primary voltage and frequency, and the secondary voltage, with each lead identified by colour. On the
     single-phase unit shown in this guide, for example, the nameplate identifies the primary side and the
     secondary side separately and carries a CE mark. If a quotation arrives without a nameplate drawing
     showing those fields, ask for one before ordering &mdash; the lead colours and the thermal cut-out
     arrangement are what the installer will actually work from.</p>
 
-    <h2>Frequently asked questions</h2>
-    <h3>Is a toroidal transformer better than a laminated one?</h3>
-    <p>Not universally. It is better on stray field, hum, and size for a given rating, and worse on cost and
+    <h2 data-t="t60">Frequently asked questions</h2>
+    <h3 data-t="t61">Is a toroidal transformer better than a laminated one?</h3>
+    <p data-t="t62">Not universally. It is better on stray field, hum, and size for a given rating, and worse on cost and
     on inrush current. It is the right choice when low noise or low radiated field matters, and the wrong
     choice when the only requirement is the cheapest way to change a voltage.</p>
-    <h3>Can a toroidal transformer be used as an isolation transformer?</h3>
-    <p>Yes. A transformer with separate primary and secondary windings provides galvanic isolation whatever
+    <h3 data-t="t63">Can a toroidal transformer be used as an isolation transformer?</h3>
+    <p data-t="t64">Yes. A transformer with separate primary and secondary windings provides galvanic isolation whatever
     the core shape. The toroidal construction simply adds the benefit of a smaller stray field, which is
     why isolation supplies for sensitive equipment are usually toroidal.</p>
-    <h3>Why does my toroidal transformer trip the breaker on switch-on?</h3>
-    <p>Because the core is efficient, the first half-cycles after switch-on can draw a large inrush. If the
+    <h3 data-t="t65">Why does my toroidal transformer trip the breaker on switch-on?</h3>
+    <p data-t="t66">Because the core is efficient, the first half-cycles after switch-on can draw a large inrush. If the
     primary protection is a fast magnetic breaker sized only for the steady-state current, it may trip. Use
     a slower curve, a higher rating, or a soft-start arrangement, and check the inrush figure with the
     manufacturer.</p>
-    <h3>Can a toroidal transformer be wound to a custom voltage?</h3>
-    <p>Yes, and it is easier than for a laminated transformer because no new bobbin is needed. Custom VA,
+    <h3 data-t="t67">Can a toroidal transformer be wound to a custom voltage?</h3>
+    <p data-t="t68">Yes, and it is easier than for a laminated transformer because no new bobbin is needed. Custom VA,
     custom primary and secondary voltages, and multiple secondaries are all normal OEM work rather than a
     special order.</p>
 
-    <p>If you are specifying one, send us the required VA, the primary voltage and frequency, every
+    <p data-t="t69">If you are specifying one, send us the required VA, the primary voltage and frequency, every
     secondary voltage and current, the mounting you have space for, and the standard the unit must be marked
     to. We will confirm the winding rather than the nearest catalogue item.</p>
   </section>
 
   <section class="cta-section">
-    <h2>Need a toroidal transformer wound to your specification?</h2>
-    <p>We manufacture single-phase toroidal transformers with copper windings, centre-bolt mounting and CE marking, in custom VA ratings and voltages. Send us your primary, secondaries and mounting constraints and we will confirm the winding within one working day.</p>
+    <h2 data-t="t70">Need a toroidal transformer wound to your specification?</h2>
+    <p data-t="t71">We manufacture single-phase toroidal transformers with copper windings, centre-bolt mounting and CE marking, in custom VA ratings and voltages. Send us your primary, secondaries and mounting constraints and we will confirm the winding within one working day.</p>
     <a class="btn btn-primary" href="/contact">Request a quote</a>
   </section>
 </main>

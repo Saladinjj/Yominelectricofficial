@@ -199,7 +199,7 @@
   <section class="blog-hero">
     <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Transformers</span></div>
     <span class="bh-tag">Buyer's Guides</span>
-    <h1 class="bh-title">Control Power Transformer Guide: Sizing, Taps and EN 61558</h1>
+    <h1 class="bh-title" data-t="t1">Control Power Transformer Guide: Sizing, Taps and EN 61558</h1>
     <div class="bh-meta">
       <div class="avatar">ET</div>
       <strong style="color:var(--tx)">ET Engineering Team</strong>
@@ -219,97 +219,97 @@
     the supply, so a fault in the control wiring does not put mains potential on a terminal that an operator
     can touch.</p>
 
-    <h2>Why isolation is the point, not a bonus</h2>
-    <p>It is tempting to treat the transformer as a voltage changer and nothing more, particularly when the
+    <h2 data-t="t2">Why isolation is the point, not a bonus</h2>
+    <p data-t="t3">It is tempting to treat the transformer as a voltage changer and nothing more, particularly when the
     control voltage happens to be close to the supply voltage. That misses the safety function. An isolation
     control transformer with separate primary and secondary windings means the control circuit floats with
     respect to earth on the primary side. An earth fault on the secondary then has no return path through the
     transformer, so it does not become a shock hazard or a fire risk in the same way. This is why the
     standard for these units is a safety standard, not merely a performance one.</p>
 
-    <h2>Working out the VA you actually need</h2>
-    <p>Sizing is straightforward arithmetic done properly. Add up the steady-state burden of everything the
+    <h2 data-t="t4">Working out the VA you actually need</h2>
+    <p data-t="t5">Sizing is straightforward arithmetic done properly. Add up the steady-state burden of everything the
     transformer will feed, then add margin for the two effects that a simple sum ignores:</p>
     <ul>
-      <li><strong>Contactor and relay inrush.</strong> An AC coil draws several times its holding current for
+      <li data-t="t6"><strong>Contactor and relay inrush.</strong> An AC coil draws several times its holding current for
       the first cycles of pull-in. If several contactors can energise together, that moment defines the peak
       demand.</li>
-      <li><strong>Simultaneity.</strong> Decide which loads can be on at the same time. Adding every lamp and
+      <li data-t="t7"><strong>Simultaneity.</strong> Decide which loads can be on at the same time. Adding every lamp and
       every coil at full rating and then applying a large margin produces an oversized transformer that
       costs more and takes more panel space than the job needs.</li>
     </ul>
-    <p>A practical method: total the holding burdens of the devices that run together, add the inrush of the
+    <p data-t="t8">A practical method: total the holding burdens of the devices that run together, add the inrush of the
     largest device that may start while the rest are energised, then apply a modest margin. If the result
     lands between two standard ratings, take the larger one.</p>
 
-    <h2>The standard range</h2>
-    <p>The JBK5 series is the common European-pattern isolation control transformer. The published ratings run
+    <h2 data-t="t9">The standard range</h2>
+    <p data-t="t10">The JBK5 series is the common European-pattern isolation control transformer. The published ratings run
     from 20 VA up to 2500 VA, with rated input voltages around the 110 V and 230 V classes and typical
     secondary outputs in the 6 V to 36 V range for control, illumination and indication duties, at 50/60 Hz.
     Input is rated for circuits not exceeding 1000 V and output for circuits not exceeding 600 V, which
     covers essentially every machine-tool control application.</p>
     <table>
-      <tr><th>Parameter</th><th>Typical value</th><th>Why it matters</th></tr>
-      <tr><td>Rated power</td><td>20 &ndash; 2500 VA</td><td>Pick from the standard ladder, not from a rounded-up guess</td></tr>
-      <tr><td>Rated input voltage</td><td>110 V / 230 V classes</td><td>Match the panel supply and its tolerance</td></tr>
-      <tr><td>Secondary voltages</td><td>6(12) V, 24(36) V and similar</td><td>Control, illumination and indication windings</td></tr>
-      <tr><td>Frequency</td><td>50 / 60 Hz</td><td>Confirm the site frequency before ordering</td></tr>
-      <tr><td>Ambient temperature</td><td>Up to 40 &deg;C, or 55 &deg;C for the higher class</td><td>Drives derating inside a closed enclosure</td></tr>
-      <tr><td>Safety standard</td><td>EN 61558</td><td>The safety-of-transformer standard the unit is built to</td></tr>
-      <tr><td>Protection class</td><td>IP2X on the terminal side</td><td>Finger-safe terminals, fuseless construction</td></tr>
+      <tr><th data-t="t11">Parameter</th><th data-t="t12">Typical value</th><th data-t="t13">Why it matters</th></tr>
+      <tr><td data-t="t14">Rated power</td><td data-t="t15">20 &ndash; 2500 VA</td><td data-t="t16">Pick from the standard ladder, not from a rounded-up guess</td></tr>
+      <tr><td data-t="t17">Rated input voltage</td><td data-t="t18">110 V / 230 V classes</td><td data-t="t19">Match the panel supply and its tolerance</td></tr>
+      <tr><td data-t="t20">Secondary voltages</td><td data-t="t21">6(12) V, 24(36) V and similar</td><td data-t="t22">Control, illumination and indication windings</td></tr>
+      <tr><td data-t="t23">Frequency</td><td data-t="t24">50 / 60 Hz</td><td data-t="t25">Confirm the site frequency before ordering</td></tr>
+      <tr><td data-t="t26">Ambient temperature</td><td data-t="t27">Up to 40 &deg;C, or 55 &deg;C for the higher class</td><td data-t="t28">Drives derating inside a closed enclosure</td></tr>
+      <tr><td data-t="t29">Safety standard</td><td data-t="t30">EN 61558</td><td data-t="t31">The safety-of-transformer standard the unit is built to</td></tr>
+      <tr><td data-t="t32">Protection class</td><td data-t="t33">IP2X on the terminal side</td><td data-t="t34">Finger-safe terminals, fuseless construction</td></tr>
     </table>
 
-    <h2>Voltage taps: the feature buyers skip</h2>
-    <p>On the unit shown in this guide the primary terminal block is marked with taps at 0, &minus;5%, and
+    <h2 data-t="t35">Voltage taps: the feature buyers skip</h2>
+    <p data-t="t36">On the unit shown in this guide the primary terminal block is marked with taps at 0, &minus;5%, and
     +5% around the nominal input, alongside the nominal position. Those taps exist for a specific reason:
     supply voltage at a real installation sits at the top of its tolerance band about as often as the bottom,
     and a control circuit that is already marginal will fail in one of those conditions. With taps you can
     move the primary connection one step and correct the secondary without changing the transformer.</p>
-    <p>The secondary side is marked for the output configuration in the same way, so a single frame can serve
+    <p data-t="t37">The secondary side is marked for the output configuration in the same way, so a single frame can serve
     more than one control voltage. When you compare quotations, check whether the taps are there. Two units
     at the same VA and the same price are not the same product if one of them cannot be corrected on site.</p>
 
-    <h2>Ambient temperature and derating</h2>
-    <p>A control transformer inside a closed steel enclosure does not see the room temperature. It sees the
+    <h2 data-t="t38">Ambient temperature and derating</h2>
+    <p data-t="t39">A control transformer inside a closed steel enclosure does not see the room temperature. It sees the
     air in the enclosure, which sits above the room because every contactor coil and every drive in the
     cabinet is adding heat. If the unit is rated for 40 &deg;C ambient and the panel runs at 55 &deg;C, the
     rating you can use is lower than the nameplate figure. Either specify the higher ambient class or
     ventilate the enclosure. This is one of the more common reasons a transformer that is correctly sized on
     paper runs hot in service.</p>
 
-    <h2>Inrush on the primary</h2>
-    <p>The same effect that affects any transformer applies here: at switch-on the core can saturate briefly
+    <h2 data-t="t40">Inrush on the primary</h2>
+    <p data-t="t41">The same effect that affects any transformer applies here: at switch-on the core can saturate briefly
     and draw a current several times the rated primary current. In a control panel the primary is usually
     protected by a small circuit breaker or a fuse. If that device is chosen from the steady-state VA alone it
     may nuisance-trip when the panel is first energised. Choose the curve with the inrush in mind, and if the
     transformer is fed from a contactor rather than a switch, check that the contacts are rated for the
     make-current.</p>
 
-    <h2>Frequently asked questions</h2>
-    <h3>What is a control power transformer used for?</h3>
-    <p>Supplying and isolating the control circuit of a machine or panel &mdash; contactor and relay coils,
+    <h2 data-t="t42">Frequently asked questions</h2>
+    <h3 data-t="t43">What is a control power transformer used for?</h3>
+    <p data-t="t44">Supplying and isolating the control circuit of a machine or panel &mdash; contactor and relay coils,
     indicator lamps, PLC and signalling circuits &mdash; at a lower, safer voltage than the main supply.</p>
-    <h3>How do I size a control power transformer?</h3>
-    <p>Total the holding burden of the devices that operate simultaneously, add the inrush of the largest
+    <h3 data-t="t45">How do I size a control power transformer?</h3>
+    <p data-t="t46">Total the holding burden of the devices that operate simultaneously, add the inrush of the largest
     device that may start while the others are energised, then add margin and round up to the next standard
     rating. Derate if the enclosure ambient exceeds the transformer's rated ambient.</p>
-    <h3>What do the &plusmn;5% taps on the primary do?</h3>
-    <p>They compensate for supply voltage that sits at the edge of its tolerance band. Moving the primary
+    <h3 data-t="t47">What do the &plusmn;5% taps on the primary do?</h3>
+    <p data-t="t48">They compensate for supply voltage that sits at the edge of its tolerance band. Moving the primary
     connection one tap step corrects the secondary voltage without changing the transformer, which matters
     for marginal control circuits.</p>
-    <h3>Is a control transformer the same as an isolation transformer?</h3>
-    <p>A control power transformer with separate primary and secondary windings does provide isolation as
+    <h3 data-t="t49">Is a control transformer the same as an isolation transformer?</h3>
+    <p data-t="t50">A control power transformer with separate primary and secondary windings does provide isolation as
     well as voltage reduction, which is why it is built and tested to a transformer safety standard rather
     than only to a performance specification.</p>
 
-    <p>If you are specifying one, tell us the panel supply voltage and frequency, the list of control loads
+    <p data-t="t51">If you are specifying one, tell us the panel supply voltage and frequency, the list of control loads
     and which of them run together, the control voltage you need, and the ambient temperature inside the
     enclosure. We will confirm the rating and the taps rather than leaving you to guess.</p>
   </section>
 
   <section class="cta-section">
-    <h2>Specifying a control transformer for a panel build?</h2>
-    <p>We manufacture JBK5 series single-phase isolation control transformers from 20 VA to 2500 VA, with primary voltage taps, finger-safe terminals and EN 61558 construction. Send us your load list and control voltage and we will confirm the rating within one working day.</p>
+    <h2 data-t="t52">Specifying a control transformer for a panel build?</h2>
+    <p data-t="t53">We manufacture JBK5 series single-phase isolation control transformers from 20 VA to 2500 VA, with primary voltage taps, finger-safe terminals and EN 61558 construction. Send us your load list and control voltage and we will confirm the rating within one working day.</p>
     <a class="btn btn-primary" href="/contact">Request a quote</a>
   </section>
 </main>

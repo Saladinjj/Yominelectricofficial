@@ -199,7 +199,7 @@
   <section class="blog-hero">
     <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Busbars</span></div>
     <span class="bh-tag">Buyer's Guides</span>
-    <h1 class="bh-title">Busbar Connector Guide: Flexible Laminated Links for 300 A DC</h1>
+    <h1 class="bh-title" data-t="t1">Busbar Connector Guide: Flexible Laminated Links for 300 A DC</h1>
     <div class="bh-meta">
       <div class="avatar">ET</div>
       <strong style="color:var(--tx)">ET Engineering Team</strong>
@@ -218,116 +218,116 @@
     wire. At the currents inside a battery energy storage system it is a formed copper link, and the shape of
     that link is doing more work than it first appears.</p>
 
-    <h2>Why flexible laminated links, not solid bar</h2>
-    <p>The obvious way to connect two heavy terminals is a solid copper bar. It works in a cabinet where
+    <h2 data-t="t2">Why flexible laminated links, not solid bar</h2>
+    <p data-t="t3">The obvious way to connect two heavy terminals is a solid copper bar. It works in a cabinet where
     nothing moves. It fails in a battery pack, for three reasons:</p>
     <ul>
-      <li><strong>Thermal expansion.</strong> A busbar carrying 300 A warms and cools with every charge and
+      <li data-t="t4"><strong>Thermal expansion.</strong> A busbar carrying 300 A warms and cools with every charge and
       discharge cycle. A rigid link between two fixed terminals transfers that expansion into the terminals
       themselves, working the bolted joints loose over thousands of cycles.</li>
-      <li><strong>Vibration.</strong> Transport, and in the case of mobile applications the vehicle itself,
+      <li data-t="t5"><strong>Vibration.</strong> Transport, and in the case of mobile applications the vehicle itself,
       applies vibration to every connection. A rigid bar has nowhere to put that energy; a laminated link
       absorbs it.</li>
-      <li><strong>Tolerance.</strong> Module positions are never exactly where the drawing says they are.
+      <li data-t="t6"><strong>Tolerance.</strong> Module positions are never exactly where the drawing says they are.
       A laminated link can be flexed to meet a hole that is a few millimetres off; a solid bar cannot, and
       forcing it puts permanent stress on the joint.</li>
     </ul>
-    <p>A laminated connector is built from many thin copper strips stacked and pressed together, with the ends
+    <p data-t="t7">A laminated connector is built from many thin copper strips stacked and pressed together, with the ends
     welded or pressed solid and drilled for termination. The stack flexes as a unit, which is why these are
     often called soft busbars. The arched or offset section you can see in the middle of such a link is not
     styling &mdash; it is the part that must be free to move.</p>
 
-    <h2>What the construction gives you</h2>
+    <h2 data-t="t8">What the construction gives you</h2>
     <table>
-      <tr><th>Element</th><th>What it does</th></tr>
-      <tr><td>Multiple thin copper laminations</td><td>Carries the current while allowing the link to flex and
+      <tr><th data-t="t9">Element</th><th data-t="t10">What it does</th></tr>
+      <tr><td data-t="t11">Multiple thin copper laminations</td><td data-t="t12">Carries the current while allowing the link to flex and
       to spread heat over a large surface</td></tr>
-      <tr><td>Solid, drilled contact ends</td><td>Takes the bolt torque and gives a defined contact area for the
+      <tr><td data-t="t13">Solid, drilled contact ends</td><td data-t="t14">Takes the bolt torque and gives a defined contact area for the
       joint</td></tr>
-      <tr><td>Plated contact faces</td><td>Limits oxidation on the joint face, which is where a bolted
+      <tr><td data-t="t15">Plated contact faces</td><td data-t="t16">Limits oxidation on the joint face, which is where a bolted
       connection actually loses conductance over time</td></tr>
-      <tr><td>Insulated middle section</td><td>Prevents contact between adjacent links and between a link and
+      <tr><td data-t="t17">Insulated middle section</td><td data-t="t18">Prevents contact between adjacent links and between a link and
       an enclosure &mdash; the orange sleeve in such a connector is a functional part, not decoration</td></tr>
-      <tr><td>Offset or arched form</td><td>Provides the free length that lets the link move without loading the
+      <tr><td data-t="t19">Offset or arched form</td><td data-t="t20">Provides the free length that lets the link move without loading the
       terminal</td></tr>
     </table>
 
-    <h2>The 300 A class in a DC system</h2>
-    <p>Current rating alone does not describe a busbar connector, because the same link behaves differently at
+    <h2 data-t="t21">The 300 A class in a DC system</h2>
+    <p data-t="t22">Current rating alone does not describe a busbar connector, because the same link behaves differently at
     different voltages and in different air. Three things move the usable current:</p>
     <ul>
-      <li><strong>Cross-section and ambient.</strong> A link rated 300 A in open air at 25 &deg;C will carry
+      <li data-t="t23"><strong>Cross-section and ambient.</strong> A link rated 300 A in open air at 25 &deg;C will carry
       less inside a closed enclosure at 50 &deg;C. The figure on a datasheet assumes a reference condition.</li>
-      <li><strong>Voltage and insulation.</strong> In a 1500 V DC system the clearance and creepage distances
+      <li data-t="t24"><strong>Voltage and insulation.</strong> In a 1500 V DC system the clearance and creepage distances
       around the link, and the dielectric strength of its insulation, matter as much as the copper. Higher
       system voltage with the same current demands more insulation, not more copper.</li>
-      <li><strong>Termination quality.</strong> The joint is usually the hottest point in the circuit, not the
+      <li data-t="t25"><strong>Termination quality.</strong> The joint is usually the hottest point in the circuit, not the
       conductor. Hole size, plating, bolt grade and tightening torque decide whether the link runs warm or
       runs away.</li>
     </ul>
-    <p>This is why our energy storage connectors are specified by application as much as by current:
+    <p data-t="t26">This is why our energy storage connectors are specified by application as much as by current:
     container ESS and commercial storage racks, and DC distribution, where the link has to survive a defined
     voltage as well as a defined current.</p>
 
-    <h2>The measurements to send</h2>
-    <p>A laminated busbar connector is a made-to-drawing part. Nine times out of ten a quotation stalls because
+    <h2 data-t="t27">The measurements to send</h2>
+    <p data-t="t28">A laminated busbar connector is a made-to-drawing part. Nine times out of ten a quotation stalls because
     one of these is missing:</p>
     <table>
-      <tr><th>What to provide</th><th>Detail</th></tr>
-      <tr><td>Current and voltage</td><td>Continuous current per link, and the system voltage (DC or AC)</td></tr>
-      <tr><td>Centre-to-centre distance</td><td>Hole to hole, measured on the actual assembly rather than
+      <tr><th data-t="t29">What to provide</th><th data-t="t30">Detail</th></tr>
+      <tr><td data-t="t31">Current and voltage</td><td data-t="t32">Continuous current per link, and the system voltage (DC or AC)</td></tr>
+      <tr><td data-t="t33">Centre-to-centre distance</td><td data-t="t34">Hole to hole, measured on the actual assembly rather than
       from the CAD model</td></tr>
-      <tr><td>Hole pattern</td><td>Diameter and shape of each hole, and the offset between the two ends</td></tr>
-      <tr><td>Link width and stack thickness</td><td>The envelope you have room for</td></tr>
-      <tr><td>Offsets and bends</td><td>Any height difference between the two terminals the link must bridge</td></tr>
-      <tr><td>Insulation</td><td>Whether a sleeve is needed, its colour, and the temperature class</td></tr>
-      <tr><td>Plating</td><td>Bare copper, tinned, or another finish specified by the joint design</td></tr>
-      <tr><td>Quantity and marking</td><td>Order quantity, and any part number or laser marking required</td></tr>
+      <tr><td data-t="t35">Hole pattern</td><td data-t="t36">Diameter and shape of each hole, and the offset between the two ends</td></tr>
+      <tr><td data-t="t37">Link width and stack thickness</td><td data-t="t38">The envelope you have room for</td></tr>
+      <tr><td data-t="t39">Offsets and bends</td><td data-t="t40">Any height difference between the two terminals the link must bridge</td></tr>
+      <tr><td data-t="t41">Insulation</td><td data-t="t42">Whether a sleeve is needed, its colour, and the temperature class</td></tr>
+      <tr><td data-t="t43">Plating</td><td data-t="t44">Bare copper, tinned, or another finish specified by the joint design</td></tr>
+      <tr><td data-t="t45">Quantity and marking</td><td data-t="t46">Order quantity, and any part number or laser marking required</td></tr>
     </table>
-    <p>Material choice is a real decision rather than a default. Copper is the better conductor and the usual
+    <p data-t="t47">Material choice is a real decision rather than a default. Copper is the better conductor and the usual
     answer for a 300 A link. Aluminium is lighter and cheaper and is used where weight matters more than
     cross-section, but it needs more material for the same current and its joints need more care. Our storage
     connectors are offered in both.</p>
 
-    <h2>Installation points worth stating</h2>
+    <h2 data-t="t48">Installation points worth stating</h2>
     <ul>
-      <li><strong>Torque the joint to specification and record it.</strong> A loose high-current joint heats,
+      <li data-t="t49"><strong>Torque the joint to specification and record it.</strong> A loose high-current joint heats,
       oxidises, raises its own resistance and heats further.</li>
-      <li><strong>Keep the flexible section free.</strong> Clamping the middle of a laminated link to a fixed
+      <li data-t="t50"><strong>Keep the flexible section free.</strong> Clamping the middle of a laminated link to a fixed
       point removes the movement it was bought for.</li>
-      <li><strong>Support long runs.</strong> Flexibility is not a substitute for mechanical support over
+      <li data-t="t51"><strong>Support long runs.</strong> Flexibility is not a substitute for mechanical support over
       distance.</li>
-      <li><strong>Check clearance after forming.</strong> A link that is bent on site to reach a terminal may
+      <li data-t="t52"><strong>Check clearance after forming.</strong> A link that is bent on site to reach a terminal may
       end up closer to an earthed enclosure than the insulation system allows.</li>
-      <li><strong>Do not mix metals at the joint without thinking.</strong> Copper against aluminium needs an
+      <li data-t="t53"><strong>Do not mix metals at the joint without thinking.</strong> Copper against aluminium needs an
       appropriate interface, not just a bolt.</li>
     </ul>
 
-    <h2>Frequently asked questions</h2>
-    <h3>What is a busbar connector used for?</h3>
-    <p>Joining two current-carrying points where a rigid bar would be unsuitable &mdash; between battery
+    <h2 data-t="t54">Frequently asked questions</h2>
+    <h3 data-t="t55">What is a busbar connector used for?</h3>
+    <p data-t="t56">Joining two current-carrying points where a rigid bar would be unsuitable &mdash; between battery
     modules and rack busbars, between racks and combiner boxes, and at DC distribution points in energy
     storage and power electronics assemblies.</p>
-    <h3>Why are busbar connectors laminated instead of solid?</h3>
-    <p>So they can flex. A laminated stack absorbs thermal expansion, vibration and assembly tolerance between
+    <h3 data-t="t57">Why are busbar connectors laminated instead of solid?</h3>
+    <p data-t="t58">So they can flex. A laminated stack absorbs thermal expansion, vibration and assembly tolerance between
     two fixed terminals instead of transferring that load into the bolted joints.</p>
-    <h3>How do I choose between copper and aluminium?</h3>
-    <p>Copper conducts better and needs a smaller cross-section for the same current, so it is the usual choice
+    <h3 data-t="t59">How do I choose between copper and aluminium?</h3>
+    <p data-t="t60">Copper conducts better and needs a smaller cross-section for the same current, so it is the usual choice
     at 300 A. Aluminium is lighter and cheaper but needs more section for the same rating and more care at the
     joint. Weight and cost targets decide between them.</p>
-    <h3>Does the current rating change with system voltage?</h3>
-    <p>The copper does not, but the permissible design does. Higher system voltage, such as 1500 V DC, demands
+    <h3 data-t="t61">Does the current rating change with system voltage?</h3>
+    <p data-t="t62">The copper does not, but the permissible design does. Higher system voltage, such as 1500 V DC, demands
     more insulation, clearance and creepage around the connector, which constrains the shape even when the
     current is unchanged.</p>
 
-    <p>If you are specifying one, send us the current, the system voltage, the hole-to-hole distance and the
+    <p data-t="t63">If you are specifying one, send us the current, the system voltage, the hole-to-hole distance and the
     hole pattern of both ends, plus the space you have for the link. We will confirm the lamination stack,
     the insulation and the plating rather than quoting a nearest-size part.</p>
   </section>
 
   <section class="cta-section">
-    <h2>Need a busbar connector to your own drawing?</h2>
-    <p>We manufacture copper and aluminium soft busbar connectors for container ESS, commercial storage and DC distribution, insulated and plated to your requirements, in custom lengths and hole patterns. Send us your drawing or the four key measurements and we will come back with a quotation.</p>
+    <h2 data-t="t64">Need a busbar connector to your own drawing?</h2>
+    <p data-t="t65">We manufacture copper and aluminium soft busbar connectors for container ESS, commercial storage and DC distribution, insulated and plated to your requirements, in custom lengths and hole patterns. Send us your drawing or the four key measurements and we will come back with a quotation.</p>
     <a class="btn btn-primary" href="/contact">Request a quote</a>
   </section>
 </main>
