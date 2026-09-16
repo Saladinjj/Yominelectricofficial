@@ -61,6 +61,21 @@
   ],
   "redirects": [
     {
+      "source": "/blog/blog/(.*)",
+      "destination": "/blog/$1",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/what-is-prepaid-meter",
+      "destination": "/blog/what-is-a-prepaid-meter",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog/what-is-prepaid-meter.html",
+      "destination": "/blog/what-is-a-prepaid-meter",
+      "statusCode": 301
+    },
+    {
       "source": "/",
       "has": [
         {
