@@ -1,137 +1,253 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
-
 <head>
-
 <!-- Google tag (gtag.js) -->
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
-
 <script>
-
   window.dataLayer = window.dataLayer || [];
-
   function gtag(){dataLayer.push(arguments);}
-
   gtag('js', new Date());
-
   gtag('config', 'G-T0HYWYQ6NF');
-
 </script>
-
 <meta charset="UTF-8">
-
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon" href="/logo_transparent.png">
-
 <link rel="shortcut icon" href="/favicon.ico">
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Air Circuit Breaker Guide: Frame Size, Breaking Capacity and Selection</title>
-
+<title>Air Circuit Breaker Guide: Frame Size, Breaking Capacity and Selection | Yomin Electric</title>
 <meta name="description" content="How to specify an air circuit breaker for a main switchboard: frame size versus rating, Icu and Ics breaking capacity, intelligent controllers, and the checks that stop a costly mis-order.">
 <meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/air-circuit-breaker-guide/card.png">
-
+<link rel="canonical" href="https://www.yominelectric.com/blog/air-circuit-breaker-guide">
 <link rel="stylesheet" href="/assets/css/main.css">
-
 <link rel="icon" href="/logo_transparent.png" type="image/png">
-
-
 <script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
-  <link rel="canonical" href="https://www.yominelectric.com/blog/air-circuit-breaker-guide">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Air Circuit Breaker Guide: Frame Size, Breaking Capacity and Selection", "description": "How to specify an air circuit breaker for a main switchboard: frame size versus rating, Icu and Ics breaking capacity, intelligent controllers, and the checks that stop a costly mis-order.", "image": "https://www.yominelectric.com/assets/images/blog/air-circuit-breaker-guide/hero.png", "datePublished": "2026-09-16", "dateModified": "2026-09-16", "inLanguage": "en", "author": {"@type": "Organization", "name": "YOMIN Electric"}, "publisher": {"@type": "Organization", "name": "YOMIN Electric"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.yominelectric.com/blog/air-circuit-breaker-guide"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the difference between frame size and rating on an air circuit breaker?", "acceptedAnswer": {"@type": "Answer", "text": "The frame size is the physical body and the maximum current it can ever carry; the rating is the trip unit fitted inside it. A 2000 A frame with a 1250 A trip unit is a normal build, so both figures must appear on the order."}}, {"@type": "Question", "name": "Should I specify Icu or Ics?", "acceptedAnswer": {"@type": "Answer", "text": "Ics, the service breaking capacity, is the number that matters for a main device. It is the fault current the breaker can clear and still remain in service, so it determines whether the board can be re-energised after a fault."}}, {"@type": "Question", "name": "When should I choose an air circuit breaker over an MCCB?", "acceptedAnswer": {"@type": "Answer", "text": "Choose an air circuit breaker when the fault level is high, when the device must be withdrawable for maintenance, or when an integrated controller with metering and communications replaces a separate protection relay."}}]}]}</script>
-</head><main>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Air Circuit Breaker Guide: Frame Size, Breaking Capacity and Selection",
+      "description": "How to specify an air circuit breaker for a main switchboard: frame size versus rating, Icu and Ics breaking capacity, intelligent controllers, and the checks that stop a costly mis-order.",
+      "image": "https://www.yominelectric.com/assets/images/blog/air-circuit-breaker-guide/hero.png",
+      "datePublished": "2026-09-16",
+      "dateModified": "2026-09-16",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/air-circuit-breaker-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between frame size and rating on an air circuit breaker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The frame size is the physical body and the maximum current it can ever carry; the rating is the trip unit fitted inside it. A 2000 A frame with a 1250 A trip unit is a normal build, so both figures must appear on the order."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I specify Icu or Ics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ics, the service breaking capacity, is the number that matters for a main device. It is the fault current the breaker can clear and still remain in service, so it determines whether the board can be re-energised after a fault."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I choose an air circuit breaker over an MCCB?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose an air circuit breaker when the fault level is high, when the device must be withdrawable for maintenance, or when an integrated controller with metering and communications replaces a separate protection relay."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
 
-  <div class="blog-wrap">
-  <nav class="bh-breadcrumb"><a href="/">Home</a> / <a href="/blog">Blog</a> / <span>Circuit Breakers</span></nav>
-  <img class="hero-img" src="/assets/images/blog/air-circuit-breaker-guide/hero.png" alt="Intelligent universal air circuit breaker installed on busbars in a main low-voltage switchboard" loading="eager" fetchpriority="high" decoding="async">
-  <h1 class="bh-title">Air Circuit Breaker Guide: Frame Size, Breaking Capacity and Selection</h1>
-  <p class="bh-meta">YOMIN Electric &middot; 2026-09-16 &middot; 9 min read</p>
-  <div class="blog-body">
-    
-<p>An air circuit breaker is the device that sits at the top of a low-voltage distribution system and decides whether a fault takes out one circuit or the whole board. It is also the most expensive single item on most panels, which is why getting the specification right the first time matters more than it does for any miniature device.</p>
+<body>
 
-<h2>What makes it an "air" circuit breaker</h2>
-<p>The name describes the arc-quenching medium, not the application. In an air circuit breaker the arc that forms when the contacts open is driven into a set of splitter plates and stretched until it extinguishes in air. That is what allows the device to interrupt very large fault currents without the vacuum bottle or SF6 chamber used at medium voltage.</p>
-<p>The practical consequences are a physically large device, a heavy moving contact system, and a mechanism that can be operated manually, by motor, or by a shunt release. Those are exactly the properties a main incoming device needs.</p>
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
 
-<h2>Air circuit breaker, MCCB or MCB?</h2>
-<table>
-<tr><th>Device</th><th>Typical frame size</th><th>Where it belongs</th></tr>
-<tr><td>Miniature circuit breaker</td><td>Up to 125 A</td><td>Final circuits, DIN rail inside a distribution board</td></tr>
-<tr><td>Moulded case circuit breaker</td><td>16 A to 1600 A</td><td>Sub-mains, feeder and motor circuits</td></tr>
-<tr><td>Air circuit breaker</td><td>630 A to 6300 A</td><td>Main incoming, generator and bus-tie positions</td></tr>
-</table>
-<p>The boundaries overlap deliberately, so the choice is rarely decided by current alone. Air circuit breakers are chosen when the fault level is high, when the device must be withdrawable for maintenance, or when the installation needs an integrated controller rather than a separate protection relay.</p>
-
-<h2>Frame size is not the same as rating</h2>
-<p>This single confusion causes more ordering errors than anything else. The frame size is the physical body and the maximum current that body can ever carry. The rating is the trip unit fitted inside it.</p>
-<p>A 2000 A frame supplied with a 1250 A trip unit is a perfectly normal ordering line. It gives the site a spare capacity margin without the cost of the larger trip unit today. What matters is that both numbers are written on the purchase order, because "2000 A breaker" is ambiguous and will be interpreted differently by different suppliers.</p>
-
-<h2>Breaking capacity: Icu and Ics</h2>
-<p>Two numbers describe how the device behaves under fault, and both appear on the rating plate.</p>
-<ul>
-<li><strong>Icu &mdash; ultimate breaking capacity.</strong> The largest fault current the breaker can interrupt, after which it may no longer be fit to continue in service.</li>
-<li><strong>Ics &mdash; service breaking capacity.</strong> The fault current it can interrupt and then keep working normally. Usually expressed as a percentage of Icu.</li>
-</ul>
-<p>Ics is the number that matters for a main breaker. A board that trips on a heavy fault and then cannot be re-energised because the incoming device is spent is a far worse outcome than one that simply needs the fault cleared. When a datasheet quotes only Icu, ask for Ics before you compare prices.</p>
-
-<h2>What an intelligent controller adds</h2>
-<p>A modern air circuit breaker usually ships with an integrated controller rather than a plain thermal-magnetic trip. Depending on the model that gives you adjustable long-time, short-time, instantaneous and earth-fault settings, plus metering and a communications port.</p>
-<p>Two advantages are worth paying for in most projects. Adjustable settings let the protection be coordinated on site rather than ordered to a fixed curve, and metering turns the main device into a source of load data without adding current transformers and a separate meter.</p>
-
-<h2>Selection checklist</h2>
-<ul>
-<li><strong>System voltage and frequency</strong> &mdash; the rated insulation voltage must exceed the system voltage, not merely equal it.</li>
-<li><strong>Prospective fault current</strong> at the point of installation, compared against Ics, not Icu alone.</li>
-<li><strong>Frame size and trip rating</strong>, written as two separate figures.</li>
-<li><strong>Poles</strong> &mdash; three-pole for a solidly earthed distribution board, four-pole where neutral switching or a TT system requires it.</li>
-<li><strong>Mounting</strong> &mdash; fixed or withdrawable, and the cradle type. Withdrawable costs more and is worth it where maintenance must happen without isolating the whole board.</li>
-<li><strong>Accessories</strong> &mdash; motor operator, shunt trip, auxiliary contacts and the communications protocol your building management system actually speaks.</li>
-</ul>
-<p>Order motor operator and auxiliary contacts with the breaker. Retrofitting them later usually costs more than specifying them, and occasionally is not possible at all.</p>
-
-<h2>Approval and supply</h2>
-<p>YOMIN manufactures intelligent universal air circuit breakers for main switchboard duty under ISO 9001 quality management, with CE marking on the European variants. Standard production lead time is 15&ndash;25 working days, extending to 30&ndash;45 days for OEM and customised configurations, with a minimum order of 100 units (500 for OEM or customisation). Units carry a two-year warranty against manufacturing defects.</p>
-<p>Send the system voltage, prospective fault current, frame size, trip rating and pole count, and a manufacturer can confirm the correct frame the same day instead of after a design review.</p>
-
-    <h2>Frequently asked questions</h2>
-          <details class="blog-faq-item">
-        <summary>What is the difference between frame size and rating on an air circuit breaker?</summary>
-        <div>The frame size is the physical body and the maximum current it can ever carry; the rating is the trip unit fitted inside it. A 2000 A frame with a 1250 A trip unit is a normal build, so both figures must appear on the order.</div>
-      </details>
-      <details class="blog-faq-item">
-        <summary>Should I specify Icu or Ics?</summary>
-        <div>Ics, the service breaking capacity, is the number that matters for a main device. It is the fault current the breaker can clear and still remain in service, so it determines whether the board can be re-energised after a fault.</div>
-      </details>
-      <details class="blog-faq-item">
-        <summary>When should I choose an air circuit breaker over an MCCB?</summary>
-        <div>Choose an air circuit breaker when the fault level is high, when the device must be withdrawable for maintenance, or when an integrated controller with metering and communications replaces a separate protection relay.</div>
-      </details>
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
   </div>
 </div>
 
-  <section class="blog-cta">
-    <h2>Sourcing an air circuit breaker for a main board?</h2>
-    <p>Send us your system voltage, prospective fault current and required frame size. We build intelligent universal air circuit breakers for main switchboard duty with ISO 9001 production and CE marking.</p>
-    <a class="btn" href="/contact">Request a quote</a>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Circuit Breakers</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Air Circuit Breaker Guide: Frame Size, Breaking Capacity and Selection</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 16, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
   </section>
 
-  
-</main></main>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/air-circuit-breaker-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/air-circuit-breaker-guide/hero.png" alt="Intelligent universal air circuit breaker installed on busbars in a main low-voltage switchboard" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>An air circuit breaker is the device that sits at the top of a low-voltage distribution system and decides whether a fault takes out one circuit or the whole board. It is also the most expensive single item on most panels, which is why getting the specification right the first time matters more than it does for any miniature device.</p>
+
+    <h2>What makes it an "air" circuit breaker</h2>
+    <p>The name describes the arc-quenching medium, not the application. In an air circuit breaker the arc that forms when the contacts open is driven into a set of splitter plates and stretched until it extinguishes in air. That is what allows the device to interrupt very large fault currents without the vacuum bottle or SF6 chamber used at medium voltage.</p>
+    <p>The practical consequences are a physically large device, a heavy moving contact system, and a mechanism that can be operated manually, by motor, or by a shunt release. Those are exactly the properties a main incoming device needs.</p>
+
+    <h2>Air circuit breaker, MCCB or MCB?</h2>
+    <table>
+      <thead>
+        <tr><th>Device</th><th>Typical frame size</th><th>Where it belongs</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Miniature circuit breaker</td><td>Up to 125 A</td><td>Final circuits, DIN rail inside a distribution board</td></tr>
+        <tr><td>Moulded case circuit breaker</td><td>16 A to 1600 A</td><td>Sub-mains, feeder and motor circuits</td></tr>
+        <tr><td>Air circuit breaker</td><td>630 A to 6300 A</td><td>Main incoming, generator and bus-tie positions</td></tr>
+      </tbody>
+    </table>
+    <p>The boundaries overlap deliberately, so the choice is rarely decided by current alone. Air circuit breakers are chosen when the fault level is high, when the device must be withdrawable for maintenance, or when the installation needs an integrated controller rather than a separate protection relay.</p>
+
+    <h2>Frame size is not the same as rating</h2>
+    <p>This single confusion causes more ordering errors than anything else. The frame size is the physical body and the maximum current that body can ever carry. The rating is the trip unit fitted inside it.</p>
+    <p>A 2000 A frame supplied with a 1250 A trip unit is a perfectly normal ordering line. It gives the site a spare capacity margin without the cost of the larger trip unit today. What matters is that both numbers are written on the purchase order, because "2000 A breaker" is ambiguous and will be interpreted differently by different suppliers.</p>
+
+    <h2>Breaking capacity: Icu and Ics</h2>
+    <p>Two numbers describe how the device behaves under fault, and both appear on the rating plate.</p>
+    <ul>
+      <li><strong>Icu &mdash; ultimate breaking capacity.</strong> The largest fault current the breaker can interrupt, after which it may no longer be fit to continue in service.</li>
+      <li><strong>Ics &mdash; service breaking capacity.</strong> The fault current it can interrupt and then keep working normally. Usually expressed as a percentage of Icu.</li>
+    </ul>
+    <p>Ics is the number that matters for a main breaker. A board that trips on a heavy fault and then cannot be re-energised because the incoming device is spent is a far worse outcome than one that simply needs the fault cleared. When a datasheet quotes only Icu, ask for Ics before you compare prices.</p>
+
+    <h2>What an intelligent controller adds</h2>
+    <p>A modern air circuit breaker usually ships with an integrated controller rather than a plain thermal-magnetic trip. Depending on the model that gives you adjustable long-time, short-time, instantaneous and earth-fault settings, plus metering and a communications port.</p>
+    <p>Two advantages are worth paying for in most projects. Adjustable settings let the protection be coordinated on site rather than ordered to a fixed curve, and metering turns the main device into a source of load data without adding current transformers and a separate meter.</p>
+
+    <h2>Selection checklist</h2>
+    <ul>
+      <li><strong>System voltage and frequency</strong> &mdash; the rated insulation voltage must exceed the system voltage, not merely equal it.</li>
+      <li><strong>Prospective fault current</strong> at the point of installation, compared against Ics, not Icu alone.</li>
+      <li><strong>Frame size and trip rating</strong>, written as two separate figures.</li>
+      <li><strong>Poles</strong> &mdash; three-pole for a solidly earthed distribution board, four-pole where neutral switching or a TT system requires it.</li>
+      <li><strong>Mounting</strong> &mdash; fixed or withdrawable, and the cradle type. Withdrawable costs more and is worth it where maintenance must happen without isolating the whole board.</li>
+      <li><strong>Accessories</strong> &mdash; motor operator, shunt trip, auxiliary contacts and the communications protocol your building management system actually speaks.</li>
+    </ul>
+    <p>Order motor operator and auxiliary contacts with the breaker. Retrofitting them later usually costs more than specifying them, and occasionally is not possible at all.</p>
+
+    <h2>Approval and supply</h2>
+    <p>YOMIN manufactures intelligent universal air circuit breakers for main switchboard duty under ISO 9001 quality management, with CE marking on the European variants. Standard production lead time is 15&ndash;25 working days, extending to 30&ndash;45 days for OEM and customised configurations, with a minimum order of 100 units (500 for OEM or customisation). Units carry a two-year warranty against manufacturing defects.</p>
+    <p>Send the system voltage, prospective fault current, frame size, trip rating and pole count, and a manufacturer can confirm the correct frame the same day instead of after a design review.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>What is the difference between frame size and rating on an air circuit breaker?</h3>
+    <p>The frame size is the physical body and the maximum current it can ever carry; the rating is the trip unit fitted inside it. A 2000 A frame with a 1250 A trip unit is a normal build, so both figures must appear on the order.</p>
+    <h3>Should I specify Icu or Ics?</h3>
+    <p>Ics, the service breaking capacity, is the number that matters for a main device. It is the fault current the breaker can clear and still remain in service, so it determines whether the board can be re-energised after a fault.</p>
+    <h3>When should I choose an air circuit breaker over an MCCB?</h3>
+    <p>Choose an air circuit breaker when the fault level is high, when the device must be withdrawable for maintenance, or when an integrated controller with metering and communications replaces a separate protection relay.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Sourcing an air circuit breaker for a main board?</h2>
+    <p>Send us your system voltage, prospective fault current and required frame size. We build intelligent universal air circuit breakers for main switchboard duty with ISO 9001 production and CE marking.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+  </section>
+</main>
 
 <footer>
   <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
@@ -155,9 +271,6 @@
 </footer>
 
 <script defer src="/assets/js/main.js"></script>
-
 <script defer src="/assets/js/i18n-es.js"></script>
-
 </body>
-
 </html>

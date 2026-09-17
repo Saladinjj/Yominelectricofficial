@@ -1,130 +1,246 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
-
 <head>
-
 <!-- Google tag (gtag.js) -->
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
-
 <script>
-
   window.dataLayer = window.dataLayer || [];
-
   function gtag(){dataLayer.push(arguments);}
-
   gtag('js', new Date());
-
   gtag('config', 'G-T0HYWYQ6NF');
-
 </script>
-
 <meta charset="UTF-8">
-
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon" href="/logo_transparent.png">
-
 <link rel="shortcut icon" href="/favicon.ico">
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>DC Circuit Breaker for Solar: Why DC Protection Is Not AC Protection</title>
-
+<title>DC Circuit Breaker for Solar: Why DC Protection Is Not AC Protection | Yomin Electric</title>
 <meta name="description" content="Why a DC circuit breaker cannot be substituted with an AC one, how to read a DC rating, and how to specify 1000 V DC protection for a PV array.">
 <meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/dc-circuit-breaker-solar-guide/card.png">
-
+<link rel="canonical" href="https://www.yominelectric.com/blog/dc-circuit-breaker-solar-guide">
 <link rel="stylesheet" href="/assets/css/main.css">
-
 <link rel="icon" href="/logo_transparent.png" type="image/png">
-
-
 <script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
-  <link rel="canonical" href="https://www.yominelectric.com/blog/dc-circuit-breaker-solar-guide">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "DC Circuit Breaker for Solar: Why DC Protection Is Not AC Protection", "description": "Why a DC circuit breaker cannot be substituted with an AC one, how to read a DC rating, and how to specify 1000 V DC protection for a PV array.", "image": "https://www.yominelectric.com/assets/images/blog/dc-circuit-breaker-solar-guide/hero.png", "datePublished": "2026-09-16", "dateModified": "2026-09-16", "inLanguage": "en", "author": {"@type": "Organization", "name": "YOMIN Electric"}, "publisher": {"@type": "Organization", "name": "YOMIN Electric"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.yominelectric.com/blog/dc-circuit-breaker-solar-guide"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I use an AC circuit breaker on a DC solar circuit?", "acceptedAnswer": {"@type": "Answer", "text": "No. AC breakers rely on the current crossing zero to extinguish the arc, which never happens in a DC circuit. A DC breaker has different contact geometry and an arc chute with magnetic blowout, and carries a DC voltage and current rating for a stated pole configuration."}}, {"@type": "Question", "name": "What does the four-pole configuration mean on a DC breaker?", "acceptedAnswer": {"@type": "Answer", "text": "The poles are wired in series internally so the arc is divided across four gaps, which is how a compact device reaches 1000 V DC. The rating is only valid with the poles configured as marked, so the same frame can have different ratings depending on connection."}}, {"@type": "Question", "name": "Do I still need string fuses if I have a DC circuit breaker?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, they do different jobs. The breaker provides isolation and overload protection, while string fuses protect against reverse current from the other parallel strings. A typical string box uses fuses, a DC breaker and a surge protective device together."}}]}]}</script>
-</head><main>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "DC Circuit Breaker for Solar: Why DC Protection Is Not AC Protection",
+      "description": "Why a DC circuit breaker cannot be substituted with an AC one, how to read a DC rating, and how to specify 1000 V DC protection for a PV array.",
+      "image": "https://www.yominelectric.com/assets/images/blog/dc-circuit-breaker-solar-guide/hero.png",
+      "datePublished": "2026-09-16",
+      "dateModified": "2026-09-16",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/dc-circuit-breaker-solar-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I use an AC circuit breaker on a DC solar circuit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. AC breakers rely on the current crossing zero to extinguish the arc, which never happens in a DC circuit. A DC breaker has different contact geometry and an arc chute with magnetic blowout, and carries a DC voltage and current rating for a stated pole configuration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the four-pole configuration mean on a DC breaker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The poles are wired in series internally so the arc is divided across four gaps, which is how a compact device reaches 1000 V DC. The rating is only valid with the poles configured as marked, so the same frame can have different ratings depending on connection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I still need string fuses if I have a DC circuit breaker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, they do different jobs. The breaker provides isolation and overload protection, while string fuses protect against reverse current from the other parallel strings. A typical string box uses fuses, a DC breaker and a surge protective device together."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
 
-  <div class="blog-wrap">
-  <nav class="bh-breadcrumb"><a href="/">Home</a> / <a href="/blog">Blog</a> / <span>Solar &amp; PV</span></nav>
-  <img class="hero-img" src="/assets/images/blog/dc-circuit-breaker-solar-guide/hero.png" alt="Four-pole DC 1000 V circuit breaker installed on a DIN rail inside a solar PV string combiner box" loading="eager" fetchpriority="high" decoding="async">
-  <h1 class="bh-title">DC Circuit Breaker for Solar: Why DC Protection Is Not AC Protection</h1>
-  <p class="bh-meta">YOMIN Electric &middot; 2026-09-16 &middot; 9 min read</p>
-  <div class="blog-body">
-    
-<p>The most expensive mistake in PV protection is treating a circuit breaker as a generic component. An AC breaker and a DC breaker can look almost identical on the outside and are not interchangeable. Installing the AC device in a DC string is a fire risk, not a nuisance trip.</p>
+<body>
 
-<h2>Why DC is harder to break</h2>
-<p>Alternating current crosses zero volts a hundred times a second in a 50 Hz system. Every one of those crossings is a moment when the arc drawn between opening contacts naturally goes out. The breaker is designed to let that happen.</p>
-<p>Direct current has no zero crossing. Once an arc establishes between the contacts it is sustained by the full array voltage, and it will keep running until something physically stretches or cools it below the ionisation threshold. A PV array makes this worse than a battery, because the array keeps producing voltage in daylight even with no load current.</p>
-<p>That is why a DC breaker uses a different contact geometry, a different arc chute with magnetic blowout, and a permanently marked DC rating. Physical similarity to an AC device means nothing.</p>
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
 
-<h2>What a DC rating actually tells you</h2>
-<p>A DC rating is always two figures together: a voltage and a current, quoted for a stated number of poles in series. On a four-pole device marked DC 1000 V, the poles are wired in series internally so the arc is divided across four gaps. That series connection is the mechanism, not a convenience.</p>
-<p>The result is that the same physical breaker can carry quite different ratings depending on how its poles are connected. Read the face of the device rather than assuming from the frame size:</p>
-<table>
-<tr><th>Marking</th><th>Meaning</th></tr>
-<tr><td>DC 1000 V</td><td>Maximum DC system voltage with the poles configured as marked</td></tr>
-<tr><td>C32</td><td>C curve, 32 A nominal &mdash; C curve tolerates the inrush of capacitive loads</td></tr>
-<tr><td>Icu / Ics 6 kA</td><td>Ultimate and service breaking capacity</td></tr>
-<tr><td>Ui 1000 V / Uimp 6 kV</td><td>Rated insulation voltage and impulse withstand</td></tr>
-<tr><td>Cat A</td><td>No intentional short-time delay &mdash; instantaneous interruption</td></tr>
-</table>
-
-<h2>Where a DC breaker belongs in a PV system</h2>
-<ul>
-<li><strong>String level</strong> &mdash; between the array and the combiner, so an individual string can be isolated without touching the live combiner.</li>
-<li><strong>Array level</strong> &mdash; the main DC disconnect between the combiner and the inverter, which must break the combined current of every string in parallel.</li>
-<li><strong>Charge and battery circuits</strong> on DC-coupled storage, where the fault current can be far higher than an array can deliver.</li>
-</ul>
-<p>The string-level device and the array-level device are not the same specification. The array-level breaker must interrupt the summed current of all strings and carry the combined thermal load, which usually moves it up a frame size.</p>
-
-<h2>Polarity and wiring care</h2>
-<p>DC circuits have polarity, and a reversed connection in a series string adds voltage rather than subtracting it. Confirm polarity at every pole before energising, and do not rely on the colour of a factory tail. Where the device is not marked, follow the wiring diagram printed on its face.</p>
-<p>Keep the string positive and negative conductors physically together. Separating them into different ducts creates a large loop that both increases inductive voltage spikes during interruption and raises the risk of a fault being sustained across the gap.</p>
-
-<h2>Coordinating DC protection</h2>
-<p>A DC breaker protects against overload and short circuit. It does not protect against surge, and it does not replace string fuses where the array configuration requires them. A complete string box normally contains all three functions: fuses for reverse-current protection between parallel strings, a DC breaker for isolation and overload, and a surge protective device for transient overvoltage.</p>
-<p>Check the voltage rating of every DC device in the box against the array's maximum system voltage at minimum expected temperature, not against the nominal string voltage. Open-circuit voltage rises as temperature falls, and a cold morning is when the highest voltage appears.</p>
-
-<h2>Supply</h2>
-<p>YOMIN manufactures DC photovoltaic circuit breakers in the 63 A to 125 A range for 500 V and 1000 V DC systems, including four-pole configurations with CE marking, under ISO 9001 production. Standard lead time is 15&ndash;25 working days, extending to 30&ndash;45 days for OEM and customised variants, with a minimum order of 100 units (500 for OEM or customisation). Units carry a two-year warranty against manufacturing defects.</p>
-<p>Send the array's maximum system voltage, the string and array currents, and whether you need string-level or array-level isolation. Those three answers determine the pole configuration and the frame the project needs.</p>
-
-    <h2>Frequently asked questions</h2>
-          <details class="blog-faq-item">
-        <summary>Can I use an AC circuit breaker on a DC solar circuit?</summary>
-        <div>No. AC breakers rely on the current crossing zero to extinguish the arc, which never happens in a DC circuit. A DC breaker has different contact geometry and an arc chute with magnetic blowout, and carries a DC voltage and current rating for a stated pole configuration.</div>
-      </details>
-      <details class="blog-faq-item">
-        <summary>What does the four-pole configuration mean on a DC breaker?</summary>
-        <div>The poles are wired in series internally so the arc is divided across four gaps, which is how a compact device reaches 1000 V DC. The rating is only valid with the poles configured as marked, so the same frame can have different ratings depending on connection.</div>
-      </details>
-      <details class="blog-faq-item">
-        <summary>Do I still need string fuses if I have a DC circuit breaker?</summary>
-        <div>Yes, they do different jobs. The breaker provides isolation and overload protection, while string fuses protect against reverse current from the other parallel strings. A typical string box uses fuses, a DC breaker and a surge protective device together.</div>
-      </details>
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
   </div>
 </div>
 
-  <section class="blog-cta">
-    <h2>Sourcing DC breakers for a PV array?</h2>
-    <p>Give us your maximum system voltage and the string and array currents. We build DC photovoltaic circuit breakers from 63 A to 125 A for 500 V and 1000 V systems, with ISO 9001 production and CE marking.</p>
-    <a class="btn" href="/contact">Request a quote</a>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Solar &amp; PV</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">DC Circuit Breaker for Solar: Why DC Protection Is Not AC Protection</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 16, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
   </section>
 
-  
-</main></main>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/dc-circuit-breaker-solar-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/dc-circuit-breaker-solar-guide/hero.png" alt="Four-pole DC 1000 V circuit breaker installed on a DIN rail inside a solar PV string combiner box" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>The most expensive mistake in PV protection is treating a circuit breaker as a generic component. An AC breaker and a DC breaker can look almost identical on the outside and are not interchangeable. Installing the AC device in a DC string is a fire risk, not a nuisance trip.</p>
+
+    <h2>Why DC is harder to break</h2>
+    <p>Alternating current crosses zero volts a hundred times a second in a 50 Hz system. Every one of those crossings is a moment when the arc drawn between opening contacts naturally goes out. The breaker is designed to let that happen.</p>
+    <p>Direct current has no zero crossing. Once an arc establishes between the contacts it is sustained by the full array voltage, and it will keep running until something physically stretches or cools it below the ionisation threshold. A PV array makes this worse than a battery, because the array keeps producing voltage in daylight even with no load current.</p>
+    <p>That is why a DC breaker uses a different contact geometry, a different arc chute with magnetic blowout, and a permanently marked DC rating. Physical similarity to an AC device means nothing.</p>
+
+    <h2>What a DC rating actually tells you</h2>
+    <p>A DC rating is always two figures together: a voltage and a current, quoted for a stated number of poles in series. On a four-pole device marked DC 1000 V, the poles are wired in series internally so the arc is divided across four gaps. That series connection is the mechanism, not a convenience.</p>
+    <p>The result is that the same physical breaker can carry quite different ratings depending on how its poles are connected. Read the face of the device rather than assuming from the frame size:</p>
+    <table>
+      <thead>
+        <tr><th>Marking</th><th>Meaning</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>DC 1000 V</td><td>Maximum DC system voltage with the poles configured as marked</td></tr>
+        <tr><td>C32</td><td>C curve, 32 A nominal &mdash; C curve tolerates the inrush of capacitive loads</td></tr>
+        <tr><td>Icu / Ics 6 kA</td><td>Ultimate and service breaking capacity</td></tr>
+        <tr><td>Ui 1000 V / Uimp 6 kV</td><td>Rated insulation voltage and impulse withstand</td></tr>
+        <tr><td>Cat A</td><td>No intentional short-time delay &mdash; instantaneous interruption</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Where a DC breaker belongs in a PV system</h2>
+    <ul>
+      <li><strong>String level</strong> &mdash; between the array and the combiner, so an individual string can be isolated without touching the live combiner.</li>
+      <li><strong>Array level</strong> &mdash; the main DC disconnect between the combiner and the inverter, which must break the combined current of every string in parallel.</li>
+      <li><strong>Charge and battery circuits</strong> on DC-coupled storage, where the fault current can be far higher than an array can deliver.</li>
+    </ul>
+    <p>The string-level device and the array-level device are not the same specification. The array-level breaker must interrupt the summed current of all strings and carry the combined thermal load, which usually moves it up a frame size.</p>
+
+    <h2>Polarity and wiring care</h2>
+    <p>DC circuits have polarity, and a reversed connection in a series string adds voltage rather than subtracting it. Confirm polarity at every pole before energising, and do not rely on the colour of a factory tail. Where the device is not marked, follow the wiring diagram printed on its face.</p>
+    <p>Keep the string positive and negative conductors physically together. Separating them into different ducts creates a large loop that both increases inductive voltage spikes during interruption and raises the risk of a fault being sustained across the gap.</p>
+
+    <h2>Coordinating DC protection</h2>
+    <p>A DC breaker protects against overload and short circuit. It does not protect against surge, and it does not replace string fuses where the array configuration requires them. A complete string box normally contains all three functions: fuses for reverse-current protection between parallel strings, a DC breaker for isolation and overload, and a surge protective device for transient overvoltage.</p>
+    <p>Check the voltage rating of every DC device in the box against the array's maximum system voltage at minimum expected temperature, not against the nominal string voltage. Open-circuit voltage rises as temperature falls, and a cold morning is when the highest voltage appears.</p>
+
+    <h2>Supply</h2>
+    <p>YOMIN manufactures DC photovoltaic circuit breakers in the 63 A to 125 A range for 500 V and 1000 V DC systems, including four-pole configurations with CE marking, under ISO 9001 production. Standard lead time is 15&ndash;25 working days, extending to 30&ndash;45 days for OEM and customised variants, with a minimum order of 100 units (500 for OEM or customisation). Units carry a two-year warranty against manufacturing defects.</p>
+    <p>Send the array's maximum system voltage, the string and array currents, and whether you need string-level or array-level isolation. Those three answers determine the pole configuration and the frame the project needs.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>Can I use an AC circuit breaker on a DC solar circuit?</h3>
+    <p>No. AC breakers rely on the current crossing zero to extinguish the arc, which never happens in a DC circuit. A DC breaker has different contact geometry and an arc chute with magnetic blowout, and carries a DC voltage and current rating for a stated pole configuration.</p>
+    <h3>What does the four-pole configuration mean on a DC breaker?</h3>
+    <p>The poles are wired in series internally so the arc is divided across four gaps, which is how a compact device reaches 1000 V DC. The rating is only valid with the poles configured as marked, so the same frame can have different ratings depending on connection.</p>
+    <h3>Do I still need string fuses if I have a DC circuit breaker?</h3>
+    <p>Yes, they do different jobs. The breaker provides isolation and overload protection, while string fuses protect against reverse current from the other parallel strings. A typical string box uses fuses, a DC breaker and a surge protective device together.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Need 1000 V DC circuit breakers for solar?</h2>
+    <p>Tell us your string voltage, operating current and pole arrangement. We supply 2-pole, 3-pole and 4-pole DC miniature circuit breakers up to 1000 V DC and 63 A, with CE certification and ISO 9001 quality management.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+  </section>
+</main>
 
 <footer>
   <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
@@ -148,9 +264,6 @@
 </footer>
 
 <script defer src="/assets/js/main.js"></script>
-
 <script defer src="/assets/js/i18n-es.js"></script>
-
 </body>
-
 </html>
