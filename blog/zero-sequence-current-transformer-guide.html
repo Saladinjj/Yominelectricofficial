@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zero-Sequence Current Transformer Guide: Core-Balance CTs for Earth-Fault Protection | Yomin Electric</title>
+<meta name="description" content="How zero-sequence (core-balance) current transformers detect earth faults, how to choose ratio and window size, and where they belong in a protection scheme.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/zero-sequence-current-transformer-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/zero-sequence-current-transformer-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Zero-Sequence Current Transformer Guide: Core-Balance CTs for Earth-Fault Protection",
+      "description": "How zero-sequence (core-balance) current transformers detect earth faults, how to choose ratio and window size, and where they belong in a protection scheme.",
+      "image": "https://www.yominelectric.com/assets/images/blog/zero-sequence-current-transformer-guide/hero.png",
+      "datePublished": "2026-09-18",
+      "dateModified": "2026-09-18",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/zero-sequence-current-transformer-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a zero-sequence CT and a residual current device?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The CT is the sensing element. A residual current device packages the same principle with a trip mechanism and a defined sensitivity, usually at low current levels."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can one zero-sequence CT cover both phases and neutral?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — and for a four-wire circuit it must. The neutral belongs inside the window; the protective earth conductor must stay outside it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the ratio decide sensitivity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It contributes to it. Sensitivity is set by the combination of core, ratio, burden and the relay’s setting range, which is why earth-fault schemes are specified as a whole rather than component by component."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Current Transformers</span></div>
+    <span class="bh-tag">Buyer&#39;s Guides</span>
+    <h1 class="bh-title">Zero-Sequence Current Transformer Guide: Core-Balance CTs for Earth-Fault Protection</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 18, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/zero-sequence-current-transformer-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/zero-sequence-current-transformer-guide/hero.png" alt="Zero-sequence toroidal current transformers with red terminal covers mounted on busbar conductors inside a low-voltage distribution panel" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>A fault the phase CTs cannot see</h2>
+<p>Put an amp clamp around the three phases of a healthy feeder and you read close to zero. The vectors cancel, which is exactly what a set of phase current transformers is designed to measure around: load current, phase by phase. Now imagine insulation fails to earth downstream. Part of the current leaves the circuit through the fault and never returns through a phase conductor. The phase CTs still see current flowing; what has changed is the balance between the conductors. A zero-sequence current transformer is the device that measures that imbalance directly.</p>
+
+<h2>The core-balance principle</h2>
+<p>A zero-sequence CT — also called a core-balance CT, residual current transformer or earth-fault CT — is a toroidal core with a secondary winding. The primary is not a winding at all: it is the set of conductors threaded through the window. All phase conductors and the neutral pass through the core; the protective earth conductor does not.</p>
+<ul>
+  <li><strong>Healthy circuit:</strong> the vector sum of the currents through the window is zero, so the flux in the core is zero and the secondary reads nothing.</li>
+  <li><strong>Earth fault:</strong> the sum no longer balances, flux appears in the core, and the secondary produces a current proportional to the earth-fault current.</li>
+</ul>
+<p>The result is a measurement that is inherently about earth leakage rather than load, which is why it is used for earth-fault protection and residual-current monitoring instead of for metering.</p>
+
+<h2>Ratio, sensitivity and burden</h2>
+<p>The published <strong>MES 140/100</strong> series is a zero-sequence toroidal CT wound for a 2000/5 ratio at 50 / 60 Hz, described for metering and protection in power distribution as a wound / bar type. Three properties decide whether a given CT will actually detect the fault current you care about:</p>
+<ul>
+  <li><strong>Ratio</strong> — a high ratio produces a smaller secondary current for a given primary imbalance, which suits detection of large earth-fault currents and relay settings expressed in amperes secondary.</li>
+  <li><strong>Core material and cross-section</strong> — these set how much secondary output a small residual current can generate, and therefore how low a fault current the scheme can be set to detect.</li>
+  <li><strong>Burden</strong> — the relay, wiring and any monitoring device form the burden on the secondary. Overloading it flattens the output exactly when the fault current is at its most interesting.</li>
+</ul>
+<p>Where the requirement is sensitive residual-current sensing at low voltage rather than high-current detection, a low-voltage zero-sequence current sensor pair performs the same job at a smaller scale — the published single-phase YOMIN zero-sequence sensor is aimed at the same duty of metering and protection in power distribution.</p>
+
+<h2>Window size and conductor arrangement</h2>
+<p>This is where most installation problems begin. The window has to be large enough for every conductor that belongs inside the summation, with enough clearance to keep them centred. Practical rules:</p>
+<ul>
+  <li>All phases and the neutral go through together. Leave any one of them outside and the CT will read load current as though it were an earth fault.</li>
+  <li>The protective earth conductor does <em>not</em> pass through the window. If it does, it cancels the very current the CT exists to detect.</li>
+  <li>Keep the conductor bundle near the centre of the window. Off-centre bunching creates stray flux and a standing offset reading.</li>
+  <li>Where the CT is retrofitted, check that the enclosure and cable-bending space allow the full bundle to be threaded without forcing a radius the cable does not accept.</li>
+</ul>
+
+<h2>Where zero-sequence CTs sit</h2>
+<ul>
+  <li><strong>Earth-fault relays</strong> on feeders and incomers, where sensitive earth-fault protection is required in addition to overcurrent.</li>
+  <li><strong>Residual current monitoring</strong> in installations where leakage must be trended before it becomes a trip.</li>
+  <li><strong>Motor and generator earth-fault protection</strong>, where the winding insulation is monitored against a known reference.</li>
+  <li><strong>Transformer restricted earth fault schemes</strong>, combined with the phase CTs on the same winding.</li>
+  <li><strong>Medium-voltage switchgear</strong>, where the cable-termination box provides the single window for all three phases.</li>
+</ul>
+
+<h2>Selection checklist</h2>
+<table>
+  <tr><th>Question</th><th>Why it matters</th></tr>
+  <tr><td>What earth-fault current must be detected?</td><td>Sets the ratio and the required sensitivity</td></tr>
+  <tr><td>How many conductors pass through?</td><td>Determines the window size and the mounting form</td></tr>
+  <tr><td>What is the relay burden?</td><td>Poorly matched burden collapses the output</td></tr>
+  <tr><td>Is it a new build or a retrofit?</td><td>Split-core or window-type forms suit existing cables</td></tr>
+  <tr><td>Which standard and class does the scheme call for?</td><td>Protection and metering classes are not interchangeable</td></tr>
+</table>
+
+<h2>Commissioning checks</h2>
+<ul>
+  <li>Verify with a primary injection test that the measured residual current matches the injected value at the relay.</li>
+  <li>Confirm polarity and the direction of the secondary winding in the trip circuit.</li>
+  <li>Check the earth conductor is not passing through the window, on every CT in the scheme.</li>
+  <li>Record the standing residual current on a healthy circuit; a non-zero baseline usually means a conductor is threaded wrongly or the bundle is badly off-centre.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<h3>What is the difference between a zero-sequence CT and a residual current device?</h3>
+<p>The CT is the sensing element. A residual current device packages the same principle with a trip mechanism and a defined sensitivity, usually at low current levels.</p>
+
+<h3>Can one zero-sequence CT cover both phases and neutral?</h3>
+<p>Yes — and for a four-wire circuit it must. The neutral belongs inside the window; the protective earth conductor must stay outside it.</p>
+
+<h3>Does the ratio decide sensitivity?</h3>
+<p>It contributes to it. Sensitivity is set by the combination of core, ratio, burden and the relay's setting range, which is why earth-fault schemes are specified as a whole rather than component by component.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Selecting a zero-sequence CT for an earth-fault scheme?</h2>
+    <p>Tell us the earth-fault current to detect, the number of conductors through the window and the relay burden. YOMIN builds zero-sequence toroidal current transformers for metering and protection in power distribution.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/current-transformer">Browse the current transformer range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

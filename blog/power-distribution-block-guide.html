@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Power Distribution Block Guide: Sizing, DIN Rail Mounting and Feeder Splitting | Yomin Electric</title>
+<meta name="description" content="How to specify and size a modular DIN rail power distribution block: current ratings from 80A to 500A, incoming vs branch wire gauge capacity, short-circuit withstand, IP20 finger-safety, and panel layout best practices.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/power-distribution-block-guide/card.png">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+  <link rel="canonical" href="https://www.yominelectric.com/blog/power-distribution-block-guide">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Power Distribution Block Guide: Sizing, DIN Rail Mounting and Feeder Splitting",
+      "description": "How to specify and size a modular DIN rail power distribution block: current ratings from 80A to 500A, incoming vs branch wire gauge capacity, short-circuit withstand, IP20 finger-safety, and panel layout best practices.",
+      "image": "https://www.yominelectric.com/assets/images/blog/power-distribution-block-guide/hero.png",
+      "datePublished": "2026-09-18",
+      "dateModified": "2026-09-18",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/power-distribution-block-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a standard terminal block and a power distribution block?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard DIN rail terminal block is typically a 1-to-1 feed-through connector designed for point-to-point wiring. A power distribution block features a single high-current incoming line port connected to an internal bus that branches out to multiple smaller-gauge load ports, eliminating the need to daisy-chain jumpers across multiple individual terminals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I terminate aluminum conductors into a brass power distribution block?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Direct termination of bare aluminum cable into brass or copper distribution blocks is not recommended due to galvanic corrosion and thermal expansion differences. To land aluminum conductors, always use bimetallic crimp ferrules or pins with tin plating and apply an approved anti-oxidation paste."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are distribution block covers transparent blue?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The blue polycarbonate cover provides IP20 finger-safety while allowing visual inspection of conductor insertion depth and contact seating. The transparent tint also visually distinguishes neutral distribution blocks from line or ground blocks in standardized three-phase control cabinets."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Terminals &amp; Connectors</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Power Distribution Block Guide: Sizing, DIN Rail Mounting and Feeder Splitting</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 18, 2026</span>
+      <span class="divider"></span>
+      <span>8 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/power-distribution-block-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/power-distribution-block-guide/hero.png" alt="Blue cover modular DIN-rail power distribution block installed in an industrial control panel" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<p>In electrical control panel design and switchgear manufacturing, splitting a heavy incoming power feeder into multiple branch circuits has historically been one of the most failure-prone points of an installation. Traditional daisy-chaining across standard terminal blocks introduces cumulative resistance, while improvised splitters waste enclosure space and fail thermal inspections under load.</p>
+<p>A modular DIN rail power distribution block &mdash; often referred to as a unipolar splitter box &mdash; solves this by providing a solid brass or tinned copper busbar core inside an insulated, finger-safe housing. Understanding how to properly specify conductor cross-sections, thermal ratings, and short-circuit withstand ensures the distribution block operates reliably without hotspot formation.</p>
+
+<h2>Feeder splitting: why unipolar blocks replace daisy-chaining</h2>
+<p>When feeding multiple miniature circuit breakers (MCBs), contactors, or motor starters from a single main supply, looping conductors between terminals creates severe engineering vulnerabilities:</p>
+<ul>
+  <li><strong>Thermal concentration:</strong> The first terminal in a daisy chain carries the aggregate current of all downstream loads, creating an asymmetric thermal gradient across the rail.</li>
+  <li><strong>Vibration loosening:</strong> Standard screw terminals subjected to cyclic thermal expansion and mechanical vibration loosen over time, leading to micro-arcing.</li>
+  <li><strong>Maintenance downtime:</strong> Servicing or replacing one branch device requires unthreading conductors, interrupting power to adjacent circuits.</li>
+</ul>
+<p>A unipolar power distribution block accepts a single large-gauge incoming feeder cable and branches it internally across a one-piece machined conductive block into 4, 6, 8, or 10 secondary terminals. Each branch circuit is mechanically and electrically independent.</p>
+
+<h2>Current rating and conductor cross-sections</h2>
+<p>Power distribution blocks are rated by their nominal continuous current ($I_n$) and the mechanical wire gauge capacity of both the primary (line) and secondary (load) ports:</p>
+
+<table>
+  <thead>
+    <tr><th>Model Class</th><th>Rated Current ($I_n$)</th><th>Incoming Port Range</th><th>Outgoing Branch Ports</th><th>Standard Application</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>UKK-80A</td><td>80 A / 690 V</td><td>1 &times; 16 mm&sup2; (6 AWG)</td><td>4 &times; 6 mm&sup2; + 2 &times; 16 mm&sup2;</td><td>Small machinery control panels, OEM packaging gear</td></tr>
+    <tr><td>UKK-125A</td><td>125 A / 690 V</td><td>1 &times; 35 mm&sup2; (2 AWG)</td><td>6 &times; 16 mm&sup2; + 1 &times; 35 mm&sup2;</td><td>Sub-distribution boards, industrial automation cabinets</td></tr>
+    <tr><td>UKK-160A</td><td>160 A / 690 V</td><td>1 &times; 70 mm&sup2; (2/0 AWG)</td><td>6 &times; 16 mm&sup2; + 2 &times; 35 mm&sup2;</td><td>Main switchgear feeder splitting, motor control centers</td></tr>
+    <tr><td>UKK-250A</td><td>250 A / 690 V</td><td>1 &times; 120 mm&sup2; (4/0 AWG)</td><td>2 &times; 35 mm&sup2; + 5 &times; 16 mm&sup2; + 4 &times; 10 mm&sup2;</td><td>High-density industrial distribution, building services</td></tr>
+    <tr><td>UKK-400A / 500A</td><td>400 A &ndash; 500 A / 690 V</td><td>1 &times; 185 mm&sup2; / 240 mm&sup2;</td><td>Multi-tier branch grouping</td><td>Heavy power distribution, transformer secondary feeds</td></tr>
+  </tbody>
+</table>
+
+<p>When selecting wire sizes, ensure the conductor insulation type matches the temperature rating of the block. Blocks tested to 75&deg;C or 90&deg;C require conductor ampacity calculations based on the corresponding column of IEC 60364-5-52 or NEC Table 310.16.</p>
+
+<h2>Mechanical construction: brass vs. copper and plating standards</h2>
+<p>The core conductive element of a distribution block must deliver low electrical resistance while resisting mechanical deformation under screw torque:</p>
+<ul>
+  <li><strong>Machined brass:</strong> High-grade brass (HPb59-1 / CuZn39Pb2) provides excellent mechanical machinability, rigid thread engagement, and corrosion resistance. It is the industrial standard for modular unipolar blocks up to 250 A.</li>
+  <li><strong>Electrolytic copper:</strong> For ratings above 250 A, high-conductivity electrolytic copper (ETP copper, 99.9% Cu) minimizes internal $I^2R$ resistive heating under heavy continuous loading.</li>
+  <li><strong>Nickel / tin electroplating:</strong> All contact surfaces should feature tin or nickel plating (typically 5&ndash;10 &mu;m thickness) to prevent oxidation, reduce galvanic corrosion when landing aluminum conductors with bimetal ferrules, and maintain low contact resistance.</li>
+</ul>
+
+<h2>IP20 touch-proof finger safety and DIN rail mounting</h2>
+<p>Modern electrical safety standards (IEC 60529 and EN 50274) mandate IP20 finger-safe protection for all components inside low-voltage switchgear accessible during routine maintenance. The transparent or tinted blue polycarbonate (PC) cover on UKK blocks provides complete touch prevention against live internal metal parts, while permitting visual inspection of wire insertion depth and screw seating without removing the shield.</p>
+<p>Mounting is typically dual-mode: snap-on installation onto standard 35 mm DIN rails (EN 60715 / IEC 60715 top-hat rail) for rapid modular panel assembly, with secondary screw-mounting holes in the baseplate for high-vibration applications such as marine or mobile generator enclosures.</p>
+
+<h2>Installation and torque management</h2>
+<p>Improper torque application accounts for over 80% of terminal block overheating failures:</p>
+<ul>
+  <li><strong>Always use a calibrated torque driver:</strong> Never estimate tightening torque with a standard Allen key or screwdriver. Over-torquing strips brass threads; under-torquing causes high contact resistance and thermal runaway.</li>
+  <li><strong>Use cord-end ferrules on stranded conductors:</strong> Fine-stranded flexible conductors (Class 5 or Class 6) must be terminated with insulated wire ferrules before insertion into screw clamps to prevent strand splaying and localized pinching.</li>
+  <li><strong>Observe conductor strip length:</strong> Stripping insulation too short prevents full clamp engagement; stripping too long leaves exposed bare copper outside the IP20 housing envelope.</li>
+</ul>
+
+<h2>Supply and technical specifications</h2>
+<p>YOMIN manufactures CW01 and UKK series modular power distribution blocks ranging from 80 A to 500 A under ISO 9001 quality management, certified to CE and compliant with IEC 60947-7-1. Standard production lead time is 15&ndash;25 working days, extending to 30&ndash;45 days for custom multi-gang arrangements or OEM labelling, with a minimum order quantity of 100 units. Units carry a two-year manufacturing defect warranty.</p>
+<p>Provide your incoming feeder cross-section, total continuous load, and required number of branch circuits for immediate technical recommendation and dimensional layout confirmation.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>What is the difference between a standard terminal block and a power distribution block?</h3>
+    <p>A standard DIN rail terminal block is typically a 1-to-1 feed-through connector designed for point-to-point wiring. A power distribution block features a single high-current incoming line port connected to an internal bus that branches out to multiple smaller-gauge load ports, eliminating the need to daisy-chain jumpers across multiple individual terminals.</p>
+    <h3>Can I terminate aluminum conductors into a brass power distribution block?</h3>
+    <p>Direct termination of bare aluminum cable into brass or copper distribution blocks is not recommended due to galvanic corrosion and thermal expansion differences. To land aluminum conductors, always use bimetallic crimp ferrules or pins with tin plating and apply an approved anti-oxidation paste.</p>
+    <h3>Why are distribution block covers transparent blue?</h3>
+    <p>The blue polycarbonate cover provides IP20 finger-safety while allowing visual inspection of conductor insertion depth and contact seating. The transparent tint also visually distinguishes neutral distribution blocks from line or ground blocks in standardized three-phase control cabinets.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Sourcing modular power distribution blocks for panel builds?</h2>
+    <p>Send us your feeder current, conductor cross-sections, and required branch circuit counts. We manufacture 80A to 500A unipolar distribution blocks with ISO 9001 quality and CE certification.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

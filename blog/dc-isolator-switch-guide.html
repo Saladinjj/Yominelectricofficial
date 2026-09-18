@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DC Isolator Switch Guide: Sizing, IP Ratings and Solar Disconnect Standards | Yomin Electric</title>
+<meta name="description" content="How to specify a solar DC isolator switch: direct current arc characteristics, 1000V vs 1500V ratings, IEC 60364-7-712 compliance, IP66 outdoor enclosures, and why an AC switch must never be used on DC circuits.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/dc-isolator-switch-guide/card.png">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+  <link rel="canonical" href="https://www.yominelectric.com/blog/dc-isolator-switch-guide">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "DC Isolator Switch Guide: Sizing, IP Ratings and Solar Disconnect Standards",
+      "description": "How to specify a solar DC isolator switch: direct current arc characteristics, 1000V vs 1500V ratings, IEC 60364-7-712 compliance, IP66 outdoor enclosures, and why an AC switch must never be used on DC circuits.",
+      "image": "https://www.yominelectric.com/assets/images/blog/dc-isolator-switch-guide/hero.png",
+      "datePublished": "2026-09-18",
+      "dateModified": "2026-09-18",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/dc-isolator-switch-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a DC circuit breaker and a DC isolator switch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A DC circuit breaker provides automatic overcurrent and short-circuit protection using thermal and magnetic trip elements. A DC isolator switch is a manually operated mechanical disconnect designed to provide a visible, physical gap in the circuit for safe maintenance disconnection under load. Most solar installations require both."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do rooftop DC isolators sometimes catch fire?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rooftop DC isolator fires are almost always caused by three preventable factors: water ingress through defective cable glands or degraded gaskets, loose screw terminal connections causing resistive heating, or using an AC-rated switch that failed to extinguish a DC arc. Proper IP66 enclosures, torque screwdrivers, and dedicated DC-PV2 rated switches eliminate these risks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I mount a DC isolator horizontally?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While the internal switch mechanism operates in any orientation, outdoor IP66 enclosures should ideally be mounted vertically with cable entries pointing downward. This prevents moisture from pooling on gland threads and ensures condensation drainage breathers function correctly."
+          }
+        }
+      ]
+    }
+  ]
+}</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Solar &amp; PV Products</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">DC Isolator Switch Guide: Sizing, IP Ratings and Solar Disconnect Standards</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 18, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/dc-isolator-switch-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/dc-isolator-switch-guide/hero.png" alt="Outdoor IP66 1500V rotary DC isolator switch mounted beside a commercial solar inverter" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<p>A solar photovoltaic array produces direct current (DC) the instant sunlight strikes the modules. Unlike alternating current (AC), direct current has no natural zero-crossing point where voltage collapses to zero sixty times a second. Once an electric arc ignites in a DC circuit, it sustains itself indefinitely across opening contacts, generating plasma temperatures exceeding 3,000&deg;C that can consume switchgear and ignite surrounding structures within seconds.</p>
+<p>For this reason, installing an appropriately rated, dedicated DC isolator switch between the solar PV string array and the grid-tied inverter is both an engineering necessity and a strict mandatory requirement under international electrical codes including IEC 60364-7-712, IEC 60947-3, and AS/NZS 5033.</p>
+
+<h2>Why AC disconnect switches must never be used on DC circuits</h2>
+<p>One of the most dangerous errors in solar installation is substituting a standard AC rotary switch or AC circuit breaker for a DC isolator:</p>
+<ul>
+  <li><strong>Absence of zero-crossing:</strong> AC switches rely on the sinusoidal waveform crossing zero volts (100 or 120 times per second at 50/60 Hz) to naturally extinguish the switching arc. DC maintains constant voltage and continuous electron flow.</li>
+  <li><strong>Contact separation speed:</strong> AC switches open relatively slowly. DC isolators require snap-action, spring-loaded quick-make / quick-break mechanisms that snap contacts open at high velocity (typically under 5 milliseconds), completely independent of the operator's handle speed.</li>
+  <li><strong>Magnetic arc chutes:</strong> DC isolators incorporate permanent magnets or steel splitter plates (arc chutes) that mechanically force the plasma arc outward, stretching and cooling it until the air gap dielectric strength exceeds the driving voltage.</li>
+</ul>
+<p>Applying an AC switch to a 600 V to 1500 V DC solar string inevitably causes contact welding, thermal runaway, and catastrophic electrical fire during manual disconnection under load.</p>
+
+<h2>Utilization categories: DC-21A, DC-21B, and DC-PV2</h2>
+<p>Under IEC 60947-3, switches are classified by utilization categories that define the electrical conditions they can interrupt safely:</p>
+
+<table>
+  <thead>
+    <tr><th>Category</th><th>Load Type</th><th>Operating Duty</th><th>Suitability for Solar PV</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>DC-21A</td><td>Resistive loads (including moderate overloads)</td><td>Frequent switching</td><td>Acceptable for small, non-inductive strings; marginal for high-capacity arrays</td></tr>
+    <tr><td>DC-21B</td><td>Resistive loads</td><td>Infrequent switching</td><td>Maintenance disconnect only; lower endurance limits</td></tr>
+    <tr><td>DC-22A</td><td>Mixed resistive and inductive loads</td><td>Frequent switching</td><td>Suitable for commercial installations with long cable runs</td></tr>
+    <tr><td><strong>DC-PV1 / DC-PV2</strong></td><td>Solar PV circuits with capacitive filters</td><td>Frequent making and breaking under full PV open-circuit voltage and short-circuit current</td><td><strong>Mandatory international standard for modern PV arrays</strong></td></tr>
+  </tbody>
+</table>
+
+<p>Always verify on the manufacturer datasheet that the switch is rated for <strong>DC-PV2</strong> at the actual operating voltage of the installation.</p>
+
+<h2>Sizing calculations: voltage, current and string configurations</h2>
+<p>Sizing a DC isolator requires calculating the maximum open-circuit voltage ($V_{oc}$) and maximum short-circuit current ($I_{sc}$) under worst-case environmental conditions:</p>
+
+<h3>1. Maximum system voltage calculation</h3>
+<p>Photovoltaic module voltage increases as ambient temperature drops. The maximum DC voltage must be calculated at the lowest recorded historical temperature for the installation site:</p>
+<p>$$V_{max} = N 	imes V_{oc} 	imes [1 + \gamma_v 	imes (T_{min} - 25)]$$</p>
+<p>Where $N$ is the number of modules in series, $V_{oc}$ is the module open-circuit voltage at STC, $\gamma_v$ is the temperature coefficient of $V_{oc}$ (negative percentage, e.g., -0.28%/&deg;C), and $T_{min}$ is the minimum design temperature. A string operating at 950 V at 25&deg;C will easily exceed 1,050 V at -10&deg;C, requiring a <strong>1500 V DC</strong> rated isolator rather than a 1000 V model.</p>
+
+<h3>2. Rated current sizing</h3>
+<p>Per IEC 60364-7-712, the current rating of the isolator must exceed the array maximum short-circuit current multiplied by a 1.25 safety factor to account for edge-of-cloud solar irradiance enhancements:</p>
+<p>$$I_{rated} \ge 1.25 	imes I_{sc(string)} 	imes N_{strings}$$</p>
+
+<h2>Enclosure engineering: IP66 ingress protection and UV stability</h2>
+<p>Because DC isolators are frequently mounted outdoors adjacent to array combiners or rooftop inverters, environmental degradation represents a major failure mode:</p>
+<ul>
+  <li><strong>IP66 waterproof rating:</strong> The enclosure must prevent dust ingress (dust-tight) and withstand powerful water jets from high-pressure cleaning or driving rain. High-grade closed-cell silicone or EPDM gaskets are essential.</li>
+  <li><strong>UV resistance (UL 746C f1 rating):</strong> Standard plastics degrade and become brittle under prolonged ultraviolet radiation, allowing moisture ingress. Outdoor isolators must use UV-stabilized polycarbonate (PC) or PBT materials.</li>
+  <li><strong>Pressure equalization breathers:</strong> Internal temperature cycling between hot midday operation and cold nighttime creates vacuum pressure that draws moisture through seals. Quality DC isolators incorporate breathable, waterproof vent membranes (e.g., Gore membranes) to prevent internal condensation.</li>
+  <li><strong>Padlockable rotary knob:</strong> Lock-Out/Tag-Out (LOTO) capability in the "OFF" position is required by electrical workplace safety regulations to protect maintenance technicians.</li>
+</ul>
+
+<h2>Supply and technical specifications</h2>
+<p>YOMIN manufactures high-performance ELR1, ELR2, and L2 series outdoor rotary DC isolation switches rated for 1000 V to 1500 V DC and 16 A to 100 A under ISO 9001 certified production, fully compliant with IEC 60947-3, CE, and RoHS standards. Available in 2-pole, 4-pole, and 8-pole internal contact arrangements with IP66 weatherproof enclosures. Standard lead time is 15&ndash;25 working days, with OEM custom labelling and specialized multi-string configurations available at 30&ndash;45 days. Minimum order quantity is 100 units (500 for custom OEM builds), supported by a two-year manufacturing defect warranty.</p>
+<p>Send your string voltage, operating current, and pole configuration for same-day engineering validation and pricing.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>What is the difference between a DC circuit breaker and a DC isolator switch?</h3>
+    <p>A DC circuit breaker provides automatic overcurrent and short-circuit protection using thermal and magnetic trip elements. A DC isolator switch is a manually operated mechanical disconnect designed to provide a visible, physical gap in the circuit for safe maintenance disconnection under load. Most solar installations require both.</p>
+    <h3>Why do rooftop DC isolators sometimes catch fire?</h3>
+    <p>Rooftop DC isolator fires are almost always caused by three preventable factors: water ingress through defective cable glands or degraded gaskets, loose screw terminal connections causing resistive heating, or using an AC-rated switch that failed to extinguish a DC arc. Proper IP66 enclosures, torque screwdrivers, and dedicated DC-PV2 rated switches eliminate these risks.</p>
+    <h3>Can I mount a DC isolator horizontally?</h3>
+    <p>While the internal switch mechanism operates in any orientation, outdoor IP66 enclosures should ideally be mounted vertically with cable entries pointing downward. This prevents moisture from pooling on gland threads and ensures condensation drainage breathers function correctly.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying 1000V or 1500V DC isolators for solar installations?</h2>
+    <p>Provide your maximum string voltage, short-circuit current, and outdoor mounting requirements. We manufacture IP66 waterproof 1000V/1500V DC isolators with ISO 9001 and CE certification.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
