@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Central Battery System Guide: Emergency Lighting EPS &amp; Power Backup | Yomin Electric</title>
+<meta name="description" content="Complete guide to centralized emergency lighting battery systems (CBS / EPS): Type A systems, EN 50171 and NFPA 101 compliance, lithium vs lead-acid battery racks, and sub-circuit monitoring.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/central-battery-system-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/central-battery-system-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Central Battery System Guide: Emergency Lighting EPS & Power Backup",
+      "description": "Complete guide to centralized emergency lighting battery systems (CBS / EPS): Type A systems, EN 50171 and NFPA 101 compliance, lithium vs lead-acid battery racks, and sub-circuit monitoring.",
+      "image": "https://www.yominelectric.com/assets/images/blog/central-battery-system-guide/hero.png",
+      "datePublished": "2026-09-20",
+      "dateModified": "2026-09-20",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/central-battery-system-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a Central Battery System (CBS) and self-contained emergency lights?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Self-contained emergency lights house their own small rechargeable battery and charger inside each individual fixture. In contrast, a Central Battery System (CBS) consolidates all battery storage, chargers, and inverters into a single, centrally located fire-protected plant room cabinet, feeding regular 230V/24V emergency luminaires through fire-resistant cabling. CBS eliminates the labor-intensive maintenance of testing and replacing hundreds of individual fixture batteries, delivers longer battery lifespans (10+ years vs 3-4 years for small Ni-Cd/Ni-MH cells), and provides automated centralized circuit testing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do building codes require EN 50171 compliance for emergency lighting power supplies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard commercial computer UPS systems are designed for IT equipment and will shut down if overloaded by inrush currents or elevated temperatures during a fire. EN 50171 is the European standard governing power supplies dedicated to safety systems. It mandates that the central battery system must withstand 120% continuous overload without tripping, survive harsh ambient conditions, recharge the battery bank to 80% capacity within 12 hours of a discharge, and maintain galvanically isolated safety outputs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a Central Battery System test emergency circuits automatically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Modern CBS cabinets feature intelligent microcomputer controllers programmed to conduct automated periodic tests without human intervention: a short functional discharge test every 30 days (checking inverter start and lamp operation for 2 minutes), and an annual full-duration autonomy test (discharging the battery bank for the full 90 or 180-minute rated duration). Detailed pass/fail logs for every individual sub-circuit are recorded in internal memory and transmitted to the building BMS."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Emergency Lighting</span></div>
+    <span class="bh-tag">Emergency Lighting / Central Battery Systems</span>
+    <h1 class="bh-title">Central Battery System Guide: Emergency Lighting EPS & Power Backup</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 20, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/central-battery-system-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/central-battery-system-guide/hero.png" alt="Central battery system emergency lighting cabinet installed in commercial electrical plant room" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>Central Battery Systems vs. Standalone Emergency Lighting: The Architectural Shift</h2>
+<p>In modern commercial high-rise towers, transport hubs, shopping malls, healthcare facilities, and educational campuses, emergency lighting is an indispensable life-safety requirement. When mains utility power fails—whether due to grid blackouts, switchgear faults, or active fire emergencies—illuminated emergency escape route lighting and exit signage guide building occupants to safety and enable first responders to navigate the structure.</p>
+<p>Historically, facilities relied on <em>self-contained emergency luminaires</em>, where every light fixture incorporates an internal battery pack, miniature trickle charger, and transfer relay. While inexpensive in initial capital expenditure for small retail spaces, self-contained systems become a logistical nightmare in large complexes housing thousands of luminaires: batteries fail unpredictably within 3 to 4 years, testing requires walking the entire facility with ladders, and heat buildup inside luminaires degrades cell chemistry.</p>
+<p>To overcome these operational vulnerabilities, modern engineering specifications mandate a <strong>Central Battery System (CBS)</strong>, also categorized under emergency power supply (EPS) equipment. A CBS concentrates all battery energy storage, high-power static inverters, smart multistage chargers, and automated circuit monitoring into a heavy-duty, fire-rated enclosure located inside an electrical plant room, powering robust slave luminaires through fire-resistant cabling.</p>
+
+<h2>Engineering Standards: EN 50171, BS 5266, and NFPA 101</h2>
+<p>A central battery system designed for emergency lighting must not be confused with a standard commercial uninterruptible power supply (UPS) utilized for IT server racks. A commercial UPS is designed to provide clean power for computer loads and will quickly shut down or enter bypass mode under high inrush currents or elevated temperatures. In contrast, an emergency lighting CBS must comply with rigorous international life-safety standards, including <strong>EN 50171</strong> (Central power supply systems for life safety applications) and <strong>NFPA 101</strong> (Life Safety Code):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Engineering Requirement</th>
+      <th>Standard IT UPS (Non-Compliant)</th>
+      <th>Life-Safety Central Battery System (EN 50171 / YOMIN CYS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Overload Withstand Capability</strong></td>
+      <td>Trips to fault bypass at 110% overload after 60 seconds.</td>
+      <td>Must sustain <strong>120% continuous overload</strong> for the full emergency duration without tripping.</td>
+    </tr>
+    <tr>
+      <td><strong>Battery Recharge Time</strong></td>
+      <td>Typically 24 to 48 hours for deep-discharge recovery.</td>
+      <td>Mandatory rapid recharge: must restore <strong>80% of full battery autonomy within 12 hours</strong>.</td>
+    </tr>
+    <tr>
+      <td><strong>Battery Design Life</strong></td>
+      <td>Commercial 3 to 5-year design life cells.</td>
+      <td>Mandatory heavy-duty <strong>10 to 12-year design life</strong> VRLA AGM or LiFePO4 cells.</td>
+    </tr>
+    <tr>
+      <td><strong>Galvanic Isolation</strong></td>
+      <td>Transformerless high-frequency design common.</td>
+      <td>Integrated heavy copper <strong>isolation transformer</strong> separating inverter output from building ground.</td>
+    </tr>
+    <tr>
+      <td><strong>Inverter Inrush Handling</strong></td>
+      <td>Sensitive to LED driver inrush current; trips on startup.</td>
+      <td>High peak-pulse inverter handles up to <strong>150% inrush current</strong> without voltage sag.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Battery Chemistry Selection: LiFePO4 vs. Valve-Regulated Lead-Acid (VRLA)</h2>
+<p>The battery energy bank represents the core operational investment of any central battery installation. Consulting engineers typically specify between two primary chemical technologies:</p>
+<ul>
+  <li><strong>VRLA AGM (Valve-Regulated Lead-Acid):</strong> The established industry benchmark. Features immobilized electrolyte absorbed in microporous glass mats, sealed flame-retardant ABS cases, and internal gas recombination ($>99\%$). VRLA systems offer proven reliability, low initial capital cost, and an expected service life of 10 years at a controlled $20^\circ	ext{C}$ to $25^\circ	ext{C}$ room temperature.</li>
+  <li><strong>Lithium Iron Phosphate (LiFePO4):</strong> The modern high-performance alternative. Delivers 60% reduction in cabinet weight and footprint, higher tolerance to elevated operating temperatures (crucial for installations across the Middle East, Southeast Asia, and Africa), over 3,000 deep discharge cycles, and integrated intelligent Battery Management Systems (BMS) with individual cell balancing and real-time internal resistance telemetry.</li>
+</ul>
+
+<h2>Sub-Circuit Monitoring and Automated Testing Architecture</h2>
+<p>Modern building safety regulations require documented proof that every emergency luminaire has been tested at statutory intervals. YOMIN Central Battery Systems feature microprocessor-controlled sub-circuit addressable monitoring. The central cabinet communicates over the emergency power wiring or dedicated data loops, automatically executing:</p>
+<ol>
+  <li><strong>Monthly Functional Testing:</strong> Automatically switches the system to battery power for 2 minutes every 30 days to verify inverter ignition, contactor changeover, and lamp ignition.</li>
+  <li><strong>Annual Autonomy Discharge Testing:</strong> Discharges the battery bank for the full statutory duration (e.g., 90 minutes per NFPA 101, or 180 minutes per EN 50171 / Civil Defence regulations), recording discharge voltage curves and verifying minimum cut-off thresholds.</li>
+  <li><strong>Automated Fault Reporting:</strong> Detects individual open-circuit lamp failures, short-circuits, earth-leakage faults, or degraded battery blocks, logging events in non-volatile memory and alerting building automation systems (BMS) via Modbus RTU or BACnet/IP.</li>
+</ol>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is the difference between a Central Battery System (CBS) and self-contained emergency lights?</h3><p>Self-contained emergency lights house their own small rechargeable battery and charger inside each individual fixture. In contrast, a Central Battery System (CBS) consolidates all battery storage, chargers, and inverters into a single, centrally located fire-protected plant room cabinet, feeding regular 230V/24V emergency luminaires through fire-resistant cabling. CBS eliminates the labor-intensive maintenance of testing and replacing hundreds of individual fixture batteries, delivers longer battery lifespans (10+ years vs 3-4 years for small Ni-Cd/Ni-MH cells), and provides automated centralized circuit testing.</p><h3>Why do building codes require EN 50171 compliance for emergency lighting power supplies?</h3><p>Standard commercial computer UPS systems are designed for IT equipment and will shut down if overloaded by inrush currents or elevated temperatures during a fire. EN 50171 is the European standard governing power supplies dedicated to safety systems. It mandates that the central battery system must withstand 120% continuous overload without tripping, survive harsh ambient conditions, recharge the battery bank to 80% capacity within 12 hours of a discharge, and maintain galvanically isolated safety outputs.</p><h3>How does a Central Battery System test emergency circuits automatically?</h3><p>Modern CBS cabinets feature intelligent microcomputer controllers programmed to conduct automated periodic tests without human intervention: a short functional discharge test every 30 days (checking inverter start and lamp operation for 2 minutes), and an annual full-duration autonomy test (discharging the battery bank for the full 90 or 180-minute rated duration). Detailed pass/fail logs for every individual sub-circuit are recorded in internal memory and transmitted to the building BMS.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Designing centralized emergency lighting systems for commercial projects?</h2>
+    <p>Send us your emergency luminaire load schedule, required battery autonomy (90 or 180 min), and civil defence specifications. YOMIN engineers and manufactures EN 50171 certified Central Battery Systems and EPS cabinets.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/emergency-lighting">Browse the emergency lighting range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

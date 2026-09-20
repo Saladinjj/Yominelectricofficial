@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test Terminal Block Guide: CT &amp; PT Secondary Disconnects for Metering | Yomin Electric</title>
+<meta name="description" content="How to specify and wire test terminal blocks for 3-phase 4-wire energy metering: CT secondary short-circuiting, VT isolation, on-site meter calibration, and utility revenue protection.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/test-terminal-block-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/test-terminal-block-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Test Terminal Block Guide: CT & PT Secondary Disconnects for Metering",
+      "description": "How to specify and wire test terminal blocks for 3-phase 4-wire energy metering: CT secondary short-circuiting, VT isolation, on-site meter calibration, and utility revenue protection.",
+      "image": "https://www.yominelectric.com/assets/images/blog/test-terminal-block-guide/hero.png",
+      "datePublished": "2026-09-20",
+      "dateModified": "2026-09-20",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/test-terminal-block-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is a test terminal block required for current transformer (CT) metering?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A current transformer secondary must NEVER be open-circuited while primary current is flowing. If opened, the absence of secondary opposing flux causes the core flux to rise to saturation, generating lethal kilovolt spikes across the secondary terminals, destroying insulation, and causing fatal arc-flash hazards. A test terminal block provides built-in sliding or screw-down shorting links that bridge the CT secondary windings safely before the meter is disconnected for maintenance, testing, or replacement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a test terminal block operate during utility meter calibration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "During on-site meter verification, the technician slides the CT shorting links into the closed position, diverting CT secondary current through the internal shorting bridge and bypassing the meter. The potential disconnect screws are then opened to isolate voltage circuits. The technician can then plug standard test leads into the banana test sockets to inject known calibration currents and voltages into the meter under test."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What security features prevent unauthorized meter tampering on test terminal blocks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because test terminal blocks have direct access to revenue metering signals, tampering with the CT shorting links could allow an electricity consumer to bypass meter registration. YOMIN test terminal blocks feature a one-piece transparent polycarbonate cover equipped with dual sealing screw lugs that accept utility wire security seals. Once sealed, any unauthorized attempt to open the cover or bridge the circuits breaks the tamper-evident seal."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Terminals &amp; Connectors</span></div>
+    <span class="bh-tag">Terminals & Connectors / Metering Test Switches</span>
+    <h1 class="bh-title">Test Terminal Block Guide: CT & PT Secondary Disconnects for Metering</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 20, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/test-terminal-block-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/test-terminal-block-guide/hero.png" alt="Three-phase four-wire test terminal block with transparent cover installed on electric metering switchboard" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Critical Role of Test Terminal Blocks in Secondary Electrical Metering</h2>
+<p>In commercial, industrial, and utility power distribution systems, high-voltage and high-current electrical lines cannot be connected directly to electricity revenue meters. Instead, instrument transformers—namely <strong>Current Transformers (CTs)</strong> and <strong>Potential Transformers (PTs / VTs)</strong>—step down primary voltages (such as 11kV or 415V) to standardized secondary levels (typically 110V or 100V AC) and primary currents (such as 1000A) to standard 5A or 1A secondary circuits.</p>
+<p>Between these instrument transformers and the digital energy meter sits a specialized, mission-critical component: the <strong>test terminal block (TTB)</strong>, also known as a meter test switch or secondary disconnect block. A test terminal block provides a standardized, safe, and tamper-evident interface that allows metering technicians, substation protection engineers, and electrical inspectors to perform in-service testing, calibration, secondary circuit injection, and complete meter replacement without interrupting the customer's primary power supply.</p>
+
+<h2>The Physics of Safety: Preventing the Deadly Open-Circuit CT Hazard</h2>
+<p>The single most important safety function of a test terminal block is preventing an open-circuit condition on the secondary winding of an energized current transformer. In normal operation, primary current ($I_p$) produces a magnetizing force that is almost completely cancelled by the counter-magnetizing force generated by secondary current ($I_s$) flowing through the low-impedance burden of the meter ($N_p I_p pprox N_s I_s$).</p>
+<p>If an energized CT secondary circuit is disconnected without short-circuiting:</p>
+<ul>
+  <li>The secondary opposing ampere-turns immediately drop to zero ($N_s I_s = 0$).</li>
+  <li>The entire primary current acts as an intense magnetizing force, driving the magnetic core into extreme magnetic saturation within milliseconds.</li>
+  <li>The resulting rapid rate of change of flux ($d\Phi/dt$) induces peak voltage spikes of <strong>several thousand volts</strong> across the open secondary terminals.</li>
+  <li>This extreme overvoltage destroys CT winding insulation, causes explosive breakdown of terminal boards, and creates a lethal electrical shock and arc-flash hazard for personnel.</li>
+</ul>
+<p>YOMIN test terminal blocks integrate heavy-duty, low-resistance copper shorting links. Before disconnecting any meter terminal, the technician shifts the shorting link into the bridging position, establishing an internal, low-impedance short-circuit across the CT secondary ($S_1$ and $S_2$). The meter can then be safely unbolted and serviced with zero risk of CT overvoltage.</p>
+
+<h2>3-Phase 4-Wire Circuit Topology and Test Socket Layout</h2>
+<p>A standard 3-phase 4-wire test terminal block accommodates ten separate electrical circuits: three current phases ($I_A, I_B, I_C$), three voltage phases ($V_A, V_B, V_C$), and a combined neutral path ($N$). YOMIN FJD-series test blocks incorporate a clear color-coded architecture:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Terminal Function</th>
+      <th>Standard Color Coding</th>
+      <th>Mechanical Operation During Field Meter Testing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Phase A Current (CT A)</strong></td>
+      <td>Yellow / Red Thumb Knobs</td>
+      <td>Slide shorting link to bridge $S_1-S_2$; open meter isolation link.</td>
+    </tr>
+    <tr>
+      <td><strong>Phase B Current (CT B)</strong></td>
+      <td>Green / Yellow Thumb Knobs</td>
+      <td>Slide shorting link to bridge $S_1-S_2$; open meter isolation link.</td>
+    </tr>
+    <tr>
+      <td><strong>Phase C Current (CT C)</strong></td>
+      <td>Red / Blue Thumb Knobs</td>
+      <td>Slide shorting link to bridge $S_1-S_2$; open meter isolation link.</td>
+    </tr>
+    <tr>
+      <td><strong>Potential Inputs (V_A, V_B, V_C)</strong></td>
+      <td>Black Disconnect Screws</td>
+      <td>Loosen screw-type disconnect links to isolate voltage to the meter.</td>
+    </tr>
+    <tr>
+      <td><strong>Neutral Path (N)</strong></td>
+      <td>Solid Direct Ground Link</td>
+      <td>Provides continuous instrument ground and reference neutral path.</td>
+    </tr>
+    <tr>
+      <td><strong>Test Probe Sockets</strong></td>
+      <td>4 mm Standard Banana Receptacles</td>
+      <td>Permits direct connection of portable secondary injection test sets.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Tamper-Evident Revenue Protection and Utility Compliance</h2>
+<p>Because test terminal blocks have direct control over metering signals, commercial revenue protection is paramount. If an unauthorized party were able to access the block, simply sliding the CT shorting links closed would divert current around the revenue meter, causing the meter to register zero consumption while the facility draws full power.</p>
+<p>To eliminate revenue theft, YOMIN test terminal blocks are equipped with a heavy-gauge, flame-retardant polycarbonate transparent cover. The cover features precision-moulded sealing lugs that align with captive sealing screws on the mounting base. Utility revenue inspectors pass high-security wire seals or twist-tite meter seals through these lugs. Any attempt to access the links leaves physical evidence of seal destruction, ensuring complete auditability and peace of mind for utility grid operators.</p>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>Why is a test terminal block required for current transformer (CT) metering?</h3><p>A current transformer secondary must NEVER be open-circuited while primary current is flowing. If opened, the absence of secondary opposing flux causes the core flux to rise to saturation, generating lethal kilovolt spikes across the secondary terminals, destroying insulation, and causing fatal arc-flash hazards. A test terminal block provides built-in sliding or screw-down shorting links that bridge the CT secondary windings safely before the meter is disconnected for maintenance, testing, or replacement.</p><h3>How does a test terminal block operate during utility meter calibration?</h3><p>During on-site meter verification, the technician slides the CT shorting links into the closed position, diverting CT secondary current through the internal shorting bridge and bypassing the meter. The potential disconnect screws are then opened to isolate voltage circuits. The technician can then plug standard test leads into the banana test sockets to inject known calibration currents and voltages into the meter under test.</p><h3>What security features prevent unauthorized meter tampering on test terminal blocks?</h3><p>Because test terminal blocks have direct access to revenue metering signals, tampering with the CT shorting links could allow an electricity consumer to bypass meter registration. YOMIN test terminal blocks feature a one-piece transparent polycarbonate cover equipped with dual sealing screw lugs that accept utility wire security seals. Once sealed, any unauthorized attempt to open the cover or bridge the circuits breaks the tamper-evident seal.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying test terminal blocks for secondary metering and protection panels?</h2>
+    <p>Share your circuit scheme (3-phase 3-wire or 3-phase 4-wire) and utility revenue protection requirements. YOMIN manufactures precision CT shorting test blocks with transparent sealing covers and utility approval.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/terminal-connector">Browse the terminal and connector range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
