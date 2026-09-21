@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solar Fuse Guide: 1000V &amp; 1500V DC String Protection Standards | Yomin Electric</title>
+<meta name="description" content="How to specify and size DC fuses for solar photovoltaic systems: gPV characteristic curves, 1000V vs 1500V ratings, 10x38mm cylindrical cartridges, and string combiner box integration.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/solar-fuse-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/solar-fuse-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Solar Fuse Guide: 1000V & 1500V DC String Protection Standards",
+      "description": "How to specify and size DC fuses for solar photovoltaic systems: gPV characteristic curves, 1000V vs 1500V ratings, 10x38mm cylindrical cartridges, and string combiner box integration.",
+      "image": "https://www.yominelectric.com/assets/images/blog/solar-fuse-guide/hero.png",
+      "datePublished": "2026-09-21",
+      "dateModified": "2026-09-21",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/solar-fuse-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why are standard AC fuses strictly forbidden in solar DC circuits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An alternating current (AC) waveform passes through zero volts twice every cycle, giving fuses a natural cooling opportunity to extinguish electrical arcs. In direct current (DC) solar arrays, voltage and current are continuous with zero periodic voltage drop. If a standard AC fuse attempts to interrupt a 1000V DC fault, the unbroken DC potential sustains an intense, continuous plasma arc that incinerates the fuse body and burns down the combiner box. Solar DC fuses are specifically designed to IEC 60269-6 with extended ceramic bodies, pure silver elements, and dense quartz sand to forcefully quench DC arcs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you size the continuous current rating of a solar PV string fuse?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "According to IEC 62548 and the National Electrical Code (NEC Article 690), the rated current (In) of a string fuse must be sized at minimum 1.56 times the short-circuit current of the solar module (Isc): In >= 1.25 x 1.25 x Isc = 1.56 x Isc. The first 1.25 factor accounts for increased irradiance above Standard Test Conditions (STC) on bright sunny days; the second 1.25 factor accounts for continuous operation without thermal fatigue. For example, a solar panel with Isc = 11.5A requires a fuse rating of at least 1.56 x 11.5 = 17.94A, so a standard 20A gPV fuse is specified."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is string fusing mandatory in a solar PV array?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "String fusing is mandatory whenever **three or more solar strings** are connected in parallel to a single inverter MPPT or combiner box. If a short-circuit fault occurs within one string of a three-string array, the other two healthy strings will feed their combined short-circuit current backwards into the faulted string. Because standard solar modules have a maximum series fuse rating (typically 2 x Isc), the combined reverse current from three or more strings will exceed the module’s thermal limit, causing catastrophic fire unless protected by a dedicated series gPV string fuse."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Fuse &amp; Protection</span></div>
+    <span class="bh-tag">Fuse & Protection / Solar Photovoltaic DC Fuses</span>
+    <h1 class="bh-title">Solar Fuse Guide: 1000V & 1500V DC String Protection Standards</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 21, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/solar-fuse-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/solar-fuse-guide/hero.png" alt="Modular 1000V DC gPV solar fuses installed in DIN rail fuse holders inside a solar string combiner box" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Critical Role of Dedicated gPV Fuses in Solar Photovoltaic Systems</h2>
+<p>Solar photovoltaic power generation presents an extreme and unique operating environment for electrical overcurrent protective devices. Unlike traditional utility grids powered by synchronous rotating generators capable of delivering short-circuit currents 10 to 20 times normal load, solar arrays behave as constant-current power sources. The maximum fault current produced by a faulted solar module is only marginally higher (typically 1.1 to 1.3 times) than its normal operating current.</p>
+<p>To address this narrow margin, the International Electrotechnical Commission introduced <strong>IEC 60269-6</strong>, establishing the dedicated <strong>Class gPV</strong> operating characteristic. A certified gPV solar fuse is engineered to clear low-level reverse overcurrents (as low as 1.35 to 1.45 times rated current) within a defined time frame, while interrupting catastrophic short-circuit currents up to 33,000 Amperes at full system voltages of 1000V DC or 1500V DC.</p>
+
+<h2>The Physics of DC Arcing vs. AC Arc Quenching</h2>
+<p>Using standard AC industrial fuses in solar arrays is one of the most hazardous shortcuts in electrical contracting. The fundamental differences in arc behavior dictate entirely distinct internal construction:</p>
+<ul>
+  <li><strong>AC Zero-Crossing Extinguishment:</strong> An AC voltage cycle crosses zero volts 100 times per second (in a 50Hz grid). When an AC fuse link melts, the resulting miniature arc naturally cools and de-ionizes at the voltage zero-crossing, allowing standard glass or resin tubes to clear faults safely.</li>
+  <li><strong>Unbroken DC Arcing:</strong> Solar direct current maintains a smooth, continuous electrical potential with zero periodic zero-crossings. When a fuse link separates under 1000V or 1500V DC, the ionized air forms a self-sustaining plasma arc burning at temperatures in excess of $3,500^\circ	ext{C}$. Unless the fuse incorporates extended arc-path geometry, specialized chemical binders, and high-purity quartz grain packing, the DC arc will fail to extinguish, shattering the cartridge and igniting the combiner box enclosure.</li>
+</ul>
+
+<h2>1000V vs. 1500V System Architecture: Sizing and Standards</h2>
+<p>Solar EPCs specify DC fuses primarily across two system voltage tiers:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>System Architecture</th>
+      <th>Standard Fuse Dimension</th>
+      <th>Operating Voltage Range</th>
+      <th>Typical Application Enclosures</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1000V DC Commercial / Industrial</strong></td>
+      <td>10×38 mm Cylindrical</td>
+      <td>Up to 1000V / 1100V DC (1A to 32A)</td>
+      <td>String combiner boxes, decentralized string inverters, battery storage strings.</td>
+    </tr>
+    <tr>
+      <td><strong>1500V DC Utility-Scale Solar</strong></td>
+      <td>10×85 mm / 14×85 mm Cartridge</td>
+      <td>Up to 1500V DC (10A to 50A)</td>
+      <td>Utility-scale central inverter combiner stations, large tracker-mounted arrays.</td>
+    </tr>
+    <tr>
+      <td><strong>Central Array Re-combiners</strong></td>
+      <td>NH00 / NH1 gPV Blade Links</td>
+      <td>1000V / 1500V DC (50A to 250A)</td>
+      <td>Main DC distribution cabinets connecting multiple string combiners to central inverters.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>The "N-1" Reverse Current Rule: When Are String Fuses Legally Required?</h2>
+<p>According to <strong>IEC 62548</strong> and <strong>NEC Article 690.9</strong>, individual string overcurrent protection is required whenever the number of parallel-connected strings ($N$) satisfies the formula:</p>
+<p>$$N - 1 \geq rac{I_{	ext{mod\_max\_fuse}}}{I_{sc}}$$</p>
+<p>Where $I_{	ext{mod\_max\_fuse}}$ is the maximum series fuse rating marked on the solar module nameplate (typically $15	ext{A}$ to $25	ext{A}$), and $I_{sc}$ is the module short-circuit current (typically $10	ext{A}$ to $14	ext{A}$). In practical terms:</p>
+<ol>
+  <li><strong>1 or 2 Strings in Parallel:</strong> No string fuses are required. If a fault occurs in one string of a two-string system, the maximum current flowing into the faulted string from the single healthy string cannot exceed $1 	imes I_{sc}$, which is well within the module's reverse current withstand capability.</li>
+  <li><strong>3 or More Strings in Parallel:</strong> Dedicated string fuses are mandatory on both positive and negative poles (or positive only in grounded systems). If one string faults, the remaining $N-1$ strings feed their combined currents into the fault ($2 	imes I_{sc}$ or greater), exceeding the cable and module withstand rating within seconds.</li>
+</ol>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>Why are standard AC fuses strictly forbidden in solar DC circuits?</h3><p>An alternating current (AC) waveform passes through zero volts twice every cycle, giving fuses a natural cooling opportunity to extinguish electrical arcs. In direct current (DC) solar arrays, voltage and current are continuous with zero periodic voltage drop. If a standard AC fuse attempts to interrupt a 1000V DC fault, the unbroken DC potential sustains an intense, continuous plasma arc that incinerates the fuse body and burns down the combiner box. Solar DC fuses are specifically designed to IEC 60269-6 with extended ceramic bodies, pure silver elements, and dense quartz sand to forcefully quench DC arcs.</p><h3>How do you size the continuous current rating of a solar PV string fuse?</h3><p>According to IEC 62548 and the National Electrical Code (NEC Article 690), the rated current (In) of a string fuse must be sized at minimum 1.56 times the short-circuit current of the solar module (Isc): In &gt;= 1.25 x 1.25 x Isc = 1.56 x Isc. The first 1.25 factor accounts for increased irradiance above Standard Test Conditions (STC) on bright sunny days; the second 1.25 factor accounts for continuous operation without thermal fatigue. For example, a solar panel with Isc = 11.5A requires a fuse rating of at least 1.56 x 11.5 = 17.94A, so a standard 20A gPV fuse is specified.</p><h3>When is string fusing mandatory in a solar PV array?</h3><p>String fusing is mandatory whenever **three or more solar strings** are connected in parallel to a single inverter MPPT or combiner box. If a short-circuit fault occurs within one string of a three-string array, the other two healthy strings will feed their combined short-circuit current backwards into the faulted string. Because standard solar modules have a maximum series fuse rating (typically 2 x Isc), the combined reverse current from three or more strings will exceed the module’s thermal limit, causing catastrophic fire unless protected by a dedicated series gPV string fuse.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Engineering 1000V or 1500V DC string overcurrent protection for solar arrays?</h2>
+    <p>Specify your module short-circuit current (Isc), system voltage tier, and combiner box mounting format. YOMIN supplies TUV and UL certified 10x38mm and NH gPV solar fuses, touch-safe DIN holders, and DC accessories.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/solar-pv-products">Browse the solar and PV products range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

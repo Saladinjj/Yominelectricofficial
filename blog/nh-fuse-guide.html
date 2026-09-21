@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NH Fuse Guide: DIN Blade Fuse Sizing, Classes and Base Selection | Yomin Electric</title>
+<meta name="description" content="Engineering guide to DIN NH knife-blade HRC fuses: NH00 to NH4 sizing, gG vs aM operating curves, 120kA breaking capacity, and fuse switch disconnector integration.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/nh-fuse-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/nh-fuse-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "NH Fuse Guide: DIN Blade Fuse Sizing, Classes and Base Selection",
+      "description": "Engineering guide to DIN NH knife-blade HRC fuses: NH00 to NH4 sizing, gG vs aM operating curves, 120kA breaking capacity, and fuse switch disconnector integration.",
+      "image": "https://www.yominelectric.com/assets/images/blog/nh-fuse-guide/hero.png",
+      "datePublished": "2026-09-21",
+      "dateModified": "2026-09-21",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/nh-fuse-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does \"NH\" stand for in NH fuses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "NH is an abbreviation of the German \"Niederspannungs-Hochleistungs-Sicherung\", which translates directly to \"Low-Voltage High-Rupturing-Capacity (HRC) Fuse\". Standardized under DIN 43620 and IEC 60269-2, NH fuses feature solid rectangular ceramic bodies and silver-plated knife-blade contacts designed for quick insertion into spring-loaded fuse bases or fuse switch disconnectors using an insulated fuse replacement handle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between gG and aM operating classes in NH fuses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Class gG is a full-range breaking capacity fuse link for general cable and line protection, designed to clear both small sustained overloads and high short-circuit fault currents. Class aM is a partial-range breaking capacity fuse link specifically engineered for motor circuits; it allows heavy motor startup inrush currents (typically 5 to 7 times full load current) to pass without nuisance blowing, while providing instantaneous protection against extreme short-circuit fault currents."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you safely replace an NH knife-blade fuse under field conditions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "NH fuses should ideally be disconnected using an upstream isolator or a dedicated fuse switch disconnector. If replacing a fuse in an open base, technicians must wear high-voltage arc-rated face shields and insulating gloves, and strictly utilize a certified insulated NH fuse extraction handle (NH fuse puller with arm protection sleeve). The handle latches securely onto the metal removal lugs of the NH fuse body, enabling swift, positive insertion or extraction without touching energized metal parts."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Fuse &amp; Protection</span></div>
+    <span class="bh-tag">Fuse & Protection / DIN NH Blade Fuses</span>
+    <h1 class="bh-title">NH Fuse Guide: DIN Blade Fuse Sizing, Classes and Base Selection</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 21, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/nh-fuse-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/nh-fuse-guide/hero.png" alt="Industrial NH knife-blade ceramic fuse links and triple-pole fuse bases installed in low-voltage switchgear" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Engineering Foundations of the DIN NH Fuse System</h2>
+<p>In low-voltage industrial power distribution, the DIN NH fuse system (standardized under <strong>DIN 43620</strong> and <strong>IEC 60269-2</strong>) represents the worldwide benchmark for high-breaking-capacity overcurrent protection. Developed originally in Germany, the NH system—short for <em>Niederspannungs-Hochleistungs-Sicherungen</em>—is engineered specifically for low-voltage feeder networks, commercial main distribution boards, motor control centers (MCC), and utility substation transformer secondary protection.</p>
+<p>Unlike miniature cylindrical fuses or bolt-down tag fuses, an NH fuse link features solid rectangular steatite ceramic housing and heavy, silver-plated copper knife-blade contacts projecting from top and bottom. These blades slot directly into spring-loaded silver-plated jaw contacts inside open fuse bases or integrated triple-pole fuse switch disconnectors. This blade architecture delivers immense contact clamping pressure, extremely low electrical resistance, and rapid, tool-assisted replacement during plant maintenance.</p>
+
+<h2>Size Classifications: Physical Dimensions from NH000 to NH4</h2>
+<p>The DIN 43620 standard organizes NH fuses into discrete physical size classifications. Each step in size accommodates larger conductor cross-sections, higher continuous thermal currents, and increased internal quartz volume required to absorb greater short-circuit energies ($I^2t$):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>DIN NH Size</th>
+      <th>Standard Current Range</th>
+      <th>Nominal Blade Centers</th>
+      <th>Primary Industrial Applications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>NH000 (NH00C)</strong></td>
+      <td>6A to 100A</td>
+      <td>47 mm Body / 78 mm Total Length</td>
+      <td>Compact distribution boards, street lighting pillars, control circuit feeders.</td>
+    </tr>
+    <tr>
+      <td><strong>NH00</strong></td>
+      <td>16A to 160A</td>
+      <td>47 mm Body / 78 mm Total Length (Wider Body)</td>
+      <td>Commercial switchboards, panelboard sub-feeders, capacitor bank switching.</td>
+    </tr>
+    <tr>
+      <td><strong>NH1</strong></td>
+      <td>63A to 250A</td>
+      <td>65 mm Body / 135 mm Total Length</td>
+      <td>Heavy motor starters, mains distribution busbars, industrial plant feeders.</td>
+    </tr>
+    <tr>
+      <td><strong>NH2</strong></td>
+      <td>125A to 400A</td>
+      <td>65 mm Body / 150 mm Total Length</td>
+      <td>Substation secondary distribution, heavy manufacturing MCC incomers.</td>
+    </tr>
+    <tr>
+      <td><strong>NH3</strong></td>
+      <td>315A to 630A</td>
+      <td>65 mm Body / 150 mm Total Length (Heavy Blades)</td>
+      <td>Main transformer incomers, heavy arc furnace and chemical plant feeders.</td>
+    </tr>
+    <tr>
+      <td><strong>NH4 (NH4a)</strong></td>
+      <td>500A to 1250A</td>
+      <td>85 mm Body / 200 mm Total Length</td>
+      <td>Heavy utility network distribution and multi-megawatt bus duct protection.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Operating Characteristics: gG vs. aM Curve Selection</h2>
+<p>Specifying the correct time-current characteristic is vital to avoid either nuisance blowing or catastrophic thermal overload:</p>
+<ul>
+  <li><strong>Class gG (General Purpose Cable & Line Protection):</strong> Full-range breaking capacity. The melting element incorporates precision dual-material geometry: narrow copper bridge necks for instantaneous short-circuit clearance and localized low-temperature eutectic alloy solder beads (M-effect) that melt under small, sustained overcurrents (typically 1.6 to 2.1 times rated current). Class gG fuses protect distribution cables and standard resistive/inductive plant loads.</li>
+  <li><strong>Class aM (Accompanied Motor Circuit Protection):</strong> Partial-range breaking capacity. Engineered exclusively for motor branch circuits where upstream or downstream thermal overload relays handle normal overloads. Class aM fuses withstand the heavy inrush currents of direct-on-line (DOL) motor starts (up to 7 times nominal current for several seconds) without aging, yet rupture within milliseconds under short-circuit conditions above 4 times $I_n$.</li>
+</ul>
+
+<h2>Arc Quenching Physics: Why NH Fuses Excel at 120kA Fault Clearance</h2>
+<p>The remarkable short-circuit performance of YOMIN NH fuse links—capable of interrupting up to <strong>120,000 Amperes (120kA)</strong> at 500V AC—derives from the physics of internal arc extinguishing. The high-purity ceramic body is filled with chemically pure, dry, granulometrically graded quartz sand ($SiO_2$).</p>
+<p>When an extreme short-circuit fault occurs, the restricted silver element necks vaporize in less than 2 milliseconds, creating multiple high-voltage electric arcs. The intense heat of the arc ($>3000^\circ	ext{C}$) instantly melts the surrounding quartz sand, converting it into a non-conducting glass-like matrix known as <em>fulgurite</em>. This rapid heat extraction and chemical vapor absorption increases arc resistance exponentially, forcing the alternating fault current to zero long before it reaches its natural peak—a phenomenon known as <strong>current limitation</strong>.</p>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What does &quot;NH&quot; stand for in NH fuses?</h3><p>NH is an abbreviation of the German &quot;Niederspannungs-Hochleistungs-Sicherung&quot;, which translates directly to &quot;Low-Voltage High-Rupturing-Capacity (HRC) Fuse&quot;. Standardized under DIN 43620 and IEC 60269-2, NH fuses feature solid rectangular ceramic bodies and silver-plated knife-blade contacts designed for quick insertion into spring-loaded fuse bases or fuse switch disconnectors using an insulated fuse replacement handle.</p><h3>What is the difference between gG and aM operating classes in NH fuses?</h3><p>Class gG is a full-range breaking capacity fuse link for general cable and line protection, designed to clear both small sustained overloads and high short-circuit fault currents. Class aM is a partial-range breaking capacity fuse link specifically engineered for motor circuits; it allows heavy motor startup inrush currents (typically 5 to 7 times full load current) to pass without nuisance blowing, while providing instantaneous protection against extreme short-circuit fault currents.</p><h3>How do you safely replace an NH knife-blade fuse under field conditions?</h3><p>NH fuses should ideally be disconnected using an upstream isolator or a dedicated fuse switch disconnector. If replacing a fuse in an open base, technicians must wear high-voltage arc-rated face shields and insulating gloves, and strictly utilize a certified insulated NH fuse extraction handle (NH fuse puller with arm protection sleeve). The handle latches securely onto the metal removal lugs of the NH fuse body, enabling swift, positive insertion or extraction without touching energized metal parts.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying DIN NH knife-blade fuses or fuse switch disconnectors for switchgear?</h2>
+    <p>Tell us your system voltage (500V or 690V), current ratings, and breaking curve requirements (gG or aM). YOMIN manufactures precision steatite NH00 to NH3 fuse links with 120kA breaking capacity and matching spring-contact bases.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/fuse-protection">Browse the fuse and protection range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
