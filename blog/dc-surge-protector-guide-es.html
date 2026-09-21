@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
 <head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
@@ -17,10 +17,10 @@
 <link rel="apple-touch-icon" href="/logo_transparent.png">
 <link rel="shortcut icon" href="/favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DC Surge Protector Guide: Sizing 1000V &amp; 1500V Solar PV SPDs | Yomin Electric</title>
-<meta name="description" content="How to select and install DC surge protective devices (SPDs) for solar photovoltaic arrays: Type 2 vs Type 1+2, 1000V vs 1500V Ucpv ratings, Imax 40kA coordination, and combiner box earthing.">
+<title>Guía de protectores de sobretensión DC: dimensionar SPD fotovoltaicos de 1000 V y 1500 V | Yomin Electric</title>
+<meta name="description" content="Cómo seleccionar e instalar protectores de sobretensión DC (SPD) para conjuntos fotovoltaicos: Tipo 2 frente a Tipo 1+2, valores Ucpv de 1000 V y 1500 V, coordinación Imax de 40 kA y puesta a tierra de la caja de conexiones.">
 <meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/dc-surge-protector-guide/card.png">
-<link rel="canonical" href="https://www.yominelectric.com/blog/dc-surge-protector-guide">
+<link rel="canonical" href="https://www.yominelectric.com/blog/dc-surge-protector-guide-es">
 <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/dc-surge-protector-guide">
 <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/dc-surge-protector-guide-fr">
 <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/dc-surge-protector-guide-es">
@@ -39,12 +39,12 @@
   "@graph": [
     {
       "@type": "BlogPosting",
-      "headline": "DC Surge Protector Guide: Sizing 1000V & 1500V Solar PV SPDs",
-      "description": "How to select and install DC surge protective devices (SPDs) for solar photovoltaic arrays: Type 2 vs Type 1+2, 1000V vs 1500V Ucpv ratings, Imax 40kA coordination, and combiner box earthing.",
+      "headline": "Guía de protectores de sobretensión DC: dimensionar SPD fotovoltaicos de 1000 V y 1500 V",
+      "description": "Cómo seleccionar e instalar protectores de sobretensión DC (SPD) para conjuntos fotovoltaicos: Tipo 2 frente a Tipo 1+2, valores Ucpv de 1000 V y 1500 V, coordinación Imax de 40 kA y puesta a tierra de la caja de conexiones.",
       "image": "https://www.yominelectric.com/assets/images/blog/dc-surge-protector-guide/hero.png",
       "datePublished": "2026-09-20",
       "dateModified": "2026-09-20",
-      "inLanguage": "en",
+      "inLanguage": "es",
       "author": {
         "@type": "Organization",
         "name": "YOMIN Electric Co., Ltd."
@@ -169,86 +169,86 @@
 <main>
 
   <section class="blog-hero">
-    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Solar &amp; PV Products</span></div>
-    <span class="bh-tag">Solar & PV Products / DC Surge Protection</span>
-    <h1 class="bh-title">DC Surge Protector Guide: Sizing 1000V & 1500V Solar PV SPDs</h1>
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Productos solares &amp; fotovoltaicos</span></div>
+    <span class="bh-tag">Productos solares y fotovoltaicos / Protección DC</span>
+    <h1 class="bh-title">Guía de protectores de sobretensión DC: dimensionar SPD fotovoltaicos de 1000 V y 1500 V</h1>
     <div class="bh-meta">
       <div class="avatar">ET</div>
       <strong style="color:var(--tx)">ET Engineering Team</strong>
       <span class="divider"></span>
       <span>September 20, 2026</span>
       <span class="divider"></span>
-      <span>9 min read</span>
+      <span>9 min de lectura</span>
     </div>
   </section>
 
   <section class="content-section">
     <p style="margin-bottom:20px"><em>
-    Read this guide in: <strong>English</strong> · <a href="https://www.yominelectric.com/blog/dc-surge-protector-guide-fr">Français</a> · <a href="https://www.yominelectric.com/blog/dc-surge-protector-guide-es">Español</a> · <a href="https://www.yominelectric.com/blog/dc-surge-protector-guide-ar">العربية</a></em></p>
+    Leer esta guía en: <a href="https://www.yominelectric.com/blog/dc-surge-protector-guide">English</a> · <a href="https://www.yominelectric.com/blog/dc-surge-protector-guide-fr">Français</a> · <strong>Español</strong> · <a href="https://www.yominelectric.com/blog/dc-surge-protector-guide-ar">العربية</a></em></p>
     <picture>
       <source srcset="/assets/images/blog/dc-surge-protector-guide/hero.webp" type="image/webp">
-      <img class="hero-img" src="/assets/images/blog/dc-surge-protector-guide/hero.png" alt="Modular 1000V DC surge protective device installed on DIN rail inside solar PV combiner box" loading="eager" fetchpriority="high" decoding="async">
+      <img class="hero-img" src="/assets/images/blog/dc-surge-protector-guide/hero.png" alt="Protector de sobretensión DC modular de 1000 V instalado en carril DIN dentro de una caja de conexiones fotovoltaica" loading="eager" fetchpriority="high" decoding="async">
     </picture>
 
-<h2>The Critical Need for Dedicated DC Surge Protection in Solar Photovoltaic Systems</h2>
-<p>Solar photovoltaic (PV) installations are inherently vulnerable to atmospheric lightning discharges and transient overvoltages. Due to their wide surface area, exposed outdoor locations on open terrain, rooftop arrays, and extensive cable runs connecting solar modules to inverters, PV power plants act as giant antennae for both direct lightning strikes and indirect electromagnetic coupling from cloud-to-ground flashes.</p>
-<p>A single indirect lightning strike several hundred meters away can induce transient voltage surges exceeding 10,000 volts along the DC string cabling. Without robust surge protection, these high-energy transients instantly destroy solar module bypass diodes, puncture thin-film solar cell insulation, and obliterate the delicate Maximum Power Point Tracking (MPPT) power semiconductor switches (IGBTs and MOSFETs) inside expensive solar inverters, resulting in costly downtime, equipment write-offs, and fire hazards.</p>
+<h2>La necesidad crítica de una protección DC dedicada en las instalaciones fotovoltaicas</h2>
+<p>Las instalaciones fotovoltaicas (FV) son intrínsecamente vulnerables a las descargas atmosféricas y a las sobretensiones transitorias. Debido a su gran superficie, a su exposición exterior en terreno abierto, a los conjuntos en cubierta y a los largos tendidos de cable entre módulos e inversores, las plantas fotovoltaicas actúan como enormes antenas que captan tanto los impactos directos de rayo como el acoplamiento electromagnético indirecto de las descargas nube-tierra.</p>
+<p>Un solo impacto indirecto a varios cientos de metros puede inducir sobretensiones transitorias superiores a 10.000 voltios a lo largo del cableado DC. Sin una protección de sobretensión robusta, estos transitorios de alta energía destruyen al instante los diodos de bypass de los módulos, perforan el aislamiento de las células de capa fina y aniquilan los delicados semiconductores de conmutación del seguidor del punto de máxima potencia (MPPT, IGBT y MOSFET) dentro de los inversores, lo que provoca paradas costosas, equipos desechados y riesgos de incendio.</p>
 
-<h2>AC vs. DC Arc Physics: The Fatal Error of Using AC SPDs on Solar Strings</h2>
-<p>One of the most dangerous installation errors in solar contracting is installing standard AC surge protective devices in solar DC circuits. The fundamental physics of electrical arcs in AC and DC circuits are entirely different:</p>
+<h2>Física del arco AC frente a DC: el error fatal de usar SPD de AC en cadenas solares</h2>
+<p>Uno de los errores de instalación más peligrosos en el sector solar es instalar protectores de sobretensión de AC estándar en circuitos DC solares. La física fundamental de los arcos eléctricos en AC y en DC es totalmente distinta:</p>
 <ul>
-  <li><strong>AC Zero-Crossing Arc Extinguishment:</strong> An alternating current voltage naturally oscillates, crossing zero volts twice per electrical cycle (every 10 milliseconds in a 50Hz grid). When an AC varistor degrades or experiences thermal runaway, the internal mechanical spring disconnector separates, and the resulting miniature arc naturally self-extinguishes as the voltage passes through the zero-crossing.</li>
-  <li><strong>Sustained DC Arcing:</strong> Direct current produced by solar PV arrays maintains a continuous, uninterrupted potential with zero periodic voltage drop. When a standard AC disconnector attempts to open under continuous DC voltage (such as 800V or 1000V DC), the ionized air forms a continuous plasma arc. Because there is no zero-crossing, the arc continues to burn intensely at temperatures exceeding $3,000^\circ	ext{C}$, rapidly igniting surrounding plastic housings and causing catastrophic combiner box fires.</li>
+  <li><strong>Extinción del arco en el cruce por cero en AC:</strong> una tensión alterna oscila de forma natural y cruza por cero voltios dos veces por ciclo eléctrico (cada 10 milisegundos en una red de 50 Hz). Cuando una varistancia de AC se degrada o sufre embalamiento térmico, el desconectador mecánico de resorte interno se separa y el mini arco resultante se extingue de forma natural al pasar la tensión por cero.</li>
+  <li><strong>Arco DC sostenido:</strong> la corriente continua producida por los conjuntos fotovoltaicos mantiene un potencial continuo e ininterrumpido, sin caída de tensión periódica. Cuando un desconectador de AC estándar intenta abrirse bajo una tensión DC continua (por ejemplo 800 V o 1000 V DC), el aire ionizado forma un arco de plasma continuo. Al no haber cruce por cero, el arco sigue quemando con intensidad a temperaturas superiores a $3,000^\circ\text{C}$, inflamando rápidamente las carcasas plásticas circundantes y provocando incendios catastróficos en la caja de conexiones.</li>
 </ul>
-<p>YOMIN YMPV-series DC surge protective devices are engineered specifically to comply with <strong>IEC 61643-31</strong> and <strong>EN 50539-11</strong> (low-voltage surge protective devices for photovoltaic installations). They incorporate high-speed spring-loaded thermal disconnectors equipped with permanent magnetic blowout fields and arc-splitter plates that forcefully stretch, cool, and extinguish DC arcs within milliseconds.</p>
+<p>Los protectores de sobretensión DC de la serie YMPV de YOMIN están diseñados específicamente para cumplir la <strong>IEC 61643-31</strong> y la <strong>EN 50539-11</strong> (protectores de sobretensión de baja tensión para instalaciones fotovoltaicas). Incorporan desconectadores térmicos de resorte de alta velocidad, equipados con campos magnéticos de soplado permanentes y placas apagaarcos que estiran, enfrían y extinguen con fuerza los arcos DC en milisegundos.</p>
 
-<h2>The Y-Topology Architecture: Safe Protection Against Dual Ground Faults</h2>
-<p>Traditional two-element surge protectors connect directly between DC+ and Ground, and DC- and Ground. In solar arrays, an ungrounded system operating under high voltage can experience a single ground fault without tripping main protection. If an ordinary SPD experiences varistor breakdown during this condition, a catastrophic phase-to-ground-to-phase short-circuit occurs.</p>
-<p>To eliminate this failure mode, YOMIN DC SPDs employ the advanced <strong>Y-topology configuration</strong> comprising three high-energy Metal Oxide Varistors (MOVs) connected in a "Y" formation:</p>
+<h2>La arquitectura de topología en Y: protección segura contra dobles fallos a tierra</h2>
+<p>Los protectores de sobretensión tradicionales de dos elementos se conectan directamente entre DC+ y tierra, y entre DC- y tierra. En los conjuntos solares, un sistema sin puesta a tierra que opera a alta tensión puede sufrir un fallo a tierra simple sin disparar la protección principal. Si un SPD común sufre una avería de varistancia en esa condición, se produce un cortocircuito catastrófico fase-tierra-fase.</p>
+<p>Para eliminar este modo de fallo, los SPD DC de YOMIN emplean la <strong>avanzada configuración de topología en Y</strong>, compuesta por tres varistancias de óxido metálico (MOV) de alta energía conectadas en formación «Y»:</p>
 
 <table>
   <thead>
     <tr>
-      <th>MOV Cartridge Position</th>
-      <th>Electrical Connection</th>
-      <th>Safety & Operational Function</th>
+      <th>Posición del cartucho MOV</th>
+      <th>Conexión eléctrica</th>
+      <th>Función de seguridad y operativa</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>MOV 1 (Positive Arm)</strong></td>
-      <td>Connected between DC+ and Common Star Point</td>
-      <td>Suppresses incoming positive transients without direct discharge to earth.</td>
+      <td><strong>MOV 1 (rama positiva)</strong></td>
+      <td>Conectado entre DC+ y el punto común en estrella</td>
+      <td>Suprime los transitorios positivos entrantes sin descarga directa a tierra.</td>
     </tr>
     <tr>
-      <td><strong>MOV 2 (Negative Arm)</strong></td>
-      <td>Connected between DC- and Common Star Point</td>
-      <td>Suppresses incoming negative transients without direct discharge to earth.</td>
+      <td><strong>MOV 2 (rama negativa)</strong></td>
+      <td>Conectado entre DC- y el punto común en estrella</td>
+      <td>Suprime los transitorios negativos entrantes sin descarga directa a tierra.</td>
     </tr>
     <tr>
-      <td><strong>MOV 3 (Earth Arm)</strong></td>
-      <td>Connected between Common Star Point and Protective Earth (PE)</td>
-      <td>Provides redundant ground isolation, preventing short-circuit current loops if a single MOV degrades.</td>
+      <td><strong>MOV 3 (rama de tierra)</strong></td>
+      <td>Conectado entre el punto común en estrella y la tierra de protección (PE)</td>
+      <td>Proporciona aislamiento redundante a tierra, evitando bucles de corriente de cortocircuito si un MOV se degrada.</td>
     </tr>
   </tbody>
 </table>
-<p>This Y-configuration ensures that even in the event of an insulation breakdown or severe MOV degradation on one leg, the remaining two varistors continue to block DC current flow, preventing short-circuit current loops and eliminating fire hazard.</p>
+<p>Esta configuración en Y garantiza que, incluso ante una perforación del aislamiento o una degradación grave de un MOV en una rama, las dos varistancias restantes sigan bloqueando el paso de corriente continua, evitando bucles de cortocircuito y eliminando el riesgo de incendio.</p>
 
-<h2>Sizing Voltage and Current Parameters for 1000V vs. 1500V Systems</h2>
-<p>To ensure adequate protection without premature varistor aging, engineers must size two primary ratings:</p>
+<h2>Dimensionar los parámetros de tensión y corriente para sistemas de 1000 V y 1500 V</h2>
+<p>Para asegurar una protección adecuada sin envejecimiento prematuro de las varistancias, los ingenieros deben dimensionar dos parámetros principales:</p>
 <ol>
-  <li><strong>Maximum Continuous Operating Voltage ($U_{cpv}$):</strong> The SPD’s continuous voltage rating must exceed the maximum open-circuit voltage ($V_{oc}$) of the solar string under lowest expected ambient winter temperatures ($V_{oc,	ext{max}} = V_{oc,	ext{STC}} 	imes [1 + eta 	imes (T_{	ext{min}} - 25)]$). As a fundamental design rule, $U_{cpv}$ must be sized at least 1.2 times $V_{oc,	ext{max}}$. For residential and commercial 1000V strings, choose $U_{cpv} = 1000	ext{V DC}$; for utility-scale 1500V installations, specify $U_{cpv} = 1500	ext{V DC}$.</li>
-  <li><strong>Discharge Current Ratings ($I_n$ and $I_{	ext{max}}$):</strong> For Type 2 SPDs installed in string combiner boxes or inverters, specify a nominal discharge current ($I_n$) of at least 20kA (8/20 µs waveform) and a maximum discharge capacity ($I_{	ext{max}}$) of 40kA per pole to ensure long service life against repetitive induced lightning transients.</li>
+  <li><strong>Tensión de servicio continua máxima ($U_{cpv}$):</strong> la tensión de servicio continua del SPD debe superar la tensión máxima en circuito abierto ($V_{oc}$) de la cadena solar a las temperaturas ambiente invernales más bajas previstas ($V_{oc,\text{max}} = V_{oc,\text{STC}} \times [1 + \beta \times (T_{\text{min}} - 25)]$). Como regla de diseño fundamental, $U_{cpv}$ debe dimensionarse al menos 1,2 veces $V_{oc,\text{max}}$. Para cadenas residenciales y comerciales de 1000 V, elija $U_{cpv} = 1000\text{V DC}$; para instalaciones de 1500 V a escala de utility, especifique $U_{cpv} = 1500\text{V DC}$.</li>
+  <li><strong>Corrientes nominales de descarga ($I_n$ y $I_{\text{max}}$):</strong> para SPD de tipo 2 instalados en cajas de conexiones de cadena o inversores, especifique una corriente nominal de descarga ($I_n$) de al menos 20 kA (onda 8/20 µs) y una capacidad máxima de descarga ($I_{\text{max}}$) de 40 kA por polo, para garantizar una larga vida útil frente a transitorios repetitivos inducidos por rayos.</li>
 </ol>
 
-<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>Why can’t I use an AC surge protector on a solar DC circuit?</h3><p>An alternating current (AC) waveform passes through zero volts 100 or 120 times every second, allowing thermal disconnectors and spark gaps to extinguish arcs naturally. In contrast, direct current (DC) produced by solar photovoltaic arrays maintains a continuous, unbroken voltage and current with no zero-crossing. If a standard AC surge protector attempts to disconnect under continuous DC overvoltage, the resulting sustained DC arc will not extinguish, causing intense heat, melting, and fire. DC SPDs are engineered with specialized arc-extinguishing chambers, magnetic blowout baffles, and dedicated DC thermal fuses compliant with IEC 61643-31.</p><h3>Where should DC surge protective devices be installed in a solar PV system?</h3><p>According to IEC 62305 and IEC 60364-7-712, DC SPDs should be installed inside the solar string combiner box on the array side, and at the DC input terminals of the central or string inverter. If the distance between the solar array and the inverter exceeds 10 meters (33 feet), separate SPDs must be installed at both ends of the cable run to suppress induced travelling voltage waves.</p><h3>What is the purpose of the Y-topology in solar DC surge protectors?</h3><p>A standard two-pole SPD can fail short-circuit if an insulation fault occurs simultaneously with a lightning surge, creating a dangerous direct short between the DC+ and DC- poles. The Y-topology incorporates three separate MOV modules arranged in a &quot;Y&quot; configuration between Positive-to-Earth, Negative-to-Earth, and Positive-to-Negative through a central common point. This architecture guarantees that even if one varistor fails due to degradation, the remaining two modules prevent a dead short between the solar array poles, preventing arc flash and maintaining system safety.</p></div>
+<div class="faq-section"><h2>Preguntas frecuentes</h2><h3>¿Por qué no puedo usar un protector de sobretensión de AC en un circuito DC solar?</h3><p>Una onda de corriente alterna (AC) cruza por cero voltios 100 o 120 veces por segundo, lo que permite que los desconectadores térmicos y los explosores extingan los arcos de forma natural. En cambio, la corriente continua (DC) producida por los conjuntos fotovoltaicos mantiene una tensión y una corriente continuas, sin cruce por cero. Si un protector de sobretensión de AC estándar intenta desconectarse bajo una sobretensión DC continua, el arco DC sostenido no se extingue, provocando calor intenso, fusión e incendio. Los SPD DC se diseñan con cámaras apagaarcos especializadas, deflectores magnéticos de soplado y fusibles térmicos DC dedicados, conformes con la IEC 61643-31.</p><h3>¿Dónde deben instalarse los protectores de sobretensión DC en una instalación fotovoltaica?</h3><p>Según la IEC 62305 y la IEC 60364-7-712, los SPD DC deben instalarse dentro de la caja de conexiones de la cadena, del lado del generador, y en los bornes de entrada DC del inversor central o de cadena. Si la distancia entre el conjunto solar y el inversor supera los 10 metros (33 pies), deben instalarse SPD separados en ambos extremos del tendido para suprimir las ondas de tensión viajeras inducidas.</p><h3>¿Cuál es la función de la topología en Y en los protectores de sobretensión DC solares?</h3><p>Un SPD bipolar estándar puede fallar en cortocircuito si se produce un fallo de aislamiento de forma simultánea a una sobretensión de rayo, creando un cortocircuito directo peligroso entre los polos DC+ y DC-. La topología en Y incorpora tres módulos MOV independientes dispuestos en configuración «Y» entre positivo-tierra, negativo-tierra y positivo-negativo, a través de un punto común central. Esta arquitectura garantiza que, aunque una varistancia falle por degradación, los dos módulos restantes eviten un cortocircuito franco entre los polos del conjunto solar, previniendo el arco eléctrico y manteniendo la seguridad del sistema.</p></div>
   </section>
 
   <section class="cta-section">
-    <h2>Protecting solar PV arrays and inverters against lightning transients?</h2>
-    <p>Specify your maximum string open-circuit voltage (1000V or 1500V DC) and installation environment. YOMIN manufactures TUV and CE certified Type 2 and Type 1+2 DC surge protective devices engineered to IEC 61643-31.</p>
-    <a class="btn btn-primary" href="/contact">Request a quote</a>
-    <p style="margin-top:14px"><a href="/products/solar-pv-products">Browse the solar and PV products range</a></p>
+    <h2>¿Proteger los conjuntos fotovoltaicos y los inversores frente a transitorios de rayo?</h2>
+    <p>Indique la tensión máxima en circuito abierto de su cadena (1000 V o 1500 V DC) y el entorno de instalación. YOMIN fabrica protectores de sobretensión DC de tipo 2 y 1+2 con certificación TUV y CE, conformes con la IEC 61643-31.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar presupuesto</a>
+    <p style="margin-top:14px"><a href="/products/solar-pv-products">Ver la gama solar y fotovoltaica</a></p>
   </section>
 </main>
 
