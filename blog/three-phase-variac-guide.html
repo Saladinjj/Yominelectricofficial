@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three-Phase Variac Guide: TSGC2 Variable Autotransformer Sizing | Yomin Electric</title>
+<meta name="description" content="Complete guide to three-phase variable autotransformers (TSGC2 variacs): 0–430V continuous output regulation, star-connected ganged toroidal coils, motor test bench calibration, and brush maintenance.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/three-phase-variac-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/three-phase-variac-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Three-Phase Variac Guide: TSGC2 Variable Autotransformer Sizing",
+      "description": "Complete guide to three-phase variable autotransformers (TSGC2 variacs): 0–430V continuous output regulation, star-connected ganged toroidal coils, motor test bench calibration, and brush maintenance.",
+      "image": "https://www.yominelectric.com/assets/images/blog/three-phase-variac-guide/hero.png",
+      "datePublished": "2026-09-22",
+      "dateModified": "2026-09-22",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/three-phase-variac-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why does a 3-phase variac provide output up to 430V from a 380V input?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard autotransformers allow the winding to be over-wound by approximately 13% beyond the nominal input tap point. On a YOMIN TSGC2 variac with 380V line-to-line input, the wiper track extends past the 380V winding turn up to the end of the coil, allowing technicians to continuously adjust output voltage up to 430V (or 250V phase-to-neutral). This boost capability is invaluable in electrical testing laboratories for performing over-voltage endurance testing, simulated grid swell stress tests, and insulation dielectric breakdown analysis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a 3-phase variac be operated without a neutral conductor connection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A three-phase variac is wound in a star (Y) configuration with three identical toroidal coils sharing a common internal neutral point. While it can operate with balanced three-phase three-wire loads without a connected neutral, connecting the utility grid neutral to the variac’s center terminal is strongly recommended. Without an incoming neutral connection, any phase current unbalance in the connected load will cause the internal floating neutral star point to shift, resulting in asymmetrical line-to-neutral voltages and potential over-voltage on the lighter-loaded phase."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How frequently should carbon brushes and commutator tracks be serviced on a heavy-duty variac?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In high-duty testing environments (such as motor rewind test benches and factory burn-in stations), carbon brushes should be visually inspected every 300 to 500 operating hours. Check brush wear length (replace when worn past the manufacturer indicator line, typically 50% of original height) and verify spring tension. The exposed copper commutator track should be wiped clean with a dry lint-free cloth or mild electrical contact cleaner to remove accumulated carbon dust. Never use coarse sandpaper on the commutator track, as this grooves the copper conductors and causes brush chatter."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Variac Transformer</span></div>
+    <span class="bh-tag">Variac Transformer / 3-Phase Variable Transformers</span>
+    <h1 class="bh-title">Three-Phase Variac Guide: TSGC2 Variable Autotransformer Sizing</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 22, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/three-phase-variac-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/three-phase-variac-guide/hero.png" alt="Heavy-duty TSGC2 three-phase variable autotransformer with ganged toroidal coils and output terminals on test bench" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>Principles of the Three-Phase Variable Autotransformer (Variac)</h2>
+<p>In electrical research laboratories, manufacturing quality control bays, transformer testing stations, and electric motor rewind facilities, engineers require a variable source of three-phase AC voltage that delivers smooth, stepless, continuous voltage adjustment from zero volts up to full line voltage without introducing harmonic distortion.</p>
+<p>While modern solid-state thyristor phase-angle controllers or variable frequency drives (VFDs) can vary voltage electronically, they do so by chopping the sinusoidal waveform, generating severe high-frequency electrical harmonics ($THD > 25\%$), electromagnetic interference (EMI), and destructive dv/dt voltage spikes that damage motor winding insulation. The <strong>three-phase variable autotransformer</strong> (commonly known by the trade name <em>Variac</em> or model code <strong>TSGC2</strong>) remains the gold standard because it provides true electromechanical voltage regulation, delivering a clean, unblemished, pure sinusoidal AC waveform across its entire 0V to 430V operating range.</p>
+
+<h2>Mechanical and Electromagnetic Construction of the TSGC2 Series</h2>
+<p>A three-phase variac is an integrated electromechanical machine consisting of three matched single-phase toroidal autotransformers stacked vertically on an insulated, heavy-gauge steel framework:</p>
+<ul>
+  <li><strong>Ganged Common Shaft:</strong> The brush arm assemblies of all three toroidal units are keyed to a single, heavy-duty central stainless steel shaft. When the operator turns the calibrated top control handwheel, the three carbon brush holders rotate in perfect mechanical synchronism, ensuring identical brush travel and symmetrical three-phase output voltage across Phase A, Phase B, and Phase C.</li>
+  <li><strong>Continuous Copper Commutator Track:</strong> Each toroidal core is wound with high-grade, double-enameled copper wire. The outer perimeter of the winding undergoes precision diamond machining and polishing, exposing a continuous, flat circular track of bare copper conductors. Because the adjacent copper turns are closely spaced, the wide carbon brush bridges across two turns simultaneously without interrupting current flow (make-before-break operation).</li>
+  <li><strong>Current-Limiting Carbon Roller Brushes:</strong> If the brush were made of pure metal, bridging two adjacent turns would create a direct short circuit on that single transformer loop, causing immediate local overheating. YOMIN TSGC2 variacs utilize specially compounded high-density copper-graphite carbon brushes. The controlled transverse electrical resistance of the carbon limits inter-turn circulating current to safe levels while allowing large forward load currents to pass with minimal voltage drop.</li>
+</ul>
+
+<h2>Star (Y) Connection Architecture: The Role of the Neutral Terminal</h2>
+<p>The internal windings of a TSGC2 three-phase variac are permanently configured in a star (Y) connection:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Terminal Identifier</th>
+      <th>Connection Point</th>
+      <th>Operational Role and Voltage Parameters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Input Terminals (A, B, C)</strong></td>
+      <td>Line Supply Feed</td>
+      <td>Connected to incoming 380V / 400V / 415V three-phase 50Hz/60Hz AC utility lines.</td>
+    </tr>
+    <tr>
+      <td><strong>Output Terminals (a, b, c)</strong></td>
+      <td>Variable Load Feed</td>
+      <td>Connected to the equipment under test, delivering 0V to 430V AC line-to-line stepless variable power.</td>
+    </tr>
+    <tr>
+      <td><strong>Neutral Terminal (N / 0)</strong></td>
+      <td>Common Star Point</td>
+      <td>Common star junction of all three toroidal coils; must connect to utility neutral for asymmetric loads.</td>
+    </tr>
+    <tr>
+      <td><strong>Ground Stud (PE)</strong></td>
+      <td>Chassis Enclosure</td>
+      <td>Safety protective earth stud bonded to external steel perforated housing.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Primary Industrial Applications for Three-Phase Variacs</h2>
+<p>The TSGC2 series is indispensable across heavy electrical manufacturing and testing sectors:</p>
+<ol>
+  <li><strong>Electric Motor Testing & Break-In:</strong> Technicians slowly ramp voltage from 0V upward while monitoring motor starting current, detecting shorted turns, rotor eccentricity, or bearing friction before applying full nominal line voltage.</li>
+  <li><strong>High-Voltage Dielectric Testing:</strong> Serves as the precision low-voltage regulator feeding the primary winding of step-up testing transformers for AC high-potential (Hipot) insulation breakdown testing.</li>
+  <li><strong>Simulated Grid Voltage Sag & Swell Testing:</strong> Electrical product compliance laboratories adjust voltage between 80% (brownout) and 115% (swell) to verify that consumer electronics, power supplies, and industrial relays operate within statutory tolerances.</li>
+</ol>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>Why does a 3-phase variac provide output up to 430V from a 380V input?</h3><p>Standard autotransformers allow the winding to be over-wound by approximately 13% beyond the nominal input tap point. On a YOMIN TSGC2 variac with 380V line-to-line input, the wiper track extends past the 380V winding turn up to the end of the coil, allowing technicians to continuously adjust output voltage up to 430V (or 250V phase-to-neutral). This boost capability is invaluable in electrical testing laboratories for performing over-voltage endurance testing, simulated grid swell stress tests, and insulation dielectric breakdown analysis.</p><h3>Can a 3-phase variac be operated without a neutral conductor connection?</h3><p>A three-phase variac is wound in a star (Y) configuration with three identical toroidal coils sharing a common internal neutral point. While it can operate with balanced three-phase three-wire loads without a connected neutral, connecting the utility grid neutral to the variac’s center terminal is strongly recommended. Without an incoming neutral connection, any phase current unbalance in the connected load will cause the internal floating neutral star point to shift, resulting in asymmetrical line-to-neutral voltages and potential over-voltage on the lighter-loaded phase.</p><h3>How frequently should carbon brushes and commutator tracks be serviced on a heavy-duty variac?</h3><p>In high-duty testing environments (such as motor rewind test benches and factory burn-in stations), carbon brushes should be visually inspected every 300 to 500 operating hours. Check brush wear length (replace when worn past the manufacturer indicator line, typically 50% of original height) and verify spring tension. The exposed copper commutator track should be wiped clean with a dry lint-free cloth or mild electrical contact cleaner to remove accumulated carbon dust. Never use coarse sandpaper on the commutator track, as this grooves the copper conductors and causes brush chatter.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Designing high-current electrical test benches, motor repair test bays, or industrial calibration stations?</h2>
+    <p>Specify your required testing capacity (3kVA to 50kVA), voltage range (0-430V AC), and load characteristics. YOMIN supplies heavy-duty TSGC2 three-phase rotary autotransformers with pure copper toroidal coils and smooth dial regulation.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/variac-transformer">Browse the variac transformer range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

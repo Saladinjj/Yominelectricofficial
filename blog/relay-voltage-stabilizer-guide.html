@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relay Type Voltage Stabilizer Guide: High-Speed Step AC Regulation | Yomin Electric</title>
+<meta name="description" content="How relay-type automatic voltage stabilizers work: microcomputer-controlled high-speed step switching, autotransformer multi-tap selection, extreme brownout recovery (&lt;10ms), and appliance protection.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/relay-voltage-stabilizer-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/relay-voltage-stabilizer-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Relay Type Voltage Stabilizer Guide: High-Speed Step AC Regulation",
+      "description": "How relay-type automatic voltage stabilizers work: microcomputer-controlled high-speed step switching, autotransformer multi-tap selection, extreme brownout recovery (<10ms), and appliance protection.",
+      "image": "https://www.yominelectric.com/assets/images/blog/relay-voltage-stabilizer-guide/hero.png",
+      "datePublished": "2026-09-22",
+      "dateModified": "2026-09-22",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/relay-voltage-stabilizer-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the fundamental difference between a relay-type stabilizer and a servo-motor stabilizer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A relay-type stabilizer adjusts voltage in discrete voltage steps (typically 4 to 7 winding taps, creating ~10V to 15V output steps) using electromagnetic relays controlled by a microcomputer. Because relays switch electronically within 10 milliseconds, relay stabilizers respond instantly to violent grid voltage sags and sudden brownouts. In contrast, servo-motor stabilizers use an electric motor to rotate a carbon brush continuously over a toroidal coil; while they provide tighter voltage precision (±1%), their mechanical response time is slower (0.5 to 1.5 seconds), making them less effective against sudden, extreme voltage drops."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do relay stabilizers feature a 3-minute (180-second) time delay button?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 180-second delay is an essential protective mechanism for refrigeration compressors, air conditioners, and heat pumps. When power momentarily cuts out and immediately restores, the high-pressure refrigerant gas inside the closed compressor loop has not equalized. If the motor attempts to restart immediately against full backpressure, the locked rotor draws massive current and burns out the motor windings. The 3-minute delay allows internal refrigerant pressure to equalize before reconnecting power."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a relay-type voltage stabilizer suitable for sensitive medical or audio equipment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generally, no. When a relay stabilizer switches between autotransformer taps, the brief contact transition (even at 5 to 10 ms) produces micro-transients and step voltage variations (±8% tolerance band). For high-end audio recording equipment, sensitive medical analyzers, or precision laboratory balances, a static electronic stabilizer or high-precision servo stabilizer with active filtering is recommended to ensure continuous, noise-free power."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Voltage Stabilizer / Regulator</span></div>
+    <span class="bh-tag">Voltage Stabilizer / Relay-Type Voltage Stabilizers</span>
+    <h1 class="bh-title">Relay Type Voltage Stabilizer Guide: High-Speed Step AC Regulation</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 22, 2026</span>
+      <span class="divider"></span>
+      <span>8 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/relay-voltage-stabilizer-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/relay-voltage-stabilizer-guide/hero.png" alt="Wall-mounted single-phase relay-type automatic voltage stabilizer with dual digital displays in utility room" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Need for High-Speed Step Voltage Regulation in Unstable Grids</h2>
+<p>In many rapidly developing regions across Africa, South Asia, Latin America, and the Middle East, electrical distribution infrastructure struggles with severe power deficits. Residential and commercial neighborhoods routinely suffer from severe voltage sags (brownouts dropping to 100V–140V on a nominal 220V grid) during peak evening hours, followed by sharp over-voltage spikes (surging past 260V) when heavy industrial factories disconnect at night.</p>
+<p>Modern household appliances—particularly refrigerators, deep freezers, inverter air conditioners, washing machines, and televisions—are highly vulnerable to these erratic voltage extremes. Low voltage starves compressor motors of power, causing them to stall and burn out internal windings, while over-voltage punctures power supply filter capacitors. The <strong>relay-type automatic voltage stabilizer</strong> (frequently termed an <em>Automatic Voltage Switcher</em> or <strong>AVS</strong>) provides the most cost-effective, rugged, and ultra-fast solution for appliance protection.</p>
+
+<h2>Operating Principle: Microprocessor-Controlled Multi-Tap Autotransformers</h2>
+<p>Unlike continuous-slider servo regulators, a relay-type stabilizer achieves voltage correction by electronically selecting discrete tap ratios on an autotransformer winding:</p>
+<ol>
+  <li><strong>Multi-Tap Autotransformer:</strong> The internal transformer core (wound with high-temperature enameled copper or aluminium wire on high-grade silicon steel laminations) features multiple winding taps—typically consisting of 1 input neutral, 1 baseline winding, 2 to 3 buck (step-down) taps, and 2 to 3 boost (step-up) taps.</li>
+  <li><strong>Zero-Crossing Relay Matrix:</strong> Heavy-duty sealed electromagnetic relays with silver-nickel ($AgNi$) or silver-tin-oxide ($AgSnO_2$) contacts connect to each transformer tap. A high-speed 8-bit RISC microcontroller continuously samples the incoming grid waveform. When the input voltage crosses predefined threshold windows, the CPU fires the corresponding relay coil.</li>
+  <li><strong>Sub-Cycle Switching Speed (<10ms):</strong> Because electromagnetic relay armatures actuate within 5 to 10 milliseconds, the voltage correction occurs within a single half-cycle of the AC waveform. If the utility grid suddenly collapses from 220V down to 130V when an industrial mill starts nearby, a relay stabilizer boosts the output back to safe operating levels in a fraction of a second, preventing refrigerator compressors from stalling.</li>
+</ol>
+
+<h2>Technical Comparison: Relay-Type vs. Servo-Motor vs. Static Electronic Stabilizers</h2>
+<p>Selecting the right voltage stabilization technology depends on the speed of fluctuation versus the required voltage tolerance:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature & Specification</th>
+      <th>Relay-Type Stabilizer (YOMIN ACH/AVS)</th>
+      <th>Servo-Motor Stabilizer (YOMIN TND/SVC)</th>
+      <th>Static Electronic / SCR Stabilizer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Regulation Speed</strong></td>
+      <td><strong>Ultra-Fast (< 10 ms)</strong>; instant tap switching.</td>
+      <td>Moderate (0.5 to 1.5 seconds); limited by motor rotation.</td>
+      <td>Ultra-Fast (< 5 ms); solid-state thyristor switching.</td>
+    </tr>
+    <tr>
+      <td><strong>Output Voltage Precision</strong></td>
+      <td>Standard (±8% to ±10%); step-level output.</td>
+      <td><strong>High Precision (±1% to ±3%)</strong>; stepless continuous.</td>
+      <td>High Precision (±1% to ±2%); multi-tap electronic.</td>
+    </tr>
+    <tr>
+      <td><strong>Mechanical Wear Parts</strong></td>
+      <td>Relay contacts (rated for >100,000 switching cycles).</td>
+      <td>Carbon brushes and reduction gears require periodic check.</td>
+      <td>Zero moving parts (100% solid-state semiconductors).</td>
+    </tr>
+    <tr>
+      <td><strong>Manufacturing Cost & Price</strong></td>
+      <td><strong>Most Economical</strong>; high B2B volume value.</td>
+      <td>Moderate; higher due to copper toroidal coils and motors.</td>
+      <td>High; expensive high-power SCR and DSP controller costs.</td>
+    </tr>
+    <tr>
+      <td><strong>Best Operating Environment</strong></td>
+      <td>Unstable domestic grids, frequent violent brownouts.</td>
+      <td>Industrial CNC machines, medical labs, printing presses.</td>
+      <td>Data centers, telecommunication towers, broadcast arrays.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Essential Safety Features: The 180-Second Compressor Delay Mechanism</h2>
+<p>The single most important functional feature of YOMIN residential relay stabilizers is the <strong>selectable delay timer switch</strong>:</p>
+<ul>
+  <li><strong>3-Second Delay Mode:</strong> Used for television sets, personal computers, sound systems, and general home lighting that tolerate immediate power restoration without damage.</li>
+  <li><strong>180-Second (3-Minute) Compressor Delay Mode:</strong> Absolutely mandatory for all refrigeration and air-conditioning equipment. When an electrical brownout causes the stabilizer to disconnect, high-pressure gas remains locked on the discharge side of the compressor. If power were restored instantly, the compressor motor would attempt to turn against immense mechanical head pressure, drawing locked-rotor stall currents that exceed 30A on a 10A breaker. The 180-second pause gives the refrigerant capillary tubes time to equalize pressure, guaranteeing a safe, zero-strain motor restart.</li>
+</ul>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is the fundamental difference between a relay-type stabilizer and a servo-motor stabilizer?</h3><p>A relay-type stabilizer adjusts voltage in discrete voltage steps (typically 4 to 7 winding taps, creating ~10V to 15V output steps) using electromagnetic relays controlled by a microcomputer. Because relays switch electronically within 10 milliseconds, relay stabilizers respond instantly to violent grid voltage sags and sudden brownouts. In contrast, servo-motor stabilizers use an electric motor to rotate a carbon brush continuously over a toroidal coil; while they provide tighter voltage precision (±1%), their mechanical response time is slower (0.5 to 1.5 seconds), making them less effective against sudden, extreme voltage drops.</p><h3>Why do relay stabilizers feature a 3-minute (180-second) time delay button?</h3><p>The 180-second delay is an essential protective mechanism for refrigeration compressors, air conditioners, and heat pumps. When power momentarily cuts out and immediately restores, the high-pressure refrigerant gas inside the closed compressor loop has not equalized. If the motor attempts to restart immediately against full backpressure, the locked rotor draws massive current and burns out the motor windings. The 3-minute delay allows internal refrigerant pressure to equalize before reconnecting power.</p><h3>Is a relay-type voltage stabilizer suitable for sensitive medical or audio equipment?</h3><p>Generally, no. When a relay stabilizer switches between autotransformer taps, the brief contact transition (even at 5 to 10 ms) produces micro-transients and step voltage variations (±8% tolerance band). For high-end audio recording equipment, sensitive medical analyzers, or precision laboratory balances, a static electronic stabilizer or high-precision servo stabilizer with active filtering is recommended to ensure continuous, noise-free power.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Distributing residential and commercial electrical voltage regulators in emerging markets with unstable grids?</h2>
+    <p>Tell us your utility grid voltage range (95V-270V or 140V-260V) and appliance load requirements. YOMIN manufactures fast-switching (<10ms) relay-type voltage stabilizers with digital LED displays and 3-minute compressor delay protection.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/voltage-stabilizer-regulator">Browse the voltage stabilizer range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

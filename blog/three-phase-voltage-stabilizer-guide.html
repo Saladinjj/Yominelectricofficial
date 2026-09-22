@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three-Phase Voltage Stabilizer Guide: Industrial Servo AVR Sizing | Yomin Electric</title>
+<meta name="description" content="Engineering guide to industrial three-phase automatic voltage stabilizers (AVR/AVS): TNS/SVC servo-motor architecture, individual phase regulation vs coupled control, kVA sizing, and CNC/factory protection.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/three-phase-voltage-stabilizer-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Three-Phase Voltage Stabilizer Guide: Industrial Servo AVR Sizing",
+      "description": "Engineering guide to industrial three-phase automatic voltage stabilizers (AVR/AVS): TNS/SVC servo-motor architecture, individual phase regulation vs coupled control, kVA sizing, and CNC/factory protection.",
+      "image": "https://www.yominelectric.com/assets/images/blog/three-phase-voltage-stabilizer-guide/hero.png",
+      "datePublished": "2026-09-22",
+      "dateModified": "2026-09-22",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between coupled regulation and individual phase regulation in three-phase stabilizers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Coupled regulation stabilizers use a single central servo motor that moves carbon brushes on all three phase coils simultaneously based on the voltage reading of only one reference phase. This works only if the input utility grid is perfectly balanced and the load is symmetrically three-phase. In real industrial plants with mixed single-phase lighting and three-phase motor loads, phase voltages become unbalanced. Individual phase regulation (such as in YOMIN TNS series) employs three independent servo motors and separate sensing microcontrollers for each phase. Each phase voltage is adjusted independently back to nominal, completely eliminating line unbalance without cross-phase distortion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you correctly calculate kVA capacity for industrial machinery like CNCs or air compressors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When sizing a three-phase voltage stabilizer, you must account for running current, power factor (PF), and motor startup inrush current. For resistive loads (heaters, lighting), size capacity with a 25% safety margin: kVA = Total kW / 0.8 x 1.25. For inductive loads with heavy electric motors (air compressors, pumps, CNC spindles) that start Direct-On-Line (DOL), startup inrush draws 5 to 7 times running current. The stabilizer must be sized at minimum 2.5 to 3 times the motor full-load rating unless the machinery is equipped with a Variable Frequency Drive (VFD) or soft starter, in which case a 1.5x multiplier is sufficient."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are servo-motor stabilizers preferred over static relay stabilizers for precision three-phase manufacturing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Relay-type stabilizers adjust voltage in discrete steps (typically 10V to 15V jumps) by switching transformer taps. These discrete switching steps cause instantaneous voltage transients and micro-arcing that can reboot CNC computers, corrupt PLC data, and damage sensitive robotics. Servo-motor stabilizers employ precision toroidal autotransformers with smoothly rotating carbon roller brushes, producing continuous, stepless voltage adjustment with absolute zero waveform distortion and true ±1% output precision."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Voltage Stabilizer / Regulator</span></div>
+    <span class="bh-tag">Voltage Stabilizer / Industrial 3-Phase AVR</span>
+    <h1 class="bh-title">Three-Phase Voltage Stabilizer Guide: Industrial Servo AVR Sizing</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 22, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/three-phase-voltage-stabilizer-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/three-phase-voltage-stabilizer-guide/hero.png" alt="Industrial three-phase automatic voltage stabilizer cabinet installed in factory electrical room" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Critical Role of Industrial Three-Phase Voltage Stabilization</h2>
+<p>In modern manufacturing, automated production lines rely on high-precision CNC machining centers, automated robotics, sensitive programmable logic controllers (PLCs), variable frequency drives (VFDs), and heavy industrial chiller units. However, utility power grids in expanding industrial zones frequently experience severe voltage fluctuations—ranging from deep brownouts caused by neighboring heavy arc furnaces to dangerous over-voltage surges during off-peak night hours.</p>
+<p>When line voltage drops below 90% of nominal rating, industrial AC electric motors draw excessive current to maintain mechanical shaft torque, causing winding temperatures to rise exponentially ($P_{loss} = I^2 R$) and tripping thermal overload relays. Conversely, chronic over-voltage saturates transformer magnetic cores, breaks down power semiconductor gate insulation in inverters, and causes costly unrecoverable downtime. An industrial <strong>three-phase automatic voltage stabilizer</strong> (also known as a three-phase AVR) dynamically corrects incoming grid variations, delivering a continuous, ripple-free, balanced three-phase 380V, 400V, or 415V supply.</p>
+
+<h2>Architecture of the Servo-Motor Driven Automatic Voltage Regulator (AVR)</h2>
+<p>Industrial three-phase voltage stabilizers utilize a closed-loop electromechanical servo architecture comprising three core components per phase:</p>
+<ol>
+  <li><strong>Toroidal Variable Autotransformer (Regulating Coil):</strong> Precision-wound with high-conductivity oxygen-free electrolytic copper wire on a high-permeability grain-oriented silicon steel toroidal core. The upper track of the coil is diamond-polished to create a flat, low-resistance commutator contact surface.</li>
+  <li><strong>Buck-Boost Series Compensation Transformer:</strong> For units above 30kVA, regulating the entire load current directly across carbon brushes would create excessive heat. Instead, the servo-driven autotransformer supplies only an auxiliary low-current primary signal to a buck-boost transformer whose secondary winding is connected directly in series with the main load, smoothly adding (boosting) or subtracting (bucking) corrective voltage vectors.</li>
+  <li><strong>Microprocessor Control Board & High-Torque Servo Motor:</strong> High-speed sampling circuits monitor true RMS phase-to-neutral and phase-to-phase voltages. When voltage deviates beyond the preset tolerance band (±1%), the CPU signals the reversible DC/AC servo motor, which drives the carbon roller brush assembly along the commutator track via a low-backlash reduction gear.</li>
+</ol>
+
+<h2>Individual Phase Regulation vs. Coupled Three-Phase Regulation</h2>
+<p>A critical engineering decision when procuring three-phase stabilizers is selecting between coupled (three-phase linked) control and independent individual phase regulation:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Engineering Parameter</th>
+      <th>Coupled / Linked 3-Phase AVR</th>
+      <th>Individual Phase Regulation (YOMIN TNS Series)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Drive Architecture</strong></td>
+      <td>Single servo motor driving all 3 phase brushes simultaneously via a common central shaft.</td>
+      <td>Three independent servo motors with dedicated microprocessor boards for Phase A, B, and C.</td>
+    </tr>
+    <tr>
+      <td><strong>Phase Unbalance Handling</strong></td>
+      <td>Cannot correct unbalanced grids. Adjusting based on one phase worsens voltage error on other phases.</td>
+      <td>Completely corrects phase unbalance. Each phase is independently regulated back to 220V/230V.</td>
+    </tr>
+    <tr>
+      <td><strong>Applicable Load Types</strong></td>
+      <td>Only suitable for pure symmetrical three-phase loads (e.g. submersible pumps, balanced kilns).</td>
+      <td>Essential for mixed industrial facilities combining single-phase loads, lighting, and 3-phase machinery.</td>
+    </tr>
+    <tr>
+      <td><strong>Output Neutral Stability</strong></td>
+      <td>Neutral point drifts under load unbalance, exposing single-phase equipment to over-voltage.</td>
+      <td>Solid, stable neutral point maintained across 0% to 100% asymmetric load variations.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Electrical Engineering Calculations: Sizing kVA Capacity for Mixed Plant Loads</h2>
+<p>Undersizing an automatic voltage stabilizer results in nuisance bypass switching, carbon brush arcing, and thermal shutdown during factory startup hours. To ensure long service life, electrical consulting engineers size kVA capacity using the following formula:</p>
+<p>$$S_{	ext{stabilizer (kVA)}} = rac{P_{	ext{running (kW)}}}{	ext{Power Factor}} 	imes K_{	ext{safety}} + S_{	ext{motor\_inrush (kVA)}}$$</p>
+<p>Where:</p>
+<ul>
+  <li><strong>$K_{	ext{safety}}$ Margin:</strong> 1.25 to 1.30 (accounts for future load expansion and continuous thermal dissipation at high ambient temperatures).</li>
+  <li><strong>Direct-On-Line (DOL) Motors:</strong> If an unassisted squirrel-cage induction motor starts across the line, its locked-rotor current ($I_{LRA}$) reaches 6 times full-load current ($I_{FLA}$). The stabilizer’s short-time overload capability (typically 150% for 30 seconds) must absorb this surge without output voltage collapsing below 90%.</li>
+  <li><strong>Star-Delta or VFD Starters:</strong> For soft-started machinery, the inrush multiplier drops to 1.5x, significantly reducing the required frame size of the voltage stabilizer.</li>
+</ul>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is the difference between coupled regulation and individual phase regulation in three-phase stabilizers?</h3><p>Coupled regulation stabilizers use a single central servo motor that moves carbon brushes on all three phase coils simultaneously based on the voltage reading of only one reference phase. This works only if the input utility grid is perfectly balanced and the load is symmetrically three-phase. In real industrial plants with mixed single-phase lighting and three-phase motor loads, phase voltages become unbalanced. Individual phase regulation (such as in YOMIN TNS series) employs three independent servo motors and separate sensing microcontrollers for each phase. Each phase voltage is adjusted independently back to nominal, completely eliminating line unbalance without cross-phase distortion.</p><h3>How do you correctly calculate kVA capacity for industrial machinery like CNCs or air compressors?</h3><p>When sizing a three-phase voltage stabilizer, you must account for running current, power factor (PF), and motor startup inrush current. For resistive loads (heaters, lighting), size capacity with a 25% safety margin: kVA = Total kW / 0.8 x 1.25. For inductive loads with heavy electric motors (air compressors, pumps, CNC spindles) that start Direct-On-Line (DOL), startup inrush draws 5 to 7 times running current. The stabilizer must be sized at minimum 2.5 to 3 times the motor full-load rating unless the machinery is equipped with a Variable Frequency Drive (VFD) or soft starter, in which case a 1.5x multiplier is sufficient.</p><h3>Why are servo-motor stabilizers preferred over static relay stabilizers for precision three-phase manufacturing?</h3><p>Relay-type stabilizers adjust voltage in discrete steps (typically 10V to 15V jumps) by switching transformer taps. These discrete switching steps cause instantaneous voltage transients and micro-arcing that can reboot CNC computers, corrupt PLC data, and damage sensitive robotics. Servo-motor stabilizers employ precision toroidal autotransformers with smoothly rotating carbon roller brushes, producing continuous, stepless voltage adjustment with absolute zero waveform distortion and true ±1% output precision.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying industrial three-phase automatic voltage stabilizers or compensated power regulators for manufacturing plants?</h2>
+    <p>Tell us your system line voltage (380V, 400V, or 415V), plant capacity in kVA, and connected load profile. YOMIN manufactures precision 15kVA to 500kVA copper servo stabilizers with individual phase regulation.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/voltage-stabilizer-regulator">Browse the voltage stabilizer range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
