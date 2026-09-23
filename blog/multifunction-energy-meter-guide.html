@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multifunction Energy Meter Guide: 3-Phase Digital Power Monitoring | Yomin Electric</title>
+<meta name="description" content="How to specify and install three-phase multifunction power meters: measuring V, A, kW, kVA, kvar, PF, and THD harmonics, RS485 Modbus RTU integration, and energy management system (EMS) monitoring.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/multifunction-energy-meter-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/multifunction-energy-meter-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Multifunction Energy Meter Guide: 3-Phase Digital Power Monitoring",
+      "description": "How to specify and install three-phase multifunction power meters: measuring V, A, kW, kVA, kvar, PF, and THD harmonics, RS485 Modbus RTU integration, and energy management system (EMS) monitoring.",
+      "image": "https://www.yominelectric.com/assets/images/blog/multifunction-energy-meter-guide/hero.png",
+      "datePublished": "2026-09-23",
+      "dateModified": "2026-09-23",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/multifunction-energy-meter-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a standard kWh energy meter and a multifunction power meter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard kWh energy meter measures only cumulative active electrical consumption (kWh) for billing purposes. A multifunction energy meter (often termed a digital power analyzer) continuously samples the AC electrical waveform hundreds of times per cycle, calculating over 40 real-time electrical parameters simultaneously: phase voltages, line currents, active power (kW), reactive power (kvar), apparent power (kVA), displacement power factor (PF), grid frequency, phase angle, and harmonic distortion (THD). It serves as both an energy sub-meter and a comprehensive power quality diagnostic instrument for industrial facilities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does RS485 Modbus RTU communication enable centralized Energy Management Systems (EMS)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Industrial facilities contain dozens of electrical switchboards and sub-panels scattered across large plants. YOMIN multifunction meters feature an integrated RS485 serial communication port utilizing the industry-standard Modbus RTU protocol. Up to 32 meters can be daisy-chained on a single shielded twisted-pair cable over distances up to 1,200 meters, connecting directly to a central PLC, IoT gateway, or supervisory SCADA/EMS server. Facility managers monitor real-time energy usage, track departmental power demand, identify energy waste, and automate carbon accounting without manual meter readings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is harmonic distortion (THD) measurement critical for modern industrial power distribution?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non-linear industrial loads—such as variable frequency drives (VFDs), server computer power supplies, LED lighting drivers, and induction furnaces—draw current in sharp, distorted pulses rather than smooth sine waves. This non-sinusoidal current generates harmonic frequencies (3rd, 5th, 7th, 11th orders) that distort the system voltage. High Total Harmonic Distortion (THD > 5%) causes severe distribution transformer overheating, nuisance circuit breaker tripping, power factor capacitor failure, and neutral conductor overload. A multifunction meter with harmonic analysis enables engineers to pinpoint harmonic sources and size active harmonic filters (AHFs) effectively."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Energy Meter</span></div>
+    <span class="bh-tag">Energy Meter / Digital Multifunction Power Meters</span>
+    <h1 class="bh-title">Multifunction Energy Meter Guide: 3-Phase Digital Power Monitoring</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 23, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/multifunction-energy-meter-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/multifunction-energy-meter-guide/hero.png" alt="Digital three-phase multifunction energy meter with LCD display operating on industrial switchboard panel" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Modern Transition to Digital Multifunction Power Analysis</h2>
+<p>In commercial buildings, industrial manufacturing plants, data centers, and renewable energy facilities, electrical engineers no longer rely on dedicated, individual analog dial gauges to monitor electrical switchboards. Installing separate analog voltmeters, ammeters, power factor meters, and kWh counters requires extensive panel cutouts, complex manual wiring looms, and external transducer boxes.</p>
+<p>The <strong>digital three-phase multifunction energy meter</strong> (also known as a <em>multifunction power analyzer</em> or <em>digital panel meter</em>) consolidates all AC measurement, power quality analysis, multi-tariff revenue metering, and digital network telemetry into a single, compact standard 96mm x 96mm DIN panel-mount enclosure. By digitizing voltage and current signals directly from instrument transformers, the multifunction meter serves as the intelligent data acquisition hub for building automation, SCADA networks, and enterprise Energy Management Systems (EMS).</p>
+
+<h2>Real-Time Measurement Capabilities: Beyond Basic Kilowatt-Hours</h2>
+<p>A high-precision multifunction meter continuously samples the three-phase electrical network across four quadrants of power flow:</p>
+<ul>
+  <li><strong>Comprehensive Instantaneous Electrical Parameters:</strong> True RMS measurement of line-to-neutral voltages ($V_{L1}, V_{L2}, V_{L3}$), line-to-line voltages ($V_{12}, V_{23}, V_{31}$), phase currents ($I_1, I_2, I_3$), and calculated neutral conductor current ($I_N$).</li>
+  <li><strong>Four-Quadrant Power Vectors:</strong> Computes active real power (kW), reactive magnetizing power (kvar), and apparent power (kVA) on each individual phase and as a three-phase total vector. It accurately tracks four-quadrant energy flow—distinguishing between imported grid power, exported solar generation, inductive motor loads, and capacitive power factor banks.</li>
+  <li><strong>Power Factor & System Frequency:</strong> Continuous monitoring of true displacement power factor ($\cos\phi$) and line frequency ($Hz$) allows automated power factor correction (APFC) capacitor banks to maintain power factor above statutory penalty limits (typically $PF \geq 0.95$).</li>
+  <li><strong>Harmonic Analysis & Power Quality:</strong> Built-in digital signal processors (DSP) perform Fast Fourier Transform (FFT) algorithms, calculating Total Harmonic Distortion ($THD_V$ and $THD_I$) as well as individual harmonic amplitudes from the 2nd up to the 31st harmonic order, exposing power pollution caused by VFDs and non-linear power supplies.</li>
+</ul>
+
+<h2>Wiring Topologies: 3-Phase 4-Wire vs. 3-Phase 3-Wire Installations</h2>
+<p>Connecting a multifunction energy meter correctly to the power circuit depends on the electrical distribution scheme:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>System Configuration</th>
+      <th>Sensor Requirement</th>
+      <th>Applicable Industrial Topology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>3-Phase 4-Wire (3P4W / Wye)</strong></td>
+      <td>3 Voltage leads + Neutral; 3 Current Transformers (3CT).</td>
+      <td>Standard low-voltage commercial/industrial distribution (400V/230V) feeding mixed single-phase and 3-phase loads.</td>
+    </tr>
+    <tr>
+      <td><strong>3-Phase 3-Wire (3P3W / Delta / Aron)</strong></td>
+      <td>3 Voltage leads (no neutral); 2 Current Transformers (2CT).</td>
+      <td>Medium-voltage distribution lines or pure three-phase delta industrial motor loads without single-phase equipment.</td>
+    </tr>
+    <tr>
+      <td><strong>Single-Phase 2-Wire (1P2W)</strong></td>
+      <td>1 Phase Voltage + Neutral; 1 Current Transformer (1CT).</td>
+      <td>Individual sub-metering of high-capacity single-phase residential circuits, HVAC chillers, or server racks.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Centralized Telemetry: RS485 Modbus RTU and IoT Gateway Integration</h2>
+<p>The greatest operational value of digital multifunction meters lies in their networking capability:</p>
+<ol>
+  <li><strong>Daisy-Chained RS485 Serial Bus:</strong> Utilizing a differential two-wire RS485 serial bus running the open Modbus RTU protocol, up to 32 meters can be linked along a single shielded twisted-pair run over distances up to 1,200 meters without requiring external signal repeaters.</li>
+  <li><strong>Programmable Primary CT and PT Ratios:</strong> The meter’s microcomputer firmware allows technicians to configure primary transformer ratios directly via front pushbuttons or remotely over Modbus (e.g. setting a 1200/5A CT ratio or 10kV/100V PT ratio), enabling the meter to display actual primary high-voltage engineering units automatically.</li>
+  <li><strong>Automated Energy Management & Carbon Tracking:</strong> In modern industrial facilities targeting ISO 50001 certification, energy management software polls networked meters every 15 minutes. Facility managers analyze real-time load profiles, peak demand times, and energy consumption patterns, detecting abnormal equipment loads before catastrophic failure occurs.</li>
+</ol>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is the difference between a standard kWh energy meter and a multifunction power meter?</h3><p>A standard kWh energy meter measures only cumulative active electrical consumption (kWh) for billing purposes. A multifunction energy meter (often termed a digital power analyzer) continuously samples the AC electrical waveform hundreds of times per cycle, calculating over 40 real-time electrical parameters simultaneously: phase voltages, line currents, active power (kW), reactive power (kvar), apparent power (kVA), displacement power factor (PF), grid frequency, phase angle, and harmonic distortion (THD). It serves as both an energy sub-meter and a comprehensive power quality diagnostic instrument for industrial facilities.</p><h3>How does RS485 Modbus RTU communication enable centralized Energy Management Systems (EMS)?</h3><p>Industrial facilities contain dozens of electrical switchboards and sub-panels scattered across large plants. YOMIN multifunction meters feature an integrated RS485 serial communication port utilizing the industry-standard Modbus RTU protocol. Up to 32 meters can be daisy-chained on a single shielded twisted-pair cable over distances up to 1,200 meters, connecting directly to a central PLC, IoT gateway, or supervisory SCADA/EMS server. Facility managers monitor real-time energy usage, track departmental power demand, identify energy waste, and automate carbon accounting without manual meter readings.</p><h3>Why is harmonic distortion (THD) measurement critical for modern industrial power distribution?</h3><p>Non-linear industrial loads—such as variable frequency drives (VFDs), server computer power supplies, LED lighting drivers, and induction furnaces—draw current in sharp, distorted pulses rather than smooth sine waves. This non-sinusoidal current generates harmonic frequencies (3rd, 5th, 7th, 11th orders) that distort the system voltage. High Total Harmonic Distortion (THD &gt; 5%) causes severe distribution transformer overheating, nuisance circuit breaker tripping, power factor capacitor failure, and neutral conductor overload. A multifunction meter with harmonic analysis enables engineers to pinpoint harmonic sources and size active harmonic filters (AHFs) effectively.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Implementing factory sub-metering, commercial energy management systems (EMS), or ISO 50001 energy audits?</h2>
+    <p>Send us your electrical system scheme (3P4W or 3P3W), CT primary ratios, and SCADA communication network requirements. YOMIN manufactures Class 0.5S digital three-phase multifunction power meters with RS485 Modbus RTU and comprehensive harmonic analysis.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/energy-meter">Browse the energy meter range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

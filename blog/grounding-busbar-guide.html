@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grounding Busbar Guide: Panel Earthing &amp; Low-Impedance Sizing | Yomin Electric</title>
+<meta name="description" content="Engineering guide to grounding busbars and neutral links: solid electrolytic copper sizing, short-circuit fault current withstand (kA), isolation standoffs, and NEC/IEC compliance.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/grounding-busbar-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/grounding-busbar-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Grounding Busbar Guide: Panel Earthing & Low-Impedance Sizing",
+      "description": "Engineering guide to grounding busbars and neutral links: solid electrolytic copper sizing, short-circuit fault current withstand (kA), isolation standoffs, and NEC/IEC compliance.",
+      "image": "https://www.yominelectric.com/assets/images/blog/grounding-busbar-guide/hero.png",
+      "datePublished": "2026-09-23",
+      "dateModified": "2026-09-23",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/grounding-busbar-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between an isolated ground busbar and an equipment ground busbar in electrical panels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An equipment ground busbar (EGB) is bonded directly to the metal enclosure of the panelboard or switchgear. It provides a low-impedance fault-clearing path for conductive metal surfaces, tripping circuit breakers during ground faults. An isolated ground busbar (IGB) is mounted on insulated standoff blocks (typically red polyester) and isolated from the steel enclosure. It connects exclusively to sensitive electronic equipment (data centers, audio recording systems, hospital imaging devices) via dedicated green/yellow ground wires with an orange tracer, routing electrical noise directly back to the grounding electrode without circulating through the building frame."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate the minimum cross-sectional area of a copper ground busbar for a given fault current?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under IEC 60364-5-54 and IEEE Standard 80, the minimum protective conductor cross-section (S) is calculated using the adiabatic formula: S = sqrt(I^2 * t) / k, where I is the prospective RMS fault current in Amperes, t is the fault clearance operating time in seconds, and k is the material thermal constant (k = 176 for copper conductors with 70°C initial and 160°C final temperatures). For an industrial switchboard with 25kA prospective short-circuit current cleared in 0.5 seconds, the minimum copper busbar cross-section required is S = sqrt(25000^2 * 0.5) / 176 = 100.4 mm^2 (equivalent to a standard 25mm x 5mm copper busbar bar with 125 mm^2 cross-section)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can aluminium conductors be terminated directly onto an unplated copper grounding busbar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Terminating bare aluminium conductors directly onto bare copper causes aggressive galvanic (bimetallic) corrosion. When moisture or atmospheric humidity is present, the electrochemical potential difference between copper (+0.34V) and aluminium (-1.66V) drives rapid galvanic oxidation of the aluminium. The aluminium oxidizes into non-conductive aluminium oxide, causing loose terminals, high-resistance overheating, and eventual fire hazards. For mixed aluminium and copper terminations, panel builders must specify tin-plated copper ground busbars or use dual-rated AL9CU mechanical screw lugs with antioxidant joint compound."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Terminals &amp; Connectors</span></div>
+    <span class="bh-tag">Terminals &amp; Connectors / Grounding &amp; Earthing Bars</span>
+    <h1 class="bh-title">Grounding Busbar Guide: Panel Earthing & Low-Impedance Sizing</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 23, 2026</span>
+      <span class="divider"></span>
+      <span>8 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/grounding-busbar-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/grounding-busbar-guide/hero.png" alt="Heavy-duty solid electrolytic copper grounding busbar mounted on insulated standoffs inside electrical switchboard" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Critical Function of the Grounding Busbar in Electrical Distribution</h2>
+<p>In low-voltage and medium-voltage power distribution systems, the <strong>grounding busbar</strong> (also referred to as an <em>earth bar</em> or <em>ground terminal bus</em>) serves as the common equipotential reference plane for an entire electrical installation. Installed within main distribution boards (MDBs), motor control centers (MCCs), industrial control cabinets, and telecommunication server racks, the ground busbar coordinates three essential safety functions:</p>
+<ol>
+  <li><strong>Fault Current Clearance:</strong> In the event of a phase-to-ground insulation breakdown inside an electric motor, feeder cable, or transformer, the grounding busbar provides a deliberate low-impedance metallic path back to the utility transformer neutral. This low resistance allows high fault currents to circulate instantaneously, prompting upstream circuit breakers or HRC fuses to trip within milliseconds, preventing fatal touch voltages ($V_{	ext{touch}} > 50	ext{V}$) on equipment metal enclosures.</li>
+  <li><strong>Lightning and Transient Surge Dissipation:</strong> Connected directly to surge protective devices (SPDs) and external lightning down-conductors, the ground busbar safely routes tens of thousands of amperes of high-frequency lightning transient currents into the grounding electrode system without flashing over to control electronics.</li>
+  <li><strong>Static and High-Frequency Noise Mitigation:</strong> Provides an equipotential bonding plane that eliminates circulating ground loops, static charge accumulation, and common-mode electromagnetic interference (EMI) across automation PLCs, variable speed drives, and sensitive instrumentation.</li>
+</ol>
+
+<h2>Electrolytic Copper vs. Aluminium: Material Selection Criteria</h2>
+<p>Specifying the proper metallurgical grade for a grounding busbar depends on the operational environment, ampacity requirements, and budget constraints:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Engineering Parameter</th>
+      <th>Electrolytic Tough Pitch (ETP) Copper Ground Bar</th>
+      <th>6061-T6 Tin-Plated Aluminium Ground Bar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Electrical Conductivity</strong></td>
+      <td><strong>100% IACS</strong> (58.0 MS/m); lowest possible contact impedance.</td>
+      <td>55%–61% IACS; requires ~30% larger cross-section for equivalent kA rating.</td>
+    </tr>
+    <tr>
+      <td><strong>Mechanical Strength & Creep</strong></td>
+      <td>High tensile strength; virtually zero mechanical creep under terminal bolt torque.</td>
+      <td>Subject to thermal expansion and creep; requires Belleville spring washers.</td>
+    </tr>
+    <tr>
+      <td><strong>Corrosion Resistance</strong></td>
+      <td>Superior atmospheric corrosion resistance; exceptional durability in humid plants.</td>
+      <td>Requires heavy electro-tin plating to prevent galvanic oxidation and pitting.</td>
+    </tr>
+    <tr>
+      <td><strong>Weight & Commercial Cost</strong></td>
+      <td>Heavier (density $8.96\,	ext{g/cm}^3$); higher raw material investment.</td>
+      <td><strong>Lightweight (density $2.70\,	ext{g/cm}^3$)</strong>; cost-effective for large panelboard runs.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Mechanical Architecture: Hole Sizing, Pitch and Dual-Rated Lug Terminations</h2>
+<p>A high-performance grounding busbar system requires careful mechanical layout to accommodate diverse cable sizes without overcrowding:</p>
+<ul>
+  <li><strong>Direct Tapped Screw Terminals vs. Through-Holes:</strong> Smaller load centers utilize factory-tapped holes with steel or brass binder head screws (typically #10-32 or 1/4"-20) accepting single solid or stranded conductors (#14 AWG to #4 AWG). For heavy industrial switchboards, ground bars feature dual rows of through-holes spaced at 1/2", 3/4", or standard 1-3/4" centers, allowing two-hole compression cable lugs to bolt flat against the copper palm with high-tensile hardware.</li>
+  <li><strong>Belleville Conical Washers:</strong> During thermal cycling caused by summer peak loads or momentary short-circuit heating, terminal metals expand and contract. Utilizing conical Belleville spring washers beneath the hex nut maintains constant compressive pressure (clamping force), eliminating the risk of loose, high-resistance electrical connections over decades of operation.</li>
+  <li><strong>Disconnectable Earth Links:</strong> Substation and main earthing terminals frequently incorporate a removable bolted copper link (earth test link). This allows maintenance technicians to disconnect the panel grounding busbar from the buried earth grid to perform precision soil resistivity and earth electrode resistance testing using a 3-point fall-of-potential tester without back-feeding into the facility.</li>
+</ul>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is the difference between an isolated ground busbar and an equipment ground busbar in electrical panels?</h3><p>An equipment ground busbar (EGB) is bonded directly to the metal enclosure of the panelboard or switchgear. It provides a low-impedance fault-clearing path for conductive metal surfaces, tripping circuit breakers during ground faults. An isolated ground busbar (IGB) is mounted on insulated standoff blocks (typically red polyester) and isolated from the steel enclosure. It connects exclusively to sensitive electronic equipment (data centers, audio recording systems, hospital imaging devices) via dedicated green/yellow ground wires with an orange tracer, routing electrical noise directly back to the grounding electrode without circulating through the building frame.</p><h3>How do you calculate the minimum cross-sectional area of a copper ground busbar for a given fault current?</h3><p>Under IEC 60364-5-54 and IEEE Standard 80, the minimum protective conductor cross-section (S) is calculated using the adiabatic formula: S = sqrt(I^2 * t) / k, where I is the prospective RMS fault current in Amperes, t is the fault clearance operating time in seconds, and k is the material thermal constant (k = 176 for copper conductors with 70°C initial and 160°C final temperatures). For an industrial switchboard with 25kA prospective short-circuit current cleared in 0.5 seconds, the minimum copper busbar cross-section required is S = sqrt(25000^2 * 0.5) / 176 = 100.4 mm^2 (equivalent to a standard 25mm x 5mm copper busbar bar with 125 mm^2 cross-section).</p><h3>Can aluminium conductors be terminated directly onto an unplated copper grounding busbar?</h3><p>No. Terminating bare aluminium conductors directly onto bare copper causes aggressive galvanic (bimetallic) corrosion. When moisture or atmospheric humidity is present, the electrochemical potential difference between copper (+0.34V) and aluminium (-1.66V) drives rapid galvanic oxidation of the aluminium. The aluminium oxidizes into non-conductive aluminium oxide, causing loose terminals, high-resistance overheating, and eventual fire hazards. For mixed aluminium and copper terminations, panel builders must specify tin-plated copper ground busbars or use dual-rated AL9CU mechanical screw lugs with antioxidant joint compound.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying panel earthing busbars, neutral disconnect links, or custom copper ground bars for switchboards, data centers, or telecommunication facilities?</h2>
+    <p>Tell us your required conductor sizes, terminal hole patterns, and short-circuit fault withstand specifications. YOMIN manufactures precision ETP copper and 6061-T6 aluminium ground busbars engineered to NEC and IEC standards.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/terminal-connector">Browse the terminal and connector range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
