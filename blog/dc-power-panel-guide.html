@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DC Power Panel Guide: Substation GZDW Auxiliary Power Systems | Yomin Electric</title>
+<meta name="description" content="Engineering guide to substation DC auxiliary power systems (GZDW series): 110V/220V DC control bus, high-frequency switch-mode modular rectifiers, battery charging regimes, and insulation monitoring.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/dc-power-panel-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/dc-power-panel-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "DC Power Panel Guide: Substation GZDW Auxiliary Power Systems",
+      "description": "Engineering guide to substation DC auxiliary power systems (GZDW series): 110V/220V DC control bus, high-frequency switch-mode modular rectifiers, battery charging regimes, and insulation monitoring.",
+      "image": "https://www.yominelectric.com/assets/images/blog/dc-power-panel-guide/hero.png",
+      "datePublished": "2026-09-24",
+      "dateModified": "2026-09-24",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/dc-power-panel-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the role of a DC power supply panel (GZDW system) in an electrical utility substation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In an electrical transmission or distribution substation, the most critical moment occurs during a complete grid blackout (loss of AC station power). During a blackout, protective relays, SCADA automation controllers, high-voltage circuit breaker trip coils, motor operating mechanisms, and emergency lighting MUST continue operating without a single microsecond of interruption. The GZDW DC power panel rectifies incoming AC power to maintain a continuous, ripple-free 110V or 220V DC bus while floating a backup battery bank. If AC power fails completely, the battery bank instantly powers the DC bus with zero transfer time, ensuring circuit breakers can trip and clear faults under all blackout scenarios."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does N+1 redundancy in modular high-frequency switch-mode rectifiers prevent substation failure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Older legacy substation DC systems used bulky, single-phase thyristor (SCR) rectifiers. If the single SCR charger failed, the entire substation was left running on battery reserve until technicians arrived. Modern YOMIN GZDW panels utilize modular high-frequency switch-mode rectifiers operating in parallel with N+1 redundancy. If a substation requires 40A of DC charging current, the panel is configured with three 20A modules (N=2, plus 1 redundant unit). If any individual module suffers an internal component fault, the remaining modules automatically share the load without voltage dip, and the faulty module can be hot-swapped in seconds without shutting down the bus."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is online DC insulation monitoring mandatory on substation DC auxiliary power systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Substation DC distribution systems operate as floating (ungrounded) networks to ensure that a single accidental ground fault (e.g. moisture inside an outdoor circuit breaker control box) does not trip control power. However, if a second ground fault occurs on the opposite polarity, it creates a dead short circuit that can cause false tripping of high-voltage transmission lines or prevent protective relays from operating during a real fault. An online DC insulation monitoring system continuously injects a low-frequency detection signal across the DC bus, calculating positive-to-ground and negative-to-ground insulation resistance in real time and identifying the exact faulted feeder branch before a catastrophic double-ground occurs."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Emergency Lighting</span></div>
+    <span class="bh-tag">Emergency Lighting / Substation Auxiliary DC Power Systems</span>
+    <h1 class="bh-title">DC Power Panel Guide: Substation GZDW Auxiliary Power Systems</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 24, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/dc-power-panel-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/dc-power-panel-guide/hero.png" alt="Substation GZDW microcomputer-controlled DC auxiliary power supply panel with modular rectifiers and touchscreen display" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Critical Role of Auxiliary DC Power in Substation Reliability</h2>
+<p>In high-voltage transmission substations, power generating plants, industrial petrochemical complexes, and electrified railway distribution yards, electrical reliability depends on a secure, uninterruptible power source that is completely independent of the alternating current (AC) grid. When severe lightning strikes, short-circuits, or transformer explosions collapse incoming utility AC power, the substation protective system must remain fully operational.</p>
+<p>The <strong>GZDW microcomputer-controlled DC power supply panel</strong> (also known as a <em>substation DC power system</em>, <em>DC auxiliary panel</em>, or <em>utility battery charger cabinet</em>) provides this indispensable lifeline. By converting station AC service into a steady, ripple-free 110V DC or 220V DC distribution bus while managing an integrated stationary battery bank, the DC panel powers the most critical equipment in the power system: protective relays, breaker trip coils, spring-charging motors, SCADA telemetry, and emergency evacuation lighting.</p>
+
+<h2>High-Frequency Switch-Mode Rectification vs. Legacy SCR Chargers</h2>
+<p>Substation DC architecture has evolved from massive, line-frequency silicon-controlled rectifier (SCR) chargers to high-efficiency modular switch-mode power supplies:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Engineering Feature</th>
+      <th>Legacy SCR / Thyristor Rectifier Cabinets</th>
+      <th>Modern GZDW High-Frequency Modular Rectifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Redundancy & Reliability</strong></td>
+      <td>Single bulky charger; total system failure if SCR control board faults.</td>
+      <td><strong>N+1 hot-swappable modular redundancy;</strong> automatic active load sharing.</td>
+    </tr>
+    <tr>
+      <td><strong>Power Conversion Efficiency</strong></td>
+      <td>75%–85% efficiency; generates heavy heat dissipation inside control room.</td>
+      <td><strong>&ge; 94% efficiency;</strong> low standby power consumption and reduced HVAC load.</td>
+    </tr>
+    <tr>
+      <td><strong>DC Output Voltage Ripple</strong></td>
+      <td>High voltage ripple (&gt; 1% RMS); requires massive electrolytic filter banks.</td>
+      <td>Ultra-low ripple (&le; 0.1% peak-to-peak); preserves sensitive digital relay chips.</td>
+    </tr>
+    <tr>
+      <td><strong>Mean Time to Repair (MTTR)</strong></td>
+      <td>Hours or days requiring skilled technician component replacement.</td>
+      <td><strong>Under 60 seconds;</strong> slide out faulty module and insert spare unit live.</td>
+    </tr>
+    <tr>
+      <td><strong>Cabinet Footprint & Weight</strong></td>
+      <td>Heavy line-frequency transformers (cabinet weight &gt; 600 kg).</td>
+      <td>Compact, high power density (cabinet weight reduced by over 50%).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Three-Stage Battery Management & Online Insulation Monitoring</h2>
+<p>A premier GZDW DC power panel incorporates sophisticated automated battery maintenance and electrical safety supervision:</p>
+<ul>
+  <li><strong>Intelligent Three-Stage Battery Charging:</strong> Controlled by a 32-bit central microprocessor, the system automatically alternates between <em>Constant Current Boost Charging</em> (rapidly recharging depleted battery banks following an AC outage), <em>Constant Voltage Equalize Charging</em> (balancing individual cell voltages to eliminate sulfate stratification), and <em>Precision Temperature-Compensated Float Charging</em> (maintaining battery readiness while preventing thermal runaway and electrolyte dry-out).</li>
+  <li><strong>Floating DC Bus Architecture & Ground Fault Detection:</strong> The DC distribution bus operates completely ungrounded (floating). An integrated microcomputer insulation monitoring unit continuously measures the resistance between the positive bus to earth and the negative bus to earth ($R_+, R_-$). Utilizing high-frequency current sensor CT clamps around outgoing DC breaker feeders, the system detects micro-ampere leakage currents, identifying the exact branch circuit with compromised insulation without taking down the operating control bus.</li>
+  <li><strong>Network Communication Protocols:</strong> The central touchscreen controller communicates with substation SCADA and automation gateways via dual isolated RS485 serial ports and Ethernet interfaces supporting standard Modbus RTU, DNP3, and IEC 61850 substation automation protocols, providing remote dispatchers with real-time battery status, alarms, and historical trip logs.</li>
+</ul>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is the role of a DC power supply panel (GZDW system) in an electrical utility substation?</h3><p>In an electrical transmission or distribution substation, the most critical moment occurs during a complete grid blackout (loss of AC station power). During a blackout, protective relays, SCADA automation controllers, high-voltage circuit breaker trip coils, motor operating mechanisms, and emergency lighting MUST continue operating without a single microsecond of interruption. The GZDW DC power panel rectifies incoming AC power to maintain a continuous, ripple-free 110V or 220V DC bus while floating a backup battery bank. If AC power fails completely, the battery bank instantly powers the DC bus with zero transfer time, ensuring circuit breakers can trip and clear faults under all blackout scenarios.</p><h3>How does N+1 redundancy in modular high-frequency switch-mode rectifiers prevent substation failure?</h3><p>Older legacy substation DC systems used bulky, single-phase thyristor (SCR) rectifiers. If the single SCR charger failed, the entire substation was left running on battery reserve until technicians arrived. Modern YOMIN GZDW panels utilize modular high-frequency switch-mode rectifiers operating in parallel with N+1 redundancy. If a substation requires 40A of DC charging current, the panel is configured with three 20A modules (N=2, plus 1 redundant unit). If any individual module suffers an internal component fault, the remaining modules automatically share the load without voltage dip, and the faulty module can be hot-swapped in seconds without shutting down the bus.</p><h3>Why is online DC insulation monitoring mandatory on substation DC auxiliary power systems?</h3><p>Substation DC distribution systems operate as floating (ungrounded) networks to ensure that a single accidental ground fault (e.g. moisture inside an outdoor circuit breaker control box) does not trip control power. However, if a second ground fault occurs on the opposite polarity, it creates a dead short circuit that can cause false tripping of high-voltage transmission lines or prevent protective relays from operating during a real fault. An online DC insulation monitoring system continuously injects a low-frequency detection signal across the DC bus, calculating positive-to-ground and negative-to-ground insulation resistance in real time and identifying the exact faulted feeder branch before a catastrophic double-ground occurs.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Designing substation auxiliary power systems, power plant DC switchboards, or industrial microgrid control power cabinets?</h2>
+    <p>Send us your nominal DC busbar voltage (110V or 220V DC), battery bank capacity, and autonomous backup runtime requirements. YOMIN manufactures microcomputer-controlled GZDW DC power panels with N+1 hot-swappable rectifiers and intelligent battery management.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/emergency-lighting">Browse the emergency lighting range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
