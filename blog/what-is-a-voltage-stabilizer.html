@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Is a Voltage Stabilizer? Working Principle, Types and Sizing | Yomin Electric</title>
+<meta name="description" content="What is an automatic voltage stabilizer (AVR)? How voltage stabilizers work: servo-motor vs relay-type vs static architectures, buck-boost transformer operation, and sizing for home and industrial loads.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/what-is-a-voltage-stabilizer/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/what-is-a-voltage-stabilizer">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "What Is a Voltage Stabilizer? Working Principle, Types and Sizing",
+      "description": "What is an automatic voltage stabilizer (AVR)? How voltage stabilizers work: servo-motor vs relay-type vs static architectures, buck-boost transformer operation, and sizing for home and industrial loads.",
+      "image": "https://www.yominelectric.com/assets/images/blog/what-is-a-voltage-stabilizer/hero.png",
+      "datePublished": "2026-09-24",
+      "dateModified": "2026-09-24",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/what-is-a-voltage-stabilizer"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a voltage stabilizer and why is it needed in electrical systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A voltage stabilizer (also termed an Automatic Voltage Regulator or AVR) is an electrical device designed to deliver a constant, stable voltage to equipment despite significant voltage fluctuations in the incoming power grid. Electric utility grids suffer from chronic voltage swings: high-demand hours cause severe voltage drops (brownouts down to 140V or 95V), while sudden grid switching or lightning cause voltage surges above 270V. Low voltage overheats motor windings in air conditioners and refrigerators due to excessive current draw ($I = P / V$), while high voltage causes catastrophic dielectric breakdown of sensitive computer, medical, and CNC machinery electronics. A voltage stabilizer continuously monitors and corrects line voltage, protecting equipment from premature failure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a servo-motor voltage stabilizer work compared to a relay-type stabilizer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A servo-motor voltage stabilizer utilizes a microcomputer control circuit that drives a high-precision motorized carbon brush across the polished winding track of a copper toroidal autotransformer, coupled to a buck-boost transformer. When line voltage varies, the servo motor rotates the brush clockwise or counterclockwise, continuously adjusting the winding turns ratio to maintain an exact output voltage with ±1% to ±3% precision and zero waveform distortion. A relay-type stabilizer utilizes microcomputer-switched electromagnetic relays to jump between fixed transformer coil taps. Relay units switch ultra-fast (under 10 milliseconds) and are cost-effective for home appliances, but regulate in discrete steps (±8% precision), whereas servo stabilizers deliver smooth, stepless regulation for sensitive loads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you correctly size a voltage stabilizer for an inductive motor load like an air conditioner or pump?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inductive motor loads—such as air conditioners, water pumps, refrigerators, and industrial compressors—draw locked-rotor inrush starting currents that are 3 to 5 times higher than their rated continuous running wattage. For example, a 1.5-ton split air conditioner consuming 1,800 Watts running power requires minimum a 3kVA or 5kVA stabilizer to accommodate the initial compressor starting surge without tripping the stabilizer or welding its relay contacts. For three-phase industrial machinery (e.g. 30kW motor), engineers apply a 1.5x to 2x sizing multiplier, specifying a 60kVA or 75kVA stabilizer to ensure reliable operation under heavy starting conditions."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Voltage Stabilizer / Regulator</span></div>
+    <span class="bh-tag">Voltage Stabilizer / Regulator / What Is Guides</span>
+    <h1 class="bh-title">What Is a Voltage Stabilizer? Working Principle, Types and Sizing</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 24, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/what-is-a-voltage-stabilizer/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/what-is-a-voltage-stabilizer/hero.png" alt="Industrial automatic AC voltage stabilizer operating on a factory floor with digital meters displaying stable 230V/400V output" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>Understanding Voltage Instability: Brownouts, Surges, and Sags</h2>
+<p>In modern electrical power grids—especially across expanding industrial regions in Africa, South Asia, Latin America, and the Middle East—utility transmission and distribution infrastructure struggles to match surging commercial demand. As heavy factories, water pumping stations, and urban air conditioning loads switch on simultaneously, line voltages experience severe volatility:</p>
+<ul>
+  <li><strong>Brownouts (Deep Voltage Sags):</strong> Nominal 220V residential supplies frequently plunge to 160V, 140V, or even 95V. For electric motors (such as those in refrigerators, chillers, and CNC spindle drives), running on under-voltage forces the motor to draw massive excess current ($I = P / V$) to maintain shaft power, causing stator windings to overheat rapidly and burn out.</li>
+  <li><strong>Voltage Surges (Over-Voltage Spikes):</strong> When heavy industrial loads disconnect abruptly or during night-time low-demand periods, grid voltages spike above 260V to 280V. Over-voltage exceeds the dielectric insulation rating of electronic power supplies, puncturing capacitors, blowing semiconductors, and destroying sensitive digital logic boards.</li>
+  <li><strong>Harmonic & Load Distortion:</strong> Grid instability accelerates equipment wear, increases electricity billing losses ($I^2R$), and causes frequent production halts in automated manufacturing plants.</li>
+</ul>
+
+<h2>The Engineering Working Principle of an Automatic Voltage Stabilizer</h2>
+<p>An <strong>Automatic Voltage Stabilizer (AVR)</strong> acts as an intelligent bidirectional voltage regulator positioned between the incoming utility power feed and the connected load. Its fundamental operational mechanism relies on the <strong>buck-boost transformer principle</strong>:</p>
+<ol>
+  <li><strong>Continuous Voltage Sensing:</strong> A high-speed microcontroller (MCU) samples the incoming line voltage hundreds of times per second, comparing the real-time RMS value against the preset target voltage (e.g. 220V single-phase or 400V three-phase).</li>
+  <li><strong>Boost Operation (Under-Voltage Correction):</strong> If the utility voltage drops below nominal (e.g. to 160V), the control circuit directs the stabilizer to add an in-phase induced secondary voltage ($+60	ext{V}$) into the circuit via an autotransformer, boosting the delivered line voltage back to a stable 220V.</li>
+  <li><strong>Buck Operation (Over-Voltage Correction):</strong> If the utility voltage rises above nominal (e.g. to 260V), the control circuit reverses the transformer polarity to subtract an out-of-phase voltage ($-40	ext{V}$), stepping the output back down to 220V.</li>
+</ol>
+
+<h2>Comparison of the Three Primary Voltage Stabilizer Technologies</h2>
+<p>Selecting the optimal voltage stabilizer depends on the sensitivity of the connected equipment, the required regulation speed, and the installation environment:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Engineering Feature</th>
+      <th>Relay-Type Voltage Stabilizer</th>
+      <th>Servo-Motor Voltage Stabilizer</th>
+      <th>Static (SCR / Solid-State) Stabilizer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Regulation Mechanism</strong></td>
+      <td>Microprocessor switches high-speed electromagnetic relays across fixed transformer taps.</td>
+      <td>Servo motor drives carbon brush smoothly across a circular toroidal copper autotransformer.</td>
+      <td>High-power silicon controlled rectifiers (SCR / Triacs) modulate tap voltage electronically.</td>
+    </tr>
+    <tr>
+      <td><strong>Voltage Output Precision</strong></td>
+      <td>&plusmn;6% to &plusmn;8% (stepped voltage adjustment).</td>
+      <td><strong>&plusmn;1% to &plusmn;3%</strong> (smooth, continuous, stepless regulation).</td>
+      <td>&plusmn;1% (precision high-frequency electronic switching).</td>
+    </tr>
+    <tr>
+      <td><strong>Correction Speed</strong></td>
+      <td><strong>Fast (&lt; 10 milliseconds)</strong> per step; excellent for rapid brownout dips.</td>
+      <td>Moderate ($20	ext{V}$–$40	ext{V}$ per second); follows steady voltage trends.</td>
+      <td><strong>Ultra-Fast (&lt; 20 milliseconds)</strong>; instantaneous solid-state response.</td>
+    </tr>
+    <tr>
+      <td><strong>Waveform Distortion</strong></td>
+      <td>Zero waveform distortion (clean sinusoidal AC).</td>
+      <td><strong>Zero waveform distortion;</strong> pure sinusoidal wave.</td>
+      <td>Minimal harmonic injection; requires internal filtering.</td>
+    </tr>
+    <tr>
+      <td><strong>Typical Best Applications</strong></td>
+      <td>Home appliances, domestic refrigerators, air conditioners, television setups.</td>
+      <td>Industrial CNC machines, medical imaging scanners, printing presses, commercial buildings.</td>
+      <td>Mission-critical data centers, telecommunication base stations, aerospace labs.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is a voltage stabilizer and why is it needed in electrical systems?</h3><p>A voltage stabilizer (also termed an Automatic Voltage Regulator or AVR) is an electrical device designed to deliver a constant, stable voltage to equipment despite significant voltage fluctuations in the incoming power grid. Electric utility grids suffer from chronic voltage swings: high-demand hours cause severe voltage drops (brownouts down to 140V or 95V), while sudden grid switching or lightning cause voltage surges above 270V. Low voltage overheats motor windings in air conditioners and refrigerators due to excessive current draw ($I = P / V$), while high voltage causes catastrophic dielectric breakdown of sensitive computer, medical, and CNC machinery electronics. A voltage stabilizer continuously monitors and corrects line voltage, protecting equipment from premature failure.</p><h3>How does a servo-motor voltage stabilizer work compared to a relay-type stabilizer?</h3><p>A servo-motor voltage stabilizer utilizes a microcomputer control circuit that drives a high-precision motorized carbon brush across the polished winding track of a copper toroidal autotransformer, coupled to a buck-boost transformer. When line voltage varies, the servo motor rotates the brush clockwise or counterclockwise, continuously adjusting the winding turns ratio to maintain an exact output voltage with ±1% to ±3% precision and zero waveform distortion. A relay-type stabilizer utilizes microcomputer-switched electromagnetic relays to jump between fixed transformer coil taps. Relay units switch ultra-fast (under 10 milliseconds) and are cost-effective for home appliances, but regulate in discrete steps (±8% precision), whereas servo stabilizers deliver smooth, stepless regulation for sensitive loads.</p><h3>How do you correctly size a voltage stabilizer for an inductive motor load like an air conditioner or pump?</h3><p>Inductive motor loads—such as air conditioners, water pumps, refrigerators, and industrial compressors—draw locked-rotor inrush starting currents that are 3 to 5 times higher than their rated continuous running wattage. For example, a 1.5-ton split air conditioner consuming 1,800 Watts running power requires minimum a 3kVA or 5kVA stabilizer to accommodate the initial compressor starting surge without tripping the stabilizer or welding its relay contacts. For three-phase industrial machinery (e.g. 30kW motor), engineers apply a 1.5x to 2x sizing multiplier, specifying a 60kVA or 75kVA stabilizer to ensure reliable operation under heavy starting conditions.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Looking to source single-phase or three-phase automatic voltage stabilizers (AVRs) for home appliances, commercial facilities, or industrial manufacturing plants?</h2>
+    <p>Tell us your grid voltage fluctuation range, equipment power rating in kVA, and single or three-phase configuration. YOMIN manufactures 500VA to 500kVA servo and relay stabilizers engineered to international standards.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/voltage-stabilizer-regulator">Browse the voltage stabilizer range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
