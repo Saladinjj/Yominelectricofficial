@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIN Rail Electrical Sub-Metering: What Is a Single Phase Energy Meter? | Yomin Electric</title>
+<meta name="description" content="Commercial and residential sub-metering in modern building infrastructure: What is a single-phase energy meter? How digital DIN rail kWh meters measure active power, log consumption, and communicate via RS485 Modbus RTU.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/din-rail-sub-metering-what-is-a-single-phase-energy-meter/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/din-rail-sub-metering-what-is-a-single-phase-energy-meter">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "DIN Rail Electrical Sub-Metering: What Is a Single Phase Energy Meter?",
+      "description": "Commercial and residential sub-metering in modern building infrastructure: What is a single-phase energy meter? How digital DIN rail kWh meters measure active power, log consumption, and communicate via RS485 Modbus RTU.",
+      "image": "https://www.yominelectric.com/assets/images/blog/din-rail-sub-metering-what-is-a-single-phase-energy-meter/hero.png",
+      "datePublished": "2026-09-25",
+      "dateModified": "2026-09-25",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/din-rail-sub-metering-what-is-a-single-phase-energy-meter"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a single-phase energy meter and where is it used in electrical installations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A single-phase energy meter is an electronic instrument designed to measure total active electrical energy consumption (measured in kilowatt-hours, kWh) in single-phase alternating current circuits. In modern commercial buildings, residential high-rises, shopping centers, and telecommunication shelters, single-phase meters are installed on modular DIN rails to sub-meter individual rental units, data server racks, electric vehicle chargers, and branch lighting circuits for precise billing and tenant allocation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does an electronic digital energy meter calculate kilowatt-hours compared to old induction disc meters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Traditional electromechanical meters relied on an aluminum rotor disc turned by the eddy currents of magnetic coils, which suffered from mechanical friction wear, calibration drift, and vulnerability to external magnetic tampering. Modern digital electronic meters utilize high-precision micro-shunt resistors or internal current transformers paired with a specialized Application-Specific Integrated Circuit (ASIC). The ASIC samples instantaneous voltage and current waveforms at thousands of hertz, computes true instantaneous power (P = V &times; I &times; cos &phi;), integrates power over time, and stores digitized energy data into non-volatile EEPROM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is RS485 Modbus RTU communication essential in modern sub-metering systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Manual meter reading across hundreds of tenant distribution boards is labor-intensive, error-prone, and provides no real-time load visibility. Single-phase DIN rail meters equipped with an RS485 serial communication port allow up to 32 meters to be daisy-chained along a single twisted-pair cable. Connected to an IoT data gateway or building management system (BMS), the meters automatically report live voltage, current, active power, power factor, and cumulative kWh every few seconds, enabling automated tenant billing and peak-demand management."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Energy Meter</span></div>
+    <span class="bh-tag">Energy Meter / Single-Phase Sub-Metering</span>
+    <h1 class="bh-title">DIN Rail Electrical Sub-Metering: What Is a Single Phase Energy Meter?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 25, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/din-rail-sub-metering-what-is-a-single-phase-energy-meter/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/din-rail-sub-metering-what-is-a-single-phase-energy-meter/hero.png" alt="Modular single-phase digital DIN rail kWh energy meter installed in a commercial distribution sub-panel with illuminated LCD display" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Rise of Electrical Sub-Metering in Modern Infrastructure</h2>
+<p>Across commercial real estate, multi-tenant residential complexes, and light industrial facilities, electrical power costs represent one of the largest operational expenditures. Historically, utilities provided a single bulk master meter at the building service entrance, forcing facility managers to divide electricity bills arbitrarily by square footage. This practice penalized energy-conscious tenants and concealed equipment inefficiencies.</p>
+<p>Modern electrical distribution designs mandate <strong>tenant sub-metering</strong>. Compact modular <strong>single-phase DIN-rail energy meters</strong> install directly inside branch circuit breaker panels, occupying minimal space alongside standard miniature circuit breakers (MCBs) while providing revenue-grade consumption records.</p>
+
+<h2>Internal Architecture of an Electronic Single-Phase Meter</h2>
+<p>Modern digital kWh meters achieve high reliability through solid-state microelectronics:</p>
+<ul>
+  <li><strong>Precision Analog Front End (AFE):</strong> High-accuracy manganin shunt resistors measure current flow with negligible thermal coefficient drift, while precision resistive divider networks step down the 230V line voltage.</li>
+  <li><strong>Digital Signal Processing (DSP) Core:</strong> High-speed 16-bit or 24-bit analog-to-digital converters (ADCs) continuously sample line voltage and current. The integrated DSP calculates root-mean-square (RMS) voltage, RMS current, instantaneous active power ($P$), reactive power ($Q$), and line frequency ($Hz$).</li>
+  <li><strong>Time-Integration & Pulse Output:</strong> Power calculations are integrated with respect to time to calculate cumulative energy consumption. The meter pulses an optical calibration LED (e.g. 1600 impulses per kWh) and updates the digital LCD display.</li>
+</ul>
+
+<h2>Single-Phase Meter Direct Connection vs. CT Connection</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Direct Connection (Direct Insert)</th>
+      <th>CT Operated Connection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Current Rating</strong></td>
+      <td>Standard 5(60)A or 10(100)A continuous load.</td>
+      <td>1.5(6)A secondary rating paired with external CTs.</td>
+    </tr>
+    <tr>
+      <td><strong>Wiring Mechanism</strong></td>
+      <td>Phase and neutral line cables pass directly through internal heavy screw clamps.</td>
+      <td>Main power cables stay outside; only thin 2.5mm&sup2; measuring leads connect to meter terminals.</td>
+    </tr>
+    <tr>
+      <td><strong>Installation Complexity</strong></td>
+      <td>Simple, plug-and-play wiring directly on DIN rail.</td>
+      <td>Requires mounting external current transformers and configuring CT turns ratios.</td>
+    </tr>
+    <tr>
+      <td><strong>Target Application</strong></td>
+      <td>Individual apartments, offices, server racks, EV charging stations.</td>
+      <td>Main feeder lines, heavy single-phase air conditioning chillers exceeding 100A.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is a single-phase energy meter and where is it used in electrical installations?</h3><p>A single-phase energy meter is an electronic instrument designed to measure total active electrical energy consumption (measured in kilowatt-hours, kWh) in single-phase alternating current circuits. In modern commercial buildings, residential high-rises, shopping centers, and telecommunication shelters, single-phase meters are installed on modular DIN rails to sub-meter individual rental units, data server racks, electric vehicle chargers, and branch lighting circuits for precise billing and tenant allocation.</p><h3>How does an electronic digital energy meter calculate kilowatt-hours compared to old induction disc meters?</h3><p>Traditional electromechanical meters relied on an aluminum rotor disc turned by the eddy currents of magnetic coils, which suffered from mechanical friction wear, calibration drift, and vulnerability to external magnetic tampering. Modern digital electronic meters utilize high-precision micro-shunt resistors or internal current transformers paired with a specialized Application-Specific Integrated Circuit (ASIC). The ASIC samples instantaneous voltage and current waveforms at thousands of hertz, computes true instantaneous power (P = V &amp;times; I &amp;times; cos &amp;phi;), integrates power over time, and stores digitized energy data into non-volatile EEPROM.</p><h3>Why is RS485 Modbus RTU communication essential in modern sub-metering systems?</h3><p>Manual meter reading across hundreds of tenant distribution boards is labor-intensive, error-prone, and provides no real-time load visibility. Single-phase DIN rail meters equipped with an RS485 serial communication port allow up to 32 meters to be daisy-chained along a single twisted-pair cable. Connected to an IoT data gateway or building management system (BMS), the meters automatically report live voltage, current, active power, power factor, and cumulative kWh every few seconds, enabling automated tenant billing and peak-demand management.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Looking to deploy compact 1-module or 2-module single-phase DIN rail energy meters with RS485 Modbus for building sub-metering, solar arrays, or smart automation panels?</h2>
+    <p>Specify your current capacity (e.g. 5(60)A or 10(100)A), communication protocol requirements, and pulse output options. YOMIN supplies certified Class 1.0 digital meters engineered to IEC 62053 standards.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/energy-meter">Browse the energy meter range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
