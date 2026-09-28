@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Earth Fault &amp; Leakage Protection: What Is a Core Balance Current Transformer? | Yomin Electric</title>
+<meta name="description" content="Industrial earth fault protection and zero-sequence current detection: What is a core balance current transformer (CBCT)? How toroidal ring CTs sum phase vectors (IL1 + IL2 + IL3 + IN), detect residual ground leakage under 30mA or 1A, and trip sensitive earth fault relays.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/earth-fault-protection-what-is-a-core-balance-current-transformer/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/earth-fault-protection-what-is-a-core-balance-current-transformer">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Earth Fault & Leakage Protection: What Is a Core Balance Current Transformer?",
+      "description": "Industrial earth fault protection and zero-sequence current detection: What is a core balance current transformer (CBCT)? How toroidal ring CTs sum phase vectors (IL1 + IL2 + IL3 + IN), detect residual ground leakage under 30mA or 1A, and trip sensitive earth fault relays.",
+      "image": "https://www.yominelectric.com/assets/images/blog/earth-fault-protection-what-is-a-core-balance-current-transformer/hero.png",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/earth-fault-protection-what-is-a-core-balance-current-transformer"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a Core Balance Current Transformer (CBCT) and how does it detect earth faults?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Core Balance Current Transformer (CBCT), also widely termed a Zero-Sequence Current Transformer (ZSCT), is a specialized ring-type current transformer designed to detect electrical leakage currents flowing to earth. Unlike conventional measuring CTs where each phase conductor passes through its own separate transformer, a CBCT encloses all three phase conductors (L1, L2, L3) and the neutral conductor (N) together within a single magnetic core aperture. Under healthy operating conditions, the instantaneous vector sum of all currents equals zero (IL1 + IL2 + IL3 + IN = 0), producing zero net magnetic flux in the core. When an insulation breakdown causes current to leak to ground, the vector balance is broken; the resulting net zero-sequence flux induces a secondary current that instantly triggers an Earth Leakage Relay (ELR)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why must the metallic cable armor grounding braid be looped back through the CBCT window?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A critical installation mistake made by panel builders involves improper grounding of the cable metallic sheath or armor. When a three-phase armored cable passes through the CBCT window, any earth fault current traveling down the cable armor will also pass through the CT. If the earth braid is grounded directly to the panel frame above the CBCT, the fault current flows out through the ground lead, canceling out the core magnetic flux and preventing the relay from tripping. To ensure correct operation, the copper grounding braid must be brought back DOWN through the CBCT aperture before connecting to the station earth bar, allowing the fault current to return correctly and trip the breaker."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a conventional phase CT and a Core Balance Current Transformer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A conventional phase CT is engineered to measure full symmetrical load currents (e.g. 200A, 500A, or 2000A) down to a standardized 5A or 1A secondary for ammeters and overcurrent relays. It operates on single conductors and must handle massive short-circuit currents without saturating. In contrast, a CBCT does not measure load current; its primary magnetic flux is normally zero regardless of whether the system carries 10A or 1000A. It is designed with an extremely sensitive, high-permeability nanocrystalline or CRGO core that responds to tiny residual leakage currents (from 30 milliamperes up to a few amperes), providing ultra-fast ground fault isolation before insulation failure triggers catastrophic phase-to-phase short circuits."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Current Transformer</span></div>
+    <span class="bh-tag">Current Transformers / Earth Fault Sensors</span>
+    <h1 class="bh-title">Earth Fault & Leakage Protection: What Is a Core Balance Current Transformer?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 28, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/earth-fault-protection-what-is-a-core-balance-current-transformer/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/earth-fault-protection-what-is-a-core-balance-current-transformer/hero.png" alt="Toroidal core balance current transformer actively installed inside an industrial electrical switchgear cable termination compartment" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>Eliminating Undetected Ground Faults in Industrial Power Distribution</h2>
+<p>In low-voltage and medium-voltage electrical installations, more than 80% of all insulation failures begin as low-magnitude ground leakages. A worn cable jacket, moisture ingress inside an outdoor terminal box, or motor winding insulation degradation allows small leakage currents (often less than 5 amperes) to flow to ground.</p>
+<p>Because these leakage currents are far below the trip threshold of standard 100A or 400A overcurrent circuit breakers, the fault remains undetected. The continuous localized electric arc burns insulation, carbonizes terminal blocks, and inevitably escalates into a catastrophic phase-to-phase arc flash explosion.</p>
+<p>The <strong>Core Balance Current Transformer (CBCT)</strong> provides the fundamental engineering solution for sensitive, instantaneous earth leakage protection, shielding equipment and personnel long before thermal circuit breakers can react.</p>
+
+<h2>Kirchhoff's Current Law and the Operating Physics of CBCTs</h2>
+<p>The operating principle of a zero-sequence current transformer is rooted directly in Kirchhoff's Current Law, which states that the algebraic sum of currents entering and leaving any electrical node must equal zero.</p>
+<p>In a balanced three-phase four-wire electrical circuit, the vector sum of line currents and the neutral return current is identically zero:</p>
+<p style="text-align:center;font-weight:bold;font-size:1.1em;padding:12px;background:var(--bg-alt);border-radius:8px">I<sub>L1</sub> + I<sub>L2</sub> + I<sub>L3</sub> + I<sub>N</sub> = 0</p>
+<p>Because each current conductor generates a circular magnetic field proportional to its instantaneous current and direction, passing all three phase conductors (and neutral) symmetrically through a single closed circular magnetic core causes their opposing magnetic fields to cancel each other completely. Under normal conditions, the net magnetic flux (&Phi;) inside the CBCT core is zero, and zero voltage is induced across the secondary terminals.</p>
+<p>The instant an insulation breakdown occurs downstream—for instance, an electrical motor phase wire chafes against its grounded metallic casing—a portion of the current (I<sub>earth</sub>) returns to the supply transformer via the earth grounding path rather than the neutral wire. The vector balance is immediately broken:</p>
+<p style="text-align:center;font-weight:bold;font-size:1.1em;padding:12px;background:var(--bg-alt);border-radius:8px">I<sub>L1</sub> + I<sub>L2</sub> + I<sub>L3</sub> + I<sub>N</sub> = I<sub>residual</sub> &ne; 0</p>
+<p>This unbalanced residual current generates an alternating net magnetic flux in the toroidal core. The flux cuts the tightly wound secondary copper turns, inducing a proportional secondary current that instantly energizes an Earth Leakage Relay (ELR) or ground fault circuit breaker trip coil, disconnecting the faulty feeder in milliseconds.</p>
+
+<h2>CBCT Selection Guide: Aperture Sizing vs. Cable Diameter</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Internal Aperture Diameter</th>
+      <th>Maximum Three-Phase Cable Size</th>
+      <th>Typical Primary Current Range</th>
+      <th>Primary Industrial Application</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>&empty; 45 mm</strong></td>
+      <td>4-core cable up to 35 mm&sup2;</td>
+      <td>Up to 100 Amperes</td>
+      <td>Motor branch circuits, sub-distribution boards, elevator feeds.</td>
+    </tr>
+    <tr>
+      <td><strong>&empty; 75 mm</strong></td>
+      <td>4-core cable up to 95 mm&sup2;</td>
+      <td>100A to 250 Amperes</td>
+      <td>Factory machine tools, HVAC chillers, commercial building risers.</td>
+    </tr>
+    <tr>
+      <td><strong>&empty; 100 mm</strong></td>
+      <td>4-core cable up to 185 mm&sup2;</td>
+      <td>250A to 400 Amperes</td>
+      <td>Main switchboard sub-feeders, industrial pump stations, solar inverters.</td>
+    </tr>
+    <tr>
+      <td><strong>&empty; 150 mm</strong></td>
+      <td>4-core cable up to 300 mm&sup2; (or parallel runs)</td>
+      <td>400A to 800 Amperes</td>
+      <td>Heavy industrial transformer secondaries, mining distribution panels.</td>
+    </tr>
+    <tr>
+      <td><strong>&empty; 200 mm</strong></td>
+      <td>Multiple parallel high-current cables</td>
+      <td>800A to 1600+ Amperes</td>
+      <td>Substation main incomers, large generator output cables.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is a Core Balance Current Transformer (CBCT) and how does it detect earth faults?</h3><p>A Core Balance Current Transformer (CBCT), also widely termed a Zero-Sequence Current Transformer (ZSCT), is a specialized ring-type current transformer designed to detect electrical leakage currents flowing to earth. Unlike conventional measuring CTs where each phase conductor passes through its own separate transformer, a CBCT encloses all three phase conductors (L1, L2, L3) and the neutral conductor (N) together within a single magnetic core aperture. Under healthy operating conditions, the instantaneous vector sum of all currents equals zero (IL1 + IL2 + IL3 + IN = 0), producing zero net magnetic flux in the core. When an insulation breakdown causes current to leak to ground, the vector balance is broken; the resulting net zero-sequence flux induces a secondary current that instantly triggers an Earth Leakage Relay (ELR).</p><h3>Why must the metallic cable armor grounding braid be looped back through the CBCT window?</h3><p>A critical installation mistake made by panel builders involves improper grounding of the cable metallic sheath or armor. When a three-phase armored cable passes through the CBCT window, any earth fault current traveling down the cable armor will also pass through the CT. If the earth braid is grounded directly to the panel frame above the CBCT, the fault current flows out through the ground lead, canceling out the core magnetic flux and preventing the relay from tripping. To ensure correct operation, the copper grounding braid must be brought back DOWN through the CBCT aperture before connecting to the station earth bar, allowing the fault current to return correctly and trip the breaker.</p><h3>What is the difference between a conventional phase CT and a Core Balance Current Transformer?</h3><p>A conventional phase CT is engineered to measure full symmetrical load currents (e.g. 200A, 500A, or 2000A) down to a standardized 5A or 1A secondary for ammeters and overcurrent relays. It operates on single conductors and must handle massive short-circuit currents without saturating. In contrast, a CBCT does not measure load current; its primary magnetic flux is normally zero regardless of whether the system carries 10A or 1000A. It is designed with an extremely sensitive, high-permeability nanocrystalline or CRGO core that responds to tiny residual leakage currents (from 30 milliamperes up to a few amperes), providing ultra-fast ground fault isolation before insulation failure triggers catastrophic phase-to-phase short circuits.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Designing industrial low-voltage switchboards, motor control centers (MCC), or mining distribution panels requiring sensitive zero-sequence earth fault protection?</h2>
+    <p>Specify your required window aperture diameter (45mm to 200mm), primary cable size, secondary output ratio (100/1A, 50/1A, or sensor output), and relay sensitivity requirements. YOMIN manufactures high-permeability core balance current transformers tested strictly to IEC 61869 standards.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/current-transformer">Browse the current transformer range</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
