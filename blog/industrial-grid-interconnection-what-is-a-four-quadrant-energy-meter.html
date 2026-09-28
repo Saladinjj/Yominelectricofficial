@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Industrial Grid Interconnection &amp; Reactive Power: What Is a Four-Quadrant Energy Meter? | Yomin Electric</title>
+<meta name="description" content="Commercial solar grid interconnection and industrial reactive power billing: What is a four-quadrant energy meter? How multi-vector electronic smart meters measure active energy import/export (+P / -P), inductive/capacitive reactive energy (+Q / -Q), and power factor to eliminate utility penalties.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/industrial-grid-interconnection-what-is-a-four-quadrant-energy-meter/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/industrial-grid-interconnection-what-is-a-four-quadrant-energy-meter">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/industrial-grid-interconnection-what-is-a-four-quadrant-energy-meter">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/industrial-grid-interconnection-what-is-a-four-quadrant-energy-meter-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/industrial-grid-interconnection-what-is-a-four-quadrant-energy-meter-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/industrial-grid-interconnection-what-is-a-four-quadrant-energy-meter-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/industrial-grid-interconnection-what-is-a-four-quadrant-energy-meter">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Industrial Grid Interconnection & Reactive Power: What Is a Four-Quadrant Energy Meter?",
+      "description": "Commercial solar grid interconnection and industrial reactive power billing: What is a four-quadrant energy meter? How multi-vector electronic smart meters measure active energy import/export (+P / -P), inductive/capacitive reactive energy (+Q / -Q), and power factor to eliminate utility penalties.",
+      "image": "https://www.yominelectric.com/assets/images/blog/industrial-grid-interconnection-what-is-a-four-quadrant-energy-meter/hero.png",
+      "datePublished": "2026-09-28",
+      "dateModified": "2026-09-28",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/industrial-grid-interconnection-what-is-a-four-quadrant-energy-meter"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a four-quadrant energy meter and how does it differ from a standard bi-directional meter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard bi-directional net-meter only measures active power flow in two directions: energy imported from the utility grid (+kWh) and energy exported back to the grid from rooftop solar panels (-kWh). However, industrial manufacturing plants and commercial buildings also draw massive inductive loads from electric motors, transformers, and compressors, creating reactive power (kvarh). A **Four-Quadrant Energy Meter** measures both active power (P) and reactive power (Q) simultaneously across all four operating quadrants of the complex power plane: Quadrant I (+P, +Q: Import Active, Inductive Lagging), Quadrant II (-P, +Q: Export Active, Inductive Leading), Quadrant III (-P, -Q: Export Active, Capacitive Lagging), and Quadrant IV (+P, -Q: Import Active, Capacitive Leading). This comprehensive 4-vector monitoring enables electric utilities to bill accurately for power factor degradation and grid stability impacts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do electric utilities mandate four-quadrant metering for commercial solar and industrial grid interconnections?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When industrial factories install multi-megawatt rooftop solar photovoltaic systems or grid-tied battery storage, they transform from passive consumers into active grid participants (prosumers). While the solar inverter feeds active kilowatt-hours into the grid during peak sunshine, the factory's heavy conveyor motors and chillers continue demanding magnetizing reactive power (kvar) from the utility lines. Without a four-quadrant meter, standard metering cannot distinguish whether reactive energy is being absorbed by the plant or injected by over-excited inverters. Utilities mandate 4-quadrant DLMS/COSEM meters to enforce grid codes (such as IEEE 1547 and EN 50549), monitor power factor in real time, and levy statutory low-power-factor surcharges whenever power factor drops below 0.90 or 0.95."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does four-quadrant metering help industrial facility managers eliminate power factor penalty charges?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Electric utility bills for commercial and industrial consumers include punitive maximum demand charges and low-power-factor penalties based on reactive energy consumption. A four-quadrant meter provides detailed 15-minute load profiles breaking down inductive versus capacitive kvarh across peak, shoulder, and off-peak tariff periods. Plant energy managers use this granular quadrant telemetry to properly size and tune automatic power factor correction (APFC) capacitor banks, prevent harmonic resonance, and program inverter power factor settings, completely eliminating utility surcharge penalties."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Energy Meters</span></div>
+    <span class="bh-tag">Energy Meters / Bi-Directional Grid Meters</span>
+    <h1 class="bh-title">Industrial Grid Interconnection & Reactive Power: What Is a Four-Quadrant Energy Meter?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 28, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/industrial-grid-interconnection-what-is-a-four-quadrant-energy-meter/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/industrial-grid-interconnection-what-is-a-four-quadrant-energy-meter/hero.png" alt="Three-phase four-quadrant bi-directional smart energy meter actively operating inside an industrial facility substation switchgear panel" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>Complex Power Dynamics in the Distributed Generation Era</h2>
+<p>The global transition toward distributed renewable generation has fundamentally transformed commercial and industrial power distribution. Manufacturing facilities, logistics parks, and commercial data centers are no longer simple unidirectional power consumers. With multi-megawatt rooftop solar PV arrays, cogeneration plants, and battery energy storage systems (BESS), modern facilities constantly import and export electricity simultaneously.</p>
+<p>However, power flow in alternating current (AC) networks involves both <strong>Active Power (Watts)</strong> that performs physical mechanical work and <strong>Reactive Power (VARs)</strong> required to sustain magnetic fields in industrial motors, transformers, and inverters.</p>
+<p>The <strong>Four-Quadrant Energy Meter</strong> is the foundational metrological instrument that provides complete 360-degree vector accounting of active and reactive energy across modern smart grid interconnections.</p>
+
+<h2>The Four Operating Quadrants Explained</h2>
+<p>In electrical power engineering, alternating current power flow is mapped onto a two-dimensional Cartesian coordinate system where the horizontal axis represents Active Power (P) and the vertical axis represents Reactive Power (Q):</p>
+<table>
+  <thead>
+    <tr>
+      <th>Quadrant</th>
+      <th>Power Vector</th>
+      <th>Operating Condition</th>
+      <th>Typical Industrial Equipment State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Quadrant I (Q1)</strong></td>
+      <td><strong>+P, +Q</strong></td>
+      <td><strong>Import Active, Inductive (Lagging)</strong></td>
+      <td>Standard factory consumption: importing grid electricity to drive induction motors, machine tools, and transformers.</td>
+    </tr>
+    <tr>
+      <td><strong>Quadrant II (Q2)</strong></td>
+      <td><strong>-P, +Q</strong></td>
+      <td><strong>Export Active, Inductive (Leading)</strong></td>
+      <td>Solar PV array or generator exporting active power to the grid while absorbing magnetizing reactive power.</td>
+    </tr>
+    <tr>
+      <td><strong>Quadrant III (Q3)</strong></td>
+      <td><strong>-P, -Q</strong></td>
+      <td><strong>Export Active, Capacitive (Lagging)</strong></td>
+      <td>Over-excited synchronous generator or smart solar inverter generating active electricity while injecting reactive VAR support into the grid.</td>
+    </tr>
+    <tr>
+      <td><strong>Quadrant IV (Q4)</strong></td>
+      <td><strong>+P, -Q</strong></td>
+      <td><strong>Import Active, Capacitive (Leading)</strong></td>
+      <td>Facility importing grid power with over-compensated power factor correction capacitor banks or lightly loaded underground cables.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Technical Specifications</h2>
+<table>
+  <thead>
+    <tr><th>Technical Specification Parameter</th><th>Engineering Value & Performance Rating</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Measurement Architecture</strong></td><td>Full 4-Quadrant true RMS vector measurement: Active Import (+P), Active Export (-P), Reactive Inductive (+Q), Reactive Capacitive (-Q)</td></tr>
+    <tr><td><strong>Rated Voltage & Current</strong></td><td>3&times;230/400V AC 3-phase 4-wire (or 3&times;100V 3-phase 3-wire); CT-operated 1.5(6)A / 5(10)A or direct-connect 5(100)A frame sizes</td></tr>
+    <tr><td><strong>Metrological Accuracy Class</strong></td><td>Active energy Class 0.5S or Class 0.2S (IEC 62053-22); Reactive energy Class 1.0 or Class 2.0 (IEC 62053-23)</td></tr>
+    <tr><td><strong>Harmonic & Power Quality Profiling</strong></td><td>Total Harmonic Distortion (THD) and individual harmonics up to the 31st order; voltage sag/swell and phase angle imbalance logging</td></tr>
+    <tr><td><strong>Multi-Tariff Time-of-Use (TOU)</strong></td><td>Up to 8 configurable tariff rates, 14 seasonal zones, and 8 daily billing profiles managed via battery-backed real-time clock</td></tr>
+    <tr><td><strong>Communication Interfaces</strong></td><td>Dual RS485 Modbus RTU ports, optical IEC 62056-21 port, and pluggable 4G/GPRS or Ethernet DLMS/COSEM smart grid module</td></tr>
+    <tr><td><strong>Data Logging & Load Profiling</strong></td><td>Non-volatile flash memory recording 15-minute load profiles for up to 180 days; tamper event recording with real-time timestamps</td></tr>
+    <tr><td><strong>Applicable International Standards</strong></td><td>IEC 62052-11, IEC 62053-22, IEC 62053-23, EN 50470-3 (MID Class C), DLMS/COSEM certified for utility AMI systems</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is a four-quadrant energy meter and how does it differ from a standard bi-directional meter?</h3><p>A standard bi-directional net-meter only measures active power flow in two directions: energy imported from the utility grid (+kWh) and energy exported back to the grid from rooftop solar panels (-kWh). However, industrial manufacturing plants and commercial buildings also draw massive inductive loads from electric motors, transformers, and compressors, creating reactive power (kvarh). A **Four-Quadrant Energy Meter** measures both active power (P) and reactive power (Q) simultaneously across all four operating quadrants of the complex power plane: Quadrant I (+P, +Q: Import Active, Inductive Lagging), Quadrant II (-P, +Q: Export Active, Inductive Leading), Quadrant III (-P, -Q: Export Active, Capacitive Lagging), and Quadrant IV (+P, -Q: Import Active, Capacitive Leading). This comprehensive 4-vector monitoring enables electric utilities to bill accurately for power factor degradation and grid stability impacts.</p><h3>Why do electric utilities mandate four-quadrant metering for commercial solar and industrial grid interconnections?</h3><p>When industrial factories install multi-megawatt rooftop solar photovoltaic systems or grid-tied battery storage, they transform from passive consumers into active grid participants (prosumers). While the solar inverter feeds active kilowatt-hours into the grid during peak sunshine, the factory&#x27;s heavy conveyor motors and chillers continue demanding magnetizing reactive power (kvar) from the utility lines. Without a four-quadrant meter, standard metering cannot distinguish whether reactive energy is being absorbed by the plant or injected by over-excited inverters. Utilities mandate 4-quadrant DLMS/COSEM meters to enforce grid codes (such as IEEE 1547 and EN 50549), monitor power factor in real time, and levy statutory low-power-factor surcharges whenever power factor drops below 0.90 or 0.95.</p><h3>How does four-quadrant metering help industrial facility managers eliminate power factor penalty charges?</h3><p>Electric utility bills for commercial and industrial consumers include punitive maximum demand charges and low-power-factor penalties based on reactive energy consumption. A four-quadrant meter provides detailed 15-minute load profiles breaking down inductive versus capacitive kvarh across peak, shoulder, and off-peak tariff periods. Plant energy managers use this granular quadrant telemetry to properly size and tune automatic power factor correction (APFC) capacitor banks, prevent harmonic resonance, and program inverter power factor settings, completely eliminating utility surcharge penalties.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Industrial Grid Interconnection & Reactive Power: What Is a Four-Quadrant Energy Meter?</h2>
+    <p>Specifying Class 0.5S four-quadrant bi-directional smart energy meters for industrial solar grid interconnections, utility substations, or commercial microgrids? YOMIN manufactures DLMS/COSEM and Modbus smart meters engineered to IEC 62053.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/energy-meter">Browse the energy meter range</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "industrial-grid-interconnection-what-is-a-four-quadrant-energy-meter";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
