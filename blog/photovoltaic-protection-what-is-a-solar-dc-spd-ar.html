@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حماية مصفوفات الطاقة الشمسية من الصواعق: ما هو مانع الصواعق المستمر (DC SPD)؟ | Yomin Electric</title>
+<meta name="description" content="حماية محطات الطاقة الشمسية التجارية من الصواعق: ما هو مانع الصواعق المستمر (DC SPD)؟ كيف تحد أجهزة الحماية من التيارات العابرة الفائقة، وتخمد أقواس التيار المستمر عند 1000V/1500V، وتحمي العواكس الشمسية من التلف.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/photovoltaic-protection-what-is-a-solar-dc-spd/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/photovoltaic-protection-what-is-a-solar-dc-spd-ar">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/photovoltaic-protection-what-is-a-solar-dc-spd">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/photovoltaic-protection-what-is-a-solar-dc-spd-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/photovoltaic-protection-what-is-a-solar-dc-spd-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/photovoltaic-protection-what-is-a-solar-dc-spd-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/photovoltaic-protection-what-is-a-solar-dc-spd">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "حماية مصفوفات الطاقة الشمسية من الصواعق: ما هو مانع الصواعق المستمر (DC SPD)؟",
+      "description": "حماية محطات الطاقة الشمسية التجارية من الصواعق: ما هو مانع الصواعق المستمر (DC SPD)؟ كيف تحد أجهزة الحماية من التيارات العابرة الفائقة، وتخمد أقواس التيار المستمر عند 1000V/1500V، وتحمي العواكس الشمسية من التلف.",
+      "image": "https://www.yominelectric.com/assets/images/blog/photovoltaic-protection-what-is-a-solar-dc-spd/hero.png",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/photovoltaic-protection-what-is-a-solar-dc-spd-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما هو مانع الصواعق المستمر (DC SPD) ولماذا يُحظر تماماً استخدام موانع صواعق التيار المتردد (AC) في أنظمة الطاقة الشمسية؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "مانع الصواعق المستمر (DC SPD) هو جهاز حماية متخصص مصمم لحماية دوائر التيار المستمر في محطات الطاقة الشمسية من التيارات العابرة الناجمة عن الصواعق. **ويُحظر تماماً تركيب موانع صواعق التيار المتردد (AC) على دوائر الألواح الشمسية المستمرة** لسبب فيزيائي جوهري: يمر التيار المتردد بنقطة الصفر في الجهد 100 أو 120 مرة في الثانية، مما يساعد أجهزة الحماية وغرف الإخماد على إطفاء القوس الكهربائي فوراً. أما التيار المستمر المتولد من الألواح الشمسية فلا يمر بنقطة الصفر أبداً. فإذا فرغ مانع الصواعق المتردد تيار صاعقة على خط 1000 فولت مستمر، سينشأ قوس كهربائي مستمر تتجاوز حرارته 3,000 درجة مئوية يعجز الجهاز عن إطفائه، مما يؤدي إلى اشتعال صندوق التجميع فوراً واحتراق المحطة. لذلك تحتوي موانع الصواعق الشمسية المستمرة على غرف إخماد مغناطيسي وفواصل حرارية دوارة معتمدة وفق معيار EN 50539-11."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما الفرق بين مانع الصواعق فئة Type 1+2 وفئة Type 2 في مصفوفات الطاقة الشمسية؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يتحدد الاختيار بناءً على دراسة تقييم مخاطر الصواعق وفق معايير IEC 62305 و IEC 61643-32: <ul><li><strong>فئة Type 1+2 (Class I+II):</strong> تم اختبارها بموجة تيار الصاعقة المباشرة $10/350\\,\\mu\\text{s}$ (Iimp). وهي إلزامية للمحطات والمباني المزودة بصواري مانعات صواعق خارجية على الأسطح، وكذلك في محطات الطاقة الشمسية المفتوحة في الصحراء والمناطق المعرضة لضربات مباشرة.</li><li><strong>فئة Type 2 (Class II):</strong> تم اختبارها بموجة $8/20\\,\\mu\\text{s}$ (In/Imax) لحماية الدوائر من التيارات الحثية غير المباشرة الناتجة عن الصواعق البعيدة. وهي الاختيار القياسي داخل صناديق التجميع ومدخل العواكس الشمسية.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هي طوبولوجيا التوصيل الداخلي على شكل حرف Y في مانعات صواعق الطاقة الشمسية؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "في السابق، كانت موانع الصواعق توصل مباشرة بين القطب الموجب والأرضي (+/PE) وبين السالب والأرضي (-/PE). فعند حدوث أي عطل في عزل كابلات الألواح، كان جهد السلسلة بالكامل يمر عبر فاريستور واحد، مما يسبب احتراقه حرارياً. تعتمد موانع الصواعق الحديثة المعتمدة **طوبولوجيا على شكل حرف Y** تضم ثلاثة أفرع من مقاومات الفاريستور: فرع بين القطب الموجب ونقطة وسطية، وفرع بين القطب السالب والنقطة الوسطية، وفرع ثالث بين النقطة الوسطية والأرضي (PE). يضمن هذا التوزيع تقسيم الجهد بأمان حتى في حالة حدوث تماس أرضي، مما يمنع اندلاع الحرائق تماماً."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: AR">
+        <span id="lf"><span>AR</span></span><span id="lc">AR</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">الرئيسية</a> &middot; <a href="/blog">المدونة</a> &middot; <span>الطاقة الشمسية والكهرومغناطيسية</span></div>
+    <span class="bh-tag">الطاقة الشمسية / موانع صواعق التيار المستمر</span>
+    <h1 class="bh-title">حماية مصفوفات الطاقة الشمسية من الصواعق: ما هو مانع الصواعق المستمر (DC SPD)؟</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>29 سبتمبر 2026</span>
+      <span class="divider"></span>
+      <span>10 دقائق قراءة</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/photovoltaic-protection-what-is-a-solar-dc-spd/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/photovoltaic-protection-what-is-a-solar-dc-spd/hero.png" alt="مانع صواعق كهروضوئي للتيار المستمر بجهد 1000 فولت يعمل داخل صندوق تجميع خلايا شمسية خارجي" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>حماية استثمارات الطاقة الشمسية من مخاطر الصواعق العنيفة</h2>
+<p>تمتد محطات الطاقة الكهروضوئية على مساحات شاسعة مفتوحة فوق أسطح المنشآت الصناعية والمستودعات والمزارع الشمسية الميدانية. وتشكل هذه الهياكل المعدنية وشبكات الكابلات الممتدة هوائيات عملاقة تستقطب الحقول الكهرومغناطيسية الناتجة عن الصواعق على بعد أميال.</p>
+<p>تولد ضربات الصواعق المباشرة والنبضات الحثية قفزات جهد عابرة خطيرة تتجاوز 15,000 إلى 40,000 فولت على خطوط التيار المستمر. وبما أن دوائر تتبع نقطة الاستطاعة العظمى (MPPT) في العواكس الشمسية الحديثة لا تتحمل نبضات جهد تزيد عن 4,000 إلى 6,000 فولت، فإن أي مصفوفة شمسية غير محمية تتعرض لتدمير فوري لعواكسها وتوقف كامل لتوليد الطاقة.</p>
+<p>يعد <strong>مانع الصواعق المستمر (Solar DC SPD)</strong> الدرع الواقي الحاسم الذي يفرغ آلاف الأمبيرات بأمان إلى الأرضي في أجزاء من النانو ثانية قبل أن تصل جهود الصاعقة إلى مكونات العاكس الحساسة.</p>
+
+<h2>الفروق الهندسية الجوهرية بين حماية التيار المستمر وحماية التيار المتردد</h2>
+<p>تتطلب حماية دوائر التيار المستمر الشمسي تقنيات إخماد مختلفة جذرياً عن لوحات التيار المتردد التقليدية:</p>
+<table>
+  <thead>
+    <tr>
+      <th>المعيار الهندسي</th>
+      <th>مانع صواعق التيار المتردد (AC) التقليدي</th>
+      <th>مانع صواعق الطاقة الشمسية المستمر (DC SPD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>طبيعة الجهد الكهربائي</strong></td>
+      <td>تيار جيبي متردد يمر بنقطة الصفر 100/120 مرة في الثانية.</td>
+      <td><strong>جهد مستمر ثابت وشديد القوة من 0 إلى 1500 فولت.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>فيزياء إخماد القوس الكهربائي</strong></td>
+      <td>ينطفئ القوس تلقائياً عند مرور الجهد بنقطة الصفر.</td>
+      <td><strong>يتطلب غرف إخماد مغناطيسية وحواجز فصل ميكانيكية عازلة.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>طوبولوجيا الدائرة الداخلية</strong></td>
+      <td>أفرع مباشرة بين الطور والمحايد والأرضي.</td>
+      <td><strong>طوبولوجيا متوازنة على شكل حرف Y بثلاثة مقاومات فاريستور.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>خطورة نهاية العمر الافتراضي</strong></td>
+      <td>يفصل القاطع الكهربائي المغذي بأمان.</td>
+      <td><strong>خطر اشتعال حريق مستمر في حال غياب فواصل ميكانيكية مخصصة.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>المعايير المترولوجية المعتمدة</strong></td>
+      <td>IEC 61643-11</td>
+      <td><strong>EN 50539-11 / IEC 61643-31 (خاص بالطاقة الشمسية).</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>المواصفات الفنية</h2>
+<table>
+  <thead>
+    <tr><th>المعلمة الفنية الهندسية</th><th>القيمة ومستوى الأداء</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>أقصى جهد تشغيلي مستمر (Ucpv)</strong></td><td>تكوينات مخصصة بجهود 600V DC و 1000V DC و 1500V DC مصممة خصيصاً لسلاسل الألواح الشمسية عالية الجهد</td></tr>
+    <tr><td><strong>تصنيف واختبار مانع الصواعق</strong></td><td>فئة Type 1+2 / Class I+II (للصدمات المباشرة والتفريغ الحثي) وفئة Type 2 / Class II (لحماية التيارات الحثية غير المباشرة)</td></tr>
+    <tr><td><strong>تيار نبضة الصاعقة المباشرة (Iimp 10/350 &mu;s)</strong></td><td>سعة 12.5 كيلو أمبير لكل قطب (فئة Type 1+2) لمحاكاة ضربات الصواعق المباشرة على هياكل الألواح المعدنية</td></tr>
+    <tr><td><strong>تيار التفريغ الاسمي والأقصى</strong></td><td>الاسمي In 20 kA (8/20 &mu;s)؛ الأقصى Imax من 40 kA إلى 80 kA لمقاومة النبضات الكهرومغناطيسية للصواعق (LEMP)</td></tr>
+    <tr><td><strong>مستوى حماية الجهد (Up)</strong></td><td>&le; 3.2 kV عند 1000V DC؛ &le; 4.5 kV عند 1500V DC (منسق بدقة ليكون أدنى من قدرة تحمل العواكس الشمسية)</td></tr>
+    <tr><td><strong>طوبولوجيا الدائرة الداخلية</strong></td><td>توصيل على شكل حرف Y (طوبولوجيا U) يحتوي على ثلاثة مقاومات فاريستور أكسيد الزنك (MOV) لمنع الاحتراق عند انهيار العزل</td></tr>
+    <tr><td><strong>الفصل الحراري ومؤشرات الفحص</strong></td><td>آلية فصل حراري ميكانيكية حاصلة على براءة اختراع مع نافذة فحص بصرية (أخضر/أحمر) ومخرج إشارة إنذار عن بُعد ثلاثي الأطراف</td></tr>
+    <tr><td><strong>المعايير الدولية المعتمدة</strong></td><td>EN 50539-11 (موانع الصواعق للأنظمة الكهروضوئية)، IEC 61643-31، شهادة CE وتوثيق من مختبرات TUV Rheinland</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>الأسئلة الشائعة</h2><h3>ما هو مانع الصواعق المستمر (DC SPD) ولماذا يُحظر تماماً استخدام موانع صواعق التيار المتردد (AC) في أنظمة الطاقة الشمسية؟</h3><p>مانع الصواعق المستمر (DC SPD) هو جهاز حماية متخصص مصمم لحماية دوائر التيار المستمر في محطات الطاقة الشمسية من التيارات العابرة الناجمة عن الصواعق. **ويُحظر تماماً تركيب موانع صواعق التيار المتردد (AC) على دوائر الألواح الشمسية المستمرة** لسبب فيزيائي جوهري: يمر التيار المتردد بنقطة الصفر في الجهد 100 أو 120 مرة في الثانية، مما يساعد أجهزة الحماية وغرف الإخماد على إطفاء القوس الكهربائي فوراً. أما التيار المستمر المتولد من الألواح الشمسية فلا يمر بنقطة الصفر أبداً. فإذا فرغ مانع الصواعق المتردد تيار صاعقة على خط 1000 فولت مستمر، سينشأ قوس كهربائي مستمر تتجاوز حرارته 3,000 درجة مئوية يعجز الجهاز عن إطفائه، مما يؤدي إلى اشتعال صندوق التجميع فوراً واحتراق المحطة. لذلك تحتوي موانع الصواعق الشمسية المستمرة على غرف إخماد مغناطيسي وفواصل حرارية دوارة معتمدة وفق معيار EN 50539-11.</p><h3>ما الفرق بين مانع الصواعق فئة Type 1+2 وفئة Type 2 في مصفوفات الطاقة الشمسية؟</h3><p>يتحدد الاختيار بناءً على دراسة تقييم مخاطر الصواعق وفق معايير IEC 62305 و IEC 61643-32: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;فئة Type 1+2 (Class I+II):&lt;/strong&gt; تم اختبارها بموجة تيار الصاعقة المباشرة $10/350\,\mu\text{s}$ (Iimp). وهي إلزامية للمحطات والمباني المزودة بصواري مانعات صواعق خارجية على الأسطح، وكذلك في محطات الطاقة الشمسية المفتوحة في الصحراء والمناطق المعرضة لضربات مباشرة.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;فئة Type 2 (Class II):&lt;/strong&gt; تم اختبارها بموجة $8/20\,\mu\text{s}$ (In/Imax) لحماية الدوائر من التيارات الحثية غير المباشرة الناتجة عن الصواعق البعيدة. وهي الاختيار القياسي داخل صناديق التجميع ومدخل العواكس الشمسية.&lt;/li&gt;&lt;/ul&gt;</p><h3>ما هي طوبولوجيا التوصيل الداخلي على شكل حرف Y في مانعات صواعق الطاقة الشمسية؟</h3><p>في السابق، كانت موانع الصواعق توصل مباشرة بين القطب الموجب والأرضي (+/PE) وبين السالب والأرضي (-/PE). فعند حدوث أي عطل في عزل كابلات الألواح، كان جهد السلسلة بالكامل يمر عبر فاريستور واحد، مما يسبب احتراقه حرارياً. تعتمد موانع الصواعق الحديثة المعتمدة **طوبولوجيا على شكل حرف Y** تضم ثلاثة أفرع من مقاومات الفاريستور: فرع بين القطب الموجب ونقطة وسطية، وفرع بين القطب السالب والنقطة الوسطية، وفرع ثالث بين النقطة الوسطية والأرضي (PE). يضمن هذا التوزيع تقسيم الجهد بأمان حتى في حالة حدوث تماس أرضي، مما يمنع اندلاع الحرائق تماماً.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>حماية مصفوفات الطاقة الشمسية من الصواعق: ما هو مانع الصواعق المستمر (DC SPD)؟</h2>
+    <p>هل تصمم محطات طاقة شمسية كبرى، أو أسطح مصانع كهروضوئية، أو صناديق تجميع بجهد 1000V/1500V تتطلب موانع صواعق معتمدة بمعايير EN 50539-11 و IEC 61643-31؟ تصنع يمين (YOMIN) موانع صواعق كهروضوئية فائقة الاعتمادية موثقة باختبارات TUV الدولية.</p>
+    <a class="btn btn-primary" href="/contact">طلب تسعيرة</a>
+    <p style="margin-top:14px"><a href="/products">استعراض كتالوج المنتجات الكهربائية الكامل &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "photovoltaic-protection-what-is-a-solar-dc-spd";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
