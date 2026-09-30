@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Distribution Feeder Grid Automation: What Is an Auto Recloser? | Yomin Electric</title>
+<meta name="description" content="Medium-voltage overhead distribution feeder automation and reliability: What is an auto recloser (ACR)? How vacuum automatic circuit reclosers clear transient faults (ANSI 79), prevent extended blackouts, and reduce SAIDI/SAIFI indices.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/feeder-automation-what-is-an-auto-recloser/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/feeder-automation-what-is-an-auto-recloser">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/feeder-automation-what-is-an-auto-recloser">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/feeder-automation-what-is-an-auto-recloser-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/feeder-automation-what-is-an-auto-recloser-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/feeder-automation-what-is-an-auto-recloser-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/feeder-automation-what-is-an-auto-recloser">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Distribution Feeder Grid Automation: What Is an Auto Recloser?",
+      "description": "Medium-voltage overhead distribution feeder automation and reliability: What is an auto recloser (ACR)? How vacuum automatic circuit reclosers clear transient faults (ANSI 79), prevent extended blackouts, and reduce SAIDI/SAIFI indices.",
+      "image": "https://www.yominelectric.com/assets/images/blog/feeder-automation-what-is-an-auto-recloser/hero.png",
+      "datePublished": "2026-09-30",
+      "dateModified": "2026-09-30",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/feeder-automation-what-is-an-auto-recloser"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an Auto Recloser (Automatic Circuit Recloser) and how does it prevent prolonged power outages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An Auto Recloser—formally termed an Automatic Circuit Recloser (ACR)—is a medium-voltage, pole-mounted electrical switchgear apparatus engineered to detect and interrupt short-circuit fault currents and automatically reclose the distribution circuit after a programmed delay. Electrical engineering field studies reveal that **over 80% to 90% of overhead distribution line faults are transient in nature**, caused by wind-blown tree branches brushing conductors, lightning flashovers across insulators, bird or animal contacts, or wind-induced line gallops. When a conventional circuit breaker or fuse operates during a transient fault, the entire distribution feeder remains blacked out until a utility line crew drives out to manually inspect the line and replace the fuse. An auto recloser trips within 30 to 45 milliseconds to extinguish the fault arc, waits a fraction of a second (e.g. 300ms) for the ionized air to deionize and the branch to drop away, and automatically restores power. Customers experience only a momentary light flicker instead of an hours-long outage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the ANSI 79 reclosing operating sequence (O &minus; 0.3s &minus; CO &minus; 2s &minus; CO) clear temporary faults while isolating permanent failures?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The intelligent controller follows a precise multi-shot reclosing sequence configured per utility protection philosophy: <ul><li><strong>First Trip (Fast Operation - 30ms):</strong> The recloser opens instantly to clear the fault current before downstream line fuses can melt. It pauses for an initial \"dead time\" (typically 0.3 seconds / 300ms) to allow the temporary arc channel to disperse.</li><li><strong>First Reclose (0.3s):</strong> The vacuum contacts reclose. If the fault was temporary (e.g. tree branch fell clear), the feeder remains energized and normal service resumes.</li><li><strong>Subsequent Delayed Shots (e.g. 2s pause):</strong> If the fault persists, the controller trips and recloses 1 to 3 more times using time-overcurrent curves to coordinate with downstream sectionalizers and fuses.</li><li><strong>Lockout:</strong> If the fault remains energized after the programmed attempts (indicating a permanent failure like a downed conductor or broken pole), the recloser locks open (Lockout), isolating the faulted section and sending an automated SCADA alert to dispatch crews.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between an Auto Recloser (ACR) and a Sectionalizer on overhead lines?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The critical distinction lies in fault breaking capacity: An **Auto Recloser** is a fully rated circuit breaker capable of interrupting full short-circuit currents (e.g. 12.5kA–20kA) under high voltage. A **Sectionalizer** is a lighter switch that cannot interrupt fault currents; it counts the reclosing shots of an upstream recloser during the de-energized \"dead time\" and opens automatically while no current is flowing to isolate a specific branch spur before the main recloser executes its final lockout."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Fuse &amp; Protection</span></div>
+    <span class="bh-tag">Fuse & Protection / Automatic Circuit Reclosers</span>
+    <h1 class="bh-title">Distribution Feeder Grid Automation: What Is an Auto Recloser?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>September 30, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/feeder-automation-what-is-an-auto-recloser/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/feeder-automation-what-is-an-auto-recloser/hero.png" alt="Pole-mounted medium-voltage vacuum automatic circuit recloser (ACR) operating on an overhead distribution power line" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>Eliminating 80% of Overhead Power Outages with Intelligent Feeder Automation</h2>
+<p>Medium-voltage overhead distribution networks—operating from 11kV to 36kV across rural, suburban, and industrial feeder lines—represent the front line of power grid vulnerability. Exposed to windstorms, lightning surges, ice loads, and wildlife, overhead power lines experience thousands of transient electrical faults every year.</p>
+<p>Historically, when a temporary fault occurred, upstream substation breakers or pole-mounted expulsion fuse cutouts disconnected the entire feeder, stranding hospitals, manufacturing plants, and residential communities in hours-long blackouts until repair crews patrolled the line.</p>
+<p>The <strong>Automatic Circuit Recloser (ACR / Auto Recloser)</strong> is the foundational apparatus of modern distribution feeder automation, combining high-speed vacuum interruption, intelligent microprocessor protection, and automated reclosing sequences to restore power in milliseconds.</p>
+
+<h2>ANSI 79 Operating Mechanism: The Psychology of Fast vs. Delayed Reclosing</h2>
+<p>The true genius of the auto recloser lies in its programmable multi-shot coordination sequence, standardized under ANSI device number 79:</p>
+<ol>
+  <li><strong>Shot 1 (Instantaneous Fast Trip):</strong> When current exceeds the pickup threshold, the vacuum interrupter contacts open within 35 milliseconds. The breaker holds open for 0.3 seconds ("dead time") to allow air deionization, then recloses. If the fault has cleared, power is restored instantly.</li>
+  <li><strong>Shot 2 & 3 (Time-Delayed Trips):</strong> If current spikes again, the microprocessor switches to time-inverse overcurrent curves (e.g. IEEE Very Inverse). This intentional time delay allows downstream spur fuses to blow and isolate branch faults locally without tripping the entire feeder.</li>
+  <li><strong>Lockout (Permanent Fault Isolation):</strong> If the fault persists after the final attempt (typically 3 or 4 operations), the mechanism locks open permanently, protecting distribution transformers from thermal destruction and transmitting real-time fault distance telemetry via SCADA to utility dispatchers.</li>
+</ol>
+
+<h2>Comparison: Fuse Cutout vs. Sectionalizer vs. Automatic Circuit Recloser</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Engineering Feature</th>
+      <th>Expulsion Drop-Out Fuse Cutout</th>
+      <th>Loadbreak Sectionalizer</th>
+      <th>Automatic Circuit Recloser (ACR)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Fault Breaking Capacity</strong></td>
+      <td>Single-shot expulsion link melting.</td>
+      <td>Cannot break fault current (zero Isc).</td>
+      <td><strong>Full vacuum breaking capacity (12.5kA to 20kA).</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Post-Fault Operation</strong></td>
+      <td>Drops open; requires manual replacement.</td>
+      <td>Opens during upstream dead time.</td>
+      <td><strong>Automatically recloses up to 4 times (ANSI 79).</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Response to Transient Faults</strong></td>
+      <td>Causes prolonged customer blackout.</td>
+      <td>Dependent on upstream recloser shots.</td>
+      <td><strong>Clears fault in 300ms without customer outage.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>SCADA / Telemetry Integration</strong></td>
+      <td>None (mechanical gravity drop-out).</td>
+      <td>Basic contact status.</td>
+      <td><strong>Full DNP3 / IEC 60870-5-104 smart grid telemetry.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Impact on Utility SAIDI / SAIFI</strong></td>
+      <td>High outage duration and frequency.</td>
+      <td>Moderate sectionalizing improvement.</td>
+      <td><strong>Reduces permanent customer outages by up to 80%.</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Technical Specifications</h2>
+<table>
+  <thead>
+    <tr><th>Technical Specification Parameter</th><th>Engineering Value & Performance Rating</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Rated Voltage & System Frequency</strong></td><td>Rated nominal voltage 12kV, 24kV, and 36kV; maximum continuous operating voltage up to 40.5kV; system frequency 50Hz / 60Hz</td></tr>
+    <tr><td><strong>Insulation & Impulse Levels</strong></td><td>Power frequency withstand voltage (dry/wet) 42kV/34kV (12kV) and 95kV/80kV (36kV); lightning impulse withstand (BIL) 75kV / 125kV / 170kV</td></tr>
+    <tr><td><strong>Rated Continuous Current & Breaking Capacity</strong></td><td>Continuous current 630A and 1250A; rated short-circuit interrupting current 12.5 kA, 16 kA, and 20 kA (tested up to 25 kA at 12kV)</td></tr>
+    <tr><td><strong>Arc Quenching Technology & Bushings</strong></td><td>High-vacuum ceramic interrupters housed within outdoor weather-sealed solid dielectric epoxy resin or cycloaliphatic silicone rubber poles</td></tr>
+    <tr><td><strong>Operating Mechanism & Actuator</strong></td><td>Permanent magnetic actuator (PMA) or heavy-duty motor-charged spring mechanism with manual trip handle and emergency mechanical lockout</td></tr>
+    <tr><td><strong>Reclosing Sequence & Timings (ANSI 79)</strong></td><td>Configurable up to 4 reclosing operations; standard operating cycle: O &minus; 0.3s &minus; CO &minus; 2s &minus; CO &minus; 2s &minus; CO &minus; Lockout</td></tr>
+    <tr><td><strong>Intelligent Controller & Telemetry (FTU/RTU)</strong></td><td>Microprocessor-based Feeder Terminal Unit (FTU) supporting DNP3.0, IEC 60870-5-101/104, Modbus RTU, directional overcurrent, and sensitive earth fault (SEF)</td></tr>
+    <tr><td><strong>Mechanical & Electrical Durability</strong></td><td>Class M2 mechanical endurance (&ge; 10,000 operations without maintenance); Class E2 electrical endurance at full short-circuit current; IP65 controller</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is an Auto Recloser (Automatic Circuit Recloser) and how does it prevent prolonged power outages?</h3><p>An Auto Recloser—formally termed an Automatic Circuit Recloser (ACR)—is a medium-voltage, pole-mounted electrical switchgear apparatus engineered to detect and interrupt short-circuit fault currents and automatically reclose the distribution circuit after a programmed delay. Electrical engineering field studies reveal that **over 80% to 90% of overhead distribution line faults are transient in nature**, caused by wind-blown tree branches brushing conductors, lightning flashovers across insulators, bird or animal contacts, or wind-induced line gallops. When a conventional circuit breaker or fuse operates during a transient fault, the entire distribution feeder remains blacked out until a utility line crew drives out to manually inspect the line and replace the fuse. An auto recloser trips within 30 to 45 milliseconds to extinguish the fault arc, waits a fraction of a second (e.g. 300ms) for the ionized air to deionize and the branch to drop away, and automatically restores power. Customers experience only a momentary light flicker instead of an hours-long outage.</p><h3>How does the ANSI 79 reclosing operating sequence (O &amp;minus; 0.3s &amp;minus; CO &amp;minus; 2s &amp;minus; CO) clear temporary faults while isolating permanent failures?</h3><p>The intelligent controller follows a precise multi-shot reclosing sequence configured per utility protection philosophy: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;First Trip (Fast Operation - 30ms):&lt;/strong&gt; The recloser opens instantly to clear the fault current before downstream line fuses can melt. It pauses for an initial &quot;dead time&quot; (typically 0.3 seconds / 300ms) to allow the temporary arc channel to disperse.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;First Reclose (0.3s):&lt;/strong&gt; The vacuum contacts reclose. If the fault was temporary (e.g. tree branch fell clear), the feeder remains energized and normal service resumes.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Subsequent Delayed Shots (e.g. 2s pause):&lt;/strong&gt; If the fault persists, the controller trips and recloses 1 to 3 more times using time-overcurrent curves to coordinate with downstream sectionalizers and fuses.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Lockout:&lt;/strong&gt; If the fault remains energized after the programmed attempts (indicating a permanent failure like a downed conductor or broken pole), the recloser locks open (Lockout), isolating the faulted section and sending an automated SCADA alert to dispatch crews.&lt;/li&gt;&lt;/ul&gt;</p><h3>What is the difference between an Auto Recloser (ACR) and a Sectionalizer on overhead lines?</h3><p>The critical distinction lies in fault breaking capacity: An **Auto Recloser** is a fully rated circuit breaker capable of interrupting full short-circuit currents (e.g. 12.5kA–20kA) under high voltage. A **Sectionalizer** is a lighter switch that cannot interrupt fault currents; it counts the reclosing shots of an upstream recloser during the de-energized &quot;dead time&quot; and opens automatically while no current is flowing to isolate a specific branch spur before the main recloser executes its final lockout.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Distribution Feeder Grid Automation: What Is an Auto Recloser?</h2>
+    <p>Designing overhead medium-voltage distribution feeder automation, rural electrification reliability upgrades, or smart grid SCADA projects requiring 11kV–36kV vacuum auto reclosers? YOMIN manufactures intelligent ACRs tested to IEC 62271-111 and ANSI C37.60 standards.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products">Browse the complete product catalogue &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "feeder-automation-what-is-an-auto-recloser";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

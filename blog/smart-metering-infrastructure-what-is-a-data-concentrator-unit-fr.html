@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Infrastructure de Comptage Intelligent &amp; AMI : Qu'est-ce qu'un Concentrateur de Données (DCU) ? | Yomin Electric</title>
+<meta name="description" content="Infrastructure de comptage avancé (AMI/AMR/ASKUE) et réseaux intelligents : Qu&#x27;est-ce qu&#x27;un concentrateur de données (DCU) ? Comment les concentrateurs de données agrègent les relevés des compteurs communicants via CPL G3, RS485 et LoRaWAN pour la facturation automatisée.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/smart-metering-infrastructure-what-is-a-data-concentrator-unit/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-data-concentrator-unit-fr">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-data-concentrator-unit">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-data-concentrator-unit-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-data-concentrator-unit-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-data-concentrator-unit-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-data-concentrator-unit">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Infrastructure de Comptage Intelligent & AMI : Qu'est-ce qu'un Concentrateur de Données (DCU) ?",
+      "description": "Infrastructure de comptage avancé (AMI/AMR/ASKUE) et réseaux intelligents : Qu'est-ce qu'un concentrateur de données (DCU) ? Comment les concentrateurs de données agrègent les relevés des compteurs communicants via CPL G3, RS485 et LoRaWAN pour la facturation automatisée.",
+      "image": "https://www.yominelectric.com/assets/images/blog/smart-metering-infrastructure-what-is-a-data-concentrator-unit/hero.png",
+      "datePublished": "2026-09-30",
+      "dateModified": "2026-09-30",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-data-concentrator-unit-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce qu'un concentrateur de données (DCU) et quel est son rôle dans un réseau de comptage communicant (AMI) ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un concentrateur de données (DCU - Data Concentrator Unit) est une passerelle informatique industrielle installée au niveau des postes de transformation de quartier ou des colonnes montantes d'immeubles. Il constitue le pont de communication stratégique entre les compteurs communicants d'abonnés et le système central de gestion de la compagnie électrique (HES/MDMS). Dans un réseau de comptage intelligent (AMI/ASKUE), des milliers de compteurs enregistrent les index de consommation, profils de charge, tensions et tentatives de fraude. Équiper chaque compteur individuel d'une carte SIM 4G serait excessivement coûteux et saturerait le réseau cellulaire. Le DCU résout ce problème en collectant localement les données de centaines de compteurs via des médias sans coût de télécommunication, tels que le Courant Porteur en Ligne (CPL) ou le bus RS485. Le DCU valide, compresse et transmet ces index en un flux unique et sécurisé 4G ou fibre vers les serveurs de facturation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment le Courant Porteur en Ligne (CPL) permet-il au DCU de communiquer sur les câbles électriques sans câblage supplémentaire ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le Courant Porteur en Ligne (CPL G3 ou PRIME) module des signaux numériques haute fréquence directement sur les câbles d'énergie 50Hz/60Hz existants. Chaque compteur électrique étant déjà relié physiquement au réseau basse tension du transformateur, le câble électrique devient le vecteur de données. Le DCU injecte ses trames de données modulées dans les jeux de barres du transformateur. Les compteurs raccordés sur les mêmes phases reçoivent les paquets et renvoient leurs index de consommation. Le protocole CPL G3 gère le maillage dynamique : si un compteur distant est affaibli par le bruit électrique, les compteurs intermédiaires relaient automatiquement le signal, éliminant totalement les tranchées de génie civil et le câblage de communication."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle est la différence fondamentale entre la télé-relève (AMR) et le comptage intelligent (AMI) ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La différence réside dans la bidirectionnalité et la capacité de télécommande en temps réel : <ul><li><strong>AMR (Automated Meter Reading) :</strong> Architecture de télé-relève unidirectionnelle où le compteur émet ses index mensuels vers un récepteur mobile ou un concentrateur simple. L'AMR ne permet pas d'actionner à distance le disjoncteur du compteur ni de modifier les grilles tarifaires.</li><li><strong>AMI (Advanced Metering Infrastructure) :</strong> Réseau de comptage communicant bidirectionnel complet supervisé par des concentrateurs DCU intelligents. L'AMI permet la tarification dynamique en temps réel, la mise à jour à distance des microprogrammes, la détection immédiate des pannes réseau (alertes \"Last Gasp\"), la recharge de crédit pour compteurs prépayés et la coupure/rétablissement à distance de l'alimentation.</li></ul>"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: FR">
+        <span id="lf"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span><span id="lc">FR</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Compteur d'Énergie</span></div>
+    <span class="bh-tag">Compteur d'Énergie / Concentrateurs de Données</span>
+    <h1 class="bh-title">Infrastructure de Comptage Intelligent & AMI : Qu'est-ce qu'un Concentrateur de Données (DCU) ?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>30 Septembre 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/smart-metering-infrastructure-what-is-a-data-concentrator-unit/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/smart-metering-infrastructure-what-is-a-data-concentrator-unit/hero.png" alt="Concentrateur de données industriel pour compteurs communicants (DCU) en service dans un poste de transformation de distribution" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>Le Nœud Stratégique de Communication des Réseaux Électriques Modernes</h2>
+<p>Les compagnies d'électricité à travers l'Asie centrale, le Moyen-Orient, l'Europe et les Amériques modernisent leurs réseaux de distribution pour éliminer les relèves manuelles et maîtriser les pertes non techniques. Cependant, le déploiement de millions de compteurs communicants soulève un défi massif : comment collecter de manière fiable les courbes de charge, puissances réactives et alarmes de fraude de centaines de milliers de points de livraison ?</p>
+<p>Équiper chaque compteur individuel d'un modem cellulaire est économiquement insoutenable. La solution réside dans le <strong>Concentrateur de Données (DCU)</strong>—une passerelle industrielle durcie qui gère intelligemment la collecte locale et l'acheminement sécurisé des données vers le système central.</p>
+
+<h2>Architecture Réseau AMI : Le Positionnement Clé du DCU</h2>
+<p>Dans un réseau de comptage communicant (AMI), l'architecture s'articule en trois niveaux :</p>
+<ol>
+  <li><strong>Réseau Domestique (HAN) :</strong> Liaison entre le compteur communicant et l'afficheur déporté du client ou le système domotique.</li>
+  <li><strong>Réseau de Quartier (NAN - Downstream) :</strong> La boucle de collecte locale gérée par le DCU. Il relie 100 à 1 024 compteurs au poste transformateur via CPL G3, bus RS485 ou réseau radio maillé LoRaWAN.</li>
+  <li><strong>Réseau Métropolitain (WAN - Upstream) :</strong> La liaison longue distance. Le DCU compresse et chiffre les données pour les transmettre en 4G LTE ou Ethernet vers le système central HES/MDMS de la compagnie électrique.</li>
+</ol>
+
+<h2>Spécifications Techniques</h2>
+<table>
+  <thead>
+    <tr><th>Paramètre Technique</th><th>Valeur d'Ingénierie & Performance</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Architecture Processeur & Système d'Exploitation</strong></td><td>Cœur industriel ARM Cortex-A7/A9 32 bits (800MHz) sous Linux embarqué avec racine de confiance cryptographique</td></tr>
+    <tr><td><strong>Capacité de Gestion de Compteurs</strong></td><td>Gère jusqu'à 1 024 compteurs communicants monophasés ou 256 compteurs industriels triphasés par nœud de transformateur</td></tr>
+    <tr><td><strong>Réseau Local Aval (NAN - Local Area Network)</strong></td><td>CPL G3 (Courant Porteur en Ligne OFDM), PRIME, RS485 (double canal isolé 1200–115200 bps) et radio maillée Sub-1GHz / LoRaWAN</td></tr>
+    <tr><td><strong>Réseau Étendu Amont (WAN - Wide Area Network)</strong></td><td>4G LTE (Cat 4 / Cat 1 avec basculement automatique 2G/3G), port Ethernet RJ45 10/100 Mbps, double emplacement carte SIM</td></tr>
+    <tr><td><strong>Protocoles Industriels Pris en Charge</strong></td><td>DLMS/COSEM (CEI 62056-5-3/6-1/6-2), CEI 60870-5-104, Modbus RTU/TCP, MQTT et transmission sécurisée chiffrée TLS 1.3 vers le HES/MDMS</td></tr>
+    <tr><td><strong>Mémoire et Conservation des Données</strong></td><td>512 Mo RAM DDR3, 8 Go Flash eMMC ; enregistre jusqu'à 180 jours de profils de charge horaires et journaux d'alertes ; rétention &ge; 10 ans</td></tr>
+    <tr><td><strong>Alimentation et Secours en Cas de Coupure</strong></td><td>Large plage 3x220V/380V AC &plusmn;20% ; supercondensateur intégré fournissant &ge; 5 minutes pour l'émission de l'alerte de panne</td></tr>
+    <tr><td><strong>Protection Environnementale et Mécanique</strong></td><td>Boîtier polycarbonate étanche IP54/IP65 résistant aux UV ; plage de température &minus;40&deg;C à +70&deg;C ; immunité aux chocs 6kV (CEI 61000-4-5)</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Foire Aux Questions</h2><h3>Qu&#x27;est-ce qu&#x27;un concentrateur de données (DCU) et quel est son rôle dans un réseau de comptage communicant (AMI) ?</h3><p>Un concentrateur de données (DCU - Data Concentrator Unit) est une passerelle informatique industrielle installée au niveau des postes de transformation de quartier ou des colonnes montantes d&#x27;immeubles. Il constitue le pont de communication stratégique entre les compteurs communicants d&#x27;abonnés et le système central de gestion de la compagnie électrique (HES/MDMS). Dans un réseau de comptage intelligent (AMI/ASKUE), des milliers de compteurs enregistrent les index de consommation, profils de charge, tensions et tentatives de fraude. Équiper chaque compteur individuel d&#x27;une carte SIM 4G serait excessivement coûteux et saturerait le réseau cellulaire. Le DCU résout ce problème en collectant localement les données de centaines de compteurs via des médias sans coût de télécommunication, tels que le Courant Porteur en Ligne (CPL) ou le bus RS485. Le DCU valide, compresse et transmet ces index en un flux unique et sécurisé 4G ou fibre vers les serveurs de facturation.</p><h3>Comment le Courant Porteur en Ligne (CPL) permet-il au DCU de communiquer sur les câbles électriques sans câblage supplémentaire ?</h3><p>Le Courant Porteur en Ligne (CPL G3 ou PRIME) module des signaux numériques haute fréquence directement sur les câbles d&#x27;énergie 50Hz/60Hz existants. Chaque compteur électrique étant déjà relié physiquement au réseau basse tension du transformateur, le câble électrique devient le vecteur de données. Le DCU injecte ses trames de données modulées dans les jeux de barres du transformateur. Les compteurs raccordés sur les mêmes phases reçoivent les paquets et renvoient leurs index de consommation. Le protocole CPL G3 gère le maillage dynamique : si un compteur distant est affaibli par le bruit électrique, les compteurs intermédiaires relaient automatiquement le signal, éliminant totalement les tranchées de génie civil et le câblage de communication.</p><h3>Quelle est la différence fondamentale entre la télé-relève (AMR) et le comptage intelligent (AMI) ?</h3><p>La différence réside dans la bidirectionnalité et la capacité de télécommande en temps réel : &lt;ul&gt;&lt;li&gt;&lt;strong&gt;AMR (Automated Meter Reading) :&lt;/strong&gt; Architecture de télé-relève unidirectionnelle où le compteur émet ses index mensuels vers un récepteur mobile ou un concentrateur simple. L&#x27;AMR ne permet pas d&#x27;actionner à distance le disjoncteur du compteur ni de modifier les grilles tarifaires.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;AMI (Advanced Metering Infrastructure) :&lt;/strong&gt; Réseau de comptage communicant bidirectionnel complet supervisé par des concentrateurs DCU intelligents. L&#x27;AMI permet la tarification dynamique en temps réel, la mise à jour à distance des microprogrammes, la détection immédiate des pannes réseau (alertes &quot;Last Gasp&quot;), la recharge de crédit pour compteurs prépayés et la coupure/rétablissement à distance de l&#x27;alimentation.&lt;/li&gt;&lt;/ul&gt;</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Infrastructure de Comptage Intelligent & AMI : Qu'est-ce qu'un Concentrateur de Données (DCU) ?</h2>
+    <p>Vous déployez un réseau de comptage communicant (AMI), des projets de télé-relève de distribution (ASKUE) ou de monitoring de sous-stations nécessitant des concentrateurs certifiés DLMS/COSEM ? YOMIN fabrique des DCU industriels haute performance conformes aux normes CEI 62056.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <p style="margin-top:14px"><a href="/products">Découvrir le catalogue complet de produits &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "smart-metering-infrastructure-what-is-a-data-concentrator-unit";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
