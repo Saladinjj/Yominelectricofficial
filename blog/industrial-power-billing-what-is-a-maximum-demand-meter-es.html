@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Facturación Eléctrica Industrial y Capacidad de Red: ¿Qué es un Medidor de Demanda Máxima? | Yomin Electric</title>
+<meta name="description" content="Facturación eléctrica en tarifas comerciales e industriales (tarifas de dos partes) y penalizaciones por potencia pico: ¿Qué es un medidor de demanda máxima (MDI)? Cálculo en ventana deslizante de kVA/kW, penalizaciones por bajo factor de potencia y control de desconexión de carga para evitar sobrecostos.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/industrial-power-billing-what-is-a-maximum-demand-meter/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/industrial-power-billing-what-is-a-maximum-demand-meter-es">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/industrial-power-billing-what-is-a-maximum-demand-meter">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/industrial-power-billing-what-is-a-maximum-demand-meter-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/industrial-power-billing-what-is-a-maximum-demand-meter-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/industrial-power-billing-what-is-a-maximum-demand-meter-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/industrial-power-billing-what-is-a-maximum-demand-meter">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Facturación Eléctrica Industrial y Capacidad de Red: ¿Qué es un Medidor de Demanda Máxima?",
+      "description": "Facturación eléctrica en tarifas comerciales e industriales (tarifas de dos partes) y penalizaciones por potencia pico: ¿Qué es un medidor de demanda máxima (MDI)? Cálculo en ventana deslizante de kVA/kW, penalizaciones por bajo factor de potencia y control de desconexión de carga para evitar sobrecostos.",
+      "image": "https://www.yominelectric.com/assets/images/blog/industrial-power-billing-what-is-a-maximum-demand-meter/hero.png",
+      "datePublished": "2026-10-01",
+      "dateModified": "2026-10-01",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/industrial-power-billing-what-is-a-maximum-demand-meter-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es la Demanda Máxima en la facturación eléctrica industrial y comercial y por qué se cobra separada del consumo de kWh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En las tarifas industriales y comerciales, el suministro eléctrico se factura bajo una **tarifa binomia o de dos partes**: <ul><li><strong>1. Cargo por energía activa consumida (en kWh):</strong> El volumen total de electricidad utilizado a lo largo del mes.</li><li><strong>2. Cargo por Demanda Máxima (en kVA o kW):</strong> Un cobro por reserva de capacidad de potencia basado en el valor promedio más alto registrado en cualquier intervalo de 15 o 30 minutos durante todo el periodo mensual de facturación.</li></ul>Las distribuidoras eléctricas deben construir transformadores, líneas y subestaciones dimensionadas para soportar el pico de consumo simultáneo de la planta. Si una fábrica arranca simultáneamente grandes motores durante solo 15 minutos en todo el mes, la red eléctrica se ve obligada a reservar esa capacidad total. El cargo por demanda compensa esta infraestructura reservada. Si la planta sobrepasa la potencia contratada, la distribuidora aplica **penalizaciones punitivas por exceso de demanda (recargos de 150% a 200%)**, duplicando el costo de la factura eléctrica mensual."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo calcula un medidor de demanda máxima (MDI) la potencia pico mediante intervalo fijo o ventana deslizante?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El medidor integra la potencia consumida en un bloque de tiempo estandarizado (usualmente 15 o 30 minutos) en lugar de registrar picos instantáneos de arranque: <ul><li><strong>Método de intervalo fijo (Block):</strong> El medidor calcula la potencia promedio en bloques horarios consecutivos (ej. de 10:00 a 10:15, 10:15 a 10:30). Si el promedio obtenido supera el récord mensual guardado en memoria, se actualiza como la nueva Demanda Máxima del mes.</li><li><strong>Método de ventana deslizante (Sliding Window):</strong> La ventana de 15 minutos se desplaza cada 1, 3 o 5 minutos. Este método evita que un usuario eluda el cobro distribuyendo una sobrecarga entre dos bloques fijos adyacentes. Dado que la mayoría de empresas facturan en **kVA (potencia aparente)**, un bajo factor de potencia dispara de inmediato el cobro de demanda.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo evita un controlador inteligente de demanda máxima las penalizaciones tarifarias?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El controlador monitorea continuamente la velocidad de consumo de energía en el intervalo activo. Mediante algoritmos matemáticos predictivos, calcula hacia el minuto 10 si la tendencia actual sobrepasará el umbral de potencia contratado. Si detecta riesgo de sobrecosto, acciona relés automáticos para desconectar cargas secundarias prescindibles (sistemas de aire acondicionado, bombas o compresores) o conecta bancos de capacitores para corregir el factor de potencia. Una vez que el pico de demanda cede, reconecta las cargas automáticamente sin detener la producción."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: ES">
+        <span id="lf"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span><span id="lc">ES</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Medidor de Energía</span></div>
+    <span class="bh-tag">Medidor de Energía / Medidores de Demanda Máxima</span>
+    <h1 class="bh-title">Facturación Eléctrica Industrial y Capacidad de Red: ¿Qué es un Medidor de Demanda Máxima?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>1 de Octubre de 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/industrial-power-billing-what-is-a-maximum-demand-meter/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/industrial-power-billing-what-is-a-maximum-demand-meter/hero.png" alt="Medidor multifunción digital de demanda máxima (MDI) operando en el tablero de distribución eléctrica de una planta industrial" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>El Costo Oculto de la Electricidad Industrial: Comprendiendo la Demanda Máxima</h2>
+<p>Para los gerentes de operaciones, ingenieros de planta y directores financieros, la factura de energía es uno de los mayores costos operativos. Sin embargo, muchas industrias concentran sus esfuerzos en apagar luminarias para ahorrar kilowatts-hora (kWh), descuidando el verdadero desangre financiero: los <strong>cargos por Demanda Máxima (potencia pico en kVA)</strong>.</p>
+<p>En el sector manufacturero, los cargos por demanda contratada y penalizaciones por exceso representan entre el <strong>30% y el 50% del total de la factura eléctrica</strong>. ¡Un solo descuido de 15 minutos al inicio del mes determina el costo de demanda para los siguientes 30 días!</p>
+<p>El <strong>Medidor Digital de Demanda Máxima (MDI / Controlador de Demanda)</strong> es el equipo indispensable para supervisar la potencia aparente en kVA en tiempo real, evitar penalizaciones y ejecutar esquemas de desconexión preventiva de carga.</p>
+
+<h2>Por Qué el Factor de Potencia Dispara el Costo de la Demanda en kVA</h2>
+<p>La inmensa mayoría de las empresas distribuidoras en América Latina facturan la Demanda Máxima en <strong>kVA (potencia aparente)</strong> y no en kW:</p>
+<p style="text-align:center;font-weight:bold;font-size:1.1em;background:var(--bg-alt);padding:12px;border-radius:6px;">
+  $$	ext{Demanda Aparente (kVA)} = rac{	ext{Potencia Activa (kW)}}{	ext{Factor de Potencia } (\cos\phi)}$$
+</p>
+<p>Para una fábrica que demanda 800 kW activos:</p>
+<ul>
+  <li>Con un factor de potencia óptimo de <strong>0,98</strong>, la demanda registrada es de <strong>816 kVA</strong>.</li>
+  <li>Si el factor de potencia baja a <strong>0,80</strong> por motores inductivos descompensados, la demanda salta a <strong>1.000 kVA</strong> (+184 kVA facturados sin haber producido una sola pieza adicional).</li>
+</ul>
+
+<h2>Especificaciones Técnicas</h2>
+<table>
+  <thead>
+    <tr><th>Parámetro Técnico</th><th>Valor de Ingeniería y Rendimiento</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Rango de Tensión y Esquema de Conexión</strong></td><td>Trifásico 3x220V/380V, 3x230V/400V o 3x57,7V/100V AC; conexión trifásica 4 hilos (3P4W) o 3 hilos (3P3W)</td></tr>
+    <tr><td><strong>Entrada de Corriente y Relación de TC Configurable</strong></td><td>Secundario de TC de 1A o 5A; relación de transformación primaria programable de 5/5A hasta 10.000/5A; conexión directa 100A</td></tr>
+    <tr><td><strong>Parámetros de Demanda Máxima Registrados</strong></td><td>Mide Demanda Máxima en potencia activa (kW), potencia aparente (kVA) y potencia reactiva (kvar) con fecha y hora exactas</td></tr>
+    <tr><td><strong>Método de Cálculo e Intervalos de Integración</strong></td><td>Ventana de integración configurable: 5, 10, 15 o 30 minutos; modos de intervalo fijo (Block) o ventana deslizante (Sliding Window)</td></tr>
+    <tr><td><strong>Clase de Precisión Metrológica</strong></td><td>Energía activa Clase 0,5S o 0,2S (IEC 62053-22); Energía reactiva Clase 2,0 (IEC 62053-23); precisión de demanda &plusmn;0,5%</td></tr>
+    <tr><td><strong>Calidad de Energía y Análisis de Armónicos</strong></td><td>Medición de armónicos individuales hasta el orden 31/63; distorsión armónica total (THD-V / THD-I); verdadero valor eficaz (TRMS)</td></tr>
+    <tr><td><strong>Rieles de Alarma y Desconexión de Cargas</strong></td><td>2 salidas de relé programables (5A/250VAC) para pre-alarma de umbral (ej. al 90% contratado) y disparo de desconexión de cargas secundarias</td></tr>
+    <tr><td><strong>Puertos de Comunicación y Telemetría</strong></td><td>Puerto RS485 aislado con soporte de Modbus RTU y DLMS/COSEM; interfaz Ethernet RJ45 o 4G LTE opcional para SCADA/EMS</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Preguntas Frecuentes</h2><h3>¿Qué es la Demanda Máxima en la facturación eléctrica industrial y comercial y por qué se cobra separada del consumo de kWh?</h3><p>En las tarifas industriales y comerciales, el suministro eléctrico se factura bajo una **tarifa binomia o de dos partes**: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;1. Cargo por energía activa consumida (en kWh):&lt;/strong&gt; El volumen total de electricidad utilizado a lo largo del mes.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;2. Cargo por Demanda Máxima (en kVA o kW):&lt;/strong&gt; Un cobro por reserva de capacidad de potencia basado en el valor promedio más alto registrado en cualquier intervalo de 15 o 30 minutos durante todo el periodo mensual de facturación.&lt;/li&gt;&lt;/ul&gt;Las distribuidoras eléctricas deben construir transformadores, líneas y subestaciones dimensionadas para soportar el pico de consumo simultáneo de la planta. Si una fábrica arranca simultáneamente grandes motores durante solo 15 minutos en todo el mes, la red eléctrica se ve obligada a reservar esa capacidad total. El cargo por demanda compensa esta infraestructura reservada. Si la planta sobrepasa la potencia contratada, la distribuidora aplica **penalizaciones punitivas por exceso de demanda (recargos de 150% a 200%)**, duplicando el costo de la factura eléctrica mensual.</p><h3>¿Cómo calcula un medidor de demanda máxima (MDI) la potencia pico mediante intervalo fijo o ventana deslizante?</h3><p>El medidor integra la potencia consumida en un bloque de tiempo estandarizado (usualmente 15 o 30 minutos) en lugar de registrar picos instantáneos de arranque: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Método de intervalo fijo (Block):&lt;/strong&gt; El medidor calcula la potencia promedio en bloques horarios consecutivos (ej. de 10:00 a 10:15, 10:15 a 10:30). Si el promedio obtenido supera el récord mensual guardado en memoria, se actualiza como la nueva Demanda Máxima del mes.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Método de ventana deslizante (Sliding Window):&lt;/strong&gt; La ventana de 15 minutos se desplaza cada 1, 3 o 5 minutos. Este método evita que un usuario eluda el cobro distribuyendo una sobrecarga entre dos bloques fijos adyacentes. Dado que la mayoría de empresas facturan en **kVA (potencia aparente)**, un bajo factor de potencia dispara de inmediato el cobro de demanda.&lt;/li&gt;&lt;/ul&gt;</p><h3>¿Cómo evita un controlador inteligente de demanda máxima las penalizaciones tarifarias?</h3><p>El controlador monitorea continuamente la velocidad de consumo de energía en el intervalo activo. Mediante algoritmos matemáticos predictivos, calcula hacia el minuto 10 si la tendencia actual sobrepasará el umbral de potencia contratado. Si detecta riesgo de sobrecosto, acciona relés automáticos para desconectar cargas secundarias prescindibles (sistemas de aire acondicionado, bombas o compresores) o conecta bancos de capacitores para corregir el factor de potencia. Una vez que el pico de demanda cede, reconecta las cargas automáticamente sin detener la producción.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Facturación Eléctrica Industrial y Capacidad de Red: ¿Qué es un Medidor de Demanda Máxima?</h2>
+    <p>¿Necesita auditar la facturación eléctrica de sus plantas, monitorear la capacidad de sus transformadores o instalar sistemas de control de demanda máxima para eliminar sobrecostos de potencia pico? YOMIN fabrica medidores digitales de demanda máxima de alta precisión.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <p style="margin-top:14px"><a href="/products">Ver catálogo completo de productos &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "industrial-power-billing-what-is-a-maximum-demand-meter";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
