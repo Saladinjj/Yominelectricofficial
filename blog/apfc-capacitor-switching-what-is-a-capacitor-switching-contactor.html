@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Power Factor Correction &amp; APFC Panels: What Is a Capacitor Switching Contactor? | Yomin Electric</title>
+<meta name="description" content="Industrial Automatic Power Factor Correction (APFC) and capacitor bank inrush current protection: What is a capacitor switching contactor? How early-make auxiliary damping resistor blocks, AC-6b operational duty ratings, and microsecond arc quenching protect capacitors and eliminate contact welding.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/apfc-capacitor-switching-what-is-a-capacitor-switching-contactor/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/apfc-capacitor-switching-what-is-a-capacitor-switching-contactor">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/apfc-capacitor-switching-what-is-a-capacitor-switching-contactor">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/apfc-capacitor-switching-what-is-a-capacitor-switching-contactor-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/apfc-capacitor-switching-what-is-a-capacitor-switching-contactor-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/apfc-capacitor-switching-what-is-a-capacitor-switching-contactor-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/apfc-capacitor-switching-what-is-a-capacitor-switching-contactor">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Power Factor Correction & APFC Panels: What Is a Capacitor Switching Contactor?",
+      "description": "Industrial Automatic Power Factor Correction (APFC) and capacitor bank inrush current protection: What is a capacitor switching contactor? How early-make auxiliary damping resistor blocks, AC-6b operational duty ratings, and microsecond arc quenching protect capacitors and eliminate contact welding.",
+      "image": "https://www.yominelectric.com/assets/images/blog/apfc-capacitor-switching-what-is-a-capacitor-switching-contactor/hero.png",
+      "datePublished": "2026-10-05",
+      "dateModified": "2026-10-05",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/apfc-capacitor-switching-what-is-a-capacitor-switching-contactor"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a Capacitor Switching Contactor and why can standard AC-3 motor contactors NOT be used for capacitor banks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Capacitor Switching Contactor—commonly designated under international standards as an AC-6b duty contactor or APFC contactor—is a specialized electromagnetic contactor engineered with early-make auxiliary contacts and inrush-limiting damping resistors to safely switch low-voltage power factor correction capacitors. Standard general-purpose contactors (designed for AC-3 inductive motor loads) suffer catastrophic failure when connected to capacitors for three physical reasons: <ul><li><strong>1. Massive Initial Inrush Current ($200 \times I_n$):</strong> At the instant of voltage switch-on, an uncharged capacitor acts as a pure electrical short-circuit. The resulting inrush current can spike to between 100 and 200 times the capacitor's rated nominal current within a fraction of a millisecond.</li><li><strong>2. Contact Welding:</strong> Standard AC-3 contactor contacts experience contact bounce upon closing. Under a 200 $I_n$ surge, this micro-arcing instantly melts the silver-cadmium contacts, permanently welding them shut and preventing the stage from turning off.</li><li><strong>3. Capacitor Dielectric Degradation & Voltage Surges:</strong> High-frequency inrush oscillations generate destructive transient overvoltages that puncture metallized polypropylene capacitor film, blow upstream branch fuses, and disrupt sensitive PLCs and variable frequency drives on the same bus.</li></ul>Capacitor contactors eliminate these hazards by routing the initial surge through current-limiting damping resistors milliseconds before the main contacts touch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the two-stage early-make contact mechanism physically suppress capacitor inrush current?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The operation of an advanced capacitor contactor (such as the YOMIN CJ19 series) follows an exact mechanical timing sequence during each closing cycle: <ul><li><strong>Stage 1 (Pre-Charge via Damping Resistors):</strong> When the contactor coil energizes, mechanical linkages cause the top-mounted auxiliary contact block to close approximately 2 to 5 milliseconds <em>before</em> the main power contacts touch. The incoming AC power flows through looped high-resistance damping wires into the capacitor bank. These resistors act as an instantaneous buffer, absorbing the peak surge energy and capping the inrush current below 20 to 30 times rated current while pre-charging the capacitor.</li><li><strong>Stage 2 (Main Contact Engagement & Resistor Disconnection):</strong> As the armature reaches full stroke, the heavy silver-nickel main power contacts close, carrying the full continuous operating current with near-zero contact resistance. Simultaneously, a spring-loaded mechanical release automatically separates the auxiliary contacts, completely disconnecting the damping resistors so they do not consume continuous power or overheat during normal steady-state operation.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate and select the correct capacitor contactor rating for an APFC panel stage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Contactor sizing requires factoring in harmonic distortion and continuous overcurrent margins per IEC 60831: <ul><li><strong>Standard 1.35x Safety Factor:</strong> Capacitor standards require equipment to withstand up to 130% continuous nominal current due to harmonic voltage distortion plus a 10% capacitor capacitance tolerance ($1.30 \times 1.10 \u0007pprox 1.43$).</li><li><strong>Selection by kvar Rating:</strong> Always select the contactor directly by its AC-6b rated reactive power (kvar) at the operational voltage. For example, for a 25 kvar 400V capacitor step, specify a <strong>CJ19-43</strong> or <strong>CJ19-63</strong> rated for &ge; 25 kvar. Never size a capacitor contactor using standard AC-3 motor horsepower or kW charts, as doing so leads to severe undersizing and premature burnout.</li></ul>"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Circuit Breakers &amp; Protection</span></div>
+    <span class="bh-tag">Circuit Breakers & Protection / Capacitor Switching Contactors</span>
+    <h1 class="bh-title">Power Factor Correction & APFC Panels: What Is a Capacitor Switching Contactor?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>October 5, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/apfc-capacitor-switching-what-is-a-capacitor-switching-contactor/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/apfc-capacitor-switching-what-is-a-capacitor-switching-contactor/hero.png" alt="Heavy-duty three-phase Capacitor Switching Contactor (Model CJ19) operating inside an industrial Automatic Power Factor Correction (APFC) switchgear panel" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Critical Challenge of Switching Power Factor Correction Capacitors</h2>
+<p>In modern industrial manufacturing facilities, commercial office towers, and utility substations, inductive loads such as induction motors, HVAC chillers, and welding transformers consume substantial reactive power. This lowers the electrical <strong>power factor (PF)</strong>, triggering severe utility penalty charges, reducing transformer capacity, and causing excessive distribution line voltage drop.</p>
+<p>To maintain a unity power factor (&ge; 0.95), facilities install <strong>Automatic Power Factor Correction (APFC) panels</strong>. These multi-stage switchboards continuously monitor the grid and step capacitor banks in and out of service as factory loads fluctuate.</p>
+<p>However, energizing a power capacitor is among the most severe switching duties in electrical engineering. Without specialized control gear, switching inrush currents will instantly weld standard contactor contacts and destroy capacitor dielectric film.</p>
+<p>The <strong>Capacitor Switching Contactor (Model CJ19 / CJ19C Series)</strong> provides the dedicated engineering solution: an AC-6b rated device that dampens inrush spikes by up to 90%, ensuring reliable, maintenance-free capacitor switching for millions of cycles.</p>
+
+<h2>Engineering Anatomy: Inside a Dedicated AC-6b Capacitor Contactor</h2>
+<ol>
+  <li><strong>Top-Mounted Auxiliary Early-Make Contact Block:</strong> Features spring-loaded mechanical linkages that bridge the circuit 2–5 ms ahead of main contacts, absorbing the initial transient shock wave.</li>
+  <li><strong>Looped High-Resistance Damping Wire Coils:</strong> Specialized nichrome or alloy damping loops connect across the auxiliary poles, converting the explosive inrush current pulse into safe, dissipated thermal energy.</li>
+  <li><strong>Heavy-Duty Silver Alloy Main Contacts:</strong> High-purity silver-nickel or silver-tin-oxide contacts designed for maximum conductivity and minimal contact resistance under continuous capacitive load.</li>
+  <li><strong>Automatic Resistor Disconnect Mechanism:</strong> Automatically breaks the auxiliary circuit after main contact closure, ensuring damping resistors remain cool and consume zero standby power during steady-state operation.</li>
+  <li><strong>Arc-Quenching De-Ionizing Chamber:</strong> High-temperature thermoset arc chutes rapidly extinguish opening arcs, preventing restrike during capacitor de-energization.</li>
+</ol>
+
+<h2>Comparison: Capacitor Switching Contactor (AC-6b) vs. Standard AC-3 Motor Contactor</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Comparison Parameter</th>
+      <th>Standard AC-3 Motor Contactor</th>
+      <th>YOMIN CJ19 Capacitor Switching Contactor (AC-6b)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Applicable IEC Load Category</strong></td>
+      <td>AC-3 (Squirrel-cage motor starting &amp; running).</td>
+      <td><strong>AC-6b (Low-voltage power capacitor bank switching).</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Peak Inrush Surge Handling</strong></td>
+      <td>Direct undamped inrush: Spikes to 150–200 &times; In.</td>
+      <td><strong>Pre-charge damped inrush: Suppressed to &le; 20–30 &times; In.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Contact Welding Vulnerability</strong></td>
+      <td>Extremely high; contacts frequently weld on first surge.</td>
+      <td><strong>Zero contact welding; auxiliary contacts absorb peak surge.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Capacitor Life Expectancy Impact</strong></td>
+      <td>Severe; high-frequency voltage spikes degrade dielectric film.</td>
+      <td><strong>Extends capacitor service life by up to 300%–400%.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Auxiliary Damping Circuitry</strong></td>
+      <td>None (Direct main terminal connection only).</td>
+      <td><strong>Integrated early-make contacts + alloy damping wire loops.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Grid Power Quality Impact</strong></td>
+      <td>Creates severe line voltage dips and harmonics for PLCs/VFDs.</td>
+      <td><strong>Smooth capacitive connection with negligible grid disturbance.</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Technical Specifications</h2>
+<table>
+  <thead>
+    <tr><th>Technical Specification Parameter</th><th>Engineering Value & Performance Rating</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Rated Operational Voltage & Frequency</strong></td><td>Rated operational voltage (Ue): AC 380V / 400V / 415V / 690V at 50/60 Hz; insulation voltage (Ui): 690V / 1000V</td></tr>
+    <tr><td><strong>Controlled Power Capacitor Bank Capacity</strong></td><td>Modular ratings controlling capacitor banks from 12.5 kvar, 20 kvar, 25 kvar, 30 kvar, up to 50 kvar (single or multi-stage APFC)</td></tr>
+    <tr><td><strong>Inrush Current Peak Suppression Ratio</strong></td><td>Suppresses severe initial inrush current from &gt; 200 &times; In down to &le; 20–30 &times; In via leading damping wire coils</td></tr>
+    <tr><td><strong>Operational Utilization Category</strong></td><td>Certified for IEC 60947-4-1 Utilization Category AC-6b (dedicated capacitive load switching, exceeding standard AC-3 motor duty)</td></tr>
+    <tr><td><strong>Early-Make Leading Contact Mechanism</strong></td><td>Auxiliary contact block makes contact 2 to 5 milliseconds *before* main contacts, automatically disconnecting damping resistors once closed</td></tr>
+    <tr><td><strong>Damping Resistor Wire Loop Construction</strong></td><td>Specialized high-temperature resistance alloy wire loops mounted on top housing, dissipating pre-charge transient energy safely</td></tr>
+    <tr><td><strong>Mechanical and Electrical Endurance Life</strong></td><td>Mechanical life &ge; 1,000,000 operations; electrical life under full AC-6b rated capacitive duty &ge; 100,000 operations</td></tr>
+    <tr><td><strong>Applicable International Testing Standards</strong></td><td>Fully compliant with IEC 60947-4-1, EN 60947-4-1, GB/T 14048.4, and CE low-voltage directives</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is a Capacitor Switching Contactor and why can standard AC-3 motor contactors NOT be used for capacitor banks?</h3><p>A Capacitor Switching Contactor—commonly designated under international standards as an AC-6b duty contactor or APFC contactor—is a specialized electromagnetic contactor engineered with early-make auxiliary contacts and inrush-limiting damping resistors to safely switch low-voltage power factor correction capacitors. Standard general-purpose contactors (designed for AC-3 inductive motor loads) suffer catastrophic failure when connected to capacitors for three physical reasons: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;1. Massive Initial Inrush Current ($200 	imes I_n$):&lt;/strong&gt; At the instant of voltage switch-on, an uncharged capacitor acts as a pure electrical short-circuit. The resulting inrush current can spike to between 100 and 200 times the capacitor&#x27;s rated nominal current within a fraction of a millisecond.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;2. Contact Welding:&lt;/strong&gt; Standard AC-3 contactor contacts experience contact bounce upon closing. Under a 200 $I_n$ surge, this micro-arcing instantly melts the silver-cadmium contacts, permanently welding them shut and preventing the stage from turning off.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;3. Capacitor Dielectric Degradation &amp; Voltage Surges:&lt;/strong&gt; High-frequency inrush oscillations generate destructive transient overvoltages that puncture metallized polypropylene capacitor film, blow upstream branch fuses, and disrupt sensitive PLCs and variable frequency drives on the same bus.&lt;/li&gt;&lt;/ul&gt;Capacitor contactors eliminate these hazards by routing the initial surge through current-limiting damping resistors milliseconds before the main contacts touch.</p><h3>How does the two-stage early-make contact mechanism physically suppress capacitor inrush current?</h3><p>The operation of an advanced capacitor contactor (such as the YOMIN CJ19 series) follows an exact mechanical timing sequence during each closing cycle: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Stage 1 (Pre-Charge via Damping Resistors):&lt;/strong&gt; When the contactor coil energizes, mechanical linkages cause the top-mounted auxiliary contact block to close approximately 2 to 5 milliseconds &lt;em&gt;before&lt;/em&gt; the main power contacts touch. The incoming AC power flows through looped high-resistance damping wires into the capacitor bank. These resistors act as an instantaneous buffer, absorbing the peak surge energy and capping the inrush current below 20 to 30 times rated current while pre-charging the capacitor.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Stage 2 (Main Contact Engagement &amp; Resistor Disconnection):&lt;/strong&gt; As the armature reaches full stroke, the heavy silver-nickel main power contacts close, carrying the full continuous operating current with near-zero contact resistance. Simultaneously, a spring-loaded mechanical release automatically separates the auxiliary contacts, completely disconnecting the damping resistors so they do not consume continuous power or overheat during normal steady-state operation.&lt;/li&gt;&lt;/ul&gt;</p><h3>How do you calculate and select the correct capacitor contactor rating for an APFC panel stage?</h3><p>Contactor sizing requires factoring in harmonic distortion and continuous overcurrent margins per IEC 60831: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Standard 1.35x Safety Factor:&lt;/strong&gt; Capacitor standards require equipment to withstand up to 130% continuous nominal current due to harmonic voltage distortion plus a 10% capacitor capacitance tolerance ($1.30 	imes 1.10 pprox 1.43$).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Selection by kvar Rating:&lt;/strong&gt; Always select the contactor directly by its AC-6b rated reactive power (kvar) at the operational voltage. For example, for a 25 kvar 400V capacitor step, specify a &lt;strong&gt;CJ19-43&lt;/strong&gt; or &lt;strong&gt;CJ19-63&lt;/strong&gt; rated for &amp;ge; 25 kvar. Never size a capacitor contactor using standard AC-3 motor horsepower or kW charts, as doing so leads to severe undersizing and premature burnout.&lt;/li&gt;&lt;/ul&gt;</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Power Factor Correction & APFC Panels: What Is a Capacitor Switching Contactor?</h2>
+    <p>Designing automatic power factor correction (APFC) panels, low-voltage capacitor banks, or reactive power switchboards requiring certified AC-6b capacitor switching contactors? YOMIN manufactures high-durability CJ19 / CJ19C contactors.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products">Browse the complete product catalogue &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "apfc-capacitor-switching-what-is-a-capacitor-switching-contactor";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
