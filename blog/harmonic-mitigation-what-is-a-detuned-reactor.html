@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harmonic Mitigation &amp; APFC: What Is a Detuned Reactor? | Yomin Electric</title>
+<meta name="description" content="Industrial power quality, APFC capacitor banks, and harmonic resonance protection: What is a detuned reactor? How 7% (189Hz) and 14% (134Hz) detuning factors, grain-oriented silicon steel cores with air-gap spacers, Class H copper windings, and IEC 60076-6 standards protect capacitors from harmonic overcurrents.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/harmonic-mitigation-what-is-a-detuned-reactor/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Harmonic Mitigation & APFC: What Is a Detuned Reactor?",
+      "description": "Industrial power quality, APFC capacitor banks, and harmonic resonance protection: What is a detuned reactor? How 7% (189Hz) and 14% (134Hz) detuning factors, grain-oriented silicon steel cores with air-gap spacers, Class H copper windings, and IEC 60076-6 standards protect capacitors from harmonic overcurrents.",
+      "image": "https://www.yominelectric.com/assets/images/blog/harmonic-mitigation-what-is-a-detuned-reactor/hero.png",
+      "datePublished": "2026-10-12",
+      "dateModified": "2026-10-12",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a Detuned Reactor and why must it be connected in series with power capacitors in APFC banks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Detuned Reactor—frequently designated as a harmonic filter reactor, series detuning choke, or capacitor protection reactor—is a specialized three-phase iron-core inductor connected in series with each power capacitor step in an automatic power factor correction (APFC) bank. In modern industrial manufacturing facilities, commercial data centers, and hospitals: <ul><li><strong>The Parallel Resonance Catastrophe:</strong> Modern facilities are packed with non-linear electrical loads: Variable Frequency Drives (VFDs), UPS systems, DC rectifiers, and solar PV inverters. These devices inject severe harmonic distortion currents—primarily the <strong>5th harmonic (250Hz) and 7th harmonic (350Hz)</strong>. When standard un-choked power capacitors are switched onto the bus, their capacitive reactance ($X_C = 1/2\\pi fC$) decreases as frequency rises, while upstream transformer inductive reactance ($X_L = 2\\pi fL$) increases. At some frequency, $X_C = X_L$, creating a <strong>parallel resonant tank circuit</strong>. Harmonic currents are magnified by 300% to 500%, causing capacitor bulging, blown fuses, breaker tripping, and transformer burnout.</li><li><strong>The Detuned Reactor Solution:</strong> By connecting an inductor in series with the capacitor, the combination forms a series LC branch. The reactor's inductance is mathematically chosen so that the circuit's natural resonant frequency ($f_r$) is tuned <strong>well below the lowest prevalent harmonic</strong> (e.g., 189Hz for a 7% reactor, safely below 250Hz). Below 189Hz (at fundamental 50Hz/60Hz), the branch remains capacitive and improves power factor. At and above 250Hz, the branch behaves inductively ($X_L > X_C$), making parallel resonance physically impossible and shielding capacitors from harmonic overloads.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do electrical engineers choose between a 7% (189Hz) and a 14% (134Hz) detuned reactor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The choice between detuning factors depends strictly on the harmonic spectrum present on the facility's electrical distribution bus: <ul><li><strong>7% Detuned Reactor ($p = 7\\%$, $f_r = 189$ Hz at 50Hz / 227 Hz at 60Hz):</strong> The global industry standard for 3-phase commercial and industrial facilities where non-linear loads are primarily 6-pulse converters (VFDs, AC drives, pumps, fans) producing 5th (250Hz) and 7th (350Hz) harmonics. It safely suppresses 5th harmonic resonance while maintaining high power factor correction efficiency.</li><li><strong>14% Detuned Reactor ($p = 14\\%$, $f_r = 134$ Hz at 50Hz / 160 Hz at 60Hz):</strong> Required when the distribution network contains significant single-phase non-linear loads (LED driver lighting, computers, switched-mode power supplies) producing heavy <strong>3rd harmonic (150Hz / 180Hz)</strong> currents, or in networks with high audio-frequency utility ripple control signals. Tuning down to 134Hz ensures the branch remains inductive even at the 3rd harmonic.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do power capacitors experience higher operating voltage when connected in series with a detuned reactor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Connecting an inductive reactor in series with a capacitor causes a physical voltage rise across the capacitor terminals according to the formula: $$U_C = \frac{U_N}{1 - p}$$ For example, on a standard 400V grid ($U_N = 400$V) with a 7% detuned reactor ($p = 0.07$): $$U_C = \frac{400\text{V}}{1 - 0.07} = \frac{400\text{V}}{0.93} \u0007pprox 430\text{V}$$ If standard 400V-rated capacitors are installed, they will operate in continuous overvoltage and fail within months. Therefore, engineers must always select up-rated capacitors—specifically <strong>440V, 480V, or 525V rated capacitors</strong>—when pairing with 7% or 14% detuned reactors."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Power Quality &amp; Harmonic Filters</span></div>
+    <span class="bh-tag">Power Quality & Harmonic Filters / Detuned Series Reactors</span>
+    <h1 class="bh-title">Harmonic Mitigation & APFC: What Is a Detuned Reactor?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>October 12, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/harmonic-mitigation-what-is-a-detuned-reactor/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/harmonic-mitigation-what-is-a-detuned-reactor/hero.png" alt="Three-phase dry-type iron-core Detuned Series Filter Reactor (Model CKSG series, 7% detuning) with laminated silicon steel core installed in an automatic power factor correction panel" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Critical Defense Against Harmonic Resonance in Modern Industrial Power Networks</h2>
+<p>In modern industrial manufacturing plants, commercial high-rise towers, and automated distribution substations, the rapid proliferation of non-linear power electronic equipment—such as variable speed drives (VFDs), solar inverters, battery storage converters, DC rectifiers, and LED lighting drivers—has radically altered the nature of alternating current power grids.</p>
+<p>While these power electronics provide unprecedented motor speed control and energy efficiency, their rapid solid-state switching draws distorted non-sinusoidal currents, injecting massive harmonic pollution (primarily the 5th, 7th, 11th, and 13th harmonic currents) back into the electrical distribution bus.</p>
+<p>When plant managers install traditional power factor correction capacitor banks to eliminate low power factor utility penalty fees, an unforeseen catastrophe frequently strikes: the capacitive reactance of the capacitor bank interacts with the inductive reactance of the main supply transformer, creating a <strong>parallel resonant circuit</strong>.</p>
+<p>At the resonant frequency, harmonic currents are amplified by 300% to 500%. This dramatic overcurrent leads to capacitor bulging, ruptured dielectric cans, blown high-rupturing-capacity (HRC) fuses, nuisance circuit breaker tripping, and destructive overheating of distribution transformers.</p>
+<p>The <strong>Dry-Type Iron-Core Detuned Series Filter Reactor (Model CKSG Series)</strong> represents the essential, non-negotiable solution: a precision-engineered three-phase inductor connected in series with each capacitor step to alter the circuit resonance point, blocking harmonic amplification and ensuring decades of trouble-free capacitor operation.</p>
+
+<h2>Engineering Anatomy: Inside a Model CKSG Detuned Iron-Core Series Reactor</h2>
+<ol>
+  <li><strong>Multi-Section Silicon Steel Core with Ceramic Air Gaps:</strong> Assembled from high-grade, cold-rolled grain-oriented low-loss silicon steel laminations ($< 1.0$ W/kg). Multiple discrete air gaps spaced with high-temperature ceramic insulators prevent magnetic saturation during severe harmonic overcurrent conditions.</li>
+  <li><strong>Class H Electrolytic Copper Windings:</strong> Precision-wound using electrolytic copper foil or heavy enameled rectangular wire with Class H (180&deg;C) thermal insulation, providing exceptional thermal dissipation and withstanding continuous harmonic current overloads.</li>
+  <li><strong>Vacuum Pressure Impregnation (VPI):</strong> The entire core and coil assembly undergoes high-vacuum pressure impregnation using solvent-free polymerizing epoxy resin, cured in high-temperature ovens. This eliminates micro-vibrations, resists moisture, and ensures whisper-quiet acoustic noise levels ($< 50$ dB).</li>
+  <li><strong>Linearity Under Overcurrent ($I_{lin} \ge 1.80 I_n$):</strong> High saturation linearity guarantees that inductance ($L$) remains strictly constant ($> 95\%$) even when subjected to inrush currents and harmonic distortion spikes reaching nearly double the rated nominal current.</li>
+  <li><strong>Embedded Thermal Protection Sensor:</strong> A normally closed (NC) bimetallic micro-thermostat is factory-embedded directly within the central phase coil winding. If winding temperatures exceed 125&deg;C, it trips the APFC controller step contactor to safely de-energize the stage.</li>
+</ol>
+
+<h2>Comparison: Standard Unprotected Capacitor Bank vs. Detuned Filter Reactor Capacitor Bank (CKSG Series)</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Engineering Parameter</th>
+      <th>Standard Unprotected Capacitor Bank</th>
+      <th>YOMIN Detuned Filter Capacitor Bank (CKSG Series)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Susceptibility to Harmonic Parallel Resonance</strong></td>
+      <td>Extreme: High risk of resonant amplification ($3	imes$ to $5	imes$) with 5th and 7th harmonics.</td>
+      <td><strong>Zero Resonance: Resonance frequency shifted below 189Hz (for 7%) where no harmonics exist.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Capacitor Lifespan &amp; Failure Rates</strong></td>
+      <td>Severely shortened (often 1–3 years); frequent capacitor bulging, oil leaks, and explosions.</td>
+      <td><strong>Full 100,000+ Hour Lifespan: Capacitors operate cool with low harmonic distortion stress.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Electrical Behavior at Harmonic Frequencies</strong></td>
+      <td>Capacitive ($X_C$ drops as frequency rises), drawing heavy harmonic currents into the bank.</td>
+      <td><strong>Inductive ($X_L > X_C$ above 189Hz), naturally repelling and blocking harmonic frequencies.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Switching Inrush Current Damping</strong></td>
+      <td>High inrush current transients (up to $100	imes I_n$) during step energization without damping.</td>
+      <td><strong>Inrush Suppressed: Series inductance naturally chokes and damps fast current rise transients.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Utility Grid Power Quality &amp; Compliance</strong></td>
+      <td>Amplified voltage distortion exceeds IEEE 519 and IEC 61000-2-4 regulatory limits.</td>
+      <td><strong>Attenuates grid harmonic distortion, ensuring full compliance with IEEE 519 standards.</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Technical Specifications</h2>
+<table>
+  <thead>
+    <tr><th>Technical Specification Parameter</th><th>Engineering Value & Performance Rating</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Rated System Operating Voltage Class</strong></td><td>Low-voltage utility ratings: 400V, 440V, 480V, 525V, up to 690V AC 3-Phase (50/60 Hz)</td></tr>
+    <tr><td><strong>Standard Detuning Factors & Frequencies</strong></td><td>p = 7% ($f_r = 189$ Hz at 50Hz, blocking 5th & 7th harmonics) and p = 14% ($f_r = 134$ Hz, blocking 3rd harmonic)</td></tr>
+    <tr><td><strong>Matching Capacitor Bank Output Sizing</strong></td><td>Calibrated for standard APFC steps from 10 kvar, 15 kvar, 20 kvar, 25 kvar, 30 kvar, 50 kvar, up to 100 kvar</td></tr>
+    <tr><td><strong>Magnetic Core Material & Air-Gap Design</strong></td><td>Low-loss grain-oriented cold-rolled silicon steel sheet laminations with multi-section precision ceramic air-gap spacers</td></tr>
+    <tr><td><strong>Winding Conductor & Thermal Insulation</strong></td><td>High-purity electrolytic copper (or aluminium) foil/wire windings with Class H (180&deg;C) or Class C (200&deg;C) insulation</td></tr>
+    <tr><td><strong>Impregnation & Environmental Sealing</strong></td><td>Vacuum pressure impregnated (VPI) with solventless polymerizing epoxy resin for minimal acoustic hum (< 45–55 dB)</td></tr>
+    <tr><td><strong>Linearity Threshold & Current Saturation</strong></td><td>High saturation linearity: Inductance $L$ remains &ge; 0.95 $L_n$ up to 1.80–2.00 times rated nominal current ($I_{lin} \ge 1.80 I_n$)</td></tr>
+    <tr><td><strong>Thermal Protection & Built-in Sensor</strong></td><td>Integrated micro-thermostat temperature sensor switch (NC, 125&deg;C–140&deg;C) embedded in the central phase coil winding</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is a Detuned Reactor and why must it be connected in series with power capacitors in APFC banks?</h3><p>A Detuned Reactor—frequently designated as a harmonic filter reactor, series detuning choke, or capacitor protection reactor—is a specialized three-phase iron-core inductor connected in series with each power capacitor step in an automatic power factor correction (APFC) bank. In modern industrial manufacturing facilities, commercial data centers, and hospitals: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;The Parallel Resonance Catastrophe:&lt;/strong&gt; Modern facilities are packed with non-linear electrical loads: Variable Frequency Drives (VFDs), UPS systems, DC rectifiers, and solar PV inverters. These devices inject severe harmonic distortion currents—primarily the &lt;strong&gt;5th harmonic (250Hz) and 7th harmonic (350Hz)&lt;/strong&gt;. When standard un-choked power capacitors are switched onto the bus, their capacitive reactance ($X_C = 1/2\pi fC$) decreases as frequency rises, while upstream transformer inductive reactance ($X_L = 2\pi fL$) increases. At some frequency, $X_C = X_L$, creating a &lt;strong&gt;parallel resonant tank circuit&lt;/strong&gt;. Harmonic currents are magnified by 300% to 500%, causing capacitor bulging, blown fuses, breaker tripping, and transformer burnout.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;The Detuned Reactor Solution:&lt;/strong&gt; By connecting an inductor in series with the capacitor, the combination forms a series LC branch. The reactor&#x27;s inductance is mathematically chosen so that the circuit&#x27;s natural resonant frequency ($f_r$) is tuned &lt;strong&gt;well below the lowest prevalent harmonic&lt;/strong&gt; (e.g., 189Hz for a 7% reactor, safely below 250Hz). Below 189Hz (at fundamental 50Hz/60Hz), the branch remains capacitive and improves power factor. At and above 250Hz, the branch behaves inductively ($X_L &gt; X_C$), making parallel resonance physically impossible and shielding capacitors from harmonic overloads.&lt;/li&gt;&lt;/ul&gt;</p><h3>How do electrical engineers choose between a 7% (189Hz) and a 14% (134Hz) detuned reactor?</h3><p>The choice between detuning factors depends strictly on the harmonic spectrum present on the facility&#x27;s electrical distribution bus: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;7% Detuned Reactor ($p = 7\%$, $f_r = 189$ Hz at 50Hz / 227 Hz at 60Hz):&lt;/strong&gt; The global industry standard for 3-phase commercial and industrial facilities where non-linear loads are primarily 6-pulse converters (VFDs, AC drives, pumps, fans) producing 5th (250Hz) and 7th (350Hz) harmonics. It safely suppresses 5th harmonic resonance while maintaining high power factor correction efficiency.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;14% Detuned Reactor ($p = 14\%$, $f_r = 134$ Hz at 50Hz / 160 Hz at 60Hz):&lt;/strong&gt; Required when the distribution network contains significant single-phase non-linear loads (LED driver lighting, computers, switched-mode power supplies) producing heavy &lt;strong&gt;3rd harmonic (150Hz / 180Hz)&lt;/strong&gt; currents, or in networks with high audio-frequency utility ripple control signals. Tuning down to 134Hz ensures the branch remains inductive even at the 3rd harmonic.&lt;/li&gt;&lt;/ul&gt;</p><h3>Why do power capacitors experience higher operating voltage when connected in series with a detuned reactor?</h3><p>Connecting an inductive reactor in series with a capacitor causes a physical voltage rise across the capacitor terminals according to the formula: $$U_C = rac{U_N}{1 - p}$$ For example, on a standard 400V grid ($U_N = 400$V) with a 7% detuned reactor ($p = 0.07$): $$U_C = rac{400	ext{V}}{1 - 0.07} = rac{400	ext{V}}{0.93} pprox 430	ext{V}$$ If standard 400V-rated capacitors are installed, they will operate in continuous overvoltage and fail within months. Therefore, engineers must always select up-rated capacitors—specifically &lt;strong&gt;440V, 480V, or 525V rated capacitors&lt;/strong&gt;—when pairing with 7% or 14% detuned reactors.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Harmonic Mitigation & APFC: What Is a Detuned Reactor?</h2>
+    <p>Designing automatic power factor correction (APFC) panels, detuned harmonic filter banks, or industrial capacitor protection systems requiring certified IEC 60076-6 dry-type iron-core detuned reactors (10 to 100 kvar, 7% & 14%)? YOMIN manufactures precision-engineered CKSG series series reactors.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products">Browse the complete product catalogue &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "harmonic-mitigation-what-is-a-detuned-reactor";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

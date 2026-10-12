@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mitigación de Armónicos y Bancos de Capacitores: ¿Qué es una Reactancia Antiharmónica (Detuned Reactor)? | Yomin Electric</title>
+<meta name="description" content="Calidad de energía industrial, bancos de capacitores automáticos (APFC) y protección contra resonancia armónica: ¿Qué es una reactancia antiharmónica (detuned reactor)? Factores de desintonía 7% (189Hz) y 14% (134Hz), núcleo de acero al silicio con entrehierros, devanados de cobre clase H y norma IEC 60076-6.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/harmonic-mitigation-what-is-a-detuned-reactor/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor-es">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Mitigación de Armónicos y Bancos de Capacitores: ¿Qué es una Reactancia Antiharmónica (Detuned Reactor)?",
+      "description": "Calidad de energía industrial, bancos de capacitores automáticos (APFC) y protección contra resonancia armónica: ¿Qué es una reactancia antiharmónica (detuned reactor)? Factores de desintonía 7% (189Hz) y 14% (134Hz), núcleo de acero al silicio con entrehierros, devanados de cobre clase H y norma IEC 60076-6.",
+      "image": "https://www.yominelectric.com/assets/images/blog/harmonic-mitigation-what-is-a-detuned-reactor/hero.png",
+      "datePublished": "2026-10-12",
+      "dateModified": "2026-10-12",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/harmonic-mitigation-what-is-a-detuned-reactor-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es una Reactancia Antiharmónica (Detuned Reactor) y por qué se conecta en serie con los capacitores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una Reactancia Antiharmónica—también denominada reactor de rechazo de armónicos, choque de desintonía o inductancia serie—es un inductor trifásico con núcleo de hierro conectado en serie con cada escalón de capacitores en un banco automático de factor de potencia (APFC). En plantas industriales y edificios comerciales: <ul><li><strong>El Riesgo de Resonancia Paralela:</strong> Equipos como variadores de frecuencia (VFD), rectificadores y fuentes conmutadas inyectan corrientes armónicas (especialmente de 5º orden a 250Hz y 7º a 350Hz). Al conectar capacitores ordinarios, su reactancia capacitiva disminuye con la frecuencia mientras la inductancia del transformador aumenta. A cierta frecuencia, ambas se igualan creando una <strong>resonancia paralela destructiva</strong> que multiplica las corrientes armónicas hasta por 5 veces, haciendo estallar los capacitores y quemando transformadores.</li><li><strong>La Solución con la Reactancia Serie:</strong> La reactancia desplaza la frecuencia de resonancia natural del conjunto LC a <strong>189 Hz (en reactancias del 7%)</strong>, situándola con seguridad por debajo del armónico 5º (250 Hz). A 50 Hz el conjunto se comporta como capacitor aportando reactivos; pero a 250 Hz o más, se vuelve inductivo, bloqueando físicamente la resonancia y absorbiendo parte de las corrientes armónicas sin dañar el banco.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo seleccionar entre un factor de desintonía del 7% (189Hz) y del 14% (134Hz)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La selección depende del espectro armónico presente en la red de la fábrica: <ul><li><strong>Factor del 7% (189 Hz en 50Hz / 227 Hz en 60Hz):</strong> Es el estándar predominante en la industria para redes con cargas trifásicas como variadores de frecuencia de 6 pulsos (armónicos 5º y 7º). Previene la resonancia y mantiene una óptima compensación de potencia reactiva.</li><li><strong>Factor del 14% (134 Hz en 50Hz / 160 Hz en 60Hz):</strong> Es indispensable en redes con abundante carga monofásica (computadoras, iluminación LED, electrónica comercial) que generan fuertes corrientes de <strong>3º armónico (150Hz / 180Hz)</strong>, o en sistemas con señales de telemando de red.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué los capacitores experimentan una mayor tensión cuando se colocan en serie con reactancias?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La conexión en serie de un inductor y un capacitor provoca una elevación física de tensión sobre los bornes del capacitor según la fórmula $U_C = U_N / (1 - p)$. En una red de 400V con reactancia al 7%, la tensión efectiva sobre el capacitor sube a unos <strong>430V continuos</strong>. Por esta razón, es obligatorio utilizar capacitores reforzados dimensionados para <strong>440V, 480V o 525V</strong> para evitar su destrucción prematura."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: ES">
+        <span id="lf"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span><span id="lc">ES</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Calidad de Energía y Filtros de Armónicos</span></div>
+    <span class="bh-tag">Calidad de Energía y Filtros de Armónicos / Reactancias Antiharmónicas</span>
+    <h1 class="bh-title">Mitigación de Armónicos y Bancos de Capacitores: ¿Qué es una Reactancia Antiharmónica (Detuned Reactor)?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>12 de Octubre de 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/harmonic-mitigation-what-is-a-detuned-reactor/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/harmonic-mitigation-what-is-a-detuned-reactor/hero.png" alt="Reactancia antiharmónica trifásica seca con núcleo de hierro laminado (Serie CKSG, sintonizada al 7%) instalada en tablero de corrección de factor de potencia" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>La Defensa Indispensable Contra la Resonancia Armónica en Redes Industriales</h2>
+<p>En complejos manufactureros, estaciones de bombeo, plantas automotrices y centros de datos, la adopción masiva de equipos de electrónica de potencia—como variadores de frecuencia (VFD), servomotores, arrancadores suaves y cargadores de baterías—ha transformado las redes eléctricas modernas.</p>
+<p>Aunque estos equipos aportan un extraordinario control operativo y ahorro de energía, sus conmutaciones rápidas introducen severas corrientes armónicas distorsionadas (principalmente armónicos de 5º y 7º orden) que contaminan el sistema de distribución.</p>
+<p>Cuando los ingenieros de planta instalan bancos de capacitores convencionales para eliminar las penalizaciones por bajo factor de potencia, se desata frecuentemente un problema grave: la reactancia de los capacitores entra en resonancia paralela con la inductancia del transformador de suministro.</p>
+<p>Esta resonancia magnifica las corrientes armónicas hasta en un 500%, provocando el hinchamiento y explosión de botes de capacitores, disparo intempestivo de interruptores automáticos, fundición de fusibles y sobrecalentamiento crítico de transformadores y cables.</p>
+<p>La <strong>Reactancia Antiharmónica Trifásica Seca (Serie CKSG)</strong> ofrece la respuesta definitiva: un inductor con núcleo de hierro conectado en serie con cada escalón que desplaza la frecuencia de resonancia por debajo del 5º armónico, garantizando una operación estable y segura del banco durante décadas.</p>
+
+<h2>Componentes Constructivos y Calidad de Ingeniería de la Serie CKSG</h2>
+<ol>
+  <li><strong>Núcleo de Acero al Silicio con Entrehierros Cerámicos:</strong> Láminas de grano orientado de bajísimas pérdidas con entrehierros fraccionados que mantienen la inductancia lineal incluso con fuertes sobrecorrientes.</li>
+  <li><strong>Devanados de Cobre Electrolítico Clase H (180&deg;C):</strong> Bobinas dimensionadas generosamente que disipan el calor eficientemente y resisten sobrecargas armónicas permanentes.</li>
+  <li><strong>Impregnación al Vacío y Presión (VPI):</strong> Resina polimérica curada en horno que compacta rígidamente el ensamble, eliminando ruidos molestos ($< 50$ dB).</li>
+  <li><strong>Termostato de Protección Integrado:</strong> Sensor bimetálico embebido en el bobinado central que desconecta el paso ante cualquier elevación anormal de temperatura.</li>
+</ol>
+
+<h2>Especificaciones Técnicas</h2>
+<table>
+  <thead>
+    <tr><th>Parámetro Técnico</th><th>Valor de Ingeniería y Rendimiento</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Clase de Tensión Asignada de Servicio</strong></td><td>Tensiones industriales normalizadas: 400V, 440V, 480V, 525V hasta 690V AC trifásico (50/60 Hz)</td></tr>
+    <tr><td><strong>Factores de Desintonía y Frecuencias</strong></td><td>p = 7% ($f_r = 189$ Hz en 50Hz, bloquea armónicos 5º y 7º) y p = 14% ($f_r = 134$ Hz, bloquea armónico 3º)</td></tr>
+    <tr><td><strong>Escalones de Potencia Reactiva Asociada</strong></td><td>Calibrada para pasos estándar de bancos de capacitores: 10 kvar, 15 kvar, 20 kvar, 25 kvar, 30 kvar, 50 kvar hasta 100 kvar</td></tr>
+    <tr><td><strong>Material del Núcleo y Entrehierros Múltiples</strong></td><td>Láminas de acero al silicio de grano orientado de bajas pérdidas con entrehierros seccionados mediante separadores cerámicos</td></tr>
+    <tr><td><strong>Conductor de Devanados y Aislamiento</strong></td><td>Bobinas de cobre electrolítico de alta pureza con aislamiento térmico Clase H (180&deg;C) o Clase C (200&deg;C)</td></tr>
+    <tr><td><strong>Impregnación al Vacío y Presión (VPI)</strong></td><td>Tratamiento completo VPI con resina polimérica epoxi libre de disolventes; nivel sonoro ultrasilencioso (< 45–55 dB)</td></tr>
+    <tr><td><strong>Umbral de Linealidad ante Sobrecargas</strong></td><td>Excelente linealidad magnética: Inductancia $L \ge 0,95 L_n$ hasta 1,80–2,00 veces la corriente nominal ($I_{lin} \ge 1,80 I_n$)</td></tr>
+    <tr><td><strong>Sensor de Protección Térmica Incorporado</strong></td><td>Interruptor termostático bimetálico en miniatura (NC, 125&deg;C–140&deg;C) embebido en el devanado de la fase central</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Preguntas Frecuentes</h2><h3>¿Qué es una Reactancia Antiharmónica (Detuned Reactor) y por qué se conecta en serie con los capacitores?</h3><p>Una Reactancia Antiharmónica—también denominada reactor de rechazo de armónicos, choque de desintonía o inductancia serie—es un inductor trifásico con núcleo de hierro conectado en serie con cada escalón de capacitores en un banco automático de factor de potencia (APFC). En plantas industriales y edificios comerciales: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;El Riesgo de Resonancia Paralela:&lt;/strong&gt; Equipos como variadores de frecuencia (VFD), rectificadores y fuentes conmutadas inyectan corrientes armónicas (especialmente de 5º orden a 250Hz y 7º a 350Hz). Al conectar capacitores ordinarios, su reactancia capacitiva disminuye con la frecuencia mientras la inductancia del transformador aumenta. A cierta frecuencia, ambas se igualan creando una &lt;strong&gt;resonancia paralela destructiva&lt;/strong&gt; que multiplica las corrientes armónicas hasta por 5 veces, haciendo estallar los capacitores y quemando transformadores.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;La Solución con la Reactancia Serie:&lt;/strong&gt; La reactancia desplaza la frecuencia de resonancia natural del conjunto LC a &lt;strong&gt;189 Hz (en reactancias del 7%)&lt;/strong&gt;, situándola con seguridad por debajo del armónico 5º (250 Hz). A 50 Hz el conjunto se comporta como capacitor aportando reactivos; pero a 250 Hz o más, se vuelve inductivo, bloqueando físicamente la resonancia y absorbiendo parte de las corrientes armónicas sin dañar el banco.&lt;/li&gt;&lt;/ul&gt;</p><h3>¿Cómo seleccionar entre un factor de desintonía del 7% (189Hz) y del 14% (134Hz)?</h3><p>La selección depende del espectro armónico presente en la red de la fábrica: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Factor del 7% (189 Hz en 50Hz / 227 Hz en 60Hz):&lt;/strong&gt; Es el estándar predominante en la industria para redes con cargas trifásicas como variadores de frecuencia de 6 pulsos (armónicos 5º y 7º). Previene la resonancia y mantiene una óptima compensación de potencia reactiva.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Factor del 14% (134 Hz en 50Hz / 160 Hz en 60Hz):&lt;/strong&gt; Es indispensable en redes con abundante carga monofásica (computadoras, iluminación LED, electrónica comercial) que generan fuertes corrientes de &lt;strong&gt;3º armónico (150Hz / 180Hz)&lt;/strong&gt;, o en sistemas con señales de telemando de red.&lt;/li&gt;&lt;/ul&gt;</p><h3>¿Por qué los capacitores experimentan una mayor tensión cuando se colocan en serie con reactancias?</h3><p>La conexión en serie de un inductor y un capacitor provoca una elevación física de tensión sobre los bornes del capacitor según la fórmula $U_C = U_N / (1 - p)$. En una red de 400V con reactancia al 7%, la tensión efectiva sobre el capacitor sube a unos &lt;strong&gt;430V continuos&lt;/strong&gt;. Por esta razón, es obligatorio utilizar capacitores reforzados dimensionados para &lt;strong&gt;440V, 480V o 525V&lt;/strong&gt; para evitar su destrucción prematura.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Mitigación de Armónicos y Bancos de Capacitores: ¿Qué es una Reactancia Antiharmónica (Detuned Reactor)?</h2>
+    <p>¿Diseña tableros automáticos de corrección de factor de potencia (APFC) con filtros de armónicos o requiere reactancias antiharmónicas secas certificadas IEC 60076-6 (10 a 100 kvar, 7% y 14%)? YOMIN fabrica reactancias serie CKSG de máxima confiabilidad.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <p style="margin-top:14px"><a href="/products">Ver catálogo completo de productos &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "harmonic-mitigation-what-is-a-detuned-reactor";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
