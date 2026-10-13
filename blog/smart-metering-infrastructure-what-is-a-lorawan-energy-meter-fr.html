@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comptage Intelligent &amp; Télérelève AMI : Qu'est-ce qu'un Compteur d'Énergie LoRaWAN ? | Yomin Electric</title>
+<meta name="description" content="Télérelève automatique des compteurs (AMR/AMI), sous-comptage tertiaire et réseaux intelligents : Qu&#x27;est-ce qu&#x27;un compteur d&#x27;énergie LoRaWAN ? Transmission radio longue portée sub-gigahertz (5 à 15 km), zéro coût d&#x27;abonnement carte SIM opérateur, pénétration en sous-sol, protocole DLMS/COSEM et norme CEI 62053.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/smart-metering-infrastructure-what-is-a-lorawan-energy-meter/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-lorawan-energy-meter-fr">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-lorawan-energy-meter">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-lorawan-energy-meter-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-lorawan-energy-meter-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-lorawan-energy-meter-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-lorawan-energy-meter">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Comptage Intelligent & Télérelève AMI : Qu'est-ce qu'un Compteur d'Énergie LoRaWAN ?",
+      "description": "Télérelève automatique des compteurs (AMR/AMI), sous-comptage tertiaire et réseaux intelligents : Qu'est-ce qu'un compteur d'énergie LoRaWAN ? Transmission radio longue portée sub-gigahertz (5 à 15 km), zéro coût d'abonnement carte SIM opérateur, pénétration en sous-sol, protocole DLMS/COSEM et norme CEI 62053.",
+      "image": "https://www.yominelectric.com/assets/images/blog/smart-metering-infrastructure-what-is-a-lorawan-energy-meter/hero.png",
+      "datePublished": "2026-10-13",
+      "dateModified": "2026-10-13",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-lorawan-energy-meter-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce qu'un Compteur d'Énergie LoRaWAN et pourquoi transforme-t-il la télérelève pour les distributeurs d'électricité ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un Compteur d'Énergie LoRaWAN—couramment appelé compteur électrique communicant longue portée ou compteur IoT sub-GHz—est un compteur d'électricité électronique intégrant un émetteur-récepteur radio sans fil utilisant le protocole ouvert LoRaWAN. Dans les réseaux de distribution d'énergie, les centres commerciaux et les ensembles résidentiels : <ul><li><strong>Le Problème du Cellulaire et des Relevés Manuels :</strong> Les relevés manuels génèrent des erreurs de facturation et des coûts humains exorbitants. Les compteurs cellulaires 4G/GPRS, quant à eux, exigent une carte SIM par compteur, imposant aux distributeurs des millions d'euros d'abonnements mensuels payés aux opérateurs télécoms. De plus, la 4G ne pénètre pas dans les sous-sols techniques en béton.</li><li><strong>La Révolution LoRaWAN :</strong> LoRaWAN fonctionne sur les <strong>fréquences radio sub-gigahertz sans licence</strong> (868 MHz en Europe). Une seule passerelle (Gateway) installée sur un point haut collecte les données de milliers de compteurs dans un rayon de <strong>5 à 15 kilomètres</strong>. Le distributeur d'énergie est propriétaire de son réseau privé avec <strong>zéro coût d'abonnement SIM opérateur</strong>, recevant automatiquement les index horaires (kWh), les profils de charge, la puissance maximale et les alarmes anti-fraude.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment le protocole LoRaWAN parvient-il à traverser les sous-sols et les parois en béton armé ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les technologies Wi-Fi (2,4 GHz) et 4G (1,8–2,6 GHz) utilisent des longueurs d'onde courtes fortement absorbées par les murs en béton. LoRaWAN opère sur les basses fréquences (868 MHz) avec la modulation <strong>Chirp Spread Spectrum (CSS)</strong> : Les ondes contournent les obstacles physiques et pénètrent profondément dans les sous-sols d'immeubles, les parkings souterrains et les coffrets métalliques où les téléphones portables affichent \"Aucun réseau\", avec une sensibilité de réception exceptionnelle (-137 dBm)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le compteur LoRaWAN permet-il la coupure et le rétablissement du courant à distance ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Les compteurs YOMIN DTS intègrent un <strong>relais bistable magnétique puissant (jusqu'à 100A)</strong>. Depuis son logiciel central de télérelève (HES), l'opérateur peut envoyer une commande descendante radio pour couper le courant en cas d'impayé ou rétablir instantanément l'alimentation dès le règlement de la facture par le client."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: FR">
+        <span id="lf"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span><span id="lc">FR</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Compteurs Intelligents &amp; Télérelève AMI</span></div>
+    <span class="bh-tag">Compteurs Intelligents & Télérelève AMI / Compteurs Électriques LoRaWAN</span>
+    <h1 class="bh-title">Comptage Intelligent & Télérelève AMI : Qu'est-ce qu'un Compteur d'Énergie LoRaWAN ?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>13 Octobre 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/smart-metering-infrastructure-what-is-a-lorawan-energy-meter/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/smart-metering-infrastructure-what-is-a-lorawan-energy-meter/hero.png" alt="Compteur d&#x27;électricité intelligent communicant LoRaWAN triphasé (Série DTS) monté sur rail DIN dans une armoire électrique avec afficheur LCD et antenne RF" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>La Révolution des Réseaux Privés Sans Fil dans le Comptage Électrique Intelligent</h2>
+<p>Partout dans le monde, les régies d'électricité, les distributeurs d'énergie municipaux, les gestionnaires de parcs tertiaires et les sites industriels modernisent leurs réseaux vers le comptage intelligent automatisé (AMI).</p>
+<p>Historiquement, les compteurs intelligents utilisaient les réseaux cellulaires des opérateurs télécoms (2G, 3G, 4G et NB-IoT). Bien que fonctionnelle, cette architecture impose un coût récurrent écrasant : chaque compteur nécessite une carte SIM avec un abonnement mensuel payé pendant des décennies.</p>
+<p>De plus, la couverture cellulaire est fréquemment défaillante dans les locaux techniques en sous-sol, les armoires électriques blindées et les zones rurales reculées.</p>
+<p>Le <strong>Compteur d'Énergie Intelligent Sans Fil LoRaWAN (Série DTS / DDS)</strong> apporte la rupture technologique idéale : un compteur électronique de haute précision utilisant les ondes radio libres sub-gigahertz pour transmettre les index de consommation jusqu'à <strong>15 kilomètres</strong> directement vers des passerelles privées—assurant une télérelève 100% automatisée avec <strong>zéro abonnement opérateur</strong>.</p>
+
+<h2>Caractéristiques et Avantages Technologiques de la Série DTS</h2>
+<ol>
+  <li><strong>Émetteur-Récepteur Radio Sub-GHz LoRaWAN :</strong> Fonctionne sur les bandes libres ISM (EU868) avec modulation CSS, offrant une portée de 3 à 5 km en ville et 15 km en champ libre.</li>
+  <li><strong>Métrologie Numérique de Haute Précision :</strong> Mesure bidirectionnelle de l'énergie active (Classe 1.0 ou Classe 0.5S), réactive (Classe 2.0), tensions, courants, cos &phi; et puissances maximales.</li>
+  <li><strong>Relais de Coupure Interne Télécommandé (60A à 100A) :</strong> Permet la gestion à distance du prépaiement, le délestage de charge et la coupure en cas de facture impayée.</li>
+  <li><strong>Protocole International DLMS/COSEM :</strong> Garantit une interopérabilité totale avec les logiciels de relève (HES / MDM) de toutes les compagnies d'électricité.</li>
+  <li><strong>Détection Anti-Fraude Avancée :</strong> Enregistre l'ouverture du capot de bornes, l'inversion de phases et les tentatives de perturbation magnétique avec alerte radio instantanée.</li>
+</ol>
+
+<h2>Spécifications Techniques</h2>
+<table>
+  <thead>
+    <tr><th>Paramètre Technique</th><th>Valeur d'Ingénierie & Performance</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Tension Assignée de Service du Réseau</strong></td><td>Monophasé 230V AC (120V–240V) et Triphasé 3x230/400V AC (50/60 Hz ; 3 ou 4 fils avec neutre)</td></tr>
+    <tr><td><strong>Plage de Mesure du Courant Assigné</strong></td><td>Raccordement direct : 5(60)A, 5(80)A jusqu'à 10(100)A ; raccordement sur transformateurs de courant (TC) : 3x1,5(6)A / 3x5(6)A</td></tr>
+    <tr><td><strong>Classe de Précision de Mesure Énergétique</strong></td><td>Énergie active : Classe 1.0 (CEI 62053-21) ou Classe 0.5S (CEI 62053-22) ; Énergie réactive : Classe 2.0 (CEI 62053-23)</td></tr>
+    <tr><td><strong>Technologie Radio Fréquence et Modulation</strong></td><td>Nœud communicant LoRaWAN Classe A / Classe C ; modulation Chirp Spread Spectrum (CSS) sur bandes sub-GHz libres</td></tr>
+    <tr><td><strong>Bandes de Fréquences Régionales Normalisées</strong></td><td>EU868 (Europe/Afrique), US915 (Amériques), AS923 (Asie-Pacifique) et RU864 (Asie Centrale)</td></tr>
+    <tr><td><strong>Portée Radio et Pénétration en Sous-Sol</strong></td><td>Portée longue distance : 3 à 5 km en milieu urbain dense ; jusqu'à 15 km en champ libre ; excellente traversée du béton</td></tr>
+    <tr><td><strong>Protocole Applicatif et Interopérabilité</strong></td><td>Conforme aux protocoles DLMS/COSEM (CEI 62056) et trames Modbus RTU encapsulées sur couches MAC LoRaWAN standard</td></tr>
+    <tr><td><strong>Relais Interne de Coupure et Réarmement</strong></td><td>Relais bistable magnétique intégré (jusqu'à 100A) pour coupure/rétablissement de charge à distance (OTA) et prépaiement</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Foire Aux Questions</h2><h3>Qu&#x27;est-ce qu&#x27;un Compteur d&#x27;Énergie LoRaWAN et pourquoi transforme-t-il la télérelève pour les distributeurs d&#x27;électricité ?</h3><p>Un Compteur d&#x27;Énergie LoRaWAN—couramment appelé compteur électrique communicant longue portée ou compteur IoT sub-GHz—est un compteur d&#x27;électricité électronique intégrant un émetteur-récepteur radio sans fil utilisant le protocole ouvert LoRaWAN. Dans les réseaux de distribution d&#x27;énergie, les centres commerciaux et les ensembles résidentiels : &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Le Problème du Cellulaire et des Relevés Manuels :&lt;/strong&gt; Les relevés manuels génèrent des erreurs de facturation et des coûts humains exorbitants. Les compteurs cellulaires 4G/GPRS, quant à eux, exigent une carte SIM par compteur, imposant aux distributeurs des millions d&#x27;euros d&#x27;abonnements mensuels payés aux opérateurs télécoms. De plus, la 4G ne pénètre pas dans les sous-sols techniques en béton.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;La Révolution LoRaWAN :&lt;/strong&gt; LoRaWAN fonctionne sur les &lt;strong&gt;fréquences radio sub-gigahertz sans licence&lt;/strong&gt; (868 MHz en Europe). Une seule passerelle (Gateway) installée sur un point haut collecte les données de milliers de compteurs dans un rayon de &lt;strong&gt;5 à 15 kilomètres&lt;/strong&gt;. Le distributeur d&#x27;énergie est propriétaire de son réseau privé avec &lt;strong&gt;zéro coût d&#x27;abonnement SIM opérateur&lt;/strong&gt;, recevant automatiquement les index horaires (kWh), les profils de charge, la puissance maximale et les alarmes anti-fraude.&lt;/li&gt;&lt;/ul&gt;</p><h3>Comment le protocole LoRaWAN parvient-il à traverser les sous-sols et les parois en béton armé ?</h3><p>Les technologies Wi-Fi (2,4 GHz) et 4G (1,8–2,6 GHz) utilisent des longueurs d&#x27;onde courtes fortement absorbées par les murs en béton. LoRaWAN opère sur les basses fréquences (868 MHz) avec la modulation &lt;strong&gt;Chirp Spread Spectrum (CSS)&lt;/strong&gt; : Les ondes contournent les obstacles physiques et pénètrent profondément dans les sous-sols d&#x27;immeubles, les parkings souterrains et les coffrets métalliques où les téléphones portables affichent &quot;Aucun réseau&quot;, avec une sensibilité de réception exceptionnelle (-137 dBm).</p><h3>Le compteur LoRaWAN permet-il la coupure et le rétablissement du courant à distance ?</h3><p>Oui. Les compteurs YOMIN DTS intègrent un &lt;strong&gt;relais bistable magnétique puissant (jusqu&#x27;à 100A)&lt;/strong&gt;. Depuis son logiciel central de télérelève (HES), l&#x27;opérateur peut envoyer une commande descendante radio pour couper le courant en cas d&#x27;impayé ou rétablir instantanément l&#x27;alimentation dès le règlement de la facture par le client.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Comptage Intelligent & Télérelève AMI : Qu'est-ce qu'un Compteur d'Énergie LoRaWAN ?</h2>
+    <p>Vous déployez un réseau de télérelève intelligent (AMI), un système de sous-comptage dans des parcs immobiliers ou du monitoring d'installations photovoltaïques nécessitant des compteurs LoRaWAN certifiés DLMS/COSEM sans abonnement SIM ? YOMIN fabrique des compteurs intelligents DTS de haute technologie.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <p style="margin-top:14px"><a href="/products">Découvrir le catalogue complet de produits &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "smart-metering-infrastructure-what-is-a-lorawan-energy-meter";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
