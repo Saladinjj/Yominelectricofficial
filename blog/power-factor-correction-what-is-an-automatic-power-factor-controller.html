@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Power Factor Correction: What Is an Automatic Power Factor Controller? | Yomin Electric</title>
+<meta name="description" content="Industrial power factor correction, capacitor bank switching, and utility penalty mitigation: What is an automatic power factor controller (APFC controller)? How microprocessor-driven reactive power Q-calculation, circular step switching, hunting prevention, over-voltage/harmonic protection, and RS485 Modbus optimize power quality.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/power-factor-correction-what-is-an-automatic-power-factor-controller/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Power Factor Correction: What Is an Automatic Power Factor Controller?",
+      "description": "Industrial power factor correction, capacitor bank switching, and utility penalty mitigation: What is an automatic power factor controller (APFC controller)? How microprocessor-driven reactive power Q-calculation, circular step switching, hunting prevention, over-voltage/harmonic protection, and RS485 Modbus optimize power quality.",
+      "image": "https://www.yominelectric.com/assets/images/blog/power-factor-correction-what-is-an-automatic-power-factor-controller/hero.png",
+      "datePublished": "2026-10-15",
+      "dateModified": "2026-10-15",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an Automatic Power Factor Controller (APFC Controller) and what is its primary function?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An Automatic Power Factor Controller—frequently designated as an APFC relay, reactive power controller, or automatic capacitor bank regulator—is a specialized microprocessor-based digital monitoring and switching device that serves as the \"intelligent brain\" of an industrial Automatic Power Factor Correction (APFC) capacitor bank panel. In commercial and industrial electrical distribution systems: <ul><li><strong>The Low Power Factor Problem:</strong> Industrial facilities operate large inductive loads—such as induction motors, welders, arc furnaces, and transformers—that consume both active power (kW) and reactive power (kvar). This reactive magnetization current causes the system displacement power factor ($\\cos\\phi$) to drop from 1.0 down to 0.70 or lower. Low power factor overloads supply transformers, creates excessive voltage drop along cables, and triggers massive financial penalty surcharges on monthly electricity utility bills.</li><li><strong>The APFC Controller Solution:</strong> The controller continuously samples line voltage ($V$) and load current ($I$ via a current transformer), calculates real-time active power ($P$), reactive power ($Q$), and instantaneous power factor ($\\cos\\phi$). Whenever the measured power factor falls below the user-programmed target (e.g. 0.98), the controller automatically calculates the exact reactive kvar deficit and sequentially energizes output relays connected to heavy-duty capacitor switching contactors. This injects precisely the right amount of capacitive reactive power to neutralize inductive lag, keeping the utility meter at near-unity power factor and completely eliminating power factor penalty fees.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do Circular and Progressive step switching algorithms prevent capacitor degradation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Conventional basic controllers always switch capacitor Step 1 first, followed by Step 2 and Step 3. This causes Step 1 to endure thousands more switching operations than later steps, leading to premature dielectric breakdown of the first capacitor. YOMIN JKL5C Series APFC Controllers solve this through intelligent algorithms: <ul><li><strong>Equal-Capacity Circular Cycling (FIFO - First In, First Out):</strong> For capacitor steps with identical kvar ratings, the controller cycles switching duty evenly across all banks. The capacitor bank that has been connected the longest is disconnected first, and the bank that has been resting the longest is energized first. This equalizes thermal stress and contact wear across all contactors and capacitors.</li><li><strong>Anti-Hunting Deadband Logic:</strong> The controller maintains a programmable reactive power deadband ($C/k$ sensitivity ratio). It will never energize a capacitor step if switching that step would push the system into leading (capacitive) power factor, preventing continuous cyclic switching (\"hunting\") that burns out contactors.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is a programmable switching discharge delay critical for capacitor safety?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When an AC power capacitor is disconnected from the live busbar, it retains a trapped DC charge equal to the peak line voltage (up to $1.414 \times V_{RMS}$). Discharge resistors built into the capacitor require 30 to 60 seconds to safely bleed this residual voltage down below 50V. If a controller re-energizes a charged capacitor while its residual voltage is in opposite phase to the incoming AC sine wave, the resulting phase opposition causes a catastrophic inrush current surge exceeding <strong>200 times rated current</strong>, welding contactor points and rupturing capacitor casing. YOMIN controllers enforce a programmable inter-step re-switching delay (default 60 seconds) that physically locks out any capacitor step from being reconnected until it has fully discharged."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Power Quality &amp; Capacitor Banks</span></div>
+    <span class="bh-tag">Power Quality & Capacitor Banks / Automatic Power Factor Controllers</span>
+    <h1 class="bh-title">Power Factor Correction: What Is an Automatic Power Factor Controller?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>October 15, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/power-factor-correction-what-is-an-automatic-power-factor-controller/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/power-factor-correction-what-is-an-automatic-power-factor-controller/hero.png" alt="Digital Automatic Power Factor Controller (Model JKL5C series) flush-mounted on the door of an industrial APFC capacitor bank panel displaying power factor and step LEDs" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Intelligent Master Brain of Industrial Power Factor Correction Systems</h2>
+<p>In modern industrial manufacturing plants, commercial high-rise towers, automated sorting logistics hubs, and heavy process facilities worldwide, electrical efficiency directly dictates operational profitability.</p>
+<p>Industrial machinery—such as electric induction motors, centrifugal chillers, air compressors, stamping presses, and induction furnaces—relies on electromagnetic fields to operate. These inductive magnetic fields draw massive amounts of lagging reactive power ($Q$ kvar) from the power grid without performing mechanical work.</p>
+<p>When reactive power flows uncompensated through factory transformers and distribution cables, it inflates total apparent power demand ($S$ kVA), increases $I^2R$ resistive heat losses, drags system voltage down, and causes regional electric utilities to levy punitive low power factor financial penalty surcharges that can add tens of thousands of dollars to monthly utility bills.</p>
+<p>The <strong>Automatic Power Factor Controller (Model JKL5C / RPCF Series)</strong> provides the universal digital solution: an advanced microprocessor-based instrument that continuously calculates facility reactive power demand and dynamically switches multi-stage capacitor banks to maintain target power factor ($\cos\phi \ge 0.98$) with zero manual intervention.</p>
+
+<h2>Engineering Anatomy: Inside a Model JKL5C Automatic Power Factor Controller</h2>
+<ol>
+  <li><strong>Dual High-Speed Microcontroller Engine:</strong> Continuously samples AC voltage and CT secondary current at 64 samples per cycle, executing real-time Fast Fourier Transforms (FFT) to accurately extract fundamental active power, reactive power, and displacement power factor even in the presence of severe harmonic distortion.</li>
+  <li><strong>High-Visibility Multi-Parameter Digital Display:</strong> Dual digital display displays system power factor, active power (kW), reactive power (kvar), line voltage (V), load current (A), total harmonic distortion (THD-V), and ambient cabinet temperature simultaneously.</li>
+  <li><strong>Multi-Channel Isolated Relay Output Array:</strong> Features 6, 8, 12, or 16 heavy-duty electro-mechanical output relays (rated 250V AC, 5A) engineered to directly drive the control coils of capacitor switching contactors or thyristor static switching modules.</li>
+  <li><strong>Dynamic Reactive Power ($Q$-Based) Switching Logic:</strong> Rather than relying solely on phase angle ($\phi$), the controller measures true reactive kvar deficit and selects the optimal combination of capacitor step ratings (e.g. 1:1:1 or 1:2:4:8 binary codes) to reach the target power factor in the minimum number of switching operations.</li>
+  <li><strong>Comprehensive Safety &amp; Harmonic Protection Suite:</strong> Automatically trips all capacitor steps upon detecting line over-voltage (> 115%), grid under-voltage blackout, excessive voltage total harmonic distortion (THD-V > 7%), or panel over-temperature, preventing capacitor dielectric breakdown.</li>
+</ol>
+
+<h2>Comparison: Microprocessor Dynamic APFC Controller vs. Fixed Capacitor Bank vs. Manual Rotary Switch Control</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Operational Metric</th>
+      <th>Fixed (Unswitched) Capacitor Bank</th>
+      <th>Manual Multi-Step Rotary Switch</th>
+      <th>YOMIN Intelligent APFC Controller (JKL5C Series)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Response to Load Fluctuations</strong></td>
+      <td>Zero: Injects constant kvar regardless of whether factory motors are running or idling.</td>
+      <td>Extremely slow: Relies on manual operator intervention to turn rotary knobs.</td>
+      <td><strong>Instantaneous &amp; Dynamic: Microprocessor recalculates and switches steps within seconds.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Risk of Leading PF Over-Compensation</strong></td>
+      <td>Severe: During nights and weekends, fixed capacitors cause leading PF and dangerous over-voltage.</td>
+      <td>High: Operators frequently forget to switch off banks after factory shifts end.</td>
+      <td><strong>Zero Over-Compensation Risk: Automatically disconnects capacitor steps as load drops.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Utility Power Factor Penalty Elimination</strong></td>
+      <td>Unreliable: Fails during variable production shifts; penalties frequently recur.</td>
+      <td>Poor: Constant human error leads to missed target power factor windows.</td>
+      <td><strong>100% Penalty Elimination: Maintains target $\cos\phi \ge 0.98$ 24/7/365 automatically.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Component Wear &amp; Life Expectancy</strong></td>
+      <td>Capacitors degrade under continuous unswitched harmonic heating.</td>
+      <td>Contactors burn out due to random uncoordinated switching.</td>
+      <td><strong>Maximized Longevity: Equal-capacity circular switching (FIFO) doubles contactor &amp; capacitor life.</strong></td>
+    </tr>
+    <tr>
+      <td><strong>SCADA Telemetry &amp; Remote Integration</strong></td>
+      <td>None: No communication or telemetry capability.</td>
+      <td>None: Purely mechanical manual switches.</td>
+      <td><strong>Full Remote Telemetry: Isolated RS485 Modbus RTU interface connects to factory SCADA / EMS.</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Technical Specifications</h2>
+<table>
+  <thead>
+    <tr><th>Technical Specification Parameter</th><th>Engineering Value & Performance Rating</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Rated System Operating Voltage Class</strong></td><td>Sampling voltage input: 220V / 380V / 400V / 415V AC (&plusmn;20%, 50/60 Hz, Phase-to-Neutral or Phase-to-Phase)</td></tr>
+    <tr><td><strong>Current Sampling Input Rating ($I_{in}$)</strong></td><td>Standard CT secondary current input: 0–5A (Class 0.5 or Class 0.2 input with internal burden $< 0.5$ VA)</td></tr>
+    <tr><td><strong>Available Control Output Steps</strong></td><td>Multi-stage relay output configurations: 6, 8, 10, 12, 14, or 16 step contact outputs (rated 250V AC / 5A resistive)</td></tr>
+    <tr><td><strong>Power Factor Target & Sensitivity Setting</strong></td><td>Programmable target $\cos\phi$: 0.800 inductive to 0.800 capacitive (factory default target: 0.950 to 0.980 lag)</td></tr>
+    <tr><td><strong>Switching Control Algorithms Supported</strong></td><td>Dynamic Reactive Power ($Q$ kvar) calculation mode, Progressive Step mode, and Equal-Capacity Circular Cycling mode</td></tr>
+    <tr><td><strong>Capacitor Step Switching Delay Time</strong></td><td>Programmable switching delay: 1 to 300 seconds (ensures complete capacitor discharge via bleed resistors before re-energization)</td></tr>
+    <tr><td><strong>Harmonic & Electrical Protection Features</strong></td><td>Over-voltage trip, under-voltage lockout, current unbalance detection, over-temperature cutoff, and THD-V harmonic alarm</td></tr>
+    <tr><td><strong>Digital Communication & Telemetry Port</strong></td><td>Standard isolated RS485 serial communication port supporting Modbus RTU protocol for factory SCADA / EMS integration</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is an Automatic Power Factor Controller (APFC Controller) and what is its primary function?</h3><p>An Automatic Power Factor Controller—frequently designated as an APFC relay, reactive power controller, or automatic capacitor bank regulator—is a specialized microprocessor-based digital monitoring and switching device that serves as the &quot;intelligent brain&quot; of an industrial Automatic Power Factor Correction (APFC) capacitor bank panel. In commercial and industrial electrical distribution systems: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;The Low Power Factor Problem:&lt;/strong&gt; Industrial facilities operate large inductive loads—such as induction motors, welders, arc furnaces, and transformers—that consume both active power (kW) and reactive power (kvar). This reactive magnetization current causes the system displacement power factor ($\cos\phi$) to drop from 1.0 down to 0.70 or lower. Low power factor overloads supply transformers, creates excessive voltage drop along cables, and triggers massive financial penalty surcharges on monthly electricity utility bills.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;The APFC Controller Solution:&lt;/strong&gt; The controller continuously samples line voltage ($V$) and load current ($I$ via a current transformer), calculates real-time active power ($P$), reactive power ($Q$), and instantaneous power factor ($\cos\phi$). Whenever the measured power factor falls below the user-programmed target (e.g. 0.98), the controller automatically calculates the exact reactive kvar deficit and sequentially energizes output relays connected to heavy-duty capacitor switching contactors. This injects precisely the right amount of capacitive reactive power to neutralize inductive lag, keeping the utility meter at near-unity power factor and completely eliminating power factor penalty fees.&lt;/li&gt;&lt;/ul&gt;</p><h3>How do Circular and Progressive step switching algorithms prevent capacitor degradation?</h3><p>Conventional basic controllers always switch capacitor Step 1 first, followed by Step 2 and Step 3. This causes Step 1 to endure thousands more switching operations than later steps, leading to premature dielectric breakdown of the first capacitor. YOMIN JKL5C Series APFC Controllers solve this through intelligent algorithms: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Equal-Capacity Circular Cycling (FIFO - First In, First Out):&lt;/strong&gt; For capacitor steps with identical kvar ratings, the controller cycles switching duty evenly across all banks. The capacitor bank that has been connected the longest is disconnected first, and the bank that has been resting the longest is energized first. This equalizes thermal stress and contact wear across all contactors and capacitors.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Anti-Hunting Deadband Logic:&lt;/strong&gt; The controller maintains a programmable reactive power deadband ($C/k$ sensitivity ratio). It will never energize a capacitor step if switching that step would push the system into leading (capacitive) power factor, preventing continuous cyclic switching (&quot;hunting&quot;) that burns out contactors.&lt;/li&gt;&lt;/ul&gt;</p><h3>Why is a programmable switching discharge delay critical for capacitor safety?</h3><p>When an AC power capacitor is disconnected from the live busbar, it retains a trapped DC charge equal to the peak line voltage (up to $1.414 	imes V_{RMS}$). Discharge resistors built into the capacitor require 30 to 60 seconds to safely bleed this residual voltage down below 50V. If a controller re-energizes a charged capacitor while its residual voltage is in opposite phase to the incoming AC sine wave, the resulting phase opposition causes a catastrophic inrush current surge exceeding &lt;strong&gt;200 times rated current&lt;/strong&gt;, welding contactor points and rupturing capacitor casing. YOMIN controllers enforce a programmable inter-step re-switching delay (default 60 seconds) that physically locks out any capacitor step from being reconnected until it has fully discharged.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Power Factor Correction: What Is an Automatic Power Factor Controller?</h2>
+    <p>Designing industrial APFC capacitor panels, commercial power factor correction banks, or facility energy efficiency upgrades requiring certified IEC 61000-4 automatic power factor controllers (6 to 16 relay steps, dynamic Q switching, RS485 Modbus)? YOMIN manufactures precision JKL5C/RPCF series controllers.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products">Browse the complete product catalogue &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "power-factor-correction-what-is-an-automatic-power-factor-controller";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

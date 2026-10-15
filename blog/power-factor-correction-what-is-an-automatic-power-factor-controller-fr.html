@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compensation d'Énergie Réactive : Qu'est-ce qu'un Régulateur Automatique de Facteur de Puissance (APFC Controller) ? | Yomin Electric</title>
+<meta name="description" content="Compensation automatique de l&#x27;énergie réactive, gradins de condensateurs et suppression des pénalités de dépassement : Qu&#x27;est-ce qu&#x27;un régulateur APFC ? Calcul microprocesseur de la puissance réactive Q, permutation circulaire FIFO, protection anti-pompage, alarmes harmoniques THD et communication RS485 Modbus.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/power-factor-correction-what-is-an-automatic-power-factor-controller/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller-fr">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Compensation d'Énergie Réactive : Qu'est-ce qu'un Régulateur Automatique de Facteur de Puissance (APFC Controller) ?",
+      "description": "Compensation automatique de l'énergie réactive, gradins de condensateurs et suppression des pénalités de dépassement : Qu'est-ce qu'un régulateur APFC ? Calcul microprocesseur de la puissance réactive Q, permutation circulaire FIFO, protection anti-pompage, alarmes harmoniques THD et communication RS485 Modbus.",
+      "image": "https://www.yominelectric.com/assets/images/blog/power-factor-correction-what-is-an-automatic-power-factor-controller/hero.png",
+      "datePublished": "2026-10-15",
+      "dateModified": "2026-10-15",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce qu'un Régulateur Automatique de Facteur de Puissance (Contrôleur APFC) et quel est son rôle ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un Régulateur Automatique de Facteur de Puissance—couramment désigné sous le nom de relais varmétrique, contrôleur APFC ou régulateur de $\\cos\\phi$—est un appareil électronique numérique à microprocesseur qui constitue le \"cerveau intelligent\" des armoires de compensation automatique d'énergie réactive. Dans les installations industrielles et tertiaires : <ul><li><strong>Le Problème de l'Énergie Réactive Inductive :</strong> Les moteurs asynchrones, transformateurs, compresseurs et fours industriels consomment de l'énergie active (kW) pour produire le travail mécanique, mais également de l'énergie réactive (kvar) pour magnétiser leurs circuits. Cette demande dégrade le facteur de puissance ($\\cos\\phi$) bien en-dessous de 0,90, surchargeant les transformateurs et déclenchant des pénalités financières massives sur les factures d'électricité des distributeurs d'énergie.</li><li><strong>La Solution du Régulateur APFC :</strong> Le régulateur mesure en temps réel la tension et le courant via un TC, calcule le déficit exact en kvar capacitifs, et pilote automatiquement la mise sous tension séquentielle des contacteurs de condensateurs. Il ajuste en permanence la compensation pour maintenir le $\\cos\\phi$ proche de 1,0 (0,98), supprimant totalement les pénalités d'énergie réactive.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment l'algorithme de permutation circulaire protège-t-il les condensateurs contre l'usure prématurée ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sur les anciens régulateurs basiques, le premier gradin s'enclenchait systématiquement en premier, s'usant dix fois plus vite que les autres. Les régulateurs YOMIN JKL5C intègrent un mode de <strong>permutation circulaire (FIFO - Premier Entré, Premier Sorti)</strong> : Pour des gradins de puissance identique, l'appareil fait tourner les cycles d'enclenchement de manière rigoureusement équitable. Le gradin enclenché depuis le plus longtemps est le premier déconnecté, et celui au repos depuis le plus longtemps est le premier appelé, équilibrant parfaitement l'échauffement thermique et doublant la durée de vie des contacteurs et condensateurs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi la temporisation de décharge est-elle vitale avant de réenclencher un condensateur ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lorsqu'un condensateur de puissance est déconnecté du réseau, il conserve une charge résiduelle continue très élevée (jusqu'à 560V en crête). Les résistances de décharge internes mettent entre 30 et 60 secondes pour évacuer cette énergie sous les 50V de sécurité. Si le régulateur réenclenchait ce condensateur immédiatement en opposition de phase avec la sinusoïde du réseau, le choc provoquerait un courant d'appel destructeur supérieur à <strong>200 fois le courant nominal</strong>, soudant les pôles du contacteur et faisant exploser le condensateur. Le régulateur YOMIN applique une temporisation de sécurité obligatoire (60 secondes par défaut) interdisant tout réenclenchement prématuré."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: FR">
+        <span id="lf"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span><span id="lc">FR</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Qualité de l'Énergie &amp; Batteries de Condensateurs</span></div>
+    <span class="bh-tag">Qualité de l'Énergie & Batteries de Condensateurs / Régulateurs Automatiques de Facteur de Puissance</span>
+    <h1 class="bh-title">Compensation d'Énergie Réactive : Qu'est-ce qu'un Régulateur Automatique de Facteur de Puissance (APFC Controller) ?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>15 Octobre 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/power-factor-correction-what-is-an-automatic-power-factor-controller/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/power-factor-correction-what-is-an-automatic-power-factor-controller/hero.png" alt="Régulateur numérique automatique de facteur de puissance (Série JKL5C) encastré sur la porte d&#x27;une armoire de compensation affichant le cosinus phi et les LED d&#x27;étages" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>Le Cerveau Intelligent des Systèmes de Compensation d'Énergie Réactive</h2>
+<p>Dans les usines de production industrielle, les centres commerciaux, les complexes de pompage et les data centers du monde entier, la facture énergétique constitue un poste de dépenses stratégique.</p>
+<p>Les machines tournantes—moteurs électriques, groupes froids, ponts roulants et lignes de convoyage—font appel à des champs électromagnétiques pour fonctionner. Ces champs magnétiques absorbent une quantité considérable d'énergie réactive ($Q$ kvar) qui ne produit aucun travail mécanique direct.</p>
+<p>Lorsque cette énergie réactive transite sur le réseau, elle sature la capacité des transformateurs abaisseurs, augmente les pertes par effet Joule dans les câbles et déclenche des pénalités financières particulièrement lourdes de la part des gestionnaires de réseaux de distribution.</p>
+<p>Le <strong>Régulateur Automatique de Facteur de Puissance (Série JKL5C / RPCF)</strong> apporte la solution technique standardisée : un contrôleur numérique qui analyse en temps réel les besoins réactifs de l'installation et pilote automatiquement les étages de condensateurs pour maintenir un $\cos\phi \ge 0,98$ en permanence.</p>
+
+<h2>Caractéristiques et Avantages Technologiques de la Série JKL5C</h2>
+<ol>
+  <li><strong>Double Microprocesseur d'Échantillonnage Rapide :</strong> Échantillonne les ondes de tension et de courant à haute fréquence, isolant l'énergie active et réactive fondamentale même en présence d'harmoniques industrielles sévères.</li>
+  <li><strong>Afficheur Numérique Multifonction Haute Luminosité :</strong> Visualisation simultanée du facteur de puissance instantané, de la tension, du courant, de la puissance réactive requise (kvar) et de l'état d'enclenchement des gradins.</li>
+  <li><strong>Gestion Intelligente par Permutation Circulaire FIFO :</strong> Répartit équitablement les manœuvres entre gradins de même calibre, prévenant le vieillissement asymétrique des condensateurs et contacteurs.</li>
+  <li><strong>Sécurité Thermique et Harmonique Avancée :</strong> Déconnecte automatiquement les condensateurs en cas de surtension réseau (> 115%) ou de taux de distorsion harmonique excessif (THD-V > 7%) pour éviter tout phénomène de résonance destructive.</li>
+  <li><strong>Interface de Communication Industrielle RS485 Modbus :</strong> Permet la télérelève des paramètres électriques et l'intégration directe dans les systèmes de supervision GTB/GTC de l'usine.</li>
+</ol>
+
+<h2>Spécifications Techniques</h2>
+<table>
+  <thead>
+    <tr><th>Paramètre Technique</th><th>Valeur d'Ingénierie & Performance</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Tension Assignée d'Alimentation et Mesure</strong></td><td>Entrée de mesure de tension : 220V / 380V / 400V / 415V AC (&plusmn;20%, 50/60 Hz, Phase-Neutre ou Phase-Phase)</td></tr>
+    <tr><td><strong>Calibre d'Entrée du Courant de Mesure ($I_{in}$)</strong></td><td>Entrée normalisée secondaire TC : 0–5A (transformateur de courant Classe 0.5 ou 0.2, consommation $< 0.5$ VA)</td></tr>
+    <tr><td><strong>Nombre de Gradins de Sortie Disponibles</strong></td><td>Configurations de relais de commande d'étages : 6, 8, 10, 12, 14 ou 16 sorties relais (assignées 250V AC / 5A)</td></tr>
+    <tr><td><strong>Plage de Réglage de la Consigne de $\cos\phi$</strong></td><td>Facteur de puissance cible programmable : de 0,800 inductif à 0,800 capacitif (consigne usine : 0,950 à 0,980 lag)</td></tr>
+    <tr><td><strong>Algorithmes de Commande et Commutation</strong></td><td>Mode de calcul dynamique de puissance réactive ($Q$ kvar), mode séquentiel linéaire et mode circulaire à usure égale</td></tr>
+    <tr><td><strong>Temporisation de Reconnexion des Gradins</strong></td><td>Délai de sécurité programmable : 1 à 300 secondes (garantit la décharge complète des condensateurs par résistances de fuite)</td></tr>
+    <tr><td><strong>Protections Électriques et Harmoniques</strong></td><td>Déclenchement sur surtension, verrouillage sous-tension, coupure surchauffe armoire et alarme de distorsion harmonique THD-V</td></tr>
+    <tr><td><strong>Port de Communication et Supervision</strong></td><td>Port série isolé RS485 avec protocole standard Modbus RTU pour intégration directe dans la GTB / GTC ou logiciel SCADA</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Foire Aux Questions</h2><h3>Qu&#x27;est-ce qu&#x27;un Régulateur Automatique de Facteur de Puissance (Contrôleur APFC) et quel est son rôle ?</h3><p>Un Régulateur Automatique de Facteur de Puissance—couramment désigné sous le nom de relais varmétrique, contrôleur APFC ou régulateur de $\cos\phi$—est un appareil électronique numérique à microprocesseur qui constitue le &quot;cerveau intelligent&quot; des armoires de compensation automatique d&#x27;énergie réactive. Dans les installations industrielles et tertiaires : &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Le Problème de l&#x27;Énergie Réactive Inductive :&lt;/strong&gt; Les moteurs asynchrones, transformateurs, compresseurs et fours industriels consomment de l&#x27;énergie active (kW) pour produire le travail mécanique, mais également de l&#x27;énergie réactive (kvar) pour magnétiser leurs circuits. Cette demande dégrade le facteur de puissance ($\cos\phi$) bien en-dessous de 0,90, surchargeant les transformateurs et déclenchant des pénalités financières massives sur les factures d&#x27;électricité des distributeurs d&#x27;énergie.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;La Solution du Régulateur APFC :&lt;/strong&gt; Le régulateur mesure en temps réel la tension et le courant via un TC, calcule le déficit exact en kvar capacitifs, et pilote automatiquement la mise sous tension séquentielle des contacteurs de condensateurs. Il ajuste en permanence la compensation pour maintenir le $\cos\phi$ proche de 1,0 (0,98), supprimant totalement les pénalités d&#x27;énergie réactive.&lt;/li&gt;&lt;/ul&gt;</p><h3>Comment l&#x27;algorithme de permutation circulaire protège-t-il les condensateurs contre l&#x27;usure prématurée ?</h3><p>Sur les anciens régulateurs basiques, le premier gradin s&#x27;enclenchait systématiquement en premier, s&#x27;usant dix fois plus vite que les autres. Les régulateurs YOMIN JKL5C intègrent un mode de &lt;strong&gt;permutation circulaire (FIFO - Premier Entré, Premier Sorti)&lt;/strong&gt; : Pour des gradins de puissance identique, l&#x27;appareil fait tourner les cycles d&#x27;enclenchement de manière rigoureusement équitable. Le gradin enclenché depuis le plus longtemps est le premier déconnecté, et celui au repos depuis le plus longtemps est le premier appelé, équilibrant parfaitement l&#x27;échauffement thermique et doublant la durée de vie des contacteurs et condensateurs.</p><h3>Pourquoi la temporisation de décharge est-elle vitale avant de réenclencher un condensateur ?</h3><p>Lorsqu&#x27;un condensateur de puissance est déconnecté du réseau, il conserve une charge résiduelle continue très élevée (jusqu&#x27;à 560V en crête). Les résistances de décharge internes mettent entre 30 et 60 secondes pour évacuer cette énergie sous les 50V de sécurité. Si le régulateur réenclenchait ce condensateur immédiatement en opposition de phase avec la sinusoïde du réseau, le choc provoquerait un courant d&#x27;appel destructeur supérieur à &lt;strong&gt;200 fois le courant nominal&lt;/strong&gt;, soudant les pôles du contacteur et faisant exploser le condensateur. Le régulateur YOMIN applique une temporisation de sécurité obligatoire (60 secondes par défaut) interdisant tout réenclenchement prématuré.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Compensation d'Énergie Réactive : Qu'est-ce qu'un Régulateur Automatique de Facteur de Puissance (APFC Controller) ?</h2>
+    <p>Vous concevez des armoires de compensation automatique d'énergie réactive (batteries de condensateurs), des tableaux TGBT d'efficacité énergétique ou recherchez des régulateurs de cos phi certifiés CEI 61000-4 (6 à 16 gradins, Modbus RS485) ? YOMIN fabrique des régulateurs varmétriques JKL5C/RPCF de haute précision.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <p style="margin-top:14px"><a href="/products">Découvrir le catalogue complet de produits &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "power-factor-correction-what-is-an-automatic-power-factor-controller";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

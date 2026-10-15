@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تحسين معامل القدرة والتعويض الديناميكي: ما هو جهاز التحكم الآلي في معامل القدرة (APFC Controller)؟ | Yomin Electric</title>
+<meta name="description" content="تحسين معامل القدرة الصناعي، والتحكم في مراحل بنوك المكثفات، وإلغاء غرامات شركات الكهرباء: ما هو جهاز التحكم في معامل القدرة (APFC Controller)؟ حسابات القدرة غير الفعالة Q بالمعالج الرقمي، والتبديل الدائري FIFO، ومنع التأرجح، والحماية من التوافقيات THD واتصال RS485 Modbus.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/power-factor-correction-what-is-an-automatic-power-factor-controller/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller-ar">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "تحسين معامل القدرة والتعويض الديناميكي: ما هو جهاز التحكم الآلي في معامل القدرة (APFC Controller)؟",
+      "description": "تحسين معامل القدرة الصناعي، والتحكم في مراحل بنوك المكثفات، وإلغاء غرامات شركات الكهرباء: ما هو جهاز التحكم في معامل القدرة (APFC Controller)؟ حسابات القدرة غير الفعالة Q بالمعالج الرقمي، والتبديل الدائري FIFO، ومنع التأرجح، والحماية من التوافقيات THD واتصال RS485 Modbus.",
+      "image": "https://www.yominelectric.com/assets/images/blog/power-factor-correction-what-is-an-automatic-power-factor-controller/hero.png",
+      "datePublished": "2026-10-15",
+      "dateModified": "2026-10-15",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/power-factor-correction-what-is-an-automatic-power-factor-controller-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما هو جهاز التحكم الآلي في معامل القدرة (APFC Controller) وما هي وظيفته الأساسية؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "جهاز التحكم الآلي في معامل القدرة—والمعروف في قطاع الكهرباء الصناعي باسم منظم معامل القدرة أو ريليه الفار (Var Relay) أو عقل لوحة المكثفات—هو جهاز إلكتروني رقمي متطور يعتمد على معالج دقيق، ويمثل \"العقل الذكي والمتحكم الرئيسي\" في لوحات بنوك مكثفات تحسين معامل القدرة (APFC Panels). وفي المنشآت الصناعية والتجارية: <ul><li><strong>أزمة انخفاض معامل القدرة:</strong> تسحب الأحمال الحثية مثل المحركات الكهربائية، والمضخات، والضواغط، والمحولات قدرة فعالة (kW) لإنجاز العمل الميكانيكي وقدرة غير فعالة (kvar) لبناء المجالات المغناطيسية. هذا الطلب يؤدي إلى تدهور معامل القدرة ($\\cos\\phi$) لأقل من 0.80 أو 0.70، مما يسبب تحميل الكابلات والمحولات بتيارات زائدة ويفرض غرامات مالية باهظة شهرياً من شركات الكهرباء على المنشأة.</li><li><strong>الحل الجذري بجهاز APFC:</strong> يقوم الجهاز بقياس الجهد والتيار لحظياً عبر محول تيار، ويحسب العجز الدقيق بالكيلوفار (kvar)، ثم يعطي أوامر كهربية للمرحلات لتشغيل كونتاكتورات المكثفات خطوة بخطوة لإدخال السعة المطلوبة تماماً، محافظاً على معامل القدرة عند 0.98 ويلغي غرامات فاتورة الكهرباء نهائياً.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف تحمي خوارزمية التدوير الدائري (FIFO) بنك المكثفات من التلف المبكر؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "في الأجهزة القديمة، كانت المرحلة الأولى من المكثفات تعمل دائماً أولاً، مما يجعلها تهلك أسرع بعشر مرات من باقي المراحل. تحتوي أجهزة يمين JKL5C على نظام <strong>التدوير الدائري المتساوي (FIFO - الداخل أولاً يخرج أولاً)</strong> : يقوم الجهاز بتوزيع ساعات التشغيل بعدالة تامة على المراحل المتساوية في السعة؛ فالمكثف الذي ظل يعمل لأطول فترة يتم فصله أولاً، والمكثف الذي ظل في وضع الراحة لأطول فترة يتم تشغيله أولاً، مما يضاعف العمر الافتراضي للمكثفات والكونتاكتورات."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا يعتبر زمن تأخير إعادة التوصيل حيوياً للغاية لسلامة المكثفات؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "عند فصل مكثف القدرة عن الشبكة، يظل محتفظاً بشحنة تيار مستمر داخلية هائلة تعادل القيمة اللحظية لقمة موجة الجهد. وتحتاج مقاومات التفريغ الداخلية المدمجة بالمكثف من 30 إلى 60 ثانية لتفريغ هذا الجهد لأقل من 50 فولت الآمنة. فإذا حاول جهاز التحكم إعادة توصيل المكثف فورياً وهو لا يزال مشحوناً في عكس طور موجة الشبكة، فإن هذا التضاد يتسبب في اندفاع تيار صدمي هائل يتجاوز <strong>200 ضعف التيار الاسمي</strong>، مما يلحم نقاط تلامس الكونتاكتور ويفجر المكثف فوراً. يطبق جهاز يمين فترة حظر زمنية إلزامية (60 ثانية افتراضياً) تمنع أي إعادة توصيل قبل اكتمال التفريغ."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: AR">
+        <span id="lf"><span>AR</span></span><span id="lc">AR</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">الرئيسية</a> &middot; <a href="/blog">المدونة</a> &middot; <span>جودة الطاقة ومكثفات تحسين معامل القدرة</span></div>
+    <span class="bh-tag">جودة الطاقة ومكثفات تحسين معامل القدرة / أجهزة التحكم الآلي في معامل القدرة</span>
+    <h1 class="bh-title">تحسين معامل القدرة والتعويض الديناميكي: ما هو جهاز التحكم الآلي في معامل القدرة (APFC Controller)؟</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>15 أكتوبر 2026</span>
+      <span class="divider"></span>
+      <span>10 دقائق قراءة</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/power-factor-correction-what-is-an-automatic-power-factor-controller/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/power-factor-correction-what-is-an-automatic-power-factor-controller/hero.png" alt="جهاز تحكم آلي رقمي في معامل القدرة (موديل JKL5C) مركب على باب لوحة مكثفات صناعية يعرض قيمة معامل القدرة ومؤشرات المراحل LED" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>العقل الرقمي الذكي لمنظومات تحسين معامل القدرة الكهربائية الصناعية</h2>
+<p>في المصانع وورش الإنتاج، والمجمعات التجارية الضخمة، ومحطات معالجة المياه، ومراكز البيانات حول العالم، تمثل كفاءة استهلاك الطاقة عنصراً حاسماً في خفض تكاليف التشغيل وزيادة الأرباح.</p>
+<p>تعتمد كافة الماكينات الكهروميكانيكية—مثل المحركات الحثية، ومجموعات التبريد والتكييف، ومضخات السوائل، والضواغط الهوائية—على المجالات الكهرومغناطيسية لكي تعمل. وتسحب هذه المجالات قدراً كبيراً من القدرة غير الفعالة ($Q$ kvar) من شبكة التوزيع دون أن تبذل أي شغل ميكانيكي حقيقي.</p>
+<p>ومع مرور هذه القدرة غير الفعالة عبر المحولات والكابلات، فإنها تتسبب في ارتفاع حرارة الموصلات وفقداً بالجهد، مما يدفع شركات الكهرباء لفرض غرامات مالية قاسية جداً على فواتير الطاقة للمنشآت ذات معامل القدرة المنخفض.</p>
+<p>يمثل <strong>جهاز التحكم الآلي في معامل القدرة (سلسلة JKL5C / RPCF)</strong> الحل القياسي المتكامل: جهاز رقمي ميكروبروسيسور يحلل طلب القدرة غير الفعالة على مدار الساعة ويقوم بإدخال وإخراج مراحل بنوك المكثفات بدقة متناهية ليحافظ على معامل القدرة ($\cos\phi \ge 0.98$) بصورة أوتوماتيكية بالكامل.</p>
+
+<h2>المكونات الهندسية وميزات الأداء لسلسلة أجهزة JKL5C</h2>
+<ol>
+  <li><strong>معالج رقمي مزدوج فائق السرعة:</strong> يحلل عينات موجات الجهد والتيار اللحظية باستخدام تحويل فوريه السريع (FFT)، مستخرجاً القدرة الفعالة وغير الفعالة بدقة تامة حتى مع وجود تشوهات توافقية في شبكة المصنع.</li>
+  <li><strong>شاشة عرض رقمية عالية الإضاءة والوضوح:</strong> تعرض في آن واحد معامل القدرة، والجهد، والتيار، وحجم الكيلوفار المطلوب، وحالة تشغيل كل مرحلة من مراحل المكثفات عبر لمبات LED واضحة.</li>
+  <li><strong>خوارزمية التدوير الدائري الذكي لحماية المكثفات:</strong> توازن فترات التشغيل بين المراحل المتساوية في السعة بنظام FIFO، مانعةً الإجهاد الحراري غير المتوازن على المكثفات.</li>
+  <li><strong>منظومة حماية متكاملة من التوافقيات والجهود الزائدة:</strong> تفصل مراحل المكثفات فورياً عند ارتفاع جهد الشبكة لأكثر من 115% أو عند تجاوز نسبة التوافقيات للحدود الآمنة لحماية البنك من ظاهرة الرنين المدمر.</li>
+  <li><strong>منفذ اتصال تسلسلي صناعي معزول RS485 Modbus:</strong> يتيح القراءة والمراقبة اللحظية لمعامل القدرة وإدماج اللوحة مباشرة في برامج المراقبة والتحكم بالمنشأة SCADA.</li>
+</ol>
+
+<h2>المواصفات الفنية</h2>
+<table>
+  <thead>
+    <tr><th>المعلمة الفنية الهندسية</th><th>القيمة ومستوى الأداء</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>فئة جهد التشغيل والقياس الاسمي للشبكة</strong></td><td>جهد إشارة أخذ العينات: 220V / 380V / 400V / 415V AC (&plusmn;20%، تردد 50/60 هرتز، طور-تعادل أو طور-طور)</td></tr>
+    <tr><td><strong>تيار إشارة العينات من محول التيار ($I_{in}$)</strong></td><td>دخل تيار معياري من ثانوي محول التيار CT: من 0 إلى 5 أمبير (فئة دقة 0.5 أو 0.2، حمل داخلي $< 0.5$ VA)</td></tr>
+    <tr><td><strong>عدد مراحل التتابع والتحكم المتاحة</strong></td><td>مخرجات تتابع للتحكم في كونتاكتورات المكثفات: 6 أو 8 أو 10 أو 12 أو 14 أو 16 مخرج ريليه (تصنيف 250V AC / 5A)</td></tr>
+    <tr><td><strong>نطاق ضبط القيمة المستهدفة لمعامل القدرة</strong></td><td>معامل قدرة مستهدف قابل للبرمجة: من 0.800 حثي إلى 0.800 سعوي (القيمة الافتراضية بالمصنع: 0.950 إلى 0.980 متأخر)</td></tr>
+    <tr><td><strong>خوارزميات التبديل والتحكم المعتمدة</strong></td><td>نمط الحساب الديناميكي للقدرة غير الفعالة ($Q$ kvar)، والنمط التتابعي، ونمط التدوير الدائري المتساوي FIFO</td></tr>
+    <tr><td><strong>زمن تأخير إعادة توصيل مرحلة المكثف</strong></td><td>زمن أمان لتفريغ الشحنة قابل للبرمجة: 1 إلى 300 ثانية (لضمان تفريغ شحنة المكثف عبر مقاومات التفريغ الداخلية)</td></tr>
+    <tr><td><strong>منظومة الحماية الكهربائية والتوافقية</strong></td><td>فصل أوتوماتيكي عند ارتفاع الجهد، وحظر عند هبوط الجهد، وفصل عند زيادة حرارة اللوحة، وإنذار تشوه التوافقيات THD-V</td></tr>
+    <tr><td><strong>منفذ الاتصال والمراقبة الرقمية عن بُعد</strong></td><td>منفذ تسلسلي معزول RS485 يدعم بروتوكول Modbus RTU القياسي للربط مع أنظمة إدارة الطاقة والمراقبة SCADA</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>الأسئلة الشائعة</h2><h3>ما هو جهاز التحكم الآلي في معامل القدرة (APFC Controller) وما هي وظيفته الأساسية؟</h3><p>جهاز التحكم الآلي في معامل القدرة—والمعروف في قطاع الكهرباء الصناعي باسم منظم معامل القدرة أو ريليه الفار (Var Relay) أو عقل لوحة المكثفات—هو جهاز إلكتروني رقمي متطور يعتمد على معالج دقيق، ويمثل &quot;العقل الذكي والمتحكم الرئيسي&quot; في لوحات بنوك مكثفات تحسين معامل القدرة (APFC Panels). وفي المنشآت الصناعية والتجارية: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;أزمة انخفاض معامل القدرة:&lt;/strong&gt; تسحب الأحمال الحثية مثل المحركات الكهربائية، والمضخات، والضواغط، والمحولات قدرة فعالة (kW) لإنجاز العمل الميكانيكي وقدرة غير فعالة (kvar) لبناء المجالات المغناطيسية. هذا الطلب يؤدي إلى تدهور معامل القدرة ($\cos\phi$) لأقل من 0.80 أو 0.70، مما يسبب تحميل الكابلات والمحولات بتيارات زائدة ويفرض غرامات مالية باهظة شهرياً من شركات الكهرباء على المنشأة.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;الحل الجذري بجهاز APFC:&lt;/strong&gt; يقوم الجهاز بقياس الجهد والتيار لحظياً عبر محول تيار، ويحسب العجز الدقيق بالكيلوفار (kvar)، ثم يعطي أوامر كهربية للمرحلات لتشغيل كونتاكتورات المكثفات خطوة بخطوة لإدخال السعة المطلوبة تماماً، محافظاً على معامل القدرة عند 0.98 ويلغي غرامات فاتورة الكهرباء نهائياً.&lt;/li&gt;&lt;/ul&gt;</p><h3>كيف تحمي خوارزمية التدوير الدائري (FIFO) بنك المكثفات من التلف المبكر؟</h3><p>في الأجهزة القديمة، كانت المرحلة الأولى من المكثفات تعمل دائماً أولاً، مما يجعلها تهلك أسرع بعشر مرات من باقي المراحل. تحتوي أجهزة يمين JKL5C على نظام &lt;strong&gt;التدوير الدائري المتساوي (FIFO - الداخل أولاً يخرج أولاً)&lt;/strong&gt; : يقوم الجهاز بتوزيع ساعات التشغيل بعدالة تامة على المراحل المتساوية في السعة؛ فالمكثف الذي ظل يعمل لأطول فترة يتم فصله أولاً، والمكثف الذي ظل في وضع الراحة لأطول فترة يتم تشغيله أولاً، مما يضاعف العمر الافتراضي للمكثفات والكونتاكتورات.</p><h3>لماذا يعتبر زمن تأخير إعادة التوصيل حيوياً للغاية لسلامة المكثفات؟</h3><p>عند فصل مكثف القدرة عن الشبكة، يظل محتفظاً بشحنة تيار مستمر داخلية هائلة تعادل القيمة اللحظية لقمة موجة الجهد. وتحتاج مقاومات التفريغ الداخلية المدمجة بالمكثف من 30 إلى 60 ثانية لتفريغ هذا الجهد لأقل من 50 فولت الآمنة. فإذا حاول جهاز التحكم إعادة توصيل المكثف فورياً وهو لا يزال مشحوناً في عكس طور موجة الشبكة، فإن هذا التضاد يتسبب في اندفاع تيار صدمي هائل يتجاوز &lt;strong&gt;200 ضعف التيار الاسمي&lt;/strong&gt;، مما يلحم نقاط تلامس الكونتاكتور ويفجر المكثف فوراً. يطبق جهاز يمين فترة حظر زمنية إلزامية (60 ثانية افتراضياً) تمنع أي إعادة توصيل قبل اكتمال التفريغ.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>تحسين معامل القدرة والتعويض الديناميكي: ما هو جهاز التحكم الآلي في معامل القدرة (APFC Controller)؟</h2>
+    <p>هل تعمل على تصنيع لوحات بنوك مكثفات تحسين معامل القدرة (APFC Panels)، أو مشاريع كفاءة الطاقة للمصانع الكبرى، أو تحتاج لأجهزة تحكم رقمية معتمدة IEC 61000-4 (من 6 إلى 16 مرحلة، مع Modbus RS485)؟ تصنع يمين (YOMIN) أجهزة تحكم JKL5C/RPCF بأعلى معايير الدقة.</p>
+    <a class="btn btn-primary" href="/contact">طلب تسعيرة</a>
+    <p style="margin-top:14px"><a href="/products">استعراض كتالوج المنتجات الكهربائية الكامل &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "power-factor-correction-what-is-an-automatic-power-factor-controller";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
