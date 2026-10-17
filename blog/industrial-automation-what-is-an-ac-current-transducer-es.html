@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automatización Industrial y Control PLC: ¿Qué es un Transductor de Corriente Alterna (AC Current Transducer)? | Yomin Electric</title>
+<meta name="description" content="Tableros de control industrial, entradas analógicas de PLC, telemetría de motores y sistemas de supervisión SCADA: ¿Qué es un transductor de corriente alterna (AC Current Transducer)? Conversión True-RMS de alta precisión, salida analógica de 4-20mA DC de 2 hilos autoalimentada en bucle, aislamiento galvánico de 3kV y modelos de núcleo abierto.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/industrial-automation-what-is-an-ac-current-transducer/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer-es">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Automatización Industrial y Control PLC: ¿Qué es un Transductor de Corriente Alterna (AC Current Transducer)?",
+      "description": "Tableros de control industrial, entradas analógicas de PLC, telemetría de motores y sistemas de supervisión SCADA: ¿Qué es un transductor de corriente alterna (AC Current Transducer)? Conversión True-RMS de alta precisión, salida analógica de 4-20mA DC de 2 hilos autoalimentada en bucle, aislamiento galvánico de 3kV y modelos de núcleo abierto.",
+      "image": "https://www.yominelectric.com/assets/images/blog/industrial-automation-what-is-an-ac-current-transducer/hero.png",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-17",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es un Transductor de Corriente AC y por qué un PLC no puede leer un transformador de corriente estándar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un Transductor de Corriente Alterna—conocido como transmisor de corriente 4-20mA o transductor de corriente a voltaje continuo—es un sensor electrónico de precisión que mide la corriente alterna que fluye por un conductor eléctrico y la convierte en una señal analógica continua de bajo voltaje linealmente proporcional (típicamente 4–20 mA DC o 0–10 V DC). En tableros de control con PLC y sistemas SCADA : <ul><li><strong>Incompatibilidad de los TCs Tradicionales:</strong> Los transformadores de corriente convencionales entregan 0–5 A AC. Las tarjetas de entradas analógicas de los PLCs (Siemens, Allen-Bradley, Schneider) solo admiten señales directas de corriente continua (DC). Conectar corriente alterna de 5A directamente en el PLC destruiría sus microcircuitos convertidores analógico-digitales.</li><li><strong>Dispositivo Compacto Todo-en-Uno:</strong> En lugar de instalar un TC convencional voluminoso más un convertidor de señal externo con cables adicionales, el transductor YOMIN ACT integra el núcleo de sensado y el transmisor 4-20mA en un único cuerpo compacto.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué se prefiere el lazo de corriente 4–20 mA sobre la señal 0–10 V en plantas industriales?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En la automatización de fábricas, el bucle de corriente 4–20 mA es el estándar dominante por dos razones : <ul><li><strong>Inmunidad a la Resistencia del Cable:</strong> Una señal de voltaje (0–10 V) sufre caídas de tensión ($V = I \times R$) en recorridos largos (de 50 a 300 metros), falseando la lectura en el PLC. Un bucle 4–20 mA mantiene la corriente exacta sin importar la longitud del cable ni la resistencia del circuito.</li><li><strong>Detección Instantánea de Cable Cortado (Cero Vivo):</strong> En 0–10 V, un valor de 0 V puede ser corriente nula o un cable roto. En 4–20 mA, <strong>4 mA representa el 0% de corriente</strong>, mientras que <strong>0 mA advierte inmediatamente al PLC que el cable se cortó o el sensor falló</strong>.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la diferencia entre un transductor de promedio rectificado y uno True-RMS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los transductores básicos utilizan circuitos de promedio calibrados para ondas senoidales puras. En plantas con variadores de frecuencia (VFD) y motores regulados, las ondas de corriente sufren graves distorsiones armónicas, provocando errores de lectura de más del 20% al 40%. Los transductores YOMIN ACT incorporan <strong>tecnología True-RMS (valor eficaz real)</strong> que calcula con precisión matemática el valor térmico de la señal, asegurando mediciones confiables con exactitud de &plusmn;0.5%."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: ES">
+        <span id="lf"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span><span id="lc">ES</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Sensores de Corriente y Transductores Industriales</span></div>
+    <span class="bh-tag">Sensores de Corriente y Transductores Industriales / Transductores de Corriente Alterna</span>
+    <h1 class="bh-title">Automatización Industrial y Control PLC: ¿Qué es un Transductor de Corriente Alterna (AC Current Transducer)?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>17 de Octubre de 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/industrial-automation-what-is-an-ac-current-transducer/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/industrial-automation-what-is-an-ac-current-transducer/hero.png" alt="Transductor de corriente alterna compacto para riel DIN (Serie YM-ACT) con cableado de señal analógica 4-20mA conectado a un módulo de entradas analógicas de PLC" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>El Puente de Medición Indispensable entre la Potencia Eléctrica y los Autómatas PLC</h2>
+<p>En plantas industriales automatizadas, estaciones de bombeo de agua, centros de control de procesos químicos y maquinaria de manufactura, los autómatas programables (PLC) y sistemas SCADA supervisan el funcionamiento continuo de cientos de motores, ventiladores y compresores.</p>
+<p>Para prevenir la sobrecarga mecánica de un motor, detectar atascos mecánicos en bombas o registrar el consumo energético de la planta, el PLC necesita conocer con exactitud la corriente eléctrica real que consume cada máquina.</p>
+<p>Sin embargo, los motores operan en <strong>380V o 440V AC</strong> con corrientes de decenas o cientos de amperios. Los transformadores de corriente entregan 5A AC, que las tarjetas de entradas analógicas de los PLCs no pueden procesar directamente.</p>
+<p>El <strong>Transductor de Corriente Alterna (Serie YM-ACT)</strong> resuelve este desafío : un sensor electrónico de estado sólido que mide la corriente alterna y la transforma en una señal analógica continua de 4–20 mA DC o 0–10 V DC, lineal y con aislamiento galvánico de 3kV, lista para conectarse directamente a las entradas analógicas del autómata.</p>
+
+<h2>Elementos Constructivos y Calidad de Ingeniería de la Serie YM-ACT</h2>
+<ol>
+  <li><strong>Núcleo Magnético de Inducción (Sólido o Núcleo Abierto):</strong> Fabricado con láminas de acero al silicio de alta permeabilidad. Los modelos de núcleo abierto (Split-Core) se instalan de forma rápida abrazando los cables sin necesidad de desconectar la instalación.</li>
+  <li><strong>Circuito Integrado True-RMS de Alta Exactitud:</strong> Procesamiento analógico continuo que calcula el valor cuadrático medio real de la onda, garantizando mediciones exactas en motores controlados por variadores de frecuencia.</li>
+  <li><strong>Barrera de Aislamiento Galvánico Dieléctrico de 3000 V AC:</strong> Separación óptica y magnética que aísla los cables de potencia de los circuitos secundarios de control, protegiendo al autómata contra sobretensiones peligrosas.</li>
+  <li><strong>Tecnología de 2 Hilos Alimentada por el Lazo:</strong> El transductor toma su energía directamente de los 24V DC de la entrada analógica del PLC, eliminando fuentes de alimentación adicionales en el gabinete.</li>
+  <li><strong>Montaje Modular en Riel DIN de 35 mm:</strong> Carcasa termoplástica autoextinguible (UL 94 V-0) que se acopla directamente al riel DIN, optimizando el espacio dentro de los gabinetes de control.</li>
+</ol>
+
+<h2>Especificaciones Técnicas</h2>
+<table>
+  <thead>
+    <tr><th>Parámetro Técnico</th><th>Valor de Ingeniería y Rendimiento</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Rango de Medición de Corriente Primaria AC</strong></td><td>Calibres primarios estándar: 0–10A, 0–20A, 0–50A, 0–100A, 0–200A, 0–300A hasta 0–500A AC (50/60 Hz senoidal o distorsionada)</td></tr>
+    <tr><td><strong>Señales Normalizadas de Salida Analógica DC</strong></td><td>Estándar industrial de instrumentación: bucle de corriente 4–20 mA DC (Opcional: salidas de voltaje 0–5 V DC o 0–10 V DC)</td></tr>
+    <tr><td><strong>Tecnología de Conversión y Tratamiento</strong></td><td>Conversión electrónica True-RMS (valor cuadrático medio real, exacto ante armónicos y variadores de frecuencia VFD)</td></tr>
+    <tr><td><strong>Clase de Exactitud y Linealidad Metrológica</strong></td><td>Alta precisión industrial: Clase 0.5 (&plusmn;0.5% de fondo de escala, linealidad &lt; 0.2% en todo el rango de medida)</td></tr>
+    <tr><td><strong>Aislamiento Galvánico Dieléctrico de Seguridad</strong></td><td>Barrera optoacoplada y magnética: rigidez dieléctrica ensayada de 3000 V AC durante 1 min (cable primario a bornes de salida)</td></tr>
+    <tr><td><strong>Alimentación y Resistencia de Carga Máxima</strong></td><td>Bucle de 2 hilos autoalimentado: +24V DC nominal (rango 12V a 30V DC ; resistencia máxima de bucle $R_L \le 500\,\Omega$)</td></tr>
+    <tr><td><strong>Tiempo de Respuesta y Ancho de Banda</strong></td><td>Respuesta analógica rápida: tiempo de subida &le; 200 ms (ancho de banda de frecuencia: 20 Hz a 1 kHz)</td></tr>
+    <tr><td><strong>Carcasa Mecánica y Montaje en Riel DIN</strong></td><td>Gabinete termoplástico autoextinguible (UL 94 V-0) ; montaje directo en riel DIN de 35 mm o fijación por tornillos a placa</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Preguntas Frecuentes</h2><h3>¿Qué es un Transductor de Corriente AC y por qué un PLC no puede leer un transformador de corriente estándar?</h3><p>Un Transductor de Corriente Alterna—conocido como transmisor de corriente 4-20mA o transductor de corriente a voltaje continuo—es un sensor electrónico de precisión que mide la corriente alterna que fluye por un conductor eléctrico y la convierte en una señal analógica continua de bajo voltaje linealmente proporcional (típicamente 4–20 mA DC o 0–10 V DC). En tableros de control con PLC y sistemas SCADA : &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Incompatibilidad de los TCs Tradicionales:&lt;/strong&gt; Los transformadores de corriente convencionales entregan 0–5 A AC. Las tarjetas de entradas analógicas de los PLCs (Siemens, Allen-Bradley, Schneider) solo admiten señales directas de corriente continua (DC). Conectar corriente alterna de 5A directamente en el PLC destruiría sus microcircuitos convertidores analógico-digitales.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Dispositivo Compacto Todo-en-Uno:&lt;/strong&gt; En lugar de instalar un TC convencional voluminoso más un convertidor de señal externo con cables adicionales, el transductor YOMIN ACT integra el núcleo de sensado y el transmisor 4-20mA en un único cuerpo compacto.&lt;/li&gt;&lt;/ul&gt;</p><h3>¿Por qué se prefiere el lazo de corriente 4–20 mA sobre la señal 0–10 V en plantas industriales?</h3><p>En la automatización de fábricas, el bucle de corriente 4–20 mA es el estándar dominante por dos razones : &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Inmunidad a la Resistencia del Cable:&lt;/strong&gt; Una señal de voltaje (0–10 V) sufre caídas de tensión ($V = I 	imes R$) en recorridos largos (de 50 a 300 metros), falseando la lectura en el PLC. Un bucle 4–20 mA mantiene la corriente exacta sin importar la longitud del cable ni la resistencia del circuito.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Detección Instantánea de Cable Cortado (Cero Vivo):&lt;/strong&gt; En 0–10 V, un valor de 0 V puede ser corriente nula o un cable roto. En 4–20 mA, &lt;strong&gt;4 mA representa el 0% de corriente&lt;/strong&gt;, mientras que &lt;strong&gt;0 mA advierte inmediatamente al PLC que el cable se cortó o el sensor falló&lt;/strong&gt;.&lt;/li&gt;&lt;/ul&gt;</p><h3>¿Cuál es la diferencia entre un transductor de promedio rectificado y uno True-RMS?</h3><p>Los transductores básicos utilizan circuitos de promedio calibrados para ondas senoidales puras. En plantas con variadores de frecuencia (VFD) y motores regulados, las ondas de corriente sufren graves distorsiones armónicas, provocando errores de lectura de más del 20% al 40%. Los transductores YOMIN ACT incorporan &lt;strong&gt;tecnología True-RMS (valor eficaz real)&lt;/strong&gt; que calcula con precisión matemática el valor térmico de la señal, asegurando mediciones confiables con exactitud de &amp;plusmn;0.5%.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Automatización Industrial y Control PLC: ¿Qué es un Transductor de Corriente Alterna (AC Current Transducer)?</h2>
+    <p>¿Diseña tableros de automatización con PLC, centros de control de motores MCC o sistemas SCADA que requieren transductores de corriente alterna True-RMS Clase 0.5 (0-10A a 0-500A, salida 4-20mA DC, aislamiento de 3kV)? YOMIN suministra transductores serie ACT de máxima precisión.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <p style="margin-top:14px"><a href="/products">Ver catálogo completo de productos &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "industrial-automation-what-is-an-ac-current-transducer";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

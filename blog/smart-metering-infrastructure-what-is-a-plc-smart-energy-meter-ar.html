@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>العدادات الذكية والبنية التحتية المتقدمة AMI: ما هو عداد الكهرباء الذكي عبر شبكة الكهرباء CPL (PLC Energy Meter)؟ | Yomin Electric</title>
+<meta name="description" content="البنية التحتية المتقدمة لقياس الطاقة (AMI/AMR)، والأبراج السكنية، وأتمتة شبكات الكهرباء: ما هو عداد الكهرباء الذكي عبر شبكة الكهرباء (PLC)؟ إرسال البيانات عبر تقنية النطاق العريض HPLC وتعديل OFDM (تردد 2 إلى 12 ميجاهرتز) على كابلات 230V/400V الحالية، بدون اشتراكات شرائح اتصالات وببروتوكول DLMS/COSEM.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/smart-metering-infrastructure-what-is-a-plc-smart-energy-meter/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-plc-smart-energy-meter-ar">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-plc-smart-energy-meter">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-plc-smart-energy-meter-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-plc-smart-energy-meter-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-plc-smart-energy-meter-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-plc-smart-energy-meter">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "العدادات الذكية والبنية التحتية المتقدمة AMI: ما هو عداد الكهرباء الذكي عبر شبكة الكهرباء CPL (PLC Energy Meter)؟",
+      "description": "البنية التحتية المتقدمة لقياس الطاقة (AMI/AMR)، والأبراج السكنية، وأتمتة شبكات الكهرباء: ما هو عداد الكهرباء الذكي عبر شبكة الكهرباء (PLC)؟ إرسال البيانات عبر تقنية النطاق العريض HPLC وتعديل OFDM (تردد 2 إلى 12 ميجاهرتز) على كابلات 230V/400V الحالية، بدون اشتراكات شرائح اتصالات وببروتوكول DLMS/COSEM.",
+      "image": "https://www.yominelectric.com/assets/images/blog/smart-metering-infrastructure-what-is-a-plc-smart-energy-meter/hero.png",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-17",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/smart-metering-infrastructure-what-is-a-plc-smart-energy-meter-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما هو عداد الكهرباء الذكي عبر شبكة الكهرباء (PLC Smart Meter) وكيف يعمل نظام نقل البيانات CPL؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "عداد الكهرباء الذكي بتقنية خطوط القدرة—والمعروف في قطاع شركات الكهرباء باسم عداد PLC أو عداد CPL عريض النطاق HPLC—هو عداد إلكتروني رقمي مجهز بمودم اتصال داخلي ينقل بيانات استهلاك الطاقة والقراءات اللحظية مباشرة عبر كابلات الكهرباء النحاسية الفعلية التي تغذي المشترك بالتيار الكهربائي. وفي منظومات القراءة التلقائية الذكية (AMI / AMR) : <ul><li><strong>تضمين الإشارة الرقمية على موجة الكهرباء:</strong> يحول العداد قراءات الاستهلاك (كيلوواط/ساعة، والجهود، والتيارات، ومنحنيات الأحمال) إلى حزم إشارات رقمية عالية التردد بتعديل OFDM المتطور. وتُركب هذه الإشارات الدقيقة فوق الموجة الجيبية للكهرباء (50/60 هرتز) المارة في الكابل.</li><li><strong>تجميع البيانات عند محول التوزيع:</strong> عند محول التغذية بالمنطقة، يقوم جهاز مجمع البيانات (DCU) بالتقاط وفك تشفير إشارات العدادات المربوطة على نفس المحول، ثم يرسلها مجمعة إلى مركز التحكم الرئيسي بالشركة عبر الألياف الضوئية أو شبكة 4G الآمنة.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا تفضل شركات الكهرباء تقنية PLC على العدادات بشرائح الاتصالات 4G في المناطق الحضرية؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "في المجمعات السكنية الشاهقة والمدن الكثيفة، تواجه العدادات بشرائح الاتصالات اللاسلكية عقبات جسيمة : <ul><li><strong>تغطية تامة بنسبة 100% في غرف البدروم:</strong> في غرف العدادات الواقعة في سراديب المباني والخرسانات المسلحة، تنعدم إشارات شبكات المحمول تماماً (4G / NB-IoT) بسبب حجب الخرسانة. بينما تسري إشارة PLC عبر أسلاك النحاس لتصل لكافة العدادات دون أي عائق.</li><li><strong>انعدام اشتراكات باقات المحمول الشهرية:</strong> تفرض عدادات المحمول تكاليف باقات إنترنت شهرية على كل عداد، مما يكلف ملايين الدولارات سنوياً. بينما تعمل تقنية PLC على كابلات الكهرباء المملوكة لشركة التوزيع مجاناً مدى الحياة دون أي فواتير لشركات الاتصالات.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هو الفرق بين تقنية PLC القديمة ضيقة النطاق وتقنية HPLC عريضة النطاق الحديثة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "كانت أنظمة PLC القديمة ضيقة النطاق (Narrowband) تعاني من بطء القراءة (< 2.4 كيلوبت/ثانية) وتأثرها بالضوضاء الكهربائية للأجهزة المنزلية. بينما تعمل تقنية <strong>HPLC الحديثة عريضة النطاق</strong> بترددات من 2 إلى 12 ميجاهرتز بتعديل OFDM متعدد القنوات، مما يمكنها من تجنب الترددات المشوشة تلقائياً وتحقيق سرعات فائقة من 100 كيلوبت/ثانية حتى 10 ميجابت/ثانية مع توجيه شبكي ذاتي مرن."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: AR">
+        <span id="lf"><span>AR</span></span><span id="lc">AR</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">الرئيسية</a> &middot; <a href="/blog">المدونة</a> &middot; <span>العدادات الذكية وأنظمة الاتصال CPL/PLC</span></div>
+    <span class="bh-tag">العدادات الذكية وأنظمة الاتصال AMI / عدادات خطوط القدرة الكهربائية (PLC)</span>
+    <h1 class="bh-title">العدادات الذكية والبنية التحتية المتقدمة AMI: ما هو عداد الكهرباء الذكي عبر شبكة الكهرباء CPL (PLC Energy Meter)؟</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>17 أكتوبر 2026</span>
+      <span class="divider"></span>
+      <span>10 دقائق قراءة</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/smart-metering-infrastructure-what-is-a-plc-smart-energy-meter/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/smart-metering-infrastructure-what-is-a-plc-smart-energy-meter/hero.png" alt="عداد كهرباء ذكي إلكتروني ثلاثي الأوجه يعمل بتقنية خطوط القدرة PLC (موديل DTS) مركب مع أسلاك طاقة مرصصة ومؤشرات اتصال نشطة" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>الحل الهندسي الاقتصادي المثالي لقراءة عدادات الكهرباء في البيئات الحضرية</h2>
+<p>بالنسبة لشركات وهيئات توزيع الكهرباء الحكومية، ومطوري المجمعات السكنية والتجارية الكبرى، يمثل التحول إلى القراءة الرقمية المؤتمتة للعدادات مطلباً حيوياً لتقليل الفواقد المالية وتأمين الإيرادات.</p>
+<p>ومع ذلك، تواجه العدادات الذكية اللاسلكية (التي تعتمد على شرائح الهاتف المحمول 4G أو موجات الراديو RF) فشلاً ذريعاً في غرف الكهرباء بالسراديب والأبراج الخرسانية الشاهقة التي تعزل الإشارات اللاسلكية بالكامل.</p>
+<p>وفضلاً عن ذلك، فإن تزويد مئات الآلاف من العدادات بشرائح اتصال يكبّل الشركات بفواتير اشتراكات شهرية متكررة تدفع لشركات الاتصالات، مع مخاطر توقف الخدمة مستقبلاً عند إلغاء الأجيال اللاسلكية القديمة.</p>
+<p>يقدم <strong>عداد الكهرباء الذكي عبر شبكة الكهرباء (سلسلة DTS / DDS PLC)</strong> الإجابة الهندسية النموذجية: عداد إلكتروني معتمد يستغل كابلات الكهرباء النحاسية الممتدة بالفعل داخل المبنى لنقل بيانات الفوترة مباشرة إلى مركز التحكم، دون أي نقاط حجب لاسلكية ودون أي رسوم اشتراكات اتصالات.</p>
+
+<h2>المكونات الهندسية وميزات الأداء لسلسلة عدادات DTS PLC</h2>
+<ol>
+  <li><strong>مودم خطوط القدرة عريض النطاق HPLC:</strong> معالجة إشارات رقمية متطورة بمعالج 32 بت وتعديل OFDM متعدد الترددات (2 إلى 12 ميجاهرتز) يضمن مناعة كاملة ضد التوافقيات والتشويش الكهربائي.</li>
+  <li><strong>دائرة قياس مترولوجية متناهية الدقة:</strong> أخذ عينات رقمية متزامنة لجهود وتيارات الأوجه بدقة فئة 1.0 (أو 0.5S) للطاقة الفعالة وفئة 2.0 للطاقة غير الفعالة طبقاً للمواصفة IEC 62053.</li>
+  <li><strong>محول اقتران ديزلكتريكي وحماية من الصواعق:</strong> عزل داخلي متين يحمي الدوائر الإلكترونية الحساسة من النبضات العابرة وصدمات الصواعق حتى 6 كيلوفولت طبقاً لمعايير IEC 62052-11.</li>
+  <li><strong>شاشة LCD واضحة ومتعددة المعلمات:</strong> استعراض فوري ومستمر للطاقة التراكمية، والقدرة اللحظية بالكيلوواط، وجهود وتيارات الأوجه، مع مؤشر LED ضوئي يوضح نشاط إرسال واستقبال بيانات PLC.</li>
+  <li><strong>منظومة كشف التلاعب ومكافحة سرقة الكهرباء:</strong> رصد وتوثيق فوري لمحاولات التأثير المغناطيسي، أو عكس الأطوار، أو فتح غطاء التوصيل مع إرسال إنذار مباشر وفوري لمركز التحكم.</li>
+</ol>
+
+<h2>المواصفات الفنية</h2>
+<table>
+  <thead>
+    <tr><th>المعلمة الفنية الهندسية</th><th>القيمة ومستوى الأداء</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>تقنية الاتصال اللاسلكي والترددات الحاملة</strong></td><td>تقنية خطوط القدرة الكهربائية عريضة النطاق (HPLC / PLC) بتعديل الترددات المتعامدة OFDM (من 2 إلى 12 ميجاهرتز)</td></tr>
+    <tr><td><strong>الوسيط الفيزيائي لنقل بيانات القراءات</strong></td><td>تعديل مباشر على كابلات شبكة توزيع الكهرباء الحالية للجهد المنخفض (230V / 400V، 50/60 هرتز؛ بدون كابلات اتصالات إضافية)</td></tr>
+    <tr><td><strong>فئة الدقة المترولوجية المعتمدة للعداد</strong></td><td>فئة 1.0 (IEC 62053-21) للطاقة الفعالة، وفئة 2.0 (IEC 62053-23) للطاقة غير الفعالة (تتوفر فئة 0.5S عبر محولات التيار)</td></tr>
+    <tr><td><strong>سرعة نقل البيانات وزمن الاستجابة للشبكة</strong></td><td>سرعة طبقة فيزيائية تصل إلى 10 ميجابت/ثانية (معدل بيانات تطبيقي فعال &gt; 100 كيلوبت/ثانية؛ استجابة في أجزاء من الثانية)</td></tr>
+    <tr><td><strong>بروتوكول التطبيق والتوافقية القياسية</strong></td><td>بروتوكولات قياسية مفتوحة لشركات الكهرباء: بروتوكول DLMS/COSEM (IEC 62056) ومعايير G3-PLC / PRIME الدولية</td></tr>
+    <tr><td><strong>الجهد والتيارات المقننة للتشغيل المباشر</strong></td><td>الجهد الاسمي: 3&times;230/400V AC (ثلاثي الطور 4 أسلاك)؛ تيار التوصيل المباشر: 5(60)A و 10(100)A؛ قياس عبر CT: 1.5(6)A</td></tr>
+    <tr><td><strong>حماية الإيرادات ومكافحة التلاعب والسرقة</strong></td><td>كشف ومراقبة مستمرة: رصد المجالات المغناطيسية الخارجية، والتلاعب بخط التعادل، والفتح غير المصرح به لغطاء الأطراف مع إرسال إنذار فوري</td></tr>
+    <tr><td><strong>الاستهلاك الذاتي للعداد وتحمل البيئة</strong></td><td>استهلاك دائرة الجهد: &le; 1.5W / 6VA؛ نطاق درجة حرارة التشغيل: من $-40^\circ	ext{C}$ إلى $+70^\circ	ext{C}$؛ غلاف محكم IP54</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>الأسئلة الشائعة</h2><h3>ما هو عداد الكهرباء الذكي عبر شبكة الكهرباء (PLC Smart Meter) وكيف يعمل نظام نقل البيانات CPL؟</h3><p>عداد الكهرباء الذكي بتقنية خطوط القدرة—والمعروف في قطاع شركات الكهرباء باسم عداد PLC أو عداد CPL عريض النطاق HPLC—هو عداد إلكتروني رقمي مجهز بمودم اتصال داخلي ينقل بيانات استهلاك الطاقة والقراءات اللحظية مباشرة عبر كابلات الكهرباء النحاسية الفعلية التي تغذي المشترك بالتيار الكهربائي. وفي منظومات القراءة التلقائية الذكية (AMI / AMR) : &lt;ul&gt;&lt;li&gt;&lt;strong&gt;تضمين الإشارة الرقمية على موجة الكهرباء:&lt;/strong&gt; يحول العداد قراءات الاستهلاك (كيلوواط/ساعة، والجهود، والتيارات، ومنحنيات الأحمال) إلى حزم إشارات رقمية عالية التردد بتعديل OFDM المتطور. وتُركب هذه الإشارات الدقيقة فوق الموجة الجيبية للكهرباء (50/60 هرتز) المارة في الكابل.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;تجميع البيانات عند محول التوزيع:&lt;/strong&gt; عند محول التغذية بالمنطقة، يقوم جهاز مجمع البيانات (DCU) بالتقاط وفك تشفير إشارات العدادات المربوطة على نفس المحول، ثم يرسلها مجمعة إلى مركز التحكم الرئيسي بالشركة عبر الألياف الضوئية أو شبكة 4G الآمنة.&lt;/li&gt;&lt;/ul&gt;</p><h3>لماذا تفضل شركات الكهرباء تقنية PLC على العدادات بشرائح الاتصالات 4G في المناطق الحضرية؟</h3><p>في المجمعات السكنية الشاهقة والمدن الكثيفة، تواجه العدادات بشرائح الاتصالات اللاسلكية عقبات جسيمة : &lt;ul&gt;&lt;li&gt;&lt;strong&gt;تغطية تامة بنسبة 100% في غرف البدروم:&lt;/strong&gt; في غرف العدادات الواقعة في سراديب المباني والخرسانات المسلحة، تنعدم إشارات شبكات المحمول تماماً (4G / NB-IoT) بسبب حجب الخرسانة. بينما تسري إشارة PLC عبر أسلاك النحاس لتصل لكافة العدادات دون أي عائق.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;انعدام اشتراكات باقات المحمول الشهرية:&lt;/strong&gt; تفرض عدادات المحمول تكاليف باقات إنترنت شهرية على كل عداد، مما يكلف ملايين الدولارات سنوياً. بينما تعمل تقنية PLC على كابلات الكهرباء المملوكة لشركة التوزيع مجاناً مدى الحياة دون أي فواتير لشركات الاتصالات.&lt;/li&gt;&lt;/ul&gt;</p><h3>ما هو الفرق بين تقنية PLC القديمة ضيقة النطاق وتقنية HPLC عريضة النطاق الحديثة؟</h3><p>كانت أنظمة PLC القديمة ضيقة النطاق (Narrowband) تعاني من بطء القراءة (&lt; 2.4 كيلوبت/ثانية) وتأثرها بالضوضاء الكهربائية للأجهزة المنزلية. بينما تعمل تقنية &lt;strong&gt;HPLC الحديثة عريضة النطاق&lt;/strong&gt; بترددات من 2 إلى 12 ميجاهرتز بتعديل OFDM متعدد القنوات، مما يمكنها من تجنب الترددات المشوشة تلقائياً وتحقيق سرعات فائقة من 100 كيلوبت/ثانية حتى 10 ميجابت/ثانية مع توجيه شبكي ذاتي مرن.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>العدادات الذكية والبنية التحتية المتقدمة AMI: ما هو عداد الكهرباء الذكي عبر شبكة الكهرباء CPL (PLC Energy Meter)؟</h2>
+    <p>هل تعمل على تنفيذ مشاريع العدادات الذكية والبنية التحتية المتقدمة (AMI/AMR)، أو أنظمة قياس الأبراج السكنية التي تتطلب عدادات ذكية بتقنية خطوط القدرة PLC / HPLC معتمدة DLMS/COSEM (بدون شرائح محمول، وقراءة عبر الكابلات القائمة)؟ تصنع يمين (YOMIN) عدادات سلسلة DTS بأعلى درجات الموثوقية.</p>
+    <a class="btn btn-primary" href="/contact">طلب تسعيرة</a>
+    <p style="margin-top:14px"><a href="/products">استعراض كتالوج المنتجات الكهربائية الكامل &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "smart-metering-infrastructure-what-is-a-plc-smart-energy-meter";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

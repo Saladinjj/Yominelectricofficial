@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الأتمتة الصناعية وأنظمة التحكم PLC: ما هو محول الإشارة لتيار التيار المتردد (AC Current Transducer)؟ | Yomin Electric</title>
+<meta name="description" content="لوحات التحكم في الأتمتة الصناعية، ومداخل PLC التناظرية، ومراقبة أحمال المحركات، وأنظمة المراقبة SCADA: ما هو محول إشارة التيار المتردد (AC Current Transducer)؟ حساب القيمة الفعالة الحقيقية True-RMS، والخرج التناظري المعياري 4-20mA بسلكين يتغذى من الحلقة، والعزل الكهربائي 3kV، وسهولة المحولات ذات القلب المشقوق.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/industrial-automation-what-is-an-ac-current-transducer/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer-ar">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "الأتمتة الصناعية وأنظمة التحكم PLC: ما هو محول الإشارة لتيار التيار المتردد (AC Current Transducer)؟",
+      "description": "لوحات التحكم في الأتمتة الصناعية، ومداخل PLC التناظرية، ومراقبة أحمال المحركات، وأنظمة المراقبة SCADA: ما هو محول إشارة التيار المتردد (AC Current Transducer)؟ حساب القيمة الفعالة الحقيقية True-RMS، والخرج التناظري المعياري 4-20mA بسلكين يتغذى من الحلقة، والعزل الكهربائي 3kV، وسهولة المحولات ذات القلب المشقوق.",
+      "image": "https://www.yominelectric.com/assets/images/blog/industrial-automation-what-is-an-ac-current-transducer/hero.png",
+      "datePublished": "2026-10-17",
+      "dateModified": "2026-10-17",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/industrial-automation-what-is-an-ac-current-transducer-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما هو محول إشارة التيار المتردد (AC Current Transducer) ولماذا تعجز وحدات PLC عن قراءة محولات التيار العادية؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "محول إشارة التيار المتردد—والمعروف في هندسة الأتمتة والتحكم باسم مرسل التيار 4-20mA أو ترانسديوسر التيار المتردد—هو جهاز قياس إلكتروني دقيق يقيس شدة التيار المتردد المار في كابل القدرة ويحوله إلى إشارة تناظرية مستمرة منخفضة الجهد ومعزولة كهربائياً (عادةً 4–20 mA DC أو 0–10 V DC). وفي لوحات التحكم الصناعي ووحدات PLC : <ul><li><strong>عدم توافق محولات التيار العادية:</strong> تُخرج محولات التيار التقليدية (CTs) تياراً متردداً شدته 0–5 A AC. بينما تعمل كروت المداخل التناظرية لوحدات التحكم المبرمجة PLC (مثل Siemens و Schneider و Allen-Bradley) بجهد وإشارات تيار مستمر DC فقط. وتوصيل تيار متردد 5A مباشرة بوحدة PLC يؤدي لتدمير كروت الدخل فورياً.</li><li><strong>حل هندسي مدمج متكامل:</strong> بدلاً من تركيب محول تيار ضخم مع مكبر إشارة خارجي على سكة DIN وأسلاك معقدة، يدمج محول يمين ACT قلب التحسس المغناطيسي ودائرة إرسال 4-20mA في غلاف واحد صغير ومعاير جاهز للتوصيل.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا تفضل حلقة التيار 4–20 mA على إشارة الجهد 0–10 V في البيئات الصناعية؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تعتبر حلقة التيار 4–20 mA المعيار الذهبي في الأتمتة لسببين جوهريين : <ul><li><strong>عدم التأثر بمقاومة وطول الكابلات:</strong> تعاني إشارات الجهد (0–10 V) من هبوط الجهد ($V = I \times R$) عبر المسافات الطويلة (أكثر من 50 إلى 300 متر)، مما يشوه دقة القراءة في الـ PLC. بينما تحافظ حلقة التيار 4–20 mA على دقتها التامة بصرف النظر عن طول الكابل.</li><li><strong>كشف قطع الأسلاك فورياً (مبدأ الصفر الحي 4mA):</strong> في إشارات الجهد، تشير قراءة 0V إلى تيار منعدم أو سلك مقطوع دون تمييز. بينما في حلقة 4–20 mA، <strong>تمثل قيمة 4mA تياراً مقداره 0%</strong>، بينما <strong>تعني قراءة 0mA انقطاع السلك فورياً فيصدر الـ PLC إنذار عطل</strong>.</li></ul>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هو الفرق بين المحولات متوسطة التعديل ومحولات القيمة الفعالة الحقيقية True-RMS؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تعتمد المحولات الرخيصة على دوائر تقويم متوسطة مخصصة للموجات الجيبية النقية فقط. ومع انتشار مغيرات السرعة (VFDs) والمحركات الحديثة، تتشوه موجات التيار بالتوافقيات، مما يولد أخطاء في القراءة تتجاوز 20% إلى 40%. تتميز محولات يمين ACT بمعالجات <strong>True-RMS (القيمة الفعالة الحقيقية)</strong> التي تحسب بدقة متناهية الطاقة الحرارية للموجة محافظةً على دقة مترولوجية &plusmn;0.5% حتى مع أشد التيارات تشوهاً."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: AR">
+        <span id="lf"><span>AR</span></span><span id="lc">AR</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">الرئيسية</a> &middot; <a href="/blog">المدونة</a> &middot; <span>حساسات ومحولات الإشارة الصناعية للتيار</span></div>
+    <span class="bh-tag">حساسات ومحولات الإشارة الصناعية للتيار / محولات إشارة التيار المتردد</span>
+    <h1 class="bh-title">الأتمتة الصناعية وأنظمة التحكم PLC: ما هو محول الإشارة لتيار التيار المتردد (AC Current Transducer)؟</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>17 أكتوبر 2026</span>
+      <span class="divider"></span>
+      <span>10 دقائق قراءة</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/industrial-automation-what-is-an-ac-current-transducer/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/industrial-automation-what-is-an-ac-current-transducer/hero.png" alt="محول إشارة تيار متردد مدمج يركب على سكة DIN (موديل YM-ACT) مع أسلاك خرج تناظري 4-20mA متصلة بكارت المداخل التناظرية لوحدة PLC" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>جسر القياس الحيوي الفاصل بين قوى التيار المتردد العالية ومعالجات PLC الدقيقة</h2>
+<p>في المصانع الحديثة المؤتمتة، ومحطات معالجة وضخ المياه، وخطوط الإنتاج الروبوتية، تدير وحدات التحكم المنطقي المبرمج (PLC) ومنظومات المراقبة والتحكم SCADA مئات المحركات والمضخات والمراوح الصناعية على مدار الساعة.</p>
+<p>ولمنع احتراق المحركات عند زيادة الأحمال الميكانيكية، أو رصد انسداد المضخات، أو احتساب الطاقة الكهربائية المستهلكة، يحتاج عقل الـ PLC لمعرفة التيار اللحظي الحقيقي الذي يسحبه كل محرك بدقة تامة.</p>
+<p>ومع ذلك، تعمل المحركات الصناعية بجهود <strong>380V أو 440V AC</strong> وتيارات تصل إلى عشرات أو مئات الأمبيرات. ومحولات التيار التقليدية تعطي 5A AC، وهو ما تعجز كروت المداخل التناظرية لوحدات الـ PLC عن استقباله مباشرة دون احتراق.</p>
+<p>يقدم <strong>محول إشارة التيار المتردد (سلسلة YM-ACT)</strong> الحل التكنولوجي المعتمد: حساس إلكتروني متكامل يقيس تيار الموصل المتردد ويحوله إلى إشارة تيار مستمر تناظرية خطية ومعزولة كهربائياً بقوة 3000 فولت (4–20 mA DC أو 0–10 V DC) لتتصل مباشرة بكروت المداخل التناظرية لوحدة الـ PLC.</p>
+
+<h2>المكونات الهندسية وميزات الأداء لسلسلة محولات YM-ACT</h2>
+<ol>
+  <li><strong>قلب تحسس مغناطيسي متطور (مصمت أو مشقوق):</strong> شرائح فولاذ سيليكوني عالية النفاذية. وتتميز النماذج المشقوقة (Split-Core) بإمكانية تركيبها بالكبس المباشر حول الكابلات الحية دون الحاجة لفصل التيار الكهربائي.</li>
+  <li><strong>معالج إلكتروني تناظري للقيمة الفعالة الحقيقية True-RMS:</strong> دوائر متقدمة تحسب القيمة الفعالة الدقيقة للموجة المشوهة المنبعثة من مغيرات التردد والإنفرتر VFD.</li>
+  <li><strong>حاجز عزل جلفاني فائق القوة 3000 V AC:</strong> فصل بصري ومغناطيسي تام يحمي الإلكترونيات الدقيقة الحساسة للـ PLC من أي صدمات أو قصر كهربي في دوائر الجهد العالي.</li>
+  <li><strong>تقنية التغذية بسلكين من حلقة التيار (Loop-Powered):</strong> يستمد المحول طاقته التشغيلية مباشرة من جهد الـ 24V DC المزود من كارت الـ PLC، ملغياً الحاجة لمصادر تغذية خارجية باللوحة.</li>
+  <li><strong>تصميم مدمج يركب على سكة DIN 35 مم:</strong> هيكل بلاستيكي متين ومقاوم للهب (UL 94 V-0) يوفر مساحات اللوحة الثمينة ويتصل بسلكين فقط إلى كارت التحكم.</li>
+</ol>
+
+<h2>المواصفات الفنية</h2>
+<table>
+  <thead>
+    <tr><th>المعلمة الفنية الهندسية</th><th>القيمة ومستوى الأداء</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>نطاق قياس تيار الدخل المتردد الاسمي</strong></td><td>سعات دخل معيارية: 0–10A و 0–20A و 0–50A و 0–100A و 0–200A و 0–300A وحتى 0–500A AC (تردد 50/60 هرتز جيبية أو مشوهة)</td></tr>
+    <tr><td><strong>إشارات الخرج التناظرية المستمرة المعيارية</strong></td><td>المعيار الصناعي القياسي لأنظمة التحكم: حلقة تيار 4–20 mA DC (خيارات إضافية: خرج جهد 0–5 V DC أو 0–10 V DC)</td></tr>
+    <tr><td><strong>تقنية المعالجة والحساب الإلكتروني للإشارة</strong></td><td>حساب إلكتروني تناظري للقيمة الفعالة الحقيقية True-RMS (دقة تامة مع تشوهات مغيرات السرعة والإنفرتر VFD)</td></tr>
+    <tr><td><strong>فئة الدقة المترولوجية والخطية للحساس</strong></td><td>دقة قياس صناعية متناهية: فئة 0.5 (&plusmn;0.5% من كامل التدريج، خطية قياس &lt; 0.2% عبر كامل النطاق)</td></tr>
+    <tr><td><strong>حاجز العزل الجلفاني الديزلكتريكي المعتمد</strong></td><td>فصل بصري ومغناطيسي: صمود عزل مختبر حتى 3000 V AC لمدة دقيقة واحدة (بين كابل الدخل وأطراف الخرج)</td></tr>
+    <tr><td><strong>طريقة التغذية الكهربائية ومقاومة الحلقة</strong></td><td>تغذية بسلكين عبر حلقة التيار (Loop-Powered): جهد 24V DC اسمي (نطاق 12V إلى 30V DC؛ مقاومة حمل قصوى $R_L \le 500\,\Omega$)</td></tr>
+    <tr><td><strong>زمن الاستجابة التناظرية وعرض النطاق</strong></td><td>استجابة تناظرية فائقة السرعة: زمن الصعود &le; 200 مللي ثانية (عرض نطاق التردد: من 20 هرتز إلى 1 كيلوهرتز)</td></tr>
+    <tr><td><strong>هيكل الغلاف والتثبيت على سكة DIN</strong></td><td>غلاف بلاستيكي هندسي ذاتي الإطفاء (UL 94 V-0)؛ تثبيت فوري على سكة DIN 35 مم أو تثبيت بالمسامير على اللوح</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>الأسئلة الشائعة</h2><h3>ما هو محول إشارة التيار المتردد (AC Current Transducer) ولماذا تعجز وحدات PLC عن قراءة محولات التيار العادية؟</h3><p>محول إشارة التيار المتردد—والمعروف في هندسة الأتمتة والتحكم باسم مرسل التيار 4-20mA أو ترانسديوسر التيار المتردد—هو جهاز قياس إلكتروني دقيق يقيس شدة التيار المتردد المار في كابل القدرة ويحوله إلى إشارة تناظرية مستمرة منخفضة الجهد ومعزولة كهربائياً (عادةً 4–20 mA DC أو 0–10 V DC). وفي لوحات التحكم الصناعي ووحدات PLC : &lt;ul&gt;&lt;li&gt;&lt;strong&gt;عدم توافق محولات التيار العادية:&lt;/strong&gt; تُخرج محولات التيار التقليدية (CTs) تياراً متردداً شدته 0–5 A AC. بينما تعمل كروت المداخل التناظرية لوحدات التحكم المبرمجة PLC (مثل Siemens و Schneider و Allen-Bradley) بجهد وإشارات تيار مستمر DC فقط. وتوصيل تيار متردد 5A مباشرة بوحدة PLC يؤدي لتدمير كروت الدخل فورياً.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;حل هندسي مدمج متكامل:&lt;/strong&gt; بدلاً من تركيب محول تيار ضخم مع مكبر إشارة خارجي على سكة DIN وأسلاك معقدة، يدمج محول يمين ACT قلب التحسس المغناطيسي ودائرة إرسال 4-20mA في غلاف واحد صغير ومعاير جاهز للتوصيل.&lt;/li&gt;&lt;/ul&gt;</p><h3>لماذا تفضل حلقة التيار 4–20 mA على إشارة الجهد 0–10 V في البيئات الصناعية؟</h3><p>تعتبر حلقة التيار 4–20 mA المعيار الذهبي في الأتمتة لسببين جوهريين : &lt;ul&gt;&lt;li&gt;&lt;strong&gt;عدم التأثر بمقاومة وطول الكابلات:&lt;/strong&gt; تعاني إشارات الجهد (0–10 V) من هبوط الجهد ($V = I 	imes R$) عبر المسافات الطويلة (أكثر من 50 إلى 300 متر)، مما يشوه دقة القراءة في الـ PLC. بينما تحافظ حلقة التيار 4–20 mA على دقتها التامة بصرف النظر عن طول الكابل.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;كشف قطع الأسلاك فورياً (مبدأ الصفر الحي 4mA):&lt;/strong&gt; في إشارات الجهد، تشير قراءة 0V إلى تيار منعدم أو سلك مقطوع دون تمييز. بينما في حلقة 4–20 mA، &lt;strong&gt;تمثل قيمة 4mA تياراً مقداره 0%&lt;/strong&gt;، بينما &lt;strong&gt;تعني قراءة 0mA انقطاع السلك فورياً فيصدر الـ PLC إنذار عطل&lt;/strong&gt;.&lt;/li&gt;&lt;/ul&gt;</p><h3>ما هو الفرق بين المحولات متوسطة التعديل ومحولات القيمة الفعالة الحقيقية True-RMS؟</h3><p>تعتمد المحولات الرخيصة على دوائر تقويم متوسطة مخصصة للموجات الجيبية النقية فقط. ومع انتشار مغيرات السرعة (VFDs) والمحركات الحديثة، تتشوه موجات التيار بالتوافقيات، مما يولد أخطاء في القراءة تتجاوز 20% إلى 40%. تتميز محولات يمين ACT بمعالجات &lt;strong&gt;True-RMS (القيمة الفعالة الحقيقية)&lt;/strong&gt; التي تحسب بدقة متناهية الطاقة الحرارية للموجة محافظةً على دقة مترولوجية &amp;plusmn;0.5% حتى مع أشد التيارات تشوهاً.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>الأتمتة الصناعية وأنظمة التحكم PLC: ما هو محول الإشارة لتيار التيار المتردد (AC Current Transducer)؟</h2>
+    <p>هل تعمل على تصميم لوحات التحكم الآلي PLC، أو مراكز التحكم بالمحركات MCC، أو منظومات SCADA التي تتطلب محولات إشارة تيار متردد True-RMS فئة دقة 0.5 (دخل من 0-10A إلى 0-500A، خرج 4-20mA DC، عزل 3kV)؟ تصنع يمين (YOMIN) محولات سلسلة ACT بأعلى معايير الدقة.</p>
+    <a class="btn btn-primary" href="/contact">طلب تسعيرة</a>
+    <p style="margin-top:14px"><a href="/products">استعراض كتالوج المنتجات الكهربائية الكامل &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "industrial-automation-what-is-an-ac-current-transducer";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
