@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingénierie Électrique : Guide de Calcul et Dimensionnement des Transformateurs de Courant | Yomin Electric</title>
+<meta name="description" content="Ingénierie des postes électriques, coordination des protections et comptage d&#x27;énergie : Comment dimensionner et calculer un transformateur de courant (TI). Formules pas à pas pour le courant primaire ($I_p$), choix du secondaire 5A ou 1A, calcul de la charge de filerie (VA) et tension de coude de saturation ($V_k$) selon CEI 61869-2.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/substation-engineering-current-transformer-sizing-calculation/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation-fr">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Ingénierie Électrique : Guide de Calcul et Dimensionnement des Transformateurs de Courant",
+      "description": "Ingénierie des postes électriques, coordination des protections et comptage d'énergie : Comment dimensionner et calculer un transformateur de courant (TI). Formules pas à pas pour le courant primaire ($I_p$), choix du secondaire 5A ou 1A, calcul de la charge de filerie (VA) et tension de coude de saturation ($V_k$) selon CEI 61869-2.",
+      "image": "https://www.yominelectric.com/assets/images/blog/substation-engineering-current-transformer-sizing-calculation/hero.png",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Comment calculer le calibre primaire d'un transformateur de courant (TI) ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pour dimensionner le courant primaire ($I_{pn}$) : <ol><li><strong>Calculer le courant nominal de pleine charge ($I_{\text{FLC}}$) :</strong> En triphasé : $I_{\text{FLC}} = \frac{P_{\text{kVA}} \times 1000}{\\sqrt{3} \times U_{\text{composée}}}$. Par exemple, pour un transformateur $2000\\,\text{kVA}$ sous $11\\,\text{kV}$ : $I_{\text{FLC}} \u0007pprox 105\\,\text{A}$.</li><li><strong>Appliquer le facteur de sécurité de $1,25\times$ :</strong> $I_{\text{cible}} = 1,25 \times 105\\,\text{A} = 131,2\\,\text{A}$.</li><li><strong>Choisir le calibre normalisé :</strong> Choisir un TI de <strong>150/5A</strong> ou <strong>150/1A</strong>.</li></ol>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi privilégier un secondaire 1A plutôt que 5A pour les liaisons distantes ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les pertes en ligne de la filerie secondaire sont proportionnelles au carré du courant ($P = R \\cdot I^2$). Avec un secondaire 5A, un câble de résistance $1\\,\\Omega$ consomme $25\\,\text{VA}$, ce qui surcharge le TI. Avec un secondaire 1A, la même résistance ne consomme que $1\\,\text{VA}$. Le choix du 1A réduit les pertes par 25 (soit 96% d'économie) et permet d'éloigner les relais de protection de plusieurs centaines de mètres."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: FR">
+        <span id="lf"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span><span id="lc">FR</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Ingénierie &amp; Calcul des Transformateurs de Courant</span></div>
+    <span class="bh-tag">Ingénierie & Calcul des Transformateurs de Courant / Transformateurs de Mesure</span>
+    <h1 class="bh-title">Ingénierie Électrique : Guide de Calcul et Dimensionnement des Transformateurs de Courant</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>20 Octobre 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/substation-engineering-current-transformer-sizing-calculation/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/substation-engineering-current-transformer-sizing-calculation/hero.png" alt="Compartiment de tableau électrique haute tension avec trois transformateurs de courant 24kV en résine époxy lors d&#x27;essais d&#x27;injection secondaire" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>La Méthodologie Indispensable pour le Dimensionnement des Transformateurs de Courant</h2>
+<p>Dans les postes électriques de transformation et les armoires industrielles, les transformateurs de courant (TI) constituent les organes de détection fondamentaux : ils abaissent des courants de plusieurs milliers d'ampères à des valeurs sécurisées de 5A ou 1A pour alimenter les centrales de mesure et relais de protection.</p>
+<p>Un mauvais calcul de dimensionnement entraîne de lourdes conséquences :</p>
+<ul>
+  <li><strong>Sous-dimensionnement de la puissance (VA) :</strong> Provoque une saturation magnétique prématurée et d'importantes erreurs de mesure d'énergie.</li>
+  <li><strong>Sous-dimensionnement de la tension de coude ($V_k$) en protection :</strong> Le noyau sature lors d'un court-circuit, empêchant le relais de déclencher et provoquant la destruction thermique du jeu de barres.</li>
+</ul>
+<p>Ce guide technique détaille les étapes précises et formules mathématiques nécessaires au calcul du rapport, de la charge de boucle et de la tension de saturation sous la norme internationale <strong>CEI 61869-2</strong>.</p>
+
+<h2>Spécifications Techniques & Formules</h2>
+<table>
+  <thead>
+    <tr><th>Paramètre Technique & Formule</th><th>Valeur d'Ingénierie & Norme</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Formule de Calcul du Courant Primaire ($I_{pn}$)</strong></td><td>Calculé selon $I_{pn} \ge 1,25 	imes I_{	ext{FLC}}$, avec $I_{	ext{FLC}} = rac{S}{\sqrt{3} 	imes U_{	ext{LL}}}$, arrondi au calibre normalisé immédiatement supérieur</td></tr>
+    <tr><td><strong>Courant Secondaire Assigné ($I_{sn}$)</strong></td><td>Standard $5\,	ext{A}$ pour courtes liaisons en armoire ($< 10\,	ext{m}$) ; Standard $1\,	ext{A}$ pour liaisons longues ($> 30\,	ext{m}$) réduisant les pertes filerie de $96\%$</td></tr>
+    <tr><td><strong>Calcul de la Charge Raccordée ($S_b$)</strong></td><td>Charge totale en VA $S_b = I_{sn}^2 	imes (2 	imes R_{	ext{fils}} + R_{	ext{appareil}} + R_{	ext{contact}})$, avec $R_{	ext{fils}} = ho 	imes rac{L}{S}$</td></tr>
+    <tr><td><strong>Formule de Tension de Coude de Protection ($V_k$)</strong></td><td>$V_k \ge 2 	imes I_{cc(	ext{max})} 	imes rac{I_{sn}}{I_{pn}} 	imes (R_{ct} + R_b)$ pour éviter toute saturation lors d'un court-circuit asymétrique</td></tr>
+    <tr><td><strong>Classes de Précision de Mesure</strong></td><td>Classe 0.2S et Classe 0.5S pour le comptage tarifaire officiel ; Classe 0.5 et 1.0 pour indicateurs de tableau selon CEI 61869-2</td></tr>
+    <tr><td><strong>Classes de Précision de Protection</strong></td><td>Classe 5P10 et 5P20 : Erreur composée $\le 5\%$ à $10	imes$ ou $20	imes$ le courant nominal de court-circuit assigné</td></tr>
+    <tr><td><strong>Facteur de Sécurité d'Appareil ($FS$)</strong></td><td>$FS \le 5$ ou $FS \le 10$ : Garantit la saturation du noyau magnétique en cas de court-circuit primaire pour protéger les compteurs électroniques</td></tr>
+    <tr><td><strong>Tenue Thermique de Court-Circuit ($I_{th}$)</strong></td><td>Courant thermique assigné de court-circuit $I_{th} \ge 80 	imes I_{pn}$ pendant $1,0\,	ext{s}$ ou $3,0\,	ext{s}$ selon la norme CEI 61869-1</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Foire Aux Questions</h2><h3>Comment calculer le calibre primaire d&#x27;un transformateur de courant (TI) ?</h3><p>Pour dimensionner le courant primaire ($I_{pn}$) : &lt;ol&gt;&lt;li&gt;&lt;strong&gt;Calculer le courant nominal de pleine charge ($I_{	ext{FLC}}$) :&lt;/strong&gt; En triphasé : $I_{	ext{FLC}} = rac{P_{	ext{kVA}} 	imes 1000}{\sqrt{3} 	imes U_{	ext{composée}}}$. Par exemple, pour un transformateur $2000\,	ext{kVA}$ sous $11\,	ext{kV}$ : $I_{	ext{FLC}} pprox 105\,	ext{A}$.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Appliquer le facteur de sécurité de $1,25	imes$ :&lt;/strong&gt; $I_{	ext{cible}} = 1,25 	imes 105\,	ext{A} = 131,2\,	ext{A}$.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Choisir le calibre normalisé :&lt;/strong&gt; Choisir un TI de &lt;strong&gt;150/5A&lt;/strong&gt; ou &lt;strong&gt;150/1A&lt;/strong&gt;.&lt;/li&gt;&lt;/ol&gt;</p><h3>Pourquoi privilégier un secondaire 1A plutôt que 5A pour les liaisons distantes ?</h3><p>Les pertes en ligne de la filerie secondaire sont proportionnelles au carré du courant ($P = R \cdot I^2$). Avec un secondaire 5A, un câble de résistance $1\,\Omega$ consomme $25\,	ext{VA}$, ce qui surcharge le TI. Avec un secondaire 1A, la même résistance ne consomme que $1\,	ext{VA}$. Le choix du 1A réduit les pertes par 25 (soit 96% d&#x27;économie) et permet d&#x27;éloigner les relais de protection de plusieurs centaines de mètres.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Ingénierie Électrique : Guide de Calcul et Dimensionnement des Transformateurs de Courant</h2>
+    <p>Vous concevez des postes de distribution électrique, des armoires de protection ou des tableaux MT/BT nécessitant des transformateurs de courant de mesure (Classe 0.2S / 0.5) ou de protection (Classe 5P10 / 5P20) certifiés CEI 61869-2 ? YOMIN fabrique la gamme complète de TI avec courbes de magnétisation et tensions de coude garanties.</p>
+    <a class="btn btn-primary" href="/contact">Demander une étude technique</a>
+    <p style="margin-top:14px"><a href="/products">Découvrir notre gamme complète d'équipements &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "substation-engineering-current-transformer-sizing-calculation";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

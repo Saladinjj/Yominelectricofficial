@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Substation Engineering: Current Transformer Sizing Calculation Guide | Yomin Electric</title>
+<meta name="description" content="Electrical switchgear engineering, protection relay coordination, and utility revenue metering: How to perform a current transformer sizing calculation. Step-by-step mathematical formulas for primary full-load current ($I_p$), 5A vs 1A secondary selection, lead resistance burden (VA), and protection CT knee-point voltage ($V_k$) under IEC 61869-2 and IEEE C57.13.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/substation-engineering-current-transformer-sizing-calculation/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Substation Engineering: Current Transformer Sizing Calculation Guide",
+      "description": "Electrical switchgear engineering, protection relay coordination, and utility revenue metering: How to perform a current transformer sizing calculation. Step-by-step mathematical formulas for primary full-load current ($I_p$), 5A vs 1A secondary selection, lead resistance burden (VA), and protection CT knee-point voltage ($V_k$) under IEC 61869-2 and IEEE C57.13.",
+      "image": "https://www.yominelectric.com/assets/images/blog/substation-engineering-current-transformer-sizing-calculation/hero.png",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the step-by-step formula to calculate the primary current rating ($I_{pn}$) of a Current Transformer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To size the primary current rating ($I_{pn}$), follow these standard engineering steps: <ol><li><strong>Calculate the Full Load Current ($I_{\text{FLC}}$):</strong> For a 3-phase system: $I_{\text{FLC}} = \frac{P_{\text{kVA}} \times 1000}{\\sqrt{3} \times V_{\text{LL}}}$. For example, on an $11\\,\text{kV}$ system with a $2000\\,\text{kVA}$ transformer: $I_{\text{FLC}} = \frac{2000 \times 1000}{1.732 \times 11000} \u0007pprox 105\\,\text{A}$.</li><li><strong>Apply the Continuous Overload Sizing Factor ($1.25\times$):</strong> $I_{\text{target}} = 1.25 \times 105\\,\text{A} = 131.2\\,\text{A}$.</li><li><strong>Select the Next Standard Commercial Primary Rating:</strong> Standard IEC ratings are 100A, 150A, 200A, 250A, 300A, 400A, 500A, 600A, 800A, 1000A. In this case, select a <strong>150/5A</strong> or <strong>150/1A</strong> CT. Selecting 150A ensures the CT operates in its linear, high-accuracy zone (between 50% and 100% of rating) during normal operation without saturating during peak overloads.</li></ol>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why should you choose a 1A secondary instead of a 5A secondary for long cable runs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The secondary lead burden loss is proportional to the square of the current ($P = I^2 R$). <ul><li><strong>With a 5A secondary:</strong> $I^2 = 5^2 = 25$. A $1\\,\\Omega$ lead resistance imposes a massive $25 \times 1 = 25\\,\text{VA}$ burden on the CT secondary! This exceeds the rated burden of most standard CTs (5VA, 10VA, or 15VA), causing severe measurement ratio errors and core saturation.</li><li><strong>With a 1A secondary:</strong> $I^2 = 1^2 = 1$. The identical $1\\,\\Omega$ lead resistance imposes only $1 \times 1 = 1\\,\text{VA}$ burden!</li></ul>Choosing a 1A secondary reduces secondary wiring losses by <strong>96%</strong>, allowing smaller cable cross-sections ($2.5\\,\text{mm}^2$ vs $6\\,\text{mm}^2$) and permitting CTs to be located hundreds of meters away in outdoor substation switchyards without overloading the secondary core."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you calculate the Knee-Point Voltage ($V_k$) for a protection class Current Transformer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For protection CTs (such as differential and distance protection under Class PX / Class 5P), the knee-point voltage $V_k$ is the point on the excitation curve where a $10\\%$ increase in secondary voltage increases the excitation current by $50\\%$. The sizing formula is: <p style=\"font-family:monospace;font-weight:bold;margin:10px 0;\">V_k \\ge 2 \times I_{f(\text{max})} \times \frac{I_{sn}}{I_{pn}} \times (R_{ct} + 2R_{\text{lead}} + R_{\text{relay}})</p>Where: <ul><li>$I_{f(\text{max})}$ = Maximum prospective symmetrical primary short-circuit fault current (e.g. 25,000A).</li><li>$\frac{I_{sn}}{I_{pn}}$ = CT transformation turns ratio (e.g. 5/1000 = 1/200).</li><li>$R_{ct}$ = Internal secondary winding DC resistance at $75^\\circ\text{C}$ (e.g. $0.5\\,\\Omega$).</li><li>$2R_{\text{lead}}$ = Loop resistance of the secondary cables out and back (e.g. $0.4\\,\\Omega$).</li><li>$R_{\text{relay}}$ = Internal impedance of the protection relay (typically $< 0.1\\,\\Omega$ for digital microprocessors).</li><li>The safety multiplier of 2 ensures that the CT core does not saturate during the initial fully asymmetrical DC offset component of the fault current.</li></ul>"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Substation Engineering &amp; CT Sizing Calculations</span></div>
+    <span class="bh-tag">Substation Engineering & CT Sizing Calculations / Instrument Transformers</span>
+    <h1 class="bh-title">Substation Engineering: Current Transformer Sizing Calculation Guide</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>October 20, 2026</span>
+      <span class="divider"></span>
+      <span>11 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/substation-engineering-current-transformer-sizing-calculation/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/substation-engineering-current-transformer-sizing-calculation/hero.png" alt="Substation switchgear compartment with three 24kV epoxy cast current transformers during secondary injection testing with calculation clipboard" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Critical Role of Precise Current Transformer Sizing in Electrical Engineering</h2>
+<p>In electrical substations, industrial power plants, and utility switchgear, current transformers (CTs) serve as the sensory nervous system: stepping down thousands of amperes of primary line current into safe, standardized secondary currents (5A or 1A) for revenue meters and protection relays.</p>
+<p>However, an improperly sized current transformer represents a catastrophic engineering hazard:</p>
+<ul>
+  <li><strong>Under-sizing the CT burden:</strong> Connecting a 15VA metering circuit to a 5VA CT drives the magnetic core into continuous saturation, introducing massive ratio and phase errors that cause tens of thousands of dollars in commercial unmetered billing losses.</li>
+  <li><strong>Under-sizing protection CT knee-point voltage ($V_k$):</strong> During an external through-fault, an under-sized protection CT saturates within milliseconds, producing distorted, zeroed secondary currents that cause differential protection relays to trip falsely or overcurrent breakers to fail to operate, resulting in switchgear arc-flash destruction.</li>
+</ul>
+<p>This comprehensive engineering guide outlines the exact step-by-step mathematical calculations required to size primary ratings, secondary outputs, total circuit burdens, and knee-point voltages under international standards <strong>IEC 61869-2</strong> and <strong>IEEE C57.13</strong>.</p>
+
+<h2>Step-by-Step Sizing Methodology</h2>
+<ol>
+  <li><strong>Step 1: Primary Current Calculation ($I_{pn}$):</strong> Calculate full-load current from maximum kVA rating, apply a continuous $1.25	imes$ safety factor for future load expansion, and select the next standard commercial primary rating.</li>
+  <li><strong>Step 2: Secondary Current Selection (5A vs. 1A):</strong> Evaluate the secondary wire loop distance from the switchgear to the control room. If the distance exceeds 30 meters, mandate a 1A secondary to reduce $I^2R$ lead burden by 96%.</li>
+  <li><strong>Step 3: Total Secondary Burden Calculation ($S_b$ in VA):</strong> Sum the wire lead resistance ($R_{	ext{lead}} = ho \cdot rac{2L}{A}$), digital meter impedance, and terminal contact resistances. Ensure total connected VA is between 25% and 100% of the CT's rated burden to maintain class accuracy.</li>
+  <li><strong>Step 4: Verification of Accuracy Limit Factor (ALF) and Knee-Point Voltage ($V_k$):</strong> For protection CTs, ensure the core can develop sufficient secondary electromotive force ($V_k$) under maximum prospective fault current ($I_{	ext{sc}}$) without entering magnetic saturation before the protection relay trips.</li>
+</ol>
+
+<h2>Comparison: Metering Current Transformers vs. Protection Current Transformers</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Engineering Parameter</th>
+      <th>Metering Current Transformer (Class 0.2S / 0.5)</th>
+      <th>Protection Current Transformer (Class 5P10 / 5P20)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Core Operating Range</strong></td>
+      <td>High accuracy from 5% to 120% of rated nominal current ($I_n$).</td>
+      <td>Linear accuracy extending up to $10	imes$ or $20	imes$ rated fault current ($10 I_n$ or $20 I_n$).</td>
+    </tr>
+    <tr>
+      <td><strong>Magnetic Saturation Behavior</strong></td>
+      <td><strong>Early Saturation Mandated ($FS \le 5$ or $10$):</strong> Core saturates quickly during short-circuits to protect meters from burning out.</td>
+      <td><strong>Late Saturation Mandated:</strong> High knee-point voltage ensures zero saturation during multi-kiloampere fault surges.</td>
+    </tr>
+    <tr>
+      <td><strong>Standard Accuracy Classes</strong></td>
+      <td>Class 0.1, Class 0.2, Class 0.2S, Class 0.5, Class 0.5S, Class 1.0.</td>
+      <td>Class 5P, Class 10P, Class PR, Class PX under IEC 61869-2 (Class C / T under IEEE C57.13).</td>
+    </tr>
+    <tr>
+      <td><strong>Primary Application</strong></td>
+      <td>Kilowatt-hour (kWh) tariff billing, tenant submetering, power quality logging.</td>
+      <td>Overcurrent relays, earth fault relays, transformer differential protection.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Technical Specifications & Formulas</h2>
+<table>
+  <thead>
+    <tr><th>Technical Specification & Sizing Parameter</th><th>Engineering Formula & Standard Metric Rating</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Primary Current Sizing Formula ($I_{pn}$)</strong></td><td>Calculated via $I_{pn} \ge 1.25 	imes I_{	ext{FLC}}$, where $I_{	ext{FLC}} = rac{S}{\sqrt{3} 	imes V_{	ext{LL}}}$, rounded to the next standard primary rating</td></tr>
+    <tr><td><strong>Secondary Rated Output Current ($I_{sn}$)</strong></td><td>Standard $5\,	ext{A}$ for short panelboard wiring ($< 10\,	ext{m}$); Standard $1\,	ext{A}$ for long runs ($> 30\,	ext{m}$) to slash secondary lead burden by $96\%$ ($I^2R$)</td></tr>
+    <tr><td><strong>Total Connected Burden Calculation ($S_b$)</strong></td><td>Total VA Burden $S_b = I_{sn}^2 	imes (2 	imes R_{	ext{leads}} + R_{	ext{meter}} + R_{	ext{contact}})$, where $R_{	ext{leads}} = ho 	imes rac{L}{A}$</td></tr>
+    <tr><td><strong>Protection Knee-Point Voltage Formula ($V_k$)</strong></td><td>$V_k \ge 2 	imes I_{f(	ext{max})} 	imes rac{I_{sn}}{I_{pn}} 	imes (R_{ct} + R_b)$ to prevent magnetic saturation during maximum asymmetrical through-faults</td></tr>
+    <tr><td><strong>Metering Accuracy Class Standards</strong></td><td>Class 0.2S and Class 0.5S for utility grid tariff metering; Class 0.5 and Class 1.0 for commercial panel meters under IEC 61869-2</td></tr>
+    <tr><td><strong>Protection Accuracy Class Standards</strong></td><td>Class 5P10 and 5P20: Composite error $\le 5\%$ at $10	imes$ or $20	imes$ rated symmetrical primary fault current for overcurrent & differential relays</td></tr>
+    <tr><td><strong>Instrument Security Factor ($FS$)</strong></td><td>$FS \le 5$ or $FS \le 10$ for metering CTs: Guarantees magnetic core saturates during primary short-circuits to protect delicate digital meters</td></tr>
+    <tr><td><strong>Short-Time Thermal Current ($I_{th}$)</strong></td><td>Rated symmetrical thermal withstand current $I_{th} \ge 80 	imes I_{pn}$ to $100 	imes I_{pn}$ for $1.0\,	ext{s}$ or $3.0\,	ext{s}$ duration under IEC 61869-1</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is the step-by-step formula to calculate the primary current rating ($I_{pn}$) of a Current Transformer?</h3><p>To size the primary current rating ($I_{pn}$), follow these standard engineering steps: &lt;ol&gt;&lt;li&gt;&lt;strong&gt;Calculate the Full Load Current ($I_{	ext{FLC}}$):&lt;/strong&gt; For a 3-phase system: $I_{	ext{FLC}} = rac{P_{	ext{kVA}} 	imes 1000}{\sqrt{3} 	imes V_{	ext{LL}}}$. For example, on an $11\,	ext{kV}$ system with a $2000\,	ext{kVA}$ transformer: $I_{	ext{FLC}} = rac{2000 	imes 1000}{1.732 	imes 11000} pprox 105\,	ext{A}$.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Apply the Continuous Overload Sizing Factor ($1.25	imes$):&lt;/strong&gt; $I_{	ext{target}} = 1.25 	imes 105\,	ext{A} = 131.2\,	ext{A}$.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Select the Next Standard Commercial Primary Rating:&lt;/strong&gt; Standard IEC ratings are 100A, 150A, 200A, 250A, 300A, 400A, 500A, 600A, 800A, 1000A. In this case, select a &lt;strong&gt;150/5A&lt;/strong&gt; or &lt;strong&gt;150/1A&lt;/strong&gt; CT. Selecting 150A ensures the CT operates in its linear, high-accuracy zone (between 50% and 100% of rating) during normal operation without saturating during peak overloads.&lt;/li&gt;&lt;/ol&gt;</p><h3>Why should you choose a 1A secondary instead of a 5A secondary for long cable runs?</h3><p>The secondary lead burden loss is proportional to the square of the current ($P = I^2 R$). &lt;ul&gt;&lt;li&gt;&lt;strong&gt;With a 5A secondary:&lt;/strong&gt; $I^2 = 5^2 = 25$. A $1\,\Omega$ lead resistance imposes a massive $25 	imes 1 = 25\,	ext{VA}$ burden on the CT secondary! This exceeds the rated burden of most standard CTs (5VA, 10VA, or 15VA), causing severe measurement ratio errors and core saturation.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;With a 1A secondary:&lt;/strong&gt; $I^2 = 1^2 = 1$. The identical $1\,\Omega$ lead resistance imposes only $1 	imes 1 = 1\,	ext{VA}$ burden!&lt;/li&gt;&lt;/ul&gt;Choosing a 1A secondary reduces secondary wiring losses by &lt;strong&gt;96%&lt;/strong&gt;, allowing smaller cable cross-sections ($2.5\,	ext{mm}^2$ vs $6\,	ext{mm}^2$) and permitting CTs to be located hundreds of meters away in outdoor substation switchyards without overloading the secondary core.</p><h3>How do you calculate the Knee-Point Voltage ($V_k$) for a protection class Current Transformer?</h3><p>For protection CTs (such as differential and distance protection under Class PX / Class 5P), the knee-point voltage $V_k$ is the point on the excitation curve where a $10\%$ increase in secondary voltage increases the excitation current by $50\%$. The sizing formula is: &lt;p style=&quot;font-family:monospace;font-weight:bold;margin:10px 0;&quot;&gt;V_k \ge 2 	imes I_{f(	ext{max})} 	imes rac{I_{sn}}{I_{pn}} 	imes (R_{ct} + 2R_{	ext{lead}} + R_{	ext{relay}})&lt;/p&gt;Where: &lt;ul&gt;&lt;li&gt;$I_{f(	ext{max})}$ = Maximum prospective symmetrical primary short-circuit fault current (e.g. 25,000A).&lt;/li&gt;&lt;li&gt;$rac{I_{sn}}{I_{pn}}$ = CT transformation turns ratio (e.g. 5/1000 = 1/200).&lt;/li&gt;&lt;li&gt;$R_{ct}$ = Internal secondary winding DC resistance at $75^\circ	ext{C}$ (e.g. $0.5\,\Omega$).&lt;/li&gt;&lt;li&gt;$2R_{	ext{lead}}$ = Loop resistance of the secondary cables out and back (e.g. $0.4\,\Omega$).&lt;/li&gt;&lt;li&gt;$R_{	ext{relay}}$ = Internal impedance of the protection relay (typically $&lt; 0.1\,\Omega$ for digital microprocessors).&lt;/li&gt;&lt;li&gt;The safety multiplier of 2 ensures that the CT core does not saturate during the initial fully asymmetrical DC offset component of the fault current.&lt;/li&gt;&lt;/ul&gt;</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Substation Engineering: Current Transformer Sizing Calculation Guide</h2>
+    <p>Designing substation control systems, generator protection panels, or low/medium-voltage switchgear requiring certified Class 0.2S / Class 0.5 metering current transformers or Class 5P10 / 5P20 protection current transformers? YOMIN manufactures precision instrument transformers with custom turns ratios, verified knee-point curves, and certified burden ratings under IEC 61869-2.</p>
+    <a class="btn btn-primary" href="/contact">Request a technical proposal</a>
+    <p style="margin-top:14px"><a href="/products">Explore our full electrical equipment range &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "substation-engineering-current-transformer-sizing-calculation";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

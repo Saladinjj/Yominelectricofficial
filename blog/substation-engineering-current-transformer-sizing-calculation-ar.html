@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>هندسة المحطات الكهربائية: دليل حساب واختيار سعة محول التيار (Current Transformer Sizing Calculation) | Yomin Electric</title>
+<meta name="description" content="هندسة لوحات التوزيع وقواطع الجهد المتوسط، وتنسيق مرحلات الحماية، ومنظومات القياس: كيفية إجراء حسابات واختيار محول التيار (CT Sizing Calculation). المعادلات الرياضية لحساب تيار الحمل الكامل ($I_p$)، والمقارنة بين خرج 5A و 1A، وحساب حمل الأسلاك (Burden VA)، وجهد نقطة الانقلاب للتشبع ($V_k$) وفقاً للمواصفة القياسية الدولية IEC 61869-2.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/substation-engineering-current-transformer-sizing-calculation/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation-ar">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "هندسة المحطات الكهربائية: دليل حساب واختيار سعة محول التيار (Current Transformer Sizing Calculation)",
+      "description": "هندسة لوحات التوزيع وقواطع الجهد المتوسط، وتنسيق مرحلات الحماية، ومنظومات القياس: كيفية إجراء حسابات واختيار محول التيار (CT Sizing Calculation). المعادلات الرياضية لحساب تيار الحمل الكامل ($I_p$)، والمقارنة بين خرج 5A و 1A، وحساب حمل الأسلاك (Burden VA)، وجهد نقطة الانقلاب للتشبع ($V_k$) وفقاً للمواصفة القياسية الدولية IEC 61869-2.",
+      "image": "https://www.yominelectric.com/assets/images/blog/substation-engineering-current-transformer-sizing-calculation/hero.png",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/substation-engineering-current-transformer-sizing-calculation-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما هي المعادلة الرياضية لحساب تيار الابتدائي المقنن لمحول التيار؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لحساب تيار الابتدائي المقنن ($I_{pn}$) يتم اتباع الخطوات الهندسية التالية: <ol><li><strong>حساب تيار الحمل الكامل ($I_{\text{FLC}}$):</strong> للأنظمة ثلاثية الأوجه: $I_{\text{FLC}} = \frac{P_{\text{kVA}} \times 1000}{\\sqrt{3} \times V_{\text{LL}}}$. على سبيل المثال لمحطة $2000\\,\text{kVA}$ بجهد $11\\,\text{kV}$ يكون التيار حوالي $105\\,\text{A}$.</li><li><strong>تطبيق معامل الأمان للأحمال المستقبلية ($1.25\times$):</strong> $I_{\text{target}} = 1.25 \times 105\\,\text{A} = 131.2\\,\text{A}$.</li><li><strong>اختيار السعة القياسية التجارية:</strong> اختيار محول تيار <strong>150/5A</strong> أو <strong>150/1A</strong>.</li></ol>"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا يفضل اختيار خرج ثانوي 1A بدلاً من 5A في الكابلات الطويلة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تتناسب القدرة المفقودة في أسلاك التوصيل طردياً مع مربع التيار ($P = I^2 R$). عند استخدام خرج 5A تكون الفواقد $25 \times R$، بينما عند استخدام خرج 1A تكون الفواقد $1 \times R$ فقط. هذا يعني أن اختيار خرج 1A يقلل فواقد الأسلاك بنسبة 96%، مما يسمح بمد كابلات المحول لمسافات تتجاوز مئات الأمتار دون تحميل المحول فوق طاقته أو التسبب في تشبعه."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: AR">
+        <span id="lf"><span>AR</span></span><span id="lc">AR</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">الرئيسية</a> &middot; <a href="/blog">المدونة</a> &middot; <span>هندسة المحطات وحسابات محولات التيار</span></div>
+    <span class="bh-tag">هندسة المحطات وحسابات محولات التيار / محولات القياس والحماية الكهربائية</span>
+    <h1 class="bh-title">هندسة المحطات الكهربائية: دليل حساب واختيار سعة محول التيار (Current Transformer Sizing Calculation)</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>20 أكتوبر 2026</span>
+      <span class="divider"></span>
+      <span>11 دقيقة قراءة</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/substation-engineering-current-transformer-sizing-calculation/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/substation-engineering-current-transformer-sizing-calculation/hero.png" alt="مقصورة قواطع الجهد المتوسط في محطة كهربائية تحتوي على ثلاثة محولات تيار مصبوبة براتنج الإيبوكسي 24kV أثناء اختبارات الحقن الثانوي" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>المنهجية الهندسية الدقيقة لحساب واختيار سعات محولات التيار في الشبكات الكهربائية</h2>
+<p>في المحطات الكهربائية ولوحات قواطع التوزيع الرئيسية، تشكل محولات التيار (محولات القياس والحماية) حجر الزاوية للمراقبة والحماية؛ حيث تقوم بتخفيض التيارات العالية التي تصل إلى آلاف الأمبيرات إلى قيم آمنة وموحدة (5 أمبير أو 1 أمبير) لتغذية العدادات ومرحلات الحماية الرقمية الحديثة.</p>
+<p>ويؤدي الخطأ في حسابات محول التيار إلى مخاطر تشغيلية جسيمة في المنظومة الكهربائية:</p>
+<ul>
+  <li><strong>نقص حمل الفولت أمبير المقنن:</strong> يؤدي إلى تشبع مغناطيسي مستمر للقلب الحديدي وحدوث أخطاء فادحة في قراءة فواتير استهلاك الطاقة الكهربائية، مما يسبب خسائر مالية فادحة للمنشآت والمصانع.</li>
+  <li><strong>نقص جهد ركبة التشبع في محولات الحماية:</strong> يؤدي إلى تشبع المحول أثناء مرور تيار القصر العالي، مما يمنع مرحلات الحماية من استشعار العطل وفصل القاطع، وهو ما قد ينتهي بانفجار لوحة التوزيع وتدمير المعدات.</li>
+</ul>
+<p>يوضح هذا الدليل الهندسي الشامل الخطوات المعتمدة والمعادلات الرياضية لحساب سعة وتيار الابتدائي، واختيار الخرج الثانوي المناسب، وحساب أحمال الأسلاك وجهد التشبع وفقاً للمواصفة القياسية الدولية المعتمدة.</p>
+
+<h2>خطوات الحساب الهندسي لاختيار محول التيار المناسب</h2>
+<ol>
+  <li><strong>الخطوة الأولى - حساب تيار الابتدائي:</strong> يتم حساب تيار الحمل الكامل للمعدة أو المحول المغذى بالاعتماد على القدرة الاسمية والجهد، ثم يتم ضرب الناتج في معامل أمان قدره 1.25 لاستيعاب التوسعات المستقبلية والأحمال الزائدة المستمرة، ثم اختيار السعة القياسية التجارية الأعلى مباشرة.</li>
+  <li><strong>الخطوة الثانية - المفاضلة بين خرج 5 أمبير و 1 أمبير:</strong> يتم قياس المسافة الفعلية لكابلات التوصيل بين محول التيار وغرفة التحكم؛ فإذا تجاوزت المسافة ثلاثين متراً، يجب اختيار خرج ثانوي مقداره 1 أمبير لتقليل فواقد القدرة في الأسلاك بنسبة 96% وتجنب زيادة الحمل على المحول.</li>
+  <li><strong>الخطوة الثالثة - حساب الحمل الكلي الموصل بالفولت أمبير:</strong> يتم جمع مقاومة أسلاك التوصيل ذهاباً وإياباً مع المقاومة الداخلية لعداد القياس أو مرحل الحماية ومقاومة نقاط التلامس، مع التأكد من أن الحمل الكلي يقع دائماً بين 25% و 100% من السعة المقننة للمحول للحفاظ على دقة القياس.</li>
+  <li><strong>الخطوة الرابعة - التحقق من جهد ركبة التشبع لمحولات الحماية:</strong> بالنسبة لمحولات الحماية، يجب التأكد من قدرة المحول على توليد قوة دافعة كهربائية كافية عند مرور أقصى تيار قصر متوقع دون الدخول في مرحلة التشبع المغناطيسي قبل إتمام فصل الدائرة بأمان تام.</li>
+</ol>
+
+<h2>مقارنة هندسية شاملة بين محولات القياس ومحولات الحماية</h2>
+<p>تختلف محولات تيار القياس عن محولات تيار الحماية في الخصائص المغناطيسية وسلوك التشبع؛ حيث تصمم محولات القياس بدقة متناهية في نطاق التشغيل الطبيعي مع التشبع السريع عند الأعطال لحماية العدادات، بينما تصمم محولات الحماية للحفاظ على الخطية المغناطيسية حتى عند مرور تيارات قصر تعادل عشرين ضعف التيار الاسمي لضمان عمل أجهزة الوقاية بكفاءة مطلقة.</p>
+
+<h2>المواصفات الفنية والمعادلات الهندسية</h2>
+<table>
+  <thead>
+    <tr><th>المعلمة الفنية الهندسية والمعادلة</th><th>القيمة ومستوى الأداء المعياري</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>معادلة تيار الابتدائي المقنن ($I_{pn}$)</strong></td><td>تحسب وفق المعادلة $I_{pn} \ge 1.25 	imes I_{	ext{FLC}}$، حيث $I_{	ext{FLC}} = rac{S}{\sqrt{3} 	imes V_{	ext{LL}}}$ مع التقريب للقيمة القياسية التالية</td></tr>
+    <tr><td><strong>التيار الثانوي المقنن للقياس ($I_{sn}$)</strong></td><td>معياري $5\,	ext{A}$ للمسافات القصيرة داخل اللوحة ($< 10\,	ext{m}$)؛ ومعياري $1\,	ext{A}$ للمسافات الطويلة ($> 30\,	ext{m}$) لتقليل فواقد الأسلاك بنسبة $96\%$</td></tr>
+    <tr><td><strong>حساب الحمل الكلي الموصل ($S_b$)</strong></td><td>الحمل الكلي بالفولت أمبير $S_b = I_{sn}^2 	imes (2 	imes R_{	ext{leads}} + R_{	ext{meter}} + R_{	ext{contact}})، حيث $R_{	ext{leads}} = ho 	imes rac{L}{A}$</td></tr>
+    <tr><td><strong>معادلة جهد ركبة التشبع للحماية ($V_k$)</strong></td><td>$V_k \ge 2 	imes I_{f(	ext{max})} 	imes rac{I_{sn}}{I_{pn}} 	imes (R_{ct} + R_b)$ لمنع التشبع المغناطيسي أثناء تيار القصر الأقصى</td></tr>
+    <tr><td><strong>فئات دقة القياس المعتمدة</strong></td><td>فئة 0.2S و 0.5S لقياس الطاقة الرسمي للشبكات؛ وفئة 0.5 و 1.0 لأجهزة قياس اللوحات وفقاً لمعيار IEC 61869-2</td></tr>
+    <tr><td><strong>فئات دقة الحماية والمرحلات</strong></td><td>فئة 5P10 و 5P20: نسبة الخطأ المركب $\le 5\%$ عند مرور $10	imes$ أو $20	imes$ ضعف تيار القصر المقنن للمرحلات التفاضلية وزيادة التيار</td></tr>
+    <tr><td><strong>معامل أمان الأجهزة ($FS$)</strong></td><td>$FS \le 5$ أو $FS \le 10$: يضمن تشبع القلب المغناطيسي بسرعة عند حدوث قصر لحماية العدادات الرقمية الحساسة من الاحتراق</td></tr>
+    <tr><td><strong>تحمل تيار القصر الحراري ($I_{th}$)</strong></td><td>تيار التحمل الحراري المقنن $I_{th} \ge 80 	imes I_{pn}$ لمدة $1.0\,	ext{s}$ أو $3.0\,	ext{s}$ طبقاً للمواصفة IEC 61869-1</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>الأسئلة الشائعة</h2><h3>ما هي المعادلة الرياضية لحساب تيار الابتدائي المقنن لمحول التيار؟</h3><p>لحساب تيار الابتدائي المقنن ($I_{pn}$) يتم اتباع الخطوات الهندسية التالية: &lt;ol&gt;&lt;li&gt;&lt;strong&gt;حساب تيار الحمل الكامل ($I_{	ext{FLC}}$):&lt;/strong&gt; للأنظمة ثلاثية الأوجه: $I_{	ext{FLC}} = rac{P_{	ext{kVA}} 	imes 1000}{\sqrt{3} 	imes V_{	ext{LL}}}$. على سبيل المثال لمحطة $2000\,	ext{kVA}$ بجهد $11\,	ext{kV}$ يكون التيار حوالي $105\,	ext{A}$.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;تطبيق معامل الأمان للأحمال المستقبلية ($1.25	imes$):&lt;/strong&gt; $I_{	ext{target}} = 1.25 	imes 105\,	ext{A} = 131.2\,	ext{A}$.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;اختيار السعة القياسية التجارية:&lt;/strong&gt; اختيار محول تيار &lt;strong&gt;150/5A&lt;/strong&gt; أو &lt;strong&gt;150/1A&lt;/strong&gt;.&lt;/li&gt;&lt;/ol&gt;</p><h3>لماذا يفضل اختيار خرج ثانوي 1A بدلاً من 5A في الكابلات الطويلة؟</h3><p>تتناسب القدرة المفقودة في أسلاك التوصيل طردياً مع مربع التيار ($P = I^2 R$). عند استخدام خرج 5A تكون الفواقد $25 	imes R$، بينما عند استخدام خرج 1A تكون الفواقد $1 	imes R$ فقط. هذا يعني أن اختيار خرج 1A يقلل فواقد الأسلاك بنسبة 96%، مما يسمح بمد كابلات المحول لمسافات تتجاوز مئات الأمتار دون تحميل المحول فوق طاقته أو التسبب في تشبعه.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>هندسة المحطات الكهربائية: دليل حساب واختيار سعة محول التيار (Current Transformer Sizing Calculation)</h2>
+    <p>هل تعمل على تصميم محطات التحويل الكهربائية، أو لوحات قواطع الجهد المتوسط والمنخفض التي تتطلب محولات تيار قياس بدقة فئة 0.2S / 0.5 أو محولات حماية فئة 5P10 / 5P20 معتمدة دولياً؟ تصنع يمين (YOMIN) محولات تيار متطورة بمطابقة كاملة للمواصفة القياسية IEC 61869-2.</p>
+    <a class="btn btn-primary" href="/contact">طلب دراسة فنية وتسعيرة</a>
+    <p style="margin-top:14px"><a href="/products">استعراض كتالوج المعدات والأجهزة الكهربائية الكامل &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "substation-engineering-current-transformer-sizing-calculation";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
