@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Distribution Boards: What Is an Over and Under Voltage Protector? | Yomin Electric</title>
+<meta name="description" content="Residential consumer units, commercial distribution boards, and HVAC compressor protection: What is an over and under voltage protector? How digital voltage monitoring relays detect sags, swells, brownouts, and neutral line disconnection, disconnect downstream loads in under 0.1s, and execute auto-reclosing timer delay sequences under IEC 60947-2.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/distribution-boards-what-is-an-over-and-under-voltage-protector/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/distribution-boards-what-is-an-over-and-under-voltage-protector">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/distribution-boards-what-is-an-over-and-under-voltage-protector">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/distribution-boards-what-is-an-over-and-under-voltage-protector-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/distribution-boards-what-is-an-over-and-under-voltage-protector-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/distribution-boards-what-is-an-over-and-under-voltage-protector-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/distribution-boards-what-is-an-over-and-under-voltage-protector">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Distribution Boards: What Is an Over and Under Voltage Protector?",
+      "description": "Residential consumer units, commercial distribution boards, and HVAC compressor protection: What is an over and under voltage protector? How digital voltage monitoring relays detect sags, swells, brownouts, and neutral line disconnection, disconnect downstream loads in under 0.1s, and execute auto-reclosing timer delay sequences under IEC 60947-2.",
+      "image": "https://www.yominelectric.com/assets/images/blog/distribution-boards-what-is-an-over-and-under-voltage-protector/hero.png",
+      "datePublished": "2026-10-22",
+      "dateModified": "2026-10-22",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/distribution-boards-what-is-an-over-and-under-voltage-protector"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an over and under voltage protector and how does it differ from a surge arrester (SPD)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An over and under voltage protector (often designated as Model VAP or self-restoring voltage relay) is an active digital protection switch that continuously monitors RMS grid voltage and disconnects downstream power whenever the voltage climbs above a safe ceiling or plunges below a safe floor. <strong>Crucial difference from a Surge Protective Device (SPD):</strong> <ul><li><strong>Surge Protective Device (SPD / Type 2):</strong> Diverts microsecond-duration high-voltage transient spikes (such as indirect lightning strikes or utility switching transients of $1\\,\text{kV}$ to $6\\,\text{kV}$) to earth using metal oxide varistors (MOVs). SPDs cannot protect against sustained multi-second overvoltages or low-voltage brownouts.</li><li><strong>Over/Under Voltage Protector (VAP):</strong> Handles sustained power-frequency abnormal voltages (sags, swells, brownouts, and neutral line disconnection) lasting from tens of milliseconds to hours. When grid voltage deviates, it opens its internal contactor, completely isolating appliances until voltage normalizes.</li></ul>For complete consumer unit protection, engineering best practice places a Type 2 SPD in parallel, followed by a series-installed self-restoring voltage protector."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the auto-reclosing recovery delay timer essential for air conditioners and refrigerators?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When utility grid power fluctuates or sags momentarily, power may bounce off and on within a few seconds. In refrigeration compressors, air conditioner heat pumps, and electric motors, the refrigerant gas remains under high head pressure immediately after shut-off. If voltage is reapplied instantly, the compressor motor attempts to start against this locked hydraulic pressure, drawing locked-rotor current ($I_{\text{LRA}}$), tripping motor overloads, and burning out motor stator windings. The adjustable <strong>auto-reclosing timer delay ($1\\,\text{s}$ to $500\\,\text{s}$, typically set to $180\\,\text{s}$)</strong> ensures the protector waits until refrigerant pressures equalize before automatically restoring electricity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if the utility neutral conductor breaks (floating neutral condition)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A broken neutral line on a three-phase distribution transformer (often caused by storms, poor connections, or copper theft) causes the neutral point to float. Consequently, phase-to-neutral voltages in single-phase homes become unbalanced: one phase can collapse to $100\\,\text{V}$ while another phase surges to $380\\,\text{V}$ or $400\\,\text{V}$! A standard miniature circuit breaker (MCB) will NOT trip during a floating neutral because current draw may still be within nominal limits. A digital over and under voltage protector senses the $380\\,\text{V}$ swell within $< 0.1\\,\text{seconds}$ and snaps open, saving connected household appliances, televisions, and electronics from catastrophic fire."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Distribution Boards &amp; Voltage Protectors</span></div>
+    <span class="bh-tag">Distribution Boards & Voltage Protectors / Voltage Protection Devices</span>
+    <h1 class="bh-title">Distribution Boards: What Is an Over and Under Voltage Protector?</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>October 22, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/distribution-boards-what-is-an-over-and-under-voltage-protector/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/distribution-boards-what-is-an-over-and-under-voltage-protector/hero.png" alt="Residential electrical consumer unit interior showing a digital DIN rail self-restoring over and under voltage protector with live dual LED display actively protecting branch circuits" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<h2>The Critical Challenge of Grid Voltage Instability in Distribution Systems</h2>
+<p>Electrical equipment and home appliances are engineered to operate within strict voltage tolerances, typically $\pm 10\%$ of nominal utility voltage (e.g., $207\,	ext{V}$ to $253\,	ext{V}$ for a standard $230\,	ext{V}$ grid). Across rapid-growth industrial corridors, rural distribution feeders, and developing utility networks, supply voltages routinely violate these limits:</p>
+<ul>
+  <li><strong>Voltage Swells and Overvoltage:</strong> Caused by sudden load shedding, capacitor bank switching, or distribution transformer tap mismatches. Sustained overvoltage forces excessive magnetizing current through iron cores, punctures dielectric insulation, and destroys power supply capacitors.</li>
+  <li><strong>Voltage Sags and Brownouts:</strong> Caused by overloaded distribution feeders and high-current motor starts. When supply voltage drops, induction motors and refrigeration compressors draw excessive current to satisfy their shaft torque demands, leading to overheating and thermal burnout.</li>
+  <li><strong>The Floating Neutral Catastrophe:</strong> When a shared utility three-phase neutral conductor is severed or disconnected, single-phase 230V residential sockets can suddenly see up to $400\,	ext{V}$ phase-to-phase voltage, causing widespread appliance destruction and domestic fires.</li>
+</ul>
+<p>The <strong>DIN rail self-restoring over and under voltage protector</strong> provides an automated, autonomous defense system installed directly inside the consumer distribution board.</p>
+
+<h2>Engineering Architecture: Microcontroller Sensing and Auto-Reclosing Logic</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Operational Phase</th>
+      <th>Grid Condition & Voltage State</th>
+      <th>Protector Internal Action & Response Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Normal Continuous Operation</strong></td>
+      <td>Nominal Voltage: $200\,	ext{V} \le U \le 250\,	ext{V}$</td>
+      <td>Internal latching relay / power contactor remains closed; Green status LED illuminated; Dual displays show live voltage and load current.</td>
+    </tr>
+    <tr>
+      <td><strong>Overvoltage Fault Trip</strong></td>
+      <td>$U > U_{	ext{max}}$ (Adjustable $230\,	ext{V}$ to $300\,	ext{V}$)</td>
+      <td>Microcontroller detects RMS threshold breach; opens internal power contacts within $< 0.1\,	ext{s}$; Red overvoltage LED flashes.</td>
+    </tr>
+    <tr>
+      <td><strong>Undervoltage Fault Trip</strong></td>
+      <td>$U < U_{	ext{min}}$ (Adjustable $140\,	ext{V}$ to $210\,	ext{V}$)</td>
+      <td>Microcontroller detects brownout condition; opens internal power contacts within $< 0.1\,	ext{s}$; Yellow undervoltage LED flashes.</td>
+    </tr>
+    <tr>
+      <td><strong>Post-Fault Normalization</strong></td>
+      <td>Voltage returns to safe band ($U_{	ext{min}} < U < U_{	ext{max}}$)</td>
+      <td>Internal digital timer starts countdown ($1\,	ext{s}$ to $500\,	ext{s}$); display flashes countdown seconds; load remains safely disconnected.</td>
+    </tr>
+    <tr>
+      <td><strong>Automatic Reclosing (Auto-Reset)</strong></td>
+      <td>Voltage stable throughout countdown</td>
+      <td>Contactor snaps closed automatically; power is restored to downstream branch circuits without manual electrician intervention.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Technical Specifications</h2>
+<table>
+  <thead>
+    <tr><th>Technical Specification & Parameter</th><th>Standard Metric Rating & Engineering Compliance</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Rated Operational Voltage ($U_e$)</strong></td><td>Standard ratings of $220\,	ext{V} / 230\,	ext{V AC}$ (Single Phase) and $380\,	ext{V} / 400\,	ext{V AC}$ (Three Phase, 50Hz/60Hz)</td></tr>
+    <tr><td><strong>Rated Operational Current ($I_e$)</strong></td><td>Standard continuous load capacities of $40\,	ext{A}$, $63\,	ext{A}$, and $80\,	ext{A}$ matching main consumer unit breaker ratings</td></tr>
+    <tr><td><strong>Overvoltage Tripping Threshold Range</strong></td><td>User-adjustable from $230\,	ext{V}$ to $300\,	ext{V AC}$ (Default: $270\,	ext{V}$); Disconnect trip response time $< 0.1\,	ext{seconds}$</td></tr>
+    <tr><td><strong>Undervoltage Tripping Threshold Range</strong></td><td>User-adjustable from $140\,	ext{V}$ to $210\,	ext{V AC}$ (Default: $170\,	ext{V}$); Disconnect trip response time $< 0.1\,	ext{seconds}$</td></tr>
+    <tr><td><strong>Auto-Reclosing Power Recovery Delay</strong></td><td>Programmable reset delay from $1\,	ext{s}$ to $500\,	ext{s}$ (Default: $30\,	ext{s}$) to prevent motor short-cycling after grid restoration</td></tr>
+    <tr><td><strong>Overcurrent Protection Setting</strong></td><td>Adjustable overcurrent cut-off from $1\,	ext{A}$ to $63\,	ext{A}$ (or $80\,	ext{A}$) providing auxiliary thermal overload protection</td></tr>
+    <tr><td><strong>Digital Measurement & Display Interface</strong></td><td>Dual high-visibility 3-digit 7-segment LED displays showing real-time RMS grid voltage (Red) and actual load current (Green)</td></tr>
+    <tr><td><strong>International Manufacturing Standards</strong></td><td>Fully tested and compliant with IEC 60947-2, IEC 60898-1, and CE Low Voltage Directive requirements</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What is an over and under voltage protector and how does it differ from a surge arrester (SPD)?</h3><p>An over and under voltage protector (often designated as Model VAP or self-restoring voltage relay) is an active digital protection switch that continuously monitors RMS grid voltage and disconnects downstream power whenever the voltage climbs above a safe ceiling or plunges below a safe floor. &lt;strong&gt;Crucial difference from a Surge Protective Device (SPD):&lt;/strong&gt; &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Surge Protective Device (SPD / Type 2):&lt;/strong&gt; Diverts microsecond-duration high-voltage transient spikes (such as indirect lightning strikes or utility switching transients of $1\,	ext{kV}$ to $6\,	ext{kV}$) to earth using metal oxide varistors (MOVs). SPDs cannot protect against sustained multi-second overvoltages or low-voltage brownouts.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Over/Under Voltage Protector (VAP):&lt;/strong&gt; Handles sustained power-frequency abnormal voltages (sags, swells, brownouts, and neutral line disconnection) lasting from tens of milliseconds to hours. When grid voltage deviates, it opens its internal contactor, completely isolating appliances until voltage normalizes.&lt;/li&gt;&lt;/ul&gt;For complete consumer unit protection, engineering best practice places a Type 2 SPD in parallel, followed by a series-installed self-restoring voltage protector.</p><h3>Why is the auto-reclosing recovery delay timer essential for air conditioners and refrigerators?</h3><p>When utility grid power fluctuates or sags momentarily, power may bounce off and on within a few seconds. In refrigeration compressors, air conditioner heat pumps, and electric motors, the refrigerant gas remains under high head pressure immediately after shut-off. If voltage is reapplied instantly, the compressor motor attempts to start against this locked hydraulic pressure, drawing locked-rotor current ($I_{	ext{LRA}}$), tripping motor overloads, and burning out motor stator windings. The adjustable &lt;strong&gt;auto-reclosing timer delay ($1\,	ext{s}$ to $500\,	ext{s}$, typically set to $180\,	ext{s}$)&lt;/strong&gt; ensures the protector waits until refrigerant pressures equalize before automatically restoring electricity.</p><h3>What happens if the utility neutral conductor breaks (floating neutral condition)?</h3><p>A broken neutral line on a three-phase distribution transformer (often caused by storms, poor connections, or copper theft) causes the neutral point to float. Consequently, phase-to-neutral voltages in single-phase homes become unbalanced: one phase can collapse to $100\,	ext{V}$ while another phase surges to $380\,	ext{V}$ or $400\,	ext{V}$! A standard miniature circuit breaker (MCB) will NOT trip during a floating neutral because current draw may still be within nominal limits. A digital over and under voltage protector senses the $380\,	ext{V}$ swell within $&lt; 0.1\,	ext{seconds}$ and snaps open, saving connected household appliances, televisions, and electronics from catastrophic fire.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Distribution Boards: What Is an Over and Under Voltage Protector?</h2>
+    <p>Designing residential consumer units, commercial distribution boards, or municipal housing developments in regions subject to volatile utility voltages or neutral line faults? YOMIN manufactures digital DIN rail self-restoring over and under voltage protectors from 40A to 80A certified to IEC 60947-2.</p>
+    <a class="btn btn-primary" href="/contact">Request a technical proposal</a>
+    <p style="margin-top:14px"><a href="/products">Explore our full electrical equipment range &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "distribution-boards-what-is-an-over-and-under-voltage-protector";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      var targetSlug = b + M[l];
+      location.href = '/blog/' + targetSlug;
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
