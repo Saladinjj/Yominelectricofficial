@@ -57,6 +57,13 @@ FAQ_TITLE = {
     'ar': 'الأسئلة الشائعة',
 }
 
+WHATSAPP_LINE = {
+    'en': 'Prefer to write first? WhatsApp <a href="https://wa.me/8619016543301">+86 190 1654 3301</a> &middot; Email <a href="mailto:info@yominelectric.com">info@yominelectric.com</a> &mdash; send requirements and drawings, and the technical team responds within 24 hours.',
+    'fr': 'Vous préférez écrire d&rsquo;abord ? WhatsApp <a href="https://wa.me/8619016543301">+86 190 1654 3301</a> &middot; E-mail <a href="mailto:info@yominelectric.com">info@yominelectric.com</a> &mdash; envoyez vos exigences et vos plans, l&rsquo;équipe technique répond sous 24 heures.',
+    'es': '¿Prefiere escribir primero? WhatsApp <a href="https://wa.me/8619016543301">+86 190 1654 3301</a> &middot; Correo <a href="mailto:info@yominelectric.com">info@yominelectric.com</a> &mdash; envíe requisitos y planos y el equipo técnico responde en 24 horas.',
+    'ar': 'هل تفضل المراسلة أولًا؟ واتساب <a href="https://wa.me/8619016543301">+86 190 1654 3301</a> &middot; البريد <a href="mailto:info@yominelectric.com">info@yominelectric.com</a> &mdash; أرسل المتطلبات والمخططات ويرد الفريق الفني خلال 24 ساعة.',
+}
+
 SPECS_TITLE = {
     'en': ('Technical Specifications', 'Technical Specification & Parameter', 'Standard Metric Rating & Engineering Compliance'),
     'fr': ('Spécifications Techniques', 'Paramètre Technique', 'Valeur Standard & Norme'),
@@ -194,11 +201,12 @@ for a in ALL_POSTS_1023:
     <p>%s</p>
     <a class="btn btn-primary" href="/contact">%s</a>
     <p style="margin-top:14px"><a href="%s">%s &rarr;</a></p>
+    <p style="margin-top:18px;font-size:14px;color:var(--mt)">%s</p>
   </section>
 ''' % (b_home, b_blog, a['breadcrumb'], a['category'], a['title'], DATES[lang], a['read'],
        hero_webp, hero_rel, htmlmod.escape(a['alt'], quote=True),
        a['body'], specs_html, faq_html,
-       a['title'], a['cta'], CTA_BUTTON[lang], a['product_url'], CTA_LINK_TEXT[lang])
+       a['title'], a['cta'], CTA_BUTTON[lang], a['product_url'], CTA_LINK_TEXT[lang], WHATSAPP_LINE[lang])
 
     switcher_script = '''
 <script>
