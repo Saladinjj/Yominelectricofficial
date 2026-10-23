@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estabilizador de tensión para aire acondicionado: cálculo, tipos e instalación | Yomin Electric</title>
+<meta name="description" content="Cómo dimensionar un estabilizador de tensión para aire acondicionado: lectura de la placa, corriente de arranque del compresor, regulador de relé o servo, retardo de reconexión, montaje en pared y errores de cableado.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/air-conditioner-voltage-stabilizer-sizing/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/air-conditioner-voltage-stabilizer-sizing-es">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/air-conditioner-voltage-stabilizer-sizing">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/air-conditioner-voltage-stabilizer-sizing-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/air-conditioner-voltage-stabilizer-sizing-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/air-conditioner-voltage-stabilizer-sizing-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/air-conditioner-voltage-stabilizer-sizing">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Estabilizador de tensión para aire acondicionado: cálculo, tipos e instalación",
+      "description": "Cómo dimensionar un estabilizador de tensión para aire acondicionado: lectura de la placa, corriente de arranque del compresor, regulador de relé o servo, retardo de reconexión, montaje en pared y errores de cableado.",
+      "image": "https://www.yominelectric.com/assets/images/blog/air-conditioner-voltage-stabilizer-sizing/hero.png",
+      "datePublished": "2026-10-23",
+      "dateModified": "2026-10-23",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/air-conditioner-voltage-stabilizer-sizing-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué estabilizador necesito para un aire acondicionado de 1,5 HP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dimensione por la corriente de placa, no por los caballos. Multiplique la corriente de servicio por la tensión nominal, aplique un margen de 1,3 a 1,5 por el arranque del compresor y redondee al calibre superior. Un equipo justo en el valor calculado disparará en los días de calor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Basta un estabilizador de relé o hace falta servo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El tipo relé es adecuado para splits domésticos con fluctuación moderada. Elija servo cuando la tensión varíe mucho, cuando la carga incluya refrigeración comercial o equipos médicos, o cuando la salida deba ser suave y no escalonada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué dispara el estabilizador al arrancar el compresor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Casi siempre porque está dimensionado solo para la corriente de servicio, sin el pico de arranque. También puede ser que la tensión de entrada caiga fuera de rango en ese instante o que un borne de llegada esté flojo. Revise en ese orden la placa, la tensión en el arranque y el apriete de bornes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puede un solo estabilizador alimentar dos aires acondicionados?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Solo si su capacidad cubre la carga conjunta más el arranque del equipo mayor, y si ambos no arrancan a la vez. Un equipo por aire acondicionado es más fácil de proteger y de diagnosticar."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: ES">
+        <span id="lf"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span><span id="lc">ES</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Estabilizador para aire acondicionado</span></div>
+    <span class="bh-tag">Guía de selección</span>
+    <h1 class="bh-title">Estabilizador de tensión para aire acondicionado: cálculo, tipos e instalación</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>23 de Octubre de 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/air-conditioner-voltage-stabilizer-sizing/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/air-conditioner-voltage-stabilizer-sizing/hero.png" alt="Estabilizador de tensión de pared instalado junto a un equipo split de aire acondicionado en una vivienda" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+<h2>Qué protege realmente un estabilizador</h2>
+<p>El compresor de un aire acondicionado es un motor de inducción que espera una alimentación estable. Cuando la tensión baja, el motor consume más corriente para el mismo trabajo, los devanados se calientan y el protector térmico acaba abriendo. Cuando la tensión sube, las tarjetas de control y los condensadores soportan esfuerzos para los que no fueron diseñados. En ambos casos la avería rara vez es inmediata: aparece primero como un compresor que dispara en las tardes calurosas y después como un recambio.</p>
+<p>Un estabilizador se instala entre la red y el equipo y mantiene la salida dentro de una banda de trabajo mientras la entrada varía. No sustituye a una protección contra sobretensiones y no arregla una red demasiado débil para arrancar el compresor. Lo que hace es dar al motor una tensión estable para que la corriente se mantenga en el valor previsto por el diseñador.</p>
+<p>El error más común al comprar es elegir solo por caballos de potencia. Un split de 1,5&nbsp;HP en clima cálido, con línea larga y 160&nbsp;V por la noche, necesita un estabilizador distinto del mismo equipo conectado a una red urbana robusta.</p>
+
+<h2>Dimensionar con cuatro datos</h2>
+<p>Todo está en la placa de características y en un multímetro:</p>
+<ul>
+<li><strong>Corriente de servicio (A):</strong> la corriente nominal de la placa, no la capacidad frigorífica en BTU.</li>
+<li><strong>Tensión de alimentación (V):</strong> 220&ndash;240&nbsp;V monofásica en la mayoría de splits domésticos, trifásica en cassettes y conductos de mayor tamaño.</li>
+<li><strong>Corriente de arranque:</strong> el compresor absorbe varias veces la corriente de servicio durante uno o dos segundos al arrancar. Un estabilizador apenas mayor que la carga permanente disparará o caerá en cada arranque.</li>
+<li><strong>Tensión de entrada más baja:</strong> mida en la toma durante la punta de la noche, no al mediodía. El equipo debe cubrir la tensión más baja que su zona entrega realmente, no el valor nominal.</li>
+</ul>
+<p>Método práctico: capacidad necesaria (VA) = corriente de servicio &times; tensión nominal &times; margen de arranque. Un margen de 1,3 a 1,5 cubre el arranque normal del compresor y el envejecimiento; súbalo si la red es muy débil o la línea es larga. Redondee siempre al calibre estándar superior, nunca al inferior.</p>
+<p>Ejemplo: un split monofásico con 6&nbsp;A de placa a 230&nbsp;V da 6 &times; 230 = 1.380&nbsp;VA; con margen de 1,4 la necesidad ronda 1.930&nbsp;VA, así que se elige el calibre estándar siguiente y no el equipo de 1.500&nbsp;VA que parece &laquo;suficiente&raquo;.</p>
+
+<h2>¿Tipo relé o tipo servo?</h2>
+<p>Ambos son reguladores automáticos de tensión; corrigen de forma distinta.</p>
+<table>
+  <thead><tr><th>Característica</th><th>Tipo relé (conmutación de tomas)</th><th>Tipo servo motor</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Corrección</strong></td><td>Por escalones entre tomas del transformador</td><td>Continua, desplazando una escobilla sobre el devanado</td></tr>
+    <tr><td><strong>Calidad de salida</strong></td><td>Pequeños saltos al conmutar</td><td>Salida suave, preferible para electrónica sensible</td></tr>
+    <tr><td><strong>Velocidad</strong></td><td>Rápida, por escalones</td><td>Más progresiva en variaciones grandes</td></tr>
+    <tr><td><strong>Rango de entrada</strong></td><td>Adecuado a fluctuación moderada</td><td>Mejor donde la red oscila mucho</td></tr>
+    <tr><td><strong>Piezas de desgaste</strong></td><td>Contactos de relé</td><td>Escobilla y motor</td></tr>
+    <tr><td><strong>Uso típico</strong></td><td>Splits domésticos, instalaciones económicas</td><td>Splits grandes, clínicas, comercios, cargas sensibles</td></tr>
+  </tbody>
+</table>
+<p>Para una vivienda con dos splits en una red que oscila entre 190 y 240&nbsp;V, un equipo de pared tipo relé suele ser la opción económica. Para una clínica, un comercio con refrigeración o una zona donde la tensión se hunde por la noche, el servo justifica la diferencia de precio.</p>
+
+<h2>Instalación: ubicación y conexionado</h2>
+<h3>Ubicación</h3>
+<p>Fije el estabilizador en pared, cerca del equipo, en zona ventilada y sin sol directo. El aparato disipa calor: dentro de un gabinete cerrado se recalienta y reduce su capacidad o dispara. Respete la separación indicada alrededor de las rejillas y elija una altura que permita leer el display y alcanzar el interruptor.</p>
+<h3>Cableado</h3>
+<p>Alimente el estabilizador desde un circuito dedicado con interruptor dimensionado para el aire acondicionado y lleve la salida al equipo. Use una sección adecuada a la corriente del circuito, mantenga la continuidad del conductor de protección y no utilice el estabilizador como caja de derivación para otras cargas. Cada borne debe apretarse al par y comprobarse con tracción: un borne flojo en el estabilizador provoca disparos intermitentes.</p>
+<h3>Retardo de reconexión</h3>
+<p>Un compresor no debe rearrancar inmediatamente después de parar: las presiones del refrigerante necesitan igualarse y un compresor con ciclos cortos se sobrecalienta y falla. Por eso muchos estabilizadores incluyen un retardo de varios minutos. Cuando no lo incluyen, la tarjeta del equipo suele hacerlo; conviene verificarlo, porque acumular dos retardos largos hace que el equipo parezca no responder.</p>
+
+<h2>Síntomas de un equipo mal dimensionado</h2>
+<table>
+  <thead><tr><th>Síntoma</th><th>Causa probable</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Dispara en cada arranque del compresor</strong></td><td>Capacidad por debajo de la demanda de arranque o tensión de entrada fuera de rango</td></tr>
+    <tr><td><strong>Salida todavía baja con carga</strong></td><td>Estabilizador en su límite de corrección; red más débil de lo supuesto</td></tr>
+    <tr><td><strong>Zumbido y carcasa caliente</strong></td><td>Trabajo al límite de rango o sobrecarga</td></tr>
+    <tr><td><strong>Display que parpadea entre valores</strong></td><td>Entrada inestable o borne de llegada flojo</td></tr>
+    <tr><td><strong>Funciona en invierno y dispara en verano</strong></td><td>Derrateo térmico por ubicación calurosa o demanda superior en punta</td></tr>
+  </tbody>
+</table>
+
+<h2>Qué especificar al comprar</h2>
+<p>Para un pedido de distribuidor o instalador, precise: fase, capacidad en VA, rango de tensión de entrada, banda de precisión de salida, tipo de corrección, retardo de reconexión, formato de montaje (pared o piso), display, funciones de protección y temperatura ambiente asignada. Pida el rango de entrada de forma explícita: la capacidad sola no dice nada sobre si el equipo sostendrá la salida a 150&nbsp;V.</p>
+<p>Nuestra <a href="/products/voltage-stabilizer-regulator">gama de estabilizadores y reguladores de tensión</a> incluye modelos monofásicos de pared tipo relé para aire acondicionado doméstico y modelos con servo motor para cargas mayores y sensibles. Para comparar tecnologías, consulte la <a href="/blog/voltage-stabilizer-guide">guía del estabilizador de tensión</a> y, para calcular una instalación completa, la <a href="/blog/voltage-stabilizer-sizing-guide">guía de dimensionamiento</a>.</p>
+
+<h2>Nota sobre trifásica</h2>
+<p>Los equipos cassette y conducto de comercios, oficinas y clínicas suelen ser trifásicos. Un estabilizador trifásico debe corregir las tres fases y proteger frente a pérdida de fase e inversión de secuencia, porque un compresor alimentado con dos fases falla rápidamente. Especifique el comportamiento ante fallo de fase al hacer el pedido: no es algo que convenga descubrir en la puesta en marcha.</p>
+<h2>Especificaciones Técnicas</h2>
+<table>
+  <thead>
+    <tr><th>Parámetro Técnico</th><th>Valor Estándar y Cumplimiento</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Base de cálculo</strong></td><td>Corriente de placa × tensión nominal × margen de arranque 1,3–1,5, redondeado al calibre superior</td></tr>
+    <tr><td><strong>Rango de entrada</strong></td><td>Debe cubrir la tensión más baja medida en horas punta, no el valor nominal</td></tr>
+    <tr><td><strong>Tipos de corrección</strong></td><td>Relé con conmutación de tomas o servo motor, según sensibilidad de la carga y oscilación de la red</td></tr>
+    <tr><td><strong>Retardo</strong></td><td>Varios minutos entre parada y rearranque del compresor para igualar presiones</td></tr>
+    <tr><td><strong>Instalación</strong></td><td>Pared ventilada sin sol directo, circuito dedicado, tierra continua, bornes apretados al par</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Preguntas Frecuentes</h2><h3>¿Qué estabilizador necesito para un aire acondicionado de 1,5 HP?</h3><p>Dimensione por la corriente de placa, no por los caballos. Multiplique la corriente de servicio por la tensión nominal, aplique un margen de 1,3 a 1,5 por el arranque del compresor y redondee al calibre superior. Un equipo justo en el valor calculado disparará en los días de calor.</p><h3>¿Basta un estabilizador de relé o hace falta servo?</h3><p>El tipo relé es adecuado para splits domésticos con fluctuación moderada. Elija servo cuando la tensión varíe mucho, cuando la carga incluya refrigeración comercial o equipos médicos, o cuando la salida deba ser suave y no escalonada.</p><h3>¿Por qué dispara el estabilizador al arrancar el compresor?</h3><p>Casi siempre porque está dimensionado solo para la corriente de servicio, sin el pico de arranque. También puede ser que la tensión de entrada caiga fuera de rango en ese instante o que un borne de llegada esté flojo. Revise en ese orden la placa, la tensión en el arranque y el apriete de bornes.</p><h3>¿Puede un solo estabilizador alimentar dos aires acondicionados?</h3><p>Solo si su capacidad cubre la carga conjunta más el arranque del equipo mayor, y si ambos no arrancan a la vez. Un equipo por aire acondicionado es más fácil de proteger y de diagnosticar.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Estabilizador de tensión para aire acondicionado: cálculo, tipos e instalación</h2>
+    <p>Indíquenos los datos de placa del equipo, el número de unidades y la tensión habitual de su red. Calculamos el estabilizador, confirmamos el modelo y cotizamos cantidades desde fábrica.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar propuesta técnica</a>
+    <p style="margin-top:14px"><a href="/products/voltage-stabilizer-regulator">Ver catálogo completo de equipamiento eléctrico &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "air-conditioner-voltage-stabilizer-sizing";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      location.href = '/blog/' + b + M[l];
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

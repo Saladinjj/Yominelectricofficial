@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DIN Rail Terminal Block Wiring: A Step-by-Step Installation Guide | Yomin Electric</title>
+<meta name="description" content="How to wire DIN rail terminal blocks in a control panel: conductor preparation, ferrules, torque, jumpers, end stops, PE bonding, insulation testing and the faults that cause hot terminals.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/din-rail-terminal-block-wiring-how-to/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "DIN Rail Terminal Block Wiring: A Step-by-Step Installation Guide",
+      "description": "How to wire DIN rail terminal blocks in a control panel: conductor preparation, ferrules, torque, jumpers, end stops, PE bonding, insulation testing and the faults that cause hot terminals.",
+      "image": "https://www.yominelectric.com/assets/images/blog/din-rail-terminal-block-wiring-how-to/hero.png",
+      "datePublished": "2026-10-23",
+      "dateModified": "2026-10-23",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What torque should I use on a DIN rail terminal block?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the value stated by the terminal manufacturer for that frame size, applied with a torque screwdriver. Modular terminals commonly fall in the 0.4 to 1.2 N·m band, but the datasheet is the governing figure because frame size, screw head and clamp design all change the requirement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I put two conductors in one terminal clamp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only where the terminal is designed for it and both conductors are the same size, using a twin ferrule of the correct profile. Mixing conductor sizes in one clamp is the most common cause of a joint that loosens under thermal cycling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are ferrules required on stranded wire in screw-clamp terminals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes for reliable industrial work. Without a ferrule the strands spread under clamp pressure, some break, and resistance rises at the joint. Do not tin the conductor instead: solder cold-flows and the joint loosens over time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need end stops and partition plates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both. End stops prevent the stack from sliding along the rail when conductors are inserted, and partition plates maintain creepage distance between circuits at different voltages or between bridged and unbonded groups."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>DIN rail terminal block wiring</span></div>
+    <span class="bh-tag">Wiring Guide</span>
+    <h1 class="bh-title">DIN Rail Terminal Block Wiring: A Step-by-Step Installation Guide</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>October 23, 2026</span>
+      <span class="divider"></span>
+      <span>11 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/din-rail-terminal-block-wiring-how-to/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/din-rail-terminal-block-wiring-how-to/hero.png" alt="Green DIN rail terminal block with brass current bar and screw clamps mounted on a 35 mm rail inside a control panel" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+<h2>Why terminal block wiring fails in the field</h2>
+<p>A DIN rail terminal block is a simple part, and that is exactly why installation errors survive inspection. The connection looks tight, the panel closes, and eighteen months later a terminal at the bottom of a cabinet is running at 40&nbsp;&deg;C above ambient because the screw was tightened onto insulation instead of copper.</p>
+<p>Most of the failures we see in returned panels and site reports come from five things: the wrong strip length, stranded wire terminated without a ferrule, a screwdriver that does not match the screw head, missing end stops, and no thermal check after energising. None of them are visible on a drawing.</p>
+<p>This guide walks through the sequence our panel customers use when they wire DIN rail terminals, from rail preparation to the insulation test that closes the job. It applies to screw-clamp terminals; spring-cage and push-in terminals follow the same logic with a different tool.</p>
+
+<h2>The short answer</h2>
+<p>Wire DIN rail terminal blocks in this order: mount the rail and end stops, snap the terminals on in circuit order, fit partition plates and PE terminals, prepare each conductor to the manufacturer&rsquo;s strip length, crimp a ferrule on every stranded conductor, insert to the full depth, torque to the specified value, bridge with jumper bars where the drawing requires it, mark every circuit, then test continuity and insulation resistance before energising.</p>
+<p>Every step has a measurable check. If you can&rsquo;t measure it, you are relying on feel.</p>
+
+<h2>Before you start: rail, tools and the terminal schedule</h2>
+<h3>Rail and mounting</h3>
+<p>Most industrial terminals snap onto 35&nbsp;mm top-hat rail to EN&nbsp;60715. Check three things before you mount anything: the rail is the correct profile, it is fixed at both ends, and it is vertical or horizontal as the enclosure design requires. A rail that flexes when you push a terminal onto it will eventually crack a mounting foot.</p>
+<p>Leave 30&ndash;50&nbsp;mm of free rail at each end. You will need it for end stops and for the extra terminals that commissioning always adds.</p>
+<h3>Tools that matter</h3>
+<ul>
+<li><strong>Insulated screwdriver matched to the screw:</strong> a Pozidriv or slotted blade that fills the head. An undersized blade rounds the screw and reduces the torque you can actually apply.</li>
+<li><strong>Torque screwdriver:</strong> the only way to guarantee the specified value. Hand torque varies by more than 40&nbsp;% between technicians.</li>
+<li><strong>Crimping tool matched to the ferrule profile:</strong> square or hexagonal crimp, never pliers.</li>
+<li><strong>Wire stripper with an adjustable stop:</strong> not a knife.</li>
+<li><strong>Continuity and insulation tester:</strong> for the commissioning checks at the end.</li>
+</ul>
+<h3>Read the terminal schedule first</h3>
+<p>Good panels are wired from a terminal schedule that lists, for every terminal: circuit reference, conductor size, core colour, destination, and whether it is a feed-through, earth, disconnect or fused terminal. If the schedule is missing, the wiring will be reworked. Our <a href="/blog/din-rail-terminal-block-guide">DIN rail terminal block sizing guide</a> covers how to choose the block type and pitch before this stage.</p>
+
+<h2>Step 1 &mdash; Mount end stops and terminals in circuit order</h2>
+<p>Fit the left end stop first, then snap terminals on from left to right in the order of the schedule. Terminals are removed by pressing the release slot with a screwdriver and tilting the block away from the rail; they are not levered off with pliers.</p>
+<p>Group by function: feeds, control, signals, earth. Put a partition plate between groups that carry different voltages, and between terminals that are bridged and terminals that are not. Partition plates are not cosmetic &mdash; they maintain creepage distance and stop a stray strand from bridging two circuits.</p>
+<p>Finish with the right end stop. A terminal stack without end stops will creep along the rail every time a conductor is pushed in, and the last block can walk off the rail entirely.</p>
+
+<h2>Step 2 &mdash; Prepare the conductor correctly</h2>
+<h3>Strip length</h3>
+<p>Strip to the length marked on the terminal or in its datasheet, usually printed on the side of the block. Too short and the clamp bites insulation, which creeps under load and loosens. Too long and bare copper sits outside the clamp body, reducing creepage and exposing live metal.</p>
+<h3>Ferrules on every stranded conductor</h3>
+<p>Stranded wire without a ferrule spreads when the screw compresses it. Individual strands break, resistance rises, and the joint heats. Crimp a ferrule &mdash; twin ferrules where two conductors enter one clamp &mdash; and check the crimp by pulling it firmly before insertion.</p>
+<p>Do not tin stranded conductors that go into a screw clamp. Solder cold-flows under sustained clamp pressure and the joint loosens over thermal cycles. Tinning belongs to soldered joints, not mechanical terminals.</p>
+<h3>One conductor per clamp</h3>
+<p>Two conductors of different sizes in one clamp is the most common cause of a loose terminal in a panel that otherwise tests fine. Where the drawing needs two conductors, use a twin ferrule of the correct size, or move to a terminal with two separate clamping points.</p>
+
+<h2>Step 3 &mdash; Insert, torque and bridge</h2>
+<p>Push the conductor in until the insulation stops against the clamp body, then tighten. Apply the torque stated by the terminal manufacturer with a torque screwdriver; typical values for modular terminals sit in the 0.4&ndash;1.2&nbsp;N&middot;m band depending on the frame size, but the datasheet governs, not a rule of thumb.</p>
+<p>After torquing, tug each conductor. A joint that moves is not terminated.</p>
+<p>Where the schedule calls for a common feed, bridge adjacent terminals with the manufacturer&rsquo;s jumper bar &mdash; not with a loop of wire. Jumper bars are rated for the full current of the terminal range; a wire loop is not, and it defeats the testability of the block. Insert the jumper fully so both prongs engage, and never bridge across a partition plate.</p>
+<p>Earth terminals go on the rail with a direct bond to the enclosure earth bar. The PE conductor is green-yellow for its whole visible length, and the earth terminal is the one component in the stack that must never be bridged to a live circuit.</p>
+
+<h2>Step 4 &mdash; Mark, dress and close</h2>
+<p>Mark every terminal with the circuit reference from the schedule using the manufacturer&rsquo;s marker tags. Hand-written tape falls off in a warm cabinet, and the next technician loses an hour tracing circuits.</p>
+<p>Dress conductors so they enter the clamp straight, with a service loop that allows the terminal to be removed without pulling adjacent wiring. Do not run line voltage and signal wiring in the same bundle. Leave the rail ends accessible.</p>
+
+<h2>Step 5 &mdash; Test before you energise</h2>
+<p>Three checks close the job:</p>
+<ul>
+<li><strong>Continuity:</strong> confirm each circuit against the schedule, including earth bonding between the terminal and the enclosure.</li>
+<li><strong>Insulation resistance:</strong> test at 500&nbsp;V DC between live conductors and earth with the terminals disconnected from sensitive electronics; the usual acceptance value is at least 1&nbsp;M&Omega;.</li>
+<li><strong>Thermal check under load:</strong> after the panel has run at working current for a period, scan the terminal stack with a thermal camera or check by touch with appropriate precautions. A terminal noticeably hotter than its neighbours is a loose or high-resistance joint.</li>
+</ul>
+
+<h2>Common faults and what they look like</h2>
+<table>
+  <thead><tr><th>Symptom</th><th>Usual cause</th><th>Corrective action</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Terminal discoloured or browning</strong></td><td>Loose screw or conductor not fully inserted</td><td>Re-terminate with a new ferrule; inspect the clamp for damage</td></tr>
+    <tr><td><strong>Intermittent signal on a control circuit</strong></td><td>Insulation caught in the clamp</td><td>Re-strip to the correct length and re-terminate</td></tr>
+    <tr><td><strong>Terminal stack slides on the rail</strong></td><td>Missing end stops</td><td>Fit end stops at both ends of the stack</td></tr>
+    <tr><td><strong>Heat at a bridged group</strong></td><td>Wire loop instead of a rated jumper bar</td><td>Replace with the manufacturer&rsquo;s jumper bar</td></tr>
+    <tr><td><strong>Earth continuity failure at test</strong></td><td>PE terminal not bonded to the rail or earth bar</td><td>Fit the correct PE terminal and bond to the enclosure bar</td></tr>
+  </tbody>
+</table>
+
+<h2>What to specify when you order</h2>
+<p>For a procurement list, the terminal is only half the line item. Specify: terminal type and clamping method, conductor range, pitch, colour, rated voltage and current, plus end stops, end plates, partition plates, jumper bars, marker tags and test plugs. Panels that arrive short of accessories stall at commissioning.</p>
+<p>Our <a href="/products/terminal-connector">terminal and connector range</a> covers modular DIN rail blocks with brass current bars and screw clamps, together with the accessories that go with them. If you are still choosing between identification styles, the <a href="/blog/terminal-blocks-connectors-identification-guide">terminal identification chart</a> maps the common families.</p>
+
+<h2>Frequently asked: the questions buyers ask us</h2>
+<p>The FAQ below covers the points that come up in almost every panel enquiry &mdash; torque, mixed conductor sizes, spring versus screw, and whether ferrules are mandatory.</p>
+<h2>Technical Specifications</h2>
+<table>
+  <thead>
+    <tr><th>Technical Specification & Parameter</th><th>Standard Metric Rating & Engineering Compliance</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Rail profile</strong></td><td>35 mm top-hat rail to EN 60715, fixed at both ends</td></tr>
+    <tr><td><strong>Conductor preparation</strong></td><td>Strip to manufacturer length; ferrule on every stranded conductor</td></tr>
+    <tr><td><strong>Termination check</strong></td><td>Tug test after torquing; one conductor per clamp unless a twin ferrule is used</td></tr>
+    <tr><td><strong>Bridging</strong></td><td>Manufacturer-rated jumper bar, never a wire loop</td></tr>
+    <tr><td><strong>Commissioning test</strong></td><td>Continuity, 500 V DC insulation resistance (≥ 1 MΩ), thermal check under load</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2><h3>What torque should I use on a DIN rail terminal block?</h3><p>Use the value stated by the terminal manufacturer for that frame size, applied with a torque screwdriver. Modular terminals commonly fall in the 0.4 to 1.2 N·m band, but the datasheet is the governing figure because frame size, screw head and clamp design all change the requirement.</p><h3>Can I put two conductors in one terminal clamp?</h3><p>Only where the terminal is designed for it and both conductors are the same size, using a twin ferrule of the correct profile. Mixing conductor sizes in one clamp is the most common cause of a joint that loosens under thermal cycling.</p><h3>Are ferrules required on stranded wire in screw-clamp terminals?</h3><p>Yes for reliable industrial work. Without a ferrule the strands spread under clamp pressure, some break, and resistance rises at the joint. Do not tin the conductor instead: solder cold-flows and the joint loosens over time.</p><h3>Do I need end stops and partition plates?</h3><p>Both. End stops prevent the stack from sliding along the rail when conductors are inserted, and partition plates maintain creepage distance between circuits at different voltages or between bridged and unbonded groups.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>DIN Rail Terminal Block Wiring: A Step-by-Step Installation Guide</h2>
+    <p>Send us your terminal schedule, conductor sizes and panel drawing. Our engineers will confirm the terminal range, accessories and quantity breaks, and quote from the factory.</p>
+    <a class="btn btn-primary" href="/contact">Request a technical proposal</a>
+    <p style="margin-top:14px"><a href="/products/terminal-connector">Explore our full electrical equipment range &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "din-rail-terminal-block-wiring-how-to";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      location.href = '/blog/' + b + M[l];
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

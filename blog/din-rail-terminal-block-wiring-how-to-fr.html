@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Câblage des bornes à rail DIN : guide d'installation pas à pas | Yomin Electric</title>
+<meta name="description" content="Comment câbler des bornes à rail DIN dans une armoire électrique : préparation des conducteurs, embouts, couple de serrage, peignes, butées, liaison PE, essais d&#x27;isolement et défauts responsables des bornes chaudes.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/din-rail-terminal-block-wiring-how-to/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to-fr">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Câblage des bornes à rail DIN : guide d'installation pas à pas",
+      "description": "Comment câbler des bornes à rail DIN dans une armoire électrique : préparation des conducteurs, embouts, couple de serrage, peignes, butées, liaison PE, essais d'isolement et défauts responsables des bornes chaudes.",
+      "image": "https://www.yominelectric.com/assets/images/blog/din-rail-terminal-block-wiring-how-to/hero.png",
+      "datePublished": "2026-10-23",
+      "dateModified": "2026-10-23",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/din-rail-terminal-block-wiring-how-to-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quel couple de serrage appliquer sur une borne à rail DIN ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Celui indiqué par le fabricant pour cette taille de corps, appliqué au tournevis dynamométrique. Les bornes modulaires se situent souvent entre 0,4 et 1,2 N·m, mais la fiche technique fait foi car la conception de la pince et de la vis modifie l'exigence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on mettre deux conducteurs dans une même pince ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Uniquement si la borne est prévue pour cela, avec deux conducteurs de même section et un double embout adapté. Mélanger les sections dans une pince est la première cause de desserrage sous cycles thermiques."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les embouts sont-ils obligatoires sur conducteur souple ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui pour un raccordement industriel fiable. Sans embout, les brins s'étalent sous la pression, certains cassent et la résistance du point augmente. Il ne faut pas non plus étamer le conducteur : l'étain fluage et le joint se desserre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il des butées et des cloisons ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les deux. Les butées empêchent l'empilage de glisser lors de l'insertion des conducteurs ; les cloisons maintiennent la ligne de fuite entre circuits de tensions différentes ou entre groupes peignés et non peignés."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: FR">
+        <span id="lf"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span><span id="lc">FR</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Câblage des bornes à rail DIN</span></div>
+    <span class="bh-tag">Guide de câblage</span>
+    <h1 class="bh-title">Câblage des bornes à rail DIN : guide d'installation pas à pas</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>23 Octobre 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/din-rail-terminal-block-wiring-how-to/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/din-rail-terminal-block-wiring-how-to/hero.png" alt="Borne à rail DIN verte avec barre de courant en laiton et serrages à vis montée sur un rail de 35 mm dans une armoire électrique" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+<h2>Pourquoi les bornes à rail DIN chauffent en exploitation</h2>
+<p>Une borne à rail DIN est une pièce simple, et c&rsquo;est précisément pour cela que les erreurs de pose passent inaperçues. Le serrage semble correct, l&rsquo;armoire se ferme, et dix-huit mois plus tard une borne en bas du coffret tourne à 40&nbsp;&deg;C au-dessus de l&rsquo;ambiance parce que la vis a été serrée sur l&rsquo;isolant et non sur le cuivre.</p>
+<p>Dans les retours d&rsquo;armoires et les rapports de chantier que nous traitons, cinq causes reviennent : une longueur de dénudage incorrecte, un conducteur multibrins sans embout, un tournevis inadapté à la tête de vis, des butées absentes et l&rsquo;absence de contrôle thermique après mise sous tension. Aucune n&rsquo;apparaît sur un plan.</p>
+<p>Ce guide reprend la séquence appliquée par nos clients installateurs, du montage du rail jusqu&rsquo;à l&rsquo;essai d&rsquo;isolement qui clôt le chantier. Il traite des bornes à serrage par vis ; les bornes à ressort et à enfichage suivent la même logique avec un outillage différent.</p>
+
+<h2>La réponse courte</h2>
+<p>Montez le rail et les butées, clipsez les bornes dans l&rsquo;ordre du schéma, posez les cloisons et les bornes de terre, dénudez chaque conducteur à la longueur prescrite, sertissez un embout sur tout conducteur souple, enfoncez à fond, serrez au couple spécifié, peignez les bornes concernées, repérez chaque circuit, puis réalisez les essais de continuité et d&rsquo;isolement avant la mise sous tension.</p>
+<p>Chaque étape possède un contrôle mesurable. Sans mesure, on travaille au ressenti.</p>
+
+<h2>Avant de commencer : rail, outillage et tableau de bornes</h2>
+<h3>Rail et fixation</h3>
+<p>La majorité des bornes industrielles se clipsent sur un rail profilé 35&nbsp;mm conforme à la norme EN&nbsp;60715. Vérifiez trois points avant tout montage : le profil du rail, sa fixation aux deux extrémités et son orientation, verticale ou horizontale, selon la conception de l&rsquo;enveloppe. Un rail qui fléchit lorsqu&rsquo;on clipse une borne finira par casser un pied de fixation.</p>
+<p>Laissez 30 à 50&nbsp;mm de rail libre à chaque extrémité : cet espace reçoit les butées et les quelques bornes que la mise en service ajoute toujours.</p>
+<h3>L&rsquo;outillage qui compte</h3>
+<ul>
+<li><strong>Tournevis isolé adapté à la vis :</strong> une lame Pozidriv ou plate qui remplit l&rsquo;empreinte. Une lame trop petite arrondit la vis et réduit le couple réellement appliqué.</li>
+<li><strong>Tournevis dynamométrique :</strong> seule façon de garantir la valeur prescrite. Le couple appliqué à la main varie de plus de 40&nbsp;% d&rsquo;un technicien à l&rsquo;autre.</li>
+<li><strong>Pince à sertir adaptée au profil de l&rsquo;embout :</strong> sertissage carré ou hexagonal, jamais une pince universelle.</li>
+<li><strong>Pince à dénuder avec butée réglable :</strong> pas de lame de couteau.</li>
+<li><strong>Contrôleur de continuité et d&rsquo;isolement :</strong> pour les essais finaux.</li>
+</ul>
+<h3>Lire le tableau de bornes</h3>
+<p>Une armoire bien construite se câble à partir d&rsquo;un tableau de bornes qui indique, pour chaque borne : repère de circuit, section, couleur d&rsquo;âme, destination et type (traversante, terre, sectionnement, porte-fusible). Sans ce document, le câblage sera repris. Notre <a href="/blog/din-rail-terminal-block-guide">guide de dimensionnement des bornes à rail DIN</a> traite du choix du type et du pas en amont de cette étape.</p>
+
+<h2>Étape 1 &mdash; Butées et bornes dans l&rsquo;ordre du schéma</h2>
+<p>Posez d&rsquo;abord la butée de gauche, puis clipsez les bornes de gauche à droite selon le tableau. Une borne se dépose en appuyant sur la fente de déverrouillage avec un tournevis et en basculant le bloc hors du rail ; elle ne se démonte pas au levier.</p>
+<p>Regroupez par fonction : alimentations, commande, signaux, terre. Intercalez une cloison entre deux groupes de tensions différentes, et entre bornes peignées et bornes non peignées. La cloison n&rsquo;est pas décorative : elle maintient la ligne de fuite et empêche un brin errant de ponter deux circuits.</p>
+<p>Terminez par la butée de droite. Sans butées, l&rsquo;empilage migre sur le rail à chaque insertion de conducteur et la dernière borne peut sortir du rail.</p>
+
+<h2>Étape 2 &mdash; Préparer correctement le conducteur</h2>
+<h3>Longueur de dénudage</h3>
+<p>Dénudez à la longueur indiquée sur la borne ou dans sa fiche technique, souvent imprimée sur le flanc du bloc. Trop courte, la pince mord l&rsquo;isolant, qui fluage sous charge et se desserre. Trop longue, du cuivre nu reste hors du corps de serrage, ce qui réduit la ligne de fuite et expose du métal sous tension.</p>
+<h3>Un embout sur chaque conducteur souple</h3>
+<p>Un conducteur multibrins sans embout s&rsquo;étale sous la pression de la vis : des brins cassent, la résistance augmente et le point chauffe. Sertissez un embout &mdash; double embout lorsque deux conducteurs entrent dans la même pince &mdash; et tirez fermement dessus avant insertion pour valider le sertissage.</p>
+<p>Ne étamez pas un conducteur souple destiné à une borne à vis. L&rsquo;étain fluage sous la pression de serrage et le joint se desserre au fil des cycles thermiques. L&rsquo;étamage appartient aux jonctions soudées, pas aux bornes mécaniques.</p>
+<h3>Un conducteur par pince</h3>
+<p>Deux conducteurs de sections différentes dans une même pince constituent la première cause de borne desserrée dans une armoire par ailleurs conforme aux essais. Lorsque le schéma impose deux conducteurs, utilisez un double embout de calibre correct ou passez à une borne à deux points de serrage distincts.</p>
+
+<h2>Étape 3 &mdash; Insérer, serrer, peigner</h2>
+<p>Enfoncez le conducteur jusqu&rsquo;à ce que l&rsquo;isolant bute contre le corps de serrage, puis serrez. Appliquez le couple indiqué par le fabricant avec un tournevis dynamométrique ; les valeurs courantes des bornes modulaires se situent entre 0,4 et 1,2&nbsp;N&middot;m selon la taille du corps, mais c&rsquo;est la fiche technique qui fait foi, pas une règle empirique.</p>
+<p>Après serrage, tirez sur chaque conducteur. Un joint qui bouge n&rsquo;est pas raccordé.</p>
+<p>Lorsque le schéma prévoit une alimentation commune, peignez les bornes adjacentes avec le peigne du fabricant &mdash; pas avec une boucle de fil. Un peigne est dimensionné pour le courant de la gamme ; une boucle de fil ne l&rsquo;est pas et rend le bloc non testable. Enfoncez le peigne à fond pour que les deux griffes s&rsquo;engagent, et ne peignez jamais à travers une cloison.</p>
+<p>Les bornes de terre se montent sur le rail avec une liaison directe à la barre de terre de l&rsquo;enveloppe. Le conducteur PE est vert-jaune sur toute sa longueur visible, et la borne de terre est le seul élément de l&rsquo;empilage qui ne doit jamais être peigné vers un circuit sous tension.</p>
+
+<h2>Étape 4 &mdash; Repérer, habiller, fermer</h2>
+<p>Repérez chaque borne avec l&rsquo;indication du tableau, à l&rsquo;aide des porte-étiquettes du fabricant. Une bande adhésive manuscrite se décolle dans une armoire chaude, et le technicien suivant perd une heure à repérer les circuits.</p>
+<p>Habillez les conducteurs pour qu&rsquo;ils entrent droit dans la pince, avec une boucle de service permettant de déposer la borne sans tirer sur le câblage voisin. Ne faites pas cheminer puissance et signaux dans le même faisceau. Laissez les extrémités de rail accessibles.</p>
+
+<h2>Étape 5 &mdash; Tester avant la mise sous tension</h2>
+<p>Trois contrôles closent le chantier :</p>
+<ul>
+<li><strong>Continuité :</strong> vérifiez chaque circuit au regard du tableau, y compris la liaison de terre entre la borne et l&rsquo;enveloppe.</li>
+<li><strong>Résistance d&rsquo;isolement :</strong> mesurez à 500&nbsp;V continu entre conducteurs actifs et terre, bornes déconnectées de l&rsquo;électronique sensible ; la valeur d&rsquo;acceptation usuelle est d&rsquo;au moins 1&nbsp;M&Omega;.</li>
+<li><strong>Contrôle thermique en charge :</strong> après une période de fonctionnement au courant nominal, balayez l&rsquo;empilage à la caméra thermique ou vérifiez au toucher avec les précautions d&rsquo;usage. Une borne nettement plus chaude que ses voisines signale un serrage insuffisant ou une résistance de contact élevée.</li>
+</ul>
+
+<h2>Défauts fréquents et symptômes</h2>
+<table>
+  <thead><tr><th>Symptôme</th><th>Cause habituelle</th><th>Action corrective</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Borne colorée ou brunie</strong></td><td>Vis desserrée ou conducteur mal enfoncé</td><td>Reprendre le raccordement avec un embout neuf ; inspecter la pince</td></tr>
+    <tr><td><strong>Signal intermittent sur un circuit de commande</strong></td><td>Isolant coincé dans la pince</td><td>Dénuder à la bonne longueur et raccorder à nouveau</td></tr>
+    <tr><td><strong>Empilage qui glisse sur le rail</strong></td><td>Butées absentes</td><td>Poser des butées aux deux extrémités</td></tr>
+    <tr><td><strong>Échauffement d&rsquo;un groupe peigné</strong></td><td>Boucle de fil au lieu d&rsquo;un peigne dimensionné</td><td>Remplacer par le peigne du fabricant</td></tr>
+    <tr><td><strong>Défaut de continuité de terre à l&rsquo;essai</strong></td><td>Borne PE non reliée au rail ou à la barre de terre</td><td>Poser la borne PE adaptée et la relier à la barre de l&rsquo;enveloppe</td></tr>
+  </tbody>
+</table>
+
+<h2>Ce qu&rsquo;il faut spécifier à la commande</h2>
+<p>Dans une liste d&rsquo;approvisionnement, la borne ne représente que la moitié de la ligne. Précisez : type et mode de serrage, plage de section, pas, couleur, tension et courant assignés, ainsi que butées, plaques d&rsquo;extrémité, cloisons, peignes, porte-étiquettes et fiches de test. Les armoires livrées sans accessoires s&rsquo;arrêtent à la mise en service.</p>
+<p>Notre <a href="/products/terminal-connector">gamme de bornes et connecteurs</a> comprend des bornes modulaires à rail DIN avec barres de courant en laiton et serrages à vis, ainsi que les accessoires associés. Si vous hésitez encore entre familles, <a href="/blog/terminal-blocks-connectors-identification-guide">le tableau d&rsquo;identification des bornes</a> récapitule les grandes séries.</p>
+
+<h2>En résumé</h2>
+<p>La fiabilité d&rsquo;un raccordement à rail DIN ne dépend ni du prix de la borne ni de la marque de l&rsquo;armoire, mais de quatre gestes répétés avec méthode : dénuder juste, sertir systématiquement, serrer au couple et contrôler en charge. Ces quatre gestes coûtent quelques minutes par armoire et évitent la plupart des interventions de garantie.</p>
+<h2>Spécifications Techniques</h2>
+<table>
+  <thead>
+    <tr><th>Paramètre Technique</th><th>Valeur Standard & Norme</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Profil de rail</strong></td><td>Rail profilé 35 mm selon EN 60715, fixé aux deux extrémités</td></tr>
+    <tr><td><strong>Préparation du conducteur</strong></td><td>Dénudage à la longueur fabricant ; embout sur tout conducteur souple</td></tr>
+    <tr><td><strong>Contrôle du raccordement</strong></td><td>Traction après serrage ; un conducteur par pince sauf double embout</td></tr>
+    <tr><td><strong>Peignage</strong></td><td>Peigne dimensionné par le fabricant, jamais une boucle de fil</td></tr>
+    <tr><td><strong>Essais de réception</strong></td><td>Continuité, isolement 500 V DC (≥ 1 MΩ), contrôle thermique en charge</td></tr>
+  </tbody>
+</table>
+
+<div class="faq-section"><h2>Foire Aux Questions</h2><h3>Quel couple de serrage appliquer sur une borne à rail DIN ?</h3><p>Celui indiqué par le fabricant pour cette taille de corps, appliqué au tournevis dynamométrique. Les bornes modulaires se situent souvent entre 0,4 et 1,2 N·m, mais la fiche technique fait foi car la conception de la pince et de la vis modifie l&#x27;exigence.</p><h3>Peut-on mettre deux conducteurs dans une même pince ?</h3><p>Uniquement si la borne est prévue pour cela, avec deux conducteurs de même section et un double embout adapté. Mélanger les sections dans une pince est la première cause de desserrage sous cycles thermiques.</p><h3>Les embouts sont-ils obligatoires sur conducteur souple ?</h3><p>Oui pour un raccordement industriel fiable. Sans embout, les brins s&#x27;étalent sous la pression, certains cassent et la résistance du point augmente. Il ne faut pas non plus étamer le conducteur : l&#x27;étain fluage et le joint se desserre.</p><h3>Faut-il des butées et des cloisons ?</h3><p>Les deux. Les butées empêchent l&#x27;empilage de glisser lors de l&#x27;insertion des conducteurs ; les cloisons maintiennent la ligne de fuite entre circuits de tensions différentes ou entre groupes peignés et non peignés.</p></div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Câblage des bornes à rail DIN : guide d'installation pas à pas</h2>
+    <p>Transmettez-nous votre tableau de bornes, les sections de conducteurs et le schéma d'armoire. Nos ingénieurs confirment la gamme, les accessoires et les paliers de quantité, puis établissent le devis usine.</p>
+    <a class="btn btn-primary" href="/contact">Demander une étude technique</a>
+    <p style="margin-top:14px"><a href="/products/terminal-connector">Découvrir notre gamme complète d'équipements &rarr;</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "din-rail-terminal-block-wiring-how-to";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      location.href = '/blog/' + b + M[l];
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
