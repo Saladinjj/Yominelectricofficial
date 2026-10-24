@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gestion intelligente de l&rsquo;énergie domestique : compteurs, TC et choix réels | Yomin Electric</title>
+<meta name="description" content="Un système de gestion énergétique domestique vaut ce que vaut sa couche de mesure. Comparaison des pinces TC, des compteurs sur rail DIN et des tableaux intelligents, signification réelle de la classe de précision et de la cadence d&rsquo;échantillonnage, et association correcte compteur / transformateur de courant.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/smart-home-energy-management/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/smart-home-energy-management-fr">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/smart-home-energy-management">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/smart-home-energy-management-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/smart-home-energy-management-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/smart-home-energy-management-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/smart-home-energy-management">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Gestion intelligente de l&rsquo;énergie domestique : compteur, TC et tableau intelligent",
+      "description": "Un système de gestion énergétique domestique vaut ce que vaut sa couche de mesure. Comparaison des pinces TC, des compteurs sur rail DIN et des tableaux intelligents, signification réelle de la classe de précision et de la cadence d&rsquo;échantillonnage, et association correcte compteur / transformateur de courant.",
+      "image": "https://www.yominelectric.com/assets/images/blog/smart-home-energy-management/hero.png",
+      "datePublished": "2026-10-24",
+      "dateModified": "2026-10-24",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/smart-home-energy-management-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Peut-on utiliser des pinces TC au lieu d&rsquo;un compteur complet ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, et en rénovation c&rsquo;est généralement la seule solution praticable. Un TC à noyau ouvrant associé à un compteur sur TC fournit les mêmes données de kWh et de puissance maximale qu&rsquo;un compteur en montage direct, sans couper l&rsquo;alimentation. La contrepartie : la précision dépend de la classe du TC et du réglage exact du rapport dans le compteur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi mon moniteur d&rsquo;énergie rate-t-il les pointes courtes ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parce que l&rsquo;intervalle de relevé est plus long que l&rsquo;événement. Un appareil qui interroge une fois par minute ne voit pas un compresseur qui tourne quatre-vingt-dix secondes, et une sortie impulsions à 400 imp/kWh délivre une impulsion toutes les neuf secondes sous 1 kW. Recherchez un appareil qui échantillonne en interne à l&rsquo;échelle de la seconde et enregistre la puissance maximale, pas seulement une moyenne."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il un compteur triphasé pour une maison monophasée ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non, mais il faut le vérifier avant de commander. Un compteur triphasé tétrapolaire comme le YEM024-N est prévu pour 3x230/400 V et ne donnera pas de valeurs exploitables sur une alimentation monophasée. Contrôlez d&rsquo;abord la tête de branchement et le nombre de conducteurs de phase."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Gestion énergétique domestique</span></div>
+    <span class="bh-tag">Guides d&rsquo;achat</span>
+    <h1 class="bh-title">Gestion intelligente de l&rsquo;énergie domestique : compteur, TC et tableau intelligent</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>24 octobre 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/smart-home-energy-management/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/smart-home-energy-management/hero.png" alt="Compteur d&rsquo;énergie triphasé tétrapolaire YOMIN YEM024-N sur rail DIN, affichage LCD et plaque signalétique" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un système de gestion intelligente de l&rsquo;énergie domestique repose sur trois couches empilées : une couche de mesure qui relève courant et tension, une couche de calcul qui transforme ces relevés en kWh, en puissance maximale et en coût tarifaire, et une couche d&rsquo;action qui commute des charges ou alerte l&rsquo;occupant. Presque tous les produits de ce marché se vendent sur la troisième couche &mdash; l&rsquo;application, le tableau de bord, les scénarios. Or la couche qui décide de l&rsquo;utilité réelle du système est justement celle que personne ne photographie : la mesure. Si le compteur et le transformateur de courant sont mal choisis, l&rsquo;interface la plus élégante affichera des chiffres faux avec une parfaite assurance.</p>
+
+    <p>Ce guide s&rsquo;adresse à ceux qui doivent spécifier cette couche de mesure : installateurs qui chiffrent une rénovation, fabricants qui développent un moniteur pour un programme de fournisseur d&rsquo;énergie, et sociétés de services énergétiques qui devront défendre les chiffres dix-huit mois plus tard.</p>
+
+    <h2>Les trois couches, et celle qui décide du résultat</h2>
+    <p>La couche de mesure répond à deux questions : quel courant circule, et sous quelle tension. Tout ce qui suit n&rsquo;est que de l&rsquo;arithmétique sur ces deux grandeurs et une horloge. C&rsquo;est pourquoi la spécification du capteur, et non la liste de fonctions de l&rsquo;application, est la seule partie du système qu&rsquo;une mise à jour logicielle ne pourra jamais corriger.</p>
+    <p>Un bon test pour juger une architecture consiste à se demander ce qui se passe au démarrage d&rsquo;une charge importante. Un compresseur de pompe à chaleur, une borne de recharge ou une plaque à induction produisent un échelon qui ne dure que quelques secondes. Si la couche de mesure l&rsquo;intègre dans une moyenne à la minute, le système affichera une courbe lisse qui n&rsquo;a jamais existé &mdash; et facturera mal toute charge soumise à un tarif horosaisonnier, parce que les bornes d&rsquo;intervalle ne coïncident plus avec les événements.</p>
+
+    <h2>Pourquoi la mesure est le goulot d&rsquo;étranglement</h2>
+    <p>Trois nombres séparent un moniteur réellement utile d&rsquo;un appareil qui ne fait que produire un graphique.</p>
+    <ul>
+      <li><strong>Cadence d&rsquo;échantillonnage interne.</strong> Un appareil qui échantillonne la forme d&rsquo;onde des milliers de fois par seconde calcule directement la valeur efficace vraie et la puissance active. Un appareil qui échantillonne une fois par seconde ne peut qu&rsquo;estimer. Un appareil qui transmet une fois par minute ne mesure pas les pointes : il les lisse.</li>
+      <li><strong>Constante d&rsquo;impulsion.</strong> Beaucoup de compteurs exposent la consommation sous forme d&rsquo;impulsions plutôt que par un registre numérique. La constante figure sur la plaque : le YEM024-N porte 400 imp/kWh. Une impulsion vaut donc 2,5 Wh, soit une toutes les neuf secondes sous 1 kW &mdash; et toutes les quarante-cinq secondes sous une veille de 200 W. Le comptage d&rsquo;impulsions est excellent pour les totaux de facturation et inutilisable pour une analyse à moins de dix secondes.</li>
+      <li><strong>Classe de précision.</strong> La classe 1,0 signifie que l&rsquo;erreur reste dans 1 % de la lecture sur la plage de courant déclarée ; la classe 0,5 divise cette valeur par deux. Les deux suffisent largement pour l&rsquo;analyse domestique. Aucune ne sauve un montage où le transformateur de courant a été programmé avec le mauvais rapport.</li>
+    </ul>
+
+    <h2>Trois façons de mesurer une maison</h2>
+    <p>Il n&rsquo;existe pas d&rsquo;architecture universelle. Le bon choix dépend de la construction neuve ou de la rénovation, du nombre de circuits à suivre séparément et de qui finance l&rsquo;installation.</p>
+    <table>
+      <thead>
+        <tr><th>Approche</th><th>Granularité</th><th>Installation</th><th>Adaptée à</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pince TC sur l&rsquo;arrivée</td><td>Un canal par phase, pas de détail par circuit</td><td>Pinces sur les câbles d&rsquo;arrivée, sans coupure</td><td>Rénovation, logement locatif, pilote rapide</td></tr>
+        <tr><td>Compteur rail DIN par circuit</td><td>Un canal mesuré par départ</td><td>Nécessite de la place au tableau et un recâblage</td><td>Construction neuve, circuits pompe à chaleur et recharge, sous-comptage</td></tr>
+        <tr><td>Tableau intelligent à mesure par disjoncteur</td><td>Tous les circuits, résolus par le firmware du tableau</td><td>Remplace le tableau de répartition</td><td>Construction neuve où le tableau est de toute façon remplacé</td></tr>
+      </tbody>
+    </table>
+    <p>La première option est la moins coûteuse à déployer et la plus pauvre analytiquement : un seul canal global ne distingue pas une pompe à chaleur d&rsquo;un four. La deuxième est la solution de référence des installations sérieuses : un compteur rail DIN sur chaque circuit important donne des données séparées sans remplacer le tableau. La troisième offre la meilleure granularité et enferme le client chez un seul fabricant de tableau pour la durée de vie du bâtiment.</p>
+
+    <h2>Montage direct ou transformateurs de courant ?</h2>
+    <p>C&rsquo;est le courant qui tranche, pas la préférence. Les compteurs en montage direct ont un maximum nominal &mdash; le YEM024-N est prévu pour 3x5(80) A, soit 80 A par phase. Au-delà, le compteur est alimenté par des transformateurs de courant et seul le courant secondaire le traverse.</p>
+    <table>
+      <thead>
+        <tr><th></th><th>Montage direct</th><th>Montage sur TC</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Plafond typique</td><td>Environ 80 A par phase</td><td>Tout courant, fixé par le rapport du TC</td></tr>
+        <tr><td>Coupure d&rsquo;alimentation</td><td>Nécessaire pour l&rsquo;installation</td><td>TC à noyau ouvrant posés sous tension</td></tr>
+        <tr><td>Réglage du rapport</td><td>Aucun</td><td>Doit correspondre exactement au TC, dans le compteur</td></tr>
+        <tr><td>Mode de défaillance</td><td>Dépassement de plage sur un service plus gros</td><td>Erreur d&rsquo;un facteur 10 ou 100 si le rapport est faux</td></tr>
+      </tbody>
+    </table>
+    <p>Les transformateurs de courant à noyau ouvrant de la gamme, comme le DP-816 1000/5 A et le modèle 2000/5 A, sont des appareils de classe 0,5 prévus pour 720 V AC, plafond habituel du comptage basse tension. Ils s&rsquo;enroulent autour d&rsquo;un conducteur existant : une rénovation ne demande donc pas de consignation, ce qui est la première raison du succès du comptage sur TC dans les bâtiments occupés.</p>
+    <p>Une réserve qui piège régulièrement les installateurs : la classe de précision n&rsquo;est garantie qu&rsquo;à partir d&rsquo;une fraction du courant nominal, souvent 5 % ou 20 %. Un transformateur 2000/5 A chargé de résoudre un talon de 40 A travaille à 2 % de son calibre, là où l&rsquo;erreur relative est maximale. Si le logement a un gros abonnement et un talon faible, choisissez le plus petit rapport qui couvre encore la puissance maximale, pas le plus grand disponible.</p>
+
+    <h2>Communication : WiFi, RS485 et M-Bus</h2>
+    <p>Le protocole détermine ce que le système pourra faire ensuite, et il est bien moins coûteux de le décider maintenant que de le reprendre après coup.</p>
+    <ul>
+      <li><strong>WiFi</strong> &mdash; sans câblage, adapté au grand public, et le bon choix pour un compteur unique dans une maison bien couverte. Le compteur triphasé WiFi rail DIN de notre gamme est conçu exactement pour ce cas.</li>
+      <li><strong>RS485</strong> &mdash; un bus filaire qui résiste aux locaux techniques parasités et se chaîne d&rsquo;un compteur à l&rsquo;autre. Notre compteur monophasé RS485 rail DIN est donné pour 80 A maximum et constitue le choix pragmatique lorsque le concentrateur est fixe et la distance courte.</li>
+      <li><strong>M-Bus</strong> &mdash; conçu pour les bâtiments à plusieurs compteurs, alimenté et interrogé sur un bus deux fils. Le compteur triphasé M-Bus de notre gamme est livré avec son TC, ce qui correspond à la majorité des installations domestiques sur TC.</li>
+    </ul>
+    <p>Quel que soit le choix, vérifiez que le compteur expose la puissance maximale et les valeurs par phase, et pas seulement un registre kWh cumulé. Un registre seul ne permet aucune logique de délestage.</p>
+
+    <h2>Les erreurs de câblage qui faussent les données en silence</h2>
+    <ul>
+      <li><strong>TC sur le mauvais conducteur.</strong> Une pince sur le neutre donne presque zéro en charge équilibrée et des valeurs étranges en charge déséquilibrée.</li>
+      <li><strong>Orientation inversée.</strong> Les TC à noyau ouvrant sont polarisés. Posés à l&rsquo;envers, ils produisent une puissance négative sur une charge qui consomme manifestement.</li>
+      <li><strong>Deux phases dans un même TC.</strong> Les courants se compensent partiellement et la lecture ne correspond à aucune des deux phases.</li>
+      <li><strong>Rapport incohérent.</strong> Un transformateur 2000/5 A laissé programmé en 1000/5 A divise par deux tous les chiffres remontés.</li>
+      <li><strong>Neutre oublié sur une alimentation à deux phases.</strong> Une mesure de tension sur une seule phase faussera la valorisation des charges en 120 V de l&rsquo;autre phase.</li>
+    </ul>
+    <p>Aucune de ces erreurs ne génère de message. Elles produisent des données plausibles, ce qui est pire.</p>
+
+    <h2>Liste de vérification avant commande</h2>
+    <ul>
+      <li>Type d&rsquo;alimentation confirmé : monophasé deux fils, biphasé ou triphasé tétrapolaire.</li>
+      <li>Courant maximal par phase connu et comparé au plafond du montage direct avant de choisir les TC.</li>
+      <li>Classe de précision annoncée pour toute la chaîne &mdash; compteur et transformateur ensemble, pas le compteur seul.</li>
+      <li>Cadence d&rsquo;échantillonnage et intervalle de transmission écrits noir sur blanc, avec enregistrement de la puissance maximale confirmé.</li>
+      <li>Protocole choisi en fonction du concentrateur, y compris l&rsquo;existence d&rsquo;une API locale ou d&rsquo;une carte de registres publiée.</li>
+      <li>Place au tableau mesurée : un compteur rail DIN demande une largeur modulaire et du dégagement pour le câblage des TC.</li>
+      <li>Rapport des TC consigné sur le procès-verbal de mise en service, pour que l&rsquo;intervenant suivant puisse le vérifier.</li>
+    </ul>
+
+    <h2>Questions fréquentes</h2>
+    <h3>Peut-on utiliser des pinces TC au lieu d&rsquo;un compteur complet ?</h3>
+    <p>Oui, et en rénovation c&rsquo;est généralement la seule solution praticable. Un TC à noyau ouvrant associé à un compteur sur TC fournit les mêmes données de kWh et de puissance maximale qu&rsquo;un compteur en montage direct, sans couper l&rsquo;alimentation. La contrepartie : la précision dépend de la classe du TC et du réglage exact du rapport dans le compteur.</p>
+    <h3>Pourquoi mon moniteur d&rsquo;énergie rate-t-il les pointes courtes ?</h3>
+    <p>Parce que l&rsquo;intervalle de relevé est plus long que l&rsquo;événement. Un appareil qui interroge une fois par minute ne voit pas un compresseur qui tourne quatre-vingt-dix secondes, et une sortie impulsions à 400 imp/kWh délivre une impulsion toutes les neuf secondes sous 1 kW. Recherchez un appareil qui échantillonne en interne à l&rsquo;échelle de la seconde et enregistre la puissance maximale, pas seulement une moyenne.</p>
+    <h3>Faut-il un compteur triphasé pour une maison monophasée ?</h3>
+    <p>Non, mais il faut le vérifier avant de commander. Un compteur triphasé tétrapolaire comme le YEM024-N est prévu pour 3x230/400 V et ne donnera pas de valeurs exploitables sur une alimentation monophasée. Contrôlez d&rsquo;abord la tête de branchement et le nombre de conducteurs de phase.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous dimensionnez le comptage d&rsquo;un système de gestion énergétique ?</h2>
+    <p>Indiquez-nous le type d&rsquo;alimentation, le courant maximal par phase et le protocole utilisé par votre concentrateur. Nous fabriquons des compteurs rail DIN, des compteurs sur TC et des transformateurs de courant à noyau ouvrant pour les programmes OEM et installateurs.</p>
+    <p style="margin-top:14px">
+      <a class="btn btn-primary" href="/contact">Demander un devis</a>
+      <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener" style="margin-left:12px">Discuter sur WhatsApp</a>
+    </p>
+    <p style="margin-top:14px"><a href="/products/energy-meter" style="color:var(--ac)">Voir les compteurs rail DIN et sur TC</a> &middot; <a href="/products/current-transformer" style="color:var(--ac)">Transformateurs de courant à noyau ouvrant</a></p>
+  </section>
+</main></main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

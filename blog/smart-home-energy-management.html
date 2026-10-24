@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Home Energy Management: Meters, CTs and What Actually Works | Yomin Electric</title>
+<meta name="description" content="A smart home energy management system is only as good as its sensing layer. How CT clamps, DIN-rail meters and smart panels compare, what accuracy class and sampling rate really mean, and how to pair a meter with the right current transformer.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/smart-home-energy-management/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/smart-home-energy-management">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/smart-home-energy-management">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/smart-home-energy-management-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/smart-home-energy-management-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/smart-home-energy-management-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/smart-home-energy-management">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Smart Home Energy Management: How the Meter, the CT and the Panel Fit Together",
+      "description": "A smart home energy management system is only as good as its sensing layer. How CT clamps, DIN-rail meters and smart panels compare, what accuracy class and sampling rate really mean, and how to pair a meter with the right current transformer.",
+      "image": "https://www.yominelectric.com/assets/images/blog/smart-home-energy-management/hero.png",
+      "datePublished": "2026-10-24",
+      "dateModified": "2026-10-24",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/smart-home-energy-management"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I use current transformer clamps instead of a full meter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and for a retrofit it is usually the only practical option. A split-core CT plus a CT-operated meter gives you the same kWh and demand data as a direct-connected meter without cutting the supply. The cost is that accuracy depends on the CT class and on correct ratio programming in the meter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my energy monitor miss short peaks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the reporting interval is longer than the event. A monitor polling once a minute cannot see a compressor that runs for ninety seconds, and a pulse output at 400 impulses per kWh produces one pulse every nine seconds at a 1 kW load. Look for a device that samples in the sub-second range internally and records maximum demand, not just an average."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a three-phase meter for a single-phase house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, but you need to know which you have before ordering. A three-phase four-wire meter such as the YEM024-N is rated 3x230/400 V and will not give meaningful readings on a single-phase supply. Check the service head and the number of live conductors first."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Smart Home Energy Management</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Smart Home Energy Management: How the Meter, the CT and the Panel Fit Together</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>October 24, 2026</span>
+      <span class="divider"></span>
+      <span>11 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/smart-home-energy-management/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/smart-home-energy-management/hero.png" alt="YOMIN YEM024-N three-phase four-wire DIN-rail energy meter showing its LCD display and nameplate ratings" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A smart home energy management system is three layers stacked on top of each other: a sensing layer that measures current and voltage, a computation layer that turns those measurements into kWh, demand and tariff cost, and an action layer that switches loads or prompts the occupier. Almost every product in this market is sold on the action layer &mdash; the app, the dashboard, the automation rules. But the layer that decides whether the whole system is worth anything is the one nobody photographs: the sensing layer. If the meter and the current transformer are wrong, the cleverest dashboard in the world is displaying confident nonsense.</p>
+
+    <p>This guide is written for the people who have to specify that sensing layer &mdash; installers quoting a retrofit, OEMs building a monitor for a utility programme, and energy service companies who will be asked to defend the numbers eighteen months later.</p>
+
+    <h2>The three layers, and which one decides whether it works</h2>
+    <p>The sensing layer answers two questions: how much current is flowing, and at what voltage. Everything downstream is arithmetic on those two numbers plus a clock. That is why the specification of the sensor, and not the feature list of the app, is the only part of the system that cannot be fixed later by a software update.</p>
+    <p>A useful way to test any proposed design is to ask what happens when a large load starts. A heat pump compressor, an EV charger or an induction hob draws a step change that lasts seconds. If the sensing layer integrates that step into a one-minute average, the system will report a smooth consumption curve that never happened. It will also mis-price the load on any time-of-use tariff, because the interval boundaries no longer line up with the actual events.</p>
+
+    <h2>Why the sensing layer is the bottleneck</h2>
+    <p>Three numbers separate a monitor that is genuinely useful from one that merely produces a chart.</p>
+    <ul>
+      <li><strong>Internal sampling rate.</strong> A device that samples the waveform thousands of times per second can calculate true RMS and real power directly. A device that samples once a second can only estimate. A device that reports once a minute is not measuring peaks at all; it is averaging them away.</li>
+      <li><strong>Pulse constant.</strong> Many meters expose consumption as a pulse output rather than a digital register. The constant is printed on the nameplate: the YEM024-N carries 400 imp/kWh. One impulse therefore represents 2.5 Wh, which at a 1 kW load arrives every nine seconds &mdash; and at a 200 W standby load every forty-five seconds. Pulse counting is excellent for billing totals and useless for sub-ten-second analysis.</li>
+      <li><strong>Accuracy class.</strong> Class 1.0 means the error stays inside 1% of the reading across the declared current range; Class 0.5 halves that. Both are perfectly adequate for household analytics. Neither rescues a system where the current transformer has been programmed with the wrong ratio.</li>
+    </ul>
+
+    <h2>Three ways to sense a house</h2>
+    <p>There is no single correct architecture. The right choice depends on whether the building is being wired from scratch, how many circuits need separate visibility, and who is paying for the installation.</p>
+    <table>
+      <thead>
+        <tr><th>Approach</th><th>Resolution</th><th>Installation</th><th>Best for</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Whole-home CT clamp monitor</td><td>One channel per phase, no circuit breakdown</td><td>Clamps over the incoming tails, no supply interruption</td><td>Retrofits, rental property, quick pilots</td></tr>
+        <tr><td>DIN-rail meter per circuit</td><td>One metered channel per breaker way</td><td>Requires panel space and a wiring change</td><td>New build, heat pump and EV circuits, sub-metering</td></tr>
+        <tr><td>Smart panel with per-breaker sensing</td><td>Every circuit, settled by the panel firmware</td><td>Replaces the consumer unit</td><td>New build where the panel is being replaced anyway</td></tr>
+      </tbody>
+    </table>
+    <p>The first option is the cheapest to deploy and the weakest analytically, because a single whole-home channel cannot tell a heat pump from an oven. The second is the workhorse of serious installations: a DIN-rail meter on each circuit that matters gives you separated data without replacing the board. The third gives the most granularity and locks the customer into one panel vendor for the life of the building.</p>
+
+    <h2>Direct connection or current transformers?</h2>
+    <p>This is decided by current, not by preference. Direct-connected meters have a rated maximum &mdash; the YEM024-N is rated 3&times;5(80) A, meaning 80 A per phase. Above that, the meter is fed from current transformers and only the secondary current passes through it.</p>
+    <table>
+      <thead>
+        <tr><th></th><th>Direct connected</th><th>CT operated</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Typical ceiling</td><td>Up to about 80 A per phase</td><td>Any current, set by the CT ratio</td></tr>
+        <tr><td>Supply interruption</td><td>Required to install</td><td>Split-core CTs clamp on live conductors</td></tr>
+        <tr><td>Ratio configuration</td><td>None</td><td>Must match the CT ratio exactly, in the meter</td></tr>
+        <tr><td>Failure mode</td><td>Over-range on a larger service</td><td>10x or 100x error from a mis-set ratio</td></tr>
+      </tbody>
+    </table>
+    <p>Split-core current transformers such as the DP-816 1000/5 A and the 2000/5 A unit in the same range are Class 0.5 devices rated 720 V AC, which is the usual low-voltage metering ceiling. They clamp around an existing conductor, so a retrofit does not require isolating the service &mdash; the single biggest reason CT-based monitoring wins in occupied buildings.</p>
+    <p>One caveat that catches installers repeatedly: accuracy class is guaranteed from a stated fraction of rated current upwards, commonly 5% or 20%. A 2000/5 A transformer asked to resolve a 40 A base load is operating at 2% of rating, where percentage error is at its worst. If the house has a large service and a small base load, choose the smallest ratio that still covers the maximum demand rather than the largest one available.</p>
+
+    <h2>Communications: WiFi, RS485 and M-Bus</h2>
+    <p>The protocol determines what the system can do later, and it is far cheaper to decide now than to retrofit.</p>
+    <ul>
+      <li><strong>WiFi</strong> &mdash; no cabling, consumer-friendly, and the right choice for a single meter in a house with reliable coverage. The three-phase WiFi DIN-rail meter in our range is built for exactly this case.</li>
+      <li><strong>RS485</strong> &mdash; a wired bus that survives electrically noisy plant rooms and can be daisy-chained across meters. Our single-phase RS485 DIN-rail meter is rated to 80 A maximum and is the pragmatic choice where the hub is fixed and the run is short.</li>
+      <li><strong>M-Bus</strong> &mdash; designed for multi-meter buildings, powered and interrogated over a two-wire bus. The three-phase M-Bus meter in our range ships with a CT included, which is how most CT-operated domestic installations are actually built.</li>
+    </ul>
+    <p>Whichever you choose, confirm that the meter exposes maximum demand and per-phase values, not only a cumulative kWh register. A register alone cannot support load-shifting logic.</p>
+
+    <h2>Wiring mistakes that silently corrupt the data</h2>
+    <ul>
+      <li><strong>CT on the wrong conductor.</strong> A clamp on the neutral reports near-zero on a balanced load and something strange on an unbalanced one.</li>
+      <li><strong>Reversed orientation.</strong> Split-core CTs are polarised. Fitted backwards they produce negative power on a load that is definitely consuming.</li>
+      <li><strong>Two phases inside one CT.</strong> The currents partly cancel and the reading is neither phase.</li>
+      <li><strong>Ratio mismatch.</strong> A 2000/5 A transformer left programmed as 1000/5 A halves every number the system reports.</li>
+      <li><strong>Missed neutral in a split-phase service.</strong> Voltage sensing on one leg only will mis-price any 120 V load on the other.</li>
+    </ul>
+    <p>None of these produce an error message. They produce plausible data, which is worse.</p>
+
+    <h2>Specification checklist</h2>
+    <ul>
+      <li>Supply type confirmed: single-phase two-wire, split-phase, or three-phase four-wire.</li>
+      <li>Maximum current per phase known, and compared against the direct-connect ceiling before choosing CTs.</li>
+      <li>Accuracy class stated for the whole chain &mdash; meter and transformer together, not the meter alone.</li>
+      <li>Sampling and reporting interval written down, with maximum demand recording confirmed.</li>
+      <li>Protocol chosen to match the hub, including whether a local API or register map is published.</li>
+      <li>Panel space measured: DIN-rail meters need module width plus clearance for CT wiring.</li>
+      <li>CT ratio recorded on the commissioning sheet, so the next engineer can verify it.</li>
+    </ul>
+
+    <h2>Frequently asked questions</h2>
+    <h3>Can I use current transformer clamps instead of a full meter?</h3>
+    <p>Yes, and for a retrofit it is usually the only practical option. A split-core CT plus a CT-operated meter gives you the same kWh and demand data as a direct-connected meter without cutting the supply. The cost is that accuracy depends on the CT class and on correct ratio programming in the meter.</p>
+    <h3>Why does my energy monitor miss short peaks?</h3>
+    <p>Because the reporting interval is longer than the event. A monitor polling once a minute cannot see a compressor that runs for ninety seconds, and a pulse output at 400 impulses per kWh produces one pulse every nine seconds at a 1 kW load. Look for a device that samples in the sub-second range internally and records maximum demand, not just an average.</p>
+    <h3>Do I need a three-phase meter for a single-phase house?</h3>
+    <p>No, but you need to know which you have before ordering. A three-phase four-wire meter such as the YEM024-N is rated 3&times;230/400 V and will not give meaningful readings on a single-phase supply. Check the service head and the number of live conductors first.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying metering for a home energy management system?</h2>
+    <p>Send us the supply type, the maximum current per phase and the protocol your hub speaks. We build DIN-rail meters, CT-operated meters and split-core current transformers for OEM and installer programmes.</p>
+    <p style="margin-top:14px">
+      <a class="btn btn-primary" href="/contact">Request a quote</a>
+      <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener" style="margin-left:12px">Chat on WhatsApp</a>
+    </p>
+    <p style="margin-top:14px"><a href="/products/energy-meter" style="color:var(--ac)">Browse DIN-rail and CT-operated energy meters</a> &middot; <a href="/products/current-transformer" style="color:var(--ac)">Split-core current transformers</a></p>
+  </section>
+</main></main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
