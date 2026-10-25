@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classe de précision d'un compteur : 0,5S, 1 et 2 | Yomin Electric</title>
+<meta name="description" content="La classe de précision est l'erreur maximale admise en conditions d'essai. Ce que valent les classes 0,5S, 1 et 2, et pourquoi le TC décide souvent.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/energy-meter-accuracy-class-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/energy-meter-accuracy-class-guide-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/energy-meter-accuracy-class-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/energy-meter-accuracy-class-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/energy-meter-accuracy-class-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/energy-meter-accuracy-class-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/energy-meter-accuracy-class-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Classe de précision d'un compteur d'énergie : 0,5S, 1 et 2",
+      "description": "La classe de précision est l'erreur maximale admise en conditions d'essai. Ce que valent les classes 0,5S, 1 et 2, et pourquoi le TC décide souvent.",
+      "image": "https://www.yominelectric.com/assets/images/blog/energy-meter-accuracy-class-guide/hero.png",
+      "datePublished": "2026-10-25",
+      "dateModified": "2026-10-25",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/energy-meter-accuracy-class-guide-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "La classe 0,5 est-elle plus précise que la classe 1 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. L'indice de classe est l'erreur maximale admissible : la classe 0,5 tolère plus ou moins 0,5 % et la classe 1 plus ou moins 1 %. Un chiffre plus petit correspond toujours à un compteur plus précis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que signifie le S dans la classe 0,5S ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le S désigne les classes à plage étendue. La précision est garantie jusqu'à une fraction beaucoup plus faible du courant assigné que sur les classes sans S, ce qui compte en comptage sur TC lorsque le courant reste faible longtemps, la nuit ou à faible charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il un compteur 0,5S pour refacturer des locataires ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En général non. La classe 1 suffit pour la refacturation et le sous-comptage, et l'investissement dans un meilleur transformateur de courant réduit l'erreur totale bien plus que le seul passage à un compteur plus précis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on associer un compteur classe 1 à un TC classe 0,5 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, mais l'ensemble est alors limité par le compteur. L'erreur totale d'une mesure sur TC est la somme de l'erreur du TC, de l'effet du fardeau des conducteurs et de l'erreur du compteur : le maillon le plus faible impose le résultat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "La classe de précision couvre-t-elle le transformateur de courant ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. La classe inscrite sur le compteur ne concerne que le compteur, mesurée à ses propres bornes dans les conditions de référence. Le TC possède sa propre classe, et l'installation ajoute les erreurs de conducteurs et de fardeau."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: Fran&ccedil;ais">
+        <span id="lf"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span><span id="lc">FR</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt act" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb act" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Comptage</span></div>
+    <span class="bh-tag">Guides d&rsquo;achat</span>
+    <h1 class="bh-title">Classe de précision d&rsquo;un compteur d&rsquo;énergie : 0,5S, 1 et 2</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>25 octobre 2026</span>
+      <span class="divider"></span>
+      <span>9 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/energy-meter-accuracy-class-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/energy-meter-accuracy-class-guide/hero.png" alt="Compteur d&rsquo;énergie communicant triphasé sur rail DIN affichant la classe 1 et la référence IEC 62053-21 sur sa plaque" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p><strong>La classe de précision d&rsquo;un compteur d&rsquo;énergie est l&rsquo;erreur maximale admissible, exprimée en pourcentage, que le compteur peut afficher dans les conditions de référence de sa norme. La classe 2 tolère &plusmn;2 %, la classe 1 &plusmn;1 % et la classe 0,5S &plusmn;0,5 % sur une plage de courant étendue.</strong> Ce n&rsquo;est pas un label commercial : c&rsquo;est une limite mesurée, que l&rsquo;appareil doit tenir à plusieurs points de courant et plusieurs facteurs de puissance, pas seulement à pleine charge.</p>
+
+    <p>Trois éléments décident de la classe utile : qui paie la facture, quel volume d&rsquo;énergie est en jeu et si le comptage passe par des transformateurs de courant. Acheter un compteur plus précis que nécessaire est l&rsquo;une des erreurs les plus fréquentes en comptage &mdash; surtout lorsque le transformateur de courant placé à côté constitue la vraie limite.</p>
+
+    <h2>D&rsquo;où viennent ces chiffres</h2>
+    <p>Les compteurs statiques d&rsquo;énergie active relèvent de la IEC 62053-21 pour les classes 1 et 2, et de la IEC 62053-22 pour les classes de précision supérieure 0,2S et 0,5S. L&rsquo;indice de classe correspond à l&rsquo;erreur maximale dans les conditions de référence, d&rsquo;où cette correspondance directe avec un pourcentage.</p>
+    <table>
+      <thead>
+        <tr><th>Classe</th><th>Erreur maximale dans les conditions de référence</th><th>Application typique</th><th>Raccordement</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2</td><td>&plusmn;2 %</td><td>Comptage domestique et sous-comptage interne</td><td>Branchement direct</td></tr>
+        <tr><td>1</td><td>&plusmn;1 %</td><td>Commercial, industrie légère, refacturation de locataires, comptage en armoire</td><td>Direct ou sur TC</td></tr>
+        <tr><td>0,5S</td><td>&plusmn;0,5 %</td><td>Facturation concessionnaire, refacturation entre sociétés, départs de poste</td><td>Sur TC ou TC/TT</td></tr>
+        <tr><td>0,2S</td><td>&plusmn;0,2 %</td><td>Comptage de facturation en poste et au niveau transport</td><td>Sur TC/TT</td></tr>
+      </tbody>
+    </table>
+    <p>L&rsquo;énergie réactive possède sa propre échelle de classes : un compteur classe 1 en énergie active peut porter une classe différente en réactif. Vérifiez les deux colonnes si le tarif facture la puissance réactive.</p>
+
+    <h2>Ce que le « S » change réellement</h2>
+    <p>Le S désigne les classes à plage étendue. Sur un compteur sans S, la précision n&rsquo;est garantie qu&rsquo;au-dessus d&rsquo;une fraction élevée du courant assigné : la zone de faible charge sort de la spécification. Sur un compteur de classe S, la plage précise descend jusqu&rsquo;à environ 1 % du courant assigné, parfois moins.</p>
+    <p>Cela compte parce qu&rsquo;un départ sur TC ne reste pas à pleine charge. La nuit, le week-end ou sur un départ peu chargé, le courant secondaire tombe précisément dans la zone où un compteur sans S n&rsquo;est plus spécifié et où un compteur S reste précis. Deux appareils identiques en essai à pleine charge peuvent donc diverger bien au-delà de leur écart de classe dès que la charge chute.</p>
+
+    <h2>Pourquoi le transformateur de courant décide souvent du résultat</h2>
+    <p>Une mesure sur TC cumule trois sources d&rsquo;erreur : l&rsquo;erreur de rapport et de déphasage du TC, le fardeau imposé par les conducteurs secondaires et le circuit courant du compteur, puis l&rsquo;erreur du compteur. Elles s&rsquo;additionnent : le maillon le plus faible domine.</p>
+    <table>
+      <thead>
+        <tr><th>Classe du compteur</th><th>Classe du TC</th><th>Ce qui limite le résultat</th><th>Verdict</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2</td><td>0,5</td><td>Le compteur</td><td>Qualité du TC perdue ; acceptable en contrôle interne seulement</td></tr>
+        <tr><td>1</td><td>1</td><td>Les deux, à parts comparables</td><td>Combinaison commerciale courante</td></tr>
+        <tr><td>0,5S</td><td>1</td><td>Le TC, nettement</td><td>Précision du compteur largement perdue</td></tr>
+        <tr><td>0,5S</td><td>0,5</td><td>L&rsquo;installation et le fardeau</td><td>Association correcte en facturation</td></tr>
+        <tr><td>0,2S</td><td>0,2</td><td>L&rsquo;installation et le fardeau</td><td>Comptage de facturation</td></tr>
+      </tbody>
+    </table>
+    <p>Règle pratique : le compteur doit être au moins une classe meilleur que le TC, pour que l&rsquo;ensemble soit limité par le transformateur et non par le compteur. Au-delà, gagner encore en classe apporte peu tant que le TC et le câblage n&rsquo;évoluent pas aussi.</p>
+
+    <h2>Les conditions d&rsquo;essai qui décident du résultat</h2>
+    <ul>
+      <li><strong>Points de courant</strong> &mdash; l&rsquo;appareil est essayé à plusieurs fractions du courant assigné, pas à une seule.</li>
+      <li><strong>Facteur de puissance</strong> &mdash; généralement à 1 et à 0,5 inductif, parfois 0,5 capacitif. Un compteur peut passer à 1 et échouer à 0,5 inductif : la fiche technique doit donner les deux.</li>
+      <li><strong>Température de référence</strong> &mdash; les erreurs dérivent hors de la plage de référence, d&rsquo;où l&rsquo;indication séparée de la plage de température de service.</li>
+      <li><strong>Tolérances de tension et de fréquence</strong> &mdash; la classe s&rsquo;applique dans une bande définie, pas sur toute la variation d&rsquo;un réseau faible.</li>
+      <li><strong>Préchauffage et marche à vide</strong> &mdash; le courant de démarrage (seuil d&rsquo;enregistrement) et le cheminement à vide (absence d&rsquo;enregistrement sous tension sans courant) sont des limites distinctes de la classe.</li>
+      <li><strong>Distorsion</strong> &mdash; les normes essaient sous forme d&rsquo;onde définie. Un départ dominé par des variateurs peut repousser l&rsquo;erreur réelle au-delà de la classe : c&rsquo;est un problème de site, pas un défaut du compteur.</li>
+    </ul>
+
+    <h2>Lire une fiche technique : sept points à vérifier</h2>
+    <p>Avant de comparer les prix, relevez ces sept éléments sur chaque fiche. Une offre qui les omet n&rsquo;est pas comparable.</p>
+    <table>
+      <thead>
+        <tr><th>Élément</th><th>Pourquoi il compte</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Classe de précision et norme</td><td>Définit la limite et le régime d&rsquo;essai applicable</td></tr>
+        <tr><td>Courant de base et courant maximal</td><td>Fixe la plage en branchement direct et la marge de surcharge</td></tr>
+        <tr><td>Courant de démarrage</td><td>Détermine la plus petite charge réellement enregistrée</td></tr>
+        <tr><td>Constante du compteur (imp/kWh)</td><td>Résolution de la sortie impulsionnelle et des contrôles d&rsquo;étalonnage</td></tr>
+        <tr><td>Fardeau des circuits tension et courant</td><td>Doit rester dans ce que le TC peut fournir</td></tr>
+        <tr><td>Plage de température de service</td><td>Jusqu&rsquo;où la classe tient en exploitation</td></tr>
+        <tr><td>Communication et protocole</td><td>Si les relevés remontent vers votre système de facturation</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Compteurs et TC YOMIN vérifiés pour chaque classe</h2>
+    <p>YOMIN fabrique les deux côtés de la mesure, ce qui facilite la cohérence de l&rsquo;association :</p>
+    <ul>
+      <li><strong>Compteurs triphasés classe 1</strong> &mdash; compteurs à carte IC prépayée, afficheur LCD, communication RS485 et montage rail DIN, en configuration triphasée tétrapolaire.</li>
+      <li><strong>Compteurs monophasés classe 1</strong> &mdash; compteurs prépayés à clavier STS avec comptage d&rsquo;énergie active, pour le sous-comptage prépayé.</li>
+      <li><strong>Transformateurs de courant classe 0,5</strong> &mdash; TC de comptage à noyau ouvrant, modèles 2000/5 A et 1000/5 A en 720 V AC, et une version 250/5 A à 50 spires pour départs plus faibles.</li>
+      <li><strong>Transformateurs de courant classe 1,0</strong> &mdash; TC basse tension série MSQ pour entrées de compteurs, dont des versions 75/5 A.</li>
+    </ul>
+    <p>Voir la gamme <a href="/products/energy-meter">compteurs d&rsquo;énergie</a> et la gamme <a href="/products/current-transformer">transformateurs de courant</a> pour l&rsquo;association correspondant à votre objectif de classe. Pour le volet TC, lisez <a href="/blog/ct-accuracy-class-guide">les classes de précision des TC expliquées</a> ; côté armoire, le <a href="/blog/din-rail-guide">guide du rail DIN</a> traite des largeurs de modules et du montage, et <a href="/blog/how-to-choose-a-three-phase-energy-meter">comment choisir un compteur triphasé</a> détaille la séquence de sélection.</p>
+
+    <h2>Ce qu&rsquo;une meilleure classe ne corrige pas</h2>
+    <ul>
+      <li><strong>Mauvais rapport de TC ou polarité inversée</strong> &mdash; aucune classe de compteur ne rattrape une mesure faussée dès le transformateur.</li>
+      <li><strong>Fardeau des conducteurs</strong> &mdash; des liaisons secondaires longues et fines ajoutent une erreur que le compteur ne voit pas.</li>
+      <li><strong>Déséquilibre de phases et harmoniques</strong> &mdash; une classe mesurée sur forme d&rsquo;onde propre ne se transpose pas à un réseau distordu.</li>
+      <li><strong>Données non relevées</strong> &mdash; un compteur 0,5S sans liaison de communication fonctionnelle se relève encore à la main.</li>
+    </ul>
+    <p>Spécifiez la classe selon le risque commercial, puis investissez le budget suivant dans le TC et l&rsquo;installation. C&rsquo;est cet ordre qui réduit réellement l&rsquo;erreur de mesure.</p>
+
+    <h2>Questions fréquentes</h2>
+    <h3>La classe 0,5 est-elle plus précise que la classe 1 ?</h3>
+    <p>Oui. L&rsquo;indice de classe est l&rsquo;erreur maximale admissible : la classe 0,5 tolère &plusmn;0,5 % et la classe 1 &plusmn;1 %. Un chiffre plus petit correspond toujours à un compteur plus précis.</p>
+    <h3>Que signifie le S dans la classe 0,5S ?</h3>
+    <p>Le S désigne les classes à plage étendue. La précision est garantie jusqu&rsquo;à une fraction beaucoup plus faible du courant assigné que sur les classes sans S, ce qui compte en comptage sur TC lorsque le courant reste faible longtemps, la nuit ou à faible charge.</p>
+    <h3>Faut-il un compteur 0,5S pour refacturer des locataires ?</h3>
+    <p>En général non. La classe 1 suffit pour la refacturation et le sous-comptage, et l&rsquo;investissement dans un meilleur transformateur de courant réduit l&rsquo;erreur totale bien plus que le seul passage à un compteur plus précis.</p>
+    <h3>Peut-on associer un compteur classe 1 à un TC classe 0,5 ?</h3>
+    <p>Oui, mais l&rsquo;ensemble est alors limité par le compteur. L&rsquo;erreur totale d&rsquo;une mesure sur TC est la somme de l&rsquo;erreur du TC, de l&rsquo;effet du fardeau des conducteurs et de l&rsquo;erreur du compteur : le maillon le plus faible impose le résultat.</p>
+    <h3>La classe de précision couvre-t-elle le transformateur de courant ?</h3>
+    <p>Non. La classe inscrite sur le compteur ne concerne que le compteur, mesurée à ses propres bornes dans les conditions de référence. Le TC possède sa propre classe, et l&rsquo;installation ajoute les erreurs de conducteurs et de fardeau.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous devez accorder la classe du compteur à votre TC ?</h2>
+    <p>Envoyez-nous le rapport et la classe du TC, le profil de charge et le destinataire de la facture. Nous vous dirons quelle classe de compteur améliore réellement la mesure et laquelle ne sert à rien. Échangez directement avec l&rsquo;usine sur <a href="https://wa.me/8619016543301">WhatsApp</a> ou via le formulaire de contact.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn" href="https://wa.me/8619016543301" style="margin-left:12px">Discuter sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
