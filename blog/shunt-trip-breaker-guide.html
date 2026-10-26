@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shunt Trip Breaker Guide: Wiring, Trip Sources and Selection | Yomin Electric</title>
+<meta name="description" content="A shunt trip breaker opens on a signal from a remote control source such as a fire alarm or emergency stop. How the coil is wired, how it differs from an undervoltage release, and what to specify.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/shunt-trip-breaker-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Shunt Trip Breaker Guide: Wiring, Trip Sources and Selection",
+      "description": "A shunt trip breaker opens on a signal from a remote control source such as a fire alarm or emergency stop. How the coil is wired, how it differs from an undervoltage release, and what to specify.",
+      "image": "https://www.yominelectric.com/assets/images/blog/shunt-trip-breaker-guide/hero.png",
+      "datePublished": "2026-10-26",
+      "dateModified": "2026-10-26",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/shunt-trip-breaker-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a shunt trip and an undervoltage release?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A shunt trip releases the breaker when voltage is applied to its coil, so it is a deliberate command from an operator or a detection system. An undervoltage release releases the breaker when its coil loses voltage, so it is a continuous monitoring function that trips on supply failure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a shunt trip coil stay energised after the breaker opens?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It should not. Use an auxiliary contact on the breaker to cut the coil circuit as soon as the main contacts open. Leaving the coil energised burns it out and can leave the breaker unable to be reclosed until the control circuit is repaired."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a shunt trip breaker still protect against overload?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The shunt trip is an additional release mechanism added to a breaker that already has its own overcurrent protection. It does not replace the thermal-magnetic or electronic trip unit, it adds a remote command path on top of it."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Circuit Protection</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Shunt Trip Breaker Guide: Wiring, Trip Sources and Selection</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>October 26, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/shunt-trip-breaker-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/shunt-trip-breaker-guide/hero.png" alt="Draw-out air circuit breaker with secondary terminal block and shunt trip release installed in a low-voltage switchboard" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p><strong>A shunt trip breaker is a circuit breaker fitted with a small solenoid coil that opens the breaker when a control voltage is applied to it.</strong> The coil does the mechanical work of pressing the trip bar, so a fire alarm panel, an emergency stop button or a building management system can disconnect a circuit without anyone standing at the switchboard. The breaker keeps its normal overcurrent protection; the shunt trip simply adds a second, remote way to open it.</p>
+
+    <p>That definition is easy. Getting one installed so that it works on the day it is needed is harder, because most shunt trip failures are wiring failures rather than device failures. The coil is energised from a control circuit that somebody else designs, and the two designs are rarely checked against each other.</p>
+
+    <h2>What the coil actually does</h2>
+    <p>The shunt trip release, sometimes called a trip coil or shunt release, is an accessory that bolts onto the breaker mechanism. When the control voltage reaches the coil, the plunger strikes the trip latch and the breaker opens through its normal mechanism. Because it uses the mechanism rather than forcing the contacts apart, the breaker still opens at the speed its design allows and still clears any current that happens to be flowing.</p>
+    <p>Two consequences follow. First, the shunt trip can open a breaker carrying load, which is why it is acceptable for emergency disconnection and not merely for isolation. Second, the coil is a short-duty component. It is built to deliver one decisive stroke, not to sit energised for hours.</p>
+
+    <h2>Shunt trip or undervoltage release?</h2>
+    <p>These two accessories are constantly confused, and choosing the wrong one produces a breaker that behaves in exactly the opposite way to what the designer intended.</p>
+    <table>
+      <thead>
+        <tr><th>Property</th><th>Shunt trip release</th><th>Undervoltage release</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Signal that opens the breaker</td><td>Voltage <em>applied</em> to the coil</td><td>Voltage <em>lost</em> from the coil</td></tr>
+        <tr><td>Coil state in normal service</td><td>De-energised, waiting</td><td>Continuously energised, holding</td></tr>
+        <tr><td>Behaviour on control supply failure</td><td>No trip &mdash; the breaker stays closed</td><td>Trips &mdash; fails safe</td></tr>
+        <tr><td>Typical use</td><td>Fire alarm interlock, remote e-stop, load shedding</td><td>Motor circuits, safety circuits, supply monitoring</td></tr>
+        <tr><td>Can the breaker be closed without the coil circuit?</td><td>Yes</td><td>No &mdash; the release must be energised first</td></tr>
+      </tbody>
+    </table>
+    <p>The practical rule: if you want the breaker to open <em>because something happened</em>, specify a shunt trip. If you want the breaker to open <em>because something stopped happening</em>, specify an undervoltage release. A fire alarm interlock is the first case. A conveyor safety circuit that must drop out when its monitoring relay loses power is the second.</p>
+
+    <h2>Where a shunt trip earns its cost</h2>
+    <ul>
+      <li><strong>Fire alarm interlock.</strong> The most common application by a wide margin. On alarm, the shunt trip opens the incoming or distribution device so that firefighters are not working around live conductors.</li>
+      <li><strong>Remote emergency stop.</strong> A stop button at a workstation or a loading dock that must isolate a remote panel.</li>
+      <li><strong>Load shedding and peak control.</strong> A controller opens selected non-essential feeders when demand approaches a contracted maximum.</li>
+      <li><strong>Generator and changeover interlocks.</strong> Preventing a breaker from being closed onto a source that is not available.</li>
+      <li><strong>Commercial kitchen and workshop equipment.</strong> A single gas or fire detection signal that must kill power to a group of cooking or machining circuits.</li>
+    </ul>
+    <p>In each case the value is the same: the person who needs the power off is not the person standing at the panel, and the delay of walking to the panel is the risk being designed out.</p>
+
+    <h2>Wiring the coil so it survives</h2>
+    <p>This is where most installations go wrong. The coil circuit is a small control circuit and it is easy to treat as an afterthought, but it carries the whole reliability of the function.</p>
+    <ol>
+      <li><strong>Confirm the coil voltage before anything else.</strong> Releases are made for different control voltages, and a 24&nbsp;V coil connected to a 230&nbsp;V control circuit is destroyed on the first test. Read the label on the release itself, not the breaker nameplate.</li>
+      <li><strong>Feed the coil from a dedicated circuit with its own protection.</strong> A small fuse or miniature breaker in the control circuit limits the damage if the coil or its wiring fails. Taking the feed from an unrelated circuit means a fault in the coil can take out something more important.</li>
+      <li><strong>Use a momentary contact, not a maintained one.</strong> The trip command should be a pulse. A switch that stays closed keeps the coil energised after the breaker has already opened.</li>
+      <li><strong>Interrupt the coil with an auxiliary contact.</strong> Fit a normally-closed auxiliary contact in series with the coil so that the circuit is broken the moment the breaker opens. This single detail is what stops coils burning out, and it also prevents the coil from holding the mechanism in a state that blocks reclosing.</li>
+      <li><strong>Keep control wiring out of power conduits.</strong> Induced voltages on a long control run can be enough to nuisance-trip a sensitive release. Use screened cable where the run is long or passes close to variable-speed drives.</li>
+      <li><strong>Label the function at both ends.</strong> A breaker that opens for no apparent reason costs hours of fault-finding. A label reading "shunt trip &mdash; fire alarm zone 3" costs nothing.</li>
+    </ol>
+
+    <h2>Specifying the accessory with the breaker</h2>
+    <p>Shunt trips are accessories, and accessories ordered later cost more, arrive later, and occasionally cannot be fitted to the breaker already on site. The cheapest moment to specify one is on the original order.</p>
+    <table>
+      <thead>
+        <tr><th>Accessory</th><th>What it gives you</th><th>Order with the breaker?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Shunt trip release</td><td>Remote electrical opening on command</td><td>Yes &mdash; field fitting is possible but not always economic</td></tr>
+        <tr><td>Undervoltage release</td><td>Opening on loss of control supply</td><td>Yes &mdash; same reason</td></tr>
+        <tr><td>Auxiliary contacts</td><td>Status signalling and coil interlocking</td><td>Yes &mdash; needed for the coil circuit itself</td></tr>
+        <tr><td>Motor operator</td><td>Remote electrical closing and resetting</td><td>Yes &mdash; determines the front-frame variant</td></tr>
+      </tbody>
+    </table>
+    <p>When you send an enquiry, state the coil voltage and whether it is AC or DC, the number of auxiliary contacts, and the control source that will drive the release. Those three answers remove almost all of the ambiguity, and they are the three things a supplier cannot infer from the breaker rating alone.</p>
+
+    <h2>Where YOMIN fits</h2>
+    <p>YOMIN builds intelligent universal air circuit breakers for low-voltage main switchboard duty under the <a href="/products/fuse-protection">fuses and protection</a> category. The YM-AB1 range is a three-pole, 50/60&nbsp;Hz air breaker rated from 200&nbsp;A to 6300&nbsp;A, available in fixed or draw-out form, and it accepts the usual accessory set including shunt trip release, undervoltage release, auxiliary contacts and motor operator.</p>
+    <p>Standard production runs 15&ndash;25 working days, extending to 30&ndash;45 days for OEM and customised configurations, with a minimum order of 100 units (500 for OEM or customisation). Production is under ISO 9001 quality management with CE marking on the European variants, and units carry a two-year warranty against manufacturing defects.</p>
+    <p>If you are coordinating a fire alarm interlock or a load-shedding scheme, send the coil voltage, the auxiliary contact count and the control source description with your enquiry. It is faster than a design review and it prevents the most common ordering error in this accessory family.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>What is the difference between a shunt trip and an undervoltage release?</h3>
+    <p>A shunt trip releases the breaker when voltage is applied to its coil, so it is a deliberate command from an operator or a detection system. An undervoltage release releases the breaker when its coil loses voltage, so it is a continuous monitoring function that trips on supply failure.</p>
+    <h3>Can a shunt trip coil stay energised after the breaker opens?</h3>
+    <p>It should not. Use an auxiliary contact on the breaker to cut the coil circuit as soon as the main contacts open. Leaving the coil energised burns it out and can leave the breaker unable to be reclosed until the control circuit is repaired.</p>
+    <h3>Does a shunt trip breaker still protect against overload?</h3>
+    <p>Yes. The shunt trip is an additional release mechanism added to a breaker that already has its own overcurrent protection. It does not replace the thermal-magnetic or electronic trip unit, it adds a remote command path on top of it.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying a breaker with a shunt trip release?</h2>
+    <p>Send us the coil voltage, the auxiliary contact count and the control source that will drive the release. We build intelligent universal air circuit breakers from 200&nbsp;A to 6300&nbsp;A with ISO 9001 production and CE marking.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

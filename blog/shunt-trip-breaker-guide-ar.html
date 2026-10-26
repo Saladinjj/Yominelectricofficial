@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>قاطع الدائرة مع مُحرِّر فصل تحويلي: التوصيل والاختيار | Yomin Electric</title>
+<meta name="description" content="قاطع الدائرة مع مُحرِّر فصل تحويلي يفتح عند إشارة من مصدر تحكُّم بعيد مثل إنذار الحريق أو التوقف الطارئ. طريقة توصيل الملف، والفرق عن مُحرِّر الجهد الأدنى، وما يجب تحديده عند الطلب.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/shunt-trip-breaker-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-ar">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "قاطع الدائرة مع مُحرِّر فصل تحويلي (Shunt Trip): التوصيل ومصادر الفصل والاختيار",
+      "description": "قاطع الدائرة مع مُحرِّر فصل تحويلي يفتح عند إشارة من مصدر تحكُّم بعيد مثل إنذار الحريق أو التوقف الطارئ. طريقة توصيل الملف، والفرق عن مُحرِّر الجهد الأدنى، وما يجب تحديده عند الطلب.",
+      "image": "https://www.yominelectric.com/assets/images/blog/shunt-trip-breaker-guide/hero.png",
+      "datePublished": "2026-10-26",
+      "dateModified": "2026-10-26",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/shunt-trip-breaker-guide-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما الفرق بين مُحرِّر الفصل التحويلي ومُحرِّر الجهد الأدنى؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يفتح المُحرِّر التحويلي القاطع عند تطبيق جهد على ملفه، وهو أمر مقصود من مشغّل أو من نظام كشف. أما مُحرِّر الجهد الأدنى فيفتح القاطع عند فقد الجهد من ملفه، وهو مراقبة مستمرة تفصل عند انقطاع التغذية."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يمكن أن يبقى ملف الفصل التحويلي مُغذَّى بعد فتح القاطع؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا ينبغي ذلك. استخدم تلامسًا مساعدًا على القاطع لقطع دائرة الملف بمجرد فتح التلامسات الرئيسية. بقاء الملف مُغذَّى يحرقه وقد يترك القاطع غير قابل لإعادة الإغلاق."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يظل القاطع المزوَّد بمُحرِّر تحويلي يحمي من الحمل الزائد؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم. المُحرِّر التحويلي آلية فتح إضافية تُضاف إلى قاطع يملك بالفعل حمايته ضد التيار الزائد، ولا يحل محل وحدة الفصل الحراري المغناطيسي أو الإلكترونية."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">الرئيسية</a> &middot; <a href="/blog">المدونة</a> &middot; <span>حماية الدوائر</span></div>
+    <span class="bh-tag">دليل الشراء</span>
+    <h1 class="bh-title">قاطع الدائرة مع مُحرِّر فصل تحويلي (Shunt Trip): التوصيل ومصادر الفصل والاختيار</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>26 أكتوبر 2026</span>
+      <span class="divider"></span>
+      <span>9 دقائق قراءة</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/shunt-trip-breaker-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/shunt-trip-breaker-guide/hero.png" alt="قاطع دائرة هوائي قابل للسحب مع طرفية ثانوية وملف فصل تحويلي داخل لوحة توزيع جهد منخفض" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p><strong>قاطع الدائرة مع مُحرِّر فصل تحويلي هو قاطع مزوَّد بملف كهربائي صغير يفتح القاطع عند تطبيق جهد تحكُّم عليه.</strong> يدفع الملف ذراع الفصل الميكانيكي، فيتمكَّن لوح إنذار الحريق أو زر التوقف الطارئ أو نظام إدارة المبنى من قطع الدائرة دون أن يقف أحد أمام اللوحة. ويحتفظ القاطع بحمايته الطبيعية ضد التيار الزائد؛ فالمُحرِّر التحويلي يضيف فقط وسيلة ثانية للفتح، عن بُعد.</p>
+
+    <p>التعريف بسيط، لكن التنفيذ أقل بساطة بكثير، لأن معظم أعطال هذا الملف ناتجة عن التوصيل لا عن الجهاز نفسه. فالملف يُغذَّى من دائرة تحكُّم يصممها شخص آخر، ونادرًا ما تُراجَع الدائرتان معًا.</p>
+
+    <h2>ما الذي يفعله الملف فعليًا</h2>
+    <p>مُحرِّر الفصل التحويلي، ويُسمَّى أيضًا ملف الفصل، ملحق يُثبَّت على ميكانيزم القاطع. وعندما يصل جهد التحكُّم إلى الملف، يضرب القلب الحديدي مسمار الفصل فيُفتح القاطع عبر ميكانيزمه الطبيعي. ولأنه يستخدم الميكانيزم بدلًا من إبعاد التلامسات بالقوة، يفتح القاطع بالسرعة المصمَّم عليها ويقطع التيار المار فعليًا في تلك اللحظة.</p>
+    <p>وينتج عن ذلك نتيجتان: الأولى أن المُحرِّر يستطيع فتح قاطع محمَّل، ولذلك يُقبل لاستخدامه في القطع الطارئ لا في العزل فقط. والثانية أن الملف عنصر قصير الخدمة، صُمِّم ليعطي شوطًا حاسمًا واحدًا لا ليبقى مُغذَّى ساعات.</p>
+
+    <h2>مُحرِّر فصل تحويلي أم مُحرِّر جهد أدنى؟</h2>
+    <p>يُخلط بين هذين الملحقين باستمرار، واختيار الخاطئ ينتج قاطعًا يتصرف بعكس ما قصده المصمم تمامًا.</p>
+    <table>
+      <thead>
+        <tr><th>الخاصية</th><th>مُحرِّر الفصل التحويلي</th><th>مُحرِّر الجهد الأدنى</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>الإشارة التي تفتح القاطع</td><td>جهد <em>يُطبَّق</em> على الملف</td><td>جهد <em>يُفقَد</em> من الملف</td></tr>
+        <tr><td>حالة الملف في التشغيل الطبيعي</td><td>منزوع الجهد، في الانتظار</td><td>مُغذَّى باستمرار، في حالة تثبيت</td></tr>
+        <tr><td>السلوك عند فقد تغذية التحكُّم</td><td>لا فصل &mdash; يبقى القاطع مغلقًا</td><td>فصل &mdash; أمان بالانقطاع</td></tr>
+        <tr><td>الاستخدام المعتاد</td><td>الترابط مع إنذار الحريق، توقف طارئ عن بُعد، تخفيف الأحمال</td><td>دوائر المحركات، دوائر الأمان، مراقبة التغذية</td></tr>
+        <tr><td>هل يمكن إغلاق القاطع دون دائرة الملف؟</td><td>نعم</td><td>لا &mdash; يجب تغذية المُحرِّر أولًا</td></tr>
+      </tbody>
+    </table>
+    <p>القاعدة العملية: إذا أردت أن يُفتح القاطع <em>لأن شيئًا قد حدث</em> فاختر مُحرِّر الفصل التحويلي. وإذا أردت أن يُفتح <em>لأن شيئًا قد توقف</em> فاختر مُحرِّر الجهد الأدنى. الترابط مع إنذار الحريق من الحالة الأولى، ودائرة أمان ناقل يجب أن تسقط عندما يفقد مرحّل المراقبة تغذيته من الحالة الثانية.</p>
+
+    <h2>أين يستحق المُحرِّر التحويلي تكلفته</h2>
+    <ul>
+      <li><strong>الترابط مع إنذار الحريق.</strong> أكثر التطبيقات شيوعًا بفارق كبير: عند الإنذار يفتح المُحرِّر قاطع الدخول أو قاطع التوزيع حتى لا يعمل رجال الإطفاء قرب موصلات تحت الجهد.</li>
+      <li><strong>توقف طارئ عن بُعد.</strong> زر في محطة عمل أو على رصيف تحميل يجب أن يعزل لوحة بعيدة.</li>
+      <li><strong>تخفيف الأحمال وضبط الذروة.</strong> وحدة تحكم تفتح مغذيات غير أساسية عندما يقترب الطلب من الحد التعاقدي الأقصى.</li>
+      <li><strong>الترابط بين المصادر والمولّدات.</strong> منع إغلاق قاطع على مصدر غير متاح.</li>
+      <li><strong>المطابخ التجارية والورش.</strong> إشارة واحدة من كاشف غاز أو حريق تقطع التغذية عن مجموعة دوائر طبخ أو تشغيل.</li>
+    </ul>
+    <p>في كل الحالات القيمة واحدة: من يحتاج إلى قطع التيار ليس هو من يقف أمام اللوحة، وزمن الانتقال إلى اللوحة هو بالضبط الخطر الذي يُصمَّم النظام لإزالته.</p>
+
+    <h2>توصيل الملف بما يضمن سلامته</h2>
+    <p>هنا تفشل معظم التركيبات. دائرة الملف دائرة تحكُّم صغيرة يسهل التعامل معها كتفصيل ثانوي، مع أنها تحمل موثوقية الوظيفة كلها.</p>
+    <ol>
+      <li><strong>تأكَّد من جهد الملف قبل أي شيء.</strong> تُصنع المُحرِّرات لجهد تحكُّم مختلف، وملف 24 فولت موصول بدائرة تحكُّم 230 فولت يُتلف من أول اختبار. اقرأ بطاقة الملف نفسه لا لوحة بيانات القاطع.</li>
+      <li><strong>غذِّ الملف من دائرة مخصَّصة ومحمية.</strong> مصهر صغير أو قاطع مصغَّر في دائرة التحكُّم يحدّ من الأضرار إذا تعطل الملف أو توصيله. أخذ التغذية من دائرة غير ذات صلة يسمح لعطل الملف بإسقاط شيء أهم.</li>
+      <li><strong>استخدم تلامسًا لحظيًا لا مستمرًا.</strong> أمر الفصل يجب أن يكون نبضة. المفتاح الذي يبقى مغلقًا يُبقي الملف مُغذَّى بعد أن يكون القاطع قد فُتح بالفعل.</li>
+      <li><strong>اقطع دائرة الملف بتلامس مساعد.</strong> ضع تلامسًا مساعدًا مغلقًا عادةً على التوالي مع الملف بحيث تُفتح الدائرة لحظة فتح التلامسات الرئيسية. هذا التفصيل وحده هو ما يمنع احتراق الملفات، ويمنع أيضًا أن يُبقي الملف الميكانيزم في حالة تعطّل إعادة الإغلاق.</li>
+      <li><strong>أبقِ أسلاك التحكُّم خارج مواسير القدرة.</strong> في المسارات الطويلة قد تكفي الجهود المستحثة لإحداث فصل غير مقصود في مُحرِّر حسّاس. استخدم كبلًا محجوبًا حين يكون المسار طويلًا أو قريبًا من مغيرات السرعة.</li>
+      <li><strong>ضع بطاقة تعريف للوظيفة على الطرفين.</strong> قاطع يفتح بلا سبب ظاهر يكلّف ساعات من تتبع الأعطال. وبطاقة تقول «فصل تحويلي &mdash; إنذار حريق المنطقة 3» لا تكلّف شيئًا.</li>
+    </ol>
+
+    <h2>تحديد الملحق مع القاطع</h2>
+    <p>المُحرِّرات ملحقات، والملحق المطلوب لاحقًا يكلّف أكثر ويصل متأخرًا وأحيانًا لا يمكن تركيبه على قاطع موجود أصلًا في الموقع. أرخص لحظة لتحديده هي أمر الشراء الأصلي.</p>
+    <table>
+      <thead>
+        <tr><th>الملحق</th><th>ما يوفره</th><th>يُطلب مع القاطع؟</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>مُحرِّر الفصل التحويلي</td><td>فتح كهربائي عن بُعد بالأمر</td><td>نعم &mdash; التركيب الميداني ممكن لكنه غير اقتصادي غالبًا</td></tr>
+        <tr><td>مُحرِّر الجهد الأدنى</td><td>فتح عند فقد تغذية التحكُّم</td><td>نعم &mdash; للسبب نفسه</td></tr>
+        <tr><td>تلامسات مساعدة</td><td>إشارة الحالة وترابط دائرة الملف</td><td>نعم &mdash; لازمة لدائرة الملف نفسها</td></tr>
+        <tr><td>مشغّل بمحرك</td><td>إغلاق وإعادة ضبط عن بُعد</td><td>نعم &mdash; يحدد نسخة الواجهة</td></tr>
+      </tbody>
+    </table>
+    <p>عند إرسال طلب العرض، اذكر جهد الملف ونوعه (متردد أو مستمر)، وعدد التلامسات المساعدة، ومصدر التحكُّم الذي سيشغّل المُحرِّر. هذه الإجابات الثلاث تُزيل معظم الغموض، وهي بالضبط المعلومات الثلاث التي لا يستطيع المورّد استنتاجها من تصنيف القاطع وحده.</p>
+
+    <h2>موقع YOMIN</h2>
+    <p>تصنع YOMIN قواطع هوائية عالمية ذكية لخدمة الدخول في لوحات التوزيع ذات الجهد المنخفض، ضمن فئة <a href="/products/fuse-protection">المصاهر والحماية</a>. سلسلة YM-AB1 قاطع هوائي ثلاثي الأقطاب بتردد 50/60 هرتز وتصنيف من 200 أمبير إلى 6300 أمبير، متوفر بنسخة ثابتة أو قابلة للسحب، ويقبل مجموعة الملحقات المعتادة: مُحرِّر فصل تحويلي، ومُحرِّر جهد أدنى، وتلامسات مساعدة، ومشغّل بمحرك.</p>
+    <p>يستغرق الإنتاج القياسي من 15 إلى 25 يوم عمل، ويمتد إلى 30&ndash;45 يومًا للتكوينات الخاصة بعلامة العميل (OEM) والتخصيص، بحد أدنى للطلب 100 وحدة (500 في حالة OEM أو التخصيص). ويجري الإنتاج تحت إدارة جودة ISO 9001 مع علامة CE على النسخ الأوروبية، وتُغطى الوحدات بضمان سنتين ضد عيوب التصنيع.</p>
+    <p>إذا كنت تنسّق ترابطًا مع إنذار حريق أو خطة لتخفيف الأحمال، فأرسل مع استفسارك جهد الملف وعدد التلامسات المساعدة ووصف مصدر التحكُّم. هذا أسرع من مراجعة تصميم، ويمنع خطأ الطلب الأكثر شيوعًا في هذه العائلة من الملحقات.</p>
+
+    <h2>الأسئلة الشائعة</h2>
+    <h3>ما الفرق بين مُحرِّر الفصل التحويلي ومُحرِّر الجهد الأدنى؟</h3>
+    <p>يفتح المُحرِّر التحويلي القاطع عند تطبيق جهد على ملفه، وهو أمر مقصود من مشغّل أو من نظام كشف. أما مُحرِّر الجهد الأدنى فيفتح القاطع عند فقد الجهد من ملفه، وهو مراقبة مستمرة تفصل عند انقطاع التغذية.</p>
+    <h3>هل يمكن أن يبقى ملف الفصل التحويلي مُغذَّى بعد فتح القاطع؟</h3>
+    <p>لا ينبغي ذلك. استخدم تلامسًا مساعدًا على القاطع لقطع دائرة الملف بمجرد فتح التلامسات الرئيسية. بقاء الملف مُغذَّى يحرقه وقد يترك القاطع غير قابل لإعادة الإغلاق حتى إصلاح دائرة التحكُّم.</p>
+    <h3>هل يظل القاطع المزوَّد بمُحرِّر تحويلي يحمي من الحمل الزائد؟</h3>
+    <p>نعم. المُحرِّر التحويلي آلية فتح إضافية تُضاف إلى قاطع يملك بالفعل حمايته ضد التيار الزائد. وهو لا يحل محل وحدة الفصل الحراري المغناطيسي أو الإلكترونية، بل يضيف مسار أمر عن بُعد فوقها.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>هل تحدد قاطعًا مع مُحرِّر فصل تحويلي؟</h2>
+    <p>أرسل لنا جهد الملف وعدد التلامسات المساعدة ومصدر التحكُّم الذي سيشغّل المُحرِّر. نصنع قواطع هوائية عالمية ذكية من 200 أمبير إلى 6300 أمبير بإنتاج وفق ISO 9001 وعلامة CE.</p>
+    <a class="btn btn-primary" href="/contact">اطلب عرض سعر</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">تحدث على واتساب</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

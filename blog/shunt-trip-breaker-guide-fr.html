@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disjoncteur à déclencheur shunt : câblage et sélection | Yomin Electric</title>
+<meta name="description" content="Un disjoncteur à déclencheur shunt s'ouvre sur un signal d'une source de commande distante, comme une alarme incendie ou un arrêt d'urgence. Câblage de la bobine, différence avec un déclencheur à minimum de tension, et points à spécifier.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/shunt-trip-breaker-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Disjoncteur à déclencheur shunt : câblage, sources de déclenchement et choix",
+      "description": "Un disjoncteur à déclencheur shunt s'ouvre sur un signal d'une source de commande distante, comme une alarme incendie ou un arrêt d'urgence. Câblage de la bobine, différence avec un déclencheur à minimum de tension, et points à spécifier.",
+      "image": "https://www.yominelectric.com/assets/images/blog/shunt-trip-breaker-guide/hero.png",
+      "datePublished": "2026-10-26",
+      "dateModified": "2026-10-26",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/shunt-trip-breaker-guide-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelle est la différence entre un déclencheur shunt et un déclencheur à minimum de tension ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le déclencheur shunt ouvre le disjoncteur lorsqu'une tension est appliquée à sa bobine : c'est un ordre volontaire. Le déclencheur à minimum de tension ouvre le disjoncteur lorsque sa bobine perd sa tension : c'est une surveillance continue qui déclenche en cas de défaut d'alimentation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "La bobine shunt peut-elle rester alimentée après l'ouverture du disjoncteur ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Un contact auxiliaire du disjoncteur doit couper le circuit de la bobine dès l'ouverture des contacts principaux. Une bobine maintenue alimentée brûle et peut empêcher la refermeture de l'appareil."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un disjoncteur à déclencheur shunt protège-t-il toujours contre les surcharges ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Le déclencheur shunt est un organe d'ouverture supplémentaire ajouté à un disjoncteur qui possède déjà sa protection contre les surintensités. Il ne remplace pas le déclencheur thermique-magnétique ou électronique."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Protection des circuits</span></div>
+    <span class="bh-tag">Guide d'achat</span>
+    <h1 class="bh-title">Disjoncteur à déclencheur shunt : câblage, sources de déclenchement et choix</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>26 octobre 2026</span>
+      <span class="divider"></span>
+      <span>9 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/shunt-trip-breaker-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/shunt-trip-breaker-guide/hero.png" alt="Disjoncteur à air débrochable avec bornier secondaire et déclencheur shunt dans un tableau basse tension" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p><strong>Un disjoncteur à déclencheur shunt est un disjoncteur équipé d'une petite bobine qui ouvre l'appareil lorsqu'une tension de commande lui est appliquée.</strong> La bobine appuie sur le déclencheur mécanique, ce qui permet à une centrale de détection incendie, à un arrêt d'urgence ou à un système de gestion technique du bâtiment de couper un circuit sans qu'une personne soit présente au tableau. Le disjoncteur conserve sa protection contre les surintensités : le déclencheur shunt ajoute seulement un second moyen d'ouverture, à distance.</p>
+
+    <p>La définition est simple. La mise en service l'est beaucoup moins, parce que la majorité des défaillances de déclencheur shunt sont des défaillances de câblage et non des défaillances d'appareil. La bobine est alimentée par un circuit de commande conçu par quelqu'un d'autre, et les deux études sont rarement confrontées l'une à l'autre.</p>
+
+    <h2>Ce que fait réellement la bobine</h2>
+    <p>Le déclencheur shunt, aussi appelé bobine de déclenchement, est un accessoire qui se monte sur le mécanisme du disjoncteur. Lorsque la tension de commande atteint la bobine, le noyau frappe le verrou de déclenchement et l'appareil s'ouvre par son mécanisme normal. Comme il utilise le mécanisme au lieu d'écarter les contacts de force, le disjoncteur s'ouvre à la vitesse prévue par sa conception et coupe le courant qui circule réellement à cet instant.</p>
+    <p>Deux conséquences en découlent. D'abord, le déclencheur shunt peut ouvrir un disjoncteur en charge, ce qui le rend acceptable pour une coupure d'urgence et pas seulement pour une séparation. Ensuite, la bobine est un composant à service bref : elle est conçue pour délivrer une course décisive, pas pour rester alimentée pendant des heures.</p>
+
+    <h2>Déclencheur shunt ou déclencheur à minimum de tension ?</h2>
+    <p>Ces deux accessoires sont constamment confondus, et choisir le mauvais produit un disjoncteur qui se comporte exactement à l'inverse de ce que le concepteur attendait.</p>
+    <table>
+      <thead>
+        <tr><th>Critère</th><th>Déclencheur shunt</th><th>Déclencheur à minimum de tension</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Signal qui ouvre le disjoncteur</td><td>Tension <em>appliquée</em> à la bobine</td><td>Tension <em>perdue</em> par la bobine</td></tr>
+        <tr><td>État de la bobine en service normal</td><td>Hors tension, en attente</td><td>Alimentée en permanence, en maintien</td></tr>
+        <tr><td>Comportement en cas de perte de l'alimentation de commande</td><td>Aucun déclenchement, le disjoncteur reste fermé</td><td>Déclenchement, sécurité positive</td></tr>
+        <tr><td>Usage typique</td><td>Asservissement incendie, arrêt d'urgence déporté, effacement de charge</td><td>Circuits moteurs, circuits de sécurité, surveillance de réseau</td></tr>
+        <tr><td>Réenclenchement possible sans le circuit de commande ?</td><td>Oui</td><td>Non, la bobine doit d'abord être alimentée</td></tr>
+      </tbody>
+    </table>
+    <p>La règle pratique : si le disjoncteur doit s'ouvrir <em>parce qu'un événement s'est produit</em>, choisissez un déclencheur shunt. S'il doit s'ouvrir <em>parce qu'un phénomène a cessé</em>, choisissez un déclencheur à minimum de tension. L'asservissement incendie relève du premier cas ; un circuit de sécurité de convoyeur qui doit retomber lorsque son relais de surveillance perd son alimentation relève du second.</p>
+
+    <h2>Où le déclencheur shunt justifie son coût</h2>
+    <ul>
+      <li><strong>Asservissement de l'alarme incendie.</strong> De loin l'application la plus fréquente : à l'alarme, le déclencheur ouvre l'appareil d'arrivée ou de distribution pour que les secours ne travaillent pas à proximité de conducteurs sous tension.</li>
+      <li><strong>Arrêt d'urgence déporté.</strong> Un bouton en poste de travail ou sur un quai de chargement qui doit isoler une armoire éloignée.</li>
+      <li><strong>Effacement de charge et pointe.</strong> Un automate ouvre certains départs non prioritaires lorsque la puissance appelée approche du maximum souscrit.</li>
+      <li><strong>Interverrouillage groupe et inverseur.</strong> Empêcher la fermeture d'un disjoncteur sur une source qui n'est pas disponible.</li>
+      <li><strong>Cuisines professionnelles et ateliers.</strong> Un seul signal de détection de gaz ou d'incendie qui coupe l'alimentation d'un groupe de circuits de cuisson ou d'usinage.</li>
+    </ul>
+    <p>Dans tous les cas, la valeur est la même : la personne qui a besoin de couper n'est pas celle qui se trouve devant le tableau, et le temps de trajet jusqu'au tableau est précisément le risque que l'on supprime.</p>
+
+    <h2>Câbler la bobine pour qu'elle tienne</h2>
+    <p>C'est ici que la plupart des installations se perdent. Le circuit de bobine est un petit circuit de commande, facile à traiter comme un détail, alors qu'il porte toute la fiabilité de la fonction.</p>
+    <ol>
+      <li><strong>Vérifiez la tension de bobine avant tout le reste.</strong> Les déclencheurs existent en plusieurs tensions de commande, et une bobine 24 V raccordée à un circuit de commande 230 V est détruite au premier essai. Lisez l'étiquette du déclencheur, pas la plaque du disjoncteur.</li>
+      <li><strong>Alimentez la bobine par un circuit dédié, protégé.</strong> Un petit fusible ou un disjoncteur miniature dans le circuit de commande limite les dégâts si la bobine ou son câblage défaille. Un départ pris sur un circuit non lié permet à un défaut de bobine de faire tomber autre chose de plus important.</li>
+      <li><strong>Utilisez un contact momentané, pas maintenu.</strong> L'ordre de déclenchement doit être une impulsion. Un interrupteur qui reste fermé maintient la bobine alimentée alors que le disjoncteur est déjà ouvert.</li>
+      <li><strong>Coupez la bobine par un contact auxiliaire.</strong> Placez un contact auxiliaire normalement fermé en série avec la bobine pour que le circuit s'ouvre dès l'ouverture des contacts principaux. Ce seul détail évite les bobines brûlées et empêche la bobine de bloquer le mécanisme en position de non-réenclenchement.</li>
+      <li><strong>Gardez le câblage de commande hors des conduits de puissance.</strong> Sur une longue liaison de commande, les tensions induites suffisent à déclencher intempestivement un déclencheur sensible. Utilisez un câble blindé lorsque la liaison est longue ou passe près de variateurs de vitesse.</li>
+      <li><strong>Étiquetez la fonction aux deux extrémités.</strong> Un disjoncteur qui s'ouvre sans raison apparente coûte des heures de recherche de défaut. Une étiquette « déclencheur shunt &mdash; alarme incendie zone 3 » ne coûte rien.</li>
+    </ol>
+
+    <h2>Spécifier l'accessoire avec le disjoncteur</h2>
+    <p>Les déclencheurs sont des accessoires, et un accessoire commandé plus tard coûte plus cher, arrive plus tard et parfois ne se monte plus sur le disjoncteur déjà livré. Le moment le moins coûteux pour le spécifier est la commande d'origine.</p>
+    <table>
+      <thead>
+        <tr><th>Accessoire</th><th>Ce qu'il apporte</th><th>À commander avec le disjoncteur ?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Déclencheur shunt</td><td>Ouverture électrique à distance sur ordre</td><td>Oui &mdash; le montage ultérieur reste possible mais rarement économique</td></tr>
+        <tr><td>Déclencheur à minimum de tension</td><td>Ouverture à la perte de l'alimentation de commande</td><td>Oui &mdash; même raison</td></tr>
+        <tr><td>Contacts auxiliaires</td><td>Signalisation d'état et interverrouillage de la bobine</td><td>Oui &mdash; nécessaires au circuit de bobine lui-même</td></tr>
+        <tr><td>Motorisation</td><td>Fermeture et réarmement à distance</td><td>Oui &mdash; détermine la variante de façade</td></tr>
+      </tbody>
+    </table>
+    <p>Dans la demande de prix, indiquez la tension de bobine et sa nature (alternatif ou continu), le nombre de contacts auxiliaires, et la source de commande qui pilotera le déclencheur. Ces trois réponses suppriment presque toute l'ambiguïté, et ce sont précisément les trois informations qu'un fournisseur ne peut pas déduire du calibre du disjoncteur.</p>
+
+    <h2>La place de YOMIN</h2>
+    <p>YOMIN fabrique des disjoncteurs à air universels intelligents pour l'arrivée de tableaux basse tension, dans la catégorie <a href="/products/fuse-protection">fusibles et protection</a>. La gamme YM-AB1 est un disjoncteur à air tripolaire 50/60 Hz de 200 A à 6300 A, disponible en version fixe ou débrochable, et elle accepte le jeu d'accessoires habituel : déclencheur shunt, déclencheur à minimum de tension, contacts auxiliaires et motorisation.</p>
+    <p>La production standard demande 15 à 25 jours ouvrés, portés à 30&ndash;45 jours pour les configurations OEM et personnalisées, avec une commande minimum de 100 unités (500 en OEM ou personnalisation). La production est conduite sous management de la qualité ISO 9001, avec marquage CE sur les variantes européennes, et les appareils sont couverts par une garantie de deux ans contre les défauts de fabrication.</p>
+    <p>Si vous coordonnez un asservissement incendie ou un plan d'effacement de charge, joignez à votre demande la tension de bobine, le nombre de contacts auxiliaires et la description de la source de commande. C'est plus rapide qu'une revue de conception et cela évite l'erreur de commande la plus fréquente de cette famille d'accessoires.</p>
+
+    <h2>Questions fréquentes</h2>
+    <h3>Quelle est la différence entre un déclencheur shunt et un déclencheur à minimum de tension ?</h3>
+    <p>Le déclencheur shunt ouvre le disjoncteur lorsqu'une tension est appliquée à sa bobine : c'est un ordre volontaire, donné par un opérateur ou un système de détection. Le déclencheur à minimum de tension ouvre le disjoncteur lorsque sa bobine perd sa tension : c'est une surveillance continue qui déclenche en cas de défaut d'alimentation.</p>
+    <h3>La bobine shunt peut-elle rester alimentée après l'ouverture du disjoncteur ?</h3>
+    <p>Non. Un contact auxiliaire du disjoncteur doit couper le circuit de la bobine dès l'ouverture des contacts principaux. Une bobine maintenue alimentée brûle et peut empêcher la refermeture de l'appareil jusqu'à réparation du circuit de commande.</p>
+    <h3>Un disjoncteur à déclencheur shunt protège-t-il toujours contre les surcharges ?</h3>
+    <p>Oui. Le déclencheur shunt est un organe d'ouverture supplémentaire ajouté à un disjoncteur qui possède déjà sa propre protection contre les surintensités. Il ne remplace pas le déclencheur thermique-magnétique ou électronique, il ajoute une voie de commande à distance par-dessus.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous spécifiez un disjoncteur avec déclencheur shunt ?</h2>
+    <p>Envoyez-nous la tension de bobine, le nombre de contacts auxiliaires et la source de commande qui pilotera le déclencheur. Nous fabriquons des disjoncteurs à air universels intelligents de 200 A à 6300 A, sous production ISO 9001 et marquage CE.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disyuntor con bobina shunt: cableado y selección | Yomin Electric</title>
+<meta name="description" content="Un disyuntor con bobina de disparo shunt se abre con una señal de una fuente de mando remota, como una central de incendios o una parada de emergencia. Cableado de la bobina, diferencia con la bobina de mínima tensión y qué especificar.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/shunt-trip-breaker-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/shunt-trip-breaker-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Disyuntor con bobina de disparo shunt: cableado, fuentes de disparo y selección",
+      "description": "Un disyuntor con bobina de disparo shunt se abre con una señal de una fuente de mando remota, como una central de incendios o una parada de emergencia. Cableado de la bobina, diferencia con la bobina de mínima tensión y qué especificar.",
+      "image": "https://www.yominelectric.com/assets/images/blog/shunt-trip-breaker-guide/hero.png",
+      "datePublished": "2026-10-26",
+      "dateModified": "2026-10-26",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/shunt-trip-breaker-guide-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la diferencia entre una bobina shunt y una bobina de mínima tensión?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La bobina shunt abre el interruptor cuando se le aplica tensión: es una orden deliberada de un operador o de un sistema de detección. La bobina de mínima tensión abre el interruptor cuando pierde su tensión: es una vigilancia continua que dispara ante un fallo de alimentación."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puede quedarse energizada la bobina shunt tras la apertura?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Un contacto auxiliar del interruptor debe cortar el circuito de la bobina en cuanto se abren los contactos principales. Una bobina que permanece energizada se quema y puede impedir el recierre del aparato."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Un disyuntor con bobina shunt sigue protegiendo contra sobrecargas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. La bobina shunt es un mecanismo de apertura adicional añadido a un interruptor que ya dispone de su propia protección contra sobreintensidades. No sustituye a la unidad de disparo termomagnética o electrónica."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Protección de circuitos</span></div>
+    <span class="bh-tag">Guía de compra</span>
+    <h1 class="bh-title">Disyuntor con bobina de disparo shunt: cableado, fuentes de disparo y selección</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>26 de octubre de 2026</span>
+      <span class="divider"></span>
+      <span>9 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/shunt-trip-breaker-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/shunt-trip-breaker-guide/hero.png" alt="Interruptor automático de aire extraíble con regleta secundaria y bobina de disparo shunt en un cuadro de baja tensión" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p><strong>Un disyuntor con bobina de disparo shunt es un interruptor automático equipado con una pequeña bobina que lo abre cuando se le aplica una tensión de mando.</strong> La bobina acciona el pestillo de disparo, de modo que una central de incendios, un pulsador de parada de emergencia o un sistema de gestión del edificio pueden desconectar un circuito sin que nadie esté delante del cuadro. El aparato conserva su protección contra sobreintensidades: la bobina shunt solo añade una segunda forma de apertura, a distancia.</p>
+
+    <p>La definición es sencilla. La puesta en servicio lo es mucho menos, porque la mayoría de los fallos de una bobina shunt son fallos de cableado y no fallos del aparato. La bobina se alimenta desde un circuito de mando que diseña otra persona, y ambos diseños rara vez se contrastan entre sí.</p>
+
+    <h2>Qué hace realmente la bobina</h2>
+    <p>El disparo shunt, también llamado bobina de disparo, es un accesorio que se monta sobre el mecanismo del interruptor. Cuando la tensión de mando llega a la bobina, el núcleo golpea el pestillo y el aparato se abre por su mecanismo normal. Como utiliza el mecanismo en lugar de separar los contactos a la fuerza, el interruptor abre a la velocidad para la que fue diseñado y corta la corriente que realmente circula en ese instante.</p>
+    <p>De ahí se derivan dos consecuencias. La primera es que la bobina shunt puede abrir un interruptor con carga, lo que la hace válida para una desconexión de emergencia y no solo para un seccionamiento. La segunda es que la bobina es un componente de servicio breve: está hecha para dar un golpe decisivo, no para permanecer energizada durante horas.</p>
+
+    <h2>¿Disparo shunt o bobina de mínima tensión?</h2>
+    <p>Estos dos accesorios se confunden continuamente, y elegir el equivocado produce un interruptor que se comporta exactamente al revés de lo que pretendía el proyectista.</p>
+    <table>
+      <thead>
+        <tr><th>Criterio</th><th>Bobina de disparo shunt</th><th>Bobina de mínima tensión</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Señal que abre el interruptor</td><td>Tensión <em>aplicada</em> a la bobina</td><td>Tensión <em>perdida</em> por la bobina</td></tr>
+        <tr><td>Estado de la bobina en servicio normal</td><td>Sin tensión, en espera</td><td>Energizada de forma continua, en mantenimiento</td></tr>
+        <tr><td>Comportamiento si falla la alimentación de mando</td><td>No dispara, el interruptor sigue cerrado</td><td>Dispara, fallo seguro</td></tr>
+        <tr><td>Uso típico</td><td>Enclavamiento con incendios, parada remota, gestión de demanda</td><td>Circuitos de motor, circuitos de seguridad, vigilancia de red</td></tr>
+        <tr><td>¿Se puede cerrar sin el circuito de mando?</td><td>Sí</td><td>No, primero debe energizarse la bobina</td></tr>
+      </tbody>
+    </table>
+    <p>La regla práctica: si quiere que el interruptor abra <em>porque ha ocurrido algo</em>, especifique una bobina shunt. Si quiere que abra <em>porque algo ha dejado de ocurrir</em>, especifique una bobina de mínima tensión. El enclavamiento con la central de incendios es el primer caso; un circuito de seguridad de una cinta transportadora que debe caer cuando su relé de vigilancia pierde alimentación es el segundo.</p>
+
+    <h2>Dónde se justifica el coste de la bobina shunt</h2>
+    <ul>
+      <li><strong>Enclavamiento con la alarma de incendios.</strong> Con diferencia, la aplicación más frecuente: al activarse la alarma, la bobina abre el aparato de entrada o de distribución para que los servicios de emergencia no trabajen junto a conductores en tensión.</li>
+      <li><strong>Parada de emergencia remota.</strong> Un pulsador en un puesto de trabajo o en un muelle de carga que debe aislar un cuadro alejado.</li>
+      <li><strong>Gestión de demanda y puntas.</strong> Un controlador abre determinadas salidas no prioritarias cuando la potencia demandada se acerca del máximo contratado.</li>
+      <li><strong>Enclavamientos de grupo y conmutación.</strong> Impedir que un interruptor se cierre sobre una fuente que no está disponible.</li>
+      <li><strong>Cocinas profesionales y talleres.</strong> Una única señal de detección de gas o de incendio que corta la alimentación de un grupo de circuitos de cocción o de mecanizado.</li>
+    </ul>
+    <p>En todos los casos el valor es el mismo: quien necesita cortar la corriente no es quien está delante del cuadro, y el tiempo de desplazamiento hasta el cuadro es precisamente el riesgo que se está eliminando.</p>
+
+    <h2>Cablear la bobina para que sobreviva</h2>
+    <p>Aquí es donde fallan la mayoría de las instalaciones. El circuito de bobina es un pequeño circuito de mando, fácil de tratar como un detalle, cuando en realidad soporta toda la fiabilidad de la función.</p>
+    <ol>
+      <li><strong>Compruebe la tensión de bobina antes que nada.</strong> Existen bobinas para distintas tensiones de mando, y una bobina de 24 V conectada a un circuito de mando de 230 V queda destruida en la primera prueba. Lea la etiqueta de la bobina, no la placa del interruptor.</li>
+      <li><strong>Alimente la bobina desde un circuito dedicado y protegido.</strong> Un fusible pequeño o un minidisyuntor en el circuito de mando limita el daño si falla la bobina o su cableado. Tomar la alimentación de un circuito no relacionado permite que un fallo de la bobina tumbe algo más importante.</li>
+      <li><strong>Use un contacto momentáneo, no mantenido.</strong> La orden de disparo debe ser un pulso. Un interruptor que permanece cerrado mantiene la bobina energizada cuando el interruptor ya se ha abierto.</li>
+      <li><strong>Corte la bobina con un contacto auxiliar.</strong> Coloque un contacto auxiliar normalmente cerrado en serie con la bobina para que el circuito se abra en cuanto se abran los contactos principales. Este detalle evita las bobinas quemadas y también impide que la bobina bloquee el mecanismo e impida el recierre.</li>
+      <li><strong>Mantenga el cableado de mando fuera de las canalizaciones de potencia.</strong> En un tendido de mando largo, las tensiones inducidas bastan para disparar de forma intempestiva una bobina sensible. Use cable apantallado cuando el tendido sea largo o discurra cerca de variadores de frecuencia.</li>
+      <li><strong>Etiquete la función en ambos extremos.</strong> Un interruptor que abre sin motivo aparente cuesta horas de búsqueda de fallos. Una etiqueta que diga «shunt &mdash; incendios zona 3» no cuesta nada.</li>
+    </ol>
+
+    <h2>Especificar el accesorio junto con el interruptor</h2>
+    <p>Las bobinas son accesorios, y un accesorio pedido después cuesta más, llega más tarde y a veces ya no se puede montar en el aparato que está en obra. El momento más barato para especificarlo es el pedido original.</p>
+    <table>
+      <thead>
+        <tr><th>Accesorio</th><th>Qué aporta</th><th>¿Pedir con el interruptor?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Bobina de disparo shunt</td><td>Apertura eléctrica remota por orden</td><td>Sí &mdash; el montaje posterior es posible pero rara vez económico</td></tr>
+        <tr><td>Bobina de mínima tensión</td><td>Apertura al perder la alimentación de mando</td><td>Sí &mdash; por la misma razón</td></tr>
+        <tr><td>Contactos auxiliares</td><td>Señalización de estado y enclavamiento de la bobina</td><td>Sí &mdash; son necesarios para el propio circuito de bobina</td></tr>
+        <tr><td>Motor de accionamiento</td><td>Cierre y rearme remotos</td><td>Sí &mdash; determina la variante de frontal</td></tr>
+      </tbody>
+    </table>
+    <p>En la solicitud de cotización indique la tensión de la bobina y si es de corriente alterna o continua, el número de contactos auxiliares y la fuente de mando que accionará la bobina. Esas tres respuestas eliminan casi toda la ambigüedad, y son justamente los tres datos que un proveedor no puede deducir del calibre del interruptor.</p>
+
+    <h2>El lugar de YOMIN</h2>
+    <p>YOMIN fabrica interruptores automáticos de aire universales inteligentes para servicio de entrada en cuadros de baja tensión, dentro de la categoría de <a href="/products/fuse-protection">fusibles y protección</a>. La gama YM-AB1 es un interruptor de aire tripolar de 50/60 Hz, de 200 A a 6300 A, disponible en ejecución fija o extraíble, y admite el juego de accesorios habitual: bobina de disparo shunt, bobina de mínima tensión, contactos auxiliares y motor de accionamiento.</p>
+    <p>La producción estándar requiere de 15 a 25 días hábiles, que se amplían a 30&ndash;45 días en configuraciones OEM y personalizadas, con un pedido mínimo de 100 unidades (500 en OEM o personalización). La fabricación se realiza bajo gestión de calidad ISO 9001, con marcado CE en las variantes europeas, y las unidades están cubiertas por dos años de garantía frente a defectos de fabricación.</p>
+    <p>Si está coordinando un enclavamiento con incendios o un plan de gestión de demanda, envíe con su consulta la tensión de bobina, el número de contactos auxiliares y la descripción de la fuente de mando. Es más rápido que una revisión de proyecto y evita el error de pedido más frecuente en esta familia de accesorios.</p>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Cuál es la diferencia entre una bobina shunt y una bobina de mínima tensión?</h3>
+    <p>La bobina shunt abre el interruptor cuando se le aplica tensión: es una orden deliberada de un operador o de un sistema de detección. La bobina de mínima tensión abre el interruptor cuando pierde su tensión: es una vigilancia continua que dispara ante un fallo de alimentación.</p>
+    <h3>¿Puede quedarse energizada la bobina shunt tras la apertura?</h3>
+    <p>No. Un contacto auxiliar del interruptor debe cortar el circuito de la bobina en cuanto se abren los contactos principales. Una bobina que permanece energizada se quema y puede impedir el recierre del aparato hasta reparar el circuito de mando.</p>
+    <h3>¿Un disyuntor con bobina shunt sigue protegiendo contra sobrecargas?</h3>
+    <p>Sí. La bobina shunt es un mecanismo de apertura adicional añadido a un interruptor que ya dispone de su propia protección contra sobreintensidades. No sustituye a la unidad de disparo termomagnética o electrónica: añade una vía de mando remota por encima de ella.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Está especificando un interruptor con bobina de disparo shunt?</h2>
+    <p>Envíenos la tensión de bobina, el número de contactos auxiliares y la fuente de mando que accionará la bobina. Fabricamos interruptores automáticos de aire universales inteligentes de 200 A a 6300 A con producción ISO 9001 y marcado CE.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
