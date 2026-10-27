@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saturation d'un TC : pourquoi un transformateur de courant cesse de suivre le courant | Yomin Electric</title>
+<meta name="description" content="Pourquoi les transformateurs de courant saturent : composante continue, courant de défaut, fardeau secondaire et rémanence, et ce qu'il faut inscrire sur la fiche technique.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/ct-saturation/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/ct-saturation-fr">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/ct-saturation">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/ct-saturation-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/ct-saturation-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/ct-saturation-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/ct-saturation">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Saturation d'un TC : pourquoi un transformateur de courant cesse de suivre le courant | Yomin Electric",
+      "description": "Pourquoi les transformateurs de courant saturent : composante continue, courant de défaut, fardeau secondaire et rémanence, et ce qu'il faut inscrire sur la fiche technique.",
+      "image": "https://www.yominelectric.com/assets/images/blog/ct-saturation/hero.png",
+      "datePublished": "2026-10-27",
+      "dateModified": "2026-10-27",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/ct-saturation-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "fr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce qui provoque la saturation d'un transformateur de courant ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La saturation survient lorsque le noyau ne peut plus supporter davantage de flux. Les causes habituelles sont un courant de défaut très supérieur au courant primaire nominal, la composante continue qui l'accompagne, un fardeau excessif sur le circuit secondaire et la rémanence laissée par un défaut antérieur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "La saturation affecte-t-elle de la même manière le comptage et la protection ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Un noyau de mesure se déforme progressivement et le compteur sous-estime simplement la consommation, ce qui passe inaperçu. Un noyau de protection peut tenir son rapport puis s'effondrer brutalement, ce qui est plus grave : le relais refuse de déclencher ou déclenche trop tard."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on corriger la saturation en installant un TC plus gros ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parfois. Un noyau plus grand relève le point de coude, donc le même fardeau produit moins d'erreur. Mais si le fardeau est excessif ou si les fils secondaires sont longs et fins, corriger le câblage coûte moins cher et s'avère plus efficace que de changer de transformateur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce que le facteur limite de précision ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C'est le multiple du courant primaire nominal jusqu'auquel un noyau de protection reste dans l'erreur composite déclarée. Un noyau 5P10 maintient une erreur de 5 % jusqu'à dix fois le courant nominal : c'est ce chiffre qui détermine si le relais voit un véritable défaut."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+<section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Transformateurs de courant</span></div>
+    <span class="bh-tag">Guides d'achat</span>
+    <h1 class="bh-title">Saturation d'un TC : pourquoi un transformateur de courant cesse de suivre le courant</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">Équipe technique ET</strong>
+      <span class="divider"></span>
+      <span>27 octobre 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/ct-saturation/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/ct-saturation/hero.png" alt="Trois transformateurs de courant toroïdaux montés sur des barres cuivre dans une armoire basse tension" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+<p>Un transformateur de courant sature lorsque son noyau ne peut plus transporter le flux qu'exige le courant primaire : le courant secondaire cesse alors d'être une copie fidèle et proportionnelle du primaire. Le signal s'écrase, la forme d'onde se déforme, et tous les appareils en aval &mdash; compteur, relais, transducteur, enregistreur &mdash; travaillent soudain sur une valeur inférieure à la réalité. La saturation n'est pas un défaut de fabrication : c'est une limite de conception dépassée, et le plus souvent ce n'est pas le calibre en courant qui est en cause, mais le fardeau secondaire ou la composante continue qui accompagnait le défaut.</p>
+
+    <h2>Ce qui se passe réellement dans le noyau</h2>
+    <p>Un TC fonctionne par équilibre des ampères-tours : courant primaire multiplié par le nombre de spires primaires égale courant secondaire multiplié par les spires secondaires, augmenté du faible courant magnétisant nécessaire pour établir le flux. Tant que le noyau reste nettement sous son point de coude, ce courant magnétisant est négligeable et le rapport tient dans la classe de précision.</p>
+    <p>Au-delà, la relation cesse d'être linéaire. Près du coude, il faut un courant magnétisant disproportionné pour gagner un peu de flux : une part croissante des ampères-tours primaires sert à magnétiser le fer au lieu d'alimenter le secondaire. Passé le coude, le noyau est saturé, la perméabilité s'effondre et le courant secondaire est limité par le fardeau plutôt que par le rapport. La sortie devient une suite de pics étroits : un compteur vrai RMS et un compteur à valeur moyenne ne donneront pas la même lecture sur le même signal saturé.</p>
+
+    <h2>Quatre conditions qui poussent un noyau à saturer</h2>
+    <ul>
+      <li><strong>Un courant de défaut très supérieur au courant primaire nominal.</strong> Un TC 250/5 est précis à 250 A ; un défaut de 25 kA lui demande de reproduire cent fois son calibre, ce qu'aucun noyau de mesure ne fait.</li>
+      <li><strong>La composante continue du courant de défaut.</strong> Sur un réseau inductif, le défaut démarre de façon asymétrique. La composante continue décroissante décale toute l'onde de flux d'un côté de la boucle d'hystérésis, si bien que le noyau atteint le coude dès la première alternance. C'est la raison la plus fréquente d'une saturation plus précoce que ne le laissaient prévoir les calculs.</li>
+      <li><strong>Le fardeau secondaire.</strong> Chaque bobine de relais, bobine de compteur, borne, liaison et mètre de câble secondaire ajoute une impédance que le noyau doit vaincre. Une longue longueur de câble 2,5 mm&sup2; peut peser plus lourd que le relais lui-même, et c'est la variable la plus souvent oubliée au dimensionnement.</li>
+      <li><strong>La rémanence.</strong> Après un défaut ayant amené le noyau près de la saturation, une partie du flux reste piégée dans le fer. Le défaut suivant repart de cette valeur décalée et non de zéro : un noyau qui s'est bien comporté la première fois peut faillir la seconde.</li>
+    </ul>
+
+    <h2>Mesure et protection n'échouent pas de la même façon</h2>
+    <table>
+      <thead>
+        <tr><th>Usage du noyau</th><th>Spécifié pour</th><th>Effet de la saturation</th><th>Ce que l'on constate</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mesure</td>
+          <td>La précision au voisinage du courant nominal, exprimée en erreur à fardeau défini</td>
+          <td>Les erreurs de rapport et de phase augmentent, la lecture baisse, l'onde s'aplatit</td>
+          <td>Factures et rapports sous-estiment la consommation, deux compteurs du même départ divergent</td>
+        </tr>
+        <tr>
+          <td>Protection</td>
+          <td>L'erreur composite tenue jusqu'à un multiple déclaré du courant nominal</td>
+          <td>Le rapport tient, puis s'effondre en quelques millisecondes</td>
+          <td>Le relais ne déclenche pas, déclenche tard, ou une fonction de distance mesure une impédance fausse</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Un noyau de mesure saturé est un problème commercial. Un noyau de protection saturé est un problème de sécurité, car le relais doit décider de déclencher sur des informations déjà faussées.</p>
+
+    <h2>Pourquoi la composante continue compte plus que l'amplitude</h2>
+    <p>On vérifie souvent un TC sur le courant de défaut symétrique, puis on s'arrête là. Cette vérification est nécessaire mais insuffisante. Le flux dans le noyau est l'intégrale de la tension d'alimentation du secondaire, et un courant entièrement décalé pousse le flux dans une seule direction pendant les premiers cycles. La demande de flux crête peut donc approcher le double de celle du courant symétrique seul.</p>
+    <p>C'est pourquoi un noyau peut réussir un calcul fondé sur 20 kA et saturer malgré tout sur un défaut de 12 kA proche d'un générateur, là où le rapport X/R est élevé et le décalage lent à disparaître. Si la protection doit être fiable sur les défauts proches, c'est ce cas qui dimensionne le noyau.</p>
+
+    <h2>Le fardeau est un budget, et le câble en consomme l'essentiel</h2>
+    <p>Une fiche technique indique un fardeau nominal en voltampères à facteur de puissance donné, typiquement 5, 10 ou 15 VA. C'est l'impédance totale que le secondaire peut présenter tout en conservant la classe déclarée. Tout ce qui est bouclé y contribue : l'entrée courant du relais ou du compteur, le câble secondaire compté en aller-retour, puis les bornes, les barrettes d'essai et les raccords.</p>
+    <p>Un câble cuivre de 2,5 mm&sup2; présente environ 7 &Omega; par kilomètre et par conducteur : une liaison aller-retour de 60 m ajoute donc près de 0,85 &Omega;, soit plus de 4 VA à 5 A, avant même de compter le relais. Raccourcir la liaison ou augmenter la section redonne immédiatement de la marge au même TC. C'est pourquoi les revues de spécification se terminent si souvent par un changement de câble plutôt que de transformateur.</p>
+
+    <h2>Ce qu'il faut lire sur la fiche technique</h2>
+    <ul>
+      <li><strong>Courants primaire et secondaire nominaux</strong> &mdash; par exemple 250/5 A. Le rapport doit convenir à la charge, pas au niveau de défaut.</li>
+      <li><strong>Classe de précision</strong> &mdash; 0,5 ou 1,0 en mesure, 5P ou 10P en protection. La classe ne vaut qu'au fardeau nominal.</li>
+      <li><strong>Fardeau nominal</strong> &mdash; le nombre de VA associé à la classe. Un noyau classe 0,5 à 5 VA est un instrument plus faible qu'un noyau classe 0,5 à 15 VA.</li>
+      <li><strong>Facteur limite de précision</strong> &mdash; le multiple du courant nominal que le noyau de protection supporte avant de dépasser l'erreur déclarée.</li>
+      <li><strong>Courant thermique permanent</strong> &mdash; souvent supérieur au courant primaire nominal, et déterminant pour l'échauffement sur un départ durablement surchargé.</li>
+      <li><strong>Niveau d'isolement et tension nominale</strong> &mdash; un noyau basse tension est couramment prévu pour 0,66 kV ou 720 V, valeur qui doit dépasser la tension du réseau, et non simplement l'égaler.</li>
+    </ul>
+
+    <h2>Une liste de vérification qui évite le problème</h2>
+    <ul>
+      <li>Calculer le fardeau réellement raccordé, câble compris, et le comparer au fardeau nominal plutôt qu'à une estimation.</li>
+      <li>Garder des conducteurs secondaires courts et de forte section, et ne jamais partager un noyau entre un compteur et un relais de protection.</li>
+      <li>Dimensionner les noyaux de protection sur le facteur limite face au courant de défaut maximal, composante continue incluse.</li>
+      <li>Réserver un noyau de mesure dédié à la facturation, afin qu'un événement de protection ne laisse pas de rémanence dans le noyau qui produit la facture.</li>
+      <li>Demander la tension de coude, ou la définition de classe des noyaux de type PX, lorsque les réglages du relais en dépendent.</li>
+      <li>Conserver le calcul de fardeau avec les plans de l'armoire, pour que le prochain intervenant connaisse la marge restante.</li>
+    </ul>
+
+    <h2>Comment les TC YOMIN sont spécifiés</h2>
+    <p>YOMIN fabrique des transformateurs de courant basse tension de mesure et de protection, en version bobinée et à passage de barres, avec des rapports de 5 A à 4000 A au primaire et une classe 0,5 ou 1,0 sur la plage de mesure. Le catalogue comprend notamment un <a href="/products/current-transformer/single-phase-50-60hz-50-turns-250-5a-720v-ac-class-0-5-electric-transformers-current-transformer-for-metering">TC de mesure monophasé 250/5 A classe 0,5, 720 V AC, 50/60 Hz</a> et la <a href="/products/current-transformer">série MES</a> en versions toroïdales et à passage de barres, dont des unités monophasées 800/5 A et 1250/5 A en boîtier MES 104/80.</p>
+    <p>La gamme couvre également les modèles à noyau ouvrant pour les reprises sur installation existante, quand le jeu de barres ne peut pas être consigné. Pour le choix du rapport, le <a href="/blog/ct-ratio-guide">guide des rapports</a> et le <a href="/blog/ct-accuracy-class-guide">guide des classes de précision</a> détaillent la logique de sélection, et le <a href="/blog/choosing-a-current-transformer">parcours de sélection</a> réunit fardeau, classe et rapport dans une seule décision.</p>
+
+    <h2>Questions fréquentes</h2>
+    <h3>Qu'est-ce qui provoque la saturation d'un transformateur de courant ?</h3>
+    <p>La saturation survient lorsque le noyau ne peut plus supporter davantage de flux. Les causes habituelles sont un courant de défaut très supérieur au courant primaire nominal, la composante continue qui l'accompagne, un fardeau excessif sur le circuit secondaire et la rémanence laissée par un défaut antérieur.</p>
+    <h3>La saturation affecte-t-elle de la même manière le comptage et la protection ?</h3>
+    <p>Non. Un noyau de mesure se déforme progressivement et le compteur sous-estime simplement la consommation, ce qui passe inaperçu. Un noyau de protection peut tenir son rapport puis s'effondrer brutalement : le relais refuse de déclencher ou déclenche trop tard.</p>
+    <h3>Peut-on corriger la saturation en installant un TC plus gros ?</h3>
+    <p>Parfois. Un noyau plus grand relève le point de coude, donc le même fardeau produit moins d'erreur. Mais si le fardeau est excessif ou si les fils secondaires sont longs et fins, corriger le câblage coûte moins cher et s'avère plus efficace.</p>
+    <h3>Qu'est-ce que le facteur limite de précision ?</h3>
+    <p>C'est le multiple du courant primaire nominal jusqu'auquel un noyau de protection reste dans l'erreur composite déclarée. Un noyau 5P10 maintient une erreur de 5 % jusqu'à dix fois le courant nominal : c'est ce chiffre qui détermine si le relais voit un véritable défaut.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous dimensionnez des transformateurs de courant pour un projet ?</h2>
+    <p>Indiquez le courant primaire, la tension du réseau, la section du câble ou du jeu de barres et le fardeau de l'appareil alimenté. Nous confirmons le rapport, la classe et le fardeau nominal avant toute fabrication.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

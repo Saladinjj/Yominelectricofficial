@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CT Saturation Explained: Why a Current Transformer Stops Tracking Current | Yomin Electric</title>
+<meta name="description" content="Why current transformers saturate: DC offset, through-fault multiples, secondary burden and remanence, how saturation shows up in metering and protection, and what to write on the datasheet.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/ct-saturation/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/ct-saturation">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/ct-saturation">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/ct-saturation-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/ct-saturation-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/ct-saturation-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/ct-saturation">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "CT Saturation Explained: Why a Current Transformer Stops Tracking Current | Yomin Electric",
+      "description": "Why current transformers saturate: DC offset, through-fault multiples, secondary burden and remanence, how saturation shows up in metering and protection, and what to write on the datasheet.",
+      "image": "https://www.yominelectric.com/assets/images/blog/ct-saturation/hero.png",
+      "datePublished": "2026-10-27",
+      "dateModified": "2026-10-27",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/ct-saturation"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What causes a current transformer to saturate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Saturation happens when the core cannot carry any more flux. The usual causes are a fault current far above the rated primary current, the DC offset that comes with it, too much burden on the secondary circuit, and remanence left in the core by an earlier fault."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does saturation affect metering and protection in the same way?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A metering core distorts gradually and the meter simply under-reads, which is quiet and easy to miss. A protection core can hold its ratio and then collapse suddenly, which is worse because the relay either refuses to operate or operates late."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I fix saturation by fitting a bigger current transformer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sometimes. A larger core raises the knee point, so the same burden produces less error. But if the burden is excessive or the secondary leads are long and thin, correcting the wiring is cheaper and more effective than upsizing the transformer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is an accuracy limit factor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The accuracy limit factor is the multiple of rated primary current up to which a protection core stays within its declared composite error. A 5P10 core holds 5 percent error up to ten times rated current, which is the figure that decides whether a relay sees a real fault."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+<section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Current Transformers</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">CT Saturation: Why a Current Transformer Stops Tracking Current</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>October 27, 2026</span>
+      <span class="divider"></span>
+      <span>11 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/ct-saturation/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/ct-saturation/hero.png" alt="Three ring-type current transformers clamped on copper busbars inside a low-voltage switchgear panel" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+<p>A current transformer saturates when its core can no longer carry the flux that the primary current demands, so the secondary current stops being a faithful, proportional copy of the primary. The output collapses, the waveform distorts, and every device downstream &mdash; meter, relay, transducer or logger &mdash; is suddenly working from a number that is smaller than the truth. Saturation is not a manufacturing defect. It is a design limit that has been exceeded, and in most cases the limit that was exceeded is not the current rating but the secondary burden or the DC offset that came with the fault.</p>
+
+    <h2>What is actually happening inside the core</h2>
+    <p>A current transformer works by balancing ampere-turns. Primary current times primary turns must equal secondary current times secondary turns, plus the small magnetising current the core needs to establish flux. As long as the core is comfortably below its knee point, that magnetising current is tiny and the ratio holds within the accuracy class.</p>
+    <p>Push the flux higher and the relationship stops being linear. Near the knee point the core needs a disproportionate magnetising current to gain a little more flux, so an increasing share of the primary ampere-turns is spent magnetising iron instead of driving the secondary. Beyond the knee the core is effectively saturated: permeability falls away, flux stops rising, and the secondary current is limited by the burden rather than by the ratio. The output becomes a series of narrow spikes instead of a sine wave, which is why a true-RMS meter and an averaging meter will disagree about the same saturated signal.</p>
+
+    <h2>Four conditions that push a core into saturation</h2>
+    <ul>
+      <li><strong>Fault current far above the rated primary current.</strong> A CT rated 250/5 is designed to be accurate at 250 A. A 25 kA fault asks the same core to reproduce one hundred times its rating, and no metering core is built for that.</li>
+      <li><strong>DC offset in the fault current.</strong> Faults on a predominantly inductive network start asymmetrically. The decaying DC component shifts the flux waveform entirely to one side of the hysteresis loop, so the core reaches the knee on the first half-cycle even when the symmetrical AC component alone would have been tolerable. This is the single most common reason a protection core saturates earlier than the calculations suggested.</li>
+      <li><strong>Secondary burden.</strong> Every relay coil, meter current coil, terminal, joint and metre of secondary cable adds impedance that the core must drive. Long runs of 2.5 mm&sup2; cable can add more burden than the relay itself, and burden is the variable most often left out of a specification.</li>
+      <li><strong>Remanence.</strong> After a fault that drove the core near saturation, some flux stays locked in the iron when the current is removed. The next fault starts from that offset value rather than from zero, so a core that performed correctly the first time can misbehave the second time.</li>
+    </ul>
+
+    <h2>Metering cores and protection cores fail differently</h2>
+    <p>The two duties are specified against different criteria, and it helps to keep the failure modes separate when you are diagnosing a site problem.</p>
+    <table>
+      <thead>
+        <tr><th>Core duty</th><th>What it is specified for</th><th>What saturation does</th><th>What you notice on site</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Metering</td>
+          <td>Accuracy at and near rated current, expressed as a percentage error at defined burden</td>
+          <td>Ratio and phase errors grow, output reads low, waveform flattens</td>
+          <td>Bills and reports understate consumption, two meters on the same feeder disagree</td>
+        </tr>
+        <tr>
+          <td>Protection</td>
+          <td>Composite error held up to a stated multiple of rated current (the accuracy limit factor)</td>
+          <td>Ratio holds, then collapses within a few milliseconds</td>
+          <td>Relay fails to trip, trips late, or a distance element measures a false impedance</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>A metering core that saturates is a commercial problem. A protection core that saturates is a safety problem, because the relay is being asked to decide whether to trip on evidence that has already been corrupted.</p>
+
+    <h2>Why DC offset matters more than the fault magnitude</h2>
+    <p>Engineers often check a CT against the symmetrical fault level and stop there. That check is necessary but not sufficient. The flux in the core is the integral of the secondary driving voltage, and a fully offset current pushes the flux in one direction only for the first few cycles. The result is that the peak flux demand can be close to double what the symmetrical current alone would produce.</p>
+    <p>This is why a core can pass a calculation based on 20 kA and still saturate on a 12 kA fault close to a generator, where the X/R ratio is high and the offset decays slowly. If the protection has to be dependable for close-in faults, the offset case is the one that sizes the core.</p>
+
+    <h2>Burden is a budget, and cable spends most of it</h2>
+    <p>A CT datasheet states a rated burden in volt-amperes at a stated power factor, typically 5 VA, 10 VA or 15 VA. That figure is the total impedance the secondary is allowed to present while the declared accuracy class still applies. Everything connected in the loop draws from it.</p>
+    <ul>
+      <li>The relay or meter current input, which is usually the smallest item.</li>
+      <li>The secondary cable, calculated as 2 &times; length &times; resistance per metre for a go-and-return loop.</li>
+      <li>Terminals, test links, fuses in the current circuit and any joint in the run.</li>
+    </ul>
+    <p>A 2.5 mm&sup2; copper cable has roughly 7 &Omega; per kilometre per conductor, so a 60 m go-and-return run contributes about 0.85 &Omega;. At 5 A secondary that is over 4 VA spent on wire alone, before the relay is counted. Shorten the run or increase the cross-section and the same CT suddenly has margin. This is why specification reviews so often end with cable changes rather than a different transformer.</p>
+
+    <h2>What to read on the datasheet</h2>
+    <ul>
+      <li><strong>Rated primary and secondary current</strong> &mdash; for example 250/5 A. The ratio must suit the load, not the fault level.</li>
+      <li><strong>Accuracy class</strong> &mdash; 0.5 or 1.0 for metering, 5P or 10P for protection. The class only holds at the rated burden.</li>
+      <li><strong>Rated burden</strong> &mdash; the VA figure that pairs with the class. A class 0.5 core at 5 VA is a weaker instrument than a class 0.5 core at 15 VA.</li>
+      <li><strong>Accuracy limit factor</strong> &mdash; how many times rated current the protection core can take before its error exceeds the declared limit.</li>
+      <li><strong>Rated continuous thermal current</strong> &mdash; often higher than the rated primary current, and the figure that governs how hot the transformer runs on a continuously overloaded feeder.</li>
+      <li><strong>Insulation level and rated voltage</strong> &mdash; a low-voltage core is commonly rated for 0.66 kV or 720 V, which must exceed the system voltage, not merely match it.</li>
+    </ul>
+
+    <h2>A specification checklist that prevents the problem</h2>
+    <ul>
+      <li>Calculate the real connected burden, cable included, and compare it with the rated burden rather than with a guess.</li>
+      <li>Keep secondary leads short and generous in cross-section, and do not share a single core between a meter and a protection relay.</li>
+      <li>Size protection cores on the accuracy limit factor against the maximum through-fault, including the offset case.</li>
+      <li>Use a dedicated metering core for billing, so a protection event cannot leave remanence in the core that produces the invoice.</li>
+      <li>Ask for the knee point voltage or the class definition on class PX equivalent cores where the relay settings depend on it.</li>
+      <li>Record the burden calculation with the panel drawings, so the next person to add a device knows what margin is left.</li>
+    </ul>
+
+    <h2>How YOMIN current transformers are specified</h2>
+    <p>YOMIN builds low-voltage metering and protection current transformers in wound and busbar types, with ratios from 5 A to 4000 A primary and Class 0.5 or Class 1.0 accuracy on the metering range. Representative catalogued items include a <a href="/products/current-transformer/single-phase-50-60hz-50-turns-250-5a-720v-ac-class-0-5-electric-transformers-current-transformer-for-metering">single-phase 250/5 A Class 0.5 metering current transformer rated 720 V AC at 50/60 Hz</a>, and the <a href="/products/current-transformer">MES series toroidal current transformers</a> in busbar and wound versions, including 800/5 A and 1250/5 A single-phase units in the MES 104/80 frame.</p>
+    <p>The same catalogue covers split-core types for retrofit work where the busbar cannot be disconnected, and <a href="/products/current-transformer">busbar-type current transformers</a> that slide over the bar inside a panel. If you are choosing a ratio for a new installation, the <a href="/blog/ct-ratio-guide">ratio guide</a> and the <a href="/blog/ct-accuracy-class-guide">accuracy class guide</a> cover the selection logic in more detail, and the <a href="/blog/choosing-a-current-transformer">selection walkthrough</a> puts burden, class and ratio into one decision.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>What causes a current transformer to saturate?</h3>
+    <p>Saturation happens when the core cannot carry any more flux. The usual causes are a fault current far above the rated primary current, the DC offset that comes with it, too much burden on the secondary circuit, and remanence left in the core by an earlier fault.</p>
+    <h3>Does saturation affect metering and protection in the same way?</h3>
+    <p>No. A metering core distorts gradually and the meter simply under-reads, which is quiet and easy to miss. A protection core can hold its ratio and then collapse suddenly, which is worse because the relay either refuses to operate or operates late.</p>
+    <h3>Can I fix saturation by fitting a bigger current transformer?</h3>
+    <p>Sometimes. A larger core raises the knee point, so the same burden produces less error. But if the burden is excessive or the secondary leads are long and thin, correcting the wiring is cheaper and more effective than upsizing the transformer.</p>
+    <h3>What is an accuracy limit factor?</h3>
+    <p>The accuracy limit factor is the multiple of rated primary current up to which a protection core stays within its declared composite error. A 5P10 core holds 5 percent error up to ten times rated current, which is the figure that decides whether a relay sees a real fault.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying current transformers for a project?</h2>
+    <p>Send the primary current, system voltage, cable or busbar size and the burden of the device you are feeding. We will confirm the ratio, class and rated burden before anything is produced.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

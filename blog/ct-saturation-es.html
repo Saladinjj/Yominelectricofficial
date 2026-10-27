@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saturación del TC: por qué un transformador de corriente deja de seguir la corriente | Yomin Electric</title>
+<meta name="description" content="Por qué se saturan los transformadores de corriente: componente continua, corriente de falta, carga secundaria y remanencia, y qué debe figurar en la hoja de datos.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/ct-saturation/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/ct-saturation-es">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/ct-saturation">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/ct-saturation-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/ct-saturation-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/ct-saturation-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/ct-saturation">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Saturación del TC: por qué un transformador de corriente deja de seguir la corriente | Yomin Electric",
+      "description": "Por qué se saturan los transformadores de corriente: componente continua, corriente de falta, carga secundaria y remanencia, y qué debe figurar en la hoja de datos.",
+      "image": "https://www.yominelectric.com/assets/images/blog/ct-saturation/hero.png",
+      "datePublished": "2026-10-27",
+      "dateModified": "2026-10-27",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/ct-saturation-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "es",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué provoca la saturación de un transformador de corriente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La saturación ocurre cuando el núcleo ya no puede soportar más flujo. Las causas habituales son una corriente de falta muy superior a la nominal primaria, la componente continua que la acompaña, una carga excesiva en el circuito secundario y la remanencia que deja una falta anterior."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La saturación afecta igual a la medida y a la protección?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Un núcleo de medida se distorsiona de forma gradual y el contador simplemente subestima el consumo, algo silencioso y fácil de pasar por alto. Un núcleo de protección puede mantener su relación y luego colapsar de golpe, lo que es peor: el relé no actúa o actúa tarde."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se corrige la saturación instalando un TC más grande?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A veces. Un núcleo mayor eleva el punto de rodilla y la misma carga produce menos error. Pero si la carga es excesiva o los conductores secundarios son largos y finos, corregir el cableado cuesta menos y resulta más eficaz que cambiar el transformador."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es el factor límite de precisión?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es el múltiplo de la corriente primaria nominal hasta el cual un núcleo de protección se mantiene dentro de su error compuesto declarado. Un núcleo 5P10 mantiene un error del 5 % hasta diez veces la corriente nominal: esa cifra decide si el relé ve una falta real."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+<section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Transformadores de corriente</span></div>
+    <span class="bh-tag">Guías de compra</span>
+    <h1 class="bh-title">Saturación del TC: por qué un transformador de corriente deja de seguir la corriente</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">Equipo técnico ET</strong>
+      <span class="divider"></span>
+      <span>27 de octubre de 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/ct-saturation/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/ct-saturation/hero.png" alt="Tres transformadores de corriente tipo anillo montados sobre barras de cobre en un cuadro de baja tensión" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+<p>Un transformador de corriente se satura cuando su núcleo ya no puede transportar el flujo que exige la corriente primaria, de modo que la corriente secundaria deja de ser una copia fiel y proporcional de la primaria. La salida se derrumba, la onda se distorsiona y todos los equipos aguas abajo &mdash; contador, relé, transductor o registrador &mdash; trabajan de pronto con un valor menor que la realidad. La saturación no es un defecto de fabricación: es un límite de diseño superado, y casi siempre el límite superado no es la intensidad nominal, sino la carga secundaria o la componente continua que acompañó a la falta.</p>
+
+    <h2>Qué ocurre realmente dentro del núcleo</h2>
+    <p>Un TC funciona por equilibrio de amperios-vuelta: la corriente primaria por las espiras primarias debe igualar la corriente secundaria por las espiras secundarias, más la pequeña corriente magnetizante que el núcleo necesita para establecer el flujo. Mientras el núcleo está holgadamente por debajo de su punto de rodilla, esa corriente es mínima y la relación se mantiene dentro de la clase de precisión.</p>
+    <p>Si el flujo sube, la relación deja de ser lineal. Cerca del punto de rodilla el núcleo exige una corriente magnetizante desproporcionada para ganar un poco más de flujo, de modo que una parte creciente de los amperios-vuelta primarios se gasta en magnetizar el hierro en lugar de alimentar el secundario. Pasado ese punto el núcleo está saturado: la permeabilidad cae, el flujo deja de crecer y la corriente secundaria queda limitada por la carga y no por la relación. La salida se convierte en una sucesión de picos estrechos, y por eso un contador de valor eficaz real y otro de valor medio no coinciden sobre la misma señal saturada.</p>
+
+    <h2>Cuatro condiciones que llevan un núcleo a la saturación</h2>
+    <ul>
+      <li><strong>Corriente de falta muy superior a la nominal primaria.</strong> Un TC 250/5 está pensado para ser exacto a 250 A; una falta de 25 kA le pide reproducir cien veces su calibre, algo para lo que ningún núcleo de medida está construido.</li>
+      <li><strong>Componente continua de la corriente de falta.</strong> En una red predominantemente inductiva la falta arranca de forma asimétrica. La componente continua decreciente desplaza toda la onda de flujo hacia un lado del ciclo de histéresis, así que el núcleo alcanza el punto de rodilla ya en el primer semiciclo. Es la razón más frecuente de que un núcleo de protección se sature antes de lo que indicaban los cálculos.</li>
+      <li><strong>Carga secundaria.</strong> Cada bobina de relé, bobina de contador, borne, empalme y metro de cable secundario añade impedancia que el núcleo debe vencer. Un tramo largo de cable de 2,5 mm&sup2; puede pesar más que el propio relé, y es la variable que más a menudo se omite al especificar.</li>
+      <li><strong>Remanencia.</strong> Tras una falta que llevó el núcleo cerca de la saturación, parte del flujo queda atrapado en el hierro. La siguiente falta parte de ese valor desplazado y no de cero, de modo que un núcleo que se comportó bien la primera vez puede fallar la segunda.</li>
+    </ul>
+
+    <h2>Medida y protección fallan de forma distinta</h2>
+    <table>
+      <thead>
+        <tr><th>Uso del núcleo</th><th>Se especifica por</th><th>Qué hace la saturación</th><th>Qué se observa en campo</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Medida</td>
+          <td>Exactitud cerca de la corriente nominal, expresada como error a una carga definida</td>
+          <td>Los errores de relación y de fase crecen, la lectura baja y la onda se aplana</td>
+          <td>Facturas e informes subestiman el consumo, dos contadores del mismo circuito discrepan</td>
+        </tr>
+        <tr>
+          <td>Protección</td>
+          <td>Error compuesto mantenido hasta un múltiplo declarado de la corriente nominal</td>
+          <td>La relación aguanta y luego se derrumba en pocos milisegundos</td>
+          <td>El relé no dispara, dispara tarde o una función de distancia mide una impedancia falsa</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Un núcleo de medida saturado es un problema comercial. Un núcleo de protección saturado es un problema de seguridad, porque se pide al relé que decida si dispara con pruebas ya corrompidas.</p>
+
+    <h2>Por qué la componente continua importa más que la magnitud</h2>
+    <p>A menudo se comprueba el TC contra la corriente de falta simétrica y ahí termina el cálculo. Esa comprobación es necesaria pero no suficiente. El flujo en el núcleo es la integral de la tensión que alimenta el secundario, y una corriente totalmente desplazada empuja el flujo en una sola dirección durante los primeros ciclos. La demanda de flujo de pico puede acercarse al doble de la que produciría la corriente simétrica por sí sola.</p>
+    <p>Por eso un núcleo puede pasar un cálculo basado en 20 kA y saturarse igualmente con una falta de 12 kA cerca de un generador, donde la relación X/R es alta y el desplazamiento tarda en desaparecer. Si la protección debe ser fiable en faltas cercanas, ese es el caso que dimensiona el núcleo.</p>
+
+    <h2>La carga es un presupuesto y el cable consume la mayor parte</h2>
+    <p>La hoja de datos indica una carga nominal en voltiamperios a un factor de potencia dado, normalmente 5, 10 o 15 VA. Esa cifra es la impedancia total que el secundario puede presentar manteniendo la clase declarada. Todo lo conectado en el bucle consume de ese presupuesto: la entrada de corriente del relé o del contador, el cable secundario contado en ida y vuelta, y los bornes, las regletas de prueba y los empalmes del tramo.</p>
+    <p>Un cable de cobre de 2,5 mm&sup2; tiene del orden de 7 &Omega; por kilómetro y conductor, así que un tramo de ida y vuelta de 60 m aporta unos 0,85 &Omega; a 5 A eso son más de 4 VA gastados solo en cable, antes de contar el relé. Acortar el tramo o aumentar la sección devuelve margen al mismo TC. Por eso tantas revisiones de especificación terminan cambiando el cable y no el transformador.</p>
+
+    <h2>Qué leer en la hoja de datos</h2>
+    <ul>
+      <li><strong>Corriente primaria y secundaria nominales</strong> &mdash; por ejemplo 250/5 A. La relación debe servir a la carga, no al nivel de falta.</li>
+      <li><strong>Clase de precisión</strong> &mdash; 0,5 o 1,0 en medida, 5P o 10P en protección. La clase solo vale a la carga nominal.</li>
+      <li><strong>Carga nominal</strong> &mdash; la cifra en VA que acompaña a la clase. Un núcleo clase 0,5 de 5 VA es un instrumento más débil que uno clase 0,5 de 15 VA.</li>
+      <li><strong>Factor límite de precisión</strong> &mdash; cuántas veces la corriente nominal admite el núcleo de protección antes de superar su error declarado.</li>
+      <li><strong>Corriente térmica permanente</strong> &mdash; a menudo superior a la nominal primaria y decisiva para el calentamiento en un circuito sobrecargado de forma continua.</li>
+      <li><strong>Nivel de aislamiento y tensión nominal</strong> &mdash; un núcleo de baja tensión suele estar previsto para 0,66 kV o 720 V, valor que debe superar la tensión del sistema, no igualarla.</li>
+    </ul>
+
+    <h2>Una lista de comprobación que evita el problema</h2>
+    <ul>
+      <li>Calcular la carga realmente conectada, incluido el cable, y compararla con la carga nominal en lugar de con una estimación.</li>
+      <li>Mantener los conductores secundarios cortos y de sección generosa, y no compartir un núcleo entre un contador y un relé de protección.</li>
+      <li>Dimensionar los núcleos de protección por el factor límite frente a la falta máxima, incluido el caso con componente continua.</li>
+      <li>Reservar un núcleo de medida dedicado a la facturación, para que un evento de protección no deje remanencia en el núcleo que produce la factura.</li>
+      <li>Pedir la tensión de rodilla, o la definición de clase de los núcleos tipo PX, cuando los ajustes del relé dependan de ella.</li>
+      <li>Guardar el cálculo de carga junto con los planos del cuadro, para que el siguiente que añada un equipo sepa qué margen queda.</li>
+    </ul>
+
+    <h2>Cómo se especifican los TC de YOMIN</h2>
+    <p>YOMIN fabrica transformadores de corriente de baja tensión para medida y protección, en versiones devanada y de paso de barra, con relaciones de 5 A a 4000 A en primario y clase 0,5 o 1,0 en el rango de medida. Entre los artículos de catálogo figuran un <a href="/products/current-transformer/single-phase-50-60hz-50-turns-250-5a-720v-ac-class-0-5-electric-transformers-current-transformer-for-metering">TC de medida monofásico 250/5 A clase 0,5, 720 V AC, 50/60 Hz</a> y la <a href="/products/current-transformer">serie MES</a> en versiones toroidal y de barra, con unidades monofásicas de 800/5 A y 1250/5 A en la caja MES 104/80.</p>
+    <p>La gama incluye también modelos de núcleo partido para reequipar instalaciones existentes en las que no se puede desconectar la barra. Para elegir la relación, la <a href="/blog/ct-ratio-guide">guía de relaciones</a> y la <a href="/blog/ct-accuracy-class-guide">guía de clases de precisión</a> desarrollan la lógica de selección, y el <a href="/blog/choosing-a-current-transformer">recorrido de selección</a> reúne carga, clase y relación en una sola decisión.</p>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Qué provoca la saturación de un transformador de corriente?</h3>
+    <p>La saturación ocurre cuando el núcleo ya no puede soportar más flujo. Las causas habituales son una corriente de falta muy superior a la nominal primaria, la componente continua que la acompaña, una carga excesiva en el secundario y la remanencia de una falta anterior.</p>
+    <h3>¿La saturación afecta igual a la medida y a la protección?</h3>
+    <p>No. Un núcleo de medida se distorsiona de forma gradual y el contador subestima el consumo, algo silencioso. Un núcleo de protección puede mantener su relación y colapsar de golpe: el relé no actúa o actúa tarde.</p>
+    <h3>¿Se corrige la saturación instalando un TC más grande?</h3>
+    <p>A veces. Un núcleo mayor eleva el punto de rodilla y la misma carga produce menos error. Pero si la carga es excesiva o los conductores secundarios son largos y finos, corregir el cableado cuesta menos y resulta más eficaz.</p>
+    <h3>¿Qué es el factor límite de precisión?</h3>
+    <p>Es el múltiplo de la corriente primaria nominal hasta el cual un núcleo de protección se mantiene dentro de su error compuesto declarado. Un núcleo 5P10 mantiene un error del 5 % hasta diez veces la corriente nominal.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Está definiendo transformadores de corriente para un proyecto?</h2>
+    <p>Envíenos la corriente primaria, la tensión del sistema, la sección de cable o de barra y la carga del equipo que va a alimentar. Confirmamos relación, clase y carga nominal antes de fabricar.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
