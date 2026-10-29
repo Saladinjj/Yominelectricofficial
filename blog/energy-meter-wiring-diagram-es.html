@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esquema de conexión de un contador de energía: monofásico, trifásico y con TC | Yomin Electric</title>
+<meta name="description" content="Conexión borne a borne de contadores kWh de carril DIN: monofásico de dos hilos, trifásico de cuatro hilos y montaje con TC, además de RS485 y salida de impulsos y los errores que dañan los contadores.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/energy-meter-wiring-diagram/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram-es">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Esquema de conexión de un contador de energía: monofásico, trifásico y con TC",
+      "description": "Conexión borne a borne de contadores kWh de carril DIN: monofásico de dos hilos, trifásico de cuatro hilos y montaje con TC, además de RS485 y salida de impulsos y los errores que dañan los contadores.",
+      "image": "https://www.yominelectric.com/assets/images/blog/energy-meter-wiring-diagram/hero.png",
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-10-29",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/logo_transparent.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/energy-meter-wiring-diagram-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Se puede conectar un contador monofásico con fase y neutro invertidos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Muchos contadores electrónicos seguirán contando, porque miden la diferencia de potencial en el elemento sin suponer qué lado es la fase. Eso no lo hace correcto: la polaridad aguas abajo de la instalación queda invertida y el neutro queda conmutado. Cabelo según el esquema."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué mi contador trifásico muestra una fase en negativo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Casi siempre un secundario de TC invertido en esa fase, o un TC montado con P1 hacia la carga en lugar de hacia la alimentación. Compruebe la polaridad en S1/S2 antes de sospechar del contador."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hay que programar la relación del TC o el contador la detecta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hay que programarla. El contador solo ve corriente secundaria y no tiene forma de saber a qué corriente primaria corresponde. Una relación sin programar es la causa más frecuente de un contador que muestra una cifra plausible pero falsa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué longitud puede tener un RS485 en una instalación de medición?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de la velocidad, la capacidad del cable y cuántos equipos comparten el bus, por lo que la respuesta práctica sale de la ficha técnica del contador y no de una regla empírica. Lo que importa a cualquier longitud es la topología en cadena, una polaridad A/B coherente y una pantalla a tierra en un solo extremo."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Contadores de energía</span></div>
+    <span class="bh-tag">Guías de instalación</span>
+    <h1 class="bh-title">Esquema de conexión de un contador de energía: monofásico, trifásico y con TC</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>29 de octubre de 2026</span>
+      <span class="divider"></span>
+      <span>9 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/energy-meter-wiring-diagram/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/energy-meter-wiring-diagram/hero.png" alt="Electricista cableando el bornero de un contador de energía de carril DIN dentro de un cuadro de distribución abierto, con un destornillador de precisión" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un esquema de conexión de contador de energía se lee en el bornero, no en la pantalla. Un contador monofásico tiene cuatro bornes de potencia: fase de entrada, fase de salida, neutro de entrada y neutro de salida. Un contador trifásico de cuatro hilos tiene siete: tres pares de fase entrada/salida más neutro de entrada y salida. Un contador con TC sustituye los bornes de gran corriente por pequeños bornes secundarios, dos por transformador de corriente. Todo lo demás —RS485, salida de impulsos, control de tarifa— es señalización de baja tensión y va en un grupo de bornes aparte.</p>
+
+    <p>Acertar con los bornes de potencia decide si el contador funciona; acertar con los bornes pequeños decide si sigue funcionando. La mayoría de los contadores que vuelven como averiados el primer año no fallaron en fábrica: se cablearon mal en obra.</p>
+
+    <h2>Antes de meter el primer cable</h2>
+    <p>Tres comprobaciones evitan la mayor parte de las visitas repetidas.</p>
+    <ul>
+      <li><strong>Lea el esquema impreso en el lateral del contador.</strong> La numeración de bornes no está normalizada entre fabricantes. Algunos numeran los bornes de potencia del 1 al 4 y los de señal del 5 al 8; otros invierten el orden entre entrada y salida. El esquema impreso manda para esa unidad concreta.</li>
+      <li><strong>Confirme que la alimentación y el contador coinciden.</strong> Un contador trifásico marcado 380 V no tiene nada que hacer en un sistema para el que no fue construido, y un contador de conexión directa no tiene nada que hacer en un alimentador por encima de su corriente máxima.</li>
+      <li><strong>Aísle y verifique ausencia de tensión.</strong> Todos los bornes de este artículo están con tensión en algún momento del procedimiento. Aísle aguas arriba, bloquee y compruebe antes de tocar un conductor.</li>
+    </ul>
+
+    <h2>Monofásico de dos hilos: cuatro bornes</h2>
+    <p>El contador de carril DIN más común del mundo, y el que más veces se cablea al revés.</p>
+    <table>
+      <thead>
+        <tr><th>Borne</th><th>Conexión</th><th>Qué sale mal</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>L entrada (a menudo 1)</td><td>Fase procedente de la alimentación</td><td>Intercambiada con L salida: el contador sigue contando, pero la polaridad aguas abajo queda invertida</td></tr>
+        <tr><td>L salida (a menudo 2)</td><td>Fase hacia la carga</td><td>Carga tomada del lado de entrada, con lo que el contador queda puenteado por completo</td></tr>
+        <tr><td>N entrada (a menudo 3)</td><td>Neutro de entrada</td><td>Neutro tomado de otro circuito, lo que hace pasar corriente no medida por la referencia del contador</td></tr>
+        <tr><td>N salida (a menudo 4)</td><td>Neutro hacia la carga</td><td>Neutro y tierra confundidos: error de medición y fallo de seguridad a la vez</td></tr>
+      </tbody>
+    </table>
+    <p>El contador electrónico monofásico de la gama YOMIN, como el <a href="/products/energy-meter/din-rail-kwh-meter-single-phase-mini-din-rail-kwh-meter-active-energy-meters-energy-meter">contador kWh monofásico mini de carril DIN</a>, sigue esta disposición de cuatro bornes en una envolvente de dos módulos. Cuando incorpora RS485, como el <a href="/products/energy-meter/80a-maximum-current-rs485-communication-kwh-power-consumption-din-rail-frequency-energy-meter-single-phase-ene">contador de carril DIN de 80 A con RS485</a>, los bornes de comunicación quedan separados de los de potencia y marcados claramente como A y B.</p>
+
+    <h2>Trifásico de cuatro hilos: siete bornes</h2>
+    <p>Tres conductores de fase y un neutro, cada uno medido por su propio elemento. El neutro no es opcional en un contador de cuatro hilos: sin él, la referencia de tensión de cada elemento es incorrecta y las lecturas dejan de tener sentido, no solo precisión.</p>
+    <table>
+      <thead>
+        <tr><th>Grupo</th><th>Bornes</th><th>Notas</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Fase 1</td><td>L1 entrada, L1 salida</td><td>La secuencia de fases debe seguir el esquema impreso; el contador funcionará con cualquier secuencia, pero los registros por fase no corresponderán a su rotulado.</td></tr>
+        <tr><td>Fase 2</td><td>L2 entrada, L2 salida</td><td>Misma disposición de elemento que la fase 1</td></tr>
+        <tr><td>Fase 3</td><td>L3 entrada, L3 salida</td><td>Misma disposición de elemento que la fase 1</td></tr>
+        <tr><td>Neutro</td><td>N entrada, N salida</td><td>Debe ser el neutro que alimenta la carga, no uno tomado de otro sitio</td></tr>
+      </tbody>
+    </table>
+    <p>Un rango de corriente como 5&ndash;80 A en el <a href="/products/energy-meter/5-80a-380v-ac-50hz-lcd-backlight-display-din-rail-3-phase-4-wire-electronic-watt-power-kwh-energy-meter">contador trifásico de cuatro hilos de carril DIN, 380 V 50 Hz</a> describe un equipo de conexión directa: la corriente de carga pasa por los bornes del propio contador. Por encima de eso, el contador debe montarse con TC. Nuestra <a href="/blog/three-phase-energy-meter-guide">guía de contadores trifásicos</a> detalla la diferencia entre 3 y 4 hilos y la decisión entre directo y TC.</p>
+
+    <h2>Contadores con TC: bornes pequeños, consecuencias grandes</h2>
+    <p>En un contador con TC los conductores de potencia atraviesan los transformadores de corriente y nunca tocan el contador. Este recibe el secundario de cada TC, normalmente 5 A, en un par de bornes pequeños marcados S1 y S2.</p>
+    <ul>
+      <li><strong>La polaridad decide el sentido.</strong> S1 debe corresponder a P1 en el lado primario. Invierta un solo TC y esa fase registrará negativo mientras las otras dos registran positivo: el total resulta plausible pero falso.</li>
+      <li><strong>La relación debe programarse.</strong> El contador lee corriente secundaria; la relación del TC es lo que la convierte de nuevo en corriente primaria. Un TC de 200/5 con un contador aún configurado en 100/5 divide todas las lecturas por dos, y nada en la pantalla parecerá incorrecto.</li>
+      <li><strong>Nunca abra un secundario de TC en carga.</strong> Un secundario abierto lleva el núcleo a saturación y genera una tensión peligrosa en los bornes. Cortocircuite el secundario a través del bloque de ensayo antes de abrir el circuito.</li>
+      <li><strong>Un TC por fase, con la misma relación.</strong> Mezclar relaciones entre fases produce un total que ya no se puede corregir sin saber qué fase era distinta.</li>
+    </ul>
+    <p>El <a href="/products/energy-meter/dual-display-options-3-phase-4-wire-three-phase-din-rail-m-bus-active-and-reactive-infrared-kwh-ct-included-en">contador trifásico de carril DIN con entrada de TC y M-Bus</a> está pensado para esta disposición, y nuestras notas sobre <a href="/blog/commercial-metering-what-is-a-ct-operated-energy-meter">medición con TC</a> explican cómo interactúa la relación con el registro.</p>
+
+    <h2>RS485 y salida de impulsos</h2>
+    <p>Estos bornes no llevan corriente de carga, pero son los que fallan en silencio cuando se cablean sin cuidado.</p>
+    <table>
+      <thead>
+        <tr><th>Señal</th><th>Bornes</th><th>Buena práctica</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>RS485</td><td>A y B, a veces con común</td><td>Par trenzado apantallado, en cadena y no en estrella, pantalla a tierra en un solo extremo, A con A y B con B en todo el bus</td></tr>
+        <tr><td>Salida de impulsos</td><td>Impulso y común</td><td>Cable apantallado de dos conductores apartado de los de potencia; la constante de impulsos impresa en el contador define cuánto vale cada impulso</td></tr>
+        <tr><td>Control de tarifa</td><td>Entrada conmutada</td><td>Contacto seco del reloj tarifario o del controlador, nunca una fase tomada de cualquier sitio</td></tr>
+      </tbody>
+    </table>
+    <p>Mantenga los conductores de señal y de potencia en canalizaciones separadas siempre que el trazado lo permita. La mayoría de los fallos intermitentes de comunicación en una instalación de medición son ruido inducido por un cable de señal que discurre junto a un alimentador, no un contador averiado. La <a href="/blog/modbus-rs485-energy-meters-guide">guía de compra de Modbus y RS485</a> cubre el direccionamiento y la terminación.</p>
+
+    <h2>Las familias de contadores de un vistazo</h2>
+    <table>
+      <thead>
+        <tr><th>Familia</th><th>Bornes de potencia</th><th>Bornes de señal</th><th>Modelo típico</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Monofásico dos hilos, directo</td><td>4</td><td>Impulsos, RS485 opcional</td><td><a href="/products/energy-meter/din-rail-kwh-meter-single-phase-mini-din-rail-kwh-meter-active-energy-meters-energy-meter">Contador kWh monofásico mini de carril DIN</a></td></tr>
+        <tr><td>Monofásico directo con comunicación</td><td>4</td><td>RS485, impulsos</td><td><a href="/products/energy-meter/80a-maximum-current-rs485-communication-kwh-power-consumption-din-rail-frequency-energy-meter-single-phase-ene">Contador de carril DIN 80 A RS485</a></td></tr>
+        <tr><td>Trifásico cuatro hilos, directo</td><td>7</td><td>RS485, impulsos</td><td><a href="/products/energy-meter/5-80a-380v-ac-50hz-lcd-backlight-display-din-rail-3-phase-4-wire-electronic-watt-power-kwh-energy-meter">Contador trifásico cuatro hilos 380 V 50 Hz</a></td></tr>
+        <tr><td>Trifásico con TC</td><td>3 pares S1/S2</td><td>M-Bus, infrarrojo</td><td><a href="/products/energy-meter/dual-display-options-3-phase-4-wire-three-phase-din-rail-m-bus-active-and-reactive-infrared-kwh-ct-included-en">Contador trifásico con entrada de TC y M-Bus</a></td></tr>
+      </tbody>
+    </table>
+
+    <h2>Los errores que explican la mayoría de los fallos</h2>
+    <table>
+      <thead>
+        <tr><th>Error</th><th>Consecuencia</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Carga tomada del lado de entrada del contador</td><td>El contador queda puenteado y no registra nada de esa carga, aunque parece funcionar</td></tr>
+        <tr><td>Neutro tomado de otro circuito</td><td>Parte de la corriente retorna fuera del contador; las lecturas derivan y se vuelven irreconciliables</td></tr>
+        <tr><td>Dos fases permutadas en un contador trifásico</td><td>El total puede parecer aceptable mientras los datos por fase son erróneos, lo que despista la búsqueda de fallos</td></tr>
+        <tr><td>Secundario de TC invertido</td><td>Una fase registra negativo; el total subestima el consumo</td></tr>
+        <tr><td>Relación de TC no programada</td><td>Todas las lecturas escaladas con un factor equivocado, sin síntoma visible</td></tr>
+        <tr><td>RS485 en estrella en lugar de cadena</td><td>Reflexiones y cortes intermitentes en el bus</td></tr>
+        <tr><td>Cable de señal en la canalización de potencia</td><td>Errores inducidos que aparecen y desaparecen con la carga</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Lista de comprobación de puesta en marcha</h2>
+    <ul>
+      <li>El esquema de bornes del contador coincide con el plano que se está siguiendo.</li>
+      <li>La tensión, el número de fases y la corriente máxima están dentro de las características del contador.</li>
+      <li>Entrada y salida de fase no están intercambiadas; la carga queda aguas abajo del contador.</li>
+      <li>El neutro es el de la propia carga, no uno tomado de otro circuito.</li>
+      <li>Se respeta la polaridad P1/S1 en cada fase y la relación está introducida en el contador.</li>
+      <li>Los secundarios de TC se cortocircuitaron antes de abrir cualquier bucle durante el trabajo.</li>
+      <li>RS485 coherente de extremo a extremo, en cadena, pantalla a tierra en un solo extremo.</li>
+      <li>Todos los bornes apretados al valor indicado en el contador y la tapa recolocada.</li>
+    </ul>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Se puede conectar un contador monofásico con fase y neutro invertidos?</h3>
+    <p>Muchos contadores electrónicos seguirán contando, porque miden la diferencia de potencial en el elemento sin suponer qué lado es la fase. Eso no lo hace correcto: la polaridad aguas abajo de la instalación queda invertida y el neutro queda conmutado. Cabelo según el esquema.</p>
+
+    <h3>¿Por qué mi contador trifásico muestra una fase en negativo?</h3>
+    <p>Casi siempre un secundario de TC invertido en esa fase, o un TC montado con P1 hacia la carga en lugar de hacia la alimentación. Compruebe la polaridad en S1/S2 antes de sospechar del contador.</p>
+
+    <h3>¿Hay que programar la relación del TC o el contador la detecta?</h3>
+    <p>Hay que programarla. El contador solo ve corriente secundaria y no tiene forma de saber a qué corriente primaria corresponde. Una relación sin programar es la causa más frecuente de un contador que muestra una cifra plausible pero falsa.</p>
+
+    <h3>¿Qué longitud puede tener un RS485 en una instalación de medición?</h3>
+    <p>Depende de la velocidad, la capacidad del cable y cuántos equipos comparten el bus, por lo que la respuesta práctica sale de la ficha técnica del contador y no de una regla empírica. Lo que importa a cualquier longitud es la topología en cadena, una polaridad A/B coherente y una pantalla a tierra en un solo extremo.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Está cableando contadores en un proyecto?</h2>
+    <p>Envíe el tipo de contador, la configuración de alimentación y la relación de TC de cada punto, y confirmamos la disposición de bornes antes de construir el cuadro.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <p style="margin-top:14px"><a href="/products/energy-meter">Ver contadores de energía &rarr;</a></p>
+    <p style="margin-top:18px;font-size:14px;color:var(--mt)">¿Prefiere enviar el esquema de medición por WhatsApp? <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "energy-meter-wiring-diagram";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      location.href = '/blog/' + b + M[l];
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

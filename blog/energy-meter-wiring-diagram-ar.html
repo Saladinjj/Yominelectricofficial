@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مخطط توصيل عداد الطاقة: أحادي الطور وثلاثي الطور وعدادات المحوّلات | Yomin Electric</title>
+<meta name="description" content="توصيل عداد الطاقة على قضيب DIN طرفاً بطرف: أحادي الطور بسلكين، وثلاثي الطور بأربعة أسلاك، والتوصيل عبر محوّلات التيار، مع RS485 ومخرج النبضات والأخطاء التي تتلف العدادات.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/energy-meter-wiring-diagram/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram-ar">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "مخطط توصيل عداد الطاقة: أحادي الطور وثلاثي الطور وعدادات المحوّلات",
+      "description": "توصيل عداد الطاقة على قضيب DIN طرفاً بطرف: أحادي الطور بسلكين، وثلاثي الطور بأربعة أسلاك، والتوصيل عبر محوّلات التيار، مع RS485 ومخرج النبضات والأخطاء التي تتلف العدادات.",
+      "image": "https://www.yominelectric.com/assets/images/blog/energy-meter-wiring-diagram/hero.png",
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-10-29",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/logo_transparent.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/energy-meter-wiring-diagram-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "هل يمكن توصيل عداد أحادي الطور مع تبديل الطور والحيادي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "كثير من العدادات الإلكترونية سيظل يعدّ، لأنه يقيس فرق الجهد على العنصر دون افتراض أي الجهتين هو الطور. لكن هذا لا يجعله صحيحاً: تصبح قطبية ما بعد العداد معكوسة ويصبح الحيادي مقطوعاً. وصّل وفق المخطط."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا يظهر طور بالسالب في عدادي ثلاثي الطور؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "غالباً ثانوي محوّل معكوس على ذلك الطور، أو محوّل مركّب بحيث يكون P1 نحو الحمل بدل المصدر. افحص القطبية عند S1/S2 قبل الشك في العداد."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يجب برمجة نسبة المحوّل أم يكتشفها العداد؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يجب برمجتها. فالعداد لا يرى إلا التيار الثانوي وليس لديه وسيلة لمعرفة التيار الابتدائي الذي يمثله. والنسبة غير المبرمجة هي السبب الأكثر شيوعاً لعداد يعرض رقماً معقولاً لكنه خاطئ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما أقصى طول لخط RS485 في منشأة قياس؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يعتمد على معدل النقل وسعة الكابل وعدد الأجهزة المشتركة في الناقل، ولهذا تأتي الإجابة العملية من ورقة بيانات العداد لا من قاعدة تقريبية. والمهم عند أي طول هو الطوبولوجيا على شكل سلسلة واتساق قطبية A/B وتأريض الدّرع من طرف واحد فقط."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">الرئيسية</a> &middot; <a href="/blog">المدونة</a> &middot; <span>عدادات الطاقة</span></div>
+    <span class="bh-tag">أدلة التركيب</span>
+    <h1 class="bh-title">مخطط توصيل عداد الطاقة: أحادي الطور وثلاثي الطور وعدادات المحوّلات</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>29 أكتوبر 2026</span>
+      <span class="divider"></span>
+      <span>9 دقائق قراءة</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/energy-meter-wiring-diagram/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/energy-meter-wiring-diagram/hero.png" alt="فني كهرباء يوصّل كتلة أطراف عداد طاقة على قضيب DIN داخل صندوق توزيع مفتوح باستخدام مفك دقيق" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>يُقرأ مخطط توصيل عداد الطاقة من كتلة الأطراف لا من الشاشة. فالعداد أحادي الطور يضم أربعة أطراف للقدرة: دخول الطور وخروجه، ودخول الحيادي وخروجه. والعداد ثلاثي الطور بأربعة أسلاك يضم سبعة: ثلاثة أزواج دخول/خروج للأطوار إضافة إلى دخول الحيادي وخروجه. أما العداد العامل بمحوّلات التيار فيستبدل أطراف التيار العالي بأطراف ثانوية صغيرة، طرفان لكل محوّل تيار. وما تبقّى في العداد — RS485 ومخرج النبضات والتحكم في التعرفة — إشارات منخفضة الجهد لها مجموعة أطراف منفصلة.</p>
+
+    <p>ضبط أطراف القدرة يحدد ما إذا كان العداد سيعمل؛ وضبط الأطراف الصغيرة يحدد ما إذا كان سيبقى يعمل. ومعظم العدادات التي تُعيد كمعطوبة في السنة الأولى لم تكن معيبة من المصنع، بل وُصلت خطأً في الموقع.</p>
+
+    <h2>قبل إدخال أول سلك</h2>
+    <p>ثلاثة فحوص تمنع معظم زيارات الإصلاح المتكررة.</p>
+    <ul>
+      <li><strong>اقرأ المخطط المطبوع على جانب العداد.</strong> ترقيم الأطراف غير موحّد بين المصنّعين. بعض العدادات ترقّم أطراف القدرة من 1 إلى 4 وأطراف الإشارة من 5 إلى 8، وأخرى تعكس ترتيب الدخول والخروج. والمخطط المطبوع هو المرجع لتلك الوحدة بعينها.</li>
+      <li><strong>تأكد من توافق التغذية مع العداد.</strong> العداد ثلاثي الطور الموسوم 380 فولت لا يُستخدم في نظام لم يُصنع له، والعداد الموصول مباشرة لا يُستخدم على مغذٍّ يتجاوز تياره الأقصى.</li>
+      <li><strong>اعزل التيار وتحقق من انعدام الجهد.</strong> كل طرف مذكور في هذا المقال يكون حاملاً للجهد في مرحلة ما من العمل. اعزل من المنبع، وأقفل، واختبر قبل لمس أي موصل.</li>
+    </ul>
+
+    <h2>أحادي الطور بسلكين: أربعة أطراف</h2>
+    <p>العداد الأكثر شيوعاً في العالم على قضيب DIN، وهو أيضاً الأكثر توصيلاً بالعكس.</p>
+    <table>
+      <thead>
+        <tr><th>الطرف</th><th>التوصيل</th><th>ما يحدث من خطأ</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>دخول الطور (غالباً 1)</td><td>الطور القادم من جهة التغذية</td><td>يُبدَّل مع خروج الطور: يبقى العداد يعدّ لكن قطبية ما بعد العداد تصبح معكوسة</td></tr>
+        <tr><td>خروج الطور (غالباً 2)</td><td>الطور إلى الحمل</td><td>أخذ الحمل من جهة الدخول، فيُتجاوَز العداد تماماً</td></tr>
+        <tr><td>دخول الحيادي (غالباً 3)</td><td>الحيادي القادم</td><td>استعارة الحيادي من دائرة أخرى، فيمر تيار غير مقيس في مرجع العداد</td></tr>
+        <tr><td>خروج الحيادي (غالباً 4)</td><td>الحيادي إلى الحمل</td><td>الخلط بين الحيادي والأرضي، وهو خطأ قياس وعيب أمني في آن واحد</td></tr>
+      </tbody>
+    </table>
+    <p>العداد الإلكتروني أحادي الطور من مجموعة YOMIN، مثل <a href="/products/energy-meter/din-rail-kwh-meter-single-phase-mini-din-rail-kwh-meter-active-energy-meters-energy-meter">عداد kWh أحادي الطور صغير على قضيب DIN</a>، يتبع هذا الترتيب الرباعي داخل جسم من وحدتين. وعندما يتضمن RS485 كما في <a href="/products/energy-meter/80a-maximum-current-rs485-communication-kwh-power-consumption-din-rail-frequency-energy-meter-single-phase-ene">عداد قضيب DIN بقدرة 80 أمبير مع RS485</a>، تكون أطراف الاتصال منفصلة عن أطراف القدرة وموسومة بوضوح A وB.</p>
+
+    <h2>ثلاثي الطور بأربعة أسلاك: سبعة أطراف</h2>
+    <p>ثلاثة موصلات طور وحيادي واحد، ويُقاس كل منها بعنصره الخاص. والحيادي ليس اختيارياً في عداد رباعي الأسلاك: فبدونه يصبح مرجع الجهد لكل عنصر خاطئاً، وتفقد القراءات معناها لا دقتها فقط.</p>
+    <table>
+      <thead>
+        <tr><th>المجموعة</th><th>الأطراف</th><th>ملاحظات</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>الطور الأول</td><td>L1 دخول، L1 خروج</td><td>يُفترض أن يتبع تعاقب الأطوار المخطط المطبوع؛ يعمل العداد بأي تعاقب، لكن السجلات لكل طور لن تطابق ترقيمك.</td></tr>
+        <tr><td>الطور الثاني</td><td>L2 دخول، L2 خروج</td><td>الترتيب نفسه المتبع في الطور الأول</td></tr>
+        <tr><td>الطور الثالث</td><td>L3 دخول، L3 خروج</td><td>الترتيب نفسه المتبع في الطور الأول</td></tr>
+        <tr><td>الحيادي</td><td>N دخول، N خروج</td><td>يجب أن يكون الحيادي الذي يغذي الحمل نفسه، لا حيادياً مستعاراً</td></tr>
+      </tbody>
+    </table>
+    <p>نطاق تيار مثل 5&ndash;80 أمبير في <a href="/products/energy-meter/5-80a-380v-ac-50hz-lcd-backlight-display-din-rail-3-phase-4-wire-electronic-watt-power-kwh-energy-meter">عداد ثلاثي الطور رباعي الأسلاك على قضيب DIN بجهد 380 فولت و50 هرتز</a> يصف جهازاً موصولاً مباشرة: يمر تيار الحمل عبر أطراف العداد نفسها. وفوق ذلك يجب أن يكون العداد عاملاً بمحوّلات تيار. ويشرح <a href="/blog/three-phase-energy-meter-guide">دليل العدادات ثلاثية الطور</a> الفرق بين ثلاثة وأربعة أسلاك وقرار التوصيل المباشر مقابل المحوّلات.</p>
+
+    <h2>عدادات المحوّلات: أطراف صغيرة ونتائج كبيرة</h2>
+    <p>في العداد العامل بمحوّلات التيار تمر موصلات القدرة عبر المحوّلات ولا تلمس العداد أبداً. ويستقبل العداد الملف الثانوي لكل محوّل، وعادة 5 أمبير، على زوج من الأطراف الصغيرة الموسومة S1 وS2.</p>
+    <ul>
+      <li><strong>القطبية تحدد الاتجاه.</strong> يجب أن يقابل S1 الطرف P1 من جهة الابتدائي. وإذا عُكس محوّل واحد سُجّل ذلك الطور بالسالب بينما يسجّل الطوران الآخران بالموجب، فينتج إجمالي معقول لكنه خاطئ.</li>
+      <li><strong>يجب برمجة النسبة.</strong> يقرأ العداد التيار الثانوي، ونسبة المحوّل هي ما يعيده إلى التيار الابتدائي. محوّل 200/5 مع عداد لا يزال مضبوطاً على 100/5 يقسم كل القراءات على اثنين، ولن يبدو على الشاشة أي خلل.</li>
+      <li><strong>لا تفتح ثانوي محوّل تحت الحمل أبداً.</strong> الثانوي المفتوح يدفع النواة إلى التشبع وينتج جهداً خطيراً على الأطراف. قصّر الثانوي عبر كتلة الاختبار قبل فتح الدائرة.</li>
+      <li><strong>محوّل واحد لكل طور وبنسبة واحدة.</strong> خلط النسب بين الأطوار ينتج إجمالياً لا يمكن تصحيحه لاحقاً دون معرفة الطور المختلف.</li>
+    </ul>
+    <p>الـ<a href="/products/energy-meter/dual-display-options-3-phase-4-wire-three-phase-din-rail-m-bus-active-and-reactive-infrared-kwh-ct-included-en">عداد ثلاثي الطور على قضيب DIN بمدخل محوّلات وM-Bus</a> مصمم لهذا الترتيب، وملاحظاتنا حول <a href="/blog/commercial-metering-what-is-a-ct-operated-energy-meter">القياس عبر محوّلات التيار</a> تشرح كيف تتفاعل النسبة مع السجل.</p>
+
+    <h2>RS485 ومخرج النبضات</h2>
+    <p>هذه الأطراف لا تحمل تيار حمل، لكنها هي التي تتعطل بصمت عند توصيلها دون عناية.</p>
+    <table>
+      <thead>
+        <tr><th>الإشارة</th><th>الأطراف</th><th>الممارسة الصحيحة</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>RS485</td><td>A وB، وأحياناً مع طرف مشترك</td><td>زوج مجدول مدرّع، على شكل سلسلة لا نجمة، والدّرع مؤرض من طرف واحد فقط، وA مع A وB مع B على طول الناقل</td></tr>
+        <tr><td>مخرج النبضات</td><td>نبضة ومشترك</td><td>كابل مدرّع بموصلين بعيداً عن موصلات القدرة؛ وثابت النبضات المطبوع على العداد يحدد قيمة كل نبضة</td></tr>
+        <tr><td>التحكم في التعرفة</td><td>مدخل مفتوح</td><td>تماس جاف من ساعة التعرفة أو وحدة التحكم، وليس طوراً مأخوذاً من أي مكان</td></tr>
+      </tbody>
+    </table>
+    <p>أبقِ موصلات الإشارة والقدرة في مسارات منفصلة حيثما سمح التمديد بذلك. فمعظم أعطال الاتصال المتقطعة في منشأة قياس سببها تشويش مستحث من كابل إشارة يسير بجوار مغذٍّ، لا عداد معطوب. ويغطي <a href="/blog/modbus-rs485-energy-meters-guide">دليل شراء Modbus وRS485</a> العنونة والطرف النهائي.</p>
+
+    <h2>عائلات العدادات في لمحة</h2>
+    <table>
+      <thead>
+        <tr><th>العائلة</th><th>أطراف القدرة</th><th>أطراف الإشارة</th><th>الطراز النمطي</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>أحادي الطور بسلكين، مباشر</td><td>4</td><td>نبضات، وRS485 اختياري</td><td><a href="/products/energy-meter/din-rail-kwh-meter-single-phase-mini-din-rail-kwh-meter-active-energy-meters-energy-meter">عداد kWh أحادي الطور صغير على قضيب DIN</a></td></tr>
+        <tr><td>أحادي الطور مباشر مع اتصال</td><td>4</td><td>RS485، نبضات</td><td><a href="/products/energy-meter/80a-maximum-current-rs485-communication-kwh-power-consumption-din-rail-frequency-energy-meter-single-phase-ene">عداد قضيب DIN بقدرة 80 أمبير مع RS485</a></td></tr>
+        <tr><td>ثلاثي الطور بأربعة أسلاك، مباشر</td><td>7</td><td>RS485، نبضات</td><td><a href="/products/energy-meter/5-80a-380v-ac-50hz-lcd-backlight-display-din-rail-3-phase-4-wire-electronic-watt-power-kwh-energy-meter">عداد ثلاثي الطور بأربعة أسلاك 380 فولت 50 هرتز</a></td></tr>
+        <tr><td>ثلاثي الطور عبر محوّلات</td><td>3 أزواج S1/S2</td><td>M-Bus، أشعة تحت الحمراء</td><td><a href="/products/energy-meter/dual-display-options-3-phase-4-wire-three-phase-din-rail-m-bus-active-and-reactive-infrared-kwh-ct-included-en">عداد ثلاثي الطور بمدخل محوّلات وM-Bus</a></td></tr>
+      </tbody>
+    </table>
+
+    <h2>أخطاء تفسر معظم الأعطال</h2>
+    <table>
+      <thead>
+        <tr><th>الخطأ</th><th>النتيجة</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>أخذ الحمل من جهة دخول العداد</td><td>يُتجاوَز العداد فلا يسجل شيئاً لذلك الحمل، مع أنه يبدو عاملاً</td></tr>
+        <tr><td>أخذ الحيادي من دائرة أخرى</td><td>يعود جزء من التيار خارج العداد، فتنحرف القراءات وتصبح غير قابلة للمطابقة</td></tr>
+        <tr><td>تبديل طورين في عداد ثلاثي الطور</td><td>قد يبدو الإجمالي مقبولاً بينما بيانات الأطوار خاطئة، فيُضلَّل تشخيص العطل</td></tr>
+        <tr><td>ثانوي محوّل معكوس</td><td>يسجّل طور بالسالب، فيقلل الإجمالي من الاستهلاك</td></tr>
+        <tr><td>عدم برمجة نسبة المحوّل</td><td>كل القراءات بمقياس خاطئ دون أي عرض ظاهر</td></tr>
+        <tr><td>RS485 على شكل نجمة بدل سلسلة</td><td>انعكاسات وانقطاعات متقطعة على الناقل</td></tr>
+        <tr><td>كابل إشارة داخل مسار القدرة</td><td>أخطاء ناتجة عن التشويش تظهر وتختفي مع الحمل</td></tr>
+      </tbody>
+    </table>
+
+    <h2>قائمة تحقق قبل التشغيل</h2>
+    <ul>
+      <li>مخطط الأطراف على العداد يطابق المخطط الذي تعمل عليه.</li>
+      <li>جهد التغذية وعدد الأطوار والتيار الأقصى داخل حدود العداد.</li>
+      <li>دخول الطور وخروجه غير مبدّلين، والحمل بعد العداد.</li>
+      <li>الحيادي هو حيادي الحمل نفسه لا حيادي مستعار.</li>
+      <li>قطبية P1/S1 محترمة في كل طور والنسبة مُدخلة في العداد.</li>
+      <li>تم تقصير الملفات الثانوية للمحوّلات قبل فتح أي حلقة أثناء العمل.</li>
+      <li>RS485 متسق من الطرف إلى الطرف، على شكل سلسلة، والدّرع مؤرض من طرف واحد.</li>
+      <li>جميع الأطراف محكمة وفق القيمة المطبوعة على العداد والغطاء مُعاد.</li>
+    </ul>
+
+    <h2>الأسئلة الشائعة</h2>
+    <h3>هل يمكن توصيل عداد أحادي الطور مع تبديل الطور والحيادي؟</h3>
+    <p>كثير من العدادات الإلكترونية سيظل يعدّ، لأنه يقيس فرق الجهد على العنصر دون افتراض أي الجهتين هو الطور. لكن هذا لا يجعله صحيحاً: تصبح قطبية ما بعد العداد معكوسة ويصبح الحيادي مقطوعاً. وصّل وفق المخطط.</p>
+
+    <h3>لماذا يظهر طور بالسالب في عدادي ثلاثي الطور؟</h3>
+    <p>غالباً ثانوي محوّل معكوس على ذلك الطور، أو محوّل مركّب بحيث يكون P1 نحو الحمل بدل المصدر. افحص القطبية عند S1/S2 قبل الشك في العداد.</p>
+
+    <h3>هل يجب برمجة نسبة المحوّل أم يكتشفها العداد؟</h3>
+    <p>يجب برمجتها. فالعداد لا يرى إلا التيار الثانوي وليس لديه وسيلة لمعرفة التيار الابتدائي الذي يمثله. والنسبة غير المبرمجة هي السبب الأكثر شيوعاً لعداد يعرض رقماً معقولاً لكنه خاطئ.</p>
+
+    <h3>ما أقصى طول لخط RS485 في منشأة قياس؟</h3>
+    <p>يعتمد على معدل النقل وسعة الكابل وعدد الأجهزة المشتركة في الناقل، ولهذا تأتي الإجابة العملية من ورقة بيانات العداد لا من قاعدة تقريبية. والمهم عند أي طول هو الطوبولوجيا على شكل سلسلة واتساق قطبية A/B وتأريض الدّرع من طرف واحد فقط.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>هل توصل عدادات في مشروع؟</h2>
+    <p>أرسل نوع العداد وترتيب التغذية ونسبة المحوّل لكل نقطة، ونؤكد ترتيب الأطراف قبل تصنيع اللوحة.</p>
+    <a class="btn btn-primary" href="/contact">اطلب عرض سعر</a>
+    <p style="margin-top:14px"><a href="/products/energy-meter">استعرض عدادات الطاقة &rarr;</a></p>
+    <p style="margin-top:18px;font-size:14px;color:var(--mt)">هل تفضل إرسال جدول القياس عبر واتساب؟ <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "energy-meter-wiring-diagram";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      location.href = '/blog/' + b + M[l];
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

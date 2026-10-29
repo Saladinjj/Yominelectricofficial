@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Energy Meter Wiring Diagram: Single-Phase, Three-Phase and CT Meters | Yomin Electric</title>
+<meta name="description" content="Terminal-by-terminal wiring for DIN-rail kWh meters: single-phase two-wire, three-phase four-wire and CT-operated connections, plus RS485 and pulse outputs and the mistakes that destroy meters.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/energy-meter-wiring-diagram/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/energy-meter-wiring-diagram">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Energy Meter Wiring Diagram: Single-Phase, Three-Phase and CT-Operated Meters",
+      "description": "Terminal-by-terminal wiring for DIN-rail kWh meters: single-phase two-wire, three-phase four-wire and CT-operated connections, plus RS485 and pulse outputs and the mistakes that destroy meters.",
+      "image": "https://www.yominelectric.com/assets/images/blog/energy-meter-wiring-diagram/hero.png",
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-10-29",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/logo_transparent.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/energy-meter-wiring-diagram"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can a single-phase meter be connected with line and neutral reversed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many electronic meters will still count, because they measure the potential difference across the element rather than assuming which side is live. That does not make it correct: the downstream polarity of the installation becomes reversed and the neutral becomes switched. Wire it to the diagram."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my three-phase meter show one phase negative?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Almost always a reversed CT secondary on that phase, or a CT installed with P1 facing the load instead of the supply. Check polarity at S1/S2 before suspecting the meter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to program the CT ratio, or does the meter detect it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You must program it. The meter sees only secondary current and has no way to know what primary current that represents. An unprogrammed ratio is the most common cause of a meter that reads a plausible but wrong figure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far can an RS485 run be on a metering installation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on baud rate, cable capacitance and how many devices share the bus, which is why the practical answer comes from the meter's datasheet rather than a rule of thumb. What matters at any length is daisy-chain topology, consistent A/B polarity and a shield earthed at one end only."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Energy Meters</span></div>
+    <span class="bh-tag">Installation Guides</span>
+    <h1 class="bh-title">Energy Meter Wiring Diagram: Single-Phase, Three-Phase and CT-Operated Meters</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>October 29, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/energy-meter-wiring-diagram/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/energy-meter-wiring-diagram/hero.png" alt="Electrician wiring the terminal block of a DIN-rail energy meter inside an open distribution enclosure with a fine screwdriver" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>An energy meter wiring diagram is read from the terminal block, not from the display. A single-phase meter has four power terminals: line in, line out, neutral in and neutral out. A three-phase four-wire meter has seven: three line in/out pairs plus neutral in and out. A CT-operated meter replaces the heavy current terminals with small secondary terminals, two per current transformer. Everything else on the meter, meaning RS485, pulse output and tariff control, is low-voltage signalling and belongs to a separate terminal group.</p>
+
+    <p>Getting the power terminals right decides whether the meter works; getting the small terminals right decides whether it keeps working. Most meters that come back as failed in the first year were not faulty in the factory, they were miswired on site.</p>
+
+    <h2>Before any wire goes in</h2>
+    <p>Three checks save most of the callbacks.</p>
+    <ul>
+      <li><strong>Read the terminal diagram printed on the side of the meter.</strong> Terminal numbering is not standardised across manufacturers. Some meters number power terminals 1 to 4 and signal terminals 5 to 8; others number line and load in the opposite order. The printed diagram is the authority for that unit.</li>
+      <li><strong>Confirm the supply and the meter agree.</strong> A three-phase meter with a 380 V marking does not belong on a system it was not built for, and a direct-connected meter does not belong on a feeder above its maximum current.</li>
+      <li><strong>Isolate and prove dead.</strong> Every terminal in this article is live at some point in the procedure. Isolate upstream, lock, and test before touching a conductor.</li>
+    </ul>
+
+    <h2>Single-phase two-wire: four terminals</h2>
+    <p>The most common DIN-rail meter in the world, and the one most often wired backwards.</p>
+    <table>
+      <thead>
+        <tr><th>Terminal</th><th>Connection</th><th>What goes wrong</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>L in (often 1)</td><td>Incoming live from the supply side</td><td>Swapped with L out, so the meter still counts but the installation's polarity downstream is reversed</td></tr>
+        <tr><td>L out (often 2)</td><td>Live to the load</td><td>Load taken from the incoming side, bypassing the meter entirely</td></tr>
+        <tr><td>N in (often 3)</td><td>Incoming neutral</td><td>Neutral borrowed from another circuit, which puts unmeasured current through the meter's reference</td></tr>
+        <tr><td>N out (often 4)</td><td>Neutral to the load</td><td>Neutral and earth confused, which is both a metering error and a safety fault</td></tr>
+      </tbody>
+    </table>
+    <p>The single-phase electronic meter in the YOMIN range, such as the <a href="/products/energy-meter/din-rail-kwh-meter-single-phase-mini-din-rail-kwh-meter-active-energy-meters-energy-meter">mini DIN-rail single-phase kWh meter</a>, follows this four-terminal arrangement in a two-module body. Where RS485 is included, as on the <a href="/products/energy-meter/80a-maximum-current-rs485-communication-kwh-power-consumption-din-rail-frequency-energy-meter-single-phase-ene">80 A RS485 DIN-rail meter</a>, the communication terminals sit apart from the power terminals and are clearly marked A and B.</p>
+
+    <h2>Three-phase four-wire: seven terminals</h2>
+    <p>Three line conductors and one neutral, each measured on its own element. The neutral is not optional on a four-wire meter: without it the voltage reference for each element is wrong and the readings are meaningless rather than merely inaccurate.</p>
+    <table>
+      <thead>
+        <tr><th>Group</th><th>Terminals</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Line, phase 1</td><td>L1 in, L1 out</td><td>Phase sequence should follow the printed diagram; the meter will run with any sequence but the per-phase registers will not correspond to your labelling.</td></tr>
+        <tr><td>Line, phase 2</td><td>L2 in, L2 out</td><td>Same element arrangement as phase 1</td></tr>
+        <tr><td>Line, phase 3</td><td>L3 in, L3 out</td><td>Same element arrangement as phase 1</td></tr>
+        <tr><td>Neutral</td><td>N in, N out</td><td>Must be the same neutral that serves the load, not a borrowed one</td></tr>
+      </tbody>
+    </table>
+    <p>A current range such as 5&ndash;80 A on the <a href="/products/energy-meter/5-80a-380v-ac-50hz-lcd-backlight-display-din-rail-3-phase-4-wire-electronic-watt-power-kwh-energy-meter">380 V 50 Hz three-phase four-wire DIN-rail meter</a> describes a direct-connected device: the load current passes through the meter's own terminals. Above that current, the meter must be CT-operated instead. Our <a href="/blog/three-phase-energy-meter-guide">guide to three-phase meters</a> covers the 3-wire and 4-wire distinction and the direct versus CT decision in more detail.</p>
+
+    <h2>CT-operated meters: small terminals, large consequences</h2>
+    <p>On a CT-operated meter the heavy conductors pass through the current transformers and never touch the meter. The meter receives the secondary of each CT, normally 5 A, on a pair of small terminals marked S1 and S2.</p>
+    <ul>
+      <li><strong>Polarity decides direction.</strong> S1 must correspond to P1 on the primary side. Reverse one CT and that phase registers negative while the other two register positive, which produces a plausible but wrong total.</li>
+      <li><strong>The ratio must be programmed.</strong> The meter reads secondary current; the CT ratio is what converts it back to primary current. A 200/5 CT with a meter still set to 100/5 halves every reading, and nothing on the display will look wrong.</li>
+      <li><strong>Never open a CT secondary under load.</strong> An open secondary drives the core into saturation and produces a dangerous voltage at the terminals. Short the secondary through the test block before breaking the circuit.</li>
+      <li><strong>One CT per phase, same ratio.</strong> Mixing ratios across phases produces a total that cannot be corrected afterwards without knowing which phase was different.</li>
+    </ul>
+    <p>The <a href="/products/energy-meter/dual-display-options-3-phase-4-wire-three-phase-din-rail-m-bus-active-and-reactive-infrared-kwh-ct-included-en">three-phase DIN-rail meter with CT input and M-Bus</a> is built for this arrangement, and our notes on <a href="/blog/commercial-metering-what-is-a-ct-operated-energy-meter">CT-operated metering</a> explain how the ratio interacts with the register.</p>
+
+    <h2>RS485 and pulse outputs</h2>
+    <p>These terminals carry no load current, but they are the ones that fail quietly when they are wired carelessly.</p>
+    <table>
+      <thead>
+        <tr><th>Signal</th><th>Terminals</th><th>Practice</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>RS485</td><td>A and B, sometimes with a common</td><td>Shielded twisted pair, daisy-chained rather than star-wired, shield earthed at one end only, A to A and B to B throughout the bus</td></tr>
+        <tr><td>Pulse output</td><td>Pulse and common</td><td>Two-core screened cable kept away from power conductors; the pulse constant printed on the meter defines what each pulse is worth</td></tr>
+        <tr><td>Tariff control</td><td>Switched input</td><td>Dry contact from the tariff clock or controller, never a stolen live</td></tr>
+      </tbody>
+    </table>
+    <p>Keep signal and power conductors in separate ducts wherever the route allows it. Most intermittent communication faults on a metering installation are induced noise from a signal cable run alongside a feeder, not a failed meter. The <a href="/blog/modbus-rs485-energy-meters-guide">Modbus and RS485 buyer's guide</a> covers addressing and termination.</p>
+
+    <h2>Meter family at a glance</h2>
+    <table>
+      <thead>
+        <tr><th>Family</th><th>Power terminals</th><th>Signal terminals</th><th>Typical model</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Single-phase two-wire, direct</td><td>4</td><td>Pulse, optional RS485</td><td><a href="/products/energy-meter/din-rail-kwh-meter-single-phase-mini-din-rail-kwh-meter-active-energy-meters-energy-meter">Mini DIN-rail single-phase kWh meter</a></td></tr>
+        <tr><td>Single-phase, direct, communicating</td><td>4</td><td>RS485, pulse</td><td><a href="/products/energy-meter/80a-maximum-current-rs485-communication-kwh-power-consumption-din-rail-frequency-energy-meter-single-phase-ene">80 A RS485 DIN-rail meter</a></td></tr>
+        <tr><td>Three-phase four-wire, direct</td><td>7</td><td>RS485, pulse</td><td><a href="/products/energy-meter/5-80a-380v-ac-50hz-lcd-backlight-display-din-rail-3-phase-4-wire-electronic-watt-power-kwh-energy-meter">380 V 50 Hz three-phase four-wire meter</a></td></tr>
+        <tr><td>Three-phase, CT-operated</td><td>3 pairs S1/S2</td><td>M-Bus, infrared</td><td><a href="/products/energy-meter/dual-display-options-3-phase-4-wire-three-phase-din-rail-m-bus-active-and-reactive-infrared-kwh-ct-included-en">Three-phase CT-input meter with M-Bus</a></td></tr>
+      </tbody>
+    </table>
+
+    <h2>Mistakes that account for most failures</h2>
+    <table>
+      <thead>
+        <tr><th>Mistake</th><th>Result</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Load tapped from the incoming side of the meter</td><td>The meter is bypassed and registers nothing for that load, while still appearing to work</td></tr>
+        <tr><td>Neutral taken from a different circuit</td><td>Part of the current returns outside the meter; readings drift and become irreconcilable</td></tr>
+        <tr><td>Two phases transposed on a three-phase meter</td><td>Total may look acceptable while per-phase data is wrong, so fault-finding on the site is misled</td></tr>
+        <tr><td>CT secondary reversed</td><td>One phase registers negative; the total understates consumption</td></tr>
+        <tr><td>CT ratio not programmed</td><td>Every reading scaled by the wrong factor, with no visible symptom</td></tr>
+        <tr><td>RS485 star-wired instead of daisy-chained</td><td>Reflections and intermittent dropouts on the bus</td></tr>
+        <tr><td>Signal cable run in the power duct</td><td>Noise-induced errors that appear and disappear with load</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Commissioning checklist</h2>
+    <ul>
+      <li>Terminal diagram on the meter matches the drawing you are working to.</li>
+      <li>Supply voltage, phase count and maximum current are within the meter's rating.</li>
+      <li>Line in and line out are not swapped; the load is downstream of the meter.</li>
+      <li>Neutral is the load's own neutral, not a borrowed one.</li>
+      <li>CT polarity P1/S1 respected on every phase, and the ratio entered in the meter.</li>
+      <li>CT secondaries shorted before any loop was opened during the work.</li>
+      <li>RS485 A/B consistent end to end, daisy-chained, shield earthed at one end.</li>
+      <li>All terminals torqued to the value printed on the meter, and the cover refitted.</li>
+    </ul>
+
+    <h2>Frequently asked questions</h2>
+    <h3>Can a single-phase meter be connected with line and neutral reversed?</h3>
+    <p>Many electronic meters will still count, because they measure the potential difference across the element rather than assuming which side is live. That does not make it correct: the downstream polarity of the installation becomes reversed and the neutral becomes switched. Wire it to the diagram.</p>
+
+    <h3>Why does my three-phase meter show one phase negative?</h3>
+    <p>Almost always a reversed CT secondary on that phase, or a CT installed with P1 facing the load instead of the supply. Check polarity at S1/S2 before suspecting the meter.</p>
+
+    <h3>Do I need to program the CT ratio, or does the meter detect it?</h3>
+    <p>You must program it. The meter sees only secondary current and has no way to know what primary current that represents. An unprogrammed ratio is the most common cause of a meter that reads a plausible but wrong figure.</p>
+
+    <h3>How far can an RS485 run be on a metering installation?</h3>
+    <p>It depends on baud rate, cable capacitance and how many devices share the bus, which is why the practical answer comes from the meter's datasheet rather than a rule of thumb. What matters at any length is daisy-chain topology, consistent A/B polarity and a shield earthed at one end only.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Wiring meters on a project?</h2>
+    <p>Send the meter type, supply arrangement and CT ratio for each point, and we will confirm the terminal configuration before the panel is built.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/energy-meter">Browse energy meters &rarr;</a></p>
+    <p style="margin-top:18px;font-size:14px;color:var(--mt)">Prefer to send the metering schedule on WhatsApp? <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "energy-meter-wiring-diagram";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      location.href = '/blog/' + b + M[l];
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

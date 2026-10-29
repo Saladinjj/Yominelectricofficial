@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اختبار محوّل التيار: النسبة والقطبية والحمل الثانوي | Yomin Electric</title>
+<meta name="description" content="كيف تتحقق من محوّل تيار منخفض الجهد قبل توصيله بالعداد: النسبة والقطبية والحمل الثانوي والمقاومة العازلة، والأجهزة المستخدمة، والأعطال التي تُفسد بيانات القياس دون إنذار.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/current-transformer-testing/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/current-transformer-testing-ar">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/current-transformer-testing">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/current-transformer-testing-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/current-transformer-testing-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/current-transformer-testing-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/current-transformer-testing">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "اختبار محوّل التيار: النسبة والقطبية والحمل الثانوي",
+      "description": "كيف تتحقق من محوّل تيار منخفض الجهد قبل توصيله بالعداد: النسبة والقطبية والحمل الثانوي والمقاومة العازلة، والأجهزة المستخدمة، والأعطال التي تُفسد بيانات القياس دون إنذار.",
+      "image": "https://www.yominelectric.com/assets/images/blog/current-transformer-testing/hero.png",
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-10-29",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/logo_transparent.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/current-transformer-testing-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "هل يمكن اختبار محوّل تيار دون جهاز حقن ابتدائي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم. تحتاج طريقة الجهد الثانوي إلى مصدر متردد منخفض الجهد وفولطمتر فقط، وهي تثبت نسبة اللفات مباشرة. لكنها لا تثبت الحلقة كاملة بما فيها الموصل الابتدائي، لذا يبقى اختبار الحقن الابتدائي أفضل عند التشغيل إذا توفر الجهاز."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا يقرأ العداد أقل عند الذروة فقط؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يشير هذا النمط إلى التشبع لا إلى خطأ في النسبة. الحمل الثانوي أعلى من قدرة النواة، وغالباً بسبب كابل ثانوي طويل أو صغير المقطع، فيتوقف المحوّل عن متابعة التيار عندما يقترب الحمل من حد دقته."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ماذا يحدث إذا تُرك الثانوي مفتوحاً؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "مع وجود تيار في الابتدائي، يسمح الثانوي المفتوح لفيض النواة بالارتفاع دون ضابط، فيتولد جهد مرتفع جداً بين S1 وS2. وهو خطر صدمة كهربائية وقد يتلف الملف. قصّر الثانوي دائماً قبل فتح الدائرة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يجب إعادة اختبار المحوّل المنقسم بعد التركيب؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم. فالنسبة تعتمد على إغلاق النصفين إغلاقاً كاملاً، وهي حالة ميكانيكية تتأثر بالدهان والغبار وشد المزلاج. وفحص النسبة بعد الإغلاق يستغرق دقيقة ويلتقط العطل الأكثر شيوعاً في هذه الطُّرز."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">الرئيسية</a> &middot; <a href="/blog">المدونة</a> &middot; <span>محوّلات التيار</span></div>
+    <span class="bh-tag">أدلة فنية</span>
+    <h1 class="bh-title">اختبار محوّل التيار: النسبة والقطبية والحمل الثانوي</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>29 أكتوبر 2026</span>
+      <span class="divider"></span>
+      <span>10 دقائق قراءة</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/current-transformer-testing/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/current-transformer-testing/hero.png" alt="فني يفحص أطراف الملف الثانوي لمحوّل تيار بنواة منقسمة مثبّت على قضيب نحاسي، مع جهاز اختبار محمول على طاولة العمل" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>يُختبر محوّل التيار قبل توصيله بالعداد لأربعة أسباب: التأكد من مطابقة النسبة للوحة البيانات، والتأكد من قطبية الملف الثانوي، والتأكد من أن الحمل الثانوي داخل ما تستطيع النواة تشغيله فعلياً، والتأكد من سلامة العزل بين الابتدائي والثانوي والأرضي. وفي محوّل قياس منخفض الجهد تستغرق هذه الفحوص الأربعة أقل من ربع ساعة للوحدة الواحدة بكثير، وكل واحد منها يلتقط عطلاً كان سيظهر على شكل فاتورة خاطئة لا على شكل دائرة متوقفة.</p>
+
+    <p>وهذا هو الفرق الجوهري بين محوّل التيار والقاطع الآلي. القاطع الذي يتعطل يُلاحظ فوراً. أما محوّل التيار الذي يتعطل فيبقى صامتاً: تستمر المنشأة في العمل بشكل طبيعي تماماً بينما تكون الأرقام التي تنتجها خاطئة.</p>
+
+    <h2>لماذا يتعطل محوّل التيار بصمت</h2>
+    <p>لا يضم محوّل التيار أجزاء متحركة ولا آلية فصل ولا إشارة خاصة به. فهو يكتفي بإرسال صورة مصغّرة عن تيار الابتدائي إلى العداد. وإذا كانت هذه الصورة بمقياس خاطئ أو معكوسة أو مقصوصة، فلن يفصل شيء ولن ينتبه أحد.</p>
+    <ul>
+      <li><strong>نسبة خاطئة.</strong> محوّل 200/5 موصول بعداد لا يزال مضبوطاً على 100/5 يقسم كل القراءات على اثنين. الطاقة تُستهلك طبيعياً، لكن السجل يجري بنصف السرعة.</li>
+      <li><strong>قطبية معكوسة.</strong> يصبح الملف الثانوي معكوساً، فتُسجَّل الطاقة المستهلكة كطاقة مصدّرة، وقد يبدو العداد ثنائي الاتجاه كأنه يدور بالعكس.</li>
+      <li><strong>حمل ثانوي زائد.</strong> تطلب حلقة الثانوي فولت أمبير أكثر مما تستطيع النواة تقديمه، فيتشبع المحوّل عند الذروة ويقرأ أقل من الواقع في اللحظة التي يكون فيها الاستهلاك أعلى.</li>
+      <li><strong>عزل تالف.</strong> وهو العطل الوحيد ذو البعد الأمني وليس التجاري فقط: انهيار العزل بين الابتدائي والثانوي ينقل جهد الخط إلى دائرة القياس.</li>
+      <li><strong>إغلاق غير كامل للنواة.</strong> في المحوّل ذي النواة المنقسمة يجب أن يتلامس النصفان تلامساً كاملاً. طبقة دهان أو حبيبات رمل أو مزلاج لم يُغلق تماماً تفتح فجوة هوائية صغيرة فتنخفض النسبة.</li>
+    </ul>
+
+    <h2>الخطوة 1: لوحة البيانات والفحص المادي</h2>
+    <p>قبل توصيل أي جهاز، اقرأ لوحة البيانات وقارنها بنسبة المحوّل المبرمجة في العداد وبأمر الشراء. تظهر عليها فئة الدقة وتيار الابتدائي والثانوي المقننان والحمل المقنن والجهد المقنن. وهناك ثلاثة أمور تستحق التحقق باليد لا بالعين فقط:</p>
+    <ul>
+      <li>النافذة نظيفة والموصل الابتدائي يمر عبرها مرة واحدة فقط، في الاتجاه المحدد، بحيث يكون الطرف P1 نحو المصدر.</li>
+      <li>أطراف الثانوي محكمة. الطرف S1 أو S2 المرتخي يضيف مقاومة إلى الحلقة ويخلق نقطة ساخنة تتفاقم مع الحمل.</li>
+      <li>في الطُرز ذات النواة المنقسمة تكون أسطح التلاقي نظيفة ويُغلق المزلاج تماماً دون فجوة ظاهرة.</li>
+    </ul>
+
+    <h2>الخطوة 2: مقاومة العزل</h2>
+    <p>بعد عزل المحوّل عزلاً تاماً وفصل العداد، قِس مقاومة العزل بين الابتدائي والثانوي ثم بين الثانوي والأرضي، مع تقصير الثانوي وفق إجراء موقعك. الهدف ليس تقييم المحوّل بدرجة، بل إثبات عدم وجود مسار غير مرغوب قبل إدخال الدائرة في الخدمة.</p>
+    <p>وهناك قاعدة أمنية تعلو على كل قياس في هذا المقال: <strong>لا تفتح دائرة الثانوي لمحوّل التيار أبداً ما دام تيار يسري في الابتدائي.</strong> الثانوي المفتوح يزيل الفيض المعاكس، فتدخل النواة في التشبع ويظهر جهد مرتفع جداً بين S1 وS2. قم دائماً بتقصير الثانوي عبر كتلة اختبار أو وصلة تقصير مخصصة قبل فتح الحلقة.</p>
+
+    <h2>الخطوة 3: اختبار النسبة</h2>
+    <p>النسبة هي تيار الابتدائي مقسوماً على تيار الثانوي، فمحوّل 200/5 نسبته الاسمية 40:1. ويُستخدم في الميدان طريقتان، وكلتاهما معتبرة.</p>
+    <table>
+      <thead>
+        <tr><th>الطريقة</th><th>كيف تعمل</th><th>متى تكون الأنسب</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>الحقن الابتدائي</td><td>يحقن جهاز تيار عالٍ تياراً معلوماً عبر نافذة الابتدائي مع قياس تيار الثانوي مباشرة.</td><td>عند تشغيل لوحة، حيث يكون جهاز الحقن موجوداً في الموقع ويمكن إثبات حلقة القياس كاملة في مرة واحدة.</td></tr>
+        <tr><td>طريقة الجهد الثانوي</td><td>يُطبَّق جهد متردد منخفض على الثانوي ويُقاس الجهد المستحث في الابتدائي. نسبة الجهد تساوي نسبة اللفات، وهي تساوي نسبة التيار.</td><td>اختبار الوحدات على طاولة العمل، أو في أي مكان يتعذر نقل جهاز حقن ابتدائي إليه.</td></tr>
+      </tbody>
+    </table>
+    <p>سجّل النسبة المقاسة لا مجرد عبارة «مطابق». الوحدة التي تقيس 39:1 مقابل 40:1 اسمية تعمل بشكل طبيعي؛ أما التي تقيس 25:1 ففيها مشكلة إغلاق أو لف، وستقرأ أقل بالثلث طوال عمرها التشغيلي.</p>
+
+    <h2>الخطوة 4: اختبار القطبية</h2>
+    <p>القطبية هي العلاقة بين P1 وS1: التيار الداخل إلى الابتدائي من P1 يخرج من الثانوي عند S1. وإذا انعكست، يرى العداد الإشارة المعاكسة.</p>
+    <p>الطريقة الميدانية الكلاسيكية هي اختبار نبضة التيار المستمر: تُطبَّق بطارية لحظياً على الابتدائي بينما يراقب جهاز ذو مؤشر متحرك الملف الثانوي. عند التوصيل ينحرف مؤشر المحوّل صحيح القطبية في الاتجاه المحدد، وعند الفصل ينعكس الانحراف. ويؤدي الجهاز الرقمي المزوّد بوظيفة قطبية أو نسبة العمل نفسه بتفسير أقل. وإذا توفر محوّل سليم من النوع نفسه، فمقارنة الاثنين هي أسرع تأكيد.</p>
+    <p>علّم النتيجة على الوحدة. فحص القطبية سهل مرة واحدة، ويصبح من المستحيل تقريباً تذكّره بعد ستة أشهر عند استبدال العداد.</p>
+
+    <h2>الخطوة 5: اختبار الحمل</h2>
+    <p>الحمل هو ما تقدمه دائرة الثانوي للمحوّل، ويُعبَّر عنه بالفولت أمبير عند تيار الثانوي المقنن. ويتكوّن من دائرة التيار في العداد، وكتل الأطراف، والأهم من ذلك طول الكابل الثانوي ومقطعه. والمحوّل المصمم لحمل مقنن معيّن يحافظ على دقته حتى هذا الحمل ولا يتجاوزه.</p>
+    <table>
+      <thead>
+        <tr><th>ما يضيف حملاً</th><th>لماذا يهم</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>مسارات ثانوية طويلة</td><td>المقاومة تزيد مع الطول والحمل يزيد مع مربع تيار الثانوي، فالمسار الطويل بمقطع 2.5 مم&sup2; سبب شائع للتشبع.</td></tr>
+        <tr><td>كابل ثانوي صغير المقطع</td><td>أخف طريقة لتجاوز الحمل المقنن للمحوّل دون ملاحظة.</td></tr>
+        <tr><td>أجهزة إضافية في الحلقة</td><td>كل عداد أو مرحّل أو زوج أطراف إضافي يضيف معاوقة على التوالي.</td></tr>
+        <tr><td>توصيلات رديئة</td><td>الوصلة عالية المقاومة تتصرف ككابل إضافي وتسخن تحت الحمل.</td></tr>
+      </tbody>
+    </table>
+    <p>قارن الحمل المحسوب للحلقة بالحمل المقنن للمحوّل. وإذا اقتربت الحلقة من الحد، فانتقل إلى مقاس أعلى أو زد مقطع الكابل الثانوي. وكلا الحلين أرخص من عداد يقرأ أقل من الواقع عند الذروة.</p>
+
+    <h2>نوى القياس ونوى الحماية: تركيز مختلف</h2>
+    <p>تُطبَّق الاختبارات الأربعة على النوعين، لكن ما يُثبت ليس الشيء نفسه.</p>
+    <table>
+      <thead>
+        <tr><th>نوع النواة</th><th>ما يجب أن يثبته الاختبار</th><th>أخطر عطل</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>نواة قياس (فئة 0.5 / 1.0)</td><td>الدقة عند الحمل الطبيعي، وصحة النسبة، وصحة القطبية</td><td>خطأ صغير في النسبة أو ثانوي معكوس، لأن كليهما يشوّه الفاتورة باستمرار</td></tr>
+        <tr><td>نواة حماية (5P، 10P)</td><td>السلوك عند تيار عطل عالٍ، والخطأ المركّب عند معامل حد الدقة</td><td>التشبع قبل مستوى العطل، مما يؤخر الفصل أو يمنعه</td></tr>
+      </tbody>
+    </table>
+
+    <h2>الأعراض وسببها المعتاد</h2>
+    <table>
+      <thead>
+        <tr><th>ما يُبلَّغ عنه في الموقع</th><th>ما يُفحص أولاً</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>الاستهلاك يُقرأ منخفضاً باستمرار مقابل عداد تحقق</td><td>نسبة المحوّل المبرمجة والنسبة الفعلية، ثم الحمل ومقطع الكابل الثانوي</td></tr>
+        <tr><td>العداد يسجّل تصديراً على حمل يستقبل فقط</td><td>قطبية الثانوي عند S1/S2</td></tr>
+        <tr><td>قراءات مقبولة عند الحمل الخفيف وتنهار عند الذروة</td><td>التشبع: الحمل وطول الكابل وإغلاق النواة في الوحدات المنقسمة</td></tr>
+        <tr><td>قراءات تقفز أو تنحرف بين زيارة وأخرى</td><td>طرف ثانوي مرتخي أو مزلاج غير مغلق تماماً</td></tr>
+      </tbody>
+    </table>
+
+    <h2>النواة المنقسمة: سطح التلاقي هو الاختبار</h2>
+    <p>تُثبَّت محوّلات التيار ذات النواة المنقسمة حول كابل أو قضيب دون فصله، ولهذا تنتشر في أعمال التجديد والقياس الفرعي في المباني المشغولة. والمقابل هو أن الدائرة المغناطيسية لا تبلغ أكثر من جودة التلاقي بين النصفين. نظّف الأسطح، وأغلق المزلاج تماماً، وأكّد النسبة المقاسة بعد التركيب بدل افتراضها. وتصنع YOMIN وحدات منقسمة مثل <a href="/products/current-transformer/factory-direct-sale-split-core-design-720v-ac-2000-5a-class-0-5-split-core-single-phase-ct-current-transformer">محوّل تيار منقسم 2000/5 أمبير فئة 0.5 بجهد 720 فولت متردد</a> و<a href="/products/current-transformer/single-phase-dp-816-1000-5a-class-0-5-split-core-720v-ac-current-transformer-for-metering">DP-816 بسعة 1000/5 أمبير فئة 0.5</a>، وكلاهما مخصص لخدمة القياس.</p>
+
+    <h2>محوّلات تيار منخفضة الجهد للوحات القياس</h2>
+    <p>لمن يحدد المواصفات بالنسبة وفئة الدقة بدل نوع النواة، يغطي الكتالوج نطاق القياس المعتاد:</p>
+    <table>
+      <thead>
+        <tr><th>الطراز</th><th>النسبة وفئة الدقة</th><th>الاستخدام النمطي</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="/products/current-transformer/factory-direct-sale-split-core-design-720v-ac-2000-5a-class-0-5-split-core-single-phase-ct-current-transformer">محوّل منقسم 2000/5 أمبير</a></td><td>2000/5 أمبير، فئة 0.5، 720 فولت متردد، أحادي الطور</td><td>قياس فرعي في التجديد على مغذيات كبيرة دون قطع الخدمة</td></tr>
+        <tr><td><a href="/products/current-transformer/single-phase-dp-816-1000-5a-class-0-5-split-core-720v-ac-current-transformer-for-metering">DP-816 بسعة 1000/5 أمبير</a></td><td>1000/5 أمبير، فئة 0.5، 720 فولت متردد، نواة منقسمة</td><td>قياس لوحات التوزيع حين يتعذر فصل الكابل</td></tr>
+        <tr><td><a href="/products/current-transformer/mr-85-series-5000-5a-single-phase-ct-class-0-5-1-0-low-voltage-current-transformer">سلسلة MR-85 بسعة 5000/5 أمبير</a></td><td>5000/5 أمبير، فئة 0.5 / 1.0، أحادي الطور</td><td>قياس المدخل الرئيسي في لوحات الجهد المنخفض عالية التيار</td></tr>
+        <tr><td><a href="/products/current-transformer/bh-0-66-msq-0-66-30i150-5a-accuracy-class-0-5-low-voltage-current-transformer-toroidal-autotransformer-ct-for-">MSQ-0.66-30I بسعة 150/5 أمبير</a></td><td>150/5 أمبير، فئة 0.5، جهد منخفض، حلقي</td><td>قياس المغذيات والآلات في نافذة صغيرة</td></tr>
+      </tbody>
+    </table>
+    <p>وتذكّر أمرين عند الطلب: التيار الثانوي عادة 5 أمبير، والنسبة في أمر الشراء تُكتب دائماً كزوج ابتدائي/ثانوي، لا الابتدائي وحده. راجع ملاحظاتنا حول <a href="/blog/ct-ratio-explained">طريقة التعبير عن نسب محوّل التيار</a> وحول <a href="/blog/ct-accuracy-class-guide">ما تضمنه فئة الدقة فعلاً</a> قبل اعتماد الجدول.</p>
+
+    <h2>قائمة تحقق قبل إدخال الخدمة</h2>
+    <ul>
+      <li>النسبة وفئة الدقة على اللوحة تطابق برمجة العداد وأمر الشراء.</li>
+      <li>الموصل الابتدائي يمر عبر النافذة مرة واحدة في اتجاه P1 إلى P2.</li>
+      <li>تم تسجيل مقاومة العزل بين الابتدائي والثانوي وبين الثانوي والأرضي.</li>
+      <li>النسبة مقاسة ومسجّلة كرقم لا كعلامة صح.</li>
+      <li>القطبية مؤكدة وموضوعة بعلامة على الوحدة.</li>
+      <li>حمل الحلقة الثانوية محسوب مقابل الحمل المقنن للمحوّل بما يشمل طول الكابل.</li>
+      <li>أطراف الثانوي محكمة، وفي الوحدات المنقسمة المزلاج مغلق تماماً.</li>
+      <li>وصلة تقصير الثانوي لا تُزال إلا بعد توصيل العداد وإثباته.</li>
+    </ul>
+
+    <h2>الأسئلة الشائعة</h2>
+    <h3>هل يمكن اختبار محوّل تيار دون جهاز حقن ابتدائي؟</h3>
+    <p>نعم. تحتاج طريقة الجهد الثانوي إلى مصدر متردد منخفض الجهد وفولطمتر فقط، وهي تثبت نسبة اللفات مباشرة. لكنها لا تثبت الحلقة كاملة بما فيها الموصل الابتدائي، لذا يبقى اختبار الحقن الابتدائي أفضل عند التشغيل إذا توفر الجهاز.</p>
+
+    <h3>لماذا يقرأ العداد أقل عند الذروة فقط؟</h3>
+    <p>يشير هذا النمط إلى التشبع لا إلى خطأ في النسبة. الحمل الثانوي أعلى من قدرة النواة، وغالباً بسبب كابل ثانوي طويل أو صغير المقطع، فيتوقف المحوّل عن متابعة التيار عندما يقترب الحمل من حد دقته.</p>
+
+    <h3>ماذا يحدث إذا تُرك الثانوي مفتوحاً؟</h3>
+    <p>مع وجود تيار في الابتدائي، يسمح الثانوي المفتوح لفيض النواة بالارتفاع دون ضابط، فيتولد جهد مرتفع جداً بين S1 وS2. وهو خطر صدمة كهربائية وقد يتلف الملف. قصّر الثانوي دائماً قبل فتح الدائرة.</p>
+
+    <h3>هل يجب إعادة اختبار المحوّل المنقسم بعد التركيب؟</h3>
+    <p>نعم. فالنسبة تعتمد على إغلاق النصفين إغلاقاً كاملاً، وهي حالة ميكانيكية تتأثر بالدهان والغبار وشد المزلاج. وفحص النسبة بعد الإغلاق يستغرق دقيقة ويلتقط العطل الأكثر شيوعاً في هذه الطُرز.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>هل تختبر محوّلات تيار في مشروع قياس؟</h2>
+    <p>أرسل النسبة وفئة الدقة وطول الكابل الثانوي لكل نقطة، ونؤكد المحوّل والحمل قبل تمديد أسلاك اللوحة.</p>
+    <a class="btn btn-primary" href="/contact">اطلب عرض سعر</a>
+    <p style="margin-top:14px"><a href="/products/current-transformer">استعرض محوّلات التيار &rarr;</a></p>
+    <p style="margin-top:18px;font-size:14px;color:var(--mt)">هل تفضل إرسال الجدول عبر واتساب؟ <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "current-transformer-testing";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      location.href = '/blog/' + b + M[l];
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

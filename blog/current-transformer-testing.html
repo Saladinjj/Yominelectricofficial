@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Current Transformer Testing: Ratio, Polarity and Burden Checks | Yomin Electric</title>
+<meta name="description" content="How to prove a low-voltage current transformer before it is energised: ratio, polarity, burden and insulation checks, the instruments involved, and the failures that quietly corrupt metering data.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/current-transformer-testing/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/current-transformer-testing">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/current-transformer-testing">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/current-transformer-testing-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/current-transformer-testing-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/current-transformer-testing-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/current-transformer-testing">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Current Transformer Testing: Ratio, Polarity and Burden Checks",
+      "description": "How to prove a low-voltage current transformer before it is energised: ratio, polarity, burden and insulation checks, the instruments involved, and the failures that quietly corrupt metering data.",
+      "image": "https://www.yominelectric.com/assets/images/blog/current-transformer-testing/hero.png",
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-10-29",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/logo_transparent.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/current-transformer-testing"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I test a current transformer without a primary injection set?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The secondary voltage method needs only a low AC source and a voltmeter, and it proves the turns ratio directly. What it does not prove is the complete loop including the primary conductor, so a primary injection test is still preferable at commissioning when the equipment is available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my meter read low only at peak load?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That pattern points to saturation rather than a ratio error. The secondary burden is too high for the core, usually because of long or undersized secondary cable, and the CT stops tracking current once the load approaches its accuracy limit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if a CT secondary is left open?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With primary current flowing, an open secondary allows the core flux to rise unchecked and a very high voltage develops across S1 and S2. It is a shock hazard and it can destroy the winding. Always short the secondary before opening the circuit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do split-core CTs need re-testing after installation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They should be. The ratio depends on the two halves closing completely, and that is a mechanical condition affected by paint, grit and latch tension. A ratio check after closing takes a minute and catches the most common split-core fault."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Current Transformers</span></div>
+    <span class="bh-tag">Technical Guides</span>
+    <h1 class="bh-title">Current Transformer Testing: Ratio, Polarity and Burden Checks</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>October 29, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/current-transformer-testing/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/current-transformer-testing/hero.png" alt="Technician checking the secondary leads of a split-core current transformer clamped on a copper busbar with a portable test instrument on a workshop bench" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A current transformer is tested before it is connected to a meter for four reasons: to confirm the ratio matches the nameplate, to confirm the polarity of the secondary, to confirm the secondary burden is within what the core can actually drive, and to confirm that the insulation between primary, secondary and earth is intact. On a low-voltage metering CT those four checks take well under fifteen minutes per unit, and each one catches a fault that would otherwise appear as a wrong bill instead of a dead circuit.</p>
+
+    <p>That last point is the reason testing matters more on a CT than on a breaker. A breaker that fails is obvious. A current transformer that fails is usually silent, and the installation keeps working perfectly while the numbers it produces are wrong.</p>
+
+    <h2>Why a CT fails quietly</h2>
+    <p>A current transformer has no moving parts, no trip mechanism and no indication of its own. It simply reports a scaled copy of the primary current into the meter. If that copy is scaled by the wrong factor, inverted, or clipped, nothing trips and nobody is alerted.</p>
+    <ul>
+      <li><strong>Wrong ratio.</strong> A 200/5 CT wired to a meter still programmed for 100/5 halves every reading. Energy is consumed normally; the register just runs at half speed.</li>
+      <li><strong>Reversed polarity.</strong> The secondary is inverted, so imported energy registers as export. A bidirectional or net meter may appear to run backwards.</li>
+      <li><strong>Excessive burden.</strong> The secondary loop asks for more volt-amperes than the core can deliver, so the CT saturates on peak load and under-reads exactly when consumption is highest.</li>
+      <li><strong>Damaged insulation.</strong> This is the one failure with a safety dimension rather than a commercial one: a breakdown between primary and secondary puts line potential on the metering circuit.</li>
+      <li><strong>Incomplete core closure.</strong> On a split-core CT the two halves must mate completely. A paint film, grit or a latch that is not fully home opens a small air gap, and the ratio drifts low.</li>
+    </ul>
+
+    <h2>Step 1: nameplate and physical check</h2>
+    <p>Before any instrument is connected, read the rating plate and compare it with the meter's programmed CT ratio and with the purchase order. The classification, the rated primary and secondary current, the rated burden and the rated voltage all appear there. Three things are worth checking with your hands as well as your eyes:</p>
+    <ul>
+      <li>The window is clear and the primary conductor passes through it once, in the marked direction, with P1 facing the supply.</li>
+      <li>The secondary terminals are tight. A loose S1 or S2 adds resistance to the loop and creates a hot spot that grows under load.</li>
+      <li>On split-core models, the mating faces are clean and the latch closes fully with no visible gap.</li>
+    </ul>
+
+    <h2>Step 2: insulation resistance</h2>
+    <p>With the CT completely isolated, the meter disconnected and the secondary temporarily shorted or connected to the tester as your procedure requires, measure insulation resistance primary-to-secondary and secondary-to-earth. The purpose is not to grade the transformer; it is to prove there is no path that should not exist before the circuit is made live.</p>
+    <p>One safety rule sits above every measurement in this article: <strong>never open-circuit the secondary of a current transformer while primary current is flowing.</strong> An open secondary removes the opposing flux, the core drives into saturation, and a very high voltage appears across S1 and S2. Always short the secondary through a test block or a dedicated shorting link before breaking the loop.</p>
+
+    <h2>Step 3: ratio test</h2>
+    <p>The ratio is the primary current divided by the secondary current, so a 200/5 unit has a nominal ratio of 40:1. Two methods are used in the field, and both are legitimate:</p>
+    <table>
+      <thead>
+        <tr><th>Method</th><th>How it works</th><th>Where it is the better choice</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Primary injection</td><td>A high-current test set injects a known current through the primary window while the secondary current is measured directly.</td><td>Commissioning a panel, where a primary injection set is already on site and the whole metering loop can be proved at once.</td></tr>
+        <tr><td>Secondary voltage method</td><td>A low AC voltage is applied to the secondary and the induced primary voltage is measured. The voltage ratio equals the turns ratio, which equals the current ratio.</td><td>Bench testing individual units, or anywhere a primary injection set cannot be brought.</td></tr>
+      </tbody>
+    </table>
+    <p>Record the measured ratio, not just a pass or fail. A unit that measures 39:1 against a nominal 40:1 is behaving normally; one that measures 25:1 has a closure or winding problem and will under-read by a third for the rest of its service life.</p>
+
+    <h2>Step 4: polarity test</h2>
+    <p>Polarity is the relationship between P1 and S1. The convention is that current entering the primary at P1 leaves the secondary at S1. Get it backwards and the meter sees the opposite sign.</p>
+    <p>The classic field method is the DC flick test. A battery is briefly applied across the primary and an analogue or moving-coil instrument watches the secondary. When the battery is connected, a correctly polarised CT produces a deflection in the marked direction; when it is removed, the deflection reverses. A digital meter with a polarity or ratio function does the same job with less interpretation. If a known-good transformer of the same type is available, comparing the two is the fastest confirmation of all.</p>
+    <p>Mark the result on the unit. Polarity is easy to check once and almost impossible to remember six months later when a meter is replaced.</p>
+
+    <h2>Step 5: burden test</h2>
+    <p>Burden is the load the secondary circuit presents to the CT, expressed in volt-amperes at rated secondary current. It is made up of the meter's current circuit, the terminal blocks, and above all the length and cross-section of the secondary cable. A CT rated for a stated burden will hold its accuracy up to that figure and no further.</p>
+    <table>
+      <thead>
+        <tr><th>What adds burden</th><th>Why it matters</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Long secondary runs</td><td>Resistance rises with length, and burden rises with the square of secondary current, so a long 2.5 mm&sup2; run is a common cause of saturation.</td></tr>
+        <tr><td>Undersized secondary cable</td><td>The cheapest way to overshoot a CT's rated burden without noticing.</td></tr>
+        <tr><td>Extra devices in the loop</td><td>Each additional meter, relay or terminal pair adds impedance in series.</td></tr>
+        <tr><td>Poor terminations</td><td>A high-resistance joint behaves like extra cable and heats under load.</td></tr>
+      </tbody>
+    </table>
+    <p>Compare the calculated loop burden with the CT's rated burden. If the loop is close to the limit, move up to the next CT size or increase the secondary cross-section. Both are cheaper than a meter that under-reads on peak.</p>
+
+    <h2>Metering cores and protection cores need different emphasis</h2>
+    <p>The same four tests apply to both, but what you are proving is not the same thing.</p>
+    <table>
+      <thead>
+        <tr><th>Core type</th><th>What the test must establish</th><th>Failure that matters most</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Metering core (class 0.5, class 1.0)</td><td>Accuracy at normal load, correct ratio, correct polarity</td><td>A small ratio error or a reversed secondary, because both distort billing continuously</td></tr>
+        <tr><td>Protection core (5P, 10P)</td><td>Behaviour at high fault current, composite error at the accuracy limit factor</td><td>Saturation before the fault level, which delays or prevents a trip</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Symptoms and their usual cause</h2>
+    <table>
+      <thead>
+        <tr><th>What the site reports</th><th>Check first</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Consumption reads consistently low against a check meter</td><td>Programmed CT ratio and actual ratio; then burden and secondary cable size</td></tr>
+        <tr><td>Meter registers export on a load that only imports</td><td>Secondary polarity at S1/S2</td></tr>
+        <tr><td>Readings are acceptable at light load and fall away at peak</td><td>Saturation: burden, cable length and core closure on split-core units</td></tr>
+        <tr><td>Readings jump or drift between visits</td><td>Loose secondary terminal or a latch that is not fully closed</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Split-core units: the closing faces are the test</h2>
+    <p>Split-core current transformers are installed around a cable or bar without disconnecting it, which is exactly why they are popular for retrofits and for sub-metering in occupied buildings. The trade-off is that the magnetic circuit is only as good as the joint between the two halves. Clean the faces, close the latch fully, and confirm the measured ratio after installation rather than assuming it. YOMIN builds split-core units such as the <a href="/products/current-transformer/factory-direct-sale-split-core-design-720v-ac-2000-5a-class-0-5-split-core-single-phase-ct-current-transformer">720V AC 2000/5A Class 0.5 split-core CT</a> and the <a href="/products/current-transformer/single-phase-dp-816-1000-5a-class-0-5-split-core-720v-ac-current-transformer-for-metering">DP-816 1000/5A Class 0.5 split-core unit</a>, both intended for metering duty.</p>
+
+    <h2>Low-voltage CTs for metering panels</h2>
+    <p>For panel builders specifying by ratio and accuracy class rather than by core type, the catalogue covers the usual metering range:</p>
+    <table>
+      <thead>
+        <tr><th>Model reference</th><th>Ratio and class</th><th>Typical use</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="/products/current-transformer/factory-direct-sale-split-core-design-720v-ac-2000-5a-class-0-5-split-core-single-phase-ct-current-transformer">Split-core CT, 2000/5 A</a></td><td>2000/5 A, class 0.5, 720 V AC, single phase</td><td>Retrofit sub-metering on large feeders without disconnection</td></tr>
+        <tr><td><a href="/products/current-transformer/single-phase-dp-816-1000-5a-class-0-5-split-core-720v-ac-current-transformer-for-metering">DP-816, 1000/5 A</a></td><td>1000/5 A, class 0.5, 720 V AC, split core</td><td>Distribution board metering where cables cannot be broken</td></tr>
+        <tr><td><a href="/products/current-transformer/mr-85-series-5000-5a-single-phase-ct-class-0-5-1-0-low-voltage-current-transformer">MR-85 series, 5000/5 A</a></td><td>5000/5 A, class 0.5 / 1.0, single phase</td><td>Main incoming metering on high-current low-voltage boards</td></tr>
+        <tr><td><a href="/products/current-transformer/bh-0-66-msq-0-66-30i150-5a-accuracy-class-0-5-low-voltage-current-transformer-toroidal-autotransformer-ct-for-">MSQ-0.66-30I, 150/5 A</a></td><td>150/5 A, class 0.5, low voltage, toroidal</td><td>Feeder and machine-level metering in a compact window</td></tr>
+      </tbody>
+    </table>
+    <p>Two ratios worth remembering when ordering: the secondary is normally 5 A, and the ratio written on the order should always be the primary/secondary pair, never the primary alone. See our notes on <a href="/blog/ct-ratio-explained">how CT ratios are expressed</a> and on <a href="/blog/ct-accuracy-class-guide">what the accuracy class actually promises</a> before finalising a schedule.</p>
+
+    <h2>Commissioning checklist</h2>
+    <ul>
+      <li>Nameplate ratio and class match the meter programme and the purchase order.</li>
+      <li>Primary conductor passes through the window once, in the P1-to-P2 direction.</li>
+      <li>Insulation resistance primary-to-secondary and secondary-to-earth recorded.</li>
+      <li>Ratio measured and logged as a number, not a tick.</li>
+      <li>Polarity confirmed and marked on the unit.</li>
+      <li>Secondary loop burden calculated against the CT rating, including cable length.</li>
+      <li>Secondary terminals torqued and, on split-core units, the latch fully closed.</li>
+      <li>Secondary shorting link removed only after the meter is connected and proven.</li>
+    </ul>
+
+    <h2>Frequently asked questions</h2>
+    <h3>Can I test a current transformer without a primary injection set?</h3>
+    <p>Yes. The secondary voltage method needs only a low AC source and a voltmeter, and it proves the turns ratio directly. What it does not prove is the complete loop including the primary conductor, so a primary injection test is still preferable at commissioning when the equipment is available.</p>
+
+    <h3>Why does my meter read low only at peak load?</h3>
+    <p>That pattern points to saturation rather than a ratio error. The secondary burden is too high for the core, usually because of long or undersized secondary cable, and the CT stops tracking current once the load approaches its accuracy limit.</p>
+
+    <h3>What happens if a CT secondary is left open?</h3>
+    <p>With primary current flowing, an open secondary allows the core flux to rise unchecked and a very high voltage develops across S1 and S2. It is a shock hazard and it can destroy the winding. Always short the secondary before opening the circuit.</p>
+
+    <h3>Do split-core CTs need re-testing after installation?</h3>
+    <p>They should be. The ratio depends on the two halves closing completely, and that is a mechanical condition affected by paint, grit and latch tension. A ratio check after closing takes a minute and catches the most common split-core fault.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Testing CTs on a metering project?</h2>
+    <p>Send the ratio, accuracy class and secondary cable length for each point, and we will confirm the CT and the burden before the panel is wired.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px"><a href="/products/current-transformer">Browse current transformers &rarr;</a></p>
+    <p style="margin-top:18px;font-size:14px;color:var(--mt)">Prefer to send the schedule on WhatsApp? <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "current-transformer-testing";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      location.href = '/blog/' + b + M[l];
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ensayos de un transformador de corriente: relación, polaridad y carga | Yomin Electric</title>
+<meta name="description" content="Cómo verificar un transformador de corriente de baja tensión antes de energizarlo: relación, polaridad, carga e aislamiento, los instrumentos necesarios y los fallos que falsean la medición sin avisar.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/current-transformer-testing/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/current-transformer-testing-es">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/current-transformer-testing">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/current-transformer-testing-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/current-transformer-testing-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/current-transformer-testing-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/current-transformer-testing">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Ensayos de un transformador de corriente: relación, polaridad y carga",
+      "description": "Cómo verificar un transformador de corriente de baja tensión antes de energizarlo: relación, polaridad, carga e aislamiento, los instrumentos necesarios y los fallos que falsean la medición sin avisar.",
+      "image": "https://www.yominelectric.com/assets/images/blog/current-transformer-testing/hero.png",
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-10-29",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/logo_transparent.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/current-transformer-testing-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Se puede ensayar un transformador de corriente sin equipo de inyección primaria?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. El método de tensión secundaria solo necesita una fuente alterna de baja tensión y un voltímetro, y demuestra directamente la relación de espiras. Lo que no valida es el bucle completo, incluido el conductor primario, así que en la puesta en marcha sigue siendo preferible una inyección primaria cuando hay equipo disponible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué mi contador mide bajo solo en punta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ese patrón apunta a saturación y no a un error de relación. La carga secundaria es demasiado alta para el núcleo, normalmente por un cable secundario largo o de sección insuficiente, y el TC deja de seguir la corriente cuando la carga se acerca a su límite de precisión."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué ocurre si se deja abierto el secundario de un TC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Con corriente en el primario, un secundario abierto permite que el flujo del núcleo suba sin control y aparece una tensión muy elevada entre S1 y S2. Es un riesgo de descarga eléctrica y puede destruir el bobinado. Cortocircuite siempre el secundario antes de abrir el circuito."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hay que volver a ensayar un TC de núcleo partido tras instalarlo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. La relación depende de que las dos mitades cierren por completo, una condición mecánica sensible a la pintura, la suciedad y la tensión del cierre. Una comprobación de relación tras cerrar lleva un minuto y detecta el fallo más común de estos modelos."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Transformadores de corriente</span></div>
+    <span class="bh-tag">Guías técnicas</span>
+    <h1 class="bh-title">Ensayos de un transformador de corriente: relación, polaridad y carga</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>29 de octubre de 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/current-transformer-testing/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/current-transformer-testing/hero.png" alt="Técnico comprobando los conductores secundarios de un transformador de corriente de núcleo partido montado sobre una barra de cobre, con un equipo de ensayo portátil en el banco" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un transformador de corriente se ensaya antes de conectarlo al contador por cuatro razones: confirmar que la relación coincide con la placa, confirmar la polaridad del secundario, confirmar que la carga del secundario está dentro de lo que el núcleo puede entregar realmente y confirmar que el aislamiento entre primario, secundario y tierra está intacto. En un TC de medida de baja tensión estas cuatro comprobaciones llevan bastante menos de un cuarto de hora por unidad, y cada una detecta un fallo que, de otro modo, aparecería como una factura incorrecta en lugar de como una instalación parada.</p>
+
+    <p>Esa es justamente la diferencia con un interruptor automático. Un interruptor que falla se nota de inmediato. Un transformador de corriente que falla no se nota: la instalación sigue funcionando sin problemas mientras las cifras que produce son falsas.</p>
+
+    <h2>Por qué un TC falla en silencio</h2>
+    <p>Un transformador de corriente no tiene piezas móviles, ni mecanismo de disparo, ni señalización propia. Solo entrega al contador una copia reducida de la corriente primaria. Si esa copia está escalada con un factor equivocado, invertida o recortada, nada dispara y nadie se enteró.</p>
+    <ul>
+      <li><strong>Relación incorrecta.</strong> Un TC de 200/5 conectado a un contador todavía configurado en 100/5 divide todas las lecturas por dos. La energía se consume con normalidad; el registro simplemente va a media velocidad.</li>
+      <li><strong>Polaridad invertida.</strong> El secundario está invertido y la energía importada se registra como exportada. Un contador bidireccional puede parecer que gira al revés.</li>
+      <li><strong>Carga excesiva.</strong> El bucle secundario pide más voltamperios de los que el núcleo puede entregar: el TC satura en punta y mide de menos justo cuando el consumo es mayor.</li>
+      <li><strong>Aislamiento dañado.</strong> Es el único fallo con dimensión de seguridad y no solo comercial: una perforación entre primario y secundario lleva el potencial de línea al circuito de medida.</li>
+      <li><strong>Cierre incompleto del núcleo.</strong> En un TC de núcleo partido las dos mitades deben apoyarse por completo. Una película de pintura, arena o un cierre que no llega a su asiento abren un entrehierro y la relación se desvía hacia abajo.</li>
+    </ul>
+
+    <h2>Paso 1: placa de características y comprobación física</h2>
+    <p>Antes de conectar ningún instrumento, lea la placa y compárela con la relación configurada en el contador y con el pedido. Allí figuran la clase, la corriente primaria y secundaria asignadas, la carga asignada y la tensión asignada. Hay tres puntos que conviene verificar con las manos además de con la vista:</p>
+    <ul>
+      <li>La ventana está despejada y el conductor primario la atraviesa una sola vez, en el sentido marcado, con P1 hacia la alimentación.</li>
+      <li>Los bornes secundarios están apretados. Un S1 o S2 flojo añade resistencia al bucle y crea un punto caliente que crece con la carga.</li>
+      <li>En los modelos de núcleo partido, las caras de unión están limpias y el cierre queda completamente asentado, sin holgura visible.</li>
+    </ul>
+
+    <h2>Paso 2: resistencia de aislamiento</h2>
+    <p>Con el TC completamente aislado y el contador desconectado, mida la resistencia de aislamiento entre primario y secundario y entre secundario y tierra, cortocircuitando el secundario según el procedimiento de su planta. El objetivo no es calificar el transformador, sino demostrar que no existe un camino que no debería existir antes de dar tensión.</p>
+    <p>Hay una regla de seguridad que está por encima de todas las mediciones de este artículo: <strong>nunca abra el circuito secundario de un transformador de corriente mientras circule corriente por el primario.</strong> Un secundario abierto elimina el flujo opuesto, el núcleo satura y aparece una tensión muy elevada entre S1 y S2. Cortocircuite siempre el secundario mediante un bloque de ensayo o un puente previsto antes de abrir el bucle.</p>
+
+    <h2>Paso 3: ensayo de relación</h2>
+    <p>La relación es la corriente primaria dividida por la corriente secundaria, de modo que un 200/5 tiene una relación nominal de 40:1. En campo se emplean dos métodos y ambos son válidos.</p>
+    <table>
+      <thead>
+        <tr><th>Método</th><th>Cómo funciona</th><th>Cuándo es preferible</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Inyección primaria</td><td>Un equipo de corriente inyecta una corriente conocida por la ventana primaria mientras se mide directamente la corriente secundaria.</td><td>Puesta en marcha de un cuadro, cuando el equipo de inyección ya está en obra y se puede validar todo el bucle de medida de una vez.</td></tr>
+        <tr><td>Método de tensión secundaria</td><td>Se aplica una tensión alterna baja al secundario y se mide la tensión inducida en el primario. La relación de tensiones es igual a la relación de espiras y, por tanto, a la de corrientes.</td><td>Ensayo unitario en taller, o donde no se puede llevar un equipo de inyección primaria.</td></tr>
+      </tbody>
+    </table>
+    <p>Anote la relación medida, no solo un «correcto». Una unidad que mide 39:1 frente a 40:1 nominal se comporta con normalidad; una que mide 25:1 tiene un problema de cierre o de bobinado y medirá un tercio de menos durante toda su vida útil.</p>
+
+    <h2>Paso 4: ensayo de polaridad</h2>
+    <p>La polaridad es la relación entre P1 y S1: la corriente que entra por P1 en el primario sale por S1 en el secundario. Si se invierte, el contador ve el signo contrario.</p>
+    <p>El método clásico de campo es el ensayo por impulso de continua: se aplica brevemente una pila al primario mientras un instrumento de cuadro móvil observa el secundario. Al conectar, un TC correctamente polarizado desvía en el sentido marcado; al desconectar, la desviación se invierte. Un equipo digital con función de polaridad o de relación hace el mismo trabajo con menos interpretación. Si se dispone de un transformador del mismo tipo y polaridad conocida, comparar ambos es la confirmación más rápida.</p>
+    <p>Marque el resultado en la unidad. La polaridad se comprueba fácilmente una vez y resulta casi imposible de recordar seis meses después, cuando se cambia el contador.</p>
+
+    <h2>Paso 5: ensayo de carga</h2>
+    <p>La carga es la que el circuito secundario presenta al TC, expresada en voltamperios a la corriente secundaria asignada. La forman el circuito de corriente del contador, los borneros y, sobre todo, la longitud y la sección del cable secundario. Un TC mantiene su precisión hasta la carga asignada, y no más allá.</p>
+    <table>
+      <thead>
+        <tr><th>Qué añade carga</th><th>Por qué importa</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Tramos secundarios largos</td><td>La resistencia crece con la longitud y la carga con el cuadrado de la corriente secundaria: un tramo largo de 2,5 mm&sup2; es una causa habitual de saturación.</td></tr>
+        <tr><td>Cable secundario de sección insuficiente</td><td>La forma menos visible de superar la carga asignada de un TC.</td></tr>
+        <tr><td>Equipos adicionales en el bucle</td><td>Cada contador, relé o par de bornes añadido introduce impedancia en serie.</td></tr>
+        <tr><td>Conexiones deficientes</td><td>Un apriete de alta resistencia se comporta como cable de más y se calienta con la carga.</td></tr>
+      </tbody>
+    </table>
+    <p>Compare la carga calculada del bucle con la carga asignada del TC. Si el bucle se acerca al límite, suba al tamaño siguiente o aumente la sección del secundario. Ambas opciones cuestan menos que un contador que mide de menos en punta.</p>
+
+    <h2>Núcleos de medida y núcleos de protección: prioridades distintas</h2>
+    <p>Los cuatro ensayos se aplican a ambos, pero lo que se demuestra no es lo mismo.</p>
+    <table>
+      <thead>
+        <tr><th>Tipo de núcleo</th><th>Qué debe establecer el ensayo</th><th>Fallo más grave</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Núcleo de medida (clase 0,5 / 1,0)</td><td>Precisión a carga normal, relación correcta, polaridad correcta</td><td>Un pequeño error de relación o un secundario invertido, porque ambos distorsionan la facturación de forma continua</td></tr>
+        <tr><td>Núcleo de protección (5P, 10P)</td><td>Comportamiento bajo corriente de falta elevada, error compuesto en el factor límite de precisión</td><td>Saturación por debajo del nivel de falta, que retrasa o impide el disparo</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Síntomas y su causa habitual</h2>
+    <table>
+      <thead>
+        <tr><th>Lo que reporta la instalación</th><th>Qué revisar primero</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>El consumo se lee sistemáticamente bajo frente a un contador de control</td><td>Relación configurada y relación real; después, carga y sección del cable secundario</td></tr>
+        <tr><td>El contador registra exportación en una carga que solo importa</td><td>Polaridad del secundario en S1/S2</td></tr>
+        <tr><td>Lecturas aceptables con poca carga que caen en punta</td><td>Saturación: carga, longitud de cable y cierre del núcleo en unidades de núcleo partido</td></tr>
+        <tr><td>Lecturas que saltan o derivan entre visitas</td><td>Borne secundario flojo o un cierre que no queda completo</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Núcleo partido: la unión es el ensayo</h2>
+    <p>Los transformadores de corriente de núcleo partido se instalan alrededor de un cable o de una barra sin desconectarlo, y por eso son tan habituales en renovaciones y en submedición de edificios ocupados. La contrapartida es que el circuito magnético vale lo que vale la unión entre las dos mitades. Limpie las caras, cierre a fondo y confirme la relación medida después de instalar en lugar de suponerla. YOMIN fabrica unidades de núcleo partido como el <a href="/products/current-transformer/factory-direct-sale-split-core-design-720v-ac-2000-5a-class-0-5-split-core-single-phase-ct-current-transformer">TC de núcleo partido 2000/5 A clase 0,5 en 720 V AC</a> y el <a href="/products/current-transformer/single-phase-dp-816-1000-5a-class-0-5-split-core-720v-ac-current-transformer-for-metering">DP-816 1000/5 A clase 0,5</a>, ambos para servicio de medida.</p>
+
+    <h2>TC de baja tensión para cuadros de medida</h2>
+    <p>Para los armadores que especifican por relación y clase de precisión más que por tipo de núcleo, el catálogo cubre el rango habitual de medida:</p>
+    <table>
+      <thead>
+        <tr><th>Referencia</th><th>Relación y clase</th><th>Uso típico</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="/products/current-transformer/factory-direct-sale-split-core-design-720v-ac-2000-5a-class-0-5-split-core-single-phase-ct-current-transformer">TC de núcleo partido 2000/5 A</a></td><td>2000/5 A, clase 0,5, 720 V AC, monofásico</td><td>Submedición en renovación sobre alimentadores grandes, sin cortar servicio</td></tr>
+        <tr><td><a href="/products/current-transformer/single-phase-dp-816-1000-5a-class-0-5-split-core-720v-ac-current-transformer-for-metering">DP-816 1000/5 A</a></td><td>1000/5 A, clase 0,5, 720 V AC, núcleo partido</td><td>Medida en cuadro de distribución cuando no se puede seccionar el cable</td></tr>
+        <tr><td><a href="/products/current-transformer/mr-85-series-5000-5a-single-phase-ct-class-0-5-1-0-low-voltage-current-transformer">Serie MR-85 5000/5 A</a></td><td>5000/5 A, clase 0,5 / 1,0, monofásico</td><td>Medida en la entrada principal de cuadros de baja tensión de gran corriente</td></tr>
+        <tr><td><a href="/products/current-transformer/bh-0-66-msq-0-66-30i150-5a-accuracy-class-0-5-low-voltage-current-transformer-toroidal-autotransformer-ct-for-">MSQ-0,66-30I 150/5 A</a></td><td>150/5 A, clase 0,5, baja tensión, toroidal</td><td>Medida de alimentador y de máquina en una ventana compacta</td></tr>
+      </tbody>
+    </table>
+    <p>Dos recordatorios al pedir: el secundario suele ser de 5 A y la relación debe escribirse siempre como par primario/secundario, nunca solo el primario. Vea nuestras notas sobre <a href="/blog/ct-ratio-explained">cómo se expresan las relaciones de TC</a> y sobre <a href="/blog/ct-accuracy-class-guide">qué garantiza realmente la clase de precisión</a> antes de cerrar el listado.</p>
+
+    <h2>Lista de comprobación antes de energizar</h2>
+    <ul>
+      <li>La relación y la clase de la placa coinciden con la configuración del contador y con el pedido.</li>
+      <li>El conductor primario atraviesa la ventana una sola vez, en sentido P1 a P2.</li>
+      <li>Se registró la resistencia de aislamiento primario-secundario y secundario-tierra.</li>
+      <li>La relación se midió y se anotó como valor, no como una marca de conformidad.</li>
+      <li>La polaridad se confirmó y se marcó en la unidad.</li>
+      <li>La carga del bucle secundario se calculó frente a la asignada del TC, incluida la longitud de cable.</li>
+      <li>Los bornes secundarios están apretados y, en núcleo partido, el cierre está completamente asentado.</li>
+      <li>El puente de cortocircuito del secundario se retira solo después de conectar y verificar el contador.</li>
+    </ul>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Se puede ensayar un transformador de corriente sin equipo de inyección primaria?</h3>
+    <p>Sí. El método de tensión secundaria solo necesita una fuente alterna de baja tensión y un voltímetro, y demuestra directamente la relación de espiras. Lo que no valida es el bucle completo, incluido el conductor primario, así que en la puesta en marcha sigue siendo preferible una inyección primaria cuando hay equipo disponible.</p>
+
+    <h3>¿Por qué mi contador mide bajo solo en punta?</h3>
+    <p>Ese patrón apunta a saturación y no a un error de relación. La carga secundaria es demasiado alta para el núcleo, normalmente por un cable secundario largo o de sección insuficiente, y el TC deja de seguir la corriente cuando la carga se acerca a su límite de precisión.</p>
+
+    <h3>¿Qué ocurre si se deja abierto el secundario de un TC?</h3>
+    <p>Con corriente en el primario, un secundario abierto permite que el flujo del núcleo suba sin control y aparece una tensión muy elevada entre S1 y S2. Es un riesgo de descarga eléctrica y puede destruir el bobinado. Cortocircuite siempre el secundario antes de abrir el circuito.</p>
+
+    <h3>¿Hay que volver a ensayar un TC de núcleo partido tras instalarlo?</h3>
+    <p>Sí. La relación depende de que las dos mitades cierren por completo, una condición mecánica sensible a la pintura, la suciedad y la tensión del cierre. Una comprobación de relación tras cerrar lleva un minuto y detecta el fallo más común de estos modelos.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Está ensayando TC en un proyecto de medida?</h2>
+    <p>Envíe la relación, la clase de precisión y la longitud de cable secundario de cada punto, y confirmamos el TC y la carga antes de cablear el cuadro.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <p style="margin-top:14px"><a href="/products/current-transformer">Ver transformadores de corriente &rarr;</a></p>
+    <p style="margin-top:18px;font-size:14px;color:var(--mt)">¿Prefiere enviar el listado por WhatsApp? <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "current-transformer-testing";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      location.href = '/blog/' + b + M[l];
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

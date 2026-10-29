@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Essais d'un transformateur de courant : rapport, polarité et fardeau | Yomin Electric</title>
+<meta name="description" content="Comment vérifier un transformateur de courant basse tension avant sa mise sous tension : rapport, polarité, fardeau et isolement, les instruments à prévoir et les défauts qui faussent silencieusement le comptage.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/current-transformer-testing/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/current-transformer-testing-fr">
+  <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/current-transformer-testing">
+  <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/current-transformer-testing-fr">
+  <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/current-transformer-testing-es">
+  <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/current-transformer-testing-ar">
+  <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/current-transformer-testing">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<script defer src="https://news.google.com/swg/js/v1/publisher.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Essais d'un transformateur de courant : rapport, polarité et fardeau",
+      "description": "Comment vérifier un transformateur de courant basse tension avant sa mise sous tension : rapport, polarité, fardeau et isolement, les instruments à prévoir et les défauts qui faussent silencieusement le comptage.",
+      "image": "https://www.yominelectric.com/assets/images/blog/current-transformer-testing/hero.png",
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-10-29",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/logo_transparent.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/current-transformer-testing-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Peut-on essayer un transformateur de courant sans jeu d'injection primaire ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. La méthode par tension secondaire ne demande qu'une source alternative basse tension et un voltmètre, et elle démontre directement le rapport de spires. Elle ne valide pas la boucle complète, conducteur primaire inclus : un essai par injection primaire reste préférable à la mise en service lorsque le matériel est disponible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi mon compteur lit-il bas uniquement en pointe ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ce comportement évoque une saturation plutôt qu'une erreur de rapport. Le fardeau secondaire est trop élevé pour le noyau, souvent à cause d'un câble secondaire long ou sous-dimensionné, et le TC cesse de suivre le courant quand la charge approche sa limite de précision."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que se passe-t-il si le secondaire d'un TC reste ouvert ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Avec un courant primaire, un secondaire ouvert laisse le flux du noyau monter sans limitation et une tension très élevée apparaît entre S1 et S2. C'est un risque d'électrocution et cela peut détruire le bobinage. Court-circuitez toujours le secondaire avant d'ouvrir le circuit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il réessayer un TC ouvrant après installation ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Le rapport dépend de la fermeture complète des deux demi-noyaux, condition mécanique sensible à la peinture, aux grains et à la tension du verrou. Un contrôle de rapport après fermeture prend une minute et intercepte le défaut le plus courant de ces modèles."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: EN">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Transformateurs de courant</span></div>
+    <span class="bh-tag">Guides techniques</span>
+    <h1 class="bh-title">Essais d'un transformateur de courant : rapport, polarité et fardeau</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>29 octobre 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/current-transformer-testing/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/current-transformer-testing/hero.png" alt="Technicien vérifiant les fils secondaires d'un transformateur de courant à noyau ouvrant installé sur une barre de cuivre, avec un appareil de mesure portable sur l'établi" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un transformateur de courant est essayé avant son raccordement au compteur pour quatre raisons : confirmer que le rapport correspond à la plaque signalétique, confirmer la polarité du secondaire, confirmer que le fardeau du secondaire reste dans ce que le noyau peut réellement alimenter, et confirmer que l'isolement entre primaire, secondaire et terre est intact. Sur un TC de comptage basse tension, ces quatre contrôles prennent largement moins d'un quart d'heure par appareil, et chacun intercepte un défaut qui, sinon, se traduirait par une facture fausse plutôt que par une installation à l'arrêt.</p>
+
+    <p>C'est précisément ce qui distingue le TC du disjoncteur. Un disjoncteur qui lâche se voit immédiatement. Un transformateur de courant qui lâche ne se voit pas : l'installation continue de fonctionner parfaitement alors que les chiffres qu'elle produit sont faux.</p>
+
+    <h2>Pourquoi un TC tombe en panne sans bruit</h2>
+    <p>Un transformateur de courant n'a ni pièce mobile, ni mécanisme de déclenchement, ni signalisation propre. Il se contente de renvoyer au compteur une image réduite du courant primaire. Si cette image est mise à l'échelle par un mauvais facteur, inversée ou écrêtée, rien ne déclenche et personne n'est alerté.</p>
+    <ul>
+      <li><strong>Mauvais rapport.</strong> Un TC 200/5 raccordé à un compteur encore paramétré en 100/5 divise toutes les lectures par deux. L'énergie est bien consommée ; c'est le registre qui tourne à moitié vitesse.</li>
+      <li><strong>Polarité inversée.</strong> Le secondaire est inversé : l'énergie soutirée s'enregistre comme énergie injectée. Un compteur bidirectionnel peut sembler tourner à l'envers.</li>
+      <li><strong>Fardeau excessif.</strong> La boucle secondaire réclame plus de voltampères que le noyau n'en fournit : le TC sature en pointe et sous-compte exactement au moment où la consommation est la plus forte.</li>
+      <li><strong>Isolement dégradé.</strong> C'est le seul défaut qui présente un risque de sécurité et non un risque commercial : un claquage entre primaire et secondaire porte le potentiel de ligne sur le circuit de comptage.</li>
+      <li><strong>Fermeture incomplète du noyau.</strong> Sur un TC ouvrant, les deux demi-noyaux doivent s'appliquer parfaitement. Un film de peinture, un grain de sable ou un verrou mal engagé ouvre un entrefer et fait dériver le rapport vers le bas.</li>
+    </ul>
+
+    <h2>Étape 1 : plaque signalétique et contrôle visuel</h2>
+    <p>Avant de brancher le moindre instrument, lisez la plaque et comparez-la au rapport programmé dans le compteur ainsi qu'à la commande. La classe, le courant primaire et secondaire assignés, le fardeau assigné et la tension assignée y figurent. Trois points méritent d'être vérifiés à la main autant qu'à l'œil :</p>
+    <ul>
+      <li>La fenêtre est dégagée et le conducteur primaire la traverse une seule fois, dans le sens marqué, P1 côté alimentation.</li>
+      <li>Les bornes secondaires sont serrées. Un S1 ou un S2 desserré ajoute de la résistance à la boucle et crée un point chaud qui s'aggrave en charge.</li>
+      <li>Sur les modèles ouvrants, les faces de jonction sont propres et le verrou se ferme complètement, sans jeu visible.</li>
+    </ul>
+
+    <h2>Étape 2 : résistance d'isolement</h2>
+    <p>TC totalement isolé et compteur déconnecté, mesurez la résistance d'isolement entre primaire et secondaire, puis entre secondaire et terre, en respectant la procédure de votre site pour la mise en court-circuit du secondaire. Le but n'est pas de noter le transformateur, mais de prouver qu'il n'existe aucun chemin indésirable avant la mise sous tension.</p>
+    <p>Une règle de sécurité prime sur toutes les mesures de cet article : <strong>n'ouvrez jamais le circuit secondaire d'un transformateur de courant tant que le primaire est parcouru par un courant.</strong> Un secondaire ouvert supprime le flux opposé, le noyau sature et une tension très élevée apparaît entre S1 et S2. Court-circuitez toujours le secondaire par un bloc d'essai ou un cavalier prévu avant d'ouvrir la boucle.</p>
+
+    <h2>Étape 3 : essai de rapport</h2>
+    <p>Le rapport est le courant primaire divisé par le courant secondaire : un 200/5 présente donc un rapport nominal de 40:1. Deux méthodes sont utilisées sur le terrain, et les deux sont valables.</p>
+    <table>
+      <thead>
+        <tr><th>Méthode</th><th>Principe</th><th>Quand la préférer</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Injection primaire</td><td>Un jeu de courant injecte un courant connu dans la fenêtre primaire pendant que le courant secondaire est mesuré directement.</td><td>Mise en service d'une armoire, quand le jeu d'injection est déjà sur place et que toute la boucle de comptage peut être validée d'un coup.</td></tr>
+        <tr><td>Méthode par tension secondaire</td><td>Une basse tension alternative est appliquée au secondaire et la tension induite au primaire est mesurée. Le rapport de tension égale le rapport de spires, donc le rapport de courant.</td><td>Essai unitaire en atelier, ou partout où un jeu d'injection ne peut pas être amené.</td></tr>
+      </tbody>
+    </table>
+    <p>Notez le rapport mesuré, pas seulement un « conforme ». Un appareil qui mesure 39:1 pour un nominal de 40:1 se comporte normalement ; un appareil qui mesure 25:1 a un problème de fermeture ou de bobinage et sous-comptera d'un tiers pendant toute sa durée de service.</p>
+
+    <h2>Étape 4 : essai de polarité</h2>
+    <p>La polarité est la relation entre P1 et S1 : le courant qui entre au primaire par P1 ressort au secondaire par S1. Inversée, elle présente au compteur le signe opposé.</p>
+    <p>La méthode classique est l'essai par impulsion continue : une pile est brièvement appliquée au primaire pendant qu'un instrument à cadre mobile observe le secondaire. À la fermeture, un TC correctement polarisé dévie dans le sens marqué ; à l'ouverture, la déviation s'inverse. Un contrôleur numérique doté d'une fonction polarité ou rapport fait le même travail avec moins d'interprétation. Si un transformateur de même type et de polarité connue est disponible, la comparaison des deux est la confirmation la plus rapide.</p>
+    <p>Marquez le résultat sur l'appareil. La polarité se vérifie facilement une fois et s'oublie presque toujours six mois plus tard, au moment du remplacement du compteur.</p>
+
+    <h2>Étape 5 : essai de fardeau</h2>
+    <p>Le fardeau est la charge que le circuit secondaire présente au TC, exprimée en voltampères au courant secondaire assigné. Il se compose du circuit courant du compteur, des borniers et surtout de la longueur et de la section du câble secondaire. Un TC donné tient sa précision jusqu'au fardeau assigné, et pas au-delà.</p>
+    <table>
+      <thead>
+        <tr><th>Ce qui ajoute du fardeau</th><th>Pourquoi c'est déterminant</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Longues liaisons secondaires</td><td>La résistance croît avec la longueur et le fardeau croît avec le carré du courant secondaire : une longue liaison en 2,5 mm&sup2; est une cause fréquente de saturation.</td></tr>
+        <tr><td>Câble secondaire sous-dimensionné</td><td>La façon la moins visible de dépasser le fardeau assigné d'un TC.</td></tr>
+        <tr><td>Appareils supplémentaires en série</td><td>Chaque compteur, relais ou paire de bornes ajoutés introduit une impédance supplémentaire.</td></tr>
+        <tr><td>Raccordements médiocres</td><td>Un serrage à résistance élevée se comporte comme du câble en plus et chauffe en charge.</td></tr>
+      </tbody>
+    </table>
+    <p>Comparez le fardeau calculé de la boucle au fardeau assigné du TC. Si la boucle approche de la limite, passez à la taille supérieure ou augmentez la section du secondaire. Les deux solutions coûtent moins cher qu'un compteur qui sous-compte en pointe.</p>
+
+    <h2>Noyaux de mesure et noyaux de protection : deux priorités</h2>
+    <p>Les quatre essais s'appliquent aux deux, mais ce que l'on démontre n'est pas la même chose.</p>
+    <table>
+      <thead>
+        <tr><th>Type de noyau</th><th>Ce que l'essai doit établir</th><th>Défaut le plus pénalisant</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Noyau de mesure (classe 0,5 / 1,0)</td><td>Précision en charge normale, rapport correct, polarité correcte</td><td>Une faible erreur de rapport ou un secondaire inversé, car les deux faussent la facturation en continu</td></tr>
+        <tr><td>Noyau de protection (5P, 10P)</td><td>Comportement sous fort courant de défaut, erreur composite au facteur limite de précision</td><td>Une saturation avant le niveau de défaut, qui retarde ou empêche le déclenchement</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Symptômes et causes habituelles</h2>
+    <table>
+      <thead>
+        <tr><th>Ce que le site signale</th><th>À vérifier en premier</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Consommation systématiquement basse par rapport à un compteur de contrôle</td><td>Rapport programmé et rapport réel, puis fardeau et section du câble secondaire</td></tr>
+        <tr><td>Le compteur enregistre de l'injection sur une charge qui ne fait que consommer</td><td>Polarité du secondaire en S1/S2</td></tr>
+        <tr><td>Lectures correctes à faible charge, qui décrochent en pointe</td><td>Saturation : fardeau, longueur de câble et fermeture du noyau sur les modèles ouvrants</td></tr>
+        <tr><td>Lectures qui sautent ou dérivent d'une visite à l'autre</td><td>Borne secondaire desserrée ou verrou incomplètement fermé</td></tr>
+      </tbody>
+    </table>
+
+    <h2>TC ouvrants : la jonction fait l'essai</h2>
+    <p>Les transformateurs de courant à noyau ouvrant s'installent autour d'un câble ou d'une barre sans le déconnecter : c'est exactement pourquoi ils sont appréciés en rénovation et en sous-comptage de bâtiments occupés. La contrepartie, c'est que le circuit magnétique ne vaut que ce que vaut la jonction entre les deux demi-noyaux. Nettoyez les faces, fermez le verrou à fond, puis confirmez le rapport mesuré après installation au lieu de le supposer. YOMIN fabrique des modèles ouvrants comme le <a href="/products/current-transformer/factory-direct-sale-split-core-design-720v-ac-2000-5a-class-0-5-split-core-single-phase-ct-current-transformer">TC ouvrant 2000/5 A classe 0,5 en 720 V AC</a> et le <a href="/products/current-transformer/single-phase-dp-816-1000-5a-class-0-5-split-core-720v-ac-current-transformer-for-metering">DP-816 1000/5 A classe 0,5</a>, tous deux destinés au comptage.</p>
+
+    <h2>TC basse tension pour armoires de comptage</h2>
+    <p>Pour les assembleurs qui prescrivent par rapport et par classe de précision plutôt que par type de noyau, le catalogue couvre la plage de comptage habituelle :</p>
+    <table>
+      <thead>
+        <tr><th>Référence</th><th>Rapport et classe</th><th>Usage typique</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="/products/current-transformer/factory-direct-sale-split-core-design-720v-ac-2000-5a-class-0-5-split-core-single-phase-ct-current-transformer">TC ouvrant 2000/5 A</a></td><td>2000/5 A, classe 0,5, 720 V AC, monophasé</td><td>Sous-comptage en rénovation sur départs puissants, sans coupure</td></tr>
+        <tr><td><a href="/products/current-transformer/single-phase-dp-816-1000-5a-class-0-5-split-core-720v-ac-current-transformer-for-metering">DP-816 1000/5 A</a></td><td>1000/5 A, classe 0,5, 720 V AC, noyau ouvrant</td><td>Comptage de tableau de distribution quand les câbles ne peuvent être sectionnés</td></tr>
+        <tr><td><a href="/products/current-transformer/mr-85-series-5000-5a-single-phase-ct-class-0-5-1-0-low-voltage-current-transformer">Série MR-85 5000/5 A</a></td><td>5000/5 A, classe 0,5 / 1,0, monophasé</td><td>Comptage d'arrivée principale sur tableaux basse tension à fort courant</td></tr>
+        <tr><td><a href="/products/current-transformer/bh-0-66-msq-0-66-30i150-5a-accuracy-class-0-5-low-voltage-current-transformer-toroidal-autotransformer-ct-for-">MSQ-0,66-30I 150/5 A</a></td><td>150/5 A, classe 0,5, basse tension, torique</td><td>Comptage de départ et de machine dans une fenêtre compacte</td></tr>
+      </tbody>
+    </table>
+    <p>Deux rappels utiles à la commande : le secondaire est normalement de 5 A, et le rapport porté sur la commande doit toujours s'écrire sous la forme primaire/secondaire, jamais le primaire seul. Voir nos notes sur <a href="/blog/ct-ratio-explained">l'expression des rapports de TC</a> et sur <a href="/blog/ct-accuracy-class-guide">ce que garantit réellement la classe de précision</a> avant d'arrêter le bordereau.</p>
+
+    <h2>Liste de contrôle avant mise sous tension</h2>
+    <ul>
+      <li>Le rapport et la classe de la plaque correspondent au paramétrage du compteur et à la commande.</li>
+      <li>Le conducteur primaire traverse la fenêtre une seule fois, dans le sens P1 vers P2.</li>
+      <li>La résistance d'isolement primaire/secondaire et secondaire/terre est relevée.</li>
+      <li>Le rapport est mesuré et consigné sous forme de valeur, pas d'une croix.</li>
+      <li>La polarité est confirmée et marquée sur l'appareil.</li>
+      <li>Le fardeau de la boucle secondaire est calculé contre l'assignation du TC, longueur de câble comprise.</li>
+      <li>Les bornes secondaires sont serrées et, sur les modèles ouvrants, le verrou est complètement fermé.</li>
+      <li>Le cavalier de court-circuit du secondaire n'est retiré qu'après raccordement et contrôle du compteur.</li>
+    </ul>
+
+    <h2>Questions fréquentes</h2>
+    <h3>Peut-on essayer un transformateur de courant sans jeu d'injection primaire ?</h3>
+    <p>Oui. La méthode par tension secondaire ne demande qu'une source alternative basse tension et un voltmètre, et elle démontre directement le rapport de spires. Elle ne valide pas la boucle complète, conducteur primaire inclus : un essai par injection primaire reste préférable à la mise en service lorsque le matériel est disponible.</p>
+
+    <h3>Pourquoi mon compteur lit-il bas uniquement en pointe ?</h3>
+    <p>Ce comportement évoque une saturation plutôt qu'une erreur de rapport. Le fardeau secondaire est trop élevé pour le noyau, souvent à cause d'un câble secondaire long ou sous-dimensionné, et le TC cesse de suivre le courant quand la charge approche sa limite de précision.</p>
+
+    <h3>Que se passe-t-il si le secondaire d'un TC reste ouvert ?</h3>
+    <p>Avec un courant primaire, un secondaire ouvert laisse le flux du noyau monter sans limitation et une tension très élevée apparaît entre S1 et S2. C'est un risque d'électrocution et cela peut détruire le bobinage. Court-circuitez toujours le secondaire avant d'ouvrir le circuit.</p>
+
+    <h3>Faut-il réessayer un TC ouvrant après installation ?</h3>
+    <p>Oui. Le rapport dépend de la fermeture complète des deux demi-noyaux, condition mécanique sensible à la peinture, aux grains et à la tension du verrou. Un contrôle de rapport après fermeture prend une minute et intercepte le défaut le plus courant de ces modèles.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous essayez des TC sur un projet de comptage ?</h2>
+    <p>Indiquez le rapport, la classe de précision et la longueur de câble secondaire de chaque point : nous confirmons le TC et le fardeau avant le câblage de l'armoire.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <p style="margin-top:14px"><a href="/products/current-transformer">Parcourir les transformateurs de courant &rarr;</a></p>
+    <p style="margin-top:18px;font-size:14px;color:var(--mt)">Vous préférez envoyer le bordereau sur WhatsApp ? <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></p>
+  </section>
+
+<script>
+(function(){
+  var M = {en:'', fr:'-fr', es:'-es', ar:'-ar'};
+  var b = "current-transformer-testing";
+  document.querySelectorAll('.lopt, .mlb').forEach(function(btn){
+    var l = btn.getAttribute('data-lang');
+    if (!l || !(l in M)) return;
+    btn.addEventListener('click', function(ev){
+      ev.stopImmediatePropagation();
+      ev.preventDefault();
+      try { localStorage.setItem('ym_lang', l); } catch(e){}
+      location.href = '/blog/' + b + M[l];
+    }, true);
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png" /></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
