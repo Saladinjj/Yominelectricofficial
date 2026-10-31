@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aluminium Busbar for Battery Packs: Grades, Joints and Sizing | Yomin Electric</title><meta name="description" content="How to specify aluminium busbars for LiFePO4 and ESS battery packs: weight and section trade-offs, bimetallic joints, insulation, sizing for short interconnects, and the fields to put in the RFQ."><meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/aluminum-busbar-battery-pack-guide/hero.png"><link rel="canonical" href="https://www.yominelectric.com/blog/aluminum-busbar-battery-pack-guide"><link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/aluminum-busbar-battery-pack-guide"><link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/aluminum-busbar-battery-pack-guide-fr"><link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/aluminum-busbar-battery-pack-guide-es"><link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/aluminum-busbar-battery-pack-guide-ar"><link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/aluminum-busbar-battery-pack-guide"><link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Aluminium Busbar for Battery Packs: Grades, Joints and Sizing",
+      "description": "How to specify aluminium busbars for LiFePO4 and ESS battery packs: weight and section trade-offs, bimetallic joints, insulation, sizing for short interconnects, and the fields to put in the RFQ.",
+      "image": "https://www.yominelectric.com/assets/images/blog/aluminum-busbar-battery-pack-guide/hero.png",
+      "datePublished": "2026-10-31",
+      "dateModified": "2026-10-31",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/aluminum-busbar-battery-pack-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is aluminium acceptable for a high-current battery pack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, provided the joint is designed for it. Aluminium carries high current perfectly well at a larger section, and its lower mass is a real advantage in a pack. The failure mode to design out is the aluminium-to-copper interface: plate the contact surfaces, use a bimetallic transition where needed, exclude moisture with a joint compound, and hold the clamp load with hardened washers or disc springs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does an aluminium busbar need a larger cross-section than copper?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because its conductivity is roughly 61 % of copper's on the IACS reference scale, an aluminium bar needs about 1.6 times the copper cross-section to carry the same current at the same temperature rise. Even so, the finished bar weighs about half as much, because aluminium density is roughly a third of copper's."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an aluminium busbar be tinned or plated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and for pack work it usually should be plated. Tin or nickel plating gives the mating terminal a stable surface, prevents the insulating aluminium oxide from forming at the interface, and makes contact resistance predictable over thermal cycling. Specify the plating and the masked contact area on the drawing."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Busbars</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Aluminium Busbar for Battery Packs: Grades, Joints and Sizing</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>October 31, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/aluminum-busbar-battery-pack-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/aluminum-busbar-battery-pack-guide/hero.png" alt="Aluminium busbars with drilled holes shown in front of a row of schematic battery cell blocks on a technical grid" loading="eager" fetchpriority="high" decoding="async" width="1280" height="720">
+    </picture>
+    <p>An aluminium busbar is the right choice for a battery pack when weight, cost per kilo or the sheer size of the section decides the design, and when the joints can be engineered rather than improvised. It is the wrong choice when it is dropped into a copper design unchanged: the bar will carry the current, but the interface between aluminium and a copper terminal is where packs fail after a year of thermal cycling.</p>
+<h2>Why packs move to aluminium, and where that stops</h2>
+<p>A lithium pack is a weight-driven design. Every kilogram of conductor is a kilogram that is not cell, and in a vehicle or a containerised storage system that kilogram is paid for twice: once at purchase and once in the structure that has to carry it. Aluminium is roughly a third of the density of copper, so even after the section is enlarged for conductivity the finished bar is about half the mass of the copper equivalent.</p>
+<p>Where that argument stops is at the joint. Aluminium forms an oxide layer within minutes of being cleaned, that oxide is an insulator, and the metal creeps under sustained clamp load. A bolted aluminium joint that is tightened to the right torque on the day of assembly can lose a significant part of its clamp force over a few hundred thermal cycles. The contact area shrinks, resistance rises, the joint runs hotter, and the mechanism feeds itself.</p>
+<p>None of that makes aluminium unsuitable. It makes the joint a designed component with its own specification, in the same way the cell is.</p>
+<h2>The weight and section trade-off, in numbers</h2>
+<p>The usual summary &mdash; aluminium needs more section but weighs less &mdash; is true but too vague to design with. The table below applies the reference conductivity ratio to a simple case: the same continuous current, the same allowable temperature rise.</p>
+<table>
+<thead>
+<tr><th>Parameter</th><th>Copper</th><th>Aluminium</th></tr>
+</thead>
+<tbody>
+<tr><td>Conductivity (reference)</td><td>About 100 % IACS</td><td>About 61 % IACS</td></tr>
+<tr><td>Section for equal current</td><td>1.0 &times;</td><td>About 1.6 &times;</td></tr>
+<tr><td>Density</td><td>About 8.96 g/cm&sup3;</td><td>About 2.70 g/cm&sup3;</td></tr>
+<tr><td>Mass for equal current</td><td>1.0 &times;</td><td>About 0.48 &times;</td></tr>
+<tr><td>Volume for equal current</td><td>1.0 &times;</td><td>About 1.6 &times;</td></tr>
+<tr><td>Thermal expansion</td><td>Lower</td><td>Higher, so joints move more</td></tr>
+</tbody>
+</table>
+<p>Two consequences deserve attention before the first drawing. The larger section needs space, which in a pack is often scarcer than mass; a design that saves 400 g of conductor but adds 8 mm of stack height may be a net loss. And the higher expansion coefficient means the joint sees more relative movement per thermal cycle, which is precisely why the clamp hardware and the contact plating matter more on aluminium than on copper.</p>
+<h2>The joint is the design problem</h2>
+<p>Four measures turn an aluminium joint from a liability into a component.</p>
+<ul>
+<li><strong>Plate the contact surface.</strong> Tinned or nickel-plated aluminium presents a stable surface to the mating terminal and keeps the insulating oxide from forming at the interface. Bare aluminium bolted to bare copper is the configuration that generates field failures.</li>
+<li><strong>Break the galvanic couple.</strong> Where aluminium meets copper, use a bimetallic transition or a plated interface, and keep moisture out with a joint compound. In a pack the electrolyte is never far away, so this is not a theoretical concern.</li>
+<li><strong>Hold the clamp load.</strong> Use hardened washers or disc springs so the joint keeps its force as the stack expands and contracts. Specify the torque, and specify a re-torque after the first formation or thermal cycle.</li>
+<li><strong>Control the surface preparation at the supplier.</strong> Abrasion and plating belong in the process document, not in a fitter's judgement on the line, because two adjacent joints prepared differently will age differently.</li>
+</ul>
+<p>This is also why an aluminium busbar should be bought to a drawing that names the plating, the joint face finish and the hardware, rather than to a cross-section alone.</p>
+<h2>Insulation in a pack: coating, sleeving and clearance</h2>
+<p>Inside a pack, insulation is doing two jobs at once: electrical isolation and mechanical protection against chafing where the bar passes a cell terminal or a module edge. Three options cover most designs.</p>
+<table>
+<thead>
+<tr><th>Option</th><th>Typical use</th><th>Watch for</th></tr>
+</thead>
+<tbody>
+<tr><td>Epoxy powder or resin coating</td><td>Rigid bars crossing modules, high voltage</td><td>Coating must stop short of the contact face; thickness varies at edges</td></tr>
+<tr><td>Heat-shrink sleeving</td><td>Formed links, tight bends</td><td>Cut ends can expose a sharp conductor edge</td></tr>
+<tr><td>PET film or insulation paper</td><td>Layer separation between stacked bars</td><td>Adds stack height; must not trap heat</td></tr>
+</tbody>
+</table>
+<p>The recurring specification mistake is a coating that creeps onto the contact face during production. Contact resistance rises, the joint runs warmer, and the fault is invisible until the pack is tested at load. State the masked area on the drawing, with a dimension, and inspect it as a critical characteristic rather than a cosmetic one.</p>
+<h2>Sizing a pack interconnect</h2>
+<p>Pack interconnects are short, and short conductors behave differently from long runs. Voltage drop is rarely the constraint; temperature rise at the terminal and fault withstand usually are.</p>
+<ul>
+<li><strong>Start from the continuous current of the module, not the pack.</strong> A pack rated at 200 A may push far more through a parallel group, and the bar between two modules carries a fraction of the total. Size each link for what actually flows through it.</li>
+<li><strong>Check the terminal, not only the bar.</strong> In most packs the limiting component is the cell or module terminal and its welded or bolted interface, not the conductor cross-section.</li>
+<li><strong>Check fault withstand for the clearing time.</strong> A module fuse clears in milliseconds; the bar still has to survive the let-through energy without annealing or distorting. Short, thick links are thermally comfortable but mechanically stiff, so support them.</li>
+<li><strong>Respect the bending radius.</strong> A formed link that is bent too tightly work-hardens at the bend, and that is where a crack starts under vibration.</li>
+</ul>
+<p>Apply the same first-pass current density reasoning used for panel busbars and then verify it against the manufacturer's tested data for the actual mounting, because a bar clamped against a plastic module cools very differently from one in free air.</p>
+<h2>Aluminium busbars in the YOMIN catalogue</h2>
+<p>YOMIN catalogues aluminium busbars in the <a href="/products/aluminum-busbar">aluminium busbar category</a>, with a minimum order quantity of 100 pieces, described as a lightweight corrosion-resistant bar for power distribution and connection in switchgear and battery systems, insulated or bare, for ESS and solar applications. Flexible and rigid variants are listed separately under <a href="/products/flexible-busbar">flexible busbars</a> and <a href="/products/rigid-busbar">rigid busbars</a>.</p>
+<ul>
+<li><a href="/products/flexible-busbar/aluminum-hard-insulated-busbar-with-exposy-spraying-copper-connectors">ym-0562 &mdash; aluminium hard insulated busbar with epoxy-sprayed copper connectors</a>, a coated rigid bar with copper contact areas</li>
+<li><a href="/products/flexible-busbar/high-quality-customized-lifepo4-battery-busbar-flexible-insulated-aluminium">ym-0574 &mdash; LiFePO4 battery busbar, flexible, insulated aluminium</a>, the flexible variant for pack interconnects</li>
+<li><a href="/products/rigid-busbar/lifepo4-lithium-battery-rigid-busbar-made-from-copper-and-aluminum-material">ym-0461 &mdash; LiFePO4 rigid busbar in copper and aluminium</a>, rigid construction for battery modules</li>
+<li><a href="/products/flexible-busbar/high-voltage-power-distribution-busbar-aluminum-copper-conductive-rows">ym-0470 &mdash; high-voltage busbar with aluminium and copper conductive rows</a>, for high-voltage distribution assemblies</li>
+</ul>
+<p>Because these parts are made to drawing, the plating, the masked contact area, the hole pattern and the packing method all belong in the enquiry. A supplier who quotes an aluminium busbar from a cross-section alone is quoting metal, not an interconnect.</p>
+<h2>Frequently asked questions</h2>
+<h3>Is aluminium acceptable for a high-current battery pack?</h3>
+<p>Yes, provided the joint is designed for it. Aluminium carries high current perfectly well at a larger section, and its lower mass is a real advantage in a pack. The failure mode to design out is the aluminium-to-copper interface: plate the contact surfaces, use a bimetallic transition where needed, exclude moisture with a joint compound, and hold the clamp load with hardened washers or disc springs.</p>
+<h3>Why does an aluminium busbar need a larger cross-section than copper?</h3>
+<p>Because its conductivity is roughly 61 % of copper's on the IACS reference scale, an aluminium bar needs about 1.6 times the copper cross-section to carry the same current at the same temperature rise. Even so, the finished bar weighs about half as much, because aluminium density is roughly a third of copper's.</p>
+<h3>Can an aluminium busbar be tinned or plated?</h3>
+<p>Yes, and for pack work it usually should be plated. Tin or nickel plating gives the mating terminal a stable surface, prevents the insulating aluminium oxide from forming at the interface, and makes contact resistance predictable over thermal cycling. Specify the plating and the masked contact area on the drawing.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying aluminium busbars for a pack?</h2>
+    <p>Send the module layout, the current per link, the plating and the insulation requirement. We manufacture aluminium and copper busbars to drawing from 100 pieces, rigid or flexible, insulated or bare, for ESS, solar and battery-pack assemblies.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
