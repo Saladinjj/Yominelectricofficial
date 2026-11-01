@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conversión AWG a mm²: tabla de secciones y elección de terminal | Yomin Electric</title>
+<meta name="description" content="Conversión de AWG a mm² con diámetros y secciones exactos de AWG 20 a 4/0 y de 250 a 1000 kcmil, y por qué la sección convertida no da una intensidad admisible.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/awg-to-mm2-conversion-chart/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Conversión de AWG a mm²: tabla de secciones y elección de terminal",
+      "description": "Conversión de AWG a mm² con diámetros y secciones exactos de AWG 20 a 4/0 y de 250 a 1000 kcmil, y por qué la sección convertida no da una intensidad admisible.",
+      "image": "https://www.yominelectric.com/assets/images/blog/awg-to-mm2-conversion-chart/hero.png",
+      "datePublished": "2026-11-01",
+      "dateModified": "2026-11-01",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿El AWG 10 equivale a 6 mm²?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. El AWG 10 son 5,26 mm², por lo que la sección métrica siguiente es 6 mm². Son parecidos pero no iguales. Para un cañón de terminal, 6 mm² es la medida que recibirá correctamente un conductor AWG 10; un terminal de 4 mm² no lo recibirá."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuántos mm² son 4/0 AWG?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El 4/0 AWG son 107,2 mm², con un diámetro de conductor de 11,684 mm. La sección normalizada siguiente es 120 mm². No use 95 mm², que es menor que el conductor que debe recibir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿250 kcmil equivalen a 120 mm²?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. 250 kcmil son 126,7 mm², así que un terminal de 120 mm² queda corto. La primera sección normalizada que no es menor que 250 kcmil es 150 mm²."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo usar la cifra en mm² para buscar la intensidad admisible?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Solo dentro del mismo reglamento. La intensidad admisible depende de la temperatura del aislamiento, del modo de instalación, de la temperatura ambiente y de las reglas de reducción del reglamento con el que se inspecciona la instalación. Una sección convertida es una dimensión física, no una intensidad."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Cables y conductores</span></div>
+    <span class="bh-tag">Guía de compra</span>
+    <h1 class="bh-title">Conversión de AWG a mm²: tabla de secciones y elección de terminal</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>1 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/awg-to-mm2-conversion-chart/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/awg-to-mm2-conversion-chart/hero.png" alt="Tres secciones circulares de conductores de calibre creciente con una línea de cota de diámetro, junto a un terminal de cable en recuadro con cañón y pala" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<p><strong>Para convertir AWG a mm&sup2; se parte del n&uacute;mero de calibre, se deduce el di&aacute;metro del conductor con la progresi&oacute;n propia de la escala AWG y se calcula la secci&oacute;n a partir de ese di&aacute;metro. El AWG 10 son 5,26 mm&sup2;, el AWG 6 son 13,3 mm&sup2;, el AWG 2 son 33,6 mm&sup2;, el 1/0 AWG son 53,5 mm&sup2; y el 4/0 AWG son 107 mm&sup2;. Al pedir despu&eacute;s cable o terminales m&eacute;tricos, se redondea <em>hacia arriba</em> a la secci&oacute;n normalizada siguiente, nunca hacia abajo.</strong></p>
+
+<p>En esa &uacute;ltima frase se juega casi todo el dinero. La conversi&oacute;n en s&iacute; es aritm&eacute;tica. Lo que se hace con el resultado decide si un terminal entra de verdad en su cable y si una conexi&oacute;n se mantiene fr&iacute;a durante veinte a&ntilde;os.</p>
+
+<h2>Dos sistemas, dos l&oacute;gicas</h2>
+<p>El AWG es un n&uacute;mero de calibre, no una medida. La escala es una progresi&oacute;n geom&eacute;trica: tres calibres de diferencia dividen la secci&oacute;n por dos, de modo que un solo paso la multiplica por aproximadamente 1,26. Cuanto menor es el n&uacute;mero, m&aacute;s grueso es el conductor, y la escala contin&uacute;a por debajo de cero con 1/0, 2/0, 3/0 y 4/0. Por encima de 4/0 el sistema estadounidense abandona el n&uacute;mero y pasa a los miles de mil circular, escritos kcmil o MCM.</p>
+<p>El cable m&eacute;trico funciona al rev&eacute;s: se vende por secci&oacute;n nominal en mil&iacute;metros cuadrados, sobre una escalera fija de 0,5 a 630 mm&sup2; &mdash; 0,5 &middot; 0,75 &middot; 1 &middot; 1,5 &middot; 2,5 &middot; 4 &middot; 6 &middot; 10 &middot; 16 &middot; 25 &middot; 35 &middot; 50 &middot; 70 &middot; 95 &middot; 120 &middot; 150 &middot; 185 &middot; 240 &middot; 300 &middot; 400 &middot; 500 &middot; 630. Entre 120 y 150 no existe nada.</p>
+<p>Por eso un plano rotulado en AWG casi nunca coincide con una secci&oacute;n m&eacute;trica exacta. Esa diferencia es justamente el problema que resuelve esta p&aacute;gina.</p>
+
+<h2>La conversi&oacute;n, paso a paso</h2>
+<p>El di&aacute;metro de un conductor AWG en mil&iacute;metros viene fijado por la definici&oacute;n del calibre:</p>
+<p><strong>d (mm) = 0,127 &times; 92<sup>(36 &minus; n) / 39</sup></strong>, donde <em>n</em> es el n&uacute;mero AWG, negativo para los calibres &laquo;aught&raquo; (1/0 = 0, 2/0 = &minus;1, 3/0 = &minus;2, 4/0 = &minus;3).</p>
+<p>La secci&oacute;n se obtiene de la forma habitual, secci&oacute;n = &pi; d&sup2; / 4. Para los kcmil, un kcmil equivale a 0,5067 mm&sup2;, as&iacute; que 250 kcmil son 126,7 mm&sup2;.</p>
+<p>No hace falta repetir el c&aacute;lculo en el taller: la tabla siguiente procede de esa f&oacute;rmula.</p>
+
+<h2>Tabla de conversi&oacute;n AWG &rarr; mm&sup2;</h2>
+<table>
+  <thead>
+    <tr><th>AWG</th><th>Di&aacute;metro del conductor (mm)</th><th>Secci&oacute;n (mm&sup2;)</th><th>Secci&oacute;n m&eacute;trica superior</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>20</td><td>0,812</td><td>0,52</td><td>0,75</td></tr>
+    <tr><td>18</td><td>1,024</td><td>0,82</td><td>1,0</td></tr>
+    <tr><td>16</td><td>1,291</td><td>1,31</td><td>1,5</td></tr>
+    <tr><td>14</td><td>1,628</td><td>2,08</td><td>2,5</td></tr>
+    <tr><td>12</td><td>2,053</td><td>3,31</td><td>4</td></tr>
+    <tr><td>10</td><td>2,588</td><td>5,26</td><td>6</td></tr>
+    <tr><td>8</td><td>3,264</td><td>8,37</td><td>10</td></tr>
+    <tr><td>6</td><td>4,115</td><td>13,30</td><td>16</td></tr>
+    <tr><td>4</td><td>5,189</td><td>21,15</td><td>25</td></tr>
+    <tr><td>2</td><td>6,544</td><td>33,63</td><td>35</td></tr>
+    <tr><td>1</td><td>7,348</td><td>42,41</td><td>50</td></tr>
+    <tr><td>1/0</td><td>8,251</td><td>53,48</td><td>70</td></tr>
+    <tr><td>2/0</td><td>9,266</td><td>67,43</td><td>70</td></tr>
+    <tr><td>3/0</td><td>10,405</td><td>85,03</td><td>95</td></tr>
+    <tr><td>4/0</td><td>11,684</td><td>107,22</td><td>120</td></tr>
+  </tbody>
+</table>
+
+<h2>Conversi&oacute;n kcmil &rarr; mm&sup2;</h2>
+<table>
+  <thead>
+    <tr><th>kcmil / MCM</th><th>Secci&oacute;n (mm&sup2;)</th><th>Secci&oacute;n m&eacute;trica superior</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>250</td><td>126,7</td><td>150</td></tr>
+    <tr><td>300</td><td>152,0</td><td>185</td></tr>
+    <tr><td>350</td><td>177,3</td><td>185</td></tr>
+    <tr><td>400</td><td>202,7</td><td>240</td></tr>
+    <tr><td>500</td><td>253,4</td><td>300</td></tr>
+    <tr><td>600</td><td>304,0</td><td>400</td></tr>
+    <tr><td>750</td><td>380,0</td><td>400</td></tr>
+    <tr><td>1000</td><td>506,7</td><td>630</td></tr>
+  </tbody>
+</table>
+
+<h2>Por qu&eacute; la conversi&oacute;n no da una intensidad admisible</h2>
+<p>Es el malentendido m&aacute;s caro de todo el tema. Dos conductores con la misma secci&oacute;n no tienen la misma intensidad admisible. &Eacute;sta depende de la temperatura nominal del aislamiento, del n&uacute;mero de conductores agrupados, del modo de instalaci&oacute;n &mdash; aire libre, tubo, pared, bandeja &mdash;, de la temperatura ambiente del sitio y de la norma con la que se inspeccionar&aacute; la instalaci&oacute;n.</p>
+<p>Los mismos 5,26 mm&sup2; de cobre pueden ser un conductor AWG 10 en un reglamento y un 6 mm&sup2; en otro, con cargas admitidas distintas, porque los dos sistemas no cuentan igual el aislamiento ni aplican los mismos coeficientes de agrupamiento. Convertir la secci&oacute;n dice cu&aacute;nto metal hay. No dice qu&eacute; puede transportar ese metal.</p>
+<p>Por eso no conviene tomar una intensidad admisible estadounidense, convertir el calibre a mm&sup2; y aplicar el resultado a una instalaci&oacute;n m&eacute;trica. Dimensione en un solo sistema y use la conversi&oacute;n &uacute;nicamente donde ambos mundos se encuentran f&iacute;sicamente: el terminal, la bornera y la conexi&oacute;n.</p>
+
+<h2>D&oacute;nde decide de verdad la conversi&oacute;n</h2>
+<p>La conexi&oacute;n es el punto donde choca un mundo AWG con un mundo m&eacute;trico, y es donde la regla de redondeo se amortiza.</p>
+<ul>
+  <li><strong>El ca&ntilde;&oacute;n, no la pala.</strong> Un terminal de cable tiene dos medidas: el ca&ntilde;&oacute;n que recibe el conductor y la pala que se atornilla a la barra. Un error de conversi&oacute;n aparece casi siempre en el ca&ntilde;&oacute;n. Un terminal indicado para 120 mm&sup2; no aceptar&aacute; correctamente un conductor de 250 kcmil, porque 250 kcmil son 126,7 mm&sup2;: la secci&oacute;n m&eacute;trica es menor que el conductor. La primera secci&oacute;n m&eacute;trica realmente suficiente es 150 mm&sup2;.</li>
+  <li><strong>Los terminales de rango eliminan la duda.</strong> Un terminal como el TA-250 se especifica por rango, de 250 mcm a 6, precisamente para que una sola referencia cubra una banda de calibres estadounidenses sin tabla. Cuando el plano est&aacute; en AWG y el stock se elige por rangos, se pide por el rango.</li>
+  <li><strong>El material decide la conexi&oacute;n, no el calibre.</strong> Un conductor de aluminio sobre una barra de cobre exige una transici&oacute;n bimet&aacute;lica, o la conexi&oacute;n se corroer&aacute;. La serie DTL-2 es un terminal de anillo bimet&aacute;lico cobre-aluminio pensado para esa transici&oacute;n; el DTL-2-35/2-70 aplica la misma idea en un formato fijo de 35 a 70 mm&sup2;. Respetar el metal importa m&aacute;s que respetar la secci&oacute;n con dos decimales.</li>
+</ul>
+
+<h2>Emparejar el terminal con una secci&oacute;n convertida</h2>
+<p>Una vez expresado el conductor en mm&sup2;, la selecci&oacute;n es mec&aacute;nica m&aacute;s que aritm&eacute;tica:</p>
+<ol>
+  <li><strong>Material y clase del conductor</strong> &mdash; cobre o aluminio, r&iacute;gido o flexible. Un conductor de clase flexible necesita un ca&ntilde;&oacute;n de hilos finos o una puntera; un conductor de hilos gruesos no.</li>
+  <li><strong>Medida del ca&ntilde;&oacute;n</strong> &mdash; debe recibir el conductor real, no el nominal. Si el conductor es de 126,7 mm&sup2; y el ca&ntilde;&oacute;n est&aacute; taladrado para 120 mm&sup2;, el engaste quedar&aacute; hueco.</li>
+  <li><strong>Pala y perno</strong> &mdash; di&aacute;metro del taladro, distancia entre taladros y n&uacute;mero de ellos. Las palas de dos taladros se usan donde la conexi&oacute;n debe resistir vibraci&oacute;n y giro; las de un taladro, donde falta espacio.</li>
+  <li><strong>Acabado y ambiente</strong> &mdash; cobre esta&ntilde;ado o plateado para sitios h&uacute;medos o corrosivos. El terminal de punta de campana de la serie AWG es un terminal de cobre plateado; los terminales de cobre a compresi&oacute;n de dos taladros de la misma gama se suministran conformes con RoHS.</li>
+  <li><strong>Contexto de tensi&oacute;n</strong> &mdash; un terminal previsto para 600 V y otro destinado a 35 kV son productos distintos aunque la geometr&iacute;a del ca&ntilde;&oacute;n se parezca.</li>
+</ol>
+
+<h2>Borneras y peines de distribuci&oacute;n</h2>
+<p>El cableado de cuadro encuentra el mismo desajuste un escal&oacute;n m&aacute;s abajo. Una bornera de carril DIN se caracteriza por un rango de conductores y por una intensidad, y un peine de horquilla reparte una alimentaci&oacute;n com&uacute;n por una fila de borneras. En esta gama, la bornera con peine de horquilla est&aacute; dada para 100 A de corriente continua m&aacute;xima: esa cifra es la que limita la fila, no la suma de las intensidades de las borneras.</p>
+<p>Si un esquema mezcla AWG y mm&sup2; en una misma fila, convierta primero cada l&iacute;nea a mm&sup2; y verifique la fila contra la intensidad del peine, no contra la bornera mayor del carril.</p>
+
+<h2>Lista de comprobaci&oacute;n para un pedido en unidades mixtas</h2>
+<ul>
+  <li>Convertir a mm&sup2; cada conductor del plano y conservar el calibre original en la descripci&oacute;n.</li>
+  <li>Redondear hacia arriba a la secci&oacute;n normalizada siguiente, tanto para el cable como para el ca&ntilde;&oacute;n del terminal.</li>
+  <li>Indicar la clase del conductor, no solo la secci&oacute;n.</li>
+  <li>Indicar la medida del perno y la distancia entre taladros de la pala.</li>
+  <li>Indicar el metal a cada lado de la conexi&oacute;n y prever una transici&oacute;n bimet&aacute;lica cuando difieran.</li>
+  <li>Adjuntar el ambiente y el modo de instalaci&oacute;n a la consulta, para que la intensidad no se deduzca solo de la secci&oacute;n.</li>
+</ul>
+<p>Env&iacute;e el plano tal como est&aacute; redactado. Un fabricante que produce tanto terminales estadounidenses como m&eacute;tricos reconocer&aacute; los n&uacute;meros AWG y confirmar&aacute; el equivalente m&eacute;trico: es m&aacute;s r&aacute;pido y m&aacute;s seguro que convertir del lado del comprador esperando que el redondeo haya ido en el sentido correcto.</p>
+
+<h2>Preguntas frecuentes</h2>
+<h3>&iquest;El AWG 10 equivale a 6 mm&sup2;?</h3>
+<p>No. El AWG 10 son 5,26 mm&sup2;, por lo que la secci&oacute;n m&eacute;trica siguiente es 6 mm&sup2;. Son parecidos pero no iguales, y el conductor m&eacute;trico lleva algo m&aacute;s de cobre. Para un ca&ntilde;&oacute;n de terminal, 6 mm&sup2; es la medida que recibir&aacute; correctamente un conductor AWG 10; un terminal de 4 mm&sup2; no lo recibir&aacute;.</p>
+<h3>&iquest;Cu&aacute;ntos mm&sup2; son 4/0 AWG?</h3>
+<p>El 4/0 AWG son 107,2 mm&sup2;, con un di&aacute;metro de conductor de 11,684 mm. La secci&oacute;n normalizada siguiente es 120 mm&sup2;. No use 95 mm&sup2;, que es menor que el conductor que debe recibir.</p>
+<h3>&iquest;250 kcmil equivalen a 120 mm&sup2;?</h3>
+<p>No. 250 kcmil son 126,7 mm&sup2;. Un terminal de 120 mm&sup2; queda corto. La primera secci&oacute;n normalizada que no es menor que 250 kcmil es 150 mm&sup2;.</p>
+<h3>&iquest;Puedo usar la cifra en mm&sup2; para buscar la intensidad admisible?</h3>
+<p>Solo dentro del mismo reglamento. La intensidad admisible depende de la temperatura del aislamiento, del modo de instalaci&oacute;n, de la temperatura ambiente y de las reglas de reducci&oacute;n del reglamento con el que se inspecciona la instalaci&oacute;n. Una secci&oacute;n convertida es una dimensi&oacute;n f&iacute;sica, no una intensidad.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Necesita terminales o borneras dimensionados para un plano en AWG?</h2>
+    <p>Envíe la sección tal como figura en su plano &mdash; AWG, kcmil o mm&sup2; &mdash; con la medida del perno y el metal a cada lado de la conexión. Confirmaremos el cañón y la pala correspondientes antes de su pedido.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

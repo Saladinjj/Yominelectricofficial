@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuse vs Circuit Breaker: How to Choose for Industrial Distribution | Yomin Electric</title>
+<meta name="description" content="Fuse or circuit breaker: breaking capacity, downtime cost, coordination and DC duty compared, with the decision rules that hold up in an industrial distribution board.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/fuse-vs-circuit-breaker/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/fuse-vs-circuit-breaker">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/fuse-vs-circuit-breaker">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/fuse-vs-circuit-breaker-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/fuse-vs-circuit-breaker-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/fuse-vs-circuit-breaker-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/fuse-vs-circuit-breaker">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Fuse vs Circuit Breaker: How to Choose for Industrial Distribution",
+      "description": "Fuse or circuit breaker: breaking capacity, downtime cost, coordination and DC duty compared, with the decision rules that hold up in an industrial distribution board.",
+      "image": "https://www.yominelectric.com/assets/images/blog/fuse-vs-circuit-breaker/hero.png",
+      "datePublished": "2026-11-01",
+      "dateModified": "2026-11-01",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/fuse-vs-circuit-breaker"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is a fuse safer than a circuit breaker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Neither is safer in general. A fuse has fewer failure modes and a very high breaking capacity in a small package; a breaker can be tested, reset and given adjustable settings. Safety comes from correct rating, correct breaking capacity and correct coordination, not from the family chosen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I replace a fuse with a breaker of the same current rating?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not on current rating alone. The replacement must match the breaking capacity at that point, the time-current behaviour the downstream and upstream devices were coordinated against, and the DC or AC duty. A same-current substitute with a different characteristic can destroy the selectivity of the whole board."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do fuses still dominate medium-voltage distribution cutouts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the duty is rare, the fault energy is high, and the device is operated by a linesman who replaces the element as part of the repair. A reclosing breaker at that duty costs far more and adds maintenance to a location that is usually difficult to reach."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need both in one board?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often, yes. A common arrangement is a fuse or fuse-switch for isolation and high fault energy, with a breaker for switching duty and adjustable protection downstream. What matters is that the coordination between the two is studied as a pair."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Protection</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Fuse vs Circuit Breaker: How to Choose for Industrial Distribution</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 1, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/fuse-vs-circuit-breaker/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/fuse-vs-circuit-breaker/hero.png" alt="Knife-blade fuse link beside a moulded-case circuit breaker with its toggle lever, separated by a divider line" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<p><strong>Choose a fuse where the prospective fault current is high, where the device must open without any mechanism that can fail, and where panel space is tight. Choose a circuit breaker where supply must be restored quickly after a trip, where the protection settings have to be adjusted and coordinated on site, and where the same device must be reused after clearing a fault. Most industrial boards end up using both, coordinated with each other.</strong></p>
+
+<p>The comparison is usually framed as an old technology against a modern one. That framing produces bad specifications, because the two devices fail in different ways and cost money in different places. What actually decides the choice is how often the installation will be operated, how large the fault level is, and who will be standing in front of the panel when it trips at three in the morning.</p>
+
+<h2>How the two devices actually interrupt</h2>
+<p>A fuse interrupts by destroying itself. The element melts, the arc is quenched inside a filled body, and the current path is gone. There is no mechanism, no spring, no latch and no trip coil, which is why a fuse has very little to go wrong and why its behaviour after ten years is essentially the same as on the first day.</p>
+<p>A circuit breaker interrupts by moving contacts apart and driving the arc into a quenching arrangement &mdash; splitter plates in an air breaker, a vacuum bottle at medium voltage, or an insulating gas. It is a mechanism, and mechanisms need maintenance, exercise and occasional replacement of parts. In exchange, it can be reset, it can carry adjustable protection settings, and it can be operated remotely.</p>
+
+<h2>Fuse versus circuit breaker at a glance</h2>
+<table>
+  <thead>
+    <tr><th>Consideration</th><th>Fuse</th><th>Circuit breaker</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>After clearing a fault</td><td>Must be replaced with the same characteristic</td><td>Reset and reclosed</td></tr>
+    <tr><td>Restoring supply</td><td>Requires a spare of the correct rating on site</td><td>Immediate, by hand or remotely</td></tr>
+    <tr><td>Protection settings</td><td>Fixed by the element chosen</td><td>Adjustable, and changeable on site</td></tr>
+    <tr><td>Very high fault level</td><td>Handled in a small, cheap package</td><td>Handled, but the device becomes large and costly</td></tr>
+    <tr><td>Panel space per pole</td><td>Small</td><td>Larger, and grows with rating</td></tr>
+    <tr><td>Failure modes</td><td>Few: element, body, contact pressure</td><td>More: mechanism, trip unit, coil, contacts</td></tr>
+    <tr><td>Condition after operation</td><td>Spent, visibly open</td><td>Reusable, needs inspection</td></tr>
+    <tr><td>Remote operation and metering</td><td>Not available</td><td>Available, including integrated controllers</td></tr>
+    <tr><td>Selective coordination</td><td>By characteristic and rating, simple and stable</td><td>By settings, more flexible, easier to mis-set</td></tr>
+  </tbody>
+</table>
+
+<h2>Breaking capacity is where the fuse quietly wins</h2>
+<p>At the fault levels found close to a transformer, a fuse of modest physical size can interrupt a current that would require a very large breaker. That is not because the fuse is more sophisticated; it is because melting an element in a confined filled body is an extremely effective way to extinguish an arc.</p>
+<p>This matters when a board is being extended rather than designed from scratch. Adding a large feeder to an existing switchboard often raises the prospective fault current at the incoming device. If that device is a breaker with a fixed rating, the whole board may need replacing. If it is a fuse, a higher-rated fuse of the same physical size is often the entire remedy.</p>
+
+<h2>Downtime is where the breaker quietly wins</h2>
+<p>A fuse that has operated leaves the circuit dead until someone arrives with the correct spare. On a process line, that delay is usually worth far more than the price difference between the two devices. A breaker can be reclosed in seconds by an operator who does not need to know the rating, the characteristic or the manufacturer.</p>
+<p>The economic comparison therefore has nothing to do with purchase price per pole. It is the expected number of operations multiplied by the cost of the downtime each one causes. A board that trips twice a year favours the fuse. A board that trips weekly, or that serves a process where every minute is measured, favours the breaker.</p>
+
+<h2>Where fuses remain the better answer</h2>
+<ul>
+  <li><strong>Very high prospective fault current</strong> close to the supply transformer, where a compact device is needed.</li>
+  <li><strong>Direct current and photovoltaic strings</strong>, where a DC-rated fuse interrupts a fault that has no natural current zero. In this range the NH1 series is supplied as a 48 V DC solar fuse in 80 A, 125 A and 250 A versions.</li>
+  <li><strong>Distribution cutouts on overhead and medium-voltage networks</strong>, where the device is expected to operate rarely and to be replaced by a linesman. The 11 kV to 24 kV porcelain cutout and the H.V. DOFC dropout cutout belong to this family, and both are listed with a 25-day lead time and minimum quantities of 5 and 10 pieces respectively.</li>
+  <li><strong>Sites where maintenance access is difficult or expensive</strong>, so a device with almost nothing to maintain is preferable.</li>
+  <li><strong>Where a visible, unambiguous break is required</strong> for safe isolation, which a spent fuse provides by inspection.</li>
+</ul>
+
+<h2>Where a breaker is the better answer</h2>
+<ul>
+  <li><strong>Repeated interruption</strong>, such as motor circuits, welding supplies or anything with a high inrush that will trip often.</li>
+  <li><strong>Adjustable protection</strong>, where the same device type must suit different feeders and the settings are tuned during commissioning.</li>
+  <li><strong>Remote or automated operation</strong>, including transfer switching, interlocking and supervisory control.</li>
+  <li><strong>Integrated metering</strong>, where the incomer is also the point at which load data is collected. The vacuum circuit breakers in this range, such as the VS1-12/630A indoor fixed unit and the ZW32-12G/630A outdoor column unit, are the medium-voltage end of that argument.</li>
+  <li><strong>Frequent switching duty</strong>, where the device is used as a normal operating device rather than as a protective one.</li>
+</ul>
+
+<h2>They are usually combined, not chosen between</h2>
+<p>A common and sensible arrangement is a fuse for the high-energy fault duty and a breaker for operation: a fuse-switch disconnector as the isolation and short-circuit barrier, with a breaker downstream for switching and adjustable protection. The fuse isolating switch family in this range, in 250 A, 400 A and 630 A versions, is exactly that building block &mdash; a knife switch that also carries fuses, with anti-accidental-touch construction, flame-retardant PC bodies and pure copper parts, supplied CE and RoHS marked.</p>
+<p>At the other end, a low-voltage distribution board often uses a moulded-case or air circuit breaker as the incomer and fuses on the outgoing ways where the fault level is highest and the load is stable. The two device types then do what each is best at.</p>
+
+<h2>Coordination: the part that is usually got wrong</h2>
+<p>Whichever device is chosen, the installation only works if the device nearest the fault opens first and the upstream device stays closed. That is selectivity, and it is a property of the pair, not of either device alone.</p>
+<p>With fuses, selectivity is established from the time-current characteristics and the rating ratio, and it is stable for the life of the installation because nothing can be adjusted. With breakers, selectivity is established from settings, which is more flexible and also more fragile: a breaker that has been re-set by someone during a fault-finding session may no longer coordinate with the device above it.</p>
+<p>Where a fuse and a breaker are mixed in one board, the coordination study has to cover the mixed pair. A fuse characteristic and a breaker curve do not combine in the way two fuses of the same family do, and the overlap region is where nuisance tripping of the incomer appears.</p>
+
+<h2>Specification checklist</h2>
+<ol>
+  <li><strong>Prospective fault current</strong> at the point of installation, and the breaking capacity of every device against it.</li>
+  <li><strong>Expected number of operations per year</strong>, and the cost of one hour of downtime on that circuit.</li>
+  <li><strong>Whether the circuit is AC or DC</strong>. A DC application needs a DC-rated device; an AC rating is not transferable.</li>
+  <li><strong>Voltage rating</strong>, checked as a system value, not inferred from the current rating.</li>
+  <li><strong>Ambient and enclosure</strong>, including derating inside a closed cabinet.</li>
+  <li><strong>Spares policy</strong> &mdash; if fuses are used, the correct ratings must be held on site, or the downtime advantage of the breaker disappears.</li>
+  <li><strong>Isolation and lockout</strong> requirements, and whether a visible break is mandatory.</li>
+</ol>
+<p>Send the fault level, the voltage, the load type and the operating pattern. The correct family usually follows from those four figures, and the device rating follows from the fault level.</p>
+
+<h2>Frequently asked questions</h2>
+<h3>Is a fuse safer than a circuit breaker?</h3>
+<p>Neither is safer in general. A fuse has fewer failure modes and a very high breaking capacity in a small package; a breaker can be tested, reset and given adjustable settings. Safety comes from correct rating, correct breaking capacity and correct coordination, not from the family chosen.</p>
+<h3>Can I replace a fuse with a breaker of the same current rating?</h3>
+<p>Not on current rating alone. The replacement must match the breaking capacity at that point, the time-current behaviour the downstream and upstream devices were coordinated against, and the DC or AC duty. A same-current substitute with a different characteristic can destroy the selectivity of the whole board.</p>
+<h3>Why do fuses still dominate medium-voltage distribution cutouts?</h3>
+<p>Because the duty is rare, the fault energy is high, and the device is operated by a linesman who replaces the element as part of the repair. A reclosing breaker at that duty costs far more and adds maintenance to a location that is usually difficult to reach.</p>
+<h3>Do I need both in one board?</h3>
+<p>Often, yes. A common arrangement is a fuse or fuse-switch for isolation and high fault energy, with a breaker for switching duty and adjustable protection downstream. What matters is that the coordination between the two is studied as a pair.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying protection for a distribution board?</h2>
+    <p>Send the prospective fault current, the system voltage, the load type and how often the circuit will be operated. We will confirm whether the duty calls for a fuse, a breaker, or a coordinated pair.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fusible ou disjoncteur : comment choisir en distribution industrielle | Yomin Electric</title>
+<meta name="description" content="Fusible ou disjoncteur : pouvoir de coupure, coût du temps d'arrêt, sélectivité et service DC comparés, avec les règles de décision valables en armoire industrielle.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/fuse-vs-circuit-breaker/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/fuse-vs-circuit-breaker-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/fuse-vs-circuit-breaker">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/fuse-vs-circuit-breaker-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/fuse-vs-circuit-breaker-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/fuse-vs-circuit-breaker-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/fuse-vs-circuit-breaker">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Fusible ou disjoncteur : comment choisir en distribution industrielle",
+      "description": "Fusible ou disjoncteur : pouvoir de coupure, coût du temps d'arrêt, sélectivité et service DC comparés, avec les règles de décision valables en armoire industrielle.",
+      "image": "https://www.yominelectric.com/assets/images/blog/fuse-vs-circuit-breaker/hero.png",
+      "datePublished": "2026-11-01",
+      "dateModified": "2026-11-01",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/fuse-vs-circuit-breaker-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Un fusible est-il plus sûr qu'un disjoncteur ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ni l'un ni l'autre ne l'est en général. Un fusible a moins de modes de défaillance et un très haut pouvoir de coupure dans un petit volume ; un disjoncteur peut être essayé, réarmé et doté de réglages. La sécurité vient du bon calibre, du bon pouvoir de coupure et de la bonne coordination, pas de la famille retenue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on remplacer un fusible par un disjoncteur de même calibre ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pas sur le seul calibre. Le remplacement doit respecter le pouvoir de coupure au point considéré, le comportement temps-courant sur lequel les appareils amont et aval ont été coordonnés, et le service AC ou DC. Un substitut de même courant mais de caractéristique différente peut détruire la sélectivité de tout le tableau."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi les fusibles dominent-ils encore les coupe-circuits moyenne tension ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parce que le service est rare, l'énergie de défaut élevée, et l'appareil manœuvré par un monteur qui remplace l'élément dans le cadre de la réparation. Un disjoncteur refermable à ce service coûte bien plus cher et ajoute de l'entretien à un endroit généralement difficile d'accès."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il les deux dans un même tableau ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Souvent, oui. Une disposition courante associe un fusible ou un interrupteur-sectionneur à fusibles pour le sectionnement et la forte énergie de défaut, et un disjoncteur en aval pour le service de commutation et la protection réglable. L'essentiel est que la coordination entre les deux soit étudiée comme un couple."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Protection</span></div>
+    <span class="bh-tag">Guide d'achat</span>
+    <h1 class="bh-title">Fusible ou disjoncteur : comment choisir en distribution industrielle</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>1 novembre 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/fuse-vs-circuit-breaker/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/fuse-vs-circuit-breaker/hero.png" alt="Fusible à couteaux à côté d'un disjoncteur boîtier moulé avec sa manette, séparés par une ligne de séparation" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<p><strong>On choisit un fusible lorsque le courant de d&eacute;faut pr&eacute;sum&eacute; est &eacute;lev&eacute;, lorsque le dispositif doit couper sans m&eacute;canisme susceptible de d&eacute;faillir et lorsque la place en armoire est compt&eacute;e. On choisit un disjoncteur lorsqu'il faut r&eacute;tablir rapidement le service apr&egrave;s d&eacute;clenchement, lorsque les r&eacute;glages de protection doivent &ecirc;tre ajust&eacute;s et coordonn&eacute;s sur site, et lorsque le m&ecirc;me appareil doit &ecirc;tre r&eacute;utilis&eacute; apr&egrave;s avoir &eacute;limin&eacute; un d&eacute;faut. La plupart des tableaux industriels finissent par combiner les deux, coordonn&eacute;s entre eux.</strong></p>
+
+<p>Le d&eacute;bat est souvent pr&eacute;sent&eacute; comme l'affrontement d'une technique ancienne et d'une technique moderne. Cette lecture produit de mauvaises sp&eacute;cifications, parce que les deux appareils ne d&eacute;faillent pas de la m&ecirc;me mani&egrave;re et ne co&ucirc;tent pas au m&ecirc;me endroit. Ce qui tranche vraiment, c'est la fr&eacute;quence d'exploitation de l'installation, le niveau de courant de d&eacute;faut, et la personne pr&eacute;sente devant le tableau &agrave; trois heures du matin quand il d&eacute;clenche.</p>
+
+<h2>Deux fa&ccedil;ons de couper le courant</h2>
+<p>Le fusible coupe en se d&eacute;truisant. L'&eacute;l&eacute;ment fond, l'arc s'&eacute;teint &agrave; l'int&eacute;rieur d'un corps rempli, et le chemin du courant dispara&icirc;t. Il n'y a ni m&eacute;canisme, ni ressort, ni verrou, ni bobine de d&eacute;clenchement : c'est pourquoi un fusible a tr&egrave;s peu de choses &agrave; d&eacute;faillir, et pourquoi son comportement apr&egrave;s dix ans est essentiellement le m&ecirc;me qu'au premier jour.</p>
+<p>Le disjoncteur coupe en &eacute;cartant des contacts et en poussant l'arc dans un dispositif d'extinction &mdash; plaques de coupure en basse tension &agrave; air, ampoule &agrave; vide en moyenne tension, ou gaz isolant. C'est un m&eacute;canisme, et un m&eacute;canisme demande entretien, manœuvres d'essai et remplacement de pi&egrave;ces. En &eacute;change, il se r&eacute;arme, il accepte des r&eacute;glages ajustables et il peut &ecirc;tre manœuvr&eacute; &agrave; distance.</p>
+
+<h2>Fusible et disjoncteur en un coup d'&oelig;il</h2>
+<table>
+  <thead>
+    <tr><th>Crit&egrave;re</th><th>Fusible</th><th>Disjoncteur</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Apr&egrave;s &eacute;limination d'un d&eacute;faut</td><td>&Agrave; remplacer par la m&ecirc;me caract&eacute;ristique</td><td>R&eacute;armement puis refermeture</td></tr>
+    <tr><td>R&eacute;tablissement du service</td><td>Exige une pi&egrave;ce de rechange du bon calibre sur site</td><td>Imm&eacute;diat, manuel ou &agrave; distance</td></tr>
+    <tr><td>R&eacute;glages de protection</td><td>Fix&eacute;s par l'&eacute;l&eacute;ment choisi</td><td>Ajustables et modifiables sur site</td></tr>
+    <tr><td>Courant de d&eacute;faut tr&egrave;s &eacute;lev&eacute;</td><td>Trait&eacute; dans un bo&icirc;tier petit et peu co&ucirc;teux</td><td>Trait&eacute;, mais l'appareil devient gros et cher</td></tr>
+    <tr><td>Encombrement par p&ocirc;le</td><td>Faible</td><td>Plus important, et croissant avec le calibre</td></tr>
+    <tr><td>Modes de d&eacute;faillance</td><td>Peu nombreux : &eacute;l&eacute;ment, corps, pression de contact</td><td>Plus nombreux : m&eacute;canisme, d&eacute;clencheur, bobine, contacts</td></tr>
+    <tr><td>&Eacute;tat apr&egrave;s fonctionnement</td><td>Consomm&eacute;, ouvert de fa&ccedil;on visible</td><td>R&eacute;utilisable, &agrave; inspecter</td></tr>
+    <tr><td>Manœuvre &agrave; distance et mesure</td><td>Non disponible</td><td>Disponible, y compris avec contr&ocirc;leur int&eacute;gr&eacute;</td></tr>
+    <tr><td>S&eacute;lectivit&eacute;</td><td>Par caract&eacute;ristique et calibre, simple et stable</td><td>Par r&eacute;glages, plus souple, plus facile &agrave; d&eacute;r&eacute;gler</td></tr>
+  </tbody>
+</table>
+
+<h2>Le pouvoir de coupure, avantage discret du fusible</h2>
+<p>Aux niveaux de d&eacute;faut rencontr&eacute;s pr&egrave;s d'un transformateur, un fusible de taille modeste peut couper un courant qui exigerait un disjoncteur tr&egrave;s volumineux. Non parce qu'il serait plus &eacute;labor&eacute;, mais parce que faire fondre un &eacute;l&eacute;ment dans un corps rempli et confin&eacute; est un moyen extr&ecirc;mement efficace d'&eacute;teindre un arc.</p>
+<p>Cela compte lorsqu'un tableau est &eacute;tendu plut&ocirc;t que con&ccedil;u de z&eacute;ro. Ajouter un d&eacute;part important &agrave; une armoire existante augmente souvent le courant de d&eacute;faut pr&eacute;sum&eacute; au niveau de l'appareil d'arriv&eacute;e. Si cet appareil est un disjoncteur de calibre fixe, c'est parfois tout le tableau qu'il faut remplacer. Si c'est un fusible, un fusible de calibre sup&eacute;rieur dans le m&ecirc;me encombrement suffit souvent.</p>
+
+<h2>Le temps d'arr&ecirc;t, avantage discret du disjoncteur</h2>
+<p>Un fusible qui a fonctionn&eacute; laisse le circuit hors tension jusqu'&agrave; ce que quelqu'un arrive avec la bonne pi&egrave;ce. Sur une ligne de production, ce d&eacute;lai vaut presque toujours bien plus que l'&eacute;cart de prix entre les deux appareils. Un disjoncteur se referme en quelques secondes, par un op&eacute;rateur qui n'a pas besoin de conna&icirc;tre le calibre, la caract&eacute;ristique ni le fabricant.</p>
+<p>La comparaison &eacute;conomique n'a donc rien &agrave; voir avec le prix d'achat au p&ocirc;le. C'est le nombre pr&eacute;visible de fonctionnements multipli&eacute; par le co&ucirc;t de l'arr&ecirc;t que chacun provoque. Un tableau qui d&eacute;clenche deux fois par an plaide pour le fusible. Un tableau qui d&eacute;clenche chaque semaine, ou qui alimente un process o&ugrave; chaque minute se compte, plaide pour le disjoncteur.</p>
+
+<h2>L&agrave; o&ugrave; le fusible reste la meilleure r&eacute;ponse</h2>
+<ul>
+  <li><strong>Courant de d&eacute;faut pr&eacute;sum&eacute; tr&egrave;s &eacute;lev&eacute;</strong> &agrave; proximit&eacute; du transformateur d'alimentation, l&agrave; o&ugrave; il faut un appareil compact.</li>
+  <li><strong>Courant continu et cha&icirc;nes photovolta&iuml;ques</strong>, o&ugrave; un fusible calibr&eacute; DC coupe un d&eacute;faut sans passage par z&eacute;ro naturel. Dans cette gamme, la s&eacute;rie NH1 est propos&eacute;e en fusible solaire 48 V DC, en versions 80 A, 125 A et 250 A.</li>
+  <li><strong>Coupe-circuits de distribution sur r&eacute;seaux a&eacute;riens et moyenne tension</strong>, o&ugrave; l'appareil fonctionne rarement et est remplac&eacute; par un monteur. Le coupe-circuit en porcelaine 11 &agrave; 24 kV et le coupe-circuit H.V. DOFC appartiennent &agrave; cette famille, tous deux annonc&eacute;s avec un d&eacute;lai de production de 25 jours et des quantit&eacute;s minimales de 5 et 10 pi&egrave;ces respectivement.</li>
+  <li><strong>Sites o&ugrave; l'acc&egrave;s de maintenance est difficile ou co&ucirc;teux</strong>, donc o&ugrave; un appareil n'ayant presque rien &agrave; entretenir est pr&eacute;f&eacute;rable.</li>
+  <li><strong>L&agrave; o&ugrave; une coupure visible et sans ambigu&iuml;t&eacute; est exig&eacute;e</strong> pour la consignation, ce qu'un fusible consomm&eacute; offre par simple examen.</li>
+</ul>
+
+<h2>L&agrave; o&ugrave; le disjoncteur est la meilleure r&eacute;ponse</h2>
+<ul>
+  <li><strong>Coupures r&eacute;p&eacute;t&eacute;es</strong>, comme les d&eacute;parts moteurs, les alimentations de soudage ou tout circuit &agrave; fort appel de courant qui d&eacute;clenchera souvent.</li>
+  <li><strong>Protection ajustable</strong>, o&ugrave; le m&ecirc;me type d'appareil doit convenir &agrave; des d&eacute;parts diff&eacute;rents et o&ugrave; les r&eacute;glages sont r&eacute;gl&eacute;s &agrave; la mise en service.</li>
+  <li><strong>Manœuvre &agrave; distance ou automatis&eacute;e</strong>, y compris l'inversion de source, le verrouillage et la t&eacute;l&eacute;conduite.</li>
+  <li><strong>Mesure int&eacute;gr&eacute;e</strong>, lorsque l'arriv&eacute;e est aussi le point o&ugrave; l'on collecte les donn&eacute;es de charge. Les disjoncteurs &agrave; vide de cette gamme, comme le VS1-12/630A fixe int&eacute;rieur et le ZW32-12G/630A sur poteau ext&eacute;rieur, sont l'extr&eacute;mit&eacute; moyenne tension de cet argument.</li>
+  <li><strong>Service de commutation fr&eacute;quent</strong>, o&ugrave; l'appareil sert d'appareil d'exploitation et non seulement de protection.</li>
+</ul>
+
+<h2>On les combine plus qu'on ne les oppose</h2>
+<p>Une disposition courante et judicieuse consiste &agrave; confier le devoir de d&eacute;faut &agrave; haute &eacute;nergie au fusible et l'exploitation au disjoncteur : un interrupteur-sectionneur &agrave; fusibles comme barri&egrave;re de sectionnement et de court-circuit, avec un disjoncteur en aval pour la commutation et la protection r&eacute;glable. La famille d'interrupteurs-sectionneurs &agrave; fusibles de cette gamme, en versions 250 A, 400 A et 630 A, est exactement ce bloc de construction &mdash; un interrupteur &agrave; couteaux porteur de fusibles, &agrave; construction prot&eacute;g&eacute;e contre les contacts accidentels, corps en PC retardateur de flamme et parties en cuivre pur, livr&eacute; marqu&eacute; CE et RoHS.</p>
+<p>&Agrave; l'autre bout de la cha&icirc;ne, un tableau basse tension utilise souvent un disjoncteur bo&icirc;tier moul&eacute; ou &agrave; air &agrave; l'arriv&eacute;e, et des fusibles sur les d&eacute;parts o&ugrave; le courant de d&eacute;faut est le plus &eacute;lev&eacute; et la charge stable. Chaque famille fait alors ce qu'elle fait le mieux.</p>
+
+<h2>La coordination, partie la plus souvent rat&eacute;e</h2>
+<p>Quel que soit l'appareil retenu, l'installation ne fonctionne que si l'appareil le plus proche du d&eacute;faut ouvre en premier et si l'appareil amont reste ferm&eacute;. C'est la s&eacute;lectivit&eacute;, et c'est une propri&eacute;t&eacute; du couple, non de l'un ou l'autre appareil isol&eacute;ment.</p>
+<p>Avec des fusibles, la s&eacute;lectivit&eacute; se d&eacute;duit des caract&eacute;ristiques temps-courant et du rapport de calibres ; elle reste stable pendant toute la vie de l'installation, puisque rien ne peut &ecirc;tre r&eacute;gl&eacute;. Avec des disjoncteurs, elle d&eacute;pend des r&eacute;glages : plus souple, et aussi plus fragile. Un disjoncteur red&eacute;tect&eacute; par quelqu'un lors d'une recherche de d&eacute;faut peut ne plus &ecirc;tre s&eacute;lectif avec l'appareil situ&eacute; en amont.</p>
+<p>Lorsqu'un fusible et un disjoncteur cohabitent dans un m&ecirc;me tableau, l'&eacute;tude de s&eacute;lectivit&eacute; doit porter sur le couple mixte. Une caract&eacute;ristique de fusible et une courbe de disjoncteur ne se combinent pas comme deux fusibles d'une m&ecirc;me famille, et c'est dans leur zone de recouvrement qu'apparaissent les d&eacute;clenchements intempestifs de l'arriv&eacute;e.</p>
+
+<h2>Liste de contr&ocirc;le de sp&eacute;cification</h2>
+<ol>
+  <li><strong>Courant de d&eacute;faut pr&eacute;sum&eacute;</strong> au point d'installation, et pouvoir de coupure de chaque appareil confront&eacute; &agrave; lui.</li>
+  <li><strong>Nombre pr&eacute;visible de fonctionnements par an</strong>, et co&ucirc;t d'une heure d'arr&ecirc;t sur ce circuit.</li>
+  <li><strong>Circuit en alternatif ou en continu</strong>. Une application DC exige un appareil calibr&eacute; DC ; un calibre AC n'est pas transf&eacute;rable.</li>
+  <li><strong>Tension assign&eacute;e</strong>, v&eacute;rifi&eacute;e comme valeur de r&eacute;seau et non d&eacute;duite du calibre de courant.</li>
+  <li><strong>Ambiance et enveloppe</strong>, d&eacute;classement en armoire ferm&eacute;e inclus.</li>
+  <li><strong>Politique de rechange</strong> &mdash; si des fusibles sont retenus, les bons calibres doivent &ecirc;tre stock&eacute;s sur site, sinon l'avantage du disjoncteur sur le temps d'arr&ecirc;t dispara&icirc;t.</li>
+  <li><strong>Exigences de sectionnement et de consignation</strong>, et caract&egrave;re obligatoire ou non d'une coupure visible.</li>
+</ol>
+<p>Envoyez le courant de d&eacute;faut, la tension, le type de charge et le r&eacute;gime d'exploitation. La famille correcte d&eacute;coule en g&eacute;n&eacute;ral de ces quatre donn&eacute;es, et le calibre de l'appareil d&eacute;coule du courant de d&eacute;faut.</p>
+
+<h2>Questions fr&eacute;quentes</h2>
+<h3>Un fusible est-il plus s&ucirc;r qu'un disjoncteur ?</h3>
+<p>Ni l'un ni l'autre ne l'est en g&eacute;n&eacute;ral. Un fusible a moins de modes de d&eacute;faillance et un tr&egrave;s haut pouvoir de coupure dans un petit volume ; un disjoncteur peut &ecirc;tre essay&eacute;, r&eacute;arm&eacute; et dot&eacute; de r&eacute;glages. La s&eacute;curit&eacute; vient du bon calibre, du bon pouvoir de coupure et de la bonne coordination, pas de la famille retenue.</p>
+<h3>Peut-on remplacer un fusible par un disjoncteur de m&ecirc;me calibre ?</h3>
+<p>Pas sur le seul calibre. Le remplacement doit respecter le pouvoir de coupure au point consid&eacute;r&eacute;, le comportement temps-courant sur lequel les appareils amont et aval ont &eacute;t&eacute; coordonn&eacute;s, et le service AC ou DC. Un substitut de m&ecirc;me courant mais de caract&eacute;ristique diff&eacute;rente peut d&eacute;truire la s&eacute;lectivit&eacute; de tout le tableau.</p>
+<h3>Pourquoi les fusibles dominent-ils encore les coupe-circuits moyenne tension ?</h3>
+<p>Parce que le service est rare, l'&eacute;nergie de d&eacute;faut &eacute;lev&eacute;e, et l'appareil manœuvr&eacute; par un monteur qui remplace l'&eacute;l&eacute;ment dans le cadre de la r&eacute;paration. Un disjoncteur refermable &agrave; ce service co&ucirc;te bien plus cher et ajoute de l'entretien &agrave; un endroit g&eacute;n&eacute;ralement difficile d'acc&egrave;s.</p>
+<h3>Faut-il les deux dans un m&ecirc;me tableau ?</h3>
+<p>Souvent, oui. Une disposition courante associe un fusible ou un interrupteur-sectionneur &agrave; fusibles pour le sectionnement et la forte &eacute;nergie de d&eacute;faut, et un disjoncteur en aval pour le service de commutation et la protection r&eacute;glable. L'essentiel est que la coordination entre les deux soit &eacute;tudi&eacute;e comme un couple.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous spécifiez la protection d'un tableau de distribution ?</h2>
+    <p>Envoyez le courant de défaut présumé, la tension du réseau, le type de charge et la fréquence d'exploitation du circuit. Nous confirmerons si le service demande un fusible, un disjoncteur ou un couple coordonné.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conversion AWG en mm² : tableau des sections et choix de cosse | Yomin Electric</title>
+<meta name="description" content="Conversion AWG vers mm² avec diamètres et sections exacts de l'AWG 20 au 4/0 et de 250 à 1000 kcmil, et pourquoi la section convertie ne donne pas un courant admissible.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/awg-to-mm2-conversion-chart/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Conversion AWG en mm² : tableau des sections et choix de cosse",
+      "description": "Conversion AWG vers mm² avec diamètres et sections exacts de l'AWG 20 au 4/0 et de 250 à 1000 kcmil, et pourquoi la section convertie ne donne pas un courant admissible.",
+      "image": "https://www.yominelectric.com/assets/images/blog/awg-to-mm2-conversion-chart/hero.png",
+      "datePublished": "2026-11-01",
+      "dateModified": "2026-11-01",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/awg-to-mm2-conversion-chart-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "L'AWG 10 équivaut-il à 6 mm² ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. L'AWG 10 fait 5,26 mm², donc la section métrique supérieure est 6 mm². Les deux sont proches sans être égales. Pour un fût de cosse, c'est 6 mm² qui recevra correctement un conducteur AWG 10 ; une cosse de 4 mm² ne le recevra pas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de mm² fait le 4/0 AWG ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le 4/0 AWG fait 107,2 mm², pour un diamètre de conducteur de 11,684 mm. La section normalisée supérieure est 120 mm². N'utilisez pas 95 mm², qui est plus petit que le conducteur à recevoir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "250 kcmil équivaut-il à 120 mm² ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. 250 kcmil valent 126,7 mm², donc une cosse de 120 mm² est sous-dimensionnée. La première section normalisée qui n'est pas inférieure à 250 kcmil est 150 mm²."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on déduire le courant admissible de la section en mm² ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Seulement à l'intérieur d'un même référentiel. Le courant admissible dépend de la tenue de l'isolant, du mode de pose, de la température ambiante et des règles de déclassement de la norme au titre de laquelle l'installation est réceptionnée. Une section convertie est une dimension physique, pas un courant."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>C&acirc;bles et conducteurs</span></div>
+    <span class="bh-tag">Guide d'achat</span>
+    <h1 class="bh-title">Conversion AWG en mm² : tableau des sections et choix de cosse</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>1 novembre 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/awg-to-mm2-conversion-chart/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/awg-to-mm2-conversion-chart/hero.png" alt="Trois sections rondes de conducteurs de calibre croissant avec une ligne de cote de diamètre, à côté d'une cosse à câble en encart montrant le fût et la platine" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<p><strong>Pour convertir l'AWG en mm&sup2;, on part du num&eacute;ro de calibre, on en d&eacute;duit le diam&egrave;tre du conducteur par la progression propre &agrave; l'&eacute;chelle AWG, puis on calcule la section &agrave; partir de ce diam&egrave;tre. L'AWG 10 fait 5,26 mm&sup2;, l'AWG 6 fait 13,3 mm&sup2;, l'AWG 2 fait 33,6 mm&sup2;, le 1/0 AWG fait 53,5 mm&sup2; et le 4/0 AWG fait 107 mm&sup2;. Lorsqu'on commande ensuite un c&acirc;ble ou une cosse m&eacute;triques, on arrondit <em>vers le haut</em> &agrave; la section normalis&eacute;e sup&eacute;rieure, jamais vers le bas.</strong></p>
+
+<p>C'est dans cette derni&egrave;re phrase que se joue l'essentiel du co&ucirc;t. La conversion elle-m&ecirc;me n'est que de l'arithm&eacute;tique. Ce que l'on fait du r&eacute;sultat d&eacute;cide si une cosse entre r&eacute;ellement sur son c&acirc;ble et si un raccord reste froid pendant vingt ans.</p>
+
+<h2>Deux syst&egrave;mes, deux logiques</h2>
+<p>L'AWG est un num&eacute;ro de calibre, pas une mesure. L'&eacute;chelle est une progression g&eacute;om&eacute;trique : trois calibres d'&eacute;cart divisent la section par deux, donc un seul &eacute;cart la multiplie par environ 1,26. Plus le num&eacute;ro est petit, plus le conducteur est gros, et l'&eacute;chelle continue au-del&agrave; de z&eacute;ro avec 1/0, 2/0, 3/0 et 4/0. Au-del&agrave; de 4/0, le syst&egrave;me am&eacute;ricain abandonne le num&eacute;ro et passe aux milliers de mils circulaires, not&eacute;s kcmil ou MCM.</p>
+<p>Le c&acirc;ble m&eacute;trique fonctionne &agrave; l'inverse : il se vend par section nominale en millim&egrave;tres carr&eacute;s, sur une &eacute;chelle fixe de 0,5 &agrave; 630 mm&sup2; &mdash; 0,5 &middot; 0,75 &middot; 1 &middot; 1,5 &middot; 2,5 &middot; 4 &middot; 6 &middot; 10 &middot; 16 &middot; 25 &middot; 35 &middot; 50 &middot; 70 &middot; 95 &middot; 120 &middot; 150 &middot; 185 &middot; 240 &middot; 300 &middot; 400 &middot; 500 &middot; 630. Entre 120 et 150, il n'existe rien.</p>
+<p>Un plan libell&eacute; en AWG ne tombe donc presque jamais sur une section m&eacute;trique exacte. C'est pr&eacute;cis&eacute;ment cet &eacute;cart que cette page sert &agrave; traiter.</p>
+
+<h2>La conversion, pas &agrave; pas</h2>
+<p>Le diam&egrave;tre d'un conducteur AWG en millim&egrave;tres d&eacute;coule de la d&eacute;finition du calibre :</p>
+<p><strong>d (mm) = 0,127 &times; 92<sup>(36 &minus; n) / 39</sup></strong>, o&ugrave; <em>n</em> est le num&eacute;ro AWG, n&eacute;gatif pour les calibres &laquo; aught &raquo; (1/0 = 0, 2/0 = &minus;1, 3/0 = &minus;2, 4/0 = &minus;3).</p>
+<p>La section s'en d&eacute;duit de fa&ccedil;on classique, section = &pi; d&sup2; / 4. Pour les kcmil, un kcmil vaut 0,5067 mm&sup2;, donc 250 kcmil repr&eacute;sentent 126,7 mm&sup2;.</p>
+<p>Inutile de refaire le calcul &agrave; l'atelier : le tableau ci-dessous est issu de cette formule.</p>
+
+<h2>Tableau de conversion AWG &rarr; mm&sup2;</h2>
+<table>
+  <thead>
+    <tr><th>AWG</th><th>Diam&egrave;tre du conducteur (mm)</th><th>Section (mm&sup2;)</th><th>Section m&eacute;trique sup&eacute;rieure</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>20</td><td>0,812</td><td>0,52</td><td>0,75</td></tr>
+    <tr><td>18</td><td>1,024</td><td>0,82</td><td>1,0</td></tr>
+    <tr><td>16</td><td>1,291</td><td>1,31</td><td>1,5</td></tr>
+    <tr><td>14</td><td>1,628</td><td>2,08</td><td>2,5</td></tr>
+    <tr><td>12</td><td>2,053</td><td>3,31</td><td>4</td></tr>
+    <tr><td>10</td><td>2,588</td><td>5,26</td><td>6</td></tr>
+    <tr><td>8</td><td>3,264</td><td>8,37</td><td>10</td></tr>
+    <tr><td>6</td><td>4,115</td><td>13,30</td><td>16</td></tr>
+    <tr><td>4</td><td>5,189</td><td>21,15</td><td>25</td></tr>
+    <tr><td>2</td><td>6,544</td><td>33,63</td><td>35</td></tr>
+    <tr><td>1</td><td>7,348</td><td>42,41</td><td>50</td></tr>
+    <tr><td>1/0</td><td>8,251</td><td>53,48</td><td>70</td></tr>
+    <tr><td>2/0</td><td>9,266</td><td>67,43</td><td>70</td></tr>
+    <tr><td>3/0</td><td>10,405</td><td>85,03</td><td>95</td></tr>
+    <tr><td>4/0</td><td>11,684</td><td>107,22</td><td>120</td></tr>
+  </tbody>
+</table>
+
+<h2>Conversion kcmil &rarr; mm&sup2;</h2>
+<table>
+  <thead>
+    <tr><th>kcmil / MCM</th><th>Section (mm&sup2;)</th><th>Section m&eacute;trique sup&eacute;rieure</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>250</td><td>126,7</td><td>150</td></tr>
+    <tr><td>300</td><td>152,0</td><td>185</td></tr>
+    <tr><td>350</td><td>177,3</td><td>185</td></tr>
+    <tr><td>400</td><td>202,7</td><td>240</td></tr>
+    <tr><td>500</td><td>253,4</td><td>300</td></tr>
+    <tr><td>600</td><td>304,0</td><td>400</td></tr>
+    <tr><td>750</td><td>380,0</td><td>400</td></tr>
+    <tr><td>1000</td><td>506,7</td><td>630</td></tr>
+  </tbody>
+</table>
+
+<h2>Pourquoi la conversion ne donne pas un courant admissible</h2>
+<p>C'est la confusion la plus co&ucirc;teuse de tout le sujet. Deux conducteurs de m&ecirc;me section n'ont pas le m&ecirc;me courant admissible. Celui-ci d&eacute;pend de la tenue en temp&eacute;rature de l'isolant, du nombre de conducteurs regroup&eacute;s, du mode de pose &mdash; air libre, conduit, mur, chemin de c&acirc;bles &mdash;, de la temp&eacute;rature ambiante du site et de la norme d'installation au regard de laquelle le chantier sera r&eacute;ceptionn&eacute;.</p>
+<p>Les m&ecirc;mes 5,26 mm&sup2; de cuivre peuvent &ecirc;tre un conducteur AWG 10 dans un r&eacute;f&eacute;rentiel et un 6 mm&sup2; dans un autre, avec des charges admises diff&eacute;rentes, parce que les deux syst&egrave;mes ne comptent pas l'isolant de la m&ecirc;me fa&ccedil;on et n'appliquent pas les m&ecirc;mes coefficients de groupement. Convertir la section dit combien de m&eacute;tal on a. Cela ne dit pas ce que ce m&eacute;tal a le droit de v&eacute;hiculer.</p>
+<p>Ne reprenez donc pas un courant admissible am&eacute;ricain, ne convertissez pas le calibre en mm&sup2; et n'appliquez pas le r&eacute;sultat &agrave; une installation m&eacute;trique. Dimensionnez dans un seul syst&egrave;me et n'utilisez la conversion que l&agrave; o&ugrave; les deux mondes se rencontrent physiquement : la cosse, le bornier et le raccord.</p>
+
+<h2>L&agrave; o&ugrave; la conversion d&eacute;cide vraiment de l'achat</h2>
+<p>Le raccord est le point de collision entre un monde AWG et un monde m&eacute;trique, et c'est l&agrave; que la r&egrave;gle d'arrondi se rentabilise.</p>
+<ul>
+  <li><strong>Le f&ucirc;t, pas la platine.</strong> Une cosse &agrave; c&acirc;ble a deux dimensions : le f&ucirc;t qui re&ccedil;oit le conducteur et la platine qui se boulonne sur le jeu de barres. Une erreur de conversion se voit presque toujours dans le f&ucirc;t. Une cosse annonc&eacute;e pour 120 mm&sup2; n'acceptera pas correctement un conducteur de 250 kcmil, puisque 250 kcmil valent 126,7 mm&sup2; : la section m&eacute;trique est plus petite que le conducteur. La premi&egrave;re section m&eacute;trique r&eacute;ellement suffisante est 150 mm&sup2;.</li>
+  <li><strong>Les cosses &agrave; plage suppriment l'incertitude.</strong> Une cosse comme la TA-250 est sp&eacute;cifi&eacute;e en plage, de 250 mcm &agrave; 6, pr&eacute;cis&eacute;ment pour qu'une seule r&eacute;f&eacute;rence couvre une bande de calibres am&eacute;ricains sans tableau. Quand le plan est en AWG et le stock choisi en plages, on commande par la plage.</li>
+  <li><strong>Le mat&eacute;riau d&eacute;cide du raccord, pas le calibre.</strong> Un conducteur aluminium sur un jeu de barres cuivre exige une transition bim&eacute;tal, sinon le raccord se corrode. La s&eacute;rie DTL-2 est une cosse &agrave; anneau bim&eacute;tal cuivre-aluminium pr&eacute;vue pour cette transition ; la DTL-2-35/2-70 reprend le m&ecirc;me principe dans un format fixe de 35 &agrave; 70 mm&sup2;. Respecter le m&eacute;tal compte davantage que respecter la section &agrave; deux d&eacute;cimales.</li>
+</ul>
+
+<h2>Accorder la cosse &agrave; une section convertie</h2>
+<p>Une fois le conducteur exprim&eacute; en mm&sup2;, le choix devient m&eacute;canique plut&ocirc;t qu'arithm&eacute;tique :</p>
+<ol>
+  <li><strong>Mat&eacute;riau et classe du conducteur</strong> &mdash; cuivre ou aluminium, c&acirc;bl&eacute; rigide ou souple. Un conducteur de classe souple demande un f&ucirc;t &agrave; brins fins ou une embout ; un conducteur &agrave; brins grossiers n'en a pas besoin.</li>
+  <li><strong>Diam&egrave;tre de f&ucirc;t</strong> &mdash; il doit recevoir le conducteur r&eacute;el, pas le conducteur nominal. Si le conducteur fait 126,7 mm&sup2; et le f&ucirc;t est al&eacute;s&eacute; pour 120 mm&sup2;, le sertissage sera creux.</li>
+  <li><strong>Platine et boulon</strong> &mdash; diam&egrave;tre de per&ccedil;age, entraxe et nombre de trous. Les platines &agrave; deux trous servent l&agrave; o&ugrave; le raccord doit r&eacute;sister aux vibrations et &agrave; la rotation ; les platines &agrave; un trou l&agrave; o&ugrave; la place manque.</li>
+  <li><strong>Finition et environnement</strong> &mdash; cuivre &eacute;tam&eacute; ou argent&eacute; pour les sites humides ou corrosifs. La cosse &agrave; embout de la s&eacute;rie AWG est un terminal cuivre argent&eacute; ; les cosses &agrave; sertir cuivre &agrave; deux trous de la m&ecirc;me gamme sont livr&eacute;es conformes RoHS.</li>
+  <li><strong>Contexte de tension</strong> &mdash; une cosse pr&eacute;vue pour 600 V et une cosse destin&eacute;e &agrave; 35 kV sont deux produits diff&eacute;rents, m&ecirc;me quand la g&eacute;om&eacute;trie du f&ucirc;t se ressemble.</li>
+</ol>
+
+<h2>Borniers et peignes de distribution</h2>
+<p>Le c&acirc;blage d'armoire rencontre le m&ecirc;me d&eacute;calage un cran plus bas. Un bornier &agrave; rail DIN se caract&eacute;rise par une plage de conducteurs et un courant, et un peigne &agrave; fourche r&eacute;partit une alimentation commune sur une rang&eacute;e de borniers. Dans cette gamme, le bornier &agrave; peigne &agrave; fourche est donn&eacute; pour 100 A en service continu maximal : c'est ce chiffre qui limite la rang&eacute;e, et non la somme des calibres de borniers.</p>
+<p>Si un sch&eacute;ma m&eacute;lange AWG et mm&sup2; sur une m&ecirc;me rang&eacute;e, convertissez d'abord chaque ligne en mm&sup2; et v&eacute;rifiez la rang&eacute;e par rapport au calibre du peigne, pas par rapport au plus gros bornier du rail.</p>
+
+<h2>Liste de contr&ocirc;le pour une commande en unit&eacute;s mixtes</h2>
+<ul>
+  <li>Convertir chaque conducteur du plan en mm&sup2; en conservant le calibre d'origine dans la d&eacute;signation.</li>
+  <li>Arrondir vers le haut &agrave; la section normalis&eacute;e sup&eacute;rieure, pour le c&acirc;ble comme pour le f&ucirc;t de cosse ; jamais vers le bas.</li>
+  <li>Indiquer la classe du conducteur, pas seulement la section.</li>
+  <li>Indiquer le diam&egrave;tre de boulon et l'entraxe de per&ccedil;age de la platine.</li>
+  <li>Indiquer le m&eacute;tal de part et d'autre de chaque raccord et pr&eacute;voir une transition bim&eacute;tal lorsqu'ils diff&egrave;rent.</li>
+  <li>Joindre l'ambiance et le mode de pose &agrave; la demande, pour que le courant ne soit pas d&eacute;duit de la seule section.</li>
+</ul>
+<p>Envoyez le plan tel qu'il est r&eacute;dig&eacute;. Un fabricant qui produit &agrave; la fois des terminaux am&eacute;ricains et m&eacute;triques reconna&icirc;tra les num&eacute;ros AWG et confirmera l'&eacute;quivalent m&eacute;trique : c'est plus rapide et plus s&ucirc;r que de convertir c&ocirc;t&eacute; acheteur en esp&eacute;rant que l'arrondi est all&eacute; dans le bon sens.</p>
+
+<h2>Questions fr&eacute;quentes</h2>
+<h3>L'AWG 10 &eacute;quivaut-il &agrave; 6 mm&sup2; ?</h3>
+<p>Non. L'AWG 10 fait 5,26 mm&sup2;, donc la section m&eacute;trique sup&eacute;rieure est 6 mm&sup2;. Les deux sont proches sans &ecirc;tre &eacute;gales, et le conducteur m&eacute;trique contient un peu plus de cuivre. Pour un f&ucirc;t de cosse, c'est 6 mm&sup2; qui recevra correctement un conducteur AWG 10 ; une cosse de 4 mm&sup2; ne le recevra pas.</p>
+<h3>Combien de mm&sup2; fait le 4/0 AWG ?</h3>
+<p>Le 4/0 AWG fait 107,2 mm&sup2;, pour un diam&egrave;tre de conducteur de 11,684 mm. La section normalis&eacute;e sup&eacute;rieure est 120 mm&sup2;. N'utilisez pas 95 mm&sup2;, qui est plus petit que le conducteur &agrave; recevoir.</p>
+<h3>250 kcmil &eacute;quivaut-il &agrave; 120 mm&sup2; ?</h3>
+<p>Non. 250 kcmil valent 126,7 mm&sup2;. Une cosse de 120 mm&sup2; est sous-dimensionn&eacute;e. La premi&egrave;re section normalis&eacute;e qui n'est pas inf&eacute;rieure &agrave; 250 kcmil est 150 mm&sup2;.</p>
+<h3>Peut-on d&eacute;duire le courant admissible de la section en mm&sup2; ?</h3>
+<p>Seulement &agrave; l'int&eacute;rieur d'un m&ecirc;me r&eacute;f&eacute;rentiel. Le courant admissible d&eacute;pend de la tenue de l'isolant, du mode de pose, de la temp&eacute;rature ambiante et des r&egrave;gles de d&eacute;classement de la norme au titre de laquelle l'installation est r&eacute;ceptionn&eacute;e. Une section convertie est une dimension physique, pas un courant.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Besoin de cosses ou de borniers dimensionnés sur un plan en AWG ?</h2>
+    <p>Envoyez la section exactement telle qu'elle figure sur votre plan &mdash; AWG, kcmil ou mm&sup2; &mdash; avec le diamètre de boulon et le métal de part et d'autre du raccord. Nous confirmerons le fût et la platine correspondants avant votre commande.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
