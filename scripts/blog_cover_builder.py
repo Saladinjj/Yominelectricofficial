@@ -3,11 +3,11 @@
 
 Design contract
 ---------------
-* Brand: real YOMIN lockup (mark + wordmark), cropped from the existing brand
-  banner ``Yomin_LinkedIn_Banner_Final.png`` and saved once as
-  ``assets/images/logo-lockup.png``. It is never redrawn, recoloured or
-  approximated. ``logo.png`` in the repo root is only 240 px and its wordmark is
-  light grey, so it is unusable on the light cover.
+* Brand: real YOMIN lockup (mark + wordmark) at ``assets/images/logo-lockup.png``,
+  downsampled from the owner's master ``Yomin logo website.png`` (8768 px wide,
+  transparent). It is never redrawn, recoloured or approximated. ``logo.png`` in
+  the repo root is only 240 px with a light-grey wordmark (unusable on light),
+  and ``logo_transparent.png`` is the mark with no wordmark.
 * Products: real photos from ``assets/images/products/`` only. Never synthetic
   art, never a stock render posing as a YOMIN product.
 * Backdrops are normalised to pure white, then multiply-composited onto the warm
@@ -73,6 +73,14 @@ def ensure_logo() -> Path:
 # --------------------------------------------------------------------------- #
 # photo preparation
 # --------------------------------------------------------------------------- #
+def _light_backdrop(im: Image.Image) -> bool:
+    """Only white/light studio backdrops can be multiplied onto the paper canvas."""
+    arr = np.asarray(im.convert("RGB")).astype(np.float32)
+    h, w, _ = arr.shape
+    corners = np.array([arr[0, 0], arr[0, w - 1], arr[h - 1, 0], arr[h - 1, -1]])
+    return float(np.median(corners.mean(axis=1))) >= 160.0
+
+
 def _trim_uniform(im: Image.Image, tol: int = 14) -> Image.Image:
     arr = np.asarray(im.convert("RGB")).astype(np.int16)
     h, w, _ = arr.shape
@@ -143,6 +151,9 @@ def prep_photo(path: Path, box: tuple[int, int]) -> Image.Image | None:
     if min(im.size) < 140:
         print(f"  ! too small, skipped: {path.name} ({im.size})", file=sys.stderr)
         return None
+    if not _light_backdrop(im):
+        print(f"  ! dark backdrop, skipped: {path.name}", file=sys.stderr)
+        return None
     im = _trim_uniform(im)
     im = _normalise_backdrop(im)
     im.thumbnail(box, Image.LANCZOS)
@@ -207,17 +218,25 @@ def _multiply_paste(
 
 
 def _brand_mark(canvas: Image.Image, height: int, xy: tuple[int, int]) -> None:
-    logo = Image.open(LOGO).convert("RGB")
-    ratio = height / logo.height
-    logo = logo.resize((max(1, int(logo.width * ratio)), height), Image.LANCZOS)
-    _multiply_paste(canvas, logo, xy, feather=0)
+    src = Image.open(LOGO)
+    rgb = src.convert("RGB")
+    ratio = height / rgb.height
+    size = (max(1, int(rgb.width * ratio)), height)
+    rgb = rgb.resize(size, Image.LANCZOS)
+
+    if "A" in src.getbands():
+        alpha = src.getchannel("A").resize(size, Image.LANCZOS)
+        alpha = alpha.point(lambda v: 255 if v > 200 else v)
+        layer = rgb.convert("RGBA")
+        layer.putalpha(alpha)
+        canvas.alpha_composite(layer, xy)
+    else:
+        _multiply_paste(canvas, rgb, xy, feather=0)
+
     # accent hairline under the lockup
     d = ImageDraw.Draw(canvas)
-    d.line(
-        [(xy[0], xy[1] + height + max(8, height // 6)),
-         (xy[0] + int(logo.width * 0.62), xy[1] + height + max(8, height // 6))],
-        fill=(*ACCENT, 220), width=3,
-    )
+    y = xy[1] + height + max(8, height // 5)
+    d.line([(xy[0], y), (xy[0] + int(size[0] * 0.30), y)], fill=(*ACCENT, 220), width=3)
 
 
 def _corner_brackets(canvas: Image.Image, inset: int, length: int) -> None:
@@ -248,7 +267,7 @@ def build(
     ensure_logo()
     canvas = _paper(size).convert("RGBA")
     _corner_brackets(canvas, inset=max(12, side // 3), length=int(min(size) * 0.07))
-    _brand_mark(canvas, logo_h, (side, top))
+    _brand_mark(canvas, logo_h, (side + 16, top + 4))
 
     area_top = top + logo_h + gap
     area_bottom = size[1] - int(side * 0.85)
@@ -288,7 +307,13 @@ def build(
     stem = "card" if size == CARD else "hero"
     png = out_dir / f"{stem}.png"
     webp = out_dir / f"{stem}.webp"
-    rgb.save(png, "PNG", optimize=True)
+    if size == CARD:
+        # The grid uses a plain <img src="*.png">, so the card PNG is the file
+        # actually downloaded. Quantise it: ~198 KB -> ~85 KB at display size.
+        rgb.quantize(colors=256, method=Image.MEDIANCUT,
+                     dither=Image.FLOYDSTEINBERG).save(png, "PNG", optimize=True)
+    else:
+        rgb.save(png, "PNG", optimize=True)
     rgb.save(webp, "WEBP", quality=88, method=6)
     return png, webp
 
@@ -302,8 +327,8 @@ def build_slug(slug: str, photo_paths: list[str], out_root: Path = ROOT) -> None
         raise SystemExit(f"no usable photos for {slug}")
 
     out_dir = out_root / "assets" / "images" / "blog" / slug
-    build(photos, out_dir, CARD, side=42, top=30, logo_h=64, gap=18)
-    build(photos, out_dir, HERO, side=54, top=38, logo_h=84, gap=24)
+    build(photos, out_dir, CARD, side=42, top=30, logo_h=42, gap=20)
+    build(photos, out_dir, HERO, side=54, top=38, logo_h=56, gap=26)
     print(f"{slug}: {len(photos)} photo(s) -> card + hero")
 
 
@@ -329,6 +354,8 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
 
 
 
