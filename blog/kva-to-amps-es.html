@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kVA a amperios: fórmula de conversión y selección del TC | Yomin Electric</title>
+<meta name="description" content="Convierta kVA a amperios en monofásico y trifásico: ejemplos calculados, tabla de 10 a 1000 kVA y la relación de transformación y el calibre de contador que exige el resultado.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/kva-to-amps/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/kva-to-amps-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/kva-to-amps">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/kva-to-amps-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/kva-to-amps-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/kva-to-amps-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/kva-to-amps">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "kVA a amperios: fórmula de conversión, tablas calculadas y selección del TC",
+      "description": "Convierta kVA a amperios en monofásico y trifásico: ejemplos calculados, tabla de 10 a 1000 kVA y la relación de transformación y el calibre de contador que exige el resultado.",
+      "image": "https://www.yominelectric.com/assets/images/blog/kva-to-amps/hero.png",
+      "datePublished": "2026-11-03",
+      "dateModified": "2026-11-03",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/kva-to-amps-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "es",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿100 kVA cuántos amperios son?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de la tensión y del número de fases. A 400 V trifásicos, 100 kVA son 144,3 A. A 415 V trifásicos, 139,1 A. A 230 V monofásicos, 434,8 A."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Debo usar 400 V o 415 V en la fórmula?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use la tensión nominal que declare realmente su suministro. La diferencia entre ambas es del 3,75 % tanto en tensión como en corriente, lo que rara vez cambia la selección de un producto, pero sí cambia la corriente que aparece en un informe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué la corriente calculada no coincide con la lectura del contador?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tres causas habituales: la carga no está equilibrada entre fases, de modo que una línea lleva más que la media; el contador es con TC y la lectura corresponde a la corriente secundaria; o el cálculo usó kW donde la placa indicaba kVA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo usar la fórmula monofásica en un suministro trifásico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Omite la raíz de tres, así que sobrestima la corriente un 73 %, lo que lleva a un contador, un TC y un cable sobredimensionados."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Inicio</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Productos <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Soluciones</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Proceso</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">Sobre nosotros</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contacto</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Cotización</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Inicio</a>
+  <a href="/products" data-i18n="nav_products">Productos</a>
+  <a href="/solutions" data-i18n="nav_solutions">Soluciones</a>
+  <a href="/process" data-i18n="nav_process">Proceso</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">Sobre nosotros</a>
+  <a href="/contact" data-i18n="nav_contact">Contacto</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Medición de energía</span></div>
+    <span class="bh-tag">Referencia técnica</span>
+    <h1 class="bh-title">kVA a amperios: fórmula de conversión, tablas calculadas y selección del TC</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>3 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/kva-to-amps/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/kva-to-amps/hero.png" alt="Un contador de energía inteligente trifásico YOMIN para carril DIN junto a dos transformadores de corriente de núcleo abierto sobre fondo de papel cálido" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p class="lead">Para convertir kVA a amperios se divide la potencia aparente en kilovoltiamperios entre la tensión y, en un suministro trifásico, también entre la raíz de tres. Monofásico: amperios = kVA &times; 1000 &divide; voltios. Trifásico: amperios = kVA &times; 1000 &divide; (1,732 &times; voltios). A 400 V trifásicos, un kVA son 1,44 A, así que 100 kVA son 144 A. A 230 V monofásicos esos mismos 100 kVA son 435 A: el triple de corriente para la misma potencia aparente, y por eso las dos fórmulas nunca deben mezclarse.</p>
+    <h2>De dónde sale la raíz de tres</h2>
+    <p>En un suministro trifásico las tres corrientes de línea están separadas 120 grados eléctricos y su suma vectorial es 1,732 veces la corriente de una sola línea. La fórmula no es una regla para memorizar: es la consecuencia geométrica de repartir la misma potencia aparente entre tres conductores.</p>
+    <p>Por eso un circuito trifásico necesita solo un tercio del cobre de uno monofásico para la misma potencia. La corriente por conductor baja 1,732 veces y el número de conductores pasa de dos a cuatro, de modo que la masa total de conductor aun así disminuye.</p>
+    <p>Para el comprador la consecuencia es la contraria a un ahorro: si se aplica la fórmula monofásica a una placa trifásica, la corriente calculada sale 1,732 veces más alta y se sobredimensionan el contador, el transformador de corriente y el cable. Al revés &mdash; fórmula trifásica en un circuito monofásico &mdash; la corriente calculada sale 1,732 veces más baja, que es la dirección costosa, porque la medición entra en sobrecarga y el TC satura.</p>
+    <h2>kVA a amperios en las tensiones que se encuentran de verdad</h2>
+    <p>La tabla siguiente está calculada con las fórmulas anteriores, no medida. La columna de 230 V es monofásica; las de 400 V y 415 V son trifásicas entre fases.</p>
+    <table>
+      <thead>
+        <tr><th>Potencia aparente</th><th>230 V, monofásico</th><th>400 V, trifásico</th><th>415 V, trifásico</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>10 kVA</td><td>43,5 A</td><td>14,4 A</td><td>13,9 A</td></tr>
+        <tr><td>25 kVA</td><td>108,7 A</td><td>36,1 A</td><td>34,8 A</td></tr>
+        <tr><td>50 kVA</td><td>217,4 A</td><td>72,2 A</td><td>69,6 A</td></tr>
+        <tr><td>63 kVA</td><td>273,9 A</td><td>90,9 A</td><td>87,6 A</td></tr>
+        <tr><td>100 kVA</td><td>434,8 A</td><td>144,3 A</td><td>139,1 A</td></tr>
+        <tr><td>160 kVA</td><td>695,7 A</td><td>230,9 A</td><td>222,6 A</td></tr>
+        <tr><td>250 kVA</td><td>1087,0 A</td><td>360,8 A</td><td>347,8 A</td></tr>
+        <tr><td>400 kVA</td><td>1739,1 A</td><td>577,4 A</td><td>556,5 A</td></tr>
+        <tr><td>630 kVA</td><td>2739,1 A</td><td>909,3 A</td><td>876,5 A</td></tr>
+        <tr><td>1000 kVA</td><td>4347,8 A</td><td>1443,4 A</td><td>1391,2 A</td></tr>
+      </tbody>
+    </table>
+    <p>Observe lo poco que difieren las columnas de 400 V y 415 V. El 3,75 % de diferencia en tensión produce el mismo 3,75 % en corriente, así que elegir entre ambas rara vez cambia la selección del equipo. Lo que sí la cambia es la diferencia entre monofásico y trifásico: un factor de 1,73 que desplaza la respuesta de una familia de productos a otra.</p>
+    <h2>De amperios al contador: el techo de 80 A</h2>
+    <p>Un contador conectado directamente está limitado por la corriente que puede atravesar su bornera. El <strong>ym-0058</strong> de YOMIN, un contador trifásico tetrapolar para carril DIN con calibre 3&times;5(80 A), comunicación WiFi y pantalla digital, hace circular la corriente de carga por el propio contador. A 400 V trifásicos ese techo de 80 A equivale a 1,732 &times; 400 &times; 80 &divide; 1000, es decir unos 55 kVA.</p>
+    <p>Por encima de unos 55 kVA el circuito pasa a un transformador de corriente y el contador se convierte en un equipo de 5 A que lee una señal escalada. Ahí el cálculo de kVA a amperios deja de ser un ejercicio teórico: el resultado decide si la instalación necesita un contador directo o uno con TC, y ambos no son intercambiables una vez construido el tablero.</p>
+    <p>Toda la diferencia de cableado entre ambos montajes se detalla en la <a href="/blog/energy-meter-wiring-diagram">guía de diagrama de conexión del contador de energía</a>.</p>
+    <h2>Elegir la relación del TC a partir de la corriente</h2>
+    <p>Conocida la corriente, la relación de transformación es la siguiente decisión. El calibre primario debe quedar por encima de la demanda máxima y el secundario es casi siempre 5 A en esta clase de equipos. La tabla indica la carga trifásica que corresponde a cada primario normalizado a 400 V.</p>
+    <table>
+      <thead>
+        <tr><th>Relación del TC</th><th>Corriente primaria</th><th>Carga trifásica máx. a 400 V</th><th>Referencia YOMIN en esa relación</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>250/5 A</td><td>250 A</td><td>173 kVA</td><td>ym-0074, clase 0,5, 50 espiras</td></tr>
+        <tr><td>400/5 A</td><td>400 A</td><td>277 kVA</td><td>fabricado bajo pedido en la misma serie</td></tr>
+        <tr><td>600/5 A</td><td>600 A</td><td>416 kVA</td><td>fabricado bajo pedido en la misma serie</td></tr>
+        <tr><td>800/5 A</td><td>800 A</td><td>554 kVA</td><td>fabricado bajo pedido en la misma serie</td></tr>
+        <tr><td>1000/5 A</td><td>1000 A</td><td>693 kVA</td><td>fabricado bajo pedido en la misma serie</td></tr>
+        <tr><td>1600/5 A</td><td>1600 A</td><td>1109 kVA</td><td>ym-0064, clase 1,0, 720 V AC</td></tr>
+        <tr><td>2000/5 A</td><td>2000 A</td><td>1386 kVA</td><td>ym-0073, clase 0,5, núcleo abierto</td></tr>
+      </tbody>
+    </table>
+    <p>Detrás de esas referencias hay dos detalles de construcción. El <strong>ym-0073</strong> es un transformador de núcleo abierto: el núcleo se abre, de modo que puede abrazar un cable ya conectado, y eso hace posible una renovación sin desmontar la salida. El <strong>ym-0064</strong> es un transformador de medida de 720 V AC, clase 1,0, con 3 kV AC durante un minuto entre devanados y tierra: la cifra de aislamiento que importa cuando el primario está en un sistema de 690 V.</p>
+    <p>La selección de la relación se trata con más detalle en la guía para <a href="/blog/choosing-a-current-transformer">elegir un transformador de corriente</a>, incluido qué ocurre cuando el primario se elige demasiado cerca de la carga real.</p>
+    <h2>kVA no es kW, y la diferencia cambia la corriente</h2>
+    <p>Todo lo anterior convierte potencia aparente. La potencia real de una carga en kW es el kVA multiplicado por el factor de potencia, así que un transformador de 100 kVA alimentando una planta a 0,8 entrega 80 kW. La corriente, en cambio, la fija el kVA y no el kW: el cable y el contador transportan la corriente aparente, convierta o no la carga toda esa potencia en trabajo útil.</p>
+    <p>Esto engaña a los compradores que parten de una lista de motores en kW. Un motor de 90 kW con factor de potencia 0,85 y rendimiento 0,9 absorbe unos 106 kVA, no 90, y la salida debe dimensionarse con la cifra mayor. La <a href="/blog/kva-vs-kw-whats-the-difference">comparación entre kVA y kW</a> desarrolla esa corrección.</p>
+    <h2>Qué incluir en la solicitud</h2>
+    <table>
+      <thead>
+        <tr><th>Dato</th><th>Por qué lo necesita el proveedor</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Tensión del sistema y número de fases</td><td>Decide si se aplica el factor 1,732</td></tr>
+        <tr><td>Potencia aparente en kVA, o demanda máxima en amperios</td><td>Fija el calibre del contador o el primario del TC</td></tr>
+        <tr><td>Contador directo o con TC</td><td>Son dos productos distintos, no uno con opción</td></tr>
+        <tr><td>Relación y clase del TC, si interviene uno</td><td>La clase 0,5 o 1,0 se deduce del uso: facturación o seguimiento</td></tr>
+        <tr><td>Comunicación y visualización requeridas</td><td>RS485, WiFi o salida de impulsos cambian la referencia</td></tr>
+      </tbody>
+    </table>
+    <p>Con esas cinco líneas la especificación no tiene ambigüedad. Con solo «contador de 2000 amperios», el proveedor tiene que adivinar si se refiere a un equipo directo de 2000 A, a un TC 2000/5 o a un contador de 5 A para usar con uno de ellos.</p>
+
+    <h2>Preguntas frecuentes</h2>
+      <h3>¿100 kVA cuántos amperios son?</h3>
+      <p>Depende de la tensión y del número de fases. A 400 V trifásicos, 100 kVA son 144,3 A. A 415 V trifásicos, 139,1 A. A 230 V monofásicos, 434,8 A.</p>
+      <h3>¿Debo usar 400 V o 415 V en la fórmula?</h3>
+      <p>Use la tensión nominal que declare realmente su suministro. La diferencia entre ambas es del 3,75 % tanto en tensión como en corriente, lo que rara vez cambia la selección de un producto, pero sí cambia la corriente que aparece en un informe.</p>
+      <h3>¿Por qué la corriente calculada no coincide con la lectura del contador?</h3>
+      <p>Tres causas habituales: la carga no está equilibrada entre fases, de modo que una línea lleva más que la media; el contador es con TC y la lectura corresponde a la corriente secundaria; o el cálculo usó kW donde la placa indicaba kVA.</p>
+      <h3>¿Puedo usar la fórmula monofásica en un suministro trifásico?</h3>
+      <p>No. Omite la raíz de tres, así que sobrestima la corriente un 73 %, lo que lleva a un contador, un TC y un cable sobredimensionados.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Está dimensionando un contador o un transformador de corriente?</h2>
+    <p>Envíenos la tensión del sistema, el número de fases y los kVA o la demanda máxima en amperios. Confirmaremos si el circuito necesita un contador conectado directamente o uno con TC, y cotizaremos el contador y el transformador correspondientes dentro de la gama de producción.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

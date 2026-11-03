@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>من kVA إلى الأمبير: صيغة التحويل واختيار محول التيار | Yomin Electric</title>
+<meta name="description" content="تحويل الكيلوفولت أمبير إلى أمبير في الشبكات أحادية وثلاثية الطور: أمثلة محسوبة، وجدول من 10 إلى 1000 kVA، ونسبة محول التيار وسعة العداد التي يفرضها الناتج.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/kva-to-amps/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/kva-to-amps-ar">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/kva-to-amps">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/kva-to-amps-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/kva-to-amps-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/kva-to-amps-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/kva-to-amps">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "من kVA إلى الأمبير: صيغة التحويل وجداول محسوبة واختيار محول التيار",
+      "description": "تحويل الكيلوفولت أمبير إلى أمبير في الشبكات أحادية وثلاثية الطور: أمثلة محسوبة، وجدول من 10 إلى 1000 kVA، ونسبة محول التيار وسعة العداد التي يفرضها الناتج.",
+      "image": "https://www.yominelectric.com/assets/images/blog/kva-to-amps/hero.png",
+      "datePublished": "2026-11-03",
+      "dateModified": "2026-11-03",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/kva-to-amps-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "ar",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "كم أمبيراً تساوي 100 kVA؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يتوقف ذلك على الجهد وعدد الأطوار. عند 400 فولت ثلاثي الطور تساوي 100 kVA مقدار 144.3 أمبير. وعند 415 فولت ثلاثي الطور 139.1 أمبير. وعند 230 فولت أحادي الطور 434.8 أمبير."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل أستخدم 400 فولت أم 415 فولت في الصيغة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "استخدم الجهد الاسمي الذي تعلنه شبكتك فعلاً. الفرق بينهما 3.75% في الجهد والتيار معاً، وهو نادراً ما يغيّر اختيار منتج، لكنه يغيّر التيار الظاهر في التقرير."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا لا يطابق التيار المحسوب قراءة العداد؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ثلاثة أسباب معتادة: الحمل غير موزَّع بالتساوي على الأطوار فيحمل أحد الخطوط أكثر من المتوسط؛ أو أن العداد يعمل عبر محول تيار والقراءة هي التيار الثانوي؛ أو أن الحساب استخدم الكيلوواط بينما كانت اللوحة تعطي kVA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يمكن استخدام الصيغة أحادية الطور على شبكة ثلاثية الطور؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا. فهي تُسقط الجذر التربيعي لثلاثة، وبذلك تبالغ في تقدير التيار بنسبة 73%، مما يؤدي إلى عدّاد ومحول تيار وكابل مفرطة في الحجم."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">الرئيسية</a> &middot; <a href="/blog">Blog</a> &middot; <span>قياس الطاقة</span></div>
+    <span class="bh-tag">مرجع فني</span>
+    <h1 class="bh-title">من kVA إلى الأمبير: صيغة التحويل وجداول محسوبة واختيار محول التيار</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>3 نوفمبر 2026</span>
+      <span class="divider"></span>
+      <span>11 دقيقة قراءة</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/kva-to-amps/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/kva-to-amps/hero.png" alt="عداد طاقة ذكي ثلاثي الطور من YOMIN للتركيب على سكة DIN إلى جانب محولي تيار بنواة منفتحة على خلفية ورقية دافئة" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p class="lead">لتحويل الكيلوفولت أمبير إلى أمبير، نقسم القدرة الظاهرية بالكيلوفولت أمبير على الجهد، وعلى الجذر التربيعي لثلاثة أيضاً في الشبكة ثلاثية الطور. أحادي الطور: الأمبير = kVA &times; 1000 &divide; الفولت. ثلاثي الطور: الأمبير = kVA &times; 1000 &divide; (1.732 &times; الفولت). عند 400 فولت ثلاثي الطور يساوي كل kVA نحو 1.44 أمبير، أي أن 100 kVA تساوي 144 أمبيراً. وعند 230 فولت أحادي الطور تساوي هذه الـ 100 kVA نفسها 435 أمبيراً، أي ثلاثة أضعاف التيار للقدرة الظاهرية نفسها، ولهذا لا يجوز الخلط بين الصيغتين أبداً.</p>
+    <h2>من أين يأتي الجذر التربيعي لثلاثة</h2>
+    <p>في الشبكة ثلاثية الطور تفصل بين التيارات الثلاثة زاوية 120 درجة كهربائية، ومجموعها الاتجاهي يساوي 1.732 مرة التيار في أي خط منفرد. والصيغة ليست قاعدة تُحفظ، بل نتيجة هندسية لتوزيع القدرة الظاهرية نفسها على ثلاثة موصلات.</p>
+    <p>ولهذا تحتاج الدائرة ثلاثية الطور إلى ثلث نحاس الدائرة أحادية الطور فقط للقدرة نفسها. ينخفض التيار في كل موصل بمقدار 1.732 مرة، ويرتفع عدد الموصلات من اثنين إلى أربعة، فتنخفض الكتلة الكلية للنحاس رغم ذلك.</p>
+    <p>أما بالنسبة للمشتري فالنتيجة عكس التوفير: إذا طُبقت الصيغة أحادية الطور على لوحة ثلاثية الطور، خرج التيار المحسوب أعلى بمقدار 1.732 مرة، فيُفرط في تحجيم العداد ومحول التيار والكابل. وإذا طُبقت الصيغة الثلاثية على دائرة أحادية الطور، خرج التيار أقل بمقدار 1.732 مرة، وهذا هو الاتجاه المكلف، لأن القياس يدخل في حالة حمل زائد ويتشبع محول التيار.</p>
+    <h2>من kVA إلى الأمبير عند الجهود الشائعة فعلياً</h2>
+    <p>الجدول أدناه محسوب بالصيغ أعلاه وليس مقيساً. عمود 230 فولت أحادي الطور، وعمودا 400 و415 فولت ثلاثيا الطور بين خطين.</p>
+    <table>
+      <thead>
+        <tr><th>القدرة الظاهرية</th><th>230 فولت، أحادي الطور</th><th>400 فولت، ثلاثي الطور</th><th>415 فولت، ثلاثي الطور</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>10 kVA</td><td>43.5 أمبير</td><td>14.4 أمبير</td><td>13.9 أمبير</td></tr>
+        <tr><td>25 kVA</td><td>108.7 أمبير</td><td>36.1 أمبير</td><td>34.8 أمبير</td></tr>
+        <tr><td>50 kVA</td><td>217.4 أمبير</td><td>72.2 أمبير</td><td>69.6 أمبير</td></tr>
+        <tr><td>63 kVA</td><td>273.9 أمبير</td><td>90.9 أمبير</td><td>87.6 أمبير</td></tr>
+        <tr><td>100 kVA</td><td>434.8 أمبير</td><td>144.3 أمبير</td><td>139.1 أمبير</td></tr>
+        <tr><td>160 kVA</td><td>695.7 أمبير</td><td>230.9 أمبير</td><td>222.6 أمبير</td></tr>
+        <tr><td>250 kVA</td><td>1087.0 أمبير</td><td>360.8 أمبير</td><td>347.8 أمبير</td></tr>
+        <tr><td>400 kVA</td><td>1739.1 أمبير</td><td>577.4 أمبير</td><td>556.5 أمبير</td></tr>
+        <tr><td>630 kVA</td><td>2739.1 أمبير</td><td>909.3 أمبير</td><td>876.5 أمبير</td></tr>
+        <tr><td>1000 kVA</td><td>4347.8 أمبير</td><td>1443.4 أمبير</td><td>1391.2 أمبير</td></tr>
+      </tbody>
+    </table>
+    <p>لاحظ الفرق الضئيل بين عمودي 400 و415 فولت. فرق الجهد البالغ 3.75% ينتج الفرق نفسه في التيار، ولذلك نادراً ما يغيّر الاختيار بينهما اختيار المعدات. أما ما يغيّره فعلاً فهو الفرق بين أحادي الطور وثلاثي الطور، وهو معامل 1.73 ينقل النتيجة من عائلة منتجات إلى أخرى.</p>
+    <h2>من الأمبير إلى العداد: سقف 80 أمبيراً</h2>
+    <p>العداد الموصَّل مباشرةً محدود بالتيار الذي يمكن أن يمر في مسمّاره. والعداد <strong>ym-0058</strong> من YOMIN، وهو عدّاد ثلاثي الطور رباعي الأسلاك لسكة DIN بسعة 3&times;5(80 أمبير) مع اتصال WiFi وشاشة رقمية، يمرّر تيار الحمل عبر العداد نفسه. وعند 400 فولت ثلاثي الطور يقابل سقف 80 أمبيراً هذا 1.732 &times; 400 &times; 80 &divide; 1000، أي نحو 55 kVA.</p>
+    <p>فوق نحو 55 kVA تنتقل الدائرة إلى محول تيار، ويصبح العداد جهاز 5 أمبير يقرأ إشارة مُقاسـَة. وهنا يتوقف حساب kVA إلى أمبير عن كونه تمريناً نظرياً: الناتج يحدد ما إذا كانت المنشأة تحتاج عدّاداً موصولاً مباشرةً أم عدّاداً عبر محول تيار، والاثنان غير قابلين للتبادل بعد بناء اللوحة.</p>
+    <p>ويُفصَّل الفرق الكامل في التوصيل بين التركيبين في <a href="/blog/energy-meter-wiring-diagram">دليل مخطط توصيل عدّاد الطاقة</a>.</p>
+    <h2>اختيار نسبة محول التيار من التيار</h2>
+    <p>بعد معرفة التيار تصبح نسبة التحويل هي القرار التالي. يجب أن يكون التصنيف الابتدائي أعلى من الطلب الأقصى، والثانوي 5 أمبير في هذه الفئة من المعدات غالباً. ويبيّن الجدول الحمل ثلاثي الطور المقابل لكل تصنيف ابتدائي قياسي عند 400 فولت.</p>
+    <table>
+      <thead>
+        <tr><th>نسبة المحول</th><th>التيار الابتدائي</th><th>أقصى حمل ثلاثي الطور عند 400 فولت</th><th>طراز YOMIN بهذه النسبة</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>250/5 أمبير</td><td>250 أمبير</td><td>173 kVA</td><td>ym-0074، صنف 0.5، 50 لفة</td></tr>
+        <tr><td>400/5 أمبير</td><td>400 أمبير</td><td>277 kVA</td><td>يُصنع حسب الطلب في السلسلة نفسها</td></tr>
+        <tr><td>600/5 أمبير</td><td>600 أمبير</td><td>416 kVA</td><td>يُصنع حسب الطلب في السلسلة نفسها</td></tr>
+        <tr><td>800/5 أمبير</td><td>800 أمبير</td><td>554 kVA</td><td>يُصنع حسب الطلب في السلسلة نفسها</td></tr>
+        <tr><td>1000/5 أمبير</td><td>1000 أمبير</td><td>693 kVA</td><td>يُصنع حسب الطلب في السلسلة نفسها</td></tr>
+        <tr><td>1600/5 أمبير</td><td>1600 أمبير</td><td>1109 kVA</td><td>ym-0064، صنف 1.0، 720 فولت متردد</td></tr>
+        <tr><td>2000/5 أمبير</td><td>2000 أمبير</td><td>1386 kVA</td><td>ym-0073، صنف 0.5، نواة منفتحة</td></tr>
+      </tbody>
+    </table>
+    <p>خلف هذه الطرازات تفصيلان إنشائيان. فالطراز <strong>ym-0073</strong> محول بنواة منفتحة: تُفتح النواة لتطوّق كابلاً موصَّلاً بالفعل، وهذا ما يجعل التحديث ممكناً دون تفكيك الخط. والطراز <strong>ym-0064</strong> محول قياس 720 فولت متردد من الصنف 1.0، مُصنَّف لعزل 3 كيلوفولت متردد لدقيقة واحدة بين الملفات والأرض، وهو رقم العزل المهم عندما يكون الابتدائي على نظام 690 فولت.</p>
+    <p>ويُعالَج اختيار النسبة نفسها بتفصيل أكبر في دليل <a href="/blog/choosing-a-current-transformer">اختيار محول التيار</a>، بما في ذلك ما يحدث عندما يُختار الابتدائي قريباً جداً من الحمل الفعلي.</p>
+    <h2>الـ kVA ليست kW، والفرق يغيّر التيار</h2>
+    <p>كل ما سبق يحوّل قدرة ظاهرية. أما القدرة الحقيقية للحمل بالكيلوواط فهي الـ kVA مضروبة في معامل القدرة، لذلك يسلّم محول 100 kVA يغذي مصنعاً بمعامل 0.8 قدرة 80 كيلوواط. أما التيار فيحدده الـ kVA لا الـ kW: الكابل والعداد يحملان التيار الظاهري سواء حوّله الحمل إلى عمل مفيد أم لا.</p>
+    <p>وهذا يوقع المشترين الذين يبدأون من قائمة محركات بالكيلوواط. فمحرك 90 كيلوواط بمعامل قدرة 0.85 وكفاءة 0.9 يسحب نحو 106 kVA لا 90، ويجب تحجيم الخط على الرقم الأكبر. ويشرح <a href="/blog/kva-vs-kw-whats-the-difference">الفرق بين kVA وkW</a> هذا التصحيح.</p>
+    <h2>ما يُكتب في طلب العرض</h2>
+    <table>
+      <thead>
+        <tr><th>البند</th><th>لماذا يحتاجه المورّد</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>جهد النظام وعدد الأطوار</td><td>يحدد ما إذا كان المعامل 1.732 ينطبق</td></tr>
+        <tr><td>القدرة الظاهرية بالـ kVA أو الطلب الأقصى بالأمبير</td><td>يحدد سعة العداد أو ابتدائي محول التيار</td></tr>
+        <tr><td>عداد موصول مباشرةً أم عبر محول تيار</td><td>منتجان مختلفان، وليس منتجاً واحداً بخيار</td></tr>
+        <tr><td>نسبة المحول وصنفه إن وُجد</td><td>الصنف 0.5 أو 1.0 يتبع الاستخدام: فوترة أم مراقبة</td></tr>
+        <tr><td>متطلبات الاتصال والعرض</td><td>RS485 أو WiFi أو خرج نبضي تغيّر رقم الطراز</td></tr>
+      </tbody>
+    </table>
+    <p>هذه البنود الخمسة تكفي لرفع أي غموض. أما عبارة «عداد 2000 أمبير» وحدها فتترك للمورّد تخمين ما إذا كان المطلوب جهازاً مباشراً بسعة 2000 أمبير، أم محول 2000/5، أم عدّاد 5 أمبير يُستخدم مع أحدهما.</p>
+
+    <h2>الأسئلة الشائعة</h2>
+      <h3>كم أمبيراً تساوي 100 kVA؟</h3>
+      <p>يتوقف ذلك على الجهد وعدد الأطوار. عند 400 فولت ثلاثي الطور تساوي 100 kVA مقدار 144.3 أمبير. وعند 415 فولت ثلاثي الطور 139.1 أمبير. وعند 230 فولت أحادي الطور 434.8 أمبير.</p>
+      <h3>هل أستخدم 400 فولت أم 415 فولت في الصيغة؟</h3>
+      <p>استخدم الجهد الاسمي الذي تعلنه شبكتك فعلاً. الفرق بينهما 3.75% في الجهد والتيار معاً، وهو نادراً ما يغيّر اختيار منتج، لكنه يغيّر التيار الظاهر في التقرير.</p>
+      <h3>لماذا لا يطابق التيار المحسوب قراءة العداد؟</h3>
+      <p>ثلاثة أسباب معتادة: الحمل غير موزَّع بالتساوي على الأطوار فيحمل أحد الخطوط أكثر من المتوسط؛ أو أن العداد يعمل عبر محول تيار والقراءة هي التيار الثانوي؛ أو أن الحساب استخدم الكيلوواط بينما كانت اللوحة تعطي kVA.</p>
+      <h3>هل يمكن استخدام الصيغة أحادية الطور على شبكة ثلاثية الطور؟</h3>
+      <p>لا. فهي تُسقط الجذر التربيعي لثلاثة، وبذلك تبالغ في تقدير التيار بنسبة 73%، مما يؤدي إلى عدّاد ومحول تيار وكابل مفرطة في الحجم.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>هل تُحجّم عدّاداً أو محول تيار؟</h2>
+    <p>أرسل لنا جهد النظام وعدد الأطوار وإما القدرة بالـ kVA أو الطلب الأقصى بالأمبير. سنؤكد ما إذا كانت الدائرة تحتاج عدّاداً موصولاً مباشرةً أم عدّاداً عبر محول تيار، ونقدّم عرضاً للعداد والمحول المطابقين من نطاق الإنتاج.</p>
+    <a class="btn btn-primary" href="/contact">اطلب عرض سعر</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">تحدث على واتساب</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
