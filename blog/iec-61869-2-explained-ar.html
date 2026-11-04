@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/iec-61869-2-explained/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>شرح IEC 61869-2: فئات محوّلات التيار للقياس والعبء وفئات الحماية | Yomin Electric</title>
+<meta name="description" content="كيف تحدد IEC 61869-2 فئات الدقة 0.2S حتى 1.0 لمحوّلات التيار المستخدمة في القياس، وماذا تغيّر لاحقة S، ولماذا يُبطل العبء الفئة، والبيانات التي تُكتب في أمر الشراء.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="شرح IEC 61869-2: فئات محوّلات التيار للقياس والعبء وفئات الحماية | Yomin Electric">
+<meta property="og:description" content="كيف تحدد IEC 61869-2 فئات الدقة 0.2S حتى 1.0 لمحوّلات التيار المستخدمة في القياس، وماذا تغيّر لاحقة S، ولماذا يُبطل العبء الفئة، والبيانات التي تُكتب في أمر الشراء.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/iec-61869-2-explained/card.png">
+<meta property="og:url" content="https://www.yominelectric.com/blog/iec-61869-2-explained-ar">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.yominelectric.com/blog/iec-61869-2-explained-ar">
+ <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/iec-61869-2-explained">
+ <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/iec-61869-2-explained-fr">
+ <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/iec-61869-2-explained-es">
+ <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/iec-61869-2-explained-ar">
+ <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/iec-61869-2-explained">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "شرح IEC 61869-2: فئات دقة محوّلات التيار وحدود العبء",
+      "description": "كيف تحدد IEC 61869-2 فئات الدقة 0.2S حتى 1.0 لمحوّلات التيار المستخدمة في القياس، وماذا تغيّر لاحقة S، ولماذا يُبطل العبء الفئة، والبيانات التي تُكتب في أمر الشراء.",
+      "image": "https://www.yominelectric.com/assets/images/blog/iec-61869-2-explained/hero.png",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/iec-61869-2-explained-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "ar",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما الفرق بين الفئة 0.5 والفئة 0.5S في محوّل التيار؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "كلتاهما فئة قياس بنطاق دقة 0.5 %، لكن نسخة S تحفظ حدودها حتى 1 % من التيار الابتدائي المقنن، بينما يبدأ ضمان الفئة 0.5 العادية عند 5 %. وفي حمل يتقلب كثيراً، تكون الفئة S هي التي لا تزال تصف القياس ليلاً."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ماذا يعني العبء في ورقة بيانات محوّل التيار؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "العبء هو الممانعة الكلية التي يستطيع الثانوي تغذيتها، بالفولت أمبير عند التيار الثانوي المقنن. ويتكون من عبء العدّاد مضافاً إليه مقاومة الأسلاك الثانوية. ولا يحفظ المحوّل فئته إلا عند عبء يساوي المعلن أو يقل عنه، لذا فقد يُبطل امتداد ثانوي طويل الفئة دون أي إشارة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يمكن استخدام محوّل من فئة حماية للقياس؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا. فنواة 5P أو 10P مصممة لإعادة إنتاج تيار العطل دون تشبع، ودقتها عند التيارات المنخفضة حيث تُستهلك الطاقة فعلاً غير محددة وفق فئة قياس. والقياس والحماية يحتاجان نواتين منفصلتين حتى لو اشتركتا في هيكل واحد."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل تستبدل IEC 61869-2 المعيار IEC 60044-1؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم. فقد استُبدل IEC 60044-1 بعائلة IEC 61869 التي يغطي جزؤها الثاني محوّلات التيار. وقد نُقلت تسميات الفئات، فوحدة الفئة 0.5 تعني النطاق نفسه بأي من المرجعين؛ وما يختلف هو تفصيل اختبارات النوع التي تسند الادعاء."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="ar">
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">الرئيسية</a> &middot; <a href="/blog">Blog</a> &middot; <span>محوّلات التيار</span></div>
+    <span class="bh-tag">المعايير والمطابقة</span>
+    <h1 class="bh-title">شرح IEC 61869-2: فئات دقة محوّلات التيار وحدود العبء</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>4 نوفمبر 2026</span>
+      <span class="divider"></span>
+      <span>11 دقائق قراءة</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/iec-61869-2-explained/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/iec-61869-2-explained/hero.png" alt="محوّل تيار YOMIN بنواة منفتحة ومحوّل قياس 250/5 أمبير من الفئة 0.5 على خلفية ورقية دافئة" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+
+    <p class="lead">IEC 61869-2 هي الجزء من عائلة IEC 61869 الذي يحدد محوّلات التيار. وهي تحدد فئات الدقة التي يمكن أن يُصنع بها محوّل القياس &mdash; 0.2S و0.5S و0.5 و1.0 &mdash; إضافة إلى فئات الحماية 5P و10P وPR وPX، والظروف التي تُضمن فيها تلك الفئات فعلاً. وأهم ما ينبغي فهمه عن المعيار أن الفئة ليست خاصية للمحوّل وحده. بل وعدٌ لا يصح إلا داخل عبء معلن ومدى تيار معلن وتردد معلن؛ فمحوّل يُطلب «الفئة 0.5» دون ذكر العبء في الطلب قد يكون مطابقاً تماماً ومع ذلك يقيس بشكل سيئ.</p>
+
+    <h2>ما يغطيه المعيار وما لا يغطيه</h2>
+    <p>تُنظَّم عائلة IEC 61869 حسب نوع المحوّل لا حسب التطبيق. فالجزء 1 يحمل المتطلبات العامة التي تنطبق على كل محوّل قياس، والجزء 2 يحمل المتطلبات الخاصة بمحوّلات التيار. والخصائص الحرارية التي تحدد بقاء المحوّل بعد عطل مثبتة مثلاً في الجزء العام، ولهذا قد تكون ورقة بيانات مطابقة في الدقة وناقصة التحديد في تيار القصر.</p>
+    <p>الوثائق القديمة &mdash; وكثير من أوراق البيانات المتداولة &mdash; تشير إلى IEC 60044-1 للمحوّلات نفسها. وقد استُبدل ذلك المعيار، لكن تسميات الفئات التي استخدمها هي نفسها في 61869-2، فمحوّل من الفئة 0.5 الموصوف بأي من الرقمين يعني النطاق نفسه. وما يختلف هو تفصيل اختبارات النوع التي تسند الادعاء.</p>
+    <p>وما لا يفعله المعيار هو اختيار المحوّل عنك. سيخبرك إن كانت البنية مطابقة في الفئة 0.5 تحت 15&nbsp;VA، لكنه لن يخبرك أن وحدة 5&nbsp;VA كانت الشراء الخاطئ للوحة تمتد أسلاكها الثانوية 4&nbsp;mm&sup2; اثني عشر متراً إلى العدّاد.</p>
+
+    <h2>فئات القياس</h2>
+    <p>أربع فئات تغطي خدمة القياس، والاختيار بينها قرار تجاري بقدر ما هو فني، لأنه يحدد من يستوعب خطأ القياس.</p>
+
+<table>
+      <thead>
+        <tr><th>الفئة</th><th>ما الغرض منها</th><th>أين تُحدد عادة</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>0.2S</td><td>أدق فئة قياس، مع امتداد S نحو التيارات المنخفضة</td><td>نقاط تسوية شركة التوزيع، والتحويل بين الشركات، والفوترة الصناعية الكبيرة</td></tr><tr><td>0.5S</td><td>قياس الفوترة مع امتداد S</td><td>إعادة الفوترة بين مراكز الربح، وفوترة شركة التوزيع، وقياس مغذيات المحطات</td></tr><tr><td>0.5</td><td>دقة القياس التجاري القياسية</td><td>عدّادات اللوحات، وقياس إدارة المباني، وتوزيع التكاليف داخلياً</td></tr><tr><td>1.0</td><td>دقة العرض والمراقبة</td><td>أميترات اللوحات، ومراقبة المحركات والمحركات المتغيرة السرعة، وحدود الإنذار</td></tr>
+      </tbody>
+    </table>
+
+    <p>لا توجد قاعدة تُلزم عدّاد مستأجر بفئة 0.5S ولا تُلزم أميتر لوحة بفئة 1.0. وُجدت الفئات ليستطيع المشتري التعبير عن الأثر التجاري للخطأ ويترك للمورّد تسعير البنية التي تحققه. وما يجدر معرفته هو اتجاه الكلفة: الانتقال من 1.0 إلى 0.5 صغير، والانتقال من 0.5 إلى 0.5S هو حيث يبدأ السعر بالتحرك، لأن نسخة S تُختبر على مدى تيار أوسع بكثير.</p>
+
+    <h2>ماذا تشتري لاحقة S فعلاً</h2>
+    <p>حرف S في 0.5S و0.2S يعني أن حدود الدقة تنطبق حتى 1&nbsp;% من التيار الابتدائي المقنن، بدلاً من حد 5&nbsp;% الذي تستخدمه الفئتان 0.5 و1.0 العاديتان. يبدو ذلك تمييزاً مخبرياً حتى تنظر إلى منحنى حمل حقيقي.</p>
+    <p>محوّل 400/5&nbsp;A على مغذٍّ مقنن 400&nbsp;A يقضي الليل بين 20 و40&nbsp;A. أي من 5&nbsp;% إلى 10&nbsp;% من التيار المقنن &mdash; عند حد ضمان الفئة 0.5 العادية أو دونه، وداخل المدى الذي تُختبر عليه وحدة 0.5S بارتياح. العدّاد لا يكذب؛ بل يُطلب منه تحقيق دقة لم يدفع المشتري ثمنها. وفي دائرة تتقلب كثيراً بين الليل والنهار، تمثل لاحقة S الفرق بين فئة تصف التركيب وأخرى تصف مقعد الاختبار.</p>
+    <p>أما <strong>ym-0074</strong> فهو محوّل قياس 250/5&nbsp;A من الفئة 0.5 بملف ثانوي من 50 لفة، وهي البنية المناسبة لمغذٍّ تجاري يبقى حمله في الجزء الأعلى من المدى. وحيث يوجد في المغذى نفسه هبوط ليلي عميق، تكون الفئة S هي المواصفة الصادقة، وينبغي الاعتراف بأن نسخة 0.5 العادية حل وسط.</p>
+
+    <h2>العبء: الحد الذي يُبطل الفئة</h2>
+    <p>العبء هو الممانعة الكلية التي يجب أن يغذيها الثانوي، ويُعبَّر عنه بالفولت أمبير عند التيار الثانوي المقنن. ويتكون من عبء العدّاد نفسه مضافاً إليه مقاومة الأسلاك الثانوية، والأسلاك هي الأكبر من الاثنين بفارق كبير عادة.</p>
+    <p>يُختبر المحوّل تحت عبء معلن. وإن كان العبء المركّب أعلى، يُدار النواة بجهد أكبر، فيتزحزح خطأ النسبة وزاوية الطور، ولا تصح الفئة بعد ذلك &mdash; مع أن لا شيء على اللوحة كاذب. وهذه أكثر طريقة شائعة لإدخال محوّل مطابق في قياس غير مطابق، ويمكن تجنبها تماماً عند الطلب: اذكر العبء، واذكر طول السلك إن كان غير معتاد.</p>
+    <p>أما حساب مقاومة الأسلاك، والنقطة التي يصبح عندها الثانوي 5&nbsp;A خياراً خاطئاً مقابل 1&nbsp;A، فهما مشروحان في دليل <a href="/blog/substation-engineering-current-transformer-sizing-calculation">حساب تحجيم محوّلات التيار</a>. وتفصيل تعريفات الفئات نفسه، بما في ذلك تفاعل العبء مع الفئة من جهة العدّاد، في <a href="/blog/ct-accuracy-class-guide">دليل فئات دقة محوّلات التيار</a>.</p>
+
+    <h2>فئات الحماية من نوع آخر</h2>
+    <p>لا يُطلب من محوّل الحماية أن يكون دقيقاً عند التيار المقنن، بل أن يعيد إنتاج تيار العطل بأمانة تكفي لتشغيل المرحّل، وأن يفعل ذلك دون تشبع. ولهذا تُكتب فئات الحماية بصيغة مختلفة.</p>
+
+<table>
+      <thead>
+        <tr><th>التسمية</th><th>معنى الرقم</th><th>الخدمة النموذجية</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>5P10</td><td>خطأ مركّب 5&nbsp;% عند 10 أضعاف التيار الابتدائي المقنن</td><td>التيار الزائد في المغذيات، والحماية العامة</td></tr><tr><td>5P20</td><td>خطأ مركّب 5&nbsp;% عند 20 ضعف التيار الابتدائي المقنن</td><td>مدخل المحوّل، وحماية المحركات ذات تيار البدء العالي</td></tr><tr><td>10P10</td><td>خطأ مركّب 10&nbsp;% عند 10 أضعاف التيار الابتدائي المقنن</td><td>حماية أقل صرامة حيث يُحتمل خطأ أوسع</td></tr><tr><td>PR</td><td>معامل تخلف معلن، للدوائر التي يهم فيها الفيض المتخلف</td><td>حماية يجب أن تعمل بشكل صحيح بعد عطل سابق</td></tr><tr><td>PX</td><td>تُعرَّف بجهد نقطة الانحناء وتيار التمغنط لا بفئة</td><td>الحماية التفاضلية، حيث يعتمد ضبط المرحّل على منحنى التمغنط الفعلي</td></tr>
+      </tbody>
+    </table>
+
+    <p>التمييز مهم عند الطلب، لأن فئة القياس وفئة الحماية لا تُستبدل إحداهما بالأخرى. فمحوّل من الفئة 0.5 يُستخدم في دائرة حماية سيتشبع عند تيار العطل الذي لم يُصمم لرؤيته؛ ومحوّل 5P20 يُستخدم للفوترة سيكون غير دقيق عند التيارات المنخفضة حيث تُستهلك معظم الطاقة فعلاً. وحين تحتاج اللوحة الوظيفتين، فالجواب المعتاد نواتان في هيكل واحد، كل منهما مصنوعة ومختبرة وفق فئتها.</p>
+
+    <h2>الخصائص الحرارية التي تحدد البقاء</h2>
+    <p>الدقة هي الجزء الذي يُقرأ من ورقة البيانات. أما الخصائص الحرارية فهي التي تحدد إن كان المحوّل لا يزال في الخدمة بعد عطل.</p>
+    <p>قيمتان مهمتان. التيار الحراري المستمر يحدد التيار الابتدائي الذي يمكن للوحدة حمله إلى ما لا نهاية، وهو عادة على الأقل التيار الابتدائي المقنن &mdash; وأحياناً أعلى، وهذا يهم في مغذٍّ يعمل بحمل زائد. والتيار الحراري قصير المدة، ويُكتب I<sub>th</sub>، يحدد ما تتحمله لمدة معلنة؛ وتثبته المتطلبات العامة للعائلة عند مضاعف من التيار الابتدائي المقنن لمدة ثانية أو ثلاث، لذا فوحدة معلنة عند ثمانين إلى مئة ضعف مقننها الابتدائي لمدة ثانية تصف قدرة تحمل عطل لا قدرة دقة.</p>
+    <p>ومن يقارن عرضين بالسعر وحده سيجد غالباً أن الوحدة الأرخص تحمل فئة الدقة نفسها وتياراً حرارياً قصير المدة أقل. وفي مغذٍّ ذي تيار عطل متوقع عالٍ، يكون هذا الفرق هو المواصفة كلها.</p>
+
+    <h2>بنيتان من السلسلة نفسها</h2>
+    <p>تغطي سلسلة MSQ من 30&nbsp;A إلى 6000&nbsp;A في هيكل جهد منخفض مربع المقطع، بتركيب مزدوج على سكة DIN ومشبك قضيب، وغطاء أطراف قابل للختم &mdash; وهذا الغطاء هو ما يجعل التركيب مانعاً للتلاعب في أعمال الفوترة.</p>
+    <p>و<strong>ym-0073</strong> هو نسخة 2000/5&nbsp;A من الفئة 0.5 بنواة منفتحة، بمعايرة 720&nbsp;V. والنواة المنفتحة هي سبب اختياره: تُطوَّق حول كابل موصول سلفاً، فيمكن إضافة نقطة قياس إلى مغذٍّ في الخدمة دون فك الطرفية. وهذه قدرة تجديد لا قدرة دقة، وهي غالباً ما يحسم الشراء في تركيب قائم.</p>
+    <p>و<strong>ym-0064</strong> هو وحدة 1600/5&nbsp;A من الفئة 1.0، بجهد 720&nbsp;V، مختبرة عند 3&nbsp;kV متردد لمدة دقيقة بين الملفات والأرضي. وهذه القيمة العازلة هي ما يجب التحقق منه حين يكون الابتدائي على شبكة 690&nbsp;V، والفئة 1.0 تدل على جهاز مراقبة لا جهاز فوترة.</p>
+
+    <h2>ما يُكتب في أمر الشراء</h2>
+    <p>سبعة أسطر تزيل معظم الغموض الذي قد يحمله طلب محوّل تيار.</p>
+
+<table>
+      <thead>
+        <tr><th>السطر في الطلب</th><th>ما الذي يمنعه</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>التيار الابتدائي والثانوي، مثل 400/5&nbsp;A</td><td>«محوّل 400&nbsp;A» يترك الثانوي للتفسير</td></tr><tr><td>فئة الدقة، مع S أو بدونها</td><td>وحدة الفئة 0.5 ليست 0.5S، والفرق يظهر ليلاً</td></tr><tr><td>العبء بالفولت أمبير</td><td>بدونه تصبح الفئة ادعاءً بلا شرط اختبار</td></tr><tr><td>التيار الحراري قصير المدة I<sub>th</sub> ومدته</td><td>الخاصية التي تحدد البقاء بعد عطل</td></tr><tr><td>مستوى العزل</td><td>يحدد إن كانت الوحدة تصلح لشبكة 690&nbsp;V أصلاً</td></tr><tr><td>التركيب: سكة DIN أو مشبك قضيب أو كليهما</td><td>يحدد إن كانت تدخل اللوحة التي بنيتها بالفعل</td></tr><tr><td>غطاء أطراف قابل للختم</td><td>مطلوب حيث يكون القياس أساساً للدفع</td></tr>
+      </tbody>
+    </table>
+
+    <p>أرسل تلك الأسطر السبعة فيصبح عرض السعر قابلاً للمقارنة سطراً بسطر. وأرسل «محوّل الفئة 0.5، 400&nbsp;A» فيسعّر مورّدان منتجين مختلفين يحقق كلاهما الجملة، ولا يحقق أحدهما بالضرورة التركيب.</p>
+
+    <h2>الفحص الواحد قبل الاعتماد</h2>
+    <p>خذ قيمة العبء من العرض وأضف إليها مقاومة أسلاك المسار الذي ستركبه فعلاً. فإن تجاوز المجموع العبء المعلن، فالفئة في العرض لا تصف تركيبك، ولن يصلح ذلك أي تدقيق في الشهادات. إما أن تقصّر المسار، أو تزيد مقطع الموصل، أو تشتري تصنيف العبء الأعلى. إنه حساب خمس دقائق على المكتب، واكتشاف باهظ جداً بعده.</p>
+
+    <h2>الأسئلة الشائعة</h2>
+      <h3>ما الفرق بين الفئة 0.5 والفئة 0.5S في محوّل التيار؟</h3>
+      <p>كلتاهما فئة قياس بنطاق دقة 0.5 %، لكن نسخة S تحفظ حدودها حتى 1 % من التيار الابتدائي المقنن، بينما يبدأ ضمان الفئة 0.5 العادية عند 5 %. وفي حمل يتقلب كثيراً، تكون الفئة S هي التي لا تزال تصف القياس ليلاً.</p>
+      <h3>ماذا يعني العبء في ورقة بيانات محوّل التيار؟</h3>
+      <p>العبء هو الممانعة الكلية التي يستطيع الثانوي تغذيتها، بالفولت أمبير عند التيار الثانوي المقنن. ويتكون من عبء العدّاد مضافاً إليه مقاومة الأسلاك الثانوية. ولا يحفظ المحوّل فئته إلا عند عبء يساوي المعلن أو يقل عنه، لذا فقد يُبطل امتداد ثانوي طويل الفئة دون أي إشارة.</p>
+      <h3>هل يمكن استخدام محوّل من فئة حماية للقياس؟</h3>
+      <p>لا. فنواة 5P أو 10P مصممة لإعادة إنتاج تيار العطل دون تشبع، ودقتها عند التيارات المنخفضة حيث تُستهلك الطاقة فعلاً غير محددة وفق فئة قياس. والقياس والحماية يحتاجان نواتين منفصلتين حتى لو اشتركتا في هيكل واحد.</p>
+      <h3>هل تستبدل IEC 61869-2 المعيار IEC 60044-1؟</h3>
+      <p>نعم. فقد استُبدل IEC 60044-1 بعائلة IEC 61869 التي يغطي جزؤها الثاني محوّلات التيار. وقد نُقلت تسميات الفئات، فوحدة الفئة 0.5 تعني النطاق نفسه بأي من المرجعين؛ وما يختلف هو تفصيل اختبارات النوع التي تسند الادعاء.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>هل تحدد محوّل تيار للقياس؟</h2>
+    <p>أرسل التيار الابتدائي ومقنن الثانوي وفئة الدقة والعبء بالفولت أمبير واللوحة التي سيُركّب فيها. سنؤكد الفئة التي تصح فعلاً عند حملك، ونقدم عرض سعر للمحوّل المناسب من مجموعة MSQ.</p>
+    <a class="btn btn-primary" href="/contact">اطلب عرض سعر</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">تحدث على واتساب</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/iec-61869-2-explained/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IEC 61869-2 expliquée : classes des TC de mesure, fardeau et classes de protection | Yomin Electric</title>
+<meta name="description" content="Comment l'IEC 61869-2 définit les classes de précision 0,2S à 1,0 des transformateurs de courant de mesure, ce que change le suffixe S, pourquoi le fardeau annule la classe, et les caractéristiques à inscrire au bon de commande.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IEC 61869-2 expliquée : classes des TC de mesure, fardeau et classes de protection | Yomin Electric">
+<meta property="og:description" content="Comment l'IEC 61869-2 définit les classes de précision 0,2S à 1,0 des transformateurs de courant de mesure, ce que change le suffixe S, pourquoi le fardeau annule la classe, et les caractéristiques à inscrire au bon de commande.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/iec-61869-2-explained/card.png">
+<meta property="og:url" content="https://www.yominelectric.com/blog/iec-61869-2-explained-fr">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.yominelectric.com/blog/iec-61869-2-explained-fr">
+ <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/iec-61869-2-explained">
+ <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/iec-61869-2-explained-fr">
+ <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/iec-61869-2-explained-es">
+ <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/iec-61869-2-explained-ar">
+ <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/iec-61869-2-explained">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "IEC 61869-2 expliquée : classes de précision et limites de fardeau des TC de mesure",
+      "description": "Comment l'IEC 61869-2 définit les classes de précision 0,2S à 1,0 des transformateurs de courant de mesure, ce que change le suffixe S, pourquoi le fardeau annule la classe, et les caractéristiques à inscrire au bon de commande.",
+      "image": "https://www.yominelectric.com/assets/images/blog/iec-61869-2-explained/hero.png",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/iec-61869-2-explained-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "fr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelle différence entre classe 0,5 et classe 0,5S sur un transformateur de courant ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les deux sont des classes de mesure à bande de 0,5 %, mais la version S tient ses limites jusqu'à 1 % du courant primaire nominal, alors que la garantie d'une classe 0,5 simple commence à 5 %. Sur une charge très variable, c'est la classe S qui décrit encore la mesure la nuit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que signifie le fardeau sur une fiche technique de TC ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le fardeau est l'impédance totale que le secondaire peut alimenter, exprimée en VA au courant secondaire nominal. Il comprend le fardeau du compteur plus la résistance des conducteurs secondaires. Un TC ne tient sa classe qu'à un fardeau inférieur ou égal au fardeau déclaré : une longue liaison secondaire peut donc annuler la classe sans que rien ne le signale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je utiliser un TC de classe protection pour le comptage ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Un noyau 5P ou 10P est conçu pour restituer le courant de défaut sans saturer, et sa précision aux faibles courants où l'énergie est réellement consommée n'est pas spécifiée selon une classe de mesure. Comptage et protection exigent des noyaux séparés, même lorsqu'ils partagent un boîtier."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "L'IEC 61869-2 remplace-t-elle l'IEC 60044-1 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. L'IEC 60044-1 a été remplacée par la famille IEC 61869, dont la partie 2 couvre les transformateurs de courant. Les désignations de classes ont été reprises, donc un appareil de classe 0,5 désigne la même bande sous l'une ou l'autre référence ; ce qui diffère, c'est le détail des essais de type qui étayent l'affirmation."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Transformateurs de courant</span></div>
+    <span class="bh-tag">Normes et conformité</span>
+    <h1 class="bh-title">IEC 61869-2 expliquée : classes de précision et limites de fardeau des TC de mesure</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>4 novembre 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/iec-61869-2-explained/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/iec-61869-2-explained/hero.png" alt="Un transformateur de courant à noyau ouvrant YOMIN et un transformateur de mesure 250/5 A classe 0,5 sur fond papier chaud" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+
+    <p class="lead">L'IEC 61869-2 est la partie de la famille IEC 61869 qui spécifie les transformateurs de courant. Elle définit les classes de précision dans lesquelles un TC de mesure peut être construit &mdash; 0,2S, 0,5S, 0,5 et 1,0 &mdash; ainsi que les classes de protection 5P, 10P, PR et PX, avec les conditions dans lesquelles ces classes sont réellement garanties. Le point le plus utile à comprendre est qu'une classe n'est pas une propriété du transformateur seul. C'est une promesse qui ne tient qu'à l'intérieur d'un fardeau déclaré, d'une plage de courant déclarée et d'une fréquence déclarée : un TC commandé «&nbsp;classe 0,5&nbsp;» sans fardeau sur la commande peut être parfaitement conforme et mal mesurer.</p>
+
+    <h2>Ce que couvre la norme, et ce qu'elle ne couvre pas</h2>
+    <p>La famille IEC 61869 est organisée par type de transformateur et non par application. La partie 1 porte les exigences générales applicables à tout transformateur de mesure, la partie 2 les exigences propres aux transformateurs de courant. Les caractéristiques thermiques qui décident si un TC survit à un défaut sont, par exemple, ancrées dans la partie générale &mdash; c'est pourquoi une fiche technique peut être conforme en précision et sous-spécifiée en courant de court-circuit.</p>
+    <p>Les documents anciens &mdash; et beaucoup de fiches encore en circulation &mdash; citent l'IEC 60044-1 pour les mêmes transformateurs. Cette norme a été remplacée, mais les désignations de classes qu'elle utilisait sont celles de la 61869-2 : un TC de classe 0,5 décrit sous l'un ou l'autre numéro désigne la même bande de précision. Ce qui change, c'est le détail des essais de type qui étayent l'affirmation.</p>
+    <p>Ce que la norme ne fait pas, c'est choisir le transformateur à votre place. Elle dira si une construction est conforme en classe 0,5 sous 15&nbsp;VA. Elle ne dira pas qu'un modèle 5&nbsp;VA était le mauvais achat pour une armoire dont les conducteurs secondaires de 4&nbsp;mm&sup2; courent sur douze mètres jusqu'au compteur.</p>
+
+    <h2>Les classes de mesure</h2>
+    <p>Quatre classes couvrent le service de mesure, et le choix entre elles est une décision commerciale autant que technique, parce qu'elle détermine qui absorbe l'erreur de mesure.</p>
+
+<table>
+      <thead>
+        <tr><th>Classe</th><th>À quoi elle sert</th><th>Où on la spécifie habituellement</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>0,2S</td><td>La classe de mesure la plus serrée, avec extension S vers les faibles courants</td><td>Points de règlement distributeur, transfert entre sociétés, grosse facturation industrielle</td></tr><tr><td>0,5S</td><td>Comptage de facturation avec extension S</td><td>Refacturation entre centres de profit, facturation distributeur, comptage de départ en poste</td></tr><tr><td>0,5</td><td>Précision de comptage commerciale standard</td><td>Compteurs d'armoire, comptage de gestion technique du bâtiment, répartition interne</td></tr><tr><td>1,0</td><td>Précision d'indication et de surveillance</td><td>Ampèremètres d'armoire, surveillance de variateurs et moteurs, seuils d'alarme</td></tr>
+      </tbody>
+    </table>
+
+    <p>Aucune règle n'impose la classe 0,5S à un compteur de locataire, ni la classe 1,0 à un ampèremètre d'armoire. Les classes existent pour que l'acheteur puisse exprimer la conséquence commerciale d'une erreur et laisser le fournisseur chiffrer la construction qui y répond. Ce qu'il vaut la peine de savoir, c'est le sens du coût : le passage de 1,0 à 0,5 est modeste, et c'est le passage de 0,5 à 0,5S qui fait bouger le prix, parce que la version S est essayée sur une plage de courant bien plus large.</p>
+
+    <h2>Ce qu'achète réellement le suffixe S</h2>
+    <p>Le S de 0,5S et 0,2S signifie que les limites de précision s'appliquent jusqu'à 1&nbsp;% du courant primaire nominal, au lieu du plancher de 5&nbsp;% utilisé par les classes 0,5 et 1,0 simples. Cela ressemble à une nuance de laboratoire jusqu'à ce qu'on regarde un profil de charge réel.</p>
+    <p>Un TC 400/5&nbsp;A sur un départ calibré 400&nbsp;A passe la nuit entre 20 et 40&nbsp;A. Soit 5&nbsp;% à 10&nbsp;% du courant nominal &mdash; au niveau ou en dessous du plancher d'une garantie classe 0,5 simple, et confortablement dans la plage sur laquelle une version 0,5S est essayée. Le compteur ne ment pas : on lui demande de tenir une précision que l'acheteur n'a jamais payée. Sur un circuit à forte variation jour-nuit, le suffixe S fait la différence entre une classe qui décrit l'installation et une classe qui décrit le banc d'essai.</p>
+    <p>Notre <strong>ym-0074</strong> est un transformateur de mesure 250/5&nbsp;A classe 0,5 à enroulement secondaire de 50 spires, la construction adaptée à un départ commercial dont la charge reste dans la partie haute de la plage. Là où le même départ présente un creux nocturne profond, la classe S est la spécification honnête et la version 0,5 simple doit être reconnue comme un compromis.</p>
+
+    <h2>Le fardeau : la limite qui annule la classe</h2>
+    <p>Le fardeau est l'impédance totale que le secondaire doit alimenter, exprimée en voltampères au courant secondaire nominal. Il se compose du fardeau propre du compteur et de la résistance des conducteurs secondaires, et ces conducteurs sont presque toujours le plus gros des deux, de loin.</p>
+    <p>Un TC est essayé sous un fardeau déclaré. Si le fardeau installé est supérieur, le noyau est davantage sollicité, l'erreur de rapport et le déphasage se déplacent, et la classe ne tient plus &mdash; alors que rien sur la plaque n'est faux. C'est la façon la plus courante de faire entrer un transformateur conforme dans un mesurage non conforme, et elle est entièrement évitable au stade de la commande : indiquez le fardeau, et la longueur de conducteur si elle est inhabituelle.</p>
+    <p>Le calcul de la résistance des conducteurs, et le point où un secondaire 5&nbsp;A devient un mauvais choix face à un secondaire 1&nbsp;A, sont détaillés dans le guide du <a href="/blog/substation-engineering-current-transformer-sizing-calculation">calcul de dimensionnement des transformateurs de courant</a>. Les définitions de classes elles-mêmes, y compris l'interaction du fardeau avec la classe vue depuis le compteur, sont exposées dans le <a href="/blog/ct-accuracy-class-guide">guide des classes de précision des TC</a>.</p>
+
+    <h2>Les classes de protection sont d'une autre nature</h2>
+    <p>On ne demande pas à un TC de protection d'être précis au courant nominal. On lui demande de restituer un courant de défaut assez fidèlement pour qu'un relais fonctionne, et de le faire sans saturer. C'est pourquoi les classes de protection s'écrivent autrement.</p>
+
+<table>
+      <thead>
+        <tr><th>Désignation</th><th>Ce que signifie le nombre</th><th>Service typique</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>5P10</td><td>Erreur composite de 5&nbsp;% à 10 fois le courant primaire nominal</td><td>Surintensité de départ, protection générale</td></tr><tr><td>5P20</td><td>Erreur composite de 5&nbsp;% à 20 fois le courant primaire nominal</td><td>Arrivée transformateur, protection moteur à fort courant de démarrage</td></tr><tr><td>10P10</td><td>Erreur composite de 10&nbsp;% à 10 fois le courant primaire nominal</td><td>Protection moins exigeante où une erreur plus large est tolérée</td></tr><tr><td>PR</td><td>Facteur de rémanence déclaré, pour les circuits où le flux rémanent compte</td><td>Protection qui doit fonctionner correctement après un défaut antérieur</td></tr><tr><td>PX</td><td>Définie par la tension de coude et le courant magnétisant, non par une classe</td><td>Protection différentielle, où le réglage du relais dépend de la courbe d'aimantation réelle</td></tr>
+      </tbody>
+    </table>
+
+    <p>La distinction compte au moment de commander, car une classe de mesure et une classe de protection ne sont pas interchangeables. Un TC de classe 0,5 employé dans un circuit de protection saturera au courant de défaut qu'il n'a jamais été conçu pour voir ; un TC 5P20 employé pour la facturation sera imprécis aux faibles courants où l'essentiel de l'énergie est réellement consommée. Lorsqu'une armoire a besoin des deux fonctions, la réponse habituelle est deux noyaux dans un même boîtier, chacun construit et essayé selon sa propre classe.</p>
+
+    <h2>Les caractéristiques thermiques qui décident de la survie</h2>
+    <p>La précision est la partie de la fiche technique qu'on lit. Les caractéristiques thermiques sont celles qui décident si le transformateur est encore en service après un défaut.</p>
+    <p>Deux valeurs comptent. Le courant thermique permanent fixe le courant primaire que l'appareil peut supporter indéfiniment, et il est normalement au moins égal au courant primaire nominal &mdash; parfois supérieur, ce qui compte sur un départ exploité en surcharge. Le courant thermique de courte durée, noté I<sub>th</sub>, fixe ce qu'il supporte pendant une durée déclarée ; les exigences générales de la famille l'ancrent à un multiple du courant primaire nominal pendant une ou trois secondes, si bien qu'un appareil déclaré à quatre-vingts ou cent fois son calibre primaire pendant une seconde décrit une tenue au défaut, pas une performance de précision.</p>
+    <p>Un acheteur qui compare deux offres sur le seul prix constatera souvent que l'appareil le moins cher affiche la même classe de précision et une tenue de court-circuit plus faible. Sur un départ à fort courant de défaut présumé, cet écart est toute la spécification.</p>
+
+    <h2>Deux constructions de la même série</h2>
+    <p>La série MSQ couvre 30&nbsp;A à 6000&nbsp;A dans un boîtier basse tension à profil carré, avec double fixation rail DIN et barre omnibus et un capot de bornes plombable &mdash; ce capot étant ce qui rend l'installation inviolable pour le comptage de facturation.</p>
+    <p>Le <strong>ym-0073</strong> est la version 2000/5&nbsp;A classe 0,5 à noyau ouvrant, calibrée 720&nbsp;V. Le noyau ouvrant est la raison de le choisir : il s'enroule autour d'un câble déjà raccordé, ce qui permet d'ajouter un point de comptage sur un départ en service sans démonter la cosse. C'est une capacité de rénovation, pas une capacité de précision, et c'est généralement elle qui décide de l'achat sur une installation existante.</p>
+    <p>Le <strong>ym-0064</strong> est l'appareil 1600/5&nbsp;A classe 1,0, 720&nbsp;V, essayé à 3&nbsp;kV alternatifs pendant une minute entre enroulements et terre. Cette valeur d'isolement est celle à vérifier lorsque le primaire se trouve sur un réseau 690&nbsp;V, et la classe 1,0 indique un appareil de surveillance plutôt que de facturation.</p>
+
+    <h2>Ce qu'il faut inscrire au bon de commande</h2>
+    <p>Sept lignes suppriment presque toute ambiguïté dans une commande de TC.</p>
+
+<table>
+      <thead>
+        <tr><th>Ligne de la commande</th><th>Ce qu'elle évite</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Courants primaire et secondaire, par ex. 400/5&nbsp;A</td><td>«&nbsp;TC 400&nbsp;A&nbsp;» laisse le secondaire à l'interprétation</td></tr><tr><td>Classe de précision, avec ou sans S</td><td>Un appareil classe 0,5 n'est pas un 0,5S, et l'écart se voit la nuit</td></tr><tr><td>Fardeau en VA</td><td>Sans lui, la classe est une affirmation sans condition d'essai</td></tr><tr><td>Courant thermique de courte durée I<sub>th</sub> et durée</td><td>La caractéristique qui décide de la survie après un défaut</td></tr><tr><td>Niveau d'isolement</td><td>Décide si l'appareil peut être installé sur un réseau 690&nbsp;V</td></tr><tr><td>Fixation : rail DIN, pince de barre ou les deux</td><td>Décide s'il entre dans l'armoire déjà construite</td></tr><tr><td>Capot de bornes plombable</td><td>Exigé partout où la mesure sert de base à un paiement</td></tr>
+      </tbody>
+    </table>
+
+    <p>Envoyez ces sept lignes et l'offre se compare ligne par ligne. Envoyez «&nbsp;TC classe 0,5, 400&nbsp;A&nbsp;» et deux fournisseurs chiffreront deux produits différents qui satisfont tous deux la phrase et dont aucun ne satisfait nécessairement l'installation.</p>
+
+    <h2>La vérification à faire avant de valider</h2>
+    <p>Prenez le fardeau de l'offre et ajoutez la résistance des conducteurs de la longueur que vous installez réellement. Si le total dépasse le fardeau déclaré, la classe de l'offre ne décrit pas votre installation, et aucun contrôle de certificat ne corrigera cela. Raccourcissez la liaison, augmentez la section, ou achetez le fardeau supérieur. C'est un calcul de cinq minutes au bureau et une découverte très coûteuse ensuite.</p>
+
+    <h2>Questions fréquentes</h2>
+      <h3>Quelle différence entre classe 0,5 et classe 0,5S sur un transformateur de courant ?</h3>
+      <p>Les deux sont des classes de mesure à bande de 0,5 %, mais la version S tient ses limites jusqu'à 1 % du courant primaire nominal, alors que la garantie d'une classe 0,5 simple commence à 5 %. Sur une charge très variable, c'est la classe S qui décrit encore la mesure la nuit.</p>
+      <h3>Que signifie le fardeau sur une fiche technique de TC ?</h3>
+      <p>Le fardeau est l'impédance totale que le secondaire peut alimenter, exprimée en VA au courant secondaire nominal. Il comprend le fardeau du compteur plus la résistance des conducteurs secondaires. Un TC ne tient sa classe qu'à un fardeau inférieur ou égal au fardeau déclaré : une longue liaison secondaire peut donc annuler la classe sans que rien ne le signale.</p>
+      <h3>Puis-je utiliser un TC de classe protection pour le comptage ?</h3>
+      <p>Non. Un noyau 5P ou 10P est conçu pour restituer le courant de défaut sans saturer, et sa précision aux faibles courants où l'énergie est réellement consommée n'est pas spécifiée selon une classe de mesure. Comptage et protection exigent des noyaux séparés, même lorsqu'ils partagent un boîtier.</p>
+      <h3>L'IEC 61869-2 remplace-t-elle l'IEC 60044-1 ?</h3>
+      <p>Oui. L'IEC 60044-1 a été remplacée par la famille IEC 61869, dont la partie 2 couvre les transformateurs de courant. Les désignations de classes ont été reprises, donc un appareil de classe 0,5 désigne la même bande sous l'une ou l'autre référence ; ce qui diffère, c'est le détail des essais de type qui étayent l'affirmation.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous spécifiez un transformateur de courant de mesure ?</h2>
+    <p>Indiquez le courant primaire, le calibre secondaire, la classe de précision, le fardeau en VA et l'armoire de destination. Nous confirmerons la classe qui tient réellement à votre charge et nous chiffrerons le transformateur correspondant dans la gamme MSQ.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

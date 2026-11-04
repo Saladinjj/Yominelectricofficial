@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/iec-62053-21-explained/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IEC 62053-21 expliquée : les classes de précision des compteurs kWh raccordés directement | Yomin Electric</title>
+<meta name="description" content="Ce que la norme IEC 62053-21 exige réellement d'un compteur kWh raccordé directement : limites d'erreur des classes 1 et 2, conditions qui les annulent et vérifications à faire avant d'accepter un certificat.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IEC 62053-21 expliquée : les classes de précision des compteurs kWh raccordés directement | Yomin Electric">
+<meta property="og:description" content="Ce que la norme IEC 62053-21 exige réellement d'un compteur kWh raccordé directement : limites d'erreur des classes 1 et 2, conditions qui les annulent et vérifications à faire avant d'accepter un certificat.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/iec-62053-21-explained/card.png">
+<meta property="og:url" content="https://www.yominelectric.com/blog/iec-62053-21-explained-fr">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.yominelectric.com/blog/iec-62053-21-explained-fr">
+ <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/iec-62053-21-explained">
+ <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/iec-62053-21-explained-fr">
+ <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/iec-62053-21-explained-es">
+ <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/iec-62053-21-explained-ar">
+ <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/iec-62053-21-explained">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "IEC 62053-21 expliquée : les classes de précision des compteurs kWh raccordés directement",
+      "description": "Ce que la norme IEC 62053-21 exige réellement d'un compteur kWh raccordé directement : limites d'erreur des classes 1 et 2, conditions qui les annulent et vérifications à faire avant d'accepter un certificat.",
+      "image": "https://www.yominelectric.com/assets/images/blog/iec-62053-21-explained/hero.png",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/iec-62053-21-explained-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "fr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelle est la différence entre l'IEC 62053-21 et l'IEC 62053-22 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La partie 21 couvre les compteurs statiques raccordés directement en classes 1 et 2. La partie 22 couvre les classes plus serrées, 0,5S et 0,2S, utilisées pour le comptage sur transformateur. Le numéro de partie indique donc la bande de classes, et la classe indique l'erreur maximale autorisée."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un compteur de classe 1 garantit-il une précision de 1 % en service ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. La classe 1 est l'erreur maximale autorisée aux conditions de référence définies par la norme, sur la plage de courant déclarée. Hors de cette plage, à faible facteur de puissance, aux températures extrêmes ou sur une forme d'onde déformée, l'erreur autorisée est plus large et l'erreur réelle peut atteindre plusieurs pour cent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je utiliser un compteur de classe 1 raccordé directement pour refacturer un locataire ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C'est possible, et beaucoup de bailleurs le font. La question est de savoir qui absorbe l'erreur. Sur un gros compte, 1 % représente une somme réelle : lorsque le relevé devient une facture entre deux parties, un compteur sur TC de classe 0,5S est la spécification qui résistera à la contestation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle plage de courant faut-il spécifier ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La plage déclarée doit encadrer la charge réelle, pas seulement le maximum. Un compteur calibré 5(80) A est tenu à sa classe entre le minimum et le maximum : un circuit qui tourne l'essentiel du temps à quelques ampères est mesuré au bord de l'enveloppe, là où la marge d'erreur est la plus large."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Comptage d'énergie</span></div>
+    <span class="bh-tag">Normes et conformité</span>
+    <h1 class="bh-title">IEC 62053-21 expliquée : les classes de précision des compteurs kWh raccordés directement</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>4 novembre 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/iec-62053-21-explained/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/iec-62053-21-explained/hero.png" alt="Un compteur d'énergie triphasé YOMIN sur rail DIN et un compteur multifonction à maximum de puissance sur fond papier chaud" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+
+    <p class="lead">L'IEC 62053-21 est la partie de la série IEC 62053 qui fixe les exigences de précision des compteurs statiques (électroniques) d'énergie active raccordés directement, dans les classes 1 et 2. Le numéro de classe correspond à l'erreur de mesure maximale autorisée, exprimée en pourcentage aux conditions de référence définies par la norme &mdash; classe 1 signifie 1&nbsp;%, classe 2 signifie 2&nbsp;%. Un compteur qui porte ce marquage a été soumis à des essais de type sur ces limites, pour une plage de courant, un facteur de puissance et une température donnés. Cela ne dit rien du comportement du compteur lorsque l'installation le pousse hors de ces conditions, et c'est précisément dans cet écart que naissent la plupart des litiges de comptage.</p>
+
+    <h2>Ce que couvre l'IEC 62053-21, et ce qu'elle laisse aux autres parties</h2>
+    <p>La famille IEC 62053 se divise selon la classe de précision de construction du compteur, et non selon la famille de produit. La partie 21 traite des classes standard utilisées sur les compteurs raccordés directement &mdash; classe 1 et classe 2. Les classes plus serrées, 0,5S et 0,2S, celles que les installations de facturation exigent pour le comptage sur transformateur de courant, relèvent d'une autre partie de la même série (IEC 62053-22). C'est pourquoi un devis sérieux cite les deux ensemble, et pourquoi notre propre gamme de comptage industriel est référencée «&nbsp;IEC 62053-21/22&nbsp;» plutôt que sur un seul numéro.</p>
+    <p>Deux conséquences pour l'acheteur. D'abord, un compteur ne peut pas être «&nbsp;classe 1 et 0,5S&nbsp;» en même temps : la classe de précision est une propriété de la construction. Ensuite, si un appel d'offres ne mentionne que «&nbsp;IEC 62053&nbsp;» sans préciser la partie, le fournisseur est libre de proposer la classe la moins chère qui satisfait la phrase &mdash; et cette classe est très souvent la classe 2.</p>
+    <p>Les cahiers des charges anciens font encore référence à l'IEC 61036 pour les mêmes compteurs statiques de classe 1 et 2, et il est courant de voir les deux numéros sur une fiche technique chinoise. Pour un projet neuf, c'est la 62053-21 qui sera acceptée.</p>
+
+    <h2>Le numéro de classe est un plafond, pas une moyenne</h2>
+    <p>Un compteur de classe 1 n'est pas un compteur typiquement faux de 1&nbsp;%. C'est un compteur dont l'erreur doit rester dans &plusmn;1&nbsp;% à chaque point d'essai défini par la norme, sur toute la plage de courant déclarée. La nuance compte : deux compteurs peuvent être tous deux de classe 1 et se comporter très différemment sur un circuit faiblement chargé &mdash; l'un reste à 0,2&nbsp;%, l'autre à 0,95&nbsp;%, et les deux sont conformes.</p>
+
+<table>
+      <thead>
+        <tr><th>Classe</th><th>Erreur maximale autorisée</th><th>Où elle est spécifiée</th><th>Usage typique</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Classe 2</td><td>&plusmn;2&nbsp;%</td><td>IEC 62053-21</td><td>Facturation domestique, sous-comptage de bailleur lorsque le bailleur assume la perte</td></tr><tr><td>Classe 1</td><td>&plusmn;1&nbsp;%</td><td>IEC 62053-21</td><td>Comptage industriel et tertiaire raccordé directement, répartition interne des coûts</td></tr><tr><td>Classe 0,5S</td><td>&plusmn;0,5&nbsp;%</td><td>IEC 62053-22</td><td>Comptage sur transformateur, refacturation entre centres de profit, facturation distributeur</td></tr><tr><td>Classe 0,2S</td><td>&plusmn;0,2&nbsp;%</td><td>IEC 62053-22</td><td>Points de règlement au-delà de quelques centaines de kVA, transfert entre sociétés</td></tr>
+      </tbody>
+    </table>
+
+    <p>La colonne de droite relève du jugement d'ingénierie, pas d'un article de la norme. Rien dans l'IEC 62053-21 n'interdit un compteur de classe 2 sur un départ industriel, et rien n'oblige un distributeur à accepter la classe 0,5S. Ce qui tranche réellement, c'est celui qui porte le risque commercial de l'erreur de mesure.</p>
+
+    <h2>Pourquoi le même compteur passe au banc et dérive sur site</h2>
+    <p>La classe déclarée tient aux conditions de référence. Un compteur qui sort d'usine à 0,3&nbsp;% d'erreur peut afficher plusieurs pour cent d'écart dès que l'installation cesse de ressembler au banc d'essai, et les causes sont prévisibles :</p>
+    <ul>
+      <li><strong>Plage de courant.</strong> La précision est spécifiée entre un courant minimal déclaré et le maximum. En dessous du minimum &mdash; un départ peu chargé la nuit, un locataire avec un seul appareil &mdash; la marge d'erreur s'élargit fortement. Un compteur 5(80)&nbsp;A n'est pas tenu à la classe 1 à 50&nbsp;mA.</li>
+      <li><strong>Facteur de puissance.</strong> Les limites d'erreur sont plus serrées à cos&nbsp;&phi; unitaire qu'à 0,5 inductif. Une usine fonctionnant à 0,7 se situe dans la zone de l'enveloppe où l'erreur autorisée est plus grande.</li>
+      <li><strong>Température.</strong> La norme définit une température de référence et une dérive admissible. Un compteur dans une armoire extérieure fermée, sous climat chaud, vit en permanence au bord de cette bande, pas au milieu.</li>
+      <li><strong>Forme d'onde.</strong> Un compteur essayé sur une alimentation sinusoïdale est chargé de mesurer la sortie d'un onduleur, d'un variateur de vitesse ou d'une alimentation à découpage. Le contenu harmonique déplace la mesure, et un certificat de classe 1 ne quantifie pas ce déplacement.</li>
+      <li><strong>Câblage et ordre des phases.</strong> Un compteur triphasé avec une phase inversée, ou avec la bobine de courant sur le mauvais conducteur, peut être parfaitement conforme et facturer un chiffre faux.</li>
+    </ul>
+    <p>La leçon pratique : la classe est nécessaire, mais pas suffisante. Sur un circuit à forte distorsion harmonique ou à très grande variation de charge, ce qui protège l'acheteur n'est pas une classe plus serrée, mais une plage de courant déclarée qui encadre réellement la charge.</p>
+
+    <h2>Le plafond du raccordement direct</h2>
+    <p>La partie 21 s'applique aux compteurs qui font passer le courant de charge par leurs propres bornes, et ces bornes imposent une limite physique. Notre <strong>ym-0058</strong> est un compteur triphasé tétrapolaire sur rail DIN, calibré 3&times;5(80)&nbsp;A, avec communication WiFi. Sous 400&nbsp;V triphasé, ce plafond de 80&nbsp;A correspond à 1,732&nbsp;&times;&nbsp;400&nbsp;&times;&nbsp;80&nbsp;&divide;&nbsp;1000, soit environ 55&nbsp;kVA.</p>
+    <p>Au-delà, le circuit passe sur transformateur de courant : le compteur devient un appareil 5&nbsp;A qui lit un signal secondaire mis à l'échelle, et la précision de l'ensemble est alors celle du transformateur plus celle du compteur. À ce stade, la classe qui compte est la 0,5S, et elle provient de l'autre partie de la série. La raison n'est pas commerciale : un compteur raccordé directement calibré 400&nbsp;A n'existe sous aucune forme praticable.</p>
+    <p>Lorsqu'un circuit triphasé doit enregistrer le maximum de puissance en plus de l'énergie, le <strong>ym-0724</strong> est l'option à raccordement direct de la même famille : classe de précision 1,0, courant maximal 60&nbsp;A, communication RS485 et infrarouge. C'est le compteur à proposer lorsque la charge reste sous le plafond du raccordement direct et que l'acheteur veut des données de puissance sans ajouter un jeu de transformateurs.</p>
+
+    <h2>Quand la classe 1 est le bon choix, et quand elle ne l'est pas</h2>
+    <p>La classe 1 est la spécification correcte pour la majorité des installations tertiaires et industrielles : répartition interne des coûts entre services, surveillance énergétique d'usine, sous-comptage d'un local technique, et tout circuit où une erreur de 1&nbsp;% change une décision plutôt qu'un paiement.</p>
+    <p>Elle est en revanche inadaptée dans trois cas. Lorsque le relevé devient une facture entre deux parties, car 1&nbsp;% sur un gros compte représente une somme réelle et le destinataire de la facture finira par demander selon quelle norme le compteur a été construit. Lorsque le circuit est sur transformateur, car la classe appartient alors à l'ensemble du circuit de mesure. Et lorsque la charge est dominée par les harmoniques, car la classe n'a jamais été prévue pour cette forme d'onde.</p>
+
+    <h2>Ce qu'il faut indiquer dans la demande</h2>
+
+<table>
+      <thead>
+        <tr><th>Élément de la demande</th><th>Pourquoi le fournisseur en a besoin</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Classe de précision et numéro de partie IEC</td><td>«&nbsp;Classe 1&nbsp;» et «&nbsp;IEC 62053-21 classe 1&nbsp;» ne sont équivalents que si la partie est nommée</td></tr><tr><td>Nombre de phases et de fils</td><td>Un compteur triphasé tétrapolaire ne remplace pas un appareil triphasé tri-filaire sur un réseau en triangle</td></tr><tr><td>Courant nominal et maximal</td><td>Détermine si le raccordement direct est possible et si la classe 1 tient encore en bas de plage</td></tr><tr><td>Tension et fréquence du réseau</td><td>Une version 230/400&nbsp;V 50&nbsp;Hz n'est pas interchangeable avec une 120/208&nbsp;V 60&nbsp;Hz</td></tr><tr><td>Raccordement direct ou sur TC</td><td>Deux produits différents ; la version TC est un appareil 5&nbsp;A</td></tr><tr><td>Communication et sortie impulsionnelle</td><td>RS485, WiFi ou une constante d'impulsion changent la référence, pas seulement les options</td></tr><tr><td>Le marché de facturation</td><td>Marquage CE pour l'Europe, MID lorsque le comptage légal l'exige, ANSI C12 pour l'Amérique du Nord</td></tr>
+      </tbody>
+    </table>
+
+    <p>Sept lignes, et le devis cesse d'être ambigu. L'échec le plus fréquent est l'acheteur qui envoie «&nbsp;compteur triphasé, classe 1, 100&nbsp;A&nbsp;» et reçoit un compteur à raccordement direct qui ne peut pas être installé légalement sur le circuit qu'il avait en tête.</p>
+
+    <h2>Comment vérifier un certificat avant de payer</h2>
+    <p>Un certificat d'essai de type n'est utile que si l'on y lit trois choses. D'abord la norme et le numéro de partie, car «&nbsp;IEC 62053&nbsp;» seul n'indique pas quelle classe a été essayée. Ensuite la plage de courant couverte par l'essai &mdash; un certificat pour 5(60)&nbsp;A ne dit rien d'une variante 5(100)&nbsp;A. Enfin le laboratoire émetteur, et sa reconnaissance dans le marché où le compteur facturera.</p>
+    <p>La plaque signalétique doit ensuite reprendre ces trois informations : la classe, la norme et la plage de courant. Si la plaque indique «&nbsp;classe 1&nbsp;» et le certificat classe 2, c'est la plaque que lira l'inspecteur. Lorsque le compteur part vers un marché à comptage légal &mdash; le MID en Europe par exemple &mdash;, l'approbation complémentaire est un document distinct de l'essai de type, et c'est elle qui décide si l'appareil peut servir à la facturation.</p>
+    <p>Pour les définitions de classes elles-mêmes &mdash; ce que signifie 0,5S et pourquoi l'extension «&nbsp;S&nbsp;» existe &mdash;, le <a href="/blog/energy-meter-accuracy-class-guide">guide des classes de précision des compteurs</a> détaille le tableau des classes plus avant que cette page n'en a besoin. Ce que cette page ajoute, c'est la frontière : lesquelles de ces classes relèvent de la partie 21, et quelle partie régit les autres.</p>
+
+    <h2>Ce que cela change pour une spécification</h2>
+    <p>Écrivez le numéro de partie, pas seulement la classe. Écrivez la plage de courant, pas seulement le maximum. Précisez si le compteur est à raccordement direct ou sur TC, car ce seul mot décide de la moitié de la série IEC 62053 qui s'applique. Et si la réponse est «&nbsp;sur TC&nbsp;», acceptez que la classe 1 ne décrive plus la mesure &mdash; le transformateur entre dans la chaîne d'erreur, et c'est sa classe qui fixe la précision de la facture.</p>
+
+    <h2>Questions fréquentes</h2>
+      <h3>Quelle est la différence entre l'IEC 62053-21 et l'IEC 62053-22 ?</h3>
+      <p>La partie 21 couvre les compteurs statiques raccordés directement en classes 1 et 2. La partie 22 couvre les classes plus serrées, 0,5S et 0,2S, utilisées pour le comptage sur transformateur. Le numéro de partie indique donc la bande de classes, et la classe indique l'erreur maximale autorisée.</p>
+      <h3>Un compteur de classe 1 garantit-il une précision de 1 % en service ?</h3>
+      <p>Non. La classe 1 est l'erreur maximale autorisée aux conditions de référence définies par la norme, sur la plage de courant déclarée. Hors de cette plage, à faible facteur de puissance, aux températures extrêmes ou sur une forme d'onde déformée, l'erreur autorisée est plus large et l'erreur réelle peut atteindre plusieurs pour cent.</p>
+      <h3>Puis-je utiliser un compteur de classe 1 raccordé directement pour refacturer un locataire ?</h3>
+      <p>C'est possible, et beaucoup de bailleurs le font. La question est de savoir qui absorbe l'erreur. Sur un gros compte, 1 % représente une somme réelle : lorsque le relevé devient une facture entre deux parties, un compteur sur TC de classe 0,5S est la spécification qui résistera à la contestation.</p>
+      <h3>Quelle plage de courant faut-il spécifier ?</h3>
+      <p>La plage déclarée doit encadrer la charge réelle, pas seulement le maximum. Un compteur calibré 5(80) A est tenu à sa classe entre le minimum et le maximum : un circuit qui tourne l'essentiel du temps à quelques ampères est mesuré au bord de l'enveloppe, là où la marge d'erreur est la plus large.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous spécifiez des compteurs selon l'IEC 62053-21 ?</h2>
+    <p>Indiquez la tension du réseau, le nombre de phases, la puissance maximale appelée et la classe de précision exigée par le projet. Nous confirmerons si un compteur raccordé directement en classe 1 suffit ou si le circuit relève d'un compteur sur transformateur de courant en classe 0,5S, et nous chiffrerons les deux.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

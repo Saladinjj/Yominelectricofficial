@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/iec-61869-2-explained/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IEC 61869-2 Explained: Metering CT Classes, Burden and Protection Classes | Yomin Electric</title>
+<meta name="description" content="How IEC 61869-2 defines metering current transformer accuracy classes 0.2S to 1.0, what the S suffix changes, why burden voids the class, and the ratings to put on a purchase order.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IEC 61869-2 Explained: Metering CT Classes, Burden and Protection Classes | Yomin Electric">
+<meta property="og:description" content="How IEC 61869-2 defines metering current transformer accuracy classes 0.2S to 1.0, what the S suffix changes, why burden voids the class, and the ratings to put on a purchase order.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/iec-61869-2-explained/card.png">
+<meta property="og:url" content="https://www.yominelectric.com/blog/iec-61869-2-explained">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.yominelectric.com/blog/iec-61869-2-explained">
+ <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/iec-61869-2-explained">
+ <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/iec-61869-2-explained-fr">
+ <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/iec-61869-2-explained-es">
+ <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/iec-61869-2-explained-ar">
+ <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/iec-61869-2-explained">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "IEC 61869-2 Explained: Metering CT Accuracy Classes and Burden Limits",
+      "description": "How IEC 61869-2 defines metering current transformer accuracy classes 0.2S to 1.0, what the S suffix changes, why burden voids the class, and the ratings to put on a purchase order.",
+      "image": "https://www.yominelectric.com/assets/images/blog/iec-61869-2-explained/hero.png",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/iec-61869-2-explained"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between class 0.5 and class 0.5S on a current transformer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both are metering classes with a 0.5 % accuracy band, but the S version holds its limits down to 1 % of rated primary current, while the plain class 0.5 guarantee starts at 5 %. On a load that swings widely, the S class is the one that still describes the measurement at night."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does burden mean on a CT datasheet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Burden is the total impedance the secondary can drive, expressed in VA at rated secondary current. It is the meter burden plus the resistance of the secondary leads. A CT only holds its accuracy class at or below its declared burden, so a long secondary run can silently void the class."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a protection class CT for metering?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A 5P or 10P core is designed to reproduce fault current without saturating, and its accuracy at the low currents where energy is actually consumed is not specified to a metering class. Metering and protection need separate cores, even when they share one housing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does IEC 61869-2 replace IEC 60044-1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. IEC 60044-1 has been superseded by the IEC 61869 family, with part 2 covering current transformers. The class designations carried over, so a 0.5 class unit means the same accuracy band under either reference; what differs is the detail of the type tests behind the claim."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Current Transformers</span></div>
+    <span class="bh-tag">Standards & Compliance</span>
+    <h1 class="bh-title">IEC 61869-2 Explained: Metering CT Accuracy Classes and Burden Limits</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 4, 2026</span>
+      <span class="divider"></span>
+      <span>11 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/iec-61869-2-explained/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/iec-61869-2-explained/hero.png" alt="A YOMIN split-core current transformer and a 250/5A Class 0.5 metering transformer on a warm paper background" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+
+    <p class="lead">IEC 61869-2 is the part of the IEC 61869 family that specifies current transformers. It defines the accuracy classes a metering CT can be built to &mdash; 0.2S, 0.5S, 0.5 and 1.0 &mdash; and the protection classes 5P, 10P, PR and PX, together with the conditions under which those classes are actually guaranteed. The single most useful thing to understand about the standard is that a class is not a property of the transformer alone. It is a promise that holds only inside a declared burden, a declared current range and a declared frequency, and a CT ordered as &ldquo;class 0.5&rdquo; with no burden on the order can be perfectly compliant and still measure badly.</p>
+
+    <h2>What the standard covers, and what it does not</h2>
+    <p>The IEC 61869 family is organised by transformer type rather than by application. Part 1 carries the general requirements that apply to every instrument transformer, and part 2 carries the requirements specific to current transformers. The thermal ratings that decide whether a CT survives a fault, for example, are anchored in the general part, which is why a datasheet can be conforming on accuracy and still be under-specified on short-time current.</p>
+    <p>Older documents &mdash; and a great many datasheets still in circulation &mdash; cite IEC 60044-1 for the same transformers. That standard has been superseded, but the class designations it used are the same ones 61869-2 uses, so a 0.5 class CT described under either number means the same accuracy band. What changes is the detail of the type tests behind the claim.</p>
+    <p>What the standard does not do is choose the transformer for you. It will tell you whether a build is conforming at 0.5 class under 15&nbsp;VA. It will not tell you that a 5&nbsp;VA unit was the wrong purchase for a panel with 4&nbsp;mm&sup2; secondary leads running twelve metres to a meter.</p>
+
+    <h2>The metering classes</h2>
+    <p>Four classes cover metering duty, and the choice between them is a commercial decision as much as a technical one, because it decides who absorbs the measurement error.</p>
+
+<table>
+      <thead>
+        <tr><th>Class</th><th>What it is for</th><th>Where it is usually specified</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>0.2S</td><td>The tightest metering class, with the S extension to low current</td><td>Utility settlement points, inter-company transfer, large industrial billing</td></tr><tr><td>0.5S</td><td>Revenue metering with the S extension</td><td>Tenant billing between profit centres, utility revenue metering, substation feeder metering</td></tr><tr><td>0.5</td><td>Standard commercial metering accuracy</td><td>Panel meters, building management metering, internal cost allocation</td></tr><tr><td>1.0</td><td>Indicating and monitoring accuracy</td><td>Switchboard ammeters, drive and motor monitoring, alarm thresholds</td></tr>
+      </tbody>
+    </table>
+
+    <p>There is no rule that a tenant meter must be 0.5S and no rule that a switchboard ammeter may be 1.0. The classes exist so that a buyer can state the commercial consequence of an error and let the supplier price the build that satisfies it. What is worth knowing is the direction of the cost: the step from 1.0 to 0.5 is small, and the step from 0.5 to 0.5S is where the price starts to move, because the S build is tested across a much wider current range.</p>
+
+    <h2>What the S suffix actually buys</h2>
+    <p>The S in 0.5S and 0.2S means the accuracy limits apply down to 1&nbsp;% of rated primary current, instead of the 5&nbsp;% floor used by the plain 0.5 and 1.0 classes. That sounds like a laboratory distinction until you look at a real load profile.</p>
+    <p>A 400/5&nbsp;A CT on a feeder rated 400&nbsp;A spends the night at 20 to 40&nbsp;A. That is 5&nbsp;% to 10&nbsp;% of rated current &mdash; below or at the floor of a plain class 0.5 guarantee, and comfortably inside the range a 0.5S unit is tested over. The meter is not lying; it is being asked to hold an accuracy the purchaser never paid for. On a circuit with a wide day-night swing, the S suffix is the difference between a class that describes the installation and one that describes the test bench.</p>
+    <p>Our <strong>ym-0074</strong> is a 250/5&nbsp;A class 0.5 metering transformer with a 50-turn secondary winding, the build that suits a commercial feeder where the load stays in the upper part of the range. Where the same feeder has a deep night-time trough, the S class is the honest specification and the plain 0.5 unit should be recognised as a compromise.</p>
+
+    <h2>Burden: the limit that voids the class</h2>
+    <p>Burden is the total impedance the secondary has to drive, expressed in volt-amperes at rated secondary current. It is made up of the meter's own burden plus the resistance of the secondary leads, and the leads are usually the larger of the two by a wide margin.</p>
+    <p>A CT is tested at a stated burden. If the installed burden is higher, the core is driven harder, the ratio error and the phase displacement both move, and the class no longer holds &mdash; even though nothing on the nameplate is false. This is the most common way a conforming transformer ends up in a non-conforming measurement, and it is entirely avoidable at the ordering stage: state the burden, and state the lead length if it is unusual.</p>
+    <p>The arithmetic of lead resistance, and the point at which a 5&nbsp;A secondary becomes the wrong choice against a 1&nbsp;A secondary, is worked through in the guide to <a href="/blog/substation-engineering-current-transformer-sizing-calculation">current transformer sizing calculation</a>. The class definitions themselves, including how burden interacts with the accuracy class from the meter's side, are set out in the <a href="/blog/ct-accuracy-class-guide">CT accuracy class guide</a>.</p>
+
+    <h2>Protection classes are a different animal</h2>
+    <p>A protection CT is not asked to be accurate at rated current. It is asked to reproduce a fault current faithfully enough that a relay operates, and to do so without saturating. That is why protection classes are written differently.</p>
+
+<table>
+      <thead>
+        <tr><th>Designation</th><th>What the number means</th><th>Typical duty</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>5P10</td><td>5&nbsp;% composite error at 10 times rated primary current</td><td>Feeder overcurrent, general protection</td></tr><tr><td>5P20</td><td>5&nbsp;% composite error at 20 times rated primary current</td><td>Transformer incomer, motor protection with high starting current</td></tr><tr><td>10P10</td><td>10&nbsp;% composite error at 10 times rated primary current</td><td>Less demanding protection where a wider error is tolerable</td></tr><tr><td>PR</td><td>Remanence factor declared, for circuits where residual flux matters</td><td>Protection that must operate correctly after a previous fault</td></tr><tr><td>PX</td><td>Defined by knee-point voltage and magnetising current rather than a class</td><td>Differential protection, where the relay setting depends on the actual magnetising curve</td></tr>
+      </tbody>
+    </table>
+
+    <p>The distinction matters at the ordering stage because a metering class and a protection class cannot be substituted for one another. A 0.5 class CT used in a protection circuit will saturate at the fault current it was never designed to see; a 5P20 CT used for billing will be inaccurate at the low currents where most of the energy is actually consumed. Where a panel needs both functions, the usual answer is two cores in one housing, each built and tested to its own class.</p>
+
+    <h2>Thermal ratings that decide whether the unit survives</h2>
+    <p>Accuracy is the part of the datasheet that gets read. The thermal ratings are the part that decides whether the transformer is still in service after a fault.</p>
+    <p>Two figures matter. The continuous thermal current rating sets the primary current the unit can carry indefinitely, and it is normally at least the rated primary current &mdash; sometimes higher, which matters on a feeder that runs overloaded. The short-time thermal current rating, usually written I<sub>th</sub>, sets what it survives for a stated duration; the general requirements of the family anchor this at a multiple of rated primary current for one second or three seconds, so a unit declared at eighty to one hundred times its primary rating for one second is describing a fault-withstand capability, not an accuracy capability.</p>
+    <p>A buyer comparing two quotations on price alone will often find that the cheaper unit has the same accuracy class and a lower short-time rating. On a feeder with a high prospective fault current, that difference is the whole specification.</p>
+
+    <h2>Two builds from the same series</h2>
+    <p>The MSQ series spans 30&nbsp;A to 6000&nbsp;A in a square-profile low-voltage housing, with dual DIN-rail and busbar mounting and a sealable terminal cover &mdash; the cover being what makes the installation tamper-evident for revenue work.</p>
+    <p>The <strong>ym-0073</strong> is the 2000/5&nbsp;A class 0.5 split-core version, rated 720&nbsp;V. The split core is the reason to choose it: it clamps around a cable that is already terminated, so a metering point can be added to a live feeder without dismantling the termination. That is a retrofit capability, not an accuracy capability, and it is usually what decides the purchase on an existing installation.</p>
+    <p>The <strong>ym-0064</strong> is the 1600/5&nbsp;A class 1.0 unit, 720&nbsp;V, tested at 3&nbsp;kV AC for one minute between windings and earth. That insulation figure is the one to check when the primary sits on a 690&nbsp;V system, and the class 1.0 tells you it is a monitoring device rather than a billing device.</p>
+
+    <h2>What to put on the purchase order</h2>
+    <p>Seven lines remove almost every ambiguity a CT order can carry.</p>
+
+<table>
+      <thead>
+        <tr><th>Line on the order</th><th>What it prevents</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Primary and secondary current, e.g. 400/5&nbsp;A</td><td>&ldquo;400 A CT&rdquo; leaves the secondary open to interpretation</td></tr><tr><td>Accuracy class, with or without S</td><td>A class 0.5 unit is not a 0.5S unit, and the difference shows at night</td></tr><tr><td>Burden in VA</td><td>Without it the class is a claim with no test condition attached</td></tr><tr><td>Short-time thermal current I<sub>th</sub> and duration</td><td>The rating that decides survivability after a fault</td></tr><tr><td>Insulation level</td><td>Decides whether the unit belongs on a 690&nbsp;V system at all</td></tr><tr><td>Mounting: DIN rail, busbar clamp or both</td><td>Decides whether it fits the panel you have already built</td></tr><tr><td>Sealable terminal cover</td><td>Required wherever the measurement is the basis of a payment</td></tr>
+      </tbody>
+    </table>
+
+    <p>Send those seven lines and the quotation can be compared line by line. Send &ldquo;class 0.5 CT, 400 A&rdquo; and two suppliers will quote two different products that both satisfy the sentence and neither of which necessarily satisfies the installation.</p>
+
+    <h2>The one check before you approve</h2>
+    <p>Take the burden figure from the quotation and add the lead resistance of the run you are actually installing. If the total is above the declared burden, the class in the quotation does not describe your installation, and no amount of certificate checking will fix it. Either shorten the run, increase the conductor size, or buy the next burden rating up. It is a five-minute calculation at the desk and a very expensive discovery afterwards.</p>
+
+    <h2>Frequently asked questions</h2>
+      <h3>What is the difference between class 0.5 and class 0.5S on a current transformer?</h3>
+      <p>Both are metering classes with a 0.5 % accuracy band, but the S version holds its limits down to 1 % of rated primary current, while the plain class 0.5 guarantee starts at 5 %. On a load that swings widely, the S class is the one that still describes the measurement at night.</p>
+      <h3>What does burden mean on a CT datasheet?</h3>
+      <p>Burden is the total impedance the secondary can drive, expressed in VA at rated secondary current. It is the meter burden plus the resistance of the secondary leads. A CT only holds its accuracy class at or below its declared burden, so a long secondary run can silently void the class.</p>
+      <h3>Can I use a protection class CT for metering?</h3>
+      <p>No. A 5P or 10P core is designed to reproduce fault current without saturating, and its accuracy at the low currents where energy is actually consumed is not specified to a metering class. Metering and protection need separate cores, even when they share one housing.</p>
+      <h3>Does IEC 61869-2 replace IEC 60044-1?</h3>
+      <p>Yes. IEC 60044-1 has been superseded by the IEC 61869 family, with part 2 covering current transformers. The class designations carried over, so a 0.5 class unit means the same accuracy band under either reference; what differs is the detail of the type tests behind the claim.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying a metering current transformer?</h2>
+    <p>Send the primary current, the secondary rating, the accuracy class, the burden in VA and the panel it goes into. We will confirm the class that actually holds at your load, and quote the matching transformer from the MSQ range.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/iec-61869-2-explained/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IEC 61869-2 explicada: clases de los TC de medida, carga y clases de protección | Yomin Electric</title>
+<meta name="description" content="Cómo define la IEC 61869-2 las clases de precisión 0,2S a 1,0 de los transformadores de corriente de medida, qué cambia el sufijo S, por qué la carga anula la clase y qué datos poner en el pedido.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IEC 61869-2 explicada: clases de los TC de medida, carga y clases de protección | Yomin Electric">
+<meta property="og:description" content="Cómo define la IEC 61869-2 las clases de precisión 0,2S a 1,0 de los transformadores de corriente de medida, qué cambia el sufijo S, por qué la carga anula la clase y qué datos poner en el pedido.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/iec-61869-2-explained/card.png">
+<meta property="og:url" content="https://www.yominelectric.com/blog/iec-61869-2-explained-es">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.yominelectric.com/blog/iec-61869-2-explained-es">
+ <link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/iec-61869-2-explained">
+ <link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/iec-61869-2-explained-fr">
+ <link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/iec-61869-2-explained-es">
+ <link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/iec-61869-2-explained-ar">
+ <link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/iec-61869-2-explained">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "IEC 61869-2 explicada: clases de precisión y límites de carga de los TC de medida",
+      "description": "Cómo define la IEC 61869-2 las clases de precisión 0,2S a 1,0 de los transformadores de corriente de medida, qué cambia el sufijo S, por qué la carga anula la clase y qué datos poner en el pedido.",
+      "image": "https://www.yominelectric.com/assets/images/blog/iec-61869-2-explained/hero.png",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/iec-61869-2-explained-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "es",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué diferencia hay entre clase 0,5 y clase 0,5S en un transformador de corriente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ambas son clases de medida con banda de 0,5 %, pero la versión S mantiene sus límites hasta el 1 % de la corriente primaria nominal, mientras que la garantía de una clase 0,5 simple empieza en el 5 %. En una carga muy variable, la clase S es la que sigue describiendo la medida de noche."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué significa la carga en una ficha técnica de TC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La carga es la impedancia total que el secundario puede alimentar, expresada en VA a la corriente secundaria nominal. Comprende la carga del contador más la resistencia de los conductores secundarios. Un TC solo mantiene su clase con una carga igual o inferior a la declarada, así que un tendido secundario largo puede anular la clase sin que nada lo indique."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo usar un TC de clase protección para medición?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Un núcleo 5P o 10P está diseñado para reproducir la corriente de defecto sin saturarse, y su precisión en las corrientes bajas donde realmente se consume la energía no está especificada según una clase de medida. Medición y protección necesitan núcleos separados, aunque compartan envolvente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Sustituye la IEC 61869-2 a la IEC 60044-1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. La IEC 60044-1 fue sustituida por la familia IEC 61869, cuya parte 2 cubre los transformadores de corriente. Las designaciones de clase se mantuvieron, así que una unidad clase 0,5 designa la misma banda con cualquiera de las dos referencias; lo que cambia es el detalle de los ensayos de tipo que respaldan la afirmación."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Transformadores de corriente</span></div>
+    <span class="bh-tag">Normas y cumplimiento</span>
+    <h1 class="bh-title">IEC 61869-2 explicada: clases de precisión y límites de carga de los TC de medida</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>4 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/iec-61869-2-explained/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/iec-61869-2-explained/hero.png" alt="Un transformador de corriente de núcleo abierto YOMIN y un transformador de medida 250/5 A clase 0,5 sobre fondo de papel cálido" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+
+    <p class="lead">La IEC 61869-2 es la parte de la familia IEC 61869 que especifica los transformadores de corriente. Define las clases de precisión con las que puede fabricarse un TC de medida &mdash; 0,2S, 0,5S, 0,5 y 1,0 &mdash; junto con las clases de protección 5P, 10P, PR y PX, y las condiciones en las que esas clases se garantizan de verdad. Lo más útil que hay que entender de la norma es que una clase no es una propiedad del transformador por sí solo. Es una promesa que solo se sostiene dentro de una carga declarada, un rango de corriente declarado y una frecuencia declarada: un TC pedido como «clase 0,5» sin carga en el pedido puede ser perfectamente conforme y medir mal.</p>
+
+    <h2>Qué cubre la norma y qué no</h2>
+    <p>La familia IEC 61869 se organiza por tipo de transformador y no por aplicación. La parte 1 contiene los requisitos generales aplicables a todo transformador de medida y la parte 2 los requisitos propios de los transformadores de corriente. Las características térmicas que deciden si un TC sobrevive a un defecto están, por ejemplo, ancladas en la parte general, y por eso una ficha técnica puede ser conforme en precisión y estar mal especificada en corriente de cortocircuito.</p>
+    <p>Los documentos antiguos &mdash; y muchas fichas que siguen circulando &mdash; citan la IEC 60044-1 para los mismos transformadores. Esa norma fue sustituida, pero las designaciones de clase que usaba son las mismas de la 61869-2: un TC de clase 0,5 descrito con uno u otro número designa la misma banda de precisión. Lo que cambia es el detalle de los ensayos de tipo que respaldan la afirmación.</p>
+    <p>Lo que la norma no hace es elegir el transformador por usted. Dirá si una construcción es conforme en clase 0,5 bajo 15&nbsp;VA. No dirá que una unidad de 5&nbsp;VA era la compra equivocada para un cuadro cuyos conductores secundarios de 4&nbsp;mm&sup2; recorren doce metros hasta el contador.</p>
+
+    <h2>Las clases de medida</h2>
+    <p>Cuatro clases cubren el servicio de medida, y elegir entre ellas es una decisión comercial tanto como técnica, porque determina quién absorbe el error de medida.</p>
+
+<table>
+      <thead>
+        <tr><th>Clase</th><th>Para qué sirve</th><th>Dónde se especifica habitualmente</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>0,2S</td><td>La clase de medida más estricta, con extensión S hacia corrientes bajas</td><td>Puntos de liquidación de distribuidora, transferencia entre empresas, gran facturación industrial</td></tr><tr><td>0,5S</td><td>Medición de facturación con extensión S</td><td>Refacturación entre centros de beneficio, facturación de distribuidora, medición de salidas en subestación</td></tr><tr><td>0,5</td><td>Precisión de medición comercial estándar</td><td>Contadores de cuadro, medición de gestión técnica de edificios, reparto interno de costes</td></tr><tr><td>1,0</td><td>Precisión de indicación y monitorización</td><td>Amperímetros de cuadro, monitorización de variadores y motores, umbrales de alarma</td></tr>
+      </tbody>
+    </table>
+
+    <p>No hay ninguna regla que obligue a un contador de inquilino a ser 0,5S ni a un amperímetro de cuadro a ser 1,0. Las clases existen para que el comprador pueda expresar la consecuencia comercial de un error y dejar que el proveedor cotice la construcción que la cumple. Lo que conviene saber es la dirección del coste: el salto de 1,0 a 0,5 es pequeño, y es el salto de 0,5 a 0,5S el que mueve el precio, porque la versión S se ensaya en un rango de corriente mucho más amplio.</p>
+
+    <h2>Qué compra realmente el sufijo S</h2>
+    <p>La S de 0,5S y 0,2S significa que los límites de precisión se aplican hasta el 1&nbsp;% de la corriente primaria nominal, en lugar del suelo del 5&nbsp;% que usan las clases 0,5 y 1,0 simples. Suena a distinción de laboratorio hasta que se mira un perfil de carga real.</p>
+    <p>Un TC 400/5&nbsp;A en una salida calibrada 400&nbsp;A pasa la noche entre 20 y 40&nbsp;A. Es decir, del 5&nbsp;% al 10&nbsp;% de la corriente nominal: en el suelo o por debajo de una garantía clase 0,5 simple, y cómodamente dentro del rango sobre el que se ensaya una unidad 0,5S. El contador no miente; se le pide mantener una precisión que el comprador nunca pagó. En un circuito con gran variación día-noche, el sufijo S es la diferencia entre una clase que describe la instalación y una clase que describe el banco de ensayos.</p>
+    <p>Nuestro <strong>ym-0074</strong> es un transformador de medida 250/5&nbsp;A clase 0,5 con devanado secundario de 50 espiras, la construcción adecuada para una salida comercial cuya carga se mantiene en la parte alta del rango. Donde esa misma salida tiene un valle nocturno profundo, la clase S es la especificación honesta y la versión 0,5 simple debe reconocerse como un compromiso.</p>
+
+    <h2>La carga: el límite que anula la clase</h2>
+    <p>La carga es la impedancia total que el secundario debe alimentar, expresada en voltamperios a la corriente secundaria nominal. Se compone de la carga propia del contador más la resistencia de los conductores secundarios, y estos últimos suelen ser el mayor de los dos con diferencia.</p>
+    <p>Un TC se ensaya con una carga declarada. Si la carga instalada es mayor, el núcleo trabaja más exigido, el error de relación y el desfase se desplazan, y la clase deja de cumplirse, aunque nada en la placa sea falso. Es la forma más común de meter un transformador conforme en una medición no conforme, y es totalmente evitable al pedir: indique la carga y la longitud de conductor si es inusual.</p>
+    <p>El cálculo de la resistencia de conductores, y el punto en que un secundario de 5&nbsp;A pasa a ser mala elección frente a uno de 1&nbsp;A, se desarrollan en la guía de <a href="/blog/substation-engineering-current-transformer-sizing-calculation">cálculo de dimensionamiento de transformadores de corriente</a>. Las definiciones de clase en sí, incluida la interacción de la carga con la clase vista desde el contador, están en la <a href="/blog/ct-accuracy-class-guide">guía de clases de precisión de TC</a>.</p>
+
+    <h2>Las clases de protección son otra cosa</h2>
+    <p>A un TC de protección no se le pide precisión a corriente nominal. Se le pide reproducir un corriente de defecto con suficiente fidelidad para que actúe un relé, y hacerlo sin saturarse. Por eso las clases de protección se escriben de otro modo.</p>
+
+<table>
+      <thead>
+        <tr><th>Designación</th><th>Qué significa el número</th><th>Servicio típico</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>5P10</td><td>Error compuesto del 5&nbsp;% a 10 veces la corriente primaria nominal</td><td>Sobrecorriente de salida, protección general</td></tr><tr><td>5P20</td><td>Error compuesto del 5&nbsp;% a 20 veces la corriente primaria nominal</td><td>Entrada de transformador, protección de motor con alta corriente de arranque</td></tr><tr><td>10P10</td><td>Error compuesto del 10&nbsp;% a 10 veces la corriente primaria nominal</td><td>Protección menos exigente donde se tolera un error mayor</td></tr><tr><td>PR</td><td>Factor de remanencia declarado, para circuitos donde el flujo remanente importa</td><td>Protección que debe actuar correctamente tras un defecto previo</td></tr><tr><td>PX</td><td>Definida por la tensión de codo y la corriente magnetizante, no por una clase</td><td>Protección diferencial, donde el ajuste del relé depende de la curva de magnetización real</td></tr>
+      </tbody>
+    </table>
+
+    <p>La distinción importa al pedir, porque una clase de medida y una de protección no son intercambiables. Un TC clase 0,5 usado en un circuito de protección se saturará con la corriente de defecto que nunca se diseñó para ver; un TC 5P20 usado para facturar será impreciso en las corrientes bajas donde realmente se consume la mayor parte de la energía. Cuando un cuadro necesita ambas funciones, la respuesta habitual son dos núcleos en una misma envolvente, cada uno construido y ensayado según su propia clase.</p>
+
+    <h2>Las características térmicas que deciden la supervivencia</h2>
+    <p>La precisión es la parte de la ficha que se lee. Las características térmicas son las que deciden si el transformador sigue en servicio después de un defecto.</p>
+    <p>Dos valores importan. La corriente térmica permanente fija la corriente primaria que el equipo puede soportar indefinidamente, y normalmente es al menos igual a la corriente primaria nominal &mdash; a veces superior, lo que cuenta en una salida que trabaja sobrecargada. La corriente térmica de corta duración, escrita I<sub>th</sub>, fija lo que soporta durante una duración declarada; los requisitos generales de la familia la anclan en un múltiplo de la corriente primaria nominal durante uno o tres segundos, así que un equipo declarado a ochenta o cien veces su calibre primario durante un segundo describe una capacidad de aguante al defecto, no una capacidad de precisión.</p>
+    <p>Quien compare dos ofertas solo por precio encontrará a menudo que la unidad más barata tiene la misma clase de precisión y una corriente térmica de corta duración menor. En una salida con alta corriente de defecto presunta, esa diferencia es toda la especificación.</p>
+
+    <h2>Dos construcciones de la misma serie</h2>
+    <p>La serie MSQ cubre de 30&nbsp;A a 6000&nbsp;A en una envolvente de baja tensión de perfil cuadrado, con doble montaje en riel DIN y abrazadera de barra, y tapa de bornes precintable &mdash; esa tapa es lo que hace la instalación inviolable para medición de facturación.</p>
+    <p>El <strong>ym-0073</strong> es la versión 2000/5&nbsp;A clase 0,5 de núcleo abierto, calibrada 720&nbsp;V. El núcleo abierto es la razón para elegirlo: se abraza a un cable ya conectado, de modo que puede añadirse un punto de medida a una salida en servicio sin desmontar el terminal. Es una capacidad de renovación, no de precisión, y suele ser lo que decide la compra en una instalación existente.</p>
+    <p>El <strong>ym-0064</strong> es la unidad 1600/5&nbsp;A clase 1,0, 720&nbsp;V, ensayada a 3&nbsp;kV CA durante un minuto entre devanados y tierra. Ese valor de aislamiento es el que hay que revisar cuando el primario está en una red de 690&nbsp;V, y la clase 1,0 indica un equipo de monitorización más que de facturación.</p>
+
+    <h2>Qué poner en el pedido</h2>
+    <p>Siete líneas eliminan casi toda la ambigüedad de un pedido de TC.</p>
+
+<table>
+      <thead>
+        <tr><th>Línea del pedido</th><th>Qué evita</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Corrientes primaria y secundaria, p. ej. 400/5&nbsp;A</td><td>«TC de 400&nbsp;A» deja el secundario a la interpretación</td></tr><tr><td>Clase de precisión, con o sin S</td><td>Una unidad clase 0,5 no es una 0,5S, y la diferencia se ve de noche</td></tr><tr><td>Carga en VA</td><td>Sin ella la clase es una afirmación sin condición de ensayo</td></tr><tr><td>Corriente térmica de corta duración I<sub>th</sub> y duración</td><td>La característica que decide la supervivencia tras un defecto</td></tr><tr><td>Nivel de aislamiento</td><td>Decide si el equipo puede instalarse en una red de 690&nbsp;V</td></tr><tr><td>Montaje: riel DIN, abrazadera de barra o ambos</td><td>Decide si entra en el cuadro ya construido</td></tr><tr><td>Tapa de bornes precintable</td><td>Exigida donde la medición es la base de un pago</td></tr>
+      </tbody>
+    </table>
+
+    <p>Envíe esas siete líneas y la oferta se compara línea por línea. Envíe «TC clase 0,5, 400&nbsp;A» y dos proveedores cotizarán dos productos distintos que ambos cumplen la frase y ninguno de los cuales cumple necesariamente la instalación.</p>
+
+    <h2>La comprobación antes de aprobar</h2>
+    <p>Tome la carga de la oferta y súmele la resistencia de conductores del recorrido que realmente va a instalar. Si el total supera la carga declarada, la clase de la oferta no describe su instalación, y ninguna revisión de certificados lo arreglará. Acorte el recorrido, aumente la sección o compre la carga superior. Es un cálculo de cinco minutos en el escritorio y un descubrimiento muy caro después.</p>
+
+    <h2>Preguntas frecuentes</h2>
+      <h3>¿Qué diferencia hay entre clase 0,5 y clase 0,5S en un transformador de corriente?</h3>
+      <p>Ambas son clases de medida con banda de 0,5 %, pero la versión S mantiene sus límites hasta el 1 % de la corriente primaria nominal, mientras que la garantía de una clase 0,5 simple empieza en el 5 %. En una carga muy variable, la clase S es la que sigue describiendo la medida de noche.</p>
+      <h3>¿Qué significa la carga en una ficha técnica de TC?</h3>
+      <p>La carga es la impedancia total que el secundario puede alimentar, expresada en VA a la corriente secundaria nominal. Comprende la carga del contador más la resistencia de los conductores secundarios. Un TC solo mantiene su clase con una carga igual o inferior a la declarada, así que un tendido secundario largo puede anular la clase sin que nada lo indique.</p>
+      <h3>¿Puedo usar un TC de clase protección para medición?</h3>
+      <p>No. Un núcleo 5P o 10P está diseñado para reproducir la corriente de defecto sin saturarse, y su precisión en las corrientes bajas donde realmente se consume la energía no está especificada según una clase de medida. Medición y protección necesitan núcleos separados, aunque compartan envolvente.</p>
+      <h3>¿Sustituye la IEC 61869-2 a la IEC 60044-1?</h3>
+      <p>Sí. La IEC 60044-1 fue sustituida por la familia IEC 61869, cuya parte 2 cubre los transformadores de corriente. Las designaciones de clase se mantuvieron, así que una unidad clase 0,5 designa la misma banda con cualquiera de las dos referencias; lo que cambia es el detalle de los ensayos de tipo que respaldan la afirmación.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Especifica un transformador de corriente de medida?</h2>
+    <p>Envíenos la corriente primaria, el calibre secundario, la clase de precisión, la carga en VA y el cuadro de destino. Confirmaremos qué clase se sostiene realmente con su carga y cotizaremos el transformador correspondiente de la gama MSQ.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Chatear por WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
