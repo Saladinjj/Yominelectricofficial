@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/short-circuit-current-calculation-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Short Circuit Current Calculation: Fault Level and Withstand | Yomin Electric</title>
+<meta name="description" content="Calculate prospective short-circuit current from transformer impedance: the formula, a 1000 kVA worked example, peak versus rms, Icw and Ipk withstand checks, and fuse breaking capacity.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/short-circuit-current-calculation-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Short Circuit Current Calculation: Fault Level, Withstand and Protection",
+      "description": "Calculate prospective short-circuit current from transformer impedance: the formula, a 1000 kVA worked example, peak versus rms, Icw and Ipk withstand checks, and fuse breaking capacity.",
+      "image": "https://www.yominelectric.com/assets/images/blog/short-circuit-current-calculation-guide/hero.png",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/short-circuit-current-calculation-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a typical short-circuit current in a low-voltage board?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It follows directly from the transformer. At 400 V with 6% impedance, a 630 kVA transformer gives about 15 kA, a 1000 kVA about 24 kA and a 2000 kVA about 48 kA. The nameplate impedance voltage, not the rating alone, is what fixes the number."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the peak current higher than the calculated rms value?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the fault current starts with an asymmetric DC component that decays over the first few cycles. The first peak is commonly taken as 2.55 times the rms value in low-voltage systems, and equipment must withstand that peak mechanically even though it only has to interrupt the rms value."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a fuse need a short-circuit rating if the breaker already has one?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every device that can carry fault current must be able to break it or be protected by a device that does. A fuse with a lower breaking capacity than the prospective fault current can rupture, and the holder is part of that rating."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does cable length change the fault current?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It adds impedance. Doubling the run roughly halves the fault current on a long feeder, which is why a device adequate at the main board may be over-rated or unable to trip at the far end. Calculate at each device location, not once for the building."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Protection &amp; Distribution</span></div>
+    <span class="bh-tag">Engineering Guides</span>
+    <h1 class="bh-title">Short Circuit Current Calculation: Fault Level, Withstand and Protection</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 4, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/short-circuit-current-calculation-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/short-circuit-current-calculation-guide/hero.png" alt="Low-voltage NH knife-blade fuses and a heavy-duty fuse cut-out rated for short-circuit breaking duty" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Short-circuit current is the current that flows when a live conductor touches another conductor or earth through an impedance close to zero. At the terminals of a distribution transformer it is calculated from the transformer rating and its impedance voltage: Isc = S / (&radic;3 &times; U &times; u<sub>k</sub>). A 1000 kVA transformer at 400 V with 6% impedance therefore delivers roughly 24 kA into a bolted fault &mdash; and every device and conductor downstream has to survive that number.</p>
+
+    <h2>Where the fault current comes from</h2>
+
+    <p>Fault current is limited by the impedance between the source and the fault. In a low-voltage installation that chain has four parts: the upstream network, the transformer, the busbar or cable run, and the joints along the way. The transformer dominates, because its impedance is deliberately set to a few percent so that the voltage holds under load. Cable impedance only becomes significant on long runs or small cross-sections.</p>
+
+    <p>Motors add to the total. A running induction motor behaves briefly like a generator and contributes current to a nearby fault, typically several times its rated current for the first few cycles. For a board feeding a large motor load, ignoring that contribution understates the fault level at the busbar.</p>
+
+    <h2>The calculation for a transformer-fed board</h2>
+
+    <p>The short form assumes the transformer is the only significant impedance. With S in volt-amperes, U in volts and u<sub>k</sub> as the per-unit impedance voltage:</p>
+
+    <p>Isc (three-phase) = S / (&radic;3 &times; U &times; u<sub>k</sub>) &nbsp;&nbsp; and &nbsp;&nbsp; Isc (single-phase to neutral) is usually lower, because it depends on the transformer connection and the zero-sequence path.</p>
+
+    <p>For 1000 kVA at 400 V with u<sub>k</sub> = 0.06: Isc = 1,000,000 / (1.732 &times; 400 &times; 0.06) = 24,056 A, or about 24 kA. That single figure sets the breaking capacity of the incoming device and the withstand rating of the busbar.</p>
+
+    <table>
+      <thead>
+        <tr><th>Transformer rating</th><th>Impedance voltage</th><th>Prospective Isc at 400 V</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>315 kVA</td><td>6%</td><td>7.6 kA</td></tr>
+      <tr><td>630 kVA</td><td>6%</td><td>15.2 kA</td></tr>
+      <tr><td>1000 kVA</td><td>6%</td><td>24.1 kA</td></tr>
+      <tr><td>1600 kVA</td><td>6%</td><td>38.5 kA</td></tr>
+      <tr><td>2000 kVA</td><td>6%</td><td>48.1 kA</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>Impedance voltage is printed on the transformer nameplate and is not always 6%. A 4% transformer of the same rating produces about 50% more fault current, which is why copying a figure from another project is the most common way to under-specify a board.</strong></p>
+
+    <h2>RMS, peak, and what each number is for</h2>
+
+    <p>The value calculated above is the symmetrical root-mean-square current. It is the number used to select breaking capacity, because a device must interrupt that current at a voltage zero crossing. But the first peak of the fault current is higher, because of the asymmetric DC component present in the first cycles.</p>
+
+    <p>For low-voltage systems the peak is commonly approximated as 2.55 times the rms value, which corresponds to a peak factor of about 1.8. A 24 kA fault therefore presents a first peak near 61 kA. Switchgear, busbar supports and fuse holders must withstand that peak without deformation, even though they never have to interrupt it.</p>
+
+    <ul>
+      <li><strong>Icu / breaking capacity</strong> &mdash; the rms current a device can interrupt safely. Must exceed the prospective fault current at its terminals.</li>
+      <li><strong>Icw</strong> &mdash; short-time withstand current, the rms current a busbar or switchboard carries for a stated time (usually 1 s) without damage. Relevant to busbars and main boards, not to fuses.</li>
+      <li><strong>Ipk</strong> &mdash; peak withstand. The mechanical test: can the supports and joints take the electromagnetic force of the first peak?</li>
+    </ul>
+
+    <h2>The thermal check on cable and busbar</h2>
+
+    <p>A conductor does not need to interrupt the fault, but it must survive the few tenths of a second before protection clears it. The adiabatic check compares the energy let through against what the conductor can absorb: k&sup2;S&sup2; &ge; I&sup2;t, where S is the cross-section in mm&sup2;, t is the clearing time in seconds and k is a material and insulation constant &mdash; around 115 for PVC-insulated copper and 143 for XLPE-insulated copper.</p>
+
+    <p>The practical consequence is that a small cross-section fed from a stiff board can fail the check even when it passes the voltage drop and ampacity checks. If the fault level is 24 kA and the fuse clears in 0.01 s, a 10 mm&sup2; PVC copper conductor has I&sup2;t of 24,000&sup2; &times; 0.01 = 5.76 &times; 10&#8310; A&sup2;s against a withstand of 115&sup2; &times; 10&sup2; = 1.32 &times; 10&#8310; A&sup2;s. The conductor loses, and the cross-section has to grow.</p>
+
+    <h2>Protection: breaking capacity and discrimination</h2>
+
+    <p>Every protective device has a rated breaking capacity, and it must be at least the prospective fault current where it is installed. A device with 6 kA breaking capacity in a board with a 24 kA fault level is not merely inadequate: it can rupture, arc across the enclosure, and turn a fault into an event.</p>
+
+    <p>Fuses handle this well because their breaking capacity is high relative to their size. An NH knife-blade fuse in a suitable holder interrupts tens of kiloamperes in a volume far smaller than a comparable breaker. That is why NH fuses remain the standard for main and sub-main protection in industrial boards, and why the holder and the fuse must be ordered as a matched pair &mdash; the assembly, not the fuse alone, carries the rating.</p>
+
+    <p>Discrimination is the second requirement. The device nearest the fault should clear it first, so that a fault in a final circuit does not take out the main incoming device. Fuse-to-fuse discrimination is read from published ratio tables; fuse-to-breaker coordination usually needs the manufacturer&apos;s curves. If you are still choosing between device families, the <a href="/blog/fuse-vs-circuit-breaker">fuse versus circuit breaker comparison</a> covers the trade-offs, and the <a href="/blog/fuse-and-protection-selection-guide">fuse and protection selection guide</a> covers rating, voltage and coordination in more detail.</p>
+
+    <h2>The fault level at the board is not the fault level at the load</h2>
+
+    <p>A 24 kA fault at the main busbar may be 6 kA at the end of a 60 m feeder. Two errors follow from ignoring this. Sizing every device in the plant for 24 kA wastes money; sizing them all for 6 kA because that is what the far end sees is dangerous. The fault level has to be calculated at each point where a device is installed, and the highest value in the enclosure governs the enclosure.</p>
+
+    <p>The opposite error matters too. A long, thin final circuit may have so little fault current that the protection never trips within the required time, leaving a fault to burn. This is why maximum earth-fault loop impedance is checked as well as breaking capacity: the device must be able to see the fault, not only survive it.</p>
+
+    <h2>What to send when you specify protection</h2>
+
+    <ol>
+      <li>System voltage and frequency, and whether the system is earthed at the transformer or via an impedance.</li>
+      <li>Transformer rating and impedance voltage from the nameplate &mdash; not an assumed 6%.</li>
+      <li>Prospective fault current at the point of installation, or the data needed to calculate it.</li>
+      <li>Whether the duty is overload protection only, or full short-circuit breaking.</li>
+      <li>The discrimination requirement: which device must clear first, and the upstream device it has to coordinate with.</li>
+      <li>For busbar and switchgear, the required Icw and Ipk and the duration of the withstand test.</li>
+    </ol>
+
+    <h2>Products for short-circuit duty</h2>
+
+    <p>YOMIN supplies the protection hardware this calculation ends in, including the <a href="/products/fuse-protection/nh00-copper-low-voltage-160-amp-3p-polyester-knife-blade-fuse">NH00 copper knife-blade fuse</a> for low-voltage distribution boards, the <a href="/products/fuse-protection/nh1-80a-125a-250a-48v-pv-dc-solar-fuse-for-distribution-box">NH1 PV DC solar fuse</a> for direct-current strings where the DC arc does not self-extinguish, and the <a href="/products/fuse-protection/300a-j-type-heavy-duty-fuse-cut-out-base-lv-fuse-switch-disconnector">300 A J-type heavy-duty fuse cut-out</a> for service-entrance duty.</p>
+
+    <p>The details that decide whether the assembly meets its rating are unglamorous: the holder must be rated for the fuse body and for the fault level, the contacts must be clean and correctly torqued, and the DC rating of a PV fuse must be checked separately from its AC rating, because a direct-current arc has no natural zero crossing to help extinguish it.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>What is a typical short-circuit current in a low-voltage board?</h3>
+    <p>It follows directly from the transformer. At 400 V with 6% impedance, a 630 kVA transformer gives about 15 kA, a 1000 kVA about 24 kA and a 2000 kVA about 48 kA. The nameplate impedance voltage, not the rating alone, is what fixes the number.</p>
+    <h3>Why is the peak current higher than the calculated rms value?</h3>
+    <p>Because the fault current starts with an asymmetric DC component that decays over the first few cycles. The first peak is commonly taken as 2.55 times the rms value in low-voltage systems, and equipment must withstand that peak mechanically even though it only has to interrupt the rms value.</p>
+    <h3>Does a fuse need a short-circuit rating if the breaker already has one?</h3>
+    <p>Yes. Every device that can carry fault current must be able to break it or be protected by a device that does. A fuse with a lower breaking capacity than the prospective fault current can rupture, and the holder is part of that rating.</p>
+    <h3>How does cable length change the fault current?</h3>
+    <p>It adds impedance. Doubling the run roughly halves the fault current on a long feeder, which is why a device adequate at the main board may be over-rated or unable to trip at the far end. Calculate at each device location, not once for the building.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Choosing protection for a known fault level?</h2>
+    <p>Send the prospective fault current, the system voltage and the duty &mdash; overload only, or full short-circuit breaking. We will confirm the fuse range and the holder that matches it before you order.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

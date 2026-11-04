@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/short-circuit-current-calculation-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حساب تيار القصر: مستوى العطل والتحمل واختيار الحماية | Yomin Electric</title>
+<meta name="description" content="طريقة حساب تيار القصر المتوقع من معاوقة المحول: المعادلة، مثال 1000 كيلوفولت أمبير، القيمة العظمى مقابل الفعالة، تحقق Icw وIpk، وقدرة قطع المصاهر.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/short-circuit-current-calculation-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-ar">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "حساب تيار القصر: مستوى العطل والتحمل والحماية",
+      "description": "طريقة حساب تيار القصر المتوقع من معاوقة المحول: المعادلة، مثال 1000 كيلوفولت أمبير، القيمة العظمى مقابل الفعالة، تحقق Icw وIpk، وقدرة قطع المصاهر.",
+      "image": "https://www.yominelectric.com/assets/images/blog/short-circuit-current-calculation-guide/hero.png",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما تيار القصر المعتاد في لوحة منخفضة الجهد؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يتحدد مباشرة بالمحول. عند 400 فولت وبمعاوقة 6% يعطي محول 630 كيلوفولت أمبير نحو 15 كيلوأمبير، و1000 كيلوفولت أمبير نحو 24 كيلوأمبير، و2000 كيلوفولت أمبير نحو 48 كيلوأمبير. والمحدد هو جهد القصر على اللوحة لا القدرة وحدها."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا تكون القمة أعلى من القيمة الفعالة المحسوبة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لأن تيار العطل يبدأ بمركبة مستمرة غير متماثلة تتلاشى خلال الدورات الأولى. وفي منخفض الجهد تُؤخذ القمة الأولى عادة 2.55 ضعف القيمة الفعالة، وعلى المعدات أن تتحملها ميكانيكياً."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يحتاج المصهر إلى قدرة قطع إذا كان القاطع الأعلى يملكها؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم. كل جهاز قد يحمل تيار العطل يجب أن يستطيع قطعه أو أن يكون محمياً بجهاز يقطعه. والمصهر الذي تقل قدرة قطعه عن تيار العطل المتوقع قد ينفجر، والقاعدة جزء من هذا التصنيف."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف يغيّر طول الكابل تيار العطل؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يضيف معاوقة. ومضاعفة المسار تقلّل تيار العطل إلى النصف تقريباً في المغذي الطويل، لذلك قد يكون جهاز مناسب عند اللوحة مفرط التصنيف أو غير قادر على الفصل عند الطرف البعيد. احسب عند كل نقطة تركيب."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">الرئيسية</a> &middot; <a href="/blog">المدونة</a> &middot; <span>الحماية والتوزيع</span></div>
+    <span class="bh-tag">أدلة هندسية</span>
+    <h1 class="bh-title">حساب تيار القصر: مستوى العطل والتحمل والحماية</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>4 نوفمبر 2026</span>
+      <span class="divider"></span>
+      <span>قراءة 9 دقائق</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/short-circuit-current-calculation-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/short-circuit-current-calculation-guide/hero.png" alt="مصاهر NH ذات شفرات منخفضة الجهد وقاعدة مصهر ثقيلة الخدمة مخصصة لقطع تيار القصر" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>تيار القصر هو التيار الذي يمر عندما يلامس موصل حامل للجهد موصلاً آخر أو الأرض عبر معاوقة قريبة من الصفر. وعند أطراف محول التوزيع يُحسب من قدرة المحول وجهد القصر: Isc = S / (&radic;3 &times; U &times; u<sub>k</sub>). لذلك يعطي محول 1000 كيلوفولت أمبير عند 400 فولت بمعاوقة 6% نحو 24 كيلوأمبير في عطل صلب &mdash; وعلى كل جهاز وموصل أسفل منه أن يتحمل هذا الرقم.</p>
+
+    <h2>من أين يأتي تيار العطل</h2>
+
+    <p>يُحدَّد تيار العطل بالمعاوقة بين المصدر ونقطة العطل. وفي التركيب منخفض الجهد تتكون هذه السلسلة من أربعة أجزاء: الشبكة الأعلى، والمحول، ومسار القضبان أو الكابل، والوصلات على الطريق. والمحول هو المكوّن الحاكم لأن معاوقته تُضبط عمداً عند بضعة بالمئة كي يبقى الجهد ثابتاً تحت الحمل. أما معاوقة الكابل فلا تصبح مؤثرة إلا في المسارات الطويلة أو المقاطع الصغيرة.</p>
+
+    <p>وتضاف المحركات إلى الإجمالي. فالمحرك الحثي الدائر يتصرف لحظياً كمولّد ويغذي العطل القريب، عادة بتيار يساوي أضعاف تياره المقنن خلال الدورات الأولى. وفي لوحة تغذي حمولاً كبيرة من المحركات فإن إهمال هذه المساهمة يقلل من تقدير مستوى العطل عند القضبان.</p>
+
+    <h2>الحساب للوحة مغذاة من محول</h2>
+
+    <p>تفترض الصيغة المختصرة أن المحول هو المعاوقة المؤثرة الوحيدة. مع S بالفولت أمبير وU بالفولت وu<sub>k</sub> كقيمة نسبية:</p>
+
+    <p>Isc (ثلاثي الطور) = S / (&radic;3 &times; U &times; u<sub>k</sub>) &nbsp;&nbsp; أما تيار القصر بين الطور والحيادي فهو عادة أقل، لأنه يعتمد على توصيل المحول وعلى مسار المركبة الصفرية.</p>
+
+    <p>لمحول 1000 كيلوفولت أمبير عند 400 فولت وu<sub>k</sub> = 0.06: Isc = 1,000,000 / (1.732 &times; 400 &times; 0.06) = 24,056 أمبير، أي نحو 24 كيلوأمبير. هذا الرقم وحده يحدد قدرة قطع جهاز الدخول وقدرة تحمل القضبان.</p>
+
+    <table>
+      <thead>
+        <tr><th>قدرة المحول</th><th>جهد القصر</th><th>تيار القصر المتوقع عند 400 فولت</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>315 كيلوفولت أمبير</td><td>6%</td><td>7.6 كيلوأمبير</td></tr>
+      <tr><td>630 كيلوفولت أمبير</td><td>6%</td><td>15.2 كيلوأمبير</td></tr>
+      <tr><td>1000 كيلوفولت أمبير</td><td>6%</td><td>24.1 كيلوأمبير</td></tr>
+      <tr><td>1600 كيلوفولت أمبير</td><td>6%</td><td>38.5 كيلوأمبير</td></tr>
+      <tr><td>2000 كيلوفولت أمبير</td><td>6%</td><td>48.1 كيلوأمبير</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>جهد القصر مطبوع على لوحة بيانات المحول وليس دائماً 6%. فمحول بمعاوقة 4% وبالقدرة نفسها ينتج تيار عطل أعلى بنحو 50%، ولهذا فإن نسخ رقم من مشروع آخر هو أكثر أسباب نقص مواصفات اللوحة شيوعاً.</strong></p>
+
+    <h2>القيمة الفعالة والقيمة العظمى واستخدام كل منهما</h2>
+
+    <p>القيمة المحسوبة أعلاه هي التيار الفعال المتماثل، وهي المستخدمة في اختيار قدرة القطع لأن الجهاز يجب أن يقطع هذا التيار عند مرور الجهد بالصفر. لكن القمة الأولى أعلى بسبب المركبة المستمرة غير المتماثلة في الدورات الأولى.</p>
+
+    <p>في الأنظمة منخفضة الجهد تُقدر القمة عادة بـ 2.55 ضعف القيمة الفعالة، وهو ما يوافق معامل قمة نحو 1.8. لذلك يعرض عطل بقيمة 24 كيلوأمبير قمة أولى قريبة من 61 كيلوأمبير. وعلى المفاتيح وحوامل القضبان وقواعد المصاهر أن تتحمل هذه القمة دون تشوه، وإن لم يكن عليها قطعها أبداً.</p>
+
+    <ul>
+      <li><strong>Icu / قدرة القطع</strong> &mdash; التيار الفعال الذي يستطيع الجهاز قطعه بأمان. يجب أن يتجاوز تيار العطل المتوقع عند أطرافه.</li>
+      <li><strong>Icw</strong> &mdash; تيار التحمل قصير الزمن، وهو التيار الفعال الذي تحمله القضبان أو اللوحة لمدة محددة (عادة ثانية واحدة) دون تلف. يخص القضبان واللوحات لا المصاهر.</li>
+      <li><strong>Ipk</strong> &mdash; تحمل القمة. الاختبار الميكانيكي: هل تتحمل الحوامل والوصلات القوة الكهرمغناطيسية للقمة الأولى؟</li>
+    </ul>
+
+    <h2>التحقق الحراري للكابل والقضبان</h2>
+
+    <p>الموصل لا يحتاج إلى قطع العطل، لكنه يجب أن ينجو من أجزاء الثانية قبل أن تعمل الحماية. يقارن التحقق الأدياباتي الطاقة المارّة بما يستطيع الموصل امتصاصه: k&sup2;S&sup2; &ge; I&sup2;t، حيث S المقطع بالمليمتر المربع وt زمن القطع بالثواني وk ثابت المادة والعزل &mdash; نحو 115 للنحاس المعزول بـ PVC و143 للنحاس المعزول بـ XLPE.</p>
+
+    <p>والنتيجة العملية أن مقطعاً صغيراً مغذى من لوحة قوية قد يفشل في هذا التحقق وإن كان يجتاز فحصي هبوط الجهد وسعة التيار. فمع 24 كيلوأمبير وزمن قطع 0.01 ثانية يتعرض موصل نحاسي PVC بمقطع 10 مم&sup2; إلى I&sup2;t = 24,000&sup2; &times; 0.01 = 5.76 &times; 10&#8310; أمبير&sup2;·ثانية مقابل تحمل 115&sup2; &times; 10&sup2; = 1.32 &times; 10&#8310;. الموصل يخسر، ويجب زيادة المقطع.</p>
+
+    <h2>الحماية: قدرة القطع والانتقائية</h2>
+
+    <p>لكل جهاز حماية قدرة قطع مقننة، ويجب أن تكون على الأقل مساوية لتيار العطل المتوقع في موضع تركيبه. فالجهاز بقدرة 6 كيلوأمبير في لوحة يبلغ فيها العطل 24 كيلوأمبير ليس ناقصاً فحسب: بل قد ينفجر ويقوس عبر الصندوق ويحوّل العطل إلى حادث.</p>
+
+    <p>تتعامل المصاهر مع هذا جيداً لأن قدرة قطعها عالية نسبة إلى حجمها. فمصهر NH ذو الشفرات داخل قاعدة مناسبة يقطع عشرات الكيلوأمبيرات في حجم أصغر بكثير من قاطع مكافئ. ولهذا تبقى مصاهر NH معياراً لحماية الدخول والمغذيات الرئيسية في اللوحات الصناعية، ولهذا يجب طلب القاعدة والمصهر كزوج متوافق &mdash; فالمجموعة، لا المصهر وحده، هي التي تحمل التصنيف.</p>
+
+    <p>الانتقائية هي الشرط الثاني. يجب أن يقطع الجهاز الأقرب إلى العطل أولاً، كي لا يؤدي عطل في فرع نهائي إلى فصل جهاز الدخول الرئيسي. تُقرأ انتقائية مصهر-مصهر من جداول النسب المنشورة، أما تنسيق مصهر-قاطع فيحتاج عادة إلى منحنيات المصنّع. وإذا كنت ما زلت تختار بين عائلتي الأجهزة، فإن <a href="/blog/fuse-vs-circuit-breaker-ar">مقارنة المصهر بالقاطع</a> تغطي المفاضلات، و<a href="/blog/fuse-and-protection-selection-guide">دليل اختيار المصاهر والحماية</a> يفصّل التصنيف والجهد والتنسيق.</p>
+
+    <h2>مستوى العطل عند اللوحة ليس هو عند الحمل</h2>
+
+    <p>قد يكون عطل بقيمة 24 كيلوأمبير عند القضبان الرئيسية مساوياً 6 كيلوأمبير عند نهاية مغذٍّ بطول 60 متراً. ويترتب على إهمال ذلك خطأان: تصنيف كل أجهزة المصنع على 24 كيلوأمبير يهدر المال، وتصنيفها كلها على 6 كيلوأمبير لأن هذا ما يراه الطرف البعيد أمر خطير. ويجب حساب مستوى العطل عند كل نقطة يُركّب فيها جهاز، والقيمة الأعلى داخل الصندوق هي التي تحكم الصندوق.</p>
+
+    <p>والخطأ المعاكس مهم أيضاً. فقد يكون تيار العطل في دائرة نهائية طويلة رقيقة أقل من أن تفصل الحماية في الزمن المطلوب، فيبقى العطل مشتعلاً. ولهذا تُفحص أقصى معاوقة لحلقة العطل الأرضي إلى جانب قدرة القطع: يجب أن يرى الجهاز العطل لا أن يتحمله فقط.</p>
+
+    <h2>ما ترسله عند تحديد الحماية</h2>
+
+    <ol>
+      <li>جهد الشبكة وترددها، وهل التأريض عند المحول أم عبر معاوقة.</li>
+      <li>قدرة المحول وجهد القصر من لوحة البيانات &mdash; لا افتراض 6%.</li>
+      <li>تيار العطل المتوقع عند نقطة التركيب، أو البيانات اللازمة لحسابه.</li>
+      <li>هل الخدمة حماية من الحمل الزائد فقط أم قطع قصر كامل.</li>
+      <li>شرط الانتقائية: أي جهاز يجب أن يقطع أولاً، ومع أي جهاز أعلى منه يجب التنسيق.</li>
+      <li>بالنسبة للقضبان والمفاتيح، قيم Icw وIpk المطلوبة ومدة اختبار التحمل.</li>
+    </ol>
+
+    <h2>منتجات لخدمة تيار القصر</h2>
+
+    <p>توفّر YOMIN عتاد الحماية الذي ينتهي إليه هذا الحساب، ومنه <a href="/products/fuse-protection/nh00-copper-low-voltage-160-amp-3p-polyester-knife-blade-fuse">مصهر NH00 النحاسي ذو الشفرات</a> للوحات التوزيع منخفضة الجهد، و<a href="/products/fuse-protection/nh1-80a-125a-250a-48v-pv-dc-solar-fuse-for-distribution-box">مصهر شمسي NH1 للتيار المستمر</a> لسلاسل الألواح حيث لا ينطفئ قوس التيار المستمر تلقائياً، و<a href="/products/fuse-protection/300a-j-type-heavy-duty-fuse-cut-out-base-lv-fuse-switch-disconnector">قاعدة مصهر ثقيلة الخدمة من نوع J بقيمة 300 أمبير</a> لأعمال الدخول.</p>
+
+    <p>التفاصيل التي تحدد ما إذا كانت المجموعة تحقق تصنيفها ليست مبهرة: يجب أن تكون القاعدة مقننة لجسم المصهر ولمستوى العطل، وأن تكون التلامسات نظيفة ومربوطة بالعزم المحدد، وأن يُفحص جهد التيار المستمر للمصهر الشمسي منفصلاً عن جهده المتردد، لأن قوس التيار المستمر لا يمر بالصفر لينطفئ.</p>
+
+    <h2>أسئلة شائعة</h2>
+    <h3>ما تيار القصر المعتاد في لوحة منخفضة الجهد؟</h3>
+    <p>يتحدد مباشرة بالمحول. عند 400 فولت وبمعاوقة 6% يعطي محول 630 كيلوفولت أمبير نحو 15 كيلوأمبير، و1000 كيلوفولت أمبير نحو 24 كيلوأمبير، و2000 كيلوفولت أمبير نحو 48 كيلوأمبير. والمحدد هو جهد القصر على اللوحة لا القدرة وحدها.</p>
+    <h3>لماذا تكون القمة أعلى من القيمة الفعالة المحسوبة؟</h3>
+    <p>لأن تيار العطل يبدأ بمركبة مستمرة غير متماثلة تتلاشى خلال الدورات الأولى. وفي منخفض الجهد تُؤخذ القمة الأولى عادة 2.55 ضعف القيمة الفعالة، وعلى المعدات أن تتحملها ميكانيكياً.</p>
+    <h3>هل يحتاج المصهر إلى قدرة قطع إذا كان القاطع الأعلى يملكها؟</h3>
+    <p>نعم. كل جهاز قد يحمل تيار العطل يجب أن يستطيع قطعه أو أن يكون محمياً بجهاز يقطعه. والمصهر الذي تقل قدرة قطعه عن تيار العطل المتوقع قد ينفجر، والقاعدة جزء من هذا التصنيف.</p>
+    <h3>كيف يغيّر طول الكابل تيار العطل؟</h3>
+    <p>يضيف معاوقة. ومضاعفة المسار تقلّل تيار العطل إلى النصف تقريباً في المغذي الطويل، لذلك قد يكون جهاز مناسب عند اللوحة مفرط التصنيف أو غير قادر على الفصل عند الطرف البعيد. احسب عند كل نقطة تركيب.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>هل تختار الحماية لمستوى عطل معروف؟</h2>
+    <p>أرسل تيار القصر المتوقع وجهد الشبكة ونوع الخدمة &mdash; حماية من الحمل الزائد فقط أم قطع قصر كامل. نؤكد سلسلة المصاهر والقاعدة المطابقة قبل الطلب.</p>
+    <a class="btn btn-primary" href="/contact">اطلب عرض سعر</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">تواصل على واتساب</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

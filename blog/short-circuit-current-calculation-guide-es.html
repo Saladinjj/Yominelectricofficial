@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/short-circuit-current-calculation-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C&aacute;lculo de corriente de cortocircuito: nivel y resistencia | Yomin Electric</title>
+<meta name="description" content="Calcular la corriente de cortocircuito presunta a partir de la impedancia del transformador: f&oacute;rmula, ejemplo de 1000 kVA, valor de cresta, Icw e Ipk y capacidad de corte de fusibles.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/short-circuit-current-calculation-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "C&aacute;lculo de corriente de cortocircuito: nivel de falla, resistencia y protecci&oacute;n",
+      "description": "Calcular la corriente de cortocircuito presunta a partir de la impedancia del transformador: f&oacute;rmula, ejemplo de 1000 kVA, valor de cresta, Icw e Ipk y capacidad de corte de fusibles.",
+      "image": "https://www.yominelectric.com/assets/images/blog/short-circuit-current-calculation-guide/hero.png",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "&iquest;Qu&eacute; corriente de cortocircuito es habitual en un tablero de baja tensi&oacute;n?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende directamente del transformador. A 400 V con 6 % de impedancia, un transformador de 630 kVA da unos 15 kA, uno de 1000 kVA unos 24 kA y uno de 2000 kVA unos 48 kA. Lo que fija la cifra es la tensi&oacute;n de cortocircuito de la placa, no la potencia sola."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;Por qu&eacute; la cresta es mayor que el valor eficaz calculado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Porque la corriente de falla arranca con una componente asim&eacute;trica de continua que decae en los primeros ciclos. En baja tensi&oacute;n la primera cresta se toma habitualmente como 2,55 veces el valor eficaz, y el equipo debe soportarla mec&aacute;nicamente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;Un fusible necesita capacidad de corte si el interruptor aguas arriba ya la tiene?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "S&iacute;. Todo aparato que pueda portar la corriente de falla debe poder interrumpirla o estar protegido por uno que lo haga. Un fusible con capacidad de corte inferior a la corriente presunta puede reventar, y el portafusible forma parte de esa caracter&iacute;stica."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;C&oacute;mo cambia la longitud del cable la corriente de falla?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A&ntilde;ade impedancia. Duplicar el recorrido reduce aproximadamente a la mitad la corriente de falla en un alimentador largo, por lo que un aparato adecuado en el tablero puede quedar sobredimensionado o no disparar en el extremo. Calcule en cada punto de instalaci&oacute;n."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Protecci&oacute;n y distribuci&oacute;n</span></div>
+    <span class="bh-tag">Gu&iacute;as t&eacute;cnicas</span>
+    <h1 class="bh-title">C&aacute;lculo de corriente de cortocircuito: nivel de falla, resistencia y protecci&oacute;n</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>4 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>9 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/short-circuit-current-calculation-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/short-circuit-current-calculation-guide/hero.png" alt="Fusibles NH de cuchilla para baja tensi&oacute;n y una base portafusible reforzada aptos para cortocircuito" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>La corriente de cortocircuito es la que circula cuando un conductor activo toca otro conductor o tierra a trav&eacute;s de una impedancia cercana a cero. En los bornes de un transformador de distribuci&oacute;n se calcula con su potencia y su tensi&oacute;n de cortocircuito: Icc = S / (&radic;3 &times; U &times; u<sub>k</sub>). Un transformador de 1000 kVA a 400 V con 6 % de impedancia entrega por tanto unos 24 kA en falla franca &mdash; y cada aparato y conductor aguas abajo debe soportar esa cifra.</p>
+
+    <h2>De d&oacute;nde viene la corriente de falla</h2>
+
+    <p>La corriente de falla queda limitada por la impedancia entre la fuente y el punto de falla. En baja tensi&oacute;n esa cadena tiene cuatro partes: la red aguas arriba, el transformador, la barra o el cable y las uni&oacute;n es del recorrido. El transformador domina, porque su impedancia se fija deliberadamente en unos pocos por ciento para que la tensi&oacute;n se mantenga con carga. La impedancia del cable solo resulta significativa en recorridos largos o secciones peque&ntilde;as.</p>
+
+    <p>Los motores suman al total. Un motor de inducci&oacute;n en marcha se comporta brevemente como generador y aporta corriente a una falla cercana, normalmente varias veces su corriente nominal durante los primeros ciclos. En un tablero con carga motriz importante, ignorar ese aporte subestima el nivel de falla en la barra.</p>
+
+    <h2>El c&aacute;lculo para un tablero alimentado por transformador</h2>
+
+    <p>La forma corta supone que el transformador es la &uacute;nica impedancia significativa. Con S en voltamperios, U en voltios y u<sub>k</sub> en valor por unidad:</p>
+
+    <p>Icc (trif&aacute;sica) = S / (&radic;3 &times; U &times; u<sub>k</sub>) &nbsp;&nbsp; y &nbsp;&nbsp; la Icc de fase a neutro suele ser menor, porque depende de la conexi&oacute;n del transformador y del camino de secuencia cero.</p>
+
+    <p>Para 1000 kVA a 400 V con u<sub>k</sub> = 0,06: Icc = 1.000.000 / (1,732 &times; 400 &times; 0,06) = 24.056 A, es decir unos 24 kA. Esa sola cifra fija la capacidad de corte del aparato de entrada y la resistencia de la barra.</p>
+
+    <table>
+      <thead>
+        <tr><th>Potencia del transformador</th><th>Tensi&oacute;n de cortocircuito</th><th>Icc presunta a 400 V</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>315 kVA</td><td>6 %</td><td>7,6 kA</td></tr>
+      <tr><td>630 kVA</td><td>6 %</td><td>15,2 kA</td></tr>
+      <tr><td>1000 kVA</td><td>6 %</td><td>24,1 kA</td></tr>
+      <tr><td>1600 kVA</td><td>6 %</td><td>38,5 kA</td></tr>
+      <tr><td>2000 kVA</td><td>6 %</td><td>48,1 kA</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>La tensi&oacute;n de cortocircuito figura en la placa del transformador y no siempre es 6 %. Un transformador de 4 % de la misma potencia produce cerca de 50 % m&aacute;s corriente de falla: copiar la cifra de otro proyecto es la forma m&aacute;s com&uacute;n de quedarse corto en un tablero.</strong></p>
+
+    <h2>Valor eficaz, cresta y para qu&eacute; sirve cada uno</h2>
+
+    <p>El valor calculado arriba es la corriente eficaz sim&eacute;trica. Es el que se usa para elegir la capacidad de corte, porque el aparato debe interrumpir esa corriente en el cruce por cero de la tensi&oacute;n. Pero la primera cresta es mayor, por la componente asim&eacute;trica de continua presente en los primeros ciclos.</p>
+
+    <p>En baja tensi&oacute;n la cresta se aproxima habitualmente como 2,55 veces el valor eficaz, lo que corresponde a un factor de cresta de aproximadamente 1,8. Una falla de 24 kA presenta entonces una primera cresta cercana a 61 kA. Aparamenta, soportes de barra y portafusibles deben soportar esa cresta sin deformarse, aunque nunca tengan que interrumpirla.</p>
+
+    <ul>
+      <li><strong>Icu / capacidad de corte</strong> &mdash; corriente eficaz que un aparato puede interrumpir con seguridad. Debe superar la corriente de falla presunta en sus bornes.</li>
+      <li><strong>Icw</strong> &mdash; corriente admisible de corta duraci&oacute;n, que la barra o el tablero soporta durante un tiempo declarado (normalmente 1 s) sin da&ntilde;o. Aplica a barras y tableros, no a fusibles.</li>
+      <li><strong>Ipk</strong> &mdash; resistencia de cresta. El ensayo mec&aacute;nico: &iquest;resisten soportes y uni&oacute;n es el esfuerzo electromagn&eacute;tico de la primera cresta?</li>
+    </ul>
+
+    <h2>La verificaci&oacute;n t&eacute;rmica de cable y barra</h2>
+
+    <p>Un conductor no tiene que interrumpir la falla, pero debe sobrevivir las pocas d&eacute;cimas de segundo previas al disparo de la protecci&oacute;n. La comprobaci&oacute;n adiab&aacute;tica compara la energ&iacute;a dejada pasar con la que el conductor puede absorber: k&sup2;S&sup2; &ge; I&sup2;t, donde S es la secci&oacute;n en mm&sup2;, t el tiempo de despeje en segundos y k una constante de material y aislamiento &mdash; alrededor de 115 para cobre con aislamiento PVC y 143 para cobre con XLPE.</p>
+
+    <p>La consecuencia pr&aacute;ctica es que una secci&oacute;n peque&ntilde;a alimentada desde un tablero potente puede fallar esta comprobaci&oacute;n aunque cumpla la ca&iacute;da de tensi&oacute;n y la corriente admisible. Con 24 kA y un fusible que despeja en 0,01 s, un conductor de cobre PVC de 10 mm&sup2; recibe I&sup2;t = 24.000&sup2; &times; 0,01 = 5,76 &times; 10&#8310; A&sup2;s frente a una resistencia de 115&sup2; &times; 10&sup2; = 1,32 &times; 10&#8310; A&sup2;s. El conductor pierde y la secci&oacute;n debe aumentar.</p>
+
+    <h2>Protecci&oacute;n: capacidad de corte y selectividad</h2>
+
+    <p>Todo dispositivo de protecci&oacute;n tiene una capacidad de corte nominal, que debe ser al menos igual a la corriente de falla presunta en su punto de instalaci&oacute;n. Un aparato de 6 kA en un tablero con 24 kA no solo es insuficiente: puede reventar, formar un arco a trav&eacute;s del envolvente y convertir una falla en un accidente.</p>
+
+    <p>Los fusibles resuelven bien este problema porque su capacidad de corte es alta en relaci&oacute;n con su tama&ntilde;o. Un fusible NH de cuchilla, en un portafusible adecuado, interrumpe decenas de kiloamperios en un volumen muy inferior al de un interruptor equivalente. Por eso los fusibles NH siguen siendo la referencia para entradas y salidas principales en tableros industriales, y por eso el portafusible y el fusible deben pedirse como pareja: el conjunto, no el fusible solo, es el que porta la capacidad de corte.</p>
+
+    <p>La selectividad es el segundo requisito. El aparato m&aacute;s cercano a la falla debe despejarla primero, para que una falla en un circuito derivado no tumbe la entrada general. La selectividad fusible-fusible se lee en tablas de relaciones publicadas; la coordinaci&oacute;n fusible-interruptor suele requerir las curvas del fabricante. Si a&uacute;n est&aacute; comparando familias, la <a href="/blog/fuse-vs-circuit-breaker-es">comparaci&oacute;n entre fusible e interruptor</a> cubre los compromisos, y la <a href="/blog/fuse-and-protection-selection-guide">gu&iacute;a de selecci&oacute;n de fusibles y protecciones</a> detalla calibre, tensi&oacute;n y coordinaci&oacute;n.</p>
+
+    <h2>El nivel de falla en el tablero no es el del extremo del circuito</h2>
+
+    <p>Una falla de 24 kA en la barra principal puede ser de 6 kA al final de un alimentador de 60 m. De ignorarlo se derivan dos errores. Dimensionar todos los aparatos de la planta para 24 kA cuesta dinero; dimensionarlos todos para 6 kA porque eso es lo que ve el extremo lejano es peligroso. El nivel de falla debe calcularse en cada punto donde se instala un aparato, y el valor m&aacute;s alto dentro del envolvente gobierna el envolvente.</p>
+
+    <p>El error inverso tambi&eacute;n importa. Un circuito terminal largo y de poca secci&oacute;n puede tener una corriente de falla tan baja que la protecci&oacute;n no dispare en el tiempo exigido, dejando la falla ardiendo. Por eso se verifica la impedancia m&aacute;xima del bucle de falla a tierra adem&aacute;s de la capacidad de corte: el aparato debe ver la falla, no solo soportarla.</p>
+
+    <h2>Qu&eacute; enviar al especificar la protecci&oacute;n</h2>
+
+    <ol>
+      <li>Tensi&oacute;n y frecuencia del sistema, y si la puesta a tierra es en el transformador o mediante impedancia.</li>
+      <li>Potencia del transformador y tensi&oacute;n de cortocircuito tomadas de la placa &mdash; no un 6 % supuesto.</li>
+      <li>Corriente de falla presunta en el punto de instalaci&oacute;n, o los datos para calcularla.</li>
+      <li>Si el servicio es solo protecci&oacute;n contra sobrecarga o corte de cortocircuito completo.</li>
+      <li>El requisito de selectividad: qu&eacute; aparato debe despejar primero y con cu&aacute;l aguas arriba debe coordinarse.</li>
+      <li>Para barras y aparamenta, la Icw y la Ipk requeridas y la duraci&oacute;n del ensayo de resistencia.</li>
+    </ol>
+
+    <h2>Productos para servicio de cortocircuito</h2>
+
+    <p>YOMIN suministra el hardware de protecci&oacute;n en el que termina este c&aacute;lculo, incluido el <a href="/products/fuse-protection/nh00-copper-low-voltage-160-amp-3p-polyester-knife-blade-fuse">fusible NH00 de cuchilla en cobre</a> para tableros de baja tensi&oacute;n, el <a href="/products/fuse-protection/nh1-80a-125a-250a-48v-pv-dc-solar-fuse-for-distribution-box">fusible solar NH1 de corriente continua</a> para cadenas fotovoltaicas donde el arco de CC no se extingue solo, y la <a href="/products/fuse-protection/300a-j-type-heavy-duty-fuse-cut-out-base-lv-fuse-switch-disconnector">base portafusible reforzada tipo J de 300 A</a> para acometidas.</p>
+
+    <p>Los detalles que deciden si el conjunto mantiene su capacidad de corte son poco vistosos: el portafusible debe estar nominalizado para el cuerpo del fusible y para el nivel de falla, los contactos deben estar limpios y apretados al par prescrito, y la tensi&oacute;n continua de un fusible fotovoltaico debe verificarse por separado de su tensi&oacute;n alterna, porque un arco de continua no tiene cruce por cero que lo extinga.</p>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>&iquest;Qu&eacute; corriente de cortocircuito es habitual en un tablero de baja tensi&oacute;n?</h3>
+    <p>Depende directamente del transformador. A 400 V con 6 % de impedancia, un transformador de 630 kVA da unos 15 kA, uno de 1000 kVA unos 24 kA y uno de 2000 kVA unos 48 kA. Lo que fija la cifra es la tensi&oacute;n de cortocircuito de la placa, no la potencia sola.</p>
+    <h3>&iquest;Por qu&eacute; la cresta es mayor que el valor eficaz calculado?</h3>
+    <p>Porque la corriente de falla arranca con una componente asim&eacute;trica de continua que decae en los primeros ciclos. En baja tensi&oacute;n la primera cresta se toma habitualmente como 2,55 veces el valor eficaz, y el equipo debe soportarla mec&aacute;nicamente.</p>
+    <h3>&iquest;Un fusible necesita capacidad de corte si el interruptor aguas arriba ya la tiene?</h3>
+    <p>S&iacute;. Todo aparato que pueda portar la corriente de falla debe poder interrumpirla o estar protegido por uno que lo haga. Un fusible con capacidad de corte inferior a la corriente presunta puede reventar, y el portafusible forma parte de esa caracter&iacute;stica.</p>
+    <h3>&iquest;C&oacute;mo cambia la longitud del cable la corriente de falla?</h3>
+    <p>A&ntilde;ade impedancia. Duplicar el recorrido reduce aproximadamente a la mitad la corriente de falla en un alimentador largo, por lo que un aparato adecuado en el tablero puede quedar sobredimensionado o no disparar en el extremo. Calcule en cada punto de instalaci&oacute;n.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>&iquest;Eligiendo protecci&oacute;n para un nivel de falla conocido?</h2>
+    <p>Env&iacute;e la corriente de cortocircuito presunta, la tensi&oacute;n del sistema y el servicio &mdash; solo sobrecarga o corte de cortocircuito completo. Confirmamos la gama de fusibles y el portafusible correspondiente antes de su pedido.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotizaci&oacute;n</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

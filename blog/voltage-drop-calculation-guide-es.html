@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/voltage-drop-calculation-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C&aacute;lculo de ca&iacute;da de tensi&oacute;n: f&oacute;rmula, l&iacute;mites y secci&oacute;n | Yomin Electric</title>
+<meta name="description" content="C&aacute;lculo de ca&iacute;da de tensi&oacute;n en monof&aacute;sico y trif&aacute;sico: f&oacute;rmula, tabla mV/A/m en cobre, ejemplo resuelto de 100 A, correcci&oacute;n por temperatura y l&iacute;mites del 3 al 5 %.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/voltage-drop-calculation-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/voltage-drop-calculation-guide-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/voltage-drop-calculation-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/voltage-drop-calculation-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/voltage-drop-calculation-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/voltage-drop-calculation-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/voltage-drop-calculation-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "C&aacute;lculo de ca&iacute;da de tensi&oacute;n: f&oacute;rmula, l&iacute;mites y secci&oacute;n del cable",
+      "description": "C&aacute;lculo de ca&iacute;da de tensi&oacute;n en monof&aacute;sico y trif&aacute;sico: f&oacute;rmula, tabla mV/A/m en cobre, ejemplo resuelto de 100 A, correcci&oacute;n por temperatura y l&iacute;mites del 3 al 5 %.",
+      "image": "https://www.yominelectric.com/assets/images/blog/voltage-drop-calculation-guide/hero.png",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/voltage-drop-calculation-guide-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "&iquest;Qu&eacute; ca&iacute;da de tensi&oacute;n es aceptable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los l&iacute;mites dependen del reglamento y del proyecto. El anexo G de la IEC 60364-5-52 da valores orientativos de 3 % para alumbrado y 5 % para otros usos en distribuci&oacute;n p&uacute;blica de baja tensi&oacute;n, mientras que la pr&aacute;ctica norteamericana suele aplicar 3 % en el circuito derivado y 5 % en total. Lo importante es fijar el l&iacute;mite antes de elegir el cable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;La ca&iacute;da de tensi&oacute;n depende de la carga o del cable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "De ambos. El cable fija la resistencia por metro y la carga fija la corriente que lo atraviesa. Por eso un mismo trazo de 80 m puede ser aceptable con 40 A e inaceptable con 100 A sin cambiar de cable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;Por qu&eacute; la f&oacute;rmula monof&aacute;sica se multiplica por dos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Porque la corriente sale por la fase y regresa por el neutro, as&iacute; que la longitud de conductor recorrida es el doble del trazo f&iacute;sico. En trif&aacute;sica se usa ra&iacute;z de tres porque el retorno son las otras dos fases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;Se puede corregir la ca&iacute;da con un interruptor m&aacute;s grande?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. La protecci&oacute;n no cambia la resistencia del conductor. Aumentar el calibre hace la instalaci&oacute;n menos segura sin mejorar la tensi&oacute;n en la carga; solo sirven una secci&oacute;n mayor, un trazo m&aacute;s corto o una tensi&oacute;n de distribuci&oacute;n m&aacute;s alta."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Cables y conexiones</span></div>
+    <span class="bh-tag">Gu&iacute;as t&eacute;cnicas</span>
+    <h1 class="bh-title">C&aacute;lculo de ca&iacute;da de tensi&oacute;n: f&oacute;rmula, l&iacute;mites y secci&oacute;n del cable</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>4 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>9 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/voltage-drop-calculation-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/voltage-drop-calculation-guide/hero.png" alt="Terminales de cobre para cable sobre fondo blanco, usados para conectar la secci&oacute;n definida por el c&aacute;lculo de ca&iacute;da de tensi&oacute;n" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>La ca&iacute;da de tensi&oacute;n es la tensi&oacute;n que se pierde a lo largo de un conductor entre la fuente y la carga. Se calcula con la corriente, la longitud de ida, la resistividad y la secci&oacute;n &mdash; para un alimentador trif&aacute;sico, &Delta;V = &radic;3 &times; I &times; L &times; &rho; / S. Lo que decide la secci&oacute;n no es la ca&iacute;da en voltios, sino su porcentaje respecto de la tensi&oacute;n nominal comparado con el l&iacute;mite del proyecto.</p>
+
+    <h2>Qu&eacute; mide realmente la ca&iacute;da de tensi&oacute;n</h2>
+
+    <p>Un conductor es una resistencia. Cada metro disipa algo de energ&iacute;a y la tensi&oacute;n en el extremo lejano siempre es menor que en la fuente. Esa diferencia es la ca&iacute;da de tensi&oacute;n; no es lo mismo que la p&eacute;rdida de potencia, aunque est&eacute;n relacionadas, porque la energ&iacute;a disipada en el conductor es la ca&iacute;da multiplicada por la corriente.</p>
+
+    <p>La consecuencia pr&aacute;ctica es que un cable puede cumplir de sobra con la corriente admisible y aun as&iacute; ser el cable equivocado. Un alimentador de cobre de 10 mm&sup2; puede trabajar fr&iacute;o a 100 A y caer m&aacute;s de 3 % en 50 m, lo que arranca mal un motor, baja el nivel de las l&aacute;mparas al final de la l&iacute;nea o deja un equipo por debajo de su rango de alimentaci&oacute;n. La corriente admisible responde &laquo;&iquest;sobrevivir&aacute; el conductor?&raquo;; la ca&iacute;da de tensi&oacute;n responde &laquo;&iquest;seguir&aacute; funcionando la carga?&raquo;.</p>
+
+    <h2>La f&oacute;rmula en monof&aacute;sico y en trif&aacute;sico</h2>
+
+    <p>Ambas formas usan los mismos cuatro datos: corriente en amperios, longitud de ida en metros, resistividad en ohmio mil&iacute;metro cuadrado por metro y secci&oacute;n en mil&iacute;metros cuadrados.</p>
+
+    <ul>
+      <li><strong>Monof&aacute;sico (fase y neutro):</strong> &Delta;V = 2 &times; I &times; L &times; &rho; / S</li>
+      <li><strong>Trif&aacute;sico (conductores de fase):</strong> &Delta;V = &radic;3 &times; I &times; L &times; &rho; / S</li>
+      <li><strong>Porcentaje:</strong> &Delta;V % = &Delta;V / V<sub>nominal</sub> &times; 100</li>
+    </ul>
+
+    <p>El factor dos del monof&aacute;sico no es un margen de seguridad: la corriente sale por la fase y vuelve por el neutro, de modo que la longitud de conductor recorrida es el doble de la longitud del trazo. El trif&aacute;sico usa &radic;3 porque las tres corrientes de fase se suman vectorialmente. La resistividad es 0,0175 &Omega;&middot;mm&sup2;/m para el cobre y alrededor de 0,0282 &Omega;&middot;mm&sup2;/m para el aluminio a 20 &deg;C &mdash; casi 60 % m&aacute;s, y por eso un alimentador de aluminio necesita mayor secci&oacute;n para la misma ca&iacute;da.</p>
+
+    <h2>Ejemplo resuelto: 100 A en 80 m</h2>
+
+    <p>Un alimentador trif&aacute;sico de 400 V transporta 100 A en un trazo de ida de 80 m de cobre. Con &rho; = 0,0175 &Omega;&middot;mm&sup2;/m y S = 35 mm&sup2;:</p>
+
+    <p>&Delta;V = 1,732 &times; 100 &times; 80 &times; 0,0175 / 35 = 6,9 V, es decir 1,7 % de 400 V. El l&iacute;mite del 3 % se cumple con holgura, as&iacute; que la secci&oacute;n de 35 mm&sup2; la decide la corriente admisible y el factor de correcci&oacute;n, no la ca&iacute;da.</p>
+
+    <p>Bajando a 25 mm&sup2; en el mismo trazo se obtienen 9,7 V, un 2,4 %: todav&iacute;a dentro del 3 %, pero el margen desaparece en cuanto el conductor se calienta o el recorrido crece. Ese es justamente el c&aacute;lculo que conviene hacer antes de reducir una secci&oacute;n para ahorrar costo.</p>
+
+    <p>El camino corto es leer la ca&iacute;da por amperio y por metro, que es fija para un material y una secci&oacute;n dados. La tabla siguiente da valores de cobre a 20 &deg;C en trif&aacute;sico de 400 V, con la longitud de ida m&aacute;xima que mantiene el 3 % con 100 A.</p>
+
+    <table>
+      <thead>
+        <tr><th>Secci&oacute;n de cobre</th><th>mV/A/m (trif&aacute;sico)</th><th>Longitud m&aacute;x. de ida a 100 A para 3 % de 400 V</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>10 mm&sup2;</td><td>3,03</td><td>40 m</td></tr>
+      <tr><td>16 mm&sup2;</td><td>1,89</td><td>63 m</td></tr>
+      <tr><td>25 mm&sup2;</td><td>1,21</td><td>99 m</td></tr>
+      <tr><td>35 mm&sup2;</td><td>0,87</td><td>139 m</td></tr>
+      <tr><td>50 mm&sup2;</td><td>0,61</td><td>198 m</td></tr>
+      <tr><td>70 mm&sup2;</td><td>0,43</td><td>277 m</td></tr>
+      <tr><td>95 mm&sup2;</td><td>0,32</td><td>376 m</td></tr>
+      <tr><td>120 mm&sup2;</td><td>0,25</td><td>474 m</td></tr>
+      <tr><td>150 mm&sup2;</td><td>0,20</td><td>594 m</td></tr>
+      <tr><td>185 mm&sup2;</td><td>0,16</td><td>732 m</td></tr>
+      <tr><td>240 mm&sup2;</td><td>0,13</td><td>952 m</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>La tabla es una ayuda de predimensionado, no un reemplazo del c&aacute;lculo. La resistividad cambia con la temperatura, las uni&oacute;n es a&ntilde;aden resistencia y un circuito monof&aacute;sico necesita casi el doble de secci&oacute;n para la misma longitud y corriente.</strong></p>
+
+    <h2>La temperatura convierte un dise&ntilde;o conforme en uno que falla</h2>
+
+    <p>Los valores anteriores son a 20 &deg;C. Un conductor que trabaja a su corriente nominal sube mucho m&aacute;s: a 70 &deg;C la resistencia del cobre es aproximadamente 20 % mayor que a 20 &deg;C, y a 90 &deg;C ronda un 27 % m&aacute;s. Un alimentador que calcula 2,8 % en fr&iacute;o quedar&aacute; por encima del 3 % en servicio.</p>
+
+    <p>Por eso lo correcto es calcular con la resistencia a la temperatura de operaci&oacute;n prevista, no con la cifra de manual a 20 &deg;C. En la pr&aacute;ctica, las tablas de mV/A/m ya incorporan una temperatura de servicio: de ah&iacute; las d&eacute;cimas de diferencia entre un c&aacute;lculo a mano y una tabla de dimensionado.</p>
+
+    <h2>Cu&aacute;ndo la ca&iacute;da es irrelevante y cu&aacute;ndo lo decide todo</h2>
+
+    <p>En un tablero situado a pocos metros de su transformador la ca&iacute;da es un detalle y manda la corriente admisible. Domina en cuatro situaciones: alimentadores rurales largos, circuitos monof&aacute;sicos de baja tensi&oacute;n de m&aacute;s de unos 30 m, cables de grupo electr&oacute;geno cuya fuente ya est&aacute; en la tensi&oacute;n nominal y cualquier circuito que alimente un motor cuya corriente de arranque sea de cinco a siete veces la nominal.</p>
+
+    <p>Los circuitos de motor merecen un c&aacute;lculo aparte. Una ca&iacute;da del 5 % a corriente nominal se vuelve mucho m&aacute;s profunda durante un arranque directo, y el contactor puede zumbar o soltarse. Si la carga es un motor, calcule la ca&iacute;da con la corriente de arranque.</p>
+
+    <h2>Una secuencia de dimensionado sin retrabajos</h2>
+
+    <ol>
+      <li>Parta de la corriente real de la carga, no del calibre del interruptor. Un interruptor de 63 A con una carga de 40 A se dimensiona para 40 A.</li>
+      <li>Elija la secci&oacute;n en las tablas de corriente admisible seg&uacute;n el modo de instalaci&oacute;n, la temperatura ambiente y el agrupamiento.</li>
+      <li>Calcule la ca&iacute;da a temperatura de servicio y comp&aacute;rela con el l&iacute;mite del proyecto.</li>
+      <li>Si no cumple, suba la secci&oacute;n un paso y repita &mdash; no a&ntilde;ada un segundo conductor en paralelo salvo que el trazo lo permita y la protecci&oacute;n est&eacute; calibrada para la corriente total.</li>
+      <li>Verifique que la protecci&oacute;n siga coordinada con la secci&oacute;n final y que el conductor de protecci&oacute;n cumpla la condici&oacute;n adiab&aacute;tica.</li>
+      <li>Confirme que el terminal o la bornera acepta el conductor y el perno, y ordene las terminaciones junto con el cable.</li>
+    </ol>
+
+    <p>El &uacute;ltimo paso es el que retrasa obras. Un conductor de 240 mm&sup2; exige un terminal cuyo ca&ntilde;&oacute;n y palma correspondan a la clase de cableado, y una bornera apta para la corriente. Si est&aacute; convirtiendo calibres AWG, use la <a href="/blog/awg-to-mm2-conversion-chart-es">tabla de conversi&oacute;n AWG a mm&sup2;</a> antes de elegir el ca&ntilde;&oacute;n, y si el circuito es una derivaci&oacute;n final, cruce la secci&oacute;n con la gu&iacute;a de <a href="/blog/what-size-wire-for-a-60-amp-breaker-es">calibre para interruptor de 60 A</a>.</p>
+
+    <h2>Conectar la secci&oacute;n que acaba de calcular</h2>
+
+    <p>Todo c&aacute;lculo de ca&iacute;da de tensi&oacute;n termina en una secci&oacute;n, y esa secci&oacute;n hay que conectarla. YOMIN suministra las terminaciones correspondientes, entre ellas <a href="/products/terminal-connector/high-quality-rohs-certified-2-hole-cable-lugs-crimp-type-copper-terminals">terminales de cobre de dos agujeros certificados ROHS</a> para uni&oacute;n es atornilladas, <a href="/products/terminal-connector/dl-series-120mm-aluminum-cable-terminal-lugs-terminals-for-wires-and-cables">terminales de aluminio serie DL</a> cuando el conductor es de aluminio, y <a href="/products/terminal-connector/copper-electrical-cable-lugs-electric-cable-terminals-product-category-terminal-blocks">terminales de cobre para cable</a> en el rango m&eacute;trico habitual.</p>
+
+    <p>Dos detalles deciden si la uni&oacute;n se comporta como el conductor o se convierte en el punto d&eacute;bil: el ca&ntilde;&oacute;n debe coincidir con la clase de cableado y la secci&oacute;n real, y la palma debe coincidir con el perno y la superficie de apoyo. Las uni&oacute;n es aluminio-cobre necesitan adem&aacute;s una interfaz bimet&aacute;lica o una pasta adecuada; de lo contrario la resistencia de la uni&oacute;n sube y la ca&iacute;da calculada nunca llega a la carga.</p>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>&iquest;Qu&eacute; ca&iacute;da de tensi&oacute;n es aceptable?</h3>
+    <p>Los l&iacute;mites dependen del reglamento y del proyecto. El anexo G de la IEC 60364-5-52 da valores orientativos de 3 % para alumbrado y 5 % para otros usos en distribuci&oacute;n p&uacute;blica de baja tensi&oacute;n, mientras que la pr&aacute;ctica norteamericana suele aplicar 3 % en el circuito derivado y 5 % en total. Lo importante es fijar el l&iacute;mite antes de elegir el cable.</p>
+    <h3>&iquest;La ca&iacute;da de tensi&oacute;n depende de la carga o del cable?</h3>
+    <p>De ambos. El cable fija la resistencia por metro y la carga fija la corriente que lo atraviesa. Por eso un mismo trazo de 80 m puede ser aceptable con 40 A e inaceptable con 100 A sin cambiar de cable.</p>
+    <h3>&iquest;Por qu&eacute; la f&oacute;rmula monof&aacute;sica se multiplica por dos?</h3>
+    <p>Porque la corriente sale por la fase y regresa por el neutro, as&iacute; que la longitud de conductor recorrida es el doble del trazo f&iacute;sico. En trif&aacute;sica se usa ra&iacute;z de tres porque el retorno son las otras dos fases.</p>
+    <h3>&iquest;Se puede corregir la ca&iacute;da con un interruptor m&aacute;s grande?</h3>
+    <p>No. La protecci&oacute;n no cambia la resistencia del conductor. Aumentar el calibre hace la instalaci&oacute;n menos segura sin mejorar la tensi&oacute;n en la carga; solo sirven una secci&oacute;n mayor, un trazo m&aacute;s corto o una tensi&oacute;n de distribuci&oacute;n m&aacute;s alta.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>&iquest;Est&aacute; dimensionando un alimentador y necesita las terminaciones?</h2>
+    <p>Env&iacute;e la secci&oacute;n tal como figura en su plano, el di&aacute;metro del perno y los metales a cada lado de la uni&oacute;n. Confirmamos el terminal o la bornera correspondiente antes de que ordene.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotizaci&oacute;n</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

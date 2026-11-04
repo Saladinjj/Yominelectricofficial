@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/short-circuit-current-calculation-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calcul du courant de court-circuit : intensit&eacute; et tenue | Yomin Electric</title>
+<meta name="description" content="Calculer l&apos;intensit&eacute; de court-circuit pr&eacute;sum&eacute;e &agrave; partir de l&apos;imp&eacute;dance du transformateur : formule, exemple 1000 kVA, valeur cr&ecirc;te, tenue Icw et Ipk, pouvoir de coupure des fusibles.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/short-circuit-current-calculation-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/short-circuit-current-calculation-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Calcul du courant de court-circuit : intensit&eacute;, tenue et protection",
+      "description": "Calculer l&apos;intensit&eacute; de court-circuit pr&eacute;sum&eacute;e &agrave; partir de l&apos;imp&eacute;dance du transformateur : formule, exemple 1000 kVA, valeur cr&ecirc;te, tenue Icw et Ipk, pouvoir de coupure des fusibles.",
+      "image": "https://www.yominelectric.com/assets/images/blog/short-circuit-current-calculation-guide/hero.png",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/short-circuit-current-calculation-guide-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quel courant de court-circuit rencontre-t-on dans un tableau basse tension ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il d&eacute;coule directement du transformateur. &Agrave; 400 V avec 6 % d&apos;imp&eacute;dance, un transformateur de 630 kVA donne environ 15 kA, un 1000 kVA environ 24 kA et un 2000 kVA environ 48 kA. C&apos;est la tension de court-circuit de la plaque, et non la puissance seule, qui fixe le chiffre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi la valeur cr&ecirc;te est-elle sup&eacute;rieure &agrave; la valeur efficace calcul&eacute;e ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parce que le courant de d&eacute;faut commence par une composante ap&eacute;riodique qui d&eacute;cro&icirc;t sur les premiers cycles. En basse tension, la premi&egrave;re cr&ecirc;te est couramment prise &eacute;gale &agrave; 2,55 fois la valeur efficace, et le mat&eacute;riel doit tenir cette cr&ecirc;te m&eacute;caniquement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un fusible a-t-il besoin d&apos;un pouvoir de coupure si le disjoncteur en amont en poss&egrave;de un ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Tout appareil susceptible de porter le courant de d&eacute;faut doit pouvoir le couper ou &ecirc;tre prot&eacute;g&eacute; par un appareil qui le coupe. Un fusible dont le pouvoir de coupure est inf&eacute;rieur &agrave; l&apos;Icc pr&eacute;sum&eacute; peut &eacute;clater, et le porte-fusible fait partie de cette caract&eacute;ristique."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment la longueur de c&acirc;ble modifie-t-elle l&apos;Icc ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elle ajoute de l&apos;imp&eacute;dance. Doubler la longueur divise &agrave; peu pr&egrave;s l&apos;Icc par deux sur un long d&eacute;part : un appareil adapt&eacute; au tableau peut donc &ecirc;tre surdimensionn&eacute; ou incapable de d&eacute;clencher en bout de ligne. Calculez en chaque point d&apos;installation."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Protection et distribution</span></div>
+    <span class="bh-tag">Guides techniques</span>
+    <h1 class="bh-title">Calcul du courant de court-circuit : intensit&eacute;, tenue et protection</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>4 novembre 2026</span>
+      <span class="divider"></span>
+      <span>9 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/short-circuit-current-calculation-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/short-circuit-current-calculation-guide/hero.png" alt="Fusibles NH basse tension &agrave; lames et porte-fusible renforc&eacute; aptes au pouvoir de coupure de court-circuit" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Le courant de court-circuit est le courant qui circule lorsqu&apos;un conducteur actif touche un autre conducteur ou la terre &agrave; travers une imp&eacute;dance proche de z&eacute;ro. Aux bornes d&apos;un transformateur de distribution, il se calcule &agrave; partir de la puissance et de la tension de court-circuit : Icc = S / (&radic;3 &times; U &times; u<sub>k</sub>). Un transformateur de 1000 kVA &agrave; 400 V avec 6 % d&apos;imp&eacute;dance d&eacute;bite donc environ 24 kA en d&eacute;faut franc &mdash; et chaque appareil et conducteur en aval doit tenir ce chiffre.</p>
+
+    <h2>D&apos;o&ugrave; vient le courant de d&eacute;faut</h2>
+
+    <p>Le courant de d&eacute;faut est limit&eacute; par l&apos;imp&eacute;dance entre la source et le d&eacute;faut. En basse tension, cette cha&icirc;ne comporte quatre &eacute;l&eacute;ments : le r&eacute;seau amont, le transformateur, la liaison par jeux de barres ou c&acirc;ble, et les raccordements. Le transformateur domine, parce que son imp&eacute;dance est volontairement fix&eacute;e &agrave; quelques pour cent pour que la tension tienne en charge. L&apos;imp&eacute;dance des c&acirc;bles ne devient significative que sur les longues distances ou les faibles sections.</p>
+
+    <p>Les moteurs s&apos;ajoutent au total. Un moteur asynchrone en marche se comporte bri&egrave;vement comme un g&eacute;n&eacute;rateur et alimente le d&eacute;faut voisin, g&eacute;n&eacute;ralement de plusieurs fois son courant nominal pendant les premiers cycles. Pour un tableau alimentant une forte charge motrice, ignorer cet apport sous-estime l&apos;intensit&eacute; de d&eacute;faut au jeu de barres.</p>
+
+    <h2>Le calcul pour un tableau aliment&eacute; par transformateur</h2>
+
+    <p>La forme courte suppose que le transformateur est la seule imp&eacute;dance significative. Avec S en voltamp&egrave;res, U en volts et u<sub>k</sub> en valeur relative :</p>
+
+    <p>Icc (triphas&eacute;) = S / (&radic;3 &times; U &times; u<sub>k</sub>) &nbsp;&nbsp; et &nbsp;&nbsp; l&apos;Icc phase-neutre est g&eacute;n&eacute;ralement plus faible, car il d&eacute;pend du couplage du transformateur et du chemin homopolaire.</p>
+
+    <p>Pour 1000 kVA &agrave; 400 V avec u<sub>k</sub> = 0,06 : Icc = 1 000 000 / (1,732 &times; 400 &times; 0,06) = 24 056 A, soit environ 24 kA. Ce seul chiffre fixe le pouvoir de coupure de l&apos;appareil d&apos;arriv&eacute;e et la tenue du jeu de barres.</p>
+
+    <table>
+      <thead>
+        <tr><th>Puissance du transformateur</th><th>Tension de court-circuit</th><th>Icc pr&eacute;sum&eacute; &agrave; 400 V</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>315 kVA</td><td>6 %</td><td>7,6 kA</td></tr>
+      <tr><td>630 kVA</td><td>6 %</td><td>15,2 kA</td></tr>
+      <tr><td>1000 kVA</td><td>6 %</td><td>24,1 kA</td></tr>
+      <tr><td>1600 kVA</td><td>6 %</td><td>38,5 kA</td></tr>
+      <tr><td>2000 kVA</td><td>6 %</td><td>48,1 kA</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>La tension de court-circuit figure sur la plaque du transformateur et n&apos;est pas toujours de 6 %. Un transformateur &agrave; 4 % de m&ecirc;me puissance produit environ 50 % de courant de d&eacute;faut en plus : recopier un chiffre d&apos;un autre projet est la fa&ccedil;on la plus courante de sous-dimensionner un tableau.</strong></p>
+
+    <h2>Valeur efficace, valeur cr&ecirc;te et usage de chacune</h2>
+
+    <p>La valeur calcul&eacute;e ci-dessus est le courant efficace sym&eacute;trique. C&apos;est elle qui sert &agrave; choisir le pouvoir de coupure, car l&apos;appareil doit couper ce courant au passage par z&eacute;ro de la tension. Mais la premi&egrave;re cr&ecirc;te est plus &eacute;lev&eacute;e, &agrave; cause de la composante ap&eacute;riodique pr&eacute;sente dans les premiers cycles.</p>
+
+    <p>En basse tension, la cr&ecirc;te est couramment approch&eacute;e par 2,55 fois la valeur efficace, ce qui correspond &agrave; un facteur de cr&ecirc;te d&apos;environ 1,8. Un d&eacute;faut de 24 kA pr&eacute;sente donc une premi&egrave;re cr&ecirc;te proche de 61 kA. Appareillage, supports de jeux de barres et porte-fusibles doivent tenir cette cr&ecirc;te sans d&eacute;formation, m&ecirc;me s&apos;ils n&apos;ont jamais &agrave; la couper.</p>
+
+    <ul>
+      <li><strong>Icu / pouvoir de coupure</strong> &mdash; courant efficace qu&apos;un appareil peut couper en s&eacute;curit&eacute;. Doit d&eacute;passer l&apos;Icc pr&eacute;sum&eacute; &agrave; ses bornes.</li>
+      <li><strong>Icw</strong> &mdash; courant de courte dur&eacute;e admissible, que le jeu de barres ou le tableau transporte pendant une dur&eacute;e donn&eacute;e (souvent 1 s) sans dommage. Concerne les jeux de barres et les tableaux, pas les fusibles.</li>
+      <li><strong>Ipk</strong> &mdash; tenue cr&ecirc;te. L&apos;&eacute;preuve m&eacute;canique : supports et raccordements r&eacute;sistent-ils &agrave; l&apos;effort &eacute;lectromagn&eacute;tique de la premi&egrave;re cr&ecirc;te ?</li>
+    </ul>
+
+    <h2>La v&eacute;rification thermique du c&acirc;ble et du jeu de barres</h2>
+
+    <p>Un conducteur n&apos;a pas &agrave; couper le d&eacute;faut, mais il doit survivre aux quelques dixi&egrave;mes de seconde avant que la protection n&apos;agisse. Le contr&ocirc;le adiabatique compare l&apos;&eacute;nergie laiss&eacute;e passer &agrave; ce que le conducteur peut absorber : k&sup2;S&sup2; &ge; I&sup2;t, o&ugrave; S est la section en mm&sup2;, t le temps de coupure en secondes et k une constante de mat&eacute;riau et d&apos;isolant &mdash; environ 115 pour le cuivre isol&eacute; PVC et 143 pour le cuivre isol&eacute; XLPE.</p>
+
+    <p>Cons&eacute;quence pratique : une petite section aliment&eacute;e par un tableau puissant peut &eacute;chouer &agrave; ce contr&ocirc;le alors qu&apos;elle satisfait &agrave; la chute de tension et au courant admissible. Avec 24 kA et une fusion en 0,01 s, un conducteur cuivre PVC de 10 mm&sup2; subit I&sup2;t = 24 000&sup2; &times; 0,01 = 5,76 &times; 10&#8310; A&sup2;s pour une tenue de 115&sup2; &times; 10&sup2; = 1,32 &times; 10&#8310; A&sup2;s. Le conducteur perd, et la section doit augmenter.</p>
+
+    <h2>Protection : pouvoir de coupure et s&eacute;lectivit&eacute;</h2>
+
+    <p>Tout appareil de protection poss&egrave;de un pouvoir de coupure nominal, qui doit au moins &eacute;galer l&apos;Icc pr&eacute;sum&eacute; &agrave; son point d&apos;installation. Un appareil de 6 kA dans un tableau o&ugrave; l&apos;Icc atteint 24 kA n&apos;est pas seulement insuffisant : il peut &eacute;clater, cr&eacute;er un arc &agrave; travers l&apos;enveloppe et transformer un d&eacute;faut en accident.</p>
+
+    <p>Les fusibles r&eacute;solvent bien ce probl&egrave;me, car leur pouvoir de coupure est &eacute;lev&eacute; par rapport &agrave; leur taille. Un fusible NH &agrave; lames, dans un porte-fusible adapt&eacute;, coupe des dizaines de kiloamp&egrave;res dans un volume tr&egrave;s inf&eacute;rieur &agrave; celui d&apos;un disjoncteur &eacute;quivalent. C&apos;est pourquoi les fusibles NH restent la r&eacute;f&eacute;rence pour les arriv&eacute;es et d&eacute;parts principaux des tableaux industriels, et pourquoi le porte-fusible et le fusible doivent &ecirc;tre command&eacute;s ensemble : c&apos;est l&apos;ensemble, et non le fusible seul, qui porte le pouvoir de coupure.</p>
+
+    <p>La s&eacute;lectivit&eacute; est la seconde exigence. L&apos;appareil le plus proche du d&eacute;faut doit le couper en premier, pour qu&apos;un d&eacute;faut sur un d&eacute;part ne fasse pas tomber l&apos;arriv&eacute;e g&eacute;n&eacute;rale. La s&eacute;lectivit&eacute; fusible-fusible se lit dans les tables de ratios publi&eacute;es ; la coordination fusible-disjoncteur exige en g&eacute;n&eacute;ral les courbes du constructeur. Si vous h&eacute;sitez encore entre familles d&apos;appareils, la <a href="/blog/fuse-vs-circuit-breaker-fr">comparaison fusible et disjoncteur</a> traite des compromis, et le <a href="/blog/fuse-and-protection-selection-guide">guide de choix des protections</a> d&eacute;taille calibre, tension et coordination.</p>
+
+    <h2>L&apos;Icc au tableau n&apos;est pas l&apos;Icc &agrave; la charge</h2>
+
+    <p>Un d&eacute;faut de 24 kA au jeu de barres principal peut n&ecirc;tre que de 6 kA au bout d&apos;un d&eacute;part de 60 m. Deux erreurs d&eacute;coulent de l&apos;oubli de ce fait. Dimensionner tous les appareils de l&apos;usine pour 24 kA co&ucirc;te cher ; les dimensionner tous pour 6 kA parce que c&apos;est la valeur en bout de ligne est dangereux. L&apos;Icc doit &ecirc;tre calcul&eacute; en chaque point o&ugrave; se trouve un appareil, et la valeur la plus &eacute;lev&eacute;e dans l&apos;enveloppe commande l&apos;enveloppe.</p>
+
+    <p>L&apos;erreur inverse compte aussi. Un d&eacute;part long et de faible section peut pr&eacute;senter un courant de d&eacute;faut trop faible pour que la protection d&eacute;clenche dans le temps requis, laissant le d&eacute;faut br&ucirc;ler. C&apos;est pourquoi l&apos;imp&eacute;dance de boucle maximale se v&eacute;rifie en m&ecirc;me temps que le pouvoir de coupure : l&apos;appareil doit voir le d&eacute;faut, pas seulement le supporter.</p>
+
+    <h2>Ce qu&apos;il faut transmettre pour sp&eacute;cifier la protection</h2>
+
+    <ol>
+      <li>Tension et fr&eacute;quence du r&eacute;seau, et mode de mise &agrave; la terre : au transformateur ou par imp&eacute;dance.</li>
+      <li>Puissance du transformateur et tension de court-circuit relev&eacute;es sur la plaque &mdash; pas un 6 % suppos&eacute;.</li>
+      <li>Icc pr&eacute;sum&eacute; au point d&apos;installation, ou les donn&eacute;es permettant de le calculer.</li>
+      <li>Le service demand&eacute; : protection contre les surcharges seule, ou coupure de court-circuit compl&egrave;te.</li>
+      <li>L&apos;exigence de s&eacute;lectivit&eacute; : quel appareil doit couper en premier et avec quel appareil amont il doit se coordonner.</li>
+      <li>Pour les jeux de barres et l&apos;appareillage, l&apos;Icw et l&apos;Ipk requis et la dur&eacute;e de l&apos;essai de tenue.</li>
+    </ol>
+
+    <h2>Produits pour service de court-circuit</h2>
+
+    <p>YOMIN fournit le mat&eacute;riel de protection auquel ce calcul aboutit, notamment le <a href="/products/fuse-protection/nh00-copper-low-voltage-160-amp-3p-polyester-knife-blade-fuse">fusible NH00 &agrave; lames en cuivre</a> pour les tableaux basse tension, le <a href="/products/fuse-protection/nh1-80a-125a-250a-48v-pv-dc-solar-fuse-for-distribution-box">fusible solaire NH1 courant continu</a> pour les cha&icirc;nes PV o&ugrave; l&apos;arc continu ne s&apos;&eacute;teint pas seul, et le <a href="/products/fuse-protection/300a-j-type-heavy-duty-fuse-cut-out-base-lv-fuse-switch-disconnector">porte-fusible renforc&eacute; type J 300 A</a> pour les arriv&eacute;es de branchement.</p>
+
+    <p>Les d&eacute;tails qui d&eacute;cident si l&apos;ensemble tient son pouvoir de coupure sont peu spectaculaires : le porte-fusible doit &ecirc;tre adapt&eacute; au corps du fusible et au niveau de d&eacute;faut, les contacts doivent &ecirc;tre propres et serr&eacute;s au couple prescrit, et la tension continue d&apos;un fusible PV doit &ecirc;tre v&eacute;rifi&eacute;e s&eacute;par&eacute;ment de sa tension alternative, car un arc continu n&apos;a pas de passage par z&eacute;ro pour l&apos;&eacute;teindre.</p>
+
+    <h2>Questions fr&eacute;quentes</h2>
+    <h3>Quel courant de court-circuit rencontre-t-on dans un tableau basse tension ?</h3>
+    <p>Il d&eacute;coule directement du transformateur. &Agrave; 400 V avec 6 % d&apos;imp&eacute;dance, un transformateur de 630 kVA donne environ 15 kA, un 1000 kVA environ 24 kA et un 2000 kVA environ 48 kA. C&apos;est la tension de court-circuit de la plaque, et non la puissance seule, qui fixe le chiffre.</p>
+    <h3>Pourquoi la valeur cr&ecirc;te est-elle sup&eacute;rieure &agrave; la valeur efficace calcul&eacute;e ?</h3>
+    <p>Parce que le courant de d&eacute;faut commence par une composante ap&eacute;riodique qui d&eacute;cro&icirc;t sur les premiers cycles. En basse tension, la premi&egrave;re cr&ecirc;te est couramment prise &eacute;gale &agrave; 2,55 fois la valeur efficace, et le mat&eacute;riel doit tenir cette cr&ecirc;te m&eacute;caniquement.</p>
+    <h3>Un fusible a-t-il besoin d&apos;un pouvoir de coupure si le disjoncteur en amont en poss&egrave;de un ?</h3>
+    <p>Oui. Tout appareil susceptible de porter le courant de d&eacute;faut doit pouvoir le couper ou &ecirc;tre prot&eacute;g&eacute; par un appareil qui le coupe. Un fusible dont le pouvoir de coupure est inf&eacute;rieur &agrave; l&apos;Icc pr&eacute;sum&eacute; peut &eacute;clater, et le porte-fusible fait partie de cette caract&eacute;ristique.</p>
+    <h3>Comment la longueur de c&acirc;ble modifie-t-elle l&apos;Icc ?</h3>
+    <p>Elle ajoute de l&apos;imp&eacute;dance. Doubler la longueur divise &agrave; peu pr&egrave;s l&apos;Icc par deux sur un long d&eacute;part : un appareil adapt&eacute; au tableau peut donc &ecirc;tre surdimensionn&eacute; ou incapable de d&eacute;clencher en bout de ligne. Calculez en chaque point d&apos;installation.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous choisissez la protection pour un courant de d&eacute;faut connu ?</h2>
+    <p>Indiquez le courant de court-circuit pr&eacute;sum&eacute;, la tension du r&eacute;seau et le service demand&eacute; &mdash; surcharge seule ou coupure de court-circuit compl&egrave;te. Nous confirmons la gamme de fusibles et le porte-fusible associ&eacute; avant commande.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

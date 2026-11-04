@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/voltage-drop-calculation-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حساب هبوط الجهد: المعادلة والحدود واختيار مقطع الكابل | Yomin Electric</title>
+<meta name="description" content="طريقة حساب هبوط الجهد في الدوائر أحادية وثلاثية الطور: المعادلة، جدول mV/A/m للنحاس، مثال محلول عند 100 أمبير، تصحيح درجة الحرارة، وحدود 3 إلى 5 بالمئة.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/voltage-drop-calculation-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/voltage-drop-calculation-guide-ar">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/voltage-drop-calculation-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/voltage-drop-calculation-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/voltage-drop-calculation-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/voltage-drop-calculation-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/voltage-drop-calculation-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "حساب هبوط الجهد: المعادلة والحدود واختيار مقطع الكابل",
+      "description": "طريقة حساب هبوط الجهد في الدوائر أحادية وثلاثية الطور: المعادلة، جدول mV/A/m للنحاس، مثال محلول عند 100 أمبير، تصحيح درجة الحرارة، وحدود 3 إلى 5 بالمئة.",
+      "image": "https://www.yominelectric.com/assets/images/blog/voltage-drop-calculation-guide/hero.png",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/voltage-drop-calculation-guide-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما هبوط الجهد المقبول؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تختلف الحدود بحسب الكود والمشروع. يعطي الملحق G من IEC 60364-5-52 قيماً إرشادية 3% للإضاءة و5% للاستخدامات الأخرى في التوزيع العام منخفض الجهد، بينما تطبق الممارسة الأمريكية عادة 3% على الفرع و5% إجمالاً. والأهم أن يُحدد الحد قبل اختيار الكابل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يعتمد هبوط الجهد على الحمل أم على الكابل؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "على الاثنين. الكابل يحدد المقاومة لكل متر، والحمل يحدد التيار المار فيها. ولهذا يمكن أن يكون المسار نفسه بطول 80 متراً مقبولاً عند 40 أمبير وغير مقبول عند 100 أمبير دون تغيير الكابل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا تُضرب المعادلة أحادية الطور في اثنين؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لأن التيار يمر في الطور ثم يعود في الحيادي، فطول الموصل الحامل للتيار يساوي ضعف طول المسار الفعلي. أما في ثلاثي الطور فيُستخدم جذر ثلاثة لأن مسار العودة هو الطوران الآخران."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يمكن معالجة هبوط الجهد بقاطع أكبر؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا. الحماية لا تغيّر مقاومة الموصل. ورفع تصنيف القاطع يجعل التركيب أقل أماناً دون تحسين الجهد عند الحمل؛ والحلول الفعلية هي مقطع أكبر أو مسار أقصر أو جهد توزيع أعلى."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">الرئيسية</a> &middot; <a href="/blog">المدونة</a> &middot; <span>الكابلات والموصلات</span></div>
+    <span class="bh-tag">أدلة هندسية</span>
+    <h1 class="bh-title">حساب هبوط الجهد: المعادلة والحدود واختيار مقطع الكابل</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>4 نوفمبر 2026</span>
+      <span class="divider"></span>
+      <span>قراءة 9 دقائق</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/voltage-drop-calculation-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/voltage-drop-calculation-guide/hero.png" alt="أطراف كابل نحاسية على خلفية بيضاء تُستخدم لتوصيل المقطع الذي يحدده حساب هبوط الجهد" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>هبوط الجهد هو الفرق بين جهد المصدر والجهد عند الحمل، وينشأ من مقاومة الموصل. ويُحسب من التيار وطول المسار في اتجاه واحد والمقاومية والمقطع &mdash; وفي المغذي ثلاثي الطور: &Delta;V = &radic;3 &times; I &times; L &times; &rho; / A. وما يحدد المقطع ليس الهبوط بالفولت، بل نسبته إلى الجهد الاسمي مقارنة بحد التصميم.</p>
+
+    <h2>ماذا يقيس هبوط الجهد فعلياً</h2>
+
+    <p>الموصل مقاومة. كل متر منه يبدد قدراً صغيراً من الطاقة، لذلك يكون الجهد عند الطرف البعيد أقل دائماً من جهد المصدر. هذا الفرق هو هبوط الجهد، وهو ليس فقد القدرة نفسه وإن ارتبط به، لأن الطاقة المبددة في الموصل تساوي الهبوط مضروباً في التيار.</p>
+
+    <p>والنتيجة العملية أن كابلاً قد يكون كافياً تماماً من حيث سعة التيار ومع ذلك يكون الكابل الخطأ. فمغذٍّ نحاسي 10 مم&sup2; قد يعمل عند 100 أمبير دون سخونة ويظل يهبط أكثر من 3% على مسافة 50 متراً، فيسيء بدء تشغيل محرك، أو يخفت الإضاءة في نهاية الخط، أو يخرج جهاز عن نطاق جهد التغذية المقبول. سعة التيار تجيب عن سؤال «هل يتحمل الموصل؟»، وهبوط الجهد يجيب عن سؤال «هل يعمل الحمل؟».</p>
+
+    <h2>المعادلة في النظام أحادي الطور وثلاثي الطور</h2>
+
+    <p>تستخدم الصيغتان المدخلات الأربعة نفسها: التيار بالأمبير، وطول المسار في اتجاه واحد بالمتر، والمقاومية بالأوم·مم&sup2;/م، والمقطع بالمليمتر المربع.</p>
+
+    <ul>
+      <li><strong>أحادي الطور (الطور والحيادي):</strong> &Delta;V = 2 &times; I &times; L &times; &rho; / A</li>
+      <li><strong>ثلاثي الطور (موصلات الأطوار):</strong> &Delta;V = &radic;3 &times; I &times; L &times; &rho; / A</li>
+      <li><strong>النسبة المئوية:</strong> &Delta;V% = &Delta;V / V<sub>الاسمي</sub> &times; 100</li>
+    </ul>
+
+    <p>المعامل 2 في الصيغة أحادية الطور ليس هامش أمان: التيار يمر في الطور ويعود في الحيادي، فطول الموصل الذي يحمل التيار يساوي ضعف طول المسار. أما النظام ثلاثي الطور فيستخدم &radic;3 لأن تيارات الأطوار الثلاثة تتجمع اتجاهياً. والمقاومية 0.0175 أوم·مم&sup2;/م للنحاس ونحو 0.0282 أوم·مم&sup2;/م للألمنيوم عند 20 &deg;م، أي أعلى بنحو 60%، ولهذا يحتاج مغذي الألمنيوم مقطعاً أكبر للهبوط نفسه.</p>
+
+    <h2>مثال محلول: 100 أمبير على 80 متراً</h2>
+
+    <p>مغذٍّ نحاسي ثلاثي الطور 400 فولت يحمل 100 أمبير على مسار أحادي الاتجاه طوله 80 متراً. باستخدام &rho; = 0.0175 أوم·مم&sup2;/م و A = 35 مم&sup2;:</p>
+
+    <p>&Delta;V = 1.732 &times; 100 &times; 80 &times; 0.0175 / 35 = 6.9 فولت، أي 1.7% من 400 فولت. وهذا يحقق حد 3% بفارق مريح، وبالتالي يُحسم مقطع 35 مم&sup2; بسعة التيار ومعاملات التخفيض لا بالهبوط.</p>
+
+    <p>أما الانتقال إلى 25 مم&sup2; على المسار نفسه فيعطي 9.7 فولت، أي 2.4%: لا يزال داخل حد 3%، لكن الهامش يزول بمجرد أن يسخن الموصل أو يطول المسار. وهذا تحديداً الحساب الذي يجب إجراؤه قبل تقليل المقطع لتوفير التكلفة.</p>
+
+    <p>الطريق الأسرع هو قراءة الهبوط لكل أمبير لكل متر، وهي قيمة ثابتة لمادة ومقطع معينين. يوضح الجدول التالي قيم النحاس عند 20 &deg;م في دوائر ثلاثية الطور 400 فولت، مع أقصى طول أحادي الاتجاه يحافظ على 3% عند 100 أمبير.</p>
+
+    <table>
+      <thead>
+        <tr><th>مقطع النحاس</th><th>mV/A/m (ثلاثي الطور)</th><th>أقصى طول أحادي الاتجاه عند 100 أمبير لحد 3% من 400 فولت</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>10 مم&sup2;</td><td>3.03</td><td>40 م</td></tr>
+      <tr><td>16 مم&sup2;</td><td>1.89</td><td>63 م</td></tr>
+      <tr><td>25 مم&sup2;</td><td>1.21</td><td>99 م</td></tr>
+      <tr><td>35 مم&sup2;</td><td>0.87</td><td>139 م</td></tr>
+      <tr><td>50 مم&sup2;</td><td>0.61</td><td>198 م</td></tr>
+      <tr><td>70 مم&sup2;</td><td>0.43</td><td>277 م</td></tr>
+      <tr><td>95 مم&sup2;</td><td>0.32</td><td>376 م</td></tr>
+      <tr><td>120 مم&sup2;</td><td>0.25</td><td>474 م</td></tr>
+      <tr><td>150 مم&sup2;</td><td>0.20</td><td>594 م</td></tr>
+      <tr><td>185 مم&sup2;</td><td>0.16</td><td>732 م</td></tr>
+      <tr><td>240 مم&sup2;</td><td>0.13</td><td>952 م</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>الجدول أداة مساعدة في التصميم الأولي وليس بديلاً عن الحساب. المقاومية تتغير مع درجة الحرارة، والوصلات تضيف مقاومة، والدائرة أحادية الطور تحتاج نحو ضعف المقطع للطول والتيار نفسيهما.</strong></p>
+
+    <h2>درجة الحرارة تحوّل تصميماً مقبولاً إلى تصميم راسب</h2>
+
+    <p>القيم أعلاه عند 20 &deg;م. والموصل الذي يعمل عند تياره المقنن يسخن كثيراً: فعند 70 &deg;م تزيد مقاومة النحاس نحو 20% على قيمتها عند 20 &deg;م، وعند 90 &deg;م تزيد نحو 27%. لذلك فإن مغذياً يُحسب عند 2.8% وهو بارد سيتجاوز 3% أثناء الخدمة.</p>
+
+    <p>لهذا فإن الطريقة الصحيحة هي الحساب بمقاومة الموصل عند درجة حرارة التشغيل المتوقعة، لا بالقيمة النظرية عند 20 &deg;م. عملياً، تتضمن جداول mV/A/m درجة حرارة خدمة، ولهذا يختلف الحساب اليدوي عن جدول اختيار المقطع بعشرات قليلة من النسبة.</p>
+
+    <h2>متى يكون الهبوط مهملاً ومتى يحكم كل شيء</h2>
+
+    <p>في لوحة توزيع تبعد أمتاراً قليلة عن محولها يكون الهبوط تفصيلاً صغيراً وتحدد سعة التيار كل شيء. لكنه يحكم الموقف في أربع حالات: المغذيات الريفية الطويلة، والدوائر أحادية الطور منخفضة الجهد التي تتجاوز نحو 30 متراً، وكابلات مولدات الطوارئ حيث يكون المصدر عند الجهد الاسمي أصلاً، وأي دائرة تغذي محركاً يساوي تيار بدئه خمسة إلى سبعة أمثال تياره المقنن.</p>
+
+    <p>دوائر المحركات تستحق حساباً منفصلاً. فالهبوط 5% عند التيار المقنن يصبح أعمق بكثير عند البدء المباشر، وقد يرتعش الكونتاكتور أو يسقط. إذا كان الحمل محركاً فاحسب الهبوط عند تيار البدء لا عند التيار المقنن.</p>
+
+    <h2>تسلسل تصميم يمنع إعادة العمل</h2>
+
+    <ol>
+      <li>ابدأ من تيار الحمل الفعلي لا من تصنيف القاطع. القاطع 63 أمبير على حمل 40 أمبير يُحسب على 40 أمبير.</li>
+      <li>اختر المقطع من جداول سعة التيار حسب طريقة التركيب ودرجة الحرارة المحيطة والتجميع.</li>
+      <li>احسب الهبوط عند درجة حرارة التشغيل وقارنه بحد المشروع.</li>
+      <li>إذا تجاوز الحد، ارفع المقطع درجة واحدة وأعد الحساب &mdash; ولا تضف موصلاً ثانياً على التوازي إلا إذا سمح المسار وكانت الحماية مقننة للتيار الكلي.</li>
+      <li>تحقق من بقاء الحماية متناسقة مع المقطع النهائي، ومن استيفاء موصل الحماية لشرط الحرارة الأدياباتي.</li>
+      <li>أكد أن الطرف أو القاعدة تقبل الموصل والمسمار، ثم اطلب الأطراف مع الكابل.</li>
+    </ol>
+
+    <p>الخطوة الأخيرة هي التي تؤخر المشاريع. الموصل 240 مم&sup2; يحتاج طرفاً يتوافق تجويفه ولوحه مع فئة الشعيرات، وقاعدة أطراف مقننة للتيار. وإذا كنت تحوّل بين مقاسات AWG فاستخدم <a href="/blog/awg-to-mm2-conversion-chart-ar">جدول التحويل من AWG إلى مم&sup2;</a> قبل اختيار التجويف، وإذا كانت الدائرة فرعاً نهائياً فراجع المقطع مع دليل <a href="/blog/what-size-wire-for-a-60-amp-breaker-ar">مقطع السلك لقاطع 60 أمبير</a>.</p>
+
+    <h2>توصيل المقطع الذي حسبته</h2>
+
+    <p>كل حساب لهبوط الجهد ينتهي بمقطع، وهذا المقطع يجب توصيله. توفّر YOMIN أطرافاً مطابقة للمقاسات التي تنتجها هذه الحسابات، ومنها <a href="/products/terminal-connector/high-quality-rohs-certified-2-hole-cable-lugs-crimp-type-copper-terminals">أطراف كابل نحاسية ثنائية الفتحة معتمدة ROHS</a> للوصلات المربوطة بالبراغي، و<a href="/products/terminal-connector/dl-series-120mm-aluminum-cable-terminal-lugs-terminals-for-wires-and-cables">أطراف ألمنيوم من سلسلة DL</a> عندما يكون الموصل ألمنيوم، و<a href="/products/terminal-connector/copper-electrical-cable-lugs-electric-cable-terminals-product-category-terminal-blocks">أطراف كابل نحاسية</a> ضمن النطاق المتري الشائع.</p>
+
+    <p>هناك تفصيلان يحددان ما إذا كانت الوصلة تتصرف كالموصل أم تصبح أضعف نقطة: يجب أن يوافق التجويف فئة الشعيرات والمقطع الفعلي، ويجب أن يوافق اللوح المسمار وسطح التثبيت. كما تحتاج وصلات الألمنيوم بالنحاس إلى واجهة ثنائية المعدن أو معجون مناسب، وإلا ارتفعت مقاومة الوصلة ولم يصل الهبوط المحسوب إلى الحمل أبداً.</p>
+
+    <h2>أسئلة شائعة</h2>
+    <h3>ما هبوط الجهد المقبول؟</h3>
+    <p>تختلف الحدود بحسب الكود والمشروع. يعطي الملحق G من IEC 60364-5-52 قيماً إرشادية 3% للإضاءة و5% للاستخدامات الأخرى في التوزيع العام منخفض الجهد، بينما تطبق الممارسة الأمريكية عادة 3% على الفرع و5% إجمالاً. والأهم أن يُحدد الحد قبل اختيار الكابل.</p>
+    <h3>هل يعتمد هبوط الجهد على الحمل أم على الكابل؟</h3>
+    <p>على الاثنين. الكابل يحدد المقاومة لكل متر، والحمل يحدد التيار المار فيها. ولهذا يمكن أن يكون المسار نفسه بطول 80 متراً مقبولاً عند 40 أمبير وغير مقبول عند 100 أمبير دون تغيير الكابل.</p>
+    <h3>لماذا تُضرب المعادلة أحادية الطور في اثنين؟</h3>
+    <p>لأن التيار يمر في الطور ثم يعود في الحيادي، فطول الموصل الحامل للتيار يساوي ضعف طول المسار الفعلي. أما في ثلاثي الطور فيُستخدم جذر ثلاثة لأن مسار العودة هو الطوران الآخران.</p>
+    <h3>هل يمكن معالجة هبوط الجهد بقاطع أكبر؟</h3>
+    <p>لا. الحماية لا تغيّر مقاومة الموصل. ورفع تصنيف القاطع يجعل التركيب أقل أماناً دون تحسين الجهد عند الحمل؛ والحلول الفعلية هي مقطع أكبر أو مسار أقصر أو جهد توزيع أعلى.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>هل تحدد مقطع مغذٍّ وتحتاج الأطراف المطابقة؟</h2>
+    <p>أرسل المقطع كما هو مكتوب في المخطط، وقطر المسمار، ومعدن كل جانب من الوصلة. نؤكد الطرف أو القاعدة المطابقة قبل الطلب.</p>
+    <a class="btn btn-primary" href="/contact">اطلب عرض سعر</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">تواصل على واتساب</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
