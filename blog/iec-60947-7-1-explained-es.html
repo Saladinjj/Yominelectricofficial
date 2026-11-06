@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/iec-60947-7-1-explained/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IEC 60947-7-1 explicada: qué cubre la norma de bornes para conductores de cobre | Yomin Electric</title>
+<meta name="description" content="La IEC 60947-7-1 regula los bornes para conductores de cobre. Qué cubren realmente sus características asignadas, qué ensayos hay detrás de la declaración, en qué difiere la UL 1059 y por qué la norma no hace que un borne sirva para aluminio.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IEC 60947-7-1 explicada: bornes para conductores de cobre">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://www.yominelectric.com/blog/iec-60947-7-1-explained-es">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/iec-60947-7-1-explained/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "IEC 60947-7-1 explicada: bornes para conductores de cobre",
+      "description": "La IEC 60947-7-1 regula los bornes para conductores de cobre. Qué cubren realmente sus características asignadas, qué ensayos hay detrás de la declaración, en qué difiere la UL 1059 y por qué la norma no hace que un borne sirva para aluminio.",
+      "image": "https://www.yominelectric.com/assets/images/blog/iec-60947-7-1-explained/hero.png",
+      "datePublished": "2026-11-06",
+      "dateModified": "2026-11-06",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/iec-60947-7-1-explained-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "es",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué cubre la IEC 60947-7-1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cubre los bornes para conductores de cobre, incluidas las unidades de apriete de tornillo y sin tornillo. Define las características que un fabricante puede declarar, como tensión asignada, capacidad de conexión asignada y corriente asignada, y los ensayos que deben respaldarlas. Los bornes de protección y los portafusibles se cubren en otras partes de la misma serie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Un borne conforme a IEC 60947-7-1 sirve para cable de aluminio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. El ámbito son los conductores de cobre. El aluminio fluye bajo presión de apriete sostenida y lleva una capa de óxido aislante, así que una unión correcta para cobre no es automáticamente sólida para aluminio. El aluminio necesita una transición, como un terminal bimetálico o un conector cualificado para ese conductor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En qué se diferencia la IEC 60947-7-1 de la UL 1059?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Son cualificaciones regionales distintas para bornes. La UL 1059 es la referencia norteamericana habitual y la IEC 60947-7-1 la referencia IEC; los programas de ensayo, las hipótesis sobre conductores y los requisitos de marcado difieren. Un producto puede tener ambas, pero tener una no implica la otra, y un comprador que trabaja con especificación norteamericana debe pedir la evidencia UL de forma explícita."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La corriente asignada de un borne se mide solo o en fila?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de las condiciones declaradas por el fabricante. Un borne ensayado aislado tiene más superficie libre que el mismo borne apiñado en un carril continuo dentro de una envolvente, así que los dos montajes no dan el mismo calentamiento. Si la aplicación lleva el carril cerca de su límite, pregunte a qué condición se refiere la cifra publicada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hace falta terminal en un conductor flexible dentro de un borne de tornillo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En la práctica, sí. Un conductor flexible pelado se abre bajo el apriete de un tornillo y algunos hilos pueden cortarse o desplazarse, lo que reduce la superficie de contacto y hace impredecible la unión. Un terminal agrupa los hilos y da a la unidad de apriete una superficie definida. La norma fija requisitos para el borne, no para su práctica de cableado: esto es disciplina de taller más que un punto de certificación."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Bornes y conectores</span></div>
+    <span class="bh-tag">Normas y conformidad</span>
+    <h1 class="bh-title">IEC 60947-7-1 explicada: qué cubre realmente la norma de bornes</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>6 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lectura</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/iec-60947-7-1-explained/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/iec-60947-7-1-explained/hero.png" alt="Bornes de carril DIN de latón y poliamida y un borne de tornillo de cobre sobre fondo de papel cálido, la familia de producto regulada por la IEC 60947-7-1" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>La IEC 60947-7-1 es la parte de la serie de aparamenta de baja tensión que trata de los <strong>bornes para conductores de cobre</strong>. Define lo que un fabricante puede declarar &mdash; tensión asignada, capacidad de conexión asignada, corriente asignada &mdash; y los ensayos que deben respaldar esas declaraciones antes de que el borne pueda llevarlas.</p>
+
+    <p>Se cita con frecuencia en las fichas técnicas y se lee poco, lo que produce una confusión previsible en compras: el comprador ve «IEC 60947-7-1» en una especificación y supone que la norma cubre toda la unión, incluido el conductor que llega a ella. No es así. La norma está escrita en torno al cobre y trata el borne como un componente, no como el conjunto en el que va atornillado.</p>
+
+    <p>Esta guía explica qué demuestra realmente la norma, dónde está la frontera y qué preguntas separan a un proveedor que tiene las evidencias de uno que tiene un logotipo.</p>
+
+    <h2>Dónde se sitúa la IEC 60947-7-1 dentro de la serie</h2>
+
+    <p>La IEC 60947 es el marco de la aparamenta de baja tensión. La parte 7 cubre los aparatos auxiliares, y dentro de ella el trabajo sobre bornes se reparte por función y no por forma:</p>
+
+    <ul>
+
+      <li><strong>IEC 60947-7-1</strong> &mdash; bornes para conductores de cobre: el caso general, que cubre unidades de apriete de tornillo y sin tornillo.</li>
+
+      <li><strong>IEC 60947-7-2</strong> &mdash; bornes para conductores de protección, donde la conexión a tierra es la función y no un accesorio.</li>
+
+      <li><strong>IEC 60947-7-3</strong> &mdash; bornes portafusibles, donde el portafusible va integrado en el borne.</li>
+
+    </ul>
+
+    <p>El reparto importa cuando un esquema de cuadro lista tres clases de borne en un mismo carril. Un borne verde de tierra no es un borne gris de otro color: está cualificado según otra parte de la norma, y la diferencia afecta a la continuidad y al comportamiento en cortocircuito del circuito de protección.</p>
+
+    <h2>Qué significan realmente las características asignadas</h2>
+
+    <p>Un borne conforme declara un conjunto pequeño de características. Cada una es un límite de uso y cada una es verificable. Leerlas como argumentos comerciales en lugar de como restricciones es el error de especificación más habitual.</p>
+
+    <table>
+
+      <thead><tr><th>Característica declarada</th><th>Qué limita</th><th>Qué preguntar</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Tensión asignada</td><td>La tensión máxima para la que está cualificado el sistema de aislamiento, junto con el grado de contaminación y la categoría de impulso considerados</td><td>Qué grado de contaminación y qué tensión de resistencia al impulso supone el valor</td></tr>
+
+        <tr><td>Capacidad de conexión asignada</td><td>Las secciones de conductor, rígido o flexible, que la unidad de apriete acepta y retiene</td><td>El rango completo, en mm&sup2; y en AWG, y si incluye conductores flexibles con terminales</td></tr>
+
+        <tr><td>Corriente asignada</td><td>La corriente que el borne conduce de forma continua sin superar el calentamiento permitido</td><td>Si el valor se estableció para el borne solo o para una fila de bornes sobre carril</td></tr>
+
+        <tr><td>Tipo de unidad de apriete</td><td>Si la conexión es de tornillo o sin tornillo, lo que decide herramienta, par y práctica de reconexión</td><td>El par especificado, y si está marcado en el borne</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>La tercera fila es la que más confunde. Un borne ensayado solo tiene más superficie libre que el mismo borne apiñado en una fila continua dentro de una envolvente. Los fabricantes ensayan ambas disposiciones y declaran en consecuencia, pero la cifra del catálogo no siempre va acompañada de las condiciones en que se midió. Si la aplicación lleva el carril cerca de su límite, pregunte a qué condición se refiere el valor.</p>
+
+    <h2>Los ensayos que hay detrás de la declaración</h2>
+
+    <p>El programa de ensayos de la norma no tiene nada de exótico. Es una secuencia de comprobaciones ordinarias que un borne supera o no supera.</p>
+
+    <table>
+
+      <thead><tr><th>Familia de ensayo</th><th>Qué busca</th><th>Cómo falla un borne débil</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Calentamiento</td><td>Que la unidad de apriete y el cuerpo aislante se mantengan dentro del calentamiento permitido a corriente asignada</td><td>Partes conductoras delgadas, superficie de contacto escasa, o un cuerpo que se ablanda y deja aflojar el tornillo</td></tr>
+
+        <tr><td>Propiedades dieléctricas</td><td>Que el aislamiento soporta las tensiones industriales y de impulso especificadas</td><td>Línea de fuga insuficiente entre polos contiguos una vez montado en fila</td></tr>
+
+        <tr><td>Resistencia mecánica y apriete</td><td>Que la conexión retiene el conductor con firmeza en el ensayo de tracción y en maniobras repetidas</td><td>Unidad de apriete que deforma el conductor, o rosca que se barre antes del par asignado</td></tr>
+
+        <tr><td>Coordinación del aislamiento</td><td>Que distancias de aislamiento y líneas de fuga corresponden a la tensión, el grado de contaminación y el grupo de material declarados</td><td>Diseño copiado de un borne de menor tensión y reetiquetado</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Ninguno de estos ensayos le dice que el borne será fiable en su cuadro. Dicen que el borne alcanza un suelo definido. La ejecución en el carril &mdash; par, longitud de pelado, uso de terminal &mdash; decide si ese suelo se alcanza en la práctica.</p>
+
+    <h2>Qué no cubre la norma</h2>
+
+    <p>La frontera es donde se concentra la mayor parte del riesgo comercial, así que conviene decirla con claridad.</p>
+
+    <ul>
+
+      <li><strong>Conductores de aluminio.</strong> El ámbito son los conductores de cobre. El aluminio se comporta de otro modo en una unión apretada: fluye bajo presión sostenida, su capa de óxido es aislante, y una unión correcta para cobre no lo es automáticamente para aluminio. Un borne declarado conforme no dice nada sobre su aptitud para un cable de aluminio.</li>
+
+      <li><strong>Uniones cobre-aluminio.</strong> Necesitan una transición que gestione la corrosión galvánica y la dilatación diferencial, de ahí que existan terminales y placas bimetálicas como productos separados. Atornillar aluminio desnudo en un borne cualificado para cobre es programar un mantenimiento.</li>
+
+      <li><strong>El conjunto alrededor del borne.</strong> Envolvente, puesta a tierra del carril, tendido de cables, radio de curvatura y temperatura ambiente dentro del armario quedan fuera de la norma del borne. La corriente asignada supone condiciones que debe crear el fabricante del cuadro.</li>
+
+      <li><strong>Requisitos de otras regiones.</strong> La UL 1059 es la referencia norteamericana habitual para bornes, y la UL 486A/B regula conectores y terminales. Un borne puede tener declaración IEC y listado UL, pero son cualificaciones distintas y ninguna implica la otra.</li>
+
+    </ul>
+
+    <h2>Cobre, aluminio y la pregunta que una ficha técnica no responde</h2>
+
+    <p>Es la bifurcación práctica para un fabricante de cuadros, y merece plantearse como decisión y no como nota.</p>
+
+    <p>Si todos los conductores que llegan al carril son de cobre, un borne conforme a IEC 60947-7-1 con rango de conexión adecuado y par declarado es el componente correcto, y el trabajo restante es disciplina: longitud de pelado correcta, terminales en cable flexible, llave dinamométrica realmente utilizada.</p>
+
+    <p>Si entra aluminio en el armario &mdash; situación habitual en el lado de alimentación de un cuadro de distribución, donde el cable de acometida es de aluminio y el cableado interno de cobre &mdash; el borne deja de ser el componente que resuelve el problema. La unión necesita una transición: un terminal o placa bimetálica, o un conector cualificado para el conductor de aluminio como tal. Tratar el borne como la transición es la forma de que un cuadro pase la inspección y falle dos años después.</p>
+
+    <h2>Especificar bornes para un esquema de cuadro</h2>
+
+    <ul>
+
+      <li><strong>El rango de conductores en ambas unidades</strong> &mdash; mm&sup2; y AWG &mdash; incluido el conductor más pequeño que llegará a conectarse, no solo el mayor.</li>
+
+      <li><strong>El tipo de unidad de apriete</strong> &mdash; tornillo o sin tornillo &mdash; y si la herramienta del instalador es adecuada.</li>
+
+      <li><strong>Número de polos y paso</strong>, para que la longitud de carril y la profundidad del armario salgan bien a la primera.</li>
+
+      <li><strong>Bornes de tierra según la parte de la norma relativa a conductores de protección</strong>, no la parte general, e identificados como tales en el esquema.</li>
+
+      <li><strong>Marcado y color</strong>, porque un carril legible es un carril que se mantiene correctamente.</li>
+
+      <li><strong>El expediente de evidencias del artículo exacto</strong>, no de la familia. Los informes de ensayo se emiten contra un tipo, y un nombre de familia en una web no es un informe de ensayo.</li>
+
+    </ul>
+
+    <h2>Cómo encajan los bornes YOMIN</h2>
+
+    <p>YOMIN fabrica bornes y conectores como componentes para fabricantes de cuadros, junto a las barras colectoras y terminales que terminan en los mismos armarios. La gama relevante para esta norma incluye:</p>
+
+    <p>El <a href="/products/terminal-connector/high-quality-durable-brass-plastic-and-pa-electric-copper-din-rail-terminal-block-with-copper-inlet-outlet">borne de carril DIN de latón y PA</a> (artículo ym-0209) &mdash; un borne montado en carril DIN, con partes conductoras de latón y entrada y salida de cobre, en cuerpo de poliamida, destinado a conexiones de hilo y barra en aplicaciones industriales y de potencia.</p>
+
+    <p>El <a href="/products/terminal-connector/self-locking-tb-series-terminal-block-made-of-durable-copper-material">borne autoblocante serie TB</a> (artículo ym-0216), de cuerpo de cobre para las mismas aplicaciones, y el <a href="/products/terminal-connector/copper-screw-terminal-block-connector-brass-terminal-block-with-copper-material">borne de tornillo de cobre</a> (artículo ym-0326), de apriete por tornillo, en cobre y latón.</p>
+
+    <p>Son artículos componente. Cuando un proyecto exige la declaración de un tipo concreto, pídala contra el número de artículo y no contra el nombre de familia, e indique el material del conductor, el rango de secciones y la temperatura ambiente que verá el armario. La gama completa está en <a href="/products/terminal-connector">bornes y conectores</a>. Si la unión implica aluminio, dígalo en la consulta: la respuesta pasa de un borne a un terminal de transición, y es mejor cambiarla antes de taladrar el armario.</p>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Qué cubre la IEC 60947-7-1?</h3>
+    <p>Cubre los bornes para conductores de cobre, incluidas las unidades de apriete de tornillo y sin tornillo. Define las características que un fabricante puede declarar, como tensión asignada, capacidad de conexión asignada y corriente asignada, y los ensayos que deben respaldarlas. Los bornes de protección y los portafusibles se cubren en otras partes de la misma serie.</p>
+
+    <h3>¿Un borne conforme a IEC 60947-7-1 sirve para cable de aluminio?</h3>
+    <p>No. El ámbito son los conductores de cobre. El aluminio fluye bajo presión de apriete sostenida y lleva una capa de óxido aislante, así que una unión correcta para cobre no es automáticamente sólida para aluminio. El aluminio necesita una transición, como un terminal bimetálico o un conector cualificado para ese conductor.</p>
+
+    <h3>¿En qué se diferencia la IEC 60947-7-1 de la UL 1059?</h3>
+    <p>Son cualificaciones regionales distintas para bornes. La UL 1059 es la referencia norteamericana habitual y la IEC 60947-7-1 la referencia IEC; los programas de ensayo, las hipótesis sobre conductores y los requisitos de marcado difieren. Un producto puede tener ambas, pero tener una no implica la otra, y un comprador que trabaja con especificación norteamericana debe pedir la evidencia UL de forma explícita.</p>
+
+    <h3>¿La corriente asignada de un borne se mide solo o en fila?</h3>
+    <p>Depende de las condiciones declaradas por el fabricante. Un borne ensayado aislado tiene más superficie libre que el mismo borne apiñado en un carril continuo dentro de una envolvente, así que los dos montajes no dan el mismo calentamiento. Si la aplicación lleva el carril cerca de su límite, pregunte a qué condición se refiere la cifra publicada.</p>
+
+    <h3>¿Hace falta terminal en un conductor flexible dentro de un borne de tornillo?</h3>
+    <p>En la práctica, sí. Un conductor flexible pelado se abre bajo el apriete de un tornillo y algunos hilos pueden cortarse o desplazarse, lo que reduce la superficie de contacto y hace impredecible la unión. Un terminal agrupa los hilos y da a la unidad de apriete una superficie definida. La norma fija requisitos para el borne, no para su práctica de cableado: esto es disciplina de taller más que un punto de certificación.</p>
+
+
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Especifica bornes para un cuadro?</h2>
+    <p>Indique el material y el rango de los conductores, el número de polos, el tipo de carril y la temperatura ambiente dentro del armario. Confirmamos el borne contra el plano y avisamos en la consulta si la unión necesita una transición en lugar de un borne.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar presupuesto</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

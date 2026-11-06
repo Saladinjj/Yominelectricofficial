@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/iec-61439-explained/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>شرح معيار IEC 61439: التحقق من التصميم والاختبارات الفردية ومواصفات قضبان التوصيل | Yomin Electric</title>
+<meta name="description" content="ما يتحقق منه معيار IEC 61439 فعلياً، وأي الفحوص تُجرى على تصميم مرجعي وأيها على كل لوحة تخرج من الورشة، وكيف تُحدَّد قضبان التوصيل والعوازل ومسافات العزل حتى يصمد التصنيف المعلن.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="شرح معيار IEC 61439: التحقق من التصميم والاختبارات الفردية">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:url" content="https://www.yominelectric.com/blog/iec-61439-explained-ar">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/iec-61439-explained/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/iec-61439-explained-ar">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/iec-61439-explained">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/iec-61439-explained-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/iec-61439-explained-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/iec-61439-explained-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/iec-61439-explained">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "شرح معيار IEC 61439: التحقق من التصميم والاختبارات الفردية",
+      "description": "ما يتحقق منه معيار IEC 61439 فعلياً، وأي الفحوص تُجرى على تصميم مرجعي وأيها على كل لوحة تخرج من الورشة، وكيف تُحدَّد قضبان التوصيل والعوازل ومسافات العزل حتى يصمد التصنيف المعلن.",
+      "image": "https://www.yominelectric.com/assets/images/blog/iec-61439-explained/hero.png",
+      "datePublished": "2026-11-06",
+      "dateModified": "2026-11-06",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/iec-61439-explained-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "ar",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "هل ينطبق معيار IEC 61439 على كل لوحات الجهد المنخفض؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ينطبق على مجموعات المفاتيح الكهربائية للجهد المنخفض، وهذا يشمل معظم لوحات التوزيع ومراكز التحكم بالمحركات ولوحات مراكز التحويل الجاهزة. والجزء المنطبق يتوقف على المجموعة: الجزء 2 لمجموعات مفاتيح القدرة، والجزء 3 للوحات التوزيع التي يتعامل معها أشخاص عاديون، والجزء 4 لمواقع البناء، والجزء 5 لشبكات التوزيع العامة، والجزء 6 لأنظمة القضبان المغلقة. وعلى المورّد أن يسمّي الجزء لا رقم المعيار فقط."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما الفرق بين التحقق من التصميم والتحقق الفردي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "التحقق من التصميم يثبت سلامة ترتيب التصميم، ويُنجز مرة واحدة لكل تصميم بالاختبار أو بالحساب أو بالمقارنة بتصميم مرجعي متحقَّق منه. والتحقق الفردي يثبت أن لوحة معينة صُنعت كما صُممت، ويُنجز على كل وحدة. وتحتاج إلى الاثنين، ولا يغني أحدهما عن الآخر."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل تبقى اللوحة المختبرة نموذجياً مقبولة في ظل IEC 61439؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تسميتا TTA وPTTA القديمتان تخصان IEC 60439. وفي ظل IEC 61439 يصبح السؤال عن طريقة التحقق المستخدمة للتصميم. وقد يبقى اختبار نموذجي أقدم دليلاً ذا صلة، لكن يجب ربطه بالمتطلبات الحالية لا الاستشهاد به كما لو كانت التسميات قابلة للتبادل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل تغيّر مادة القضيب التصنيف المتحقَّق منه؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، لأن ارتفاع الحرارة وتحمل دائرة القصر يعتمدان على الموصل. ويختلف النحاس عن الألومنيوم في الموصلية وفي سلوكه عند الوصلة، ومسار الألومنيوم يتطلب ممارسة توصيل مختلفة. والتحقق الذي أُجري على ترتيب نحاسي لا ينتقل تلقائياً إلى ترتيب ألومنيوم بالمقطع الاسمي نفسه."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل تستطيع YOMIN إصدار شهادة لمجموعة كاملة وفق IEC 61439؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا. تصنع YOMIN قضبان التوصيل والعوازل ومكونات التوصيل. وإقرار IEC 61439 للمجموعة يخص صانع اللوحة الذي يصممها ويتحقق منها ويجري عليها الاختبارات الفردية. وما تقدمه YOMIN هو عتاد التوصيل والاستناد وفق الرسم، حتى يمكن تكرار تصميم الصانع المتحقَّق منه."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>قضبان التوصيل</span></div>
+    <span class="bh-tag">المعايير والمطابقة</span>
+    <h1 class="bh-title">شرح معيار IEC 61439: التحقق من التصميم والاختبارات الفردية ومواصفات قضبان التوصيل</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>6 نوفمبر 2026</span>
+      <span class="divider"></span>
+      <span>11 دقيقة قراءة</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/iec-61439-explained/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/iec-61439-explained/hero.png" alt="قضبان توصيل نحاسية وألومنيوم معزولة بأطراف مطلية على خلفية ورقية دافئة، وهي المكوّنات التي يحدّد مقطعها وتباعد عوازلها تصنيف دائرة القصر وفق IEC 61439" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>معيار IEC 61439 هو المعيار الذي يحدّد ما إذا كانت مجموعة المفاتيح الكهربائية للجهد المنخفض صالحة للدخول في الخدمة. وهو لا يختبر منتجاً كما يُختبر المصهر أو العدّاد. بل يفرض التزامين منفصلين على من يبني اللوحة: <strong>التحقق من التصميم</strong>، الذي يثبت سلامة عائلة التصميم، و<strong>التحقق الفردي</strong>، الذي يثبت أن اللوحة المعنية مطابقة لذلك التصميم.</p>
+
+    <p>كل جدل تقريباً حول «المطابقة لمعيار 61439» هو في حقيقته جدل حول أي الالتزامين أنجزه المورّد فعلاً. فقد تحتفظ ورشة بملف تحقق صالح لترتيب مرجعي، وتسلّم مع ذلك لوحة تغيّر فيها تباعد القضبان أو مدخل الكابلات أو الفصل الداخلي بهدوء بعيداً عن ذلك الترتيب. تبدو الأوراق كاملة، لكن المجموعة لم تعد المجموعة التي جرى التحقق منها.</p>
+
+    <p>يعرض هذا الدليل ما تغطيه كل مرحلة، وأين يحدّد قضيب التوصيل وعوازله النتيجة، وما ينبغي طلبه قبل قبول أي لوحة.</p>
+
+    <h2>ما الذي حلّ معيار IEC 61439 محله، ولماذا يهم المشتري</h2>
+
+    <p>حلّ IEC 61439 محل IEC 60439 كمرجع لمجموعات الجهد المنخفض. والتغيير العملي بالنسبة للمشتري هو انتهاء المصطلحات القديمة ذات المستويين: كانت المجموعة إما مختبرة نموذجياً (TTA) أو مختبرة نموذجياً جزئياً (PTTA)، وقد بيع عدد كبير من اللوحات بالتسمية الأضعف دون أن يسأل أحد عمّا جرى استثناؤه.</p>
+
+    <p>في ظل IEC 61439 لم يبقَ السؤال «هل اختُبر هذا التصميم نموذجياً؟» بل صار «هل جرى التحقق من هذا التصميم، وبأي طريقة؟». التحقق بالاختبار طريق مسموح، والتحقق بالحساب أو بالمقارنة مع تصميم مرجعي سبق التحقق منه طريق آخر. وهذا مهم تجارياً، لأن مورّدَين قد يصف كلاهما لوحته بأنها مطابقة، بينما اختبر أحدهما الترتيب فعلياً واستنبط الآخر النتيجة بالحساب من تصميم مشابه.</p>
+
+    <p>لا يُعدّ أي من الطريقين تضليلاً. إنهما مستويان مختلفان من الأدلة، ومن حق المشتري أن يعرف أيّهما يقف خلف العرض.</p>
+
+    <h2>التحقق من التصميم والتحقق الفردي ليسا الوعد نفسه</h2>
+
+    <p>يستحق هذا التمييز أن يُحفظ، لأنه منشأ معظم سوء الفهم في المشتريات.</p>
+
+    <table>
+
+      <thead><tr><th>المرحلة</th><th>ما تثبته</th><th>تكرارها</th><th>ما يوثّقها</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>التحقق من التصميم</td><td>أن ترتيب التصميم &mdash; نظام القضبان ومسافات العزل والحاوية والتهوية وتحمل دائرة القصر &mdash; سليم كتصميم</td><td>مرة واحدة لكل تصميم، لا لكل طلبية</td><td>ملف تحقق: تقارير اختبار، أو حسابات ومقارنة بتصميم مرجعي جرى التحقق منه</td></tr>
+
+        <tr><td>التحقق الفردي</td><td>أن هذه اللوحة بعينها صُنعت كما صُممت</td><td>على كل وحدة تخرج من الورشة</td><td>سجل اختبار فردي موقّع ومربوط برقم اللوحة التسلسلي</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>قد تجتاز اللوحة التحقق الفردي وهي تنتمي إلى تصميم لم يجرِ التحقق منه بشكل سليم قط: فالفحوص الفردية تؤكد جودة التنفيذ والاستمرارية، لا سلامة الفكرة الأصلية. والعكس ممكن أيضاً: تصميم جيّد التحقق جُمّع بإهمال. تحتاج إلى الوثيقتين، وكل منهما تجيب عن سؤال مختلف.</p>
+
+    <h2>ما يجب أن يثبته التحقق من التصميم</h2>
+
+    <p>يجمع المعيار الخصائص المتحقَّق منها في عدد قليل من العائلات. كل عائلة تقابل نمط فشل حقيقياً في الخدمة، ولكل منها وثيقة خلفها إن كان العمل قد أُنجز.</p>
+
+    <table>
+
+      <thead><tr><th>الخاصية</th><th>ما تثبته فعلاً</th><th>أين يدخل قضيب التوصيل</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>ارتفاع درجة الحرارة</td><td>أن الموصلات والأطراف تبقى داخل الحدود التي يضعها المعيار للمادة وصنف العزل، عند التيار المقنن وداخل الحاوية الحقيقية</td><td>مقطع القضيب والطلاء وجودة الوصلات ومدى تراصّ المسار مع موصلات أخرى</td></tr>
+
+        <tr><td>الخصائص العازلة</td><td>أن العزل يتحمل جهود التردد الصناعي وجهود الصدمة المحددة</td><td>مسافات العزل ومسارات الزحف بين الأطوار، وبين الأجزاء الحاملة والحاوية</td></tr>
+
+        <tr><td>تحمل دائرة القصر</td><td>أن المجموعة تصمد أمام تيار عطل متوقع معلن لمدة معلنة دون تشوّه خطير</td><td>تباعد العوازل وقوتها والمجهود الكهروديناميكي بين القضبان المتوازية</td></tr>
+
+        <tr><td>الحماية من الصدمة الكهربائية</td><td>أن الأجزاء المتاحة آمنة للمس أو محجوبة بشكل موثوق</td><td>الحواجز والأغلفة وسلامة دائرة الحماية عبر الهيكل</td></tr>
+
+        <tr><td>درجة الحماية</td><td>أن تصنيف IP المعلن حقيقي بعد إغلاق الحاوية وإتمام مداخل الكابلات</td><td>ألواح الكابلات والأغطية وأي فتحة تُنشأ لمسار القضبان</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>لاحظ ما هو غائب عن هذا الجدول: لا أرقام. فحدود ارتفاع الحرارة وقيم تحمل الصدمة ومدد العطل موجودة في المعيار وتتوقف على المادة وصنف العزل والتصنيف المعلن. وأي مورّد يذكر رقماً واحداً صالحاً لكل اللوحات فقد بسّط ما لا يجوز تبسيطه، وأي مورّد يذكر حداً لا يمكن ردّه إلى المعيار يستحق سؤالاً ثانياً.</p>
+
+    <h2>أين يحدّد قضيب التوصيل التصنيف</h2>
+
+    <p>ثلاث خصائص لنظام القضبان تحكم ما إذا كان التصميم المتحقَّق منه يحافظ على تصنيفه في اللوحة الحقيقية.</p>
+
+    <p><strong>المقطع في مواجهة ارتفاع الحرارة.</strong> القضيب السخي في مقطعه بالنسبة للحمل الاسمي يسخن مع ذلك إذا كان متراصاً بقوة مع غيره أو موضوعاً في حجيرة سيئة التهوية. والتيار المستمر الذي يستطيع قضيب نحاسي حمله ليس خاصية للقضيب وحده، بل خاصية للقضيب داخل حاويته. ولهذا تتعامل <a href="/blog/busbar-design-basics">أساسيات تصميم قضبان التوصيل</a> مع كثافة التيار كنقطة انطلاق لا كجواب نهائي.</p>
+
+    <p><strong>تباعد العوازل في مواجهة قوة دائرة القصر.</strong> الموصلات المتوازية التي يمر بها تيار عطل تتنافر بقوة تتناسب مع مربع التيار وتقلّ كلما زاد التباعد. وتنصيف المسافة بين العوازل إلى النصف يرفع الحمل على كل عازل بشكل حاد. فالعازل إذن مكوّن من مكونات دائرة القصر وليس مجرد فاصل. وقد فُصِّل الحساب في <a href="/blog/short-circuit-current-calculation-guide">حساب تيار دائرة القصر</a>، وتُناولت النتائج الميكانيكية على العوازل في <a href="/blog/switchboard-assembly-what-is-a-standoff-insulator">دور عازل الاستناد في لوحة التوزيع</a>.</p>
+
+    <p><strong>مسافات العزل ومسارات الزحف في مواجهة التحمل العازل.</strong> تقلّ المسافات بمجرد ثني القضيب أو ربط وصلة أو تمرير طور حول آخر للوصول إلى طرف. وقد يُبطل تصميم جرى التحقق منه بمسار مستقيم بسبب ساق واحدة أُعيد توجيهها. ومسار الزحف هو الأصعب في الحفاظ عليه، لأن التلوث والتكاثف يحوّلان سطحاً نظيفاً مع الوقت إلى سطح موصل.</p>
+
+    <h2>الفصل الداخلي يغيّر مسار القضبان ويغيّر التحقق</h2>
+
+    <p>تصف أشكال الفصل الداخلي مدى الفصل المادي بين القضبان والوحدات الوظيفية والأطراف. وغالباً ما تُذكر في المناقصات برقم واحد، وهذا الرقم ليس تفصيلاً جمالياً: فهو يغيّر الصلب والحواجز ومسار القضبان.</p>
+
+    <table>
+
+      <thead><tr><th>الشكل</th><th>ما يُفصل</th><th>الأثر على مسار القضبان</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>الشكل 1</td><td>لا شيء &mdash; حجيرة واحدة غير مقسّمة</td><td>أقصر مسار وأقل صلب، وأسوأ تعريض للقضبان الحاملة لمن يعمل على وحدة وظيفية</td></tr>
+
+        <tr><td>الشكل 2</td><td>القضبان مفصولة عن الوحدات الوظيفية؛ الأطراف غير مفصولة عن وحدتها</td><td>يستلزم حاجزاً على طول المسار، وهذا يقلل التهوية ويرفع ارتفاع الحرارة</td></tr>
+
+        <tr><td>الشكل 3</td><td>القضبان مفصولة عن الوحدات الوظيفية، والوحدات الوظيفية مفصولة بعضها عن بعض</td><td>على المسار احترام جدران الحجيرات؛ وتنتقل الوصلات إلى مواضع محددة يمكن الوصول إليها</td></tr>
+
+        <tr><td>الشكل 4</td><td>القضبان والوحدات الوظيفية والأطراف، كلها مفصولة</td><td>تنتقل الأطراف إلى منطقة خاصة، فيطول المسار ويحتاج عوازل أكثر</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>توجد أشكال فرعية داخل الأشكال 2 إلى 4 تتعلق بترتيب الأطراف، ويعتمد الاختيار الصحيح على ما إذا كان يجب العمل على اللوحة بينما تبقى الدوائر المجاورة حاملة للجهد. والمهم هنا أن رفع الشكل ليس مجانياً: كل خطوة تضيف صلباً وتطيل مسار الموصل وتقلل تدفق الهواء الذي افترضه التحقق من ارتفاع الحرارة. فالتصميم المتحقَّق منه بالشكل 2 والمسلَّم بالشكل 4 ليس التصميم المتحقَّق منه.</p>
+
+    <h2>ما لا يعنيه «المطابقة لمعيار IEC 61439»</h2>
+
+    <ul>
+
+      <li><strong>ليست شهادة للوحتك بعينها.</strong> التحقق من التصميم يخص تصميماً، والسجل الفردي يخص رقماً تسلسلياً. اطلب الاثنين، وتأكد من أن الرقم في السجل يطابق الرقم على الباب.</li>
+
+      <li><strong>لا تغطي التركيب.</strong> ترتيبات التأريض وتحديد مقاطع الكابلات والانتقائية مع الحماية الأعلى وظروف الموقع كلها خارج نطاق معيار المجموعة. فاللوحة المتحقَّق منها إذا رُكبت على تغذية أصغر من اللازم تبقى خطراً.</li>
+
+      <li><strong>لا تجعل المكونات مطابقة.</strong> الأطراف والمصاهر والعدادات ومحوّلات التيار لها معاييرها الخاصة &mdash; فالأطراف المخصصة للموصلات النحاسية تخضع لمعيار IEC 60947-7-1 مثلاً. ومعيار المجموعة يصف كيفية تجميع الأجزاء، لا ما يجب أن يكون عليه كل جزء.</li>
+
+      <li><strong>ليست ضماناً مدى الحياة.</strong> المجموعة المتحقَّق منها والتي عُدّلت في الموقع &mdash; دائرة مضافة أو غطاء مثقوب أو قضيب أُعيد توجيهه &mdash; لم تعد مطابقة لملف التحقق الخاص بها حتى يُقيَّم التغيير.</li>
+
+    </ul>
+
+    <h2>ما ينبغي طلبه قبل قبول اللوحة</h2>
+
+    <p>الأسئلة قصيرة، والمورّد الذي أنجز العمل يجيب عنها دون أن يذهب للبحث عن الجواب.</p>
+
+    <ul>
+
+      <li><strong>أي تصميم جرى التحقق منه، وبأي طريقة</strong> &mdash; اختبار أو حساب أو مقارنة بتصميم مرجعي.</li>
+
+      <li><strong>أدلة ارتفاع الحرارة الخاصة بالحاوية التي تشتريها</strong>، لا بحاوية أصغر أو أفضل تهوية.</li>
+
+      <li><strong>تحمل دائرة القصر المعلن ومدته</strong>، وتيار العطل المتوقع الذي قُيّم على أساسه.</li>
+
+      <li><strong>شكل الفصل الداخلي المنفَّذ فعلاً</strong>، محقَّقاً من الرسم لا من عرض السعر.</li>
+
+      <li><strong>سجل الاختبار الفردي للرقم التسلسلي المسلَّم</strong>، بما في ذلك الاختبار العازل واستمرارية دائرة الحماية.</li>
+
+      <li><strong>مواصفات القضبان والعوازل</strong>: المادة والمقطع والطلاء ونوع العازل وتباعده، وعزم الربط المطبق على الوصلات.</li>
+
+    </ul>
+
+    <p>وإذا كانت اللوحة داخلة في مناقصة سيدقّق فيها العميل الملف، فاطلب ملف التحقق قبل الطلب لا بعد التسليم. فمن الأسهل بكثير تغيير تصميم قبل قصّ الصلب.</p>
+
+    <h2>كيف تندرج قضبان YOMIN في مجموعة متحقَّق منها</h2>
+
+    <p>تورّد YOMIN الموصلات والعوازل التي يستخدمها صانع اللوحات لبناء مجموعة وفق تصميمه المتحقَّق منه. فإقرار 61439 يخص مصنّع اللوحة، ومهمة مورّد المكونات أن يجعل الأبعاد والمادة والعزل المعلنة حقيقية وقابلة للتكرار.</p>
+
+    <p><a href="/products/rigid-busbar/manufacturer-customized-insulated-rigid-copper-electric-bus-bar-electrical">قضيب التوصيل النحاسي الصلب المعزول</a> (الصنف ym-0585) قضيب صلب من النحاس أو الألومنيوم بتشطيب عازل، يُورَّد للتركيبات الثابتة وحزم البطاريات والمفاتيح الكهربائية، بحد أدنى للطلب 100 قطعة. وهو النوع الذي يحمل المسار الرئيسي داخل قسم التوزيع، حيث يؤدي التشطيب العازل جزءاً من عمل مسافات العزل.</p>
+
+    <p>وحين تحتاج المجموعة إلى تثبيت القضيب على تباعد محدد، يجمع <a href="/products/aluminum-busbar/yomin-el-3m-busbar-with-el-600-insulators-10kv-rated-voltage-support-insulation-materials-elements">قضيب EL-3M الألومنيوم مع عوازل EL-600</a> (الصنف ym-0316) موصلاً خفيفاً من الألومنيوم مع عازل استناد بجهد مقنن 10 kV. ويُختار الألومنيوم للوزن وسلوك التآكل أكثر من الموصلية لكل وحدة كتلة، وتصنيف العازل هو ما يتيح دعم المسار بالتباعد الذي يطلبه حساب دائرة القصر.</p>
+
+    <p>يُصنع الصنفان حسب الرسم. أرسل المقطع ونمط الثقوب ومتطلبات العزل وتباعد العوازل ومستوى العطل الذي يجب أن تصمد له المجموعة، وسيُسعَّر المكوّن على أساس تصميمك لا على أساس صورة كتالوج. وتجد المجموعة الأوسع تحت <a href="/products/rigid-busbar">قضبان التوصيل الصلبة</a> و<a href="/products/aluminum-busbar">قضبان الألومنيوم</a>.</p>
+
+    <h2>الأسئلة الشائعة</h2>
+    <h3>هل ينطبق معيار IEC 61439 على كل لوحات الجهد المنخفض؟</h3>
+    <p>ينطبق على مجموعات المفاتيح الكهربائية للجهد المنخفض، وهذا يشمل معظم لوحات التوزيع ومراكز التحكم بالمحركات ولوحات مراكز التحويل الجاهزة. والجزء المنطبق يتوقف على المجموعة: الجزء 2 لمجموعات مفاتيح القدرة، والجزء 3 للوحات التوزيع التي يتعامل معها أشخاص عاديون، والجزء 4 لمواقع البناء، والجزء 5 لشبكات التوزيع العامة، والجزء 6 لأنظمة القضبان المغلقة. وعلى المورّد أن يسمّي الجزء لا رقم المعيار فقط.</p>
+
+    <h3>ما الفرق بين التحقق من التصميم والتحقق الفردي؟</h3>
+    <p>التحقق من التصميم يثبت سلامة ترتيب التصميم، ويُنجز مرة واحدة لكل تصميم بالاختبار أو بالحساب أو بالمقارنة بتصميم مرجعي متحقَّق منه. والتحقق الفردي يثبت أن لوحة معينة صُنعت كما صُممت، ويُنجز على كل وحدة. وتحتاج إلى الاثنين، ولا يغني أحدهما عن الآخر.</p>
+
+    <h3>هل تبقى اللوحة المختبرة نموذجياً مقبولة في ظل IEC 61439؟</h3>
+    <p>تسميتا TTA وPTTA القديمتان تخصان IEC 60439. وفي ظل IEC 61439 يصبح السؤال عن طريقة التحقق المستخدمة للتصميم. وقد يبقى اختبار نموذجي أقدم دليلاً ذا صلة، لكن يجب ربطه بالمتطلبات الحالية لا الاستشهاد به كما لو كانت التسميات قابلة للتبادل.</p>
+
+    <h3>هل تغيّر مادة القضيب التصنيف المتحقَّق منه؟</h3>
+    <p>نعم، لأن ارتفاع الحرارة وتحمل دائرة القصر يعتمدان على الموصل. ويختلف النحاس عن الألومنيوم في الموصلية وفي سلوكه عند الوصلة، ومسار الألومنيوم يتطلب ممارسة توصيل مختلفة. والتحقق الذي أُجري على ترتيب نحاسي لا ينتقل تلقائياً إلى ترتيب ألومنيوم بالمقطع الاسمي نفسه.</p>
+
+    <h3>هل تستطيع YOMIN إصدار شهادة لمجموعة كاملة وفق IEC 61439؟</h3>
+    <p>لا. تصنع YOMIN قضبان التوصيل والعوازل ومكونات التوصيل. وإقرار IEC 61439 للمجموعة يخص صانع اللوحة الذي يصممها ويتحقق منها ويجري عليها الاختبارات الفردية. وما تقدمه YOMIN هو عتاد التوصيل والاستناد وفق الرسم، حتى يمكن تكرار تصميم الصانع المتحقَّق منه.</p>
+
+
+  </section>
+
+  <section class="cta-section">
+    <h2>هل تحدّد قضبان لمجموعة متحقَّق منها؟</h2>
+    <p>أرسل المقطع ونمط الثقوب ومتطلبات العزل وتباعد العوازل وتيار العطل المتوقع الذي يجب أن تصمد له اللوحة. سنسعّر القضبان والعوازل على أساس تصميمك لا على أساس صورة كتالوج.</p>
+    <a class="btn btn-primary" href="/contact">اطلب عرض سعر</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

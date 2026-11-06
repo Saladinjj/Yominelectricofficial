@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/iec-61439-explained/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IEC 61439 Explained: Design Verification, Routine Tests and Busbar Specification | Yomin Electric</title>
+<meta name="description" content="What IEC 61439 actually verifies, which checks are done on a reference design and which on every board that leaves the workshop, and how busbars, supports and clearances must be specified for the rating to hold.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IEC 61439 Explained: Design Verification and Routine Tests">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.yominelectric.com/blog/iec-61439-explained">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/iec-61439-explained/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/iec-61439-explained">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/iec-61439-explained">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/iec-61439-explained-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/iec-61439-explained-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/iec-61439-explained-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/iec-61439-explained">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "IEC 61439 Explained: Design Verification and Routine Tests",
+      "description": "What IEC 61439 actually verifies, which checks are done on a reference design and which on every board that leaves the workshop, and how busbars, supports and clearances must be specified for the rating to hold.",
+      "image": "https://www.yominelectric.com/assets/images/blog/iec-61439-explained/hero.png",
+      "datePublished": "2026-11-06",
+      "dateModified": "2026-11-06",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/iec-61439-explained"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does IEC 61439 apply to every low-voltage switchboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It applies to low-voltage switchgear and controlgear assemblies, which covers most distribution boards, motor control centres and packaged substation boards. The part that applies depends on the assembly: Part 2 for power switchgear and controlgear assemblies, Part 3 for distribution boards operated by ordinary persons, Part 4 for construction sites, Part 5 for public distribution networks and Part 6 for busbar trunking systems. A supplier should be able to name the part, not just the number."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between design verification and routine verification?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Design verification proves that the design arrangement is sound, and it is done once per design by test, by calculation or by comparison with a verified reference design. Routine verification proves that a specific board was built as designed, and it is done on every unit. A board needs both, and one does not substitute for the other."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a type-tested board still acceptable now that IEC 61439 is in force?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The old TTA and PTTA labels belong to IEC 60439. Under IEC 61439 the question becomes which verification method was used for the design. An older type test can still be relevant evidence, but it has to be mapped onto the current requirements rather than quoted as if the labels were interchangeable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the busbar material change the verified rating?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, because temperature rise and short-circuit withstand both depend on the conductor. Copper and aluminium differ in conductivity and in how they behave at a joint, and an aluminium run needs different jointing practice. A verification carried out on a copper arrangement does not automatically transfer to an aluminium one of the same nominal cross-section."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can YOMIN certify a complete assembly to IEC 61439?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. YOMIN manufactures busbars, insulators and connection components. The IEC 61439 declaration for an assembly belongs to the panel builder who designs, verifies and routine-tests it. What YOMIN provides is the conductor and support hardware to the stated drawing, so that the builder's verified design can be reproduced."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Busbars</span></div>
+    <span class="bh-tag">Standards &amp; Compliance</span>
+    <h1 class="bh-title">IEC 61439 Explained: Design Verification, Routine Tests and Busbar Specification</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 6, 2026</span>
+      <span class="divider"></span>
+      <span>11 min read</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/iec-61439-explained/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/iec-61439-explained/hero.png" alt="Insulated copper and aluminium busbars with plated palms on a warm paper background, the components whose cross-section and support spacing decide an IEC 61439 short-circuit rating" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>IEC 61439 is the standard that decides whether a low-voltage switchgear or controlgear assembly can be put into service. It does not test a product in the way a fuse or a meter is tested. It places two separate obligations on whoever builds the board: <strong>design verification</strong>, which proves that the design family is sound, and <strong>routine verification</strong>, which proves that the particular board in front of you matches that design.</p>
+
+    <p>Almost every argument about &ldquo;61439 compliance&rdquo; turns out to be an argument about which of those two a supplier has actually done. A workshop can hold a valid design verification for a reference arrangement and still hand over a board whose busbar spacing, cable entry or internal separation has quietly drifted away from it. The paperwork looks complete, and the assembly is no longer the assembly that was verified.</p>
+
+    <p>This guide sets out what each verification stage covers, where the busbar and its supports decide the outcome, and what to ask for before you accept a board.</p>
+
+    <h2>What IEC 61439 replaced, and why a buyer should care</h2>
+
+    <p>IEC 61439 replaced IEC 60439 as the reference for low-voltage assemblies. The practical change for buyers was the end of the old two-tier language: an assembly was either type tested (TTA) or partially type tested (PTTA), and a great many boards in the field were sold on the weaker label without anyone asking what had been omitted.</p>
+
+    <p>Under IEC 61439 the question is no longer &ldquo;was this design type tested?&rdquo; but &ldquo;has this design been verified, and by which method?&rdquo;. Verification by test is one permitted route; verification by calculation, or by comparison with an already verified reference design, is another. That matters commercially, because two suppliers can both describe a board as compliant while one has physically tested the arrangement and the other has argued it by calculation against a similar design.</p>
+
+    <p>Neither route is dishonest. They are simply different levels of evidence, and the buyer is entitled to know which one is behind the offer.</p>
+
+    <h2>Design verification and routine verification are not the same promise</h2>
+
+    <p>The distinction is worth memorising, because it is where most procurement misunderstandings begin.</p>
+
+    <table>
+
+      <thead><tr><th>Stage</th><th>What it establishes</th><th>How often it happens</th><th>What proves it</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Design verification</td><td>That the design arrangement &mdash; busbar system, clearances, enclosure, cooling, short-circuit withstand &mdash; is sound as a design</td><td>Once per design, not per order</td><td>A verification file: test reports, or calculations and comparison with a verified reference design</td></tr>
+
+        <tr><td>Routine verification</td><td>That this individual assembly was built as designed</td><td>On every unit leaving the workshop</td><td>A routine test record signed against the specific serial number</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>A board can pass routine verification and still belong to a design that was never properly verified &mdash; routine checks confirm workmanship and continuity, not whether the original concept was sound. The reverse is also possible: a well-verified design assembled carelessly. You need both documents, and they answer different questions.</p>
+
+    <h2>What design verification has to demonstrate</h2>
+
+    <p>The standard groups the verified characteristics into a small number of families. Each one is a place where a real board fails in service, and each one has a document behind it if the work was done.</p>
+
+    <table>
+
+      <thead><tr><th>Characteristic</th><th>What it actually proves</th><th>Where the busbar is involved</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Temperature rise</td><td>That conductors and terminals stay within the limits the standard sets for the material and insulating class at rated current, inside the real enclosure</td><td>Busbar cross-section, plating, joint quality and how tightly the run is packed against other conductors</td></tr>
+
+        <tr><td>Dielectric properties</td><td>That insulation can withstand the specified power-frequency and impulse voltages</td><td>Clearance and creepage between phases, and between live parts and the enclosure</td></tr>
+
+        <tr><td>Short-circuit withstand</td><td>That the assembly survives a stated prospective fault current for a stated time without dangerous deformation</td><td>Support spacing, support strength and the electrodynamic force between parallel bars</td></tr>
+
+        <tr><td>Protection against electric shock</td><td>That accessible parts are either safe to touch or reliably screened</td><td>Barriers, shrouds and the integrity of the protective circuit through the frame</td></tr>
+
+        <tr><td>Degree of protection</td><td>That the declared IP rating is real once the enclosure is closed and the cable entries are made off</td><td>Gland plates, covers and any opening created for the busbar route</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Note what is absent from that table: no numbers. The temperature-rise limits, the impulse withstand values and the fault durations live in the standard and depend on the material, the insulating class and the declared rating. Any supplier who quotes a single universal figure for all boards has simplified something that should not be simplified, and any supplier who quotes a limit that cannot be traced to the standard is worth a second question.</p>
+
+    <h2>Where the busbar decides the rating</h2>
+
+    <p>Three properties of the busbar system control whether a verified design holds its rating in the real board.</p>
+
+    <p><strong>Cross-section against temperature rise.</strong> A bar that is generously sized for the nominal load still runs hot if it is tightly bundled with others or sits in a poorly ventilated compartment. The continuous current a copper bar can carry is not a property of the bar alone; it is a property of the bar in its enclosure. This is why <a href="/blog/busbar-design-basics">busbar design basics</a> treats current density as a starting point rather than an answer.</p>
+
+    <p><strong>Support spacing against short-circuit force.</strong> Parallel conductors carrying a fault current repel each other with a force that grows with the square of the current and falls as the spacing increases. Halve the support pitch and the load on each insulator rises sharply. The insulator is therefore a short-circuit component, not a spacer. The calculation is set out in <a href="/blog/short-circuit-current-calculation-guide">short circuit current calculation</a>, and the mechanical consequences for supports are covered in <a href="/blog/switchboard-assembly-what-is-a-standoff-insulator">what a standoff insulator does in a switchboard</a>.</p>
+
+    <p><strong>Clearance and creepage against dielectric withstand.</strong> Clearances shrink when a bar is bent, when a joint is bolted, or when a phase is routed around another to reach a terminal. A design verified with a straight run can be invalidated by one re-routed leg. Creepage is the harder of the two to keep, because contamination and condensation turn a clean surface into a conductive one over time.</p>
+
+    <h2>Internal separation changes the busbar layout, and the verification</h2>
+
+    <p>Forms of internal separation describe how far the busbars are physically divided from the functional units and from the terminals. They are usually quoted in a tender as a single digit, and the digit is not a cosmetic detail: it changes the steel, the barriers and the busbar route.</p>
+
+    <table>
+
+      <thead><tr><th>Form</th><th>What is separated</th><th>Effect on the busbar run</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Form 1</td><td>Nothing &mdash; one undivided compartment</td><td>Shortest route, least steel, worst exposure of live bars to anyone working on a functional unit</td></tr>
+
+        <tr><td>Form 2</td><td>Busbars separated from functional units; terminals not separated from their own unit</td><td>Requires a barrier along the bar run, which reduces ventilation and raises temperature rise</td></tr>
+
+        <tr><td>Form 3</td><td>Busbars separated from functional units, and functional units separated from each other</td><td>Routing has to respect compartment walls; joints move to accessible, specified positions</td></tr>
+
+        <tr><td>Form 4</td><td>Busbars, functional units and terminals all separated</td><td>Terminals move into their own zone, so the bar run lengthens and needs more supports</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Sub-forms exist within Forms 2 to 4 for terminal arrangements, and the right choice depends on whether the board must be worked on while adjacent circuits remain live. What matters for this discussion is that raising the form is not free: each step adds steel, adds length to the conductor run and reduces the airflow that the temperature-rise verification assumed. A design verified at Form 2 and delivered at Form 4 is not the verified design.</p>
+
+    <h2>What &ldquo;IEC 61439 compliant&rdquo; does not mean</h2>
+
+    <ul>
+
+      <li><strong>It is not a certificate for your specific board.</strong> The design verification belongs to a design; the routine record belongs to a serial number. Ask for both, and check that the serial on the record matches the serial on the door.</li>
+
+      <li><strong>It does not cover the installation.</strong> Earthing arrangements, cable sizing, discrimination with upstream protection and the site conditions are outside the assembly standard. A verified board installed on an undersized supply is still a hazard.</li>
+
+      <li><strong>It does not make the components compliant.</strong> Terminal blocks, fuses, meters and current transformers carry their own standards &mdash; terminal blocks for copper conductors under IEC 60947-7-1, for example. An assembly standard describes how the parts are put together, not what each part must be.</li>
+
+      <li><strong>It is not a lifetime guarantee.</strong> A verified assembly that has been modified on site &mdash; an added circuit, a drilled cover, a re-routed bar &mdash; no longer matches its verification file until the change is assessed.</li>
+
+    </ul>
+
+    <h2>What to ask for before you accept a board</h2>
+
+    <p>The questions are short, and a supplier who has done the work can answer them without going away to think.</p>
+
+    <ul>
+
+      <li><strong>Which design was verified, and by which method</strong> &mdash; test or calculation or comparison with a reference design.</li>
+
+      <li><strong>The temperature-rise evidence for the enclosure you are buying</strong>, not for a smaller or better-ventilated one.</li>
+
+      <li><strong>The declared short-circuit withstand and duration</strong>, and the prospective fault current it was assessed against.</li>
+
+      <li><strong>The form of internal separation actually built</strong>, checked against the drawing rather than the quotation.</li>
+
+      <li><strong>The routine test record for the serial number delivered</strong>, including the dielectric test and protective circuit continuity results.</li>
+
+      <li><strong>The busbar and support specification</strong>: material, cross-section, plating, support type and pitch, and the torque used on the joints.</li>
+
+    </ul>
+
+    <p>If a board is going into a tender where the client will audit the file, ask for the verification file before the order rather than after delivery. It is much easier to change a design before steel is cut.</p>
+
+    <h2>How YOMIN busbars fit into a verified assembly</h2>
+
+    <p>YOMIN supplies the conductor and support components that a panel builder uses to build an assembly to its own verified design. The manufacturer of the board owns the 61439 declaration; the component supplier's job is to make the stated dimensions, material and insulation real and repeatable.</p>
+
+    <p>The <a href="/products/rigid-busbar/manufacturer-customized-insulated-rigid-copper-electric-bus-bar-electrical">insulated rigid copper busbar</a> (item ym-0585) is a rigid copper or aluminium bar with an insulated finish, supplied for fixed installations, battery packs and switchgear, with a minimum order quantity of 100 pieces. It is the type of bar that carries the main run inside a distribution section, where the insulated finish is doing part of the clearance work.</p>
+
+    <p>Where the assembly needs the bar held at a defined pitch, the <a href="/products/aluminum-busbar/yomin-el-3m-busbar-with-el-600-insulators-10kv-rated-voltage-support-insulation-materials-elements">EL-3M aluminium busbar with EL-600 insulators</a> (item ym-0316) pairs a lightweight aluminium conductor with a 10 kV rated support insulator. Aluminium is chosen for weight and corrosion behaviour rather than conductivity per unit mass, and the insulator rating is what allows the run to be supported at the spacing the short-circuit calculation demands.</p>
+
+    <p>Both items are made to drawing. Send the cross-section, the hole pattern, the insulation requirement, the support pitch and the fault level the assembly must withstand, and the component can be quoted against the design rather than against a catalogue photo. The wider range sits under <a href="/products/rigid-busbar">rigid busbars</a> and <a href="/products/aluminum-busbar">aluminium busbars</a>.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>Does IEC 61439 apply to every low-voltage switchboard?</h3>
+    <p>It applies to low-voltage switchgear and controlgear assemblies, which covers most distribution boards, motor control centres and packaged substation boards. The part that applies depends on the assembly: Part 2 for power switchgear and controlgear assemblies, Part 3 for distribution boards operated by ordinary persons, Part 4 for construction sites, Part 5 for public distribution networks and Part 6 for busbar trunking systems. A supplier should be able to name the part, not just the number.</p>
+
+    <h3>What is the difference between design verification and routine verification?</h3>
+    <p>Design verification proves that the design arrangement is sound, and it is done once per design by test, by calculation or by comparison with a verified reference design. Routine verification proves that a specific board was built as designed, and it is done on every unit. A board needs both, and one does not substitute for the other.</p>
+
+    <h3>Is a type-tested board still acceptable now that IEC 61439 is in force?</h3>
+    <p>The old TTA and PTTA labels belong to IEC 60439. Under IEC 61439 the question becomes which verification method was used for the design. An older type test can still be relevant evidence, but it has to be mapped onto the current requirements rather than quoted as if the labels were interchangeable.</p>
+
+    <h3>Does the busbar material change the verified rating?</h3>
+    <p>Yes, because temperature rise and short-circuit withstand both depend on the conductor. Copper and aluminium differ in conductivity and in how they behave at a joint, and an aluminium run needs different jointing practice. A verification carried out on a copper arrangement does not automatically transfer to an aluminium one of the same nominal cross-section.</p>
+
+    <h3>Can YOMIN certify a complete assembly to IEC 61439?</h3>
+    <p>No. YOMIN manufactures busbars, insulators and connection components. The IEC 61439 declaration for an assembly belongs to the panel builder who designs, verifies and routine-tests it. What YOMIN provides is the conductor and support hardware to the stated drawing, so that the builder's verified design can be reproduced.</p>
+
+
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying busbars for a verified assembly?</h2>
+    <p>Send the cross-section, hole pattern, insulation requirement, support pitch and the prospective fault current the board must withstand. We will quote the bar and the supports against your design rather than against a catalogue photo.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

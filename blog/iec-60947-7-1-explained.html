@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/iec-60947-7-1-explained/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IEC 60947-7-1 Explained: What a Terminal Block Standard Covers | Yomin Electric</title>
+<meta name="description" content="IEC 60947-7-1 governs terminal blocks for copper conductors. What its declared ratings actually cover, which tests sit behind the claim, where UL 1059 differs, and why the standard does not make a block suitable for aluminium.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IEC 60947-7-1 Explained: Terminal Blocks for Copper Conductors">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.yominelectric.com/blog/iec-60947-7-1-explained">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/iec-60947-7-1-explained/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "IEC 60947-7-1 Explained: Terminal Blocks for Copper Conductors",
+      "description": "IEC 60947-7-1 governs terminal blocks for copper conductors. What its declared ratings actually cover, which tests sit behind the claim, where UL 1059 differs, and why the standard does not make a block suitable for aluminium.",
+      "image": "https://www.yominelectric.com/assets/images/blog/iec-60947-7-1-explained/hero.png",
+      "datePublished": "2026-11-06",
+      "dateModified": "2026-11-06",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/iec-60947-7-1-explained"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does IEC 60947-7-1 cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It covers terminal blocks for copper conductors, including screw-type and screwless-type clamping units. It defines the characteristics a manufacturer may declare, such as rated voltage, rated connecting capacity and rated current, and the tests that must support those declarations. Protective conductor blocks and fuse blocks are covered by separate parts of the same series."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does IEC 60947-7-1 mean a terminal block is suitable for aluminium cable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The scope is copper conductors. Aluminium creeps under sustained clamping pressure and carries an insulating oxide layer, so a joint that works for copper is not automatically sound for aluminium. Aluminium needs a transition such as a bimetallic lug or a connector rated for that conductor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is IEC 60947-7-1 different from UL 1059?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are separate regional qualifications for terminal blocks. UL 1059 is the usual North American reference and IEC 60947-7-1 is the IEC reference; the test programmes, conductor assumptions and marking requirements differ. A product can hold both, but holding one does not imply the other, and a buyer working to a North American specification should ask for the UL evidence specifically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the rated current of a terminal block measured on its own or in a row?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the manufacturer's declared conditions. A block tested in isolation has more free surface than the same block packed into a continuous rail inside an enclosure, so the two arrangements do not give the same temperature rise. If the application runs the rail near its limit, ask which condition the published figure refers to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a ferrule on a flexible conductor in a screw terminal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In practice, yes. A stripped flexible conductor spreads under a screw clamp, and strands can be cut or displaced, which reduces the contact area and makes the joint unpredictable. A ferrule consolidates the strands and gives the clamp a defined surface. The terminal block standard sets the requirement for the block, not for your wiring practice, so this is a workshop discipline rather than a certification point."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Terminals &amp; Connectors</span></div>
+    <span class="bh-tag">Standards &amp; Compliance</span>
+    <h1 class="bh-title">IEC 60947-7-1 Explained: What a Terminal Block Standard Covers</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 6, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/iec-60947-7-1-explained/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/iec-60947-7-1-explained/hero.png" alt="Brass and polyamide DIN rail terminal blocks and a copper screw terminal block on a warm paper background, the product family governed by IEC 60947-7-1" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>IEC 60947-7-1 is the part of the low-voltage switchgear and controlgear series that covers <strong>terminal blocks for copper conductors</strong>. It defines what a manufacturer is allowed to declare &mdash; rated voltage, rated connecting capacity, rated current &mdash; and the tests that have to sit behind those declarations before the block can carry them.</p>
+
+    <p>It is frequently quoted on datasheets and rarely read, which produces a predictable confusion in procurement: a buyer sees &ldquo;IEC 60947-7-1&rdquo; in a specification and assumes it covers the whole joint, including whatever conductor is being brought into it. It does not. The standard is written around copper, and it addresses the terminal block as a component rather than the assembly it is screwed into.</p>
+
+    <p>This guide explains what the standard genuinely proves, where the boundary sits, and which questions separate a supplier who has the evidence from one who has the logo.</p>
+
+    <h2>Where IEC 60947-7-1 sits in the series</h2>
+
+    <p>IEC 60947 is the umbrella for low-voltage switchgear and controlgear. Part 7 covers ancillary equipment, and within it the terminal block work is split by function rather than by shape:</p>
+
+    <ul>
+
+      <li><strong>IEC 60947-7-1</strong> &mdash; terminal blocks for copper conductors: the general case, covering screw-type and screwless-type clamping units.</li>
+
+      <li><strong>IEC 60947-7-2</strong> &mdash; protective conductor terminal blocks, where the earth connection is the function rather than an accessory.</li>
+
+      <li><strong>IEC 60947-7-3</strong> &mdash; fuse terminal blocks, where a fuse carrier is built into the block.</li>
+
+    </ul>
+
+    <p>The split matters when a panel schedule lists three kinds of block on one rail. A green earth block is not simply a grey block in a different colour; it is qualified to a different part of the standard, and the difference is about the continuity and short-circuit behaviour of the protective path.</p>
+
+    <h2>What the declared ratings actually mean</h2>
+
+    <p>A compliant terminal block declares a small set of characteristics. Each one is a limit on how the block may be used, and each one is testable. Reading them as marketing numbers rather than as constraints is the most common specification error.</p>
+
+    <table>
+
+      <thead><tr><th>Declared characteristic</th><th>What it constrains</th><th>What to ask the supplier</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Rated voltage</td><td>The highest voltage the insulation system is qualified for, together with the pollution degree and impulse category it was assessed at</td><td>Which pollution degree and rated impulse withstand voltage the rating assumes</td></tr>
+
+        <tr><td>Rated connecting capacity</td><td>The conductor cross-sections, solid or stranded, that the clamping unit will accept and hold</td><td>The full range, in mm&sup2; and AWG, and whether flexible conductors with ferrules are included</td></tr>
+
+        <tr><td>Rated current</td><td>The current the block carries continuously without exceeding the permitted temperature rise</td><td>Whether that figure was established for the block alone or in a row of blocks on a rail</td></tr>
+
+        <tr><td>Clamping unit type</td><td>Whether the connection is screw-type or screwless, which decides tooling, torque and re-termination practice</td><td>The specified torque, and whether it is marked on the block</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>The third row is the one that catches people out. A terminal block tested on its own has more free surface than the same block packed into a continuous row inside an enclosure. Manufacturers test both ways and declare accordingly, but the number on the front of a catalogue page is not always accompanied by the conditions it was measured under. If the application runs the rail near its current limit, ask which condition the figure refers to.</p>
+
+    <h2>The tests behind the claim</h2>
+
+    <p>The standard's test schedule is not exotic. It is a sequence of ordinary checks that a block either survives or does not.</p>
+
+    <table>
+
+      <thead><tr><th>Test family</th><th>What it is looking for</th><th>How a weak block fails it</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Temperature rise</td><td>That the clamping unit and the insulating body stay within the permitted rise at rated current</td><td>Thin current-carrying parts, poor contact area, or a body that softens and lets the screw relax</td></tr>
+
+        <tr><td>Dielectric properties</td><td>That insulation withstands the specified power-frequency and impulse voltages</td><td>Insufficient creepage between adjacent poles once the block is mounted in a row</td></tr>
+
+        <tr><td>Mechanical strength and clamping</td><td>That the connection holds a conductor securely through the specified pull and repeated make-and-break</td><td>A clamping unit that deforms the conductor, or a screw thread that strips before the rated torque</td></tr>
+
+        <tr><td>Insulation coordination</td><td>That clearances and creepage suit the declared voltage, pollution degree and material group</td><td>Design copied from a lower-voltage block and re-labelled</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>None of these tests tells you the block will be reliable in your panel. They tell you the block meets a defined floor. Workmanship on the rail &mdash; torque, stripping length, whether a ferrule was used &mdash; decides whether the floor is reached in practice.</p>
+
+    <h2>What the standard does not cover</h2>
+
+    <p>The boundary is where most of the commercial risk sits, so it is worth stating plainly.</p>
+
+    <ul>
+
+      <li><strong>Aluminium conductors.</strong> The scope is copper conductors. Aluminium behaves differently at a clamped joint: it creeps under sustained pressure, its oxide layer is an insulator, and a joint that is correct for copper is not automatically correct for aluminium. A block described as compliant tells you nothing about its suitability for an aluminium cable.</li>
+
+      <li><strong>Mixed copper-aluminium joints.</strong> These need a transition that manages galvanic corrosion and differential expansion, which is why bimetallic lugs and plates exist as separate products. Screwing bare aluminium into a copper-rated terminal is a maintenance problem on a timer.</li>
+
+      <li><strong>The assembly around the block.</strong> Enclosure, rail earthing, wire routing, bending radius and the ambient temperature inside the cabinet are all outside the terminal block standard. The block's rated current assumes conditions the panel builder has to create.</li>
+
+      <li><strong>Other regions' requirements.</strong> UL 1059 is the usual North American reference for terminal blocks, and UL 486A/B governs wire connectors and lugs. A block can hold an IEC declaration and a UL listing, but they are separate qualifications and neither implies the other.</li>
+
+    </ul>
+
+    <h2>Copper, aluminium and the question a datasheet will not answer</h2>
+
+    <p>This is the practical fork in the road for a panel builder, and it is worth stating as a decision rather than a note.</p>
+
+    <p>If every conductor landing on the rail is copper, an IEC 60947-7-1 block with an adequate connecting range and a declared torque is the right component, and the remaining work is discipline: correct stripping length, ferrules on flexible cable, a torque wrench that is actually used.</p>
+
+    <p>If aluminium is entering the panel &mdash; a common situation on the supply side of a distribution board, where the incoming cable is aluminium and the internal wiring is copper &mdash; the terminal block is no longer the component that solves the problem. The joint needs a transition: a bimetallic lug or plate, or a connector rated for the aluminium conductor in its own right. Treating the terminal block as the transition is how a panel passes inspection and fails two years later.</p>
+
+    <h2>Specifying terminal blocks for a panel schedule</h2>
+
+    <ul>
+
+      <li><strong>Conductor range in both units</strong> &mdash; mm&sup2; and AWG &mdash; including the smallest conductor that will ever be landed, not only the largest.</li>
+
+      <li><strong>Type of clamping unit</strong> &mdash; screw or screwless &mdash; and whether the installer's tooling suits it.</li>
+
+      <li><strong>Pole count and pitch</strong>, so the rail length and the enclosure depth are right the first time.</li>
+
+      <li><strong>Earth blocks to the protective conductor part of the standard</strong>, not the general part, and identified as such in the schedule.</li>
+
+      <li><strong>Marking and colour</strong>, because a rail that is legible is a rail that gets maintained correctly.</li>
+
+      <li><strong>The evidence file for the exact item</strong>, not for the family. Test reports are issued against a type, and a family name on a website is not a test report.</li>
+
+    </ul>
+
+    <h2>How YOMIN terminal blocks fit</h2>
+
+    <p>YOMIN manufactures terminal blocks and connectors as components for panel builders, alongside the busbars and lugs that land in the same enclosures. The range relevant to this standard includes:</p>
+
+    <p>The <a href="/products/terminal-connector/high-quality-durable-brass-plastic-and-pa-electric-copper-din-rail-terminal-block-with-copper-inlet-outlet">brass and PA DIN rail terminal block</a> (item ym-0209) &mdash; a DIN rail mounted block with brass current-carrying parts and copper inlet and outlet, in a polyamide body, intended for secure wire and busbar connections in industrial and power applications.</p>
+
+    <p>The <a href="/products/terminal-connector/self-locking-tb-series-terminal-block-made-of-durable-copper-material">TB series self-locking terminal block</a> (item ym-0216), a copper-bodied block for the same applications, and the <a href="/products/terminal-connector/copper-screw-terminal-block-connector-brass-terminal-block-with-copper-material">copper screw terminal block</a> (item ym-0326), a screw-clamp block in copper and brass.</p>
+
+    <p>These are component items. Where a project needs the declaration for a specific type, ask for it against the item number rather than the family name, and state the conductor material, the cross-section range and the ambient temperature the panel will see. The wider range sits under <a href="/products/terminal-connector">terminals and connectors</a>. If the joint involves aluminium, say so at enquiry stage &mdash; the answer changes from a terminal block to a transition lug, and it is better to change it before the panel is drilled.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>What does IEC 60947-7-1 cover?</h3>
+    <p>It covers terminal blocks for copper conductors, including screw-type and screwless-type clamping units. It defines the characteristics a manufacturer may declare, such as rated voltage, rated connecting capacity and rated current, and the tests that must support those declarations. Protective conductor blocks and fuse blocks are covered by separate parts of the same series.</p>
+
+    <h3>Does IEC 60947-7-1 mean a terminal block is suitable for aluminium cable?</h3>
+    <p>No. The scope is copper conductors. Aluminium creeps under sustained clamping pressure and carries an insulating oxide layer, so a joint that works for copper is not automatically sound for aluminium. Aluminium needs a transition such as a bimetallic lug or a connector rated for that conductor.</p>
+
+    <h3>How is IEC 60947-7-1 different from UL 1059?</h3>
+    <p>They are separate regional qualifications for terminal blocks. UL 1059 is the usual North American reference and IEC 60947-7-1 is the IEC reference; the test programmes, conductor assumptions and marking requirements differ. A product can hold both, but holding one does not imply the other, and a buyer working to a North American specification should ask for the UL evidence specifically.</p>
+
+    <h3>Is the rated current of a terminal block measured on its own or in a row?</h3>
+    <p>It depends on the manufacturer's declared conditions. A block tested in isolation has more free surface than the same block packed into a continuous rail inside an enclosure, so the two arrangements do not give the same temperature rise. If the application runs the rail near its limit, ask which condition the published figure refers to.</p>
+
+    <h3>Do I need a ferrule on a flexible conductor in a screw terminal?</h3>
+    <p>In practice, yes. A stripped flexible conductor spreads under a screw clamp, and strands can be cut or displaced, which reduces the contact area and makes the joint unpredictable. A ferrule consolidates the strands and gives the clamp a defined surface. The terminal block standard sets the requirement for the block, not for your wiring practice, so this is a workshop discipline rather than a certification point.</p>
+
+
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying terminal blocks for a panel?</h2>
+    <p>Send the conductor material and range, the pole count, the rail type and the ambient temperature inside the enclosure. We will confirm the block against the drawing, and flag at enquiry stage if the joint needs a transition rather than a terminal.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

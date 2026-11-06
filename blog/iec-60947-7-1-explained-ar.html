@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/iec-60947-7-1-explained/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>شرح معيار IEC 60947-7-1: ما تغطيه مواصفة أطراف التوصيل للموصلات النحاسية | Yomin Electric</title>
+<meta name="description" content="يحكم معيار IEC 60947-7-1 أطراف التوصيل المخصصة للموصلات النحاسية. ما تغطيه تصنيفاته المعلنة فعلاً، وأي الاختبارات تقف خلف الإعلان، وكيف يختلف UL 1059، ولماذا لا يجعل المعيار الطرف صالحاً للألومنيوم.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="شرح معيار IEC 60947-7-1: أطراف توصيل للموصلات النحاسية">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:url" content="https://www.yominelectric.com/blog/iec-60947-7-1-explained-ar">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/iec-60947-7-1-explained/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained-ar">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/iec-60947-7-1-explained">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "شرح معيار IEC 60947-7-1: أطراف توصيل للموصلات النحاسية",
+      "description": "يحكم معيار IEC 60947-7-1 أطراف التوصيل المخصصة للموصلات النحاسية. ما تغطيه تصنيفاته المعلنة فعلاً، وأي الاختبارات تقف خلف الإعلان، وكيف يختلف UL 1059، ولماذا لا يجعل المعيار الطرف صالحاً للألومنيوم.",
+      "image": "https://www.yominelectric.com/assets/images/blog/iec-60947-7-1-explained/hero.png",
+      "datePublished": "2026-11-06",
+      "dateModified": "2026-11-06",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/iec-60947-7-1-explained-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "ar",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما الذي يغطيه معيار IEC 60947-7-1؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يغطي أطراف التوصيل المخصصة للموصلات النحاسية، بما في ذلك وحدات الربط اللولبية وغير اللولبية. ويحدّد الخصائص التي يجوز للمصنّع أن يعلنها، مثل الجهد المقنن وسعة التوصيل المقننة والتيار المقنن، والاختبارات التي يجب أن تدعمها. أما أطراف الحماية وأطراف المصاهر فتغطيها أجزاء أخرى من السلسلة نفسها."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يعني معيار IEC 60947-7-1 أن الطرف صالح لكابل ألومنيوم؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا. النطاق هو الموصلات النحاسية. فالألومنيوم يزحف تحت ضغط الربط المستمر ويحمل طبقة أكسيد عازلة، لذا فوصلة صحيحة للنحاس ليست بالضرورة سليمة للألومنيوم. ويحتاج الألومنيوم إلى انتقال مثل طرف كبلي ثنائي المعدن أو موصل مؤهَّل لذلك الموصل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما الفرق بين IEC 60947-7-1 وUL 1059؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "هما مؤهّلان إقليمان منفصلان لأطراف التوصيل. فـ UL 1059 هو المرجع الأمريكي الشمالي المعتاد، وIEC 60947-7-1 هو مرجع IEC؛ وتختلف برامج الاختبار وافتراضات الموصلات ومتطلبات الوسم. وقد يحمل المنتج الاثنين معاً، لكن حمل أحدهما لا يعني الآخر، وعلى المشتري الذي يعمل بمواصفة أمريكية شمالية أن يطلب أدلة UL تحديداً."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يُقاس التيار المقنن للطرف منفرداً أم في صف؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يتوقف ذلك على الظروف التي يعلنها المصنّع. فالطرف المختبر منفرداً يملك سطحاً حراً أكبر من الطرف نفسه محشوراً في سكة متصلة داخل حاوية، لذا لا يعطي الترتيبان ارتفاع الحرارة نفسه. وإذا كان التطبيق يشغّل السكة قرب حدّها، اسأل عن الظرف الذي يشير إليه الرقم المنشور."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل أحتاج طرفاً أنبوبياً على موصل مرن داخل طرف لولبي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "عملياً نعم. فالموصل المرن المجرَّد يتفرّق تحت ربط اللولب، وقد تُقطع بعض الجدلات أو تنزاح، وهذا يقلل مساحة التلامس ويجعل الوصلة غير متوقعة. والطرف الأنبوبي يجمع الجدلات ويمنح وحدة الربط سطحاً محدداً. والمعيار يضع المتطلبات للطرف لا لممارسة التوصيل لديك، فهذه مسألة انضباط ورشة لا نقطة شهادة."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>الأطراف والموصلات</span></div>
+    <span class="bh-tag">المعايير والمطابقة</span>
+    <h1 class="bh-title">شرح معيار IEC 60947-7-1: ما تغطيه مواصفة أطراف التوصيل</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>6 نوفمبر 2026</span>
+      <span class="divider"></span>
+      <span>10 دقيقة قراءة</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/iec-60947-7-1-explained/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/iec-60947-7-1-explained/hero.png" alt="أطراف توصيل لسكة DIN من النحاس الأصفر والبولي أميد وطرف لولبي نحاسي على خلفية ورقية دافئة، وهي عائلة المنتجات التي يحكمها معيار IEC 60947-7-1" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>المعيار IEC 60947-7-1 هو الجزء من سلسلة معدات الجهد المنخفض الذي يتناول <strong>أطراف التوصيل المخصصة للموصلات النحاسية</strong>. وهو يحدّد ما يجوز للمصنّع أن يعلنه &mdash; الجهد المقنن وسعة التوصيل المقننة والتيار المقنن &mdash; والاختبارات التي يجب أن تقف خلف تلك الإعلانات قبل أن يحمل الطرف هذه التصنيفات.</p>
+
+    <p>يُذكر هذا المعيار كثيراً في أوراق البيانات ويُقرأ قليلاً، وهذا ينتج التباساً متوقعاً في المشتريات: يرى المشتري عبارة «IEC 60947-7-1» في مواصفة فيفترض أنها تغطي الوصلة بأكملها، بما في ذلك الموصل الذي يدخل إليها. وهذا غير صحيح. فالمعيار مكتوب حول النحاس، ويتناول طرف التوصيل كمكوّن لا كالمجموعة التي يُربط فيها.</p>
+
+    <p>يوضح هذا الدليل ما يثبته المعيار فعلاً، وأين تقع الحدود، وأي الأسئلة تفصل المورّد الذي يملك الأدلة عن المورّد الذي يملك شعاراً.</p>
+
+    <h2>موقع IEC 60947-7-1 داخل السلسلة</h2>
+
+    <p>المعيار IEC 60947 هو الإطار العام لمعدات الجهد المنخفض. ويتناول الجزء السابع المعدات المساعدة، وينقسم فيه العمل على أطراف التوصيل حسب الوظيفة لا حسب الشكل:</p>
+
+    <ul>
+
+      <li><strong>IEC 60947-7-1</strong> &mdash; أطراف توصيل للموصلات النحاسية: الحالة العامة، ويشمل وحدات الربط اللولبية وغير اللولبية.</li>
+
+      <li><strong>IEC 60947-7-2</strong> &mdash; أطراف توصيل لموصلات الحماية، حيث يكون الاتصال الأرضي هو الوظيفة لا ملحقاً.</li>
+
+      <li><strong>IEC 60947-7-3</strong> &mdash; أطراف توصيل حاملة للمصهر، حيث يُدمج حامل المصهر في الطرف.</li>
+
+    </ul>
+
+    <p>يهمّ هذا التقسيم عندما يسرد مخطط اللوحة ثلاثة أنواع من الأطراف على سكة واحدة. فالطرف الأخضر الأرضي ليس طرفاً رمادياً بلون آخر: إنه مؤهَّل وفق جزء آخر من المعيار، والفرق يتعلق باستمرارية مسار الحماية وسلوكه عند دائرة القصر.</p>
+
+    <h2>ماذا تعني التصنيفات المعلنة فعلاً</h2>
+
+    <p>الطرف المطابق يعلن مجموعة صغيرة من الخصائص. كل واحدة منها حدّ على طريقة الاستخدام، وكل واحدة قابلة للاختبار. وقراءتها كأرقام تسويقية بدل قراءتها كقيود هو خطأ المواصفات الأكثر شيوعاً.</p>
+
+    <table>
+
+      <thead><tr><th>الخاصية المعلنة</th><th>ما تقيّده</th><th>ما ينبغي سؤاله</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>الجهد المقنن</td><td>أعلى جهد مؤهَّل له نظام العزل، مع درجة التلوث وفئة الصدمة المعتمدتين في التقييم</td><td>أي درجة تلوث وأي جهد تحمل صدمة يفترضه التصنيف</td></tr>
+
+        <tr><td>سعة التوصيل المقننة</td><td>مقاطع الموصلات، الصلبة أو المجدولة، التي تقبلها وحدة الربط وتثبتها</td><td>المدى الكامل بالمليمتر المربع وبـ AWG، وهل يشمل الموصلات المرنة ذات الأطراف الأنبوبية</td></tr>
+
+        <tr><td>التيار المقنن</td><td>التيار الذي يحمله الطرف باستمرار دون تجاوز ارتفاع الحرارة المسموح</td><td>هل حُدِّد هذا الرقم للطرف وحده أم لصف من الأطراف على سكة</td></tr>
+
+        <tr><td>نوع وحدة الربط</td><td>هل الاتصال لولبي أم غير لولبي، وهذا يحدّد العدة وعزم الربط وممارسة إعادة التوصيل</td><td>عزم الربط المحدد، وهل هو مطبوع على الطرف</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>الصف الثالث هو الأكثر إيقاعاً للناس في الخطأ. فالطرف المختبر منفرداً يملك سطحاً حراً أكبر من الطرف نفسه محشوراً في صف متصل داخل حاوية. ويختبر المصنّعون الحالتين ويعلنون وفقاً لذلك، لكن الرقم في رأس صفحة الكتالوج لا يُرفق دائماً بالظروف التي قيس فيها. فإذا كان التطبيق يشغّل السكة قرب حدّها، اسأل عن الظرف الذي يشير إليه الرقم.</p>
+
+    <h2>الاختبارات التي تقف خلف الإعلان</h2>
+
+    <p>برنامج الاختبارات في المعيار ليس غريباً. إنه سلسلة فحوص عادية إما أن يجتازها الطرف أو لا يجتازها.</p>
+
+    <table>
+
+      <thead><tr><th>عائلة الاختبار</th><th>ما تبحث عنه</th><th>كيف يفشل الطرف الضعيف</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>ارتفاع درجة الحرارة</td><td>أن تبقى وحدة الربط والجسم العازل داخل الارتفاع المسموح عند التيار المقنن</td><td>أجزاء حاملة رقيقة، أو مساحة تلامس ضعيفة، أو جسم يلين فيسمح للولب بالارتخاء</td></tr>
+
+        <tr><td>الخصائص العازلة</td><td>أن يتحمل العزل جهود التردد الصناعي وجهود الصدمة المحددة</td><td>مسار زحف غير كافٍ بين الأقطاب المتجاورة بعد تركيب الطرف في صف</td></tr>
+
+        <tr><td>المتانة الميكانيكية والربط</td><td>أن يثبت الاتصال الموصل بإحكام في اختبار الشد وفي الفك والربط المتكرر</td><td>وحدة ربط تشوّه الموصل، أو لولب ينزلق قبل الوصول إلى العزم المقنن</td></tr>
+
+        <tr><td>تنسيق العزل</td><td>أن مسافات العزل ومسارات الزحف تناسب الجهد ودرجة التلوث ومجموعة المادة المعلنة</td><td>تصميم منقول من طرف بجهد أقل ثم أُعيد تسعيره ولصق تصنيفه</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>لا يخبرك أي من هذه الاختبارات بأن الطرف سيكون موثوقاً في لوحتك. إنها تخبرك بأن الطرف يبلغ حداً أدنى محدداً. وجودة التنفيذ على السكة &mdash; العزم وطول التجريد واستخدام الطرف الأنبوبي &mdash; هي ما يحدّد بلوغ ذلك الحد فعلاً.</p>
+
+    <h2>ما لا يغطيه المعيار</h2>
+
+    <p>الحدود هي موضع معظم المخاطر التجارية، لذا يستحق الأمر أن تُقال بوضوح.</p>
+
+    <ul>
+
+      <li><strong>الموصلات الألومنيوم.</strong> النطاق هو الموصلات النحاسية. والألومنيوم يتصرف بشكل مختلف في وصلة مربوطة: يزحف تحت الضغط المستمر، وطبقة أكسيده عازلة، والوصلة الصحيحة للنحاس ليست صحيحة تلقائياً للألومنيوم. فالطرف المعلن مطابقاً لا يقول شيئاً عن صلاحيته لكابل ألومنيوم.</li>
+
+      <li><strong>الوصلات المختلطة نحاس-ألومنيوم.</strong> تحتاج إلى انتقال يدير التآكل الغلفاني والتمدد التفاضلي، ولهذا توجد الأطراف والألواح ثنائية المعدن كمنتجات منفصلة. وربط ألومنيوم عارٍ في طرف مؤهَّل للنحاس يعني جدولة صيانة مؤجلة.</li>
+
+      <li><strong>المجموعة المحيطة بالطرف.</strong> الحاوية وتأريض السكة ومسار الأسلاك ونصف قطر الانحناء ودرجة الحرارة المحيطة داخل الخزانة كلها خارج نطاق معيار الطرف. فالتيار المقنن للطرف يفترض ظروفاً يجب على صانع اللوحة أن يهيئها.</li>
+
+      <li><strong>متطلبات المناطق الأخرى.</strong> معيار UL 1059 هو المرجع الأمريكي الشمالي المعتاد لأطراف التوصيل، ويحكم UL 486A/B الموصلات والأطراف الكبلية. وقد يحمل الطرف إقرار IEC وإدراج UL معاً، لكنهما مؤهّلان منفصلان ولا يعني أحدهما الآخر.</li>
+
+    </ul>
+
+    <h2>النحاس والألومنيوم والسؤال الذي لا تجيب عنه ورقة البيانات</h2>
+
+    <p>هذا هو المفترق العملي أمام صانع اللوحات، ويستحق أن يُطرح كقرار لا كملاحظة.</p>
+
+    <p>إذا كانت كل الموصلات الواصلة إلى السكة نحاسية، فالطرف المطابق لـ IEC 60947-7-1 بمدى توصيل مناسب وعزم معلن هو المكوّن الصحيح، ويبقى العمل المتبقي مسألة انضباط: طول تجريد صحيح، وأطراف أنبوبية على الكابل المرن، ومفتاح عزم يُستخدم فعلاً.</p>
+
+    <p>أما إذا دخل الألومنيوم إلى الخزانة &mdash; وهي حالة شائعة في جانب التغذية من لوحة التوزيع، حيث يكون كابل الدخول ألومنيوماً والتوصيل الداخلي نحاسياً &mdash; فلم يعد طرف التوصيل هو المكوّن الذي يحل المشكلة. تحتاج الوصلة إلى انتقال: طرف كبلي أو لوح ثنائي المعدن، أو موصل مؤهَّل للموصل الألومنيوم بذاته. والتعامل مع الطرف كأنه الانتقال هو الطريق الذي يجتاز به اللوحة التفتيش ثم يتعطل بعد عامين.</p>
+
+    <h2>تحديد أطراف التوصيل لمخطط لوحة</h2>
+
+    <ul>
+
+      <li><strong>مدى الموصلات بالوحدتين</strong> &mdash; المليمتر المربع وAWG &mdash; بما في ذلك أصغر موصل سيُوصل فعلاً، لا الأكبر فقط.</li>
+
+      <li><strong>نوع وحدة الربط</strong> &mdash; لولبي أو غير لولبي &mdash; وهل تناسبها عدة المُركِّب.</li>
+
+      <li><strong>عدد الأقطاب والتباعد</strong>، ليكون طول السكة وعمق الخزانة صحيحين من المرة الأولى.</li>
+
+      <li><strong>أطراف الأرض وفق الجزء الخاص بموصلات الحماية</strong> لا الجزء العام، ومُعرَّفة كذلك في المخطط.</li>
+
+      <li><strong>الترقيم واللون</strong>، لأن السكة المقروءة بوضوح هي سكة تُصان بشكل صحيح.</li>
+
+      <li><strong>ملف الأدلة للصنف المحدد</strong> لا للعائلة. فتقارير الاختبار تُصدر لطراز معيّن، واسم عائلة على موقع إلكتروني ليس تقرير اختبار.</li>
+
+    </ul>
+
+    <h2>كيف تندرج أطراف YOMIN في هذا المعيار</h2>
+
+    <p>تصنع YOMIN أطراف التوصيل والموصلات كمكوّنات لصانعي اللوحات، إلى جانب قضبان التوصيل والأطراف الكبلية التي تنتهي في الخزانات نفسها. وتشمل المجموعة ذات الصلة بهذا المعيار:</p>
+
+    <p><a href="/products/terminal-connector/high-quality-durable-brass-plastic-and-pa-electric-copper-din-rail-terminal-block-with-copper-inlet-outlet">طرف التوصيل لسكة DIN من النحاس الأصفر والبولي أميد</a> (الصنف ym-0209) &mdash; طرف يُركَّب على سكة DIN بأجزاء حاملة من النحاس الأصفر ومدخل ومخرج نحاسيين، في جسم من البولي أميد، مخصص لتوصيلات الأسلاك والقضبان في التطبيقات الصناعية وتطبيقات القدرة.</p>
+
+    <p><a href="/products/terminal-connector/self-locking-tb-series-terminal-block-made-of-durable-copper-material">طرف التوصيل ذاتي القفل من سلسلة TB</a> (الصنف ym-0216) بجسم نحاسي للتطبيقات نفسها، و<a href="/products/terminal-connector/copper-screw-terminal-block-connector-brass-terminal-block-with-copper-material">طرف التوصيل اللولبي النحاسي</a> (الصنف ym-0326) بربط لولبي من النحاس والنحاس الأصفر.</p>
+
+    <p>هذه أصناف مكوّنات. وحين يحتاج المشروع إلى الإقرار لطراز محدد، اطلبه مقابل رقم الصنف لا اسم العائلة، وحدّد مادة الموصل ومدى المقاطع ودرجة الحرارة المحيطة التي سيراها الخزانة. وتجد المجموعة الأوسع تحت <a href="/products/terminal-connector">الأطراف والموصلات</a>. وإذا كانت الوصلة تشمل ألومنيوم، فاذكر ذلك في مرحلة الاستفسار: فالجواب ينتقل من طرف توصيل إلى طرف كبلي انتقالي، والأفضل أن يتغيّر قبل ثقب الخزانة.</p>
+
+    <h2>الأسئلة الشائعة</h2>
+    <h3>ما الذي يغطيه معيار IEC 60947-7-1؟</h3>
+    <p>يغطي أطراف التوصيل المخصصة للموصلات النحاسية، بما في ذلك وحدات الربط اللولبية وغير اللولبية. ويحدّد الخصائص التي يجوز للمصنّع أن يعلنها، مثل الجهد المقنن وسعة التوصيل المقننة والتيار المقنن، والاختبارات التي يجب أن تدعمها. أما أطراف الحماية وأطراف المصاهر فتغطيها أجزاء أخرى من السلسلة نفسها.</p>
+
+    <h3>هل يعني معيار IEC 60947-7-1 أن الطرف صالح لكابل ألومنيوم؟</h3>
+    <p>لا. النطاق هو الموصلات النحاسية. فالألومنيوم يزحف تحت ضغط الربط المستمر ويحمل طبقة أكسيد عازلة، لذا فوصلة صحيحة للنحاس ليست بالضرورة سليمة للألومنيوم. ويحتاج الألومنيوم إلى انتقال مثل طرف كبلي ثنائي المعدن أو موصل مؤهَّل لذلك الموصل.</p>
+
+    <h3>ما الفرق بين IEC 60947-7-1 وUL 1059؟</h3>
+    <p>هما مؤهّلان إقليمان منفصلان لأطراف التوصيل. فـ UL 1059 هو المرجع الأمريكي الشمالي المعتاد، وIEC 60947-7-1 هو مرجع IEC؛ وتختلف برامج الاختبار وافتراضات الموصلات ومتطلبات الوسم. وقد يحمل المنتج الاثنين معاً، لكن حمل أحدهما لا يعني الآخر، وعلى المشتري الذي يعمل بمواصفة أمريكية شمالية أن يطلب أدلة UL تحديداً.</p>
+
+    <h3>هل يُقاس التيار المقنن للطرف منفرداً أم في صف؟</h3>
+    <p>يتوقف ذلك على الظروف التي يعلنها المصنّع. فالطرف المختبر منفرداً يملك سطحاً حراً أكبر من الطرف نفسه محشوراً في سكة متصلة داخل حاوية، لذا لا يعطي الترتيبان ارتفاع الحرارة نفسه. وإذا كان التطبيق يشغّل السكة قرب حدّها، اسأل عن الظرف الذي يشير إليه الرقم المنشور.</p>
+
+    <h3>هل أحتاج طرفاً أنبوبياً على موصل مرن داخل طرف لولبي؟</h3>
+    <p>عملياً نعم. فالموصل المرن المجرَّد يتفرّق تحت ربط اللولب، وقد تُقطع بعض الجدلات أو تنزاح، وهذا يقلل مساحة التلامس ويجعل الوصلة غير متوقعة. والطرف الأنبوبي يجمع الجدلات ويمنح وحدة الربط سطحاً محدداً. والمعيار يضع المتطلبات للطرف لا لممارسة التوصيل لديك، فهذه مسألة انضباط ورشة لا نقطة شهادة.</p>
+
+
+  </section>
+
+  <section class="cta-section">
+    <h2>هل تحدّد أطراف توصيل للوحة؟</h2>
+    <p>أرسل مادة الموصل ومداه وعدد الأقطاب ونوع السكة ودرجة الحرارة المحيطة داخل الخزانة. سنؤكد الطرف على الرسم، وننبّه في مرحلة الاستفسار إذا كانت الوصلة تحتاج انتقالاً لا طرف توصيل.</p>
+    <a class="btn btn-primary" href="/contact">اطلب عرض سعر</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

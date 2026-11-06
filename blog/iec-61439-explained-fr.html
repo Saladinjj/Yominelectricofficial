@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/iec-61439-explained/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IEC 61439 expliquée : vérification de conception, essais individuels et spécification des jeux de barres | Yomin Electric</title>
+<meta name="description" content="Ce que la norme IEC 61439 vérifie réellement, quels contrôles portent sur une conception de référence et lesquels portent sur chaque tableau livré, et comment spécifier jeux de barres, supports et distances d&#x27;isolement pour que le régime déclaré tienne.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IEC 61439 expliquée : vérification de conception et essais individuels">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://www.yominelectric.com/blog/iec-61439-explained-fr">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/iec-61439-explained/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/iec-61439-explained-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/iec-61439-explained">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/iec-61439-explained-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/iec-61439-explained-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/iec-61439-explained-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/iec-61439-explained">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "IEC 61439 expliquée : vérification de conception et essais individuels",
+      "description": "Ce que la norme IEC 61439 vérifie réellement, quels contrôles portent sur une conception de référence et lesquels portent sur chaque tableau livré, et comment spécifier jeux de barres, supports et distances d'isolement pour que le régime déclaré tienne.",
+      "image": "https://www.yominelectric.com/assets/images/blog/iec-61439-explained/hero.png",
+      "datePublished": "2026-11-06",
+      "dateModified": "2026-11-06",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/iec-61439-explained-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "fr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "L'IEC 61439 s'applique-t-elle à tous les tableaux basse tension ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elle s'applique aux ensembles d'appareillage de basse tension, ce qui couvre la plupart des tableaux de distribution, des centres de commande moteur et des tableaux de postes préfabriqués. La partie applicable dépend de l'ensemble : partie 2 pour les ensembles d'appareillage de puissance, partie 3 pour les tableaux de distribution manipulés par des personnes ordinaires, partie 4 pour les chantiers, partie 5 pour les réseaux publics de distribution et partie 6 pour les canalisations préfabriquées. Un fournisseur doit pouvoir nommer la partie, pas seulement le numéro de la norme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle différence entre vérification de conception et vérification individuelle ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La vérification de conception établit que l'agencement est sain ; elle est réalisée une fois par conception, par essai, par calcul ou par comparaison avec une conception de référence vérifiée. La vérification individuelle établit qu'un tableau précis a été construit conformément à cette conception, et elle est réalisée sur chaque unité. Les deux sont nécessaires et ne se substituent pas l'une à l'autre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un tableau essayé en type reste-t-il acceptable sous l'IEC 61439 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les anciens labels TTA et PTTA appartiennent à l'IEC 60439. Sous l'IEC 61439, la question devient celle de la méthode de vérification retenue pour la conception. Un essai de type plus ancien peut rester une preuve pertinente, mais il doit être rapproché des exigences actuelles et non cité comme si les labels étaient interchangeables."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le matériau des barres modifie-t-il le régime vérifié ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, car l'échauffement et la tenue au court-circuit dépendent du conducteur. Le cuivre et l'aluminium diffèrent par leur conductivité et par leur comportement en jonction, et un tracé aluminium exige une pratique de raccordement différente. Une vérification réalisée sur un agencement cuivre ne se transpose pas automatiquement à un agencement aluminium de même section nominale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "YOMIN peut-elle certifier un ensemble complet selon l'IEC 61439 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. YOMIN fabrique des jeux de barres, des isolateurs et des composants de raccordement. La déclaration IEC 61439 d'un ensemble appartient au constructeur qui le conçoit, le vérifie et le soumet aux essais individuels. YOMIN fournit la quincaillerie de conduction et de support conformément au plan, afin que la conception vérifiée du constructeur puisse être reproduite."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Jeux de barres</span></div>
+    <span class="bh-tag">Normes et conformité</span>
+    <h1 class="bh-title">IEC 61439 expliquée : vérification de conception, essais individuels et spécification des jeux de barres</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>6 novembre 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lecture</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/iec-61439-explained/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/iec-61439-explained/hero.png" alt="Jeux de barres cuivre et aluminium isolés avec plages de raccordement étamées sur fond papier chaud, les composants dont la section et l&#x27;entraxe des supports déterminent le régime de court-circuit IEC 61439" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>La norme IEC 61439 est celle qui décide si un ensemble d'appareillage de basse tension peut être mis en service. Elle ne teste pas un produit comme on teste un fusible ou un compteur. Elle impose deux obligations distinctes à celui qui construit le tableau : la <strong>vérification de conception</strong>, qui établit que la famille de conception est saine, et la <strong>vérification individuelle</strong>, qui établit que le tableau livré correspond bien à cette conception.</p>
+
+    <p>Presque toutes les discussions sur la « conformité 61439 » portent en réalité sur l'une ou l'autre de ces deux étapes. Un atelier peut détenir une vérification de conception valable pour un agencement de référence et livrer malgré tout un tableau dont l'entraxe des barres, l'entrée de câbles ou la séparation interne se sont discrètement écartés de cette référence. Le dossier paraît complet, et l'ensemble n'est plus celui qui a été vérifié.</p>
+
+    <p>Ce guide précise ce que couvre chaque étape, à quel endroit le jeu de barres et ses supports décident du résultat, et ce qu'il faut demander avant d'accepter un tableau.</p>
+
+    <h2>Ce que l'IEC 61439 a remplacé, et pourquoi cela concerne l'acheteur</h2>
+
+    <p>L'IEC 61439 a remplacé l'IEC 60439 comme référence des ensembles basse tension. Le changement concret pour l'acheteur fut la fin de l'ancien vocabulaire à deux niveaux : un ensemble était soit entièrement essayé (TTA), soit partiellement essayé (PTTA), et un grand nombre de tableaux ont été vendus sur le label le plus faible sans que personne ne demande ce qui avait été omis.</p>
+
+    <p>Avec l'IEC 61439, la question n'est plus « cette conception a-t-elle été essayée ? » mais « cette conception a-t-elle été vérifiée, et par quelle méthode ? ». La vérification par essai est une voie autorisée ; la vérification par calcul, ou par comparaison avec une conception de référence déjà vérifiée, en est une autre. Cela a une portée commerciale, car deux fournisseurs peuvent tous deux décrire un tableau comme conforme alors que l'un a physiquement essayé l'agencement et l'autre l'a démontré par calcul à partir d'une conception similaire.</p>
+
+    <p>Aucune des deux voies n'est malhonnête. Elles représentent simplement des niveaux de preuve différents, et l'acheteur est en droit de savoir lequel se trouve derrière l'offre.</p>
+
+    <h2>Vérification de conception et vérification individuelle : deux promesses différentes</h2>
+
+    <p>La distinction mérite d'être retenue, car c'est là que naissent la plupart des malentendus d'achat.</p>
+
+    <table>
+
+      <thead><tr><th>Étape</th><th>Ce qu'elle établit</th><th>Fréquence</th><th>Ce qui le prouve</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Vérification de conception</td><td>Que l'agencement de conception &mdash; jeu de barres, distances d'isolement, enveloppe, ventilation, tenue au court-circuit &mdash; est sain en tant que conception</td><td>Une fois par conception, pas par commande</td><td>Un dossier de vérification : rapports d'essai, ou calculs et comparaison avec une conception de référence vérifiée</td></tr>
+
+        <tr><td>Vérification individuelle</td><td>Que cet ensemble précis a été construit conformément à la conception</td><td>Sur chaque unité qui quitte l'atelier</td><td>Un procès-verbal d'essai individuel signé et rattaché au numéro de série</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Un tableau peut passer la vérification individuelle tout en appartenant à une conception qui n'a jamais été correctement vérifiée : les contrôles individuels confirment la qualité d'exécution et la continuité, pas la validité du concept d'origine. L'inverse est également possible : une conception bien vérifiée assemblée avec négligence. Les deux documents sont nécessaires, et ils répondent à des questions différentes.</p>
+
+    <h2>Ce que la vérification de conception doit démontrer</h2>
+
+    <p>La norme regroupe les caractéristiques vérifiées en un petit nombre de familles. Chacune correspond à un mode de défaillance réel sur un tableau en service, et chacune possède un document derrière elle si le travail a été fait.</p>
+
+    <table>
+
+      <thead><tr><th>Caractéristique</th><th>Ce qu'elle prouve réellement</th><th>Où le jeu de barres intervient</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Échauffement</td><td>Que conducteurs et bornes restent dans les limites fixées par la norme pour le matériau et la classe d'isolation, au courant assigné et dans l'enveloppe réelle</td><td>Section des barres, revêtement, qualité des jonctions et degré de serrage du tracé contre d'autres conducteurs</td></tr>
+
+        <tr><td>Propriétés diélectriques</td><td>Que l'isolation supporte les tensions à fréquence industrielle et les tensions de choc spécifiées</td><td>Distances d'isolement et lignes de fuite entre phases, et entre parties actives et enveloppe</td></tr>
+
+        <tr><td>Tenue au court-circuit</td><td>Que l'ensemble supporte un courant de défaut présumé donné pendant une durée donnée sans déformation dangereuse</td><td>Entraxe des supports, résistance des supports et effort électrodynamique entre barres parallèles</td></tr>
+
+        <tr><td>Protection contre les chocs électriques</td><td>Que les parties accessibles sont soit sans danger au contact, soit efficacement protégées</td><td>Écrans, capots et intégrité du circuit de protection à travers la structure</td></tr>
+
+        <tr><td>Degré de protection</td><td>Que l'indice IP déclaré est réel une fois l'enveloppe fermée et les entrées de câbles réalisées</td><td>Plaques passe-câbles, capots et toute ouverture créée pour le passage des barres</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Remarquez ce qui est absent de ce tableau : aucun chiffre. Les limites d'échauffement, les valeurs de tenue aux chocs et les durées de défaut figurent dans la norme et dépendent du matériau, de la classe d'isolation et du régime déclaré. Un fournisseur qui annonce une valeur unique valable pour tous les tableaux a simplifié ce qui ne devrait pas l'être ; un fournisseur qui annonce une limite impossible à rattacher à la norme mérite une seconde question.</p>
+
+    <h2>Là où le jeu de barres décide du régime</h2>
+
+    <p>Trois propriétés du système de barres déterminent si une conception vérifiée conserve son régime dans le tableau réel.</p>
+
+    <p><strong>La section face à l'échauffement.</strong> Une barre généreusement dimensionnée pour la charge nominale chauffe malgré tout si elle est serrée contre d'autres ou logée dans un compartiment mal ventilé. Le courant permanent qu'une barre de cuivre peut véhiculer n'est pas une propriété de la barre seule : c'est une propriété de la barre dans son enveloppe. C'est pourquoi les <a href="/blog/busbar-design-basics">bases de conception d'un jeu de barres</a> traitent la densité de courant comme un point de départ et non comme une réponse.</p>
+
+    <p><strong>L'entraxe des supports face à l'effort de court-circuit.</strong> Des conducteurs parallèles parcourus par un courant de défaut se repoussent avec un effort qui croît comme le carré du courant et diminue quand l'entraxe augmente. Diviser l'entraxe par deux augmente fortement la charge sur chaque isolateur. L'isolateur est donc un composant de court-circuit, pas une entretoise. Le calcul est détaillé dans <a href="/blog/short-circuit-current-calculation-guide">le calcul du courant de court-circuit</a>, et les conséquences mécaniques pour les supports sont traitées dans <a href="/blog/switchboard-assembly-what-is-a-standoff-insulator">le rôle d'un isolateur support dans un tableau</a>.</p>
+
+    <p><strong>Distances d'isolement et lignes de fuite face à la tenue diélectrique.</strong> Les distances se réduisent dès qu'une barre est cintrée, qu'une jonction est boulonnée ou qu'une phase contourne une autre pour atteindre une borne. Une conception vérifiée avec un tracé rectiligne peut être invalidée par une seule branche repositionnée. La ligne de fuite est la plus difficile à préserver, car pollution et condensation transforment avec le temps une surface propre en surface conductrice.</p>
+
+    <h2>La séparation interne modifie le tracé des barres, et la vérification</h2>
+
+    <p>Les formes de séparation interne décrivent jusqu'où les jeux de barres sont physiquement séparés des unités fonctionnelles et des bornes. Elles sont souvent citées dans un appel d'offres par un seul chiffre, et ce chiffre n'est pas un détail esthétique : il change l'acier, les écrans et le tracé des barres.</p>
+
+    <table>
+
+      <thead><tr><th>Forme</th><th>Ce qui est séparé</th><th>Effet sur le tracé des barres</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Forme 1</td><td>Rien &mdash; un compartiment unique</td><td>Tracé le plus court, le moins d'acier, plus forte exposition des barres actives à quiconque intervient sur une unité fonctionnelle</td></tr>
+
+        <tr><td>Forme 2</td><td>Jeux de barres séparés des unités fonctionnelles ; bornes non séparées de leur propre unité</td><td>Impose un écran le long du tracé, ce qui réduit la ventilation et augmente l'échauffement</td></tr>
+
+        <tr><td>Forme 3</td><td>Jeux de barres séparés des unités fonctionnelles, et unités fonctionnelles séparées entre elles</td><td>Le tracé doit respecter les cloisons ; les jonctions se déplacent vers des positions accessibles et définies</td></tr>
+
+        <tr><td>Forme 4</td><td>Jeux de barres, unités fonctionnelles et bornes tous séparés</td><td>Les bornes occupent leur propre zone : le tracé s'allonge et demande davantage de supports</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Des sous-formes existent dans les formes 2 à 4 pour l'agencement des bornes, et le bon choix dépend de la nécessité d'intervenir sur le tableau alors que des circuits voisins restent sous tension. Ce qui compte ici, c'est que monter en forme n'est pas gratuit : chaque étape ajoute de l'acier, allonge le tracé et réduit le débit d'air sur lequel reposait la vérification de l'échauffement. Une conception vérifiée en forme 2 et livrée en forme 4 n'est pas la conception vérifiée.</p>
+
+    <h2>Ce que « conforme IEC 61439 » ne signifie pas</h2>
+
+    <ul>
+
+      <li><strong>Ce n'est pas un certificat pour votre tableau précis.</strong> La vérification de conception appartient à une conception ; le procès-verbal individuel appartient à un numéro de série. Demandez les deux, et vérifiez que le numéro du procès-verbal correspond à celui de la porte.</li>
+
+      <li><strong>Cela ne couvre pas l'installation.</strong> Les dispositions de mise à la terre, le dimensionnement des câbles, la sélectivité avec les protections amont et les conditions du site sont hors du domaine de la norme d'ensemble. Un tableau vérifié installé sur une alimentation sous-dimensionnée reste un danger.</li>
+
+      <li><strong>Cela ne rend pas les composants conformes.</strong> Bornes, fusibles, compteurs et transformateurs de courant relèvent de leurs propres normes &mdash; les bornes pour conducteurs cuivre sous IEC 60947-7-1, par exemple. Une norme d'ensemble décrit la manière d'assembler les pièces, pas ce que chaque pièce doit être.</li>
+
+      <li><strong>Ce n'est pas une garantie à vie.</strong> Un ensemble vérifié qui a été modifié sur site &mdash; circuit ajouté, capot percé, barre repositionnée &mdash; ne correspond plus à son dossier de vérification tant que la modification n'a pas été évaluée.</li>
+
+    </ul>
+
+    <h2>Ce qu'il faut demander avant d'accepter un tableau</h2>
+
+    <p>Les questions sont courtes, et un fournisseur qui a fait le travail y répond sans aller chercher les réponses ailleurs.</p>
+
+    <ul>
+
+      <li><strong>Quelle conception a été vérifiée, et par quelle méthode</strong> &mdash; essai, calcul, ou comparaison avec une conception de référence.</li>
+
+      <li><strong>Les preuves d'échauffement pour l'enveloppe que vous achetez</strong>, et non pour une enveloppe plus petite ou mieux ventilée.</li>
+
+      <li><strong>La tenue au court-circuit déclarée et sa durée</strong>, ainsi que le courant de défaut présumé retenu pour l'évaluation.</li>
+
+      <li><strong>La forme de séparation interne réellement construite</strong>, vérifiée sur le plan et non sur le devis.</li>
+
+      <li><strong>Le procès-verbal d'essai individuel du numéro de série livré</strong>, y compris l'essai diélectrique et la continuité du circuit de protection.</li>
+
+      <li><strong>La spécification des barres et des supports</strong> : matériau, section, revêtement, type et entraxe des supports, couple appliqué aux jonctions.</li>
+
+    </ul>
+
+    <p>Si le tableau part dans un appel d'offres où le client auditera le dossier, demandez le dossier de vérification avant la commande plutôt qu'après la livraison. Il est bien plus simple de modifier une conception avant que l'acier ne soit découpé.</p>
+
+    <h2>Comment les jeux de barres YOMIN s'insèrent dans un ensemble vérifié</h2>
+
+    <p>YOMIN fournit les conducteurs et les supports qu'un constructeur de tableaux utilise pour réaliser un ensemble selon sa propre conception vérifiée. La déclaration 61439 appartient au fabricant du tableau ; le rôle du fournisseur de composants est de rendre réelles et reproductibles les dimensions, la matière et l'isolation annoncées.</p>
+
+    <p>Le <a href="/products/rigid-busbar/manufacturer-customized-insulated-rigid-copper-electric-bus-bar-electrical">jeu de barres rigide cuivre isolé</a> (article ym-0585) est une barre rigide en cuivre ou aluminium à finition isolée, destinée aux installations fixes, aux packs de batteries et aux appareillages, avec une quantité minimale de commande de 100 pièces. C'est le type de barre qui assure le tracé principal dans une section de distribution, où la finition isolée participe au respect des distances d'isolement.</p>
+
+    <p>Lorsque l'ensemble exige une barre maintenue à un entraxe défini, le <a href="/products/aluminum-busbar/yomin-el-3m-busbar-with-el-600-insulators-10kv-rated-voltage-support-insulation-materials-elements">jeu de barres aluminium EL-3M avec isolateurs EL-600</a> (article ym-0316) associe un conducteur aluminium léger à un isolateur support de tension assignée 10 kV. L'aluminium est retenu pour sa masse et son comportement à la corrosion plutôt que pour sa conductivité massique, et c'est la tension de l'isolateur qui permet de supporter le tracé à l'entraxe exigé par le calcul de court-circuit.</p>
+
+    <p>Les deux articles sont fabriqués sur plan. Transmettez la section, le perçage, l'exigence d'isolation, l'entraxe des supports et le niveau de défaut que l'ensemble doit supporter : le composant sera chiffré sur votre conception et non sur une photo de catalogue. La gamme complète se trouve sous <a href="/products/rigid-busbar">jeux de barres rigides</a> et <a href="/products/aluminum-busbar">jeux de barres aluminium</a>.</p>
+
+    <h2>Questions fréquentes</h2>
+    <h3>L'IEC 61439 s'applique-t-elle à tous les tableaux basse tension ?</h3>
+    <p>Elle s'applique aux ensembles d'appareillage de basse tension, ce qui couvre la plupart des tableaux de distribution, des centres de commande moteur et des tableaux de postes préfabriqués. La partie applicable dépend de l'ensemble : partie 2 pour les ensembles d'appareillage de puissance, partie 3 pour les tableaux de distribution manipulés par des personnes ordinaires, partie 4 pour les chantiers, partie 5 pour les réseaux publics de distribution et partie 6 pour les canalisations préfabriquées. Un fournisseur doit pouvoir nommer la partie, pas seulement le numéro de la norme.</p>
+
+    <h3>Quelle différence entre vérification de conception et vérification individuelle ?</h3>
+    <p>La vérification de conception établit que l'agencement est sain ; elle est réalisée une fois par conception, par essai, par calcul ou par comparaison avec une conception de référence vérifiée. La vérification individuelle établit qu'un tableau précis a été construit conformément à cette conception, et elle est réalisée sur chaque unité. Les deux sont nécessaires et ne se substituent pas l'une à l'autre.</p>
+
+    <h3>Un tableau essayé en type reste-t-il acceptable sous l'IEC 61439 ?</h3>
+    <p>Les anciens labels TTA et PTTA appartiennent à l'IEC 60439. Sous l'IEC 61439, la question devient celle de la méthode de vérification retenue pour la conception. Un essai de type plus ancien peut rester une preuve pertinente, mais il doit être rapproché des exigences actuelles et non cité comme si les labels étaient interchangeables.</p>
+
+    <h3>Le matériau des barres modifie-t-il le régime vérifié ?</h3>
+    <p>Oui, car l'échauffement et la tenue au court-circuit dépendent du conducteur. Le cuivre et l'aluminium diffèrent par leur conductivité et par leur comportement en jonction, et un tracé aluminium exige une pratique de raccordement différente. Une vérification réalisée sur un agencement cuivre ne se transpose pas automatiquement à un agencement aluminium de même section nominale.</p>
+
+    <h3>YOMIN peut-elle certifier un ensemble complet selon l'IEC 61439 ?</h3>
+    <p>Non. YOMIN fabrique des jeux de barres, des isolateurs et des composants de raccordement. La déclaration IEC 61439 d'un ensemble appartient au constructeur qui le conçoit, le vérifie et le soumet aux essais individuels. YOMIN fournit la quincaillerie de conduction et de support conformément au plan, afin que la conception vérifiée du constructeur puisse être reproduite.</p>
+
+
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous spécifiez des barres pour un ensemble vérifié ?</h2>
+    <p>Transmettez la section, le perçage, l'exigence d'isolation, l'entraxe des supports et le courant de défaut présumé que le tableau doit supporter. Nous chiffrons les barres et les supports sur votre conception, et non sur une photo de catalogue.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
