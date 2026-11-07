@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/welding-machine-voltage-stabilizer/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stabilisateur de tension pour poste à souder : dimensionnement et facteur de marche | Yomin Electric</title>
+<meta name="description" content="Un poste à souder est une charge pulsée, à fort appel de courant et à faible facteur de puissance : un stabilisateur choisi sur les kVA de plaque sera trop petit. Comment le dimensionner sur le courant de soudage et le facteur de marche.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stabilisateur de tension pour poste à souder : dimensionnement, facteur de marche et appel de courant">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-fr">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/welding-machine-voltage-stabilizer/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Stabilisateur de tension pour poste à souder : dimensionnement, facteur de marche et appel de courant",
+      "description": "Un poste à souder est une charge pulsée, à fort appel de courant et à faible facteur de puissance : un stabilisateur choisi sur les kVA de plaque sera trop petit. Comment le dimensionner sur le courant de soudage et le facteur de marche.",
+      "image": "https://www.yominelectric.com/assets/images/blog/welding-machine-voltage-stabilizer/hero.png",
+      "datePublished": "2026-11-07",
+      "dateModified": "2026-11-07",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "fr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelle puissance de stabilisateur pour un poste à souder ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Partez des kVA ou du courant d'entrée du poste au réglage réellement utilisé, ajustez selon le facteur de marche, ajoutez une marge d'appel et 20 à 30% de réserve. Un dimensionnement sur les kVA de plaque de la sortie de soudage donne un appareil qui limite à chaque amorçage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi mon stabilisateur déclenche-t-il à l'amorçage de l'arc ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parce que l'amorçage est proche d'un court-circuit et que le courant monte bien au-dessus du régime établi pendant une fraction de seconde. Un appareil dimensionné sur le courant de régime lit cela comme un défaut."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un stabilisateur servo est-il meilleur qu'un type relais pour souder ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pour le soudage de production, la tôle mince et le TIG, oui : la correction continue stabilise l'arc et évite les sauts d'un appareil à relais. Pour un usage occasionnel sur un gros poste monophasé, un appareil à relais suffit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un stabilisateur empêchera-t-il les lampes de scintiller quand le poste soude ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il réduira la chute vue par les charges en aval, mais seulement s'il est dimensionné pour laisser passer le courant d'amorçage. Les charges en amont ou sur un autre circuit voient toujours la chute."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on faire fonctionner un poste à souder et un stabilisateur sur un groupe ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, avec précaution. Le groupe doit fournir le courant d'amorçage, et la plage d'entrée du stabilisateur doit couvrir la tension du groupe à vide comme sous charge de soudage."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Stabilisateurs de tension</span></div>
+    <span class="bh-tag">Guide d'application</span>
+    <h1 class="bh-title">Stabilisateur de tension pour poste à souder : dimensionnement, facteur de marche et appel de courant</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>7 novembre 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lecture</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/welding-machine-voltage-stabilizer/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/welding-machine-voltage-stabilizer/hero.png" alt="Une armoire AVR monophasée YOMIN et un régulateur triphasé TSGC2, les deux formats utilisés pour stabiliser l'alimentation d'un atelier de soudage" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un <strong>stabilisateur de tension pour poste à souder</strong> doit faire quelque chose de plus difficile que tenir une tension stable pour un chauffage ou un circuit d'éclairage. Un poste à souder appelle du courant par impulsions, provoque un fort appel à la mise sous tension du transformateur ou à l'amorçage de l'arc, et fonctionne avec un facteur de puissance bien inférieur à l'unité. Si vous dimensionnez le stabilisateur sur les seuls kVA de plaque du poste, il sera trop petit, et sa façon d'échouer est généralement un déclenchement ou une limitation au moment de l'amorçage &mdash; pas un affaissement doux que vous pourrez mesurer plus tard.</p>
+
+    <p>Les symptômes sont reconnaissables. L'opérateur amorce, le stabilisateur passe en by-pass ou déclenche, l'arc s'éteint, et il recommence. Ou bien l'appareil tient, mais chauffe tout l'après-midi et déclenche en pleine production. Dans les deux cas il s'agit d'un problème de dimensionnement, évitable dès que la charge est décrite correctement.</p>
+
+    <p>Ce guide décrit ce que représente réellement une charge de soudage pour l'alimentation, la méthode de dimensionnement qui tient compte du facteur de marche et de l'appel de courant, la technologie adaptée au soudage à l'arc, et les détails d'installation qui décident de la survie de l'appareil dans un atelier.</p>
+
+    <h2>Ce que représente une charge de soudage</h2>
+
+    <p>Trois propriétés distinguent un poste à souder d'une charge ordinaire, et chacune modifie le calcul.</p>
+
+    <ul>
+
+      <li><strong>La charge est pulsée, pas continue.</strong> Le courant circule pendant que l'arc est allumé et s'arrête entre les passes. Le stabilisateur se dimensionne sur ce qui se passe pendant ces impulsions et sur la part de la journée qu'elles occupent, pas sur une moyenne flatteuse.</li>
+
+      <li><strong>L'appel de courant est important et rapide.</strong> Un poste à transformateur présente un appel magnétisant à la mise sous tension, et une condition proche du court-circuit à chaque amorçage. Le chemin de courant du stabilisateur et sa protection doivent laisser passer cela sans limiter.</li>
+
+      <li><strong>Le facteur de puissance est faible.</strong> Les postes à transformateur appellent un courant fortement inductif : les kVA pris à la ligne sont bien supérieurs aux kW envoyés à l'arc. Les onduleurs font mieux, mais ne sont pas résistifs : ils redressent l'alimentation et appellent le courant par impulsions courtes à fort facteur de crête.</li>
+
+    </ul>
+
+    <p>En pratique, le courant d'un poste à souder n'est pas une sinusoïde propre. Un stabilisateur qui régule sur une mesure RMS vraie suivra mieux la charge qu'un appareil mesurant une tension moyenne, et un appareil à servo suit une charge pulsée plus souplement qu'un appareil qui commute des prises par paliers. Cette différence se voit sur la qualité de l'arc avant de se voir sur un appareil de mesure.</p>
+
+    <h2>Tel poste, tel comportement</h2>
+
+    <table>
+
+      <thead><tr><th>Type de poste</th><th>Caractère de la charge</th><th>Effet sur la tension d'alimentation</th><th>Ce que le stabilisateur doit encaisser</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Poste à transformateur monophasé</td><td>Inductif, fort appel, discontinuités de courant à l'amorçage</td><td>Chutes brèves et profondes à chaque amorçage, visibles comme un scintillement</td><td>Laisser passer le courant d'amorçage sans limiter ; accepter un faible facteur de puissance sans surchauffer</td></tr>
+
+        <tr><td>Poste à transformateur triphasé</td><td>Identique, réparti sur trois phases</td><td>Chutes plus faibles qu'en monophasé, plus un déséquilibre si c'est la charge dominante</td><td>Une puissance triphasée équilibrée, avec marge d'appel</td></tr>
+
+        <tr><td>Poste onduleur (électronique)</td><td>Entrée redressée, impulsions à fort facteur de crête, meilleur facteur de puissance</td><td>Distorsion à plus haute fréquence plutôt que chutes profondes</td><td>Un chemin de courant dimensionné pour le facteur de crête ; la distorsion elle-même n'est pas corrigée par le stabilisateur</td></tr>
+
+        <tr><td>Poste par points ou à résistance</td><td>Impulsions très courtes et très fortes, à faible facteur de marche</td><td>Chutes sévères, plaintes de scintillement des voisins</td><td>Un courant élevé de très courte durée ; souvent mieux traité au niveau de l'alimentation que par un stabilisateur</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>La plupart des demandes d'atelier que nous recevons correspondent aux deux premières lignes : un poste monophasé dans un petit atelier de construction métallique, ou un poste triphasé sur un départ partagé avec d'autres machines. Ces deux cas ne se dimensionnent pas de la même façon, et c'est pourquoi la section suivante part de la puissance d'entrée et non de la puissance de soudage.</p>
+
+    <h2>Dimensionner sur le facteur de marche, pas sur les kVA de plaque</h2>
+
+    <p>Le matériel de soudage est défini par un facteur de marche, exprimé en pourcentage d'une période de dix minutes. Un poste déclaré à 60% peut souder six minutes sur dix à sa puissance nominale ; un poste à 100% peut souder en continu. C'est ce chiffre qui sépare un stabilisateur qui tient d'un appareil qui cuit.</p>
+
+    <p>La séquence ci-dessous donne un chiffre que l'on peut commander :</p>
+
+    <table>
+
+      <thead><tr><th>Étape</th><th>Ce qu'il faut établir</th><th>Où cela se rate</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>1. Puissance d'entrée au courant de soudage réellement utilisé</td><td>Les kVA ou le courant d'entrée du poste à ce réglage, d'après sa propre plaque</td><td>Prendre la puissance maximale alors que l'atelier travaille à la moitié, et payer une capacité inutilisée</td></tr>
+
+        <tr><td>2. Facteur de marche</td><td>Celui déclaré pour cette puissance, et celui réellement pratiqué dans l'atelier</td><td>L'ignorer, puis découvrir une limitation thermique après une heure de production</td></tr>
+
+        <tr><td>3. Marge d'appel</td><td>Une marge pour l'appel magnétisant et le courant d'amorçage, plus large sur un transformateur que sur un onduleur</td><td>Dimensionner exactement sur le régime établi, donc limiter à chaque amorçage</td></tr>
+
+        <tr><td>4. Facteur de puissance</td><td>Vérifier si les kVA annoncés le prennent déjà en compte &mdash; les kVA d'entrée oui, les kW de sortie non</td><td>Convertir des kW de soudage en kVA avec une hypothèse résistive</td></tr>
+
+        <tr><td>5. Réserve</td><td>20 à 30% au-dessus du chiffre ajusté, davantage dans un atelier chaud ou si plusieurs postes partagent le tableau</td><td>Fonctionner à 100% de la puissance dans une armoire à 40&nbsp;&deg;C</td></tr>
+
+        <tr><td>6. Plage d'entrée</td><td>La tension la plus basse observée à l'amorçage &mdash; souvent en bout de départ long</td><td>Spécifier &plusmn;15% et perdre l'arc chaque fois qu'un compresseur démarre</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>À titre d'exemple arithmétique, et non de caractéristique produit : un poste onduleur de 7 kVA d'entrée sur une alimentation monophasée de 230 V appelle environ 30 A pendant la soudure, puisque 7 000 divisé par 230 donne 30,4. C'est le courant que le stabilisateur doit laisser passer en continu pendant une passe, et l'amorçage ajoute un pic bref par-dessus. Le même poste sur une alimentation triphasée de 400 V répartit ce courant sur trois phases : c'est pourquoi les postes triphasés sont plus faciles à alimenter et à stabiliser.</p>
+
+    <h2>Relais ou servo pour le soudage à l'arc</h2>
+
+    <table>
+
+      <thead><tr><th></th><th>Type relais</th><th>Type servo</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Comportement sur charge pulsée</td><td>Paliers entre prises : la sortie bouge par sauts pendant que l'arc brûle</td><td>Correction continue, la sortie suit l'écart sans à-coups</td></tr>
+
+        <tr><td>Effet sur l'arc</td><td>Sauts audibles et visibles ; l'opérateur les perçoit sur tôle mince</td><td>Arc plus stable, ce qui compte le plus aux faibles réglages</td></tr>
+
+        <tr><td>Usure</td><td>Usure des contacts accélérée par une charge qui fluctue en permanence</td><td>Usure des balais et du carbone, inspectable et remplaçable</td></tr>
+
+        <tr><td>Usage raisonnable</td><td>Petits postes monophasés, usage occasionnel, projets sensibles au coût</td><td>Soudage de production, tôle mince, TIG, ateliers où la qualité de l'arc fait le produit</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Là où l'atelier soude de la tôle mince ou fait du TIG, les paliers d'un appareil à relais ne sont pas une préoccupation théorique : ils changent l'arc. Là où le poste est un 30 kVA monophasé utilisé en charpente à fort courant, un appareil à relais convient parfaitement, et l'argent est mieux investi dans la section de câble et un circuit dédié.</p>
+
+    <h2>Les détails d'installation qui décident de la survie</h2>
+
+    <ul>
+
+      <li><strong>Donnez au poste son propre circuit.</strong> Un stabilisateur partagé avec l'éclairage et les petits usages transmettra chaque chute à des charges qui n'en sont pas la cause, et le scintillement sera imputé au stabilisateur plutôt qu'au poste.</li>
+
+      <li><strong>Dimensionnez le disjoncteur sur le poste, pas sur le stabilisateur.</strong> Le dispositif de protection doit franchir l'appel de courant ; un disjoncteur choisi sur la puissance du stabilisateur déclenchera à l'amorçage et l'atelier conclura que le stabilisateur est en panne.</li>
+
+      <li><strong>Gardez le retour de soudage près du travail.</strong> Un courant qui revient par la charpente ou par une terre lointaine emprunte tout conducteur disponible, et l'armoire d'un stabilisateur ne fait pas partie du circuit de soudage.</li>
+
+      <li><strong>Ventilez.</strong> Un atelier de soudage est chaud et souvent poussiéreux. Un stabilisateur qui dissipe de la chaleur dans un angle fermé se déclassera lui-même, et le symptôme apparaîtra comme un appareil qui fonctionne en hiver et déclenche en été.</li>
+
+      <li><strong>Prévoyez un by-pass.</strong> Balais et contacts demandent un entretien planifié. Un by-pass manuel permet à l'atelier de continuer à souder pendant ce temps : c'est la différence entre maintenance et production perdue.</li>
+
+      <li><strong>Vérifiez le départ avant d'accuser le stabilisateur.</strong> Un départ long et sous-dimensionné produit une chute que le stabilisateur en bout de ligne ne peut pas rattraper sans travailler toute la journée en haut de sa plage.</li>
+
+    </ul>
+
+    <h2>Ce qu'un stabilisateur ne corrige pas sur une installation de soudage</h2>
+
+    <ul>
+
+      <li><strong>La capacité d'alimentation.</strong> Si le transformateur ou le départ ne peut pas fournir le courant d'amorçage, aucun stabilisateur ne le crée. La réponse est un départ plus court ou plus gros, ou un autre procédé de soudage.</li>
+
+      <li><strong>La fréquence.</strong> Les postes thermiques et les alimentations par groupe peuvent dériver en fréquence ; un stabilisateur ne corrige que l'amplitude de la tension.</li>
+
+      <li><strong>Les harmoniques des postes onduleurs.</strong> La distorsion est produite par le redresseur du poste. Un stabilisateur corrige la tension fondamentale, pas le contenu harmonique.</li>
+
+      <li><strong>Les perturbations haute fréquence.</strong> Les onduleurs émettent un bruit qui se couple dans le câblage de commande. C'est un problème de blindage, de cheminement et de mise à la terre, pas de régulation de tension.</li>
+
+      <li><strong>Une mauvaise prise de masse.</strong> Une pince de masse défectueuse donne un arc instable qui ressemble à un problème de tension et n'en est pas un.</li>
+
+    </ul>
+
+    <h2>Comment les appareils YOMIN s'insèrent dans un atelier de soudage</h2>
+
+    <p>YOMIN fabrique des stabilisateurs et régulateurs de tension dans les formats d'armoire utilisés sur les petits tableaux industriels. Trois références sont habituellement examinées pour une installation de soudage :</p>
+
+    <p>Le <a href="/products/voltage-stabilizer-regulator/avr-series-relay-type-30kva-single-phase-fully-automatic-ac-industrial-voltage-regulator-voltage-stabilizer">régulateur monophasé 30 kVA série AVR à relais</a> (référence ym-0013), une armoire monophasée pour les postes de soudage monophasés de forte puissance que l'on trouve en atelier de construction métallique.</p>
+
+    <p>Le <a href="/products/voltage-stabilizer-regulator/high-quality-tsgc2-10kva-three-phase-copper-voltage-stabilizer-380v-ac-automatic-regulator">régulateur triphasé TSGC2 10 kVA, 380 V AC</a>, un appareil triphasé à cuivre pour les ateliers qui font tourner du matériel de soudage triphasé à côté d'autres machines.</p>
+
+    <p>Le <a href="/products/voltage-stabilizer-regulator/three-phase-15kva-tnd-svc-series-power-stabilizer-automatic-voltage-regulator-voltage-stabilizer">stabilisateur triphasé 15 kVA série TND/SVC</a> (référence ym-0012), pour un petit tableau triphasé qui alimente un poste et la charge de l'atelier.</p>
+
+    <p>Ce sont les formats et puissances publiés pour ces références, et non l'affirmation que l'un d'eux serait un produit spécifiquement conçu pour le soudage. Confrontez l'appareil à la puissance d'entrée du poste, à son facteur de marche et au courant d'amorçage avant de commander, et indiquez au fournisseur que la charge est un poste à souder : un stabilisateur spécifié pour une charge résistive de même puissance sera sous-dimensionné en pratique. La gamme complète se trouve sous <a href="/products/voltage-stabilizer-regulator">stabilisateurs et régulateurs de tension</a>, et la logique de dimensionnement derrière ces chiffres est détaillée dans le <a href="/blog/voltage-stabilizer-sizing-guide">guide de dimensionnement</a> et le <a href="/blog/servo-voltage-stabilizer-guide">guide du stabilisateur servo</a>.</p>
+
+    <h2>Questions fréquentes</h2>
+
+    <h3>Quelle puissance de stabilisateur pour un poste à souder ?</h3>
+    <p>Partez des kVA ou du courant d'entrée du poste au réglage réellement utilisé, ajustez selon le facteur de marche, ajoutez une marge d'appel et 20 à 30% de réserve. Un dimensionnement sur les kVA de plaque de la sortie de soudage, ou sur la puissance maximale, donne un appareil qui limite à chaque amorçage.</p>
+
+    <h3>Pourquoi mon stabilisateur déclenche-t-il à l'amorçage de l'arc ?</h3>
+    <p>Parce que l'amorçage est proche d'un court-circuit et que le courant monte bien au-dessus du régime établi pendant une fraction de seconde. Un appareil dimensionné sur le courant de régime, ou dont la protection est réglée pour une charge résistive, le lit comme un défaut. La solution est un appareil plus puissant, ou un réglage de protection adapté à une charge de soudage.</p>
+
+    <h3>Un stabilisateur servo est-il meilleur qu'un type relais pour souder ?</h3>
+    <p>Pour le soudage de production, la tôle mince et le TIG, oui : la correction continue stabilise l'arc et évite les sauts qu'un appareil à relais produit pendant la soudure. Pour un usage occasionnel sur un gros poste monophasé à fort courant, un appareil à relais suffit et coûte moins cher.</p>
+
+    <h3>Un stabilisateur empêchera-t-il les lampes de scintiller quand le poste soude ?</h3>
+    <p>Il réduira la chute vue par les charges en aval du stabilisateur, mais seulement s'il est dimensionné pour laisser passer le courant d'amorçage. Les charges sur un autre circuit, ou en amont du stabilisateur, voient toujours la chute : un circuit dédié au poste fait partie de la réponse.</p>
+
+    <h3>Peut-on faire fonctionner un poste à souder et un stabilisateur sur un groupe ?</h3>
+    <p>Oui, avec précaution. Le groupe doit fournir le courant d'amorçage, et la plage d'entrée du stabilisateur doit couvrir la tension du groupe à vide comme sous charge de soudage. Un poste à souder est une charge plus difficile pour un groupe que pour un transformateur : le groupe demande donc plus de marge que la consommation moyenne du poste ne le suggère.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous stabilisez l'alimentation d'un atelier de soudage ?</h2>
+    <p>Envoyez le type de poste, ses kVA ou son courant d'entrée, le facteur de marche et la tension observée au tableau. Nous dimensionnerons l'appareil sur la charge de soudage et non sur un équivalent résistif, et nous signalerons si le départ est la vraie contrainte.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

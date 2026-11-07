@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/welding-machine-voltage-stabilizer/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estabilizador de tensión para máquina de soldar: dimensionamiento y ciclo de trabajo | Yomin Electric</title>
+<meta name="description" content="Una máquina de soldar es una carga pulsante, con alta irrupción y bajo factor de potencia: un estabilizador elegido por los kVA de placa quedará pequeño. Cómo dimensionarlo por corriente de soldadura y ciclo de trabajo.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Estabilizador de tensión para máquina de soldar: dimensionamiento, ciclo de trabajo e irrupción">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-es">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/welding-machine-voltage-stabilizer/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Estabilizador de tensión para máquina de soldar: dimensionamiento, ciclo de trabajo e irrupción",
+      "description": "Una máquina de soldar es una carga pulsante, con alta irrupción y bajo factor de potencia: un estabilizador elegido por los kVA de placa quedará pequeño. Cómo dimensionarlo por corriente de soldadura y ciclo de trabajo.",
+      "image": "https://www.yominelectric.com/assets/images/blog/welding-machine-voltage-stabilizer/hero.png",
+      "datePublished": "2026-11-07",
+      "dateModified": "2026-11-07",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "es",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué estabilizador necesito para una máquina de soldar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parta de los kVA o de la corriente de entrada de la máquina en el ajuste que realmente usa, ajuste por ciclo de trabajo, añada margen de irrupción y un 20-30% de reserva. Dimensionar por los kVA de placa de la salida de soldadura da un equipo que limita en cada cebado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué dispara mi estabilizador al cebar el arco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Porque el cebado está cerca de un cortocircuito y la corriente sube muy por encima del régimen durante una fracción de segundo. Un equipo dimensionado por corriente de régimen lo lee como un fallo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es mejor un estabilizador servo que uno de relés para soldar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para soldadura de producción, chapa fina y TIG, sí: la corrección continua mantiene el arco más estable. Para uso ocasional en una máquina monofásica grande, un equipo de relés es adecuado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Evitará el estabilizador que parpadeen las luces cuando suelda?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reducirá la caída que ven las cargas aguas abajo, pero solo si está dimensionado para dejar pasar la corriente de cebado. Las cargas en otro circuito siguen viendo la caída."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se puede hacer funcionar una máquina de soldar y un estabilizador con un generador?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, con cuidado. El generador tiene que dar la corriente de cebado, y el rango de entrada del estabilizador debe cubrir la tensión del generador en vacío y bajo carga de soldadura."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Estabilizadores de tensión</span></div>
+    <span class="bh-tag">Guía de aplicación</span>
+    <h1 class="bh-title">Estabilizador de tensión para máquina de soldar: dimensionamiento, ciclo de trabajo e irrupción</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>7 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lectura</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/welding-machine-voltage-stabilizer/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/welding-machine-voltage-stabilizer/hero.png" alt="Un armario AVR monofásico YOMIN y un regulador trifásico TSGC2, los dos formatos usados para estabilizar la alimentación de un taller de soldadura" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un <strong>estabilizador de tensión para máquina de soldar</strong> tiene que hacer algo más difícil que mantener una tensión estable para una resistencia o un circuito de alumbrado. La máquina de soldar toma corriente en pulsos, provoca una irrupción grande al energizar el transformador o al cebar el arco, y trabaja con un factor de potencia muy por debajo de la unidad. Si dimensiona el estabilizador solo por los kVA de placa de la máquina, quedará pequeño, y su forma de fallar suele ser un disparo o una limitación en el momento de cebar el arco, no una caída suave que pueda medir después.</p>
+
+    <p>Los síntomas son reconocibles. El soldador ceba, el estabilizador pasa a bypass o dispara, el arco se apaga y vuelve a intentarlo. O el equipo aguanta pero se calienta toda la tarde y dispara en medio del trabajo. En ambos casos es un problema de dimensionamiento, evitable en cuanto la carga se describe correctamente.</p>
+
+    <p>Esta guía explica qué representa realmente una carga de soldadura para la alimentación, la secuencia de dimensionamiento que tiene en cuenta ciclo de trabajo e irrupción, qué tecnología conviene al soldeo por arco y los detalles de instalación que deciden si el equipo sobrevive en un taller real.</p>
+
+    <h2>Qué representa una carga de soldadura</h2>
+
+    <p>Tres propiedades separan una máquina de soldar de una carga ordinaria, y cada una cambia el cálculo.</p>
+
+    <ul>
+
+      <li><strong>La carga es pulsante, no continua.</strong> La corriente circula mientras el arco está encendido y se detiene entre pasadas. El estabilizador se dimensiona por lo que ocurre durante esos pulsos y por la parte de la jornada que ocupan, no por un promedio halagador.</li>
+
+      <li><strong>La irrupción es grande y rápida.</strong> Una máquina de transformador presenta una irrupción magnetizante al conectarse y una condición cercana al cortocircuito en cada cebado. El camino de corriente del estabilizador y su protección tienen que pasar eso sin limitar.</li>
+
+      <li><strong>El factor de potencia es bajo.</strong> Las máquinas de transformador toman una corriente fuertemente inductiva, así que los kVA que toman de la línea son mucho mayores que los kW que entregan al arco. Las invertidoras son mejores pero no resistivas: rectifican la alimentación y toman corriente en pulsos cortos de alta cresta.</li>
+
+    </ul>
+
+    <p>En la práctica, la corriente de una máquina de soldar no es una senoide limpia. Un estabilizador que regula sobre una medición RMS verdadera seguirá mejor la carga que uno que mide tensión media, y un equipo de servo sigue una carga pulsante con más suavidad que uno que conmuta tomas por escalones. Esa diferencia se nota en la calidad del arco antes de notarse en un instrumento.</p>
+
+    <h2>Cada máquina, su comportamiento</h2>
+
+    <table>
+
+      <thead><tr><th>Tipo de máquina</th><th>Carácter de la carga</th><th>Efecto sobre la tensión de alimentación</th><th>Lo que el estabilizador debe soportar</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Transformador monofásico</td><td>Inductiva, gran irrupción, discontinuidades de corriente en el cebado</td><td>Caídas breves y profundas en cada cebado, visibles como parpadeo</td><td>Dejar pasar la corriente de cebado sin limitar; aceptar un factor de potencia bajo sin sobrecalentarse</td></tr>
+
+        <tr><td>Transformador trifásico</td><td>Igual, repartida en tres fases</td><td>Caídas menores que en monofásico, más desequilibrio si es la carga dominante</td><td>Potencia trifásica equilibrada, con margen de irrupción</td></tr>
+
+        <tr><td>Invertidora (electrónica)</td><td>Entrada rectificada, pulsos de alta cresta, mejor factor de potencia</td><td>Distorsión de mayor frecuencia en lugar de caídas profundas</td><td>Camino de corriente dimensionado para el factor de cresta; la distorsión en sí no la corrige el estabilizador</td></tr>
+
+        <tr><td>Por puntos o de resistencia</td><td>Pulsos muy cortos y muy altos, con ciclo de trabajo bajo</td><td>Caídas severas, quejas de parpadeo de los vecinos</td><td>Corriente muy alta de muy corta duración; a menudo se resuelve mejor en la alimentación que con un estabilizador</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>La mayoría de las consultas de taller que recibimos son las dos primeras filas: una máquina monofásica en un taller pequeño de calderería, o una trifásica en un alimentador compartido con otras máquinas. Los dos casos se dimensionan distinto, y por eso el apartado siguiente parte de la potencia de entrada y no de la potencia de soldadura.</p>
+
+    <h2>Dimensionar por ciclo de trabajo, no por kVA de placa</h2>
+
+    <p>El equipo de soldadura se define por un ciclo de trabajo, expresado como porcentaje de un período de diez minutos. Una máquina al 60% puede soldar seis minutos de cada diez a su potencia nominal; una al 100% puede soldar de forma continua. Ese número separa un estabilizador que aguanta de uno que se cocina.</p>
+
+    <p>La secuencia siguiente da una cifra que se puede pedir:</p>
+
+    <table>
+
+      <thead><tr><th>Paso</th><th>Qué hay que establecer</th><th>Dónde falla</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>1. Potencia de entrada a la corriente de soldadura que se usa</td><td>Los kVA o la corriente de entrada de la máquina en ese ajuste, según su propia placa</td><td>Tomar la potencia máxima cuando el taller trabaja a la mitad y pagar capacidad que no se usa</td></tr>
+
+        <tr><td>2. Ciclo de trabajo</td><td>El declarado para esa potencia y el que realmente se practica en el taller</td><td>Ignorarlo y descubrir una limitación térmica tras una hora de producción</td></tr>
+
+        <tr><td>3. Margen de irrupción</td><td>Un margen para la irrupción magnetizante y la corriente de cebado, mayor en transformador que en invertidora</td><td>Dimensionar exactamente sobre el régimen y limitar en cada cebado</td></tr>
+
+        <tr><td>4. Factor de potencia</td><td>Comprobar si los kVA declarados ya lo incluyen: los kVA de entrada sí, los kW de salida no</td><td>Convertir kW de soldadura a kVA con una hipótesis resistiva</td></tr>
+
+        <tr><td>5. Reserva</td><td>20&ndash;30% sobre la cifra ajustada, más en un taller caluroso o si varias máquinas comparten el cuadro</td><td>Trabajar al 100% de la potencia en un armario a 40&nbsp;&deg;C</td></tr>
+
+        <tr><td>6. Rango de entrada</td><td>La tensión más baja que ve el taller al cebar, a menudo al final de un alimentador largo</td><td>Especificar &plusmn;15% y perder el arco cada vez que arranca un compresor</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Como ejemplo aritmético, no como dato de producto: una invertidora con 7 kVA de entrada en una alimentación monofásica de 230 V toma unos 30 A mientras suelda, porque 7.000 dividido por 230 da 30,4. Esa es la corriente que el estabilizador debe dejar pasar de forma continua durante una pasada, y el cebado añade un pico breve por encima. La misma máquina en una alimentación trifásica de 400 V reparte esa corriente entre tres fases: por eso las máquinas trifásicas son más fáciles de alimentar y de estabilizar.</p>
+
+    <h2>Relés o servo para soldeo por arco</h2>
+
+    <table>
+
+      <thead><tr><th></th><th>Tipo relé</th><th>Tipo servo</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Comportamiento con carga pulsante</td><td>Escalones entre tomas: la salida se mueve a saltos mientras el arco está encendido</td><td>Corrección continua, la salida sigue el error sin saltos</td></tr>
+
+        <tr><td>Efecto sobre el arco</td><td>Cambios audibles y visibles; el operario los nota en chapa fina</td><td>Arco más estable, lo que importa sobre todo en ajustes bajos</td></tr>
+
+        <tr><td>Desgaste</td><td>Desgaste de contactos acelerado por una carga que fluctúa constantemente</td><td>Desgaste de escobillas y carbones, inspeccionable y reemplazable</td></tr>
+
+        <tr><td>Uso razonable</td><td>Máquinas monofásicas pequeñas, uso ocasional, proyectos sensibles al coste</td><td>Soldadura de producción, chapa fina, TIG, talleres donde la calidad del arco es el producto</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Donde el taller suelda chapa fina o hace TIG, los escalones de un equipo de relés no son una preocupación teórica: cambian el arco. Donde la máquina es una monofásica de 30 kVA usada en estructuras a corriente alta, un equipo de relés es perfectamente adecuado, y el dinero se invierte mejor en sección de cable y un circuito dedicado.</p>
+
+    <h2>Detalles de instalación que deciden si sobrevive</h2>
+
+    <ul>
+
+      <li><strong>Dé a la máquina su propio circuito.</strong> Un estabilizador compartido con alumbrado y pequeños consumos pasará cada caída a cargas que no la causaron, y el parpadeo se atribuirá al estabilizador en lugar de a la máquina.</li>
+
+      <li><strong>Dimensione el interruptor por la máquina, no por el estabilizador.</strong> El dispositivo de protección tiene que atravesar la irrupción; un interruptor elegido por la potencia del estabilizador disparará en el cebado y el taller concluirá que el estabilizador está averiado.</li>
+
+      <li><strong>Mantenga el retorno de soldadura cerca del trabajo.</strong> La corriente que vuelve por la estructura o por una tierra lejana busca cualquier conductor disponible, y el armario de un estabilizador no forma parte del circuito de soldadura.</li>
+
+      <li><strong>Ventile.</strong> Un taller de soldadura es caluroso y a menudo polvoriento. Un estabilizador que disipa calor en un rincón cerrado se autoderratea, y el síntoma aparece como un equipo que funciona en invierno y dispara en verano.</li>
+
+      <li><strong>Prevea un bypass.</strong> Escobillas y contactos necesitan mantenimiento programado. Un bypass manual permite seguir soldando mientras se hace: es la diferencia entre mantenimiento y producción perdida.</li>
+
+      <li><strong>Revise el alimentador antes de culpar al estabilizador.</strong> Un alimentador largo y subdimensionado produce una caída que un estabilizador al final de la línea no puede recuperar sin trabajar todo el día en el tope de su rango.</li>
+
+    </ul>
+
+    <h2>Lo que un estabilizador no corrige en una instalación de soldadura</h2>
+
+    <ul>
+
+      <li><strong>La capacidad de alimentación.</strong> Si el transformador o el alimentador no puede dar la corriente de cebado, ningún estabilizador la crea. La respuesta es un alimentador más corto o mayor, u otro proceso de soldadura.</li>
+
+      <li><strong>La frecuencia.</strong> Las máquinas con motor y las alimentaciones por generador pueden derivar en frecuencia; un estabilizador solo corrige la magnitud de la tensión.</li>
+
+      <li><strong>Los armónicos de las invertidoras.</strong> La distorsión la genera el rectificador de la máquina. Un estabilizador corrige la tensión fundamental, no el contenido armónico.</li>
+
+      <li><strong>Las interferencias de alta frecuencia.</strong> Las invertidoras emiten ruido que se acopla al cableado de control. Es un problema de apantallamiento, trazado y puesta a tierra, no de regulación de tensión.</li>
+
+      <li><strong>Una mala pinza de masa.</strong> Una pinza deficiente da un arco inestable que parece un problema de tensión y no lo es.</li>
+
+    </ul>
+
+    <h2>Cómo encajan los equipos YOMIN en un taller de soldadura</h2>
+
+    <p>YOMIN fabrica estabilizadores y reguladores de tensión en los formatos de armario usados en pequeños cuadros industriales. Tres referencias son las que se suelen tratar para una instalación de soldadura:</p>
+
+    <p>El <a href="/products/voltage-stabilizer-regulator/avr-series-relay-type-30kva-single-phase-fully-automatic-ac-industrial-voltage-regulator-voltage-stabilizer">regulador monofásico de 30 kVA serie AVR de relés</a> (referencia ym-0013), un armario monofásico para las máquinas de soldar monofásicas grandes habituales en talleres de calderería.</p>
+
+    <p>El <a href="/products/voltage-stabilizer-regulator/high-quality-tsgc2-10kva-three-phase-copper-voltage-stabilizer-380v-ac-automatic-regulator">regulador trifásico TSGC2 de 10 kVA, 380 V AC</a>, un equipo trifásico de cobre para talleres que hacen funcionar equipo de soldadura trifásico junto a otras máquinas.</p>
+
+    <p>El <a href="/products/voltage-stabilizer-regulator/three-phase-15kva-tnd-svc-series-power-stabilizer-automatic-voltage-regulator-voltage-stabilizer">estabilizador trifásico de 15 kVA serie TND/SVC</a> (referencia ym-0012), para un pequeño cuadro trifásico que alimenta una máquina y la carga del taller.</p>
+
+    <p>Estos son los formatos y potencias publicados para esas referencias, no la afirmación de que alguno sea un producto específico para soldadura. Contraste el equipo con la potencia de entrada de la máquina, su ciclo de trabajo y la corriente de cebado antes de pedir, e indique al proveedor que la carga es una máquina de soldar: un estabilizador especificado para una carga resistiva de los mismos kVA quedará corto en la práctica. La gama completa está en <a href="/products/voltage-stabilizer-regulator">estabilizadores y reguladores de tensión</a>, y la lógica de dimensionamiento está en la <a href="/blog/voltage-stabilizer-sizing-guide">guía de dimensionamiento</a> y en la <a href="/blog/servo-voltage-stabilizer-guide">guía del estabilizador servo</a>.</p>
+
+    <h2>Preguntas frecuentes</h2>
+
+    <h3>¿Qué estabilizador necesito para una máquina de soldar?</h3>
+    <p>Parta de los kVA o de la corriente de entrada de la máquina en el ajuste que realmente usa, ajuste por ciclo de trabajo, añada margen de irrupción y un 20&ndash;30% de reserva. Dimensionar por los kVA de placa de la salida de soldadura, o por la potencia máxima, da un equipo que limita en cada cebado.</p>
+
+    <h3>¿Por qué dispara mi estabilizador al cebar el arco?</h3>
+    <p>Porque el cebado está cerca de un cortocircuito y la corriente sube muy por encima del régimen durante una fracción de segundo. Un equipo dimensionado por corriente de régimen, o cuya protección está ajustada para carga resistiva, lo lee como un fallo. La solución es un equipo mayor, o un ajuste de protección acorde con una carga de soldadura.</p>
+
+    <h3>¿Es mejor un estabilizador servo que uno de relés para soldar?</h3>
+    <p>Para soldadura de producción, chapa fina y TIG, sí: la corrección continua mantiene el arco más estable y evita los escalones que un equipo de relés produce mientras se suelda. Para uso ocasional en una máquina monofásica grande a corriente alta, un equipo de relés es adecuado y más económico.</p>
+
+    <h3>¿Evitará el estabilizador que parpadeen las luces cuando suelda?</h3>
+    <p>Reducirá la caída que ven las cargas aguas abajo del estabilizador, pero solo si está dimensionado para dejar pasar la corriente de cebado. Las cargas en otro circuito, o aguas arriba del estabilizador, siguen viendo la caída: un circuito dedicado para la máquina forma parte de la solución.</p>
+
+    <h3>¿Se puede hacer funcionar una máquina de soldar y un estabilizador con un generador?</h3>
+    <p>Sí, con cuidado. El generador tiene que dar la corriente de cebado, y el rango de entrada del estabilizador tiene que cubrir la tensión del generador en vacío y bajo carga de soldadura. Una máquina de soldar es una carga más dura para un generador que para un transformador.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Está estabilizando la alimentación de un taller de soldadura?</h2>
+    <p>Envíe el tipo de máquina, sus kVA o corriente de entrada, el ciclo de trabajo y la tensión que ve en el cuadro. Dimensionaremos el equipo sobre la carga de soldadura y no sobre un equivalente resistivo, y señalaremos si el alimentador es la verdadera restricción.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

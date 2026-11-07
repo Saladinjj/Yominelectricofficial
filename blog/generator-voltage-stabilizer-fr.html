@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/generator-voltage-stabilizer/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stabilisateur de tension pour groupe électrogène : ce qu'il corrige et comment le dimensionner | Yomin Electric</title>
+<meta name="description" content="Un stabilisateur de tension maintient la tension de charge lorsque l'alimentation vient d'un groupe électrogène. Où il se place, en quoi il diffère de l'AVR d'excitation de l'alternateur, et comment le dimensionner autour des démarrages moteur.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stabilisateur de tension pour groupe électrogène : ce qu'il corrige et comment le dimensionner">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://www.yominelectric.com/blog/generator-voltage-stabilizer-fr">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/generator-voltage-stabilizer/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/generator-voltage-stabilizer-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/generator-voltage-stabilizer">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/generator-voltage-stabilizer-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/generator-voltage-stabilizer-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/generator-voltage-stabilizer-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/generator-voltage-stabilizer">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Stabilisateur de tension pour groupe électrogène : ce qu'il corrige et comment le dimensionner",
+      "description": "Un stabilisateur de tension maintient la tension de charge lorsque l'alimentation vient d'un groupe électrogène. Où il se place, en quoi il diffère de l'AVR d'excitation de l'alternateur, et comment le dimensionner autour des démarrages moteur.",
+      "image": "https://www.yominelectric.com/assets/images/blog/generator-voltage-stabilizer/hero.png",
+      "datePublished": "2026-11-07",
+      "dateModified": "2026-11-07",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/generator-voltage-stabilizer-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "fr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Peut-on alimenter un stabilisateur de tension par un groupe électrogène ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Un stabilisateur côté charge fonctionne sur une alimentation par groupe à condition que sa plage d'entrée couvre la tension du groupe à vide comme en pleine charge, et que sa puissance couvre le courant de démarrage du plus gros moteur. Dimensionnez-le d'après la liste des charges, pas d'après les kVA du groupe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "L'AVR d'un groupe est-il la même chose qu'un stabilisateur de tension ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. L'AVR d'excitation est à l'intérieur de l'alternateur et régule le courant d'excitation pour tenir la tension aux bornes de la machine. Un stabilisateur de tension est un appareil séparé, côté charge, qui corrige la tension délivrée aux équipements. L'un ne remplace pas l'autre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi les lampes baissent-elles quand une pompe démarre sur le groupe ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parce que le courant de démarrage de la pompe traverse l'impédance de source du groupe et fait chuter la tension aux bornes pendant une ou deux secondes. Un stabilisateur dimensionné pour laisser passer ce courant maintiendra la tension pour le reste de l'installation ; un appareil dimensionné sur le seul régime établi limitera ou déclenchera."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle puissance de stabilisateur pour un groupe de 10 kVA ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cela dépend de la charge, pas du groupe. Dimensionnez le stabilisateur sur la charge en régime, plus le courant de démarrage du plus gros moteur et 20 à 30% de réserve. L'aligner sur les kVA du groupe le surdimensionnerait et gaspillerait la résolution d'un appareil à servo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un stabilisateur peut-il corriger une fréquence instable ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. La fréquence est fixée par le moteur primaire et son régulateur de vitesse. Un stabilisateur ne corrige que l'amplitude de la tension : un problème de fréquence se règle sur le moteur et le régulateur, pas sur le stabilisateur."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Stabilisateurs de tension</span></div>
+    <span class="bh-tag">Guide d'application</span>
+    <h1 class="bh-title">Stabilisateur de tension pour groupe électrogène : ce qu'il corrige et comment le dimensionner</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>7 novembre 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lecture</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/generator-voltage-stabilizer/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/generator-voltage-stabilizer/hero.png" alt="Stabilisateurs de tension triphasés YOMIN avec affichage numérique, le format en armoire utilisé sur un tableau alimenté par groupe" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un <strong>stabilisateur de tension pour groupe électrogène</strong> est un appareil placé côté charge qui maintient la tension envoyée à vos équipements dans une plage définie, lorsque l'alimentation vient d'un groupe et non du réseau. Il se situe entre la sortie du groupe ou l'inverseur de sources et la charge, mesure la tension de sortie en continu et la corrige par commutation de prises ou par entraînement d'un autotransformateur motorisé.</p>
+
+    <p>Le mot qui provoque la plupart des confusions est <strong>AVR</strong>. Deux appareils différents portent ce nom. L'AVR d'excitation se trouve à l'intérieur de l'alternateur et régule le courant d'excitation pour maintenir la tension aux bornes de la machine. Le stabilisateur de tension est une armoire séparée, côté charge. Un AVR d'excitation ne peut pas corriger une chute de tension qui se produit dans votre installation, et un stabilisateur ne peut pas réparer un alternateur qui régule mal. Acheter l'un en attendant l'autre est la façon la plus courante de rater cette décision.</p>
+
+    <p>Ce guide traite de l'appareil côté charge. Il explique pourquoi une alimentation par groupe se comporte différemment d'une alimentation par transformateur, comment dimensionner un stabilisateur quand la charge comporte des moteurs, quelle technologie convient à quelle charge, et les quatre choses qu'un stabilisateur ne corrigera jamais.</p>
+
+    <h2>Pourquoi une alimentation par groupe demande un autre traitement</h2>
+
+    <p>Un transformateur de distribution est une source raide. Son impédance est faible devant la charge, un défaut au secondaire peut appeler des milliers d'ampères, et la tension aux bornes bouge à peine au démarrage d'un moteur. Un groupe électrogène est au contraire une source souple. Sa capacité à tenir la tension lors d'un échelon de charge est limitée par la réactance subtransitoire de la machine et par la vitesse à laquelle l'excitation peut rétablir le courant d'excitation.</p>
+
+    <p>Cela produit trois comportements que vous ne verrez pas sur un raccordement réseau sain :</p>
+
+    <ul>
+
+      <li><strong>Une chute de tension à la mise sous tension de la charge.</strong> Le démarrage direct d'un moteur appelle plusieurs fois son courant nominal pendant une ou deux secondes. Sur un groupe, ce courant traverse une impédance de source bien plus élevée : la tension aux bornes chute visiblement &mdash; les lampes baissent, les bobines de contacteurs claquent, un variateur peut déclencher en sous-tension.</li>
+
+      <li><strong>Une tension élevée à faible charge.</strong> Un groupe qui tourne nettement sous sa puissance nominale peut se situer au-dessus de la tension nominale, surtout si l'excitation est réglée pour compenser la pleine charge. Le stabilisateur doit accepter cette tension haute autant que la chute.</li>
+
+      <li><strong>Une fréquence qui suit la charge.</strong> Le régulateur de vitesse répond aux variations de charge plus lentement que l'excitation. Une excursion de fréquence modifie le rapport tension/fréquence vu par les moteurs et les variateurs, et aucun stabilisateur de tension ne peut la corriger.</li>
+
+    </ul>
+
+    <p>La conséquence pratique est que le stabilisateur et le groupe doivent être spécifiés ensemble. Un appareil choisi sur une seule ligne de catalogue, d'après la puissance de la charge, sera soit trop petit pour laisser passer le courant de démarrage, soit trop étroit en plage d'entrée pour accepter la tension à vide du groupe.</p>
+
+    <h2>Les trois appareils que l'on confond</h2>
+
+    <table>
+
+      <thead><tr><th>Appareil</th><th>Où il se trouve</th><th>Ce qu'il contrôle réellement</th><th>Ce qu'il ne peut pas faire</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>AVR d'excitation (dans l'alternateur)</td><td>Sur la machine, il régule le courant d'excitation</td><td>La tension aux bornes de l'alternateur lui-même</td><td>Corriger les chutes dans les câbles et la distribution en aval, ni protéger la charge d'une chute rapide que la boucle d'excitation ne peut suivre</td></tr>
+
+        <tr><td>Stabilisateur de tension (cet article)</td><td>Entre l'alimentation et la charge, dans son armoire</td><td>La tension présentée à la charge, dans sa plage d'entrée et sa puissance</td><td>Ajouter de la puissance au groupe, corriger la fréquence ou nettoyer une distorsion de forme d'onde</td></tr>
+
+        <tr><td>Inverseur de sources ou ATS</td><td>Entre deux sources</td><td>La source qui alimente l'installation</td><td>Aucune correction de tension : c'est un appareil de commutation</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Si votre groupe chasse, oscille ou fait chuter la tension au point que les équipements redémarrent, la première question n'est pas quel stabilisateur acheter. C'est de savoir si l'excitation et le régulateur de vitesse sont réglés pour la charge. Un stabilisateur en aval d'un groupe qui fonctionne mal masque le symptôme côté charge pendant que la machine continue de s'abîmer.</p>
+
+    <h2>Dimensionnement : partir de la charge, pas du groupe</h2>
+
+    <p>L'erreur la plus fréquente est d'aligner le stabilisateur sur la puissance kVA du groupe. Un groupe de 100 kVA qui alimente une charge de 25 kVA a besoin d'environ 30 kVA de stabilisation, pas de 100. Le surdimensionnement n'est pas gratuit : un appareil à servo qui travaille à une très faible fraction de sa puissance passe sa vie en bas de sa plage, et un appareil à relais commute par paliers plus grossiers que nécessaire.</p>
+
+    <p>Partez donc de la charge :</p>
+
+    <table>
+
+      <thead><tr><th>Étape</th><th>Ce qu'il faut établir</th><th>Où cela se rate</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>1. Lister les charges</td><td>Tout ce qui doit tenir pendant un démarrage de groupe : moteurs, variateurs, chauffage résistif, électronique, éclairage</td><td>Utiliser la charge de projet au lieu de la charge réellement alimentée par le groupe</td></tr>
+
+        <tr><td>2. Additionner les kVA en régime</td><td>Les kVA en régime au facteur de puissance de la charge, avec un facteur de simultanéité réaliste pour le site</td><td>Additionner les kVA plaque de chaque charge comme si tout fonctionnait ensemble à pleine charge</td></tr>
+
+        <tr><td>3. Ajouter la marge de démarrage</td><td>Le courant de démarrage du plus gros moteur, pendant les secondes qu'il dure, et le chevauchement éventuel des démarrages</td><td>Ignorer l'appel de courant de démarrage, puis découvrir que le stabilisateur limite au démarrage</td></tr>
+
+        <tr><td>4. Fixer la plage d'entrée</td><td>La tension la plus basse et la plus haute que le groupe présentera : chute en pleine charge, montée à vide</td><td>Spécifier une plage étroite (par exemple &plusmn;15%) et perdre la charge à chaque démarrage de gros moteur</td></tr>
+
+        <tr><td>5. Choisir la réserve</td><td>En général 20 à 30% au-dessus du régime établi, davantage si les démarrages sont fréquents ou l'ambiance chaude</td><td>Fonctionner à 100% de la puissance dans une armoire chaude</td></tr>
+
+        <tr><td>6. Confirmer la précision de sortie</td><td>La plage que la charge tolère réellement, pas le chiffre le plus serré disponible</td><td>Payer du &plusmn;1% là où &plusmn;3% suffirait</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Deux chiffres font l'essentiel du travail : le courant de démarrage du plus gros moteur et la tension du groupe à vide. Relevez-les sur site, pas sur la fiche d'une installation similaire.</p>
+
+    <h2>Relais ou servo : lequel convient à une alimentation par groupe</h2>
+
+    <table>
+
+      <thead><tr><th></th><th>Type relais</th><th>Type servo (autotransformateur motorisé)</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Correction</td><td>Paliers entre prises fixes, quelques pour cent par palier</td><td>Continue, suivant l'écart mesuré</td></tr>
+
+        <tr><td>Précision</td><td>Plage plus large, et paliers visibles sur les charges sensibles</td><td>Plage plus serrée, sortie qui évolue sans à-coups</td></tr>
+
+        <tr><td>Idéal pour</td><td>Éclairage, chauffage, petites charges monophasées, projets sensibles au coût</td><td>Moteurs, variateurs, CNC, médical, imprimerie, départs d'atelier entiers</td></tr>
+
+        <tr><td>Points de vigilance</td><td>Usure des contacts sur les sites à fluctuations fréquentes ; échelons que le variateur voit</td><td>Usure des balais et du carbone à inspecter périodiquement ; pièces mobiles à protéger dans une armoire propre et ventilée</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Sur un groupe, les fluctuations sont rarement douces. Les échelons de charge arrivent par sauts : un appareil à relais commutera de façon répétée pendant un poste, et chaque commutation est un transitoire de tension que la charge subit. Là où la charge est électronique ou motorisée, le type servo est le choix le plus sûr, et c'est la raison pour laquelle la plupart des installations industrielles secourues par groupe l'utilisent.</p>
+
+    <p>Il existe aussi des stabilisateurs électroniques à commutation SCR ou IGBT, plus rapides que les deux types ci-dessus. Ils constituent une autre famille de produits que celle décrite ici, et il vaut la peine de la demander explicitement si la charge ne tolère même pas un bref intervalle de correction.</p>
+
+    <h2>Ce qu'un stabilisateur ne corrigera pas</h2>
+
+    <ul>
+
+      <li><strong>La fréquence.</strong> Si le régulateur de vitesse laisse la fréquence dériver, les moteurs tournent à la mauvaise vitesse et les variateurs voient un mauvais rapport tension/fréquence. La correction de tension n'y touche pas.</li>
+
+      <li><strong>La forme d'onde et les harmoniques.</strong> Un groupe qui alimente des redresseurs ou des onduleurs produit une forme d'onde déformée. Un stabilisateur corrige l'amplitude, pas la forme.</li>
+
+      <li><strong>Le déséquilibre de phases.</strong> Des charges monophasées réparties inégalement sur un groupe triphasé produisent une tension inverse. Le remède est la répartition des charges, pas un stabilisateur.</li>
+
+      <li><strong>La puissance.</strong> Aucun stabilisateur ne fait démarrer un gros moteur par un petit groupe. Si le groupe ne peut pas fournir le courant de démarrage, la réponse est un groupe plus puissant, un démarreur progressif ou une autre méthode de démarrage.</li>
+
+      <li><strong>La continuité du neutre et de la terre.</strong> Un neutre perdu ou une terre médiocre produit des problèmes de tension qu'un stabilisateur transmettra fidèlement, ou aggravera en corrigeant la mauvaise grandeur.</li>
+
+    </ul>
+
+    <h2>Liste de spécification</h2>
+
+    <p>Apportez ces éléments à un fournisseur et la conversation devient courte :</p>
+
+    <ul>
+
+      <li><strong>Caractéristiques de la source</strong> &mdash; puissance kVA du groupe, tension, nombre de phases, fréquence, et position du stabilisateur avant ou après l'inverseur de sources.</li>
+
+      <li><strong>Liste des charges</strong> &mdash; kVA en régime, plus gros moteur et son mode de démarrage, et toute charge qui ne doit pas subir d'échelon.</li>
+
+      <li><strong>Plage d'entrée</strong> &mdash; la tension la plus basse et la plus haute que l'appareil doit accepter avant de limiter ou de passer en by-pass.</li>
+
+      <li><strong>Précision de sortie</strong> &mdash; exprimée comme une plage autour de la tension nominale, pas comme un argument commercial.</li>
+
+      <li><strong>Environnement</strong> &mdash; température ambiante, altitude, poussière, et armoire intérieure, extérieure ou en conteneur.</li>
+
+      <li><strong>Régime de neutre et de terre</strong> &mdash; TN-S, TN-C-S, TT ou IT, et si le stabilisateur doit couper le neutre.</li>
+
+      <li><strong>Accès de maintenance</strong> &mdash; un by-pass manuel pour que la charge continue de tourner pendant l'entretien des balais ou des contacts.</li>
+
+      <li><strong>Signalisation</strong> &mdash; un contact libre de potentiel pour &laquo; en by-pass &raquo; ou &laquo; hors plage &raquo; câblé à l'alarme de l'usine, pas seulement une lampe en façade.</li>
+
+    </ul>
+
+    <h2>Comment les appareils YOMIN s'insèrent dans une installation à groupe</h2>
+
+    <p>YOMIN fabrique des stabilisateurs et régulateurs de tension pour tableautiers, intégrateurs et distributeurs, dans les formats en armoire habituellement utilisés sur un tableau alimenté par groupe. Trois références couvrent l'essentiel de ce qui est décrit plus haut :</p>
+
+    <p>Le <a href="/products/voltage-stabilizer-regulator/three-phase-15kva-tnd-svc-series-power-stabilizer-automatic-voltage-regulator-voltage-stabilizer">stabilisateur triphasé 15 kVA série TND/SVC</a> (référence ym-0012), un appareil triphasé destiné aux petits tableaux triphasés et aux départs d'atelier.</p>
+
+    <p>L'<a href="/products/voltage-stabilizer-regulator/4svc-tns-series-home-use-fully-automatic-electric-avr-three-phase-voltage-stabilizers-led-display-dc-ac-curren">AVR triphasé série 4SVC TNS</a> (référence ym-0002), une armoire triphasée avec affichage LED et fonctionnement à 50 Hz, pour les installations qui ont besoin d'une lecture visible au tableau.</p>
+
+    <p>Le <a href="/products/voltage-stabilizer-regulator/single-phase-tnd-svc-10kw-15kva-20kva-copper-servo-motor-110v-230v-automatic-voltage-regulator-stabilizer">stabilisateur monophasé à servo moteur cuivre série TND/SVC</a> (référence ym-0003) en versions 10 kW et 15 kVA, pour les charges monophasées sur de petits groupes &mdash; une maison, un commerce, un petit groupe de pompage.</p>
+
+    <p>Ce sont les formats et puissances publiés pour ces références ; confirmez la plage d'entrée, la précision de sortie et l'armoire par rapport à votre groupe avant de commander, car ce sont les trois chiffres qui décident si l'appareil tient la charge ou passe son temps en by-pass. La gamme complète se trouve sous <a href="/products/voltage-stabilizer-regulator">stabilisateurs et régulateurs de tension</a>. Si l'installation demande un stabilisateur pour une seule machine plutôt que pour tout un tableau, voyez le <a href="/blog/servo-voltage-stabilizer-guide">guide du stabilisateur servo</a> et le <a href="/blog/voltage-stabilizer-sizing-guide">guide de dimensionnement</a>.</p>
+
+    <h2>Questions fréquentes</h2>
+
+    <h3>Peut-on alimenter un stabilisateur de tension par un groupe électrogène ?</h3>
+    <p>Oui. Un stabilisateur côté charge fonctionne sur une alimentation par groupe à condition que sa plage d'entrée couvre la tension du groupe à vide comme en pleine charge, et que sa puissance couvre le courant de démarrage du plus gros moteur. Dimensionnez-le d'après la liste des charges, pas d'après les kVA du groupe.</p>
+
+    <h3>L'AVR d'un groupe est-il la même chose qu'un stabilisateur de tension ?</h3>
+    <p>Non. L'AVR d'excitation est à l'intérieur de l'alternateur et régule le courant d'excitation pour tenir la tension aux bornes de la machine. Un stabilisateur de tension est un appareil séparé, côté charge, qui corrige la tension délivrée aux équipements. L'un ne remplace pas l'autre, et un stabilisateur ne compense pas un alternateur qui régule mal.</p>
+
+    <h3>Pourquoi les lampes baissent-elles quand une pompe démarre sur le groupe ?</h3>
+    <p>Parce que le courant de démarrage de la pompe traverse l'impédance de source du groupe et fait chuter la tension aux bornes pendant une ou deux secondes. Un stabilisateur dimensionné pour laisser passer ce courant maintiendra la tension pour le reste de l'installation ; un appareil dimensionné sur le seul régime établi limitera ou déclenchera.</p>
+
+    <h3>Quelle puissance de stabilisateur pour un groupe de 10 kVA ?</h3>
+    <p>Cela dépend de la charge, pas du groupe. Si le groupe alimente une charge de 4 kVA avec un moteur de 1,5 kW, le stabilisateur se dimensionne sur cette charge, plus le courant de démarrage du moteur et 20 à 30% de réserve. L'aligner sur 10 kVA le surdimensionnerait et, sur un appareil à servo, gaspillerait sa résolution.</p>
+
+    <h3>Un stabilisateur peut-il corriger une fréquence instable ?</h3>
+    <p>Non. La fréquence est fixée par le moteur primaire et son régulateur de vitesse. Un stabilisateur ne corrige que l'amplitude de la tension : un problème de fréquence se règle sur le moteur et le régulateur, pas sur le stabilisateur.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous stabilisez une installation alimentée par groupe ?</h2>
+    <p>Envoyez la puissance du groupe, la liste des charges, le plus gros moteur et son mode de démarrage, ainsi que la plage de tension observée aux bornes. Nous reviendrons vers vous avec une puissance, une plage d'entrée et l'armoire adaptée à la place disponible.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

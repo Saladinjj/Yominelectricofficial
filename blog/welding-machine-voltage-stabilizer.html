@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/welding-machine-voltage-stabilizer/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voltage Stabilizer for Welding Machines: Sizing and Duty Cycle | Yomin Electric</title>
+<meta name="description" content="A welding machine is a pulsed, high-inrush load with a poor power factor, so a stabilizer sized on nameplate kVA will be too small. How to size one on welding current and duty cycle, and why arc stability depends on it.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Voltage Stabilizer for a Welding Machine: Sizing, Duty Cycle and Inrush">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/welding-machine-voltage-stabilizer/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Voltage Stabilizer for a Welding Machine: Sizing, Duty Cycle and Inrush",
+      "description": "A welding machine is a pulsed, high-inrush load with a poor power factor, so a stabilizer sized on nameplate kVA will be too small. How to size one on welding current and duty cycle, and why arc stability depends on it.",
+      "image": "https://www.yominelectric.com/assets/images/blog/welding-machine-voltage-stabilizer/hero.png",
+      "datePublished": "2026-11-07",
+      "dateModified": "2026-11-07",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/welding-machine-voltage-stabilizer"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What size voltage stabilizer do I need for a welding machine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Size from the welder's input kVA or input current at the output setting you actually use, adjusted for duty cycle, plus a margin for inrush and 20-30% headroom. Sizing from the nameplate kVA of the welding output, or from the maximum output rating, produces a unit that limits at every arc strike."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my stabilizer trip when I strike an arc?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the strike is close to a short circuit and the current rises far above the running figure for a fraction of a second. A unit sized on running current, or one whose protection is set for a resistive load, reads that as a fault. The fix is a larger unit, or a protective setting matched to a welding load."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a servo stabilizer better than a relay type for welding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For production welding, thin sheet and TIG, yes: continuous correction keeps the arc steadier and avoids the step changes a relay unit makes while welding. For occasional use on a large single-phase set at high current, a relay unit is adequate and cheaper."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will a stabilizer stop the lights flickering when the welder runs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It will reduce the dip seen by loads downstream of the stabilizer, but only if the stabilizer is rated to pass the strike current. Loads on a separate circuit, or upstream of the stabilizer, still see the dip, so a dedicated welder circuit is part of the answer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I run a welding machine and a stabilizer from a generator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with care. The generator has to supply the strike current, and the stabilizer's input window has to cover the generator's voltage at light load and under welding load. A welding set is a harder load for a generator than for a transformer supply."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Voltage Stabilizers</span></div>
+    <span class="bh-tag">Application Guide</span>
+    <h1 class="bh-title">Voltage Stabilizer for a Welding Machine: Sizing, Duty Cycle and Inrush</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 7, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/welding-machine-voltage-stabilizer/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/welding-machine-voltage-stabilizer/hero.png" alt="A single-phase YOMIN AVR cabinet and a three-phase TSGC2 regulator, the two formats used to stabilise a welding shop supply" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A <strong>voltage stabilizer for a welding machine</strong> has to do something harder than hold a steady voltage for a heater or a lighting circuit. A welding set draws current in pulses, takes a large inrush when the transformer is energised or the arc is struck, and runs at a power factor well below unity. If you size the stabilizer from the welder's nameplate kVA alone, it will be too small, and the way it fails is usually a trip or a limit at the moment the arc is struck &mdash; not a gentle sag you can measure later.</p>
+
+    <p>The symptoms are recognisable. The welder strikes, the stabilizer drops to bypass or trips, the arc goes out, and the operator strikes again. Or the unit survives but runs hot all afternoon and trips in the middle of a job. Both are sizing problems, and both are avoidable once the load is described correctly.</p>
+
+    <p>This guide sets out what a welding load actually looks like to the supply, the sizing sequence that accounts for duty cycle and inrush, which stabilizer technology suits arc welding, and the installation details that decide whether the unit survives a working shop.</p>
+
+    <h2>What a welding load looks like to the supply</h2>
+
+    <p>Three properties separate a welder from an ordinary load, and each one changes the sizing calculation.</p>
+
+    <ul>
+
+      <li><strong>The load is pulsed, not continuous.</strong> Current flows while the arc is on and stops between passes. The stabilizer is sized for what happens during those pulses and for how much of the working day they occupy, not for an average that flatters the installation.</li>
+
+      <li><strong>The inrush is large and fast.</strong> A transformer-type set presents a magnetising inrush when it is switched on, and a near-short-circuit condition at each arc strike. The stabilizer's current path and its protection have to pass that without limiting.</li>
+
+      <li><strong>The power factor is poor.</strong> Transformer welders draw a heavily inductive current, so the kVA a set takes from the line is much larger than the kW it delivers to the arc. Inverter welders are better but not resistive: they rectify the supply and draw current in short, high-crest pulses.</li>
+
+    </ul>
+
+    <p>The practical effect is that the current a welder draws is not a clean sine wave. A stabilizer that regulates on a true RMS measurement will follow the load better than one measuring average voltage, and a servo unit follows a pulsing load more gracefully than a unit that switches taps in steps. That difference shows up in arc quality before it shows up on any meter.</p>
+
+    <h2>Which welder, which behaviour</h2>
+
+    <table>
+
+      <thead><tr><th>Welder type</th><th>Load character</th><th>Effect on supply voltage</th><th>What the stabilizer has to handle</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Transformer (arc) set, single-phase</td><td>Inductive, high inrush, current discontinuities at strike</td><td>Deep short dips at every strike, visible as light flicker</td><td>Pass the strike current without limiting; accept a low power factor without overheating</td></tr>
+
+        <tr><td>Transformer set, three-phase</td><td>Same, spread across three phases</td><td>Smaller dips than a single-phase set, plus phase imbalance if it is the dominant load</td><td>Balanced three-phase rating, with inrush margin</td></tr>
+
+        <tr><td>Inverter (electronic) set</td><td>Rectified input, high-crest pulses, better power factor</td><td>Higher-frequency distortion rather than deep dips</td><td>Current path rated for crest factor; the waveform distortion itself is not corrected by the stabilizer</td></tr>
+
+        <tr><td>Spot or resistance welder</td><td>Very short, very high current bursts at low duty</td><td>Severe dips, transformer and flicker complaints from neighbours</td><td>Very high short-time current; often better solved at the supply level than by a stabilizer</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Most workshop enquiries we see are the first two rows: a single-phase arc set in a small fabrication shop, or a three-phase set on a feeder shared with other machines. Those two cases size differently, which is why the next section starts from the input rating rather than the welding output.</p>
+
+    <h2>Sizing on duty cycle, not on nameplate kVA</h2>
+
+    <p>Welding equipment is rated for a duty cycle, quoted as a percentage of a ten-minute period. A set rated 60% can weld for six minutes out of ten at its rated output; a 100% set can weld continuously. That number is the difference between a stabilizer that survives and one that cooks.</p>
+
+    <p>The sequence below is the one that produces a number you can order:</p>
+
+    <table>
+
+      <thead><tr><th>Step</th><th>What to establish</th><th>Where it goes wrong</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>1. Input rating at the welding current you actually use</td><td>The set's input kVA or input current at that output setting, from its own data plate</td><td>Using the maximum output rating when the shop runs at half of it, and paying for capacity that is never used</td></tr>
+
+        <tr><td>2. Duty cycle</td><td>The duty cycle declared for that output, and the real one in your shop</td><td>Ignoring duty cycle, then finding the unit thermally limited after an hour of production</td></tr>
+
+        <tr><td>3. Inrush allowance</td><td>A margin for magnetising inrush and arc-strike current, larger for transformer sets than inverter sets</td><td>Sizing at exactly the running figure, so the unit limits on every strike</td></tr>
+
+        <tr><td>4. Power factor</td><td>Whether the quoted kVA already accounts for it &mdash; input kVA usually does, output kW does not</td><td>Converting welding kW to kVA with a resistive assumption</td></tr>
+
+        <tr><td>5. Headroom</td><td>20&ndash;30% above the duty-adjusted figure, more in a hot shop or where several welders share the board</td><td>Running at 100% of rating in an enclosure at 40&nbsp;&deg;C ambient</td></tr>
+
+        <tr><td>6. Input window</td><td>The lowest voltage the shop sees when the welder strikes &mdash; often at the end of a long feeder</td><td>Specifying &plusmn;15% and losing the arc every time a compressor starts</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>As an arithmetic example rather than a product claim: an inverter set with a 7 kVA input rating on a 230 V single-phase supply draws about 30 A while welding, because 7,000 divided by 230 is 30.4. That is the current the stabilizer has to pass continuously during a pass, and the strike adds a short peak on top of it. The same set on a 400 V three-phase supply divides that current across three phases, which is why three-phase welders are easier on the supply and easier to stabilise.</p>
+
+    <h2>Relay or servo for arc welding</h2>
+
+    <table>
+
+      <thead><tr><th></th><th>Relay type</th><th>Servo type</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Behaviour on a pulsing load</td><td>Steps between taps, so the output moves in jumps while the arc is running</td><td>Continuous correction, output follows the error smoothly</td></tr>
+
+        <tr><td>Effect on the arc</td><td>Audible and visible step changes; the operator notices on thin material</td><td>Steadier arc, which matters most at low current settings</td></tr>
+
+        <tr><td>Wear</td><td>Contact wear accelerates on a load that fluctuates constantly</td><td>Brush and carbon wear, inspectable and replaceable</td></tr>
+
+        <tr><td>Sensible use</td><td>Small single-phase sets, occasional use, cost-sensitive jobs</td><td>Production welding, thin sheet, TIG, shops where arc quality is the product</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Where a shop welds thin material or runs TIG, the stepping of a relay unit is not a theoretical concern: it changes the arc. Where the welder is a 30 kVA single-phase set used for structural work at high current, a relay unit can be perfectly adequate, and the money is better spent on cable size and a dedicated circuit.</p>
+
+    <h2>Installation details that decide whether it survives</h2>
+
+    <ul>
+
+      <li><strong>Give the welder its own circuit.</strong> A stabilizer shared with lighting and small power will pass every dip to loads that did not cause it, and the lighting flicker will be blamed on the stabilizer rather than the welder.</li>
+
+      <li><strong>Size the breaker to the welder, not to the stabilizer.</strong> The protective device has to ride through inrush; a breaker chosen for the stabilizer's rating will trip on strike and the shop will conclude the stabilizer is faulty.</li>
+
+      <li><strong>Keep the welding return close to the work.</strong> Current that returns through building steel or a distant earth path finds its way through whatever conductor is available, and a stabilizer enclosure is not part of the welding circuit.</li>
+
+      <li><strong>Ventilate.</strong> A welding shop is hot and often dusty. A stabilizer dissipating heat in a closed corner derates itself, and the symptom appears as a unit that works in winter and trips in summer.</li>
+
+      <li><strong>Provide a bypass.</strong> Brushes and contacts need attention on a schedule. A manual bypass lets the shop keep welding while that happens, which is the difference between maintenance and lost production.</li>
+
+      <li><strong>Check the feeder before blaming the stabilizer.</strong> A long, undersized feeder produces a voltage drop that a stabilizer at the far end cannot recover without running at the top of its range all day.</li>
+
+    </ul>
+
+    <h2>What a stabilizer will not fix on a welding installation</h2>
+
+    <ul>
+
+      <li><strong>Supply capacity.</strong> If the transformer or the feeder cannot deliver the strike current, no stabilizer creates it. The answer is a shorter or larger feeder, or a different welding process.</li>
+
+      <li><strong>Frequency.</strong> Engine-driven welders and generator supplies can drift in frequency; a stabilizer corrects voltage magnitude only.</li>
+
+      <li><strong>Harmonics from inverter welders.</strong> The distortion is generated by the welder's rectifier. A stabilizer corrects the fundamental voltage, not the harmonic content.</li>
+
+      <li><strong>High-frequency interference.</strong> Inverter sets emit noise that couples into control wiring. That is a screening, routing and earthing problem, not a voltage regulation problem.</li>
+
+      <li><strong>Poor work return practice.</strong> A bad work clamp produces an unstable arc that looks like a voltage problem and is not.</li>
+
+    </ul>
+
+    <h2>How YOMIN units fit a welding shop</h2>
+
+    <p>YOMIN builds voltage stabilizers and regulators in the cabinet formats used on small industrial distribution boards. Three items are the ones usually discussed for a welding installation:</p>
+
+    <p>The <a href="/products/voltage-stabilizer-regulator/avr-series-relay-type-30kva-single-phase-fully-automatic-ac-industrial-voltage-regulator-voltage-stabilizer">AVR series relay-type 30 kVA single-phase regulator</a> (item ym-0013), a single-phase cabinet unit for the larger single-phase welding sets found in fabrication shops.</p>
+
+    <p>The <a href="/products/voltage-stabilizer-regulator/high-quality-tsgc2-10kva-three-phase-copper-voltage-stabilizer-380v-ac-automatic-regulator">TSGC2 10 kVA three-phase regulator, 380 V AC</a>, a three-phase copper unit for shops running three-phase welding equipment alongside other machines.</p>
+
+    <p>The <a href="/products/voltage-stabilizer-regulator/three-phase-15kva-tnd-svc-series-power-stabilizer-automatic-voltage-regulator-voltage-stabilizer">three-phase 15 kVA TND/SVC power stabilizer</a> (item ym-0012), for a small three-phase board that feeds a welder plus workshop load.</p>
+
+    <p>These are the published formats and ratings for those items, not a claim that any of them is a welding-specific product. Match the unit against the welder's own input rating, its duty cycle and the strike current before ordering, and tell the supplier that the load is a welder &mdash; a stabilizer specified for a resistive load of the same kVA will be undersized in practice. The wider range sits under <a href="/products/voltage-stabilizer-regulator">voltage stabilizers and regulators</a>, and the sizing logic behind these figures is set out in the <a href="/blog/voltage-stabilizer-sizing-guide">stabilizer sizing guide</a> and the <a href="/blog/servo-voltage-stabilizer-guide">servo stabilizer guide</a>.</p>
+
+    <h2>Frequently asked questions</h2>
+
+    <h3>What size voltage stabilizer do I need for a welding machine?</h3>
+    <p>Size from the welder's input kVA or input current at the output setting you actually use, adjusted for duty cycle, plus a margin for inrush and 20&ndash;30% headroom. Sizing from the nameplate kVA of the welding output, or from the maximum output rating, produces a unit that limits at every arc strike.</p>
+
+    <h3>Why does my stabilizer trip when I strike an arc?</h3>
+    <p>Because the strike is close to a short circuit and the current rises far above the running figure for a fraction of a second. A unit sized on running current, or one whose protection is set for a resistive load, reads that as a fault. The fix is a larger unit, or a protective setting matched to a welding load.</p>
+
+    <h3>Is a servo stabilizer better than a relay type for welding?</h3>
+    <p>For production welding, thin sheet and TIG, yes: continuous correction keeps the arc steadier and avoids the step changes a relay unit makes while welding. For occasional use on a large single-phase set at high current, a relay unit is adequate and cheaper.</p>
+
+    <h3>Will a stabilizer stop the lights flickering when the welder runs?</h3>
+    <p>It will reduce the dip seen by loads downstream of the stabilizer, but only if the stabilizer is rated to pass the strike current. Loads on a separate circuit, or upstream of the stabilizer, still see the dip, so a dedicated welder circuit is part of the answer.</p>
+
+    <h3>Can I run a welding machine and a stabilizer from a generator?</h3>
+    <p>Yes, with care. The generator has to supply the strike current, and the stabilizer's input window has to cover the generator's voltage at light load and under welding load. A welding set is a harder load for a generator than for a transformer supply, so the generator needs more margin than the welder's average demand suggests.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Stabilizing a welding shop supply?</h2>
+    <p>Send the welder type, its input kVA or input current, the duty cycle and the supply voltage you see at the board. We will size the unit on the welding load rather than on a resistive equivalent, and flag if the feeder is the real constraint.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
