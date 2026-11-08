@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/fuse-size-for-transformer/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calibre de fusible para transformador: primario y secundario | Yomin Electric</title>
+<meta name="description" content="Elegir el calibre de un fusible de transformador: corriente a plena carga, irrupci&oacute;n que debe soportar, protecci&oacute;n primaria y secundaria, y comparaci&oacute;n gG, aM y clase J.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Calibre de fusible para transformador: c&oacute;mo dimensionar el primario y el secundario">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://www.yominelectric.com/blog/fuse-size-for-transformer-es">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/fuse-size-for-transformer/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/fuse-size-for-transformer-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/fuse-size-for-transformer">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/fuse-size-for-transformer-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/fuse-size-for-transformer-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/fuse-size-for-transformer-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/fuse-size-for-transformer">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Calibre de fusible para transformador: cómo dimensionar el primario y el secundario",
+      "description": "Elegir el calibre de un fusible de transformador: corriente a plena carga, irrupción que debe soportar, protección primaria y secundaria, y comparación gG, aM y clase J.",
+      "image": "https://www.yominelectric.com/assets/images/blog/fuse-size-for-transformer/hero.png",
+      "datePublished": "2026-11-08",
+      "dateModified": "2026-11-08",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/fuse-size-for-transformer-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "es",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué calibre de fusible para un transformador de 100 kVA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 400 V trifásico la corriente primaria a plena carga es 144 A, así que el siguiente calibre normalizado es 160 A: un gG NH00 de 160 A es la opción habitual. Ese calibre también soporta la irrupción de un transformador seco típico. A 20 kV el mismo transformador consume unos 2,9 A en el primario, lo que exige un cartucho de media tensión elegido por coordinación, no un aparato de 160 A."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué mi transformador funde fusibles al conectar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Porque se le pide al fusible que soporte la irrupción magnetizante, que alcanza 8–12 veces la corriente nominal durante unos ciclos. Si el calibre se eligió solo por la corriente a plena carga, la curva del fusible puede pasar por ese pico. Lea la curva a 0,02–0,1 s antes de cambiar nada; si el calibre es adecuado, ensaye el aislamiento del devanado en lugar de montar un fusible mayor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hacen falta fusibles en el primario y en el secundario?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A menudo sí, y protegen cosas distintas. El primario protege el transformador y su cable de alimentación; el secundario protege el cable secundario y el cuadro de distribución. Cuando están ambos deben coordinarse para que actúe primero el secundario ante un defecto aguas abajo; si no, un defecto secundario deja sin tensión todo el cuadro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo poner un fusible 1,5 veces mayor para evitar disparos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Solo si el cálculo de irrupción demuestra que el calibre original era pequeño, y solo dentro del máximo que permita su reglamento de instalación. Un fusible mayor reduce la protección del cable y del devanado, así que es una decisión que necesita la curva y el reglamento, no un paso de prueba y error."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Un fusible gG protege un transformador frente a sobrecarga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Los fusibles gG tienen a la vez elemento de sobrecarga y de cortocircuito, y por eso son la opción por defecto en baja tensión. Ese elemento de sobrecarga es también la razón por la que el calibre no puede subirse demasiado: un fusible lo bastante grande para no ver nunca la irrupción puede ser demasiado grande para proteger el devanado."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Fusibles y protecci&oacute;n</span></div>
+    <span class="bh-tag">Gu&iacute;a de selecci&oacute;n</span>
+    <h1 class="bh-title">Calibre de fusible para transformador: c&oacute;mo dimensionar el primario y el secundario</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>8 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>12 min de lectura</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/fuse-size-for-transformer/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/fuse-size-for-transformer/hero.png" alt="Tres cartuchos fusibles NH1 aR 250&nbsp;A 48&nbsp;V CC marcados IEC&nbsp;60269-4, montados en una base portafusibles tripolar YOMIN" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Para <strong>elegir el calibre de un fusible de transformador</strong>, parta de la corriente a plena carga del transformador en el lado que protege el fusible, tome el calibre normalizado inmediatamente superior o igual y compruebe despu&eacute;s que la curva tiempo-corriente del fusible queda por encima de la corriente de irrupci&oacute;n durante la primera d&eacute;cima de segundo. Para un transformador de 100&nbsp;kVA a 400&nbsp;V trif&aacute;sico esa corriente son 144&nbsp;A, y un fusible gG de 160&nbsp;A en cuerpo NH00 es el punto de partida habitual.</p>
+
+    <p>El error que cuesta dinero no es la aritm&eacute;tica, es el orden de las operaciones. La mitad de los problemas de fusibles en transformadores viene de dimensionar por kVA suponiendo que la cifra se traslada a trav&eacute;s de la relaci&oacute;n de transformaci&oacute;n. La otra mitad viene de elegir un fusible que protege perfectamente el transformador y dispara cada vez que se energiza la planta, porque nadie mir&oacute; la curva de irrupci&oacute;n.</p>
+
+    <p>Esta gu&iacute;a cubre la f&oacute;rmula de la corriente a plena carga, una tabla que se lee directamente para potencias trif&aacute;sicas normalizadas, la ventana de irrupci&oacute;n que fija el m&iacute;nimo, la diferencia entre protecci&oacute;n primaria y secundaria y qu&eacute; familia de fusibles encaja en cada servicio. Todos los calibres siguientes son recomendaciones de dise&ntilde;o: mandan las curvas de fusi&oacute;n publicadas por el fabricante, y el reglamento de instalaci&oacute;n aplicable fija el calibre m&aacute;ximo permitido.</p>
+
+    <h2>Partir de la corriente a plena carga, nunca de los kVA</h2>
+    <p>La placa de caracter&iacute;sticas da una potencia aparente en kVA. El fusible trabaja sobre una corriente. Solo son intercambiables cuando se fija la tensi&oacute;n, y la tensi&oacute;n del primario de un transformador de distribuci&oacute;n no es la del secundario.</p>
+
+    <p>Dos ejemplos muestran la distancia entre ambos n&uacute;meros para la misma potencia:</p>
+
+    <ul>
+
+      <li><strong>100&nbsp;kVA a 400&nbsp;V trif&aacute;sico.</strong> La corriente a plena carga es de unos 144&nbsp;A. El siguiente calibre normalizado es 160&nbsp;A.</li>
+
+      <li><strong>Los mismos 100&nbsp;kVA a 20&nbsp;kV en el primario.</strong> La corriente primaria a plena carga es de unos 2,9&nbsp;A. El fusible primario es un cartucho de media tensi&oacute;n, no un aparato de 160&nbsp;A, y se elige para coordinarse con el aparato de baja tensi&oacute;n aguas abajo y no para el transformador solo.</li>
+
+    </ul>
+
+    <p>Dimensionar un fusible primario de 20&nbsp;kV a partir de una corriente de 400&nbsp;V da un aparato unas cincuenta veces demasiado grande, y ning&uacute;n cuidado en el lado de baja tensi&oacute;n lo compensa.</p>
+
+    <p>Hay adem&aacute;s una advertencia sobre los propios kVA: un transformador se dimensiona normalmente para 40&nbsp;&deg;C de ambiente, el fusible no. Si el transformador est&aacute; en una sala caliente, la corriente continua &uacute;til es inferior a la de placa antes de elegir nada, y el fusible debe elegirse para la corriente que la instalaci&oacute;n llevar&aacute; realmente.</p>
+    <h2>La f&oacute;rmula y una tabla que se lee directamente</h2>
+    <p>Para un transformador trif&aacute;sico la corriente a plena carga es:</p>
+
+    <p><strong>I = kVA &times; 1000 / (&radic;3 &times; U)</strong>, que a 400&nbsp;V queda <strong>I &asymp; kVA &times; 1,44</strong>.</p>
+
+    <p>Para un transformador monof&aacute;sico es simplemente <strong>I = kVA &times; 1000 / U</strong>, que a 230&nbsp;V queda <strong>I &asymp; kVA &times; 4,35</strong>.</p>
+
+    <p>Trif&aacute;sico 400&nbsp;V, siguiente calibre normalizado por encima de la corriente a plena carga:</p>
+
+    <table>
+
+      <thead><tr><th>Transformador (kVA)</th><th>Corriente a plena carga (A)</th><th>Calibre siguiente (A)</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>25</td><td>36,1</td><td>40</td></tr>
+
+        <tr><td>50</td><td>72,2</td><td>80</td></tr>
+
+        <tr><td>100</td><td>144,3</td><td>160</td></tr>
+
+        <tr><td>160</td><td>230,9</td><td>250</td></tr>
+
+        <tr><td>200</td><td>288,7</td><td>315</td></tr>
+
+        <tr><td>250</td><td>360,8</td><td>400</td></tr>
+
+        <tr><td>315</td><td>454,7</td><td>500</td></tr>
+
+        <tr><td>400</td><td>577,4</td><td>630</td></tr>
+
+        <tr><td>630</td><td>909,4</td><td>1&nbsp;000</td></tr>
+
+        <tr><td>800</td><td>1&nbsp;154,7</td><td>1&nbsp;250</td></tr>
+
+        <tr><td>1&nbsp;000</td><td>1&nbsp;443,4</td><td>1&nbsp;600</td></tr>
+
+        <tr><td>1&nbsp;250</td><td>1&nbsp;804,2</td><td>2&nbsp;000</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Monof&aacute;sico 230&nbsp;V, la misma l&oacute;gica:</p>
+
+    <table>
+
+      <thead><tr><th>Transformador (kVA)</th><th>Corriente a plena carga (A)</th><th>Calibre siguiente (A)</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>10</td><td>43,5</td><td>50</td></tr>
+
+        <tr><td>15</td><td>65,2</td><td>80</td></tr>
+
+        <tr><td>25</td><td>108,7</td><td>125</td></tr>
+
+        <tr><td>50</td><td>217,4</td><td>250</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Son puntos de partida, no respuestas. El calibre normalizado superior a la corriente a plena carga es el fusible m&aacute;s peque&ntilde;o que no fundir&aacute; en r&eacute;gimen continuo. Saber si adem&aacute;s soporta la irrupci&oacute;n y si sigue siendo lo bastante peque&ntilde;o para proteger el cable exige las dos comprobaciones siguientes.</p>
+    <h2>La irrupci&oacute;n fija el m&iacute;nimo, no la carga</h2>
+    <p>Un transformador conectado con el secundario abierto absorbe una corriente muchas veces superior a su calibre durante un instante muy breve. El n&uacute;cleo satura en el primer semiciclo, la corriente de magnetizaci&oacute;n da un pico y luego decae en unos pocos ciclos mientras el flujo se estabiliza. Seg&uacute;n el dise&ntilde;o y el punto de la onda de tensi&oacute;n en que cierra el interruptor, el pico puede llegar a 8&ndash;12 veces la corriente nominal, y algo m&aacute;s en unidades peque&ntilde;as.</p>
+
+    <p>Ese pulso dura una fracci&oacute;n de segundo, pero un fusible responde a &eacute;l. La zona &uacute;til de la curva tiempo-corriente est&aacute; alrededor de 0,01 a 0,1&nbsp;s, donde un fusible gG necesita unas 5 a 8 veces su calibre para fundir. Un gG de 160&nbsp;A atraviesa por tanto un pico de irrupci&oacute;n de unos 1&nbsp;000&nbsp;A sin fundir: por eso 160&nbsp;A aguanta un transformador de 100&nbsp;kVA que consume 144&nbsp;A en carga pero supera ampliamente los 1&nbsp;000&nbsp;A al conectar.</p>
+
+    <p>Tres consecuencias:</p>
+
+    <ul>
+
+      <li><strong>La irrupci&oacute;n fija el m&iacute;nimo.</strong> Si la curva del fusible elegido fundiera dentro de la ventana de irrupci&oacute;n, hay que subir de calibre aunque la corriente a plena carga ya parezca generosa.</li>
+
+      <li><strong>La ventana es corta, la corriente no.</strong> El fusible debe soportar el pico, no la media. Por eso un fusible correcto para una carga resistiva dispara con un transformador de la misma potencia.</li>
+
+      <li><strong>La repetici&oacute;n cuenta.</strong> Un transformador energizado varias veces al d&iacute;a acumula preda&ntilde;o si el fusible trabaja cerca de su punto de fusi&oacute;n en cada conexi&oacute;n. Un calibre que aguanta un arranque en fr&iacute;o puede no aguantar un a&ntilde;o de arranques.</li>
+
+    </ul>
+
+    <p>Los fusibles dise&ntilde;ados para este servicio existen por algo: los clase J con retardo en Norteam&eacute;rica y los aM en la pr&aacute;ctica IEC desplazan la curva a la derecha en la zona de irrupci&oacute;n. El equilibrio se comenta m&aacute;s abajo.</p>
+    <h2>Los fusibles primario y secundario protegen cosas distintas</h2>
+    <p>La protecci&oacute;n de los dos lados de un transformador no es intercambiable, y un cuadro con ambas no est&aacute; sobreprotegido por casualidad.</p>
+
+    <table>
+
+      <thead><tr><th>Posici&oacute;n</th><th>Qu&eacute; protege</th><th>Se dimensiona desde</th><th>Qu&eacute; no puede hacer</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Fusible primario</td><td>El devanado del transformador y el cable de alimentaci&oacute;n, frente a un defecto interno o en los bornes secundarios</td><td>La corriente primaria a plena carga y luego la comprobaci&oacute;n de irrupci&oacute;n</td><td>Proteger el cable secundario ni las cargas aguas abajo</td></tr>
+
+        <tr><td>Fusible secundario</td><td>El cable secundario y el cuadro de distribuci&oacute;n alimentado por el transformador</td><td>La corriente secundaria a plena carga, o la del cable si es menor</td><td>Detectar un defecto entre espiras en el devanado primario</td></tr>
+
+        <tr><td>Ambos a la vez</td><td>Un defecto secundario lo despeja el aparato secundario y el resto del cuadro queda con tensi&oacute;n</td><td>Coordinados para que act&uacute;e primero el secundario</td><td>Sustituir un dispositivo de defecto a tierra o de temperatura del transformador</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>La coordinaci&oacute;n importa m&aacute;s que cada calibre por separado. Si el fusible secundario es m&aacute;s lento que el primario ante un defecto en una salida secundaria, despeja el primario y deja sin tensi&oacute;n todo el cuadro: una molestia que se atribuye al calibre del fusible cuando el problema es la coordinaci&oacute;n.</p>
+
+    <p>La pr&aacute;ctica norteamericana de la NEC&nbsp;450.3 limita el aparato primario al 125&nbsp;% de la corriente primaria a plena carga, y el reglamento permite un calibre mayor cuando la irrupci&oacute;n del transformador no deja mantener el 125&nbsp;%. La pr&aacute;ctica IEC llega al mismo resultado mediante la curva tiempo-corriente gG y las tablas de selectividad del fabricante. En ambos casos el m&aacute;ximo permitido y la exigencia de irrupci&oacute;n deben cumplirse a la vez, y cuando chocan cambia el dise&ntilde;o, no el reglamento.</p>
+    <h2>gG, aM, clase J, cuchilla y aR comparados</h2>
+    <p>Cinco familias aparecen en el trabajo con transformadores, y usar una donde corresponde otra es el error de especificaci&oacute;n m&aacute;s frecuente despu&eacute;s del de los kVA.</p>
+
+    <table>
+
+      <thead><tr><th>Tipo de fusible</th><th>Servicio t&iacute;pico en un transformador</th><th>Soporta la irrupci&oacute;n</th><th>Protecci&oacute;n de sobrecarga</th><th>Notas</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>gG, cuchilla NH o cil&iacute;ndrico</td><td>Protecci&oacute;n primaria y secundaria de transformadores secos de baja tensi&oacute;n</td><td>S&iacute;, en torno a 1,25&ndash;1,5 veces la corriente a plena carga</td><td>S&iacute;</td><td>La opci&oacute;n por defecto. Los cuerpos NH suelen estar dados para unos 100&nbsp;kA a 400&ndash;500&nbsp;V CA, lo que cubre la mayor&iacute;a de niveles de defecto en baja tensi&oacute;n</td></tr>
+
+        <tr><td>aM</td><td>Protecci&oacute;n de cortocircuito junto a un contactor o arrancador</td><td>S&iacute;, con holgura</td><td>No &mdash; el elemento de sobrecarga se omite a prop&oacute;sito</td><td>Nunca usar un aM como &uacute;nica protecci&oacute;n: otro dispositivo debe cubrir la sobrecarga</td></tr>
+
+        <tr><td>Clase J con retardo</td><td>Cuadros norteamericanos hasta 600&nbsp;V</td><td>S&iacute;, por dise&ntilde;o</td><td>S&iacute;, con retardo</td><td>Compacto y limitador; la respuesta est&aacute;ndar cuando aplica la NEC</td></tr>
+
+        <tr><td>Fusible de cuchilla sobre base</td><td>Distribuci&oacute;n de media tensi&oacute;n, en poste o en armario de intemperie</td><td>S&iacute;</td><td>Limitada</td><td>Corte visible, cartucho reemplazable, elegido para coordinarse con el aparato de baja tensi&oacute;n</td></tr>
+
+        <tr><td>aR, semiconductor o CC fotovoltaica</td><td>Cadenas fotovoltaicas y enlaces de continua, no primarios de alterna</td><td>No aplica</td><td>No</td><td>R&aacute;pido, apto para continua, sin elemento de sobrecarga. Familia equivocada para un transformador de alterna</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>El patr&oacute;n es simple. El gG es la respuesta general, con sobrecarga y cortocircuito. Todo lo dem&aacute;s es especialista, y cada especialidad quita algo: el aM quita la sobrecarga, el aR quita la sobrecarga y la aptitud para alterna, el fusible de cuchilla traslada la respuesta a media tensi&oacute;n.</p>
+    <h2>La base, la envolvente y la temperatura</h2>
+    <p>Un fusible se calibra en un entorno de referencia, y la base donde se monta forma parte del circuito. Tres efectos pr&aacute;cticos desplazan el calibre utilizable:</p>
+
+    <ul>
+
+      <li><strong>La base tiene su propio calentamiento.</strong> Un portafusibles escaso para la corriente a&ntilde;ade resistencia de contacto y calor, y el elemento funde entonces m&aacute;s caliente de lo que supone la curva. Un fusible de 160&nbsp;A en una base de 160&nbsp;A no tiene margen; el tama&ntilde;o de cuerpo superior s&iacute;.</li>
+
+      <li><strong>Temperatura de la envolvente.</strong> Un fusible en un armario cerrado a 55&nbsp;&deg;C de ambiente ya est&aacute; a medio camino de su punto de fusi&oacute;n antes de que circule corriente. Los fabricantes publican factores de derrateo por encima del ambiente de referencia, y no son opcionales en una sala caliente.</li>
+
+      <li><strong>Agrupamiento.</strong> Varios fusibles juntos en una envolvente se calientan entre s&iacute;. Una fila de seis fusibles de 160&nbsp;A en una caja peque&ntilde;a no son seis fusibles de 160&nbsp;A independientes.</li>
+
+    </ul>
+
+    <p>Nada de esto cambia la aritm&eacute;tica; cambia el margen. Si el c&aacute;lculo cae exactamente sobre un calibre normalizado, los efectos anteriores lo har&aacute;n desbordar, y la respuesta pr&aacute;ctica es el calibre superior, siempre que el cable y el nivel de defecto lo permitan.</p>
+    <h2>Cuatro errores que provocan disparos innecesarios</h2>
+    <p>Cuando un fusible de transformador act&uacute;a al conectar en lugar de ante un defecto, la causa suele ser una de estas:</p>
+
+    <ul>
+
+      <li><strong>Dimensionar por kVA en lugar de por corriente.</strong> El error m&aacute;s com&uacute;n y el m&aacute;s f&aacute;cil de ver: divida los kVA por la tensi&oacute;n y el calibre deja de parecer generoso.</li>
+
+      <li><strong>Ignorar el punto de irrupci&oacute;n en la curva.</strong> Un calibre correcto a 1,3 veces la corriente a plena carga puede seguir siendo demasiado r&aacute;pido a 8 veces durante 20&nbsp;ms. Lea la curva a 0,02&nbsp;s, no a 10&nbsp;s.</li>
+
+      <li><strong>Usar un fusible r&aacute;pido donde toca uno con retardo.</strong> Un gG elegido solo por la corriente permanente, en una aplicaci&oacute;n que necesitaba la zona de retardo, actuar&aacute; en cada conexi&oacute;n.</li>
+
+      <li><strong>Un transformador que falla en lugar de un fusible que falla.</strong> Si el fusible act&uacute;a repetidamente en el mismo punto del ciclo de conexi&oacute;n y el calibre es manifiestamente suficiente, el paso siguiente es un ensayo de resistencia de aislamiento y una comprobaci&oacute;n de relaci&oacute;n de transformaci&oacute;n, no un fusible mayor. Sobredimensionar un fusible para que no act&uacute;e oculta un defecto de devanado hasta que se convierte en incendio.</li>
+
+    </ul>
+
+    <p>Ese &uacute;ltimo punto merece decirse con claridad: subir el calibre es una respuesta leg&iacute;tima a la irrupci&oacute;n y una respuesta ileg&iacute;tima a un defecto. La distinci&oacute;n es el ensayo de aislamiento, y cuesta menos que sus consecuencias.</p>
+    <h2>Transformadores alimentados desde continua o fotovoltaica</h2>
+    <p>La continua no se comporta como la alterna en el fusible. No hay cruce por cero natural, as&iacute; que el arco de continua se mantiene, y un fusible previsto para alterna no despeja un defecto de continua a la misma tensi&oacute;n. Un fusible apto para continua tiene otro elemento y otro relleno, y su tensi&oacute;n asignada solo vale en continua.</p>
+
+    <p>En fotovoltaica el servicio tambi&eacute;n difiere del de un primario de transformador: un fusible de cadena protege el cable y los m&oacute;dulos frente a la corriente inversa de las otras cadenas, y no tiene elemento de sobrecarga. Por eso los fusibles de cadena PV son de tipo aR o gPV con tensi&oacute;n asignada en continua, y por eso un gG del lado de alterna no se puede sustituir. Cuando hay un transformador entre el campo PV y la red, los dos servicios siguen separados: fusibles de continua en el lado del campo, gG o el aparato de alterna aplicable en el lado del transformador.</p>
+
+    <p>La fotograf&iacute;a del inicio de esta p&aacute;gina muestra un cartucho YOMIN NH1 aR marcado 250&nbsp;A, 48&nbsp;V CC e IEC&nbsp;60269-4: un fusible de cuchilla apto para continua, que es la familia correcta para un enlace de bater&iacute;a o PV y la equivocada para un primario de transformador de 400&nbsp;V CA. Los dos se parecen en un cat&aacute;logo y se comportan de forma muy distinta ante un defecto.</p>
+    <h2>Fusibles para protección de transformador de YOMIN</h2>
+    <p>YOMIN suministra los formatos de fusible que aparecen en cuadros de transformador de baja tensi&oacute;n, armarios de intemperie y cajas de distribuci&oacute;n fotovoltaica. Cuatro art&iacute;culos cubren la mayor&iacute;a de las consultas que siguen a este art&iacute;culo:</p>
+
+    <p>El <a href="/products/fuse-protection/nh00-copper-low-voltage-160-amp-3p-polyester-knife-blade-fuse">fusible de cuchilla NH00 de baja tensi&oacute;n 160&nbsp;A tripolar, con elemento de cobre</a> (referencia ym-0378) es el formato NH usado para proteger transformadores y salidas en cuadros de baja tensi&oacute;n, con elemento de cobre y cuerpo de poli&eacute;ster, declarado para protecci&oacute;n de sobrecarga y cortocircuito.</p>
+
+    <p>La <a href="/products/fuse-protection/300a-j-type-heavy-duty-fuse-cut-out-base-lv-fuse-switch-disconnector">base portafusibles de cuchilla tipo J de 300&nbsp;A, seccionador de baja tensi&oacute;n</a> (referencia ym-0429) combina el portacartucho con funci&oacute;n de seccionamiento, que es lo que necesita un equipo de mantenimiento cuando hay que cambiar un fusible en un cuadro en servicio.</p>
+
+    <p>El <a href="/products/fuse-protection/high-low-breaking-capacity-1p-n-60-80a-cut-out-fuse-for-low-voltage-usage-rated-500v">fusible de cuchilla 1P+N de 60/80&nbsp;A asignado 500&nbsp;V</a> (referencia ym-0266) es el formato monof&aacute;sico para cuadros de distribuci&oacute;n peque&ntilde;os y acometidas.</p>
+
+    <p>El <a href="/products/fuse-protection/nh1-80a-125a-250a-48v-pv-dc-solar-fuse-for-distribution-box">fusible solar NH1 de 80&nbsp;A / 125&nbsp;A / 250&nbsp;A 48&nbsp;V CC</a> (referencia ym-0066) es el fusible de cuchilla apto para continua destinado a fotovoltaica y distribuci&oacute;n de bater&iacute;as, y es el art&iacute;culo que aparece en la fotograf&iacute;a superior.</p>
+
+    <p>Esos son los calibres, materiales y tipos publicados para los art&iacute;culos. El calibre correcto para su transformador sigue dependiendo de su corriente a plena carga, su irrupci&oacute;n y su nivel de defecto: env&iacute;e los kVA, la relaci&oacute;n de transformaci&oacute;n, el ambiente y el nivel de defecto, y la selecci&oacute;n se confirma sobre la curva y no sobre una l&iacute;nea de cat&aacute;logo. La gama completa est&aacute; en <a href="/products/fuse-protection">fusibles y protecci&oacute;n</a>; para el m&eacute;todo general de selecci&oacute;n vea la <a href="/blog/fuse-and-protection-selection-guide">gu&iacute;a de selecci&oacute;n de fusibles</a> y <a href="/blog/fuse-vs-circuit-breaker">fusible frente a interruptor autom&aacute;tico</a>.</p>
+    <h2>Preguntas frecuentes</h2>
+    <h3>&iquest;Qu&eacute; calibre de fusible para un transformador de 100&nbsp;kVA?</h3>
+    <p>A 400&nbsp;V trif&aacute;sico la corriente primaria a plena carga es 144&nbsp;A, as&iacute; que el siguiente calibre normalizado es 160&nbsp;A: un gG NH00 de 160&nbsp;A es la opci&oacute;n habitual. Ese calibre tambi&eacute;n soporta la irrupci&oacute;n de un transformador seco t&iacute;pico. A 20&nbsp;kV el mismo transformador consume unos 2,9&nbsp;A en el primario, lo que exige un cartucho de media tensi&oacute;n elegido por coordinaci&oacute;n, no un aparato de 160&nbsp;A.</p>
+
+    <h3>&iquest;Por qu&eacute; mi transformador funde fusibles al conectar?</h3>
+    <p>Porque se le pide al fusible que soporte la irrupci&oacute;n magnetizante, que alcanza 8&ndash;12 veces la corriente nominal durante unos ciclos. Si el calibre se eligi&oacute; solo por la corriente a plena carga, la curva del fusible puede pasar por ese pico. Lea la curva a 0,02&ndash;0,1&nbsp;s antes de cambiar nada; si el calibre es adecuado, ensaye el aislamiento del devanado en lugar de montar un fusible mayor.</p>
+
+    <h3>&iquest;Hacen falta fusibles en el primario y en el secundario?</h3>
+    <p>A menudo s&iacute;, y protegen cosas distintas. El primario protege el transformador y su cable de alimentaci&oacute;n; el secundario protege el cable secundario y el cuadro de distribuci&oacute;n. Cuando est&aacute;n ambos deben coordinarse para que act&uacute;e primero el secundario ante un defecto aguas abajo; si no, un defecto secundario deja sin tensi&oacute;n todo el cuadro.</p>
+
+    <h3>&iquest;Puedo poner un fusible 1,5 veces mayor para evitar disparos?</h3>
+    <p>Solo si el c&aacute;lculo de irrupci&oacute;n demuestra que el calibre original era peque&ntilde;o, y solo dentro del m&aacute;ximo que permita su reglamento de instalaci&oacute;n. Un fusible mayor reduce la protecci&oacute;n del cable y del devanado, as&iacute; que es una decisi&oacute;n que necesita la curva y el reglamento, no un paso de prueba y error.</p>
+
+    <h3>&iquest;Un fusible gG protege un transformador frente a sobrecarga?</h3>
+    <p>S&iacute;. Los fusibles gG tienen a la vez elemento de sobrecarga y de cortocircuito, y por eso son la opci&oacute;n por defecto en baja tensi&oacute;n. Ese elemento de sobrecarga es tambi&eacute;n la raz&oacute;n por la que el calibre no puede subirse demasiado: un fusible lo bastante grande para no ver nunca la irrupci&oacute;n puede ser demasiado grande para proteger el devanado.</p>
+
+  </section>
+
+  <section class="cta-section">
+    <h2>&iquest;Est&aacute; eligiendo los fusibles de un cuadro de transformador?</h2>
+    <p>Env&iacute;e la potencia en kVA, la relaci&oacute;n de transformaci&oacute;n, el ambiente dentro del cuadro, el nivel de defecto y si el fusible va en el primario o en el secundario. Le respondemos con un calibre, la familia de fusibles adecuada al servicio y la base o seccionador que permite sustituirlo con seguridad.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotizaci&oacute;n</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

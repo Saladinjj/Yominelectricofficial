@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/busbar-current-carrying-capacity/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intensit&eacute; admissible d'une barre omnibus&nbsp;: tableau cuivre et aluminium | Yomin Electric</title>
+<meta name="description" content="Intensit&eacute; admissible d'une barre omnibus sans approximation&nbsp;: r&egrave;gle des A/mm2, tableau des sections, effet de peau, d&eacute;classement thermique et court-circuit.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Intensit&eacute; admissible d'une barre omnibus&nbsp;: tableau pour le cuivre et l'aluminium">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://www.yominelectric.com/blog/busbar-current-carrying-capacity-fr">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/busbar-current-carrying-capacity/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Intensité admissible d'une barre omnibus : tableau pour le cuivre et l'aluminium",
+      "description": "Intensité admissible d'une barre omnibus sans approximation : règle des A/mm2, tableau des sections, effet de peau, déclassement thermique et court-circuit.",
+      "image": "https://www.yominelectric.com/assets/images/blog/busbar-current-carrying-capacity/hero.png",
+      "datePublished": "2026-11-08",
+      "dateModified": "2026-11-08",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/busbar-current-carrying-capacity-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "fr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien d’ampères une barre omnibus cuivre transporte-t-elle par mm² ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En valeur de projet, 2 à 4 A/mm², avec 3 A/mm² comme milieu raisonnable pour une barre à l’air libre et 2 à 2,5 A/mm² pour une barre en armoire fermée ou au-delà de 400 mm². C’est une estimation de conception : l’intensité utilisable dépend de l’ambiance, de l’enveloppe, du montage et de l’isolation, et doit venir du tableau du fournisseur ou d’un essai d’échauffement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Une barre cuivre de 50 × 10 mm suffit-elle pour 1 500 A ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sur le papier oui : 500 mm² à 3 A/mm² font 1 500 A. Dans votre armoire, cela dépend de l’ambiance et de l’enveloppe. Une armoire fermée à 55 °C, ou deux barres en parallèle avec un entrefer étroit, font descendre la valeur utilisable nettement sous 1 500 A. Vérifiez le déclassement avant de figer le plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle intensité une barre aluminium transporte-t-elle par rapport au cuivre ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Environ 61 % de la valeur du cuivre à section égale, l’aluminium conduisant environ 61 % aussi bien en volume. Pour égaler une barre cuivre il faut environ 1,6 fois la section, pour un poids encore à peu près deux fois plus faible. La préparation des connexions compte davantage avec l’aluminium à cause de la couche d’oxyde."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi ma barre chauffe-t-elle aux connexions et pas au milieu ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parce que le problème est généralement la résistance de contact, pas celle de la barre. Boulons insuffisamment serrés, surface aluminium non préparée, revêtements incompatibles ou connexion desserrée par les cycles thermiques ajoutent de la résistance à un endroit où la surface de dissipation est très faible. Mesurez la température à la connexion sous charge et comparez-la à celle du milieu de la barre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il vérifier la tenue au court-circuit en plus du courant permanent ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Ce sont deux limites séparées. Le courant permanent fixe la température de service ; le courant de défaut fixe la section minimale et la robustesse des supports. Une barre dimensionnée seulement pour le courant de charge peut passer le contrôle thermique lors d’un défaut et être quand même arrachée de ses isolateurs, ou recuire à la connexion."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Barres omnibus</span></div>
+    <span class="bh-tag">Guide technique</span>
+    <h1 class="bh-title">Intensit&eacute; admissible d'une barre omnibus&nbsp;: tableau pour le cuivre et l'aluminium</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>8 novembre 2026</span>
+      <span class="divider"></span>
+      <span>12 min de lecture</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/busbar-current-carrying-capacity/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/busbar-current-carrying-capacity/hero.png" alt="Barre omnibus aluminium rev&ecirc;tue d'&eacute;poxy avec platines de connexion cuivre, &agrave; c&ocirc;t&eacute; d'une plaque de barres composites lamin&eacute;es, deux produits YOMIN" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>L&rsquo;<strong>intensit&eacute; admissible d&rsquo;une barre omnibus</strong> n&rsquo;est pas un chiffre unique imprim&eacute; sur une fiche technique. Pour une barre en cuivre dans des conditions d&rsquo;appareillage courantes, la valeur de travail se situe autour de <strong>2 &agrave; 4&nbsp;A par mm&sup2; de section</strong>, et l&rsquo;&eacute;cart &agrave; l&rsquo;int&eacute;rieur de cette plage vient de l&rsquo;installation, pas du m&eacute;tal. &Agrave; 3&nbsp;A/mm&sup2;, une barre cuivre de 50 &times; 10&nbsp;mm transporte environ 1&nbsp;500&nbsp;A. La m&ecirc;me barre, dans une enveloppe ferm&eacute;e &agrave; 55&nbsp;&deg;C d&rsquo;ambiance, mont&eacute;e en parall&egrave;le avec une seconde et aliment&eacute;e en 50&nbsp;Hz, en transporte nettement moins.</p>
+
+    <p>Cette page donne le calcul, un tableau directement lisible pour les sections standard et les quatre effets qui &eacute;loignent le r&eacute;sultat r&eacute;el du tableau. Elle est &eacute;crite pour celui qui doit signer le plan&nbsp;: le constructeur d&rsquo;armoires, l&rsquo;int&eacute;grateur de packs batteries, l&rsquo;ing&eacute;nieur qui remplace une barre noircie aux connexions.</p>
+
+    <p>Un avertissement avant les chiffres. Toutes les valeurs ci-dessous sont des estimations de conception issues d&rsquo;une densit&eacute; de courant explicite. Elles ne constituent pas une caract&eacute;ristique certifi&eacute;e par essai pour un produit donn&eacute;, et ne remplacent pas le tableau d&rsquo;intensit&eacute; que votre fournisseur publie pour la barre, le rev&ecirc;tement, l&rsquo;isolation et le mode de fixation exacts que vous achetez.</p>
+
+    <h2>La r&eacute;ponse courte&nbsp;: des amp&egrave;res par millim&egrave;tre carr&eacute;</h2>
+    <p>La densit&eacute; de courant est le point de d&eacute;part honn&ecirc;te, parce qu&rsquo;elle survit &agrave; un changement de section. Choisissez une densit&eacute;, multipliez par la section, et vous obtenez une premi&egrave;re estimation en une ligne&nbsp;:</p>
+
+    <p><strong>I &asymp; J &times; S</strong>, o&ugrave; <em>J</em> est la densit&eacute; de courant en A/mm&sup2; et <em>S</em> la section de la barre en mm&sup2; (largeur &times; &eacute;paisseur).</p>
+
+    <p>Deux cas concrets montrent la plage&nbsp;:</p>
+
+    <ul>
+
+      <li><strong>Une barre cuivre de 20 &times; 5&nbsp;mm.</strong> Section 100&nbsp;mm&sup2;. &Agrave; 3&nbsp;A/mm&sup2; elle transporte environ 300&nbsp;A. &Agrave; 4&nbsp;A/mm&sup2; elle en transporte environ 400&nbsp;A, et cette valeur haute n&rsquo;est r&eacute;aliste que sur un trajet court, bien ventil&eacute;, avec une barre nue et une ambiance fra&icirc;che.</li>
+
+      <li><strong>Une barre cuivre de 100 &times; 10&nbsp;mm.</strong> Section 1&nbsp;000&nbsp;mm&sup2;. L&rsquo;arithm&eacute;tique annonce 3&nbsp;000&nbsp;A &agrave; 3&nbsp;A/mm&sup2;. La r&eacute;alit&eacute; dit autre chose&nbsp;: on ne demande presque jamais &agrave; une barre unique de cette section de porter plus d&rsquo;environ 1&nbsp;600&nbsp;A dans une armoire r&eacute;elle, parce que la chaleur doit sortir par une surface qui a beaucoup moins augment&eacute; que le m&eacute;tal &agrave; l&rsquo;int&eacute;rieur.</li>
+
+    </ul>
+
+    <p>Ce deuxi&egrave;me cas explique pourquoi la r&egrave;gle empirique exige tout un article derri&egrave;re elle. La densit&eacute; n&rsquo;est pas une constante du cuivre&nbsp;: elle baisse quand la barre s&rsquo;&eacute;paissit, quand l&rsquo;armoire se resserre et quand l&rsquo;ambiance monte.</p>
+    <h2>Les trois limites qui fixent la vraie valeur</h2>
+    <p>Une barre est sous-dimensionn&eacute;e ou surdimensionn&eacute;e par rapport &agrave; trois limites diff&eacute;rentes. Seule la premi&egrave;re gouverne en g&eacute;n&eacute;ral, mais on ne peut le savoir sans avoir v&eacute;rifi&eacute; les trois.</p>
+
+    <ul>
+
+      <li><strong>L&rsquo;&eacute;chauffement.</strong> C&rsquo;est normalement la limite d&eacute;terminante. Les barres cuivre nues en appareillage sont couramment con&ccedil;ues pour un &eacute;chauffement de 60 &agrave; 70&nbsp;K au-dessus de l&rsquo;ambiance, et les barres isol&eacute;es sont tenues par la classe de temp&eacute;rature de leur isolation, typiquement 90 &agrave; 105&nbsp;&deg;C pour les mat&eacute;riaux utilis&eacute;s sur barres. La barre doit atteindre son &eacute;quilibre thermique sous ce plafond &agrave; pleine charge, dans l&rsquo;enveloppe o&ugrave; elle est r&eacute;ellement mont&eacute;e.</li>
+
+      <li><strong>La chute de tension.</strong> Sur une barre d&rsquo;un m&egrave;tre en 400&nbsp;V, la chute n&rsquo;est presque jamais contraignante. Elle le devient sur les longs trajets, sur les liaisons batterie basse tension qui portent des centaines d&rsquo;amp&egrave;res, et sur les syst&egrave;mes 12 ou 24&nbsp;V o&ugrave; un dixi&egrave;me de volt compte. La v&eacute;rification est la m&ecirc;me que pour un c&acirc;ble&nbsp;: r&eacute;sistivit&eacute;, longueur, courant et chute tol&eacute;rable.</li>
+
+      <li><strong>La tenue au court-circuit.</strong> Un d&eacute;faut ne se soucie pas de votre courant permanent. La barre doit supporter le courant de d&eacute;faut pendant le temps de coupure sans recuire, et la connexion doit supporter les efforts &eacute;lectromagn&eacute;tiques. Cette limite fixe une section <em>minimale</em>, et sur les tableaux &agrave; fort courant de d&eacute;faut c&rsquo;est souvent elle qui dimensionne la barre, pas le courant de charge.</li>
+
+    </ul>
+
+    <p>Si vous ne dimensionnez que sur le courant permanent, vous rencontrerez t&ocirc;t ou tard une armoire o&ugrave; la barre est thermiquement correcte et m&eacute;caniquement insuffisante.</p>
+    <h2>Tableau cuivre &agrave; 2, 3 et 4&nbsp;A/mm&sup2;</h2>
+    <p>Le tableau ci-dessous couvre les sections rectangulaires standard en millim&egrave;tres. Chaque colonne de courant est calcul&eacute;e comme section &times; la densit&eacute; indiqu&eacute;e en t&ecirc;te, ce qui permet de v&eacute;rifier n&rsquo;importe quelle ligne &agrave; la calculatrice.</p>
+
+    <table>
+
+      <thead><tr><th>Section (mm)</th><th>Surface (mm&sup2;)</th><th>2&nbsp;A/mm&sup2;</th><th>3&nbsp;A/mm&sup2;</th><th>4&nbsp;A/mm&sup2;</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>12 &times; 3</td><td>36</td><td>72&nbsp;A</td><td>108&nbsp;A</td><td>144&nbsp;A</td></tr>
+
+        <tr><td>15 &times; 3</td><td>45</td><td>90&nbsp;A</td><td>135&nbsp;A</td><td>180&nbsp;A</td></tr>
+
+        <tr><td>20 &times; 3</td><td>60</td><td>120&nbsp;A</td><td>180&nbsp;A</td><td>240&nbsp;A</td></tr>
+
+        <tr><td>20 &times; 5</td><td>100</td><td>200&nbsp;A</td><td>300&nbsp;A</td><td>400&nbsp;A</td></tr>
+
+        <tr><td>25 &times; 5</td><td>125</td><td>250&nbsp;A</td><td>375&nbsp;A</td><td>500&nbsp;A</td></tr>
+
+        <tr><td>30 &times; 5</td><td>150</td><td>300&nbsp;A</td><td>450&nbsp;A</td><td>600&nbsp;A</td></tr>
+
+        <tr><td>40 &times; 5</td><td>200</td><td>400&nbsp;A</td><td>600&nbsp;A</td><td>800&nbsp;A</td></tr>
+
+        <tr><td>50 &times; 5</td><td>250</td><td>500&nbsp;A</td><td>750&nbsp;A</td><td>1&nbsp;000&nbsp;A</td></tr>
+
+        <tr><td>40 &times; 10</td><td>400</td><td>800&nbsp;A</td><td>1&nbsp;200&nbsp;A</td><td>1&nbsp;600&nbsp;A</td></tr>
+
+        <tr><td>50 &times; 10</td><td>500</td><td>1&nbsp;000&nbsp;A</td><td>1&nbsp;500&nbsp;A</td><td>2&nbsp;000&nbsp;A</td></tr>
+
+        <tr><td>60 &times; 10</td><td>600</td><td>1&nbsp;200&nbsp;A</td><td>1&nbsp;800&nbsp;A</td><td>2&nbsp;400&nbsp;A</td></tr>
+
+        <tr><td>80 &times; 10</td><td>800</td><td>1&nbsp;600&nbsp;A</td><td>2&nbsp;400&nbsp;A</td><td>3&nbsp;200&nbsp;A</td></tr>
+
+        <tr><td>100 &times; 10</td><td>1&nbsp;000</td><td>2&nbsp;000&nbsp;A</td><td>3&nbsp;000&nbsp;A</td><td>4&nbsp;000&nbsp;A</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Lisez la colonne 4&nbsp;A/mm&sup2; avec m&eacute;fiance au-del&agrave; d&rsquo;environ 250&nbsp;mm&sup2;. Cette densit&eacute; d&eacute;crit une barre courte, nue et bien ventil&eacute;e. Les lignes &agrave; partir de 400&nbsp;mm&sup2; sont pr&eacute;sentes pour rendre l&rsquo;arithm&eacute;tique visible, pas parce qu&rsquo;une barre unique de cette taille tiendra ce chiffre dans une armoire ferm&eacute;e. Pour ces sections, prenez 2 &agrave; 2,5&nbsp;A/mm&sup2; comme valeur de projet, ou passez aux barres en parall&egrave;le d&eacute;crites plus bas.</p>
+    <h2>Aluminium&nbsp;: le m&ecirc;me courant dans une barre plus grosse</h2>
+    <p>L&rsquo;aluminium conduit environ 61&nbsp;% du cuivre &agrave; volume &eacute;gal. Pour le m&ecirc;me courant au m&ecirc;me &eacute;chauffement, une barre aluminium demande environ 1,6 fois la section d&rsquo;une barre cuivre&nbsp;; mais comme l&rsquo;aluminium a environ un tiers de la densit&eacute; du cuivre, la barre obtenue p&egrave;se environ la moiti&eacute;. Tout l&rsquo;int&eacute;r&ecirc;t de la barre aluminium est l&agrave;&nbsp;: stockage d&rsquo;&eacute;nergie, champs photovolta&iuml;ques, et tout assemblage o&ugrave; le poids ou le co&ucirc;t par amp&egrave;re compte plus que le volume.</p>
+
+    <table>
+
+      <thead><tr><th>Caract&eacute;ristique</th><th>Cuivre</th><th>Aluminium</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Conductivit&eacute; (% IACS)</td><td>100</td><td>61</td></tr>
+
+        <tr><td>R&eacute;sistivit&eacute; &agrave; 20&nbsp;&deg;C (&micro;&Omega;&middot;m)</td><td>0,0172</td><td>0,0283</td></tr>
+
+        <tr><td>Densit&eacute; (g/cm&sup3;)</td><td>8,96</td><td>2,70</td></tr>
+
+        <tr><td>Section n&eacute;cessaire &agrave; courant &eacute;gal</td><td>1,0</td><td>&asymp;&nbsp;1,6</td></tr>
+
+        <tr><td>Poids &agrave; courant &eacute;gal</td><td>1,0</td><td>&asymp;&nbsp;0,5</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>En appliquant le facteur 61&nbsp;% au tableau pr&eacute;c&eacute;dent &agrave; 3&nbsp;A/mm&sup2;, on obtient la colonne aluminium ci-dessous. Ce sont des valeurs de projet pour une barre nue dans l&rsquo;air, pas des caract&eacute;ristiques de catalogue&nbsp;:</p>
+
+    <table>
+
+      <thead><tr><th>Barre aluminium (mm)</th><th>Surface (mm&sup2;)</th><th>Courant &eacute;quivalent &agrave; 3&nbsp;A/mm&sup2;</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>20 &times; 5</td><td>100</td><td>183&nbsp;A</td></tr>
+
+        <tr><td>30 &times; 5</td><td>150</td><td>275&nbsp;A</td></tr>
+
+        <tr><td>40 &times; 5</td><td>200</td><td>366&nbsp;A</td></tr>
+
+        <tr><td>50 &times; 5</td><td>250</td><td>458&nbsp;A</td></tr>
+
+        <tr><td>50 &times; 10</td><td>500</td><td>915&nbsp;A</td></tr>
+
+        <tr><td>60 &times; 10</td><td>600</td><td>1&nbsp;098&nbsp;A</td></tr>
+
+        <tr><td>100 &times; 10</td><td>1&nbsp;000</td><td>1&nbsp;830&nbsp;A</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Deux diff&eacute;rences pratiques comptent plus que l&rsquo;arithm&eacute;tique. L&rsquo;aluminium forme un oxyde isolant en quelques minutes &agrave; l&rsquo;air, donc chaque connexion exige un pon&ccedil;age et une p&acirc;te inhibitrice d&rsquo;oxyde, ou une platine de contact cuivre ou &eacute;tain. Et sa dilatation thermique est plus forte que celle du cuivre&nbsp;: c&rsquo;est pourquoi les jonctions aluminium boulonn&eacute;es demandent des rondelles &agrave; ressort ou un intervalle de resserrage dans le plan de maintenance. Une jonction aluminium correctement serr&eacute;e &agrave; la pose est la connexion desserr&eacute;e classique deux ans plus tard.</p>
+    <h2>Pourquoi deux barres en parall&egrave;le ne valent pas le double</h2>
+    <p>Doubler la section en ajoutant une seconde barre identique ne double pas la capacit&eacute;. Trois effets mangent le gain&nbsp;:</p>
+
+    <ul>
+
+      <li><strong>Les surfaces int&eacute;rieures sont masqu&eacute;es.</strong> Deux barres proches offrent moins de surface de refroidissement que deux barres &eacute;cart&eacute;es, et l&rsquo;entrefer entre elles est une mauvaise chemin&eacute;e. Les facteurs de d&eacute;classement publi&eacute;s pour une paire de barres se situent typiquement entre 0,8 et 0,9 de la somme arithm&eacute;tique, et moins bien quand l&rsquo;entrefer est inf&eacute;rieur &agrave; l&rsquo;&eacute;paisseur de la barre.</li>
+
+      <li><strong>Le courant ne se partage pas &eacute;galement.</strong> En alternatif, l&rsquo;effet de proximit&eacute; pousse le courant vers les faces ext&eacute;rieures&nbsp;: les deux barres ne partagent pas la charge &eacute;galement. La connexion et la barre qui portent la plus grosse part chauffent plus que ne le sugg&egrave;re la moyenne.</li>
+
+      <li><strong>Les jonctions se multiplient.</strong> Chaque barre suppl&eacute;mentaire ajoute deux interfaces boulonn&eacute;es. C&rsquo;est l&agrave;, et non au milieu de la barre, que commence g&eacute;n&eacute;ralement la surchauffe.</li>
+
+    </ul>
+
+    <p>R&egrave;gle pratique&nbsp;: espacez les barres parall&egrave;les d&rsquo;au moins une &eacute;paisseur de barre, appliquez un d&eacute;classement d&rsquo;environ 0,85 &agrave; la somme, et consid&eacute;rez qu&rsquo;au-del&agrave; d&rsquo;environ 1&nbsp;600&nbsp;A une barre unique n&rsquo;est plus la bonne r&eacute;ponse. Au-del&agrave;, une ventilation forc&eacute;e, un profil plus large ou un autre syst&egrave;me de conducteurs co&ucirc;tent souvent moins cher qu&rsquo;une quatri&egrave;me barre.</p>
+    <h2>Alternatif et continu ne posent pas le m&ecirc;me probl&egrave;me</h2>
+    <p>En continu, le courant utilise toute la section, et le tableau ci-dessus vaut ce que vaut le dimensionnement thermique derri&egrave;re lui. &Agrave; 50 ou 60&nbsp;Hz, le courant se concentre pr&egrave;s de la surface. La profondeur &agrave; laquelle la densit&eacute; de courant est tomb&eacute;e &agrave; environ 37&nbsp;% de sa valeur en surface est l&rsquo;&eacute;paisseur de peau&nbsp;; pour le cuivre elle vaut environ <strong>9,3&nbsp;mm &agrave; 50&nbsp;Hz</strong> et <strong>8,5&nbsp;mm &agrave; 60&nbsp;Hz</strong>. Pour l&rsquo;aluminium, environ 12&nbsp;mm &agrave; 50&nbsp;Hz.</p>
+
+    <p>Comparez avec l&rsquo;&eacute;paisseur de la barre. Une barre de 5 ou 10&nbsp;mm est plus fine que l&rsquo;&eacute;paisseur de peau&nbsp;: toute la section travaille encore et la p&eacute;nalit&eacute; alternative est faible. Une barre de 20 ou 30&nbsp;mm ne l&rsquo;est plus&nbsp;: le centre de la barre transporte peu de courant tout en apportant du poids, du co&ucirc;t et de l&rsquo;inertie thermique. C&rsquo;est pourquoi les tr&egrave;s fortes intensit&eacute;s alternatives se construisent &agrave; partir de plusieurs barres fines plut&ocirc;t qu&rsquo;une seule &eacute;paisse, et pourquoi une barre &eacute;paisse peut para&icirc;tre g&eacute;n&eacute;reuse sur un plan et chauffer quand m&ecirc;me.</p>
+
+    <p>La m&ecirc;me physique explique une panne de terrain fr&eacute;quente&nbsp;: une barre pr&eacute;vue pour une liaison batterie en continu est r&eacute;utilis&eacute;e sur un d&eacute;part alternatif de m&ecirc;me courant nominal, et la jonction chauffe plus que pr&eacute;vu parce que le courant n&rsquo;est plus r&eacute;parti comme le calcul continu le supposait.</p>
+    <h2>Temp&eacute;rature ambiante et d&eacute;classement en armoire</h2>
+    <p>Le tableau suppose un air libre &agrave; une ambiance de r&eacute;f&eacute;rence. Placez la m&ecirc;me barre dans une armoire ferm&eacute;e sur un toit en &eacute;t&eacute; et l&rsquo;&eacute;chauffement admissible se r&eacute;duit, parce que la temp&eacute;rature plafond est fix&eacute;e par l&rsquo;isolation et que le point de d&eacute;part est mont&eacute;.</p>
+
+    <p>La correction est un rapport, pas un tableau de chiffres magiques. Si une barre est con&ccedil;ue pour un &eacute;chauffement de 65&nbsp;K &agrave; partir de 40&nbsp;&deg;C d&rsquo;ambiance, et que l&rsquo;armoire tourne en r&eacute;alit&eacute; &agrave; 55&nbsp;&deg;C, l&rsquo;&eacute;chauffement admissible devient 50&nbsp;K. Les pertes thermiques d&rsquo;une barre varient approximativement avec l&rsquo;&eacute;cart &agrave; l&rsquo;ambiance&nbsp;; le courant admissible varie donc approximativement avec la racine carr&eacute;e du rapport des &eacute;chauffements&nbsp;: &radic;(50/65) &asymp; 0,88, soit environ 12&nbsp;% de courant en moins pour la m&ecirc;me barre.</p>
+
+    <p>C&rsquo;est une approximation d&rsquo;ing&eacute;nieur, et elle l&rsquo;assume. Elle indique la direction et l&rsquo;ordre de grandeur du d&eacute;classement, ce qu&rsquo;il faut pour juger si le projet a de la marge. Elle ne remplace pas un essai d&rsquo;&eacute;chauffement, et elle ne couvre pas une armoire o&ugrave; la barre est la source de chaleur de tout ce qui est au-dessus d&rsquo;elle.</p>
+
+    <p>Effets d&rsquo;enveloppe &agrave; ajouter par-dessus&nbsp;: absence totale de ventilation, poussi&egrave;re ou fibres sur les barres, cheminement dans un caniveau avec d&rsquo;autres conducteurs charg&eacute;s, et apport solaire sur une enveloppe ext&eacute;rieure. Chacun de ces facteurs a provoqu&eacute; plus de barres surchauff&eacute;es sur le terrain qu&rsquo;une erreur de densit&eacute; de courant.</p>
+    <h2>Tenue au court-circuit&nbsp;: la limite que personne ne v&eacute;rifie</h2>
+    <p>La capacit&eacute; permanente et la capacit&eacute; de d&eacute;faut sont deux calculs s&eacute;par&eacute;s, et une barre qui passe le premier peut &eacute;chouer au second. La v&eacute;rification adiabatique demande si la barre peut absorber l&rsquo;&eacute;nergie de d&eacute;faut sans d&eacute;passer la temp&eacute;rature que le mat&eacute;riau autorise.</p>
+
+    <p>La forme classique est <strong>S = I &times; &radic;t / k</strong>, o&ugrave; <em>S</em> est la section requise en mm&sup2;, <em>I</em> le courant de d&eacute;faut en amp&egrave;res, <em>t</em> le temps de coupure en secondes et <em>k</em> une constante de mat&eacute;riau et d&rsquo;isolation issue de la norme appliqu&eacute;e. Pour le cuivre isol&eacute; XLPE, la CEI&nbsp;60364-5-54 donne k&nbsp;=&nbsp;143. En inversant sur une barre cuivre de 200&nbsp;mm&sup2; avec un temps de coupure de 0,1&nbsp;s, on obtient une tenue d&rsquo;environ 90&nbsp;kA&nbsp;; avec 1&nbsp;s de coupure, seulement environ 29&nbsp;kA.</p>
+
+    <p>Deux cons&eacute;quences. D&rsquo;abord, le temps de coupure domine&nbsp;: une barre confortable derri&egrave;re un fusible rapide ne l&rsquo;est pas automatiquement derri&egrave;re un fusible lent. Ensuite, le c&ocirc;t&eacute; m&eacute;canique doit &ecirc;tre v&eacute;rifi&eacute; s&eacute;par&eacute;ment&nbsp;: l&rsquo;effort &eacute;lectromagn&eacute;tique de cr&ecirc;te entre barres parall&egrave;les pendant un d&eacute;faut, et la r&eacute;sistance des supports. Une barre peut passer le contr&ocirc;le thermique et &ecirc;tre malgr&eacute; tout arrach&eacute;e de ses isolateurs.</p>
+    <h2>Comment une barre est r&eacute;ellement qualifi&eacute;e (CEI&nbsp;61439)</h2>
+    <p>Dans un ensemble couvert par la CEI&nbsp;61439, le courant qu&rsquo;une barre peut transporter ne s&rsquo;&eacute;tablit pas par le seul calcul. L&rsquo;&eacute;chauffement se v&eacute;rifie soit par essai sur un montage repr&eacute;sentatif, soit par comparaison avec une conception de r&eacute;f&eacute;rence qualifi&eacute;e selon les r&egrave;gles de la norme. C&rsquo;est pourquoi deux fournisseurs peuvent annoncer des valeurs diff&eacute;rentes pour des barres g&eacute;om&eacute;triquement identiques&nbsp;: ce qui change, c&rsquo;est l&rsquo;enveloppe, le montage, le rev&ecirc;tement et les preuves d&rsquo;essai derri&egrave;re le chiffre.</p>
+
+    <p>Pour un acheteur, cela change la question &agrave; poser. Ne demandez pas seulement une intensit&eacute;. Demandez l&rsquo;intensit&eacute; <em>avec ses conditions</em>&nbsp;: temp&eacute;rature ambiante, type d&rsquo;enveloppe, orientation de montage, nombre de barres par phase, et si la valeur est qualifi&eacute;e par essai de type ou calcul&eacute;e. Une intensit&eacute; sans conditions est un argument commercial, et ce sera la source du litige quand l&rsquo;armoire chauffera au premier &eacute;t&eacute;.</p>
+    <h2>Ce qu&rsquo;il faut mettre sur le plan avant de demander un prix</h2>
+    <p>Pr&eacute;cisez ces huit points et la conversation commerciale devient courte&nbsp;:</p>
+
+    <ul>
+
+      <li><strong>Le courant permanent par phase</strong>, et si ce chiffre inclut d&eacute;j&agrave; une r&eacute;serve d&rsquo;extension.</li>
+
+      <li><strong>La tension et la fr&eacute;quence du r&eacute;seau</strong>, plus le courant de d&eacute;faut et le temps de coupure pour la v&eacute;rification de tenue.</li>
+
+      <li><strong>La section et le mat&eacute;riau</strong>, en largeur &times; &eacute;paisseur en millim&egrave;tres, avec cuivre ou aluminium indiqu&eacute; explicitement plut&ocirc;t que laiss&eacute; au fournisseur.</li>
+
+      <li><strong>Le rev&ecirc;tement</strong> &mdash; nu, &eacute;tam&eacute;, argent&eacute; ou nickel&eacute; &mdash; et si le rev&ecirc;tement couvre seulement la zone de connexion ou toute la barre.</li>
+
+      <li><strong>L&rsquo;isolation</strong>, le cas &eacute;ch&eacute;ant&nbsp;: rev&ecirc;tement &eacute;poxy, gaine thermor&eacute;tractable, ou barre lamin&eacute;e avec un di&eacute;lectrique sp&eacute;cifi&eacute;.</li>
+
+      <li><strong>Le fa&ccedil;onnage et les per&ccedil;ages</strong>, sous forme de plan&nbsp;: rayon de cintrage, diam&egrave;tre et pas des trous, et quelle face doit rester plane.</li>
+
+      <li><strong>Les conditions d&rsquo;ambiance et d&rsquo;enveloppe</strong>&nbsp;: int&eacute;rieur ou ext&eacute;rieur, ventilation, temp&eacute;rature maximale que verra l&rsquo;armoire.</li>
+
+      <li><strong>La quantit&eacute; et le conditionnement</strong>, la plupart des commandes de barres &eacute;tant des affaires de projet avec une liste de cintrages plut&ocirc;t qu&rsquo;une r&eacute;f&eacute;rence de catalogue.</li>
+
+    </ul>
+
+    <p>Un plan qui contient ces huit points se chiffre sans s&eacute;rie de questions, et les litiges &agrave; la r&eacute;ception deviennent rares parce que les conditions ont voyag&eacute; avec le chiffre.</p>
+    <h2>Les barres rigides de la gamme YOMIN</h2>
+    <p>YOMIN fournit des barres omnibus dans les formats que les constructeurs d&rsquo;armoires et les int&eacute;grateurs de packs ach&egrave;tent habituellement&nbsp;: barre rigide en cuivre ou en aluminium, isol&eacute;e ou nue, r&eacute;alis&eacute;e sur plan. Deux articles couvrent la majorit&eacute; des demandes qui suivent cet article&nbsp;:</p>
+
+    <p>La <a href="/products/rigid-busbar/copper-bus-flat-high-current-insulated-hard-aluminum-bus-for-high-quality">barre omnibus plate cuivre &agrave; forte intensit&eacute;, isol&eacute;e</a> (r&eacute;f&eacute;rence ym-0443) est une barre rigide en cuivre ou en aluminium avec isolation, propos&eacute;e &agrave; partir de 50 pi&egrave;ces et destin&eacute;e aux installations fixes, aux packs batteries et aux appareillages.</p>
+
+    <p>La <a href="/products/rigid-busbar/the-manufacturer-customized-rigid-copper-electrical-busbars-are-used-in-the">barre omnibus rigide en cuivre personnalis&eacute;e par le fabricant</a> (r&eacute;f&eacute;rence ym-0458) est la version sur plan pour les installations fixes, les packs batteries et les appareillages, &agrave; partir de 100 pi&egrave;ces.</p>
+
+    <p>Ce sont les mati&egrave;res, types et quantit&eacute;s publi&eacute;s pour ces articles. L&rsquo;intensit&eacute; n&rsquo;est pas publi&eacute;e comme un chiffre unique, et c&rsquo;est volontaire&nbsp;: elle d&eacute;pend des conditions dans votre enveloppe. Envoyez le plan, le courant par phase, l&rsquo;ambiance et le courant de d&eacute;faut, et l&rsquo;intensit&eacute; est chiffr&eacute;e pour cette configuration plut&ocirc;t que pour une page de catalogue. La gamme compl&egrave;te se trouve sous <a href="/products/rigid-busbar">barres rigides</a> et <a href="/products/aluminum-busbar">barres aluminium</a>&nbsp;; pour l&rsquo;arbitrage des mati&egrave;res en d&eacute;tail, voir le <a href="/blog/copper-busbar-guide">guide des barres cuivre</a> et les <a href="/blog/busbar-design-basics">bases de conception des barres</a>.</p>
+    <h2>Questions fr&eacute;quentes</h2>
+    <h3>Combien d&rsquo;amp&egrave;res une barre omnibus cuivre transporte-t-elle par mm&sup2;&nbsp;?</h3>
+    <p>En valeur de projet, 2 &agrave; 4&nbsp;A/mm&sup2;, avec 3&nbsp;A/mm&sup2; comme milieu raisonnable pour une barre &agrave; l&rsquo;air libre et 2 &agrave; 2,5&nbsp;A/mm&sup2; pour une barre en armoire ferm&eacute;e ou au-del&agrave; de 400&nbsp;mm&sup2;. C&rsquo;est une estimation de conception&nbsp;: l&rsquo;intensit&eacute; utilisable d&eacute;pend de l&rsquo;ambiance, de l&rsquo;enveloppe, du montage et de l&rsquo;isolation, et doit venir du tableau du fournisseur ou d&rsquo;un essai d&rsquo;&eacute;chauffement.</p>
+
+    <h3>Une barre cuivre de 50 &times; 10&nbsp;mm suffit-elle pour 1&nbsp;500&nbsp;A&nbsp;?</h3>
+    <p>Sur le papier oui&nbsp;: 500&nbsp;mm&sup2; &agrave; 3&nbsp;A/mm&sup2; font 1&nbsp;500&nbsp;A. Dans votre armoire, cela d&eacute;pend de l&rsquo;ambiance et de l&rsquo;enveloppe. Une armoire ferm&eacute;e &agrave; 55&nbsp;&deg;C, ou deux barres en parall&egrave;le avec un entrefer &eacute;troit, font descendre la valeur utilisable nettement sous 1&nbsp;500&nbsp;A. V&eacute;rifiez le d&eacute;classement avant de figer le plan.</p>
+
+    <h3>Quelle intensit&eacute; une barre aluminium transporte-t-elle par rapport au cuivre&nbsp;?</h3>
+    <p>Environ 61&nbsp;% de la valeur du cuivre &agrave; section &eacute;gale, l&rsquo;aluminium conduisant environ 61&nbsp;% aussi bien en volume. Pour &eacute;galer une barre cuivre il faut environ 1,6 fois la section, pour un poids encore &agrave; peu pr&egrave;s deux fois plus faible. La pr&eacute;paration des connexions compte davantage avec l&rsquo;aluminium &agrave; cause de la couche d&rsquo;oxyde.</p>
+
+    <h3>Pourquoi ma barre chauffe-t-elle aux connexions et pas au milieu&nbsp;?</h3>
+    <p>Parce que le probl&egrave;me est g&eacute;n&eacute;ralement la r&eacute;sistance de contact, pas celle de la barre. Boulons insuffisamment serr&eacute;s, surface aluminium non pr&eacute;par&eacute;e, rev&ecirc;tements incompatibles ou connexion desserr&eacute;e par les cycles thermiques ajoutent de la r&eacute;sistance &agrave; un endroit o&ugrave; la surface de dissipation est tr&egrave;s faible. Mesurez la temp&eacute;rature &agrave; la connexion sous charge et comparez-la &agrave; celle du milieu de la barre.</p>
+
+    <h3>Faut-il v&eacute;rifier la tenue au court-circuit en plus du courant permanent&nbsp;?</h3>
+    <p>Oui. Ce sont deux limites s&eacute;par&eacute;es. Le courant permanent fixe la temp&eacute;rature de service&nbsp;; le courant de d&eacute;faut fixe la section minimale et la robustesse des supports. Une barre dimensionn&eacute;e seulement pour le courant de charge peut passer le contr&ocirc;le thermique lors d&rsquo;un d&eacute;faut et &ecirc;tre quand m&ecirc;me arrach&eacute;e de ses isolateurs, ou recuire &agrave; la connexion.</p>
+
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous dimensionnez une barre pour une armoire ou un pack batteries&nbsp;?</h2>
+    <p>Envoyez le courant par phase, l&rsquo;ambiance dans l&rsquo;enveloppe, le courant de d&eacute;faut et le plan de cintrage. Nous revenons vers vous avec une section, l&rsquo;option d&rsquo;isolation adapt&eacute;e et une intensit&eacute; chiffr&eacute;e pour vos conditions plut&ocirc;t que pour une page de catalogue.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/busbar-current-carrying-capacity/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Busbar Current Carrying Capacity: Copper and Aluminum Ampacity Chart | Yomin Electric</title>
+<meta name="description" content="Busbar current carrying capacity without guesswork: the amps-per-mm2 rule, a chart for standard bar sizes, AC skin effect, ambient derating and fault checks.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Busbar Current Carrying Capacity: Copper and Aluminum Ampacity Chart">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.yominelectric.com/blog/busbar-current-carrying-capacity">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/busbar-current-carrying-capacity/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Busbar Current Carrying Capacity: Copper and Aluminum Ampacity Chart",
+      "description": "Busbar current carrying capacity without guesswork: the amps-per-mm2 rule, a chart for standard bar sizes, AC skin effect, ambient derating and fault checks.",
+      "image": "https://www.yominelectric.com/assets/images/blog/busbar-current-carrying-capacity/hero.png",
+      "datePublished": "2026-11-08",
+      "dateModified": "2026-11-08",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/busbar-current-carrying-capacity"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many amps can a copper busbar carry per mm²?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As a planning figure, 2–4 A/mm², with 3 A/mm² as a sensible middle for a bar in open air and 2–2.5 A/mm² for a bar in a closed cabinet or above 400 mm². The figure is a design estimate: the usable rating depends on ambient temperature, enclosure, mounting and insulation, and should come from the supplier's current-carrying table or a temperature-rise test."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a 50 × 10 mm copper bar enough for 1,500 A?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On paper yes: 500 mm² at 3 A/mm² is 1,500 A. Whether it is enough in your panel depends on the ambient and the enclosure. A sealed cabinet at 55 °C, or two bars in parallel with a narrow gap, will pull the usable figure well below 1,500 A. Check the derating before committing to the drawing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much current can an aluminium busbar carry compared with copper?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "About 61% of the copper figure for the same cross-section, because aluminium conducts roughly 61% as well by volume. To match a copper bar you need about 1.6 times the section, which still weighs roughly half as much. Joint preparation matters more with aluminium because of the oxide layer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my busbar run hot at the joints but not in the middle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because joint resistance, not bar resistance, is usually the problem. Under-torqued bolts, an unprepared aluminium surface, mismatched plating, or a joint that has loosened through thermal cycling all add resistance at a point where there is very little surface to dissipate heat. Measure the temperature at the joint under load and compare it with the bar mid-span."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to check short-circuit withstand as well as continuous current?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. They are separate limits. Continuous current sets the operating temperature; fault current sets the minimum section and the mechanical strength of the supports. A bar sized only for load current can pass the thermal check on a fault and still be bent off its insulators, or anneal at the joint."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Busbars</span></div>
+    <span class="bh-tag">Technical Guide</span>
+    <h1 class="bh-title">Busbar Current Carrying Capacity: Copper and Aluminum Ampacity Chart</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 8, 2026</span>
+      <span class="divider"></span>
+      <span>12 min read</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/busbar-current-carrying-capacity/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/busbar-current-carrying-capacity/hero.png" alt="Epoxy-coated aluminium busbar with copper connector plates, next to a laminated composite busbar plate, both YOMIN products" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A <strong>busbar current carrying capacity</strong> is not a single number printed on a datasheet. For a copper bar in ordinary switchgear conditions the working figure is roughly <strong>2 to 4 A per mm&sup2; of cross-section</strong>, and the spread inside that band comes from the installation rather than from the metal. At 3 A/mm&sup2; a 50 &times; 10 mm copper bar carries about 1,500 A. The same bar inside a sealed enclosure at 55 &deg;C ambient, run as one of two parallel bars on a 50 Hz supply, carries considerably less.</p>
+
+    <p>This page gives the calculation, a chart you can read off for standard bar sizes, and the four effects that move the real answer away from the chart. It is written for the person who has to sign the drawing: the panel builder, the battery-pack integrator, the engineer replacing a bar that discoloured at the joints.</p>
+
+    <p>One warning before the numbers. Every figure below is a design estimate derived from a stated current density. It is not a type-tested rating for any specific product, and it does not replace the current-carrying table your supplier publishes for the exact bar, plating, insulation and mounting arrangement you are buying.</p>
+
+    <h2>The short answer: amps per square millimetre</h2>
+    <p>Current density is the honest way to start, because it survives a change of bar size. Pick a density, multiply by the cross-section, and you have a first estimate in one line:</p>
+
+    <p><strong>I &asymp; J &times; A</strong>, where <em>J</em> is the current density in A/mm&sup2; and <em>A</em> is the bar cross-section in mm&sup2; (width &times; thickness).</p>
+
+    <p>Two worked cases show the range:</p>
+
+    <ul>
+
+      <li><strong>A 20 &times; 5 mm copper bar.</strong> Cross-section 100 mm&sup2;. At 3 A/mm&sup2; it carries about 300 A. At 4 A/mm&sup2; it carries about 400 A, and that upper figure is only realistic on a short, well-ventilated run with bright bar and cool ambient.</li>
+
+      <li><strong>A 100 &times; 10 mm copper bar.</strong> Cross-section 1,000 mm&sup2;. The arithmetic says 3,000 A at 3 A/mm&sup2;. Reality says otherwise: a single bar of that section is rarely asked to carry more than about 1,600 A in a real panel, because the heat has to leave through a surface that grew much more slowly than the metal inside it.</li>
+
+    </ul>
+
+    <p>That second case is the reason the rule of thumb needs a whole article behind it. Density is not a constant of copper; it falls as the bar gets thicker, as the enclosure gets tighter, and as the ambient rises.</p>
+    <h2>The three limits that decide the real number</h2>
+    <p>A bar fails, or is oversized, against three different limits. Only the first one usually binds, but you cannot know that until you have checked all three.</p>
+
+    <ul>
+
+      <li><strong>Temperature rise.</strong> This is normally the governing limit. Bare copper bars in switchgear are commonly designed for a 60&ndash;70 K rise over ambient, and insulated bars are held to the temperature class of their insulation, typically 90&ndash;105 &deg;C for the materials used on busbar. The bar must reach thermal equilibrium below that ceiling at full load, in the enclosure it is actually mounted in.</li>
+
+      <li><strong>Voltage drop.</strong> For a bar a metre long at 400 V, drop is almost never the binding constraint. It becomes one on long runs, on low-voltage DC battery links carrying hundreds of amps, and on 12 V or 24 V systems where a tenth of a volt matters. The check is the same as for a cable: resistivity, length, current, and the drop you can tolerate.</li>
+
+      <li><strong>Short-circuit withstand.</strong> A fault does not care about your continuous rating. The bar has to survive the fault current for the clearing time without annealing, and the joint has to survive the magnetic forces. This limit sets a <em>minimum</em> section, and on high-fault boards it is often what sizes the bar, not the load current.</li>
+
+    </ul>
+
+    <p>If you size only for continuous current, you will eventually meet a board where the bar is thermally fine and mechanically inadequate.</p>
+    <h2>Copper busbar ampacity chart at 2, 3 and 4 A/mm&sup2;</h2>
+    <p>The table below covers standard rectangular bar sizes in millimetres. Every current column is calculated as cross-section &times; the density in the column heading, so you can check any row with a calculator.</p>
+
+    <table>
+
+      <thead><tr><th>Bar size (mm)</th><th>Area (mm&sup2;)</th><th>2 A/mm&sup2;</th><th>3 A/mm&sup2;</th><th>4 A/mm&sup2;</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>12 &times; 3</td><td>36</td><td>72 A</td><td>108 A</td><td>144 A</td></tr>
+
+        <tr><td>15 &times; 3</td><td>45</td><td>90 A</td><td>135 A</td><td>180 A</td></tr>
+
+        <tr><td>20 &times; 3</td><td>60</td><td>120 A</td><td>180 A</td><td>240 A</td></tr>
+
+        <tr><td>20 &times; 5</td><td>100</td><td>200 A</td><td>300 A</td><td>400 A</td></tr>
+
+        <tr><td>25 &times; 5</td><td>125</td><td>250 A</td><td>375 A</td><td>500 A</td></tr>
+
+        <tr><td>30 &times; 5</td><td>150</td><td>300 A</td><td>450 A</td><td>600 A</td></tr>
+
+        <tr><td>40 &times; 5</td><td>200</td><td>400 A</td><td>600 A</td><td>800 A</td></tr>
+
+        <tr><td>50 &times; 5</td><td>250</td><td>500 A</td><td>750 A</td><td>1,000 A</td></tr>
+
+        <tr><td>40 &times; 10</td><td>400</td><td>800 A</td><td>1,200 A</td><td>1,600 A</td></tr>
+
+        <tr><td>50 &times; 10</td><td>500</td><td>1,000 A</td><td>1,500 A</td><td>2,000 A</td></tr>
+
+        <tr><td>60 &times; 10</td><td>600</td><td>1,200 A</td><td>1,800 A</td><td>2,400 A</td></tr>
+
+        <tr><td>80 &times; 10</td><td>800</td><td>1,600 A</td><td>2,400 A</td><td>3,200 A</td></tr>
+
+        <tr><td>100 &times; 10</td><td>1,000</td><td>2,000 A</td><td>3,000 A</td><td>4,000 A</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Read the 4 A/mm&sup2; column with suspicion above about 250 mm&sup2;. That density describes a short, open, well-ventilated bar. Rows from 400 mm&sup2; upward are there so the arithmetic is visible, not because a single bar of that size will deliver the number in a closed cabinet. For those sizes, use 2&ndash;2.5 A/mm&sup2; as the planning figure, or move to parallel bars as described further down.</p>
+    <h2>Aluminium: the same current in a bigger bar</h2>
+    <p>Aluminium conducts about 61% as well as copper by volume. For the same current at the same temperature rise, an aluminium bar needs roughly 1.6 times the copper cross-section &mdash; but because aluminium is about a third of the density, the resulting bar weighs about half as much. That trade is the whole reason aluminium busbar exists in energy storage, in solar arrays and in any assembly where weight or cost per amp matters more than volume.</p>
+
+    <table>
+
+      <thead><tr><th>Property</th><th>Copper</th><th>Aluminium</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Conductivity (% IACS)</td><td>100</td><td>61</td></tr>
+
+        <tr><td>Resistivity at 20 &deg;C (&micro;&Omega;&middot;m)</td><td>0.0172</td><td>0.0283</td></tr>
+
+        <tr><td>Density (g/cm&sup3;)</td><td>8.96</td><td>2.70</td></tr>
+
+        <tr><td>Section needed for the same current</td><td>1.0</td><td>&asymp; 1.6</td></tr>
+
+        <tr><td>Weight for the same current</td><td>1.0</td><td>&asymp; 0.5</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Applying the 61% factor to the chart above at 3 A/mm&sup2; gives the aluminium column below. These are planning figures for a bare bar in air, not catalogue ratings:</p>
+
+    <table>
+
+      <thead><tr><th>Aluminium bar (mm)</th><th>Area (mm&sup2;)</th><th>Current at 3 A/mm&sup2; equivalent</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>20 &times; 5</td><td>100</td><td>183 A</td></tr>
+
+        <tr><td>30 &times; 5</td><td>150</td><td>275 A</td></tr>
+
+        <tr><td>40 &times; 5</td><td>200</td><td>366 A</td></tr>
+
+        <tr><td>50 &times; 5</td><td>250</td><td>458 A</td></tr>
+
+        <tr><td>50 &times; 10</td><td>500</td><td>915 A</td></tr>
+
+        <tr><td>60 &times; 10</td><td>600</td><td>1,098 A</td></tr>
+
+        <tr><td>100 &times; 10</td><td>1,000</td><td>1,830 A</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Two practical differences matter more than the arithmetic. Aluminium forms an insulating oxide within minutes of being exposed to air, so every joint needs abrasion and an oxide-inhibiting compound, or a copper or tin contact plate. And its thermal expansion is higher than copper, which is why bolted aluminium joints need disc springs or a re-torque interval in the maintenance plan. A bolted aluminium joint that was correct at installation is the classic loose joint two years later.</p>
+    <h2>Why two bars in parallel are not twice one bar</h2>
+    <p>Doubling the section by adding a second identical bar does not double the capacity. Three effects eat the gain:</p>
+
+    <ul>
+
+      <li><strong>The inner surfaces are shielded.</strong> Two bars close together present less cooling surface than two bars far apart, and the gap between them is a poor chimney. Published derating factors for a pair of bars typically land between 0.8 and 0.9 of the arithmetic sum, and worse when the gap is smaller than the bar thickness.</li>
+
+      <li><strong>Current does not divide equally.</strong> In AC, proximity effect pushes current toward the outer faces, so the two bars do not share the load evenly. The joint and the bar carrying the larger share run hotter than the average suggests.</li>
+
+      <li><strong>Joints multiply.</strong> Every additional bar adds two more bolted interfaces. Contact resistance at those interfaces is where overheating usually starts, not in the middle of the bar.</li>
+
+    </ul>
+
+    <p>The practical rule: space parallel bars at least one bar thickness apart, derate the sum to about 0.85, and treat roughly 1,600 A per bar as the point where a single bar stops being the sensible answer. Above that, forced ventilation, a wider profile, or a different conductor system is usually cheaper than a fourth bar.</p>
+    <h2>AC and DC are not the same problem</h2>
+    <p>At DC, current uses the whole section, and the chart above is as good as the thermal design behind it. At 50 or 60 Hz, current concentrates near the surface. The depth at which the current density has fallen to about 37% of its surface value is the skin depth, and for copper it is approximately <strong>9.3 mm at 50 Hz</strong> and <strong>8.5 mm at 60 Hz</strong>. For aluminium it is about 12 mm at 50 Hz.</p>
+
+    <p>Compare that with bar thickness. A 5 mm or 10 mm bar is thinner than the skin depth, so the whole section still works and the AC penalty is small. A 20 mm or 30 mm thick bar is not: the middle of the bar carries little current while still contributing weight, cost and thermal mass. This is why very large AC ratings are built from several thin bars rather than one thick one, and why a thick bar can look generous on a drawing and still run hot.</p>
+
+    <p>The same physics explains a common field failure: a bar specified for a DC battery link is reused on an AC feeder of the same nominal current, and the joint runs hotter than expected because the current is no longer distributed the way the DC calculation assumed.</p>
+    <h2>Ambient temperature and enclosure derating</h2>
+    <p>The chart assumes free air at a reference ambient. Put the same bar in a sealed cabinet on a roof in summer and the allowable temperature rise shrinks, because the ceiling temperature is fixed by the insulation and the starting point has moved up.</p>
+
+    <p>The correction is a ratio, not a table of magic numbers. If a bar is designed for a 65 K rise from a 40 &deg;C ambient, and the cabinet actually runs at 55 &deg;C, the allowable rise becomes 50 K. Heat loss from a bar scales roughly with the temperature difference to ambient, so the current it can carry scales roughly with the square root of the rise ratio: &radic;(50/65) &asymp; 0.88, or about 12% less current for the same bar.</p>
+
+    <p>That is an engineering approximation and it is honest about being one. It tells you the direction and the rough size of the derating, which is what you need to decide whether the design has margin. It does not replace a temperature-rise test, and it does not account for a cabinet where the bar is the heat source for everything above it.</p>
+
+    <p>Enclosure effects to add on top: no ventilation at all, dust or lint on the bar surfaces, a bar run in a cable duct with other loaded conductors, and solar gain on an outdoor enclosure. Each of these has caused more overheated busbars in the field than a wrong current-density figure ever has.</p>
+    <h2>Short-circuit withstand: the limit nobody checks</h2>
+    <p>Continuous capacity and fault capacity are separate calculations, and a bar that passes the first can fail the second. The adiabatic check asks whether the bar can absorb the fault energy without its temperature running past the limit the material allows.</p>
+
+    <p>The standard form is <strong>S = I &times; &radic;t / k</strong>, where <em>S</em> is the required section in mm&sup2;, <em>I</em> the fault current in amperes, <em>t</em> the clearing time in seconds, and <em>k</em> a material and insulation constant taken from the standard you are working to. For copper with XLPE insulation, IEC 60364-5-54 gives k = 143. Working backwards on a 200 mm&sup2; copper bar with a 0.1 s clearing time gives a withstand of about 90 kA &mdash; and the same bar with a 1 s clearing time only about 29 kA.</p>
+
+    <p>Two things follow. First, clearing time dominates: a bar that is comfortable behind a fast fuse is not automatically comfortable behind a slow one. Second, the mechanical side has to be checked separately &mdash; the peak electromagnetic force between parallel bars during a fault, and the strength of the supports holding them. A bar can pass the thermal check and still be bent off its insulators.</p>
+    <h2>How a busbar is actually verified (IEC 61439)</h2>
+    <p>In an assembly covered by IEC 61439, the current a busbar can carry is not established by calculation alone. Temperature rise is verified either by test on a representative arrangement, or by comparison with a verified reference design under the standard's rules. That is the reason two suppliers can quote different ratings for geometrically identical bars: what differs is the enclosure, the mounting, the plating and the test evidence behind the number.</p>
+
+    <p>For a buyer, this changes what to ask for. Do not ask only for a current rating. Ask for the rating <em>with its conditions</em>: ambient temperature, enclosure type, mounting orientation, number of bars per phase, and whether the figure is type-tested or calculated. A rating without conditions is a marketing number, and it will be the source of the argument when the board runs hot in its first summer.</p>
+    <h2>What to put on the drawing before you ask for a price</h2>
+    <p>Specify these eight items and the quotation conversation becomes short:</p>
+
+    <ul>
+
+      <li><strong>Continuous current per phase</strong>, and whether that figure already includes future load.</li>
+
+      <li><strong>System voltage and frequency</strong>, plus the fault level and clearing time for the short-circuit check.</li>
+
+      <li><strong>Bar size and material</strong>, as width &times; thickness in millimetres, with copper or aluminium stated explicitly rather than left to the supplier.</li>
+
+      <li><strong>Plating</strong> &mdash; bare, tinned, silver, or nickel &mdash; and whether the plating applies to the joint area only or the whole bar.</li>
+
+      <li><strong>Insulation</strong>, if any: epoxy coating, heat-shrink sleeve, or a laminated bar with a specified dielectric.</li>
+
+      <li><strong>Bending and hole details</strong>, as a drawing: bend radius, hole diameter and pitch, and which face must stay flat.</li>
+
+      <li><strong>Ambient and enclosure conditions</strong>, including indoor or outdoor, ventilation, and the maximum temperature the cabinet will see.</li>
+
+      <li><strong>Quantity and packing</strong>, since most busbar work is a project order with a bend list rather than a catalogue line item.</li>
+
+    </ul>
+
+    <p>A drawing with these eight points can be quoted without a round of questions, and disputes at goods-in become rare because the conditions travelled with the number.</p>
+    <h2>Rigid busbars from the YOMIN range</h2>
+    <p>YOMIN supplies busbar in the formats panel builders and pack integrators normally buy: rigid bar in copper or aluminium, insulated or bare, made to a drawing. Two items cover most of the enquiries that follow this article:</p>
+
+    <p>The <a href="/products/rigid-busbar/copper-bus-flat-high-current-insulated-hard-aluminum-bus-for-high-quality">copper flat high-current insulated busbar</a> (item ym-0443) is a rigid bar in copper or aluminium with insulation, offered from a minimum order of 50 pieces and aimed at fixed installations, battery packs and switchgear.</p>
+
+    <p>The <a href="/products/rigid-busbar/the-manufacturer-customized-rigid-copper-electrical-busbars-are-used-in-the">manufacturer-customised rigid copper electrical busbar</a> (item ym-0458) is the made-to-drawing version for fixed installations, battery packs and switchgear, from 100 pieces.</p>
+
+    <p>Those are the material, type and order quantities published for the items. The current rating is not published as a single figure, and that is deliberate: it depends on the conditions in your enclosure. Send the drawing, the current per phase, the ambient and the fault level, and the rating is quoted for that configuration rather than for a catalogue page. The wider range sits under <a href="/products/rigid-busbar">rigid busbars</a> and <a href="/products/aluminum-busbar">aluminium busbars</a>; for the material trade-off in more depth see the <a href="/blog/copper-busbar-guide">copper busbar guide</a> and <a href="/blog/busbar-design-basics">busbar design basics</a>.</p>
+    <h2>Frequently asked questions</h2>
+    <h3>How many amps can a copper busbar carry per mm&sup2;?</h3>
+    <p>As a planning figure, 2&ndash;4 A/mm&sup2;, with 3 A/mm&sup2; as a sensible middle for a bar in open air and 2&ndash;2.5 A/mm&sup2; for a bar in a closed cabinet or above 400 mm&sup2;. The figure is a design estimate: the usable rating depends on ambient temperature, enclosure, mounting and insulation, and should come from the supplier's current-carrying table or a temperature-rise test.</p>
+
+    <h3>Is a 50 &times; 10 mm copper bar enough for 1,500 A?</h3>
+    <p>On paper yes: 500 mm&sup2; at 3 A/mm&sup2; is 1,500 A. Whether it is enough in your panel depends on the ambient and the enclosure. A sealed cabinet at 55 &deg;C, or two bars in parallel with a narrow gap, will pull the usable figure well below 1,500 A. Check the derating before committing to the drawing.</p>
+
+    <h3>How much current can an aluminium busbar carry compared with copper?</h3>
+    <p>About 61% of the copper figure for the same cross-section, because aluminium conducts roughly 61% as well by volume. To match a copper bar you need about 1.6 times the section, which still weighs roughly half as much. Joint preparation matters more with aluminium because of the oxide layer.</p>
+
+    <h3>Why does my busbar run hot at the joints but not in the middle?</h3>
+    <p>Because joint resistance, not bar resistance, is usually the problem. Under-torqued bolts, an unprepared aluminium surface, mismatched plating, or a joint that has loosened through thermal cycling all add resistance at a point where there is very little surface to dissipate heat. Measure the temperature at the joint under load and compare it with the bar mid-span.</p>
+
+    <h3>Do I need to check short-circuit withstand as well as continuous current?</h3>
+    <p>Yes. They are separate limits. Continuous current sets the operating temperature; fault current sets the minimum section and the mechanical strength of the supports. A bar sized only for load current can pass the thermal check on a fault and still be bent off its insulators, or anneal at the joint.</p>
+
+  </section>
+
+  <section class="cta-section">
+    <h2>Sizing a bar for a panel or a battery pack?</h2>
+    <p>Send the current per phase, the ambient inside the enclosure, the fault level and the bend drawing. We will come back with a bar size, the insulation option that suits it and a rating quoted for your conditions rather than for a catalogue page.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

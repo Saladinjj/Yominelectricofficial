@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/fuse-size-for-transformer/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuse Size for a Transformer: Primary and Secondary Selection | Yomin Electric</title>
+<meta name="description" content="How to size a transformer fuse: full-load current from kVA, the inrush window the fuse must survive, primary versus secondary protection, and gG, aM and Class J compared.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fuse Size for a Transformer: How to Size Primary and Secondary Fuses">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.yominelectric.com/blog/fuse-size-for-transformer">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/fuse-size-for-transformer/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/fuse-size-for-transformer">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/fuse-size-for-transformer">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/fuse-size-for-transformer-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/fuse-size-for-transformer-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/fuse-size-for-transformer-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/fuse-size-for-transformer">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Fuse Size for a Transformer: How to Size Primary and Secondary Fuses",
+      "description": "How to size a transformer fuse: full-load current from kVA, the inrush window the fuse must survive, primary versus secondary protection, and gG, aM and Class J compared.",
+      "image": "https://www.yominelectric.com/assets/images/blog/fuse-size-for-transformer/hero.png",
+      "datePublished": "2026-11-08",
+      "dateModified": "2026-11-08",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/fuse-size-for-transformer"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What size fuse for a 100 kVA transformer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At 400 V three-phase the primary full-load current is 144 A, so the next standard rating is 160 A — an NH00 160 A gG fuse is the usual choice. That rating also rides through the inrush of a typical dry-type unit. At 20 kV the same transformer draws about 2.9 A on the primary, which needs a medium-voltage fuse link selected for coordination, not a 160 A device."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my transformer blow fuses when it is switched on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the fuse is being asked to survive the magnetising inrush, which peaks at 8–12 times rated current for a few cycles. If the rating was chosen only from full-load current, the fuse curve may pass through that peak. Check the curve at 0.02–0.1 s before changing anything; if the rating is adequate, test the winding insulation instead of fitting a bigger fuse."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a fuse on both the primary and the secondary?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often yes, and they protect different things. The primary fuse protects the transformer and its supply cable; the secondary fuse protects the secondary cable and the distribution board. Where both are fitted they must be coordinated so the secondary device operates first for a downstream fault, otherwise a secondary fault takes out the whole board."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a 1.5 times larger fuse to stop nuisance tripping?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if the inrush calculation says the original rating was too small, and only within the maximum your installation code permits. A larger fuse reduces protection for the cable and the winding, so it is a decision that needs the curve and the code, not a trial-and-error step."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a gG fuse protect a transformer against overload?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. gG fuses have both an overload and a short-circuit element, which is exactly why they are the default for LV transformer protection. The overload element is also why the rating cannot be pushed too high: a fuse big enough to never see inrush may also be too big to protect the winding."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Fuses &amp; Protection</span></div>
+    <span class="bh-tag">Selection Guide</span>
+    <h1 class="bh-title">Fuse Size for a Transformer: How to Size Primary and Secondary Fuses</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 8, 2026</span>
+      <span class="divider"></span>
+      <span>12 min read</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/fuse-size-for-transformer/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/fuse-size-for-transformer/hero.png" alt="Three NH1 aR 250 A 48 V DC fuse links marked IEC 60269-4, mounted in a three-pole YOMIN fuse base" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>To <strong>size a fuse for a transformer</strong>, start from the transformer&rsquo;s full-load current on the side the fuse protects, choose the next standard rating at or above it, and then check that the fuse&rsquo;s time-current curve stays above the inrush current for the first tenth of a second. For a 100 kVA transformer at 400 V three-phase, that current is 144 A &mdash; and a 160 A gG fuse in an NH00 body is the usual starting point.</p>
+
+    <p>The mistake that costs money is not the arithmetic, it is the order of operations. Half of all transformer fuse problems come from sizing on kVA and assuming the number carries across the voltage ratio. The other half come from choosing a fuse that protects the transformer perfectly and trips every time the plant is energised, because nobody looked at the inrush curve.</p>
+
+    <p>This guide covers the full-load current formula, a table you can read off for standard three-phase ratings, the inrush window that sets the floor, the difference between primary and secondary protection, and which fuse family suits which duty. Every rating below is a design recommendation; the melting curves published by the fuse manufacturer govern, and the applicable installation code sets the maximum permitted size.</p>
+
+    <h2>Start from full-load current, never from kVA</h2>
+    <p>The nameplate gives apparent power in kVA. The fuse works on current. Those are only interchangeable once you fix the voltage, and the voltage on the primary side of a distribution transformer is not the voltage on the secondary.</p>
+
+    <p>Two examples show how far apart the two numbers can be for the same kVA:</p>
+
+    <ul>
+
+      <li><strong>100 kVA at 400 V three-phase.</strong> Full-load current is about 144 A. A 160 A fuse is the next standard rating above it.</li>
+
+      <li><strong>The same 100 kVA at 20 kV on the primary.</strong> Primary full-load current is about 2.9 A. The primary fuse is a medium-voltage fuse link, not a 160 A device, and it is selected so that it coordinates with the low-voltage device downstream rather than for the transformer alone.</li>
+
+    </ul>
+
+    <p>Sizing a 20 kV primary fuse from a 400 V current is a mistake that produces a device roughly fifty times too large, and no amount of care at the LV end will compensate for it.</p>
+
+    <p>There is also a caveat on the kVA itself: a transformer is normally rated for a 40 &deg;C ambient, and the fuse is not. If the transformer sits in a hot plant room, the useful continuous current is below nameplate before you choose anything, and the fuse must be chosen for the current the installation will really carry, not the one on the plate.</p>
+    <h2>The formula, and a table you can read off</h2>
+    <p>For a three-phase transformer the full-load current is:</p>
+
+    <p><strong>I = kVA &times; 1000 / (&radic;3 &times; V)</strong>, which at 400 V becomes <strong>I &asymp; kVA &times; 1.44</strong>.</p>
+
+    <p>For a single-phase transformer it is simply <strong>I = kVA &times; 1000 / V</strong>, which at 230 V becomes <strong>I &asymp; kVA &times; 4.35</strong>.</p>
+
+    <p>Three-phase, 400 V, next standard fuse rating above the full-load current:</p>
+
+    <table>
+
+      <thead><tr><th>Transformer (kVA)</th><th>Full-load current (A)</th><th>Next standard fuse (A)</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>25</td><td>36.1</td><td>40</td></tr>
+
+        <tr><td>50</td><td>72.2</td><td>80</td></tr>
+
+        <tr><td>100</td><td>144.3</td><td>160</td></tr>
+
+        <tr><td>160</td><td>230.9</td><td>250</td></tr>
+
+        <tr><td>200</td><td>288.7</td><td>315</td></tr>
+
+        <tr><td>250</td><td>360.8</td><td>400</td></tr>
+
+        <tr><td>315</td><td>454.7</td><td>500</td></tr>
+
+        <tr><td>400</td><td>577.4</td><td>630</td></tr>
+
+        <tr><td>630</td><td>909.4</td><td>1,000</td></tr>
+
+        <tr><td>800</td><td>1,154.7</td><td>1,250</td></tr>
+
+        <tr><td>1,000</td><td>1,443.4</td><td>1,600</td></tr>
+
+        <tr><td>1,250</td><td>1,804.2</td><td>2,000</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Single-phase, 230 V, same logic:</p>
+
+    <table>
+
+      <thead><tr><th>Transformer (kVA)</th><th>Full-load current (A)</th><th>Next standard fuse (A)</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>10</td><td>43.5</td><td>50</td></tr>
+
+        <tr><td>15</td><td>65.2</td><td>80</td></tr>
+
+        <tr><td>25</td><td>108.7</td><td>125</td></tr>
+
+        <tr><td>50</td><td>217.4</td><td>250</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>These are starting points, not answers. The next standard rating above full-load current is the smallest fuse that will not melt on continuous load. Whether it is also large enough to survive inrush, and small enough to protect the cable, is the next two checks.</p>
+    <h2>Inrush decides the minimum, not the load</h2>
+    <p>A transformer switched on with the secondary open draws a current many times its rating for a brief moment. The core saturates on the first half-cycle, the magnetising current spikes, and the current then decays over a few cycles as the flux settles. Depending on the design and the point on the voltage wave at which the switch closes, the peak can reach 8 to 12 times rated current, occasionally more on small units.</p>
+
+    <p>That pulse lasts a fraction of a second, but a fuse responds to it. The relevant part of the time-current curve is the region around 0.01 to 0.1 s, where a gG fuse needs roughly 5 to 8 times its rating to melt. A 160 A gG fuse therefore rides through an inrush peak of around 1,000 A without melting, which is why 160 A holds a 100 kVA transformer that draws 144 A at full load but spikes well over 1,000 A at switch-on.</p>
+
+    <p>Three consequences follow:</p>
+
+    <ul>
+
+      <li><strong>The inrush sets the floor.</strong> If the curve of the chosen fuse would melt inside the inrush window, the rating has to go up, even if full-load current says it is already generous.</li>
+
+      <li><strong>The window is short, the current is not.</strong> The fuse has to survive the peak, not the average. This is why a fuse that is correct for a resistive load trips on a transformer of the same kVA.</li>
+
+      <li><strong>Repetition matters.</strong> A transformer energised several times a day accumulates pre-damage if the fuse runs close to its melting point at every switch-on. A rating that survives one cold start may not survive a year of them.</li>
+
+    </ul>
+
+    <p>Fuses built for this duty exist for a reason: time-delay Class J fuses in North America, and aM fuses in IEC practice, both shift the curve to the right in the inrush region. The trade-off is discussed below.</p>
+    <h2>Primary and secondary fuses do different jobs</h2>
+    <p>Protection on the two sides of a transformer is not interchangeable, and a board with both is not over-protected by accident.</p>
+
+    <table>
+
+      <thead><tr><th>Position</th><th>What it protects</th><th>Sized from</th><th>What it cannot do</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Primary fuse</td><td>The transformer winding and the supply cable feeding it, against a fault inside the transformer or on its secondary terminals</td><td>Primary full-load current, then checked against inrush</td><td>Protect the secondary cable or the loads downstream</td></tr>
+
+        <tr><td>Secondary fuse</td><td>The secondary cable and the distribution board fed from the transformer</td><td>Secondary full-load current, or the cable rating if lower</td><td>Detect a turn-to-turn fault inside the primary winding</td></tr>
+
+        <tr><td>Both together</td><td>A fault on the secondary clears at the secondary device, keeping the rest of the board live</td><td>Coordinated so the secondary device operates first</td><td>Replace an earth-fault or over-temperature device on the transformer</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>The coordination point matters more than either rating on its own. If the secondary fuse is slower than the primary fuse for a fault on a secondary feeder, the primary fuse clears it and takes the whole board down &mdash; a nuisance that gets blamed on the fuse size rather than on the coordination.</p>
+
+    <p>North American practice under NEC 450.3 caps the primary device at 125% of primary full-load current, with the code allowing a higher rating where the transformer&rsquo;s inrush will not let 125% hold. IEC practice achieves the same result through the gG time-current curve and the manufacturer&rsquo;s selectivity tables. Either way, the permitted maximum and the inrush requirement have to be satisfied at the same time, and when they conflict, the design changes rather than the code.</p>
+    <h2>gG, aM, Class J, drop-out and aR compared</h2>
+    <p>Five families turn up in transformer work, and using one where another belongs is the most common specification error after the kVA mistake.</p>
+
+    <table>
+
+      <thead><tr><th>Fuse type</th><th>Typical duty on a transformer</th><th>Survives inrush</th><th>Overload protection</th><th>Notes</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>gG, NH blade or cylindrical</td><td>Primary and secondary protection of LV dry-type transformers</td><td>Yes, at roughly 1.25&ndash;1.5 times full-load current</td><td>Yes</td><td>The default choice. NH blade bodies are commonly rated around 100 kA at 400&ndash;500 V AC, which covers most LV fault levels</td></tr>
+
+        <tr><td>aM</td><td>Short-circuit protection alongside a contactor or motor starter</td><td>Yes, comfortably</td><td>No &mdash; the overload element is deliberately absent</td><td>Never use aM as the only protection; something else must provide overload protection</td></tr>
+
+        <tr><td>Class J, time-delay</td><td>North American panels up to 600 V</td><td>Yes, by design</td><td>Yes, with a time delay</td><td>Compact and current-limiting; the standard answer where NEC applies</td></tr>
+
+        <tr><td>Drop-out cut-out with a K link</td><td>Medium-voltage distribution, pole-mounted or in a feeder pillar</td><td>Yes</td><td>Limited</td><td>Visible break, replaceable link, selected to coordinate with the LV device</td></tr>
+
+        <tr><td>aR, semiconductor or PV DC</td><td>PV strings and DC links, not AC transformer primaries</td><td>Not applicable</td><td>No</td><td>Fast, DC-rated, no overload element. Wrong family for an AC transformer</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>The pattern is simple. gG is the general-purpose answer with both overload and short-circuit elements. Everything else is a specialist, and each specialist removes something: aM removes overload, aR removes overload and AC capability, a drop-out cut-out moves the answer to medium voltage.</p>
+    <h2>The fuse base, the enclosure and the temperature</h2>
+    <p>A fuse is rated in a reference environment, and the base it sits in is part of the circuit. Three practical effects move the usable rating:</p>
+
+    <ul>
+
+      <li><strong>The base has its own temperature rise.</strong> A fuse holder that is undersized for the current adds contact resistance and heat, and the fuse element then runs hotter than the curve assumes. A 160 A fuse in a base rated for 160 A has no margin; the next frame size up does.</li>
+
+      <li><strong>Enclosure temperature.</strong> A fuse in a sealed cabinet at 55 &deg;C ambient is already part-way to its melting point before any current flows. Manufacturers publish derating factors for ambient above the reference, and they are not optional in a hot plant room.</li>
+
+      <li><strong>Grouping.</strong> Several fuses side by side in one enclosure heat each other. A row of six 160 A fuses in a small box is not six independent 160 A fuses.</li>
+
+    </ul>
+
+    <p>None of this changes the arithmetic; it changes the margin. If the calculation lands exactly on a standard rating, the installation effects above will push it over, and the practical answer is the next size up &mdash; provided the cable and the fault level still allow it.</p>
+    <h2>Four mistakes that cause nuisance tripping</h2>
+    <p>When a transformer fuse operates on switch-on rather than on a fault, the cause is usually one of these:</p>
+
+    <ul>
+
+      <li><strong>Sizing from kVA instead of current.</strong> The most common error, and the easiest to spot: divide the kVA by the voltage and the rating stops looking generous.</li>
+
+      <li><strong>Ignoring the inrush point on the curve.</strong> A rating that is fine at 1.3 times full-load current can still be too fast at 8 times for 20 ms. Read the curve at 0.02 s, not at 10 s.</li>
+
+      <li><strong>Using a fast fuse where a time-delay one belongs.</strong> A gG fuse selected purely on the continuous rating, in an application that needed the time-delay region of the curve, will trip on every energisation.</li>
+
+      <li><strong>A failing transformer rather than a failing fuse.</strong> If the fuse operates repeatedly at the same point in the switching cycle, and the rating is demonstrably adequate, the next step is an insulation resistance test and a turns-ratio check, not a bigger fuse. Oversizing a fuse to stop it tripping hides a winding fault until it becomes a fire.</li>
+
+    </ul>
+
+    <p>That last point is worth stating plainly: increasing the fuse rating is a legitimate response to inrush, and an illegitimate response to a fault. The distinction is the insulation test, and it is cheaper than the consequences of skipping it.</p>
+    <h2>Transformers fed from a DC or PV source</h2>
+    <p>DC does not behave like AC at the fuse. There is no natural current zero, so a DC arc sustains itself, and a fuse intended for AC service will not clear a DC fault at the same voltage. A DC-rated fuse has a different element and a different filler, and its voltage rating applies to DC only.</p>
+
+    <p>In photovoltaic work the fuse duty is also different from a transformer primary: a string fuse protects the cable and the modules against a reverse current from the other strings, and it has no overload element at all. That is why PV string fuses are aR or gPV types with a DC voltage rating, and why a gG fuse from the AC side cannot be substituted. Where a transformer sits between a PV array and the grid, the two duties stay separate: DC fuses on the array side, gG or the applicable AC device on the transformer side.</p>
+
+    <p>The photograph at the top of this page shows a YOMIN NH1 aR fuse link marked 250 A, 48 V DC and IEC 60269-4 &mdash; a DC-rated blade fuse, which is the right family for a battery or PV DC link and the wrong one for a 400 V AC transformer primary. The two look similar in a catalogue and behave very differently in a fault.</p>
+    <h2>Fuses for transformer protection from YOMIN</h2>
+    <p>YOMIN supplies the fuse formats that appear in low-voltage transformer panels, feeder pillars and PV distribution boxes. Four items cover most of the enquiries that follow this article:</p>
+
+    <p>The <a href="/products/fuse-protection/nh00-copper-low-voltage-160-amp-3p-polyester-knife-blade-fuse">NH00 copper low-voltage 160 A three-pole knife blade fuse</a> (item ym-0378) is the NH blade format used for transformer and feeder protection in LV boards, built with a copper element and a polyester body, and listed for overload and short-circuit protection.</p>
+
+    <p>The <a href="/products/fuse-protection/300a-j-type-heavy-duty-fuse-cut-out-base-lv-fuse-switch-disconnector">300 A J type heavy-duty fuse cut-out base</a> (item ym-0429) combines the fuse carrier with a disconnecting function, which is what a maintenance team needs when a fuse has to be replaced on a live board.</p>
+
+    <p>The <a href="/products/fuse-protection/high-low-breaking-capacity-1p-n-60-80a-cut-out-fuse-for-low-voltage-usage-rated-500v">1P+N 60/80 A cut-out fuse rated 500 V</a> (item ym-0266) is the single-phase cut-out format for smaller distribution boards and service entrances.</p>
+
+    <p>The <a href="/products/fuse-protection/nh1-80a-125a-250a-48v-pv-dc-solar-fuse-for-distribution-box">NH1 80 A / 125 A / 250 A 48 V PV DC solar fuse</a> (item ym-0066) is the DC-rated blade fuse for PV and battery distribution, and the item shown in the photograph above.</p>
+
+    <p>Those are the ratings, materials and types published for the items. The correct rating for your transformer still depends on its full-load current, its inrush and your fault level, so send the kVA, the voltage ratio, the ambient and the fault level and the selection is confirmed against the curve rather than against a catalogue line. The wider range is under <a href="/products/fuse-protection">fuses and protection</a>; for the general selection method see the <a href="/blog/fuse-and-protection-selection-guide">fuse selection guide</a> and <a href="/blog/fuse-vs-circuit-breaker">fuse versus circuit breaker</a>.</p>
+    <h2>Frequently asked questions</h2>
+    <h3>What size fuse for a 100 kVA transformer?</h3>
+    <p>At 400 V three-phase the primary full-load current is 144 A, so the next standard rating is 160 A &mdash; an NH00 160 A gG fuse is the usual choice. That rating also rides through the inrush of a typical dry-type unit. At 20 kV the same transformer draws about 2.9 A on the primary, which needs a medium-voltage fuse link selected for coordination, not a 160 A device.</p>
+
+    <h3>Why does my transformer blow fuses when it is switched on?</h3>
+    <p>Because the fuse is being asked to survive the magnetising inrush, which peaks at 8&ndash;12 times rated current for a few cycles. If the rating was chosen only from full-load current, the fuse curve may pass through that peak. Check the curve at 0.02&ndash;0.1 s before changing anything; if the rating is adequate, test the winding insulation instead of fitting a bigger fuse.</p>
+
+    <h3>Do I need a fuse on both the primary and the secondary?</h3>
+    <p>Often yes, and they protect different things. The primary fuse protects the transformer and its supply cable; the secondary fuse protects the secondary cable and the distribution board. Where both are fitted they must be coordinated so the secondary device operates first for a downstream fault, otherwise a secondary fault takes out the whole board.</p>
+
+    <h3>Can I use a 1.5 times larger fuse to stop nuisance tripping?</h3>
+    <p>Only if the inrush calculation says the original rating was too small, and only within the maximum your installation code permits. A larger fuse reduces protection for the cable and the winding, so it is a decision that needs the curve and the code, not a trial-and-error step.</p>
+
+    <h3>Does a gG fuse protect a transformer against overload?</h3>
+    <p>Yes. gG fuses have both an overload and a short-circuit element, which is exactly why they are the default for LV transformer protection. The overload element is also why the rating cannot be pushed too high: a fuse big enough to never see inrush may also be too big to protect the winding.</p>
+
+  </section>
+
+  <section class="cta-section">
+    <h2>Selecting fuses for a transformer panel?</h2>
+    <p>Send the transformer kVA, the voltage ratio, the ambient in the panel, the fault level and whether the fuse sits on the primary or the secondary. We will come back with a rating, the fuse family that suits the duty, and the base or disconnector that lets it be replaced safely.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

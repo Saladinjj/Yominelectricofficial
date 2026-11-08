@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/busbar-current-carrying-capacity/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capacidad de corriente de una barra colectora: tabla para cobre y aluminio | Yomin Electric</title>
+<meta name="description" content="Capacidad de corriente de una barra colectora sin adivinar: regla de A/mm2, tabla de secciones normalizadas, efecto pelicular, derrateo t&eacute;rmico y cortocircuito.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Capacidad de corriente de una barra colectora: tabla para cobre y aluminio">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://www.yominelectric.com/blog/busbar-current-carrying-capacity-es">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/busbar-current-carrying-capacity/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/busbar-current-carrying-capacity">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Capacidad de corriente de una barra colectora: tabla para cobre y aluminio",
+      "description": "Capacidad de corriente de una barra colectora sin adivinar: regla de A/mm2, tabla de secciones normalizadas, efecto pelicular, derrateo térmico y cortocircuito.",
+      "image": "https://www.yominelectric.com/assets/images/blog/busbar-current-carrying-capacity/hero.png",
+      "datePublished": "2026-11-08",
+      "dateModified": "2026-11-08",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/busbar-current-carrying-capacity-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "es",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuántos amperios soporta una barra colectora de cobre por mm²?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Como valor de proyecto, 2 a 4 A/mm², con 3 A/mm² como punto medio razonable para una barra al aire libre y 2 a 2,5 A/mm² para una barra en armario cerrado o por encima de 400 mm². Es una estimación de diseño: la intensidad utilizable depende del ambiente, la envolvente, el montaje y el aislamiento, y debe venir de la tabla del proveedor o de un ensayo de calentamiento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Basta una barra de cobre de 50 × 10 mm para 1 500 A?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sobre el papel sí: 500 mm² a 3 A/mm² son 1 500 A. En su cuadro depende del ambiente y de la envolvente. Un armario cerrado a 55 °C, o dos barras en paralelo con poco hueco, bajan la cifra utilizable muy por debajo de 1 500 A. Compruebe el derrateo antes de fijar el plano."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánta corriente lleva una barra de aluminio frente al cobre?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alrededor del 61 % de la cifra del cobre para la misma sección, porque el aluminio conduce aproximadamente el 61 % en volumen. Para igualar una barra de cobre se necesita cerca de 1,6 veces la sección, con un peso aún próximo a la mitad. La preparación de la conexión importa más con aluminio por la capa de óxido."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué mi barra se calienta en las conexiones y no en el centro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Porque el problema suele ser la resistencia de la unión, no la de la barra. Tornillos poco apretados, superficie de aluminio sin preparar, recubrimientos incompatibles o una unión aflojada por ciclos térmicos añaden resistencia en un punto donde hay muy poca superficie para disipar calor. Mida la temperatura en la unión bajo carga y compárela con la del centro de la barra."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hay que comprobar el aguante a cortocircuito además de la corriente permanente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Son dos límites distintos. La corriente permanente fija la temperatura de servicio; la corriente de defecto fija la sección mínima y la robustez de los soportes. Una barra dimensionada solo por corriente de carga puede pasar la comprobación térmica en un defecto y aun así salir arrancada de sus aisladores, o recocerse en la unión."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Barras colectoras</span></div>
+    <span class="bh-tag">Gu&iacute;a t&eacute;cnica</span>
+    <h1 class="bh-title">Capacidad de corriente de una barra colectora: tabla para cobre y aluminio</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>8 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>12 min de lectura</span>
+    </div>
+  </section>
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/busbar-current-carrying-capacity/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/busbar-current-carrying-capacity/hero.png" alt="Barra colectora de aluminio con recubrimiento epoxi y placas de conexi&oacute;n de cobre, junto a una placa de barras laminadas, ambos productos YOMIN" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>La <strong>capacidad de corriente de una barra colectora</strong> no es un n&uacute;mero &uacute;nico impreso en una ficha t&eacute;cnica. Para una barra de cobre en condiciones normales de aparamenta, el valor de trabajo ronda los <strong>2 a 4&nbsp;A por mm&sup2; de secci&oacute;n</strong>, y la dispersi&oacute;n dentro de esa banda proviene de la instalaci&oacute;n, no del metal. A 3&nbsp;A/mm&sup2;, una barra de cobre de 50 &times; 10&nbsp;mm conduce unos 1&nbsp;500&nbsp;A. Esa misma barra, dentro de una envolvente cerrada a 55&nbsp;&deg;C de ambiente, montada en paralelo con una segunda y alimentada a 50&nbsp;Hz, conduce bastante menos.</p>
+
+    <p>Esta p&aacute;gina da el c&aacute;lculo, una tabla que se lee directamente para secciones normalizadas y los cuatro efectos que alejan el resultado real de la tabla. Est&aacute; escrita para quien tiene que firmar el plano: el fabricante de cuadros, el integrador de paquetes de bater&iacute;as, el ingeniero que sustituye una barra que se decolor&oacute; en las conexiones.</p>
+
+    <p>Un aviso antes de los n&uacute;meros. Todos los valores siguientes son estimaciones de dise&ntilde;o derivadas de una densidad de corriente declarada. No son una caracter&iacute;stica certificada por ensayo para un producto concreto y no sustituyen a la tabla de intensidad que su proveedor publique para la barra, el recubrimiento, el aislamiento y el montaje exactos que usted compra.</p>
+
+    <h2>La respuesta corta: amperios por mil&iacute;metro cuadrado</h2>
+    <p>La densidad de corriente es el punto de partida honesto, porque sobrevive a un cambio de secci&oacute;n. Elija una densidad, multiplique por la secci&oacute;n y tendr&aacute; una primera estimaci&oacute;n en una l&iacute;nea:</p>
+
+    <p><strong>I &asymp; J &times; S</strong>, donde <em>J</em> es la densidad de corriente en A/mm&sup2; y <em>S</em> la secci&oacute;n de la barra en mm&sup2; (ancho &times; espesor).</p>
+
+    <p>Dos casos resueltos muestran el rango:</p>
+
+    <ul>
+
+      <li><strong>Una barra de cobre de 20 &times; 5&nbsp;mm.</strong> Secci&oacute;n 100&nbsp;mm&sup2;. A 3&nbsp;A/mm&sup2; conduce unos 300&nbsp;A. A 4&nbsp;A/mm&sup2; conduce unos 400&nbsp;A, y ese valor alto solo es realista en un tramo corto, bien ventilado, con barra desnuda y ambiente fresco.</li>
+
+      <li><strong>Una barra de cobre de 100 &times; 10&nbsp;mm.</strong> Secci&oacute;n 1&nbsp;000&nbsp;mm&sup2;. La aritm&eacute;tica dice 3&nbsp;000&nbsp;A a 3&nbsp;A/mm&sup2;. La realidad dice otra cosa: rara vez se pide a una sola barra de esa secci&oacute;n que transporte m&aacute;s de unos 1&nbsp;600&nbsp;A en un cuadro real, porque el calor tiene que salir por una superficie que creci&oacute; mucho menos que el metal del interior.</li>
+
+    </ul>
+
+    <p>Ese segundo caso explica por qu&eacute; la regla pr&aacute;ctica necesita un art&iacute;culo entero detr&aacute;s. La densidad no es una constante del cobre: baja cuando la barra se hace m&aacute;s gruesa, cuando el cuadro se cierra y cuando sube la temperatura ambiente.</p>
+    <h2>Los tres l&iacute;mites que fijan el valor real</h2>
+    <p>Una barra queda corta o sobredimensionada frente a tres l&iacute;mites distintos. Solo el primero suele gobernar, pero no se puede saber sin haber comprobado los tres.</p>
+
+    <ul>
+
+      <li><strong>Calentamiento.</strong> Es normalmente el l&iacute;mite determinante. Las barras de cobre desnudas en aparamenta se dise&ntilde;an habitualmente para un calentamiento de 60 a 70&nbsp;K sobre el ambiente, y las barras aisladas quedan sujetas a la clase t&eacute;rmica de su aislamiento, t&iacute;picamente 90 a 105&nbsp;&deg;C para los materiales usados en barras. La barra debe alcanzar el equilibrio t&eacute;rmico por debajo de ese techo a plena carga, en la envolvente donde realmente est&aacute; montada.</li>
+
+      <li><strong>Ca&iacute;da de tensi&oacute;n.</strong> En una barra de un metro a 400&nbsp;V la ca&iacute;da casi nunca es determinante. Lo es en tramos largos, en enlaces de bater&iacute;a de baja tensi&oacute;n que llevan cientos de amperios y en sistemas de 12 o 24&nbsp;V donde una d&eacute;cima de voltio importa. La comprobaci&oacute;n es la misma que para un cable: resistividad, longitud, corriente y ca&iacute;da tolerable.</li>
+
+      <li><strong>Aguante a cortocircuito.</strong> Un defecto no atiende a su intensidad permanente. La barra debe soportar la corriente de defecto durante el tiempo de despeje sin recocerse, y la conexi&oacute;n debe soportar los esfuerzos electromagn&eacute;ticos. Este l&iacute;mite fija una secci&oacute;n <em>m&iacute;nima</em>, y en cuadros con alta corriente de defecto suele ser lo que dimensiona la barra, no la corriente de carga.</li>
+
+    </ul>
+
+    <p>Si dimensiona solo por corriente permanente, tarde o temprano encontrar&aacute; un cuadro donde la barra est&aacute; t&eacute;rmicamente bien y mec&aacute;nicamente escasa.</p>
+    <h2>Tabla de cobre a 2, 3 y 4&nbsp;A/mm&sup2;</h2>
+    <p>La tabla siguiente cubre secciones rectangulares normalizadas en mil&iacute;metros. Cada columna de corriente se calcula como secci&oacute;n &times; la densidad del encabezado, de modo que cualquier fila se puede comprobar con una calculadora.</p>
+
+    <table>
+
+      <thead><tr><th>Secci&oacute;n (mm)</th><th>&Aacute;rea (mm&sup2;)</th><th>2&nbsp;A/mm&sup2;</th><th>3&nbsp;A/mm&sup2;</th><th>4&nbsp;A/mm&sup2;</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>12 &times; 3</td><td>36</td><td>72&nbsp;A</td><td>108&nbsp;A</td><td>144&nbsp;A</td></tr>
+
+        <tr><td>15 &times; 3</td><td>45</td><td>90&nbsp;A</td><td>135&nbsp;A</td><td>180&nbsp;A</td></tr>
+
+        <tr><td>20 &times; 3</td><td>60</td><td>120&nbsp;A</td><td>180&nbsp;A</td><td>240&nbsp;A</td></tr>
+
+        <tr><td>20 &times; 5</td><td>100</td><td>200&nbsp;A</td><td>300&nbsp;A</td><td>400&nbsp;A</td></tr>
+
+        <tr><td>25 &times; 5</td><td>125</td><td>250&nbsp;A</td><td>375&nbsp;A</td><td>500&nbsp;A</td></tr>
+
+        <tr><td>30 &times; 5</td><td>150</td><td>300&nbsp;A</td><td>450&nbsp;A</td><td>600&nbsp;A</td></tr>
+
+        <tr><td>40 &times; 5</td><td>200</td><td>400&nbsp;A</td><td>600&nbsp;A</td><td>800&nbsp;A</td></tr>
+
+        <tr><td>50 &times; 5</td><td>250</td><td>500&nbsp;A</td><td>750&nbsp;A</td><td>1&nbsp;000&nbsp;A</td></tr>
+
+        <tr><td>40 &times; 10</td><td>400</td><td>800&nbsp;A</td><td>1&nbsp;200&nbsp;A</td><td>1&nbsp;600&nbsp;A</td></tr>
+
+        <tr><td>50 &times; 10</td><td>500</td><td>1&nbsp;000&nbsp;A</td><td>1&nbsp;500&nbsp;A</td><td>2&nbsp;000&nbsp;A</td></tr>
+
+        <tr><td>60 &times; 10</td><td>600</td><td>1&nbsp;200&nbsp;A</td><td>1&nbsp;800&nbsp;A</td><td>2&nbsp;400&nbsp;A</td></tr>
+
+        <tr><td>80 &times; 10</td><td>800</td><td>1&nbsp;600&nbsp;A</td><td>2&nbsp;400&nbsp;A</td><td>3&nbsp;200&nbsp;A</td></tr>
+
+        <tr><td>100 &times; 10</td><td>1&nbsp;000</td><td>2&nbsp;000&nbsp;A</td><td>3&nbsp;000&nbsp;A</td><td>4&nbsp;000&nbsp;A</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Lea la columna de 4&nbsp;A/mm&sup2; con desconfianza por encima de unos 250&nbsp;mm&sup2;. Esa densidad describe una barra corta, desnuda y bien ventilada. Las filas desde 400&nbsp;mm&sup2; est&aacute;n para que la aritm&eacute;tica sea visible, no porque una sola barra de ese tama&ntilde;o vaya a dar esa cifra en un armario cerrado. Para esas secciones, tome 2 a 2,5&nbsp;A/mm&sup2; como valor de proyecto, o pase a barras en paralelo como se describe m&aacute;s abajo.</p>
+    <h2>Aluminio: la misma corriente en una barra m&aacute;s grande</h2>
+    <p>El aluminio conduce aproximadamente el 61&nbsp;% del cobre en volumen. Para la misma corriente y el mismo calentamiento, una barra de aluminio necesita cerca de 1,6 veces la secci&oacute;n de la de cobre; pero como su densidad es aproximadamente un tercio, la barra resultante pesa alrededor de la mitad. Ah&iacute; est&aacute; todo el inter&eacute;s del aluminio: almacenamiento de energ&iacute;a, campos fotovoltaicos y cualquier conjunto donde el peso o el coste por amperio importen m&aacute;s que el volumen.</p>
+
+    <table>
+
+      <thead><tr><th>Propiedad</th><th>Cobre</th><th>Aluminio</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>Conductividad (% IACS)</td><td>100</td><td>61</td></tr>
+
+        <tr><td>Resistividad a 20&nbsp;&deg;C (&micro;&Omega;&middot;m)</td><td>0,0172</td><td>0,0283</td></tr>
+
+        <tr><td>Densidad (g/cm&sup3;)</td><td>8,96</td><td>2,70</td></tr>
+
+        <tr><td>Secci&oacute;n necesaria para la misma corriente</td><td>1,0</td><td>&asymp;&nbsp;1,6</td></tr>
+
+        <tr><td>Peso para la misma corriente</td><td>1,0</td><td>&asymp;&nbsp;0,5</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Aplicando el factor del 61&nbsp;% a la tabla anterior a 3&nbsp;A/mm&sup2; se obtiene la columna de aluminio siguiente. Son valores de proyecto para barra desnuda al aire, no caracter&iacute;sticas de cat&aacute;logo:</p>
+
+    <table>
+
+      <thead><tr><th>Barra de aluminio (mm)</th><th>&Aacute;rea (mm&sup2;)</th><th>Corriente equivalente a 3&nbsp;A/mm&sup2;</th></tr></thead>
+
+      <tbody>
+
+        <tr><td>20 &times; 5</td><td>100</td><td>183&nbsp;A</td></tr>
+
+        <tr><td>30 &times; 5</td><td>150</td><td>275&nbsp;A</td></tr>
+
+        <tr><td>40 &times; 5</td><td>200</td><td>366&nbsp;A</td></tr>
+
+        <tr><td>50 &times; 5</td><td>250</td><td>458&nbsp;A</td></tr>
+
+        <tr><td>50 &times; 10</td><td>500</td><td>915&nbsp;A</td></tr>
+
+        <tr><td>60 &times; 10</td><td>600</td><td>1&nbsp;098&nbsp;A</td></tr>
+
+        <tr><td>100 &times; 10</td><td>1&nbsp;000</td><td>1&nbsp;830&nbsp;A</td></tr>
+
+      </tbody>
+
+    </table>
+
+    <p>Dos diferencias pr&aacute;cticas importan m&aacute;s que la aritm&eacute;tica. El aluminio forma un &oacute;xido aislante en minutos al aire, as&iacute; que toda conexi&oacute;n necesita lijado y pasta inhibidora de &oacute;xido, o una placa de contacto de cobre o esta&ntilde;o. Y su dilataci&oacute;n t&eacute;rmica es mayor que la del cobre: por eso las uniones atornilladas de aluminio requieren arandelas de resorte o un intervalo de retorque en el plan de mantenimiento. Una uni&oacute;n de aluminio bien apretada en la instalaci&oacute;n es la conexi&oacute;n floja cl&aacute;sica dos a&ntilde;os despu&eacute;s.</p>
+    <h2>Por qu&eacute; dos barras en paralelo no son el doble</h2>
+    <p>Duplicar la secci&oacute;n a&ntilde;adiendo una segunda barra id&eacute;ntica no duplica la capacidad. Tres efectos se comen la ganancia:</p>
+
+    <ul>
+
+      <li><strong>Las superficies interiores quedan tapadas.</strong> Dos barras pr&oacute;ximas ofrecen menos superficie de refrigeraci&oacute;n que dos separadas, y el hueco entre ellas es una mala chimenea. Los factores de derrateo publicados para un par de barras suelen quedar entre 0,8 y 0,9 de la suma aritm&eacute;tica, y peor cuando el hueco es menor que el espesor de la barra.</li>
+
+      <li><strong>La corriente no se reparte por igual.</strong> En alterna, el efecto de proximidad empuja la corriente hacia las caras exteriores, de modo que las dos barras no comparten la carga por igual. La conexi&oacute;n y la barra que llevan la mayor parte se calientan m&aacute;s de lo que sugiere la media.</li>
+
+      <li><strong>Las uniones se multiplican.</strong> Cada barra adicional a&ntilde;ade dos interfaces atornilladas. El sobrecalentamiento suele empezar ah&iacute;, no en el centro de la barra.</li>
+
+    </ul>
+
+    <p>Regla pr&aacute;ctica: separe las barras paralelas al menos un espesor de barra, aplique un derrateo de unos 0,85 a la suma y considere que por encima de unos 1&nbsp;600&nbsp;A una sola barra deja de ser la respuesta sensata. Por encima, la ventilaci&oacute;n forzada, un perfil m&aacute;s ancho u otro sistema de conductores suele salir m&aacute;s barato que una cuarta barra.</p>
+    <h2>Alterna y continua no son el mismo problema</h2>
+    <p>En continua la corriente usa toda la secci&oacute;n, y la tabla anterior vale lo que valga el dise&ntilde;o t&eacute;rmico que hay detr&aacute;s. A 50 o 60&nbsp;Hz la corriente se concentra cerca de la superficie. La profundidad a la que la densidad de corriente ha ca&iacute;do a cerca del 37&nbsp;% de su valor superficial es la profundidad de penetraci&oacute;n; para el cobre es aproximadamente <strong>9,3&nbsp;mm a 50&nbsp;Hz</strong> y <strong>8,5&nbsp;mm a 60&nbsp;Hz</strong>. Para el aluminio, unos 12&nbsp;mm a 50&nbsp;Hz.</p>
+
+    <p>Comp&aacute;relo con el espesor de la barra. Una barra de 5 o 10&nbsp;mm es m&aacute;s delgada que la profundidad de penetraci&oacute;n, as&iacute; que toda la secci&oacute;n sigue trabajando y la penalizaci&oacute;n en alterna es peque&ntilde;a. Una de 20 o 30&nbsp;mm ya no: el centro de la barra conduce poco mientras sigue aportando peso, coste e inercia t&eacute;rmica. Por eso las grandes intensidades en alterna se construyen con varias barras delgadas en lugar de una gruesa, y por eso una barra gruesa puede parecer generosa en un plano y aun as&iacute; calentarse.</p>
+
+    <p>La misma f&iacute;sica explica un fallo de campo frecuente: una barra especificada para un enlace de bater&iacute;a en continua se reutiliza en una salida de alterna con la misma corriente nominal, y la uni&oacute;n se calienta m&aacute;s de lo previsto porque la corriente ya no se reparte como supon&iacute;a el c&aacute;lculo en continua.</p>
+    <h2>Temperatura ambiente y derrateo dentro del cuadro</h2>
+    <p>La tabla supone aire libre a un ambiente de referencia. Meta esa misma barra en un armario cerrado sobre una azotea en verano y el calentamiento admisible se reduce, porque la temperatura techo la fija el aislamiento y el punto de partida ha subido.</p>
+
+    <p>La correcci&oacute;n es una relaci&oacute;n, no una tabla de n&uacute;meros m&aacute;gicos. Si una barra se dise&ntilde;a para un calentamiento de 65&nbsp;K desde 40&nbsp;&deg;C de ambiente, y el armario funciona en realidad a 55&nbsp;&deg;C, el calentamiento admisible pasa a 50&nbsp;K. La disipaci&oacute;n de una barra var&iacute;a aproximadamente con la diferencia respecto al ambiente, as&iacute; que la corriente admisible var&iacute;a aproximadamente con la ra&iacute;z cuadrada de la relaci&oacute;n de calentamientos: &radic;(50/65) &asymp; 0,88, es decir, alrededor de un 12&nbsp;% menos de corriente para la misma barra.</p>
+
+    <p>Es una aproximaci&oacute;n de ingenier&iacute;a y lo asume. Indica la direcci&oacute;n y el orden de magnitud del derrateo, que es lo que se necesita para decidir si el dise&ntilde;o tiene margen. No sustituye a un ensayo de calentamiento ni cubre un armario donde la barra es la fuente de calor de todo lo que est&aacute; encima.</p>
+
+    <p>Efectos de envolvente que hay que sumar: ausencia total de ventilaci&oacute;n, polvo o pelusa sobre las barras, tendido en canaleta con otros conductores cargados y aporte solar sobre una envolvente exterior. Cada uno de estos factores ha provocado m&aacute;s barras sobrecalentadas en campo que una densidad de corriente mal elegida.</p>
+    <h2>Aguante a cortocircuito: el l&iacute;mite que nadie comprueba</h2>
+    <p>Capacidad permanente y capacidad de defecto son dos c&aacute;lculos separados, y una barra que pasa el primero puede fallar el segundo. La comprobaci&oacute;n adiab&aacute;tica pregunta si la barra puede absorber la energ&iacute;a del defecto sin que su temperatura supere el l&iacute;mite que permite el material.</p>
+
+    <p>La forma cl&aacute;sica es <strong>S = I &times; &radic;t / k</strong>, donde <em>S</em> es la secci&oacute;n necesaria en mm&sup2;, <em>I</em> la corriente de defecto en amperios, <em>t</em> el tiempo de despeje en segundos y <em>k</em> una constante de material y aislamiento tomada de la norma que se aplique. Para cobre con aislamiento XLPE, la IEC&nbsp;60364-5-54 da k&nbsp;=&nbsp;143. Invirtiendo en una barra de cobre de 200&nbsp;mm&sup2; con 0,1&nbsp;s de despeje se obtiene un aguante de unos 90&nbsp;kA; con 1&nbsp;s de despeje, solo unos 29&nbsp;kA.</p>
+
+    <p>Dos consecuencias. Primera, el tiempo de despeje domina: una barra c&oacute;moda detr&aacute;s de un fusible r&aacute;pido no lo es autom&aacute;ticamente detr&aacute;s de uno lento. Segunda, el lado mec&aacute;nico debe comprobarse por separado: el esfuerzo electromagn&eacute;tico de pico entre barras paralelas durante un defecto y la resistencia de los soportes. Una barra puede pasar la comprobaci&oacute;n t&eacute;rmica y aun as&iacute; salir arrancada de sus aisladores.</p>
+    <h2>C&oacute;mo se verifica realmente una barra (IEC&nbsp;61439)</h2>
+    <p>En un conjunto cubierto por la IEC&nbsp;61439, la corriente que puede transportar una barra no se establece solo por c&aacute;lculo. El calentamiento se verifica por ensayo sobre un montaje representativo o por comparaci&oacute;n con un dise&ntilde;o de referencia ya verificado seg&uacute;n las reglas de la norma. Por eso dos proveedores pueden anunciar valores distintos para barras geom&eacute;tricamente id&eacute;nticas: lo que cambia es la envolvente, el montaje, el recubrimiento y la evidencia de ensayo detr&aacute;s de la cifra.</p>
+
+    <p>Para un comprador, eso cambia la pregunta. No pida solo una intensidad. Pida la intensidad <em>con sus condiciones</em>: temperatura ambiente, tipo de envolvente, orientaci&oacute;n de montaje, n&uacute;mero de barras por fase y si el valor es verificado por ensayo de tipo o calculado. Una intensidad sin condiciones es una cifra comercial, y ser&aacute; el origen de la discusi&oacute;n cuando el cuadro caliente en su primer verano.</p>
+    <h2>Qu&eacute; poner en el plano antes de pedir precio</h2>
+    <p>Especifique estos ocho puntos y la conversaci&oacute;n comercial se acorta:</p>
+
+    <ul>
+
+      <li><strong>Corriente permanente por fase</strong>, y si esa cifra ya incluye reserva para ampliaci&oacute;n.</li>
+
+      <li><strong>Tensi&oacute;n y frecuencia del sistema</strong>, m&aacute;s la corriente de defecto y el tiempo de despeje para la comprobaci&oacute;n de aguante.</li>
+
+      <li><strong>Secci&oacute;n y material</strong>, como ancho &times; espesor en mil&iacute;metros, con cobre o aluminio indicado expl&iacute;citamente en lugar de dejarlo al proveedor.</li>
+
+      <li><strong>Recubrimiento</strong> &mdash; desnudo, esta&ntilde;ado, plateado o niquelado &mdash; y si se aplica solo a la zona de conexi&oacute;n o a toda la barra.</li>
+
+      <li><strong>Aislamiento</strong>, si lo hay: recubrimiento epoxi, funda termorretr&aacute;ctil o barra laminada con diel&eacute;ctrico especificado.</li>
+
+      <li><strong>Conformado y taladros</strong>, en plano: radio de curvatura, di&aacute;metro y paso de los taladros, y qu&eacute; cara debe quedar plana.</li>
+
+      <li><strong>Condiciones de ambiente y envolvente</strong>: interior o exterior, ventilaci&oacute;n y temperatura m&aacute;xima que ver&aacute; el armario.</li>
+
+      <li><strong>Cantidad y embalaje</strong>, ya que la mayor&iacute;a de los pedidos de barras son de proyecto con una lista de curvados y no una referencia de cat&aacute;logo.</li>
+
+    </ul>
+
+    <p>Un plano con estos ocho puntos se cotiza sin una ronda de preguntas, y las discrepancias en la recepci&oacute;n se vuelven raras porque las condiciones viajaron con la cifra.</p>
+    <h2>Barras r&iacute;gidas de la gama YOMIN</h2>
+    <p>YOMIN suministra barras colectoras en los formatos que fabricantes de cuadros e integradores de paquetes compran habitualmente: barra r&iacute;gida de cobre o aluminio, aislada o desnuda, fabricada seg&uacute;n plano. Dos art&iacute;culos cubren la mayor&iacute;a de las consultas que siguen a este art&iacute;culo:</p>
+
+    <p>La <a href="/products/rigid-busbar/copper-bus-flat-high-current-insulated-hard-aluminum-bus-for-high-quality">barra colectora plana de cobre para alta corriente, aislada</a> (referencia ym-0443) es una barra r&iacute;gida de cobre o aluminio con aislamiento, ofrecida desde un m&iacute;nimo de 50 piezas y destinada a instalaciones fijas, paquetes de bater&iacute;as y aparamenta.</p>
+
+    <p>La <a href="/products/rigid-busbar/the-manufacturer-customized-rigid-copper-electrical-busbars-are-used-in-the">barra colectora r&iacute;gida de cobre personalizada por el fabricante</a> (referencia ym-0458) es la versi&oacute;n seg&uacute;n plano para instalaciones fijas, paquetes de bater&iacute;as y aparamenta, desde 100 piezas.</p>
+
+    <p>Esos son el material, el tipo y las cantidades publicadas para esos art&iacute;culos. La intensidad no se publica como cifra &uacute;nica, y es deliberado: depende de las condiciones de su envolvente. Env&iacute;e el plano, la corriente por fase, el ambiente y la corriente de defecto, y la intensidad se cotiza para esa configuraci&oacute;n y no para una p&aacute;gina de cat&aacute;logo. La gama completa est&aacute; en <a href="/products/rigid-busbar">barras r&iacute;gidas</a> y <a href="/products/aluminum-busbar">barras de aluminio</a>; para el equilibrio entre materiales con m&aacute;s detalle, vea la <a href="/blog/copper-busbar-guide">gu&iacute;a de barras de cobre</a> y los <a href="/blog/busbar-design-basics">fundamentos de dise&ntilde;o de barras</a>.</p>
+    <h2>Preguntas frecuentes</h2>
+    <h3>&iquest;Cu&aacute;ntos amperios soporta una barra colectora de cobre por mm&sup2;?</h3>
+    <p>Como valor de proyecto, 2 a 4&nbsp;A/mm&sup2;, con 3&nbsp;A/mm&sup2; como punto medio razonable para una barra al aire libre y 2 a 2,5&nbsp;A/mm&sup2; para una barra en armario cerrado o por encima de 400&nbsp;mm&sup2;. Es una estimaci&oacute;n de dise&ntilde;o: la intensidad utilizable depende del ambiente, la envolvente, el montaje y el aislamiento, y debe venir de la tabla del proveedor o de un ensayo de calentamiento.</p>
+
+    <h3>&iquest;Basta una barra de cobre de 50 &times; 10&nbsp;mm para 1&nbsp;500&nbsp;A?</h3>
+    <p>Sobre el papel s&iacute;: 500&nbsp;mm&sup2; a 3&nbsp;A/mm&sup2; son 1&nbsp;500&nbsp;A. En su cuadro depende del ambiente y de la envolvente. Un armario cerrado a 55&nbsp;&deg;C, o dos barras en paralelo con poco hueco, bajan la cifra utilizable muy por debajo de 1&nbsp;500&nbsp;A. Compruebe el derrateo antes de fijar el plano.</p>
+
+    <h3>&iquest;Cu&aacute;nta corriente lleva una barra de aluminio frente al cobre?</h3>
+    <p>Alrededor del 61&nbsp;% de la cifra del cobre para la misma secci&oacute;n, porque el aluminio conduce aproximadamente el 61&nbsp;% en volumen. Para igualar una barra de cobre se necesita cerca de 1,6 veces la secci&oacute;n, con un peso a&uacute;n pr&oacute;ximo a la mitad. La preparaci&oacute;n de la conexi&oacute;n importa m&aacute;s con aluminio por la capa de &oacute;xido.</p>
+
+    <h3>&iquest;Por qu&eacute; mi barra se calienta en las conexiones y no en el centro?</h3>
+    <p>Porque el problema suele ser la resistencia de la uni&oacute;n, no la de la barra. Tornillos poco apretados, superficie de aluminio sin preparar, recubrimientos incompatibles o una uni&oacute;n aflojada por ciclos t&eacute;rmicos a&ntilde;aden resistencia en un punto donde hay muy poca superficie para disipar calor. Mida la temperatura en la uni&oacute;n bajo carga y comp&aacute;rela con la del centro de la barra.</p>
+
+    <h3>&iquest;Hay que comprobar el aguante a cortocircuito adem&aacute;s de la corriente permanente?</h3>
+    <p>S&iacute;. Son dos l&iacute;mites distintos. La corriente permanente fija la temperatura de servicio; la corriente de defecto fija la secci&oacute;n m&iacute;nima y la robustez de los soportes. Una barra dimensionada solo por corriente de carga puede pasar la comprobaci&oacute;n t&eacute;rmica en un defecto y aun as&iacute; salir arrancada de sus aisladores, o recocerse en la uni&oacute;n.</p>
+
+  </section>
+
+  <section class="cta-section">
+    <h2>&iquest;Est&aacute; dimensionando una barra para un cuadro o un paquete de bater&iacute;as?</h2>
+    <p>Env&iacute;e la corriente por fase, el ambiente dentro de la envolvente, la corriente de defecto y el plano de curvado. Le respondemos con una secci&oacute;n, la opci&oacute;n de aislamiento adecuada y una intensidad cotizada para sus condiciones y no para una p&aacute;gina de cat&aacute;logo.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotizaci&oacute;n</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
