@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/solar-busbar-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barre omnibus solaire : liaisons DC pour le PV et le stockage</title>
+<meta name="description" content="Comment les barres omnibus s'emploient dans les champs photovoltaïques et le stockage en conteneur : règles de distance en courant continu, regroupement de strings, isolation résistant au cyclage extérieur et matériel de liaison qui lâche en premier.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Barre omnibus solaire : liaisons DC pour le PV et le stockage">
+<meta property="og:description" content="Comment les barres omnibus s'emploient dans les champs photovoltaïques et le stockage en conteneur : règles de distance en courant continu, regroupement de strings, isolation résistant au cyclage extérieur et matériel de liaison qui lâche en premier.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/solar-busbar-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/solar-busbar-guide-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/solar-busbar-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/solar-busbar-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/solar-busbar-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/solar-busbar-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/solar-busbar-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Barre omnibus solaire : liaisons DC pour le PV et le stockage",
+      "description": "Comment les barres omnibus s'emploient dans les champs photovoltaïques et le stockage en conteneur : règles de distance en courant continu, regroupement de strings, isolation résistant au cyclage extérieur et matériel de liaison qui lâche en premier.",
+      "image": "https://www.yominelectric.com/assets/images/blog/solar-busbar-guide/hero.png",
+      "datePublished": "2026-11-09",
+      "dateModified": "2026-11-09",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/solar-busbar-guide-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "À quoi sert une barre omnibus solaire ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elle collecte le courant continu de plusieurs strings ou modules de batterie et l'amène à un seul appareil, à la place d'une chaîne de câbles séparés. Dans une centrale PV, elle se trouve généralement dans le coffret de regroupement ; dans le stockage, dans le rack ou le conteneur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi le 1500 V DC impose-t-il une autre disposition de barre ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un arc continu ne passe pas par zéro et ne s'éteint pas seul : les règles de distance et de ligne de fuite se resserrent au-delà de 1000 V. Une conception 1500 VDC exige un espacement plus large et des séparations prévues pour cette classe de tension, et non une disposition 1000 V réutilisée."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il choisir l'aluminium ou le cuivre pour une barre solaire ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'aluminium pour les longues liaisons et les barres montées en toiture, car il demande environ 1,6 fois la section du cuivre mais pèse environ la moitié. Le cuivre lorsque l'enceinte est encombrée et que la section plus faible laisse de la place aux porte-fusibles et aux presse-étoupes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi utiliser une barre souple dans un conteneur de batteries ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parce que les modules ne sont jamais parfaitement alignés et que le conteneur vibre pendant le transport. Un lien flexible laminé rattrape le désalignement, garde les faces de jonction parallèles et éloigne la flexion de la borne."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Solaire et PV</span></div>
+    <span class="bh-tag">Guides d'application</span>
+    <h1 class="bh-title">Barre omnibus solaire : liaisons DC pour le PV et le stockage</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">Équipe technique ET</strong>
+      <span class="divider"></span>
+      <span>9 novembre 2026</span>
+      <span class="divider"></span>
+      <span>8 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/solar-busbar-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/solar-busbar-guide/hero.png" alt="Barre omnibus aluminium étamée et barre omnibus aluminium isolée plate destinées aux liaisons DC de champs solaires et de stockage d'énergie, sur fond papier chaud" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p><strong>Une barre omnibus solaire remplit une seule fonction : collecter le courant continu de plusieurs strings ou modules de batterie et l'amener à un seul appareil, sans les pertes et les points de défaillance d'une chaîne de câbles séparés.</strong> Ce qui la distingue d'une barre d'armoire n'est pas le métal mais l'environnement &mdash; un courant continu qui n'éteindra pas de lui-même un arc, des règles de distance qui changent au-delà de 1000 V, et une enceinte qui peut rester au soleil vingt ans. Les défaillances qui comptent sont presque toujours à la jonction, pas dans la barre.</p>
+
+    <h2>Où se situe la barre omnibus dans une installation PV</h2>
+    <p>Côté champ, la barre se trouve dans le coffret de regroupement. Les strings arrivent sur des porte-fusibles ou des disjoncteurs, et une barre commune rassemble leurs sorties vers un seul départ vers l'onduleur. Côté stockage, la barre se trouve dans le rack ou le conteneur, où elle remplace un faisceau de câbles entre les modules et le bus continu.</p>
+    <p>Les deux cas obéissent à la même économie. Une barre unique avec plusieurs points de raccordement coûte moins cher que plusieurs câbles longs, prend moins de place et ne donne à l'installateur qu'un seul couple de serrage à vérifier au lieu de dix bornes cachées les unes derrière les autres. Le prix à payer est qu'un défaut sur la barre affecte tout ce qui y est raccordé &mdash; d'où l'importance de l'appareil de sectionnement en amont, autant que de la barre elle-même.</p>
+    <h2>Le courant continu ne pardonne pas les mêmes erreurs que l'alternatif</h2>
+    <p>La différence la plus importante est le comportement de l'arc. Un arc alternatif passe deux fois par zéro à chaque cycle et tend à s'éteindre ; un arc continu, non. Cela change deux choses dans l'enceinte : la distance à respecter et l'appareil de sectionnement à prévoir.</p>
+    <p>Au-delà de 1000 V continu, les règles d'espacement se resserrent nettement : une conception 1500 VDC ne peut donc pas réutiliser telle quelle la disposition d'une conception 1000 V. Dans la gamme YOMIN, l'écart se lit dans les produits eux-mêmes : des coffrets de regroupement 1000 V DC pour l'agrégation des strings, et des interrupteurs-sectionneurs 1500 VDC distincts pour les architectures à tension plus élevée, cotés IP66 pour un montage extérieur. C'est la classe de tension du système qui fixe l'espacement de la barre et la disposition des séparations, pas le courant.</p>
+    <p>La seconde conséquence est une discipline de maintenance. Sur un champ continu, on n'ouvre jamais une jonction sous charge en comptant sur l'extinction spontanée de l'arc.</p>
+    <h2>Aluminium ou cuivre pour la liaison continue</h2>
+    <p>Le compromis de conductivité qui gouverne les barres d'armoire gouverne aussi les barres de champ. L'aluminium conduit environ 61 % de ce que conduit le cuivre à volume égal : il demande donc environ 1,6 fois la section pour le même courant &mdash; puis pèse environ la moitié.</p>
+    <p>D'où une répartition simple. Les longues liaisons le long d'un champ, et les barres qu'il faut monter sur un toit, favorisent l'aluminium. Les coffrets de regroupement encombrés, où chaque millimètre de section rivalise avec les porte-fusibles et les presse-étoupes, favorisent le cuivre, car la section plus faible laisse de la place au reste. Dans le stockage en conteneur, le choix se fait généralement liaison par liaison : cuivre là où le courant se concentre dans un lien court, aluminium là où la barre traverse le rack.</p>
+    <h2>L'isolation doit résister au climat, pas seulement à la tension</h2>
+    <p>Une enceinte extérieure subit un cycle de chauffage et de refroidissement chaque jour. Ce cycle produit deux modes de défaillance : la dilatation différentielle entre la barre et son revêtement, et la condensation sur toute surface qui se refroidit plus vite que l'air ambiant.</p>
+    <p>Trois finitions couvrent l'essentiel. La barre rigide isolée offre un chemin de ligne de fuite défini et une protection mécanique dans une seule pièce, ce dont la plupart des coffrets de regroupement et de distribution ont besoin. Le revêtement par pulvérisation sur une barre étamée apporte une protection anticorrosion avec moins de volume, et convient aux barres formées après revêtement. Le nickelage est le choix lorsque la barre est manipulée de nombreuses fois, que les jonctions s'ouvrent en maintenance, ou qu'une abrasion userait une finition plus tendre.</p>
+    <table>
+      <thead>
+        <tr><th>Référence</th><th>Finition</th><th>Type</th><th>Application indiquée</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>ym-0540</td><td>Étamée</td><td>Isolée / nue</td><td>ESS, champs solaires, liaisons de puissance légères</td></tr>
+        <tr><td>ym-0522</td><td>Nickelée</td><td>Isolée / nue</td><td>ESS, champs solaires, liaisons de puissance légères</td></tr>
+        <tr><td>ym-0468</td><td>Barre rigide isolée</td><td>Isolée</td><td>Équipements de distribution pour les énergies nouvelles</td></tr>
+      </tbody>
+    </table>
+    <p>Les trois sont disponibles à partir de 100 pièces, ce qui compte lorsqu'un projet exige une finition précise sur une barre par ailleurs standard.</p>
+    <h2>Regroupement de strings : la barre qui remplace un bornier</h2>
+    <p>Dans un coffret de regroupement, la barre fait le travail d'une rangée de borniers, avec moins de pièces et moins de chute de tension. Les décisions de conception sont peu spectaculaires et décisives :</p>
+    <ul>
+      <li><strong>Pas de raccordement.</strong> La distance entre points de raccordement doit correspondre à l'espacement des porte-fusibles, et non être choisie par commodité. Une barre percée au mauvais pas impose un cheminement de câbles qui met les bornes des fusibles sous contrainte.</li>
+      <li><strong>Disposition des séparations.</strong> Les barres positive et négative exigent une séparation conforme à la classe de tension continue, et cette séparation doit résister à un technicien travaillant avec un outil dans le coffret.</li>
+      <li><strong>Un seul couple, documenté.</strong> Tous les points de la barre devraient utiliser la même fixation et le même couple, indiqué à l'intérieur du couvercle. Le mélange de visserie est la façon dont un coffret finit avec deux jonctions que personne n'a contrôlées.</li>
+    </ul>
+    <p>Un coffret construit ainsi se monte plus vite, s'inspecte plus facilement et se dépane plus aisément qu'un coffret câblé point par point.</p>
+    <h2>Les liaisons de stockage en conteneur posent un autre problème</h2>
+    <p>Dans un rack ou un conteneur, la barre doit absorber les tolérances cumulées entre des modules qui n'ont jamais été conçus pour être parfaitement alignés, et le faire en transportant des centaines d'ampères dans un volume qui vibre pendant le transport.</p>
+    <p>C'est le rôle des barres souples. Un lien flexible laminé rattrape le désalignement, maintient les faces de jonction parallèles et déplace la flexion loin de la borne. Dans la <a href='/products/energy-storage-busbar'>gamme stockage d'énergie YOMIN</a>, ces éléments sont proposés comme connecteurs de stockage en cuivre ou en aluminium, à partir de 100 pièces, pour des applications de stockage en conteneur et commercial.</p>
+    <p>La règle pratique : une barre rigide pour le trajet, et un lien flexible à chaque interface où deux ensembles se rencontrent. Une barre rigide boulonnée en travers d'une interface de modules soit précontraint les bornes, soit fissure au pli &mdash; et les deux se manifestent après la mise en service, pas pendant.</p>
+    <h2>Les contrôles de mise en service qui détectent vraiment une mauvaise jonction</h2>
+    <p>Trois contrôles, dans cet ordre, attrapent presque tout ce qui lâchera la première année.</p>
+    <ul>
+      <li><strong>Audit des couples.</strong> Vérifiez chaque point de raccordement à la clé dynamométrique et marquez-le. Recommencez après le premier cycle thermique en pleine charge, car les jonctions aluminium se tassent.</li>
+      <li><strong>Caméra thermique sous charge.</strong> Balayez la barre et chaque jonction avec le champ au courant de service. Une jonction quelques degrés plus chaude que ses voisines est une jonction qui va lâcher ; la température absolue compte moins que l'écart.</li>
+      <li><strong>Résistance d'isolement et continuité.</strong> Confirmez que la disposition des séparations est intacte après la fermeture du couvercle et le cheminement des câbles, car c'est là que la distance est généralement perdue.</li>
+    </ul>
+    <p>Un balayage thermique à la mise en service coûte une heure et trouve les jonctions qu'un défaut de string aurait révélées au deuxième été.</p>
+    <h2>Ce qu'il faut envoyer pour un devis</h2>
+    <ul>
+      <li>La classe de tension du système : 1000 V DC ou 1500 V DC.</li>
+      <li>Le courant permanent par barre, et le nombre de points de raccordement avec leur pas.</li>
+      <li>Intérieur ou extérieur, et l'indice de protection de l'enceinte avec lequel la barre doit vivre.</li>
+      <li>La finition : étamée, nickelée, isolée, ou un lien flexible laminé.</li>
+      <li>Le plan ou un croquis coté, la quantité, et si la pièce est formée avant ou après le revêtement.</li>
+    </ul>
+    <p>Avec ces cinq éléments, la barre peut être chiffrée pour l'installation réelle et non pour une section de catalogue. YOMIN produit des barres omnibus aluminium et cuivre pour applications solaires et stockage sur plan client à partir de 100 pièces.</p>\n    <p>&Agrave; lire aussi : <a href='/blog/solar-combiner-box-guide'>les coffrets de regroupement solaires</a> pour l'enceinte qui abrite la barre, <a href='/blog/photovoltaic-protection-what-is-a-solar-dc-spd'>la protection de surtension côté continu</a> pour l'appareil qui la protège, et <a href='/blog/busbar-current-carrying-capacity'>la capacité de transport des barres</a> pour le calcul de section.</p>
+
+    <h2>Questions fréquentes</h2>
+      <h3>À quoi sert une barre omnibus solaire ?</h3>
+      <p>Elle collecte le courant continu de plusieurs strings ou modules de batterie et l'amène à un seul appareil, à la place d'une chaîne de câbles séparés. Dans une centrale PV, elle se trouve généralement dans le coffret de regroupement ; dans le stockage, dans le rack ou le conteneur.</p>
+      <h3>Pourquoi le 1500 V DC impose-t-il une autre disposition de barre ?</h3>
+      <p>Un arc continu ne passe pas par zéro et ne s'éteint pas seul : les règles de distance et de ligne de fuite se resserrent au-delà de 1000 V. Une conception 1500 VDC exige un espacement plus large et des séparations prévues pour cette classe de tension, et non une disposition 1000 V réutilisée.</p>
+      <h3>Faut-il choisir l'aluminium ou le cuivre pour une barre solaire ?</h3>
+      <p>L'aluminium pour les longues liaisons et les barres montées en toiture, car il demande environ 1,6 fois la section du cuivre mais pèse environ la moitié. Le cuivre lorsque l'enceinte est encombrée et que la section plus faible laisse de la place aux porte-fusibles et aux presse-étoupes.</p>
+      <h3>Pourquoi utiliser une barre souple dans un conteneur de batteries ?</h3>
+      <p>Parce que les modules ne sont jamais parfaitement alignés et que le conteneur vibre pendant le transport. Un lien flexible laminé rattrape le désalignement, garde les faces de jonction parallèles et éloigne la flexion de la borne.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous construisez un coffret de regroupement ou un conteneur ESS ?</h2>
+    <p>Envoyez la classe de tension, le courant par barre, le pas de raccordement et la finition souhaitée. Nous produisons des barres omnibus aluminium et cuivre pour liaisons solaires et stockage sur plan client à partir de 100 pièces.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
