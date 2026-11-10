@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voltage Stabilizer for a CNC Machine: Sizing Guide</title>
+<meta name="description" content="Why a CNC machine breaks the normal stabilizer sizing rules: spindle inrush, VFD harmonic current, servo regeneration and phase loss. How to size a three-phase AVR for a machine shop without oversizing it.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Voltage Stabilizer for a CNC Machine: Sizing Guide">
+<meta property="og:description" content="Why a CNC machine breaks the normal stabilizer sizing rules: spindle inrush, VFD harmonic current, servo regeneration and phase loss. How to size a three-phase AVR for a machine shop without oversizing it.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/voltage-stabilizer-for-cnc-machine/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Voltage Stabilizer for a CNC Machine: The Sizing Rules That Actually Apply",
+      "description": "Why a CNC machine breaks the normal stabilizer sizing rules: spindle inrush, VFD harmonic current, servo regeneration and phase loss. How to size a three-phase AVR for a machine shop without oversizing it.",
+      "image": "https://www.yominelectric.com/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.png",
+      "datePublished": "2026-11-10",
+      "dateModified": "2026-11-10",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I size a CNC stabilizer from the machine nameplate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rarely. The nameplate gives steady-state ratings; the stabilizer also has to carry spindle inrush, drive harmonic current and servo regeneration. Sizing on the nameplate sum usually ends up either undersized on surge or oversized on running load."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a voltage stabilizer fix harmonics from a VFD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It corrects RMS voltage, and a distorted waveform stays distorted after correction. Harmonic problems need filtering or a different drive arrangement, and a larger stabilizer does not help."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Three-phase or single-phase for a CNC machine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Match the machine. Industrial CNC machines are three-phase and should be stabilised on all three phases; a single-phase unit on the control only protects the control while leaving the spindle exposed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much headroom should I add?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the manufacturer's derating for your load type instead of a rule of thumb, and add headroom for servo regeneration rather than for a hypothetical future machine. A measured input range is worth more than a generous multiplier."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Voltage Stabilizers</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Voltage Stabilizer for a CNC Machine: The Sizing Rules That Actually Apply</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 10, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.png" alt="Two YOMIN three-phase automatic voltage stabilizers, SVC(TNS)-30 kVA and TND/SVC-15 kVA, on a warm paper background" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p><strong>A CNC machine is not a resistive load with a nameplate, and sizing a stabilizer on the sum of nameplate kVA usually gets the answer wrong in one of two directions.</strong> Too small, because the spindle and the servo drives draw peak current the nameplate never mentions. Or needlessly large, because the drive front end already tolerates a good part of the variation you were trying to correct. The stabilizer has to be sized on the current the machine actually draws, over the voltage window the machine actually needs.</p>
+
+    <h2>Why a CNC load is not a nameplate load</h2>
+    <p>On a machine tool, three things happen that a simple load table does not describe. The spindle accelerates and decelerates constantly rather than running at a steady current. The axis drives regenerate power back into the DC bus when they brake. And the whole cabinet is fed through a variable frequency drive, which draws current in short pulses rather than in a smooth sine.</p>
+    <p>Each of those changes what the stabilizer sees at its output. A stabilizer sized on the sum of the motor nameplates will be asked for current peaks it cannot supply, and the symptom is not a dramatic failure. It is nuisance tripping, a spindle that faults on acceleration, or a control that reboots during a heavy cut &mdash; faults that get blamed on the machine rather than on the supply in front of it.</p>
+
+    <h2>Four effects that actually decide the kVA</h2>
+    <p><strong>Spindle inrush.</strong> A spindle motor starting direct-on-line can draw several times its rated current for a short period. If the machine has a direct-on-line spindle rather than a drive, that surge, not the running current, sets the stabilizer rating.</p>
+    <p><strong>Drive harmonic current.</strong> A VFD front end does not present a clean linear load. The current waveform is rich in harmonics, the RMS current is higher than the fundamental would suggest, and the stabilizer has to carry that current without saturating or overheating. This is where the manufacturer's derating for non-linear load comes from, and it should be read from the datasheet rather than assumed.</p>
+    <p><strong>Servo regeneration.</strong> When an axis decelerates, the drive pushes energy back toward the supply. Some of that is absorbed by a braking resistor, and some appears at the input. A stabilizer that corrects in one direction only, or that has no headroom above nominal, will see its output voltage rise on a fast deceleration. Machines with heavy, fast axes &mdash; gantry and high-speed milling &mdash; are the ones where this shows up first.</p>
+    <p><strong>Phase imbalance and phase loss.</strong> A three-phase supply with one weak phase produces a stabilizer output that is also unbalanced, unless each phase is regulated independently. CNC controls are less tolerant of imbalance than most industrial loads, and a lost phase is worse than an unbalanced one. Phase-failure protection is a separate requirement from voltage correction, and it should be specified explicitly rather than assumed.</p>
+
+    <h2>Matching the sizing basis to the load</h2>
+    <table>
+      <thead>
+        <tr><th>Load in the cabinet</th><th>Sizing basis</th><th>What to watch</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Lighting, heaters, resistive loads</td><td>Running kVA</td><td>Nothing beyond the total</td></tr>
+        <tr><td>Spindle motor, direct-on-line</td><td>Starting surge</td><td>Surge duration against the stabilizer's overload capability</td></tr>
+        <tr><td>Spindle motor, drive-fed</td><td>Running current plus drive derating</td><td>Harmonic current and the datasheet derating figure</td></tr>
+        <tr><td>Servo axes</td><td>Running kVA plus regeneration headroom</td><td>Output rise on deceleration; braking resistor arrangement</td></tr>
+        <tr><td>Coolant pump, chip conveyor</td><td>Running kVA, check starting method</td><td>Motors started direct-on-line add a surge on top</td></tr>
+      </tbody>
+    </table>
+    <p>Add the continuous loads first, then treat the largest surge separately rather than adding every surge together. Machines rarely start every motor at the same instant, and sizing for the sum of all possible surges is how a shop ends up with a stabilizer twice the size it needed.</p>
+
+    <h2>Working the number</h2>
+    <p>For a three-phase machine the arithmetic is not the difficult part:</p>
+    <ul>
+      <li><strong>Continuous kVA</strong> = &radic;3 &times; line voltage &times; line current, summed over the loads that run together.</li>
+      <li><strong>Surge kVA</strong> = the largest single starting or accelerating event, taken from the motor or drive data, not estimated.</li>
+      <li><strong>Regulation window</strong> = the input range the stabilizer must accept, taken from the site's actual recordings rather than a remembered nominal.</li>
+      <li><strong>Headroom</strong> = the derating the manufacturer requires for the load type, applied after the sum, not instead of it.</li>
+    </ul>
+    <p>The input range is worth measuring rather than guessing. A shop at the end of a feeder may be seeing a sag on every heavy cut that nobody has recorded, and a stabilizer chosen for a nominal &plusmn;15% window will sit at its limit exactly when the machine needs it most.</p>
+
+    <h2>What a stabilizer can and cannot fix</h2>
+    <p>A voltage stabilizer corrects RMS voltage. That is the whole job, and it is worth being precise about the boundary because machine-tool faults are often misdiagnosed as voltage problems.</p>
+    <ul>
+      <li><strong>It fixes</strong> steady over-voltage and under-voltage, and the slow sag that follows a heavy load elsewhere on the site.</li>
+      <li><strong>It does not fix</strong> harmonics. Correcting the voltage of a distorted waveform leaves it distorted, and the drive still sees the distortion.</li>
+      <li><strong>It does not fix</strong> imbalance unless every phase is regulated independently &mdash; and even then, the correct answer is usually to find the imbalance at the source.</li>
+      <li><strong>It does not fix</strong> frequency, transients or earth faults. Those need a different device, and a stabilizer in front of them changes nothing.</li>
+    </ul>
+    <p>This matters commercially. If the real problem is a harmonic resonance with a capacitor bank, or a bad neutral, no amount of stabilizer capacity will solve it, and the shop will have bought a large box that does not address the fault.</p>
+
+    <h2>Servo AVR, relay type or variac</h2>
+    <table>
+      <thead>
+        <tr><th>Type</th><th>Correction</th><th>Where it fits on a machine tool</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Servo motor AVR</td><td>Continuous, motor-driven variable transformer</td><td>CNC cabinets and mixed machine loads; the usual choice where the load varies all day</td></tr>
+        <tr><td>Relay or electronic tap changer</td><td>Step correction</td><td>Smaller machines and stable loads; cheaper, but steps are audible in the output</td></tr>
+        <tr><td>Variac / variable transformer</td><td>Manual or motorised set point</td><td>Test benches and fixed processes, not a machine that changes load continuously</td></tr>
+      </tbody>
+    </table>
+    <p>For a machine shop the deciding property is usually continuous correction under a load that changes second by second, which points to a servo-driven unit. A tap changer that corrects in 10 V steps is fine for a compressor and wrong for a control that is sensitive to a step appearing mid-cut.</p>
+
+    <h2>Three-phase or single-phase</h2>
+    <p>Industrial CNC machines are almost always three-phase, and the stabilizer should match the machine's phase configuration rather than the building's convenience. A common error is stabilising one phase and feeding the control from it while the spindle runs on the unstabilised three-phase supply: the control is protected and the spindle is not, which is the opposite of what was intended.</p>
+    <p>Small benchtop machines, training lathes and single-phase spindles are the exception, and a single-phase unit is correct there. What matters is that the stabilizer covers every load that shares the fault, not just the load that was easiest to wire.</p>
+
+    <h2>Installation details that cause callbacks</h2>
+    <ul>
+      <li><strong>Ambient and ventilation.</strong> A servo AVR dissipates heat. A cabinet designed for 25 &deg;C and installed in a 40 &deg;C workshop corner will derate, and the derating is not optional.</li>
+      <li><strong>Cable and volt drop.</strong> A stabilizer at the far end of a long run corrects voltage at its own terminals, not at the machine. Cable sizing has to follow the same rules as any other feeder.</li>
+      <li><strong>Bypass.</strong> Specify a maintenance bypass. Running production on a stabilizer with no bypass means every service visit is a shutdown.</li>
+      <li><strong>Separation from welding and other dirty loads.</strong> A stabilizer sharing a board with a welding set will spend its life correcting the welder's dips.</li>
+      <li><strong>Earthing and neutral.</strong> Follow the machine builder's requirement. Correcting voltage does not correct a neutral problem, and an undersized neutral shows up as control faults that look like supply faults.</li>
+    </ul>
+
+    <h2>YOMIN references for this application</h2>
+    <p>The <a href="/products/voltage-stabilizer-regulator">voltage stabilizer range</a> includes three-phase units intended for machine and workshop loads:</p>
+    <table>
+      <thead>
+        <tr><th>Reference</th><th>Configuration</th><th>What the listing states</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>ym-0002</td><td>Three phase</td><td>4SVC TNS series fully automatic AVR, LED display, 50 Hz</td></tr>
+        <tr><td>ym-0012</td><td>Three phase</td><td>TND / SVC series automatic voltage regulator, 15 kVA</td></tr>
+        <tr><td>ym-0031</td><td>Single phase</td><td>TND / SVC copper servo motor type, 15 kVA, 10 kW, 110&ndash;230 V, 50 Hz</td></tr>
+      </tbody>
+    </table>
+    <p>Capacity for a CNC cabinet is normally a project decision rather than a catalogue one. Send the machine list with spindle and axis ratings, the measured input range, and whether each spindle is drive-fed or direct-on-line, and the capacity can be checked against the surge rather than guessed from the total.</p>
+    <p>Related reading: <a href="/blog/voltage-stabilizer-sizing-guide">voltage stabilizer sizing</a> covers the general kVA calculation, <a href="/blog/three-phase-voltage-stabilizer-guide">three-phase voltage stabilization</a> covers per-phase regulation and plant loads, <a href="/blog/servo-voltage-stabilizer-guide">servo voltage stabilizers</a> covers the technology itself, and <a href="/blog/voltage-drop-calculation-guide">voltage drop calculation</a> covers the feeder side.</p>
+  </section>
+
+    <section class="cta-section">
+    <h2>Specifying a stabilizer for a CNC cell?</h2>
+    <p>Send the machine list with spindle and axis ratings, your measured input voltage range and whether the spindles are drive-fed. We will size the three-phase stabilizer against the surge rather than the nameplate total.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

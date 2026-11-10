@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stabilisateur de tension pour machine CNC : le dimensionnement</title>
+<meta name="description" content="Pourquoi une machine CNC bouleverse les règles habituelles de dimensionnement : courant d'appel de broche, courant harmonique du variateur, récupération des axes et perte de phase. Comment dimensionner un régulateur triphasé sans le surdimensionner.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stabilisateur de tension pour machine CNC : le dimensionnement">
+<meta property="og:description" content="Pourquoi une machine CNC bouleverse les règles habituelles de dimensionnement : courant d'appel de broche, courant harmonique du variateur, récupération des axes et perte de phase. Comment dimensionner un régulateur triphasé sans le surdimensionner.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/voltage-stabilizer-for-cnc-machine/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Stabilisateur de tension pour machine CNC : les règles de dimensionnement qui s'appliquent vraiment",
+      "description": "Pourquoi une machine CNC bouleverse les règles habituelles de dimensionnement : courant d'appel de broche, courant harmonique du variateur, récupération des axes et perte de phase. Comment dimensionner un régulateur triphasé sans le surdimensionner.",
+      "image": "https://www.yominelectric.com/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.png",
+      "datePublished": "2026-11-10",
+      "dateModified": "2026-11-10",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Peut-on dimensionner un stabilisateur CNC à partir de la plaque signalétique ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rarement. La plaque donne les valeurs en régime établi ; le stabilisateur doit aussi porter le courant d'appel de broche, le courant harmonique du variateur et la récupération des axes. Dimensionner sur la somme des plaques aboutit généralement à un appareil sous-dimensionné en pointe ou surdimensionné en marche."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un stabilisateur corrige-t-il les harmoniques d'un variateur ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Il corrige la tension efficace, et une forme d'onde déformée reste déformée après correction. Les problèmes d'harmoniques demandent un filtrage ou une autre configuration du variateur, et un stabilisateur plus gros n'y change rien."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Triphasé ou monophasé pour une machine CNC ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Suivez la machine. Les machines CNC industrielles sont triphasées et doivent être stabilisées sur les trois phases ; un appareil monophasé sur la commande seule protège la commande et laisse la broche exposée."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle marge faut-il ajouter ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Utilisez le déclassement du constructeur pour votre type de charge plutôt qu'un ratio empirique, et ajoutez une marge pour la récupération des axes plutôt que pour une machine future hypothétique. Une plage d'entrée mesurée vaut mieux qu'un coefficient généreux."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Stabilisateurs de tension</span></div>
+    <span class="bh-tag">Guides d'achat</span>
+    <h1 class="bh-title">Stabilisateur de tension pour machine CNC : les règles de dimensionnement qui s'appliquent vraiment</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>10 novembre 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.png" alt="Deux stabilisateurs automatiques triphasés YOMIN, SVC(TNS)-30 kVA et TND/SVC-15 kVA, sur fond papier chaud" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p><strong>Une machine CNC n'est pas une charge résistive avec une plaque signalétique, et dimensionner un stabilisateur sur la somme des kVA nominaux se trompe généralement dans l'une des deux directions.</strong> Trop petit, parce que la broche et les variateurs d'axes appellent des pointes de courant que la plaque ne mentionne jamais. Ou inutilement gros, parce que l'étage d'entrée du variateur tolère déjà une bonne part de la variation que l'on cherchait à corriger. Le stabilisateur doit être dimensionné sur le courant réellement appelé, sur la plage de tension réellement nécessaire.</p>
+
+    <h2>Pourquoi une charge CNC n'est pas une charge de plaque</h2>
+    <p>Sur une machine-outil, trois phénomènes se produisent qu'un simple tableau de charges ne décrit pas. La broche accélère et décélère en permanence au lieu de tourner à courant constant. Les variateurs d'axes renvoient de l'énergie vers le bus continu au freinage. Et l'ensemble de l'armoire est alimenté à travers un variateur de fréquence, qui appelle le courant par impulsions brèves plutôt que par une sinusoïde lisse.</p>
+    <p>Chacun de ces phénomènes change ce que le stabilisateur voit à sa sortie. Un stabilisateur dimensionné sur la somme des plaques moteurs sera sollicité pour des pointes qu'il ne peut pas fournir, et le symptôme n'est pas une panne franche. Ce sont des déclenchements intempestifs, une broche qui met en défaut à l'accélération, ou une commande qui redémarre pendant une passe lourde &mdash; des défauts imputés à la machine plutôt qu'à l'alimentation en amont.</p>
+
+    <h2>Quatre effets qui décident réellement des kVA</h2>
+    <p><strong>Le courant d'appel de broche.</strong> Un moteur de broche démarré en direct peut appeler plusieurs fois son courant nominal pendant un court instant. Si la machine a une broche en démarrage direct plutôt qu'un variateur, c'est cette pointe, et non le courant de marche, qui fixe la puissance du stabilisateur.</p>
+    <p><strong>Le courant harmonique du variateur.</strong> L'entrée d'un variateur ne présente pas une charge linéaire propre. La forme d'onde du courant est riche en harmoniques, le courant efficace est plus élevé que ne le suggère le fondamental, et le stabilisateur doit porter ce courant sans saturer ni chauffer. C'est l'origine du déclassement pour charge non linéaire indiqué par le constructeur, et il faut le lire sur la fiche technique plutôt que le supposer.</p>
+    <p><strong>La récupération des axes.</strong> Quand un axe décélère, le variateur renvoie de l'énergie vers l'alimentation. Une partie est absorbée par une résistance de freinage, une partie apparaît à l'entrée. Un stabilisateur qui corrige dans un seul sens, ou qui n'a pas de marge au-dessus du nominal, verra sa tension de sortie monter lors d'une décélération rapide. Les machines à axes lourds et rapides &mdash; portiques et fraisage à grande vitesse &mdash; sont celles où cela apparaît en premier.</p>
+    <p><strong>Le déséquilibre et la perte de phase.</strong> Une alimentation triphasée avec une phase faible produit une sortie également déséquilibrée, sauf si chaque phase est régulée indépendamment. Les commandes CNC tolèrent moins le déséquilibre que la plupart des charges industrielles, et une phase perdue est pire qu'un déséquilibre. La protection contre la perte de phase est une exigence distincte de la correction de tension, et elle doit être spécifiée explicitement plutôt que supposée.</p>
+
+    <h2>Adapter la base de dimensionnement à la charge</h2>
+    <table>
+      <thead>
+        <tr><th>Charge dans l'armoire</th><th>Base de dimensionnement</th><th>Point de vigilance</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Éclairage, résistances de chauffe</td><td>kVA en marche</td><td>Rien au-delà du total</td></tr>
+        <tr><td>Moteur de broche en démarrage direct</td><td>Pointe de démarrage</td><td>Durée de la pointe face à la capacité de surcharge</td></tr>
+        <tr><td>Moteur de broche piloté par variateur</td><td>Courant de marche plus déclassement</td><td>Courant harmonique et valeur de déclassement de la fiche</td></tr>
+        <tr><td>Axes servo</td><td>kVA en marche plus marge de récupération</td><td>Montée de sortie à la décélération ; résistance de freinage</td></tr>
+        <tr><td>Pompe de lubrification, convoyeur à copeaux</td><td>kVA en marche, vérifier le démarrage</td><td>Les moteurs en direct ajoutent une pointe supplémentaire</td></tr>
+      </tbody>
+    </table>
+    <p>Additionnez d'abord les charges permanentes, puis traitez la plus grande pointe séparément au lieu d'additionner toutes les pointes. Les machines lancent rarement tous les moteurs au même instant, et dimensionner sur la somme de toutes les pointes possibles est la façon dont un atelier finit avec un stabilisateur deux fois trop gros.</p>
+
+    <h2>Faire le calcul</h2>
+    <p>Pour une machine triphasée, l'arithmétique n'est pas la partie difficile :</p>
+    <ul>
+      <li><strong>kVA permanents</strong> = &radic;3 &times; tension composée &times; courant de ligne, sommé sur les charges qui fonctionnent ensemble.</li>
+      <li><strong>kVA de pointe</strong> = le plus grand démarrage ou la plus grande accélération, prise dans les données du moteur ou du variateur, pas estimée.</li>
+      <li><strong>Plage de régulation</strong> = la plage d'entrée que le stabilisateur doit accepter, relevée sur les enregistrements du site plutôt que sur un nominal mémorisé.</li>
+      <li><strong>Marge</strong> = le déclassement exigé par le constructeur pour ce type de charge, appliqué après la somme, pas à la place.</li>
+    </ul>
+    <p>La plage d'entrée mérite d'être mesurée plutôt que devinée. Un atelier en bout de départ peut subir une chute à chaque passe lourde que personne n'a enregistrée, et un stabilisateur choisi pour une fenêtre nominale de &plusmn;15 % se retrouvera à sa limite exactement quand la machine en a le plus besoin.</p>
+
+    <h2>Ce qu'un stabilisateur corrige et ne corrige pas</h2>
+    <p>Un stabilisateur corrige la tension efficace. C'est tout son rôle, et il vaut la peine d'être précis sur la frontière, car les défauts de machine-outil sont souvent mal diagnostiqués comme des problèmes de tension.</p>
+    <ul>
+      <li><strong>Il corrige</strong> les surtensions et sous-tensions permanentes, et la chute lente qui suit une charge lourde ailleurs sur le site.</li>
+      <li><strong>Il ne corrige pas</strong> les harmoniques. Corriger la tension d'une forme d'onde déformée la laisse déformée, et le variateur voit toujours la distorsion.</li>
+      <li><strong>Il ne corrige pas</strong> le déséquilibre, sauf si chaque phase est régulée indépendamment &mdash; et même alors, la bonne réponse consiste généralement à traiter le déséquilibre à la source.</li>
+      <li><strong>Il ne corrige pas</strong> la fréquence, les transitoires ni les défauts de terre. Ceux-là demandent un autre appareil, et un stabilisateur en amont n'y change rien.</li>
+    </ul>
+    <p>Cela compte sur le plan commercial. Si le vrai problème est une résonance harmonique avec une batterie de condensateurs, ou un neutre défaillant, aucune capacité de stabilisateur ne le résoudra, et l'atelier aura acheté un gros coffret qui ne traite pas le défaut.</p>
+
+    <h2>Régulateur à servo-moteur, à relais ou variac</h2>
+    <table>
+      <thead>
+        <tr><th>Type</th><th>Correction</th><th>Pertinence sur une machine-outil</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Régulateur à servo-moteur</td><td>Continue, par transformateur variable motorisé</td><td>Armoires CNC et charges de machines mixtes ; le choix habituel quand la charge varie toute la journée</td></tr>
+        <tr><td>À relais ou à prises électroniques</td><td>Correction par paliers</td><td>Petites machines et charges stables ; moins cher, mais les paliers s'entendent dans la sortie</td></tr>
+        <tr><td>Variac / transformateur variable</td><td>Consigne manuelle ou motorisée</td><td>Bancs d'essai et procédés fixes, pas une machine dont la charge change en permanence</td></tr>
+      </tbody>
+    </table>
+    <p>Pour un atelier d'usinage, la propriété décisive est généralement la correction continue sous une charge qui change d'une seconde à l'autre, ce qui oriente vers un ensemble à servo-moteur. Un changeur de prises qui corrige par paliers de 10 V convient à un compresseur et ne convient pas à une commande sensible à un palier qui apparaît en pleine passe.</p>
+
+    <h2>Triphasé ou monophasé</h2>
+    <p>Les machines CNC industrielles sont presque toujours triphasées, et le stabilisateur doit correspondre à la configuration de la machine, pas à la commodité du bâtiment. Une erreur fréquente consiste à stabiliser une phase et à alimenter la commande depuis celle-ci tandis que la broche tourne sur le triphasé non stabilisé : la commande est protégée et la broche ne l'est pas, soit l'inverse de l'intention.</p>
+    <p>Les petites machines d'établi, les tours de formation et les broches monophasées sont l'exception, et un appareil monophasé y est correct. Ce qui compte, c'est que le stabilisateur couvre toutes les charges qui partagent le défaut, pas seulement celle qui était la plus facile à câbler.</p>
+
+    <h2>Les détails d'installation qui génèrent des rappels</h2>
+    <ul>
+      <li><strong>Ambiance et ventilation.</strong> Un régulateur à servo-moteur dissipe de la chaleur. Une armoire conçue pour 25 &deg;C et installée dans un coin d'atelier à 40 &deg;C sera déclassée, et ce déclassement n'est pas optionnel.</li>
+      <li><strong>Câble et chute de tension.</strong> Un stabilisateur en bout de ligne corrige la tension à ses propres bornes, pas à la machine. Le dimensionnement des câbles suit les mêmes règles que pour tout départ.</li>
+      <li><strong>By-pass.</strong> Prévoyez un by-pass de maintenance. Faire tourner la production sur un stabilisateur sans by-pass signifie que chaque intervention est un arrêt.</li>
+      <li><strong>Séparation des charges polluantes.</strong> Un stabilisateur qui partage un tableau avec un poste de soudage passera sa vie à corriger les chutes du soudeur.</li>
+      <li><strong>Mise à la terre et neutre.</strong> Suivez l'exigence du constructeur de la machine. Corriger la tension ne corrige pas un problème de neutre, et un neutre sous-dimensionné se manifeste par des défauts de commande qui ressemblent à des défauts d'alimentation.</li>
+    </ul>
+
+    <h2>Références YOMIN pour cette application</h2>
+    <p>La <a href="/products/voltage-stabilizer-regulator">gamme de stabilisateurs de tension</a> comprend des appareils triphasés destinés aux charges de machines et d'ateliers :</p>
+    <table>
+      <thead>
+        <tr><th>Référence</th><th>Configuration</th><th>Ce qu'indique la fiche</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>ym-0002</td><td>Triphasé</td><td>Série 4SVC TNS, régulateur automatique intégral, affichage LED, 50 Hz</td></tr>
+        <tr><td>ym-0012</td><td>Triphasé</td><td>Série TND / SVC, régulateur automatique de tension, 15 kVA</td></tr>
+        <tr><td>ym-0031</td><td>Monophasé</td><td>Type TND / SVC à servo-moteur cuivre, 15 kVA, 10 kW, 110&ndash;230 V, 50 Hz</td></tr>
+      </tbody>
+    </table>
+    <p>La capacité d'une armoire CNC relève normalement d'une décision de projet plutôt que d'un choix de catalogue. Envoyez la liste des machines avec les caractéristiques de broche et d'axes, la plage d'entrée mesurée, et précisez si chaque broche est pilotée par variateur ou en direct : la capacité pourra être vérifiée sur la pointe au lieu d'être devinée sur le total.</p>
+    <p>À lire également : <a href="/blog/voltage-stabilizer-sizing-guide">le dimensionnement d'un stabilisateur</a> couvre le calcul général des kVA, <a href="/blog/three-phase-voltage-stabilizer-guide">la stabilisation triphasée</a> couvre la régulation par phase et les charges d'usine, <a href="/blog/servo-voltage-stabilizer-guide">les stabilisateurs à servo-moteur</a> couvre la technologie elle-même, et <a href="/blog/voltage-drop-calculation-guide">le calcul de chute de tension</a> couvre le côté alimentation.</p>
+  </section>
+
+    <section class="cta-section">
+    <h2>Vous dimensionnez un stabilisateur pour une cellule CNC ?</h2>
+    <p>Envoyez la liste des machines avec les caractéristiques de broche et d'axes, votre plage de tension d'entrée mesurée et l'indication des broches pilotées par variateur. Nous dimensionnerons le stabilisateur triphasé sur la pointe plutôt que sur le total nominal.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

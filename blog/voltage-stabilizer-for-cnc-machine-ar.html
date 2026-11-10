@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مثبت جهد لآلة CNC: قواعد الحجم الصحيحة</title>
+<meta name="description" content="لماذا تكسر آلة CNC قواعد حساب حجم المثبت: تيار بدء عمود الدوران، والتيار التوافقي لعاكس التردد، وإرجاع طاقة محاور السيرفو، وفقد الطور. كيف تحسب حجم منظم جهد ثلاثي الطور دون مبالغة.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="مثبت جهد لآلة CNC: قواعد الحجم الصحيحة">
+<meta property="og:description" content="لماذا تكسر آلة CNC قواعد حساب حجم المثبت: تيار بدء عمود الدوران، والتيار التوافقي لعاكس التردد، وإرجاع طاقة محاور السيرفو، وفقد الطور. كيف تحسب حجم منظم جهد ثلاثي الطور دون مبالغة.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/voltage-stabilizer-for-cnc-machine/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-ar">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "مثبت جهد لآلة CNC: قواعد الحجم التي تنطبق فعلاً",
+      "description": "لماذا تكسر آلة CNC قواعد حساب حجم المثبت: تيار بدء عمود الدوران، والتيار التوافقي لعاكس التردد، وإرجاع طاقة محاور السيرفو، وفقد الطور. كيف تحسب حجم منظم جهد ثلاثي الطور دون مبالغة.",
+      "image": "https://www.yominelectric.com/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.png",
+      "datePublished": "2026-11-10",
+      "dateModified": "2026-11-10",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "هل يمكن حساب مثبت CNC من لوحة بيانات الآلة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نادراً. اللوحة تعطي قيماً في الحالة المستقرة؛ والمثبت عليه أيضاً حمل تيار بدء عمود الدوران والتيار التوافقي للعاكس وإرجاع طاقة المحاور. الحساب على مجموع اللوحات ينتهي عادةً بوحدة صغيرة في الذروة أو كبيرة في التشغيل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يصلح مثبت الجهد التوافقيات الصادرة عن عاكس التردد؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا. إنه يصحح الجهد الفعال، والموجة المشوهة تبقى مشوهة بعد التصحيح. مشكلات التوافقيات تحتاج ترشيحاً أو ترتيباً مختلفاً للعاكس، والمثبت الأكبر لا يساعد."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ثلاثي الطور أم أحادي لآلة CNC؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "اتبع الآلة. آلات CNC الصناعية ثلاثية الطور ويجب تثبيتها على الأطوار الثلاثة؛ ووحدة أحادية على وحدة التحكم وحدها تحمي التحكم وتترك عمود الدوران مكشوفاً."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما مقدار الهامش الذي يجب إضافته؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "استخدم تخفيض القدرة الذي يذكره المصنّع لنوع حملك بدل قاعدة تقريبية، وأضف هامشاً لإرجاع طاقة المحاور لا لآلة مستقبلية افتراضية. مدى دخل مقاس أنفع من معامل سخي."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>مثبتات الجهد</span></div>
+    <span class="bh-tag">أدلة المشترين</span>
+    <h1 class="bh-title">مثبت جهد لآلة CNC: قواعد الحجم التي تنطبق فعلاً</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>10 نوفمبر 2026</span>
+      <span class="divider"></span>
+      <span>10 دقائق قراءة</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.png" alt="مثبتا جهد أوتوماتيكيان ثلاثيا الطور من YOMIN، SVC(TNS)-30 kVA وTND/SVC-15 kVA، على خلفية ورقية دافئة" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p><strong>آلة CNC ليست حملاً أومياً بلوحة بيانات، وحساب حجم المثبت على مجموع القدرة الاسمية يخطئ عادةً في أحد اتجاهين.</strong> إما أصغر من اللازم، لأن عمود الدوران ومحركات المحاور تسحب تيارات ذروة لا تذكرها اللوحة. أو أكبر من اللازم بلا داعٍ، لأن مدخل عاكس التردد يتحمل أصلاً جزءاً كبيراً من التغير الذي كنت تحاول تصحيحه. المثبت يجب أن يُحسب على التيار الذي تسحبه الآلة فعلاً، وعلى نافذة الجهد التي تحتاجها فعلاً.</p>
+
+    <h2>لماذا حمل CNC ليس حملاً اسمياً</h2>
+    <p>في آلة التشغيل تحدث ثلاثة أمور لا يصفها جدول أحمال بسيط. عمود الدوران يتسارع ويتباطأ باستمرار بدل أن يدور بتيار ثابت. ومحركات المحاور تعيد الطاقة إلى ناقل التيار المستمر عند الكبح. والخزانة كلها تُغذى عبر عاكس تردد يسحب التيار على شكل نبضات قصيرة لا موجة جيبية ناعمة.</p>
+    <p>كل من هذه الظواهر يغيّر ما يراه المثبت على خرجه. المثبت المحسوب على مجموع لوحات المحركات سيُطلب منه تيارات ذروة لا يستطيع تقديمها، والعَرَض ليس عطلاً صارخاً. إنه فصل غير مبرر، أو عمود دوران يعطي عطلاً عند التسارع، أو وحدة تحكم تُعاد تشغيلها أثناء قطع ثقيل &mdash; أعطال تُنسب إلى الآلة لا إلى التغذية التي أمامها.</p>
+
+    <h2>أربعة آثار تحدد القدرة فعلاً</h2>
+    <p><strong>تيار بدء عمود الدوران.</strong> محرك عمود دوران يبدأ مباشرة قد يسحب أضعاف تياره المقنن لفترة قصيرة. إذا كانت الآلة بعمود بدء مباشر لا بعاكس، فإن تلك الذروة هي التي تحدد قدرة المثبت لا تيار التشغيل.</p>
+    <p><strong>التيار التوافقي للعاكس.</strong> مدخل عاكس التردد لا يمثل حملاً خطياً نظيفاً. شكل موجة التيار غني بالتوافقيات، والتيار الفعال أعلى مما توحي به الموجة الأساسية، وعلى المثبت أن يحمل ذلك التيار دون تشبع أو ارتفاع حرارة. ومن هنا يأتي تخفيض القدرة للحمل غير الخطي الذي يذكره المصنّع، ويجب قراءته من ورقة البيانات لا افتراضه.</p>
+    <p><strong>إرجاع طاقة محاور السيرفو.</strong> عندما يتباطأ محور، يدفع العاكس الطاقة عائدة نحو التغذية. جزء يمتصه مقاوم الكبح وجزء يظهر عند المدخل. والمثبت الذي يصحح في اتجاه واحد فقط، أو الذي لا يملك هامشاً فوق الاسمي، سيرى جهد خرجه يرتفع عند تباطؤ سريع. والآلات ذات المحاور الثقيلة السريعة &mdash; البوابية والتفريز عالي السرعة &mdash; هي أول ما يظهر فيها ذلك.</p>
+    <p><strong>عدم الاتزان وفقد الطور.</strong> تغذية ثلاثية الطور بأحد أطوارها ضعيف تنتج خرجاً غير متزن أيضاً، إلا إذا كان كل طور يُنظَّم مستقلاً. ووحدات تحكم CNC أقل تحملاً لعدم الاتزان من معظم الأحمال الصناعية، وفقد الطور أسوأ من عدم الاتزان. وحماية فقد الطور مطلب منفصل عن تصحيح الجهد، ويجب تحديدها صراحةً لا افتراضها.</p>
+
+    <h2>مطابقة أساس الحساب مع الحمل</h2>
+    <table>
+      <thead>
+        <tr><th>الحمل في الخزانة</th><th>أساس الحساب</th><th>نقطة الانتباه</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>الإضاءة وأحمال التسخين الأومية</td><td>القدرة أثناء التشغيل</td><td>لا شيء يتجاوز المجموع</td></tr>
+        <tr><td>محرك عمود الدوران ببدء مباشر</td><td>ذروة البدء</td><td>مدة الذروة مقابل قدرة التحميل الزائد</td></tr>
+        <tr><td>محرك عمود الدوران بعاكس</td><td>تيار التشغيل مع تخفيض القدرة</td><td>التيار التوافقي وقيمة التخفيض في ورقة البيانات</td></tr>
+        <tr><td>محاور السيرفو</td><td>القدرة أثناء التشغيل مع هامش الإرجاع</td><td>ارتفاع الخرج عند التباطؤ؛ ترتيب مقاوم الكبح</td></tr>
+        <tr><td>مضخة التبريد وناقل الرايش</td><td>القدرة أثناء التشغيل، مع فحص طريقة البدء</td><td>المحركات ذات البدء المباشر تضيف ذروة أخرى</td></tr>
+      </tbody>
+    </table>
+    <p>اجمع الأحمال المستمرة أولاً، ثم عالج أكبر ذروة منفصلة بدل جمع كل الذروات. الآلات نادراً ما تبدأ كل محركاتها في اللحظة نفسها، والحساب على مجموع كل الذروات الممكنة هو الطريق الذي ينتهي به الأمر بورشة إلى مثبت ضعف ما تحتاجه.</p>
+
+    <h2>إجراء الحساب</h2>
+    <p>في آلة ثلاثية الطور ليست الحسابات هي الجزء الصعب:</p>
+    <ul>
+      <li><strong>القدرة المستمرة</strong> = &radic;3 &times; جهد الخط &times; تيار الخط، مجموعاً على الأحمال التي تعمل معاً.</li>
+      <li><strong>قدرة الذروة</strong> = أكبر حدث بدء أو تسارع منفرد، مأخوذاً من بيانات المحرك أو العاكس لا مقدَّراً.</li>
+      <li><strong>نافذة التنظيم</strong> = مدى الدخل الذي يجب أن يقبله المثبت، مأخوذاً من تسجيلات الموقع الفعلية لا من اسمي محفوظ.</li>
+      <li><strong>الهامش</strong> = تخفيض القدرة الذي يطلبه المصنّع لنوع الحمل، مطبقاً بعد المجموع لا بدلاً منه.</li>
+    </ul>
+    <p>يستحق مدى الدخل أن يُقاس لا أن يُخمَّن. ورشة في نهاية مغذٍّ طويل قد ترى هبوطاً عند كل قطع ثقيل لم يسجله أحد، والمثبت المختار لنافذة اسمية &plusmn;15 % سيقف عند حده بالضبط حين تحتاجه الآلة أكثر ما تحتاجه.</p>
+
+    <h2>ما يصلحه المثبت وما لا يصلحه</h2>
+    <p>مثبت الجهد يصحح الجهد الفعال. هذا هو عمله كله، ويستحق أن نكون دقيقين في الحدود لأن أعطال آلات التشغيل كثيراً ما تُشخَّص خطأً كمشكلات جهد.</p>
+    <ul>
+      <li><strong>يصلح</strong> فرط الجهد وانخفاضه المستمرين، والهبوط البطيء الذي يتبع حملاً ثقيلاً في مكان آخر من الموقع.</li>
+      <li><strong>لا يصلح</strong> التوافقيات. تصحيح جهد موجة مشوهة يتركها مشوهة، والعاكس يرى التشوه كما هو.</li>
+      <li><strong>لا يصلح</strong> عدم الاتزان إلا إذا نُظّم كل طور مستقلاً &mdash; وحتى حينها فالجواب الصحيح عادةً معالجة عدم الاتزان عند مصدره.</li>
+      <li><strong>لا يصلح</strong> التردد ولا العابرين ولا أعطال الأرضي. تلك تحتاج جهازاً آخر، ووجود مثبت قبلها لا يغيّر شيئاً.</li>
+    </ul>
+    <p>وهذا مهم تجارياً. إذا كانت المشكلة الحقيقية رنيناً توافقياً مع بنك مكثفات، أو حيادياً سيئاً، فلن تحلها أي سعة مثبت، وستكون الورشة قد اشترت صندوقاً كبيراً لا يعالج العطل.</p>
+
+    <h2>منظم سيرفو أم مرحلات أم فارياك</h2>
+    <table>
+      <thead>
+        <tr><th>النوع</th><th>التصحيح</th><th>ملاءمته لآلة تشغيل</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>منظم بمحرك سيرفو</td><td>مستمر عبر محوّل متغير بمحرك</td><td>خزانات CNC والأحمال المختلطة؛ الخيار المعتاد حين يتغير الحمل طوال اليوم</td></tr>
+        <tr><td>مرحلات أو مبدّل نقرات إلكتروني</td><td>تصحيح بخطوات</td><td>الآلات الصغيرة والأحمال المستقرة؛ أرخص لكن الخطوات مسموعة في الخرج</td></tr>
+        <tr><td>فارياك / محوّل متغير</td><td>ضبط يدوي أو بمحرك</td><td>مناضد الاختبار والعمليات الثابتة، لا آلة يتغير حملها باستمرار</td></tr>
+      </tbody>
+    </table>
+    <p>في ورشة التشغيل تكون الخاصية الحاسمة عادةً التصحيح المستمر تحت حمل يتغير ثانية بثانية، وهذا يشير إلى وحدة بمحرك سيرفو. مبدّل نقرات يصحح بخطوات 10 فولت مناسب لضاغط وغير مناسب لوحدة تحكم تتأثر بخطوة تظهر في منتصف القطع.</p>
+
+    <h2>ثلاثي الطور أم أحادي</h2>
+    <p>آلات CNC الصناعية ثلاثية الطور تقريباً دائماً، ويجب أن يطابق المثبت تكوين الآلة لا راحة المبنى. ومن الأخطاء الشائعة تثبيت طور واحد وتغذية وحدة التحكم منه بينما يعمل عمود الدوران على التغذية الثلاثية غير المثبتة: فتكون وحدة التحكم محمية وعمود الدوران غير محمي، وهو عكس المقصود.</p>
+    <p>الآلات المكتبية الصغيرة ومخارط التدريب وأعمدة الدوران أحادية الطور هي الاستثناء، ووحدة أحادية الطور صحيحة هناك. المهم أن يغطي المثبت كل حمل يشارك في العطل، لا الحمل الأسهل توصيلاً فقط.</p>
+
+    <h2>تفاصيل تركيب تسبب زيارات لاحقة</h2>
+    <ul>
+      <li><strong>المحيط والتهوية.</strong> منظم السيرفو يبدد حرارة. خزانة مصممة لـ 25 &deg;م ومركبة في زاوية ورشة بـ 40 &deg;م ستُخفَّض قدرتها، وهذا التخفيض ليس اختيارياً.</li>
+      <li><strong>الكابل وهبوط الجهد.</strong> المثبت في نهاية خط طويل يصحح الجهد عند أطرافه هو لا عند الآلة. وحساب الكابل يتبع القواعد نفسها كأي مغذٍّ آخر.</li>
+      <li><strong>مسار تجاوز.</strong> حدّد مسار تجاوز للصيانة. تشغيل الإنتاج على مثبت بلا مسار تجاوز يعني أن كل زيارة صيانة توقف.</li>
+      <li><strong>فصل الأحمال الملوِّثة.</strong> مثبت يتشارك لوحة مع وحدة لحام سيقضي عمره في تصحيح هبوطات اللحام.</li>
+      <li><strong>التأريض والحيادي.</strong> اتبع مطلب مصنّع الآلة. تصحيح الجهد لا يصحح مشكلة حيادي، والحيادي الصغير يظهر كأعطال تحكم تشبه أعطال التغذية.</li>
+    </ul>
+
+    <h2>رموز YOMIN لهذا التطبيق</h2>
+    <p><a href="/products/voltage-stabilizer-regulator">مجموعة مثبتات الجهد</a> تشمل وحدات ثلاثية الطور مخصصة لأحمال الآلات والورش:</p>
+    <table>
+      <thead>
+        <tr><th>الرمز</th><th>التكوين</th><th>ما يذكره العرض</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>ym-0002</td><td>ثلاثي الطور</td><td>سلسلة 4SVC TNS، منظم جهد أوتوماتيكي كامل، شاشة LED، 50 هرتز</td></tr>
+        <tr><td>ym-0012</td><td>ثلاثي الطور</td><td>سلسلة TND / SVC، منظم جهد أوتوماتيكي، 15 kVA</td></tr>
+        <tr><td>ym-0031</td><td>أحادي الطور</td><td>نوع TND / SVC بمحرك سيرفو نحاسي، 15 kVA، 10 kW، 110&ndash;230 فولت، 50 هرتز</td></tr>
+      </tbody>
+    </table>
+    <p>سعة خزانة CNC قرار مشروع عادةً لا قرار كتالوج. أرسل قائمة الآلات مع مقننات عمود الدوران والمحاور، ومدى الدخل المقاس، وهل كل عمود يُغذى بعاكس أم ببدء مباشر، ويمكن التحقق من السعة مقابل الذروة بدل تخمينها من المجموع.</p>
+    <p>قراءات ذات صلة: <a href="/blog/voltage-stabilizer-sizing-guide">حساب حجم مثبت الجهد</a> يغطي حساب القدرة العام، و<a href="/blog/three-phase-voltage-stabilizer-guide">تثبيت الجهد ثلاثي الطور</a> يغطي التنظيم لكل طور وأحمال المصانع، و<a href="/blog/servo-voltage-stabilizer-guide">مثبتات الجهد بمحرك سيرفو</a> يغطي التقنية نفسها، و<a href="/blog/voltage-drop-calculation-guide">حساب هبوط الجهد</a> يغطي جانب المغذي.</p>
+  </section>
+
+    <section class="cta-section">
+    <h2>هل تحدد مثبتاً لخلية CNC؟</h2>
+    <p>أرسل قائمة الآلات مع مقننات عمود الدوران والمحاور، ومدى جهد الدخل المقاس، وما إذا كانت الأعمدة تُغذى بعاكس. سنحدد سعة المثبت الثلاثي مقابل الذروة لا مقابل المجموع الاسمي.</p>
+    <a class="btn btn-primary" href="/contact">اطلب عرض سعر</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

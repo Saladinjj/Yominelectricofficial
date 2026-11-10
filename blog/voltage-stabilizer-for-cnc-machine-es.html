@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estabilizador de tensión para CNC: cómo dimensionar</title>
+<meta name="description" content="Por qué una máquina CNC rompe las reglas habituales de dimensionamiento: corriente de arranque del husillo, corriente armónica del variador, regeneración de los ejes y pérdida de fase. Cómo dimensionar un regulador trifásico sin sobredimensionarlo.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Estabilizador de tensión para CNC: cómo dimensionar">
+<meta property="og:description" content="Por qué una máquina CNC rompe las reglas habituales de dimensionamiento: corriente de arranque del husillo, corriente armónica del variador, regeneración de los ejes y pérdida de fase. Cómo dimensionar un regulador trifásico sin sobredimensionarlo.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/voltage-stabilizer-for-cnc-machine/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Estabilizador de tensión para una máquina CNC: las reglas que sí se aplican",
+      "description": "Por qué una máquina CNC rompe las reglas habituales de dimensionamiento: corriente de arranque del husillo, corriente armónica del variador, regeneración de los ejes y pérdida de fase. Cómo dimensionar un regulador trifásico sin sobredimensionarlo.",
+      "image": "https://www.yominelectric.com/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.png",
+      "datePublished": "2026-11-10",
+      "dateModified": "2026-11-10",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/voltage-stabilizer-for-cnc-machine-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Se puede dimensionar un estabilizador CNC con la placa de características?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rara vez. La placa da valores en régimen permanente; el estabilizador también debe soportar el arranque del husillo, la corriente armónica del variador y la regeneración de los ejes. Dimensionar sobre la suma de placas suele acabar en un equipo corto en pico o sobrado en régimen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Un estabilizador corrige los armónicos de un variador?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Corrige la tensión eficaz, y una onda deformada sigue deformada tras la corrección. Los problemas de armónicos requieren filtrado u otra configuración del variador, y un estabilizador más grande no ayuda."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Trifásico o monofásico para una máquina CNC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Siga la máquina. Las máquinas CNC industriales son trifásicas y deben estabilizarse en las tres fases; un equipo monofásico solo en el control protege el control y deja el husillo expuesto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto margen hay que añadir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use el derrateo del fabricante para su tipo de carga en lugar de una regla empírica, y añada margen para la regeneración de los ejes, no para una máquina futura hipotética. Una ventana de entrada medida vale más que un coeficiente generoso."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Estabilizadores de tensión</span></div>
+    <span class="bh-tag">Guías de compra</span>
+    <h1 class="bh-title">Estabilizador de tensión para una máquina CNC: las reglas que sí se aplican</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>10 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/voltage-stabilizer-for-cnc-machine/hero.png" alt="Dos estabilizadores automáticos trifásicos YOMIN, SVC(TNS)-30 kVA y TND/SVC-15 kVA, sobre fondo de papel cálido" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p><strong>Una máquina CNC no es una carga resistiva con una placa de características, y dimensionar un estabilizador sobre la suma de los kVA nominales suele fallar en una de dos direcciones.</strong> Demasiado pequeño, porque el husillo y los variadores de eje piden picos de corriente que la placa nunca menciona. O innecesariamente grande, porque la etapa de entrada del variador ya tolera buena parte de la variación que se pretendía corregir. El estabilizador debe dimensionarse sobre la corriente que la máquina realmente consume y sobre la ventana de tensión que realmente necesita.</p>
+
+    <h2>Por qué una carga CNC no es una carga de placa</h2>
+    <p>En una máquina herramienta ocurren tres cosas que una tabla de cargas simple no describe. El husillo acelera y decelera continuamente en lugar de girar con corriente estable. Los variadores de eje devuelven energía al bus de continua al frenar. Y todo el armario se alimenta a través de un variador de frecuencia, que toma la corriente en impulsos cortos en lugar de una sinusoide suave.</p>
+    <p>Cada uno de esos fenómenos cambia lo que el estabilizador ve en su salida. Un estabilizador dimensionado sobre la suma de las placas de motor recibirá peticiones de picos que no puede entregar, y el síntoma no es una avería espectacular. Son disparos intempestivos, un husillo que falla al acelerar o un control que se reinicia durante un corte pesado &mdash; fallos que se atribuyen a la máquina y no a la alimentación que tiene delante.</p>
+
+    <h2>Cuatro efectos que deciden realmente los kVA</h2>
+    <p><strong>Corriente de arranque del husillo.</strong> Un motor de husillo arrancado en directo puede consumir varias veces su corriente nominal durante un instante. Si la máquina lleva husillo de arranque directo en lugar de variador, ese pico, y no la corriente de régimen, fija la potencia del estabilizador.</p>
+    <p><strong>Corriente armónica del variador.</strong> La entrada de un variador no presenta una carga lineal limpia. La forma de onda de corriente es rica en armónicos, la corriente eficaz es mayor de lo que sugiere la fundamental, y el estabilizador debe soportar esa corriente sin saturarse ni sobrecalentarse. De ahí viene el derrateo por carga no lineal que indica el fabricante, y conviene leerlo en la ficha técnica en lugar de suponerlo.</p>
+    <p><strong>Regeneración de los ejes.</strong> Cuando un eje decelera, el variador empuja energía de vuelta hacia la alimentación. Parte la absorbe una resistencia de frenado y parte aparece en la entrada. Un estabilizador que corrige en un solo sentido, o que no tiene margen por encima del nominal, verá subir su tensión de salida en una deceleración rápida. Las máquinas con ejes pesados y rápidos &mdash; pórtico y fresado de alta velocidad &mdash; son las primeras donde esto aparece.</p>
+    <p><strong>Desequilibrio y pérdida de fase.</strong> Una alimentación trifásica con una fase débil produce una salida también desequilibrada, salvo que cada fase se regule de forma independiente. Los controles CNC toleran menos el desequilibrio que la mayoría de las cargas industriales, y una fase perdida es peor que un desequilibrio. La protección de pérdida de fase es un requisito distinto de la corrección de tensión y debe especificarse explícitamente en lugar de darse por supuesta.</p>
+
+    <h2>Ajustar la base de dimensionamiento a la carga</h2>
+    <table>
+      <thead>
+        <tr><th>Carga en el armario</th><th>Base de dimensionamiento</th><th>Punto de atención</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Iluminación, resistencias de calefacción</td><td>kVA en régimen</td><td>Nada más allá del total</td></tr>
+        <tr><td>Motor de husillo en arranque directo</td><td>Pico de arranque</td><td>Duración del pico frente a la capacidad de sobrecarga</td></tr>
+        <tr><td>Motor de husillo con variador</td><td>Corriente de régimen más derrateo</td><td>Corriente armónica y valor de derrateo de la ficha</td></tr>
+        <tr><td>Ejes servo</td><td>kVA en régimen más margen de regeneración</td><td>Subida de salida al decelerar; resistencia de frenado</td></tr>
+        <tr><td>Bomba de refrigerante, transportador de viruta</td><td>kVA en régimen, comprobar el arranque</td><td>Los motores de arranque directo añaden un pico adicional</td></tr>
+      </tbody>
+    </table>
+    <p>Sume primero las cargas continuas y trate después el pico mayor por separado, en lugar de sumar todos los picos. Las máquinas rara vez arrancan todos los motores en el mismo instante, y dimensionar sobre la suma de todos los picos posibles es cómo un taller acaba con un estabilizador del doble de lo que necesitaba.</p>
+
+    <h2>Hacer el cálculo</h2>
+    <p>Para una máquina trifásica la aritmética no es lo difícil:</p>
+    <ul>
+      <li><strong>kVA continuos</strong> = &radic;3 &times; tensión de línea &times; corriente de línea, sumando las cargas que funcionan juntas.</li>
+      <li><strong>kVA de pico</strong> = el mayor arranque o aceleración, tomado de los datos del motor o del variador, no estimado.</li>
+      <li><strong>Ventana de regulación</strong> = el rango de entrada que el estabilizador debe aceptar, tomado de los registros reales del sitio y no de un nominal recordado.</li>
+      <li><strong>Margen</strong> = el derrateo que exige el fabricante para ese tipo de carga, aplicado después de la suma, no en su lugar.</li>
+    </ul>
+    <p>Merece la pena medir la ventana de entrada en lugar de adivinarla. Un taller al final de una derivación puede estar viendo una caída en cada corte pesado que nadie ha registrado, y un estabilizador elegido para una ventana nominal de &plusmn;15 % quedará en su límite justo cuando la máquina más lo necesita.</p>
+
+    <h2>Lo que un estabilizador corrige y lo que no</h2>
+    <p>Un estabilizador corrige la tensión eficaz. Ese es todo su trabajo, y conviene ser preciso con el límite porque los fallos de máquina herramienta se diagnostican a menudo como problemas de tensión.</p>
+    <ul>
+      <li><strong>Corrige</strong> las sobretensiones y subtensiones permanentes y la caída lenta que sigue a una carga pesada en otra parte del sitio.</li>
+      <li><strong>No corrige</strong> los armónicos. Corregir la tensión de una onda deformada la deja deformada, y el variador sigue viendo la distorsión.</li>
+      <li><strong>No corrige</strong> el desequilibrio salvo que cada fase se regule por separado &mdash; e incluso entonces, la respuesta correcta suele ser tratar el desequilibrio en su origen.</li>
+      <li><strong>No corrige</strong> la frecuencia, los transitorios ni los defectos de tierra. Eso requiere otro dispositivo, y un estabilizador delante no cambia nada.</li>
+    </ul>
+    <p>Esto importa comercialmente. Si el problema real es una resonancia armónica con una batería de condensadores, o un neutro deficiente, ninguna capacidad de estabilizador lo resolverá, y el taller habrá comprado un armario grande que no atiende el fallo.</p>
+
+    <h2>Regulador con servo, de relés o variac</h2>
+    <table>
+      <thead>
+        <tr><th>Tipo</th><th>Corrección</th><th>Encaje en una máquina herramienta</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Regulador con servomotor</td><td>Continua, mediante transformador variable motorizado</td><td>Armarios CNC y cargas de máquina mixtas; la opción habitual cuando la carga varía todo el día</td></tr>
+        <tr><td>De relés o conmutador electrónico de tomas</td><td>Corrección por escalones</td><td>Máquinas pequeñas y cargas estables; más barato, pero los escalones se notan en la salida</td></tr>
+        <tr><td>Variac / transformador variable</td><td>Consigna manual o motorizada</td><td>Bancos de prueba y procesos fijos, no una máquina cuya carga cambia continuamente</td></tr>
+      </tbody>
+    </table>
+    <p>Para un taller de mecanizado la propiedad decisiva suele ser la corrección continua bajo una carga que cambia segundo a segundo, lo que apunta a un equipo con servomotor. Un conmutador de tomas que corrige en escalones de 10 V sirve para un compresor y no sirve para un control sensible a un escalón que aparece en mitad del corte.</p>
+
+    <h2>Trifásico o monofásico</h2>
+    <p>Las máquinas CNC industriales son casi siempre trifásicas, y el estabilizador debe corresponder a la configuración de la máquina, no a la comodidad del edificio. Un error frecuente es estabilizar una fase y alimentar el control desde ella mientras el husillo funciona con el trifásico sin estabilizar: el control queda protegido y el husillo no, que es lo contrario de lo que se pretendía.</p>
+    <p>Las máquinas pequeñas de banco, los tornos de formación y los husillos monofásicos son la excepción, y ahí un equipo monofásico es lo correcto. Lo que importa es que el estabilizador cubra todas las cargas que comparten el fallo, no solo la que era más fácil de cablear.</p>
+
+    <h2>Detalles de instalación que generan visitas posteriores</h2>
+    <ul>
+      <li><strong>Ambiente y ventilación.</strong> Un regulador con servomotor disipa calor. Un armario diseñado para 25 &deg;C e instalado en un rincón de taller a 40 &deg;C se derrateará, y ese derrateo no es opcional.</li>
+      <li><strong>Cable y caída de tensión.</strong> Un estabilizador al final de una línea larga corrige la tensión en sus propios bornes, no en la máquina. El dimensionamiento del cable sigue las mismas reglas que cualquier derivación.</li>
+      <li><strong>Bypass.</strong> Especifique un bypass de mantenimiento. Trabajar en producción con un estabilizador sin bypass significa que cada visita de servicio es una parada.</li>
+      <li><strong>Separación de cargas sucias.</strong> Un estabilizador que comparte cuadro con un equipo de soldadura pasará su vida corrigiendo las caídas del soldador.</li>
+      <li><strong>Puesta a tierra y neutro.</strong> Siga el requisito del fabricante de la máquina. Corregir la tensión no corrige un problema de neutro, y un neutro infradimensionado se manifiesta como fallos de control que parecen fallos de alimentación.</li>
+    </ul>
+
+    <h2>Referencias YOMIN para esta aplicación</h2>
+    <p>La <a href="/products/voltage-stabilizer-regulator">gama de estabilizadores de tensión</a> incluye equipos trifásicos pensados para cargas de máquina y de taller:</p>
+    <table>
+      <thead>
+        <tr><th>Referencia</th><th>Configuración</th><th>Lo que indica la ficha</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>ym-0002</td><td>Trifásico</td><td>Serie 4SVC TNS, regulador automático integral, display LED, 50 Hz</td></tr>
+        <tr><td>ym-0012</td><td>Trifásico</td><td>Serie TND / SVC, regulador automático de tensión, 15 kVA</td></tr>
+        <tr><td>ym-0031</td><td>Monofásico</td><td>Tipo TND / SVC con servomotor de cobre, 15 kVA, 10 kW, 110&ndash;230 V, 50 Hz</td></tr>
+      </tbody>
+    </table>
+    <p>La capacidad para un armario CNC suele ser una decisión de proyecto más que de catálogo. Envíe la lista de máquinas con las características de husillo y ejes, la ventana de entrada medida y si cada husillo va con variador o en arranque directo: la capacidad podrá verificarse contra el pico en lugar de estimarse por el total.</p>
+    <p>Lecturas relacionadas: <a href="/blog/voltage-stabilizer-sizing-guide">dimensionamiento de estabilizadores</a> cubre el cálculo general de kVA, <a href="/blog/three-phase-voltage-stabilizer-guide">estabilización trifásica</a> cubre la regulación por fase y las cargas de planta, <a href="/blog/servo-voltage-stabilizer-guide">estabilizadores con servomotor</a> cubre la tecnología en sí y <a href="/blog/voltage-drop-calculation-guide">cálculo de caída de tensión</a> cubre el lado de la alimentación.</p>
+  </section>
+
+    <section class="cta-section">
+    <h2>¿Está especificando un estabilizador para una célula CNC?</h2>
+    <p>Envíe la lista de máquinas con las características de husillo y ejes, su ventana de tensión de entrada medida y si los husillos van con variador. Dimensionaremos el estabilizador trifásico contra el pico en lugar del total nominal.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
