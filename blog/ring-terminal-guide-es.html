@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/ring-terminal-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terminal de ojo: medida de tornillo, sección y matriz de crimpado</title>
+<meta name="description" content="Cómo especificar un terminal de ojo: sección del conductor frente a medida de tornillo, terminal aislado o desnudo y por qué la matriz de crimpado decide la calidad de la unión.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Terminal de ojo: medida de tornillo, sección y matriz de crimpado">
+<meta property="og:description" content="Cómo especificar un terminal de ojo: sección del conductor frente a medida de tornillo, terminal aislado o desnudo y por qué la matriz de crimpado decide la calidad de la unión.">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/ring-terminal-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/ring-terminal-guide-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/ring-terminal-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/ring-terminal-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/ring-terminal-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/ring-terminal-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/ring-terminal-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Terminal de ojo: medida de tornillo, sección de cable y matriz de crimpado",
+      "description": "Cómo especificar un terminal de ojo: sección del conductor frente a medida de tornillo, terminal aislado o desnudo y por qué la matriz de crimpado decide la calidad de la unión.",
+      "image": "https://www.yominelectric.com/assets/images/blog/ring-terminal-guide/hero.png",
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/ring-terminal-guide-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la diferencia entre un terminal de ojo y uno de horquilla?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El terminal de ojo tiene una lengüeta circular cerrada: hay que retirar el tornillo para montarlo o desmontarlo, pero la unión no puede escaparse. El de horquilla está abierto en un extremo, lo que acelera el montaje y permite retirarlo con el tornillo flojo en lugar de desmontado. Con vibración o en un circuito de seguridad, la forma cerrada es la opción segura."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Debo elegir por medida de tornillo o por sección de cable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Son dos preguntas distintas y ambas son necesarias. El rango de sección determina el diámetro interior del cañón y la matriz; la medida de tornillo determina el agujero de la lengüeta y la superficie de contacto. Elija el cañón por el conductor y la lengüeta por el tornillo, y luego confirme que existe una referencia con esa combinación."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se puede crimpar un terminal de ojo con alicate plano?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se puede deformar, pero el resultado no es un crimpado controlado. El alicate aplana el cañón en óvalo, deja la costura sin soporte y no da compresión repetible, así que la unión depende de la fuerza del operario. Use una matriz adecuada al cañón y valide con un ensayo de tracción."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Los terminales aislados necesitan otra matriz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Un terminal aislado tiene un crimpado de conductor y otro de aislamiento a alturas distintas, y la matriz debe formar ambos sin cortar la funda. Una matriz para terminal desnudo usada en una pieza aislada suele aplastar la funda y crimpar insuficientemente el cañón conductor."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Terminales y conectores</span></div>
+    <span class="bh-tag">Guías de compra</span>
+    <h1 class="bh-title">Terminal de ojo: medida de tornillo, sección de cable y matriz de crimpado</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 11, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/ring-terminal-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/ring-terminal-guide/hero.png" alt="Terminales de ojo de cobre y terminales de cable tipo ojo, versiones aisladas y desnudas" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un terminal de ojo es un terminal crimpado cuya lengüeta forma un círculo completo, de modo que el tornillo de fijación atraviesa metal por todo su perímetro. Esa forma cerrada es justamente el motivo de elegirlo: a diferencia de un terminal de horquilla, no puede salirse por debajo de un tornillo flojo ni desprenderse lateralmente por vibración o por un tirón del cable.</p>
+
+    <p>Se especifica con tres datos, no con uno: el rango de conductor que admite el cañón, la medida de tornillo que despeja la lengüeta y el tipo de cañón que realmente se puede crimpar en obra. Con esos tres correctos, la unión durará más que el tablero. Con el cañón mal apareado al cable, ningún par de apriete en el tornillo la va a salvar.</p>
+
+    <h2>Qué controla realmente cada dato de la etiqueta</h2>
+
+    <p>Los catálogos ordenan los terminales de ojo por rango de sección y por medida de tornillo, y el comprador suele tratar el segundo número como el importante. No lo es: cada cifra gobierna una parte distinta del conjunto y cada una produce un fallo distinto cuando está mal.</p>
+
+    <table>
+      <thead>
+        <tr><th>Dato de la etiqueta</th><th>Qué determina</th><th>Qué ocurre si está mal</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Rango de sección, mm&sup2; o AWG</td><td>El diámetro interior del cañón y, por tanto, la matriz de crimpado</td><td>Si es pequeño corta hilos en la boca del cañón; si es grande deja un haz suelto que se arranca bajo carga</td></tr><tr><td>Medida de tornillo, M3 a M12</td><td>El agujero de paso de la lengüeta y la superficie de contacto sobre la platina</td><td>Corto no entra; sobrado reduce el área de contacto y permite que una arandela puentee la unión</td></tr><tr><td>Tipo de cañón y de aislamiento</td><td>El perfil de matriz, la altura de crimpado y la temperatura que soporta la unión</td><td>Un terminal aislado crimpado con matriz para terminal desnudo aplasta la funda y deja el cañón conductor sin crimpar</td></tr>
+      </tbody>
+    </table>
+
+    <p>La regla que se deduce es simple: el cañón debe corresponder al conductor y la lengüeta al tornillo. Un terminal con lengüeta grande y cañón pequeño es una referencia legítima, pero no es intercambiable con el caso inverso.</p>
+
+    <h2>Aislado, desnudo o termorretráctil</h2>
+
+    <p>Los tres son terminales de ojo. La diferencia está en la protección de la transición entre el aislamiento del cable y el conductor desnudo, que es donde empiezan la humedad y la fatiga de los hilos.</p>
+
+    <table>
+      <thead>
+        <tr><th>Tipo</th><th>Conviene cuando</th><th>Contrapartida</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Desnudo</td><td>La unión va dentro de un cuadro, protegida por una tapa y el espacio es escaso</td><td>Nada cubre el cañón: un hilo suelto o una herramienta pueden puentear al borne vecino</td></tr><tr><td>Preaislado, funda de PVC o poliamida</td><td>Cableado de cuadro, mazos de aparato y automoción, donde la unión se manipula y se inspecciona</td><td>La funda fija la temperatura máxima y la matriz debe ser de tipo aislado; una matriz universal suele crimpar la funda y no el cañón</td></tr><tr><td>Termorretráctil o sellado</td><td>Exterior, zonas de lavado o ciclos de condensación sobre la unión</td><td>Es el montaje más lento y requiere fuente de calor, pero es la única versión que impide la entrada de agua al cañón</td></tr>
+      </tbody>
+    </table>
+
+    <p>La conformidad RoHS importa aquí porque el recubrimiento es lo que garantiza la conducción a largo plazo. El cobre estañado es la referencia por una razón concreta: no forma el óxido frágil del cobre desnudo y sigue siendo crimpable y soldable después de meses de almacén.</p>
+
+    <h2>El cañón, no la lengüeta, decide si la unión aguanta</h2>
+
+    <p>Dos terminales de ojo pueden verse idénticos desde arriba y comportarse de forma muy distinta. La diferencia está dentro del cañón.</p>
+
+    <ul>
+      <li><strong>La costura.</strong> Un cañón con costura soldada o brazada permanece cerrado cuando la matriz lo comprime. Una costura a tope puede abrirse con un crimpado fuerte y dejar escapar el haz.</li>
+      <li><strong>El chaflán de entrada.</strong> Una boca achaflanada guía los hilos sin engancharlos. Una boca viva raspa hilos, y un haz raspado pierde sección justo donde se concentra la corriente.</li>
+      <li><strong>La ventana de inspección.</strong> Permite confirmar que el conductor llegó al fondo del cañón antes del crimpado, que es el error de montaje más frecuente.</li>
+      <li><strong>El agarre de aislamiento separado.</strong> El crimpado trasero debe sujetar la funda, no el conductor. No transporta corriente: solo alivia el esfuerzo.</li>
+    </ul>
+
+    <h2>Ajustar la matriz al cañón, no a la marca de la herramienta</h2>
+
+    <p>La calidad del crimpado la fija la cavidad de la matriz, y la matriz corresponde a una geometría de cañón, no a una marca de alicate. Una herramienta vendida como universal dará una unión aceptable en un tipo de cañón y marginal en el siguiente.</p>
+
+    <p>La comprobación útil es un ensayo de tracción sobre una muestra de cada bobina, no una revisión visual del cuadro terminado. La altura de crimpado es la variable de proceso que hay que controlar: con poca compresión los hilos no se sueldan en frío entre sí; con demasiada, el cañón se agrieta o los hilos se cortan en la boca. Un calibre pasa/no pasa sobre la altura de crimpado detecta la deriva de una matriz desgastada antes de que llegue a un envío.</p>
+
+    <p>Crimpar con alicate plano no es un proceso controlado: aplasta el cañón en óvalo, deja la costura sin soporte y no da compresión repetible. Es lo primero que busca un inspector en un mazo devuelto.</p>
+
+    <h2>Los cuatro fallos que vuelven del campo</h2>
+
+    <table>
+      <thead>
+        <tr><th>Síntoma</th><th>Causa habitual</th><th>Corrección de producto o de proceso</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Hilos cortados en la boca del cañón</td><td>Matriz demasiado pequeña para la clase de flexibilidad del conductor, o pelado demasiado corto</td><td>Ajustar la matriz a la clase real del cable, incluido el flexible de hilo fino, y fijar el pelado para que el conductor quede a ras del extremo del cañón</td></tr><tr><td>El terminal se arranca con poca fuerza</td><td>Crimpado insuficiente, aislamiento atrapado dentro del cañón conductor o cañón dimensionado para una sección mayor</td><td>Cambiar de matriz, volver a pelar y verificar el rango de sección contra la sección real del cable</td></tr><tr><td>Depósito verde dentro de la unión</td><td>Humedad que alcanza el cobre desnudo en el crimpado, a menudo con un metal distinto cerca</td><td>Terminales estañados, versión sellada o termorretráctil en exterior y una geometría que drene en lugar de retener agua</td></tr><tr><td>Tornillo flojo y terminal caliente</td><td>Pérdida de presión de contacto por ciclos térmicos, ausencia de arandela elástica o lengüeta demasiado fina para el par del tornillo</td><td>Elegir el espesor de lengüeta según el tornillo, montar arandela elástica o estriada y apretar al par especificado y no al tacto</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Cobre, latón o aluminio</h2>
+
+    <p>El cobre conduce con la menor sección y se crimpa de forma predecible, por eso domina el cableado de control y las uniones de batería. El latón es más rígido y más barato, habitual en tornillos pequeños donde la resistencia mecánica pesa más que la conductividad. El aluminio se elige por peso y coste en conductores grandes, pero exige una transición bimetálica: una lengüeta de cobre atornillada a una barra de aluminio forma un par galvánico, y los productos de corrosión en esa interfaz aumentan la resistencia hasta que la unión se calienta.</p>
+
+    <p>Con cable de aluminio, use terminal bimetálico y termine la unión con pasta de protección. Con cable de cobre sobre barra de aluminio, la misma regla se aplica al revés. El terminal rara vez es el punto débil: lo es la interfaz entre dos metales.</p>
+
+    <h2>Dónde encajan los terminales de ojo de YOMIN</h2>
+
+    <p>YOMIN suministra terminales de ojo de cobre y terminales de cable tipo ojo dentro de su gama de <a href="/products/terminal-connector">terminales y conectores</a>: terminales de ojo de cobre aislados conformes RoHS para mazos y automoción, terminales de crimpar de dos agujeros para uniones de barra y de tierra, y terminales de ojo DTL que hacen la transición entre conductores de cobre y de aluminio. Todos se definen por rango de sección y medida de tornillo, exactamente el par de datos que debe llevar un plano.</p>
+
+    <p>Cuando la unión toma una barra colectora en lugar de un cable, la misma lógica de crimpado se aplica a mayor escala: consulte nuestra guía de <a href="/blog/cable-lugs-guide">terminales de cable DT, DTL-2 y DL</a> para las familias de compresión, y la de <a href="/blog/terminal-blocks-connectors-identification-guide">bloques de bornes y conectores</a> para el lado de carril DIN del mismo cuadro.</p>
+
+    <h2>Lista de verificación para el pedido</h2>
+
+    <ul>
+      <li><strong>Rango de sección</strong> expresado como rango y no como valor único, y ajustado a la clase de cable realmente utilizada: el flexible de hilo fino necesita una matriz distinta del conductor rígido.</li>
+      <li><strong>Medida de tornillo</strong> indicada como M más el espesor de lengüeta que exige el par de apriete.</li>
+      <li><strong>Tipo de cañón y aislamiento</strong>, con la temperatura admisible si la unión queda cerca de una resistencia, un freno o un motor.</li>
+      <li><strong>Recubrimiento</strong> y, cuando el entorno lo exige, la referencia de conformidad RoHS o automoción.</li>
+      <li><strong>Especificación de crimpado</strong> en el plano: referencia de matriz, altura de crimpado y criterio de tracción, para que la unión no dependa de quién sostiene el alicate.</li>
+    </ul>
+
+    <p>Envíe el rango de sección, la medida de tornillo y el entorno de trabajo, y un proveedor podrá confirmar la combinación de cañón y matriz antes de fabricar el mazo, no después de que falle el primer ensayo de tracción.</p>
+
+    <h2>Preguntas frecuentes</h2>
+      <h3>¿Cuál es la diferencia entre un terminal de ojo y uno de horquilla?</h3>
+      <p>El terminal de ojo tiene una lengüeta circular cerrada: hay que retirar el tornillo para montarlo o desmontarlo, pero la unión no puede escaparse. El de horquilla está abierto en un extremo, lo que acelera el montaje y permite retirarlo con el tornillo flojo en lugar de desmontado. Con vibración o en un circuito de seguridad, la forma cerrada es la opción segura.</p>
+      <h3>¿Debo elegir por medida de tornillo o por sección de cable?</h3>
+      <p>Son dos preguntas distintas y ambas son necesarias. El rango de sección determina el diámetro interior del cañón y la matriz; la medida de tornillo determina el agujero de la lengüeta y la superficie de contacto. Elija el cañón por el conductor y la lengüeta por el tornillo, y luego confirme que existe una referencia con esa combinación.</p>
+      <h3>¿Se puede crimpar un terminal de ojo con alicate plano?</h3>
+      <p>Se puede deformar, pero el resultado no es un crimpado controlado. El alicate aplana el cañón en óvalo, deja la costura sin soporte y no da compresión repetible, así que la unión depende de la fuerza del operario. Use una matriz adecuada al cañón y valide con un ensayo de tracción.</p>
+      <h3>¿Los terminales aislados necesitan otra matriz?</h3>
+      <p>Sí. Un terminal aislado tiene un crimpado de conductor y otro de aislamiento a alturas distintas, y la matriz debe formar ambos sin cortar la funda. Una matriz para terminal desnudo usada en una pieza aislada suele aplastar la funda y crimpar insuficientemente el cañón conductor.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Está comprando terminales de ojo para un mazo o un cuadro?</h2>
+    <p>Indique el rango de sección, la medida de tornillo y el entorno de la unión. YOMIN suministra terminales de ojo de cobre y terminales de cable tipo ojo de su gama de terminales y conectores, incluidas piezas aisladas conformes RoHS, terminales de crimpar de dos agujeros y terminales bimetálicos DTL.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

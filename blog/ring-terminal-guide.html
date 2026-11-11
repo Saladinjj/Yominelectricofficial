@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/ring-terminal-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ring Terminal Guide: Stud Size, Wire Gauge and Crimp Die</title>
+<meta name="description" content="How to specify a ring terminal: wire range versus stud size, insulated or non-insulated barrel, why the crimp die decides joint quality, and the field failures to design out.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ring Terminal Guide: Stud Size, Wire Gauge and Crimp Die">
+<meta property="og:description" content="How to specify a ring terminal: wire range versus stud size, insulated or non-insulated barrel, why the crimp die decides joint quality, and the field failures to design out.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/ring-terminal-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/ring-terminal-guide">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/ring-terminal-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/ring-terminal-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/ring-terminal-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/ring-terminal-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/ring-terminal-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Ring Terminal Guide: Stud Size, Wire Gauge and the Crimp Die",
+      "description": "How to specify a ring terminal: wire range versus stud size, insulated or non-insulated barrel, why the crimp die decides joint quality, and the field failures to design out.",
+      "image": "https://www.yominelectric.com/assets/images/blog/ring-terminal-guide/hero.png",
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/ring-terminal-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a ring terminal and a fork terminal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A ring terminal has a closed circular tongue, so the screw must be removed to fit or remove it, but the joint cannot slip out. A fork terminal is open at one end, which makes it faster to fit and allows removal with the screw loosened rather than removed. Where vibration or a safety circuit is involved, the closed ring is the safer choice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I choose between stud size and wire size?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They answer different questions and both are needed. The wire range sets the barrel bore and the crimp die; the stud size sets the tongue hole and the contact patch. Choose the barrel from the conductor and the tongue from the stud, then check that a terminal exists with that combination."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I crimp a ring terminal with pliers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can deform one, but the result is not a controlled crimp. Pliers flatten the barrel into an oval, leave the seam unsupported and give no repeatable compression, so the joint depends on operator strength. Use a die matched to the barrel and verify with a pull test."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do insulated terminals need a different die?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. An insulated terminal has a conductor crimp and an insulation crimp at different heights, and the die has to form both without cutting the sleeve. A bare-terminal die used on an insulated part typically crushes the sleeve and under-crimps the conductor barrel."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Terminals &amp; Connectors</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Ring Terminal Guide: Stud Size, Wire Gauge and the Crimp Die</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 11, 2026</span>
+      <span class="divider"></span>
+      <span>8 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/ring-terminal-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/ring-terminal-guide/hero.png" alt="Assorted copper ring terminals and ring-type cable lugs with insulated and non-insulated barrels" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A ring terminal is a crimp lug whose tongue is a complete circle, so the fixing screw passes through metal on every side. That closed shape is the whole point: unlike a fork terminal, a ring terminal cannot slide out from under a loosened screw, and it cannot be pulled sideways off the stud by vibration or by a cable tug.</p>
+
+    <p>Specify one with three numbers, not one: the conductor range the barrel accepts, the stud size the tongue clears, and the barrel style you can actually crimp on site. Get those three right and the joint will outlast the panel. Get the barrel-to-wire match wrong and no amount of torque on the screw will save it.</p>
+
+    <h2>What each number on the label actually controls</h2>
+
+    <p>Catalogues list ring terminals by wire range and stud size, and buyers often treat the second number as the important one. It is not. Each figure controls a different part of the assembly, and each one produces a different failure when it is wrong.</p>
+
+    <table>
+      <thead>
+        <tr><th>Figure on the label</th><th>What it decides</th><th>What happens when it is wrong</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Conductor range, mm&sup2; or AWG</td><td>The bore of the barrel and therefore the crimp die</td><td>Too small cuts strands at the barrel mouth; too large leaves a loose bundle that pulls out under load</td></tr><tr><td>Stud size, M3 to M12</td><td>The clearance hole in the tongue and the contact patch on the pad</td><td>Undersized will not fit; oversized reduces contact area and lets a washer bridge the joint</td></tr><tr><td>Barrel and insulation style</td><td>Die profile, crimp height and the temperature the joint survives</td><td>Insulated terminal crimped with a bare-terminal die crushes the sleeve and leaves the conductor barrel under-crimped</td></tr>
+      </tbody>
+    </table>
+
+    <p>The rule that follows is simple: the barrel must match the conductor, and the tongue must match the stud. A terminal with a large tongue and a small barrel is a legitimate part, but it is not interchangeable with the reverse.</p>
+
+    <h2>Insulated, non-insulated or heat-shrink</h2>
+
+    <p>All three are ring terminals. The difference is what protects the transition from cable insulation to bare conductor, which is where moisture and strand fatigue start.</p>
+
+    <table>
+      <thead>
+        <tr><th>Type</th><th>Choose it when</th><th>The trade-off</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Non-insulated</td><td>The joint sits in a control cabinet, is protected by a cover, and space is tight</td><td>Nothing covers the barrel, so a stray strand or a slipped tool can bridge to the next terminal</td></tr><tr><td>Pre-insulated, PVC or nylon sleeve</td><td>Panel wiring, appliance and automotive harnesses where the joint is touched and inspected</td><td>The sleeve sets the maximum temperature and the die must be the insulated type; a universal die often crimps the sleeve and not the barrel</td></tr><tr><td>Heat-shrink or sealed</td><td>Outdoor, washdown, or where condensation cycles the joint</td><td>Slowest to install and needs a heat source, but it is the only version that keeps water out of the barrel</td></tr>
+      </tbody>
+    </table>
+
+    <p>RoHS matters here because the plating is what carries the current long term. Tin-plated copper is the default for a reason: it does not form the brittle oxide that bare copper does, and it stays solderable and crimpable after months in stores.</p>
+
+    <h2>The barrel, not the tongue, decides whether the joint holds</h2>
+
+    <p>Two ring terminals can look identical from the top and behave completely differently. The difference is inside the barrel.</p>
+
+    <ul>
+      <li><strong>Seam.</strong> A brazed or welded seam stays closed when the die compresses the barrel. A butted seam can open under a heavy crimp and let the bundle escape.</li>
+      <li><strong>Entry chamfer.</strong> A chamfered mouth guides the strands in without catching them. A sharp mouth shaves strands, and a shaved bundle loses cross-section exactly where the current concentrates.</li>
+      <li><strong>Inspection window or sight hole.</strong> It lets the operator confirm the conductor reached the end of the barrel before the crimp, which is the single most common assembly mistake.</li>
+      <li><strong>Separate insulation support.</strong> The rear crimp should grip the cable insulation, not the conductor. It carries no current; it only relieves strain.</li>
+    </ul>
+
+    <h2>Match the die to the barrel, not to the tool brand</h2>
+
+    <p>Crimp quality is set by the die cavity, and the die is matched to a barrel geometry, not to a brand of pliers. A tool that is sold as universal will produce an acceptable joint on one barrel style and a marginal one on the next.</p>
+
+    <p>The practical check is a pull test on a sample from each reel, not a visual check on the finished panel. Crimp height is the process variable to control: too little compression and the strands are not cold-welded together, too much and the barrel cracks or the strands are severed at the mouth. A go/no-go gauge on the crimp height catches drift from a worn die before it reaches a shipment.</p>
+
+    <p>Hand crimping with pliers is not a controlled process. It flattens the barrel into an oval, leaves the seam unsupported and gives no repeatable compression, which is why it is the first thing an inspector looks for on a returned harness.</p>
+
+    <h2>The four failures that come back from the field</h2>
+
+    <table>
+      <thead>
+        <tr><th>Symptom</th><th>Usual cause</th><th>Design or process fix</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Strands cut at the barrel mouth</td><td>Die too small for the conductor class, or strip length too short so the bundle sits proud of the barrel</td><td>Match the die to the actual wire class, including fine-strand flexible cable, and set strip length so the conductor ends flush with the barrel end</td></tr><tr><td>Terminal pulls off at low force</td><td>Under-crimp, insulation trapped inside the conductor barrel, or a barrel sized for a larger conductor</td><td>Re-die, re-strip, and check the conductor range against the printed cable size rather than the nominal one</td></tr><tr><td>Green deposit inside the joint</td><td>Moisture reaching bare copper at the crimp, often with a dissimilar metal nearby</td><td>Tin-plated terminals, sealed or heat-shrink version outdoors, and a joint that drains rather than traps water</td></tr><tr><td>Loose screw and a warm terminal</td><td>Contact pressure lost to thermal cycling, no spring washer, or a tongue that is too thin for the stud torque</td><td>Specify tongue thickness with the stud size, use a spring or serrated washer, and torque to the stud specification rather than to feel</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Copper, brass or aluminium</h2>
+
+    <p>Copper carries the current with the least cross-section and crimps predictably, which is why it dominates control and battery work. Brass is stiffer and cheaper and is common on small stud sizes where mechanical strength matters more than conductivity. Aluminium is chosen for weight and cost on large conductors, but it needs a bimetallic transition: a plain copper tongue bolted to an aluminium bar is a galvanic couple, and the corrosion products that form at that interface add resistance until the joint runs hot.</p>
+
+    <p>For aluminium cable, use a bimetallic lug and finish the joint with a barrier compound. For copper cable on an aluminium busbar, the same rule applies in reverse. The terminal is rarely the weak point; the interface between two metals is.</p>
+
+    <h2>Where YOMIN ring terminals and lugs fit</h2>
+
+    <p>YOMIN supplies copper ring terminals and ring-type cable lugs as part of its <a href="/products/terminal-connector">terminal and connector</a> range, including RoHS-compliant insulated copper ring terminals for harness and automotive work, two-hole crimp lugs for busbar and earth connections, and DTL ring-type lugs that transition between copper and aluminium conductors. All are specified by conductor range and stud size, which is exactly the pair of numbers a drawing should carry.</p>
+
+    <p>If the joint also has to carry a busbar rather than a cable, the same crimp logic applies at a larger scale: see our guide to <a href="/blog/cable-lugs-guide">DT, DTL-2 and DL cable lugs</a> for the compression-lug families, and <a href="/blog/terminal-blocks-connectors-identification-guide">terminal blocks and connectors</a> for the DIN-rail side of the same panel.</p>
+
+    <h2>Specification checklist</h2>
+
+    <ul>
+      <li><strong>Conductor range</strong> written as a range, not a single size, and matched to the cable class actually used &mdash; fine-strand flexible cable needs a different die from solid conductor.</li>
+      <li><strong>Stud size</strong> stated as M-number plus the tongue thickness the torque requires.</li>
+      <li><strong>Barrel and insulation type</strong>, with the temperature rating if the joint sits near a heater, a brake resistor or an engine.</li>
+      <li><strong>Plating</strong> and, where the environment demands it, the RoHS or automotive compliance reference.</li>
+      <li><strong>Crimp specification</strong> on the drawing: die part number, crimp height and pull-force acceptance, so the joint does not depend on who is holding the tool.</li>
+    </ul>
+
+    <p>Send the conductor range, stud size and the environment the joint works in, and a supplier can confirm the correct barrel and die combination before the harness is built rather than after the first pull test fails.</p>
+
+    <h2>Frequently asked questions</h2>
+      <h3>What is the difference between a ring terminal and a fork terminal?</h3>
+      <p>A ring terminal has a closed circular tongue, so the screw must be removed to fit or remove it, but the joint cannot slip out. A fork terminal is open at one end, which makes it faster to fit and allows removal with the screw loosened rather than removed. Where vibration or a safety circuit is involved, the closed ring is the safer choice.</p>
+      <h3>How do I choose between stud size and wire size?</h3>
+      <p>They answer different questions and both are needed. The wire range sets the barrel bore and the crimp die; the stud size sets the tongue hole and the contact patch. Choose the barrel from the conductor and the tongue from the stud, then check that a terminal exists with that combination.</p>
+      <h3>Can I crimp a ring terminal with pliers?</h3>
+      <p>You can deform one, but the result is not a controlled crimp. Pliers flatten the barrel into an oval, leave the seam unsupported and give no repeatable compression, so the joint depends on operator strength. Use a die matched to the barrel and verify with a pull test.</p>
+      <h3>Do insulated terminals need a different die?</h3>
+      <p>Yes. An insulated terminal has a conductor crimp and an insulation crimp at different heights, and the die has to form both without cutting the sleeve. A bare-terminal die used on an insulated part typically crushes the sleeve and under-crimps the conductor barrel.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Sourcing ring terminals for a harness or a panel?</h2>
+    <p>Send the conductor range, stud size and the environment the joint works in. YOMIN supplies copper ring terminals and ring-type cable lugs from its terminal and connector range, including RoHS-compliant insulated parts, two-hole crimp lugs and DTL bimetal lugs.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

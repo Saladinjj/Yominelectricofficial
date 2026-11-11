@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/window-current-transformer-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transformateur de courant à fenêtre : ouverture, rapport et pose</title>
+<meta name="description" content="Spécifier un transformateur de courant à passage : ouverture et faisceau de conducteurs, rapport et secondaire 1 A ou 5 A, classe de précision et puissance de charge, et les règles de pose qui évitent une erreur de comptage.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Transformateur de courant à fenêtre : ouverture, rapport et pose">
+<meta property="og:description" content="Spécifier un transformateur de courant à passage : ouverture et faisceau de conducteurs, rapport et secondaire 1 A ou 5 A, classe de précision et puissance de charge, et les règles de pose qui évitent une erreur de comptage.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/window-current-transformer-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/window-current-transformer-guide-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/window-current-transformer-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/window-current-transformer-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/window-current-transformer-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/window-current-transformer-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/window-current-transformer-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Transformateur de courant à fenêtre : ouverture, rapport et pose",
+      "description": "Spécifier un transformateur de courant à passage : ouverture et faisceau de conducteurs, rapport et secondaire 1 A ou 5 A, classe de précision et puissance de charge, et les règles de pose qui évitent une erreur de comptage.",
+      "image": "https://www.yominelectric.com/assets/images/blog/window-current-transformer-guide/hero.png",
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/window-current-transformer-guide-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelle différence entre un transformateur à fenêtre et un transformateur à barre ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les deux sont des appareils à primaire d'un seul tour. Le modèle à fenêtre possède une ouverture libre dans laquelle l'installateur fait passer le câble ou la barre existants : la géométrie primaire dépend donc de la pose. Le modèle à barre intègre une barre primaire posée par le fabricant, ce qui fixe la géométrie et rend la précision plus reproductible en armoire prefabriquée."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on augmenter le rapport en passant deux fois le câble dans la fenêtre ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Chaque passage supplémentaire ajoute un tour primaire et divise par deux le rapport effectif : un 100/5 avec deux passages se comporte comme un 50/5. C'est une technique de chantier valable, mais elle doit être consignée sur le schéma d'armoire et dans le coefficient du compteur, sinon toutes les lectures sont fausses d'un facteur deux."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi mon compteur lit-il bas à faible charge ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les causes habituelles sont un transformateur très surdimensionné par rapport au courant de service, qui travaille là où sa classe est la plus difficile à tenir, ou une charge secondaire proche ou supérieure au VA assigné. Une longue liaison secondaire en 5 A rend la seconde cause beaucoup plus probable, d'où l'usage du 1 A sur les longues distances."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que se passe-t-il si le secondaire reste ouvert ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Primaire alimenté et secondaire ouvert, le noyau sature et la tension aux bornes monte à un niveau destructeur et dangereux. Court-circuitez toujours le secondaire avant de déposer un compteur ou un relais, et n'installez jamais de fusible dans le circuit secondaire."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Transformateurs de courant</span></div>
+    <span class="bh-tag">Guides d'achat</span>
+    <h1 class="bh-title">Transformateur de courant à fenêtre : ouverture, rapport et pose</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 11, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/window-current-transformer-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/window-current-transformer-guide/hero.png" alt="Transformateur de courant basse tension à fenêtre, monophasé, avec ses bornes secondaires" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un transformateur de courant à fenêtre n'a pas d'enroulement primaire. Le primaire est le câble ou la barre qui traverse son ouverture : l'appareil se définit donc par son trou, pas par une borne. Un passage dans la fenêtre vaut un tour, et le rapport est fixé uniquement par le nombre de tours au secondaire.</p>
+
+    <p>Ce seul fait réordonne la spécification. L'ouverture se choisit avant le rapport, parce que le trou doit dégager le conducteur isolé avec une vraie garde, et le rapport découle ensuite du courant attendu dans ce conducteur. La classe de précision et la puissance de charge viennent en dernier, et ce sont elles qui décident si la lecture du compteur reste fiable en bas de plage.</p>
+
+    <h2>Pourquoi la forme à fenêtre existe</h2>
+
+    <p>Un transformateur à primaire bobiné intègre son conducteur primaire : l'installateur doit donc ouvrir le circuit pour le poser. Un transformateur à fenêtre s'enfile sur un câble existant ou se glisse sur une barre, ce qui permet de l'ajouter à une armoire déjà construite, la liaison primaire restant celle que l'armoire possède déjà.</p>
+
+    <p>La contrepartie est que le primaire n'est plus maîtrisé par le fabricant. La position du conducteur dans l'ouverture, le nombre de passages et la présence de conducteurs voisins modifient tous le résultat : les instructions de pose comptent autant que la fiche technique.</p>
+
+    <h2>Première décision : l'ouverture</h2>
+
+    <p>L'ouverture n'est pas une cote de dégagement que l'on arrondit à la fin. Elle détermine ce que l'appareil peut physiquement recevoir, et elle interagit avec le courant assigné, car une fenêtre plus grande implique en général un noyau plus grand et un circuit magnétique différent.</p>
+
+    <ul>
+      <li><strong>Diamètre isolé, pas diamètre du conducteur.</strong> Le trou doit dégager le câble avec son isolation, son écran et une éventuelle gaine thermorétractable, plus le rayon de courbure à l'endroit du passage.</li>
+      <li><strong>Remplissage de la fenêtre.</strong> Trois phases dans une même ouverture posent un problème magnétique différent d'une seule phase, et un faisceau qui remplit l'ouverture ne laisse plus au flux la place de se répartir.</li>
+      <li><strong>Barre ou câble.</strong> Une barre rectangulaire se mesure sur sa diagonale, pas sur sa largeur, et elle doit être centrée plutôt que plaquée contre un bord.</li>
+      <li><strong>Garde vers les parties actives.</strong> Le corps de la fenêtre est un isolant moulé, mais l'ouverture doit rester accessible avec le conducteur en place : la ligne de fuite entre la barre et les bornes secondaires se vérifie dans l'armoire réelle, pas sur le plan.</li>
+    </ul>
+
+    <p>Quand une seule ouverture ne prend pas le faisceau, la réponse est généralement un transformateur ouvrant sur le câble, plutôt qu'une fenêtre plus grande forcée sur une barre impossible à démonter.</p>
+
+    <h2>Deuxième décision : rapport et courant secondaire</h2>
+
+    <p>Le rapport s'écrit primaire sur secondaire et, avec un transformateur à fenêtre, le chiffre primaire est le courant qui traversera l'ouverture en un seul passage. Un 25/5 délivre 5 A au secondaire lorsque 25 A traversent la fenêtre ; deux passages du même conducteur en font un 12,5/5 en pratique, ce qui est une astuce de chantier légitime et une source fréquente de litiges de comptage lorsqu'elle n'est pas consignée.</p>
+
+    <table>
+      <thead>
+        <tr><th>Secondaire</th><th>À retenir quand</th><th>Coût d'un mauvais choix</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>5 A</td><td>Le compteur ou le relais est dans la même armoire ou à quelques mètres, et le câblage secondaire est court et généreusement dimensionné</td><td>Une longue liaison en 5 A ajoute une résistance de boucle que la puissance de charge doit absorber, et la lecture dérive vers le bas à faible charge</td></tr><tr><td>1 A</td><td>Le secondaire parcourt une distance réelle, ou plusieurs appareils sont câblés en série</td><td>Un 1 A n'est pas interchangeable avec un compteur 5 A, et une armoire mixte donnera une lecture fausse plutôt qu'une panne franche</td></tr>
+      </tbody>
+    </table>
+
+    <p>Dimensionnez le courant primaire sur la charge attendue, pas sur le calibre du disjoncteur. Un transformateur très surdimensionné passe sa vie dans les premiers pour cent de sa plage, là où la classe de précision est la plus difficile à tenir. Lorsque la charge varie réellement d'une base faible à un pic élevé, une classe à plage étendue est la réponse honnête, pas un rapport plus grand.</p>
+
+    <h2>Troisième décision : classe de précision et puissance de charge</h2>
+
+    <p>Pour le comptage de facturation ou de refacturation, la classe 0,5 est l'exigence courante, et la classe 0,5S étend la précision garantie jusqu'à une faible fraction du courant assigné, ce qui compte sur un départ qui tourne à vide la majeure partie de la journée. Les classes 1 et 3 relèvent de l'indication et de la protection, où un point de pourcentage d'erreur ne change pas une décision.</p>
+
+    <p>La puissance de charge est la partie que les acheteurs sautent. C'est la charge en voltampères que le transformateur est autorisé à alimenter, et elle doit dépasser la somme de tout ce qui est raccordé au secondaire : la bobine du compteur, le relais, chaque jonction de borne et la résistance de la ligne elle-même. Un transformateur de 5 VA qui alimente 5 VA de charge est déjà à sa limite, et l'erreur croît avec la charge. La règle pratique est de rester confortablement en dessous de la valeur assignée plutôt que de l'égaler.</p>
+
+    <h2>Fenêtre, barre, ouvrant ou primaire bobiné</h2>
+
+    <table>
+      <thead>
+        <tr><th>Type</th><th>Primaire</th><th>Usage privilégié</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Fenêtre, aussi appelé passage ou annulaire</td><td>Le conducteur déjà présent dans l'armoire traverse le trou</td><td>Comptage en rénovation, départs câblés, jeux de barres déjà fixés</td></tr><tr><td>Primaire à barre</td><td>Une barre fixe moulée dans le transformateur</td><td>Précision reproductible en armoire prefabriquée, où la géométrie de barre est maîtrisée</td></tr><tr><td>Ouvrant</td><td>Se referme autour d'un câble impossible à déconnecter</td><td>Rénovation sur départ sous tension ou difficile à isoler, au prix d'un joint dans le noyau</td></tr><tr><td>Primaire bobiné</td><td>Enroulement primaire à plusieurs tours</td><td>Faibles courants primaires et rapports élevés qu'un seul passage ne permettrait pas</td></tr>
+      </tbody>
+    </table>
+
+    <p>La hiérarchie de précision suit le même ordre : le primaire à barre est le plus reproductible parce que la géométrie primaire est fixée, la fenêtre suit de près lorsque le conducteur est centré et en un seul passage, et l'ouvrant abandonne un peu de précision au joint du noyau en échange d'une pose sans coupure.</p>
+
+    <h2>Les règles de pose qui décident de la justesse de la lecture</h2>
+
+    <ul>
+      <li><strong>Ne jamais ouvrir un secondaire sous tension.</strong> Primaire alimenté et secondaire ouvert, le noyau sature et la tension aux bornes monte à un niveau qui détruit l'isolation et présente un danger au contact. Court-circuitez le secondaire avant de déposer un compteur.</li>
+      <li><strong>Mettre le secondaire à la terre en un seul point.</strong> Une terre unique protège le câblage sans créer un chemin parallèle qui contourne le circuit de mesure.</li>
+      <li><strong>P1 vers la source, S1 vers la charge.</strong> Une polarité inversée donne un compteur qui tourne à l'envers ou une puissance de signe faux : c'est le défaut de mise en service le plus fréquent sur une installation à fenêtre.</li>
+      <li><strong>Centrer le conducteur.</strong> Une barre plaquée contre un bord de l'ouverture biaise le flux et déplace l'erreur, de façon la plus visible à faible courant.</li>
+      <li><strong>Respecter le plan de pose.</strong> Un transformateur caractérisé pour barre verticale présente une autre courbe d'erreur posé horizontalement, et l'écart reste invisible jusqu'à ce que deux armoires soient comparées.</li>
+    </ul>
+
+    <h2>Les contrôles de mise en service qui valent dix minutes</h2>
+
+    <p>Un essai de rapport par injection primaire confirme le rapport et la polarité en même temps : c'est le seul contrôle qui prouve que le conducteur traverse la fenêtre exactement une fois. Ensuite, mesurez la résistance de boucle secondaire compteur déconnecté, comparez-la à la charge supposée à la conception, et consignez les deux valeurs sur le schéma d'armoire. En cas de contestation ultérieure, ces deux chiffres tranchent plus vite que n'importe quelle réinspection.</p>
+
+    <p>Pour le comptage de facturation, plombez les bornes secondaires et le capot du compteur, et relevez les numéros de plomb en regard du rapport du transformateur. Notre guide des <a href="/blog/current-transformer-testing">essais de transformateurs de courant</a> détaille la séquence, et <a href="/blog/iec-61869-2-explained">IEC 61869-2 expliquée</a> précise ce que les valeurs de classe et de charge inscrites sur l'étiquette garantissent réellement.</p>
+
+    <h2>Où se situent les transformateurs à fenêtre YOMIN</h2>
+
+    <p>YOMIN fabrique des transformateurs de courant basse tension à fenêtre dans sa gamme <a href="/products/current-transformer">transformateurs de courant</a>. Le modèle monophasé basse tension 25/5 A à fenêtre est un transformateur de mesure de classe 0,5, fourni à partir de 100 pièces avec un délai de production de 20 jours, et le LMZ1-0,5 moulé en résine, classe 0,5, couvre la surveillance de courant industriel de 5 à 99 pièces avec un délai de 10 jours. Les deux se définissent par le rapport, la classe et l'ouverture, soit exactement les trois lignes que devrait porter un schéma d'armoire.</p>
+
+    <p>Si le transformateur doit être ajouté à un départ impossible à consigner, la version ouvrant est l'alternative : voir <a href="/blog/what-is-a-split-core-current-transformer">ce qu'est un transformateur de courant ouvrant</a>. Si la question est plutôt quel rapport et quelle classe choisir à partir de zéro, <a href="/blog/choosing-a-current-transformer">choisir un transformateur de courant</a> reprend les mêmes décisions dans un autre ordre.</p>
+
+    <h2>Liste de vérification pour la commande</h2>
+
+    <ul>
+      <li><strong>Ouverture</strong> vérifiée sur le diamètre isolé ou la diagonale de barre, avec la garde du rayon de courbure et du capot de bornes.</li>
+      <li><strong>Rapport</strong> en primaire sur secondaire, avec le nombre de passages, écrit au plan pour que le chantier ne le modifie pas sans trace.</li>
+      <li><strong>Courant secondaire</strong>, 1 A ou 5 A, cohérent avec le compteur et homogène dans toute l'armoire.</li>
+      <li><strong>Classe de précision et puissance de charge</strong>, la charge raccordée étant calculée et non supposée.</li>
+      <li><strong>Mode de pose</strong> : fenêtre, barre ou ouvrant, et l'orientation pour laquelle l'appareil a été caractérisé.</li>
+      <li><strong>Plombage et marquage</strong> pour le comptage de facturation, y compris le repérage de polarité P1 et S1 sur le corps.</li>
+    </ul>
+
+    <p>Communiquez la section du conducteur, la plage de courant de service, la charge du compteur ou du relais et l'orientation dans l'armoire : l'ouverture et le rapport seront confirmés avant le perçage, et non après une première lecture de compteur suspecte.</p>
+
+    <h2>Questions fréquentes</h2>
+      <h3>Quelle différence entre un transformateur à fenêtre et un transformateur à barre ?</h3>
+      <p>Les deux sont des appareils à primaire d'un seul tour. Le modèle à fenêtre possède une ouverture libre dans laquelle l'installateur fait passer le câble ou la barre existants : la géométrie primaire dépend donc de la pose. Le modèle à barre intègre une barre primaire posée par le fabricant, ce qui fixe la géométrie et rend la précision plus reproductible en armoire prefabriquée.</p>
+      <h3>Peut-on augmenter le rapport en passant deux fois le câble dans la fenêtre ?</h3>
+      <p>Oui. Chaque passage supplémentaire ajoute un tour primaire et divise par deux le rapport effectif : un 100/5 avec deux passages se comporte comme un 50/5. C'est une technique de chantier valable, mais elle doit être consignée sur le schéma d'armoire et dans le coefficient du compteur, sinon toutes les lectures sont fausses d'un facteur deux.</p>
+      <h3>Pourquoi mon compteur lit-il bas à faible charge ?</h3>
+      <p>Les causes habituelles sont un transformateur très surdimensionné par rapport au courant de service, qui travaille là où sa classe est la plus difficile à tenir, ou une charge secondaire proche ou supérieure au VA assigné. Une longue liaison secondaire en 5 A rend la seconde cause beaucoup plus probable, d'où l'usage du 1 A sur les longues distances.</p>
+      <h3>Que se passe-t-il si le secondaire reste ouvert ?</h3>
+      <p>Primaire alimenté et secondaire ouvert, le noyau sature et la tension aux bornes monte à un niveau destructeur et dangereux. Court-circuitez toujours le secondaire avant de déposer un compteur ou un relais, et n'installez jamais de fusible dans le circuit secondaire.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous spécifiez un transformateur à fenêtre pour une armoire de comptage ?</h2>
+    <p>Indiquez la section du conducteur, la plage de courant de service et la charge du compteur ou du relais. YOMIN fabrique des transformateurs de courant basse tension à fenêtre en classe 0,5, dont un modèle monophasé 25/5 A et la gamme LMZ1-0,5 moulée en résine.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

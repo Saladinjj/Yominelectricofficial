@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/window-current-transformer-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Window Current Transformer: Aperture, Ratio and Mounting</title>
+<meta name="description" content="How to specify a window-type current transformer: aperture versus conductor bundle, ratio and 1 A or 5 A secondary, accuracy class and burden, and the mounting checks that prevent a metering error.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Window Current Transformer: Aperture, Ratio and Mounting">
+<meta property="og:description" content="How to specify a window-type current transformer: aperture versus conductor bundle, ratio and 1 A or 5 A secondary, accuracy class and burden, and the mounting checks that prevent a metering error.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/window-current-transformer-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/window-current-transformer-guide">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/window-current-transformer-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/window-current-transformer-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/window-current-transformer-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/window-current-transformer-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/window-current-transformer-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Window Current Transformer: Aperture, Ratio and Mounting",
+      "description": "How to specify a window-type current transformer: aperture versus conductor bundle, ratio and 1 A or 5 A secondary, accuracy class and burden, and the mounting checks that prevent a metering error.",
+      "image": "https://www.yominelectric.com/assets/images/blog/window-current-transformer-guide/hero.png",
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/window-current-transformer-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a window current transformer and a bar current transformer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both are single-turn primary devices. A window transformer has an open aperture and the installer passes the existing cable or bar through it, so the primary geometry depends on the installation. A bar transformer has the primary bar built in by the manufacturer, which fixes the geometry and makes the accuracy more repeatable in a factory-built panel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I increase the ratio by looping the cable twice through the window?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Each additional pass adds a primary turn and halves the effective ratio, so a 100/5 transformer with two passes behaves as 50/5. It is a valid field technique, but it must be recorded on the panel schedule and the meter multiplier, otherwise every reading is wrong by a factor of two."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my meter read low at light load?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The usual causes are a transformer rated far above the working current, so it operates where its class is hardest to hold, or a secondary burden close to or above the rated VA. Long secondary runs on a 5 A output make the second cause much more likely, which is why 1 A secondaries are used on long runs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if the secondary is left open circuit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With the primary energised, an open secondary lets the core saturate and the terminal voltage rise to a destructive and dangerous level. Always short the secondary before disconnecting a meter or relay, and never install a fuse in the secondary circuit."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Current Transformers</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Window Current Transformer: Aperture, Ratio and Mounting</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 11, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/window-current-transformer-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/window-current-transformer-guide/hero.png" alt="Low-voltage window-type current transformer with a single-phase aperture and secondary terminals" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A window current transformer has no primary winding. The primary is the cable or busbar that passes through its aperture, so the transformer is defined by the hole rather than by a terminal. One pass through the window is one turn, and the ratio is set entirely by the number of turns on the secondary.</p>
+
+    <p>That single fact reorders the specification. The aperture has to be chosen before the ratio, because the hole must clear the insulated conductor with real clearance, and the ratio then follows from the current you expect in that conductor. Accuracy class and burden come last, and they are what decide whether the meter reading is still trustworthy at the low end of the load.</p>
+
+    <h2>Why the window form exists</h2>
+
+    <p>A wound-primary transformer has the primary conductor built in, which means the installer has to break the circuit to fit it. A window transformer is threaded over an existing cable or slipped over a bar, so it can be added to a panel that is already built, and the primary connection is whatever the panel already has.</p>
+
+    <p>The trade-off is that the primary is no longer controlled by the transformer manufacturer. Conductor position inside the aperture, the number of passes, and the presence of nearby conductors all change the result, which is why the mounting instructions matter as much as the datasheet.</p>
+
+    <h2>Decision one: the aperture</h2>
+
+    <p>The aperture is not a clearance dimension to be rounded up at the end. It sets what the transformer can physically accept, and it also interacts with the rated current, because a larger window usually means a larger core and a different magnetic path.</p>
+
+    <ul>
+      <li><strong>Insulated diameter, not conductor diameter.</strong> The hole must clear the cable with its insulation, its screen and any heat-shrink sleeve, plus the bending radius at the point where it passes through.</li>
+      <li><strong>Bundle fill.</strong> Three phases through one window is a different magnetic problem from one phase, and a bundle that fills the aperture leaves no room for the flux to distribute evenly.</li>
+      <li><strong>Bar versus cable.</strong> A rectangular busbar needs the aperture measured across its diagonal, not its width, and the bar should sit centred rather than against one edge.</li>
+      <li><strong>Clearance to live parts.</strong> The window body is a moulded insulator, but the aperture has to be reachable with the conductor in place, so the creepage path from the bar to the secondary terminals has to be checked in the actual panel, not on the drawing.</li>
+    </ul>
+
+    <p>Where a single aperture will not take the bundle, the answer is usually a split-core transformer on the cable rather than forcing a larger window over a bar that cannot be dismantled.</p>
+
+    <h2>Decision two: ratio and secondary current</h2>
+
+    <p>The ratio is written as primary over secondary, and with a window transformer the primary figure is the current that will flow through the aperture in one pass. A 25/5 transformer delivers 5 A on the secondary when 25 A flows through the window; two passes of the same conductor would make it a 12.5/5 in effective terms, which is a legitimate field trick and a frequent source of metering disputes when it is not recorded.</p>
+
+    <table>
+      <thead>
+        <tr><th>Secondary</th><th>Choose it when</th><th>Cost of getting it wrong</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>5 A</td><td>The meter or relay sits in the same panel or a few metres away, and the secondary wiring is short and generously sized</td><td>Long runs on a 5 A secondary add loop resistance that the burden has to absorb, and the reading drifts low at light load</td></tr><tr><td>1 A</td><td>The secondary travels any real distance, or several instruments are wired in series</td><td>A 1 A transformer is not interchangeable with a 5 A meter, and a mixed panel will read wrongly rather than obviously fail</td></tr>
+      </tbody>
+    </table>
+
+    <p>Size the primary rating for the expected load, not for the breaker frame. A transformer rated far above the working current spends its life in the bottom few per cent of its range, where the accuracy class is hardest to hold. Where the load genuinely varies from a small base to a large peak, a wider-range class is the honest answer rather than a bigger ratio.</p>
+
+    <h2>Decision three: accuracy class and burden</h2>
+
+    <p>For revenue or sub-billing metering, class 0.5 is the common requirement and class 0.5S extends the guaranteed accuracy down to a small fraction of rated current, which matters on a feeder that idles for most of the day. Class 1 and class 3 belong on indication and protection circuits where a percentage point of error does not change a decision.</p>
+
+    <p>Burden is the part buyers skip. It is the volt-ampere load the transformer is allowed to drive, and it has to be larger than the sum of everything connected to the secondary: the meter coil, the relay, every terminal joint and the resistance of the wire run itself. A 5 VA transformer driving 5 VA of connected load is already at its limit, and the error grows as the load increases. The practical rule is to keep the connected burden comfortably below the rated figure rather than to match it exactly.</p>
+
+    <h2>Window, bar, split-core or wound primary</h2>
+
+    <table>
+      <thead>
+        <tr><th>Type</th><th>Primary</th><th>Best fit</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Window, also called ring or through-type</td><td>The conductor already in the panel passes through the hole</td><td>Retrofit metering, cable feeders, busbar runs where the bar is already fixed</td></tr><tr><td>Bar primary</td><td>A fixed bar moulded into the transformer</td><td>Repeatable accuracy in a factory-built panel, where the bar geometry is controlled</td></tr><tr><td>Split-core</td><td>Clamps around a cable that cannot be disconnected</td><td>Retrofit on live or hard-to-isolate feeders, at the cost of a joint in the core</td></tr><tr><td>Wound primary</td><td>A multi-turn primary winding</td><td>Low primary currents and high ratios where a single pass would not develop enough flux</td></tr>
+      </tbody>
+    </table>
+
+    <p>The accuracy hierarchy follows the same order: a bar primary is the most repeatable because the primary geometry is fixed, a window is close behind when the conductor is centred and single-pass, and a split-core gives up some accuracy at the core joint in exchange for being installable without a shutdown.</p>
+
+    <h2>Mounting rules that decide whether the reading is right</h2>
+
+    <ul>
+      <li><strong>Never open-circuit a live secondary.</strong> With the primary energised and the secondary open, the core saturates and the terminal voltage rises to a level that destroys the insulation and is dangerous to touch. Short the secondary before removing a meter.</li>
+      <li><strong>Earth the secondary at one point only.</strong> A single earth protects the wiring without creating a parallel path that carries current around the measuring circuit.</li>
+      <li><strong>Keep P1 towards the source and S1 towards the load.</strong> Reversed polarity gives a meter that runs backwards or a power reading with the wrong sign, and it is the most common commissioning fault on a window installation.</li>
+      <li><strong>Centre the conductor.</strong> A bar pressed against one side of the aperture biases the flux and moves the error, most visibly at low current.</li>
+      <li><strong>Respect the mounting plane.</strong> A transformer specified for vertical busbar has a different error curve when it is installed horizontally, and the difference is small until someone compares two panels.</li>
+    </ul>
+
+    <h2>Commissioning checks worth the ten minutes</h2>
+
+    <p>A ratio test with a primary injection set confirms the ratio and the polarity at the same time, and it is the only check that proves the conductor passes through the window exactly once. After that, measure the secondary loop resistance with the meter disconnected, compare it with the burden you assumed at design stage, and record both figures on the panel schedule. When a reading is later disputed, those two numbers settle the argument faster than any re-inspection.</p>
+
+    <p>For revenue metering, seal the secondary terminals and the meter cover, and record the seal numbers against the transformer ratio. Our guide to <a href="/blog/current-transformer-testing">current transformer testing</a> covers the test sequence in more detail, and <a href="/blog/iec-61869-2-explained">IEC 61869-2 explained</a> sets out what the class and burden figures on the label actually promise.</p>
+
+    <h2>Where YOMIN window transformers fit</h2>
+
+    <p>YOMIN builds low-voltage window-type current transformers within its <a href="/products/current-transformer">current transformer</a> range. The 25/5 A single-phase low-voltage window-type unit is a class 0.5 metering transformer supplied from 100 pieces with a 20-day production lead time, and the LMZ1-0.5 resin-cast class 0.5 unit covers industrial current monitoring from 5 to 99 pieces with a 10-day lead time. Both are specified by ratio, class and aperture, which is the same three-line description a panel schedule should carry.</p>
+
+    <p>If the transformer has to be added to a feeder that cannot be isolated, the split-core form is the alternative: see <a href="/blog/what-is-a-split-core-current-transformer">what a split-core current transformer is</a>. If the question is which ratio and class to choose from first principles, <a href="/blog/choosing-a-current-transformer">choosing a current transformer</a> works through the same decisions in a different order.</p>
+
+    <h2>Specification checklist</h2>
+
+    <ul>
+      <li><strong>Aperture</strong> against the insulated conductor or bar diagonal, with clearance for the bending radius and the terminal cover.</li>
+      <li><strong>Ratio</strong> as primary over secondary, plus the number of passes, written on the drawing so the field cannot change it silently.</li>
+      <li><strong>Secondary current</strong>, 1 A or 5 A, matched to the meter and consistent across the panel.</li>
+      <li><strong>Accuracy class and burden</strong>, with the connected burden calculated rather than assumed.</li>
+      <li><strong>Mounting</strong>: window, bar or split-core, and the orientation the transformer was characterised in.</li>
+      <li><strong>Sealing and marking</strong> for revenue use, including the polarity marking P1 and S1 on the body.</li>
+    </ul>
+
+    <p>Send the conductor size, the working current range, the meter or relay burden and the panel orientation, and the aperture and ratio can be confirmed before the panel is drilled rather than after the first meter reading looks wrong.</p>
+
+    <h2>Frequently asked questions</h2>
+      <h3>What is the difference between a window current transformer and a bar current transformer?</h3>
+      <p>Both are single-turn primary devices. A window transformer has an open aperture and the installer passes the existing cable or bar through it, so the primary geometry depends on the installation. A bar transformer has the primary bar built in by the manufacturer, which fixes the geometry and makes the accuracy more repeatable in a factory-built panel.</p>
+      <h3>Can I increase the ratio by looping the cable twice through the window?</h3>
+      <p>Yes. Each additional pass adds a primary turn and halves the effective ratio, so a 100/5 transformer with two passes behaves as 50/5. It is a valid field technique, but it must be recorded on the panel schedule and the meter multiplier, otherwise every reading is wrong by a factor of two.</p>
+      <h3>Why does my meter read low at light load?</h3>
+      <p>The usual causes are a transformer rated far above the working current, so it operates where its class is hardest to hold, or a secondary burden close to or above the rated VA. Long secondary runs on a 5 A output make the second cause much more likely, which is why 1 A secondaries are used on long runs.</p>
+      <h3>What happens if the secondary is left open circuit?</h3>
+      <p>With the primary energised, an open secondary lets the core saturate and the terminal voltage rise to a destructive and dangerous level. Always short the secondary before disconnecting a meter or relay, and never install a fuse in the secondary circuit.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying a window current transformer for a metering panel?</h2>
+    <p>Send the conductor size, the working current range and the burden of the meter or relay. YOMIN builds low-voltage window-type current transformers in class 0.5, including a 25/5 A single-phase unit and the LMZ1-0.5 resin-cast range.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
