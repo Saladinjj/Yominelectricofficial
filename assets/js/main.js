@@ -606,7 +606,19 @@ function setTheme(t, fromAuto = false) {
   // Language buttons (all .lopt and .mlb)
   document.querySelectorAll('.lopt, .mlb').forEach(btn => {
     btn.addEventListener('click', () => {
-      setLang(btn.dataset.lang);
+      const want = (btn.dataset.lang || '').toLowerCase();
+      /* A translated page lives on its own URL (/blog/<slug>-fr, -es, -ar).
+         When this page declares an alternate for the requested language, go
+         there — swapping chrome strings cannot translate an article body.
+         Pages whose alternates are self-referencing (products, home) fall
+         through to the in-page string switch, unchanged. */
+      const alt = want && document.querySelector('link[rel="alternate"][hreflang="' + want + '"]');
+      if (alt && alt.href && alt.href.split('#')[0] !== location.href.split('#')[0]) {
+        try { localStorage.setItem('ym_lang', want); } catch (e) {}
+        location.href = alt.href;
+        return;
+      }
+      setLang(want);
       if (ldrop) ldrop.classList.remove('op');
       const mob = document.getElementById('mob');
       if (mob) mob.classList.remove('op');
