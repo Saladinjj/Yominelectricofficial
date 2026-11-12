@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/cable-size-calculator-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gu&iacute;a del calculador de secci&oacute;n de cable: corriente, ca&iacute;da de tensi&oacute;n y factores de correcci&oacute;n | Yomin Electric</title>
+<meta name="description" content="C&oacute;mo funciona realmente un calculador de secci&oacute;n de cable: corriente de dise&ntilde;o, factores de correcci&oacute;n, capacidad de tabla y ca&iacute;da de tensi&oacute;n, con un ejemplo trif&aacute;sico resuelto y la terminaci&oacute;n adecuada.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/cable-size-calculator-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/cable-size-calculator-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/cable-size-calculator-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Guía del calculador de sección de cable: corriente, caída de tensión y factores de corrección",
+      "description": "Cómo funciona realmente un calculador de sección de cable: corriente de diseño, factores de corrección, capacidad de tabla y caída de tensión, con un ejemplo trifásico resuelto y la terminación adecuada.",
+      "image": "https://www.yominelectric.com/assets/images/blog/cable-size-calculator-guide/hero.png",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/cable-size-calculator-guide-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "&iquest;Cu&aacute;l es la f&oacute;rmula de la secci&oacute;n de cable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No existe una f&oacute;rmula &uacute;nica. La secci&oacute;n es el conductor m&aacute;s peque&ntilde;o cuya capacidad corregida iguala al menos la corriente de dise&ntilde;o, cuyo calibre de protecci&oacute;n no supera esa capacidad y cuya ca&iacute;da de tensi&oacute;n a plena carga queda dentro del l&iacute;mite. La capacidad sale de una tabla corregida por temperatura, agrupamiento e instalaci&oacute;n; la ca&iacute;da sale de resistencia, longitud y corriente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;Decide la ca&iacute;da de tensi&oacute;n o la ampacidad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La ampacidad decide en recorridos cortos y la ca&iacute;da en los largos. En el ejemplo de este art&iacute;culo, una carga de 63 A en 45 m est&aacute; limitada por la capacidad t&eacute;rmica, mientras que la misma carga en 250 m est&aacute; limitada por la ca&iacute;da. Hay que hacer las dos comprobaciones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;Cu&aacute;nta corriente soporta un cable de cobre de 25 mm&sup2;?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de la instalaci&oacute;n. El mismo conductor transporta bastante menos corriente en una envolvente caliente con circuitos agrupados que al aire libre, as&iacute; que la cifra de tabla debe corregirse antes de compararla con la corriente de dise&ntilde;o. Dar un solo n&uacute;mero por secci&oacute;n sin indicar la forma de instalaci&oacute;n es la causa m&aacute;s com&uacute;n de cable infra-dimensionado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;Por qu&eacute; mi calculador no coincide con el del electricista?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Casi siempre por un dato de entrada, no por la aritm&eacute;tica: corriente tomada de una placa en lugar de un cuadro de cargas, temperatura supuesta de la sala en lugar de la envolvente, o agrupamiento ignorado. Pregunta qu&eacute; factores de correcci&oacute;n se aplicaron y la diferencia se explica sola."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;Necesito otro terminal para cable flexible?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "S&iacute;. El cable flexible de hilos finos y el r&iacute;gido o trenzado de instalaci&oacute;n requieren dise&ntilde;os de terminaci&oacute;n distintos, y un terminal adecuado a la secci&oacute;n puede seguir siendo inadecuado para la clase de cable. Especifica la constituci&oacute;n del conductor junto con la secci&oacute;n."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Terminaci&oacute;n de cables</span></div>
+    <span class="bh-tag">Gu&iacute;as de compra</span>
+    <h1 class="bh-title">Gu&iacute;a del calculador de secci&oacute;n de cable: corriente, ca&iacute;da de tensi&oacute;n y factores de correcci&oacute;n</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">Equipo t&eacute;cnico ET</strong>
+      <span class="divider"></span>
+      <span>12 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/cable-size-calculator-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/cable-size-calculator-guide/hero.png" alt="Terminal mec&aacute;nico de aluminio YOMIN para dos conductores, con dos alojamientos y tornillos hexagonales" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Una secci&oacute;n de cable es correcta cuando se cumplen tres comprobaciones a la vez. Primera: la capacidad de conducci&oacute;n de tabla del conductor &mdash; corregida por temperatura ambiente, agrupamiento y forma de instalaci&oacute;n &mdash; debe ser al menos igual a la corriente de dise&ntilde;o del circuito. Segunda: el calibre del dispositivo de protecci&oacute;n no debe superar esa capacidad corregida. Tercera: la ca&iacute;da de tensi&oacute;n a plena carga debe mantenerse dentro del l&iacute;mite del proyecto. Todo calculador de secci&oacute;n automatiza esa secuencia y nada m&aacute;s. Si le das una corriente de dise&ntilde;o equivocada, o dejas que ignore los factores de correcci&oacute;n, devolver&aacute; un n&uacute;mero seguro y err&oacute;neo.</p>
+
+    <h2>Las tres magnitudes que el calculador resuelve en realidad</h2>
+    <p>Casi todas las herramientas en l&iacute;nea piden una intensidad y devuelven una secci&oacute;n. Ese atajo esconde justo lo que decide una instalaci&oacute;n real, as&iacute; que conviene nombrar las magnitudes antes de mirar cualquier tabla.</p>
+    <table>
+      <thead>
+        <tr><th>Magnitud</th><th>Qu&eacute; significa</th><th>De d&oacute;nde sale el valor</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>I<sub>b</sub> &mdash; corriente de dise&ntilde;o</td><td>Corriente que el circuito debe transportar en servicio normal</td><td>Cuadro de cargas, no la placa de una sola m&aacute;quina</td></tr>
+        <tr><td>I<sub>n</sub> &mdash; calibre del dispositivo</td><td>Calibre nominal del interruptor o fusible que protege el cable</td><td>Elegido para que I<sub>b</sub> &le; I<sub>n</sub> &le; I<sub>z</sub></td></tr>
+        <tr><td>I<sub>z</sub> &mdash; capacidad corregida</td><td>Capacidad de tabla multiplicada por todos los factores de correcci&oacute;n aplicables</td><td>Tabla de ampacidad seg&uacute;n instalaci&oacute;n, luego corregida</td></tr>
+        <tr><td>&Delta;U &mdash; ca&iacute;da de tensi&oacute;n</td><td>P&eacute;rdida a lo largo del recorrido a plena carga, normalmente en porcentaje</td><td>Resistencia y reactancia del conductor, longitud, corriente, factor de potencia</td></tr>
+      </tbody>
+    </table>
+    <p>Escrito como desigualdad, todo el trabajo es I<sub>b</sub> &le; I<sub>n</sub> &le; I<sub>z</sub>, seguido de la comprobaci&oacute;n de ca&iacute;da de tensi&oacute;n. Un calculador que se salta el t&eacute;rmino central est&aacute; suponiendo en silencio que tu interruptor tiene el calibre correcto.</p>
+
+    <h2>Por qu&eacute; la ampacidad de la tabla nunca basta por s&iacute; sola</h2>
+    <p>La capacidad publicada de un conductor corresponde a un conjunto definido de condiciones: una temperatura ambiente indicada, un n&uacute;mero de circuitos cargados y una forma de instalaci&oacute;n. Cambia cualquiera de ellas y el mismo cobre transporta menos corriente.</p>
+    <ul>
+      <li><strong>Temperatura ambiente.</strong> Un cable dentro de una envolvente met&aacute;lica en una sala t&eacute;cnica caliente no est&aacute; en aire a 30&nbsp;&deg;C. Los factores caen r&aacute;pido por encima de 40&nbsp;&deg;C.</li>
+      <li><strong>Agrupamiento.</strong> Seis circuitos cargados en la misma bandeja se calientan entre s&iacute;. El factor se aplica a cada conductor del grupo, no solo al &uacute;ltimo instalado.</li>
+      <li><strong>Forma de instalaci&oacute;n.</strong> Aire libre, tubo empotrado, conducto enterrado y aislamiento t&eacute;rmico son cuatro entornos t&eacute;rmicos distintos para el mismo cable.</li>
+      <li><strong>Arm&oacute;nicos.</strong> En circuitos que alimentan cargas conmutadas, los arm&oacute;nicos de orden 3 se suman en el neutro. Un neutro dimensionado como fracci&oacute;n de la fase puede acabar siendo el conductor m&aacute;s caliente del recorrido.</li>
+    </ul>
+    <p>Aqu&iacute; es donde los calculadores baratos y el dise&ntilde;o real se separan. Dos cables id&eacute;nticos de 4&nbsp;mm&sup2; en la misma bandeja no tienen la misma capacidad si uno va cargado y el otro es de reserva.</p>
+
+    <h2>En recorridos largos decide la ca&iacute;da de tensi&oacute;n</h2>
+    <p>En recorridos cortos decide la ampacidad. En recorridos largos decide la ca&iacute;da, y decide antes de lo que se suele pensar: un cable puede estar t&eacute;rmicamente holgado y entregar una tensi&oacute;n inaceptable en el extremo.</p>
+    <p>Para trif&aacute;sica la forma pr&aacute;ctica es directa:</p>
+    <p><strong>&Delta;U = &radic;3 &times; I &times; R &times; L</strong>, donde R es la resistencia por metro del conductor y L la longitud de ida. Con cobre a 0,0175&nbsp;&Omega;&middot;mm&sup2;/m a 20&nbsp;&deg;C y despreciando la reactancia, un conductor de 25&nbsp;mm&sup2; tiene R = 0,0007&nbsp;&Omega;/m.</p>
+
+    <h2>Ejemplo trif&aacute;sico resuelto</h2>
+    <p>Tomemos una carga de 63&nbsp;A a 400&nbsp;V, un recorrido de 45&nbsp;m y un conductor de cobre de 25&nbsp;mm&sup2;.</p>
+    <p>&Delta;U = 1,732 &times; 63 &times; 0,0007 &times; 45 &asymp; 3,4&nbsp;V, es decir cerca del 0,9&nbsp;% de 400&nbsp;V. Pasa con holgura un l&iacute;mite del 5&nbsp;%.</p>
+    <p>Ahora cambia solo la longitud:</p>
+    <table>
+      <thead>
+        <tr><th>Longitud</th><th>Ca&iacute;da de tensi&oacute;n</th><th>En % de 400 V</th><th>Resultado frente a un l&iacute;mite del 5 %</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>45 m</td><td>3,4 V</td><td>0,9 %</td><td>Cumple con margen</td></tr>
+        <tr><td>120 m</td><td>9,2 V</td><td>2,3 %</td><td>Cumple</td></tr>
+        <tr><td>250 m</td><td>19,1 V</td><td>4,8 %</td><td>Al l&iacute;mite &mdash; subir una secci&oacute;n</td></tr>
+      </tbody>
+    </table>
+    <p>Lo m&aacute;s instructivo es la comprobaci&oacute;n inversa. Bajar a 16&nbsp;mm&sup2; en 45&nbsp;m eleva la ca&iacute;da a unos 5,4&nbsp;V, todav&iacute;a solo el 1,3&nbsp;%. En este recorrido la ca&iacute;da no decide nada: deciden la ampacidad y la correcci&oacute;n. Quien dimensiona solo por ca&iacute;da paga de m&aacute;s; quien nunca la comprueba acaba con luces d&eacute;biles al final de una l&iacute;nea larga.</p>
+
+    <h2>D&oacute;nde fallan los calculadores sin avisar</h2>
+    <ul>
+      <li><strong>Partir de la placa de la m&aacute;quina m&aacute;s grande</strong> en lugar de la corriente de dise&ntilde;o diversificada del circuito.</li>
+      <li><strong>Ignorar la temperatura interior del cuadro.</strong> Una envolvente a 45&ndash;50&nbsp;&deg;C es un entorno corregido aunque la sala est&eacute; fresca.</li>
+      <li><strong>Contar conductores en paralelo como capacidad gratuita</strong> sin comprobar que la carga se reparte por igual.</li>
+      <li><strong>Elegir la secci&oacute;n y luego pedir un terminal incompatible con la clase de cable</strong> &mdash; el cable flexible de hilos finos y el r&iacute;gido de instalaci&oacute;n no admiten la misma terminaci&oacute;n.</li>
+      <li><strong>Olvidar el retorno.</strong> El neutro y el conductor de protecci&oacute;n son parte del circuito, no un accesorio.</li>
+    </ul>
+
+    <h2>Un cable vale lo que vale su terminaci&oacute;n</h2>
+    <p>El dimensionado termina en el terminal. Un conductor calculado para 63&nbsp;A pierde esa capacidad en una uni&oacute;n infra-dimensionada, sobre-apretada o realizada entre metales distintos sin interfaz bimet&aacute;lica. Las uniones aluminio-cobre necesitan especialmente una terminaci&oacute;n dise&ntilde;ada para ese par, porque donde aparece el calor es en la uni&oacute;n, no en el cable.</p>
+    <p>YOMIN suministra terminales mec&aacute;nicos dentro de la <a href="/products/terminal-connector">gama de terminales y conectores</a>, especificados junto con el conductor y no despu&eacute;s: el terminal de tornillo de aluminio para dos conductores y la gama de terminales de aleaci&oacute;n de aluminio con varios taladros. Ambos son dise&ntilde;os mec&aacute;nicos, de modo que el apriete se hace con llave hexagonal y un par definido, sin matriz de engaste.</p>
+    <table>
+      <thead>
+        <tr><th>Pregunta de terminaci&oacute;n</th><th>Qu&eacute; verificar antes de pedir</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>&iquest;Admite mi conductor?</td><td>Secci&oacute;n y clase de cable, no solo el tama&ntilde;o nominal</td></tr>
+        <tr><td>&iquest;La uni&oacute;n es bimet&aacute;lica?</td><td>Conductor de aluminio sobre barra de cobre exige una transici&oacute;n prevista para ello</td></tr>
+        <tr><td>&iquest;El patr&oacute;n de taladros es fijo?</td><td>Distancia entre taladros y di&aacute;metro de esp&aacute;rrago de la placa</td></tr>
+        <tr><td>&iquest;Qui&eacute;n aprieta?</td><td>El par debe figurar en el plano, no quedar a criterio del montador</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Lista de comprobaci&oacute;n antes de pedir cable</h2>
+    <ul>
+      <li>Corriente de dise&ntilde;o del cuadro de cargas, con diversidad aplicada.</li>
+      <li>Temperatura dentro de la envolvente, no la de la sala.</li>
+      <li>N&uacute;mero de circuitos cargados que comparten el recorrido.</li>
+      <li>Forma de instalaci&oacute;n y si alguna parte va bajo aislamiento t&eacute;rmico.</li>
+      <li>L&iacute;mite de ca&iacute;da seg&uacute;n el tipo de carga y longitud real del recorrido, verticales incluidas.</li>
+      <li>Terminaci&oacute;n: tipo de terminal, par de materiales, patr&oacute;n de taladros, par de apriete.</li>
+    </ul>
+    <p>Si dos secciones pasan la comprobaci&oacute;n t&eacute;rmica, decide por ca&iacute;da de tensi&oacute;n y por lo que admiten los terminales. Esas dos restricciones suelen se&ntilde;alar la misma respuesta.</p>
+    
+    <h2>Preguntas frecuentes</h2>
+    <h3>&iquest;Cu&aacute;l es la f&oacute;rmula de la secci&oacute;n de cable?</h3>
+    <p>No existe una f&oacute;rmula &uacute;nica. La secci&oacute;n es el conductor m&aacute;s peque&ntilde;o cuya capacidad corregida iguala al menos la corriente de dise&ntilde;o, cuyo calibre de protecci&oacute;n no supera esa capacidad y cuya ca&iacute;da de tensi&oacute;n a plena carga queda dentro del l&iacute;mite. La capacidad sale de una tabla corregida por temperatura, agrupamiento e instalaci&oacute;n; la ca&iacute;da sale de resistencia, longitud y corriente.</p>
+    <h3>&iquest;Decide la ca&iacute;da de tensi&oacute;n o la ampacidad?</h3>
+    <p>La ampacidad decide en recorridos cortos y la ca&iacute;da en los largos. En el ejemplo de este art&iacute;culo, una carga de 63 A en 45 m est&aacute; limitada por la capacidad t&eacute;rmica, mientras que la misma carga en 250 m est&aacute; limitada por la ca&iacute;da. Hay que hacer las dos comprobaciones.</p>
+    <h3>&iquest;Cu&aacute;nta corriente soporta un cable de cobre de 25 mm&sup2;?</h3>
+    <p>Depende de la instalaci&oacute;n. El mismo conductor transporta bastante menos corriente en una envolvente caliente con circuitos agrupados que al aire libre, as&iacute; que la cifra de tabla debe corregirse antes de compararla con la corriente de dise&ntilde;o. Dar un solo n&uacute;mero por secci&oacute;n sin indicar la forma de instalaci&oacute;n es la causa m&aacute;s com&uacute;n de cable infra-dimensionado.</p>
+    <h3>&iquest;Por qu&eacute; mi calculador no coincide con el del electricista?</h3>
+    <p>Casi siempre por un dato de entrada, no por la aritm&eacute;tica: corriente tomada de una placa en lugar de un cuadro de cargas, temperatura supuesta de la sala en lugar de la envolvente, o agrupamiento ignorado. Pregunta qu&eacute; factores de correcci&oacute;n se aplicaron y la diferencia se explica sola.</p>
+    <h3>&iquest;Necesito otro terminal para cable flexible?</h3>
+    <p>S&iacute;. El cable flexible de hilos finos y el r&iacute;gido o trenzado de instalaci&oacute;n requieren dise&ntilde;os de terminaci&oacute;n distintos, y un terminal adecuado a la secci&oacute;n puede seguir siendo inadecuado para la clase de cable. Especifica la constituci&oacute;n del conductor junto con la secci&oacute;n.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>&iquest;Dimensiona el cable y pide la terminaci&oacute;n a la vez?</h2>
+    <p>Env&iacute;e la corriente de dise&ntilde;o, la longitud del recorrido y el tipo de conductor. Confirmamos la terminaci&oacute;n correspondiente: terminales y conectores mec&aacute;nicos de aluminio previstos para el conductor que ha especificado, no para una medida que haya en existencias.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotizaci&oacute;n</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

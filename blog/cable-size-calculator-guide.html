@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/cable-size-calculator-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cable Size Calculator Guide: Current, Voltage Drop and Derating | Yomin Electric</title>
+<meta name="description" content="How a cable size calculator really works: design current, correction factors, tabulated capacity and voltage drop, with a worked three-phase example and the termination that has to match.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/cable-size-calculator-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/cable-size-calculator-guide">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/cable-size-calculator-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/cable-size-calculator-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Cable Size Calculator Guide: Current, Voltage Drop and Derating",
+      "description": "How a cable size calculator really works: design current, correction factors, tabulated capacity and voltage drop, with a worked three-phase example and the termination that has to match.",
+      "image": "https://www.yominelectric.com/assets/images/blog/cable-size-calculator-guide/hero.png",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/cable-size-calculator-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the formula for cable size?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single formula. The size is the smallest conductor whose corrected current-carrying capacity is at least the design current, whose protective device rating does not exceed that capacity, and whose voltage drop at full load stays within the limit. Capacity comes from a table, corrected by ambient temperature, grouping and installation method; drop comes from resistance, length and current."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does voltage drop or ampacity decide the cable size?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ampacity decides on short runs and voltage drop decides on long ones. In the worked example in this article, a 63 A load over 45 m is limited by thermal capacity, while the same load over 250 m is limited by drop. Always run both checks; neither one alone is a design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much current can a 25 mm² copper cable carry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the installation. The same conductor carries noticeably less current in a hot enclosure with grouped circuits than in free air, so the tabulated figure must be corrected before it is compared with the design current. Quoting a single number for a cross-section without stating the installation method is the most common source of undersized cable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my calculator disagree with the electrician?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Almost always because of an input, not the arithmetic: a design current taken from a nameplate instead of a load schedule, an ambient temperature assumed to be the room rather than the enclosure, or grouping ignored. Ask which correction factors were applied and the disagreement usually resolves itself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a different lug for flexible cable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Fine-stranded flexible cable and solid or stranded building wire need different termination designs, and a lug rated for the cross-section can still be wrong for the strand class. Specify the conductor construction together with the cross-section."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Cable Termination</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Cable Size Calculator Guide: Current, Voltage Drop and Derating</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 12, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/cable-size-calculator-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/cable-size-calculator-guide/hero.png" alt="YOMIN aluminium dual-conductor mechanical cable lug with two conductor bores and hex socket screws" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A cable is correctly sized when three checks pass at the same time. First, the conductor's tabulated current-carrying capacity &mdash; corrected for ambient temperature, grouping and installation method &mdash; must be at least the design current of the circuit. Second, the rating of the protective device must not exceed that corrected capacity. Third, the voltage drop at full load must stay inside the limit you are designing to. Every cable size calculator is automating that sequence, and nothing else. Feed it the wrong design current, or let it ignore the correction factors, and it will return a confident, wrong number.</p>
+
+    <h2>The three quantities a calculator is actually solving</h2>
+    <p>Most online tools ask for a load in amps and return a conductor size. That shortcut hides the parts that decide real installations, so it is worth naming them before looking at any table.</p>
+    <table>
+      <thead>
+        <tr><th>Quantity</th><th>What it means</th><th>Where the number comes from</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>I<sub>b</sub> &mdash; design current</td><td>The current the circuit must carry continuously in normal service</td><td>Load schedule, not the nameplate of one machine</td></tr>
+        <tr><td>I<sub>n</sub> &mdash; device rating</td><td>Nominal rating of the breaker or fuse protecting the cable</td><td>Selected so that I<sub>b</sub> &le; I<sub>n</sub> &le; I<sub>z</sub></td></tr>
+        <tr><td>I<sub>z</sub> &mdash; corrected capacity</td><td>Tabulated capacity of the conductor multiplied by every applicable correction factor</td><td>Ampacity table for the installation method, then derated</td></tr>
+        <tr><td>&Delta;U &mdash; voltage drop</td><td>Loss along the run at full load, usually expressed as a percentage</td><td>Conductor resistance and reactance, length, current, power factor</td></tr>
+      </tbody>
+    </table>
+    <p>Written as an inequality, the whole exercise is I<sub>b</sub> &le; I<sub>n</sub> &le; I<sub>z</sub>, followed by a voltage-drop check. A calculator that skips the middle term has quietly assumed your breaker is the right size.</p>
+
+    <h2>Why the tabulated ampacity is never the answer on its own</h2>
+    <p>A conductor's published capacity assumes a defined set of conditions: a stated ambient temperature, a stated number of loaded circuits, and one installation method. Change any of them and the same copper carries less current.</p>
+    <ul>
+      <li><strong>Ambient temperature.</strong> Cable in a metal enclosure in a hot plant room is not in 30&nbsp;&deg;C air. Correction factors fall away quickly above 40&nbsp;&deg;C.</li>
+      <li><strong>Grouping.</strong> Six loaded circuits sharing one tray heat each other. The factor is applied to every conductor in the group, not just the newest one.</li>
+      <li><strong>Installation method.</strong> Free air, conduit in a wall, buried duct and thermal insulation are four different thermal environments for the same cable.</li>
+      <li><strong>Harmonics.</strong> In circuits feeding switch-mode loads, triplen harmonics add in the neutral. A neutral sized as a fraction of the phase conductor can become the hottest conductor in the run.</li>
+    </ul>
+    <p>This is the step where cheap calculators and real design diverge. Two identical 4&nbsp;mm&sup2; cables in the same tray do not have the same capacity if one is loaded and the other is a spare.</p>
+
+    <h2>Voltage drop is usually what decides the size on long runs</h2>
+    <p>On short runs, ampacity decides. On long runs, drop decides, and it decides much earlier than most people expect &mdash; a cable can be thermally comfortable and still deliver an unacceptable voltage at the far end.</p>
+    <p>For a three-phase circuit the working form is straightforward:</p>
+    <p><strong>&Delta;U = &radic;3 &times; I &times; R &times; L</strong>, where R is the conductor resistance per metre and L the one-way length. Using copper at 0.0175&nbsp;&Omega;&middot;mm&sup2;/m at 20&nbsp;&deg;C and ignoring reactance, a 25&nbsp;mm&sup2; conductor has R = 0.0007&nbsp;&Omega;/m.</p>
+
+    <h2>A worked three-phase example</h2>
+    <p>Take a 63&nbsp;A load at 400&nbsp;V, a 45&nbsp;m run, and a 25&nbsp;mm&sup2; copper conductor.</p>
+    <p>&Delta;U = 1.732 &times; 63 &times; 0.0007 &times; 45 &asymp; 3.4&nbsp;V, which is about 0.9&nbsp;% of 400&nbsp;V. That comfortably passes a 5&nbsp;% limit.</p>
+    <p>Now change only the length:</p>
+    <table>
+      <thead>
+        <tr><th>Run length</th><th>Voltage drop</th><th>As % of 400 V</th><th>Verdict against a 5 % limit</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>45 m</td><td>3.4 V</td><td>0.9 %</td><td>Passes with margin</td></tr>
+        <tr><td>120 m</td><td>9.2 V</td><td>2.3 %</td><td>Passes</td></tr>
+        <tr><td>250 m</td><td>19.1 V</td><td>4.8 %</td><td>Borderline &mdash; go up a size</td></tr>
+      </tbody>
+    </table>
+    <p>The instructive part is the reverse check. Dropping to 16&nbsp;mm&sup2; at 45&nbsp;m raises the drop to roughly 5.4&nbsp;V, still only 1.3&nbsp;%. So on this run, voltage drop does <em>not</em> decide anything &mdash; ampacity and derating do. Designers who always size on drop alone end up over-spending; designers who never check it end up with dim lights at the end of a long feeder.</p>
+
+    <h2>Where calculators quietly go wrong</h2>
+    <ul>
+      <li><strong>Using the nameplate of the largest machine</strong> instead of the diversified design current of the circuit.</li>
+      <li><strong>Ignoring enclosure temperature.</strong> A panel that runs at 45&ndash;50&nbsp;&deg;C inside is a derated environment even when the room is comfortable.</li>
+      <li><strong>Counting parallel runs as free capacity</strong> without checking that the load shares equally between them.</li>
+      <li><strong>Sizing the conductor, then ordering a lug that does not fit the strand class</strong> &mdash; fine-stranded flexible cable and solid building wire need different terminations.</li>
+      <li><strong>Forgetting the return path.</strong> The neutral and the protective conductor are part of the circuit, not an afterthought.</li>
+    </ul>
+
+    <h2>The cable is only as good as its termination</h2>
+    <p>Cable sizing stops at the lug. A conductor chosen to carry 63&nbsp;A loses that capacity at a joint that is undersized, over-torqued, or made between dissimilar metals without a bimetallic interface. Aluminium-to-copper joints in particular need a termination designed for the pair, because the joint &mdash; not the cable &mdash; is where the heat appears.</p>
+    <p>YOMIN supplies mechanical cable lugs in the <a href="/products/terminal-connector">terminals and connectors range</a> that are specified alongside the conductor rather than after it: the dual-conductor aluminium screw lug, and the multi-hole aluminium alloy lug range. Both are mechanical designs, so the termination is made with a hex key and a torque value rather than a crimp die.</p>
+    <table>
+      <thead>
+        <tr><th>Termination question</th><th>What to verify before ordering</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Does the barrel accept my conductor?</td><td>Conductor cross-section and strand class, not just the nominal size</td></tr>
+        <tr><td>Is the joint bimetallic?</td><td>Aluminium conductor onto a copper bar needs a transition designed for it</td></tr>
+        <tr><td>Is the stud pattern fixed?</td><td>Hole spacing and stud diameter of the busbar or lug plate</td></tr>
+        <tr><td>Who tightens it?</td><td>Torque value must be written on the drawing, not left to the fitter</td></tr>
+      </tbody>
+    </table>
+
+    <h2>A short checklist before you order cable</h2>
+    <ul>
+      <li>Design current from the load schedule, with diversity applied.</li>
+      <li>Ambient temperature inside the enclosure, not the room.</li>
+      <li>Number of loaded circuits sharing the route.</li>
+      <li>Installation method, and whether any part runs in thermal insulation.</li>
+      <li>Voltage-drop limit for the load type, then the length of the actual route including verticals.</li>
+      <li>Termination: lug type, material pair, stud pattern, torque.</li>
+    </ul>
+    <p>If two candidate sizes both pass the thermal check, choose on voltage drop and on what the terminals can accept. Those two constraints usually point at the same answer.</p>
+    
+    <h2>Frequently asked questions</h2>
+    <h3>What is the formula for cable size?</h3>
+    <p>There is no single formula. The size is the smallest conductor whose corrected current-carrying capacity is at least the design current, whose protective device rating does not exceed that capacity, and whose voltage drop at full load stays within the limit. Capacity comes from a table, corrected by ambient temperature, grouping and installation method; drop comes from resistance, length and current.</p>
+    <h3>Does voltage drop or ampacity decide the cable size?</h3>
+    <p>Ampacity decides on short runs and voltage drop decides on long ones. In the worked example in this article, a 63 A load over 45 m is limited by thermal capacity, while the same load over 250 m is limited by drop. Always run both checks; neither one alone is a design.</p>
+    <h3>How much current can a 25 mm² copper cable carry?</h3>
+    <p>It depends on the installation. The same conductor carries noticeably less current in a hot enclosure with grouped circuits than in free air, so the tabulated figure must be corrected before it is compared with the design current. Quoting a single number for a cross-section without stating the installation method is the most common source of undersized cable.</p>
+    <h3>Why does my calculator disagree with the electrician?</h3>
+    <p>Almost always because of an input, not the arithmetic: a design current taken from a nameplate instead of a load schedule, an ambient temperature assumed to be the room rather than the enclosure, or grouping ignored. Ask which correction factors were applied and the disagreement usually resolves itself.</p>
+    <h3>Do I need a different lug for flexible cable?</h3>
+    <p>Yes. Fine-stranded flexible cable and solid or stranded building wire need different termination designs, and a lug rated for the cross-section can still be wrong for the strand class. Specify the conductor construction together with the cross-section.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Sizing a cable and ordering the termination in one go?</h2>
+    <p>Send the design current, the route length and the conductor type. We will confirm the termination to match — mechanical aluminium lugs and connectors built for the conductor you have specified, not a size that happens to be in stock.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

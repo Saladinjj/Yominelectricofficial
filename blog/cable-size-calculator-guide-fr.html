@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/cable-size-calculator-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide du calculateur de section de c&acirc;ble : courant, chute de tension et d&eacute;classement | Yomin Electric</title>
+<meta name="description" content="Comment fonctionne vraiment un calculateur de section de c&acirc;ble : courant d'emploi, facteurs de correction, courant admissible et chute de tension, avec un exemple triphas&eacute; chiffr&eacute; et la terminaison adapt&eacute;e.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/cable-size-calculator-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/cable-size-calculator-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/cable-size-calculator-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Guide du calculateur de section de câble : courant, chute de tension et déclassement",
+      "description": "Comment fonctionne vraiment un calculateur de section de câble : courant d'emploi, facteurs de correction, courant admissible et chute de tension, avec un exemple triphasé chiffré et la terminaison adaptée.",
+      "image": "https://www.yominelectric.com/assets/images/blog/cable-size-calculator-guide/hero.png",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/cable-size-calculator-guide-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelle est la formule de la section de c&acirc;ble ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il n'existe pas de formule unique. La section retenue est le plus petit conducteur dont le courant admissible corrig&eacute; est au moins &eacute;gal au courant d'emploi, dont le calibre de protection ne d&eacute;passe pas cette capacit&eacute;, et dont la chute de tension en charge reste dans la limite. La capacit&eacute; vient d'un tableau, corrig&eacute;e par la temp&eacute;rature, le groupement et le mode de pose ; la chute vient de la r&eacute;sistance, de la longueur et du courant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Est-ce la chute de tension ou l'ampacit&eacute; qui d&eacute;termine la section ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'ampacit&eacute; d&eacute;cide sur les trac&eacute;s courts, la chute de tension sur les trac&eacute;s longs. Dans l'exemple de cet article, une charge de 63 A sur 45 m est limit&eacute;e par la capacit&eacute; thermique, alors que la m&ecirc;me charge sur 250 m est limit&eacute;e par la chute. Les deux v&eacute;rifications sont n&eacute;cessaires."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quel courant un c&acirc;ble cuivre de 25 mm&sup2; peut-il transporter ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cela d&eacute;pend de la pose. Le m&ecirc;me conducteur transporte nettement moins de courant dans une enveloppe chaude avec des circuits group&eacute;s qu'en plein air : la valeur du tableau doit &ecirc;tre corrig&eacute;e avant comparaison avec le courant d'emploi. Citer un chiffre unique pour une section sans pr&eacute;ciser le mode de pose est la premi&egrave;re cause de c&acirc;ble sous-dimensionn&eacute;."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi mon calculateur ne donne-t-il pas le r&eacute;sultat de l'&eacute;lectricien ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Presque toujours &agrave; cause d'une donn&eacute;e d'entr&eacute;e, pas de l'arithm&eacute;tique : courant d'emploi pris sur une plaque au lieu d'un bilan, temp&eacute;rature suppos&eacute;e &ecirc;tre celle du local au lieu de l'enveloppe, ou groupement ignor&eacute;. Demandez quels facteurs de correction ont &eacute;t&eacute; appliqu&eacute;s et l'&eacute;cart s'explique."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il une cosse diff&eacute;rente pour du c&acirc;ble souple ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Le c&acirc;ble souple finement toronn&eacute; et le fil rigide ou toronn&eacute; de b&acirc;timent demandent des conceptions de terminaison diff&eacute;rentes, et une cosse adapt&eacute;e &agrave; la section peut rester inadapt&eacute;e &agrave; la classe de souplesse. Pr&eacute;cisez la constitution du conducteur avec la section."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Raccordement de c&acirc;bles</span></div>
+    <span class="bh-tag">Guides d'achat</span>
+    <h1 class="bh-title">Guide du calculateur de section de c&acirc;ble : courant, chute de tension et d&eacute;classement</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">&Eacute;quipe technique ET</strong>
+      <span class="divider"></span>
+      <span>12 novembre 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/cable-size-calculator-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/cable-size-calculator-guide/hero.png" alt="Cosse m&eacute;canique aluminium YOMIN &agrave; deux conducteurs, avec deux al&eacute;sages et vis &agrave; six pans creux" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Une section de c&acirc;ble est correcte lorsque trois v&eacute;rifications passent en m&ecirc;me temps. D'abord, le courant admissible du conducteur &mdash; corrig&eacute; de la temp&eacute;rature ambiante, du groupement et du mode de pose &mdash; doit &ecirc;tre au moins &eacute;gal au courant d'emploi du circuit. Ensuite, le calibre du dispositif de protection ne doit pas d&eacute;passer ce courant admissible corrig&eacute;. Enfin, la chute de tension en charge doit rester dans la limite retenue pour l'&eacute;tude. Un calculateur de section n'automatise que cette s&eacute;quence, rien de plus. Avec un courant d'emploi faux, ou en ignorant les facteurs de correction, il renvoie un r&eacute;sultat pr&eacute;cis et faux.</p>
+
+    <h2>Les trois grandeurs que le calculateur r&eacute;sout r&eacute;ellement</h2>
+    <p>La plupart des outils en ligne demandent une intensit&eacute; et renvoient une section. Ce raccourci masque exactement ce qui d&eacute;cide d'une installation r&eacute;elle ; il faut donc nommer les grandeurs avant de regarder le moindre tableau.</p>
+    <table>
+      <thead>
+        <tr><th>Grandeur</th><th>Signification</th><th>Origine de la valeur</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>I<sub>b</sub> &mdash; courant d'emploi</td><td>Courant que le circuit doit v&eacute;hiculer en service normal</td><td>Bilan de puissance, pas la plaque d'une seule machine</td></tr>
+        <tr><td>I<sub>n</sub> &mdash; calibre du dispositif</td><td>Calibre nominal du disjoncteur ou du fusible prot&eacute;geant le c&acirc;ble</td><td>Choisi pour que I<sub>b</sub> &le; I<sub>n</sub> &le; I<sub>z</sub></td></tr>
+        <tr><td>I<sub>z</sub> &mdash; courant admissible corrig&eacute;</td><td>Courant du tableau multipli&eacute; par tous les facteurs de correction applicables</td><td>Tableau d'ampacit&eacute; selon le mode de pose, puis d&eacute;classement</td></tr>
+        <tr><td>&Delta;U &mdash; chute de tension</td><td>Perte le long du trac&eacute; en pleine charge, souvent en pourcentage</td><td>R&eacute;sistance et r&eacute;actance du conducteur, longueur, courant, facteur de puissance</td></tr>
+      </tbody>
+    </table>
+    <p>Sous forme d'in&eacute;galit&eacute;, tout le travail se r&eacute;sume &agrave; I<sub>b</sub> &le; I<sub>n</sub> &le; I<sub>z</sub>, suivi d'une v&eacute;rification de chute de tension. Un calculateur qui omet le terme central suppose silencieusement que votre disjoncteur est correctement calibr&eacute;.</p>
+
+    <h2>Pourquoi l'ampacit&eacute; du tableau ne suffit jamais</h2>
+    <p>La capacit&eacute; publi&eacute;e d'un conducteur correspond &agrave; un jeu de conditions pr&eacute;cises : une temp&eacute;rature ambiante donn&eacute;e, un nombre de circuits charg&eacute;s donn&eacute;, un mode de pose. Modifiez l'une d'elles et le m&ecirc;me cuivre transporte moins de courant.</p>
+    <ul>
+      <li><strong>Temp&eacute;rature ambiante.</strong> Un c&acirc;ble dans une enveloppe m&eacute;tallique d'un local technique chaud n'est pas dans de l'air &agrave; 30&nbsp;&deg;C. Les facteurs chutent vite au-del&agrave; de 40&nbsp;&deg;C.</li>
+      <li><strong>Groupement.</strong> Six circuits charg&eacute;s dans un seul chemin de c&acirc;bles s'&eacute;chauffent mutuellement. Le facteur s'applique &agrave; chaque conducteur du groupe, pas seulement au dernier install&eacute;.</li>
+      <li><strong>Mode de pose.</strong> Plein air, conduit encastr&eacute;, fourreau enterr&eacute; et isolation thermique sont quatre environnements thermiques diff&eacute;rents pour le m&ecirc;me c&acirc;ble.</li>
+      <li><strong>Harmoniques.</strong> Sur les circuits alimentant des charges &agrave; d&eacute;coupage, les harmoniques de rang 3 s'additionnent dans le neutre. Un neutre dimensionn&eacute; comme une fraction de la phase peut devenir le conducteur le plus chaud du trac&eacute;.</li>
+    </ul>
+    <p>C'est ici que les calculateurs approximatifs et l'&eacute;tude r&eacute;elle se s&eacute;parent. Deux c&acirc;bles identiques de 4&nbsp;mm&sup2; dans le m&ecirc;me chemin n'ont pas la m&ecirc;me capacit&eacute; si l'un est charg&eacute; et l'autre en r&eacute;serve.</p>
+
+    <h2>Sur les longues distances, c'est la chute de tension qui d&eacute;cide</h2>
+    <p>Sur un trac&eacute; court, l'ampacit&eacute; tranche. Sur un trac&eacute; long, c'est la chute de tension, et elle tranche plus t&ocirc;t qu'on ne l'imagine : un c&acirc;ble peut &ecirc;tre thermiquement &agrave; l'aise et livrer une tension inacceptable &agrave; l'autre bout.</p>
+    <p>En triphas&eacute;, la forme pratique est simple :</p>
+    <p><strong>&Delta;U = &radic;3 &times; I &times; R &times; L</strong>, o&ugrave; R est la r&eacute;sistance lin&eacute;ique du conducteur et L la longueur simple. Pour du cuivre &agrave; 0,0175&nbsp;&Omega;&middot;mm&sup2;/m &agrave; 20&nbsp;&deg;C, en n&eacute;gligeant la r&eacute;actance, un conducteur de 25&nbsp;mm&sup2; pr&eacute;sente R = 0,0007&nbsp;&Omega;/m.</p>
+
+    <h2>Exemple triphas&eacute; chiffr&eacute;</h2>
+    <p>Prenons une charge de 63&nbsp;A sous 400&nbsp;V, un trac&eacute; de 45&nbsp;m et un conducteur cuivre de 25&nbsp;mm&sup2;.</p>
+    <p>&Delta;U = 1,732 &times; 63 &times; 0,0007 &times; 45 &asymp; 3,4&nbsp;V, soit environ 0,9&nbsp;% de 400&nbsp;V. La limite de 5&nbsp;% est largement respect&eacute;e.</p>
+    <p>Ne changeons que la longueur :</p>
+    <table>
+      <thead>
+        <tr><th>Longueur</th><th>Chute de tension</th><th>En % de 400 V</th><th>Verdict pour une limite de 5 %</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>45 m</td><td>3,4 V</td><td>0,9 %</td><td>Conforme avec marge</td></tr>
+        <tr><td>120 m</td><td>9,2 V</td><td>2,3 %</td><td>Conforme</td></tr>
+        <tr><td>250 m</td><td>19,1 V</td><td>4,8 %</td><td>Limite &mdash; monter d'une section</td></tr>
+      </tbody>
+    </table>
+    <p>Le plus instructif est la v&eacute;rification inverse. En passant &agrave; 16&nbsp;mm&sup2; sur 45&nbsp;m, la chute monte &agrave; environ 5,4&nbsp;V, soit encore 1,3&nbsp;%. Sur ce trac&eacute;, la chute de tension ne d&eacute;cide donc de rien : ce sont l'ampacit&eacute; et le d&eacute;classement qui tranchent. Un concepteur qui dimensionne uniquement sur la chute surpaie ; un concepteur qui ne la v&eacute;rifie jamais obtient un &eacute;clairage faible en bout de ligne.</p>
+
+    <h2>L&agrave; o&ugrave; les calculateurs se trompent en silence</h2>
+    <ul>
+      <li><strong>Partir de la plaque de la plus grosse machine</strong> au lieu du courant d'emploi diversifi&eacute; du circuit.</li>
+      <li><strong>Ignorer la temp&eacute;rature interne de l'armoire.</strong> Une enveloppe &agrave; 45&ndash;50&nbsp;&deg;C est un milieu d&eacute;class&eacute; m&ecirc;me si le local est confortable.</li>
+      <li><strong>Compter les conducteurs en parall&egrave;le comme une capacit&eacute; gratuite</strong> sans v&eacute;rifier que le courant se r&eacute;partit &eacute;galement.</li>
+      <li><strong>Choisir la section puis commander une cosse incompatible avec la classe de souplesse</strong> &mdash; le c&acirc;ble souple finement toronn&eacute; et le fil rigide de b&acirc;timent n'appellent pas la m&ecirc;me terminaison.</li>
+      <li><strong>Oublier le retour.</strong> Le neutre et le conducteur de protection font partie du circuit, ce ne sont pas des accessoires.</li>
+    </ul>
+
+    <h2>Un c&acirc;ble vaut ce que vaut sa terminaison</h2>
+    <p>Le dimensionnement s'arr&ecirc;te &agrave; la cosse. Un conducteur calcul&eacute; pour 63&nbsp;A perd cette capacit&eacute; sur un raccord sous-dimensionn&eacute;, sur-ser&eacute;, ou r&eacute;alis&eacute; entre m&eacute;taux diff&eacute;rents sans interface bim&eacute;tallique. Les jonctions aluminium-cuivre exigent en particulier une terminaison pr&eacute;vue pour ce couple, car c'est la jonction &mdash; pas le c&acirc;ble &mdash; qui chauffe.</p>
+    <p>YOMIN fournit des cosses m&eacute;caniques dans la <a href="/products/terminal-connector">gamme bornes et connecteurs</a>, sp&eacute;cifi&eacute;es en m&ecirc;me temps que le conducteur et non apr&egrave;s : la cosse &agrave; vis aluminium &agrave; deux conducteurs et la gamme de cosses aluminium &agrave; plusieurs trous. Toutes deux sont des conceptions m&eacute;caniques : le serrage se fait &agrave; la cl&eacute; six pans avec un couple d&eacute;fini, sans matrice de sertissage.</p>
+    <table>
+      <thead>
+        <tr><th>Question de terminaison</th><th>&Agrave; v&eacute;rifier avant commande</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Le f&ucirc;t accepte-t-il mon conducteur ?</td><td>Section et classe de souplesse, pas seulement le calibre nominal</td></tr>
+        <tr><td>La jonction est-elle bim&eacute;tallique ?</td><td>Un conducteur aluminium sur barre cuivre exige une transition pr&eacute;vue pour cela</td></tr>
+        <tr><td>L'entraxe est-il impos&eacute; ?</td><td>Entraxe des trous et diam&egrave;tre des goujons de la platine</td></tr>
+        <tr><td>Qui serre ?</td><td>Le couple doit figurer sur le plan, pas &ecirc;tre laiss&eacute; &agrave; l'appr&eacute;ciation du monteur</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Liste de contr&ocirc;le avant de commander le c&acirc;ble</h2>
+    <ul>
+      <li>Courant d'emploi issu du bilan de puissance, diversit&eacute; appliqu&eacute;e.</li>
+      <li>Temp&eacute;rature &agrave; l'int&eacute;rieur de l'enveloppe, pas celle du local.</li>
+      <li>Nombre de circuits charg&eacute;s partageant le chemin.</li>
+      <li>Mode de pose, et portion &eacute;ventuellement sous isolation thermique.</li>
+      <li>Limite de chute de tension selon le type de r&eacute;cepteur, puis longueur r&eacute;elle du trac&eacute;, verticales comprises.</li>
+      <li>Terminaison : type de cosse, couple de mat&eacute;riaux, entraxe, couple de serrage.</li>
+    </ul>
+    <p>Si deux sections passent le contr&ocirc;le thermique, tranchez sur la chute de tension et sur ce que les bornes acceptent. Ces deux contraintes pointent g&eacute;n&eacute;ralement vers la m&ecirc;me r&eacute;ponse.</p>
+    
+    <h2>Questions fr&eacute;quentes</h2>
+    <h3>Quelle est la formule de la section de c&acirc;ble ?</h3>
+    <p>Il n'existe pas de formule unique. La section retenue est le plus petit conducteur dont le courant admissible corrig&eacute; est au moins &eacute;gal au courant d'emploi, dont le calibre de protection ne d&eacute;passe pas cette capacit&eacute;, et dont la chute de tension en charge reste dans la limite. La capacit&eacute; vient d'un tableau, corrig&eacute;e par la temp&eacute;rature, le groupement et le mode de pose ; la chute vient de la r&eacute;sistance, de la longueur et du courant.</p>
+    <h3>Est-ce la chute de tension ou l'ampacit&eacute; qui d&eacute;termine la section ?</h3>
+    <p>L'ampacit&eacute; d&eacute;cide sur les trac&eacute;s courts, la chute de tension sur les trac&eacute;s longs. Dans l'exemple de cet article, une charge de 63 A sur 45 m est limit&eacute;e par la capacit&eacute; thermique, alors que la m&ecirc;me charge sur 250 m est limit&eacute;e par la chute. Les deux v&eacute;rifications sont n&eacute;cessaires.</p>
+    <h3>Quel courant un c&acirc;ble cuivre de 25 mm&sup2; peut-il transporter ?</h3>
+    <p>Cela d&eacute;pend de la pose. Le m&ecirc;me conducteur transporte nettement moins de courant dans une enveloppe chaude avec des circuits group&eacute;s qu'en plein air : la valeur du tableau doit &ecirc;tre corrig&eacute;e avant comparaison avec le courant d'emploi. Citer un chiffre unique pour une section sans pr&eacute;ciser le mode de pose est la premi&egrave;re cause de c&acirc;ble sous-dimensionn&eacute;.</p>
+    <h3>Pourquoi mon calculateur ne donne-t-il pas le r&eacute;sultat de l'&eacute;lectricien ?</h3>
+    <p>Presque toujours &agrave; cause d'une donn&eacute;e d'entr&eacute;e, pas de l'arithm&eacute;tique : courant d'emploi pris sur une plaque au lieu d'un bilan, temp&eacute;rature suppos&eacute;e &ecirc;tre celle du local au lieu de l'enveloppe, ou groupement ignor&eacute;. Demandez quels facteurs de correction ont &eacute;t&eacute; appliqu&eacute;s et l'&eacute;cart s'explique.</p>
+    <h3>Faut-il une cosse diff&eacute;rente pour du c&acirc;ble souple ?</h3>
+    <p>Oui. Le c&acirc;ble souple finement toronn&eacute; et le fil rigide ou toronn&eacute; de b&acirc;timent demandent des conceptions de terminaison diff&eacute;rentes, et une cosse adapt&eacute;e &agrave; la section peut rester inadapt&eacute;e &agrave; la classe de souplesse. Pr&eacute;cisez la constitution du conducteur avec la section.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous dimensionnez un c&acirc;ble et commandez la terminaison en m&ecirc;me temps ?</h2>
+    <p>Envoyez le courant d'emploi, la longueur du trac&eacute; et le type de conducteur. Nous confirmons la terminaison correspondante &mdash; cosses et connecteurs m&eacute;caniques en aluminium pr&eacute;vus pour le conducteur que vous avez retenu, et non pour une taille disponible en stock.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

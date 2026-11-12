@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/cable-size-calculator-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دليل حساب مقطع الكابل: التيار وهبوط الجهد ومعاملات التصحيح | Yomin Electric</title>
+<meta name="description" content="كيف يعمل حساب مقطع الكابل فعلًا: تيار التصميم، ومعاملات التصحيح، والقدرة المجدولة، وهبوط الجهد، مع مثال ثلاثي الطور محسوب والطرف المناسب.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/cable-size-calculator-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-ar">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/cable-size-calculator-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/cable-size-calculator-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/cable-size-calculator-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "دليل حساب مقطع الكابل: التيار وهبوط الجهد ومعاملات التصحيح",
+      "description": "كيف يعمل حساب مقطع الكابل فعلًا: تيار التصميم، ومعاملات التصحيح، والقدرة المجدولة، وهبوط الجهد، مع مثال ثلاثي الطور محسوب والطرف المناسب.",
+      "image": "https://www.yominelectric.com/assets/images/blog/cable-size-calculator-guide/hero.png",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/cable-size-calculator-guide-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما هي معادلة مقطع الكابل؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا توجد معادلة واحدة. المقطع هو أصغر موصل تكون قدرته المصححة على الأقل مساوية لتيار التصميم، ولا يتجاوز تيار حمايته تلك القدرة، ويبقى هبوط الجهد عند الحمل الكامل ضمن الحد. القدرة تأتي من جدول مصحح بدرجة الحرارة والتجميع وطريقة التركيب، والهبوط من المقاومة والطول والتيار."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يقرر هبوط الجهد أم القدرة الحرارية المقطع؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تقرر القدرة الحرارية في المسارات القصيرة، ويقرر الهبوط في الطويلة. في مثال هذا المقال، حمل 63 A على 45 m يقده التحمل الحراري، بينما الحمل نفسه على 250 m يقده الهبوط. والفحصان لازمان معًا."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كم يتحمل كابل نحاس مقاس 25 mm²؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يعتمد على طريقة التركيب. الموصل نفسه ينقل تيارًا أقل بوضوح داخل علبة ساخنة مع دوائر مجمّعة من خلال هواء طليق، لذا يجب تصحيح رقم الجدول قبل مقارنته بتيار التصميم. وذكر رقم واحد لمقطع ما دون بيان طريقة التركيب هو أشهر سبب لكابل أصغر من اللازم."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا لا يتفق حاسبي مع رقم الكهربائي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "السبب غالبًا مدخل خاطئ وليس الحساب: تيار مأخوذ من لوحة آلة بدلاً من جدول أحمال، أو درجة حرارة مفترضة للغرفة بدلاً من العلبة، أو تجميع متجاهل. اسأل عن معاملات التصحيح المطبّقة وسينشر الفرق نفسه."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل أحتاج طرفًا مختلفًا للكابل المرن؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم. الكابل المرن ذو الشعيرات الدقيقة والسلك الصلب أو المجدول يحتاجان إلى تصميمي طرفين مختلفين، وقد يكون الطرف المناسب للمقطع غير مناسب لفئة الشعيرات. حدّد تركيب الموصل مع المقطع."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">&#1575;&#1604;&#1585;&#1574;&#1610;&#1587;&#1610;&#1577;</a> &middot; <a href="/blog">&#1575;&#1604;&#1605;&#1583;&#1608;&#1606;&#1577;</a> &middot; <span>&#1578;&#1608;&#1589;&#1610;&#1604; &#1575;&#1604;&#1603;&#1575;&#1576;&#1604;&#1575;&#1578;</span></div>
+    <span class="bh-tag">&#1571;&#1583;&#1604;&#1577; &#1575;&#1604;&#1588;&#1585;&#1575;&#1569;</span>
+    <h1 class="bh-title">دليل حساب مقطع الكابل: التيار وهبوط الجهد ومعاملات التصحيح</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">&#1601;&#1585;&#1610;&#1602; &#1575;&#1604;&#1607;&#1606;&#1583;&#1587;&#1577; ET</strong>
+      <span class="divider"></span>
+      <span>12 نوفمبر 2026</span>
+      <span class="divider"></span>
+      <span>9 &#1583;&#1602;&#1575;&#1574;&#1602; &#1602;&#1585;&#1575;&#1569;&#1577;</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/cable-size-calculator-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/cable-size-calculator-guide/hero.png" alt="طرف كابل ميكانيكي من الألومنيوم من YOMIN لموصلين بتجويفين وبراغي سداسية" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>يكون مقطع الكابل صحيحًا عندما تنجح ثلاثة فحوص في وقت واحد. أولًا، يجب أن تكون قدرة الموصل المجدولة للتيار — بعد التصحيح لدرجة الحرارة والتجميع وطريقة التركيب — على الأقل مساوية لتيار التصميم في الدائرة. ثانيًا، يجب ألا يتجاوز تيار القطع للجهاز الوقائي تلك القدرة المصححة. وثالثًا، يجب أن يبقى هبوط الجهد عند الحمل الكامل ضمن الحد المعتمد في التصميم. كل حاسبة لمقطع الكابل تقوم بأتمتة هذا التسلسل فقط، ولا شيء غيره. إذا أعطيتها تيار تصميم خاطئًا، أو تركتها تتجاهل معاملات التصحيح، فستعيد رقمًا واثقًا وخاطئًا.</p>
+
+    <h2>الكميات الثلاث التي يحلها الحاسب فعلًا</h2>
+    <p>معظم الأدوات على الإنترنت تطلب تيارًا بالأمبير وتعيد مقطعًا. هذا الاختصار يخفي تمامًا ما يقرر التركيبات الحقيقية، لذلك يجب تسمية هذه الكميات قبل النظر في أي جدول.</p>
+    <table>
+      <thead>
+        <tr><th>الكمية</th><th>معناها</th><th>مصدر الرقم</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>I<sub>b</sub> — تيار التصميم</td><td>التيار الذي يجب أن تنقله الدائرة باستمرار في الخدمة العادية</td><td>جدول الأحمال، لا لوحة آلة واحدة</td></tr>
+        <tr><td>I<sub>n</sub> — تيار الجهاز</td><td>التيار الإسمي للقاطع أو المصهر الذي يحمي الكابل</td><td>يُختار بحيث I<sub>b</sub> ≤ I<sub>n</sub> ≤ I<sub>z</sub></td></tr>
+        <tr><td>I<sub>z</sub> — القدرة المصححة</td><td>قدرة الجدول مضروبة في كل معامل تصحيح منطبق</td><td>جدول القدرة حسب طريقة التركيب، ثم التصحيح</td></tr>
+        <tr><td>ΔU — هبوط الجهد</td><td>الفقد طول المسار عند الحمل الكامل، عادةً بنسبة مئوية</td><td>مقاومة الموصل ومعاوقته، والطول، والتيار، ومعامل القدرة</td></tr>
+      </tbody>
+    </table>
+    <p>ومكتوبةً كمتباينة، فإن العمل كله هو I<sub>b</sub> ≤ I<sub>n</sub> ≤ I<sub>z</sub> متبوعةً بفحص هبوط الجهد. أي حاسب يتجاهل الحد الأوسط فهو يفترض بصمت أن قاطعك بالحجم الصحيح.</p>
+
+    <h2>لماذا لا تكفي قدرة الجدول وحدها أبدًا</h2>
+    <p>القدرة المنشورة للموصل تفترض مجموعة محددة من الظروف: درجة حرارة معينة، وعدد معين من الدوائر المحمّلة، وطريقة تركيب واحدة. غيّر أيًّ منها وسينقل النحاس نفسه تيارًا أقل.</p>
+    <ul>
+      <li><strong>درجة الحرارة.</strong> الكابل داخل علبة معدنية في غرفة حارة ليس في هواء بدرجة 30 °C. ومعاملات التصحيح تنخفض سريعًا فوق 40 °C.</li>
+      <li><strong>التجميع.</strong> ست دوائر محمّلة في مسار واحد تسخن بعضها بعضًا. المعامل يُطبّق على كل موصل في المجموعة، لا على الأحدث فقط.</li>
+      <li><strong>طريقة التركيب.</strong> الهواء الطليق، والأنبوب المدفون، والقناة المدفونة، والعزل الحراري أربعة وسائط حرارية مختلفة للكابل نفسه.</li>
+      <li><strong>التوافقيات.</strong> في الدوائر المغذية لأحمال التقطيع، تجتمع التوافقيات من الرتبة الثالثة في الموصل المتعادل. وموصل متعادل مقاسه جزءٌ من مقاس الوجه قد يصبح أسخن موصل في المسار.</li>
+    </ul>
+    <p>هنا يفترق الحساب التقريبي عن التصميم الحقيقي. كابلان متطابقان مقاس 4 mm² في نفس المسار لا يملكان القدرة نفسها إذا كان أحدهما محمّلًا والآخر احتياطيًا.</p>
+
+    <h2>على المسارات الطويلة، هبوط الجهد هو من يقرر المقطع</h2>
+    <p>على المسارات القصيرة تقرر القدرة الحرارية. وعلى المسارات الطويلة يقرر الهبوط، ويقرر أبكر مما يتوقع معظم الناس: قد يكون الكابل مرتاحًا حراريًا ومع ذلك يوصل جهدًا غير مقبول عند الطرف الآخر.</p>
+    <p>في الدوائر الثلاثية الصيغة العملية مباشرة:</p>
+    <p><strong>ΔU = √3 × I × R × L</strong>< حيث R مقاومة الموصل لكل متر وL الطول في اتجاه واحد. باستخدام النحاس بقيمة 0.0175 Ω·mm²/m عند 20 °C وبإهمال المعاوقة، فإن موصلًا مقاس 25 mm² له R = 0.0007 Ω/m.</p>
+
+    <h2>مثال ثلاثي الطور محسوب</h2>
+    <p>لنأخذ حملًا قدره 63 A على 400 V< ومسارًا طوله 45 m< وموصلًا نحاسيًا مقاس 25 mm².</p>
+    <p>ΔU = 1.732 × 63 × 0.0007 × 45 ≈ 3.4 V< أي حوالي 0.9 % من 400 V. وهذا يجتاز حدّ 5 % بفسحة.</p>
+    <p>والآن غيّر الطول فقط:</p>
+    <table>
+      <thead>
+        <tr><th>طول المسار</th><th>هبوط الجهد</th><th>بالنسبة لـ400 V</th><th>الحكم مقابل حد 5 %</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>45 m</td><td>3.4 V</td><td>0.9 %</td><td>يجتاز مع هامش</td></tr>
+        <tr><td>120 m</td><td>9.2 V</td><td>2.3 %</td><td>يجتاز</td></tr>
+        <tr><td>250 m</td><td>19.1 V</td><td>4.8 %</td><td>على الحد — اصعد مقاسًا واحدًا</td></tr>
+      </tbody>
+    </table>
+    <p>والجزء الأكثر إفادةً هو الفحص العكسي. النزول إلى 16 mm² على 45 m يرفع الهبوط إلى نحو 5.4 V< أي 1.3 % فقط. إذًا لا يقرر هبوط الجهد شيئًا على هذا المسار، بل تقرر القدرة الحرارية ومعاملات التصحيح. من يصمّم دائمًا على أساس الهبوط وحده يدفع أكثر من اللازم، ومن لا يفحصه أبدًا ينتهي بإضاءة ضعيفة في نهاية الخط.</p>
+
+    <h2>أين يخطئ الحاسب بصمت</h2>
+    <ul>
+      <li><strong>الانطلاق من لوحة أكبر آلة</strong> بدلاً من تيار التصميم الموزع للدائرة.</li>
+      <li><strong>إهمال حرارة داخل العلبة.</strong> علبة تعمل عند 45–50 °C من الداخل بيئة مصححة حتى لو كانت الغرفة مريحة.</li>
+      <li><strong>اعتبار المسارات المتوازية قدرة مجانية</strong> دون التحقق من توزيع الحمل بالتساوي.</li>
+      <li><strong>اختيار المقطع ثم طلب طرف لا يناسب فئة الشعيرات</strong> — الكابل المرن ذو الشعيرات الدقيقة والسلك الصلب يحتاجان إلى طرفين مختلفين.</li>
+      <li><strong>نسيان مسار العودة.</strong> الموصل المتعادل وموصل الحماية جزءٌ من الدائرة، وليسا إضافةً ثانوية.</li>
+    </ul>
+
+    <h2>قيمة الكابل من قيمة طرفه</h2>
+    <p>ينتهي حساب المقطع عند الطرف. والموصل المحسوب لـ63 A يفقد تلك القدرة عند وصلة أصغر من اللازم، أو مشدودة بإفراط، أو منفذة بين معدنين مختلفين دون وسيط مزدوج. والوصلات بين الألومنيوم والنحاس تحتاج بوجه خاص إلى طرف مصمّم لهذا الزوج، لأن موضع ظهور الحرارة هو الوصلة لا الكابل.</p>
+    <p>توفر YOMIN أطراف كابلات ميكانيكية ضمن <a href="/products/terminal-connector">مجموعة الأطراف والموصلات</a>< تُحدّد مع الموصل وليست بعده: الطرف اللولبي الألومنيومي لموصلين، ومجموعة الأطراف الألومنيومية متعددة الثقوب. وكلاهما تصميم ميكانيكي، لذا يُنفَّذ الشد بمفتاح سداسي وعزم محدد، دون قالب كبس.</p>
+    <table>
+      <thead>
+        <tr><th>سؤال الطرف</th><th>ما يجب التحقق منه قبل الطلب</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>هل يستوعب الجسم موصلي؟</td><td>مقطع الموصل وفئة الشعيرات، لا المقاس الإسمي فقط</td></tr>
+        <tr><td>هل الوصلة مزدوجة المعدن؟</td><td>موصل ألومنيوم على قضيب نحاس يتطلب انتقالًا مصمّمًا لذلك</td></tr>
+        <tr><td>هل نمط الثقوب ثابت؟</td><td>مسافة الثقوب وقطر المسمار في لوحة التركيب</td></tr>
+        <tr><td>من يشدّه؟</td><td>عزم الشد يجب أن يُكتب على الرسم، لا أن يُترك لتقدير الفني</td></tr>
+      </tbody>
+    </table>
+
+    <h2>قائمة فحص قصيرة قبل طلب الكابل</h2>
+    <ul>
+      <li>تيار التصميم من جدول الأحمال، مع تطبيق معامل التنويع.</li>
+      <li>درجة الحرارة داخل العلبة، لا درجة الغرفة.</li>
+      <li>عدد الدوائر المحمّلة التي تشارك المسار.</li>
+      <li>طريقة التركيب، وهل يمر جزءٌ منه تحت عزل حراري.</li>
+      <li>حد هبوط الجهد حسب نوع الحمل، ثم الطول الفعلي للمسار بما فيه الأجزاء الرأسية.</li>
+      <li>الطرف: نوع الطرف، وزوج المواد، ونمط الثقوب، وعزم الشد.</li>
+    </ul>
+    <p>إذا نجح مقاسان في الفحص الحراري، فاختر على أساس هبوط الجهد وما تستوعبه الأطراف. وعادةً ما يشير هذان القيدان إلى الجواب نفسه.</p>
+    
+    <h2>&#1571;&#1587;&#1574;&#1604;&#1577; &#1588;&#1575;&#1574;&#1593;&#1577;</h2>
+    <h3>ما هي معادلة مقطع الكابل؟</h3>
+    <p>لا توجد معادلة واحدة. المقطع هو أصغر موصل تكون قدرته المصححة على الأقل مساوية لتيار التصميم، ولا يتجاوز تيار حمايته تلك القدرة، ويبقى هبوط الجهد عند الحمل الكامل ضمن الحد. القدرة تأتي من جدول مصحح بدرجة الحرارة والتجميع وطريقة التركيب، والهبوط من المقاومة والطول والتيار.</p>
+    <h3>هل يقرر هبوط الجهد أم القدرة الحرارية المقطع؟</h3>
+    <p>تقرر القدرة الحرارية في المسارات القصيرة، ويقرر الهبوط في الطويلة. في مثال هذا المقال، حمل 63 A على 45 m يقده التحمل الحراري، بينما الحمل نفسه على 250 m يقده الهبوط. والفحصان لازمان معًا.</p>
+    <h3>كم يتحمل كابل نحاس مقاس 25 mm²؟</h3>
+    <p>يعتمد على طريقة التركيب. الموصل نفسه ينقل تيارًا أقل بوضوح داخل علبة ساخنة مع دوائر مجمّعة من خلال هواء طليق، لذا يجب تصحيح رقم الجدول قبل مقارنته بتيار التصميم. وذكر رقم واحد لمقطع ما دون بيان طريقة التركيب هو أشهر سبب لكابل أصغر من اللازم.</p>
+    <h3>لماذا لا يتفق حاسبي مع رقم الكهربائي؟</h3>
+    <p>السبب غالبًا مدخل خاطئ وليس الحساب: تيار مأخوذ من لوحة آلة بدلاً من جدول أحمال، أو درجة حرارة مفترضة للغرفة بدلاً من العلبة، أو تجميع متجاهل. اسأل عن معاملات التصحيح المطبّقة وسينشر الفرق نفسه.</p>
+    <h3>هل أحتاج طرفًا مختلفًا للكابل المرن؟</h3>
+    <p>نعم. الكابل المرن ذو الشعيرات الدقيقة والسلك الصلب أو المجدول يحتاجان إلى تصميمي طرفين مختلفين، وقد يكون الطرف المناسب للمقطع غير مناسب لفئة الشعيرات. حدّد تركيب الموصل مع المقطع.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>هل تحدّد الكابل وتطلب الطرف في وقت واحد؟</h2>
+    <p>أرسل تيار التصميم، وطول المسار، ونوع الموصل. ونحدد الطرف المناسب — أطراف وموصلات ميكانيكية من الألومنيوم مصممة للموصل الذي حددته، لا لمقاس متوفر في المخزون.</p>
+    <a class="btn btn-primary" href="/contact">&#1575;&#1591;&#1604;&#1576; &#1593;&#1585;&#1590; &#1587;&#1593;&#1585;</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

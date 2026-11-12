@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/solar-panel-wiring-diagram-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solar Panel Wiring Diagram: Strings, Isolation and Protection | Yomin Electric</title>
+<meta name="description" content="How to read a solar panel wiring diagram from the array to the meter: series strings, combiner box inputs, DC isolation, surge protection and the polarity checks that save a string.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/solar-panel-wiring-diagram-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Solar Panel Wiring Diagram: Strings, Isolation and Protection",
+      "description": "How to read a solar panel wiring diagram from the array to the meter: series strings, combiner box inputs, DC isolation, surge protection and the polarity checks that save a string.",
+      "image": "https://www.yominelectric.com/assets/images/blog/solar-panel-wiring-diagram-guide/hero.png",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Should solar panels be wired in series or parallel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Series is the normal choice, because it raises voltage to the inverter's operating window while keeping current low and cable thin. Parallel is used when one string cannot carry the array's power, or when partial shading makes independent strings worthwhile. The hard limit on series is the inverter's maximum DC input voltage measured as cold-morning open-circuit voltage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where should the DC isolator be installed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Between the array and the inverter, close enough to the inverter to be reached before service work begins. It must be DC-rated at the array voltage, lockable for safe isolation, and housed to suit the site - an outdoor rooftop needs an IP66 enclosure rather than a rail-mounted device in the open."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a solar system need a DC surge protector?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes on any array with a meaningful DC run, and it must be a DC-rated Type 2 device rather than an AC surge protector. Its voltage rating has to exceed the array's maximum open-circuit voltage at the coldest expected temperature, and its connecting leads should be short and direct."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does each string need its own fuse in the combiner box?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because a faulted string can be fed backwards by the healthy strings in parallel with it. The fuse opens that reverse path before the string cable overheats. That is also why the fuse is chosen from the string conductor's rating rather than from the array's total current."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What voltage should I expect at the end of a long DC run?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Noticeably less than at the array, and the difference matters because the inverter's operating window has a floor. Size the DC cable on current capacity and then confirm voltage drop over the real route length, including verticals - the method is the same as for any other cable."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Solar &amp; PV</span></div>
+    <span class="bh-tag">Technical Guides</span>
+    <h1 class="bh-title">Solar Panel Wiring Diagram: Strings, Isolation and Protection</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 12, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/solar-panel-wiring-diagram-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/solar-panel-wiring-diagram-guide/hero.png" alt="YOMIN solar PV components: a PV combiner box, a DC isolating switch and a two-pole DC surge protective device" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A solar panel wiring diagram is read from the array outwards, not from the inverter back. Panels are wired in series to build string voltage, strings are paralleled at a combiner box that gives each string its own fuse and the array a DC surge protector, a lockable DC isolator separates the array from the inverter, and the inverter output passes through an AC isolator to the main board and the meter. Every device in that chain exists to break one specific fault path. That is why the order matters more than the drawing style.</p>
+
+    <h2>The chain, stage by stage</h2>
+    <table>
+      <thead>
+        <tr><th>Stage</th><th>Device</th><th>What it protects</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>String</td><td>Series jumpers and DC connectors</td><td>The connection itself &mdash; a mated pair that is not fully engaged is a hot spot</td></tr>
+        <tr><td>Array</td><td>DC isolating switch</td><td>People servicing the inverter; gives a visible, lockable break</td></tr>
+        <tr><td>Combining</td><td>Combiner box with a fuse per string</td><td>Reverse current from the parallel strings into one faulty string</td></tr>
+        <tr><td>Surge</td><td>Type 2 DC surge protective device</td><td>The inverter and the DC wiring against induced surges</td></tr>
+        <tr><td>DC run</td><td>DC-rated cable and glands</td><td>The run itself &mdash; sized for current and for voltage drop</td></tr>
+        <tr><td>Inverter</td><td>AC isolator</td><td>Anyone working on the AC side after the inverter</td></tr>
+        <tr><td>Board and meter</td><td>Protection and the metering point</td><td>Revenue billing, export measurement and the record of what the array produced</td></tr>
+      </tbody>
+    </table>
+    <p>Draw the diagram in this order and two things fall out naturally: the isolator ends up on the array side of the inverter, where it can actually de-energise the DC terminals, and the surge protector ends up downstream of the string fuses, where it protects the combined circuit rather than one string.</p>
+
+    <h2>Series or parallel: the two numbers that change</h2>
+    <p>Wiring changes voltage and current in opposite directions, and that single fact decides most of the drawing.</p>
+    <table>
+      <thead>
+        <tr><th>Connection</th><th>Voltage</th><th>Current</th><th>Used when</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Series (string)</td><td>Adds per panel</td><td>Stays at one panel's current</td><td>You need to reach the inverter's start-up window</td></tr>
+        <tr><td>Parallel (array)</td><td>Stays at one string's voltage</td><td>Adds per string</td><td>One string cannot carry the array's power</td></tr>
+      </tbody>
+    </table>
+    <p>Series is the default because it keeps current low and lets thinner cable do the work. The limit is the inverter's maximum DC input voltage &mdash; and the number that matters is the open-circuit voltage on the coldest morning of the year, not the quoted nominal voltage. Cold panels produce a higher open-circuit voltage than the datasheet's standard test condition figure, which is exactly the situation a string designed in summer gets wrong.</p>
+
+    <h2>Where the DC isolator belongs, and why it is not an AC switch</h2>
+    <p>A DC arc does not self-extinguish the way an AC arc does, because there is no zero crossing to interrupt it every half cycle. A device that is perfectly adequate on the AC side of the inverter is therefore not adequate on the DC side, even at a lower voltage. The isolator has to be rated for DC, at the array's voltage, with the array's current.</p>
+    <p>Position matters too. Put the isolator between the array and the inverter, close enough to the inverter to be reachable before service work starts. Outdoor installations need an enclosure rating that matches the site: the YOMIN PV DC isolator range is IP66 and rated to 1500&nbsp;V DC, which is the sort of enclosure a rooftop array needs rather than a switch that happens to fit the rail.</p>
+    <p>One practical point that is easy to miss on the drawing: a DC isolator is a maintenance device, not a load-break emergency stop. It should be lockable, labelled, and operated only after the inverter has been shut down in its normal sequence.</p>
+
+    <h2>What the combiner box is actually doing</h2>
+    <p>A combiner box is where the drawing stops being a diagram and becomes a protective scheme. Three functions live in one enclosure:</p>
+    <ul>
+      <li><strong>One fuse per string.</strong> If a string fails short-circuit, the other strings push current backwards through it. The fuse is there to open that reverse path before the cable is damaged, which is why the fuse rating follows the string's conductor and not the array's total current.</li>
+      <li><strong>A common DC bus.</strong> The paralleling point, with terminals rated for the combined current.</li>
+      <li><strong>The surge protector.</strong> Mounted on the combined side, so one device covers the whole array.</li>
+    </ul>
+    <p>YOMIN builds combiner boxes in both shapes a project needs: a <a href="/products/solar-pv-products/1000v-dc-solar-panel-combiner-box-certified-pv-combiner-box-with-2-in-and-2-out-strings-solar-freezer-type.html">1000&nbsp;V DC unit with 2 inputs and 2 outputs</a> for the residential case where two strings feed one inverter input pair, and a <a href="/products/solar-pv-products/outdoor-metal-63a-waterproof-solar-combiner-box-4input-1output-new-energy-system-solar-pv-solar-freezer-solar-.html">metal, waterproof 63&nbsp;A enclosure with 4 inputs and 1 output</a> for the larger array where four strings are combined into a single feed. Choosing between them is arithmetic, not preference: count the strings, add the currents, then check the enclosure against the site.</p>
+    <p>More on the internal architecture is in the <a href="/blog/solar-combiner-box-guide">solar combiner box guide</a>.</p>
+
+    <h2>DC surge protection is not an AC surge protector</h2>
+    <p>The DC side needs a device rated for direct current, because a DC arc drawn across a failed varistor does not clear at a current zero. The YOMIN PV surge protector is a Type 2 device rated 1000&nbsp;V DC with a 40&nbsp;kA maximum discharge current, marked to EN 61643-31, which is the photovoltaic-specific part of the surge-protection standard family rather than the general low-voltage part.</p>
+    <p>Two checks belong on the diagram. First, the SPD's voltage rating must be above the array's maximum open-circuit voltage at the coldest expected temperature, not merely above the nominal voltage. Second, the connecting leads to the SPD should be short and direct; a long loop of cable adds inductance and quietly turns a good device into a mediocre one.</p>
+
+    <h2>Cable, connectors and polarity</h2>
+    <p>The DC run is sized exactly like any other cable &mdash; current capacity first, then voltage drop &mdash; but with two solar-specific twists. The cable must be rated for DC and for the installation's temperature, and the voltage drop budget is tighter than usual because the array's output voltage is already close to the inverter's window at the end of a long run. The method is set out in the <a href="/blog/cable-size-calculator-guide">cable size calculator guide</a>.</p>
+    <p>At the panel, the connectors are the weak point. </p>
+    <ul>
+      <li><strong>Mate only identical connector types.</strong> Two "MC4-compatible" connectors from different makers can look identical and still fail to seal.</li>
+      <li><strong>Push until the latch clicks, then pull to check.</strong> A partially engaged pair is a resistance in series with the whole string.</li>
+      <li><strong>Check polarity with a meter before connecting the string</strong> to the combiner, and record the open-circuit voltage against the expected figure.</li>
+      <li><strong>Keep the positive and negative runs together.</strong> Separating them creates a large loop area, which is exactly what a lightning-induced surge couples into.</li>
+    </ul>
+    <p>More on the connection itself: <a href="/blog/solar-array-cable-connections-what-is-an-mc4-connector">what an MC4 connector is and how it is mated</a>.</p>
+
+    <h2>Where the meter sits on the diagram</h2>
+    <p>The meter is the last block, and it is the one most often left vague. A grid-tied system that exports needs a meter that registers flow in both directions, otherwise exported energy is recorded as consumption. A system with a battery needs to see charge as well as discharge. Neither is a wiring problem, but both change what the diagram has to show at the metering point.</p>
+    <p>The <a href="/blog/powering-the-future-how-solar-pv-meters-are-revolutionizing-renewable-energy-management">solar PV metering guide</a> covers the meter side; <a href="/blog/solar-fuse-guide">solar fuse selection</a> and the <a href="/blog/dc-isolator-switch-guide">DC isolator guide</a> cover the two devices that are most often specified by habit rather than by calculation.</p>
+
+    <h2>Mistakes that cost a string</h2>
+    <ul>
+      <li><strong>Sizing string voltage on a warm day.</strong> Cold open-circuit voltage is the number that destroys an inverter input.</li>
+      <li><strong>Using an AC-rated isolator on the DC side</strong> because the current looks small.</li>
+      <li><strong>One fuse value for every string</strong> regardless of conductor size.</li>
+      <li><strong>Mounting the SPD on long leads</strong>, then wondering why it clamps late.</li>
+      <li><strong>Combining more strings than the enclosure is rated for</strong>, because the terminals happen to accept the cable.</li>
+      <li><strong>Leaving the DC run out of the voltage-drop check</strong> and blaming the inverter for low yield.</li>
+    </ul>
+    
+    <h2>Frequently asked questions</h2>
+    <h3>Should solar panels be wired in series or parallel?</h3>
+    <p>Series is the normal choice, because it raises voltage to the inverter's operating window while keeping current low and cable thin. Parallel is used when one string cannot carry the array's power, or when partial shading makes independent strings worthwhile. The hard limit on series is the inverter's maximum DC input voltage measured as cold-morning open-circuit voltage.</p>
+    <h3>Where should the DC isolator be installed?</h3>
+    <p>Between the array and the inverter, close enough to the inverter to be reached before service work begins. It must be DC-rated at the array voltage, lockable for safe isolation, and housed to suit the site - an outdoor rooftop needs an IP66 enclosure rather than a rail-mounted device in the open.</p>
+    <h3>Does a solar system need a DC surge protector?</h3>
+    <p>Yes on any array with a meaningful DC run, and it must be a DC-rated Type 2 device rather than an AC surge protector. Its voltage rating has to exceed the array's maximum open-circuit voltage at the coldest expected temperature, and its connecting leads should be short and direct.</p>
+    <h3>Why does each string need its own fuse in the combiner box?</h3>
+    <p>Because a faulted string can be fed backwards by the healthy strings in parallel with it. The fuse opens that reverse path before the string cable overheats. That is also why the fuse is chosen from the string conductor's rating rather than from the array's total current.</p>
+    <h3>What voltage should I expect at the end of a long DC run?</h3>
+    <p>Noticeably less than at the array, and the difference matters because the inverter's operating window has a floor. Size the DC cable on current capacity and then confirm voltage drop over the real route length, including verticals - the method is the same as for any other cable.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Drawing a PV array and specifying the DC protection?</h2>
+    <p>Send the string count, the array voltage and the inverter's input window. We will confirm the combiner box, the DC isolator and the surge protector against your own single-line diagram.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

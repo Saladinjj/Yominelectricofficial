@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/solar-panel-wiring-diagram-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diagrama de cableado de paneles solares: cadenas, seccionamiento y protecci&oacute;n | Yomin Electric</title>
+<meta name="description" content="C&oacute;mo leer un diagrama fotovoltaico desde el generador hasta el contador: cadenas en serie, entradas de la caja de combinaci&oacute;n, seccionamiento DC, protecci&oacute;n de sobretensiones y comprobaci&oacute;n de polaridad.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/solar-panel-wiring-diagram-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Diagrama de cableado de paneles solares: cadenas, seccionamiento y protección",
+      "description": "Cómo leer un diagrama fotovoltaico desde el generador hasta el contador: cadenas en serie, entradas de la caja de combinación, seccionamiento DC, protección de sobretensiones y comprobación de polaridad.",
+      "image": "https://www.yominelectric.com/assets/images/blog/solar-panel-wiring-diagram-guide/hero.png",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "&iquest;Los paneles se cablean en serie o en paralelo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La serie es la opci&oacute;n normal: eleva la tensi&oacute;n hacia la ventana de trabajo del inversor manteniendo la corriente baja y el cable fino. El paralelo se usa cuando una cadena no puede llevar la potencia del generador o cuando un sombreado parcial hace &uacute;tiles cadenas independientes. El l&iacute;mite duro de la serie es la tensi&oacute;n m&aacute;xima de entrada DC del inversor, medida como tensi&oacute;n en vac&iacute;o en una ma&ntilde;ana fr&iacute;a."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;D&oacute;nde se instala el seccionador DC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entre el generador y el inversor, lo bastante cerca del inversor para alcanzarlo antes de empezar a trabajar. Debe ser apto para DC a la tensi&oacute;n del generador, bloqueable para un corte seguro y alojado seg&uacute;n el emplazamiento: una cubierta exterior exige una envolvente IP66, no un aparato de carril a la intemperie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;Hace falta un protector de sobretensiones DC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "S&iacute; en cualquier generador con una l&iacute;nea DC significativa, y debe ser un aparato tipo 2 apto para DC, no un protector AC. Su tensi&oacute;n asignada tiene que superar la tensi&oacute;n en circuito abierto m&aacute;xima del generador a la temperatura m&aacute;s fr&iacute;a prevista, y sus conexiones deben ser cortas y directas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;Por qu&eacute; cada cadena necesita su propio fusible en la caja?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Porque una cadena en fallo puede ser alimentada en sentido inverso por las cadenas sanas en paralelo. El fusible abre ese camino antes de que el cable se sobrecaliente. Tambi&eacute;n por eso se elige a partir del conductor de la cadena y no de la corriente total del generador."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "&iquest;Qu&eacute; tensi&oacute;n cabe esperar al final de una l&iacute;nea DC larga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bastante menos que en el generador, y la diferencia importa porque la ventana del inversor tiene un suelo. Dimensiona el cable DC por capacidad de corriente y luego confirma la ca&iacute;da de tensi&oacute;n sobre la longitud real del recorrido, verticales incluidas: el m&eacute;todo es el de cualquier otro cable."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Solar y fotovoltaica</span></div>
+    <span class="bh-tag">Gu&iacute;as t&eacute;cnicas</span>
+    <h1 class="bh-title">Diagrama de cableado de paneles solares: cadenas, seccionamiento y protecci&oacute;n</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">Equipo t&eacute;cnico ET</strong>
+      <span class="divider"></span>
+      <span>12 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/solar-panel-wiring-diagram-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/solar-panel-wiring-diagram-guide/hero.png" alt="Componentes fotovoltaicos YOMIN: caja de combinaci&oacute;n PV, interruptor-seccionador DC y protector de sobretensiones DC bipolar" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un diagrama de cableado fotovoltaico se lee desde el generador hacia fuera, nunca desde el inversor hacia atr&aacute;s. Los paneles se cablean en serie para elevar la tensi&oacute;n de cadena, las cadenas se conectan en paralelo en una caja de combinaci&oacute;n que da a cada una su propio fusible y al conjunto un protector de sobretensiones DC, un seccionador DC bloqueable separa el generador del inversor, y la salida del inversor pasa por un seccionador AC hasta el cuadro y el contador. Cada aparato de esa cadena existe para cortar un camino de fallo concreto. Por eso el orden importa m&aacute;s que el estilo del dibujo.</p>
+
+    <h2>La cadena, etapa por etapa</h2>
+    <table>
+      <thead>
+        <tr><th>Etapa</th><th>Dispositivo</th><th>Qu&eacute; protege</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Cadena</td><td>Puentes en serie y conectores DC</td><td>La propia conexi&oacute;n: un par mal encajado se convierte en un punto caliente</td></tr>
+        <tr><td>Generador</td><td>Interruptor-seccionador DC</td><td>A quien interviene en el inversor; ofrece un corte visible y bloqueable</td></tr>
+        <tr><td>Combinaci&oacute;n</td><td>Caja con un fusible por cadena</td><td>La corriente inversa de las cadenas sanas hacia una cadena en fallo</td></tr>
+        <tr><td>Sobretensi&oacute;n</td><td>Protector DC tipo 2</td><td>El inversor y el cableado DC frente a sobretensiones inducidas</td></tr>
+        <tr><td>L&iacute;nea DC</td><td>Cable y prensaestopas aptos para DC</td><td>La propia l&iacute;nea: dimensionada por corriente y por ca&iacute;da de tensi&oacute;n</td></tr>
+        <tr><td>Inversor</td><td>Seccionador AC</td><td>A quien trabaja en el lado AC aguas abajo del inversor</td></tr>
+        <tr><td>Cuadro y contador</td><td>Protecci&oacute;n y punto de medida</td><td>Facturaci&oacute;n, medida de la exportaci&oacute;n y registro de la producci&oacute;n</td></tr>
+      </tbody>
+    </table>
+    <p>Dibuja el diagrama en este orden y aparecen dos consecuencias naturales: el seccionador queda del lado del generador respecto al inversor, donde realmente puede desenergizar los bornes DC, y el protector de sobretensiones queda aguas abajo de los fusibles de cadena, donde protege el circuito combinado y no una sola cadena.</p>
+
+    <h2>Serie o paralelo: las dos magnitudes que cambian</h2>
+    <p>El cableado modifica tensi&oacute;n y corriente en sentidos opuestos, y ese solo hecho decide la mayor parte del esquema.</p>
+    <table>
+      <thead>
+        <tr><th>Conexi&oacute;n</th><th>Tensi&oacute;n</th><th>Corriente</th><th>Se usa cuando</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Serie (cadena)</td><td>Se suma por panel</td><td>Se mantiene en la de un panel</td><td>Hay que alcanzar la ventana de arranque del inversor</td></tr>
+        <tr><td>Paralelo (generador)</td><td>Se mantiene en la de una cadena</td><td>Se suma por cadena</td><td>Una cadena no puede llevar la potencia del generador</td></tr>
+      </tbody>
+    </table>
+    <p>La serie es la opci&oacute;n por defecto porque mantiene la corriente baja y permite cable m&aacute;s fino. El l&iacute;mite es la tensi&oacute;n m&aacute;xima de entrada DC del inversor, y la cifra que cuenta es la tensi&oacute;n en circuito abierto de la ma&ntilde;ana m&aacute;s fr&iacute;a del a&ntilde;o, no la tensi&oacute;n nominal anunciada. Un panel fr&iacute;o entrega una tensi&oacute;n en vac&iacute;o superior a la de las condiciones de ensayo, y ese es exactamente el error de una cadena calculada en verano.</p>
+
+    <h2>D&oacute;nde va el seccionador DC y por qu&eacute; no es un interruptor AC</h2>
+    <p>Un arco DC no se extingue solo como uno AC, porque no hay cruce por cero cada semiciclo. Un aparato perfectamente v&aacute;lido en el lado AC del inversor no lo es en el lado DC, ni siquiera a tensi&oacute;n m&aacute;s baja. El seccionador debe estar previsto para DC, a la tensi&oacute;n del generador y con su corriente.</p>
+    <p>La posici&oacute;n tambi&eacute;n cuenta. Col&oacute;calo entre el generador y el inversor, lo bastante cerca del inversor para poder alcanzarlo antes de empezar a trabajar. En exterior, la envolvente debe corresponder al emplazamiento: la gama de seccionadores DC de YOMIN es IP66 y admite hasta 1500&nbsp;V DC, que es lo que exige una cubierta, no un aparato que simplemente encaja en el carril.</p>
+    <p>Un detalle pr&aacute;ctico que se olvida en el plano: un seccionador DC es un &oacute;rgano de mantenimiento, no una parada de emergencia en carga. Debe ser bloqueable, estar se&ntilde;alizado y maniobrarse solo tras apagar el inversor en su secuencia normal.</p>
+
+    <h2>Qu&eacute; hace realmente la caja de combinaci&oacute;n</h2>
+    <p>La caja es donde el esquema deja de ser un dibujo y se convierte en un sistema de protecci&oacute;n. Tres funciones conviven en una envolvente:</p>
+    <ul>
+      <li><strong>Un fusible por cadena.</strong> Si una cadena queda en cortocircuito, las dem&aacute;s le inyectan corriente inversa. El fusible abre ese camino antes de que el cable sufra, y por eso su calibre sigue al conductor de la cadena y no a la corriente total del generador.</li>
+      <li><strong>Una barra DC com&uacute;n.</strong> El punto de paralelo, con bornes que admiten la corriente sumada.</li>
+      <li><strong>El protector de sobretensiones.</strong> Montado del lado combinado, de modo que un solo aparato cubre todo el generador.</li>
+    </ul>
+    <p>YOMIN fabrica las dos formas que un proyecto necesita: una <a href="/products/solar-pv-products/1000v-dc-solar-panel-combiner-box-certified-pv-combiner-box-with-2-in-and-2-out-strings-solar-freezer-type.html">unidad de 1000&nbsp;V DC con 2 entradas y 2 salidas</a> para el caso residencial en que dos cadenas alimentan un par de entradas, y una <a href="/products/solar-pv-products/outdoor-metal-63a-waterproof-solar-combiner-box-4input-1output-new-energy-system-solar-pv-solar-freezer-solar-.html">caja met&aacute;lica estanca de 63&nbsp;A con 4 entradas y 1 salida</a> para el generador mayor en que cuatro cadenas se combinan en una sola l&iacute;nea. La elecci&oacute;n es aritm&eacute;tica, no de preferencia: cuenta las cadenas, suma las corrientes y comprueba la envolvente frente al emplazamiento.</p>
+    <p>La arquitectura interna se explica en la <a href="/blog/solar-combiner-box-guide">gu&iacute;a de cajas de combinaci&oacute;n solar</a>.</p>
+
+    <h2>Un protector DC no es un protector AC</h2>
+    <p>El lado DC necesita un aparato previsto para corriente continua, porque un arco DC sostenido sobre una varistancia degradada no se extingue en un cero de corriente. El protector fotovoltaico de YOMIN es un aparato tipo 2 admisible a 1000&nbsp;V DC con 40&nbsp;kA de corriente m&aacute;xima de descarga, marcado EN 61643-31, es decir la parte de la familia de normas de protecci&oacute;n propia del fotovoltaico y no la parte general de baja tensi&oacute;n.</p>
+    <p>Dos comprobaciones pertenecen al esquema. Primera: la tensi&oacute;n asignada debe superar la tensi&oacute;n en circuito abierto m&aacute;xima del generador a la temperatura m&aacute;s fr&iacute;a prevista, no solo la nominal. Segunda: las conexiones al protector deben ser cortas y directas; una lazada larga a&ntilde;ade inductancia y convierte discretamente un buen aparato en uno mediocre.</p>
+
+    <h2>Cable, conectores y polaridad</h2>
+    <p>La l&iacute;nea DC se dimensiona como cualquier otro cable &mdash; capacidad de corriente primero, ca&iacute;da de tensi&oacute;n despu&eacute;s &mdash; con dos matices solares. El cable debe ser apto para DC y para la temperatura del emplazamiento, y el presupuesto de ca&iacute;da es m&aacute;s ajustado de lo habitual porque la tensi&oacute;n del generador ya est&aacute; cerca del suelo de la ventana del inversor al final de una l&iacute;nea larga. El m&eacute;todo est&aacute; en la <a href="/blog/cable-size-calculator-guide">gu&iacute;a del calculador de secci&oacute;n de cable</a>.</p>
+    <p>En el panel, los conectores son el punto d&eacute;bil.</p>
+    <ul>
+      <li><strong>Empareja solo tipos id&eacute;nticos.</strong> Dos conectores &laquo;compatibles MC4&raquo; de fabricantes distintos pueden parecer iguales y no sellar.</li>
+      <li><strong>Empuja hasta el clic y luego tira para comprobar.</strong> Un par a medio encajar es una resistencia en serie con toda la cadena.</li>
+      <li><strong>Comprueba la polaridad con un mult&iacute;metro antes de conectar la cadena</strong> a la caja, y anota la tensi&oacute;n en vac&iacute;o frente al valor esperado.</li>
+      <li><strong>Lleva juntos el positivo y el negativo.</strong> Separarlos crea un &aacute;rea de lazada grande, justo lo que acopla una sobretensi&oacute;n de origen atmosf&eacute;rico.</li>
+    </ul>
+    <p>Sobre la conexi&oacute;n en s&iacute;: <a href="/blog/solar-array-cable-connections-what-is-an-mc4-connector">qu&eacute; es un conector MC4 y c&oacute;mo se acopla</a>.</p>
+
+    <h2>El lugar del contador en el esquema</h2>
+    <p>El contador es el &uacute;ltimo bloque y el que m&aacute;s a menudo queda difuso. Una instalaci&oacute;n conectada a red que exporta necesita un contador que registre ambos sentidos, porque de lo contrario la energ&iacute;a exportada se contabiliza como consumo. Una instalaci&oacute;n con bater&iacute;a necesita ver la carga adem&aacute;s de la descarga. Ninguna de las dos cosas es un problema de cableado, pero ambas cambian lo que el esquema debe mostrar en el punto de medida.</p>
+    <p>La <a href="/blog/powering-the-future-how-solar-pv-meters-are-revolutionizing-renewable-energy-management">gu&iacute;a de medida fotovoltaica</a> cubre el contador; la <a href="/blog/solar-fuse-guide">selecci&oacute;n de fusibles solares</a> y la <a href="/blog/dc-isolator-switch-guide">gu&iacute;a de seccionadores DC</a> cubren los dos aparatos que m&aacute;s se eligen por costumbre en lugar de por c&aacute;lculo.</p>
+
+    <h2>Errores que cuestan una cadena</h2>
+    <ul>
+      <li><strong>Calcular la tensi&oacute;n de cadena en un d&iacute;a c&aacute;lido.</strong> La tensi&oacute;n en vac&iacute;o en fr&iacute;o es la que destruye una entrada de inversor.</li>
+      <li><strong>Usar un seccionador AC en el lado DC</strong> porque la corriente parece peque&ntilde;a.</li>
+      <li><strong>Un solo calibre de fusible para todas las cadenas</strong> sea cual sea la secci&oacute;n del conductor.</li>
+      <li><strong>Montar el protector con conexiones largas</strong> y luego preguntarse por qu&eacute; act&uacute;a tarde.</li>
+      <li><strong>Combinar m&aacute;s cadenas de las que admite la envolvente</strong> porque los bornes aceptan el cable.</li>
+      <li><strong>Dejar la l&iacute;nea DC fuera de la comprobaci&oacute;n de ca&iacute;da</strong> y culpar al inversor de un rendimiento bajo.</li>
+    </ul>
+    
+    <h2>Preguntas frecuentes</h2>
+    <h3>&iquest;Los paneles se cablean en serie o en paralelo?</h3>
+    <p>La serie es la opci&oacute;n normal: eleva la tensi&oacute;n hacia la ventana de trabajo del inversor manteniendo la corriente baja y el cable fino. El paralelo se usa cuando una cadena no puede llevar la potencia del generador o cuando un sombreado parcial hace &uacute;tiles cadenas independientes. El l&iacute;mite duro de la serie es la tensi&oacute;n m&aacute;xima de entrada DC del inversor, medida como tensi&oacute;n en vac&iacute;o en una ma&ntilde;ana fr&iacute;a.</p>
+    <h3>&iquest;D&oacute;nde se instala el seccionador DC?</h3>
+    <p>Entre el generador y el inversor, lo bastante cerca del inversor para alcanzarlo antes de empezar a trabajar. Debe ser apto para DC a la tensi&oacute;n del generador, bloqueable para un corte seguro y alojado seg&uacute;n el emplazamiento: una cubierta exterior exige una envolvente IP66, no un aparato de carril a la intemperie.</p>
+    <h3>&iquest;Hace falta un protector de sobretensiones DC?</h3>
+    <p>S&iacute; en cualquier generador con una l&iacute;nea DC significativa, y debe ser un aparato tipo 2 apto para DC, no un protector AC. Su tensi&oacute;n asignada tiene que superar la tensi&oacute;n en circuito abierto m&aacute;xima del generador a la temperatura m&aacute;s fr&iacute;a prevista, y sus conexiones deben ser cortas y directas.</p>
+    <h3>&iquest;Por qu&eacute; cada cadena necesita su propio fusible en la caja?</h3>
+    <p>Porque una cadena en fallo puede ser alimentada en sentido inverso por las cadenas sanas en paralelo. El fusible abre ese camino antes de que el cable se sobrecaliente. Tambi&eacute;n por eso se elige a partir del conductor de la cadena y no de la corriente total del generador.</p>
+    <h3>&iquest;Qu&eacute; tensi&oacute;n cabe esperar al final de una l&iacute;nea DC larga?</h3>
+    <p>Bastante menos que en el generador, y la diferencia importa porque la ventana del inversor tiene un suelo. Dimensiona el cable DC por capacidad de corriente y luego confirma la ca&iacute;da de tensi&oacute;n sobre la longitud real del recorrido, verticales incluidas: el m&eacute;todo es el de cualquier otro cable.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>&iquest;Dibuja un generador fotovoltaico y especifica la protecci&oacute;n DC?</h2>
+    <p>Env&iacute;e el n&uacute;mero de cadenas, la tensi&oacute;n del generador y la ventana de entrada del inversor. Confirmamos la caja de combinaci&oacute;n, el seccionador DC y el protector de sobretensiones sobre su propio esquema unifilar.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotizaci&oacute;n</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

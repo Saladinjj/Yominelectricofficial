@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/solar-panel-wiring-diagram-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sch&eacute;ma de c&acirc;blage des panneaux solaires : cha&icirc;nes, sectionnement et protection | Yomin Electric</title>
+<meta name="description" content="Comment lire un sch&eacute;ma de c&acirc;blage photovolta&iuml;que du champ &agrave; la mesure : cha&icirc;nes en s&eacute;rie, entr&eacute;es de coffret, sectionnement DC, protection contre les surtensions et contr&ocirc;les de polarit&eacute;.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/solar-panel-wiring-diagram-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Schéma de câblage des panneaux solaires : chaînes, sectionnement et protection",
+      "description": "Comment lire un schéma de câblage photovoltaïque du champ à la mesure : chaînes en série, entrées de coffret, sectionnement DC, protection contre les surtensions et contrôles de polarité.",
+      "image": "https://www.yominelectric.com/assets/images/blog/solar-panel-wiring-diagram-guide/hero.png",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/solar-panel-wiring-diagram-guide-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Faut-il c&acirc;bler les panneaux en s&eacute;rie ou en parall&egrave;le ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La s&eacute;rie est le choix normal : elle &eacute;l&egrave;ve la tension vers la plage de fonctionnement de l'onduleur tout en gardant le courant faible et le c&acirc;ble fin. Le parall&egrave;le sert quand une cha&icirc;ne ne peut pas porter la puissance du champ, ou quand un ombrage partiel rend des cha&icirc;nes ind&eacute;pendantes utiles. La limite dure de la s&eacute;rie est la tension d'entr&eacute;e DC maximale de l'onduleur, mesur&eacute;e en tension &agrave; vide par matin froid."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O&ugrave; installer le sectionneur DC ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entre le champ et l'onduleur, assez pr&egrave;s de l'onduleur pour &ecirc;tre atteint avant toute intervention. Il doit &ecirc;tre admis en DC &agrave; la tension du champ, verrouillable pour une mise hors tension s&ucirc;re, et log&eacute; selon le site : une toiture ext&eacute;rieure demande une enveloppe IP66, pas un appareil sur rail &agrave; l'air libre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Une installation solaire a-t-elle besoin d'un parasurtenseur DC ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui sur tout champ avec une liaison DC significative, et ce doit &ecirc;tre un appareil de type 2 admis en DC, pas un parasurtenseur AC. Sa tension d'emploi doit d&eacute;passer la tension &agrave; vide maximale du champ &agrave; la temp&eacute;rature la plus froide pr&eacute;vue, et ses liaisons doivent &ecirc;tre courtes et directes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi chaque cha&icirc;ne a-t-elle besoin de son propre fusible dans le coffret ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parce qu'une cha&icirc;ne en d&eacute;faut peut &ecirc;tre aliment&eacute;e &agrave; contre-sens par les cha&icirc;nes saines mises en parall&egrave;le. Le fusible ouvre ce chemin inverse avant la surchauffe du c&acirc;ble. C'est aussi pourquoi son calibre se d&eacute;duit du conducteur de cha&icirc;ne et non du courant total du champ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle tension attendre au bout d'une longue liaison DC ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nettement moins qu'au champ, et l'&eacute;cart compte parce que la plage de fonctionnement de l'onduleur a un plancher. Dimensionnez le c&acirc;ble DC en capacit&eacute; de courant, puis v&eacute;rifiez la chute de tension sur la longueur r&eacute;elle du trac&eacute;, verticales comprises : la m&eacute;thode est celle de tout autre c&acirc;ble."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Solaire et photovolta&iuml;que</span></div>
+    <span class="bh-tag">Guides techniques</span>
+    <h1 class="bh-title">Sch&eacute;ma de c&acirc;blage des panneaux solaires : cha&icirc;nes, sectionnement et protection</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">&Eacute;quipe technique ET</strong>
+      <span class="divider"></span>
+      <span>12 novembre 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/solar-panel-wiring-diagram-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/solar-panel-wiring-diagram-guide/hero.png" alt="Composants photovolta&iuml;ques YOMIN : coffret de regroupement PV, interrupteur-sectionneur DC et parasurtenseur DC bipolaire" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un sch&eacute;ma de c&acirc;blage photovolta&iuml;que se lit depuis le champ de panneaux vers l'ext&eacute;rieur, jamais depuis l'onduleur vers l'amont. Les panneaux sont c&acirc;bl&eacute;s en s&eacute;rie pour &eacute;tablir la tension de cha&icirc;ne, les cha&icirc;nes sont mises en parall&egrave;le dans un coffret de regroupement qui donne &agrave; chacune son propre fusible et au champ un parasurtenseur DC, un sectionneur DC verrouillable s&eacute;pare le champ de l'onduleur, et la sortie de l'onduleur traverse un sectionneur AC jusqu'au tableau puis au compteur. Chaque appareil de cette cha&icirc;ne existe pour couper un chemin de d&eacute;faut pr&eacute;cis. C'est pourquoi l'ordre compte plus que le style du dessin.</p>
+
+    <h2>La cha&icirc;ne, &eacute;tape par &eacute;tape</h2>
+    <table>
+      <thead>
+        <tr><th>&Eacute;tape</th><th>Appareil</th><th>Ce qu'il prot&egrave;ge</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Cha&icirc;ne</td><td>Pontages s&eacute;rie et connecteurs DC</td><td>La connexion elle-m&ecirc;me &mdash; une paire mal enclench&eacute;e devient un point chaud</td></tr>
+        <tr><td>Champ</td><td>Interrupteur-sectionneur DC</td><td>Les personnes qui interviennent sur l'onduleur ; il offre une coupure visible et verrouillable</td></tr>
+        <tr><td>Regroupement</td><td>Coffret avec un fusible par cha&icirc;ne</td><td>Le courant inverse des cha&icirc;nes saines vers une cha&icirc;ne d&eacute;faillante</td></tr>
+        <tr><td>Surtension</td><td>Parasurtenseur DC de type 2</td><td>L'onduleur et le c&acirc;blage DC contre les surtensions induites</td></tr>
+        <tr><td>Liaison DC</td><td>C&acirc;ble et presse-&eacute;toupes adapt&eacute;s au DC</td><td>La liaison elle-m&ecirc;me &mdash; dimensionn&eacute;e en courant et en chute de tension</td></tr>
+        <tr><td>Onduleur</td><td>Sectionneur AC</td><td>Toute personne travaillant c&ocirc;t&eacute; AC apr&egrave;s l'onduleur</td></tr>
+        <tr><td>Tableau et compteur</td><td>Protection et point de mesure</td><td>La facturation, la mesure de l'injection et la trace de la production</td></tr>
+      </tbody>
+    </table>
+    <p>Dessinez le sch&eacute;ma dans cet ordre et deux cons&eacute;quences apparaissent naturellement : le sectionneur se retrouve du c&ocirc;t&eacute; champ de l'onduleur, l&agrave; o&ugrave; il peut r&eacute;ellement mettre hors tension les bornes DC, et le parasurtenseur se retrouve en aval des fusibles de cha&icirc;ne, o&ugrave; il prot&egrave;ge le circuit regroup&eacute; et non une seule cha&icirc;ne.</p>
+
+    <h2>S&eacute;rie ou parall&egrave;le : les deux grandeurs qui changent</h2>
+    <p>Le c&acirc;blage modifie la tension et le courant en sens inverse, et ce seul fait d&eacute;cide de la majeure partie du sch&eacute;ma.</p>
+    <table>
+      <thead>
+        <tr><th>Montage</th><th>Tension</th><th>Courant</th><th>Utilis&eacute; quand</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>S&eacute;rie (cha&icirc;ne)</td><td>S'additionne par panneau</td><td>Reste au courant d'un panneau</td><td>Il faut atteindre la plage de d&eacute;marrage de l'onduleur</td></tr>
+        <tr><td>Parall&egrave;le (champ)</td><td>Reste &agrave; la tension d'une cha&icirc;ne</td><td>S'additionne par cha&icirc;ne</td><td>Une cha&icirc;ne ne peut pas porter la puissance du champ</td></tr>
+      </tbody>
+    </table>
+    <p>La s&eacute;rie est le choix par d&eacute;faut, parce qu'elle garde le courant faible et permet un c&acirc;ble plus fin. La limite est la tension d'entr&eacute;e DC maximale de l'onduleur &mdash; et la grandeur qui compte est la tension &agrave; vide par la matin&eacute;e la plus froide de l'ann&eacute;e, pas la tension nominale annonc&eacute;e. Un panneau froid d&eacute;livre une tension &agrave; vide sup&eacute;rieure &agrave; la valeur en conditions de test, et c'est exactement l'erreur d'une cha&icirc;ne calcul&eacute;e en &eacute;t&eacute;.</p>
+
+    <h2>O&ugrave; placer le sectionneur DC, et pourquoi ce n'est pas un interrupteur AC</h2>
+    <p>Un arc DC ne s'&eacute;teint pas de lui-m&ecirc;me comme un arc AC, faute de passage par z&eacute;ro toutes les demi-p&eacute;riodes. Un appareil parfaitement adapt&eacute; au c&ocirc;t&eacute; AC de l'onduleur ne l'est donc pas c&ocirc;t&eacute; DC, m&ecirc;me &agrave; tension plus basse. Le sectionneur doit &ecirc;tre pr&eacute;vu pour le DC, &agrave; la tension du champ et au courant du champ.</p>
+    <p>La position compte aussi. Placez le sectionneur entre le champ et l'onduleur, assez pr&egrave;s de l'onduleur pour &ecirc;tre atteint avant toute intervention. En ext&eacute;rieur, l'enveloppe doit correspondre au site : la gamme de sectionneurs DC YOMIN est en IP66 et admise jusqu'&agrave; 1500&nbsp;V DC, ce qui correspond &agrave; l'exigence d'un champ en toiture, pas &agrave; un appareil simplement pos&eacute; sur un rail.</p>
+    <p>Un point pratique souvent oubli&eacute; sur le plan : un sectionneur DC est un organe de maintenance, pas un arr&ecirc;t d'urgence en charge. Il doit &ecirc;tre verrouillable, rep&eacute;r&eacute;, et man&oelig;uvr&eacute; seulement apr&egrave;s l'arr&ecirc;t de l'onduleur selon sa s&eacute;quence normale.</p>
+
+    <h2>Ce que fait r&eacute;ellement le coffret de regroupement</h2>
+    <p>Le coffret est l'endroit o&ugrave; le sch&eacute;ma cesse d'&ecirc;tre un dessin pour devenir un syst&egrave;me de protection. Trois fonctions tiennent dans une enveloppe :</p>
+    <ul>
+      <li><strong>Un fusible par cha&icirc;ne.</strong> Si une cha&icirc;ne est en court-circuit, les autres y injectent un courant inverse. Le fusible ouvre ce chemin avant que le c&acirc;ble ne souffre, ce qui explique que son calibre suive le conducteur de cha&icirc;ne et non le courant total du champ.</li>
+      <li><strong>Un bus DC commun.</strong> Le point de mise en parall&egrave;le, avec des bornes admettant le courant cumul&eacute;.</li>
+      <li><strong>Le parasurtenseur.</strong> Mont&eacute; du c&ocirc;t&eacute; regroup&eacute;, de sorte qu'un seul appareil couvre tout le champ.</li>
+    </ul>
+    <p>YOMIN fabrique les deux formes dont un projet a besoin : un <a href="/products/solar-pv-products/1000v-dc-solar-panel-combiner-box-certified-pv-combiner-box-with-2-in-and-2-out-strings-solar-freezer-type.html">mod&egrave;le 1000&nbsp;V DC &agrave; 2 entr&eacute;es et 2 sorties</a> pour le cas r&eacute;sidentiel o&ugrave; deux cha&icirc;nes alimentent une paire d'entr&eacute;es, et un <a href="/products/solar-pv-products/outdoor-metal-63a-waterproof-solar-combiner-box-4input-1output-new-energy-system-solar-pv-solar-freezer-solar-.html">coffret m&eacute;tallique &eacute;tanche 63&nbsp;A &agrave; 4 entr&eacute;es et 1 sortie</a> pour le champ plus grand o&ugrave; quatre cha&icirc;nes sont regroup&eacute;es en une seule liaison. Le choix rel&egrave;ve de l'arithm&eacute;tique, pas de la pr&eacute;f&eacute;rence : comptez les cha&icirc;nes, additionnez les courants, puis v&eacute;rifiez l'enveloppe par rapport au site.</p>
+    <p>L'architecture interne est d&eacute;taill&eacute;e dans le <a href="/blog/solar-combiner-box-guide">guide des coffrets de regroupement solaires</a>.</p>
+
+    <h2>Un parasurtenseur DC n'est pas un parasurtenseur AC</h2>
+    <p>Le c&ocirc;t&eacute; DC exige un appareil pr&eacute;vu pour le courant continu, car un arc DC &eacute;tabli sur une varistance d&eacute;faillante ne s'&eacute;teint pas au passage par z&eacute;ro. Le parasurtenseur PV de YOMIN est un appareil de type 2 admis &agrave; 1000&nbsp;V DC avec un courant de d&eacute;charge maximal de 40&nbsp;kA, marqu&eacute; EN 61643-31, c'est-&agrave;-dire la partie de la famille des normes de parafoudre propre au photovolta&iuml;que et non la partie basse tension g&eacute;n&eacute;rale.</p>
+    <p>Deux v&eacute;rifications appartiennent au sch&eacute;ma. D'abord, la tension d'emploi du parasurtenseur doit d&eacute;passer la tension &agrave; vide maximale du champ &agrave; la temp&eacute;rature la plus froide pr&eacute;vue, et pas seulement la tension nominale. Ensuite, les liaisons de raccordement doivent &ecirc;tre courtes et directes : une grande boucle ajoute de l'inductance et transforme discr&egrave;tement un bon appareil en appareil m&eacute;diocre.</p>
+
+    <h2>C&acirc;ble, connecteurs et polarit&eacute;</h2>
+    <p>La liaison DC se dimensionne comme tout autre c&acirc;ble &mdash; capacit&eacute; en courant d'abord, chute de tension ensuite &mdash; avec deux particularit&eacute;s solaires. Le c&acirc;ble doit &ecirc;tre admis en DC et pour la temp&eacute;rature du site, et le budget de chute de tension est plus serr&eacute; que d'habitude, car la tension du champ est d&eacute;j&agrave; proche du bas de la plage de l'onduleur en fin de liaison. La m&eacute;thode est expos&eacute;e dans le <a href="/blog/cable-size-calculator-guide">guide du calculateur de section de c&acirc;ble</a>.</p>
+    <p>Au panneau, les connecteurs sont le point faible.</p>
+    <ul>
+      <li><strong>N'accouplez que des types identiques.</strong> Deux connecteurs &laquo; compatibles MC4 &raquo; de fabricants diff&eacute;rents peuvent sembler identiques et ne pas &eacute;tanch&eacute;ir.</li>
+      <li><strong>Enfoncez jusqu'au clic, puis tirez pour v&eacute;rifier.</strong> Une paire partiellement engag&eacute;e est une r&eacute;sistance en s&eacute;rie avec toute la cha&icirc;ne.</li>
+      <li><strong>Contr&ocirc;lez la polarit&eacute; au multim&egrave;tre avant de raccorder la cha&icirc;ne</strong> au coffret, et notez la tension &agrave; vide obtenue face &agrave; la valeur attendue.</li>
+      <li><strong>Faites cheminer ensemble le positif et le n&eacute;gatif.</strong> Les sp&eacute;arer cr&eacute;e une grande surface de boucle, exactement ce que couple une surtension d'origine foudre.</li>
+    </ul>
+    <p>Sur la connexion elle-m&ecirc;me : <a href="/blog/solar-array-cable-connections-what-is-an-mc4-connector">ce qu'est un connecteur MC4 et comment il s'accouple</a>.</p>
+
+    <h2>La place du compteur sur le sch&eacute;ma</h2>
+    <p>Le compteur est le dernier bloc, et c'est celui que l'on laisse le plus souvent dans le flou. Une installation raccord&eacute;e au r&eacute;seau qui injecte a besoin d'un compteur enregistrant les deux sens de circulation, sinon l'&eacute;nergie inject&eacute;e est compt&eacute;e comme une consommation. Une installation avec batterie doit voir la charge autant que la d&eacute;charge. Ni l'un ni l'autre n'est un probl&egrave;me de c&acirc;blage, mais les deux changent ce que le sch&eacute;ma doit montrer au point de mesure.</p>
+    <p>Le <a href="/blog/powering-the-future-how-solar-pv-meters-are-revolutionizing-renewable-energy-management">guide du comptage photovolta&iuml;que</a> traite le compteur ; le <a href="/blog/solar-fuse-guide">choix des fusibles solaires</a> et le <a href="/blog/dc-isolator-switch-guide">guide des sectionneurs DC</a> traitent les deux appareils trop souvent choisis par habitude plut&ocirc;t que par calcul.</p>
+
+    <h2>Les erreurs qui co&ucirc;tent une cha&icirc;ne</h2>
+    <ul>
+      <li><strong>Calculer la tension de cha&icirc;ne par temps chaud.</strong> C'est la tension &agrave; vide &agrave; froid qui d&eacute;truit une entr&eacute;e d'onduleur.</li>
+      <li><strong>Utiliser un sectionneur AC c&ocirc;t&eacute; DC</strong> parce que le courant para&icirc;t faible.</li>
+      <li><strong>Un seul calibre de fusible pour toutes les cha&icirc;nes</strong>, quelle que soit la section du conducteur.</li>
+      <li><strong>Monter le parasurtenseur sur des liaisons longues</strong>, puis s'&eacute;tonner qu'il &eacute;cr&ecirc;te tard.</li>
+      <li><strong>Regrouper plus de cha&icirc;nes que l'enveloppe ne l'autorise</strong>, parce que les bornes acceptent le c&acirc;ble.</li>
+      <li><strong>Oublier la liaison DC dans le contr&ocirc;le de chute de tension</strong> et accuser l'onduleur d'un rendement faible.</li>
+    </ul>
+    
+    <h2>Questions fr&eacute;quentes</h2>
+    <h3>Faut-il c&acirc;bler les panneaux en s&eacute;rie ou en parall&egrave;le ?</h3>
+    <p>La s&eacute;rie est le choix normal : elle &eacute;l&egrave;ve la tension vers la plage de fonctionnement de l'onduleur tout en gardant le courant faible et le c&acirc;ble fin. Le parall&egrave;le sert quand une cha&icirc;ne ne peut pas porter la puissance du champ, ou quand un ombrage partiel rend des cha&icirc;nes ind&eacute;pendantes utiles. La limite dure de la s&eacute;rie est la tension d'entr&eacute;e DC maximale de l'onduleur, mesur&eacute;e en tension &agrave; vide par matin froid.</p>
+    <h3>O&ugrave; installer le sectionneur DC ?</h3>
+    <p>Entre le champ et l'onduleur, assez pr&egrave;s de l'onduleur pour &ecirc;tre atteint avant toute intervention. Il doit &ecirc;tre admis en DC &agrave; la tension du champ, verrouillable pour une mise hors tension s&ucirc;re, et log&eacute; selon le site : une toiture ext&eacute;rieure demande une enveloppe IP66, pas un appareil sur rail &agrave; l'air libre.</p>
+    <h3>Une installation solaire a-t-elle besoin d'un parasurtenseur DC ?</h3>
+    <p>Oui sur tout champ avec une liaison DC significative, et ce doit &ecirc;tre un appareil de type 2 admis en DC, pas un parasurtenseur AC. Sa tension d'emploi doit d&eacute;passer la tension &agrave; vide maximale du champ &agrave; la temp&eacute;rature la plus froide pr&eacute;vue, et ses liaisons doivent &ecirc;tre courtes et directes.</p>
+    <h3>Pourquoi chaque cha&icirc;ne a-t-elle besoin de son propre fusible dans le coffret ?</h3>
+    <p>Parce qu'une cha&icirc;ne en d&eacute;faut peut &ecirc;tre aliment&eacute;e &agrave; contre-sens par les cha&icirc;nes saines mises en parall&egrave;le. Le fusible ouvre ce chemin inverse avant la surchauffe du c&acirc;ble. C'est aussi pourquoi son calibre se d&eacute;duit du conducteur de cha&icirc;ne et non du courant total du champ.</p>
+    <h3>Quelle tension attendre au bout d'une longue liaison DC ?</h3>
+    <p>Nettement moins qu'au champ, et l'&eacute;cart compte parce que la plage de fonctionnement de l'onduleur a un plancher. Dimensionnez le c&acirc;ble DC en capacit&eacute; de courant, puis v&eacute;rifiez la chute de tension sur la longueur r&eacute;elle du trac&eacute;, verticales comprises : la m&eacute;thode est celle de tout autre c&acirc;ble.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous dessinez un champ PV et sp&eacute;cifiez la protection DC ?</h2>
+    <p>Envoyez le nombre de cha&icirc;nes, la tension du champ et la plage d'entr&eacute;e de l'onduleur. Nous confirmons le coffret de regroupement, le sectionneur DC et le parasurtenseur sur votre propre sch&eacute;ma unifilaire.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+</main>
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
