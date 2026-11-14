@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/terminal-barrier-block-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terminal Barrier Block: Pitch, Clearance and How to Specify | Yomin Electric</title>
+<meta name="description" content="How to specify a terminal barrier block: barrier pitch and voltage clearance, screw clamp versus stud builds, current derating, body material and mounting, plus the checks that prevent a mis-order.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/terminal-barrier-block-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/terminal-barrier-block-guide">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/terminal-barrier-block-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/terminal-barrier-block-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/terminal-barrier-block-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/terminal-barrier-block-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/terminal-barrier-block-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Terminal Barrier Block: Pitch, Clearance and How to Specify",
+      "description": "How to specify a terminal barrier block: barrier pitch and voltage clearance, screw clamp versus stud builds, current derating, body material and mounting, plus the checks that prevent a mis-order.",
+      "image": "https://www.yominelectric.com/assets/images/blog/terminal-barrier-block-guide/hero.png",
+      "datePublished": "2026-11-14",
+      "dateModified": "2026-11-14",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/terminal-barrier-block-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a barrier block and a terminal strip?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A barrier block has a moulded insulating wall between every pair of terminals, which fixes the spacing between poles. A plain terminal strip usually has no barrier, so the gap between positions depends on how the strip was cut and assembled. The barrier is what makes the voltage capability of the row a specified dimension rather than a workmanship outcome."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does barrier pitch change the current rating?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not directly. Pitch is chosen for clearance and creepage, which is a voltage question. Current rating is set by the clamp, the insert and the body, and it is then derated for a fully loaded row at the enclosure ambient. A wider pitch does not buy current, and a narrower one does not lose it, but a narrower one may fail the voltage requirement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a barrier block be cut to length on site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sometimes, and the end moulding decides it. Bodies with a separate end piece can often be reduced by removing positions, but a sawn face loses the finished edge and can expose the insert. If the pole count may change, specify the rail-mounted family instead of planning to cut a moulded row."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do I need to send to get a barrier block quoted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pole count, pitch, wire range, working voltage and the mounting arrangement. Adding the clamp style, the marking requirement and the enclosure ambient removes the remaining ambiguity, and the pitch is the one item that cannot be corrected after the parts are moulded."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Terminal Blocks</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Terminal Barrier Block: Pitch, Clearance and How to Specify</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 14, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/terminal-barrier-block-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/terminal-barrier-block-guide/hero.png" alt="Brass barrier terminal blocks with screw clamps and insulating barrier walls between each terminal position" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A terminal barrier block is one moulded body carrying a row of screw terminals, with a solid insulating wall standing between every position. The wire lands on a screw clamp or a stud, the barrier separates it from the terminal next door, and the whole row is fixed as a single part rather than assembled from loose connectors.</p>
+    <p>That single part is why the family survives in panel building. One line on a bill of materials replaces a row of loose terminals, the spacing between positions is fixed by the moulding rather than by the installer, and the barrier gives a screwdriver somewhere to stop. The specification question is therefore never "do I need a barrier block" but "which pitch, which clamp and which body" &mdash; and those three answers are what this guide covers.</p>
+
+    <h2>What the barrier actually does</h2>
+    <p>The barrier is the feature that names the family, and it does two separate jobs that are easy to conflate.</p>
+    <p>First, it sets a fixed creepage and clearance distance between adjacent circuits. In a row of loose
+    terminals the gap between poles is whatever the installer left, which is why two panels built to the same
+    drawing can have different spacing. In a barrier block the gap is a moulded dimension and it appears on the
+    datasheet, so the voltage capability of the row is a specification rather than a workmanship outcome.</p>
+    <p>Second, it is a mechanical guard. A dropped screw, a stray strand of flexible conductor or a slipped
+    screwdriver lands on the barrier wall instead of bridging two live terminals. On a row carrying a few hundred
+    amperes at low voltage this matters less than on a row carrying a control voltage next to a mains feed, and it
+    matters most during maintenance, when covers are off and tools are loose.</p>
+
+    <h2>Barrier block, DIN-rail terminal or PCB strip?</h2>
+    <p>These four families are routinely confused because all of them hold several conductors on screw clamps.
+    They differ in where the body sits, how it is fixed, and what fails first.</p>
+    <table>
+      <thead>
+        <tr><th>Family</th><th>Where the body sits</th><th>How it is fixed</th><th>Typical job</th><th>What to watch</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Barrier block</td><td>Open row on a moulded base</td><td>Chassis, panel or PCB, usually two fixings</td><td>Power distribution, field wiring, machine terminal rows</td><td>Pitch fixes the voltage limit; it cannot be widened later</td></tr>
+        <tr><td>DIN-rail terminal block</td><td>Modular, clipped side by side</td><td>35 mm rail</td><td>Control panels, marshalling, instrument loops</td><td>Needs end stops, end plates and jumpers to be a system</td></tr>
+        <tr><td>PCB terminal strip</td><td>Soldered pins through the board</td><td>Through-hole solder joints</td><td>Board-level input and output</td><td>Current per pole is limited by the pin and the track</td></tr>
+        <tr><td>Insulated busbar</td><td>Solid conductor with moulded covers</td><td>Panel or enclosure</td><td>High-current distribution to several outgoing devices</td><td>It distributes; it is not a wire-to-wire terminal</td></tr>
+      </tbody>
+    </table>
+    <p>The practical split is that a barrier block is chosen when the row is part of the enclosure or the machine
+    itself, and a DIN-rail block is chosen when the row has to grow, change or be re-configured. If the pole count
+    is known and fixed for the life of the product, the barrier block is usually cheaper and takes less depth. If
+    the panel will be modified every time a machine option changes, the rail system wins on serviceability. The
+    <a href="/blog/din-rail-terminal-block-guide">DIN rail terminal block guide</a> covers the rail side of that
+    decision in detail.</p>
+
+    <h2>Pitch is a voltage decision, not a spacing preference</h2>
+    <p>Barrier pitch is the centre-to-centre distance between adjacent terminals, and it is the single number
+    that most often goes missing from a purchase order. A drawing that says "12-way barrier block" and nothing
+    else has not specified the part: the same 12-way body can be built on several pitches, and the pitch decides
+    whether the row can be used at the working voltage of the circuit.</p>
+    <p>Two consequences follow. The first is that pitch cannot be recovered after the fact &mdash; there is no
+    accessory that widens the gap between two moulded positions. The second is that a wider pitch costs board area
+    and panel width, so the correct answer is the narrowest pitch that still satisfies the clearance and creepage
+    requirements of the applicable standard at the site's pollution degree and working voltage. That is a
+    calculation against the standard the installation is built to, not a rule of thumb, and it is why the pitch
+    should be written on the drawing by whoever performed it rather than selected by the buyer from a catalogue
+    page.</p>
+    <p>Where a row mixes voltages &mdash; a mains feed landing next to a 24 V control pair &mdash; the pitch has to
+    satisfy the highest voltage present, or the two circuits have to be separated onto different blocks. Mixing
+    them on one row is a common cost saving that quietly removes the clearance the lower-voltage circuit was
+    relying on.</p>
+
+    <h2>Screw clamp, stud and wire-protector builds</h2>
+    <p>Three clamp styles cover most of the family, and the choice follows the conductor and the number of
+    connect and disconnect cycles the row will see.</p>
+    <ul>
+      <li><strong>Screw clamp.</strong> The conductor is trapped under a screw head or a pressure plate. Cheapest,
+      compact, and perfectly adequate for a row that is wired once at commissioning. A pressure plate is worth
+      specifying over a bare screw head when the conductor is finely stranded, because a bare screw tends to cut
+      strands rather than gather them.</li>
+      <li><strong>Stud and nut.</strong> A threaded stud takes a ring or fork lug. This is the build for heavy
+      current and for conductors that will be removed for maintenance, because the lug can be re-torqued to a
+      stated value instead of relying on the feel of a screw.</li>
+      <li><strong>Wire protector.</strong> A curved plate sits under the screw and lifts as the screw tightens,
+      gathering the strands instead of splaying them. It is the small detail that separates a terminal that
+      survives a vibration test from one that does not.</li>
+    </ul>
+    <p>Whatever the clamp, the conductor preparation matters as much as the terminal. A ferrule on a finely
+    stranded conductor gives the clamp a solid body to grip; the
+    <a href="/blog/control-panel-wiring-what-is-a-bootlace-ferrule">bootlace ferrule guide</a> covers sizing that
+    sleeve. Bare stranded conductor under a screw clamp is where intermittent joints begin.</p>
+
+    <h2>Current rating and the derating nobody applies</h2>
+    <p>The current figure on a barrier block datasheet is measured under stated conditions: a single position
+    loaded, a reference ambient temperature, and a stated conductor size. A row of twelve positions all carrying
+    current is not that test. Heat from one position reaches its neighbours through the shared body, so the
+    practical rating of a fully loaded row is below the single-position figure, and the datasheet's derating curve
+    is the part of the document that gets skipped.</p>
+    <p>Two habits prevent the problem. Size the row for the ambient inside the enclosure rather than the ambient
+    in the room, because a sealed panel in summer runs well above the plant temperature. And treat the terminal
+    rating as one link in a chain that also includes the conductor, the lug and the enclosure temperature rise
+    &mdash; the weakest link sets the row, and it is rarely the terminal.</p>
+
+    <h2>Body material and what it has to survive</h2>
+    <p>The body is doing structural and electrical work at the same time: it holds the inserts in place under
+    torque, and it provides the tracking distance between poles. Two material families dominate. Phenolic bodies
+    are dimensionally stable and tolerate heat well, which suits power rows. PA and PC mouldings are tougher and
+    cheaper to tool, which suits general panel work.</p>
+    <p>The failure mode to design against is tracking &mdash; a carbonised path forming across the body surface
+    after repeated arcing or contamination &mdash; rather than simple melting. That is why the body material,
+    the pitch and the pollution degree of the installation belong in the same conversation. A row specified for a
+    clean, dry control cabinet and then installed in a wash-down area is a row that will track.</p>
+
+    <h2>Selection checklist</h2>
+    <ul>
+      <li><strong>Pole count and whether the row may be cut.</strong> Some bodies can be sawn to length, some
+      cannot; the fixed end moulding usually decides it.</li>
+      <li><strong>Pitch</strong>, stated as a dimension on the drawing, derived from working voltage, pollution
+      degree and the standard the installation is built to.</li>
+      <li><strong>Clamp style</strong> &mdash; screw, stud or wire protector &mdash; matched to conductor type and
+      to how often the row will be re-wired.</li>
+      <li><strong>Current per position and the derated figure</strong> for a fully loaded row at the enclosure
+      ambient.</li>
+      <li><strong>Mounting</strong> &mdash; fixing centres, panel thickness, and whether the body is chassis
+      mounted or soldered to a board.</li>
+      <li><strong>Marking</strong> &mdash; whether position numbers are moulded in, printed, or added with a
+      marker strip. On a 12-way row the marking is what makes the panel maintainable.</li>
+    </ul>
+
+    <h2>Sourcing the barrier block</h2>
+    <p>YOMIN supplies brass PCB busbar barrier terminal blocks in the
+    <a href="/products/terminal-connector">terminals and connectors category</a>, listed from US$0.01 to US$0.09
+    per piece for the standard build. The body is brass, and the stated application is secure wire and busbar
+    connections &mdash; which is the honest description of what this part does: it is a clamping point, not a
+    current-limiting or protecting device. The
+    <a href="/products/terminal-connector/brass-pcb-busbar-barrier-terminal-blocks">brass barrier terminal block
+    page</a> carries the listing detail.</p>
+    <p>Adjacent builds in the same range cover the other clamp styles: a
+    <a href="/products/terminal-connector/brass-plastic-pc-material-terminal-block-connector-high-quality-plastic-terminal-block">plastic-bodied
+    terminal block connector</a> for general panel work and a
+    <a href="/products/terminal-connector/self-locking-tb-series-terminal-block-made-of-durable-copper-material">self-locking
+    TB series block</a> in copper. If the row has to grow after commissioning rather than being fixed at design,
+    read the <a href="/blog/pass-through-terminal-block-guide">pass-through terminal block guide</a> instead &mdash;
+    it covers the rail-mounted family and the accessories that make a growing row serviceable.</p>
+    <p>To quote a barrier block, send the pole count, the pitch, the wire range, the working voltage and the
+    mounting arrangement. Those five items are enough to confirm the body and the clamp without a design review,
+    and the pitch in particular is the item that cannot be corrected after delivery.</p>
+    
+
+    <h2>Clamp style, side by side</h2>
+    <p>The clamp is what actually holds the conductor, and the four common builds fail in different ways.
+    The table is written from the maintenance side rather than the catalogue side.</p>
+    <table>
+      <thead>
+        <tr><th>Clamp</th><th>Conductor it suits</th><th>Connect cycles it survives</th><th>How it goes wrong</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Bare screw head</td><td>Solid conductor, or stranded with a ferrule</td><td>Few</td><td>Splays and cuts strands on finely stranded cable</td></tr>
+        <tr><td>Screw with pressure plate</td><td>Finely stranded cable</td><td>Moderate</td><td>Plate is dropped and lost during re-wiring</td></tr>
+        <tr><td>Stud and nut</td><td>Ring or fork lug, heavy current</td><td>Many</td><td>Nut re-torqued by feel instead of to a stated value</td></tr>
+        <tr><td>Wire protector</td><td>Finely stranded cable under vibration</td><td>Moderate</td><td>Curved plate splayed by over-tightening</td></tr>
+      </tbody>
+    </table>
+    <p>None of these is better in the abstract. A stud build on a row that is wired once and never touched is
+    money spent on nothing; a bare screw head on a finely stranded conductor that will be re-terminated every
+    service visit is a fault waiting for its first visit.</p>
+
+    <h2>Frequently asked questions</h2>
+      <h3>What is the difference between a barrier block and a terminal strip?</h3>
+      <p>A barrier block has a moulded insulating wall between every pair of terminals, which fixes the spacing between poles. A plain terminal strip usually has no barrier, so the gap between positions depends on how the strip was cut and assembled. The barrier is what makes the voltage capability of the row a specified dimension rather than a workmanship outcome.</p>
+      <h3>Does barrier pitch change the current rating?</h3>
+      <p>Not directly. Pitch is chosen for clearance and creepage, which is a voltage question. Current rating is set by the clamp, the insert and the body, and it is then derated for a fully loaded row at the enclosure ambient. A wider pitch does not buy current, and a narrower one does not lose it, but a narrower one may fail the voltage requirement.</p>
+      <h3>Can a barrier block be cut to length on site?</h3>
+      <p>Sometimes, and the end moulding decides it. Bodies with a separate end piece can often be reduced by removing positions, but a sawn face loses the finished edge and can expose the insert. If the pole count may change, specify the rail-mounted family instead of planning to cut a moulded row.</p>
+      <h3>What do I need to send to get a barrier block quoted?</h3>
+      <p>Pole count, pitch, wire range, working voltage and the mounting arrangement. Adding the clamp style, the marking requirement and the enclosure ambient removes the remaining ambiguity, and the pitch is the one item that cannot be corrected after the parts are moulded.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Sourcing a barrier block for a panel or a machine row?</h2>
+    <p>Send the pole count, pitch, wire range, working voltage and mounting arrangement. We will confirm the body, clamp style and marking against your drawing and quote the build.</p>
+    <p style="margin-bottom:18px"><a class="btn btn-primary" href="/contact">Request a quote</a> &nbsp; <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp us</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

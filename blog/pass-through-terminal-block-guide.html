@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/pass-through-terminal-block-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pass-Through Terminal Block: Conductor Path and Accessories | Yomin Electric</title>
+<meta name="description" content="How a pass-through terminal block works: the inlet and outlet conductor path, single versus multi-level builds, jumpers and bridging, test access, and the accessories that keep a rail row serviceable.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/pass-through-terminal-block-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/pass-through-terminal-block-guide">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/pass-through-terminal-block-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/pass-through-terminal-block-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/pass-through-terminal-block-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/pass-through-terminal-block-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/pass-through-terminal-block-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Pass-Through Terminal Block: Conductor Path, Bridging and Accessories",
+      "description": "How a pass-through terminal block works: the inlet and outlet conductor path, single versus multi-level builds, jumpers and bridging, test access, and the accessories that keep a rail row serviceable.",
+      "image": "https://www.yominelectric.com/assets/images/blog/pass-through-terminal-block-guide/hero.png",
+      "datePublished": "2026-11-14",
+      "dateModified": "2026-11-14",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/pass-through-terminal-block-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a pass-through terminal block used for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It makes a fixed, testable joint in the middle of a conductor run. The conductor entering one side is permanently joined to the conductor leaving the other, so the block provides a re-terminable connection point rather than a switching or protecting function."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a pass-through and a disconnect terminal block?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A pass-through block joins the two sides permanently. A disconnect block joins them through a removable link or a sliding blade, so the circuit can be opened for test or maintenance. They look almost identical on a rail, and the difference only becomes visible when someone tries to isolate the circuit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can pass-through blocks be bridged to share one feed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A jumper across adjacent blocks makes them a common node, which is how one feed is distributed to several outgoing circuits. The first block in the bridged group then carries the total current, so it has to be sized for the sum of the circuits rather than for one circuit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which accessories does a rail row need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "End stops to stop the row sliding, end plates to close the open sides, marker strips so each position can be traced from the drawing, and jumpers or partitions depending on whether groups must share a node or be kept separate. Ordering them with the blocks is cheaper than adding them after the panel is built."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Terminal Blocks</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Pass-Through Terminal Block: Conductor Path, Bridging and Accessories</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 14, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/pass-through-terminal-block-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/pass-through-terminal-block-guide/hero.png" alt="DIN rail pass-through terminal blocks with copper inlet and outlet, arranged in a rail-mounted row" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A pass-through terminal block connects the conductor that enters one side of the body to the conductor that leaves the other. There is no switching element and no fuse inside it: the two sides are permanently joined through a metal bar, and the block exists to provide a fixed, testable, re-terminable joint in the middle of a run.</p>
+    <p>The name is often used loosely, so it is worth stating what it does not mean. A pass-through block is not a barrier strip, it is not a disconnect terminal, and it is not a multi-level block that happens to carry a conductor across. Those are three different parts with three different failure modes, and specifying the wrong one is the quiet cause of a panel that cannot be isolated for maintenance.</p>
+
+    <h2>The conductor path, and why it matters</h2>
+    <p>The defining feature is a continuous conductive path from the inlet clamp to the outlet clamp. On a
+    rail-mounted block that path is a shaped copper or brass element inside the moulding, with a screw or spring
+    clamp at each end. The conductor does not terminate at the block and restart on the other side: it passes
+    through, electrically speaking, and the block is the joint.</p>
+    <p>Two practical consequences follow. The first is that the block introduces resistance and heat into a run
+    that would otherwise be one continuous conductor, so a long chain of pass-through blocks is not electrically
+    free even though it is mechanically convenient. The second is that the joint is now a serviceable point:
+    a technician can open one side, test, and re-terminate without disturbing the rest of the run. That is the
+    real reason the part exists.</p>
+
+    <h2>Inlet and outlet are a specification item</h2>
+    <p>When a datasheet says a block has copper inlet and outlet, it is telling you the current path is metal at
+    both ends rather than relying on a plated steel screw to carry current through the body. That distinction
+    matters at higher currents and in installations where the block will run warm, because the screw is a clamping
+    element, not a conductor.</p>
+    <p>It also matters for the drawing. A block rated for a conductor range at one inlet size and a different
+    outlet size is doing real work: it lets a larger incoming feeder be reduced to a smaller outgoing conductor at
+    a defined point, with a clamp sized for each. Specifying a single wire range for both sides throws that
+    capability away and forces a separate reducer.</p>
+
+    <h2>Pass-through, barrier, disconnect and multi-level compared</h2>
+    <p>These four are the family that buyers most often substitute for one another, and the substitution usually
+    happens at the quotation stage rather than on the drawing.</p>
+    <table>
+      <thead>
+        <tr><th>Type</th><th>Conductor path</th><th>What it is for</th><th>How it fails in service</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pass-through</td><td>Permanently joined inlet to outlet</td><td>Making a fixed, testable joint in a run</td><td>Overheats when a long chain is loaded without derating</td></tr>
+        <tr><td>Barrier block</td><td>Separate terminal positions with insulating walls between them</td><td>Power distribution and field wiring rows</td><td>Pitch limits voltage; cannot be widened later</td></tr>
+        <tr><td>Disconnect</td><td>Joined, but with a removable link or a sliding blade</td><td>Isolating a circuit for test or maintenance</td><td>Link left out or left loose after maintenance</td></tr>
+        <tr><td>Multi-level</td><td>Two or three separate levels in one body</td><td>Density where panel width is short</td><td>Upper level is hard to reach and hard to inspect</td></tr>
+      </tbody>
+    </table>
+    <p>The substitution that causes most trouble is using a pass-through block where a disconnect was intended.
+    The two look almost identical on a rail, the terminal count is the same, and the difference only appears when
+    someone tries to isolate a circuit and finds there is nothing to open. If the maintenance procedure requires
+    a visible break, the part must be a disconnect, and that requirement belongs on the drawing rather than in a
+    verbal instruction.</p>
+
+    <h2>Bridging: jumpers and cross-connections</h2>
+    <p>Because a pass-through block is a joint, a row of them can be made into a common node by bridging. A
+    jumper inserted across adjacent blocks ties their inlet sides together, which is how a single feed is
+    distributed to several outgoing circuits without a separate busbar.</p>
+    <p>Bridging is convenient and it is also where current ratings quietly break. A jumper rated for the current
+    of one block is not necessarily rated for the sum of the circuits it now feeds, and the first block in a
+    bridged row carries the total. Two habits keep this honest: size the first position for the total load rather
+    than the per-circuit load, and write the bridge on the drawing so the next person to modify the panel knows
+    which positions are already commoned. An undocumented bridge is indistinguishable from a wiring error.</p>
+
+    <h2>Test access and maintainability</h2>
+    <p>A pass-through block is a natural test point, and the family has evolved parts specifically for that: test
+    terminal blocks that accept a probe or a plug through the body, and disconnect variants that open the circuit
+    for a measurement. If the commissioning procedure involves measuring at the terminal rather than at the
+    instrument, the test access should be a specified feature rather than something improvised with a probe
+    against a live screw head.</p>
+    <p>The <a href="/blog/test-terminal-block-guide">test terminal block guide</a> covers the probe-access
+    variants; the point here is that test access is a specification decision taken with the block, not an
+    accessory added afterwards.</p>
+
+    <h2>The accessories that decide whether the row is serviceable</h2>
+    <p>A rail-mounted row is a system, and the blocks are only part of it. Four accessories separate a row that
+    can be maintained from one that has to be rebuilt.</p>
+    <ul>
+      <li><strong>End stops.</strong> They stop the row sliding along the rail when a conductor is pushed in.
+      Without them the row migrates and the jumpers work loose.</li>
+      <li><strong>End plates.</strong> They close the open side of the first and last block, which is where
+      fingers and tools reach the live parts.</li>
+      <li><strong>Marker strips and terminal markers.</strong> The row is only maintainable if each position can
+      be identified from the drawing. Marker provision should be checked before the blocks are ordered, because
+      not every body accepts a marker.</li>
+      <li><strong>Jumper bars and partition plates.</strong> Jumpers make common nodes; partitions restore
+      separation between groups that must not share a node.</li>
+    </ul>
+    <p>Ordering the accessories with the blocks is cheaper than ordering them after the panel is built, and it
+    avoids the common outcome where a row is commissioned with end stops borrowed from another project.</p>
+
+    <h2>Selection checklist</h2>
+    <ul>
+      <li><strong>Function</strong> &mdash; pass-through, disconnect, test or multi-level. Decide this from the
+      maintenance procedure, not from what is in stock.</li>
+      <li><strong>Conductor range at each side</strong>, separately, if the run reduces in size at the block.</li>
+      <li><strong>Current per block</strong> and the total for the first position of any bridged group.</li>
+      <li><strong>Rail standard</strong> and the mounting depth available in the enclosure.</li>
+      <li><strong>Accessories</strong> &mdash; end stops, end plates, markers, jumpers, partitions.</li>
+      <li><strong>Marking scheme</strong>, taken from the drawing so the row can be traced in service.</li>
+    </ul>
+    <p>The rail standard and the accessory set are covered in more depth in the
+    <a href="/blog/din-rail-terminal-block-guide">DIN rail terminal block guide</a>, and the
+    <a href="/blog/terminal-blocks-connectors-identification-guide">terminal blocks identification chart</a> is a
+    faster route if you are identifying an existing row rather than specifying a new one.</p>
+
+    <h2>Sourcing the block</h2>
+    <p>YOMIN supplies DIN rail terminal blocks with copper inlet and outlet in the
+    <a href="/products/terminal-connector">terminals and connectors category</a>, listed from US$0.01 to US$0.08
+    per piece for the standard build. The body is brass with a plastic and PA housing, and the stated application
+    is secure wire and busbar connections. The
+    <a href="/products/terminal-connector/high-quality-durable-brass-plastic-and-pa-electric-copper-din-rail-terminal-block-with-copper-inlet-outlet">copper
+    inlet/outlet DIN rail block page</a> carries the listing detail.</p>
+    <p>Two adjacent builds in the same range are worth knowing about: a
+    <a href="/products/terminal-connector/self-locking-tb-series-terminal-block-made-of-durable-copper-material">self-locking
+    TB series block</a> in copper, and a
+    <a href="/products/terminal-connector/brass-plastic-pc-material-terminal-block-connector-high-quality-plastic-terminal-block">plastic-bodied
+    terminal block connector</a> for general panel work. If the row is a fixed moulded strip rather than a rail
+    system, the <a href="/blog/terminal-barrier-block-guide">terminal barrier block guide</a> covers that family.</p>
+    <p>To quote a pass-through row, send the rail standard, the pole count, the conductor range at each side, the
+    current per block and the accessory list. If any position in the row is bridged, say which, because that
+    changes the current the first position has to carry.</p>
+    
+
+    <h2>Which accessory does what</h2>
+    <p>The accessory list is short, and every item on it exists because something specific goes wrong without
+    it. This is the table to check against a quotation.</p>
+    <table>
+      <thead>
+        <tr><th>Accessory</th><th>What it prevents</th><th>Where it is fitted</th><th>What it costs to leave out</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>End stop</td><td>The row sliding along the rail when a conductor is pushed in</td><td>Both ends of the row</td><td>Jumpers work loose and positions drift out of line</td></tr>
+        <tr><td>End plate</td><td>Fingers and tools reaching the live parts at the row end</td><td>The two open ends</td><td>Live metal exposed at the most accessible point</td></tr>
+        <tr><td>Marker strip</td><td>Positions that cannot be traced back to the drawing</td><td>Every position</td><td>Maintenance turns into tracing by hand</td></tr>
+        <tr><td>Jumper bar</td><td>Repeated separate feeds to a node that is meant to be common</td><td>Across the bridged group</td><td>Extra wiring and twice the terminations</td></tr>
+        <tr><td>Partition plate</td><td>Accidental bridging between groups at different potentials</td><td>Between those groups</td><td>Clearance silently reduced below the design value</td></tr>
+      </tbody>
+    </table>
+    <p>The last row is the one that is hardest to notice, because a missing partition does not fail at
+    commissioning. It reduces the distance between two groups that the design assumed were separated, and the
+    installation keeps working until the day it does not.</p>
+
+    <h2>Frequently asked questions</h2>
+      <h3>What is a pass-through terminal block used for?</h3>
+      <p>It makes a fixed, testable joint in the middle of a conductor run. The conductor entering one side is permanently joined to the conductor leaving the other, so the block provides a re-terminable connection point rather than a switching or protecting function.</p>
+      <h3>What is the difference between a pass-through and a disconnect terminal block?</h3>
+      <p>A pass-through block joins the two sides permanently. A disconnect block joins them through a removable link or a sliding blade, so the circuit can be opened for test or maintenance. They look almost identical on a rail, and the difference only becomes visible when someone tries to isolate the circuit.</p>
+      <h3>Can pass-through blocks be bridged to share one feed?</h3>
+      <p>Yes. A jumper across adjacent blocks makes them a common node, which is how one feed is distributed to several outgoing circuits. The first block in the bridged group then carries the total current, so it has to be sized for the sum of the circuits rather than for one circuit.</p>
+      <h3>Which accessories does a rail row need?</h3>
+      <p>End stops to stop the row sliding, end plates to close the open sides, marker strips so each position can be traced from the drawing, and jumpers or partitions depending on whether groups must share a node or be kept separate. Ordering them with the blocks is cheaper than adding them after the panel is built.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Building a rail row for a control panel?</h2>
+    <p>Send the rail standard, pole count, conductor range and accessory list. We will confirm the block, the clamp style and the marking against your drawing and quote the row.</p>
+    <p style="margin-bottom:18px"><a class="btn btn-primary" href="/contact">Request a quote</a> &nbsp; <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">WhatsApp us</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/pass-through-terminal-block-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Borna de paso: recorrido del conductor y accesorios | Yomin Electric</title>
+<meta name="description" content="Cómo funciona una borna de paso: recorrido de entrada y salida, versión simple o multinivel, puenteo, acceso de prueba y los accesorios que mantienen la fila.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/pass-through-terminal-block-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/pass-through-terminal-block-guide-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/pass-through-terminal-block-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/pass-through-terminal-block-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/pass-through-terminal-block-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/pass-through-terminal-block-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/pass-through-terminal-block-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Borna de paso: recorrido del conductor, puenteo y accesorios",
+      "description": "Cómo funciona una borna de paso: recorrido de entrada y salida, versión simple o multinivel, puenteo, acceso de prueba y los accesorios que mantienen la fila.",
+      "image": "https://www.yominelectric.com/assets/images/blog/pass-through-terminal-block-guide/hero.png",
+      "datePublished": "2026-11-14",
+      "dateModified": "2026-11-14",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/pass-through-terminal-block-guide-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Para qué sirve una borna de paso?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Crea una unión fija y verificable en mitad de un circuito. El conductor que entra por un lado queda unido de forma permanente al conductor que sale por el otro, de modo que la borna ofrece un punto de conexión reconectable y no una función de corte o de protección."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la diferencia entre una borna de paso y una borna de seccionamiento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una borna de paso une los dos lados de forma permanente. Una borna de seccionamiento los une mediante un enlace desmontable o una cuchilla deslizante, de modo que el circuito puede abrirse para prueba o mantenimiento. Se parecen casi idénticas sobre un carril, y la diferencia solo se hace visible cuando alguien intenta aislar el circuito."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se pueden puentear las bornas de paso para compartir una sola alimentación?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Un puente entre bornas adyacentes las convierte en un nodo común, y así se distribuye una alimentación a varios circuitos de salida. La primera borna del grupo puenteado pasa entonces a soportar la corriente total, por lo que debe dimensionarse para la suma de los circuitos y no para un solo circuito."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué accesorios necesita una fila sobre carril?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Topes finales para evitar que la fila se desplace, placas finales para cerrar los lados abiertos, tiras de marcado para que cada posición pueda rastrearse desde el plano, y puentes o separadores según si los grupos deben compartir un nodo o mantenerse separados. Pedirlos junto con las bornas sale más barato que añadirlos después de construir el cuadro."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Bornes y conectores</span></div>
+    <span class="bh-tag">Guías de compra</span>
+    <h1 class="bh-title">Borna de paso: recorrido del conductor, puenteo y accesorios</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">Equipo técnico ET</strong>
+      <span class="divider"></span>
+      <span>14 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>9 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/pass-through-terminal-block-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/pass-through-terminal-block-guide/hero.png" alt="Bornas de paso para carril DIN con entrada y salida de cobre, dispuestas en una fila montada sobre carril" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Una borna de paso conecta el conductor que entra por un lado del cuerpo con el conductor que sale por el otro. No contiene ningún elemento de corte ni fusible: los dos lados están unidos de forma permanente mediante una barra metálica, y la borna existe para ofrecer una unión fija, verificable y reconectable en mitad de un circuito.</p>
+    <p>El nombre se usa a menudo con poco rigor, así que conviene aclarar qué no significa. Una borna de paso no es un bloque de barrera, no es una borna de seccionamiento y no es una borna multinivel que resulta que conduce un cable de un lado al otro. Son tres piezas distintas con tres modos de fallo distintos, y especificar la equivocada es la causa silenciosa de un cuadro que no se puede aislar para mantenimiento.</p>
+
+    <h2>El recorrido del conductor y por qué importa</h2>
+    <p>El rasgo que la define es un recorrido conductor continuo desde el borne de entrada hasta el borne de salida. En
+    una borna montada sobre carril, ese recorrido es un elemento conformado de cobre o latón dentro de la pieza moldeada,
+    con un apriete por tornillo o por resorte en cada extremo. El conductor no termina en la borna y vuelve a empezar al
+    otro lado: la atraviesa, eléctricamente hablando, y la borna es la unión.</p>
+    <p>De ahí se derivan dos consecuencias prácticas. La primera es que la borna introduce resistencia y calor en un
+    circuito que, de otro modo, sería un solo conductor continuo, así que una cadena larga de bornas de paso no es
+    eléctricamente neutra aunque resulte cómoda desde el punto de vista mecánico. La segunda es que la unión pasa a ser un
+    punto mantenible: un técnico puede abrir un lado, medir y volver a conectar sin alterar el resto del circuito. Esa es
+    la verdadera razón de ser de la pieza.</p>
+
+    <h2>Entrada y salida son un dato de especificación</h2>
+    <p>Cuando una ficha técnica indica que una borna tiene entrada y salida de cobre, le está diciendo que el camino de
+    la corriente es metálico en ambos extremos en lugar de depender de un tornillo de acero chapado para conducir la
+    corriente a través del cuerpo. Esa diferencia importa con corrientes altas y en instalaciones donde la borna
+    trabajará caliente, porque el tornillo es un elemento de apriete, no un conductor.</p>
+    <p>También importa para el plano. Una borna prevista para un rango de conductores con un tamaño de entrada y otro de
+    salida hace un trabajo real: permite reducir una alimentación entrante mayor a un conductor de salida menor en un
+    punto definido, con un borne de apriete dimensionado para cada uno. Especificar un solo rango de cable para ambos
+    lados desaprovecha esa capacidad y obliga a usar un reductor aparte.</p>
+
+    <h2>Paso, barrera, seccionamiento y multinivel: comparación</h2>
+    <p>Estas cuatro son las familias que los compradores sustituyen más a menudo entre sí, y la sustitución suele
+    producirse en la fase de cotización más que en el plano.</p>
+    <table>
+      <thead>
+        <tr><th>Tipo</th><th>Recorrido del conductor</th><th>Para qué sirve</th><th>Cómo falla en servicio</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Paso</td><td>Entrada y salida unidas de forma permanente</td><td>Crear una unión fija y verificable en un circuito</td><td>Se sobrecalienta cuando se carga una cadena larga sin derrateo</td></tr>
+        <tr><td>Barrera</td><td>Posiciones de borne separadas por paredes aislantes</td><td>Distribución de potencia y filas de cableado de campo</td><td>El paso limita la tensión; no se puede ampliar después</td></tr>
+        <tr><td>Seccionamiento</td><td>Unidas, pero con un enlace desmontable o una cuchilla deslizante</td><td>Aislar un circuito para prueba o mantenimiento</td><td>Enlace omitido o dejado flojo tras el mantenimiento</td></tr>
+        <tr><td>Multinivel</td><td>Dos o tres niveles separados en un mismo cuerpo</td><td>Densidad cuando falta anchura de cuadro</td><td>El nivel superior es difícil de alcanzar y de inspeccionar</td></tr>
+      </tbody>
+    </table>
+    <p>La sustitución que más problemas causa es usar una borna de paso donde se pretendía un seccionamiento. Las dos
+    se parecen casi idénticas sobre un carril, el número de bornas es el mismo, y la diferencia solo aparece cuando
+    alguien intenta aislar un circuito y descubre que no hay nada que abrir. Si el procedimiento de mantenimiento exige
+    un corte visible, la pieza tiene que ser un seccionamiento, y ese requisito debe estar en el plano y no en una
+    instrucción verbal.</p>
+
+    <h2>Puenteo: peines y conexiones cruzadas</h2>
+    <p>Como la borna de paso es una unión, una fila de ellas puede convertirse en un nodo común mediante puenteo. Un
+    puente insertado entre bornas adyacentes une sus lados de entrada, y así una sola alimentación se distribuye a varios
+    circuitos de salida sin necesidad de una barra colectora aparte.</p>
+    <p>El puenteo es cómodo y también es donde las intensidades nominales se rompen sin hacer ruido. Un puente previsto
+    para la corriente de una borna no está necesariamente previsto para la suma de los circuitos que ahora alimenta, y la
+    primera borna de una fila puenteada soporta el total. Dos costumbres mantienen esto honesto: dimensionar la primera
+    posición para la carga total y no para la carga por circuito, y dibujar el puente en el plano para que quien modifique
+    el cuadro después sepa qué posiciones ya están unidas. Un puente sin documentar es indistinguible de un error de
+    cableado.</p>
+
+    <h2>Acceso de prueba y mantenibilidad</h2>
+    <p>Una borna de paso es un punto de medida natural, y la familia ha desarrollado piezas específicas para ello: bornas
+    de prueba que admiten una punta o un conector a través del cuerpo, y variantes de seccionamiento que abren el circuito
+    para una medición. Si el procedimiento de puesta en marcha implica medir en la borna y no en el instrumento, el acceso
+    de prueba debe ser una característica especificada y no algo improvisado con una punta contra una cabeza de tornillo
+    en tensión.</p>
+    <p>La <a href="/blog/test-terminal-block-guide">guía de bornas de prueba</a> cubre las variantes de acceso con punta;
+    lo que importa aquí es que el acceso de prueba es una decisión de especificación que se toma con la borna, no un
+    accesorio añadido después.</p>
+
+    <h2>Los accesorios que deciden si la fila es mantenible</h2>
+    <p>Una fila montada sobre carril es un sistema, y las bornas son solo una parte. Cuatro accesorios separan una fila
+    que se puede mantener de otra que hay que rehacer.</p>
+    <ul>
+      <li><strong>Topes finales.</strong> Evitan que la fila se desplace a lo largo del carril cuando se empuja un
+      conductor. Sin ellos la fila se corre y los puentes se aflojan.</li>
+      <li><strong>Placas finales.</strong> Cierran el lado abierto de la primera y de la última borna, que es donde los
+      dedos y las herramientas alcanzan las partes en tensión.</li>
+      <li><strong>Tiras de marcado y marcadores de bornas.</strong> La fila solo es mantenible si cada posición puede
+      identificarse desde el plano. La capacidad de marcado debe comprobarse antes de pedir las bornas, porque no todos
+      los cuerpos admiten un marcador.</li>
+      <li><strong>Peines de puenteo y placas separadoras.</strong> Los peines crean los nodos comunes; las separadoras
+      restablecen la separación entre grupos que no deben compartir un nodo.</li>
+    </ul>
+    <p>Pedir los accesorios junto con las bornas sale más barato que pedirlos después de construir el cuadro, y evita el
+    resultado habitual de una fila puesta en servicio con topes prestados de otro proyecto.</p>
+
+    <h2>Lista de comprobación para la selección</h2>
+    <ul>
+      <li><strong>Función</strong> &mdash; paso, seccionamiento, prueba o multinivel. Decídala a partir del procedimiento
+      de mantenimiento, no de lo que haya en existencias.</li>
+      <li><strong>Rango de conductores en cada lado</strong>, por separado, si el circuito reduce su sección en la borna.</li>
+      <li><strong>Corriente por borna</strong> y total para la primera posición de cualquier grupo puenteado.</li>
+      <li><strong>Norma del carril</strong> y profundidad de montaje disponible en el cuadro.</li>
+      <li><strong>Accesorios</strong> &mdash; topes finales, placas finales, marcadores, puentes, separadores.</li>
+      <li><strong>Esquema de marcado</strong>, tomado del plano para que la fila pueda rastrearse en servicio.</li>
+    </ul>
+    <p>La norma del carril y el conjunto de accesorios se tratan con más detalle en la
+    <a href="/blog/din-rail-terminal-block-guide">guía de bornas para carril DIN</a>, y el
+    <a href="/blog/terminal-blocks-connectors-identification-guide">cuadro de identificación de bornas</a> es una vía más
+    rápida si está identificando una fila existente en lugar de especificar una nueva.</p>
+
+    <h2>Comprar la borna</h2>
+    <p>YOMIN suministra bornas para carril DIN con entrada y salida de cobre en la
+    <a href="/products/terminal-connector">categoría de bornes y conectores</a>, con precios de US$0.01 a US$0.08
+    por pieza para la versión estándar. El cuerpo es de latón con carcasa de plástico y PA, y la aplicación indicada son
+    las conexiones seguras de cables y barras colectoras. La
+    <a href="/products/terminal-connector/high-quality-durable-brass-plastic-and-pa-electric-copper-din-rail-terminal-block-with-copper-inlet-outlet">página
+    de la borna para carril DIN con entrada y salida de cobre</a> recoge el detalle de la oferta.</p>
+    <p>Merece la pena conocer dos versiones vecinas de la misma gama: una
+    <a href="/products/terminal-connector/self-locking-tb-series-terminal-block-made-of-durable-copper-material">borna
+    de la serie TB con autobloqueo</a> en cobre, y un
+    <a href="/products/terminal-connector/brass-plastic-pc-material-terminal-block-connector-high-quality-plastic-terminal-block">conector
+    de borna con cuerpo de plástico</a> para trabajos generales de cuadro. Si la fila es una regleta moldeada fija en
+    lugar de un sistema sobre carril, la <a href="/blog/terminal-barrier-block-guide">guía de bornas de barrera</a> cubre
+    esa familia.</p>
+    <p>Para cotizar una fila de paso, envíe la norma del carril, el número de polos, el rango de conductores en cada
+    lado, la corriente por borna y la lista de accesorios. Si alguna posición de la fila está puenteada, dígalo, porque
+    eso cambia la corriente que debe soportar la primera posición.</p>
+    
+
+    <h2>Qué hace cada accesorio</h2>
+    <p>La lista de accesorios es corta, y cada elemento está en ella porque sin él ocurre un fallo concreto.
+    Esta es la tabla que conviene contrastar con una cotización.</p>
+    <table>
+      <thead>
+        <tr><th>Accesorio</th><th>Qué evita</th><th>Dónde se monta</th><th>Qué cuesta omitirlo</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Tope final</td><td>Que la hilera se deslice por el carril al empujar un conductor</td><td>En ambos extremos de la hilera</td><td>Las peinetas se aflojan y las posiciones se desalinean</td></tr>
+        <tr><td>Placa final</td><td>Que dedos y herramientas alcancen las partes activas del extremo</td><td>En los dos extremos abiertos</td><td>Metal bajo tensión expuesto en el punto más accesible</td></tr>
+        <tr><td>Banda de marcado</td><td>Posiciones que no se pueden remontar al plano</td><td>En cada posición</td><td>El mantenimiento se convierte en un rastreo manual</td></tr>
+        <tr><td>Peine de puenteo</td><td>Multiplicar alimentaciones separadas a un nodo que debe ser común</td><td>Sobre el grupo puenteado</td><td>Cableado adicional y el doble de conexiones</td></tr>
+        <tr><td>Placa separadora</td><td>El puenteo accidental entre grupos a potenciales distintos</td><td>Entre esos grupos</td><td>Distancia de aislamiento reducida en silencio por debajo del valor de diseño</td></tr>
+      </tbody>
+    </table>
+    <p>La última fila es la más difícil de advertir, porque un separador ausente no falla en la puesta en marcha.
+    Reduce la distancia entre dos grupos que el diseño suponía separados, y la instalación sigue funcionando
+    hasta el día en que deja de hacerlo.</p>
+
+    <h2>Preguntas frecuentes</h2>
+      <h3>¿Para qué sirve una borna de paso?</h3>
+      <p>Crea una unión fija y verificable en mitad de un circuito. El conductor que entra por un lado queda unido de forma permanente al conductor que sale por el otro, de modo que la borna ofrece un punto de conexión reconectable y no una función de corte o de protección.</p>
+      <h3>¿Cuál es la diferencia entre una borna de paso y una borna de seccionamiento?</h3>
+      <p>Una borna de paso une los dos lados de forma permanente. Una borna de seccionamiento los une mediante un enlace desmontable o una cuchilla deslizante, de modo que el circuito puede abrirse para prueba o mantenimiento. Se parecen casi idénticas sobre un carril, y la diferencia solo se hace visible cuando alguien intenta aislar el circuito.</p>
+      <h3>¿Se pueden puentear las bornas de paso para compartir una sola alimentación?</h3>
+      <p>Sí. Un puente entre bornas adyacentes las convierte en un nodo común, y así se distribuye una alimentación a varios circuitos de salida. La primera borna del grupo puenteado pasa entonces a soportar la corriente total, por lo que debe dimensionarse para la suma de los circuitos y no para un solo circuito.</p>
+      <h3>¿Qué accesorios necesita una fila sobre carril?</h3>
+      <p>Topes finales para evitar que la fila se desplace, placas finales para cerrar los lados abiertos, tiras de marcado para que cada posición pueda rastrearse desde el plano, y puentes o separadores según si los grupos deben compartir un nodo o mantenerse separados. Pedirlos junto con las bornas sale más barato que añadirlos después de construir el cuadro.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Está montando una fila en carril para un cuadro de control?</h2>
+    <p>Envíenos la norma del carril, el número de polos, el rango de conductores y la lista de accesorios. Confirmaremos la borna, el tipo de apriete y el marcado contra su plano y cotizaremos la fila.</p>
+    <p style="margin-bottom:18px"><a class="btn btn-primary" href="/contact">Solicitar cotización</a> &nbsp; <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
