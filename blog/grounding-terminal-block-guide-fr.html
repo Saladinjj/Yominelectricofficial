@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/grounding-terminal-block-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Borne de terre : chemin du conducteur PE et résistance de contact | Yomin Electric</title>
+<meta name="description" content="Comment une borne de terre relie le conducteur de protection au rail DIN, pourquoi son pied métallique n'est pas celui d'une borne de passage verte, et comment garder l'impédance de boucle mesurable.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/grounding-terminal-block-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/grounding-terminal-block-guide-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/grounding-terminal-block-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/grounding-terminal-block-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/grounding-terminal-block-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/grounding-terminal-block-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/grounding-terminal-block-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Borne de terre : chemin du conducteur PE et résistance de contact | Yomin Electric",
+      "description": "Comment une borne de terre relie le conducteur de protection au rail DIN, pourquoi son pied métallique n'est pas celui d'une borne de passage verte, et comment garder l'impédance de boucle mesurable.",
+      "image": "https://www.yominelectric.com/assets/images/blog/grounding-terminal-block-guide/hero.png",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/grounding-terminal-block-guide-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Peut-on utiliser une borne de passage verte comme borne de terre ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non, pas seule. Une borne de passage est isolée du rail DIN : le conducteur qui y aboutit n'est donc pas relié à la terre. Utilisez une borne de conducteur de protection à pied métallique, ou ajoutez une liaison explicite entre la borne et la barre de terre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le rail DIN lui-même fait-il office de conducteur de protection ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il peut servir de barre PE à l'intérieur d'une armoire, mais uniquement s'il est lié en continu sur toute sa longueur et relié à l'enveloppe et à la barre de terre principale. Un rail sur entretoises plastiques ou un rail peint n'est qu'une surface de montage, pas un chemin de terre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment vérifier qu'une borne de terre est réellement connectée ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Utilisez un ohmmètre à faible résistance entre le conducteur de protection entrant et une partie métallique nue de l'armoire, puis répétez la mesure de part et d'autre des jonctions de rail. Un multimètre classique n'a pas la résolution nécessaire pour attester d'une liaison de faible résistance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Deux conducteurs de protection peuvent-ils partager une borne de terre ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Uniquement si la borne est conçue et qualifiée pour deux conducteurs. Par défaut, chaque conducteur de protection dispose de sa propre borne, car une pince partagée n'offre aucune assurance indépendante sur la fixation de chacun."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Bornes et connecteurs</span></div>
+    <span class="bh-tag">Guides d'achat</span>
+    <h1 class="bh-title">Borne de terre : le chemin du conducteur PE jusqu'au rail</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">Équipe technique ET</strong>
+      <span class="divider"></span>
+      <span>15 novembre 2026</span>
+      <span class="divider"></span>
+      <span>9 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/grounding-terminal-block-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/grounding-terminal-block-guide/hero.png" alt="Bornes de terre YOMIN sur rail DIN et barres de liaison aluminium pour neutre et terre dans une armoire électrique" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Une borne de terre n'est pas une borne de passage peinte en vert. Son pied de fixation est métallique et vient s'agripper directement au rail DIN : le rail devient lui-même la barre de protection de l'armoire. C'est ce choix de conception qui rend la borne utile, et c'est aussi ce qui permet de l'installer d'une manière qui semble correcte, qui passe un contrôle visuel, et qui laisse néanmoins un chemin résistif entre une enveloppe métallique et la barre de terre.</p>
+
+    <p>Ce guide décrit ce qui distingue une borne de conducteur de protection du reste du rail, comment le chemin de défaut est réellement établi, et les quelques vérifications qui révèlent les erreurs les plus fréquentes en mise en service.</p>
+
+    <h2>Ce qui distingue une borne de terre d'une borne de passage</h2>
+    <p>Placez une borne de passage standard et une borne PE côte à côte : toutes les différences se situent à la base du boîtier.</p>
+    <ul>
+      <li><strong>Le pied est conducteur et élastique.</strong> Une borne de passage repose sur un pied isolant ou porte une languette isolante précisément pour ne <em>pas</em> se connecter au rail. Une borne PE fait l'inverse : son pied métallique mord dans le rail et établit un contact permanent de faible résistance.</li>
+      <li><strong>Le chemin de courant est court et large.</strong> Dans une borne de passage, le courant va de borne à borne. Dans une borne PE, il va du conducteur au rail, et la section de ce chemin doit supporter un courant de défaut, pas seulement un courant de signal.</li>
+      <li><strong>Le repérage est obligatoire.</strong> Le vert et jaune est réservé aux conducteurs de protection. L'utiliser sur une borne de neutre ou de phase constitue un défaut, pas une préférence.</li>
+      <li><strong>La norme de produit diffère.</strong> Les bornes de conducteur de protection relèvent de leur propre partie de la norme des bornes et non des exigences générales. Notre <a href="/blog/iec-60947-7-1-explained">explication de l'IEC 60947-7-1</a> couvre la famille générale ; la variante PE ajoute les exigences de contact au rail et de tenue au courant.</li>
+    </ul>
+
+    <h2>Le rail est la barre PE : traitez-le comme telle</h2>
+    <p>Dès qu'une borne PE est installée, le rail DIN cesse d'être un accessoire de montage pour devenir une partie du système de mise à la terre. Trois conséquences en découlent.</p>
+    <p>Premièrement, le rail doit être continuellement lié sur toute sa longueur. Un rail composé de deux tronçons réunis par un éclisse plastique, ou deux rails dans deux sections d'armoire voisines sans pont de liaison, donnent deux systèmes de terre distincts qui partagent simplement un code de couleur.</p>
+    <p>Deuxièmement, le rail doit être relié à l'enveloppe et à la barre de terre principale. Si le rail est monté sur entretoises plastiques, peint, ou posé sur aluminium anodisé, le contact n'existe pas, quelle que soit la sensation de serrage.</p>
+    <p>Troisièmement, le rail doit être dimensionné pour le courant de défaut, et non pour le poids des bornes qu'il porte. Un rail mince supportant une longue rangée de bornes PE est un point faible courant dans des armoires par ailleurs bien construites.</p>
+
+    <h2>Bornes de terre, de passage et à barrière : comparaison</h2>
+    <table>
+      <thead>
+        <tr><th>Propriété</th><th>Borne de terre (PE)</th><th>Borne de passage</th><th>Borne à barrière</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Liaison au rail DIN</td><td>Pied métallique, contact direct</td><td>Isolée, aucun contact</td><td>Généralement sur panneau ou circuit imprimé</td></tr>
+        <tr><td>Fonction</td><td>Lier un conducteur au rail</td><td>Faire traverser un conducteur dans un circuit</td><td>Séparer des circuits adjacents</td></tr>
+        <tr><td>Code de couleur</td><td>Vert et jaune uniquement</td><td>Gris, bleu ou couleur fonctionnelle</td><td>Toute couleur fonctionnelle</td></tr>
+        <tr><td>Véhicule le courant de défaut</td><td>Oui, par conception</td><td>Non</td><td>Non</td></tr>
+        <tr><td>Position typique</td><td>Une par conducteur de protection, ou une rangée PE</td><td>Tout au long du circuit</td><td>Interface et câblage terrain</td></tr>
+        <tr><td>Mode de défaillance principal</td><td>Rail non relié, ou rail peint</td><td>Mauvaise couleur, vis desserrée</td><td>Barrière retirée pour faciliter le câblage</td></tr>
+      </tbody>
+    </table>
+    <p>Cette comparaison explique une confusion présente dans presque toutes les revues d'armoire : une borne de passage verte ressemble à une borne PE et se câble comme telle, mais elle ne touche pas le rail ; chaque conducteur qui y aboutit est donc flottant par rapport à la terre jusqu'à ce que quelqu'un ajoute une liaison séparée.</p>
+
+    <h2>Résistance de contact et impédance de boucle</h2>
+    <p>Un conducteur de protection ne vaut que par son plus mauvais serrage. Une borne PE ajoute deux jonctions au chemin &mdash; conducteur sur pince, pince sur rail &mdash; et les deux sont mesurables.</p>
+    <ul>
+      <li><strong>Mesurez, ne supposez pas.</strong> Un ohmmètre à faible résistance entre le conducteur de protection entrant et la masse métallique de l'armoire indique si le chemin existe réellement. Un multimètre sur calibre résistance n'offre pas la résolution nécessaire.</li>
+      <li><strong>Contrôlez d'abord la jonction de rail.</strong> Sur une installation suspecte, la valeur la plus élevée se situe presque toujours à une éclisse de rail ou à l'endroit où le rail est fixé sur une tôle peinte.</li>
+      <li><strong>Nettoyez la zone de contact.</strong> Peinture, poudre, anodisation et oxydation isolent. Masquer la zone de contact du rail avant peinture coûte moins cher que de découvrir le problème en mise en service.</li>
+      <li><strong>Serrez au couple prescrit.</strong> Une pince sous-serée chauffe sous courant de défaut ; une pince sur-serée endommage le filetage et la connexion se desserre ensuite. Suivez le tableau du fabricant plutôt que la sensation.</li>
+    </ul>
+    <p>La mesure d'impédance de boucle confirme ensuite le chemin complet, de l'alimentation au défaut puis au retour. Ce test ne peut pas compenser une borne PE qui n'a jamais touché le rail, ce qui justifie de mener les deux contrôles ensemble.</p>
+
+    <h2>Vérification adiabatique du conducteur de protection</h2>
+    <p>Les conducteurs de protection se dimensionnent par l'énergie de défaut et non par le courant de charge, car ils ne véhiculent du courant que pendant l'élimination du défaut. La relation normalisée est l'équation adiabatique :</p>
+    <p><strong>S = &radic;(I&sup2;t) &divide; k</strong></p>
+    <p>où S est la section nécessaire, I&sup2;t l'énergie de défaut laissée passer par le dispositif de protection et k un coefficient dépendant du matériau et de l'isolant du conducteur. Les valeurs tabulées figurent dans la norme d'installation, pas sur la fiche technique d'une borne : le dimensionnement relève donc du concepteur du tableau. Le rôle de la borne est de ne pas devenir le goulot d'étranglement ; une borne PE prévue pour une section inférieure à celle du conducteur de protection qu'on lui confie est une erreur de spécification, même si le conducteur y entre.</p>
+
+    <h2>Couleur, repérage et le piège du PEN</h2>
+    <p>Le vert et jaune signifie conducteur de protection, et rien d'autre. Deux règles associées interceptent la plupart des erreurs restantes.</p>
+    <p>Un conducteur à la fois protecteur et neutre &mdash; un PEN &mdash; n'est pas un PE. Il véhicule le courant d'exploitation, donc il est soumis à des sections minimales qu'une petite borne PE ne peut satisfaire, et il n'est pas admis en aval du point où l'installation se sépare en PE et N. Aboutir un PEN sur une borne verte et jaune est une erreur de câblage, quel que soit l'étiquetage de l'armoire.</p>
+    <p>Un conducteur de protection par borne constitue la règle par défaut. Réunir deux conducteurs dans une même pince PE n'est acceptable que si la borne est explicitement conçue et qualifiée pour cela, et le second conducteur doit rester fixé de manière indépendante.</p>
+
+    <h2>Défauts d'installation qui font échouer un contrôle</h2>
+    <ul>
+      <li><strong>Bornes de passage vertes utilisées comme PE.</strong> Le défaut le plus fréquent, et invisible une fois le capot en place.</li>
+      <li><strong>Rail non relié à l'enveloppe.</strong> Toutes les bornes PE du rail deviennent alors décoratives.</li>
+      <li><strong>Rangée PE interrompue par une butée isolante ou une entretoise plastique</strong> ajoutée pour aligner la rangée.</li>
+      <li><strong>Métaux mélangés sans réflexion.</strong> Conducteur cuivre dans une borne aluminium, ou rail aluminium en ambiance humide : la jonction doit tenir compte du couple galvanique, pas seulement du serrage.</li>
+      <li><strong>Barres de neutre et de terre réunies en aval</strong> du point de séparation, ce qui crée des chemins de retour parallèles et un courant résiduel indésirable.</li>
+      <li><strong>Aucune borne PE de réserve.</strong> Une rangée construite exactement selon le schéma n'a plus de place pour le câble suivant, et le câble suivant arrive toujours.</li>
+    </ul>
+
+    <h2>Matériel YOMIN pour la distribution du conducteur de protection</h2>
+    <table>
+      <thead>
+        <tr><th>Article</th><th>Construction</th><th>Rôle dans le système PE</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="/products/terminal-connector/high-quality-durable-brass-plastic-and-pa-electric-copper-din-rail-terminal-block-with-copper-inlet-outlet">Borne sur rail DIN</a></td><td>Contact laiton, corps PA, entrée et sortie cuivre</td><td>Rangée de raccordement sur rail où se placent les bornes PE</td></tr>
+        <tr><td><a href="/products/terminal-connector/customizable-aluminium-screw-terminal-neutral-ground-bars-link-lug-terminal-block-connector">Barre de liaison neutre et terre aluminium</a></td><td>Aluminium, borne à vis, cosse de liaison</td><td>Barre collectrice regroupant plusieurs conducteurs de protection en un point</td></tr>
+        <tr><td><a href="/products/terminal-connector/din-rail-bus-bar-terminals-blocks">Bornes à barre omnibus sur rail DIN</a></td><td>Bornes à barre sur rail</td><td>Distribution le long du rail quand une borne PE unique ne suffit pas</td></tr>
+      </tbody>
+    </table>
+    <p>L'ensemble de la gamme de connecteurs figure sur la page <a href="/products/terminal-connector">bornes et connecteurs</a>. Pour la partie mécanique d'une rangée &mdash; pas, butées et peignes &mdash; voir le <a href="/blog/din-rail-terminal-block-guide">guide des bornes sur rail DIN</a>, et pour l'ordre de câblage, <a href="/blog/din-rail-terminal-block-wiring-how-to">le câblage des bornes sur rail DIN</a>.</p>
+
+    <h2>Ce qu'il faut indiquer dans la demande de prix</h2>
+    <ul>
+      <li><strong>Plage de sections</strong> en mm&sup2;, y compris le plus gros conducteur de protection que la rangée doit recevoir.</li>
+      <li><strong>Type de rail</strong> &mdash; chapeau 35&nbsp;mm ou autre profil &mdash; et matière du rail : acier, aluminium ou cuivre.</li>
+      <li><strong>Nombre de voies PE</strong> plus la réserve exigée par votre standard.</li>
+      <li><strong>Courant de défaut et temps d'élimination</strong> que la rangée doit supporter, s'ils ont été calculés.</li>
+      <li><strong>Couleur et repérage</strong>, et besoin éventuel d'étiquetage ou d'impression.</li>
+      <li><strong>Environnement</strong> &mdash; armoire intérieure, local technique humide ou coffret extérieur avec condensation.</li>
+    </ul>
+
+    <h2>Questions fréquentes</h2>
+    <!--FAQ-->
+    <h3>Peut-on utiliser une borne de passage verte comme borne de terre ?</h3>
+    <p>Non, pas seule. Une borne de passage est isolée du rail DIN : le conducteur qui y aboutit n'est donc pas relié à la terre. Utilisez une borne de conducteur de protection à pied métallique, ou ajoutez une liaison explicite entre la borne et la barre de terre.</p>
+    <h3>Le rail DIN lui-même fait-il office de conducteur de protection ?</h3>
+    <p>Il peut servir de barre PE à l'intérieur d'une armoire, mais uniquement s'il est lié en continu sur toute sa longueur et relié à l'enveloppe et à la barre de terre principale. Un rail sur entretoises plastiques ou un rail peint n'est qu'une surface de montage, pas un chemin de terre.</p>
+    <h3>Comment vérifier qu'une borne de terre est réellement connectée ?</h3>
+    <p>Utilisez un ohmmètre à faible résistance entre le conducteur de protection entrant et une partie métallique nue de l'armoire, puis répétez la mesure de part et d'autre des jonctions de rail. Un multimètre classique n'a pas la résolution nécessaire pour attester d'une liaison de faible résistance.</p>
+    <h3>Deux conducteurs de protection peuvent-ils partager une borne de terre ?</h3>
+    <p>Uniquement si la borne est conçue et qualifiée pour deux conducteurs. Par défaut, chaque conducteur de protection dispose de sa propre borne, car une pince partagée n'offre aucune assurance indépendante sur la fixation de chacun.</p>
+    <!--/FAQ-->
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous constituez une rangée PE pour une armoire ?</h2>
+    <p>Indiquez la plage de sections, le profil de rail, le nombre de voies et l'environnement. Nous confirmerons le corps de borne et la configuration de barre adaptés, plutôt que de vous laisser deviner le contact au rail.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

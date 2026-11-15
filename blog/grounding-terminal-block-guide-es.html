@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/grounding-terminal-block-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Borra de tierra: camino del conductor PE y resistencia de contacto | Yomin Electric</title>
+<meta name="description" content="Cómo una bornera de tierra une el conductor de protección al carril DIN, por qué su pie metálico no es el de una bornera de paso verde, y cómo mantener medible la impedancia de bucle.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/grounding-terminal-block-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/grounding-terminal-block-guide-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/grounding-terminal-block-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/grounding-terminal-block-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/grounding-terminal-block-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/grounding-terminal-block-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/grounding-terminal-block-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Borra de tierra: camino del conductor PE y resistencia de contacto | Yomin Electric",
+      "description": "Cómo una bornera de tierra une el conductor de protección al carril DIN, por qué su pie metálico no es el de una bornera de paso verde, y cómo mantener medible la impedancia de bucle.",
+      "image": "https://www.yominelectric.com/assets/images/blog/grounding-terminal-block-guide/hero.png",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/grounding-terminal-block-guide-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Se puede usar una bornera de paso verde como bornera de tierra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No por sí sola. Una bornera de paso está aislada del carril DIN, así que el conductor que termina en ella no queda unido a tierra. Use una bornera de conductor de protección con pie metálico o añada una unión explícita entre la bornera y la barra de tierra."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El propio carril DIN sirve como conductor de protección?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puede hacer de barra PE dentro de un cuadro, pero solo si está unido de forma continua en toda su longitud y unido a la envolvente y a la barra de tierra principal. Un carril sobre separadores de plástico o un carril pintado es una superficie de montaje, no un camino de tierra."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo compruebo que una bornera de tierra está realmente conectada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Con un óhmetro de baja resistencia entre el conductor de protección entrante y una parte metálica limpia del cuadro, repitiendo la medida a ambos lados de los empalmes de carril. Un multímetro convencional no tiene resolución suficiente para demostrar una unión de baja resistencia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Pueden dos conductores de protección compartir una bornera de tierra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Solo si la bornera está diseñada y cualificada para dos conductores. Por defecto, cada conductor de protección lleva su propia bornera, porque una pinza compartida no da ninguna garantía independiente sobre la fijación de cada uno."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Inicio</a> &middot; <a href="/blog">Blog</a> &middot; <span>Borneras y conectores</span></div>
+    <span class="bh-tag">Guías de compra</span>
+    <h1 class="bh-title">Bornera de tierra: el camino del conductor PE hasta el carril</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">Equipo técnico ET</strong>
+      <span class="divider"></span>
+      <span>15 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>9 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/grounding-terminal-block-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/grounding-terminal-block-guide/hero.png" alt="Borneras de tierra YOMIN sobre carril DIN junto a barras de enlace de aluminio para neutro y tierra en un cuadro eléctrico" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Una bornera de tierra no es una bornera de paso pintada de verde. Su pie de montaje es metálico y se agarra directamente al carril DIN, de modo que el propio carril se convierte en la barra de protección del cuadro. Esa decisión de diseño es lo que hace útil la pieza, y también lo que permite instalarla de una forma que parece correcta, que pasa una inspección visual y que aun así deja un camino resistivo entre la envolvente metálica y la barra de tierra.</p>
+
+    <p>Esta guía cubre qué distingue una bornera de conductor de protección del resto del carril, cómo se completa realmente el camino de falta y las pocas comprobaciones que descubren los errores habituales en la puesta en marcha.</p>
+
+    <h2>Qué distingue una bornera de tierra de una de paso</h2>
+    <p>Ponga una bornera de paso estándar y una bornera PE una al lado de la otra: todas las diferencias están en la base del cuerpo.</p>
+    <ul>
+      <li><strong>El pie es conductor y elástico.</strong> Una bornera de paso se apoya en un pie aislante o lleva una lengüeta aislante precisamente para <em>no</em> conectarse al carril. Una bornera PE hace lo contrario: su pie metálico muerde el carril y crea un contacto permanente de baja resistencia.</li>
+      <li><strong>El camino de corriente es corto y ancho.</strong> En una bornera de paso el recorrido va de borne a borne. En una PE va del conductor al carril, y la sección de ese camino debe soportar corriente de falta, no solo corriente de señal.</li>
+      <li><strong>El marcado es obligatorio.</strong> El verde y amarillo está reservado a los conductores de protección. Usarlo en un borne de neutro o de fase es un defecto, no una preferencia.</li>
+      <li><strong>La norma de producto es distinta.</strong> Las borneras de conductor de protección se cubren en su propia parte de la norma de borneras y no en los requisitos generales. Nuestra <a href="/blog/iec-60947-7-1-explained">explicación de la IEC 60947-7-1</a> cubre la familia general; la variante PE añade los requisitos de contacto con el carril y de transporte de corriente.</li>
+    </ul>
+
+    <h2>El carril es la barra PE: trátelo como tal</h2>
+    <p>En el momento en que se instala una bornera PE, el carril DIN deja de ser un accesorio de montaje y pasa a formar parte del sistema de puesta a tierra. De ahí se derivan tres consecuencias.</p>
+    <p>Primero, el carril debe estar unido de forma continua en toda su longitud. Un carril formado por dos tramos unidos con un empalme de plástico, o dos carriles en cuadros contiguos sin puente de unión, dan dos sistemas de tierra distintos que casualmente comparten código de color.</p>
+    <p>Segundo, el carril debe estar unido a la envolvente y a la barra de tierra principal. Si el carril va sobre separadores de plástico, está pintado o se apoya en aluminio anodizado, el contacto no existe por mucho que los tornillos parezcan apretados.</p>
+    <p>Tercero, el carril debe dimensionarse para la corriente de falta, no para el peso de las borneras que soporta. Un carril delgado bajo una fila larga de borneras PE es un punto débil habitual en cuadros por lo demás bien construidos.</p>
+
+    <h2>Borneras de tierra, de paso y de barrera: comparación</h2>
+    <table>
+      <thead>
+        <tr><th>Propiedad</th><th>Bornera de tierra (PE)</th><th>Bornera de paso</th><th>Bornera de barrera</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Unión al carril DIN</td><td>Pie metálico, contacto directo</td><td>Aislada, sin contacto</td><td>Normalmente sobre panel o circuito impreso</td></tr>
+        <tr><td>Función</td><td>Unir un conductor al carril</td><td>Pasar un conductor por un circuito</td><td>Separar circuitos adyacentes</td></tr>
+        <tr><td>Código de color</td><td>Verde y amarillo únicamente</td><td>Gris, azul o color funcional</td><td>Cualquier color funcional</td></tr>
+        <tr><td>Transporta corriente de falta</td><td>Sí, por diseño</td><td>No</td><td>No</td></tr>
+        <tr><td>Posición típica</td><td>Una por conductor de protección, o una fila PE</td><td>A lo largo del circuito</td><td>Interface y cableado de campo</td></tr>
+        <tr><td>Modo de fallo principal</td><td>Carril no unido, o carril pintado</td><td>Color incorrecto, tornillo flojo</td><td>Barrera retirada para cablear cómodo</td></tr>
+      </tbody>
+    </table>
+    <p>La comparación explica una confusión que aparece en casi todas las revisiones de cuadro: una bornera de paso verde parece una bornera PE y se cablea como tal, pero no toca el carril, así que cada conductor que termina en ella queda flotante respecto a tierra hasta que alguien añade una unión aparte.</p>
+
+    <h2>Resistencia de contacto e impedancia de bucle</h2>
+    <p>Un conductor de protección vale lo que vale su peor unión. Una bornera PE añade dos uniones al camino &mdash; conductor a pinza y pinza a carril &mdash; y ambas son medibles.</p>
+    <ul>
+      <li><strong>Mida, no suponga.</strong> Un óhmetro de baja resistencia entre el conductor de protección entrante y la masa metálica del cuadro indica si el camino existe de verdad. Un multímetro en la escala de resistencia no tiene resolución útil para esto.</li>
+      <li><strong>Revise primero la unión del carril.</strong> En una instalación sospechosa, la lectura más alta está casi siempre en un empalme de carril o donde el carril se fija a una chapa pintada.</li>
+      <li><strong>Limpie la zona de contacto.</strong> Pintura, polvo de recubrimiento, anodizado y oxidación aíslan. Enmascarar la zona de contacto del carril antes de pintar sale más barato que descubrir el problema en la puesta en marcha.</li>
+      <li><strong>Apriete al par correcto.</strong> Una pinza floja se calienta bajo corriente de falta; una pinza excesivamente apretada daña la rosca y la conexión se afloja después. Siga la tabla del fabricante en lugar de la sensación al tacto.</li>
+    </ul>
+    <p>El ensayo de impedancia de bucle confirma después el camino completo, desde el suministro hasta la falta y de vuelta. Ese ensayo no puede compensar una bornera PE que nunca tocó el carril, y por eso ambas comprobaciones van juntas.</p>
+
+    <h2>La comprobación adiabática del conductor de protección</h2>
+    <p>Los conductores de protección se dimensionan por energía de falta y no por corriente de carga, porque solo transportan corriente mientras se despeja la falta. La relación normalizada es la ecuación adiabática:</p>
+    <p><strong>S = &radic;(I&sup2;t) &divide; k</strong></p>
+    <p>donde S es la sección necesaria, I&sup2;t la energía de falta que deja pasar el dispositivo de protección y k un coeficiente que depende del material del conductor y de su aislamiento. Los valores tabulados están en la norma de instalación, no en la hoja de datos de una bornera, así que el dimensionado corresponde al proyectista del cuadro. Lo que la bornera debe hacer es no convertirse en el cuello de botella: una bornera PE prevista para una sección menor que la del conductor de protección que se le confía es un error de especificación aunque el conductor entre en ella.</p>
+
+    <h2>Color, marcado y la trampa del PEN</h2>
+    <p>Verde y amarillo significa conductor de protección, y nada más. Dos reglas asociadas atrapan la mayoría de los errores restantes.</p>
+    <p>Un conductor a la vez protector y neutro &mdash; un PEN &mdash; no es un PE. Transporta corriente de servicio, por lo que está sujeto a secciones mínimas que una bornera PE pequeña no puede cumplir, y no se admite aguas abajo del punto en el que la instalación se separa en PE y N. Terminar un PEN en una bornera verde y amarilla es un error de cableado, con independencia del etiquetado del cuadro.</p>
+    <p>Un conductor de protección por bornera es la regla por defecto. Reunir dos conductores en una misma pinza PE solo es aceptable si la bornera está expresamente diseñada y cualificada para ello, y el segundo conductor debe quedar fijado de forma independiente.</p>
+
+    <h2>Defectos de instalación que suspenden una inspección</h2>
+    <ul>
+      <li><strong>Borneras de paso verdes usadas como PE.</strong> El defecto más frecuente y invisible una vez colocado el embellecedor.</li>
+      <li><strong>Carril no unido a la envolvente.</strong> Todas las borneras PE del carril pasan a ser decorativas.</li>
+      <li><strong>Fila PE interrumpida por un tope aislante o un separador de plástico</strong> colocado para alinear la fila.</li>
+      <li><strong>Metales mezclados sin criterio.</strong> Conductor de cobre en bornera de aluminio, o carril de aluminio en ambiente húmedo, exigen una unión que tenga en cuenta el par galvánico y no solo el apriete.</li>
+      <li><strong>Barras de neutro y tierra unidas aguas abajo</strong> del punto de separación, lo que crea caminos de retorno paralelos y corriente residual indeseada.</li>
+      <li><strong>Sin borneras PE de reserva.</strong> Una fila construida exactamente según el plano no tiene dónde recibir el siguiente cable, y el siguiente cable siempre llega.</li>
+    </ul>
+
+    <h2>Material YOMIN para distribuir el conductor de protección</h2>
+    <table>
+      <thead>
+        <tr><th>Artículo</th><th>Construcción</th><th>Papel en el sistema PE</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="/products/terminal-connector/high-quality-durable-brass-plastic-and-pa-electric-copper-din-rail-terminal-block-with-copper-inlet-outlet">Bornera sobre carril DIN</a></td><td>Contacto de latón, cuerpo de PA, entrada y salida de cobre</td><td>Fila de conexión sobre carril donde se alojan las borneras PE</td></tr>
+        <tr><td><a href="/products/terminal-connector/customizable-aluminium-screw-terminal-neutral-ground-bars-link-lug-terminal-block-connector">Barra de enlace de neutro y tierra de aluminio</a></td><td>Aluminio, borne de tornillo, terminal de enlace</td><td>Barra colectora que reúne varios conductores de protección en un punto</td></tr>
+        <tr><td><a href="/products/terminal-connector/din-rail-bus-bar-terminals-blocks">Borneras de barra sobre carril DIN</a></td><td>Borneras de barra montadas en carril</td><td>Distribución a lo largo del carril cuando una sola bornera PE no basta</td></tr>
+      </tbody>
+    </table>
+    <p>Toda la gama de conectores está en la página de <a href="/products/terminal-connector">borneras y conectores</a>. Para la parte mecánica de armar una fila &mdash; paso, topes y peines &mdash; vea la <a href="/blog/din-rail-terminal-block-guide">guía de borneras sobre carril DIN</a>, y para el orden de cableado, el <a href="/blog/din-rail-terminal-block-wiring-how-to">cableado de borneras sobre carril DIN</a>.</p>
+
+    <h2>Qué incluir en la solicitud de cotización</h2>
+    <ul>
+      <li><strong>Rango de secciones</strong> en mm&sup2;, incluido el conductor de protección mayor que deba admitir la fila.</li>
+      <li><strong>Tipo de carril</strong> &mdash; sombrero de 35&nbsp;mm u otro perfil &mdash; y material: acero, aluminio o cobre.</li>
+      <li><strong>Número de vías PE</strong> más la reserva que exija su estándar.</li>
+      <li><strong>Corriente de falta y tiempo de despeje</strong> que debe soportar la fila, si se han calculado.</li>
+      <li><strong>Color y marcado</strong>, y si hace falta etiquetado o impresión.</li>
+      <li><strong>Ambiente</strong> &mdash; cuadro interior, sala técnica húmeda o envolvente exterior con condensación.</li>
+    </ul>
+
+    <h2>Preguntas frecuentes</h2>
+    <!--FAQ-->
+    <h3>¿Se puede usar una bornera de paso verde como bornera de tierra?</h3>
+    <p>No por sí sola. Una bornera de paso está aislada del carril DIN, así que el conductor que termina en ella no queda unido a tierra. Use una bornera de conductor de protección con pie metálico o añada una unión explícita entre la bornera y la barra de tierra.</p>
+    <h3>¿El propio carril DIN sirve como conductor de protección?</h3>
+    <p>Puede hacer de barra PE dentro de un cuadro, pero solo si está unido de forma continua en toda su longitud y unido a la envolvente y a la barra de tierra principal. Un carril sobre separadores de plástico o un carril pintado es una superficie de montaje, no un camino de tierra.</p>
+    <h3>¿Cómo compruebo que una bornera de tierra está realmente conectada?</h3>
+    <p>Con un óhmetro de baja resistencia entre el conductor de protección entrante y una parte metálica limpia del cuadro, repitiendo la medida a ambos lados de los empalmes de carril. Un multímetro convencional no tiene resolución suficiente para demostrar una unión de baja resistencia.</p>
+    <h3>¿Pueden dos conductores de protección compartir una bornera de tierra?</h3>
+    <p>Solo si la bornera está diseñada y cualificada para dos conductores. Por defecto, cada conductor de protección lleva su propia bornera, porque una pinza compartida no da ninguna garantía independiente sobre la fijación de cada uno.</p>
+    <!--/FAQ-->
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Está armando una fila PE para un cuadro?</h2>
+    <p>Indique el rango de secciones, el perfil de carril, el número de vías y el ambiente. Confirmaremos qué cuerpo de bornera y qué disposición de barra encajan en la fila, en lugar de dejarle adivinar el contacto con el carril.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
