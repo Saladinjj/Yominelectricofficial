@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/terminal-block-size-chart/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tableau des tailles de borniers : section, courant et pas | Yomin Electric</title>
+<meta name="description" content="Un tableau de dimensionnement des borniers : plage de conducteur en mm2 et AWG, courant assigné typique, pas et taille de vis, plus les vérifications de déclassement et de distances qui rendent le bornier conforme dans l'armoire.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/terminal-block-size-chart/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/terminal-block-size-chart-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/terminal-block-size-chart">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/terminal-block-size-chart-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/terminal-block-size-chart-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/terminal-block-size-chart-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/terminal-block-size-chart">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Tableau des tailles de borniers : accorder la section au courant et au pas",
+      "description": "Un tableau de dimensionnement des borniers : plage de conducteur en mm2 et AWG, courant assigné typique, pas et taille de vis, plus les vérifications de déclassement et de distances qui rendent le bornier conforme dans l'armoire.",
+      "image": "https://www.yominelectric.com/assets/images/blog/terminal-block-size-chart/hero.png",
+      "datePublished": "2026-11-16",
+      "dateModified": "2026-11-16",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/terminal-block-size-chart-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Comment choisir la taille d'un bornier ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Partez de la plage de conducteur, pas du courant. Trouvez la famille qui accepte votre plus gros conducteur, vérifiez que son courant assigné après déclassement couvre la charge, puis confirmez que le pas convient à la tension du réseau. Le courant seul donne un bornier qui n'accepte pas le câble."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un courant assigné plus élevé signifie-t-il toujours un meilleur bornier ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Le courant assigné est donné pour un bornier seul à l'air libre à une température de référence. Dans une rangée dense et fermée, la valeur effective baisse : un bornier nominalement plus gros peut ne pas tourner plus froid qu'un plus petit moins chargé. La densité et l'ambiance décident plus que le chiffre de plaque."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi la même plage de conducteur est-elle vendue en plusieurs pas ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parce que le pas est fixé par la tension assignée, pas par le conducteur. Deux borniers acceptant le même câble peuvent être assignés à des tensions différentes, et le plus large offre plus de ligne de fuite et de distance d'isolement. Remplacer par le modèle étroit sur un circuit plus tendu est une erreur de sécurité, même si le câble entre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quand utiliser une barre à bornes plutôt que des borniers ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dès qu'une huitaine de conducteurs aboutissent sur un même point commun. Une barre supprime les ponts, chauffe moins, s'inspecte plus facilement et coûte moins par circuit. Spécifiez-la avec le nombre de trous, le diamètre, la plage de conducteur par trou et les entraxes."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Bornes et connecteurs</span></div>
+    <span class="bh-tag">Guides d'achat</span>
+    <h1 class="bh-title">Tableau des tailles de borniers : accorder la section au courant et au pas</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>16 novembre 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/terminal-block-size-chart/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/terminal-block-size-chart/hero.png" alt="Borniers à vis en laiton YOMIN et barres de neutre et de terre en aluminium à plusieurs trous de câblage" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un bornier se dimensionne par le conducteur qu'il doit recevoir, pas par la largeur du rail sur lequel il se clipse. Le seul chiffre que les acheteurs retiennent, le courant assigné, est le moins fiable des quatre marquages portés sur le corps, parce qu'il est donné pour une température de référence qu'aucune armoire réelle n'atteint. Ce tableau part donc de la plage de conducteur, ajoute le courant, puis applique les deux vérifications qui décident vraiment du bon choix : le déclassement en enveloppe et le pas face à la tension du réseau.</p>
+
+    <p>Lisez-le comme un premier filtre, pas comme une réponse définitive. Chaque bornier porte son propre marquage, et lorsque le marquage contredit un tableau générique, c'est le marquage qui fait foi. L'utilité du tableau est de vous placer immédiatement dans la bonne famille et le bon gabarit, afin que le devis demandé porte sur une pièce qui existe et non sur une pièce à inventer.</p>
+
+    <h2>Les quatre chiffres d'un bornier</h2>
+    <p>Tout bornier sur rail ou en armoire porte les quatre mêmes spécifications, et elles répondent à quatre questions différentes.</p>
+    <ul>
+      <li><strong>Tension assignée</strong> &mdash; la classe d'isolement, qui fixe le pas et la ligne de fuite. C'est un chiffre de sécurité, pas de performance.</li>
+      <li><strong>Courant assigné</strong> &mdash; le courant permanent à une température de référence définie, en général 40 &deg;C, pour un bornier seul à l'air libre.</li>
+      <li><strong>Plage de conducteur</strong> &mdash; le plus petit et le plus gros conducteur que la borne accepte, donnés séparément pour rigide, souple et avec embout.</li>
+      <li><strong>Pas</strong> &mdash; la largeur d'axe en axe sur le rail, qui décide du nombre de circuits logés dans une goulotte et de la distance entre circuits voisins.</li>
+    </ul>
+    <p>Les acheteurs citent couramment le courant et ignorent la plage de conducteur, puis découvrent au montage que le câble de 6 mm&sup2; n'entre pas dans un bornier pourtant assigné au bon ampérage. C'est l'ouverture de la borne, et non l'ampérage, qui contraint.</p>
+
+    <h2>Tableau des tailles de borniers</h2>
+    <p>Le tableau ci-dessous associe la plage de conducteur à la famille de borniers qui la reçoit habituellement. La colonne courant donne la valeur assignée typique d'un bornier de passage à 40 &deg;C de référence ; c'est une norme du métier, non une promesse sur une pièce précise, et chaque valeur doit être confirmée sur le marquage du bornier que vous achetez réellement.</p>
+    <table>
+      <thead>
+        <tr><th>Plage de conducteur</th><th>Équivalent AWG</th><th>Courant assigné typique</th><th>Pas typique</th><th>Borne</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2,5 mm&sup2;</td><td>14 AWG</td><td>20 à 24 A</td><td>5,2 mm</td><td>Vis ou ressort</td></tr>
+        <tr><td>4 mm&sup2;</td><td>12 AWG</td><td>32 A</td><td>6,2 mm</td><td>Vis</td></tr>
+        <tr><td>6 mm&sup2;</td><td>10 AWG</td><td>41 A</td><td>8,2 mm</td><td>Vis</td></tr>
+        <tr><td>10 mm&sup2;</td><td>8 AWG</td><td>57 A</td><td>10,2 mm</td><td>Vis</td></tr>
+        <tr><td>16 mm&sup2;</td><td>6 AWG</td><td>76 A</td><td>12,2 mm</td><td>Vis ou goujon</td></tr>
+        <tr><td>35 mm&sup2;</td><td>2 AWG</td><td>125 A</td><td>16 mm</td><td>Goujon</td></tr>
+        <tr><td>50 mm&sup2;</td><td>1/0 AWG</td><td>150 A</td><td>20 mm</td><td>Goujon ou barre</td></tr>
+      </tbody>
+    </table>
+    <p>Deux lignes méritent un avertissement. La ligne 16 mm&sup2; est celle où la borne à vis commence à peiner sur câble souple et où la borne à goujon prend le relais ; la ligne 35 mm&sup2; est celle où le bornier sur rail cesse d'être la réponse raisonnable et où une barre devient à la fois moins chère et meilleure. Si vous travaillez en AWG, convertissez d'abord : un conducteur 6 AWG vaut 13,3 mm&sup2;, ce qui le situe entre deux lignes et l'oblige à passer à la plus grande.</p>
+
+    <h2>Le courant assigné est une valeur déclassée</h2>
+    <p>Le courant marqué suppose un bornier seul, à l'air libre, à la température de référence. Une armoire réelle viole les trois hypothèses à la fois, et trois corrections s'appliquent en combinaison.</p>
+    <ul>
+      <li><strong>Température ambiante.</strong> Une armoire près d'un four, au soleil ou dans un local non ventilé dépasse largement 40 &deg;C. La correction se lit dans le tableau du fabricant, elle ne s'estime pas.</li>
+      <li><strong>Densité de borniers.</strong> Cinquante borniers serrés côte à côte se chauffent mutuellement. C'est le facteur le plus souvent oublié, et celui qui lâche en premier dans une rangée de raccordement dense.</li>
+      <li><strong>Enveloppe.</strong> Un coffret IP66 fermé se comporte très différemment d'une armoire à persiennes. Le bornier est identique ; le courant qu'il peut véhiculer ne l'est pas.</li>
+    </ul>
+    <p>La conséquence pratique est qu'un bornier choisi exactement à son courant de plaque dans une rangée dense et fermée est déjà en surcharge. Gardez une marge réelle plutôt que de spécifier au chiffre imprimé en espérant que l'armoire restera fraîche.</p>
+
+    <h2>Le pas est une décision de tension, pas une préférence d'encombrement</h2>
+    <p>Deux borniers de même plage de conducteur peuvent avoir des pas différents parce qu'ils sont assignés à des tensions différentes. Le pas fixe la ligne de fuite le long de la surface et la distance d'isolement dans l'air entre circuits voisins, et ce sont ces distances que la norme d'isolement encadre réellement.</p>
+    <p>C'est pourquoi un bornier de 5,2 mm assigné à un circuit de commande basse tension ne doit jamais remplacer un bornier plus large sur un départ 690 V, même si le câble entre parfaitement. La substitution paraîtra correcte, fonctionnera correctement, et échouera à l'inspection &mdash; ou pire, traquera en surface après quelques années de poussière et d'humidité.</p>
+
+    <h2>Quel corps pour quel conducteur</h2>
+    <p>Le style de corps suit le conducteur et le régime de maintenance, pas le courant.</p>
+    <table>
+      <thead>
+        <tr><th>Corps</th><th>Idéal pour</th><th>Attention à</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Bornier de passage sur rail</td><td>Câblage d'armoire jusqu'à environ 35 mm&sup2;, rangées denses</td><td>Nécessite butées et plaques d'extrémité, sinon la rangée glisse et le dernier bornier reste accessible</td></tr>
+        <tr><td>Bornier à barrière</td><td>Réseau et lignes machine où une barrière protège les doigts</td><td>Le pas détermine la tension ; la barrière n'ajoute pas de courant</td></tr>
+        <tr><td>Borne à goujon</td><td>Gros conducteurs, cosses à anneau, fort courant</td><td>Le couple compte plus que la taille ; un goujon sous-serré chauffe</td></tr>
+        <tr><td>Barre de neutre et de terre</td><td>Beaucoup de conducteurs vers un point commun</td><td>Comptez les trous nécessaires, rechanges compris, avant de commander</td></tr>
+      </tbody>
+    </table>
+    <p>Pour le détail de câblage d'une rangée sur rail, le <a href="/blog/din-rail-terminal-block-guide">guide des borniers sur rail DIN</a> traite la technologie de serrage et les accessoires. Lorsque la rangée est une rangée de protection, le <a href="/blog/grounding-terminal-block-guide">guide du bornier de terre</a> suit le chemin du conducteur de protection jusqu'au rail.</p>
+
+    <h2>Des barres, pas des borniers, dès que le nombre monte</h2>
+    <p>Au-delà d'une huitaine de conducteurs sur un même point commun, une barre à bornes est moins chère, plus froide et plus facile à inspecter qu'une chaîne de borniers avec des ponts. Elle supprime aussi le pont comme point de défaillance, ce qui compte en neutre ou en terre où un pont desserré est un problème de sécurité et non une simple gêne.</p>
+    <p>Quand vous spécifiez une barre, donnez le nombre de trous, le diamètre de perçage, la plage de conducteur par trou et les entraxes de fixation. Une barre se fabrique sur plan : une barre chiffrée sans schéma de perçage arrivera fausse.</p>
+
+    <h2>Ce que YOMIN fournit dans cette gamme</h2>
+    <p>La gamme de bornes et connecteurs YOMIN couvre les styles de corps du tableau ci-dessus. Le bornier sur rail DIN en laiton avec entrée et sortie cuivre est le corps de passage polyvalent pour les rangées d'armoire. Le bornier en laiton et plastique PC est le corps plus économique pour les services légers. Là où de nombreux conducteurs aboutissent sur un point, la barre de neutre et de terre à vis en aluminium est fournie comme cosse de liaison à plusieurs trous.</p>
+    <table>
+      <thead>
+        <tr><th>Référence</th><th>Corps</th><th>Emploi</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="/products/terminal-connector/high-quality-durable-brass-plastic-and-pa-electric-copper-din-rail-terminal-block-with-copper-inlet-outlet">Bornier sur rail DIN en laiton</a></td><td>Borne laiton, entrée et sortie cuivre</td><td>Rangées d'armoire générales sur rail</td></tr>
+        <tr><td><a href="/products/terminal-connector/brass-plastic-pc-material-terminal-block-connector-high-quality-plastic-terminal-block">Bornier laiton et plastique PC</a></td><td>Contact laiton en corps plastique</td><td>Services légers, rangées sensibles au coût</td></tr>
+        <tr><td><a href="/products/terminal-connector/customizable-aluminium-screw-terminal-neutral-ground-bars-link-lug-terminal-block-connector">Barre de neutre et de terre en aluminium</a></td><td>Barre à plusieurs trous</td><td>Points de regroupement neutre et terre</td></tr>
+      </tbody>
+    </table>
+    <p>Si vous identifiez encore à quelle famille appartient une pièce, le <a href="/blog/terminal-blocks-connectors-identification-guide">tableau d'identification</a> trie borniers, cosses et barres en une page. Si la rangée est du type à barrière, le <a href="/blog/terminal-barrier-block-guide">guide du bornier à barrière</a> détaille pas et distances.</p>
+
+    <h2>Liste de vérification avant de commander une rangée</h2>
+    <ul>
+      <li><strong>Plage de conducteur</strong>, donnée séparément pour rigide et souple, car l'ouverture de borne diffère.</li>
+      <li><strong>Courant par circuit</strong> après déclassement d'ambiance et de densité, pas le chiffre de plaque.</li>
+      <li><strong>Tension du réseau</strong>, qui fixe le pas et donc le nombre de circuits logés dans la goulotte.</li>
+      <li><strong>Nombre de circuits plus rechanges</strong>, et les accessoires : butées, plaques d'extrémité, ponts, repères.</li>
+      <li><strong>Fixation</strong> &mdash; profil de rail pour les borniers, schéma de perçage pour les barres.</li>
+      <li><strong>Environnement</strong>, puisqu'un coffret fermé change le courant que le même bornier peut véhiculer.</li>
+    </ul>
+    <p>Envoyez la plage de conducteur et le nombre de circuits ensemble. Une rangée chiffrée sur le seul courant arrivera avec le bon ampérage et la mauvaise borne.</p>
+
+
+    <h2>Questions fréquentes</h2>
+    <h3>Comment choisir la taille d'un bornier ?</h3>
+    <p>Partez de la plage de conducteur, pas du courant. Trouvez la famille qui accepte votre plus gros conducteur, vérifiez que son courant assigné après déclassement couvre la charge, puis confirmez que le pas convient à la tension du réseau. Le courant seul donne un bornier qui n'accepte pas le câble.</p>
+    <h3>Un courant assigné plus élevé signifie-t-il toujours un meilleur bornier ?</h3>
+    <p>Non. Le courant assigné est donné pour un bornier seul à l'air libre à une température de référence. Dans une rangée dense et fermée, la valeur effective baisse : un bornier nominalement plus gros peut ne pas tourner plus froid qu'un plus petit moins chargé. La densité et l'ambiance décident plus que le chiffre de plaque.</p>
+    <h3>Pourquoi la même plage de conducteur est-elle vendue en plusieurs pas ?</h3>
+    <p>Parce que le pas est fixé par la tension assignée, pas par le conducteur. Deux borniers acceptant le même câble peuvent être assignés à des tensions différentes, et le plus large offre plus de ligne de fuite et de distance d'isolement. Remplacer par le modèle étroit sur un circuit plus tendu est une erreur de sécurité, même si le câble entre.</p>
+    <h3>Quand utiliser une barre à bornes plutôt que des borniers ?</h3>
+    <p>Dès qu'une huitaine de conducteurs aboutissent sur un même point commun. Une barre supprime les ponts, chauffe moins, s'inspecte plus facilement et coûte moins par circuit. Spécifiez-la avec le nombre de trous, le diamètre, la plage de conducteur par trou et les entraxes.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous montez une rangée de borniers en armoire ?</h2>
+    <p>Envoyez la plage de conducteur, le nombre de circuits et la tension du réseau. Nous confirmerons le gabarit et le pas adaptés à la rangée, et signalerons les cas où une barre est préférable.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/terminal-block-size-chart/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terminal Block Size Chart: Wire Range, Current and Pitch | Yomin Electric</title>
+<meta name="description" content="A working terminal block size chart: conductor range in square millimetres and AWG, typical rated current, pitch and screw size, plus the derating and clearance checks that decide whether the block you picked is legal in the panel.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/terminal-block-size-chart/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/terminal-block-size-chart">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/terminal-block-size-chart">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/terminal-block-size-chart-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/terminal-block-size-chart-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/terminal-block-size-chart-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/terminal-block-size-chart">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Terminal Block Size Chart: Matching Wire Range to Current and Pitch",
+      "description": "A working terminal block size chart: conductor range in square millimetres and AWG, typical rated current, pitch and screw size, plus the derating and clearance checks that decide whether the block you picked is legal in the panel.",
+      "image": "https://www.yominelectric.com/assets/images/blog/terminal-block-size-chart/hero.png",
+      "datePublished": "2026-11-16",
+      "dateModified": "2026-11-16",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/terminal-block-size-chart"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I choose a terminal block size?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start from the conductor range, not the current. Find the block family that accepts your largest conductor, check that its rated current after derating covers the load, then confirm the pitch suits the system voltage. Current alone will give you a block that cannot accept the cable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a higher rated current always mean a better terminal block?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The rated current is quoted for a single block in free air at a reference ambient. In a dense, sealed row the effective rating falls, so a nominally larger block may run no cooler than a smaller one carrying less current. Density and ambient decide more than the nameplate figure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the same wire range sold at different pitches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because pitch is set by the voltage rating, not the conductor. Two blocks accepting the same cable can be rated for different system voltages, and the wider one carries more creepage and clearance. Substituting the narrow block on a higher-voltage circuit is a safety error even though the cable fits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I use a terminal bar instead of blocks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Once more than roughly eight conductors land on one common point. A bar removes the jumpers, runs cooler, is easier to inspect, and is cheaper per way. Specify it with the hole count, hole diameter, conductor range per hole and mounting centres."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Terminals and Connectors</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Terminal Block Size Chart: Matching Wire Range to Current and Pitch</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 16, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/terminal-block-size-chart/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/terminal-block-size-chart/hero.png" alt="YOMIN brass screw terminal blocks and aluminium neutral and earth link bars with multiple wire holes" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A terminal block is sized by the conductor it has to accept, not by the width of the rail it sits on. The single number buyers reach for, the rated current, is the least reliable of the four figures printed on the body, because it is quoted at a reference ambient that no real panel ever reaches. This chart starts from the wire range, adds the current, and then applies the two checks that actually decide whether the part is right: derating inside the enclosure, and pitch against the system voltage.</p>
+
+    <p>Read it as a first filter, not a final answer. Every block carries its own marking, and where the marking disagrees with a generic chart, the marking wins. The purpose of the chart is to get you into the correct family and body size in one step, so that the quote you request is for something that exists rather than something that would have to be invented.</p>
+
+    <h2>The four numbers on a terminal block</h2>
+    <p>Every DIN rail or panel block carries the same four specifications, and they answer four different questions.</p>
+    <ul>
+      <li><strong>Rated voltage</strong> &mdash; the insulation class, which sets the pitch and the creepage distance. It is a safety number, not a performance number.</li>
+      <li><strong>Rated current</strong> &mdash; the continuous current at a defined reference ambient, usually 40 &deg;C, for a single block in free air.</li>
+      <li><strong>Wire range</strong> &mdash; the smallest and largest conductor the clamp will accept, given separately for solid, stranded and ferruled conductors.</li>
+      <li><strong>Pitch</strong> &mdash; the centre-to-centre width on the rail, which decides how many ways fit in a given duct and how much clearance exists between adjacent circuits.</li>
+    </ul>
+    <p>Buyers routinely quote the current and ignore the wire range, then discover at installation that the 6 mm&sup2; cable will not enter a block rated for the current. The clamp opening, not the amp figure, is the hard constraint.</p>
+
+    <h2>Terminal block size chart</h2>
+    <p>The table below maps conductor range to the block family that normally carries it. The current column gives the typical rated value for a feed-through block at a 40 &deg;C reference ambient; it is an industry norm, not a promise about any particular part, and every figure must be confirmed against the marking of the block you actually buy.</p>
+    <table>
+      <thead>
+        <tr><th>Conductor range</th><th>AWG equivalent</th><th>Typical rated current</th><th>Typical pitch</th><th>Clamp</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2.5 mm&sup2;</td><td>14 AWG</td><td>20 to 24 A</td><td>5.2 mm</td><td>Screw or spring</td></tr>
+        <tr><td>4 mm&sup2;</td><td>12 AWG</td><td>32 A</td><td>6.2 mm</td><td>Screw</td></tr>
+        <tr><td>6 mm&sup2;</td><td>10 AWG</td><td>41 A</td><td>8.2 mm</td><td>Screw</td></tr>
+        <tr><td>10 mm&sup2;</td><td>8 AWG</td><td>57 A</td><td>10.2 mm</td><td>Screw</td></tr>
+        <tr><td>16 mm&sup2;</td><td>6 AWG</td><td>76 A</td><td>12.2 mm</td><td>Screw or stud</td></tr>
+        <tr><td>35 mm&sup2;</td><td>2 AWG</td><td>125 A</td><td>16 mm</td><td>Stud</td></tr>
+        <tr><td>50 mm&sup2;</td><td>1/0 AWG</td><td>150 A</td><td>20 mm</td><td>Stud or bar</td></tr>
+      </tbody>
+    </table>
+    <p>Two rows deserve a warning. The 16 mm&sup2; row is where screw clamps start to struggle with fine-stranded cable and stud terminals take over, and the 35 mm&sup2; row is where a DIN rail block stops being the sensible answer at all and a busbar or a link bar becomes cheaper and better. If you are working in AWG rather than square millimetres, convert first: a 6 AWG conductor is 13.3 mm&sup2;, which sits between two rows and must go to the larger one.</p>
+
+    <h2>Current rating is a derated number</h2>
+    <p>The rated current printed on the block assumes a single block, in free air, at the reference ambient. A real panel violates all three assumptions at once, and three corrections apply in combination.</p>
+    <ul>
+      <li><strong>Ambient.</strong> A panel beside a furnace, in direct sun, or in an unventilated plant room runs well above 40 &deg;C. The correction is applied per the manufacturer's table, not guessed.</li>
+      <li><strong>Block density.</strong> Fifty blocks packed side by side heat each other. This is the factor most often ignored, and it is the one that fails first in a dense marshalling row.</li>
+      <li><strong>Enclosure.</strong> A sealed IP66 box behaves very differently from a louvred cabinet. The block is the same; the current it can carry is not.</li>
+    </ul>
+    <p>The practical consequence is that a block chosen exactly at its nameplate current in a dense, sealed row is already overloaded. Leave genuine margin rather than specifying to the printed figure and hoping the panel runs cool.</p>
+
+    <h2>Pitch is a voltage decision, not a spacing preference</h2>
+    <p>Two blocks with the same wire range can have different pitches because they are rated for different voltages. Pitch sets the creepage distance along the surface and the clearance through air between adjacent circuits, and those distances are what the insulation standard actually governs.</p>
+    <p>This is why a 5.2 mm block rated for a low-voltage control circuit must not be substituted for a wider block on a 690 V feeder, even though the cable fits perfectly. The substitution will look correct, work correctly, and fail an inspection &mdash; or worse, track across the surface after a few years of dust and moisture.</p>
+
+    <h2>Which body for which conductor</h2>
+    <p>Body style follows the conductor and the maintenance regime rather than the current.</p>
+    <table>
+      <thead>
+        <tr><th>Body</th><th>Best for</th><th>Watch out for</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>DIN rail feed-through</td><td>Panel wiring up to about 35 mm&sup2;, dense rows</td><td>Needs end stops and end plates or the row slides and the last block is exposed</td></tr>
+        <tr><td>Barrier block</td><td>Mains and machine rows where a finger-safe barrier matters</td><td>Pitch drives voltage rating; the barrier does not add current capacity</td></tr>
+        <tr><td>Stud terminal</td><td>Large conductors, ring lugs, high current</td><td>Torque matters more than size; an under-torqued stud joint runs hot</td></tr>
+        <tr><td>Neutral and earth bar</td><td>Many conductors to one common point</td><td>Count the holes you need, including spares, before ordering</td></tr>
+      </tbody>
+    </table>
+    <p>For the wiring detail of a rail row, the <a href="/blog/din-rail-terminal-block-guide">DIN rail terminal block guide</a> covers clamping technology and accessories. Where the row is a protective earth row, the <a href="/blog/grounding-terminal-block-guide">grounding terminal block guide</a> follows the PE path from conductor to rail.</p>
+
+    <h2>Bars, not blocks, once the count rises</h2>
+    <p>Above roughly eight conductors to a single common point, a terminal bar is cheaper, cooler and easier to inspect than a chain of blocks with jumpers. A bar also removes the jumper as a failure point, which matters in a neutral or earth application where a loose jumper is a safety issue rather than an inconvenience.</p>
+    <p>When you specify a bar, give the number of holes, the hole diameter, the conductor range per hole and the mounting centres. Bars are made to a drawing, so a bar quoted without a hole schedule is a bar that will arrive wrong.</p>
+
+    <h2>What YOMIN supplies in this range</h2>
+    <p>YOMIN's terminal and connector range covers the body styles in the chart above. The brass DIN rail terminal block with copper inlet and outlet is the general-purpose feed-through body for panel rows. The brass and PC plastic terminal block is the lower-cost body for lighter duties. Where many conductors land on one point, the aluminium screw terminal neutral and ground bar is supplied as a link lug with multiple wire holes.</p>
+    <table>
+      <thead>
+        <tr><th>Part</th><th>Body</th><th>Where it fits</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="/products/terminal-connector/high-quality-durable-brass-plastic-and-pa-electric-copper-din-rail-terminal-block-with-copper-inlet-outlet">Brass DIN rail terminal block</a></td><td>Brass clamp, copper inlet and outlet</td><td>General panel rows on DIN rail</td></tr>
+        <tr><td><a href="/products/terminal-connector/brass-plastic-pc-material-terminal-block-connector-high-quality-plastic-terminal-block">Brass and PC plastic terminal block</a></td><td>Brass contact in a plastic body</td><td>Lighter duties, cost-sensitive rows</td></tr>
+        <tr><td><a href="/products/terminal-connector/customizable-aluminium-screw-terminal-neutral-ground-bars-link-lug-terminal-block-connector">Aluminium neutral and ground bar</a></td><td>Bar with multiple wire holes</td><td>Neutral and earth collection points</td></tr>
+      </tbody>
+    </table>
+    <p>If you are still identifying which family a part belongs to, the <a href="/blog/terminal-blocks-connectors-identification-guide">identification chart</a> sorts DIN rail blocks, lugs and bars in one page. If the row is a barrier type, the <a href="/blog/terminal-barrier-block-guide">barrier block guide</a> works through pitch and clearance.</p>
+
+    <h2>Checklist before you order a row</h2>
+    <ul>
+      <li><strong>Conductor range</strong>, given separately for solid and fine-stranded, because the clamp opening differs.</li>
+      <li><strong>Current per way</strong> after ambient and density derating, not the nameplate figure.</li>
+      <li><strong>System voltage</strong>, which fixes the pitch and therefore the number of ways that fit the duct.</li>
+      <li><strong>Number of ways plus spares</strong>, and the accessories: end stops, end plates, jumper bars, marking tags.</li>
+      <li><strong>Mounting</strong> &mdash; rail profile for blocks, hole schedule for bars.</li>
+      <li><strong>Environment</strong>, since a sealed enclosure changes the current the same block can carry.</li>
+    </ul>
+    <p>Send the conductor range and the number of ways together. A row quoted on current alone will arrive with the right amp figure and the wrong clamp.</p>
+
+
+    <h2>Frequently asked questions</h2>
+    <h3>How do I choose a terminal block size?</h3>
+    <p>Start from the conductor range, not the current. Find the block family that accepts your largest conductor, check that its rated current after derating covers the load, then confirm the pitch suits the system voltage. Current alone will give you a block that cannot accept the cable.</p>
+    <h3>Does a higher rated current always mean a better terminal block?</h3>
+    <p>No. The rated current is quoted for a single block in free air at a reference ambient. In a dense, sealed row the effective rating falls, so a nominally larger block may run no cooler than a smaller one carrying less current. Density and ambient decide more than the nameplate figure.</p>
+    <h3>Why is the same wire range sold at different pitches?</h3>
+    <p>Because pitch is set by the voltage rating, not the conductor. Two blocks accepting the same cable can be rated for different system voltages, and the wider one carries more creepage and clearance. Substituting the narrow block on a higher-voltage circuit is a safety error even though the cable fits.</p>
+    <h3>When should I use a terminal bar instead of blocks?</h3>
+    <p>Once more than roughly eight conductors land on one common point. A bar removes the jumpers, runs cooler, is easier to inspect, and is cheaper per way. Specify it with the hole count, hole diameter, conductor range per hole and mounting centres.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Building a terminal row for a panel?</h2>
+    <p>Send the conductor range, the number of ways and the system voltage. We will confirm the body size and pitch that fit the row, and flag where the row should become a bar instead.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

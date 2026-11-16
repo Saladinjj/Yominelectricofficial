@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/terminal-block-size-chart/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabla de tamaños de borneras: sección, corriente y paso | Yomin Electric</title>
+<meta name="description" content="Tabla práctica de dimensionado de borneras: rango de conductor en mm2 y AWG, corriente nominal típica, paso y tamaño de tornillo, más las comprobaciones de desclasificación y distancias que hacen válida la bornera dentro del cuadro.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/terminal-block-size-chart/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/terminal-block-size-chart-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/terminal-block-size-chart">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/terminal-block-size-chart-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/terminal-block-size-chart-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/terminal-block-size-chart-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/terminal-block-size-chart">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Tabla de tamaños de borneras: ajustar la sección a la corriente y al paso",
+      "description": "Tabla práctica de dimensionado de borneras: rango de conductor en mm2 y AWG, corriente nominal típica, paso y tamaño de tornillo, más las comprobaciones de desclasificación y distancias que hacen válida la bornera dentro del cuadro.",
+      "image": "https://www.yominelectric.com/assets/images/blog/terminal-block-size-chart/hero.png",
+      "datePublished": "2026-11-16",
+      "dateModified": "2026-11-16",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/terminal-block-size-chart-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cómo elijo el tamaño de una bornera?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Empiece por el rango de conductor, no por la corriente. Busque la familia que admite su conductor mayor, compruebe que su corriente nominal tras desclasificar cubre la carga y confirme después que el paso encaja con la tensión del sistema. Solo con la corriente obtendrá una bornera que no admite el cable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Una corriente nominal mayor implica siempre una bornera mejor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. La corriente nominal se declara para una bornera sola al aire libre a una temperatura de referencia. En una hilera densa y cerrada el valor efectivo baja, así que una bornera nominalmente mayor puede no trabajar más fría que una menor con menos carga. La densidad y el ambiente deciden más que la cifra de placa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué el mismo rango de conductor se vende con pasos distintos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Porque el paso lo fija la tensión nominal, no el conductor. Dos borneras que admiten el mismo cable pueden estar asignadas a tensiones distintas, y la más ancha aporta más línea de fuga y distancia de aislamiento. Sustituir por la estrecha en un circuito de más tensión es un error de seguridad aunque el cable entre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuándo conviene una barra de bornes en lugar de borneras?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cuando más de unos ocho conductores llegan a un mismo punto común. Una barra elimina los puentes, calienta menos, se inspecciona mejor y cuesta menos por vía. Especifíquela con el número de taladros, el diámetro, el rango de conductor por taladro y las distancias entre centros."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Borneras y conectores</span></div>
+    <span class="bh-tag">Guías de compra</span>
+    <h1 class="bh-title">Tabla de tamaños de borneras: ajustar la sección a la corriente y al paso</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>16 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/terminal-block-size-chart/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/terminal-block-size-chart/hero.png" alt="Borneras de tornillo de latón YOMIN y barras de neutro y tierra de aluminio con varios taladros de cableado" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Una bornera se dimensiona por el conductor que debe admitir, no por la anchura del carril sobre el que se monta. El único número al que suelen recurrir los compradores, la corriente nominal, es el menos fiable de los cuatro marcados en el cuerpo, porque se declara a una temperatura de referencia que ningún cuadro real alcanza. Esta tabla parte por tanto de la sección, añade la corriente y después aplica las dos comprobaciones que de verdad deciden la elección: el desclasificamiento dentro de la envolvente y el paso frente a la tensión del sistema.</p>
+
+    <p>Léala como primer filtro, no como respuesta final. Cada bornera lleva su propio marcado, y cuando el marcado contradice una tabla genérica, manda el marcado. La utilidad de la tabla es situarle de una vez en la familia y el tamaño correctos, para que la cotización que pida corresponda a una pieza que existe y no a una que habría que inventar.</p>
+
+    <h2>Los cuatro números de una bornera</h2>
+    <p>Toda bornera de carril o de cuadro lleva las mismas cuatro especificaciones, y responden a cuatro preguntas distintas.</p>
+    <ul>
+      <li><strong>Tensión nominal</strong> &mdash; la clase de aislamiento, que fija el paso y la línea de fuga. Es un número de seguridad, no de prestación.</li>
+      <li><strong>Corriente nominal</strong> &mdash; la corriente permanente a una temperatura de referencia definida, normalmente 40 &deg;C, para una bornera sola al aire libre.</li>
+      <li><strong>Rango de conductor</strong> &mdash; el conductor menor y mayor que admite la mordaza, indicados por separado para rígido, flexible y con terminal de puntera.</li>
+      <li><strong>Paso</strong> &mdash; la anchura de eje a eje sobre el carril, que decide cuántos circuitos caben en un canal y cuánto espacio queda entre circuitos contiguos.</li>
+    </ul>
+    <p>Es habitual que se cotice la corriente y se ignore el rango de conductor, para descubrir en el montaje que el cable de 6 mm&sup2; no entra en una bornera con amperaje suficiente. La abertura de la mordaza, y no la cifra de amperios, es la restricción dura.</p>
+
+    <h2>Tabla de tamaños de borneras</h2>
+    <p>La tabla siguiente relaciona el rango de conductor con la familia que normalmente lo admite. La columna de corriente da el valor nominal típico de una bornera de paso a 40 &deg;C de referencia; es una norma del sector, no una promesa sobre una pieza concreta, y cada valor debe confirmarse en el marcado de la bornera que se compre realmente.</p>
+    <table>
+      <thead>
+        <tr><th>Rango de conductor</th><th>Equivalente AWG</th><th>Corriente nominal típica</th><th>Paso típico</th><th>Mordaza</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2,5 mm&sup2;</td><td>14 AWG</td><td>20 a 24 A</td><td>5,2 mm</td><td>Tornillo o resorte</td></tr>
+        <tr><td>4 mm&sup2;</td><td>12 AWG</td><td>32 A</td><td>6,2 mm</td><td>Tornillo</td></tr>
+        <tr><td>6 mm&sup2;</td><td>10 AWG</td><td>41 A</td><td>8,2 mm</td><td>Tornillo</td></tr>
+        <tr><td>10 mm&sup2;</td><td>8 AWG</td><td>57 A</td><td>10,2 mm</td><td>Tornillo</td></tr>
+        <tr><td>16 mm&sup2;</td><td>6 AWG</td><td>76 A</td><td>12,2 mm</td><td>Tornillo o espárrago</td></tr>
+        <tr><td>35 mm&sup2;</td><td>2 AWG</td><td>125 A</td><td>16 mm</td><td>Espárrago</td></tr>
+        <tr><td>50 mm&sup2;</td><td>1/0 AWG</td><td>150 A</td><td>20 mm</td><td>Espárrago o barra</td></tr>
+      </tbody>
+    </table>
+    <p>Dos filas merecen advertencia. La de 16 mm&sup2; es donde la mordaza de tornillo empieza a sufrir con cable flexible y entra la borna de espárrago; la de 35 mm&sup2; es donde la bornera de carril deja de ser la respuesta razonable y una barra resulta a la vez más barata y mejor. Si trabaja en AWG, convierta primero: un conductor de 6 AWG son 13,3 mm&sup2;, lo que cae entre dos filas y obliga a subir a la mayor.</p>
+
+    <h2>La corriente nominal es un valor desclasificado</h2>
+    <p>La corriente marcada supone una bornera sola, al aire libre, a la temperatura de referencia. Un cuadro real incumple las tres hipótesis a la vez, y tres correcciones se aplican en combinación.</p>
+    <ul>
+      <li><strong>Ambiente.</strong> Un cuadro junto a un horno, al sol o en un local sin ventilación trabaja muy por encima de 40 &deg;C. La corrección se lee en la tabla del fabricante, no se estima.</li>
+      <li><strong>Densidad de borneras.</strong> Cincuenta borneras apretadas se calientan entre sí. Es el factor que más se olvida y el que falla primero en una hilera de regletes densa.</li>
+      <li><strong>Envolvente.</strong> Una caja IP66 cerrada se comporta muy distinto de un armario con lamas. La bornera es la misma; la corriente que puede llevar no lo es.</li>
+    </ul>
+    <p>La consecuencia práctica es que una bornera elegida justo en su corriente de placa dentro de una hilera densa y cerrada ya está sobrecargada. Deje margen real en lugar de especificar a la cifra impresa y confiar en que el cuadro se mantenga frío.</p>
+
+    <h2>El paso es una decisión de tensión, no una preferencia de espacio</h2>
+    <p>Dos borneras con el mismo rango de conductor pueden tener pasos distintos porque están asignadas a tensiones distintas. El paso fija la línea de fuga sobre la superficie y la distancia de aislamiento en el aire entre circuitos contiguos, y esas distancias son lo que la norma de aislamiento regula de verdad.</p>
+    <p>Por eso una bornera de 5,2 mm asignada a un circuito de mando de baja tensión no debe sustituir nunca a una más ancha en una salida de 690 V, aunque el cable entre perfectamente. La sustitución parecerá correcta, funcionará correctamente y no pasará una inspección &mdash; o peor, aparecerá una corriente de fuga superficial tras unos años de polvo y humedad.</p>
+
+    <h2>Qué cuerpo para qué conductor</h2>
+    <p>El estilo de cuerpo sigue al conductor y al régimen de mantenimiento, no a la corriente.</p>
+    <table>
+      <thead>
+        <tr><th>Cuerpo</th><th>Ideal para</th><th>Atención a</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Bornera de paso en carril DIN</td><td>Cableado de cuadro hasta unos 35 mm&sup2;, hileras densas</td><td>Necesita topes y placas de extremo, o la hilera se desplaza y la última bornera queda accesible</td></tr>
+        <tr><td>Bornera con barrera</td><td>Red y filas de máquina donde importa una barrera protectora de dedos</td><td>El paso determina la tensión; la barrera no añade capacidad de corriente</td></tr>
+        <tr><td>Borna de espárrago</td><td>Conductores grandes, terminales de anillo, corriente alta</td><td>El par importa más que el tamaño; una espárrago poco apretada se calienta</td></tr>
+        <tr><td>Barra de neutro y tierra</td><td>Muchos conductores a un punto común</td><td>Cuente los taladros necesarios, repuestos incluidos, antes de pedir</td></tr>
+      </tbody>
+    </table>
+    <p>Para el detalle de cableado de una hilera, la <a href="/blog/din-rail-terminal-block-guide">guía de borneras de carril DIN</a> cubre la tecnología de apriete y los accesorios. Cuando la hilera es de protección, la <a href="/blog/grounding-terminal-block-guide">guía de borneras de tierra</a> sigue el camino del conductor de protección hasta el carril.</p>
+
+    <h2>Barras, no borneras, cuando sube el número</h2>
+    <p>Por encima de unos ocho conductores a un mismo punto común, una barra de bornes es más barata, más fría y más fácil de inspeccionar que una cadena de borneras con puentes. Además elimina el puente como punto de fallo, lo que importa en neutro o tierra, donde un puente flojo es un problema de seguridad y no una molestia.</p>
+    <p>Al especificar una barra, indique el número de taladros, el diámetro, el rango de conductor por taladro y las distancias entre centros de montaje. La barra se fabrica sobre plano: una barra cotizada sin esquema de taladros llegará mal.</p>
+
+    <h2>Qué suministra YOMIN en esta gama</h2>
+    <p>La gama de bornes y conectores de YOMIN cubre los estilos de cuerpo de la tabla anterior. La bornera de carril DIN de latón con entrada y salida de cobre es el cuerpo de paso polivalente para hileras de cuadro. La bornera de latón y plástico PC es el cuerpo más económico para servicios ligeros. Donde muchos conductores llegan a un punto, la barra de neutro y tierra de aluminio con tornillo se suministra como terminal de enlace con varios taladros.</p>
+    <table>
+      <thead>
+        <tr><th>Referencia</th><th>Cuerpo</th><th>Empleo</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="/products/terminal-connector/high-quality-durable-brass-plastic-and-pa-electric-copper-din-rail-terminal-block-with-copper-inlet-outlet">Bornera de carril DIN de latón</a></td><td>Mordaza de latón, entrada y salida de cobre</td><td>Hileras generales de cuadro sobre carril</td></tr>
+        <tr><td><a href="/products/terminal-connector/brass-plastic-pc-material-terminal-block-connector-high-quality-plastic-terminal-block">Bornera de latón y plástico PC</a></td><td>Contacto de latón en cuerpo plástico</td><td>Servicios ligeros, hileras sensibles al coste</td></tr>
+        <tr><td><a href="/products/terminal-connector/customizable-aluminium-screw-terminal-neutral-ground-bars-link-lug-terminal-block-connector">Barra de neutro y tierra de aluminio</a></td><td>Barra con varios taladros</td><td>Puntos de reunión de neutro y tierra</td></tr>
+      </tbody>
+    </table>
+    <p>Si aún está identificando a qué familia pertenece una pieza, la <a href="/blog/terminal-blocks-connectors-identification-guide">tabla de identificación</a> ordena borneras, terminales y barras en una página. Si la hilera es de tipo barrera, la <a href="/blog/terminal-barrier-block-guide">guía de borneras con barrera</a> desarrolla paso y distancias.</p>
+
+    <h2>Lista de comprobación antes de pedir una hilera</h2>
+    <ul>
+      <li><strong>Rango de conductor</strong>, indicado por separado para rígido y flexible, porque la abertura de mordaza cambia.</li>
+      <li><strong>Corriente por vía</strong> tras desclasificar por ambiente y densidad, no la cifra de placa.</li>
+      <li><strong>Tensión del sistema</strong>, que fija el paso y por tanto cuántas vías caben en el canal.</li>
+      <li><strong>Número de vías más repuestos</strong>, y los accesorios: topes, placas de extremo, puentes, etiquetas.</li>
+      <li><strong>Montaje</strong> &mdash; perfil de carril para borneras, esquema de taladros para barras.</li>
+      <li><strong>Entorno</strong>, ya que una envolvente cerrada cambia la corriente que la misma bornera puede llevar.</li>
+    </ul>
+    <p>Envíe el rango de conductor y el número de vías juntos. Una hilera cotizada solo por corriente llegará con el amperaje correcto y la mordaza equivocada.</p>
+
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Cómo elijo el tamaño de una bornera?</h3>
+    <p>Empiece por el rango de conductor, no por la corriente. Busque la familia que admite su conductor mayor, compruebe que su corriente nominal tras desclasificar cubre la carga y confirme después que el paso encaja con la tensión del sistema. Solo con la corriente obtendrá una bornera que no admite el cable.</p>
+    <h3>¿Una corriente nominal mayor implica siempre una bornera mejor?</h3>
+    <p>No. La corriente nominal se declara para una bornera sola al aire libre a una temperatura de referencia. En una hilera densa y cerrada el valor efectivo baja, así que una bornera nominalmente mayor puede no trabajar más fría que una menor con menos carga. La densidad y el ambiente deciden más que la cifra de placa.</p>
+    <h3>¿Por qué el mismo rango de conductor se vende con pasos distintos?</h3>
+    <p>Porque el paso lo fija la tensión nominal, no el conductor. Dos borneras que admiten el mismo cable pueden estar asignadas a tensiones distintas, y la más ancha aporta más línea de fuga y distancia de aislamiento. Sustituir por la estrecha en un circuito de más tensión es un error de seguridad aunque el cable entre.</p>
+    <h3>¿Cuándo conviene una barra de bornes en lugar de borneras?</h3>
+    <p>Cuando más de unos ocho conductores llegan a un mismo punto común. Una barra elimina los puentes, calienta menos, se inspecciona mejor y cuesta menos por vía. Especifíquela con el número de taladros, el diámetro, el rango de conductor por taladro y las distancias entre centros.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Montando una hilera de borneras en un cuadro?</h2>
+    <p>Envíe el rango de conductor, el número de vías y la tensión del sistema. Confirmaremos el tamaño de cuerpo y el paso que encajan en la hilera, y señalaremos dónde conviene pasar a una barra.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

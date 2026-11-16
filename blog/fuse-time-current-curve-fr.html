@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/fuse-time-current-curve/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Courbe temps-courant d'un fusible : lire gG, aM et gPV | Yomin Electric</title>
+<meta name="description" content="Comment lire la courbe temps-courant d'un fusible : les trois zones, gG contre aM contre gPV, temps de fusion et temps de coupure, et le contrôle I2t qui maintient le câble dans sa tenue.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/fuse-time-current-curve/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/fuse-time-current-curve-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/fuse-time-current-curve">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/fuse-time-current-curve-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/fuse-time-current-curve-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/fuse-time-current-curve-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/fuse-time-current-curve">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Courbe temps-courant d'un fusible : lire gG, aM et gPV avant de commander",
+      "description": "Comment lire la courbe temps-courant d'un fusible : les trois zones, gG contre aM contre gPV, temps de fusion et temps de coupure, et le contrôle I2t qui maintient le câble dans sa tenue.",
+      "image": "https://www.yominelectric.com/assets/images/blog/fuse-time-current-curve/hero.png",
+      "datePublished": "2026-11-16",
+      "dateModified": "2026-11-16",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/fuse-time-current-curve-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelle différence entre la courbe temps-courant et le courant nominal ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le courant nominal n'est qu'un point de la courbe. La courbe donne les temps de fusion et de coupure sur toute la plage de courant, ce qui décide si le fusible tient au démarrage moteur et s'il coupe un défaut avant que le câble ne soit endommagé."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on remplacer un fusible aM par un gG sur un moteur ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Un aM est délibérément construit sans protection de surcharge pour laisser passer le démarrage ; un gG assure ce service de surcharge et s'ouvrira sur un démarrage long ou répété. Remplacer aM par gG revient soit à déclencher le moteur, soit à surdimensionner le fusible au point qu'il ne protège plus le câble."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi un fusible ouvre-t-il plus vite que la courbe ne l'indique ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parce que la courbe publiée suppose des conditions de référence définies. Un fusible en enveloppe fermée, dans un tableau chaud ou serré contre d'autres fusibles, travaille au-dessus de l'ambiance de référence et s'ouvre plus tôt. Le courant harmonique produit le même effet sans apparaître sur une mesure à la fréquence fondamentale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un fusible alternatif convient-il sur un circuit photovoltaïque continu ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Un arc continu ne s'éteint pas de lui-même au passage par zéro : un fusible utilisé sur une chaîne PV doit être assigné et essayé pour le service continu à la tension du champ, avec des caractéristiques gPV. Un fusible alternatif n'a jamais été qualifié pour couper ce défaut."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Fusibles et protection</span></div>
+    <span class="bh-tag">Guides d'achat</span>
+    <h1 class="bh-title">Courbe temps-courant d'un fusible : lire gG, aM et gPV avant de commander</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>16 novembre 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/fuse-time-current-curve/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/fuse-time-current-curve/hero.png" alt="Fusible HRC à haut pouvoir de coupure YOMIN et coupe-circuit à expulsion extérieur avec cartouche remplaçable" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>La courbe temps-courant est le seul document qui décrit réellement le comportement d'un fusible. Le courant nominal gravé sur le corps est un chiffre unique qui ne dit presque rien des deux paramètres qui décident du bon fonctionnement d'une installation : le temps que met le fusible à s'ouvrir pour une surcharge donnée, et l'énergie de défaut qu'il laisse passer avant de le faire.</p>
+
+    <p>En pratique, on lit la courbe en trois zones distinctes, et il faut savoir dans laquelle se situe sa décision de protection. La protection du câble se joue dans la zone de surcharge. Le démarrage moteur se joue dans la zone de transition, là où le fusible ne doit surtout pas s'ouvrir. La protection contre les courts-circuits se joue dans la partie abrupte de droite, là où le fusible doit couper avant que le câble ne soit endommagé. Un fusible choisi sur le seul courant nominal satisfait généralement une de ces trois exigences et échoue sur les deux autres.</p>
+
+    <h2>Ce que représente vraiment la courbe</h2>
+    <p>Les deux axes sont logarithmiques. L'axe horizontal porte le courant présumé en ampères, sur environ une décade de part et d'autre du courant nominal. L'axe vertical porte le temps en secondes, depuis environ dix mille secondes jusqu'à quelques millisecondes. Parce que les deux axes sont logarithmiques, une droite sur le graphique correspond à un I&sup2;t constant, ce qui explique la forme en S peu marqué plutôt qu'une pente régulière.</p>
+    <p>Deux courbes sont normalement tracées pour un même fusible. La courbe inférieure est le temps de préarc, ou temps de fusion : l'instant où l'élément fond. La courbe supérieure est le temps total de coupure : l'instant où l'arc s'éteint enfin et où le circuit est véritablement mort. L'écart vertical entre les deux est le temps d'arc, et sur un courant de défaut faible cet écart peut représenter une part importante du total.</p>
+    <p>La surface comprise entre les deux courbes est la bande de dispersion de fabrication admise. Un fusible n'est pas un instrument de précision : la norme tolère un écart sur l'axe des courants comme sur celui des temps. Lire la courbe, c'est lire une bande, pas un trait unique.</p>
+
+    <h2>Les trois zones à lire séparément</h2>
+    <p>Toute courbe de fusible se divise dans les mêmes trois régions, et les frontières comptent plus que la forme.</p>
+    <table>
+      <thead>
+        <tr><th>Zone</th><th>Ce que fait le fusible</th><th>Ce que l'on vérifie</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Surcharge, temps longs</td><td>L'élément chauffe lentement, pas encore d'arc</td><td>Que le câble est protégé et que la charge normale ne se situe pas dans la bande de fusion</td></tr>
+        <tr><td>Transition, secondes à minutes</td><td>Les temps de fusion chutent fortement quand le courant monte</td><td>L'appel de démarrage moteur et l'enclenchement d'un transformateur, qui doivent passer sans ouverture</td></tr>
+        <tr><td>Court-circuit, millisecondes</td><td>Fonctionnement limiteur, l'élément se vaporise</td><td>Le I&sup2;t total de coupure face à la tenue du câble, et le pouvoir de coupure</td></tr>
+      </tbody>
+    </table>
+    <p>La plupart des fusibles mal appliqués sont corrects dans la zone court-circuit et faux ailleurs. Un fusible qui coupe parfaitement un défaut mais s'ouvre à chaque démarrage de compresseur a été choisi en ne regardant que l'extrémité droite du graphique.</p>
+
+    <h2>gG, aM et gPV ne sont pas interchangeables</h2>
+    <p>La première lettre d'une classe de fusible CEI décrit ce que le fusible a le droit de couper ; la seconde décrit ce qu'il est censé protéger. En distribution basse tension, les trois familles ci-dessous couvrent presque toutes les demandes, et elles diffèrent d'une manière qu'aucun déclassement ne peut corriger.</p>
+    <table>
+      <thead>
+        <tr><th>Classe</th><th>Protège</th><th>Service en surcharge</th><th>Usage typique</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>gG</td><td>Câbles et circuits généraux</td><td>Plage complète, surcharge et court-circuit</td><td>Tableaux de distribution, départs et circuits terminaux</td></tr>
+        <tr><td>aM</td><td>Circuits moteur, court-circuit seul</td><td>Aucun par conception, la surcharge est confiée au relais thermique</td><td>Départ moteur, associé à une protection thermique ou électronique</td></tr>
+        <tr><td>gPV</td><td>Chaînes et champs photovoltaïques</td><td>Plage complète, à la tension continue du champ</td><td>Protection de chaîne et de champ, coffrets de regroupement continu</td></tr>
+      </tbody>
+    </table>
+    <p>Un fusible aM n'est délibérément pas un dispositif de surcharge. Sa courbe est décalée pour laisser passer facilement le courant de démarrage, ce qui signifie qu'un moteur bloqué est protégé par le relais thermique et non par le fusible. Monter un aM à la place d'un gG supprime purement et simplement la protection de surcharge du câble, et aucun contrôle visuel ne le détectera puisque le corps se monte et que le circuit fonctionne.</p>
+    <p>gPV est encore un autre cas. Les circuits de source photovoltaïque ont un courant maximal défini proche de leur courant de fonctionnement, et le fusible doit supporter ce courant en permanence à température de coffret élevée tout en s'ouvrant sur un courant inverse ou de défaut. Un fusible gG de même calibre n'est pas un substitut : ni sa courbe ni son comportement en continu n'ont été spécifiés pour ce service.</p>
+
+    <h2>Temps de fusion n'est pas temps de coupure</h2>
+    <p>Quand on dit qu'un fusible ouvre en cinq millisecondes, on cite l'un de deux chiffres différents. Le temps de fusion est l'instant où l'élément se rompt. Le temps de coupure est l'instant où le courant s'arrête vraiment, période d'arc comprise après la vaporisation. Sur les forts courants de défaut, le remplissage éteint l'arc rapidement et les deux valeurs sont proches. Sur les courants plus faibles, elles divergent, et c'est précisément là que se jouent les calculs d'endommagement du câble.</p>
+    <p>Cela compte parce que les valeurs d'I&sup2;t publiées existent dans les deux versions. Le I&sup2;t de préarc décrit l'élément seul ; le I&sup2;t total de coupure décrit l'événement complet, arc inclus. Toute étude de coordination qui mélange les deux compare des grandeurs qui ne sont pas la même chose, et elle surestime généralement la qualité de la protection du câble.</p>
+
+    <h2>Vérifier la courbe contre le câble</h2>
+    <p>La protection du câble est une comparaison d'énergie, pas de courant. La tenue adiabatique d'un conducteur vaut k&sup2;S&sup2;, où k est une constante de matériau et S la section en millimètres carrés. Le fusible laisse passer un I&sup2;t. La vérification consiste simplement à s'assurer que le I&sup2;t total de coupure au courant de défaut présumé reste inférieur à k&sup2;S&sup2; pour ce conducteur.</p>
+    <p>Deux conséquences surprennent souvent les acheteurs. D'abord, un fusible plus gros n'est pas automatiquement pire pour le câble à fort niveau de défaut, car la limitation de crête réduit l'énergie laissée passer. Ensuite, un fusible plus petit n'est pas automatiquement plus sûr, car il peut se situer dans la bande de surcharge de la charge normale et s'ouvrir en service. La courbe est le seul endroit où les deux effets se lisent ensemble.</p>
+    <p>Sur une longue liaison, le courant de défaut présumé en bout de ligne est bien plus faible qu'au tableau. Le fusible travaille alors dans sa zone de transition et non en limitation : les temps de coupure s'allongent et l'I&sup2;t laissé passer grimpe fortement. C'est la raison la plus fréquente pour laquelle un câble qui semblait protégé dans le schéma du tableau ne l'est pas en bout de ligne.</p>
+
+    <h2>Pourquoi les fusibles déclenchent à tort sur moteur et transformateur</h2>
+    <p>Cinq causes expliquent la quasi-totalité des cas qui nous sont soumis.</p>
+    <ul>
+      <li><strong>Un gG sur un départ moteur.</strong> Le courant de démarrage traverse la zone de transition plus longtemps que la courbe ne l'autorise. La réponse est un aM, ou un gG plus gros avec vérification du câble.</li>
+      <li><strong>L'appel d'enclenchement du transformateur.</strong> La mise sous tension attire un courant d'appel décroissant bien supérieur au nominal pendant quelques cycles à quelques secondes. Un fusible calibré sur la puissance du transformateur y voit un défaut.</li>
+      <li><strong>Déclassement en coffret ignoré.</strong> Un fusible dans une enveloppe fermée chauffe plus que ne le suppose la courbe et s'ouvre donc avant la ligne publiée. Des rangées serrées de fusibles aggravé cette effet.</li>
+      <li><strong>Contenu harmonique.</strong> Les charges non linéaires ajoutent un courant haute fréquence qui échauffe l'élément sans apparaître sur une mesure à la fréquence fondamentale.</li>
+      <li><strong>Cycles de surcharge répétés.</strong> Un fusible qui a chauffé pendant des mois voit sa durée de vie réduite, et la défaillance finale paraît spontanée.</li>
+    </ul>
+
+    <h2>Le courant continu change la courbe</h2>
+    <p>Un arc continu ne passe pas par zéro et ne s'éteint donc pas de lui-même comme un arc alternatif à chaque demi-période. Un fusible destiné au continu est construit et essayé pour cela, avec une tension continue assignée généralement inférieure à sa tension alternative et une constante de temps d'essai spécifiée. Monter un fusible alternatif sur une chaîne photovoltaïque n'est pas une question de déclassement : c'est un composant qui n'a jamais été qualifié pour couper le défaut qu'il rencontrera.</p>
+
+    <h2>Ce que YOMIN fournit pour ces services</h2>
+    <p>La gamme de fusibles YOMIN couvre les formes basse tension concernées par ces calculs. La famille à lames NH est la plus courante en tableau de distribution, avec le corps NH00 à lames proposé en version tripolaire cuivre 160 A. Pour le photovoltaïque, le corps NH1 est proposé en 80 A, 125 A et 250 A pour applications solaires 48 V continu, et la série de fusibles PV est livrée avec un porte-fusible remplaçable afin qu'une cartouche grillée ne condamne pas l'ensemble.</p>
+    <table>
+      <thead>
+        <tr><th>Service</th><th>Forme YOMIN</th><th>Emplacement</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Distribution générale</td><td><a href="/products/fuse-protection/nh00-copper-low-voltage-160-amp-3p-polyester-knife-blade-fuse">Fusible à lames NH00, 160 A, tripolaire</a></td><td>Arrivées de tableau et départs</td></tr>
+        <tr><td>Chaîne PV, continu</td><td><a href="/products/fuse-protection/nh1-80a-125a-250a-48v-pv-dc-solar-fuse-for-distribution-box">Fusible solaire PV continu NH1, 80 A à 250 A, 48 V</a></td><td>Coffrets de distribution continu sur petits champs</td></tr>
+        <tr><td>PV, remplaçable</td><td><a href="/products/fuse-protection/high-and-low-breaking-capacity-new-energy-pv-fuse-series-for-low-voltage-usage-replaceable-fuse-holder">Série de fusibles PV avec porte-fusible remplaçable</a></td><td>Protection de chaîne quand la maintenance compte</td></tr>
+      </tbody>
+    </table>
+    <p>Si vous hésitez encore entre fusible et disjoncteur pour la même position, la <a href="/blog/fuse-vs-circuit-breaker">comparaison fusible contre disjoncteur</a> détaille l'arbitrage entre temps de fonctionnement et coût de réarmement. Si la question est la forme mécanique compatible avec un socle existant, l'<a href="/blog/types-of-fuses">aperçu des familles de fusibles</a> et le <a href="/blog/nh-fuse-guide">guide de dimensionnement NH</a> traitent le côté mécanique.</p>
+
+    <h2>Vérifications avant d'envoyer une demande de prix</h2>
+    <ul>
+      <li><strong>Tension et fréquence du réseau</strong>, et pour le continu la tension du champ et la constante de temps attendue.</li>
+      <li><strong>Courant de défaut présumé</strong> au point d'installation, pour vérifier le pouvoir de coupure au lieu de le supposer.</li>
+      <li><strong>Le type de charge</strong>, car il décide si un service de surcharge est nécessaire. Un départ moteur appelle un aM plus un relais thermique, pas un gG plus gros.</li>
+      <li><strong>Section et matière du câble</strong>, pour confronter l'I&sup2;t total de coupure à k&sup2;S&sup2;.</li>
+      <li><strong>Ambiance et enveloppe</strong>, puisqu'un coffret fermé modifie le calibre effectif de tous les fusibles qu'il contient.</li>
+      <li><strong>Le marquage de classe exigé</strong>, écrit gG, aM ou gPV sur la commande. Sinon le fournisseur retiendra le corps disponible en stock.</li>
+    </ul>
+    <p>Joignez aussi la référence de courbe sur laquelle vous travaillez, pas seulement le courant nominal. Deux fournisseurs qui chiffrent le même ampérage sur des classes différentes, c'est la plus coûteuse des comparaisons de prix.</p>
+
+
+    <h2>Questions fréquentes</h2>
+    <h3>Quelle différence entre la courbe temps-courant et le courant nominal ?</h3>
+    <p>Le courant nominal n'est qu'un point de la courbe. La courbe donne les temps de fusion et de coupure sur toute la plage de courant, ce qui décide si le fusible tient au démarrage moteur et s'il coupe un défaut avant que le câble ne soit endommagé.</p>
+    <h3>Peut-on remplacer un fusible aM par un gG sur un moteur ?</h3>
+    <p>Non. Un aM est délibérément construit sans protection de surcharge pour laisser passer le démarrage ; un gG assure ce service de surcharge et s'ouvrira sur un démarrage long ou répété. Remplacer aM par gG revient soit à déclencher le moteur, soit à surdimensionner le fusible au point qu'il ne protège plus le câble.</p>
+    <h3>Pourquoi un fusible ouvre-t-il plus vite que la courbe ne l'indique ?</h3>
+    <p>Parce que la courbe publiée suppose des conditions de référence définies. Un fusible en enveloppe fermée, dans un tableau chaud ou serré contre d'autres fusibles, travaille au-dessus de l'ambiance de référence et s'ouvre plus tôt. Le courant harmonique produit le même effet sans apparaître sur une mesure à la fréquence fondamentale.</p>
+    <h3>Un fusible alternatif convient-il sur un circuit photovoltaïque continu ?</h3>
+    <p>Non. Un arc continu ne s'éteint pas de lui-même au passage par zéro : un fusible utilisé sur une chaîne PV doit être assigné et essayé pour le service continu à la tension du champ, avec des caractéristiques gPV. Un fusible alternatif n'a jamais été qualifié pour couper ce défaut.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous choisissez une classe de fusible pour un tableau ou une chaîne PV ?</h2>
+    <p>Envoyez la tension du réseau, le courant de défaut présumé, le type de charge et la section du câble. Nous confirmerons la classe et la forme adaptées à la position, et où la courbe doit être confrontée à votre câble.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

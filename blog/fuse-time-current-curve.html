@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/fuse-time-current-curve/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuse Time-Current Curve: Reading gG, aM and gPV Bands | Yomin Electric</title>
+<meta name="description" content="How to read a fuse time-current curve: the three bands, gG versus aM versus gPV, melting time against clearing time, and the I-squared-t check that keeps a cable inside its withstand.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/fuse-time-current-curve/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/fuse-time-current-curve">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/fuse-time-current-curve">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/fuse-time-current-curve-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/fuse-time-current-curve-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/fuse-time-current-curve-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/fuse-time-current-curve">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Fuse Time-Current Curve: Reading gG, aM and gPV Before You Order",
+      "description": "How to read a fuse time-current curve: the three bands, gG versus aM versus gPV, melting time against clearing time, and the I-squared-t check that keeps a cable inside its withstand.",
+      "image": "https://www.yominelectric.com/assets/images/blog/fuse-time-current-curve/hero.png",
+      "datePublished": "2026-11-16",
+      "dateModified": "2026-11-16",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/fuse-time-current-curve"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a fuse time-current curve and its rated current?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The rated current is one point on the curve, nothing more. The curve gives the melting and clearing time across the whole current range, which is what decides whether the fuse holds on motor starting and whether it clears a fault before the cable is damaged."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a gG fuse instead of an aM fuse on a motor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. An aM fuse is deliberately built without overload protection so that starting current passes; a gG fuse carries overload duty and will open on a long or repeated start. Replacing aM with gG either trips the motor or forces an oversized fuse that no longer protects the cable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does a fuse open faster than the curve suggests?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the published curve assumes defined reference conditions. A fuse in a sealed enclosure, in a hot panel, or packed tightly against other fuses runs above the reference ambient and opens earlier. Harmonic current has the same effect without appearing on a fundamental-frequency measurement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is an AC fuse acceptable on a photovoltaic DC circuit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A DC arc does not self-extinguish at a zero crossing, so a fuse used on a PV string must be rated and tested for DC duty at the array voltage, with gPV characteristics. An AC-rated fuse has never been qualified to interrupt that fault."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Fuses and Protection</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Fuse Time-Current Curve: Reading gG, aM and gPV Before You Order</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 16, 2026</span>
+      <span class="divider"></span>
+      <span>11 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/fuse-time-current-curve/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/fuse-time-current-curve/hero.png" alt="YOMIN high-breaking-capacity HRC fuse and an outdoor drop-out fuse cutout with a replaceable fuse link" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A fuse time-current curve is the only document that tells you how a fuse will actually behave. The rated current printed on the barrel is a single number that says almost nothing about the two things that decide whether an installation works: how long the fuse takes to open at a given overload, and how much fault energy it lets through before it does.</p>
+
+    <p>The practical answer is that you read the curve in three separate bands, and you must know which band your protection decision lives in. Cable protection lives in the overload band. Motor starting lives in the transition band, where a fuse must not open. Short-circuit protection lives in the steep band at the right, where the fuse must open faster than the cable is damaged. A fuse selected on rated current alone usually gets one of those three right and the other two wrong.</p>
+
+    <h2>What the curve actually plots</h2>
+    <p>Both axes are logarithmic. The horizontal axis is prospective current in amperes, spanning roughly a decade either side of the rated current. The vertical axis is time in seconds, running from about ten thousand seconds down to a few milliseconds. Because both axes are logarithmic, a straight line on the page is a constant I&sup2;t relationship, which is why curves look like a shallow S rather than a smooth slope.</p>
+    <p>Two curves are normally plotted for the same fuse. The lower one is the pre-arcing, or melting, time: the moment the element melts. The upper one is the total clearing time: the moment the arc is finally extinguished and the circuit is genuinely dead. The vertical gap between them is the arcing time, and on a low fault current that gap can be a meaningful fraction of the total.</p>
+    <p>The area between the two curves is the band of legitimate manufacturing spread. A fuse is not a precision instrument, so the standard allows tolerance on both the current and the time axis. Reading the curve means reading the band, not a single hairline.</p>
+
+    <h2>The three bands you have to read separately</h2>
+    <p>Every fuse curve divides into the same three regions, and the boundaries matter more than the shape.</p>
+    <table>
+      <thead>
+        <tr><th>Band</th><th>What the fuse is doing</th><th>What you check there</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Overload, long times</td><td>Element heating slowly, no arc yet</td><td>That the cable is protected, and that normal load does not sit inside the fusing band</td></tr>
+        <tr><td>Transition, seconds to minutes</td><td>Melting times fall steeply as current rises</td><td>Motor inrush and transformer energisation, which must pass without opening</td></tr>
+        <tr><td>Short circuit, milliseconds</td><td>Current-limited operation, element vaporises</td><td>Total clearing I&sup2;t against the cable withstand, and the breaking capacity</td></tr>
+      </tbody>
+    </table>
+    <p>Most misapplied fuses are correct in the short-circuit band and wrong somewhere else. A fuse that clears a fault beautifully but opens on every compressor start is a fuse chosen by looking only at the right-hand end of the graph.</p>
+
+    <h2>gG, aM and gPV are not interchangeable</h2>
+    <p>The first letter of an IEC fuse class describes what the fuse is permitted to break; the second describes what it is intended to protect. In low-voltage distribution the three families below account for nearly every enquiry, and they differ in a way that no amount of derating can fix.</p>
+    <table>
+      <thead>
+        <tr><th>Class</th><th>Protects</th><th>Overload duty</th><th>Typical fit</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>gG</td><td>Cables and general circuits</td><td>Full-range, overload and short circuit</td><td>Distribution boards, feeder and final circuits</td></tr>
+        <tr><td>aM</td><td>Motor circuits, short circuit only</td><td>None by design, overload is left to the overload relay</td><td>Motor branch, paired with a thermal or electronic overload</td></tr>
+        <tr><td>gPV</td><td>Photovoltaic strings and arrays</td><td>Full-range, at the DC rating of the array</td><td>String and array protection, DC combiner boxes</td></tr>
+      </tbody>
+    </table>
+    <p>An aM fuse is deliberately not an overload device. Its curve is shifted so that motor starting current passes easily, which means a stalled motor is protected by the overload relay and not by the fuse. Fitting an aM fuse where a gG is required removes overload protection from the cable entirely, and no inspection will catch it because the barrel fits and the circuit works.</p>
+    <p>gPV is a separate case again. Photovoltaic source circuits have a defined maximum current close to their operating current, and the fuse has to survive that current continuously at elevated enclosure temperature while still opening on a reverse or fault current. A gG fuse of the same nominal rating is not a substitute, because its curve and its DC behaviour were never specified for that duty.</p>
+
+    <h2>Melting time is not clearing time</h2>
+    <p>When someone says a fuse opens in five milliseconds, they are quoting one of two different numbers. Melting time is when the element breaks. Clearing time is when the current actually stops, which includes the arcing period after the element has vaporised. On high fault currents the arc is quenched quickly by the filler and the two numbers are close. On lower fault currents they diverge, and the divergence is exactly where cable damage calculations are decided.</p>
+    <p>This matters because the published I&sup2;t figures come in the same two flavours. Pre-arcing I&sup2;t describes the element alone; total clearing I&sup2;t describes the whole event including the arc. Any coordination study that mixes the two is comparing quantities that are not the same thing, and it will usually overstate how well the cable is protected.</p>
+
+    <h2>Checking the curve against the cable</h2>
+    <p>Cable protection is an energy comparison, not a current comparison. The adiabatic withstand of a conductor is k&sup2;S&sup2;, where k is a material constant and S is the cross-section in square millimetres. The fuse passes I&sup2;t. The check is simply that the total clearing I&sup2;t at the prospective fault current stays below k&sup2;S&sup2; for that conductor.</p>
+    <p>Two consequences follow that surprise buyers. First, a larger fuse is not automatically worse for the cable at high fault levels, because current limiting cuts the let-through energy. Second, a smaller fuse is not automatically safer, because it may sit inside the overload band of normal load and open in service. The curve is the only place both effects can be seen together.</p>
+    <p>Where the installation has a long cable run, the prospective fault current at the far end is much lower than at the board. The fuse then operates in its transition band rather than its current-limiting band, clearing times lengthen, and the I&sup2;t let through rises sharply. This is the single most common reason a cable that looked protected in the panel schedule is not protected at the end of the run.</p>
+
+    <h2>Why fuses nuisance-trip on motor and transformer circuits</h2>
+    <p>Five causes account for almost every case we are asked about.</p>
+    <ul>
+      <li><strong>A gG fuse on a motor branch.</strong> The starting current passes through the transition band for longer than the curve allows. The correct answer is aM, or a larger gG with the cable re-checked.</li>
+      <li><strong>Transformer energisation inrush.</strong> Switching a transformer draws a decaying inrush well above rated current for a few cycles to a few seconds. A fuse sized to the transformer rating sees that as a fault.</li>
+      <li><strong>Enclosure derating ignored.</strong> A fuse inside a sealed box runs hotter than the curve assumes, so it opens earlier than the published line. Dense banks of fuses side by side make this worse.</li>
+      <li><strong>Harmonic content.</strong> Nonlinear loads add high-frequency current that heats the element without contributing to the fundamental reading on a clamp meter.</li>
+      <li><strong>Repeated overload cycling.</strong> A fuse that has run hot for months has a shortened life, and the eventual failure looks spontaneous.</li>
+    </ul>
+
+    <h2>Direct current changes the curve</h2>
+    <p>A DC arc does not cross zero, so it does not extinguish itself the way an AC arc does at each half cycle. A fuse intended for DC duty is built and tested for that, with a DC voltage rating that is usually lower than its AC rating and a specified time constant for the test circuit. Putting an AC-rated fuse on a photovoltaic string is not a derating question; it is a device that has never been qualified to interrupt the fault it will see.</p>
+
+    <h2>What YOMIN supplies for these duties</h2>
+    <p>The YOMIN fuse range covers the low-voltage forms that appear in these calculations. The NH blade family is the workhorse for distribution boards, with the NH00 knife-blade body available in a three-pole copper build rated 160 A. For photovoltaic work the NH1 body is offered at 80 A, 125 A and 250 A for 48 V DC solar applications, and the PV fuse series is supplied with a replaceable fuse holder so a blown link does not scrap the assembly.</p>
+    <table>
+      <thead>
+        <tr><th>Duty</th><th>YOMIN form</th><th>Where it belongs</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>General distribution</td><td><a href="/products/fuse-protection/nh00-copper-low-voltage-160-amp-3p-polyester-knife-blade-fuse">NH00 knife-blade fuse, 160 A, three-pole</a></td><td>Board incomers and feeder ways</td></tr>
+        <tr><td>PV string, DC</td><td><a href="/products/fuse-protection/nh1-80a-125a-250a-48v-pv-dc-solar-fuse-for-distribution-box">NH1 PV DC solar fuse, 80 A to 250 A, 48 V</a></td><td>DC distribution boxes on small arrays</td></tr>
+        <tr><td>PV, replaceable</td><td><a href="/products/fuse-protection/high-and-low-breaking-capacity-new-energy-pv-fuse-series-for-low-voltage-usage-replaceable-fuse-holder">PV fuse series with replaceable holder</a></td><td>String protection where servicing matters</td></tr>
+      </tbody>
+    </table>
+    <p>If you are still deciding between a fuse and a breaker for the same position, the <a href="/blog/fuse-vs-circuit-breaker">fuse versus breaker comparison</a> works through the trade in operating time and reset cost. If the question is which physical form fits an existing base, the <a href="/blog/types-of-fuses">fuse family overview</a> and the <a href="/blog/nh-fuse-guide">NH sizing guide</a> cover the mechanical side.</p>
+
+    <h2>Checks before you send an RFQ</h2>
+    <ul>
+      <li><strong>System voltage and frequency</strong>, and for DC the array voltage and expected time constant.</li>
+      <li><strong>Prospective fault current</strong> at the point of installation, so the breaking capacity can be verified rather than assumed.</li>
+      <li><strong>The load type</strong>, because it decides whether you need overload duty at all. Motor branch means aM plus an overload relay, not a bigger gG.</li>
+      <li><strong>Cable size and material</strong>, so the total clearing I&sup2;t can be checked against k&sup2;S&sup2;.</li>
+      <li><strong>Ambient and enclosure</strong>, since a sealed box changes the effective rating of every fuse inside it.</li>
+      <li><strong>The class marking you need</strong>, written as gG, aM or gPV on the order. Suppliers will otherwise default to whichever barrel is in stock.</li>
+    </ul>
+    <p>Send the curve reference you are working to as well, not only the rated current. Two suppliers quoting the same amperage against different classes is the most expensive kind of price comparison.</p>
+
+
+    <h2>Frequently asked questions</h2>
+    <h3>What is the difference between a fuse time-current curve and its rated current?</h3>
+    <p>The rated current is one point on the curve, nothing more. The curve gives the melting and clearing time across the whole current range, which is what decides whether the fuse holds on motor starting and whether it clears a fault before the cable is damaged.</p>
+    <h3>Can I use a gG fuse instead of an aM fuse on a motor?</h3>
+    <p>No. An aM fuse is deliberately built without overload protection so that starting current passes; a gG fuse carries overload duty and will open on a long or repeated start. Replacing aM with gG either trips the motor or forces an oversized fuse that no longer protects the cable.</p>
+    <h3>Why does a fuse open faster than the curve suggests?</h3>
+    <p>Because the published curve assumes defined reference conditions. A fuse in a sealed enclosure, in a hot panel, or packed tightly against other fuses runs above the reference ambient and opens earlier. Harmonic current has the same effect without appearing on a fundamental-frequency measurement.</p>
+    <h3>Is an AC fuse acceptable on a photovoltaic DC circuit?</h3>
+    <p>No. A DC arc does not self-extinguish at a zero crossing, so a fuse used on a PV string must be rated and tested for DC duty at the array voltage, with gPV characteristics. An AC-rated fuse has never been qualified to interrupt that fault.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Choosing a fuse class for a board or a PV string?</h2>
+    <p>Send the system voltage, prospective fault current, load type and cable size. We will confirm which class and body form fits the position, and where the curve needs checking against your cable.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
