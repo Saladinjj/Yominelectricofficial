@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/branch-circuit-monitoring/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مراقبة الدوائر الفرعية: محوّلات منشقّة وعدّادات قضيب DIN | Yomin Electric</title>
+<meta name="description" content="كيف تُجهَّز كل دائرة صادرة في لوحة التوزيع: نسبة المحوّل وفق التيار الفعلي، وتحديث بمحوّلات منشقّة دون انقطاع، وأخطاء الإسناد التي تُفسد البيانات.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/branch-circuit-monitoring/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/branch-circuit-monitoring-ar">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/branch-circuit-monitoring">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/branch-circuit-monitoring-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/branch-circuit-monitoring-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/branch-circuit-monitoring-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/branch-circuit-monitoring">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "مراقبة الدوائر الفرعية: محوّلات منشقّة وعدّادات قضيب DIN، دائرة بدائرة",
+      "description": "كيف تُجهَّز كل دائرة صادرة في لوحة التوزيع: نسبة المحوّل وفق التيار الفعلي، وتحديث بمحوّلات منشقّة دون انقطاع، وأخطاء الإسناد التي تُفسد البيانات.",
+      "image": "https://www.yominelectric.com/assets/images/blog/branch-circuit-monitoring/hero.png",
+      "datePublished": "2026-11-18",
+      "dateModified": "2026-11-18",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/branch-circuit-monitoring-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "ar",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ما هي مراقبة الدوائر الفرعية؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "هي قياس كل دائرة صادرة في لوحة التوزيع على حدة، باستخدام محوّل تيار حول كل موصل صادر وعدّاد يقبل مداخل تلك المحوّلات. وتنتج تياراً وقدرة وطاقة لكل دائرة بدلاً من إجمالي واحد للمبنى."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يمكن إضافة المراقبة إلى لوحة قائمة دون فصل التيار؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم عادةً باستخدام محوّلات النواة المنشقّة: تُفتح وتُلتف حول موصل مركّب ثم تُغلق، فلا يُفصل شيء. لكن العدّاد يحتاج حيزاً وتغذية مساعدة ومرجع جهد، وقد يتطلب ذلك انقطاعاً قصيراً لهذا الجزء من العمل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا تبدو قراءة الدائرة أكثر ضجيجاً من العدّاد الرئيسي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لأن تيارات الدوائر صغيرة أمام المحوّل المركّب. المحوّل المحدد لتيار أكبر بكثير يعمل في أسفل مداه على دائرة خفيفة الحمل، حيث فئة الدقة أقل راحة. ومطابقة النسبة للتيار المقيس تعالج معظم ذلك."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يجب أن يساوي مجموع الدوائر قراءة العدّاد الرئيسي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يجب أن يتابعه ضمن هامش معقول بعد تجهيز كل الدوائر. الفارق الكبير يعني عادةً دائرة غائبة عن المخطط، أو محوّلاً مغلقاً على موصل خاطئ، أو قناة مسندة إلى دائرة أخرى: وهي مشكلات إسناد لا مشكلات عدّاد."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>مراقبة الطاقة</span></div>
+    <span class="bh-tag">أدلة التطبيق</span>
+    <h1 class="bh-title">مراقبة الدوائر الفرعية: محوّلات منشقّة وعدّادات قضيب DIN، دائرة بدائرة</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>18 نوفمبر 2026</span>
+      <span class="divider"></span>
+      <span>11 دقيقة قراءة</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/branch-circuit-monitoring/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/branch-circuit-monitoring/hero.png" alt="محوّلات تيار منشقّة من YOMIN وعدّاد طاقة ثلاثي الأطوار لقضيب DIN بمدخل محوّل لمراقبة الدوائر الفرعية" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<p><strong>مراقبة الدوائر الفرعية تقيس كل دائرة صادرة على حدة بدلاً من قياس المدخل الرئيسي فقط.</strong> يلتف محوّل تيار حول كل موصل صادر، ويغذّي كل محوّل قناة في عدّاد يقبل مداخل محوّلات التيار، فتنتج سجلاً لكل دائرة من التيار والقدرة والطاقة. العدّاد الرئيسي يخبرك بما يستهلكه المبنى، ومراقبة الدوائر تخبرك أي دائرة استهلكته وفي أي ساعة.</p>
+
+<p>هذا الفرق يحدد الأسئلة التي تستطيع البيانات الإجابة عنها. العدّاد الواحد يكفي للفوترة ولإجمالي شهري، لكنه لا يكشف أن دائرة مبرّد تعمل عند 40 أمبيراً بين الثانية والخامسة فجراً، أو أن لوحة مستأجر ترتفع منذ ستة أسابيع. هذه النتائج هي التي تبرّر كلفة الأجهزة، وهي تحتاج دقة على مستوى الدائرة.</p>
+
+<p>يتناول هذا الدليل الجانب العملي: ما الذي يُقاس، وكيف يُقارن مخطط محوّل لكل دائرة بمخطط عدّاد لكل دائرة، وكيف يُختار المحوّل ذو النواة المنشقّة الذي يجعل التركيب ممكناً دون فصل أي شيء، والأخطاء التي تحوّل لوحة مجهّزة بالكامل إلى قراءات لا يثق بها أحد.</p>
+
+<h2>ما تقدمه المراقبة على مستوى الدائرة فعلاً</h2>
+<p>ينتج المحوّل الملتف حول موصل صادر تياراً ثانوياً يتناسب مع تيار تلك الدائرة. يحوّله العدّاد إلى تيار، ثم بمساعدة مدخل الجهد الموجود لديه إلى قدرة، وبالتجميع الزمني إلى طاقة. وتترتب على هذه السلسلة ثلاث نتائج عملية.</p>
+
+<ul>
+  <li><strong>التيار يُقاس مباشرة، أما القدرة والطاقة فتُحسبان.</strong> محوّل بقناة تيار فقط يعطي منحنى الحمل ونسبة الاستخدام. القدرة والطاقة تحتاجان مرجع الجهد، ولذلك لا يعطي المحوّل بلا مدخل جهد سوى بيانات التيار.</li>
+  <li><strong>القياس لكل طور.</strong> تحتاج الدائرة ثلاثية الأطوار ثلاثة محوّلات وثلاث قنوات، وإلا وصفت القراءة جزءاً من الحقيقة فقط. الحمل الثلاثي المقيس على طور واحد يبدو متوازناً وليس كذلك.</li>
+  <li><strong>التيارات الصغيرة هي الجزء الصعب.</strong> محوّل 250/5 على دائرة تعمل في وضع الخمول ببضعة أمبيرات يعمل في أسفل مداه، حيث تكون فئة الدقة أقل راحة. وهذا أكثر أسباب ظهور بيانات الدوائر أكثر ضجيجاً من بيانات العدّاد الرئيسي.</li>
+</ul>
+
+<h2>محوّل لكل دائرة أم عدّاد لكل دائرة</h2>
+<table>
+  <thead>
+    <tr><th></th><th>محوّل لكل دائرة مع عدّاد مشترك</th><th>عدّاد لكل دائرة</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>الحيز</td><td>محوّل حول كل موصل وجهاز واحد</td><td>وحدة لكل دائرة تضيف عرضاً في كل مسار</td></tr>
+    <tr><td>التوصيل</td><td>زوج ثانوي لكل دائرة حتى العدّاد</td><td>بلا مسارات ثانوية، لكن مع ناقل وتغذية مساعدة لكل وحدة</td></tr>
+    <tr><td>التحديث</td><td>محوّلات منشقّة تُطبق دون فصل الموصل</td><td>يجب عادةً قطع الدائرة لإدخال الوحدة</td></tr>
+    <tr><td>الدقة</td><td>تحددها قنوات العدّاد المتاحة</td><td>دائرة لكل وحدة، فهي كاملة بطبيعتها</td></tr>
+    <tr><td>نطاق العطل</td><td>عطل العدّاد يؤثر في كل قنواته</td><td>عطل الوحدة يؤثر في دائرة واحدة</td></tr>
+    <tr><td>الأنسب لـ</td><td>اللوحات المزدحمة والتحديث ولوحات المستأجرين</td><td>الإنشاء الجديد حيث الحيز مخطط والدوائر قليلة</td></tr>
+  </tbody>
+</table>
+
+<p>في اللوحات القائمة يتفوق حل المحوّل المنشقّ عادةً بحجة واحدة: لا شيء يحتاج إلى فصل أثناء التركيب. وهذا أثقل وزناً من حجم التوصيل، لأن مشروع مراقبة يتطلب قطعاً في كل لوحة نادراً ما يُعتمد.</p>
+
+<h2>اختيار المحوّل المنشقّ للدائرة</h2>
+<table>
+  <thead>
+    <tr><th>القرار</th><th>كيف يُحسم</th><th>ما يفسد عند إهماله</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>النسبة</td><td>من تيار التصميم للدائرة لا من حجم القاطع</td><td>محوّل مفرط الحجم يقيس بشكل سيئ عند الحمل الخفيف، وهو حال معظم الدوائر</td></tr>
+    <tr><td>حجم الفتحة</td><td>قياس الموصل مع عزله ثم ترك خلوص لإغلاق النواة</td><td>محوّل «يكاد يدخل» لا يُغلق باستقامة، والفراغ يفسد الدقة</td></tr>
+    <tr><td>فئة الدقة</td><td>0.5 إذا كانت البيانات للفوترة أو إعادة التوزيع، و1.0 لتحليل الاتجاه</td><td>دفع ثمن فئة 0.5 ثم إهدارها في مسار ثانوي طويل</td></tr>
+    <tr><td>الحمل VA</td><td>جمع حلقة الثانوي وقناة العدّاد ثم مقارنته بقدرة المحوّل</td><td>فئة البطاقة لم تعد تصف القياس المركّب</td></tr>
+    <tr><td>الجهد</td><td>مساوٍ لجهد اللوحة أو أعلى</td><td>جسم منخفض الجهد يُستخدم خارج نطاق تأهيله</td></tr>
+  </tbody>
+</table>
+
+<p>يلزم قول نقطتين بصراحة. الأولى أن النسبة تتبع الحمل لا المفاتيح: دائرة 63 أمبيراً تحمل فعلياً 12 أمبيراً تحتاج محوّلاً لهذه الـ 12 لا محوّلاً مطابقاً لبطاقة القاطع. والثانية أن فئة 0.5 لا معنى لها إن لم يحترم المسار الثانوي الحمل، وإلا فالمال المدفوع للفئة يشتري رقماً لا يصل إلى العدّاد.</p>
+
+<h2>أين تُركّب المحوّلات وكيف تبقى اللوحة قابلة للصيانة</h2>
+<p>التوزيع المادي يحدد إن كانت التركيبة ستصمد أمام أول زيارة صيانة. تُركّب المحوّلات على الموصلات الصادرة بعد جهاز الحماية، باتجاه P1 نحو التغذية. اجمع أزواج الأسلاك الثانوية، ووسم كل زوج عند طرفيه بالدائرة التي يخدمها، وأبعدها عن كابلات الملامسات ومحركات التردد.</p>
+
+<p>اترك المحوّلات في متناول اليد. المحوّل المنشقّ المدفون خلف حزمة أسلاك لا يمكن إعادة فتحه لتغيير نسبة أو تصحيح قطبية دون تفكيك اللوحة، والتصحيح سيُطلب: الدوائر تُعاد توزيعها، ومخطط مراقبة يفترض لوحة ثابتة لا يقدم شيئاً مع الزمن. وسم الثانوي عند طرف المحوّل كما عند طرف العدّاد، لأن من يشخّص قراءة خاطئة يقف عادةً عند طرف وبيده مخطط الطرف الآخر.</p>
+
+<h2>من القراءات إلى القرارات</h2>
+<ul>
+  <li><strong>الحمل الأساسي.</strong> أرضية كل دائرة ليلاً تُظهر ما يعمل والمبنى فارغ. الدائرة التي لا تنخفض أبداً إما حمل مستمر مشروع أو شيء لا يجب أن يعمل.</li>
+  <li><strong>إزاحة الحمل.</strong> الدوائر ذات الذروة النهارية العالية والطلب الليلي المنخفض مرشحة لنقل دورات التشغيل، والبيانات تحدد أيها يستحق النقل.</li>
+  <li><strong>إعادة توزيع الفواتير على المستأجرين أو الأقسام.</strong> اللوحات الفرعية المزوّدة بمحوّلات خاصة تحوّل فاتورة مشتركة إلى توزيع موثّق، وهنا تهم فئة 0.5.</li>
+  <li><strong>السعة والصيانة.</strong> دائرة يتصاعد حملها نحو قيمتها المقررة تنتظر قراراً، ودائرة تغيّر شكل منحنى تيارها تخفي عادةً مشكلة ميكانيكية.</li>
+</ul>
+
+<h2>الأعطال التي تجعل البيانات عديمة الفائدة</h2>
+<table>
+  <thead>
+    <tr><th>العرض</th><th>السبب</th><th>التصحيح</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>كل الدوائر منخفضة ومتقاربة</td><td>محوّلات مفرطة الحجم مقابل التيارات الفعلية</td><td>إعادة تحديد النسب حسب التيار المقيس لا حسب القاطع</td></tr>
+    <tr><td>قناة تقرأ صفراً</td><td>زوج ثانوي غير موصول أو موصول بقناة خاطئة</td><td>فحص الاستمرارية ومطابقة القنوات عند العدّاد</td></tr>
+    <tr><td>تذبذب في المسارات الطويلة</td><td>ثانوي غير محجوب يلتقط ضجيج المناورة</td><td>جدل الزوج أو حجبه وتقصير المسار إن أمكن</td></tr>
+    <tr><td>مجموع الدوائر لا يطابق المدخل</td><td>دوائر غير مجهّزة، أو محوّل مغلق على موصل خاطئ</td><td>المطابقة دائرة بدائرة مع جدول اللوحة</td></tr>
+    <tr><td>قيم سالبة مستمرة</td><td>محوّل معكوس على الموصل</td><td>إعادة الإطباق وP1 نحو التغذية</td></tr>
+  </tbody>
+</table>
+
+<p>اختبار المطابقة هو أول ما يجب إجراؤه. إذا لم يتابع مجموع الدوائر المدخل ضمن هامش معقول، فالمشكلة في الإسناد لا في العدّاد، ولن يصلحها أي تحليل لبيانات الدوائر.</p>
+
+<h2>ما توفره YOMIN</h2>
+<p>تحتاج مراقبة الدوائر إلى أمرين من مورّد واحد: محوّلات تُفتح لتلتف حول موصل مركّب، وعدّاد يقبل ملفاتها الثانوية.</p>
+
+<table>
+  <thead>
+    <tr><th>المنتج</th><th>المواصفات</th><th>موضع الاستخدام</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/products/current-transformer">محوّل منشقّ DP-816، 1000/5 أمبير</a></td><td>720 فولت متردد، فئة 0.5</td><td>المغذيات والدوائر الكبيرة حيث يتعذر فصل الموصل</td></tr>
+    <tr><td><a href="/products/current-transformer">محوّل منشقّ 2000/5 أمبير</a></td><td>720 فولت متردد، فئة 0.5</td><td>المداخل والدوائر عالية التيار في أعمال التحديث</td></tr>
+    <tr><td><a href="/products/energy-meter">عدّاد ثلاثي الأطوار لقضيب DIN، M-Bus، بمحوّل مرفق</a></td><td>طاقة فعالة وغير فعالة، قراءة بالأشعة تحت الحمراء، مع محوّل مرفق</td><td>نقطة القياس التي تنتهي إليها ملفات الدوائر الثانوية</td></tr>
+  </tbody>
+</table>
+
+<p>أرسل جدول اللوحة مع تيار التصميم لكل دائرة، ومقطع الموصلات، وعدد الدوائر التي تريد رؤيتها. النسبة والفتحة تنتجان من الإجابات الثلاث الأولى، وعدد قنوات العدّاد من الرابعة.</p>
+
+    <h2>الأسئلة الشائعة</h2>
+      <h3>ما هي مراقبة الدوائر الفرعية؟</h3>
+      <p>هي قياس كل دائرة صادرة في لوحة التوزيع على حدة، باستخدام محوّل تيار حول كل موصل صادر وعدّاد يقبل مداخل تلك المحوّلات. وتنتج تياراً وقدرة وطاقة لكل دائرة بدلاً من إجمالي واحد للمبنى.</p>
+      <h3>هل يمكن إضافة المراقبة إلى لوحة قائمة دون فصل التيار؟</h3>
+      <p>نعم عادةً باستخدام محوّلات النواة المنشقّة: تُفتح وتُلتف حول موصل مركّب ثم تُغلق، فلا يُفصل شيء. لكن العدّاد يحتاج حيزاً وتغذية مساعدة ومرجع جهد، وقد يتطلب ذلك انقطاعاً قصيراً لهذا الجزء من العمل.</p>
+      <h3>لماذا تبدو قراءة الدائرة أكثر ضجيجاً من العدّاد الرئيسي؟</h3>
+      <p>لأن تيارات الدوائر صغيرة أمام المحوّل المركّب. المحوّل المحدد لتيار أكبر بكثير يعمل في أسفل مداه على دائرة خفيفة الحمل، حيث فئة الدقة أقل راحة. ومطابقة النسبة للتيار المقيس تعالج معظم ذلك.</p>
+      <h3>هل يجب أن يساوي مجموع الدوائر قراءة العدّاد الرئيسي؟</h3>
+      <p>يجب أن يتابعه ضمن هامش معقول بعد تجهيز كل الدوائر. الفارق الكبير يعني عادةً دائرة غائبة عن المخطط، أو محوّلاً مغلقاً على موصل خاطئ، أو قناة مسندة إلى دائرة أخرى: وهي مشكلات إسناد لا مشكلات عدّاد.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>هل تجهّز لوحة للمراقبة أو تصلح بيانات لا يثق بها أحد؟</h2>
+    <p>أرسل جدول اللوحة ومقطع الموصلات وتيار التصميم لكل دائرة. سنؤكد النسبة وحجم الفتحة والعدّاد المناسبين للحيز المتاح.</p>
+    <a class="btn btn-primary" href="/contact">اطلب عرض سعر</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">تحدث على واتساب</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

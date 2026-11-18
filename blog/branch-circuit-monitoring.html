@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/branch-circuit-monitoring/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Branch Circuit Monitoring: Split-Core CTs and DIN-Rail Meters | Yomin Electric</title>
+<meta name="description" content="How to monitor every outgoing circuit in a distribution panel: CT ratio against real branch current, split-core retrofits without a shutdown, and the mapping faults that break the data.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/branch-circuit-monitoring/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/branch-circuit-monitoring">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/branch-circuit-monitoring">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/branch-circuit-monitoring-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/branch-circuit-monitoring-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/branch-circuit-monitoring-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/branch-circuit-monitoring">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Branch Circuit Monitoring: Split-Core CTs and DIN-Rail Meters, Circuit by Circuit",
+      "description": "How to monitor every outgoing circuit in a distribution panel: CT ratio against real branch current, split-core retrofits without a shutdown, and the mapping faults that break the data.",
+      "image": "https://www.yominelectric.com/assets/images/blog/branch-circuit-monitoring/hero.png",
+      "datePublished": "2026-11-18",
+      "dateModified": "2026-11-18",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/branch-circuit-monitoring"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is branch circuit monitoring?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is the measurement of each outgoing circuit in a distribution board separately, using a current transformer around every branch conductor and a meter that accepts those CT inputs. It produces per-circuit current, power and energy instead of a single building total."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I add branch monitoring to an existing panel without switching it off?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually yes, with split-core CTs. They open, clamp around an installed conductor and close again, so nothing has to be disconnected. The meter still needs a mounting position, an auxiliary supply and its voltage reference, which may require a short outage for that part of the work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does a branch reading look noisy compared with the main meter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because branch currents are small relative to the CT fitted. A CT sized for a much larger current operates at the bottom of its range on a lightly loaded branch, where the accuracy class is least comfortable. Matching the ratio to the measured current fixes most of it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do the branch readings have to add up to the main meter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They should track it within a sensible margin once every circuit is instrumented. A large gap usually means a branch is missing from the scheme, a CT is closed on the wrong conductor, or a channel is mapped to the wrong circuit — mapping problems, not meter problems."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Energy Monitoring</span></div>
+    <span class="bh-tag">Application Guides</span>
+    <h1 class="bh-title">Branch Circuit Monitoring: Split-Core CTs and DIN-Rail Meters, Circuit by Circuit</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 18, 2026</span>
+      <span class="divider"></span>
+      <span>11 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/branch-circuit-monitoring/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/branch-circuit-monitoring/hero.png" alt="YOMIN split-core current transformers and a three-phase DIN rail CT-operated energy meter for branch circuit monitoring" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<p><strong>Branch circuit monitoring measures each outgoing circuit separately, instead of measuring only the main incomer.</strong> A current transformer goes around every branch conductor, each CT feeds a channel of a meter that accepts CT inputs, and the result is a per-circuit record of current, power and energy. The main meter tells you what the building consumes. Branch monitoring tells you which circuit consumed it, and at what hour.</p>
+
+<p>That difference decides what questions the data can answer. A single main meter supports billing and a monthly total. It cannot tell you that one chiller branch runs at 40 A between two and five in the morning, or that a tenant's sub-board has been creeping upward for six weeks. Those are the findings that pay for the instrumentation, and they need circuit-level resolution.</p>
+
+<p>This guide covers the practical side of panel-level monitoring: what to measure, how a CT-per-branch scheme compares with a meter-per-branch scheme, how to choose the split-core CT that makes installation possible without disconnecting anything, and the mistakes that turn a fully instrumented panel into a set of readings nobody trusts.</p>
+
+<h2>What branch level measurement actually gives you</h2>
+<p>A split-core CT around a branch conductor produces a secondary current proportional to the branch current. The meter converts that into current, and — using the voltage input it already has — into power and, integrated over time, energy. Three things follow from that chain, and each has a practical consequence.</p>
+
+<ul>
+  <li><strong>Current is measured directly; power and energy are derived.</strong> A CT plus a current-only channel gives you load profile and utilisation. Power and energy need the voltage reference, which is why a CT on a branch with no voltage input to the meter gives current data only.</li>
+  <li><strong>The measurement is per phase.</strong> A three-phase branch needs three CTs and three channels, or a single-phase reading that tells only part of the story. A three-phase load measured on one phase looks like a balanced load and is not.</li>
+  <li><strong>Small currents are the hard part.</strong> A 250/5 CT monitoring a circuit that idles at a few amps is working at the bottom of its range, where the accuracy class is least comfortable. This is the most common reason branch data looks noisier than main-meter data.</li>
+</ul>
+
+<h2>CT per branch or meter per branch</h2>
+<p>Both architectures exist, and the choice is about panel space, wiring volume and how much resolution the analysis needs.</p>
+
+<table>
+  <thead>
+    <tr><th></th><th>CT per branch, shared meter</th><th>Meter per branch</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Panel space</td><td>A CT around each conductor plus one meter unit</td><td>A meter module per way, which adds width on every way</td></tr>
+    <tr><td>Wiring</td><td>One secondary pair per branch back to the meter</td><td>No secondary runs, but a bus and auxiliary supply per module</td></tr>
+    <tr><td>Retrofit</td><td>Split-core CTs clamp on without disconnecting the conductor</td><td>The circuit usually has to be interrupted to insert the module</td></tr>
+    <tr><td>Resolution</td><td>Set by the number of channels the meter provides</td><td>One circuit per module, so resolution is complete by construction</td></tr>
+    <tr><td>Failure scope</td><td>A meter fault affects every channel it serves</td><td>A module fault affects one circuit</td></tr>
+    <tr><td>Best fit</td><td>Dense panels, retrofits, tenant sub-boards</td><td>New build where space is planned and circuits are few</td></tr>
+  </tbody>
+</table>
+
+<p>In existing boards the split-core CT route usually wins on the single argument that nothing has to be switched off to install it. That matters more than the wiring volume, because a monitoring project that needs a shutdown on every board tends not to get approved.</p>
+
+<h2>Choosing the split-core CT for a branch</h2>
+<p>The CT is where most branch monitoring projects are decided, because it has to fit around a conductor that is already in place.</p>
+
+<table>
+  <thead>
+    <tr><th>Decision</th><th>How to settle it</th><th>What goes wrong otherwise</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Ratio</td><td>From the branch's design current, not the breaker frame size</td><td>An oversized CT reads poorly at light load, which is where most branches spend their time</td></tr>
+    <tr><td>Window size</td><td>Measure the conductor and its insulation, then leave clearance to close the core</td><td>A CT that nearly fits cannot be closed squarely, and an open gap ruins accuracy</td></tr>
+    <tr><td>Accuracy class</td><td>Class 0.5 where the data feeds billing or tenant recharge; class 1.0 where it feeds trend analysis</td><td>Paying for class 0.5 and then burying it in a long secondary run</td></tr>
+    <tr><td>Burden</td><td>Total the secondary loop and the meter channel, then compare with the CT's VA</td><td>Class on the label no longer describes the installed measurement</td></tr>
+    <tr><td>Voltage rating</td><td>At or above the system voltage of the panel</td><td>A low-voltage body used where it was never qualified</td></tr>
+  </tbody>
+</table>
+
+<p>Two of these are worth stating plainly. First, the ratio follows the load, not the switchgear: a 63 A way that actually carries 12 A wants a CT sized for that 12 A, not one chosen to match the breaker label. Second, class 0.5 is only meaningful if the secondary run respects the burden — otherwise the money spent on the class is spent on a number that does not reach the meter.</p>
+
+<h2>Where the CTs go, and keeping the panel serviceable</h2>
+<p>Physical layout decides whether the installation survives its first maintenance visit. The CTs go on the branch conductors downstream of the protective device, oriented so that P1 faces the supply. Group the secondary pairs, label each one at both ends with the circuit it belongs to, and route them away from contactor and drive cabling.</p>
+
+<p>Leave the CTs accessible. A split-core CT buried behind a loom cannot be re-opened for a ratio change or a polarity correction without dismantling the panel, and the correction will be needed — branch circuits get reassigned, and a monitoring scheme that assumes the panel will never change is a scheme that ages badly. Label the secondary at the CT end as well as at the meter end: the person diagnosing a wrong reading is usually standing at one end with the drawing for the other.</p>
+
+<h2>From readings to decisions</h2>
+<p>Branch data earns its keep in four places, and all four need circuit-level resolution rather than a building total.</p>
+
+<ul>
+  <li><strong>Base load.</strong> The overnight floor of each branch shows what runs when the site is empty. A branch that never drops is either a genuine continuous load or something that should not be running.</li>
+  <li><strong>Load shifting.</strong> Branches with high daytime peaks and low night demand are the candidates for moving duty cycles, and the data shows which ones are worth moving.</li>
+  <li><strong>Tenant and departmental recharge.</strong> Sub-boards with their own CTs turn a shared bill into an allocation with an evidence trail, which is why class 0.5 matters in that application.</li>
+  <li><strong>Capacity and maintenance.</strong> A branch trending upward against its rating is a decision waiting to be made, and a branch whose current profile changed shape often has a mechanical problem behind it.</li>
+</ul>
+
+<h2>The failure modes that make branch data useless</h2>
+<table>
+  <thead>
+    <tr><th>Symptom</th><th>Cause</th><th>Fix</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>All branches read low and similar</td><td>CTs oversized for the actual branch currents</td><td>Re-specify ratios against measured current, not breaker rating</td></tr>
+    <tr><td>One channel reads zero</td><td>Secondary pair not landed, or landed on the wrong channel</td><td>Check continuity and channel mapping at the meter</td></tr>
+    <tr><td>Readings jitter on long runs</td><td>Unscreened secondary picking up switching noise</td><td>Twist or screen the pair, and shorten where possible</td></tr>
+    <tr><td>Branch totals do not add up to the main</td><td>Missing branches, or a CT closed on the wrong conductor</td><td>Reconcile circuit by circuit with the panel schedule</td></tr>
+    <tr><td>Consistent negative values</td><td>CT reversed on the conductor</td><td>Re-clamp with P1 facing the supply</td></tr>
+  </tbody>
+</table>
+
+<p>The reconciliation test is the one to run first. If the sum of the branch readings does not track the incomer within a sensible margin, the problem is in the mapping, not in the meter, and no amount of analysis on the branch data will fix it.</p>
+
+<h2>What YOMIN supplies</h2>
+<p>Branch monitoring needs two things from one supplier: CTs that open to fit an installed conductor, and a meter that accepts their secondaries.</p>
+
+<table>
+  <thead>
+    <tr><th>Product</th><th>Rating</th><th>Where it fits</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/products/current-transformer">Split-core CT, DP-816, 1000/5 A</a></td><td>720 V AC, Class 0.5</td><td>Feeders and larger branch ways where the conductor cannot be disconnected</td></tr>
+    <tr><td><a href="/products/current-transformer">Split-core CT, 2000/5 A</a></td><td>720 V AC, Class 0.5</td><td>Main ways and high-current branches on retrofit work</td></tr>
+    <tr><td><a href="/products/energy-meter">Three-phase DIN rail meter, M-Bus, CT included</a></td><td>Active and reactive energy, infrared reading, CT included</td><td>The measuring point where branch CT secondaries are terminated</td></tr>
+  </tbody>
+</table>
+
+<p>Send the panel schedule with the design current of each way, the conductor size, and the number of circuits you want visible. The ratio and window follow from those three answers, and the meter channel count follows from the fourth.</p>
+
+    <h2>Frequently asked questions</h2>
+      <h3>What is branch circuit monitoring?</h3>
+      <p>It is the measurement of each outgoing circuit in a distribution board separately, using a current transformer around every branch conductor and a meter that accepts those CT inputs. It produces per-circuit current, power and energy instead of a single building total.</p>
+      <h3>Can I add branch monitoring to an existing panel without switching it off?</h3>
+      <p>Usually yes, with split-core CTs. They open, clamp around an installed conductor and close again, so nothing has to be disconnected. The meter still needs a mounting position, an auxiliary supply and its voltage reference, which may require a short outage for that part of the work.</p>
+      <h3>Why does a branch reading look noisy compared with the main meter?</h3>
+      <p>Because branch currents are small relative to the CT fitted. A CT sized for a much larger current operates at the bottom of its range on a lightly loaded branch, where the accuracy class is least comfortable. Matching the ratio to the measured current fixes most of it.</p>
+      <h3>Do the branch readings have to add up to the main meter?</h3>
+      <p>They should track it within a sensible margin once every circuit is instrumented. A large gap usually means a branch is missing from the scheme, a CT is closed on the wrong conductor, or a channel is mapped to the wrong circuit — mapping problems, not meter problems.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Instrumenting a board, or fixing branch data nobody trusts?</h2>
+    <p>Send the panel schedule, the conductor size and the design current of each way. We will confirm the CT ratio, the window and the meter that fit the space you have.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

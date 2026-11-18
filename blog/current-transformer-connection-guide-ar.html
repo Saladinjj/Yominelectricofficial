@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/current-transformer-connection-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>توصيل محوّل التيار: P1/P2 وS1/S2 وتوصيل الملف الثانوي | Yomin Electric</title>
+<meta name="description" content="كيف تُوصل محوّلات التيار: معنى P1 وP2 وS1 وS2، واتجاه القطبية، والمسافة المسموحة للملف الثانوي، وأخطاء التوصيل التي تجعل العدّاد يحسب بالعكس.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/current-transformer-connection-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/current-transformer-connection-guide-ar">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/current-transformer-connection-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/current-transformer-connection-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/current-transformer-connection-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/current-transformer-connection-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/current-transformer-connection-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "توصيل محوّل التيار: P1/P2 وS1/S2 وتوصيل الملف الثانوي",
+      "description": "كيف تُوصل محوّلات التيار: معنى P1 وP2 وS1 وS2، واتجاه القطبية، والمسافة المسموحة للملف الثانوي، وأخطاء التوصيل التي تجعل العدّاد يحسب بالعكس.",
+      "image": "https://www.yominelectric.com/assets/images/blog/current-transformer-connection-guide/hero.png",
+      "datePublished": "2026-11-18",
+      "dateModified": "2026-11-18",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/current-transformer-connection-guide-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "ar",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "أي طرف من محوّل التيار يُوصل بالعدّاد؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يُوصل S1 بمدخل التيار في العدّاد لذلك الطور، ويُوصل S2 بالطرف المشترك للقناة. وS1 هو الطرف المتوافق طورياً مع P1، بداية الملف الأولي المواجهة للتغذية."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ماذا يحدث إذا بقي الملف الثانوي مفتوحاً؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "مع بقاء الملف الأولي مغذّى، يترك الثانوي المفتوح المحوّل بلا مسار لتيار التمغنط: ينهار الفيض ويظهر جهد مرتفع جداً على الأطراف المفتوحة، وهو خطر على الشخص وعلى عزل المحوّل. اقصر الملف الثانوي قبل فك أي توصيل."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا يعطي العدّاد قراءة سالبة على طور واحد؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "عيّنة التيار معكوسة في تلك القناة. الغالب أن المحوّل أُغلق وP1 جهة الحمل بدلاً من التغذية، أو أن S1 وS2 بدّلا عند العدّاد. أدر المحوّل على الموصل ليبقى التركيب مطابقاً لبطاقته."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما الطول المسموح لكابل الملف الثانوي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا توجد مسافة واحدة، لأن الحد هو الحمل لا الطول. يجب أن تبقى مقاومة الحلقة للسلكين مع حمل العدّاد نفسه داخل قدرة VA للمحوّل عند فئة الدقة المطلوبة. المسارات الأطول تحتاج مقطعاً أكبر أو قدرة VA أعلى أو مساراً أقصر."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>محوّلات التيار</span></div>
+    <span class="bh-tag">أدلة التركيب</span>
+    <h1 class="bh-title">توصيل محوّل التيار: P1/P2 وS1/S2 وتوصيل الملف الثانوي</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>18 نوفمبر 2026</span>
+      <span class="divider"></span>
+      <span>11 دقيقة قراءة</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/current-transformer-connection-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/current-transformer-connection-guide/hero.png" alt="محوّلات تيار من YOMIN بنواة منشقّة وملف أولي ملفوف مع علامات الأطراف P1 وP2 وS1 وS2" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<p><strong>يُوصَّل محوّل التيار حسب علاماته لا حسب موضعه.</strong> تُوصل P1 بالجهة المواجهة للتغذية، وP2 بالجهة المواجهة للحمل، وS1 بطرف العدّاد المقابل لـ P1، وS2 بالطرف المشترك للعدّاد. الملف الثانوي مصدر تيار: لا يجوز فتحه أبداً والملف الأولي يحمل تياراً، ويجب قصره قبل فك أي توصيل ثانوي.</p>
+
+<p>معظم الشكاوى المتعلقة بعدّاد يعمل بمحوّل تيار تعود إلى هذه الأطراف الأربعة لا إلى العدّاد نفسه. قراءة سالبة، أو طور يعطي ثلاثة أضعاف القيمة، أو عدّاد دقيق عند الحمل الخفيف ينحرف عند الحمل الكامل — لكل حالة سبب في التوصيل، وإصلاحها قبل إغلاق اللوحة أقل كلفة من إصلاحها بعد تقديم فاتورة التركيب.</p>
+
+<p>يتناول هذا الدليل التوصيل نفسه: معنى العلامات، واتجاه القطبية، والمسافة المسموحة للملف الثانوي، والفحوص التي تستحقّ الجهد عند التشغيل. أما اختيار النسبة وفئة الدقة وفتحة النفاذ فهي مسألة أخرى يعالجها دليل اختيار محوّلات التيار.</p>
+
+<h2>العلامات الأربع التي تحدد التوصيل</h2>
+<p>محوّل التيار لأغراض القياس جهاز اتجاهي: له جهة أولية وجهة ثانوية، ولكل جهة بداية موسومة. والتوصيل كله يُستنتج من هذه العلامات.</p>
+
+<table>
+  <thead>
+    <tr><th>العلامة</th><th>ما تعنيه</th><th>موضع التوصيل</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>P1</td><td>بداية الملف الأولي، جهة التغذية</td><td>الموصل الداخل قبل الحمل</td></tr>
+    <tr><td>P2</td><td>نهاية الملف الأولي، جهة الحمل</td><td>الموصل المتجه إلى الحمل أو إلى الجهاز التالي</td></tr>
+    <tr><td>S1</td><td>بداية الملف الثانوي، بطور متوافق مع P1</td><td>مدخل التيار الذي يتوقعه العدّاد متوافقاً مع مدخل الجهد</td></tr>
+    <tr><td>S2</td><td>نهاية الملف الثانوي، بطور متوافق مع P2</td><td>الطرف المشترك لقناة التيار تلك</td></tr>
+  </tbody>
+</table>
+
+<p>بعض الأجسام تحمل K وL بدلاً من P1 وP2. الوظيفة لا تتغير: K بداية وL نهاية. المهم هو تثبيت الاصطلاح على المخطط، لأن لوحة موصولة باصطلاح وموثّقة باصطلاح آخر سيصحّحها الكهربائي التالي حتى تتحول إلى عطل.</p>
+
+<h2>القطبية: لماذا يعطي محوّل معكوس قراءة سالبة</h2>
+<p>يضرب عدّاد الطاقة الجهد في التيار ثم يجمّع الحاصل. وتكون إشارة الضرب صحيحة فقط إذا وصلت عيّنة التيار بعلاقة الطور التي يتوقعها العدّاد. أدر المحوّل على الموصل، أو بدّل S1 وS2 عند العدّاد، فيرى العدّاد التيار معكوساً: تصبح قدرة ذلك الطور سالبة، أو يمتنع العدّاد عن التراكم.</p>
+
+<p>حالتان تجعلان هذا الخطأ شائعاً أكثر مما ينبغي. الأولى التحديث في منشأة قائمة، حيث الموصلات موصولة بالفعل ويُضطر الفني إلى فتح المحوّل ليلتف حول القضيب، فيسهل إغلاق محوّل بنواة منشقّة وP1 جهة الحمل. الثانية محوّلات الملف الأولي الملفوف أو متعددة النسب، حيث لا تتبع أطراف الملف الثانوي الترتيب الذي يوحي به المخطط. في الحالتين يستغرق التصحيح دقائق: أدر المحوّل على الموصل بدلاً من عكس الملف الثانوي، ليبقى التركيب المادي مطابقاً لبطاقته.</p>
+
+<p>العدّادات الاتجاهية ورباعية الأرباع استثناء. صُممت لقياس الاستيراد والتصدير معاً، فلا تُظهر قراءة خاطئة بوضوح عند عكس محوّل: تُظهر قراءة معقولة مع اتجاه طاقة معكوس. وهذا أخطر، لأنه يجتاز التشغيل ولا يظهر إلا عند الاعتراض على فاتورة.</p>
+
+<h2>توصيل الملف الثانوي: الطول والمقطع والحمل</h2>
+<p>الملف الثانوي حلقة تيار، لذلك تُضاف مقاومته مباشرة إلى الحمل الذي يجب أن يقوده المحوّل. والمحوّل المحدد بقدرة VA معيّنة محدد بها عند فئة دقة معلنة؛ وإذا تجاوز الحمل تلك القدرة لم تعد الدقة هي المدوّنة على البطاقة، مع أن شيئاً لا يبدو خطأً.</p>
+
+<table>
+  <thead>
+    <tr><th>الممارسة</th><th>السبب</th><th>ما يحدث عند إهمالها</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>أكبر مقطع عملي للملف الثانوي</td><td>تنخفض مقاومة الحلقة بزيادة النحاس</td><td>يرتفع الحمل مع الطول وتنزلق فئة الدقة</td></tr>
+    <tr><td>أقصر مسار يسمح به اللوحة</td><td>كل متر يضيف السلكين إلى الحلقة</td><td>محوّل مخصص لـ 5 VA يتصرف كأنه 2.5 VA</td></tr>
+    <tr><td>زوج مجدول أو محجوب</td><td>يرفض ضجيج المناورة الملتقط على حلقة طويلة</td><td>تذبذب في القراءات عند الحمل الخفيف وقيم طلب غير مستقرة</td></tr>
+    <tr><td>حلقة متصلة واحدة لكل قناة</td><td>يحفظ الاتجاه الموسوم للقناة</td><td>تيارات دورانية وقراءات متعارضة بين العدّادات</td></tr>
+    <tr><td>لا مصهر في الملف الثانوي إطلاقاً</td><td>الثانوي المفتوح هو العطل لا الحماية</td><td>جهد خطير على الأطراف واحتمال تلف عزل المحوّل</td></tr>
+  </tbody>
+</table>
+
+<p>عندما يكون المسار طويلاً فالخيارات الصادقة هي تقريب العدّاد من المحوّلات، أو زيادة مقطع الملف الثانوي، أو تحديد قدرة VA أعلى عند الفئة نفسها. لا يستعيد أي معامل برمجي فئة أفسدها التوصيل.</p>
+
+<h2>تأريض الملف الثانوي وقصره</h2>
+<p>يُؤرَّض نقطة واحدة من دائرة الملف الثانوي، عادةً عند طرف المحوّل أو عند العدّاد، حتى لا ينقل عطل عزل بين الأولي والثانوي جهداً خطيراً إلى توصيلات القياس. نقطة واحدة فقط. أما التأريض الثاني في الحلقة نفسها فيُنشئ مساراً موازياً يلتف حول القياس ويتلف الدقة بهدوء.</p>
+
+<p>القصر عملية مختلفة كثيراً ما تُخلط بالتأريض. قبل فك أي توصيل ثانوي — أثناء الاختبار أو تبديل العدّاد أو فحص الأطراف — يجب قصر الملف الثانوي بوصلة قصر أو طرف قصر مخصص. فمع بقاء الملف الأولي مغذّى، لا يجد تيار التمغنط مساراً في الثانوي المفتوح: ينهار الفيض ويظهر جهد مرتفع جداً على الأطراف المفتوحة، وهو خطر على الشخص وعلى عزل المحوّل.</p>
+
+<h2>التوصيل الثلاثي: الأعطال التي تفسّر معظم الزيارات</h2>
+<table>
+  <thead>
+    <tr><th>العرض</th><th>السبب المعتاد</th><th>التصحيح</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>طور واحد بقراءة سالبة</td><td>محوّل معكوس على ذلك الموصل، أو S1/S2 مبدّلان عند العدّاد</td><td>أدر المحوّل على الموصل وتحقق من إسناد الجهد للأطوار</td></tr>
+    <tr><td>الأطوار الثلاثة بحدود الثلث</td><td>محوّلان يتشاركان العودة، أو العودة تمرّ عبر قناة ثانية</td><td>امنح كل قناة زوج عودة خاصاً بها</td></tr>
+    <tr><td>انحراف صاعد عند الحمل العالي</td><td>حمل ثانوي يتجاوز قدرة VA للمحوّل</td><td>قصّر المسار أو زد المقطع أو أعد تحديد المحوّل</td></tr>
+    <tr><td>صحيح على عدّاد وخاطئ على آخر</td><td>نسبة مبرمجة تخالف المحوّل المركّب</td><td>تحقّق من النسبة عند الطرفين قبل اتهام الجهاز</td></tr>
+    <tr><td>لا قراءة على قناة</td><td>ثانوي بقي مقصوراً، أو وصلة قصر متروكة</td><td>أزل وصلة القصر وأعد الفحص</td></tr>
+  </tbody>
+</table>
+
+<h2>فحوص قبل إغلاق اللوحة</h2>
+<ul>
+  <li><strong>تسجيل العلامات.</strong> اتجاه P1/P2 ونقاط وصول S1/S2 مدوّنة على مخطط اللوحة لا في الذاكرة.</li>
+  <li><strong>تأكيد النسبة مرتين.</strong> مرة على بطاقة المحوّل ومرة مقابل النسبة المبرمجة في العدّاد. محوّل 1600/5 على عدّاد مضبوط على 1000/5 يعطي خطأ بمعامل ثابت يبدو معقولاً تماماً.</li>
+  <li><strong>التحقق من الاتجاه تحت الحمل.</strong> مع حمل معلوم يجب أن يكون كل طور موجباً ومتناسباً. الطور السالب عطل توصيل لا إعداد تعرفة.</li>
+  <li><strong>فحص الحمل.</strong> قياس مقاومة الحلقة، أو على الأقل مقارنة الطول والمقطع بقدرة VA للمحوّل.</li>
+  <li><strong>تأكيد الأرضي الواحد.</strong> وصلة واحدة لكل حلقة، دون مسار ثانٍ غير مقصود عبر حاجب أو أنبوب.</li>
+  <li><strong>إزالة وصلات القصر.</strong> كل وصلة استُخدمت للاختبار أُزيلت، والواقعة مدوّنة في ورقة التشغيل.</li>
+</ul>
+
+<h2>ما توفره YOMIN</h2>
+<p>تغطي مجموعة محوّلات التيار من YOMIN أشكال القياس المعنية بهذه التوصيلات، في تركيب أحادي الطور وثلاثي الأطوار.</p>
+
+<table>
+  <thead>
+    <tr><th>المنتج</th><th>المواصفات</th><th>موضع الاستخدام</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/products/current-transformer">محوّل قياس 1600/5 أمبير</a></td><td>720 فولت متردد، فئة 1.0، اختبار 3 كيلوفولت متردد لمدة دقيقة</td><td>قياس المغذيات حيث يمكن إدخال الجسم المغلق قبل التوصيل</td></tr>
+    <tr><td><a href="/products/current-transformer">محوّل أحادي الطور 250/5 أمبير، 50 لفة</a></td><td>فئة 0.5، ملف أولي ملفوف</td><td>المغذيات الصغيرة وقياس التوزيع الفرعي</td></tr>
+    <tr><td><a href="/products/current-transformer">محوّل بنواة منشقّة 2000/5 أمبير</a></td><td>720 فولت متردد، فئة 0.5</td><td>أعمال التحديث حين يتعذر فصل الموصل</td></tr>
+  </tbody>
+</table>
+
+<p>أرسل النسبة وفئة الدقة والحمل الذي سيفرضه المسار ومقطع الموصل. هذه الإجابات الأربع تحدد الجسم، والجسم يحدد إمكان التوصيل دون قطع الكابل.</p>
+
+    <h2>الأسئلة الشائعة</h2>
+      <h3>أي طرف من محوّل التيار يُوصل بالعدّاد؟</h3>
+      <p>يُوصل S1 بمدخل التيار في العدّاد لذلك الطور، ويُوصل S2 بالطرف المشترك للقناة. وS1 هو الطرف المتوافق طورياً مع P1، بداية الملف الأولي المواجهة للتغذية.</p>
+      <h3>ماذا يحدث إذا بقي الملف الثانوي مفتوحاً؟</h3>
+      <p>مع بقاء الملف الأولي مغذّى، يترك الثانوي المفتوح المحوّل بلا مسار لتيار التمغنط: ينهار الفيض ويظهر جهد مرتفع جداً على الأطراف المفتوحة، وهو خطر على الشخص وعلى عزل المحوّل. اقصر الملف الثانوي قبل فك أي توصيل.</p>
+      <h3>لماذا يعطي العدّاد قراءة سالبة على طور واحد؟</h3>
+      <p>عيّنة التيار معكوسة في تلك القناة. الغالب أن المحوّل أُغلق وP1 جهة الحمل بدلاً من التغذية، أو أن S1 وS2 بدّلا عند العدّاد. أدر المحوّل على الموصل ليبقى التركيب مطابقاً لبطاقته.</p>
+      <h3>ما الطول المسموح لكابل الملف الثانوي؟</h3>
+      <p>لا توجد مسافة واحدة، لأن الحد هو الحمل لا الطول. يجب أن تبقى مقاومة الحلقة للسلكين مع حمل العدّاد نفسه داخل قدرة VA للمحوّل عند فئة الدقة المطلوبة. المسارات الأطول تحتاج مقطعاً أكبر أو قدرة VA أعلى أو مساراً أقصر.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>هل توصّل محوّلات تيار في لوحة أو تحدّث نقطة قياس؟</h2>
+    <p>أرسل النسبة وفئة الدقة ومقطع الموصل وطول مسار الملف الثانوي. سنؤكد الجسم والحمل المناسبين للموضع.</p>
+    <a class="btn btn-primary" href="/contact">اطلب عرض سعر</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">تحدث على واتساب</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/current-transformer-connection-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conexión de transformadores de corriente: P1/P2, S1/S2 y cableado secundario | Yomin Electric</title>
+<meta name="description" content="Cómo conectar un transformador de corriente: qué marcan P1, P2, S1 y S2, hacia dónde apunta la polaridad, cuánto puede recorrer el secundario y los fallos de cableado que hacen contar al revés.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/current-transformer-connection-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/current-transformer-connection-guide-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/current-transformer-connection-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/current-transformer-connection-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/current-transformer-connection-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/current-transformer-connection-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/current-transformer-connection-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Conexión de transformadores de corriente: P1/P2, S1/S2 y cableado secundario",
+      "description": "Cómo conectar un transformador de corriente: qué marcan P1, P2, S1 y S2, hacia dónde apunta la polaridad, cuánto puede recorrer el secundario y los fallos de cableado que hacen contar al revés.",
+      "image": "https://www.yominelectric.com/assets/images/blog/current-transformer-connection-guide/hero.png",
+      "datePublished": "2026-11-18",
+      "dateModified": "2026-11-18",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/current-transformer-connection-guide-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "es",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué borna de un transformador de corriente va al contador?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "S1 va a la entrada de corriente del contador para esa fase y S2 al común del canal. S1 es la borna en fase con P1, el inicio del primario del lado de alimentación."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué ocurre si el secundario de un TC queda abierto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Con el primario en tensión, un secundario abierto deja al TC sin camino para su corriente magnetizante: el flujo colapsa y aparece una tensión muy alta en las bornas, peligrosa para la persona y para el aislamiento del TC. Cortocircuite el secundario antes de abrir cualquier conexión."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué el contador marca negativo en una fase?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La muestra de corriente está invertida en ese canal. Lo habitual es que el TC se cerrara con P1 hacia la carga en lugar de hacia la alimentación, o que S1 y S2 se intercambiaran en el contador. Gire el TC sobre el conductor para que la instalación siga coincidiendo con su etiqueta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cable secundario puedo tender?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No hay una distancia única: el límite es la carga, no la longitud. La resistencia de bucle de ambos hilos más la carga propia del contador debe quedar dentro de la VA del TC en la clase que necesita. Para recorridos largos hacen falta más sección, más VA o un trayecto más corto."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Transformadores de corriente</span></div>
+    <span class="bh-tag">Guías de instalación</span>
+    <h1 class="bh-title">Conexión de transformadores de corriente: P1/P2, S1/S2 y cableado secundario</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>18 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/current-transformer-connection-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/current-transformer-connection-guide/hero.png" alt="Transformadores de corriente YOMIN de núcleo partido y primario bobinado con marcas P1, P2, S1 y S2" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<p><strong>Un transformador de corriente se conecta por sus marcas, no por su posición.</strong> P1 va al lado de la alimentación, P2 al lado de la carga, S1 a la borna del contador correspondiente a P1 y S2 al común del contador. El secundario es una fuente de corriente: nunca debe quedar abierto con el primario en carga, y debe cortocircuitarse antes de abrir cualquier conexión secundaria.</p>
+
+<p>Casi todas las reclamaciones sobre un contaje con TC se remontan a esas cuatro bornas y no al contador. Una lectura negativa, una fase tres veces más alta, un contador exacto en carga ligera que se desvía a plena carga: cada caso tiene una causa de cableado, y corregirla antes de cerrar el cuadro cuesta menos que después de facturar la instalación.</p>
+
+<p>Esta guía trata de la conexión en sí: qué significan las marcas, hacia dónde apunta la polaridad, cuánto puede recorrer el secundario y qué comprobaciones merecen hacerse en la puesta en marcha. Elegir relación, clase y ventana es otra decisión, tratada en la guía de selección de transformadores de corriente.</p>
+
+<h2>Las cuatro marcas que deciden la conexión</h2>
+<p>Un TC de medida es un dispositivo direccional: tiene un lado primario y un lado secundario, y cada lado tiene un inicio marcado. Toda la conexión se deduce de esas marcas.</p>
+
+<table>
+  <thead>
+    <tr><th>Marca</th><th>Qué es</th><th>Dónde se conecta</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>P1</td><td>Inicio del primario, lado de alimentación</td><td>El conductor de entrada, aguas arriba de la carga</td></tr>
+    <tr><td>P2</td><td>Final del primario, lado de carga</td><td>El conductor que continúa hacia la carga o el siguiente aparato</td></tr>
+    <tr><td>S1</td><td>Inicio del secundario, en fase con P1</td><td>La entrada de corriente que el contador espera en fase con su tensión</td></tr>
+    <tr><td>S2</td><td>Final del secundario, en fase con P2</td><td>El común de ese canal de corriente</td></tr>
+  </tbody>
+</table>
+
+<p>Algunas carcasas marcan K y L en lugar de P1 y P2. La función no cambia: K es el inicio y L el final. Lo importante es fijar la convención en el plano, porque un cuadro cableado con una convención y documentado con la otra será «corregido» hasta la avería por el siguiente electricista.</p>
+
+<h2>Polaridad: por qué un TC invertido da lectura negativa</h2>
+<p>Un contador de energía multiplica tensión por corriente e integra el producto. Esa multiplicación solo tiene el signo correcto si la muestra de corriente llega con la relación de fase que el contador espera. Gire el TC sobre el conductor, o intercambie S1 y S2 en el contador, y la corriente se ve invertida: la potencia de esa fase pasa a negativa o el registro se niega a acumular.</p>
+
+<p>Dos situaciones lo hacen más frecuente de lo razonable. La primera es la reforma, con los conductores ya conectados y el TC obligado a abrirse para abrazar la barra: cerrar un TC de núcleo partido con P1 del lado de la carga es fácil. La segunda son los TC de primario bobinado o de relación múltiple, cuyas bornas secundarias no siguen el orden que sugiere el plano. En ambos casos la corrección es cuestión de minutos: gire el TC sobre el conductor en lugar de invertir el secundario, para que la instalación física siga coincidiendo con su etiqueta.</p>
+
+<p>Los contadores direccionales y de cuatro cuadrantes son la excepción. Diseñados para medir en ambos sentidos, no muestran una lectura evidentemente errónea cuando un TC está invertido: muestran una lectura plausible con el sentido de la energía cambiado. Es peor, porque supera la puesta en marcha y solo aparece cuando se discute una factura.</p>
+
+<h2>Cableado secundario: longitud, sección y carga</h2>
+<p>El secundario es un bucle de corriente, así que su resistencia se suma directamente a la carga que el TC debe gobernar. Un TC especificado para una potencia VA lo está a una clase de precisión concreta; si se supera esa VA, la precisión deja de ser la de la etiqueta aunque nada lo delate.</p>
+
+<table>
+  <thead>
+    <tr><th>Práctica</th><th>Motivo</th><th>Qué falla si se ignora</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Sección secundaria lo más amplia posible</td><td>La resistencia de bucle baja con el cobre</td><td>La carga crece con el recorrido y la clase se degrada</td></tr>
+    <tr><td>Recorrido tan corto como permita el cuadro</td><td>Cada metro añade los dos hilos al bucle</td><td>Un TC previsto para 5 VA se comporta como uno de 2,5 VA</td></tr>
+    <tr><td>Par trenzado o apantallado</td><td>Rechaza el ruido de maniobra captado en bucles largos</td><td>Lecturas inestables en carga baja y demandas erráticas</td></tr>
+    <tr><td>Un bucle continuo por canal</td><td>Conserva el sentido marcado del canal</td><td>Corrientes de circulación y lecturas discordantes entre contadores</td></tr>
+    <tr><td>Nunca un fusible en el secundario</td><td>El secundario abierto es el fallo, no la protección</td><td>Tensión peligrosa en bornas y riesgo para el aislamiento del TC</td></tr>
+  </tbody>
+</table>
+
+<p>Cuando el recorrido es largo, las opciones honestas son acercar el contador a los TC, aumentar la sección secundaria o especificar más VA con la misma clase. Ningún coeficiente de software recupera una clase que el cableado ya ha destruido.</p>
+
+<h2>Puesta a tierra y cortocircuito del secundario</h2>
+<p>Se pone a tierra un solo punto del circuito secundario, normalmente en la regleta del TC o en el contador, para que un fallo de aislamiento primario-secundario no lleve tensión peligrosa al cableado de medida. Un único punto. Una segunda tierra en el mismo bucle crea un camino paralelo que rodea la medida y destruye la precisión sin hacer ruido.</p>
+
+<p>El cortocircuito es otra operación y se confunde a menudo con la puesta a tierra. Antes de abrir una conexión secundaria —ensayo, cambio de contador, revisión de borna— el secundario debe cortocircuitarse con una barra o borna de cortocircuito adecuada. Con el primario en tensión y el secundario abierto, la corriente magnetizante no tiene camino: el flujo colapsa y aparece una tensión muy alta en las bornas abiertas, peligrosa para la persona y para el aislamiento del TC.</p>
+
+<h2>Trifásico: los fallos que explican la mayoría de las intervenciones</h2>
+<table>
+  <thead>
+    <tr><th>Síntoma</th><th>Causa habitual</th><th>Corrección</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Una fase en negativo</td><td>TC invertido en ese conductor, o S1/S2 cambiados en el contador</td><td>Girar el TC sobre el conductor y verificar la asignación de tensiones</td></tr>
+    <tr><td>Las tres fases a un tercio de lo esperado</td><td>Dos TC comparten retorno, o el retorno pasa por un segundo canal</td><td>Dar a cada canal su propio par de retorno</td></tr>
+    <tr><td>Desvío al aumentar la carga</td><td>Carga secundaria por encima de la VA del TC</td><td>Acortar, aumentar sección o reespecificar el TC</td></tr>
+    <tr><td>Correcto en un contador, erróneo en otro</td><td>Relación programada distinta de la del TC instalado</td><td>Confirmar la relación en ambos extremos antes de culpar al equipo</td></tr>
+    <tr><td>Sin lectura en un canal</td><td>Secundario cortocircuitado, o barra olvidada</td><td>Retirar la barra y comprobar de nuevo</td></tr>
+  </tbody>
+</table>
+
+<h2>Comprobaciones antes de cerrar el cuadro</h2>
+<ul>
+  <li><strong>Marcas registradas.</strong> Orientación P1/P2 y puntos de llegada S1/S2 anotados en el plano del cuadro.</li>
+  <li><strong>Relación confirmada dos veces.</strong> En la etiqueta del TC y frente a la relación programada. Un TC 1600/5 en un contador ajustado a 1000/5 da un error de factor fijo que parece perfectamente creíble.</li>
+  <li><strong>Sentido verificado en carga.</strong> Con carga conocida, cada fase debe ser positiva y proporcionada. Una fase negativa es un fallo de cableado, no un ajuste tarifario.</li>
+  <li><strong>Carga comprobada.</strong> Resistencia de bucle medida, o al menos longitud y sección comparadas con la VA del TC.</li>
+  <li><strong>Tierra única confirmada.</strong> Una sola conexión por bucle, sin segundo camino por pantalla o tubo.</li>
+  <li><strong>Barras retiradas.</strong> Todas las barras de ensayo fuera y el hecho anotado en la hoja de puesta en marcha.</li>
+</ul>
+
+<h2>Lo que suministra YOMIN</h2>
+<p>La gama de transformadores de corriente de YOMIN cubre las formas de medida implicadas en estas conexiones, en montaje monofásico y trifásico.</p>
+
+<table>
+  <thead>
+    <tr><th>Producto</th><th>Características</th><th>Dónde encaja</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/products/current-transformer">TC de medida 1600/5 A</a></td><td>720 V AC, clase 1.0, ensayo 3 kV AC durante 1 minuto</td><td>Contaje en salidas donde el cuerpo cerrado puede enhebrarse antes de conectar</td></tr>
+    <tr><td><a href="/products/current-transformer">TC monofásico 250/5 A, 50 espiras</a></td><td>Clase 0.5, primario bobinado</td><td>Salidas de menor sección y contaje de subdistribución</td></tr>
+    <tr><td><a href="/products/current-transformer">TC de núcleo partido 2000/5 A</a></td><td>720 V AC, clase 0.5</td><td>Reformas en las que el conductor no puede desconectarse</td></tr>
+  </tbody>
+</table>
+
+<p>Envíe la relación, la clase, la carga que impondrá el recorrido y la sección del conductor. Esas cuatro respuestas determinan el cuerpo, y el cuerpo decide si la conexión puede hacerse sin cortar el cable.</p>
+
+    <h2>Preguntas frecuentes</h2>
+      <h3>¿Qué borna de un transformador de corriente va al contador?</h3>
+      <p>S1 va a la entrada de corriente del contador para esa fase y S2 al común del canal. S1 es la borna en fase con P1, el inicio del primario del lado de alimentación.</p>
+      <h3>¿Qué ocurre si el secundario de un TC queda abierto?</h3>
+      <p>Con el primario en tensión, un secundario abierto deja al TC sin camino para su corriente magnetizante: el flujo colapsa y aparece una tensión muy alta en las bornas, peligrosa para la persona y para el aislamiento del TC. Cortocircuite el secundario antes de abrir cualquier conexión.</p>
+      <h3>¿Por qué el contador marca negativo en una fase?</h3>
+      <p>La muestra de corriente está invertida en ese canal. Lo habitual es que el TC se cerrara con P1 hacia la carga en lugar de hacia la alimentación, o que S1 y S2 se intercambiaran en el contador. Gire el TC sobre el conductor para que la instalación siga coincidiendo con su etiqueta.</p>
+      <h3>¿Cuánto cable secundario puedo tender?</h3>
+      <p>No hay una distancia única: el límite es la carga, no la longitud. La resistencia de bucle de ambos hilos más la carga propia del contador debe quedar dentro de la VA del TC en la clase que necesita. Para recorridos largos hacen falta más sección, más VA o un trayecto más corto.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Va a conectar TC en un cuadro o renovar un punto de medida?</h2>
+    <p>Envíe la relación, la clase de precisión, la sección del conductor y la longitud del secundario. Confirmaremos el cuerpo y la carga adecuados para esa posición.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar presupuesto</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

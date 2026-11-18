@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/current-transformer-connection-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Current Transformer Connection Guide: P1/P2, S1/S2 and Secondary Wiring | Yomin Electric</title>
+<meta name="description" content="How to connect a current transformer: what P1, P2, S1 and S2 mark, which way the polarity points, how far the secondary can run, and the wiring faults that make a meter read backwards.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/current-transformer-connection-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/current-transformer-connection-guide">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/current-transformer-connection-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/current-transformer-connection-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/current-transformer-connection-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/current-transformer-connection-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/current-transformer-connection-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Current Transformer Connection: P1/P2, S1/S2 and Secondary Wiring",
+      "description": "How to connect a current transformer: what P1, P2, S1 and S2 mark, which way the polarity points, how far the secondary can run, and the wiring faults that make a meter read backwards.",
+      "image": "https://www.yominelectric.com/assets/images/blog/current-transformer-connection-guide/hero.png",
+      "datePublished": "2026-11-18",
+      "dateModified": "2026-11-18",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/current-transformer-connection-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which terminal of a current transformer goes to the meter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "S1 goes to the meter's current input for that phase and S2 to the common of that channel. S1 is the terminal in phase with P1, the primary start that faces the supply."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if a current transformer secondary is left open?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With the primary energised, an open secondary leaves the CT with no path for its magnetising current. Flux collapses, a very high voltage appears across the open terminals, and both the person working and the CT insulation are at risk. Short the secondary before opening any connection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my meter show a negative reading on one phase?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The current sample is inverted on that channel. Usually the CT was closed with P1 facing the load instead of the supply, or S1 and S2 were swapped at the meter. Reverse the CT on the conductor so the installation keeps matching its label."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far can I run current transformer secondary cable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single distance, because the limit is burden rather than length. The loop resistance of both wires plus the meter's own burden must stay inside the CT's VA rating at the accuracy class you need. Longer runs need a larger cross-section, a higher VA rating or a shorter path."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Current Transformers</span></div>
+    <span class="bh-tag">Installation Guides</span>
+    <h1 class="bh-title">Current Transformer Connection: P1/P2, S1/S2 and Secondary Wiring</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 18, 2026</span>
+      <span class="divider"></span>
+      <span>11 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/current-transformer-connection-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/current-transformer-connection-guide/hero.png" alt="YOMIN split-core and wound-primary current transformers with P1, P2, S1 and S2 terminal markings" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+<p><strong>Connect a current transformer by its markings, not by its position.</strong> P1 goes to the side facing the supply, P2 to the side facing the load, S1 to the meter terminal that corresponds to P1, and S2 back to the meter's common. The secondary is a current source: it must never be open-circuited while the primary carries current, and it must be shorted before you break any secondary connection.</p>
+
+<p>Almost every complaint about a CT-operated meter traces back to those four terminals rather than to the meter. A reading that is negative, a reading that is three times too high on one phase, a meter that is accurate at light load and drifts at full load — each of these has a wiring cause, and each is cheaper to fix before the panel is closed than after the installation has been billed against it.</p>
+
+<p>This guide covers the connection itself: what the markings mean, which way the polarity points, how far the secondary can run, and the checks worth doing at commissioning. Choosing the ratio, class and window is a separate decision, covered in the current transformer selection guide.</p>
+
+<h2>The four markings that decide the connection</h2>
+<p>A metering CT is a directional device. It has a primary side and a secondary side, and each side has a marked start. The whole connection follows from those markings.</p>
+
+<table>
+  <thead>
+    <tr><th>Marking</th><th>What it is</th><th>Where it connects</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>P1</td><td>Primary start, the side that faces the supply</td><td>The incoming conductor, upstream of the load</td></tr>
+    <tr><td>P2</td><td>Primary finish, the side that faces the load</td><td>The conductor continuing to the load or the next device</td></tr>
+    <tr><td>S1</td><td>Secondary start, in phase with P1</td><td>The meter current input that the meter expects to be in phase with its voltage input</td></tr>
+    <tr><td>S2</td><td>Secondary finish, in phase with P2</td><td>The meter current common, or the return of that current channel</td></tr>
+  </tbody>
+</table>
+
+<p>On some bodies the same terminals are marked K and L instead of P1 and P2. The function does not change: K is the start, L is the finish. What matters is that you record the convention on the drawing, because a panel wired to one convention and documented in the other is a panel that will be "corrected" into a fault by the next electrician.</p>
+
+<h2>Polarity: why a reversed CT reads negative</h2>
+<p>A watt-hour meter multiplies voltage by current and integrates the product. The multiplication is only signed correctly when the current sample arrives in the phase relationship the meter expects. Turn the CT around on the conductor, or swap S1 and S2 at the meter, and the meter sees the current inverted. The result is a negative power reading on that phase — or, on an import-only register, a reading that runs backwards or refuses to accumulate at all.</p>
+
+<p>Two situations make this more common than it should be. The first is a retrofit where the conductors are already terminated and the CT has to be opened to fit around a busbar: it is easy to close a split-core CT with P1 on the load side. The second is a multi-ratio or wound-primary CT where the secondary terminals are not arranged in the order the drawing implies. In both cases the fix is the same and takes minutes: reverse the CT on the conductor rather than reversing the secondary, so the physical installation keeps matching its label.</p>
+
+<p>Directional and four-quadrant meters are the exception that proves the rule. They are designed to measure both import and export, so a reversed CT does not produce an obviously broken reading — it produces a plausible reading with the sign of the energy flow inverted. That is worse, because it survives commissioning and only surfaces when a bill is disputed.</p>
+
+<h2>Secondary wiring: lead length, cross-section and burden</h2>
+<p>The secondary is a current loop, so its resistance adds directly to the burden the CT has to drive. A CT rated for a given VA figure is rated at a stated accuracy class; exceed the VA and the accuracy is no longer the class on the label, even though nothing looks wrong.</p>
+
+<table>
+  <thead>
+    <tr><th>Practice</th><th>Reason</th><th>What goes wrong otherwise</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Use the largest practical secondary cross-section</td><td>Loop resistance falls with copper area</td><td>Burden rises with run length, and the class slips</td></tr>
+    <tr><td>Keep the run as short as the panel allows</td><td>Every extra metre adds both wires to the loop</td><td>A CT specified for 5 VA behaves like a 2.5 VA unit</td></tr>
+    <tr><td>Twist or screen the pair</td><td>Rejects switching noise picked up on a long loop</td><td>Jitter on low-load readings and unstable demand values</td></tr>
+    <tr><td>Terminate in one continuous loop per channel</td><td>Preserves the marked direction of the channel</td><td>Circulating currents and readings that disagree between meters</td></tr>
+    <tr><td>Never fit a fuse in the secondary</td><td>An open secondary is the fault, not the protection</td><td>Dangerous voltage at the terminals and possible CT insulation failure</td></tr>
+  </tbody>
+</table>
+
+<p>When the run is long, the honest options are to move the meter closer to the CTs, to increase the secondary cross-section, or to specify a higher VA rating at the same class. Software scaling cannot recover a class that the wiring has already destroyed.</p>
+
+<h2>Earthing and shorting the secondary</h2>
+<p>One point of the secondary circuit is earthed, normally at the CT terminal block or at the meter, so that a primary-to-secondary insulation failure cannot put dangerous voltage on the metering wiring. Bond it once. A second earth on the same loop creates a parallel path that carries current around the measurement and quietly destroys accuracy.</p>
+
+<p>Shorting is a different operation and is often confused with earthing. Before any secondary connection is opened — during testing, during a meter change, during a terminal check — the secondary must be shorted with a proper shorting link or shorting terminal. With the primary energised, an open secondary has no path for the magnetising current, so flux collapses and a very high voltage appears across the open terminals. That voltage is a hazard to the person working and to the CT's own insulation.</p>
+
+<h2>Three-phase connection: the faults that account for most callouts</h2>
+<table>
+  <thead>
+    <tr><th>Symptom</th><th>Usual cause</th><th>Correction</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>One phase reads negative</td><td>CT reversed on that conductor, or S1/S2 swapped at the meter</td><td>Reverse the CT on the conductor; check the phase assignment of the voltage input</td></tr>
+    <tr><td>All three phases read about one third of expected</td><td>Two CTs share a return, or the return is looped through a second channel</td><td>Give each channel its own return pair</td></tr>
+    <tr><td>Readings drift upward at high load</td><td>Secondary burden above the CT's VA rating</td><td>Shorten the run, increase cross-section, or re-specify the CT</td></tr>
+    <tr><td>Meter accurate on one meter, wrong on another</td><td>CT ratio programmed into the meter does not match the CT fitted</td><td>Confirm the ratio at both ends before blaming the hardware</td></tr>
+    <tr><td>No reading at all on one channel</td><td>Secondary left shorted after commissioning, or a link left in place</td><td>Remove the shorting link and re-check</td></tr>
+  </tbody>
+</table>
+
+<h2>Commissioning checks before you close the panel</h2>
+<ul>
+  <li><strong>Markings recorded.</strong> P1/P2 orientation and the S1/S2 landing points written onto the panel drawing, not left in someone's memory.</li>
+  <li><strong>Ratio confirmed twice.</strong> Once on the CT label and once against the ratio programmed into the meter. A 1600/5 CT on a meter set to 1000/5 gives a reading that is wrong by a fixed factor and looks entirely plausible.</li>
+  <li><strong>Direction verified under load.</strong> With a known load, every phase should read positive and in proportion. A phase that reads negative is a wiring fault, not a tariff setting.</li>
+  <li><strong>Burden checked.</strong> Secondary loop resistance measured, or at least the run length and cross-section compared against the CT's VA rating.</li>
+  <li><strong>Single earth confirmed.</strong> One bond per secondary loop, and no accidental second path through a screen or a conduit.</li>
+  <li><strong>Shorting links removed.</strong> Every link fitted for testing is out, and the fact is recorded on the commissioning sheet.</li>
+</ul>
+
+<h2>What YOMIN supplies</h2>
+<p>The YOMIN current transformer range covers the metering forms that appear in these connections, in single-phase and three-phase arrangements.</p>
+
+<table>
+  <thead>
+    <tr><th>Product</th><th>Rating</th><th>Where it fits</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/products/current-transformer">Current sense transformer, 1600/5 A</a></td><td>720 V AC, Class 1.0, 3 kV AC test for 1 minute</td><td>Metering on feeders where a solid-core body can be threaded before termination</td></tr>
+    <tr><td><a href="/products/current-transformer">Single-phase CT, 250/5 A, 50 turns</a></td><td>Class 0.5, wound primary</td><td>Smaller feeders and sub-distribution metering</td></tr>
+    <tr><td><a href="/products/current-transformer">Split-core CT, 2000/5 A</a></td><td>720 V AC, Class 0.5</td><td>Retrofit work where the conductor cannot be disconnected</td></tr>
+  </tbody>
+</table>
+
+<p>Send the ratio, the class, the burden the run will impose and the conductor size. Those four answers decide the body, and the body decides whether the connection can be made at all without cutting the cable.</p>
+
+    <h2>Frequently asked questions</h2>
+      <h3>Which terminal of a current transformer goes to the meter?</h3>
+      <p>S1 goes to the meter's current input for that phase and S2 to the common of that channel. S1 is the terminal in phase with P1, the primary start that faces the supply.</p>
+      <h3>What happens if a current transformer secondary is left open?</h3>
+      <p>With the primary energised, an open secondary leaves the CT with no path for its magnetising current. Flux collapses, a very high voltage appears across the open terminals, and both the person working and the CT insulation are at risk. Short the secondary before opening any connection.</p>
+      <h3>Why does my meter show a negative reading on one phase?</h3>
+      <p>The current sample is inverted on that channel. Usually the CT was closed with P1 facing the load instead of the supply, or S1 and S2 were swapped at the meter. Reverse the CT on the conductor so the installation keeps matching its label.</p>
+      <h3>How far can I run current transformer secondary cable?</h3>
+      <p>There is no single distance, because the limit is burden rather than length. The loop resistance of both wires plus the meter's own burden must stay inside the CT's VA rating at the accuracy class you need. Longer runs need a larger cross-section, a higher VA rating or a shorter path.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Connecting CTs in a panel or retrofitting a metering point?</h2>
+    <p>Send the ratio, the accuracy class, the conductor size and the length of the secondary run. We will confirm the body and the burden that fit the position.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
