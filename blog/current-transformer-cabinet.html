@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/current-transformer-cabinet/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Current Transformer Cabinet: Layout, Wiring and Selection | Yomin Electric</title>
+<meta name="description" content="What a current transformer cabinet contains, how to size metering CTs and burden, why the shorting terminal block matters, and the checks that stop a mis-order.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Current Transformer Cabinet: Layout, Wiring and Selection | Yomin Electric">
+<meta property="og:description" content="What a current transformer cabinet contains, how to size metering CTs and burden, why the shorting terminal block matters, and the checks that stop a mis-order.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/current-transformer-cabinet/card.png">
+<meta property="og:url" content="https://www.yominelectric.com/blog/current-transformer-cabinet">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://www.yominelectric.com/blog/current-transformer-cabinet">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/current-transformer-cabinet">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/current-transformer-cabinet-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/current-transformer-cabinet-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/current-transformer-cabinet-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/current-transformer-cabinet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital,wght@0,1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Current Transformer Cabinet: Layout, Wiring and Selection",
+      "description": "What a current transformer cabinet contains, how to size metering CTs and burden, why the shorting terminal block matters, and the checks that stop a mis-order.",
+      "image": "https://www.yominelectric.com/assets/images/blog/current-transformer-cabinet/hero.png",
+      "datePublished": "2026-11-20",
+      "dateModified": "2026-11-20",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/current-transformer-cabinet"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does a current transformer cabinet need its own earth connection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The enclosure must be bonded to the installation earth, and the CT secondary circuit is earthed at one point only. Earthing the secondary at both ends creates a loop that carries stray current through the measuring circuit and corrupts the reading."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a split-core CT be installed without disconnecting the primary?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That is what a split-core unit is for. It closes around an existing bar or cable, so metering can be added to a live installation during a planned window rather than a full isolation. The trade-off is that the core joint must close squarely, because an uneven gap changes the magnetic path and therefore the accuracy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the meter read a plausible but wrong value?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nearly always ratio or burden. A ratio programmed wrongly in the meter gives a reading that scales consistently; an excessive burden gives a reading that drifts with load. Compare the ratio programmed into the meter against the ratio printed on the transformer before suspecting the transformer itself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which accuracy class should a tenant meter use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Class 0.5 is the usual choice where the reading is billed. Class 1.0 is adequate where the reading informs monitoring and the tenant is billed from a different source."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Current Transformers</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Current Transformer Cabinet: What Goes Inside and How to Specify It</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 20, 2026</span>
+      <span class="divider"></span>
+      <span>6 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/current-transformer-cabinet/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/current-transformer-cabinet/hero.png" alt="Outdoor combined metering unit and split-core current transformer used in a YOMIN current transformer cabinet" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A current transformer cabinet is the enclosure that holds the metering current transformers, the shorting terminal block and the secondary wiring that carries a proportional current to the meter. Specify it by primary current first, then ratio and accuracy class, then burden, and only then by cabinet dimensions and access.</p>
+    <p>The order of those four decisions is not a formality. A current transformer cabinet is built around devices that cannot be re-rated on site: a 400/5 A transformer will not become a 600/5 A transformer, and a Class 1.0 unit cannot be relabelled Class 0.5. The first two lines of the specification lock in everything that follows.</p>
+    <h2>What a current transformer cabinet contains</h2>
+    <p>The enclosure itself is normally sheet steel with a sealable door and a metering window. Inside, the metering CTs sit on the primary conductors, either as busbar or window types that the conductor passes through, or as split-core units that close around a live bar without disconnection.</p>
+    <ul>
+      <li><strong>The metering CTs</strong>, one per phase, plus a fourth on the neutral where the tariff requires neutral measurement.</li>
+      <li><strong>A shorting or test terminal block</strong>, which is the single most important accessory in the cabinet.</li>
+      <li><strong>Secondary wiring</strong> in a cross-section sized for the burden, routed away from the primary conductors.</li>
+      <li><strong>Fuses and links</strong> on any voltage circuit that shares the enclosure.</li>
+      <li><strong>A seal point</strong>, because the cabinet is the boundary between the utility's measurement and the consumer's installation.</li>
+    </ul>
+    <h2>Cabinet, combined metering unit or panel-mounted CT?</h2>
+    <p>These three arrangements answer different questions, and confusing them is the most common source of a cabinet that has to be rebuilt after delivery.</p>
+    <table>
+      <thead>
+        <tr><th>Arrangement</th><th>What it is</th><th>Where it fits</th><th>Watch out for</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>CT cabinet</td><td>A separate low-voltage enclosure holding metering CTs, a shorting block and secondary wiring</td><td>Tenant metering rooms, utility metering points, commercial sub-metering</td><td>Needs dedicated wall space and a route for the secondary cable back to the meter</td></tr>
+        <tr><td>Combined CT/PT metering unit</td><td>Current and voltage transformers built into one oil-filled outdoor unit, such as the JLS series</td><td>Outdoor column metering at 10 kV and 35 kV where a separate cabinet is impractical</td><td>One unit covers both measurements, so a single failure removes all metering</td></tr>
+        <tr><td>Panel-mounted CT</td><td>A CT fitted inside the switchboard it measures</td><td>Retrofits and in-panel sub-metering where space is tight</td><td>Access for testing and replacement is usually poor</td></tr>
+      </tbody>
+    </table>
+    <p>A cabinet is chosen when the utility needs a sealable, accessible measurement point independent of the switchgear. A combined unit is chosen when the site is outdoors and a separate enclosure would need its own foundation and primary connections.</p>
+    <h2>Ratio and class: specify from the meter backwards</h2>
+    <p>The ratio is written as primary over secondary, for example 400/5 A. On IEC equipment the secondary is almost always 5 A, so the ratio decision is really a decision about the primary rating.</p>
+    <p>Choose the primary so the real load sits in the upper part of the range without ever exceeding it. A CT run at a small fraction of its rating loses accuracy, and one run above its rating loses accuracy faster and permanently.</p>
+    <table>
+      <thead>
+        <tr><th>Primary rating</th><th>Secondary</th><th>Typical duty</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>10/5 A</td><td>5 A</td><td>A single small final circuit or a dedicated machine feed</td></tr>
+        <tr><td>50/5 A</td><td>5 A</td><td>A small distribution board or a single tenant unit</td></tr>
+        <tr><td>150/5 A</td><td>5 A</td><td>Lighting and small power sub-mains</td></tr>
+        <tr><td>250/5 A</td><td>5 A</td><td>A tenant supply or a mid-size panel incomer</td></tr>
+        <tr><td>800/5 A</td><td>5 A</td><td>A building sub-main or a small transformer feeder</td></tr>
+        <tr><td>1000/5 A</td><td>5 A</td><td>The main incomer of a commercial board</td></tr>
+        <tr><td>2000/5 A</td><td>5 A</td><td>A large commercial or light industrial incomer</td></tr>
+        <tr><td>5000/5 A</td><td>5 A</td><td>A heavy industrial feeder or a transformer secondary</td></tr>
+      </tbody>
+    </table>
+    <p>YOMIN builds single-phase low-voltage metering CTs across that whole span, from 10/5 A to 5000/5 A, in Class 0.5 and Class 1.0, in busbar, toroidal and split-core constructions, including models rated 720 V AC for 50/60 Hz systems.</p>
+    <h2>Burden is what decides whether the class survives</h2>
+    <p>An accuracy class is meaningless on its own because it is quoted at a burden, expressed in volt-amperes. The burden is the total impedance of the secondary circuit: the meter, the terminal block, every joint, and the resistance of the wire itself.</p>
+    <p>A CT ordered as Class 0.5 at 5 VA will not hold that class in a loop that presents 10 VA. The ratio stays correct, so the meter still shows a plausible number, which is exactly what makes the error hard to find. Keep the secondary run short, keep the cross-section generous, and write the burden on the order instead of accepting a supplier default.</p>
+    <h2>The shorting terminal block is not optional</h2>
+    <p>A CT secondary must never be open-circuited while the primary is energised. With no burden the transformer tries to drive its whole magnetising current into a rising impedance, and the terminal voltage can climb high enough to break down the insulation and endanger anyone standing near the cabinet.</p>
+    <p>A shorting terminal block gives the technician somewhere to make the secondary safe before the meter is removed. It is also the part most often quietly dropped from a cheap cabinet, which is why it belongs on the specification as its own line item rather than as an assumption.</p>
+    <h2>Selection checklist</h2>
+    <ul>
+      <li><strong>Primary current</strong> taken from the real load profile, not from the rating of the incoming breaker.</li>
+      <li><strong>Ratio and secondary</strong> written as a single figure, for example 400/5 A.</li>
+      <li><strong>Accuracy class</strong> matched to the tariff: Class 0.5 where the reading is billed, Class 1.0 where it only drives monitoring.</li>
+      <li><strong>Burden in VA</strong>, calculated from the meter, the wiring and the terminal block together.</li>
+      <li><strong>Build</strong>: busbar, toroidal or split-core, depending on whether the primary can be isolated during installation.</li>
+      <li><strong>Cabinet access</strong>: door swing, sealing point, and the cable route back to the meter.</li>
+      <li><strong>Test facilities</strong>: a shorting block, plus test links if the utility requires them.</li>
+    </ul>
+    <h2>What YOMIN supplies in this range</h2>
+    <p>For the transformers inside the cabinet, YOMIN manufactures single-phase low-voltage metering CTs in Class 0.5 and Class 1.0, with ratios from 10/5 A to 5000/5 A, in busbar, toroidal and split-core builds, including units rated 720 V AC for 50/60 Hz systems.</p>
+    <p>For outdoor sites where a separate cabinet is not practical, the JLS series combined metering units place current and voltage transformers in one oil-filled enclosure for 10 kV and 35 kV column mounting, including the JLS-10 five-column two-element three-phase three-wire unit and the JLSZY-10 three-phase four-wire unit. The shorting terminal blocks that complete the secondary circuit are covered in the terminals and connectors range.</p>
+    <h2>Where cabinets go wrong in practice</h2>
+    <p>Three failures account for most of the rework we see. The first is a ratio chosen from the breaker rating rather than the load, which leaves the meter reading a small fraction of full scale for the life of the installation. The second is a burden that was never calculated, so a Class 0.5 transformer delivers Class 1.0 behaviour and nobody notices until the bill is disputed.</p>
+    <p>The third is mechanical: the secondary cable was run before the cabinet position was fixed, so the loop is longer than the burden allows. Fixing that means new cable, not a new transformer, and it is the most expensive of the three to correct after commissioning.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>Does a current transformer cabinet need its own earth connection?</h3>
+    <p>Yes. The enclosure must be bonded to the installation earth, and the CT secondary circuit is earthed at one point only. Earthing the secondary at both ends creates a loop that carries stray current through the measuring circuit and corrupts the reading.</p>
+    <h3>Can a split-core CT be installed without disconnecting the primary?</h3>
+    <p>That is what a split-core unit is for. It closes around an existing bar or cable, so metering can be added to a live installation during a planned window rather than a full isolation. The trade-off is that the core joint must close squarely, because an uneven gap changes the magnetic path and therefore the accuracy.</p>
+    <h3>Why does the meter read a plausible but wrong value?</h3>
+    <p>Nearly always ratio or burden. A ratio programmed wrongly in the meter gives a reading that scales consistently; an excessive burden gives a reading that drifts with load. Compare the ratio programmed into the meter against the ratio printed on the transformer before suspecting the transformer itself.</p>
+    <h3>Which accuracy class should a tenant meter use?</h3>
+    <p>Class 0.5 is the usual choice where the reading is billed. Class 1.0 is adequate where the reading informs monitoring and the tenant is billed from a different source.</p>
+
+    <h2>Related reading</h2>
+    <ul>
+      <li><a href="/blog/what-is-a-current-transformer">What is a current transformer?</a></li>
+      <li><a href="/blog/ct-ratio-explained">CT ratio explained</a></li>
+      <li><a href="/blog/ct-accuracy-class-guide">CT accuracy class guide</a></li>
+      <li><a href="/blog/split-core-current-transformer-guide">Split-core current transformer guide</a></li>
+      <li><a href="/blog/current-transformer-connection-guide">Current transformer connection guide</a></li>
+    </ul>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying a CT cabinet or a metering transformer?</h2>
+    <p>Send the primary current, the ratio, the accuracy class and the burden your meter presents. We will confirm the right transformer and the cabinet accessories, including the shorting terminal block.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:18px"><a href="https://wa.me/8619016543301" target="_blank" rel="noopener">Prefer to talk it through? Message us on WhatsApp</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

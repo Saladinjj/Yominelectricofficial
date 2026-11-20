@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/current-transformer-cabinet/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coffret de transformateurs de courant : montage, câblage et choix | Yomin Electric</title>
+<meta name="description" content="Ce que contient un coffret de transformateurs de courant, comment dimensionner les TC de comptage et leur fardeau, et les contrôles qui évitent une erreur de commande.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Coffret de transformateurs de courant : montage, câblage et choix | Yomin Electric">
+<meta property="og:description" content="Ce que contient un coffret de transformateurs de courant, comment dimensionner les TC de comptage et leur fardeau, et les contrôles qui évitent une erreur de commande.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/current-transformer-cabinet/card.png">
+<meta property="og:url" content="https://www.yominelectric.com/blog/current-transformer-cabinet-fr">
+<meta property="og:locale" content="fr_FR">
+<link rel="canonical" href="https://www.yominelectric.com/blog/current-transformer-cabinet-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/current-transformer-cabinet">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/current-transformer-cabinet-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/current-transformer-cabinet-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/current-transformer-cabinet-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/current-transformer-cabinet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital,wght@0,1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Coffret de transformateurs de courant : montage, câblage et choix",
+      "description": "Ce que contient un coffret de transformateurs de courant, comment dimensionner les TC de comptage et leur fardeau, et les contrôles qui évitent une erreur de commande.",
+      "image": "https://www.yominelectric.com/assets/images/blog/current-transformer-cabinet/hero.png",
+      "datePublished": "2026-11-20",
+      "dateModified": "2026-11-20",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/current-transformer-cabinet-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Un coffret de transformateurs de courant doit-il avoir sa propre liaison de terre ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. L'enceinte doit être reliée à la terre de l'installation, et le circuit secondaire du TC est mis à la terre en un seul point. Une mise à la terre aux deux extrémités crée une boucle qui fait circuler un courant parasite dans le circuit de mesure et fausse le relevé."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on installer un TC à noyau ouvrant sans couper le primaire ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C'est précisément sa raison d'être. Il se referme autour d'une barre ou d'un câble existant, ce qui permet d'ajouter un comptage sur une installation en service lors d'une fenêtre planifiée plutôt qu'avec une consignation complète. En contrepartie, le joint du noyau doit se refermer bien d'équerre : un entrefer irrégulier modifie le circuit magnétique et donc la précision."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi le compteur affiche-t-il une valeur plausible mais fausse ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Presque toujours le rapport ou le fardeau. Un rapport mal programmé dans le compteur donne une lecture qui reste proportionnelle ; un fardeau excessif donne une lecture qui dérive avec la charge. Comparez le rapport programmé dans le compteur avec celui imprimé sur le transformateur avant de suspecter l'appareil."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle classe de précision pour un compteur locatif ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La classe 0,5 est le choix habituel lorsque le relevé est facturé. La classe 1,0 suffit lorsque le relevé sert au suivi et que le locataire est facturé à partir d'une autre source."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Transformateurs de courant</span></div>
+    <span class="bh-tag">Guides d'achat</span>
+    <h1 class="bh-title">Coffret de transformateurs de courant : contenu et spécification</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">Équipe technique ET</strong>
+      <span class="divider"></span>
+      <span>20 novembre 2026</span>
+      <span class="divider"></span>
+      <span>6 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/current-transformer-cabinet/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/current-transformer-cabinet/hero.png" alt="Ensemble de comptage extérieur combiné et transformateur de courant à noyau ouvrant utilisés dans un coffret YOMIN" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un coffret de transformateurs de courant est l'enceinte qui abrite les transformateurs de courant de comptage, le bornier de court-circuitage et le câblage secondaire qui transporte un courant proportionnel jusqu'au compteur. On le spécifie d'abord par le courant primaire, puis par le rapport et la classe de précision, ensuite par le fardeau, et seulement en dernier par les dimensions et l'accessibilité du coffret.</p>
+    <p>Cet ordre n'a rien de formel. Un coffret de transformateurs de courant est construit autour d'appareils qu'on ne peut pas requalifier sur site : un transformateur 400/5 A ne deviendra jamais un 600/5 A, et une unité de classe 1,0 ne peut pas être requalifiée en classe 0,5. Les deux premières lignes de la spécification verrouillent tout le reste.</p>
+    <h2>Ce que contient un coffret de transformateurs de courant</h2>
+    <p>L'enceinte est généralement en tôle d'acier, avec une porte plombable et une fenêtre de relevé. À l'intérieur, les TC de comptage sont montés sur les conducteurs primaires, soit sous forme de types à barre ou à passage traversés par le conducteur, soit sous forme d'unités à noyau ouvrant qui se referment autour d'une barre sous tension sans coupure.</p>
+    <ul>
+      <li><strong>Les TC de comptage</strong>, un par phase, plus un quatrième sur le neutre lorsque le tarif exige une mesure du neutre.</li>
+      <li><strong>Un bornier de court-circuitage ou d'essai</strong>, qui est l'accessoire le plus important du coffret.</li>
+      <li><strong>Le câblage secondaire</strong>, de section dimensionnée pour le fardeau, cheminé à l'écart des conducteurs primaires.</li>
+      <li><strong>Fusibles et barrettes</strong> sur tout circuit de tension partageant l'enceinte.</li>
+      <li><strong>Un point de plombage</strong>, car le coffret marque la frontière entre la mesure du distributeur et l'installation du client.</li>
+    </ul>
+    <h2>Coffret, ensemble combiné ou TC en tableau ?</h2>
+    <p>Ces trois solutions répondent à des questions différentes, et les confondre est la première cause d'un coffret qu'il faut reprendre après livraison.</p>
+    <table>
+      <thead>
+        <tr><th>Solution</th><th>Nature</th><th>Usage typique</th><th>Point de vigilance</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Coffret de TC</td><td>Enceinte basse tension séparée contenant les TC de comptage, un bornier de court-circuitage et le câblage secondaire</td><td>Locaux de comptage locatifs, points de mesure du distributeur, sous-comptage tertiaire</td><td>Exige une réservation murale et un cheminement de câble secondaire jusqu'au compteur</td></tr>
+        <tr><td>Ensemble combiné TC/TT</td><td>Transformateurs de courant et de tension réunis dans une seule unité extérieure remplie d'huile, série JLS</td><td>Comptage sur poteau en 10 kV et 35 kV lorsqu'un coffret séparé est impossible</td><td>Une seule unité porte les deux mesures : une défaillance supprime tout le comptage</td></tr>
+        <tr><td>TC en tableau</td><td>TC installé dans le tableau qu'il mesure</td><td>Reprise et sous-comptage en armoire lorsque la place manque</td><td>L'accès pour les essais et le remplacement est généralement médiocre</td></tr>
+      </tbody>
+    </table>
+    <p>Le coffret s'impose lorsque le distributeur a besoin d'un point de mesure plombable et accessible, indépendant de l'appareillage. L'ensemble combiné s'impose en extérieur, lorsqu'une enceinte séparée exigerait ses propres fondations et ses propres raccordements primaires.</p>
+    <h2>Rapport et classe : on part du compteur</h2>
+    <p>Le rapport s'écrit primaire sur secondaire, par exemple 400/5 A. Sur le matériel CEI, le secondaire vaut presque toujours 5 A : la décision porte donc en réalité sur le calibre primaire.</p>
+    <p>Choisissez le primaire pour que la charge réelle se situe dans la partie haute de la plage sans jamais la dépasser. Un TC exploité à une faible fraction de son calibre perd de la précision, et un TC exploité au-delà de son calibre en perd plus vite et définitivement.</p>
+    <table>
+      <thead>
+        <tr><th>Calibre primaire</th><th>Secondaire</th><th>Emploi typique</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>10/5 A</td><td>5 A</td><td>Un petit circuit terminal ou une alimentation machine dédiée</td></tr>
+        <tr><td>50/5 A</td><td>5 A</td><td>Un petit tableau de distribution ou un local locatif unique</td></tr>
+        <tr><td>150/5 A</td><td>5 A</td><td>Départs éclairage et petits usages</td></tr>
+        <tr><td>250/5 A</td><td>5 A</td><td>Une alimentation locative ou l'arrivée d'un tableau moyen</td></tr>
+        <tr><td>800/5 A</td><td>5 A</td><td>Un départ de bâtiment ou l'alimentation d'un petit transformateur</td></tr>
+        <tr><td>1000/5 A</td><td>5 A</td><td>L'arrivée principale d'un tableau tertiaire</td></tr>
+        <tr><td>2000/5 A</td><td>5 A</td><td>Une arrivée tertiaire importante ou industrielle légère</td></tr>
+        <tr><td>5000/5 A</td><td>5 A</td><td>Un départ industriel lourd ou le secondaire d'un transformateur</td></tr>
+      </tbody>
+    </table>
+    <p>YOMIN fabrique des TC de comptage basse tension monophasés sur toute cette plage, de 10/5 A à 5000/5 A, en classe 0,5 et classe 1,0, en versions à barre, toroïdale et à noyau ouvrant, dont des modèles admis en 720 V AC pour réseaux 50/60 Hz.</p>
+    <h2>C'est le fardeau qui décide si la classe tient</h2>
+    <p>Une classe de précision n'a pas de sens seule, car elle est garantie pour un fardeau donné, exprimé en voltampères. Le fardeau est l'impédance totale du circuit secondaire : le compteur, le bornier, chaque connexion et la résistance du conducteur lui-même.</p>
+    <p>Un TC commandé en classe 0,5 sous 5 VA ne tiendra pas cette classe dans une boucle qui présente 10 VA. Le rapport reste juste, donc le compteur affiche toujours une valeur plausible : c'est précisément ce qui rend l'erreur difficile à détecter. Limitez la longueur du secondaire, soignez la section et inscrivez le fardeau sur la commande au lieu d'accepter la valeur par défaut du fournisseur.</p>
+    <h2>Le bornier de court-circuitage n'est pas optionnel</h2>
+    <p>Un secondaire de TC ne doit jamais être ouvert alors que le primaire est sous tension. Sans fardeau, le transformateur cherche à faire passer tout son courant magnétisant dans une impédance croissante, et la tension aux bornes peut monter assez haut pour claquer l'isolation et mettre en danger toute personne présente.</p>
+    <p>Le bornier de court-circuitage donne au technicien le moyen de mettre le secondaire en sécurité avant de retirer le compteur. C'est aussi la pièce la plus souvent supprimée d'un coffret bon marché, d'où sa place en ligne distincte dans la spécification, et non en supposition.</p>
+    <h2>Liste de vérification avant commande</h2>
+    <ul>
+      <li><strong>Courant primaire</strong> issu du profil de charge réel, et non du calibre du disjoncteur d'arrivée.</li>
+      <li><strong>Rapport et secondaire</strong> écrits en une seule valeur, par exemple 400/5 A.</li>
+      <li><strong>Classe de précision</strong> cohérente avec le tarif : classe 0,5 si le relevé est facturé, classe 1,0 s'il ne sert qu'au suivi.</li>
+      <li><strong>Fardeau en VA</strong>, calculé à partir du compteur, du câblage et du bornier ensemble.</li>
+      <li><strong>Construction</strong> : à barre, toroïdale ou à noyau ouvrant, selon que le primaire peut être consigné pendant l'installation.</li>
+      <li><strong>Accessibilité</strong> : débattement de porte, point de plombage et cheminement du câble jusqu'au compteur.</li>
+      <li><strong>Moyens d'essai</strong> : un bornier de court-circuitage, et des barrettes d'essai si le distributeur les exige.</li>
+    </ul>
+    <h2>Ce que YOMIN fournit dans cette gamme</h2>
+    <p>Pour les transformateurs logés dans le coffret, YOMIN fabrique des TC de comptage basse tension monophasés en classe 0,5 et classe 1,0, avec des rapports de 10/5 A à 5000/5 A, en constructions à barre, toroïdale et à noyau ouvrant, dont des unités admises en 720 V AC pour réseaux 50/60 Hz.</p>
+    <p>Pour les sites extérieurs où un coffret séparé n'est pas réalisable, les ensembles de comptage combinés de la série JLS réunissent transformateurs de courant et de tension dans une enceinte remplie d'huile, pour montage sur poteau en 10 kV et 35 kV, notamment l'unité JLS-10 à cinq colonnes, deux éléments, triphasée trois fils, et l'unité JLSZY-10 triphasée quatre fils. Les borniers de court-circuitage qui ferment le circuit secondaire figurent dans la gamme borniers et connecteurs.</p>
+    <h2>Les erreurs que l'on rencontre réellement</h2>
+    <p>Trois défauts expliquent l'essentiel des reprises que nous voyons. Le premier est un rapport choisi d'après le calibre du disjoncteur plutôt que d'après la charge : le compteur lit alors une faible fraction de sa pleine échelle pendant toute la vie de l'installation. Le second est un fardeau jamais calculé, si bien qu'un transformateur classe 0,5 se comporte comme un classe 1,0 sans que personne ne s'en aperçoive avant la contestation de facture.</p>
+    <p>Le troisième est mécanique : le câble secondaire a été tiré avant que la position du coffret ne soit arrêtée, et la boucle est plus longue que le fardeau ne le permet. La correction passe alors par un nouveau câble, pas par un nouveau transformateur, ce qui en fait la plus coûteuse des trois après la mise en service.</p>
+
+    <h2>Questions fréquentes</h2>
+    <h3>Un coffret de transformateurs de courant doit-il avoir sa propre liaison de terre ?</h3>
+    <p>Oui. L'enceinte doit être reliée à la terre de l'installation, et le circuit secondaire du TC est mis à la terre en un seul point. Une mise à la terre aux deux extrémités crée une boucle qui fait circuler un courant parasite dans le circuit de mesure et fausse le relevé.</p>
+    <h3>Peut-on installer un TC à noyau ouvrant sans couper le primaire ?</h3>
+    <p>C'est précisément sa raison d'être. Il se referme autour d'une barre ou d'un câble existant, ce qui permet d'ajouter un comptage sur une installation en service lors d'une fenêtre planifiée plutôt qu'avec une consignation complète. En contrepartie, le joint du noyau doit se refermer bien d'équerre : un entrefer irrégulier modifie le circuit magnétique et donc la précision.</p>
+    <h3>Pourquoi le compteur affiche-t-il une valeur plausible mais fausse ?</h3>
+    <p>Presque toujours le rapport ou le fardeau. Un rapport mal programmé dans le compteur donne une lecture qui reste proportionnelle ; un fardeau excessif donne une lecture qui dérive avec la charge. Comparez le rapport programmé dans le compteur avec celui imprimé sur le transformateur avant de suspecter l'appareil.</p>
+    <h3>Quelle classe de précision pour un compteur locatif ?</h3>
+    <p>La classe 0,5 est le choix habituel lorsque le relevé est facturé. La classe 1,0 suffit lorsque le relevé sert au suivi et que le locataire est facturé à partir d'une autre source.</p>
+
+    <h2>À lire également</h2>
+    <ul>
+      <li><a href="/blog/what-is-a-current-transformer">Qu'est-ce qu'un transformateur de courant ?</a></li>
+      <li><a href="/blog/ct-ratio-explained">Le rapport de transformation expliqué</a></li>
+      <li><a href="/blog/ct-accuracy-class-guide">Guide des classes de précision des TC</a></li>
+      <li><a href="/blog/split-core-current-transformer-guide">Guide des TC à noyau ouvrant</a></li>
+      <li><a href="/blog/current-transformer-connection-guide">Guide de raccordement des TC</a></li>
+    </ul>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous spécifiez un coffret de TC ou un transformateur de comptage ?</h2>
+    <p>Indiquez le courant primaire, le rapport, la classe de précision et le fardeau présenté par votre compteur. Nous confirmerons le transformateur adapté et les accessoires du coffret, bornier de court-circuitage compris.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <p style="margin-top:18px"><a href="https://wa.me/8619016543301" target="_blank" rel="noopener">Vous préférez en parler ? Écrivez-nous sur WhatsApp</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
