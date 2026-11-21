@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/energy-meter-pulse-output/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sortie impulsionnelle d'un compteur : principe, câblage et réglages | Yomin Electric</title>
+<meta name="description" content="Comment fonctionne une sortie impulsionnelle de compteur d'énergie, pourquoi le kWh par impulsion compte plus que l'afficheur, comment la câbler vers un automate, et les défauts qui font perdre des impulsions.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sortie impulsionnelle d'un compteur : principe, câblage et réglages | Yomin Electric">
+<meta property="og:description" content="Comment fonctionne une sortie impulsionnelle de compteur d'énergie, pourquoi le kWh par impulsion compte plus que l'afficheur, comment la câbler vers un automate, et les défauts qui font perdre des impulsions.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/energy-meter-pulse-output/card.png">
+<meta property="og:url" content="https://www.yominelectric.com/blog/energy-meter-pulse-output-fr">
+<meta property="og:locale" content="fr_FR">
+<link rel="canonical" href="https://www.yominelectric.com/blog/energy-meter-pulse-output-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/energy-meter-pulse-output">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/energy-meter-pulse-output-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/energy-meter-pulse-output-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/energy-meter-pulse-output-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/energy-meter-pulse-output">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital,wght@0,1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Sortie impulsionnelle d'un compteur d'énergie : principe, comptage et câblage",
+      "description": "Comment fonctionne une sortie impulsionnelle de compteur d'énergie, pourquoi le kWh par impulsion compte plus que l'afficheur, comment la câbler vers un automate, et les défauts qui font perdre des impulsions.",
+      "image": "https://www.yominelectric.com/assets/images/blog/energy-meter-pulse-output/hero.png",
+      "datePublished": "2026-11-21",
+      "dateModified": "2026-11-21",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/energy-meter-pulse-output-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "fr",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Une sortie impulsionnelle mesure-t-elle la puissance ou l'énergie ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'énergie uniquement, et normalement l'énergie cumulée dans un sens. La puissance et les autres grandeurs exigent un compteur communicant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on raccorder une sortie impulsionnelle directement à une entrée d'automate ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Seulement si l'entrée convient au type de sortie : résistance de tirage pour un collecteur ouvert, tension de mouillage pour un contact sec."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment convertir les impulsions en kWh ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Divisez un par la constante en imp/kWh, puis multipliez par le nombre d'impulsions. À 1 000 imp/kWh, 250 000 impulsions égalent 250 kWh."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi mon total vaut-il exactement le double de l'afficheur ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le compteur compte très probablement les deux fronts. Réglez-le sur un seul front."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Une sortie impulsionnelle suffit-elle pour facturer des locataires ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elle suffit pour un total, pas pour les tarifs horaires ou l'énergie inverse. Demandez aussi le RS485."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Compteurs d'énergie</span></div>
+    <span class="bh-tag">Guides d'achat</span>
+    <h1 class="bh-title">Sortie impulsionnelle d'un compteur d'énergie : principe, comptage et câblage</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>21 novembre 2026</span>
+      <span class="divider"></span>
+      <span>9 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/energy-meter-pulse-output/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/energy-meter-pulse-output/hero.png" alt="Compteur d'énergie monophasé YOMIN sur rail DIN avec bornes de sortie impulsionnelle à côté d'un compteur triphasé équipé de la même sortie" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p><strong>Réponse courte :</strong> une sortie impulsionnelle est un contact ou un transistor à l'intérieur du compteur qui commute une fois pour chaque quantité d'énergie fixe mesurée. Le compteur mesure ; la sortie se contente de signaler « une unité de plus est passée ». C'est donc le moyen le moins coûteux d'amener l'énergie dans un automate, une GTB ou un enregistreur ancien : ni protocole, ni table de registres, ni interrogation périodique. C'est aussi la sortie qui échoue le plus discrètement, car une résistance manquante ou un filtre mal réglé ne produisent pas d'alarme, seulement un total trop bas.</p>
+    <p>La question de l'acheteur n'est presque jamais « y a-t-il une sortie impulsionnelle ». C'est « quel type de sortie, combien d'impulsions par kWh, et que faut-il ajouter pour que le comptage soit juste ». Ces trois réponses décident de la réussite de l'installation.</p>
+
+    <h2>Ce qu'est physiquement une sortie impulsionnelle</h2>
+    <p>À l'intérieur du compteur, le circuit de mesure incrémente un registre d'énergie. À chaque incrément fixe - la constante d'impulsion - il actionne un petit étage de sortie. Sur un compteur cet étage est un contact de relais ; sur un autre, un transistor opto-isolé. Dans les deux cas, l'extérieur voit deux bornes qui changent d'état et un compteur qui additionne les transitions.</p>
+    <p>L'impulsion ne transporte ni la tension, ni le courant, ni le facteur de puissance. Une sortie impulsionnelle ne rend que l'énergie, et généralement l'énergie cumulée dans un seul sens. Pour la puissance, la tension, le courant, le facteur de puissance ou les valeurs par phase, il faut un compteur communicant, quelle que soit la vitesse de comptage.</p>
+
+    <h2>Trois types de sortie, trois conséquences de câblage</h2>
+    <table>
+      <thead><tr><th>Type de sortie</th><th>Élément de commutation</th><th>Alimentation externe</th><th>Usage typique</th><th>Point de vigilance</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Relais / contact sec</strong></td><td>Contact mécanique</td><td>Non, mais l'entrée a besoin d'une tension de mouillage</td><td>Reprise vers une GTB ou un contrôleur qui fournit sa tension</td><td>Rebonds de contact et cadence limitée</td></tr>
+        <tr><td><strong>Collecteur ouvert opto-isolé</strong></td><td>Transistor</td><td>Oui - résistance de tirage vers l'alimentation du compteur</td><td>Entrée de comptage rapide d'automate</td><td>Sans tirage, l'entrée ne voit aucune transition</td></tr>
+        <tr><td><strong>Deux fils passifs (type S0)</strong></td><td>Opto-isolé, limité en courant</td><td>Oui - fournie par le dispositif de comptage</td><td>Gestion d'énergie et GTB</td><td>Polarité et courant que le compteur doit fournir</td></tr>
+      </tbody>
+    </table>
+    <p>Le type n'est pas une préférence, c'est une décision d'interface. Un contact sec pilote presque tout, lentement ; un collecteur ouvert est rapide et économique mais exige le tirage ; une sortie passive suppose que le compteur fournisse le courant. Demandez le type par écrit, pas seulement « sortie impulsionnelle ».</p>
+
+    <h2>Le kWh par impulsion est le seul chiffre qui compte</h2>
+    <p>La constante est donnée soit en impulsions par kWh (imp/kWh), soit en kWh par impulsion. Ce sont des inverses, et les confondre est l'erreur d'échelle classique.</p>
+    <p><strong>kWh par impulsion = 1 / (imp/kWh)</strong>. Un compteur marqué 1000 imp/kWh délivre donc une impulsion par 0,001 kWh.</p>
+    <table>
+      <thead><tr><th>Constante</th><th>kWh par impulsion</th><th>Impulsions pour 100 kWh</th><th>Impulsions par heure à 3 kW constants</th></tr></thead>
+      <tbody>
+        <tr><td>100 imp/kWh</td><td>0,01 kWh</td><td>10 000</td><td>300</td></tr>
+        <tr><td>500 imp/kWh</td><td>0,002 kWh</td><td>50 000</td><td>1 500</td></tr>
+        <tr><td>1 000 imp/kWh</td><td>0,001 kWh</td><td>100 000</td><td>3 000</td></tr>
+        <tr><td>2 000 imp/kWh</td><td>0,0005 kWh</td><td>200 000</td><td>6 000</td></tr>
+      </tbody>
+    </table>
+    <p>La dernière colonne est celle qui piège. À 3 kW, un compteur à 2 000 imp/kWh produit près de 1,7 impulsion par seconde. Une sortie relais prévue pour quelques manœuvres par seconde perdra des impulsions à ce rythme ; une entrée de comptage avec un filtre de 10 ms les perdra aussi. Une constante élevée sert la résolution et pénalise les entrées lentes.</p>
+
+    <h2>Sortie impulsionnelle, RS485 ou secondaire de TC : choisir selon la donnée</h2>
+    <table>
+      <thead><tr><th></th><th>Sortie impulsionnelle</th><th>RS485 / Modbus</th><th>Signal secondaire de TC</th></tr></thead>
+      <tbody>
+        <tr><td>Ce qu'elle transporte</td><td>Énergie cumulée uniquement</td><td>Énergie, puissance, tension, courant, facteur de puissance, par phase</td><td>Un courant analogique proportionnel au primaire</td></tr>
+        <tr><td>Câblage</td><td>Deux ou trois fils vers une entrée de comptage</td><td>Paire torsadée, en chaîne, terminée</td><td>Deux fils par phase vers l'instrument</td></tr>
+        <tr><td>Distance</td><td>Courte ; le bruit limite la longueur utile</td><td>Longue à bas débit</td><td>Limitée par le fardeau et la résistance des fils</td></tr>
+        <tr><td>Le mieux pour</td><td>Totalisation, reprise, intégration automate simple</td><td>Surveillance multiparamètre et données de facturation</td><td>Instruments anciens et tableaux analogiques</td></tr>
+        <tr><td>Limite</td><td>Ni sens, ni tarif, ni valeurs instantanées</td><td>Nécessite une interrogation et une table de registres</td><td>La précision dépend de toute la boucle</td></tr>
+      </tbody>
+    </table>
+    <p>Beaucoup de compteurs offrent à la fois une sortie impulsionnelle et un port RS485. Cette combinaison mérite d'être demandée : le RS485 pour le détail, les impulsions pour un totalisateur qui continue de fonctionner quand le réseau ou le maître d'interrogation ne répond plus.</p>
+
+    <h2>Câbler une sortie impulsionnelle vers un automate ou une GTB</h2>
+    <table>
+      <thead><tr><th>Connexion</th><th>Destination</th><th>Remarque</th></tr></thead>
+      <tbody>
+        <tr><td>Impulsion + / collecteur</td><td>Entrée de comptage rapide de l'automate</td><td>Ajouter une résistance de tirage vers l'alimentation pour un collecteur ouvert</td></tr>
+        <tr><td>Impulsion - / émetteur</td><td>0 V de la même alimentation que l'entrée</td><td>La référence commune n'est pas optionnelle</td></tr>
+        <tr><td>Blindage du câble</td><td>Terre d'un seul côté</td><td>Blinder des deux côtés crée une boucle</td></tr>
+        <tr><td>Configuration du compteur</td><td>Front montant, filtre minimal, totalisateur 32 bits</td><td>Compter un seul front, jamais les deux</td></tr>
+        <tr><td>Mise à l'échelle</td><td>Nombre d'impulsions x kWh par impulsion</td><td>Prendre la constante de la plaque, pas de mémoire</td></tr>
+      </tbody>
+    </table>
+    <p>Deux points pratiques. Utilisez une entrée rapide ou à interruption plutôt qu'une entrée TOR à filtre long, et éloignez le câble d'impulsion des circuits de contacteurs et de variateurs. Un train d'impulsions est un signal de faible énergie et se comporte comme tel.</p>
+
+    <h2>Cinq raisons pour lesquelles des impulsions se perdent</h2>
+    <ul>
+      <li><strong>Pas de résistance de tirage sur un collecteur ouvert.</strong> L'entrée reste dans un état et le total ne bouge jamais : le défaut le plus fréquent.</li>
+      <li><strong>Filtre d'entrée plus long que l'impulsion.</strong> Correct à faible charge, perdant à pleine charge, et presque impossible à déceler sur un total journalier.</li>
+      <li><strong>Les deux fronts comptés.</strong> Le total affiche exactement le double, ce qui ressemble à une erreur d'échelle sans en être une.</li>
+      <li><strong>Mauvaise constante appliquée.</strong> L'erreur est proportionnelle : elle se cache à une charge et grandit à une autre.</li>
+      <li><strong>Bruit sur une longue liaison non blindée.</strong> Les contacteurs injectent des impulsions qui n'ont jamais été générées.</li>
+    </ul>
+    <p>Contrôle de mise en service : faites tourner une charge connue pendant un temps mesuré, comparez l'énergie comptée à l'afficheur du compteur, et vérifiez que les deux concordent à la classe de précision près. Faites-le avant la réception du tableau, pas après un mois de données de facturation douteuses.</p>
+
+    <h2>Spécifier un compteur à sortie impulsionnelle</h2>
+    <table>
+      <thead><tr><th>Élément</th><th>À préciser</th></tr></thead>
+      <tbody>
+        <tr><td>Type de sortie</td><td>Relais, collecteur ouvert ou deux fils passifs</td></tr>
+        <tr><td>Constante</td><td>imp/kWh, ou kWh par impulsion</td></tr>
+        <tr><td>Fréquence maximale</td><td>Nécessaire pour vérifier que l'entrée de comptage suit</td></tr>
+        <tr><td>Caractéristiques électriques</td><td>Tension et courant que la sortie peut commuter</td></tr>
+        <tr><td>Isolation</td><td>Sortie isolée ou non du circuit de mesure</td></tr>
+        <tr><td>Repérage des bornes</td><td>Quelles bornes forment la paire d'impulsion, marquées sur le boîtier</td></tr>
+        <tr><td>Deuxième canal</td><td>RS485 également nécessaire pour les données détaillées</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Compteurs YOMIN avec sortie impulsionnelle</h2>
+    <p>La gamme comprend des modèles monophasés et triphasés avec sortie impulsionnelle. Le YM-0101 est un compteur monophasé deux modules sur rail DIN, afficheur LCD et sortie impulsionnelle ; le YM-0265 est un compteur monophasé 127/230 V, 5(30) A, deux fils, sur rail DIN, à affichage analogique et sortie impulsionnelle ; le YM-0716 est un compteur triphasé analogique sur rail DIN avec sortie impulsionnelle et classe de précision 1.0 ; le YM-0756 est un compteur monophasé deux modules à grand écran, bouton de remise à zéro, borne de sortie impulsionnelle, communication RS485 et classe 1.0 sur rail DIN 35 mm.</p>
+    <p>Si la constante doit correspondre à un totalisateur existant, indiquez-le avant la commande. C'est une caractéristique de mesure, pas un accessoire, et elle est fixée en fabrication.</p>
+
+    <h2>Questions fréquentes</h2>
+    <h3>Une sortie impulsionnelle mesure-t-elle la puissance ou l'énergie ?</h3>
+    <p>L'énergie uniquement, et normalement l'énergie cumulée dans un sens. La puissance, la tension, le courant et le facteur de puissance exigent un compteur communicant ou un convertisseur séparé.</p>
+    <h3>Peut-on raccorder une sortie impulsionnelle directement à une entrée d'automate ?</h3>
+    <p>Seulement si l'entrée convient au type de sortie. Un collecteur ouvert exige une résistance de tirage ; un contact sec exige une tension de mouillage ; une sortie passive exige que le compteur fournisse le courant.</p>
+    <h3>Comment convertir les impulsions en kWh ?</h3>
+    <p>Divisez un par la constante en imp/kWh, puis multipliez par le nombre d'impulsions. À 1 000 imp/kWh, chaque impulsion vaut 0,001 kWh : 250 000 impulsions égalent 250 kWh.</p>
+    <h3>Pourquoi mon total vaut-il exactement le double de l'afficheur ?</h3>
+    <p>Le compteur compte très probablement les deux fronts. Réglez-le sur un seul front, puis vérifiez à nouveau l'échelle.</p>
+    <h3>Une sortie impulsionnelle suffit-elle pour facturer des locataires ?</h3>
+    <p>Elle suffit pour un total, pas pour des tarifs horaires, l'énergie inverse ou les valeurs par phase. Pour la facturation, demandez aussi le RS485.</p>
+    
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous intégrez un compteur dans un automate ou une GTB ?</h2>
+    <p>Indiquez l'entrée de comptage, la constante nécessaire et si le RS485 est également requis. Nous confirmerons le compteur et le bornier avant la commande.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <p style="margin-top:18px"><a href="https://wa.me/8619016543301" target="_blank" rel="noopener">Vous préférez en parler ? Écrivez-nous sur WhatsApp</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

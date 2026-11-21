@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/energy-meter-pulse-output/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>خرج النبضات في عداد الطاقة: ما هو وكيف يُوصَّل | Yomin Electric</title>
+<meta name="description" content="كيف يعمل خرج النبضات في عداد الطاقة، ولماذا عدد kWh لكل نبضة أهم من الشاشة، وكيف يُوصَّل بوحدة PLC أو نظام إدارة المبنى، والأعطال التي تُفقد النبضات.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="خرج النبضات في عداد الطاقة: ما هو وكيف يُوصَّل | Yomin Electric">
+<meta property="og:description" content="كيف يعمل خرج النبضات في عداد الطاقة، ولماذا عدد kWh لكل نبضة أهم من الشاشة، وكيف يُوصَّل بوحدة PLC أو نظام إدارة المبنى، والأعطال التي تُفقد النبضات.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/energy-meter-pulse-output/card.png">
+<meta property="og:url" content="https://www.yominelectric.com/blog/energy-meter-pulse-output-ar">
+<meta property="og:locale" content="ar_AR">
+<link rel="canonical" href="https://www.yominelectric.com/blog/energy-meter-pulse-output-ar">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/energy-meter-pulse-output">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/energy-meter-pulse-output-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/energy-meter-pulse-output-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/energy-meter-pulse-output-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/energy-meter-pulse-output">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital,wght@0,1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "خرج النبضات في عداد الطاقة: ما هو، وكيف يُحتسب، وكيف يُوصَّل",
+      "description": "كيف يعمل خرج النبضات في عداد الطاقة، ولماذا عدد kWh لكل نبضة أهم من الشاشة، وكيف يُوصَّل بوحدة PLC أو نظام إدارة المبنى، والأعطال التي تُفقد النبضات.",
+      "image": "https://www.yominelectric.com/assets/images/blog/energy-meter-pulse-output/hero.png",
+      "datePublished": "2026-11-21",
+      "dateModified": "2026-11-21",
+      "inLanguage": "ar",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/energy-meter-pulse-output-ar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "ar",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "هل يقيس خرج النبضات القدرة أم الطاقة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "الطاقة فقط، وعادةً الطاقة التراكمية في اتجاه واحد. أما القدرة والجهد والتيار فتحتاج عداداً متصلاً."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يمكن توصيل خرج النبضات مباشرة بمدخل PLC؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "فقط إذا كان المدخل مناسباً لنوع الخرج: مقاومة سحب للمجمع المفتوح، وجهد تشغيل للتلامس الجاف."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف تُحوَّل النبضات إلى kWh؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "اقسم واحداً على الثابت بالنبضات لكل kWh ثم اضرب في عدد النبضات. عند 1,000 نبضة/kWh، 250,000 نبضة تعادل 250 kWh."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "لماذا يظهر المجموع ضعف الشاشة تماماً؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "العداد على الأرجح يعدّ الحافتين. اضبطه على حافة واحدة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل يكفي خرج النبضات لفوترة المستأجرين؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يكفي للمجموع، لكن ليس لتعرفات الوقت أو الطاقة العكسية. اطلب RS485 أيضاً."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="ar">
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>عدادات الطاقة</span></div>
+    <span class="bh-tag">أدلة المشترين</span>
+    <h1 class="bh-title">خرج النبضات في عداد الطاقة: ما هو، وكيف يُحتسب، وكيف يُوصَّل</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>21 نوفمبر 2026</span>
+      <span class="divider"></span>
+      <span>قراءة 9 دقائق</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/energy-meter-pulse-output/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/energy-meter-pulse-output/hero.png" alt="عداد طاقة أحادي الطور من YOMIN على قضيب DIN مع أطراف خرج النبضات إلى جانب عداد ثلاثي الطور بالخرج نفسه" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p><strong>الجواب المختصر:</strong> خرج النبضات هو تلامس أو ترانزستور داخل العداد يُغلق مرة واحدة مقابل كمية طاقة ثابتة تُقاس. العداد يقوم بالقياس، وخرج النبضات يبلّغ فقط بأن «وحدة أخرى مرّت». ولهذا هو أرخص طريق لإدخال الطاقة إلى وحدة PLC أو نظام إدارة مبنى أو مسجّل بيانات قديم: بلا بروتوكول، وبلا خريطة سجلات، وبلا استعلام دوري. وهو أيضاً الخرج الذي يفشل بهدوء أكبر، لأن مقاومة ناقصة أو إعداد مرشّح خاطئ لا ينتجان إنذاراً، بل مجموعاً أقل من الحقيقة.</p>
+    <p>سؤال المشتري نادراً ما يكون «هل يوجد خرج نبضات؟»، بل «أي نوع من الخرج، وكم نبضة لكل kWh، وما الذي يجب إضافته ليكون العدّ صحيحاً». هذه الإجابات الثلاث تحدد نجاح التركيب.</p>
+
+    <h2>ما هو خرج النبضات فعلياً</h2>
+    <p>داخل العداد تزيد دارة القياس سجل الطاقة. وعند كل زيادة ثابتة - وهي ثابت النبضات - تُشغّل مرحلة خرج صغيرة. في عداد تكون هذه المرحلة تلامس مرحّل، وفي آخر ترانزستوراً معزولًا ضوئياً. وفي الحالتين يرى العالم الخارجي طرفين يتغيّران وعدّاداً يجمع الانتقالات.</p>
+    <p>النبضة لا تحمل الجهد ولا التيار ولا معامل القدرة. خرج النبضات يبلّغ عن الطاقة فقط، وعادةً الطاقة التراكمية في اتجاه واحد. وإذا احتجت القدرة أو الجهد أو التيار أو معامل القدرة أو القيم لكل طور، فلا يمكن لخرج النبضات تقديمها مهما كانت سرعة العدّ.</p>
+
+    <h2>ثلاثة أنواع من الخرج، وثلاث نتائج للتوصيل</h2>
+    <table>
+      <thead><tr><th>نوع الخرج</th><th>عنصر التبديل</th><th>هل يحتاج تغذية خارجية؟</th><th>الاستخدام المعتاد</th><th>ما يجب مراقبته</th></tr></thead>
+      <tbody>
+        <tr><td><strong>مرحّل / تلامس جاف</strong></td><td>تلامس ميكانيكي</td><td>لا، لكن المدخل يحتاج جهد تشغيل</td><td>الترقية إلى نظام إدارة مبنى يوفّر جهد التشغيل</td><td>ارتداد التلامس ومعدل تبديل محدود</td></tr>
+        <tr><td><strong>مجمع مفتوح معزول ضوئياً</strong></td><td>ترانزستور</td><td>نعم - مقاومة سحب إلى تغذية العدّاد</td><td>مدخل عدّ سريع في وحدة PLC</td><td>بدون مقاومة السحب لا يرى المدخل أي انتقال</td></tr>
+        <tr><td><strong>سلكان سلبي (بنمط S0)</strong></td><td>معزول ضوئياً ومحدود التيار</td><td>نعم - يوفّرها جهاز العدّ</td><td>إدارة الطاقة ووحدات التحكم في المباني</td><td>القطبية والتيار الذي يجب أن يوفّره العدّاد</td></tr>
+      </tbody>
+    </table>
+    <p>النوع ليس تفضيلاً بل قرار واجهة. التلامس الجاف يُشغّل معظم الأشياء ببطء، والمجمع المفتوح سريع ورخيص لكنه يحتاج مقاومة سحب، والخرج السلبي يفترض أن يوفّر جهاز العدّ التيار. اطلب النوع كتابةً، لا عبارة «خرج نبضات» فقط.</p>
+
+    <h2>عدد kWh لكل نبضة هو الرقم الوحيد المهم</h2>
+    <p>يُذكر ثابت النبضات إمّا بعدد النبضات لكل kWh، أو بعدد kWh لكل نبضة. وهما مقلوبان، والخلط بينهما هو خطأ القياس الكلاسيكي.</p>
+    <p><strong>kWh لكل نبضة = 1 ÷ (النبضات لكل kWh)</strong>. لذا فعداد مكتوب عليه 1000 نبضة/kWh يعطي نبضة واحدة لكل 0.001 kWh.</p>
+    <table>
+      <thead><tr><th>ثابت النبضات</th><th>kWh لكل نبضة</th><th>نبضات لكل 100 kWh</th><th>نبضات في الساعة عند 3 kW ثابتة</th></tr></thead>
+      <tbody>
+        <tr><td>100 نبضة/kWh</td><td>0.01 kWh</td><td>10,000</td><td>300</td></tr>
+        <tr><td>500 نبضة/kWh</td><td>0.002 kWh</td><td>50,000</td><td>1,500</td></tr>
+        <tr><td>1,000 نبضة/kWh</td><td>0.001 kWh</td><td>100,000</td><td>3,000</td></tr>
+        <tr><td>2,000 نبضة/kWh</td><td>0.0005 kWh</td><td>200,000</td><td>6,000</td></tr>
+      </tbody>
+    </table>
+    <p>العمود الأخير هو الذي يفاجئ الناس. عند 3 kW ينتج عداد بثابت 2,000 نبضة/kWh نحو 1.7 نبضة في الثانية. وخرج مرحّل مصمّم لعمليات قليلة في الثانية سيفقد نبضات بهذا المعدل، ومدخل عدّ بمرشّح 10 ms سيفقدها أيضاً. الثابت العالي يخدم الدقة ويُعادي المداخل البطيئة.</p>
+
+    <h2>خرج النبضات أم RS485 أم ثانوي محول التيار: الاختيار حسب البيانات</h2>
+    <table>
+      <thead><tr><th></th><th>خرج النبضات</th><th>RS485 / Modbus</th><th>إشارة ثانوي محول التيار</th></tr></thead>
+      <tbody>
+        <tr><td>ما ينقله</td><td>الطاقة التراكمية فقط</td><td>الطاقة والقدرة والجهد والتيار ومعامل القدرة ولكل طور</td><td>تيار تماثلي يتناسب مع تيار الجانب الأولي</td></tr>
+        <tr><td>التوصيل</td><td>سلكان أو ثلاثة إلى مدخل عدّ</td><td>زوج مجدول، تسلسلي، مع طرفي إنهاء</td><td>سلكان لكل طور إلى الجهاز</td></tr>
+        <tr><td>المسافة</td><td>مسافات قصيرة، والضجيج يحدّ الطول العملي</td><td>مسافات طويلة بمعدل إرسال منخفض</td><td>محدودة بالحمل ومقاومة الأسلاك</td></tr>
+        <tr><td>الأفضل لـ</td><td>التجميع والترقيات والتكامل البسيط مع PLC</td><td>المراقبة متعددة القياسات وبيانات الفوترة</td><td>الأجهزة القديمة واللوحات التماثلية</td></tr>
+        <tr><td>القيد</td><td>لا اتجاه ولا تعرفة ولا قيم لحظية</td><td>يحتاج استعلاماً وخريطة سجلات</td><td>الدقة تعتمد على الحلقة كاملة</td></tr>
+      </tbody>
+    </table>
+    <p>كثير من العدادات تجمع خرج النبضات ومنفذ RS485 معاً. وهذه التركيبة تستحق الطلب: RS485 للتفاصيل، والنبضات لمجمّع يستمر في العمل حين لا تستجيب الشبكة أو جهاز الاستعلام.</p>
+
+    <h2>توصيل خرج النبضات بوحدة PLC أو نظام إدارة مبنى</h2>
+    <table>
+      <thead><tr><th>الوصلة</th><th>الوجهة</th><th>ملاحظة</th></tr></thead>
+      <tbody>
+        <tr><td>نبضة + / المجمع</td><td>مدخل عدّ سريع في وحدة PLC</td><td>أضف مقاومة سحب إلى تغذية المدخل في حال المجمع المفتوح</td></tr>
+        <tr><td>نبضة − / الباعث</td><td>0 V من التغذية نفسها التي تُغذّي المدخل</td><td>المرجع المشترك ليس اختيارياً</td></tr>
+        <tr><td>درع الكبل</td><td>أرضي من جهة واحدة فقط</td><td>الربط من الجهتين يصنع حلقة</td></tr>
+        <tr><td>إعداد العدّاد</td><td>الحافة الصاعدة، أدنى مرشّح، مجمّع 32 بت</td><td>عُدّ حافة واحدة ولا تعدّ الحافتين</td></tr>
+        <tr><td>المعايرة في وحدة التحكم</td><td>عدد النبضات × kWh لكل نبضة</td><td>خُذ الثابت من لوحة العداد لا من الذاكرة</td></tr>
+      </tbody>
+    </table>
+    <p>نقطتان عمليتان: استخدم مدخلاً سريعاً أو مدخلاً يدعم المقاطعة بدل مدخل رقمي عام بمرشّح طويل، وأبعِد كبل النبضات عن أسلاك الملامسات وأجهزة تغيير التردد. فسلسلة النبضات إشارة منخفضة الطاقة وتتصرف على هذا الأساس.</p>
+
+    <h2>خمسة أسباب لفقدان النبضات</h2>
+    <ul>
+      <li><strong>لا مقاومة سحب على خرج المجمع المفتوح.</strong> يبقى المدخل في حالة واحدة ولا يتحرك المجموع، وهو العطل الأكثر شيوعاً.</li>
+      <li><strong>مرشّح المدخل أطول من النبضة.</strong> سليم عند الحمل الخفيف، وفاقد عند الحمل الكامل، ويكاد لا يُلاحظ من مجموع يومي.</li>
+      <li><strong>عدّ الحافتين معاً.</strong> يظهر المجموع بالضعف تماماً، ويبدو خطأ معايرة وليس كذلك.</li>
+      <li><strong>تطبيق ثابت نبضات خاطئ.</strong> الخطأ نسبي، فيختفي عند حمل ويكبر عند آخر.</li>
+      <li><strong>ضجيج على مسار طويل بلا تدريع.</strong> الملامسات تُدخل نبضات لم تُولَّد أصلاً.</li>
+    </ul>
+    <p>فحص التشغيل: شغّل حملاً معروفاً لمدة مقاسة، وقارن الطاقة المعدودة بشاشة العداد، وتأكد من تطابقهما ضمن صنف دقة العداد. افعل ذلك قبل تسليم اللوحة، لا بعد شهر من بيانات فوترة مشكوك فيها.</p>
+
+    <h2>تحديد مواصفات عداد بخرج نبضات</h2>
+    <table>
+      <thead><tr><th>البند</th><th>ما يجب ذكره</th></tr></thead>
+      <tbody>
+        <tr><td>نوع الخرج</td><td>مرحّل، أو مجمع مفتوح، أو سلكان سلبي</td></tr>
+        <tr><td>ثابت النبضات</td><td>نبضة/kWh، أو kWh لكل نبضة</td></tr>
+        <tr><td>أقصى تردد نبضات</td><td>لازم للتحقق من قدرة مدخل العدّ على متابعته</td></tr>
+        <tr><td>التصنيف الكهربائي</td><td>الجهد والتيار الذي يمكن للخرج تبديله</td></tr>
+        <tr><td>العزل</td><td>هل الخرج معزول عن دارة القياس</td></tr>
+        <tr><td>تعريف الأطراف</td><td>أي طرفين يمثلان زوج النبضات، موسومين على الغلاف</td></tr>
+        <tr><td>قناة ثانية</td><td>هل يلزم RS485 أيضاً لبيانات تفصيلية</td></tr>
+      </tbody>
+    </table>
+
+    <h2>عدادات YOMIN بخرج نبضات</h2>
+    <p>تشمل المجموعة موديلات أحادية وثلاثية الطور بخرج نبضات. الطراز YM-0101 عداد أحادي الطور بوحدتين على قضيب DIN وشاشة LCD وخرج نبضات؛ والطراز YM-0265 عداد أحادي الطور 127/230 فولت، 5(30) أمبير، بسلكين على قضيب DIN، بشاشة تماثلية وخرج نبضات؛ والطراز YM-0716 عداد ثلاثي الطور تماثلي على قضيب DIN بخرج نبضات ودقة صنف 1.0؛ والطراز YM-0756 عداد أحادي الطور بوحدتين وشاشة كبيرة وزر تصفير وطرف خرج نبضات واتصال RS485 ودقة صنف 1.0 على قضيب DIN بعرض 35 مم.</p>
+    <p>إذا كان ثابت النبضات يجب أن يطابق مجمّعاً قائماً، فاذكر ذلك قبل الطلب. فهو خاصية قياس لا ملحق، ويُثبَّت عند التصنيع.</p>
+
+    <h2>أسئلة متكررة</h2>
+    <h3>هل يقيس خرج النبضات القدرة أم الطاقة؟</h3>
+    <p>الطاقة فقط، وعادةً الطاقة التراكمية في اتجاه واحد. أما القدرة والجهد والتيار ومعامل القدرة فتحتاج عداداً متصلاً أو محوّلاً منفصلاً.</p>
+    <h3>هل يمكن توصيل خرج النبضات مباشرة بمدخل PLC؟</h3>
+    <p>فقط إذا كان المدخل مناسباً لنوع الخرج: مقاومة سحب للمجمع المفتوح، وجهد تشغيل للتلامس الجاف، وتيار يوفّره جهاز العدّ للخرج السلبي.</p>
+    <h3>كيف تُحوَّل النبضات إلى kWh؟</h3>
+    <p>اقسم واحداً على الثابت بالنبضات لكل kWh ثم اضرب في عدد النبضات. عند 1,000 نبضة/kWh تساوي كل نبضة 0.001 kWh، لذا 250,000 نبضة تعادل 250 kWh.</p>
+    <h3>لماذا يظهر المجموع ضعف الشاشة تماماً؟</h3>
+    <p>العداد على الأرجح يعدّ الحافتين. اضبطه على حافة واحدة ثم أعد التحقق من المعايرة.</p>
+    <h3>هل يكفي خرج النبضات لفوترة المستأجرين؟</h3>
+    <p>يكفي للمجموع، لكن ليس لتعرفات الوقت أو الطاقة العكسية أو البيانات لكل طور. للفوترة اطلب RS485 أيضاً.</p>
+    
+  </section>
+
+  <section class="cta-section">
+    <h2>هل تُدمج عداد طاقة في وحدة PLC أو نظام إدارة مبنى؟</h2>
+    <p>أخبرنا بمدخل العدّ وثابت النبضات المطلوب وما إذا كنت تحتاج RS485 أيضاً. سنؤكد العداد المناسب وترتيب الأطراف قبل الطلب.</p>
+    <a class="btn btn-primary" href="/contact">اطلب عرض سعر</a>
+    <p style="margin-top:18px"><a href="https://wa.me/8619016543301" target="_blank" rel="noopener">تفضّل الحديث مباشرة؟ راسلنا على واتساب</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

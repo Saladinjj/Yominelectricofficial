@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/energy-meter-pulse-output/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Energy Meter Pulse Output: What It Is and How to Wire It | Yomin Electric</title>
+<meta name="description" content="How a pulse output on an energy meter works, why kWh per pulse matters more than the meter display, how to wire it to a PLC or BMS, and the faults that lose counts.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Energy Meter Pulse Output: What It Is and How to Wire It | Yomin Electric">
+<meta property="og:description" content="How a pulse output on an energy meter works, why kWh per pulse matters more than the meter display, how to wire it to a PLC or BMS, and the faults that lose counts.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/energy-meter-pulse-output/card.png">
+<meta property="og:url" content="https://www.yominelectric.com/blog/energy-meter-pulse-output">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://www.yominelectric.com/blog/energy-meter-pulse-output">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/energy-meter-pulse-output">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/energy-meter-pulse-output-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/energy-meter-pulse-output-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/energy-meter-pulse-output-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/energy-meter-pulse-output">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital,wght@0,1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Energy Meter Pulse Output: What It Is, How It Is Counted and How to Wire It",
+      "description": "How a pulse output on an energy meter works, why kWh per pulse matters more than the meter display, how to wire it to a PLC or BMS, and the faults that lose counts.",
+      "image": "https://www.yominelectric.com/assets/images/blog/energy-meter-pulse-output/hero.png",
+      "datePublished": "2026-11-21",
+      "dateModified": "2026-11-21",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/energy-meter-pulse-output"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does a pulse output measure power or energy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Energy only, and normally cumulative energy in one direction. Power, voltage, current and power factor require a communicating meter or a separate transducer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I connect a pulse output directly to a PLC input?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if the input suits the output type. An open-collector output needs a pull-up resistor; a dry contact needs a wetting voltage; a passive two-wire output needs the counter to supply current."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I convert pulses to kWh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Divide one by the pulse constant in imp/kWh, then multiply by the pulse count. At 1,000 imp/kWh each pulse is 0.001 kWh, so 250,000 pulses equal 250 kWh."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my total read exactly double the meter display?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The counter is almost certainly counting both edges of the pulse. Set it to count one edge only, then re-check the scaling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a pulse output enough for tenant billing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is enough for a total, but not for time-of-use tariffs, reverse energy or per-phase data. For billing, specify RS485 as well."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Energy Meters</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Energy Meter Pulse Output: What It Is, How It Is Counted and How to Wire It</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 21, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/energy-meter-pulse-output/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/energy-meter-pulse-output/hero.png" alt="YOMIN single-phase DIN rail energy meter with pulse output terminals beside a three-phase meter with the same output" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p><strong>Short answer:</strong> a pulse output is a switching contact or transistor inside the meter that closes once for every fixed amount of energy counted. The meter does the measuring; the pulse output only reports "one more unit has passed". That makes it the cheapest way to bring energy into a PLC, a BMS or a legacy data logger - no protocol, no register map, no polling. It is also the output that fails most quietly, because a missing resistor or a filter setting does not produce an error, only a total that is too low.</p>
+    <p>The buyer's question is rarely "does it have a pulse output". It is "which pulse output, how many pulses per kWh, and what do I have to add to make it count correctly". Those three answers decide whether the installation works.</p>
+
+    <h2>What a pulse output physically is</h2>
+    <p>Inside the meter, the metering circuit increments an energy register. At a fixed increment - the pulse constant - it operates a small output stage. In one meter that stage is a relay contact; in another it is an opto-isolated transistor. Either way, the outside world sees two terminals that change state, and a counter that adds up the transitions.</p>
+    <p>Nothing about the pulse carries the voltage, current or power factor. A pulse output reports energy only, and usually cumulative energy in one direction. If you need power, voltage, current, power factor or per-phase values, a pulse output cannot supply them, no matter how fast you count.</p>
+
+    <h2>Three output types, three wiring consequences</h2>
+    <table>
+      <thead><tr><th>Output type</th><th>Switching element</th><th>External supply needed</th><th>Typical use</th><th>What to watch</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Relay / dry contact</strong></td><td>Mechanical contact</td><td>No, but the input needs a wetting voltage</td><td>Retrofit into a BMS or controller that supplies its own wetting voltage</td><td>Contact bounce and a limited switching rate</td></tr>
+        <tr><td><strong>Opto-isolated open collector</strong></td><td>Transistor</td><td>Yes - a pull-up resistor to the counter's supply</td><td>PLC high-speed counter input</td><td>Without a pull-up the input never sees a transition</td></tr>
+        <tr><td><strong>Passive two-wire (S0-style)</strong></td><td>Opto-isolated, current-limited</td><td>Yes - supplied by the counting device</td><td>Energy management and building controllers</td><td>Polarity and the current the counter must source</td></tr>
+      </tbody>
+    </table>
+    <p>The type is not a preference, it is an interface decision. A dry contact will drive almost anything slowly; an open collector is fast and cheap but needs the pull-up; a passive output assumes the counter provides the current. Ask for the output type in writing, not just "pulse output".</p>
+
+    <h2>kWh per pulse is the only number that matters</h2>
+    <p>The pulse constant is quoted either as impulses per kWh (imp/kWh) or as kWh per pulse. They are reciprocals, and mixing them up is the classic scaling error.</p>
+    <p><strong>kWh per pulse = 1 / (imp/kWh)</strong>. A meter marked 1000 imp/kWh therefore produces one pulse per 0.001 kWh.</p>
+    <table>
+      <thead><tr><th>Pulse constant</th><th>kWh per pulse</th><th>Pulses per 100 kWh</th><th>Pulses per hour at a steady 3 kW</th></tr></thead>
+      <tbody>
+        <tr><td>100 imp/kWh</td><td>0.01 kWh</td><td>10,000</td><td>300</td></tr>
+        <tr><td>500 imp/kWh</td><td>0.002 kWh</td><td>50,000</td><td>1,500</td></tr>
+        <tr><td>1,000 imp/kWh</td><td>0.001 kWh</td><td>100,000</td><td>3,000</td></tr>
+        <tr><td>2,000 imp/kWh</td><td>0.0005 kWh</td><td>200,000</td><td>6,000</td></tr>
+      </tbody>
+    </table>
+    <p>The last column is the one that catches people out. At 3 kW, a 2,000 imp/kWh meter produces almost 1.7 pulses per second. A relay output rated for a few operations per second will lose counts at that rate; a counter input with a 10 ms filter will lose them too. High pulse constants are useful for resolution and hostile to slow inputs.</p>
+
+    <h2>Pulse output, RS485 or CT secondary: pick by the data you need</h2>
+    <table>
+      <thead><tr><th></th><th>Pulse output</th><th>RS485 / Modbus</th><th>CT secondary signal</th></tr></thead>
+      <tbody>
+        <tr><td>What it carries</td><td>Cumulative energy only</td><td>Energy, power, voltage, current, power factor, per phase</td><td>An analogue current proportional to the primary current</td></tr>
+        <tr><td>Wiring</td><td>Two or three wires to a counter input</td><td>Twisted pair, daisy-chained, terminated</td><td>Two wires per phase back to the instrument</td></tr>
+        <tr><td>Distance</td><td>Short runs; noise limits the practical length</td><td>Long runs at low baud rate</td><td>Limited by burden and lead resistance</td></tr>
+        <tr><td>Best for</td><td>Totalising, retrofits, simple PLC integration</td><td>Multi-parameter monitoring and billing data</td><td>Legacy instruments and analogue panels</td></tr>
+        <tr><td>Limitation</td><td>No direction, tariff or instantaneous values</td><td>Needs polling and a register map</td><td>Accuracy depends on the whole loop</td></tr>
+      </tbody>
+    </table>
+    <p>Many meters carry both a pulse output and an RS485 port. That combination is worth having: RS485 for the detail, pulses for a totaliser that keeps working when the network or the polling master does not.</p>
+
+    <h2>Wiring a pulse output to a PLC or BMS</h2>
+    <table>
+      <thead><tr><th>Connection</th><th>Where it goes</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td>Pulse + / collector</td><td>High-speed counter input on the PLC</td><td>Add a pull-up resistor to the counter supply for open-collector outputs</td></tr>
+        <tr><td>Pulse - / emitter</td><td>0 V of the same supply that feeds the input</td><td>A shared reference is not optional</td></tr>
+        <tr><td>Cable screen</td><td>Earth at one end only</td><td>Screening at both ends creates a loop</td></tr>
+        <tr><td>Counter configuration</td><td>Rising edge, minimum input filter, 32-bit totaliser</td><td>Count one edge, never both</td></tr>
+        <tr><td>Scaling in the controller</td><td>Totaliser count x kWh per pulse</td><td>Use the constant from the meter label, not from memory</td></tr>
+      </tbody>
+    </table>
+    <p>Two practical points. Use a high-speed or interrupt-capable input rather than a general-purpose digital input with a long filter, and keep the pulse cable away from contactor and VFD wiring. A pulse train is a low-energy signal and it behaves like one.</p>
+
+    <h2>Five reasons counts go missing</h2>
+    <ul>
+      <li><strong>No pull-up on an open-collector output.</strong> The input stays in one state and the total never moves - the most common single fault.</li>
+      <li><strong>Input filter longer than the pulse.</strong> Fine at light load, lossy at full load, and almost impossible to spot from a daily total.</li>
+      <li><strong>Both edges counted.</strong> The total reads exactly double, which looks like a scaling error and is not.</li>
+      <li><strong>Wrong pulse constant applied.</strong> The error is proportional, so it hides at one load and grows at another.</li>
+      <li><strong>Noise on a long unshielded run.</strong> Contactors inject pulses that were never generated.</li>
+    </ul>
+    <p>Commissioning check: run a known load for a measured time, compare the counted energy against the meter display, and confirm the two agree to within the meter's accuracy class. Do that before the panel is signed off, not after a month of billing data is suspect.</p>
+
+    <h2>Specifying a meter with pulse output</h2>
+    <table>
+      <thead><tr><th>Item</th><th>What to state</th></tr></thead>
+      <tbody>
+        <tr><td>Output type</td><td>Relay, open collector or passive two-wire</td></tr>
+        <tr><td>Pulse constant</td><td>imp/kWh, or kWh per pulse</td></tr>
+        <tr><td>Maximum pulse frequency</td><td>Needed to check the counter input can follow it</td></tr>
+        <tr><td>Electrical rating</td><td>Voltage and current the output can switch</td></tr>
+        <tr><td>Isolation</td><td>Whether the output is isolated from the measuring circuit</td></tr>
+        <tr><td>Terminal identification</td><td>Which terminals are the pulse pair, marked on the case</td></tr>
+        <tr><td>Second channel</td><td>Whether RS485 is also required for detail data</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Meters in the YOMIN range with pulse output</h2>
+    <p>The range includes single-phase and three-phase models with a pulse output. The YM-0101 is a single-phase, two-module DIN rail meter with an LCD display and a pulse output; the YM-0265 is a single-phase 127/230 V, 5(30) A two-wire DIN rail meter with an analogue display and pulse output; the YM-0716 is a three-phase analogue DIN rail meter with pulse output and Class 1.0 accuracy; and the YM-0756 is a two-module single-phase meter with a large screen, reset button, pulse output terminal, RS485 communication and Class 1.0 accuracy on 35 mm DIN rail.</p>
+    <p>If the pulse constant has to match an existing totaliser, say so before ordering. It is a metering characteristic, not an accessory, and it is fixed at manufacture.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>Does a pulse output measure power or energy?</h3>
+    <p>Energy only, and normally cumulative energy in one direction. Power, voltage, current and power factor require a communicating meter or a separate transducer.</p>
+    <h3>Can I connect a pulse output directly to a PLC input?</h3>
+    <p>Only if the input suits the output type. An open-collector output needs a pull-up resistor; a dry contact needs a wetting voltage; a passive two-wire output needs the counter to supply current. Check all three before wiring.</p>
+    <h3>How do I convert pulses to kWh?</h3>
+    <p>Divide one by the pulse constant in imp/kWh, then multiply by the pulse count. At 1,000 imp/kWh each pulse is 0.001 kWh, so 250,000 pulses equal 250 kWh.</p>
+    <h3>Why does my total read exactly double the meter display?</h3>
+    <p>The counter is almost certainly counting both edges of the pulse. Set it to count one edge only, then re-check the scaling.</p>
+    <h3>Is a pulse output enough for tenant billing?</h3>
+    <p>It is enough for a total, but not for time-of-use tariffs, reverse energy or per-phase data. For billing, specify RS485 as well and use the pulse output as an independent cross-check.</p>
+    
+  </section>
+
+  <section class="cta-section">
+    <h2>Integrating an energy meter into a PLC or BMS?</h2>
+    <p>Tell us the counter input, the pulse constant you need and whether RS485 is also required. We will confirm the right meter and the terminal arrangement before the order.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:18px"><a href="https://wa.me/8619016543301" target="_blank" rel="noopener">Prefer to talk it through? Message us on WhatsApp</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
