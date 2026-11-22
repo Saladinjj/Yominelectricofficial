@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/what-is-mcb/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Is MCB: Miniature Circuit Breaker Ratings and Curves | Yomin Electric</title>
+<meta name="description" content="An MCB is a DIN rail miniature circuit breaker that trips on overload and short circuit. Trip curves B, C and D, breaking capacity, pole options and the 30 A NT50.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/what-is-mcb/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/what-is-mcb">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/what-is-mcb">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/what-is-mcb-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/what-is-mcb-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/what-is-mcb-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/what-is-mcb">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "What Is MCB: Miniature Circuit Breaker Ratings and Curves",
+      "description": "An MCB is a DIN rail miniature circuit breaker that trips on overload and short circuit. Trip curves B, C and D, breaking capacity, pole options and the 30 A NT50.",
+      "image": "https://www.yominelectric.com/assets/images/blog/what-is-mcb/hero.png",
+      "datePublished": "2026-11-22",
+      "dateModified": "2026-11-22",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/what-is-mcb"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does MCB stand for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MCB stands for miniature circuit breaker: a resettable automatic switch in a modular DIN rail housing that opens a circuit on overload or short circuit. The word miniature describes the form factor, not the duty."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a B and a C curve MCB?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The curve letter sets where the magnetic trip operates. Under IEC 60898-1 a B curve trips magnetically between three and five times its rating, and a C curve between five and ten times, so C tolerates more inrush from motors and transformers but needs a stronger fault current to trip instantly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an MCB or a fuse?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An MCB resets by hand and is repeatable, which suits final circuits in a distribution board. A fuse is a single fusible element with no mechanism to fail and can interrupt a larger fault current for its size, so it stays the right answer where the prospective fault current exceeds the available MCB breaking capacity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an MCB be used on DC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if it is rated for direct current. DC has no natural zero crossing, so the arc does not self-extinguish; a DC-rated device uses magnetic blow-out and usually several poles in series, which is why its voltage rating depends on the pole connection. YOMIN builds 500 V DC two-pole and 1000 V DC one to four-pole versions."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Fuses &amp; Protection</span></div>
+    <span class="bh-tag">Product Explainers</span>
+    <h1 class="bh-title">What Is MCB: Miniature Circuit Breaker Ratings and Curves</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 22, 2026</span>
+      <span class="divider"></span>
+      <span>9 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/what-is-mcb/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/what-is-mcb/hero.png" alt="DIN rail miniature circuit breakers mounted in a distribution board" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>An MCB, or miniature circuit breaker, is a resettable automatic switch that mounts on a DIN rail and opens a circuit when current exceeds its rating for long enough to overheat the wiring, or when a short circuit drives current far above it. It replaces the fuse in almost every modern distribution board because it can be reset by hand instead of replaced, and because its trip behaviour is repeatable enough to be relied on in a protection study.</p>
+    <p>That definition is short, but most of the specification work hides inside it. A 32 A device with a B curve, a C curve and a 6 kA rating are three different products even though they look identical from the front, and choosing the wrong one produces either nuisance tripping or a device that cannot clear the fault it is installed to clear.</p>
+
+    <h2>What the M in MCB actually means</h2>
+    <p>The word miniature describes the form factor, not the duty. An MCB is built into a modular moulding a few tens of millimetres wide that clips onto a 35 mm DIN rail beside the terminals and contactors it protects. The whole device is sealed at the factory: there is no trip unit to swap, no setting dial and no serviceable arc chamber.</p>
+    <p>That is the practical line between an MCB and a moulded case circuit breaker. An MCCB also has a moulded case, but it is bolted rather than clipped, it opens to accept a different trip unit, and its settings can be adjusted on site. Above roughly 125 A the MCB form factor stops being available and the MCCB takes over.</p>
+
+    <table>
+      <thead>
+        <tr><th>Device</th><th>Typical current range</th><th>Resets after a trip</th><th>Where it belongs</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Fuse</td><td>Up to a few hundred amps</td><td>No &mdash; element replaced</td><td>Wherever the highest breaking capacity per unit cost is needed</td></tr>
+        <tr><td>MCB</td><td>Up to about 125 A</td><td>Yes &mdash; lever reset</td><td>Final circuits inside a distribution board</td></tr>
+        <tr><td>MCCB</td><td>About 16 A to 1600 A</td><td>Yes &mdash; lever reset</td><td>Sub-mains, feeders, motor circuits</td></tr>
+        <tr><td>ACB</td><td>About 630 A to 6300 A</td><td>Yes &mdash; often motor charged</td><td>Main incoming and bus-tie positions</td></tr>
+      </tbody>
+    </table>
+    <p>Fuses have not disappeared, and the reason is worth knowing before specifying: a fuse is a single fusible element with nothing mechanical to fail, so a small fuse can interrupt a fault current that would destroy a small breaker. Where the prospective fault current at the terminals is higher than any MCB rating available, a fuse or a back-up arrangement is the honest answer.</p>
+
+    <h2>Two trips inside one moulding</h2>
+    <p>Every thermal-magnetic MCB contains two independent mechanisms in series, and understanding which one is operating explains almost every nuisance trip you will ever diagnose.</p>
+    <ul>
+      <li><strong>Thermal element.</strong> A bimetal strip heated by the load current bends gradually. Its job is overload protection, and because it is thermal it responds to duration, ambient temperature and how the device is enclosed.</li>
+      <li><strong>Magnetic element.</strong> A solenoid that trips almost instantly once current passes a multiple of the rating. Its job is short-circuit protection, and it operates in milliseconds.</li>
+    </ul>
+    <p>The consequences are practical rather than theoretical. A board full of breakers in a hot enclosure trips earlier than the same breakers on a bench, because the bimetal starts from a higher temperature. A load with a high inrush, such as a motor or a transformer, can cross the magnetic threshold on start even though its running current is well inside the rating. Both are selection problems, not product faults.</p>
+
+    <h2>Trip curves: B, C and D</h2>
+    <p>The curve letter describes where the magnetic trip operates, and it is the single most useful field on the device label after the current rating. The ranges below are the standardised bands under IEC 60898-1 for domestic and similar installations.</p>
+
+    <table>
+      <thead>
+        <tr><th>Curve</th><th>Magnetic trip band</th><th>Typical load</th><th>What it tolerates poorly</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>B</td><td>3 to 5 times rated current</td><td>Resistive loads, lighting, socket outlets in domestic work</td><td>Motor and transformer inrush</td></tr>
+        <tr><td>C</td><td>5 to 10 times rated current</td><td>General commercial and light industrial circuits, small motors</td><td>Very high inrush equipment</td></tr>
+        <tr><td>D</td><td>10 to 20 times rated current</td><td>Welding sets, large transformers, compressors, X-ray equipment</td><td>Long cable runs where the earth loop is weak</td></tr>
+      </tbody>
+    </table>
+    <p>The trade-off runs in both directions. A higher curve letter means fewer nuisance trips on start-up, but it also means the breaker needs a larger fault current before it trips magnetically, which can leave a long cable run protected only by the slower thermal element. That is why the curve cannot be selected from the load type alone: the earth fault loop impedance at the far end of the circuit has to be able to deliver the magnetic trip current.</p>
+
+    <h2>Breaking capacity, and why the number on the front matters</h2>
+    <p>The figure printed in a rectangle on the front of the device, typically 3, 4.5, 6 or 10 kA, is the rated short-circuit capacity. It states the largest prospective fault current the device can interrupt safely and still be fit to use afterwards. A device asked to clear more than that may still open, but it is not required to survive doing so, and the enclosure around it may not survive either.</p>
+
+    <table>
+      <thead>
+        <tr><th>Rated capacity</th><th>Where it is normally adequate</th><th>Where it is not</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>3 kA</td><td>Final circuits far from the transformer, domestic boards</td><td>Boards close to a distribution transformer</td></tr>
+        <tr><td>6 kA</td><td>Most commercial distribution boards</td><td>Main switchboards with a high fault level</td></tr>
+        <tr><td>10 kA</td><td>Boards fed directly from a transformer or a large sub-main</td><td>Anything needing a cascaded back-up calculation</td></tr>
+      </tbody>
+    </table>
+    <p>Two related figures appear in IEC 60898-1: Icn, the rated short-circuit capacity, and Ics, the service short-circuit capacity. The second is the current the device can interrupt and then continue to carry load. Where a datasheet quotes only one number, treat the higher one as the one-time figure and confirm the service value before comparing prices.</p>
+
+    <h2>Poles and the neutral question</h2>
+    <p>Pole count is where residential and industrial practice diverge most often, and it changes what the enclosure has to provide.</p>
+
+    <table>
+      <thead>
+        <tr><th>Configuration</th><th>What opens</th><th>Typical use</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1P</td><td>Phase only</td><td>Single-phase final circuits where the neutral is solidly linked at the board</td></tr>
+        <tr><td>1P+N</td><td>Phase, with the neutral following</td><td>Single-phase circuits where the neutral must be isolated with the phase</td></tr>
+        <tr><td>2P</td><td>Both poles protected</td><td>Single-phase circuits requiring protection in both conductors</td></tr>
+        <tr><td>3P</td><td>Three phases</td><td>Three-phase loads without a neutral</td></tr>
+        <tr><td>3P+N, 4P</td><td>Three phases plus neutral</td><td>Three-phase circuits with a distributed neutral, or where full isolation is required</td></tr>
+      </tbody>
+    </table>
+    <p>An MCB only protects what passes through it. A 1P device on a circuit whose neutral is switched elsewhere leaves the neutral unprotected, and a device whose neutral pole is a solid link rather than a protected pole will not clear a neutral-to-earth fault. Writing the pole configuration on the order is as important as writing the current.</p>
+
+    <h2>The 30 A case: NT50 with indicator light and integrated fuse</h2>
+    <p>YOMIN supplies the NT50 miniature circuit breaker in a 30 A export-grade build aimed at markets that combine a breaker with a local fuse practice in one DIN module. The variants differ by handle size and colour &mdash; white with a large handle, white with a small handle, and a black handle with an indicator light &mdash; while sharing the same electrical duty: overload and short-circuit protection in a single modular device.</p>
+    <p>Three features are worth noting because they change how the board is built. The indicator light shows the contact state without opening the enclosure. The integrated fuse means the circuit carries both a resettable breaker and a fusible element in one position, which is how many export boards are wired. And the 30 A rating sits squarely in the range where a distribution board feeds socket circuits and small sub-mains rather than individual appliances.</p>
+    <p>Explore the <a href="/products/fuse-protection">fuses and protection range</a> for the full set, or see the individual builds: <a href="/products/fuse-protection/factory-direct-sales-of-vietnamese-nt50-miniature-circuit-breaker-30a-export-grade-white-large-handle-with-ind.html">NT50 30 A with large white handle</a>, <a href="/products/fuse-protection/factory-direct-vietnam-style-nt50-miniature-circuit-breaker-mcb-30a-export-grade-black-handle-with-indicator-l.html">NT50 30 A with black handle and indicator</a>, and <a href="/products/fuse-protection/factory-direct-sales-of-vietnamese-nt50-miniature-circuit-breaker-30a-export-grade-white-small-handle-with-ind.html">NT50 30 A with small white handle</a>.</p>
+
+    <h2>A DC MCB is not an AC MCB</h2>
+    <p>Direct current has no natural zero crossing, so an arc drawn when the contacts open does not extinguish itself the way it does on alternating current. A DC-rated miniature circuit breaker solves this with a magnetic blow-out arrangement and, in most designs, by asking several poles to break the arc in series. That is why a DC device carries a voltage rating that depends on how the poles are connected.</p>
+    <p>YOMIN's photovoltaic range reflects the two common cases: a 500 V DC two-pole breaker for smaller strings, and a 1000 V DC device offered from one to four poles for larger arrays. Polarity matters on these devices. Reversing the supply and load terminals on a polarised DC breaker compromises the arc extinction path, which is why the markings have to be followed rather than assumed. The same range is listed under <a href="/products/solar-pv-products">solar and PV products</a>.</p>
+
+    <h2>Selection checklist</h2>
+    <ul>
+      <li><strong>Rated current</strong> from the cable it protects, not from the appliance nameplate. The cable is what overheats.</li>
+      <li><strong>Curve</strong> from the load's inrush behaviour, then verified against the earth fault loop at the far end of the circuit.</li>
+      <li><strong>Breaking capacity</strong> from the prospective fault current at that point in the installation, not from the board's main device.</li>
+      <li><strong>Poles</strong> from what must be isolated: phase only, or phase and neutral.</li>
+      <li><strong>Ambient and enclosure</strong>, because a bank of breakers side by side in a sealed box derates.</li>
+      <li><strong>Standard</strong> &mdash; IEC 60898-1 for household and similar installations, IEC 60947-2 where the device is applied industrially.</li>
+    </ul>
+
+    <h2>Where an MCB stops being the right answer</h2>
+    <p>Three situations come up repeatedly. Where the prospective fault current exceeds the highest capacity available in the form factor, a back-up fuse or a higher-rated upstream device is needed and the combination has to be checked as a pair rather than assumed. Where selectivity between an upstream and downstream device matters, two MCBs of adjacent ratings rarely coordinate and the manufacturer's tables decide the question. And where a motor starts under heavy load, the thermal element of a standard MCB may not ride through the start, which is what motor protection breakers exist for.</p>
+    <p>If you are comparing device families rather than a single rating, the <a href="/blog/air-circuit-breaker-guide">air circuit breaker guide</a> covers the top of the same hierarchy, and <a href="/blog/what-is-fuse">what is fuse</a> covers the alternative at the bottom.</p>
+    <p>For a specification question, send the system voltage, the cable size, the load type and the prospective fault current. Those four figures decide the current rating, the curve and the breaking capacity, and they are the difference between a board that trips for a reason and one that trips for no reason at all.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>What does MCB stand for?</h3>
+    <p>MCB stands for miniature circuit breaker: a resettable automatic switch in a modular DIN rail housing that opens a circuit on overload or short circuit. The word miniature describes the form factor, not the duty.</p>
+    <h3>What is the difference between a B and a C curve MCB?</h3>
+    <p>The curve letter sets where the magnetic trip operates. Under IEC 60898-1 a B curve trips magnetically between three and five times its rating, and a C curve between five and ten times, so C tolerates more inrush from motors and transformers but needs a stronger fault current to trip instantly.</p>
+    <h3>Do I need an MCB or a fuse?</h3>
+    <p>An MCB resets by hand and is repeatable, which suits final circuits in a distribution board. A fuse is a single fusible element with no mechanism to fail and can interrupt a larger fault current for its size, so it stays the right answer where the prospective fault current exceeds the available MCB breaking capacity.</p>
+    <h3>Can an MCB be used on DC?</h3>
+    <p>Only if it is rated for direct current. DC has no natural zero crossing, so the arc does not self-extinguish; a DC-rated device uses magnetic blow-out and usually several poles in series, which is why its voltage rating depends on the pole connection. YOMIN builds 500 V DC two-pole and 1000 V DC one to four-pole versions.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying MCBs for a distribution board?</h2>
+    <p>Send us the system voltage, cable size, load type and prospective fault current. We build miniature circuit breakers in AC and DC versions, including the 30 A NT50 with indicator light and integrated fuse, and we will confirm the curve and breaking capacity against your fault level.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <p style="margin-top:14px">Prefer to send drawings or a board schedule? Message us on <a href="https://wa.me/8619016543301">WhatsApp +86 190 1654 3301</a> and we will reply with the matching configuration.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
