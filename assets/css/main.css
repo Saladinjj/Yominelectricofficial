@@ -2,6 +2,37 @@
    YOMIN ELECTRIC — MAIN.CSS (Shared styles)
    ═══════════════════════════════════════════════════ */
 
+/* Metric-matched fallbacks: the local substitute is scaled so its advance
+   widths match the webfont, so text keeps the same line breaks while the
+   webfont downloads, and the swap produces no layout shift (CLS).
+   Ratios measured against the live text: DM Serif Display 700 vs Georgia,
+   DM Sans 400/500 vs Segoe UI. */
+@font-face {
+  font-family: 'DM Serif Fallback';
+  src: local('Georgia'), local('Times New Roman'), local('Liberation Serif'), local('DejaVu Serif');
+  size-adjust: 97.8%;
+  ascent-override: 100%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'DM Serif Fallback';
+  font-weight: 700;
+  src: local('Georgia'), local('Times New Roman'), local('Liberation Serif'), local('DejaVu Serif');
+  size-adjust: 85%;
+  ascent-override: 100%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'DM Sans Fallback';
+  src: local('Segoe UI'), local('Helvetica Neue'), local('Arial'), local('Liberation Sans');
+  size-adjust: 104.5%;
+  ascent-override: 95%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
+
 :root {
   --bg: #0d0d0d;
   --bgs: #141414;
@@ -15,8 +46,8 @@
   --dm: #555;
   --ac: #E8944A;
   --ac2: #F2A968;
-  --sf: 'DM Serif Display', Georgia, serif;
-  --ss: 'DM Sans', system-ui, sans-serif;
+  --sf: 'DM Serif Display', 'DM Serif Fallback', Georgia, serif;
+  --ss: 'DM Sans', 'DM Sans Fallback', system-ui, sans-serif;
   --r: 16px;
   --tr: 0.4s cubic-bezier(.25,.46,.45,.94);
 }
