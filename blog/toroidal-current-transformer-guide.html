@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/toroidal-current-transformer-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toroidal Current Transformer: Ring Core, Turns and Aperture | Yomin Electric</title>
+<meta name="description" content="How a toroidal current transformer earns its space: ring-core behaviour, how pass-through turns change the ratio, aperture sizing and where the ring form fails.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/toroidal-current-transformer-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/toroidal-current-transformer-guide">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/toroidal-current-transformer-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/toroidal-current-transformer-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/toroidal-current-transformer-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/toroidal-current-transformer-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/toroidal-current-transformer-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Toroidal Current Transformer: Why the Ring Core Wins in Tight Panels",
+      "description": "How a toroidal current transformer earns its space: ring-core behaviour, how pass-through turns change the ratio, aperture sizing and where the ring form fails.",
+      "image": "https://www.yominelectric.com/assets/images/blog/toroidal-current-transformer-guide/hero.png",
+      "datePublished": "2026-11-25",
+      "dateModified": "2026-11-25",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/toroidal-current-transformer-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a toroidal current transformer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A current transformer wound on a continuous ring-shaped core, with the primary formed by a conductor passed once through the centre of the ring. Because the primary is whatever goes through the hole, the effective ratio changes with the number of passes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does looping the cable twice change the ratio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Two passes divide the effective primary rating by two: a 150/5&nbsp;A ring with two passes behaves as 75/5&nbsp;A. The meter must be programmed for the effective ratio, and all phases of a three-phase set must use the same pass count."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a toroidal CT be fitted without disconnecting the busbar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The aperture is closed, so the conductor has to be removed and re-terminated. If the bar cannot be broken, a split-core CT is the only practical option, at the cost of some accuracy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a ring CT more accurate than a square window CT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not inherently. Both are available in class 0.5. The ring usually reaches a given class in a smaller package with lower stray field, while the square window accepts a rectangular busbar more easily. Accuracy in service depends more on burden and installation than on the core shape."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Current Transformers</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Toroidal Current Transformer: Why the Ring Core Wins in Tight Panels</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 25, 2026</span>
+      <span class="divider"></span>
+      <span>10 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/toroidal-current-transformer-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/toroidal-current-transformer-guide/hero.png" alt="Black ring-core toroidal current transformer mounted around a copper busbar inside a low voltage panel, with white secondary leads running down to a DIN rail energy meter" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>A toroidal current transformer is a current transformer wound on a continuous ring-shaped core, with the secondary turns distributed evenly around that ring and the primary formed by a single pass of cable or busbar through the centre. There is no primary winding and no laminated stack with an air gap at the joints: the conductor simply goes through the hole.</p>
+    <p>The ring geometry is why these devices are chosen when space is short and accuracy still matters. It also changes the rules you specify by, because the ratio on the label is not necessarily the ratio you get once the installer has looped the cable through more than once, and because a fixed circular aperture is far less forgiving of a busbar than a rectangular window.</p>
+
+    <h2>Why a ring core behaves differently</h2>
+<p>In a conventional laminated core the magnetic circuit is built from stacked plates with joints where the flux has to jump a small air gap. Every joint adds reluctance and a little exciting current, and the flux that spills out of the joints is what you measure as stray field.</p>
+<p>A ring core is a continuous wound strip of grain-oriented steel with no joints at all. The magnetic path is short and closed, so a given core mass produces a stronger, better-behaved flux; the secondary winding sits directly on the core and is spread around its whole circumference rather than bunched on two bobbins. The practical consequences for a current transformer are:</p>
+<ul>
+<li><strong>Lower exciting current at the same accuracy</strong>, which is what allows a physically smaller ring CT to hold class 0.5 where a laminated equivalent needs more iron.</li>
+<li><strong>Contained stray field.</strong> The field stays largely inside the ring instead of spilling sideways, which matters in a dense LV enclosure where a meter or a weak-signal cable sits a few centimetres away.</li>
+<li><strong>Lower leakage reactance</strong>, because the secondary turns are evenly distributed and close to the core. The transformer behaves more predictably as the load current changes.</li>
+</ul>
+<p>None of this makes a ring core magic. It makes it efficient: for a given aperture and accuracy, the ring is usually the smaller and lighter answer, which is exactly the constraint in a metering compartment.</p>
+
+    <h2>The ratio is not fixed once the installer starts looping</h2>
+<p>The label gives a ratio for a single pass of the primary conductor. Because the primary of a ring CT is whatever goes through the hole, the effective ratio changes with the number of passes: each extra pass multiplies the primary ampere-turns, so the effective primary rating divides by the pass count.</p>
+<p>For a 150/5&nbsp;A ring CT:</p>
+<table>
+<thead><tr><th>Passes through the ring</th><th>Effective ratio</th><th>When it is used</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>150/5&nbsp;A</td><td>Normal installation on a feeder rated near 150&nbsp;A</td></tr>
+<tr><td>2</td><td>75/5&nbsp;A</td><td>Light-loaded feeder; improves accuracy at low current</td></tr>
+<tr><td>3</td><td>50/5&nbsp;A</td><td>Very light load, or matching an existing meter scale</td></tr>
+</tbody>
+</table>
+<p>Two rules follow. First, the meter must be programmed for the effective ratio, not the label ratio, or every reading will be wrong by the pass count. Second, keep the pass count identical on all three phases of a three-phase set, because a mismatch produces a current unbalance that does not exist.</p>
+<p>There is a cost to extra passes: more primary turns means more primary voltage drop and a larger burden reflected into the secondary, and the aperture fills up with cable. Two passes is a common compromise; three is usually the limit before the winding window becomes unusable.</p>
+
+    <h2>Ring, square window, split-core or wound primary</h2>
+<p>All four forms appear in low voltage metering, and the choice is mostly mechanical.</p>
+<table>
+<thead><tr><th>Form</th><th>Strength</th><th>Weakness</th><th>Typical application</th></tr></thead>
+<tbody>
+<tr><td>Toroidal / ring</td><td>Compact, low stray field, good accuracy per unit of iron, ratio adjustable by passes</td><td>Fixed round aperture; conductor must be disconnected to fit</td><td>Metering compartments, cable feeders, tight enclosures</td></tr>
+<tr><td>Square window</td><td>Rectangular aperture matched to busbar sections; slides over a bar</td><td>Bulkier than a ring for the same aperture; still needs the bar broken</td><td>LV switchboards, busbar metering, panel builders</td></tr>
+<tr><td>Split-core</td><td>Clamps around a live conductor; no disconnection</td><td>Two-part core, lower class in practice, mating faces must be kept clean</td><td>Retrofit, audits, temporary monitoring</td></tr>
+<tr><td>Wound primary</td><td>High ratio and high accuracy in one device; defined primary terminals</td><td>Largest and most expensive; primary cable has to be terminated on the device</td><td>Precision measurement, test benches, high-ratio metering</td></tr>
+</tbody>
+</table>
+<p>In practice the decision is made by two questions: can the conductor be disconnected, and is the aperture round or rectangular in section? If the answer is a live busbar that cannot be broken, none of the fixed-aperture forms will do and a split-core is the only option.</p>
+
+    <h2>Sizing the aperture: measure the bar, not the cable</h2>
+<p>A ring CT aperture is fixed, and the conductor plus its insulation plus a working tolerance all have to pass through it. A 30 &times; 10&nbsp;mm busbar will not pass through a 30&nbsp;mm round aperture once heat-shrink or a phase barrier is fitted, and a bundle of three cables will not pass where a single cable would.</p>
+<p>Measure the worst case at the point of installation, add a few millimetres for insulation and tolerance, and check that the CT body still clears the panel door, the adjacent phase and the DIN rail. On a retrofit the aperture question is usually what decides between a ring and a split-core, because the ring cannot be opened.</p>
+<p>Mounting matters as much as the hole. A ring CT hanging on its own secondary leads will move; a bracket or a mounting foot that holds the ring square to the bar keeps the geometry stable and avoids a slow drift in reading as the panel is worked on over the years.</p>
+
+    <h2>Accuracy and burden in a ring core</h2>
+<p>Ring CTs are commonly available in class 0.5 for metering, and the class is measured the same way as for any other form: ratio error and phase displacement across a defined current range to IEC 61869-2. The ring geometry helps the manufacturer reach the class in a small package; it does not exempt the installation from the burden calculation.</p>
+<p>The secondary is still a current source driving a loop. A 5&nbsp;A secondary with a five metre run of 2.5&nbsp;mm&sup2; cable spends close to 1.75&nbsp;VA on the leads alone, which can consume most of a small CT's rating before the meter is counted. A 1&nbsp;A secondary reduces that lead burden by a factor of 25 and is the usual answer when the meter cannot sit beside the CT.</p>
+<p>If the reading is low but stable, suspect burden or a wrong ratio programmed into the meter. If the reading is low only under heavy load, suspect saturation and check the rated burden and the accuracy limit factor on the datasheet. The general arithmetic is set out in the <a href="/blog/low-voltage-current-transformer-guide">low voltage current transformer guide</a>, and the class definitions in <a href="/blog/ct-accuracy-class-guide">CT accuracy class</a>.</p>
+
+    <h2>Where a ring transformer is the wrong answer</h2>
+<p>A ring core is the efficient answer to a narrow question, and it is worth being blunt about the cases where it is not the answer at all.</p>
+<ul>
+<li><strong>The conductor cannot be broken.</strong> A ring cannot be fitted around an installed busbar. Use split-core and accept the accuracy compromise, or plan an outage.</li>
+<li><strong>The bar is rectangular and large.</strong> A 60 &times; 20&nbsp;mm bar needs a correspondingly large round aperture, and at that point a square window matched to the bar section is more compact.</li>
+<li><strong>The ratio is very low or very high.</strong> Few-pass ratios and high primary currents are easier to build and to certify in a wound-primary or bar-primary device.</li>
+<li><strong>Protection duty with a defined accuracy limit factor.</strong> Protection cores are specified on composite error at a stated fault multiple; a metering ring is not the right device for that job even if the ratio matches.</li>
+</ul>
+<p>The honest summary: a ring CT is the best packaging of accuracy for a cable or small bar in a tight space, and a poor substitute for a device designed around a large busbar or a live retrofit.</p>
+
+    <h2>Where YOMIN fits</h2>
+<p>YOMIN builds single-phase low voltage toroidal current transformers in the MES 62/30 series, including a 150/5&nbsp;A unit and a 200/5&nbsp;A unit, alongside the square window MSQ range and resin-cast types. Production is under ISO 9001 quality management, with a typical 100-unit minimum for standard models (500 for OEM or customised builds), 15&ndash;25 working days for standard production, 30&ndash;45 days for OEM, and a two-year warranty against manufacturing defects.</p>
+<p>Give us the conductor dimensions, the ratio you need, the pass count you intend to use and the meter's burden, and we will confirm the aperture and the class that will hold. If your constraint is a rectangular busbar rather than a round aperture, the companion guide on <a href="/blog/low-voltage-current-transformer-guide">low voltage current transformers</a> covers the window and bar forms. For installation detail see <a href="/blog/current-transformer-connection-guide">current transformer connection</a>, and for what happens when the core is pushed too far, <a href="/blog/ct-saturation">CT saturation</a>.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>What is a toroidal current transformer?</h3>
+    <p>A current transformer wound on a continuous ring-shaped core, with the primary formed by a conductor passed once through the centre of the ring. Because the primary is whatever goes through the hole, the effective ratio changes with the number of passes.</p>
+    <h3>Does looping the cable twice change the ratio?</h3>
+    <p>Yes. Two passes divide the effective primary rating by two: a 150/5&nbsp;A ring with two passes behaves as 75/5&nbsp;A. The meter must be programmed for the effective ratio, and all phases of a three-phase set must use the same pass count.</p>
+    <h3>Can a toroidal CT be fitted without disconnecting the busbar?</h3>
+    <p>No. The aperture is closed, so the conductor has to be removed and re-terminated. If the bar cannot be broken, a split-core CT is the only practical option, at the cost of some accuracy.</p>
+    <h3>Is a ring CT more accurate than a square window CT?</h3>
+    <p>Not inherently. Both are available in class 0.5. The ring usually reaches a given class in a smaller package with lower stray field, while the square window accepts a rectangular busbar more easily. Accuracy in service depends more on burden and installation than on the core shape.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Need a ring CT that fits the space you actually have?</h2>
+    <p>Send the conductor dimensions, required ratio, pass count and meter burden. We build single-phase low voltage toroidal current transformers under ISO 9001 quality management and will confirm the aperture and class.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Message us on WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

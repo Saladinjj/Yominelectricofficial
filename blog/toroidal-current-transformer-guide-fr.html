@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="preload" as="image" href="/assets/images/blog/toroidal-current-transformer-guide/hero.png" fetchpriority="high">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transformateur de courant torique : noyau et spires | Yomin Electric</title>
+<meta name="description" content="Pourquoi le TC torique loge plus de précision dans moins de place : noyau en anneau, effet du nombre de spires, choix de l'ouverture et cas d'échec.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/toroidal-current-transformer-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/toroidal-current-transformer-guide-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/toroidal-current-transformer-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/toroidal-current-transformer-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/toroidal-current-transformer-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/toroidal-current-transformer-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/toroidal-current-transformer-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Transformateur de courant torique : pourquoi le noyau en anneau gagne en armoire",
+      "description": "Pourquoi le TC torique loge plus de précision dans moins de place : noyau en anneau, effet du nombre de spires, choix de l'ouverture et cas d'échec.",
+      "image": "https://www.yominelectric.com/assets/images/blog/toroidal-current-transformer-guide/hero.png",
+      "datePublished": "2026-11-25",
+      "dateModified": "2026-11-25",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/toroidal-current-transformer-guide-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce qu'un transformateur de courant torique ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un transformateur de courant bobiné sur un noyau annulaire continu, dont le primaire est constitué d'un conducteur passant une fois au centre de l'anneau. Comme le primaire est ce qui traverse le trou, le rapport effectif dépend du nombre de passages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Boucler le câble deux fois change-t-il le rapport ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Deux passages divisent par deux le courant primaire assigné effectif : un anneau 150/5&nbsp;A avec deux passages se comporte comme un 75/5&nbsp;A. Le compteur doit être programmé pour le rapport effectif et toutes les phases d'un jeu triphasé doivent avoir le même nombre de passages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on monter un TC torique sans déconnecter la barre ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. L'ouverture est fermée, le conducteur doit donc être déposé puis remonté. Si la barre ne peut pas être coupée, un TC ouvrant à noyau divisé est la seule option pratique, au prix d'un peu de précision."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un TC annulaire est-il plus précis qu'un TC à fenêtre carrée ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pas par nature. Les deux existent en classe 0,5. L'anneau atteint généralement une classe donnée dans un boîtier plus petit avec moins de champ parasite, tandis que la fenêtre carrée accepte plus facilement une barre rectangulaire. La précision en service dépend davantage du fardeau et du montage que de la forme du noyau."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="/assets/images/flags/16x12-es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Transformateurs de courant</span></div>
+    <span class="bh-tag">Guides d'achat</span>
+    <h1 class="bh-title">Transformateur de courant torique : pourquoi le noyau en anneau gagne en armoire</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">Équipe technique ET</strong>
+      <span class="divider"></span>
+      <span>25 novembre 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/toroidal-current-transformer-guide/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/toroidal-current-transformer-guide/hero.png" alt="Transformateur de courant torique à noyau annulaire noir monté autour d'une barre cuivre dans une armoire basse tension, avec des fils secondaires blancs rejoignant un compteur d'énergie sur rail DIN" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+    <p>Un transformateur de courant torique est un transformateur de courant bobiné sur un noyau annulaire continu, dont les spires secondaires sont réparties régulièrement autour de l'anneau et dont le primaire est constitué d'un simple passage de câble ou de barre au centre. Pas de bobinage primaire, pas d'empilage de tôles avec un entrefer aux joints : le conducteur traverse simplement le trou.</p>
+    <p>Cette géométrie explique pourquoi ces appareils sont choisis quand la place manque alors que la précision reste exigée. Elle change aussi les règles de prescription, car le rapport inscrit sur l'étiquette n'est pas forcément celui obtenu si l'installateur fait passer le câble plusieurs fois, et parce qu'une ouverture circulaire fixe est bien moins tolérante qu'une fenêtre rectangulaire face à une barre.</p>
+
+    <h2>Pourquoi un noyau en anneau se comporte autrement</h2>
+<p>Dans un noyau feuilleté classique, le circuit magnétique est constitué de tôles empilées avec des joints où le flux doit franchir un petit entrefer. Chaque joint ajoute de la réluctance et un peu de courant magnétisant, et le flux qui s'échappe des joints est précisément ce que l'on mesure comme champ parasite.</p>
+<p>Un noyau annulaire est un feuillard d'acier à grains orientés enroulé en continu, sans aucun joint. Le chemin magnétique est court et fermé : pour une masse de noyau donnée, le flux est plus fort et mieux maîtrisé. Le bobinage secondaire repose directement sur le noyau et se répartit sur toute sa circonférence au lieu d'être concentré sur deux bobines. Pour un transformateur de courant, les conséquences pratiques sont :</p>
+<ul>
+<li><strong>Un courant magnétisant plus faible à précision égale</strong>, ce qui permet à un TC annulaire plus petit de tenir la classe 0,5 là où un équivalent feuilleté demande plus de fer.</li>
+<li><strong>Un champ parasite contenu.</strong> Le champ reste largement à l'intérieur de l'anneau au lieu de s'épandre latéralement, ce qui compte dans une armoire BT dense où un compteur ou un câble à faible signal se trouve à quelques centimètres.</li>
+<li><strong>Une réactance de fuite plus basse</strong>, les spires secondaires étant réparties et proches du noyau. Le transformateur se comporte de façon plus prévisible quand le courant de charge varie.</li>
+</ul>
+<p>Cela ne rend pas le noyau annulaire magique : cela le rend efficace. À ouverture et précision données, l'anneau est généralement la réponse la plus petite et la plus légère, ce qui est exactement la contrainte d'un compartiment de comptage.</p>
+
+    <h2>Le rapport n'est plus figé dès que l'installateur boucle</h2>
+<p>L'étiquette donne un rapport pour un seul passage du conducteur primaire. Comme le primaire d'un TC annulaire est ce qui traverse le trou, le rapport effectif dépend du nombre de passages : chaque passage supplémentaire multiplie les ampères-tours primaires, donc le courant primaire assigné effectif se divise par le nombre de passages.</p>
+<p>Pour un TC annulaire 150/5&nbsp;A :</p>
+<table>
+<thead><tr><th>Passages dans l'anneau</th><th>Rapport effectif</th><th>Quand l'utiliser</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>150/5&nbsp;A</td><td>Montage normal sur un départ chargé autour de 150&nbsp;A</td></tr>
+<tr><td>2</td><td>75/5&nbsp;A</td><td>Départ peu chargé ; améliore la précision à faible courant</td></tr>
+<tr><td>3</td><td>50/5&nbsp;A</td><td>Charge très faible, ou pour retrouver l'échelle d'un compteur existant</td></tr>
+</tbody>
+</table>
+<p>Deux règles en découlent. D'abord, le compteur doit être programmé pour le rapport effectif, pas celui de l'étiquette, sinon toutes les lectures seront fausses du facteur de bouclage. Ensuite, gardez le même nombre de passages sur les trois phases d'un jeu triphasé, car une différence crée un déséquilibre de courant qui n'existe pas.</p>
+<p>Les passages supplémentaires ont un coût : plus de tours primaires signifie plus de chute de tension primaire et un fardeau plus élevé ramené au secondaire, et la fenêtre se remplit de câble. Deux passages sont le compromis courant ; trois est en général la limite avant que la fenêtre de bobinage ne devienne inutilisable.</p>
+
+    <h2>Anneau, fenêtre carrée, ouvrant ou primaire bobiné</h2>
+<p>Les quatre formes existent en comptage basse tension, et le choix est surtout mécanique.</p>
+<table>
+<thead><tr><th>Forme</th><th>Atout</th><th>Faiblesse</th><th>Application typique</th></tr></thead>
+<tbody>
+<tr><td>Torique / anneau</td><td>Compact, faible champ parasite, bonne précision par unité de fer, rapport ajustable par passages</td><td>Ouverture ronde fixe ; conducteur à déconnecter</td><td>Compartiments de comptage, départs câbles, encoffrements serrés</td></tr>
+<tr><td>Fenêtre carrée</td><td>Ouverture rectangulaire adaptée aux sections de barres ; se glisse sur une barre</td><td>Plus volumineux qu'un anneau à ouverture égale ; la barre doit être coupée</td><td>Armoires BT, comptage sur barres, tableautiers</td></tr>
+<tr><td>Noyau divisé</td><td>Se referme autour d'un conducteur en service ; aucune déconnexion</td><td>Noyau en deux parties, classe en pratique plus basse, faces de joint à surveiller</td><td>Rénovation, audits, surveillance temporaire</td></tr>
+<tr><td>Primaire bobiné</td><td>Rapport élevé et haute précision dans un seul appareil ; bornes primaires définies</td><td>Le plus encombrant et le plus cher ; le câble primaire doit être raccordé sur l'appareil</td><td>Mesure de précision, bancs d'essai, comptage à rapport élevé</td></tr>
+</tbody>
+</table>
+<p>En pratique, deux questions tranchent : le conducteur peut-il être consigné, et l'ouverture est-elle ronde ou rectangulaire ? Si la réponse est une barre en service qui ne peut être coupée, aucune forme à ouverture fixe ne convient et l'ouvrant est la seule option.</p>
+
+    <h2>Dimensionner l'ouverture : mesurez la barre, pas le câble</h2>
+<p>L'ouverture d'un TC annulaire est fixe, et le conducteur, son isolant et une tolérance de montage doivent tous y passer. Une barre de 30 &times; 10&nbsp;mm ne traversera pas une ouverture ronde de 30&nbsp;mm une fois la gaine thermorétractable ou une cloison de phase en place, et un faisceau de trois câbles ne passera pas là où un seul le ferait.</p>
+<p>Mesurez le pire cas au point d'installation, ajoutez quelques millimètres pour l'isolant et la tolérance, et vérifiez que le corps du TC dégage encore la porte d'armoire, la phase voisine et le rail DIN. En rénovation, la question de l'ouverture décide presque toujours entre anneau et ouvrant, puisque l'anneau ne s'ouvre pas.</p>
+<p>Le montage compte autant que le trou. Un TC annulaire suspendu à ses propres fils secondaires bougera ; une équerre ou un pied qui maintient l'anneau perpendiculaire à la barre stabilise la géométrie et évite une dérive lente de la lecture au fil des interventions.</p>
+
+    <h2>Précision et fardeau dans un noyau annulaire</h2>
+<p>Les TC annulaires sont couramment disponibles en classe 0,5 pour le comptage, et la classe se mesure de la même façon que pour toute autre forme : erreur de rapport et déphasage sur une plage de courant définie selon la CEI 61869-2. La géométrie de l'anneau aide le constructeur à atteindre la classe dans un petit boîtier ; elle ne dispense pas l'installation du calcul de fardeau.</p>
+<p>Le secondaire reste une source de courant qui alimente une boucle. Un secondaire 5&nbsp;A avec cinq mètres de câble 2,5&nbsp;mm&sup2; consomme près de 1,75&nbsp;VA dans la ligne seule, ce qui peut absorber la majeure partie de la puissance d'un petit TC avant même de compter le compteur. Un secondaire 1&nbsp;A réduit ce fardeau de ligne d'un facteur 25 et constitue la réponse habituelle lorsque le compteur ne peut pas être placé à côté du TC.</p>
+<p>Si la lecture est basse mais stable, soupçonnez le fardeau ou un rapport mal programmé. Si elle n'est basse qu'en charge élevée, soupçonnez la saturation et vérifiez la puissance assignée ainsi que le facteur limite de précision sur la fiche technique. L'arithmétique générale est détaillée dans le <a href="/blog/low-voltage-current-transformer-guide-fr">guide du transformateur de courant basse tension</a>, et les définitions de classes dans <a href="/blog/ct-accuracy-class-guide">la classe de précision des TC</a>.</p>
+
+    <h2>Quand l'anneau est la mauvaise réponse</h2>
+<p>Un noyau annulaire est la réponse efficace à une question étroite, et il vaut la peine de dire franchement dans quels cas ce n'est pas la réponse du tout.</p>
+<ul>
+<li><strong>Le conducteur ne peut pas être coupé.</strong> Un anneau ne se monte pas autour d'une barre en service. Passez à l'ouvrant en acceptant le compromis de précision, ou planifiez une coupure.</li>
+<li><strong>La barre est rectangulaire et large.</strong> Une barre de 60 &times; 20&nbsp;mm exige une ouverture ronde d'autant plus grande, et à ce stade une fenêtre carrée adaptée à la section est plus compacte.</li>
+<li><strong>Le rapport est très bas ou très élevé.</strong> Les rapports à faible nombre de passages et les courants primaires élevés se construisent et se certifient plus facilement en primaire bobiné ou en barre.</li>
+<li><strong>Service de protection avec facteur limite défini.</strong> Les noyaux de protection se spécifient sur l'erreur composite à un multiple de défaut donné ; un anneau de mesure n'est pas le bon appareil, même si le rapport correspond.</li>
+</ul>
+<p>En résumé honnête : un TC annulaire est le meilleur conditionnement de précision pour un câble ou une petite barre dans un espace serré, et un mauvais substitut à un appareil conçu autour d'une grosse barre ou d'une rénovation en service.</p>
+
+    <h2>La place de YOMIN</h2>
+<p>YOMIN fabrique des transformateurs de courant toriques basse tension monophasés de la série MES 62/30, dont un modèle 150/5&nbsp;A et un modèle 200/5&nbsp;A, aux côtés de la gamme à fenêtre carrée MSQ et de modèles moulés en résine. La production suit un management de la qualité ISO 9001, avec un minimum typique de 100 unités pour les modèles standard (500 pour les fabrications OEM ou personnalisées), 15&ndash;25 jours ouvrés en production standard, 30&ndash;45 jours en OEM, et une garantie de deux ans contre les défauts de fabrication.</p>
+<p>Indiquez les dimensions du conducteur, le rapport nécessaire, le nombre de passages prévu et le fardeau du compteur : nous confirmerons l'ouverture et la classe qui tiendront. Si votre contrainte est une barre rectangulaire plutôt qu'une ouverture ronde, le guide complémentaire sur les <a href="/blog/low-voltage-current-transformer-guide-fr">transformateurs de courant basse tension</a> traite les formes à fenêtre et à barre. Pour le montage, voir <a href="/blog/current-transformer-connection-guide">le raccordement des TC</a>, et pour ce qui se passe quand le noyau est poussé trop loin, <a href="/blog/ct-saturation">la saturation des TC</a>.</p>
+
+    <h2>Questions fréquentes</h2>
+    <h3>Qu'est-ce qu'un transformateur de courant torique ?</h3>
+    <p>Un transformateur de courant bobiné sur un noyau annulaire continu, dont le primaire est constitué d'un conducteur passant une fois au centre de l'anneau. Comme le primaire est ce qui traverse le trou, le rapport effectif dépend du nombre de passages.</p>
+    <h3>Boucler le câble deux fois change-t-il le rapport ?</h3>
+    <p>Oui. Deux passages divisent par deux le courant primaire assigné effectif : un anneau 150/5&nbsp;A avec deux passages se comporte comme un 75/5&nbsp;A. Le compteur doit être programmé pour le rapport effectif et toutes les phases d'un jeu triphasé doivent avoir le même nombre de passages.</p>
+    <h3>Peut-on monter un TC torique sans déconnecter la barre ?</h3>
+    <p>Non. L'ouverture est fermée, le conducteur doit donc être déposé puis remonté. Si la barre ne peut pas être coupée, un TC ouvrant à noyau divisé est la seule option pratique, au prix d'un peu de précision.</p>
+    <h3>Un TC annulaire est-il plus précis qu'un TC à fenêtre carrée ?</h3>
+    <p>Pas par nature. Les deux existent en classe 0,5. L'anneau atteint généralement une classe donnée dans un boîtier plus petit avec moins de champ parasite, tandis que la fenêtre carrée accepte plus facilement une barre rectangulaire. La précision en service dépend davantage du fardeau et du montage que de la forme du noyau.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Besoin d'un TC annulaire qui entre réellement dans la place disponible ?</h2>
+    <p>Envoyez les dimensions du conducteur, le rapport requis, le nombre de passages et le fardeau du compteur. Nous fabriquons des transformateurs de courant toriques basse tension monophasés sous management ISO 9001 et confirmerons l'ouverture et la classe.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Écrivez-nous sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script fetchpriority="low" defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
