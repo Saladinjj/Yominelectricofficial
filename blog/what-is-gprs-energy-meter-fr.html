@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qu&rsquo;est-ce qu&rsquo;un compteur d&rsquo;&eacute;nergie GPRS : rel&egrave;ve &agrave; distance et pilotage pr&eacute;pay&eacute; | Yomin Electric</title>
+<meta name="description" content="Un compteur GPRS embarque une SIM et remonte ses index par le r&eacute;seau mobile. Ce qu&rsquo;il envoie, sa diff&eacute;rence avec RS485 et le WiFi, l&rsquo;arr&ecirc;t de la 2G et les points &agrave; sp&eacute;cifier.">
+<meta property="og:title" content="Qu&rsquo;est-ce qu&rsquo;un compteur d&rsquo;&eacute;nergie GPRS : rel&egrave;ve &agrave; distance et pilotage pr&eacute;pay&eacute; | Yomin Electric">
+<meta property="og:description" content="Un compteur GPRS embarque une SIM et remonte ses index par le r&eacute;seau mobile. Ce qu&rsquo;il envoie, sa diff&eacute;rence avec RS485 et le WiFi, l&rsquo;arr&ecirc;t de la 2G et les points &agrave; sp&eacute;cifier.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/what-is-gprs-energy-meter/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/what-is-gprs-energy-meter-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/what-is-gprs-energy-meter">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/what-is-gprs-energy-meter-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/what-is-gprs-energy-meter-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/what-is-gprs-energy-meter-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/what-is-gprs-energy-meter">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preload" as="image" href="/assets/images/blog/what-is-gprs-energy-meter/hero.png" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Qu&rsquo;est-ce qu&rsquo;un compteur d&rsquo;&eacute;nergie GPRS : rel&egrave;ve &agrave; distance et pilotage pr&eacute;pay&eacute;",
+      "description": "Un compteur GPRS embarque une SIM et remonte ses index par le r&eacute;seau mobile. Ce qu&rsquo;il envoie, sa diff&eacute;rence avec RS485 et le WiFi, l&rsquo;arr&ecirc;t de la 2G et les points &agrave; sp&eacute;cifier.",
+      "image": "https://www.yominelectric.com/assets/images/blog/what-is-gprs-energy-meter/hero.png",
+      "datePublished": "2026-11-25",
+      "dateModified": "2026-11-25",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/what-is-gprs-energy-meter-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu&rsquo;est-ce qu&rsquo;un compteur d&rsquo;&eacute;nergie GPRS ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C&rsquo;est un compteur &eacute;lectrique &eacute;quip&eacute; d&rsquo;un modem cellulaire et d&rsquo;une SIM, dont les index et les &eacute;v&eacute;nements se lisent par le r&eacute;seau mobile et qui peut &ecirc;tre pilot&eacute; &agrave; distance, sans bus local, passerelle ni r&eacute;seau du site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un compteur GPRS a-t-il besoin de WiFi ou d&rsquo;une passerelle sur site ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Chaque compteur se connecte directement au r&eacute;seau mobile, ce qui convient aux installations dispers&eacute;es sans tableau ni informatique locale. Le WiFi et LoRaWAN sont des alternatives qui d&eacute;pendent d&rsquo;une infrastructure locale ou d&rsquo;une passerelle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que se passe-t-il lorsque le r&eacute;seau mobile est indisponible ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le compteur continue de mesurer et conserve ses index et son journal ; seule la remont&eacute;e s&rsquo;arr&ecirc;te. Au retour de la liaison, les donn&eacute;es stock&eacute;es peuvent &ecirc;tre collect&eacute;es, et l&rsquo;afficheur ou le port optique permet une lecture manuelle entre-temps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "L&rsquo;arr&ecirc;t de la 2G est-il un probl&egrave;me pour les compteurs GPRS ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C&rsquo;est une question de cycle de vie plut&ocirc;t qu&rsquo;une panne. Plusieurs op&eacute;rateurs ont annonc&eacute; ou achev&eacute; l&rsquo;arr&ecirc;t de la 2G : un parc pr&eacute;vu en GPRS doit donc v&eacute;rifier si la m&ecirc;me plateforme existe en 4G ou NB-IoT et si le syst&egrave;me central g&egrave;re les deux."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un compteur GPRS peut-il fonctionner en pr&eacute;pay&eacute; ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Les mod&egrave;les pr&eacute;pay&eacute;s acceptent un jeton de cr&eacute;dit et le confirment par la liaison cellulaire, et la m&ecirc;me connexion transporte l&rsquo;ordre de coupure lorsque le cr&eacute;dit atteint z&eacute;ro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment les donn&eacute;es sont-elles s&eacute;curis&eacute;es ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Par des identifiants propres &agrave; chaque compteur, un transport chiffr&eacute; entre le compteur et le syst&egrave;me central, et une trace des commandes envoy&eacute;es. Sur un appareil capable de couper une fourniture &agrave; distance, ce sont des exigences et non des options."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img width="16" height="12" loading="lazy" decoding="async" src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Accueil</a> &middot; <a href="/blog">Blog</a> &middot; <span>Compteurs d&rsquo;&eacute;nergie</span></div>
+    <span class="bh-tag">Fiches produit</span>
+    <h1 class="bh-title">Qu&rsquo;est-ce qu&rsquo;un compteur d&rsquo;&eacute;nergie GPRS : rel&egrave;ve &agrave; distance et pilotage pr&eacute;pay&eacute;</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">&Eacute;quipe technique ET</strong>
+      <span class="divider"></span>
+      <span>25 novembre 2026</span>
+      <span class="divider"></span>
+      <span>10 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/what-is-gprs-energy-meter/hero.webp" type="image/webp">
+      <img width="1280" height="720" class="hero-img" src="/assets/images/blog/what-is-gprs-energy-meter/hero.png" alt="Compteur d&rsquo;&eacute;nergie pr&eacute;pay&eacute; GPRS monophas&eacute; sur rail DIN avec afficheur LCD, pr&eacute;sent&eacute; avec un compteur GPRS triphas&eacute;" loading="eager" fetchpriority="high" decoding="async">
+    </picture>
+
+
+    <p>Un compteur d&rsquo;&eacute;nergie GPRS est un compteur &eacute;lectrique &eacute;quip&eacute; d&rsquo;un modem de donn&eacute;es mobiles et d&rsquo;une carte SIM, ce qui permet de relever ses index et de le piloter par le r&eacute;seau cellulaire au lieu d&rsquo;envoyer quelqu&rsquo;un jusqu&rsquo;au tableau. Le c&oelig;ur du comptage reste un compteur kilom&eacute;trique ordinaire ; ce qui change, c&rsquo;est que la rel&egrave;ve ne d&eacute;pend plus d&rsquo;un bus local, d&rsquo;une passerelle ni d&rsquo;un r&eacute;seau du site.</p>
+    <p>GPRS d&eacute;signe le service de donn&eacute;es par paquets transport&eacute; sur les r&eacute;seaux GSM de deuxi&egrave;me g&eacute;n&eacute;ration, et le terme reste employ&eacute; pour des compteurs con&ccedil;us &agrave; une &eacute;poque o&ugrave; la 2G &eacute;tait la fa&ccedil;on la moins ch&egrave;re de donner &agrave; un appareil isol&eacute; une liaison de donn&eacute;es permanente. L&rsquo;&eacute;tiquette d&eacute;crit le transport, pas la fonction de comptage : un compteur GPRS mesure l&rsquo;&eacute;nergie exactement comme un compteur sur rail DIN, et le modem s&rsquo;ajoute &agrave; la m&ecirc;me plateforme.</p>
+
+    <h2>Ce que le compteur envoie, et &agrave; qui</h2>
+    <p>Le compteur est une extr&eacute;mit&eacute; d&rsquo;un syst&egrave;me central, souvent appel&eacute; syst&egrave;me de gestion des donn&eacute;es de comptage. Le compteur d&eacute;tient les index, la courbe de charge et le journal d&rsquo;&eacute;v&eacute;nements ; le syst&egrave;me central d&eacute;tient la fiche client, la configuration tarifaire et l&rsquo;export de facturation. Entre les deux circule un protocole applicatif sur une connexion IP &eacute;tablie par le modem.</p>
+    <p>C&rsquo;est la diff&eacute;rence pratique avec un compteur &agrave; port RS485. Un bus s&eacute;rie d&eacute;signe un c&acirc;ble qu&rsquo;il faut poser, raccorder et maintenir ; une liaison cellulaire d&eacute;signe un abonnement qu&rsquo;il faut provisionner, surveiller et payer. Les deux choix sont parfaitement d&eacute;fendables, et le mauvais co&ucirc;te cher d&rsquo;une mani&egrave;re pr&eacute;visible.</p>
+    <table>
+      <thead>
+        <tr><th>Classe de donn&eacute;es</th><th>Contenu</th><th>Int&eacute;r&ecirc;t pour le distributeur</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Instantan&eacute; des index</td><td>Index total et index horaires, puissance demand&eacute;e</td><td>Facturer sans visite sur site</td></tr>
+        <tr><td>Courbe de charge</td><td>&Eacute;nergie par p&eacute;riode d&rsquo;int&eacute;gration fixe</td><td>Planification du r&eacute;seau, analyse des pertes, preuve en cas de litige</td></tr>
+        <tr><td>Journal d&rsquo;&eacute;v&eacute;nements</td><td>Ouverture de capot, interf&eacute;rence magn&eacute;tique, coupure, changement d&rsquo;heure</td><td>Enqu&ecirc;te sur fraude et sur incident</td></tr>
+        <tr><td>&Eacute;tats et alarmes</td><td>&Eacute;tat de la fourniture, du relais, du cr&eacute;dit, qualit&eacute; du signal</td><td>Exploitation et d&eacute;cisions de coupure en pr&eacute;pay&eacute;</td></tr>
+        <tr><td>Configuration</td><td>Calendrier tarifaire, intervalle de demande, cadence de rel&egrave;ve</td><td>Changer un tarif sans d&eacute;placement</td></tr>
+      </tbody>
+    </table>
+
+    <h2>GPRS face aux autres moyens de relever un compteur</h2>
+    <p>Quatre transports sont courants en comptage, et ils diff&egrave;rent surtout par le propri&eacute;taire du r&eacute;seau entre le compteur et le serveur. Cette seule question d&eacute;cide g&eacute;n&eacute;ralement de l&rsquo;architecture avant toute comparaison technique.</p>
+    <table>
+      <thead>
+        <tr><th>Transport</th><th>Qui poss&egrave;de le chemin</th><th>Ce qu&rsquo;il faut sur site</th><th>O&ugrave; il convient</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Bus s&eacute;rie RS485</td><td>L&rsquo;installateur</td><td>C&acirc;ble, terminaison, concentrateur ou passerelle</td><td>Un b&acirc;timent, plusieurs compteurs, un tableau maintenu</td></tr>
+        <tr><td>WiFi</td><td>Le client ou l&rsquo;informatique du site</td><td>Identifiants et un r&eacute;seau qui reste disponible</td><td>Domestique ou petit tertiaire avec une informatique stable</td></tr>
+        <tr><td>Cellulaire GPRS</td><td>L&rsquo;op&eacute;rateur mobile</td><td>Une SIM, un APN et du signal</td><td>Compteurs dispers&eacute;s sans infrastructure locale</td></tr>
+        <tr><td>LoRaWAN ou NB-IoT</td><td>Un op&eacute;rateur r&eacute;seau ou une passerelle priv&eacute;e</td><td>Une passerelle, ou un profil op&eacute;rateur sur la SIM</td><td>Grappes denses, faible volume, longue autonomie</td></tr>
+      </tbody>
+    </table>
+    <p>L&rsquo;avantage d&eacute;cisif du cellulaire est qu&rsquo;un compteur install&eacute; dans un village sans tableau, sans armoire et sans contrat de maintenance reste joignable. Son inconv&eacute;nent d&eacute;cisif est que chaque compteur porte un abonnement r&eacute;current et une d&eacute;pendance &agrave; une couverture que le distributeur ne ma&icirc;trise pas.</p>
+
+    <h2>La SIM, l&rsquo;APN et l&rsquo;adresse du serveur</h2>
+    <p>Un compteur GPRS ne remonte rien tant que trois &eacute;l&eacute;ments ne sont pas corrects, et tous les trois rel&egrave;vent de la configuration, pas du mat&eacute;riel : la SIM doit &ecirc;tre active et autoris&eacute;e en donn&eacute;es, le nom du point d&rsquo;acc&egrave;s doit correspondre &agrave; l&rsquo;op&eacute;rateur, et le compteur doit conna&icirc;tre l&rsquo;adresse et le port du serveur qu&rsquo;il doit joindre. Un compteur avec une liaison radio parfaite et un APN erron&eacute; ressemble exactement &agrave; un compteur sans couverture.</p>
+    <table>
+      <thead>
+        <tr><th>Param&egrave;tre</th><th>R&ocirc;le</th><th>Ce qui se passe s&rsquo;il est faux</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>&Eacute;tat de la SIM et service donn&eacute;es</td><td>Authentifie le compteur sur le r&eacute;seau</td><td>Le modem s&rsquo;attache, aucune session de donn&eacute;es, aucune remont&eacute;e</td></tr>
+        <tr><td>APN</td><td>S&eacute;lectionne la passerelle de l&rsquo;op&eacute;rateur</td><td>La session &eacute;choue alors que le niveau de signal para&icirc;t bon</td></tr>
+        <tr><td>Adresse et port du serveur</td><td>Indiquent o&ugrave; &eacute;coute le syst&egrave;me central</td><td>La connexion s&rsquo;ouvre et se ferme, rien n&rsquo;arrive au serveur</td></tr>
+        <tr><td>Cadence de remont&eacute;e</td><td>Fixe la fr&eacute;quence des instantan&eacute;s</td><td>Forfait donn&eacute;es &eacute;puis&eacute;, ou courbe trop grossi&egrave;re pour l&rsquo;analyse</td></tr>
+        <tr><td>Identifiants</td><td>Prouvent que le compteur est une extr&eacute;mit&eacute; l&eacute;gitime</td><td>Rejet au syst&egrave;me central, ou acceptation sous une autre identit&eacute;</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Couverture, et la question de la 2G</h2>
+    <p>Le niveau de signal &agrave; la position du compteur est le premier relev&eacute; &agrave; faire, et il faut le mesurer l&agrave; o&ugrave; le compteur sera pos&eacute;, pas au portail. Les compteurs sont souvent install&eacute;s dans des enveloppes m&eacute;talliques, en sous-sol ou derri&egrave;re une rang&eacute;e d&rsquo;appareillage, autant d&rsquo;&eacute;l&eacute;ments qui r&eacute;duisent le niveau qu&rsquo;un t&eacute;l&eacute;phone affiche &agrave; la porte.</p>
+    <p>La deuxi&egrave;me question est g&eacute;n&eacute;rationnelle. GPRS fonctionne sur la 2G, et plusieurs op&eacute;rateurs ont annonc&eacute; ou achev&eacute; l&rsquo;arr&ecirc;t de la 2G : un parc b&acirc;ti sur cette technologie a besoin d&rsquo;un chemin de migration, pas d&rsquo;une surprise. Demandez au fournisseur ce qui se passe lorsque le r&eacute;seau 2G local ferme, si la m&ecirc;me plateforme existe avec un modem 4G ou NB-IoT, et si le syst&egrave;me central parle d&eacute;j&agrave; aux deux. Un compteur limit&eacute; au GPRS est un actif de dix ans li&eacute; &agrave; un r&eacute;seau qui peut ne pas durer dix ans.</p>
+
+    <h2>Ce qu&rsquo;une liaison GPRS permet vraiment</h2>
+    <p>La rel&egrave;ve &agrave; distance est la fonction &eacute;vidente et la moins int&eacute;ressante commercialement. La valeur appara&icirc;t quand la m&ecirc;me liaison sert &agrave; agir : couper une fourniture, changer un tarif, cr&eacute;diter un compte.</p>
+    <ul>
+      <li><strong>Coupure et r&eacute;tablissement &agrave; distance</strong> en cas d&rsquo;impay&eacute;, sans d&eacute;placement ni serrurier.</li>
+      <li><strong>Mise &agrave; jour des tarifs et du calendrier</strong> envoy&eacute;e &agrave; tout un lot de compteurs d&rsquo;un coup.</li>
+      <li><strong>Livraison de jetons pr&eacute;pay&eacute;s</strong> lorsque le compteur accepte un cr&eacute;dit et le confirme au syst&egrave;me de vente.</li>
+      <li><strong>D&eacute;tection des coupures</strong> &agrave; partir de l&rsquo;&eacute;v&eacute;nement de perte d&rsquo;alimentation, qui parvient souvent au distributeur avant l&rsquo;appel du client.</li>
+    </ul>
+    <p>Chacune de ces actions d&eacute;place de l&rsquo;argent ou interrompt une fourniture, et c&rsquo;est pourquoi la s&eacute;curit&eacute; de la liaison compte plus que son d&eacute;bit. Des identifiants par compteur, un transport chiffr&eacute; et une trace des commandes envoy&eacute;es ne sont pas des options sur un appareil capable de couper &agrave; distance.</p>
+
+    <h2>Pannes courantes et lecture des sympt&ocirc;mes</h2>
+    <p>Quand un compteur GPRS cesse de remonter, la cause se trouve g&eacute;n&eacute;ralement &agrave; l&rsquo;un de quatre endroits, et la forme de ce qui est arriv&eacute; ou non permet de la cerner rapidement.</p>
+    <table>
+      <thead>
+        <tr><th>Sympt&ocirc;me</th><th>Cause la plus probable</th><th>Premi&egrave;re v&eacute;rification</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Aucune remont&eacute;e depuis l&rsquo;installation</td><td>APN, service donn&eacute;es de la SIM ou adresse serveur</td><td>Configuration compar&eacute;e &agrave; l&rsquo;op&eacute;rateur et au syst&egrave;me central</td></tr>
+        <tr><td>Remont&eacute;es puis arr&ecirc;t sur tout le site</td><td>Panne r&eacute;seau ou congestion de cellule</td><td>Autres compteurs de la m&ecirc;me cellule, statut op&eacute;rateur</td></tr>
+        <tr><td>Arr&ecirc;t sur un seul compteur</td><td>SIM barr&eacute;e, antenne ou d&eacute;faut du compteur</td><td>Qualit&eacute; du signal et &eacute;tat de la SIM sur ce compteur</td></tr>
+        <tr><td>Remont&eacute;es tardives ou par paquets</td><td>Signal faible provoquant des reprises</td><td>Position de l&rsquo;antenne et blindage de l&rsquo;enveloppe</td></tr>
+        <tr><td>Volume de donn&eacute;es &eacute;puis&eacute;</td><td>Cadence de remont&eacute;e trop courte pour le forfait</td><td>Intervalle r&eacute;gl&eacute; face &agrave; l&rsquo;enveloppe de donn&eacute;es de la SIM</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Ce qu&rsquo;il faut pr&eacute;ciser avant de commander</h2>
+    <ul>
+      <li><strong>Transport et g&eacute;n&eacute;ration.</strong> GPRS seul, ou une plateforme qui propose aussi 4G ou NB-IoT dans le m&ecirc;me bo&icirc;tier et avec le m&ecirc;me protocole.</li>
+      <li><strong>Protocole.</strong> Ce que parle le syst&egrave;me central, et si le compteur le g&egrave;re nativement ou via un convertisseur.</li>
+      <li><strong>Organisation de la SIM.</strong> Fournie par l&rsquo;op&eacute;rateur, APN priv&eacute; ou eSIM int&eacute;gr&eacute;e. L&rsquo;APN priv&eacute; est la norme pour un parc de distributeur.</li>
+      <li><strong>Classes de donn&eacute;es.</strong> Index, courbe de charge et journal d&rsquo;&eacute;v&eacute;nements, avec la p&eacute;riode d&rsquo;int&eacute;gration annonc&eacute;e.</li>
+      <li><strong>Actions &agrave; distance.</strong> Relais de coupure, mise &agrave; jour tarifaire et acceptation de jetons si le mod&egrave;le &eacute;conomique les exige.</li>
+      <li><strong>Secours local.</strong> Un port optique ou un afficheur, pour que le compteur reste lisible quand le r&eacute;seau tombe.</li>
+      <li><strong>Antenne et enveloppe.</strong> Pr&eacute;voir une antenne ext&eacute;rieure lorsque le compteur est dans un coffret m&eacute;tallique.</li>
+    </ul>
+
+    <h2>Les compteurs GPRS YOMIN</h2>
+    <p>YOMIN fabrique des compteurs GPRS en format monophas&eacute; et triphas&eacute;, dont des mod&egrave;les pr&eacute;pay&eacute;s qui acceptent un cr&eacute;dit STS et le confirment par la m&ecirc;me liaison cellulaire. La m&ecirc;me famille de bo&icirc;tiers sur rail DIN porte les compteurs sans communication, si bien qu&rsquo;un d&eacute;ploiement mixte partage les rechanges et les habitudes de c&acirc;blage.</p>
+    <p>Les pages concern&eacute;es sont <a href="/products/energy-meter/smart-prepaid-electric-3-phase-gprs-electricity-digital-kwh-meter-energy-meters.html">le compteur triphas&eacute; GPRS pr&eacute;pay&eacute;</a>, <a href="/products/energy-meter/single-phase-sts-type-gprs-smart-prepayment-energy-meter.html">le compteur monophas&eacute; STS GPRS</a>, <a href="/products/energy-meter/230v-single-phase-smart-electricity-meter-with-lcd-energy-monitor-wifi-gprs-smart-power-meter-din-rail-install.html">le compteur monophas&eacute; 230 V WiFi et GPRS</a> et <a href="/products/energy-meter/101-new-typers485-modbus-3-phase-sts-gprs-electric-kwh-meter-lcd-display-digital-kwh-meter-3-phase-digital-wat.html">le compteur triphas&eacute; STS avec RS485 et GPRS</a>. Toute la gamme figure sur <a href="/products/energy-meter">la page cat&eacute;gorie des compteurs d&rsquo;&eacute;nergie</a>.</p>
+
+    <h2>Questions fr&eacute;quentes</h2>
+      <h3>Qu&rsquo;est-ce qu&rsquo;un compteur d&rsquo;&eacute;nergie GPRS ?</h3>
+      <p>C&rsquo;est un compteur &eacute;lectrique &eacute;quip&eacute; d&rsquo;un modem cellulaire et d&rsquo;une SIM, dont les index et les &eacute;v&eacute;nements se lisent par le r&eacute;seau mobile et qui peut &ecirc;tre pilot&eacute; &agrave; distance, sans bus local, passerelle ni r&eacute;seau du site.</p>
+      <h3>Un compteur GPRS a-t-il besoin de WiFi ou d&rsquo;une passerelle sur site ?</h3>
+      <p>Non. Chaque compteur se connecte directement au r&eacute;seau mobile, ce qui convient aux installations dispers&eacute;es sans tableau ni informatique locale. Le WiFi et LoRaWAN sont des alternatives qui d&eacute;pendent d&rsquo;une infrastructure locale ou d&rsquo;une passerelle.</p>
+      <h3>Que se passe-t-il lorsque le r&eacute;seau mobile est indisponible ?</h3>
+      <p>Le compteur continue de mesurer et conserve ses index et son journal ; seule la remont&eacute;e s&rsquo;arr&ecirc;te. Au retour de la liaison, les donn&eacute;es stock&eacute;es peuvent &ecirc;tre collect&eacute;es, et l&rsquo;afficheur ou le port optique permet une lecture manuelle entre-temps.</p>
+      <h3>L&rsquo;arr&ecirc;t de la 2G est-il un probl&egrave;me pour les compteurs GPRS ?</h3>
+      <p>C&rsquo;est une question de cycle de vie plut&ocirc;t qu&rsquo;une panne. Plusieurs op&eacute;rateurs ont annonc&eacute; ou achev&eacute; l&rsquo;arr&ecirc;t de la 2G : un parc pr&eacute;vu en GPRS doit donc v&eacute;rifier si la m&ecirc;me plateforme existe en 4G ou NB-IoT et si le syst&egrave;me central g&egrave;re les deux.</p>
+      <h3>Un compteur GPRS peut-il fonctionner en pr&eacute;pay&eacute; ?</h3>
+      <p>Oui. Les mod&egrave;les pr&eacute;pay&eacute;s acceptent un jeton de cr&eacute;dit et le confirment par la liaison cellulaire, et la m&ecirc;me connexion transporte l&rsquo;ordre de coupure lorsque le cr&eacute;dit atteint z&eacute;ro.</p>
+      <h3>Comment les donn&eacute;es sont-elles s&eacute;curis&eacute;es ?</h3>
+      <p>Par des identifiants propres &agrave; chaque compteur, un transport chiffr&eacute; entre le compteur et le syst&egrave;me central, et une trace des commandes envoy&eacute;es. Sur un appareil capable de couper une fourniture &agrave; distance, ce sont des exigences et non des options.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous d&eacute;ployez des compteurs l&agrave; o&ugrave; il n&rsquo;y a pas de r&eacute;seau local ?</h2>
+    <p>Indiquez-nous la phase, le protocole de votre syst&egrave;me central, l&rsquo;organisation de la SIM et la cadence de remont&eacute;e. Nous fabriquons des compteurs GPRS en monophas&eacute; et triphas&eacute;, y compris des mod&egrave;les pr&eacute;pay&eacute;s STS.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <p style="margin-top:14px">Vous pr&eacute;f&eacute;rez envoyer un sch&eacute;ma r&eacute;seau ou une sp&eacute;cification de syst&egrave;me central ? &Eacute;crivez-nous sur <a href="https://wa.me/8619016543301">WhatsApp +86 190 1654 3301</a> et nous r&eacute;pondrons avec la configuration correspondante.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy" width="2012" height="2011"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
