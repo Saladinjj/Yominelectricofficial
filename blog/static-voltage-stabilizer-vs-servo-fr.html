@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stabilisateur statique ou stabilisateur à servo-moteur : lequel convient à la charge ? | Yomin Electric</title>
+<meta name="description" content="Stabilisateurs statique, servo-moteur et à relais comparés : rapidité de correction, précision, pièces d'usure, compatibilité de charge et dimensionnement en monophasé ou triphasé.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/static-voltage-stabilizer-vs-servo/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Stabilisateur statique ou stabilisateur à servo-moteur : lequel convient à la charge ?",
+      "description": "Stabilisateurs statique, servo-moteur et à relais comparés : rapidité de correction, précision, pièces d'usure, compatibilité de charge et dimensionnement en monophasé ou triphasé.",
+      "image": "https://www.yominelectric.com/assets/images/blog/static-voltage-stabilizer-vs-servo/hero.png",
+      "datePublished": "2026-11-27",
+      "dateModified": "2026-11-27",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo-fr"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Un stabilisateur statique est-il meilleur qu'un servo-moteur ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il est plus rapide et sans pièce mobile, ce qui convient aux électroniques et aux variations brusques. Il n'est pas meilleur pour les charges motrices ni pour un réseau à très large plage, où le servo encaisse mieux démarrage et surcharge. C'est la charge qui décide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle précision pour un servo par rapport à un statique ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un servo tient typiquement ± 1 % à ± 3 % de la tension de consigne ; un statique est souvent annoncé autour de ± 1 %. Sur la plupart des charges de bâtiment, l'écart compte moins qu'un dimensionnement correct."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un stabilisateur statique a-t-il des pièces d'usure ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pas de pièce mécanique, mais les semi-conducteurs de puissance et les condensateurs de bus continu vieillissent, et leur durée dépend de la température interne. Un statique n'est pas sans entretien : son entretien est différé."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un servo peut-il encaisser le courant de démarrage d'un moteur ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mieux qu'un statique de même puissance, car le variac et le moteur supportent une surcharge brève. L'appareil doit malgré tout être dimensionné sur le courant de démarrage lorsqu'une grosse pompe ou un compresseur domine la charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "YOMIN fabrique-t-il des stabilisateurs statiques ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Notre gamme est à servo-moteur et à relais, monophasée et triphasée. Nous le disons lorsqu'un cahier des charges impose un statique, plutôt que de proposer un substitut."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+    <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Stabilisateurs de tension</span></div>
+    <span class="bh-tag">Guides d'achat</span>
+    <h1 class="bh-title">Stabilisateur statique ou stabilisateur à servo-moteur : choisir par la charge, pas par la fiche technique</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>27 novembre 2026</span>
+      <span class="divider"></span>
+      <span>9 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+        <picture>
+      <source srcset="/assets/images/blog/static-voltage-stabilizer-vs-servo/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/static-voltage-stabilizer-vs-servo/hero.png" alt="Stabilisateur de tension YOMIN TND SVC monophasé à servo-moteur cuivre pour réseaux 110 V et 230 V" loading="eager" fetchpriority="high" decoding="async" width="1280" height="720">
+    </picture>
+
+
+<p><strong>Réponse directe :</strong> un stabilisateur statique corrige plus vite et n'a aucune pièce mobile, ce qui convient aux électroniques sensibles, aux laboratoires et aux charges qui varient par à-coups. Un stabilisateur à servo-moteur corrige sans palier et tolère mieux les surcharges et les démarrages moteurs, ce qui convient aux compresseurs, aux pompes, aux ateliers et aux bâtiments entiers sur réseau faible. Le stabilisateur à relais reste le choix économique lorsque la charge accepte une sortie par paliers. La décision se prend sur le profil de charge et le niveau de défaut du réseau, pas sur la fiche qui annonce la meilleure précision.</p>
+<p>Les trois corrigent la tension. Ce qui les distingue, c'est la manière de corriger, ce qui s'use, et ce que subit la charge pendant une correction importante.</p>
+
+<h2>Trois technologies, trois modes de défaillance</h2>
+<table>
+  <thead><tr><th>Type</th><th>Méthode de correction</th><th>Précision typique</th><th>Réponse à un échelon</th><th>Pièces d'usure</th><th>Usage idéal</th></tr></thead>
+  <tbody>
+    <tr><td>Statique (IGBT / MLI)</td><td>Commutation électronique d'un enroulement de correction</td><td>Environ &plusmn;1&nbsp;% de la consigne</td><td>Très rapide, en un ou deux cycles</td><td>Aucune pièce mécanique ; semi-conducteurs et condensateurs vieillissent</td><td>Électronique, laboratoire, médical, variations brutales de charge</td></tr>
+    <tr><td>Servo-moteur</td><td>Variac entraîné par moteur, déplacement continu</td><td>&plusmn;1&nbsp;% à &plusmn;3&nbsp;%</td><td>Plus lent : de la fraction de seconde à quelques secondes</td><td>Balais carbone, engrenages de réduction</td><td>Moteurs, compresseurs, bâtiments, larges plages d'entrée</td></tr>
+    <tr><td>Relais / à paliers</td><td>Sélection discrète de prises par contacteurs</td><td>&plusmn;8&nbsp;% à &plusmn;10&nbsp;%</td><td>Par paliers, avec sauts visibles</td><td>Contacts de relais</td><td>Éclairage, charges tolérantes, budgets serrés</td></tr>
+  </tbody>
+</table>
+<p>Lisez ce tableau comme un ensemble de compromis, non comme un classement. Le statique n'est pas « meilleur » que le servo : il est meilleur pour un autre travail, et il coûte davantage à kVA égal parce que l'électronique de puissance est la partie chère.</p>
+
+<h2>Ce qu'un stabilisateur statique fait bien</h2>
+<p>Un statique n'a ni balai, ni engrenage, ni moteur : rien ne s'use en service normal. La correction est électronique et pratiquement immédiate, ce qui compte lorsque la charge elle-même commute par blocs &mdash; batterie de redresseurs, baie de serveurs, système d'imagerie. La sortie est lisse, sans saut de prise, et l'appareil est silencieux : c'est pourquoi on le trouve dans des locaux occupés.</p>
+<p>Les limites sont tout aussi réelles. Les semi-conducteurs de puissance ont une fenêtre de surcharge définie : ils absorbent un court pic puis se protègent, alors qu'un servo porte simplement la surcharge un moment. Un statique tolère moins bien un réseau déformé et les charges qui réinjectent des harmoniques. Et une panne de statique est généralement électronique, donc une intervention, alors qu'un servo aux balais usés prévient et peut souvent continuer à tourner.</p>
+
+<h2>Là où le servo-moteur gagne</h2>
+<p>Le servo déplace un variac par moteur : la correction est continue et non graduée. Sur un réseau qui chute à 150&nbsp;V pendant dix minutes puis revient à 230&nbsp;V, c'est cette continuité qui empêche un compresseur de déclencher sur sa protection. Le même mécanisme encaisse bien mieux le courant de démarrage et les surcharges brèves que l'électronique de puissance, ce qui en fait le choix par défaut des ateliers, des pompes, des chambres froides et des bâtiments.</p>
+<p>Il n'est pas sans entretien. Les balais carbone s'usent et le réducteur demande une inspection périodique. La réponse d'ingénierie consiste à spécifier un appareil dont les balais sont accessibles sans déposer l'enveloppe du mur &mdash; pas à éviter la technologie.</p>
+
+<h2>Le relais n'est pas un compromis partout</h2>
+<p>Un stabilisateur à relais sélectionne des prises discrètes : la sortie bouge par sauts de quelques pour cent. Pour l'éclairage, le chauffage résistif et les équipements à large tolerance d'entrée, c'est parfaitement suffisant, et l'appareil est moins cher, plus léger et plus simple à entretenir. Il devient le mauvais choix lorsque la charge est un moteur qui n'aime pas les petits échelons répétés, ou lorsque l'électronique en aval traite chaque échelon comme un événement.</p>
+
+<h2>Le dimensionnement suit la même arithmétique pour les trois</h2>
+<ul>
+  <li><strong>Puissance raccordée en VA.</strong> Additionnez les valeurs en fonctionnement de tout ce que l'appareil alimentera. Convertissez les watts en VA avec un facteur de 1,5&ndash;2 lorsqu'il y a des moteurs.</li>
+  <li><strong>Courant de démarrage.</strong> Une pompe ou un compresseur peut appeler plusieurs fois le courant nominal pendant une fraction de seconde. Dimensionnez sur le démarrage lorsque la charge est motorisée, ou acceptez que l'appareil le limite.</li>
+  <li><strong>Plage d'entrée.</strong> Comparez la plage de correction à la tension la plus basse réellement mesurée sur site, pas à la valeur nominale. Un appareil 180&ndash;250&nbsp;V est inutile là où le réseau descend à 140&nbsp;V.</li>
+  <li><strong>Nombre de phases et équilibrage.</strong> Un service triphasé exige un appareil triphasé, ou un appareil par phase si la charge est très déséquilibrée.</li>
+</ul>
+<p>Le choix technologique change la marge nécessaire, pas le calcul de charge. Un statique dimensionné exactement à la charge raccordée n'a aucune réserve pour un échelon ; un servo de même puissance l'absorbera mécaniquement. En pratique, on prend donc un peu plus de kVA du côté statique.</p>
+
+<h2>Les charges qui tranchent la décision</h2>
+<table>
+  <thead><tr><th>Charge</th><th>Choix habituel</th><th>Raison</th></tr></thead>
+  <tbody>
+    <tr><td>Climatiseurs, réfrigérateurs, chambres froides</td><td>Servo</td><td>Courant de démarrage et correction continue adaptés au compresseur</td></tr>
+    <tr><td>Machines d'atelier, postes de soudage</td><td>Servo</td><td>Encaisse mécaniquement surcharges et variations brutales</td></tr>
+    <tr><td>Équipements de laboratoire et médicaux</td><td>Statique</td><td>Sortie précise, sans saut de prise ni poussière de balais</td></tr>
+    <tr><td>Baies informatiques et télécom</td><td>Statique</td><td>Correction rapide et fonctionnement silencieux en local occupé</td></tr>
+    <tr><td>Éclairage et services généraux</td><td>Relais</td><td>Sortie par paliers acceptable et coût plus bas</td></tr>
+    <tr><td>Bâtiment entier sur réseau rural faible</td><td>Servo triphasé</td><td>Large plage d'entrée et correction continue sur charge mixte</td></tr>
+  </tbody>
+</table>
+
+<h2>Ce qu'aucun ne corrige</h2>
+<p>Un stabilisateur régule l'amplitude. Il n'arrête pas une surtension de quelques microsecondes &mdash; c'est le rôle d'un parasurtenseur au tableau. Il ne maintient pas la charge pendant une coupure &mdash; c'est un onduleur ou un groupe. Il ne corrige ni un neutre desserré, ni un circuit sous-dimensionné, ni une connexion défectueuse, qui produisent tous des symptômes ressemblant à une instabilité de tension. Il ne corrige pas non plus la fréquence ni la distorsion harmonique.</p>
+<p>Les exploitants qui installent une stabilisation en attendant qu'elle règle tout concluent généralement qu'elle a échoué. Ceux qui empilent parasurtenseur, protection de tension et stabilisation obtiennent le résultat promis.</p>
+
+<h2>Ce que YOMIN fabrique</h2>
+<p>Notre gamme de stabilisateurs est à servo-moteur et à relais, et nous le disons clairement plutôt que de chiffrer un statique que nous ne fabriquons pas :</p>
+<ul>
+  <li><strong>Stabilisateurs monophasés à servo-moteur</strong> &mdash; série TND SVC, 10&nbsp;kW / 15&nbsp;kVA, servo-moteur cuivre, 110&nbsp;V, 220&nbsp;V et 230&nbsp;V, 50&nbsp;Hz. C'est le servo-moteur cuivre qui donne la correction continue décrite plus haut.</li>
+  <li><strong>Régulateur triphasé</strong> &mdash; série 4SVC TNS à affichage LED pour service triphasé, 50&nbsp;Hz.</li>
+  <li><strong>Type relais</strong> &mdash; WPS 3000&nbsp;VA mural pour la climatisation et charges similaires, là où une sortie par paliers suffit.</li>
+</ul>
+<p>Si un cahier des charges impose un stabilisateur statique, indiquez la charge et la raison de cette prescription. Nous orienterons vers le servo ou le relais qui répond au besoin, ou nous dirons clairement que l'affaire exige un statique et sort de notre gamme. La gamme complète est sous <a href="/products/voltage-stabilizer-regulator">stabilisateurs et régulateurs de tension</a>, et l'arithmétique de dimensionnement est détaillée dans notre <a href="/blog/voltage-stabilizer-sizing-guide">guide de dimensionnement</a> et notre <a href="/blog/servo-voltage-stabilizer-guide">guide du stabilisateur servo</a>.</p>
+
+    <h2>Questions fréquentes</h2>
+    <h3>Un stabilisateur statique est-il meilleur qu'un servo-moteur ?</h3>
+    <p>Il est plus rapide et sans pièce mobile, ce qui convient aux électroniques et aux variations brusques. Il n'est pas meilleur pour les charges motrices ni pour un réseau à très large plage, où le servo encaisse mieux démarrage et surcharge. C'est la charge qui décide.</p>
+    <h3>Quelle précision pour un servo par rapport à un statique ?</h3>
+    <p>Un servo tient typiquement ± 1 % à ± 3 % de la tension de consigne ; un statique est souvent annoncé autour de ± 1 %. Sur la plupart des charges de bâtiment, l'écart compte moins qu'un dimensionnement correct.</p>
+    <h3>Un stabilisateur statique a-t-il des pièces d'usure ?</h3>
+    <p>Pas de pièce mécanique, mais les semi-conducteurs de puissance et les condensateurs de bus continu vieillissent, et leur durée dépend de la température interne. Un statique n'est pas sans entretien : son entretien est différé.</p>
+    <h3>Un servo peut-il encaisser le courant de démarrage d'un moteur ?</h3>
+    <p>Mieux qu'un statique de même puissance, car le variac et le moteur supportent une surcharge brève. L'appareil doit malgré tout être dimensionné sur le courant de démarrage lorsqu'une grosse pompe ou un compresseur domine la charge.</p>
+    <h3>YOMIN fabrique-t-il des stabilisateurs statiques ?</h3>
+    <p>Non. Notre gamme est à servo-moteur et à relais, monophasée et triphasée. Nous le disons lorsqu'un cahier des charges impose un statique, plutôt que de proposer un substitut.</p>
+  </section>
+
+    <section class="cta-section">
+    <h2>Vous spécifiez un stabilisateur pour un bâtiment ou une machine ?</h2>
+    <p>Envoyez la charge raccordée, la tension d'entrée la plus basse mesurée et la configuration des phases. Nous fabriquons des stabilisateurs monophasés servo, triphasés et à relais sous management qualité ISO 9001 et confirmons type et puissance par écrit.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Écrivez-nous sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy" width="2012" height="2011"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

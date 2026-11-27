@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estabilizador de tensión estático o de servomotor: ¿cuál encaja con la carga? | Yomin Electric</title>
+<meta name="description" content="Estabilizadores estático, de servomotor y de relés comparados: velocidad de corrección, precisión, piezas de desgaste, compatibilidad de carga y dimensionado en monofásico o trifásico.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/static-voltage-stabilizer-vs-servo/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Estabilizador de tensión estático o de servomotor: ¿cuál encaja con la carga?",
+      "description": "Estabilizadores estático, de servomotor y de relés comparados: velocidad de corrección, precisión, piezas de desgaste, compatibilidad de carga y dimensionado en monofásico o trifásico.",
+      "image": "https://www.yominelectric.com/assets/images/blog/static-voltage-stabilizer-vs-servo/hero.png",
+      "datePublished": "2026-11-27",
+      "dateModified": "2026-11-27",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/static-voltage-stabilizer-vs-servo-es"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Es mejor un estabilizador estático que uno de servomotor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es más rápido y no tiene piezas móviles, lo que encaja con electrónica y cambios bruscos. No es mejor para cargas motóricas ni para redes con un rango de entrada muy amplio, donde el servomotor tolera mejor arranque y sobrecarga. Decide la carga."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué precisión tiene un servomotor frente a un estático?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un servomotor suele mantener ± 1 % a ± 3 % de la tensión de consigna; un estático se anuncia habitualmente en torno a ± 1 %. En la mayoría de cargas de edificio la diferencia pesa menos que un dimensionado correcto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Tiene piezas de desgaste un estabilizador estático?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No tiene piezas mecánicas, pero los semiconductores de potencia y los condensadores del bus de continua envejecen, y su vida depende de la temperatura interior. Un estático no es libre de mantenimiento: su mantenimiento se aplaza."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puede un servomotor con la corriente de arranque de un motor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mejor que un estático de la misma potencia, porque el variac y el motor soportan una sobrecarga breve. Aun así debe dimensionarse sobre la corriente de arranque cuando una bomba o un compresor grande domina la carga."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿YOMIN fabrica estabilizadores estáticos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Nuestra gama es de servomotor y de relés, monofásica y trifásica. Lo decimos cuando un pliego exige un estático, en lugar de ofrecer un sustituto."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+
+    <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Estabilizadores de tensión</span></div>
+    <span class="bh-tag">Guías de compra</span>
+    <h1 class="bh-title">Estabilizador estático o de servomotor: elegir por la carga, no por la ficha técnica</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>27 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>9 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+        <picture>
+      <source srcset="/assets/images/blog/static-voltage-stabilizer-vs-servo/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/static-voltage-stabilizer-vs-servo/hero.png" alt="Estabilizador de tensión YOMIN TND SVC monofásico con servomotor de cobre para redes de 110 V y 230 V" loading="eager" fetchpriority="high" decoding="async" width="1280" height="720">
+    </picture>
+
+
+<p><strong>Respuesta directa:</strong> un estabilizador estático corrige más rápido y no tiene piezas móviles, lo que encaja con electrónica sensible, laboratorios y cargas que cambian a saltos. Un estabilizador de servomotor corrige sin escalones y tolera mejor las sobrecargas y el arranque de motores, lo que encaja con compresores, bombas, talleres y edificios completos sobre una red débil. El estabilizador de relés es la opción económica cuando la carga admite una salida escalonada. La decisión la toman el perfil de carga y el nivel de defecto de la red, no la ficha que anuncia la precisión más ajustada.</p>
+<p>Los tres corrigen la tensión. Lo que los separa es cómo la corrigen, qué se desgasta y qué le ocurre a la carga mientras se hace una corrección grande.</p>
+
+<h2>Tres tecnologías, tres modos de fallo</h2>
+<table>
+  <thead><tr><th>Tipo</th><th>Método de corrección</th><th>Precisión típica</th><th>Respuesta a un escalón</th><th>Piezas de desgaste</th><th>Uso idóneo</th></tr></thead>
+  <tbody>
+    <tr><td>Estático (IGBT / PWM)</td><td>Conmutación electrónica de un devanado de corrección</td><td>Alrededor de &plusmn;1&nbsp;% de la consigna</td><td>Muy rápida, en uno o dos ciclos</td><td>Ninguna mecánica; semiconductores y condensadores envejecen</td><td>Electrónica, laboratorio, equipos médicos, escalones bruscos</td></tr>
+    <tr><td>Servomotor</td><td>Variac movido por motor, recorrido continuo</td><td>&plusmn;1&nbsp;% a &plusmn;3&nbsp;%</td><td>Más lenta; de fracciones de segundo a segundos</td><td>Escobillas de carbón, engranajes reductores</td><td>Motores, compresores, edificios, rangos de entrada amplios</td></tr>
+    <tr><td>Relés / escalonado</td><td>Selección discreta de tomas por contactores</td><td>&plusmn;8&nbsp;% a &plusmn;10&nbsp;%</td><td>Escalonada, con saltos visibles</td><td>Contactos de relé</td><td>Iluminación, cargas tolerantes, presupuestos ajustados</td></tr>
+  </tbody>
+</table>
+<p>Lea la tabla como un conjunto de compromisos, no como una clasificación. El estático no es «mejor» que el de servomotor: es mejor para otro trabajo, y cuesta más por kVA porque la electrónica de potencia es la parte cara.</p>
+
+<h2>Lo que un estabilizador estático hace bien</h2>
+<p>Un estático no tiene escobillas, ni engranajes, ni motor, así que no hay nada que se desgaste en servicio normal. La corrección es electrónica y prácticamente inmediata, lo que importa cuando la propia carga conmuta por bloques: bancos de rectificadores, racks de servidores, sistemas de imagen. La salida es lisa, sin saltos de toma, y el equipo es silencioso, de ahí que aparezca en salas donde trabaja gente.</p>
+<p>Los límites son igual de reales. Los semiconductores de potencia tienen una ventana de sobrecarga definida: aguantan un pico breve y después se protegen, mientras que un servomotor simplemente soporta la sobrecarga un tiempo. Un estático tolera peor una red muy distorsionada y las cargas que le devuelven armónicos. Y un fallo del estático suele ser electrónico y exige una visita técnica, mientras que un servomotor con escobillas gastadas avisa y a menudo sigue funcionando.</p>
+
+<h2>Dónde gana el servomotor</h2>
+<p>El servomotor mueve un variac, así que la corrección es continua en lugar de escalonada. En una red que cae a 150&nbsp;V durante diez minutos y luego vuelve a 230&nbsp;V, esa continuidad es lo que evita que un compresor salte por su propia protección. El mismo mecanismo aguanta mucho mejor la corriente de arranque y las sobrecargas breves que la electrónica de potencia, y por eso sigue siendo la opción por defecto en talleres, bombas, cámaras frigoríficas y edificios completos.</p>
+<p>No está exento de mantenimiento. Las escobillas de carbón se gastan y el reductor necesita inspección periódica. La respuesta de ingeniería es especificar un equipo con acceso a las escobillas sin descolgar la envolvente de la pared, no renunciar a la tecnología.</p>
+
+<h2>El de relés no es un compromiso en todas partes</h2>
+<p>Un estabilizador de relés selecciona tomas discretas, así que la salida se mueve en saltos de unos pocos por ciento. Para iluminación, calefacción resistiva y equipos con amplia tolerancia de entrada es suficiente, y el equipo es más barato, más ligero y más fácil de mantener. Se vuelve la opción equivocada cuando la carga es un motor que no soporta escalones pequeños repetidos, o cuando la electrónica aguas abajo interpreta cada escalón como un evento.</p>
+
+<h2>El dimensionado sigue la misma aritmética en los tres casos</h2>
+<ul>
+  <li><strong>Potencia conectada en VA.</strong> Sume los valores en funcionamiento de todo lo que alimentará el equipo. Convierta vatios a VA con un factor de 1,5&ndash;2 cuando haya motores.</li>
+  <li><strong>Corriente de arranque.</strong> Una bomba o un compresor puede pedir varias veces la corriente nominal durante una fracción de segundo. Dimensione sobre el arranque cuando la carga sea motórica, o acepte que el equipo la limite.</li>
+  <li><strong>Rango de entrada.</strong> Compare el rango de corrección con la tensión más baja medida realmente en obra, no con la nominal. Un equipo de 180&ndash;250&nbsp;V es inútil donde la red baja a 140&nbsp;V.</li>
+  <li><strong>Número de fases y equilibrio.</strong> Un servicio trifásico exige un equipo trifásico, o uno por fase si la carga está muy desequilibrada.</li>
+</ul>
+<p>La elección tecnológica cambia el margen necesario, no el cálculo de carga. Un estático dimensionado exactamente a la carga conectada no tiene reserva para un escalón; un servomotor de la misma potencia lo absorberá mecánicamente. En la práctica eso significa pedir algo más de kVA en el lado estático.</p>
+
+<h2>Las cargas que deciden</h2>
+<table>
+  <thead><tr><th>Carga</th><th>Elección habitual</th><th>Motivo</th></tr></thead>
+  <tbody>
+    <tr><td>Aires acondicionados, frigoríficos, cámaras</td><td>Servomotor</td><td>La corriente de arranque y la corrección continua encajan con el compresor</td></tr>
+    <tr><td>Maquinaria de taller, equipos de soldadura</td><td>Servomotor</td><td>Aguanta sobrecargas y cambios bruscos de forma mecánica</td></tr>
+    <tr><td>Equipos de laboratorio y médicos</td><td>Estático</td><td>Salida ajustada, sin saltos de toma ni polvo de escobillas</td></tr>
+    <tr><td>Racks informáticos y de telecomunicaciones</td><td>Estático</td><td>Corrección rápida y funcionamiento silencioso en sala ocupada</td></tr>
+    <tr><td>Iluminación y servicios generales</td><td>Relés</td><td>La salida escalonada es aceptable y el coste es menor</td></tr>
+    <tr><td>Edificio completo sobre red rural débil</td><td>Servomotor trifásico</td><td>Rango de entrada amplio y corrección continua en carga mixta</td></tr>
+  </tbody>
+</table>
+
+<h2>Lo que ninguno corrige</h2>
+<p>Un estabilizador regula la amplitud. No detiene una sobretensión de microsegundos &mdash; eso es un protector de sobretensiones en el cuadro. No mantiene la carga durante un corte &mdash; eso es un SAI o un generador. No corrige un neutro flojo, un circuito infradimensionado ni una conexión defectuosa, que producen síntomas parecidos a la inestabilidad de tensión. Tampoco corrige la frecuencia ni la distorsión armónica.</p>
+<p>Quien instala estabilización esperando que lo resuelva todo suele concluir que el estabilizador falló. Quien combina protección de sobretensiones, protección de tensión y estabilización obtiene el resultado prometido.</p>
+
+<h2>Qué fabrica YOMIN</h2>
+<p>Nuestra gama de estabilizadores es de servomotor y de relés, y lo decimos con claridad en lugar de cotizar un estático que no fabricamos:</p>
+<ul>
+  <li><strong>Estabilizadores monofásicos de servomotor</strong> &mdash; serie TND SVC, 10&nbsp;kW / 15&nbsp;kVA, servomotor de cobre, 110&nbsp;V, 220&nbsp;V y 230&nbsp;V, 50&nbsp;Hz. El servomotor de cobre es lo que aporta la corrección continua descrita arriba.</li>
+  <li><strong>Regulador trifásico</strong> &mdash; serie 4SVC TNS con display LED para servicio trifásico, 50&nbsp;Hz.</li>
+  <li><strong>Tipo relés</strong> &mdash; WPS 3000&nbsp;VA de pared para aire acondicionado y cargas similares, donde basta una salida escalonada.</li>
+</ul>
+<p>Si un pliego exige un estabilizador estático, indíquenos la carga y el motivo de la prescripción. Le orientaremos hacia el equipo de servomotor o de relés que cumpla el requisito, o diremos claramente que el trabajo necesita un estático y queda fuera de nuestra gama. La gama completa está en <a href="/products/voltage-stabilizer-regulator">estabilizadores y reguladores de tensión</a>, y la aritmética de dimensionado se desarrolla en nuestra <a href="/blog/voltage-stabilizer-sizing-guide">guía de dimensionado</a> y en la <a href="/blog/servo-voltage-stabilizer-guide">guía del estabilizador de servomotor</a>.</p>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Es mejor un estabilizador estático que uno de servomotor?</h3>
+    <p>Es más rápido y no tiene piezas móviles, lo que encaja con electrónica y cambios bruscos. No es mejor para cargas motóricas ni para redes con un rango de entrada muy amplio, donde el servomotor tolera mejor arranque y sobrecarga. Decide la carga.</p>
+    <h3>¿Qué precisión tiene un servomotor frente a un estático?</h3>
+    <p>Un servomotor suele mantener ± 1 % a ± 3 % de la tensión de consigna; un estático se anuncia habitualmente en torno a ± 1 %. En la mayoría de cargas de edificio la diferencia pesa menos que un dimensionado correcto.</p>
+    <h3>¿Tiene piezas de desgaste un estabilizador estático?</h3>
+    <p>No tiene piezas mecánicas, pero los semiconductores de potencia y los condensadores del bus de continua envejecen, y su vida depende de la temperatura interior. Un estático no es libre de mantenimiento: su mantenimiento se aplaza.</p>
+    <h3>¿Puede un servomotor con la corriente de arranque de un motor?</h3>
+    <p>Mejor que un estático de la misma potencia, porque el variac y el motor soportan una sobrecarga breve. Aun así debe dimensionarse sobre la corriente de arranque cuando una bomba o un compresor grande domina la carga.</p>
+    <h3>¿YOMIN fabrica estabilizadores estáticos?</h3>
+    <p>No. Nuestra gama es de servomotor y de relés, monofásica y trifásica. Lo decimos cuando un pliego exige un estático, en lugar de ofrecer un sustituto.</p>
+  </section>
+
+    <section class="cta-section">
+    <h2>¿Está especificando un estabilizador para un edificio o una máquina?</h2>
+    <p>Envíe la carga conectada, la tensión de entrada más baja que haya medido y la configuración de fases. Fabricamos estabilizadores monofásicos de servomotor, trifásicos y de relés bajo gestión de calidad ISO 9001 y confirmamos tipo y potencia por escrito.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Escríbanos por WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy" width="2012" height="2011"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
