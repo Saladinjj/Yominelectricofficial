@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estabilizador trifásico con carga desequilibrada: desplazamiento del neutro y dimensionado por fase | Yomin Electric</title>
+<meta name="description" content="Por qué un estabilizador trifásico dimensionado por kVA total sigue dejando caer una fase: cómo funciona el desplazamiento del neutro, qué cargas lo sufren y cómo dimensionar y especificar una regulación por fase.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/three-phase-voltage-stabilizer-unbalanced-loads/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Estabilizador trifásico con carga desequilibrada: desplazamiento del neutro y dimensionado por fase",
+      "description": "Por qué un estabilizador trifásico dimensionado por kVA total sigue dejando caer una fase: cómo funciona el desplazamiento del neutro, qué cargas lo sufren y cómo dimensionar y especificar una regulación por fase.",
+      "image": "https://www.yominelectric.com/assets/images/blog/three-phase-voltage-stabilizer-unbalanced-loads-es/hero.png",
+      "datePublished": "2026-11-28",
+      "dateModified": "2026-11-28",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Por qué una fase sigue baja si mi estabilizador trifásico funciona?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Porque el equipo probablemente corrige una señal de error única o una media de las tres fases. Con carga desequilibrada esa media puede quedar en banda mientras la fase cargada sigue baja y las ligeras suben. Lo que lo corrige es la regulación por fase respecto al neutro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo dimensionar un estabilizador trifásico por kVA total?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Solo si la carga está realmente equilibrada. En un cuadro de cuatro hilos con cargas monofásicas, dimensione cada fase para su propia carga más desfavorable, porque el rango de corrección lo consume primero la fase más pesada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hace falta un estabilizador trifásico si las cargas son sobre todo motores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Normalmente basta un equipo que regule entre fases, porque los motores responden a la tensión de secuencia positiva y toleran la dispersión fase-neutro. Añada regulación por fase cuando el mismo cuadro alimente también electrónica, controles o iluminación monofásica."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa si se abre el neutro en una red de cuatro hilos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Las tensiones fase-neutro dejan de estar sujetas por el punto neutro y pueden subir muy por encima del nominal en las fases poco cargadas, dañando los equipos conectados. Por eso el neutro nunca se corta ni se fusiona en ese tipo de red, y por eso importa su calibre."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Estabilizadores de tensión</span></div>
+    <span class="bh-tag">Guías de compra</span>
+    <h1 class="bh-title">Estabilizador trifásico con carga desequilibrada: desplazamiento del neutro y dimensionado por fase</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>28 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/three-phase-voltage-stabilizer-unbalanced-loads/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/three-phase-voltage-stabilizer-unbalanced-loads/hero.png" alt="Estabilizador de potencia YOMIN trifásico de 15 kVA serie TND SVC con regulador automático de tensión para cuadros de distribución trifásicos" loading="eager" fetchpriority="high" decoding="async" width="1280" height="720">
+    </picture>
+    <p>La mayoría de los estabilizadores trifásicos se compran por una sola cifra: los kVA totales. Con una carga equilibrada es un atajo razonable. Con la carga que tienen realmente la mayoría de las instalaciones industriales &mdash; una red de cuatro hilos en la que las cargas monofásicas se reparten de forma desigual entre las tres fases &mdash; es la cifra equivocada, y produce exactamente el fallo en el que dos fases quedan cómodamente en banda mientras la tercera cae bajo el equipo que importa.</p>
+
+    <p>La respuesta directa es esta: con una carga desequilibrada, lo que decide si un estabilizador funciona no es su capacidad total, sino si regula cada fase de forma independiente respecto al neutro. Un equipo que sensa y corrige una media única, o que corrige solo una fase de referencia, no puede mantener tres tensiones fase-neutro distintas a la vez. El dimensionado debe hacerse por fase, sobre el desequilibrio más desfavorable, no sobre la suma.</p>
+
+    <h2>Qué hace realmente una carga desequilibrada</h2>
+    <p>En una red trifásica de cuatro hilos el neutro transporta la diferencia entre las corrientes de fase. Con una carga perfectamente equilibrada esa diferencia es cero y el punto neutro queda exactamente en el centro del triángulo de tensiones. En cuanto la carga se desequilibra circula corriente por el neutro, y la caída de tensión en el conductor de neutro &mdash; más cualquier impedancia en el camino de neutro &mdash; desplaza ese punto central.</p>
+    <p>La consecuencia es fácil de enunciar y fácil de subestimar: la fase muy cargada ve una tensión fase-neutro más baja y las fases poco cargadas ven una <em>más alta</em>. Nada en las tensiones entre fases parece anómalo, y por eso el problema se pasa por alto en la puesta en marcha.</p>
+    <ul>
+      <li><strong>La subtensión en la fase cargada</strong> hace castañetear los contactores, obliga a los motores a tomar más corriente para el mismo trabajo y hace desenganchar las fuentes conmutadas.</li>
+      <li><strong>La sobretensión en las fases ligeras</strong> es la mitad más cara. Solicita el aislamiento, acorta la vida de condensadores y fuentes y dispara las protecciones de sobretensión de equipos que no tienen ninguna avería.</li>
+      <li><strong>La corriente de neutro</strong> se convierte en un punto de diseño: los armónicos de las cargas electrónicas se suman en el neutro en vez de anularse, así que un neutro dimensionado solo para el equilibrio fundamental puede sobrecargarse.</li>
+    </ul>
+    <p>Un estabilizador que regula solo la media de las tres fases empeora la situación de forma sutil. Mantendrá la media en banda mientras la fase cargada sigue baja y las ligeras suben: la regulación parece correcta en el display y el equipo sigue disparando.</p>
+
+    <h2>Qué cargas sufren de verdad el desplazamiento del neutro</h2>
+    <p>No a todas las cargas les importa, y saber a cuáles convierte una preocupación vaga en una especificación.</p>
+    <table>
+      <thead>
+        <tr><th>Carga</th><th>Responde a</th><th>Sensibilidad al desplazamiento del neutro</th><th>Qué debe hacer el estabilizador</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Motor trifásico</td><td>Tensión de secuencia positiva</td><td>Baja &mdash; en gran medida indiferente a la dispersión fase-neutro</td><td>Mantener la tensión entre fases; la corrección por fase no es determinante</td></tr>
+        <tr><td>Electrónica monofásica, PLC, instrumentación</td><td>Tensión fase-neutro</td><td>Alta &mdash; tanto la caída como la subida son dañinas</td><td>Regular cada fase de forma independiente respecto al neutro</td></tr>
+        <tr><td>Iluminación y calefacción</td><td>Tensión fase-neutro</td><td>Moderada &mdash; la potencia cambia con la tensión y la vida con la sobretensión</td><td>Mantener cada fase en banda para que potencia y vida sean previsibles</td></tr>
+        <tr><td>Baterías de condensadores y filtros</td><td>Tensión fase-neutro</td><td>Alta &mdash; la potencia reactiva crece con el cuadrado de la tensión</td><td>Evitar que la fase en sobretensión se empuje más arriba</td></tr>
+        <tr><td>Cuadro mixto, reparto desconocido</td><td>Ambas</td><td>Desconocida hasta medir</td><td>Medir la carga real por fase antes de elegir la topología</td></tr>
+      </tbody>
+    </table>
+    <p>La regla práctica que se deduce: si el cuadro está dominado por motores trifásicos, un estabilizador trifásico que regule la tensión entre fases es suficiente. Si el cuadro alimenta electrónica, controles o iluminación monofásica desde una red de cuatro hilos, la regulación por fase respecto al neutro no es un lujo.</p>
+
+    <h2>Las tres topologías de regulación ante el desequilibrio</h2>
+    <p>Las tres familias se venden como «AVR trifásico» y se comportan de forma muy distinta en cuanto la carga deja de ser simétrica.</p>
+    <table>
+      <thead>
+        <tr><th>Topología</th><th>Cómo corrige</th><th>Comportamiento con carga desequilibrada</th><th>Dónde encaja</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tipo relé</td>
+          <td>Conmuta tomas de transformador por escalones al cruzar umbrales de tensión</td>
+          <td>Corrige en escalones gruesos; son posibles tres canales independientes pero los escalones son amplios</td>
+          <td>Electrodomésticos y cargas pequeñas monofásicas o trifásicas ligeras donde unos volts de error son aceptables</td>
+        </tr>
+        <tr>
+          <td>Tipo servo (variac motorizado)</td>
+          <td>Un motor lleva un transformador variable de forma continua hasta la relación requerida</td>
+          <td>Verdaderamente por fase cuando se construye como tres cadenas servo independientes referidas al neutro</td>
+          <td>Cuadros mixtos de cuatro hilos con carga monofásica importante; la opción habitual en distribución industrial</td>
+        </tr>
+        <tr>
+          <td>Tipo estático (tiristores o IGBT con transformador de tomas)</td>
+          <td>La conmutación electrónica selecciona o sintetiza la corrección, sin piezas móviles</td>
+          <td>Corrección por fase rápida, adecuada para cargas muy desequilibradas o rápidamente variables</td>
+          <td>Procesos sensibles y sitios donde la velocidad de corrección importa más que el precio</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>La distinción que importa comercialmente está dentro de la familia servo, no entre familias. Un estabilizador servo trifásico puede construirse como tres reguladores monofásicos independientes que comparten chasis, o como un solo regulador trifásico con una señal de error única. Los catálogos llaman a ambos «estabilizador servo trifásico» y solo el primero resuelve una carga desequilibrada. Pregunte cuál le están cotizando y a qué referencia cada fase.</p>
+
+    <h2>¿Un equipo trifásico o tres equipos monofásicos?</h2>
+    <p>Es la decisión que más a menudo separa una instalación que funciona de una costosa, y es un compromiso real, no una regla.</p>
+    <table>
+      <thead>
+        <tr><th>Enfoque</th><th>Ventajas</th><th>Inconvenientes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tres equipos monofásicos independientes</td>
+          <td>Cada fase regulada sobre su propio error respecto al neutro; una avería afecta solo a una fase; cada equipo dimensionado a su carga</td>
+          <td>Tres envolventes, tres puntos de mantenimiento, más espacio en cuadro y más cableado</td>
+        </tr>
+        <tr>
+          <td>Un equipo trifásico con corrección por fase</td>
+          <td>Una sola envolvente, una puesta en marcha, control y protección compartidos, regulación por fase conservada</td>
+          <td>Coste superior a un diseño de señal única; una reparación afecta a las tres fases</td>
+        </tr>
+        <tr>
+          <td>Un equipo trifásico con señal de error única</td>
+          <td>Coste más bajo, huella mínima, suficiente para carga de motor trifásico equilibrada</td>
+          <td>No puede mantener tres tensiones fase-neutro distintas; es el modo de fallo descrito en este artículo</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Para un cuadro con unos pocos motores trifásicos, la tercera fila suele ser correcta y honesta. Para un cuadro de distribución de edificio que alimenta circuitos monofásicos, normalmente no lo es, por atractivo que parezca el precio.</p>
+
+    <h2>Dimensionar: la fase, no el total</h2>
+    <p>Dimensionar por kVA total supone que la carga se reparte por igual. En un cuadro desequilibrado no ocurre, y un equipo nominalmente suficiente satura su rango de corrección en la fase más cargada. Una secuencia defendible es esta:</p>
+    <ol>
+      <li><strong>Medir la carga real por fase</strong> en momentos representativos, no a partir de un listado de potencias instaladas. La diversidad a lo largo del día suele estar más desequilibrada que la intención de diseño.</li>
+      <li><strong>Dimensionar la corrección para la fase más cargada</strong> y comprobar que la misma capacidad está disponible para las demás. Lo que limita la corrección es la capacidad por fase, no el total.</li>
+      <li><strong>Tomar la tensión de entrada más baja sostenida</strong> de una semana de registro, no de una lectura única. El rango de corrección debe cubrir el hueco que realmente ocurre; un equipo fuera de rango se comporta como si no existiera y deja pasar la caída.</li>
+      <li><strong>Añadir el arranque</strong> de motores y compresores, muy por encima de la corriente de régimen durante un instante, y decidir si el estabilizador debe soportarlo o si el arranque se escalona.</li>
+      <li><strong>Aplicar un derrateo por ambiente</strong>. Un estabilizador en una sala técnica caliente no es el mismo producto que en un banco de pruebas, y el rango de corrección se reduce antes que la capacidad.</li>
+    </ol>
+    <p>Después, revise el neutro. El conductor de neutro, el borne de neutro y cualquier puente de neutro deben estar dimensionados para la corriente de neutro máxima que el cuadro pueda producir, incluido el contenido armónico, porque es el camino por el que vuelve el desequilibrio.</p>
+
+    <h2>Puntos de instalación que deciden el resultado</h2>
+    <ul>
+      <li><strong>Nunca cortar ni fusionar el neutro</strong> en una red de cuatro hilos que alimenta cargas monofásicas. Un neutro abierto convierte una carga fase-neutro en carga fase-fase y la destruye.</li>
+      <li><strong>Referir cada fase al neutro</strong>, no a las otras fases, si se exige regulación por fase.</li>
+      <li><strong>Prever un bypass de mantenimiento</strong> para intervenir sin cortar la carga. También permite una medición antes y después, la única prueba honesta de que el estabilizador hace algo.</li>
+      <li><strong>Comprobar la secuencia de fases</strong> en equipos servo trifásicos antes de energizar la carga.</li>
+      <li><strong>Ventilar según el ambiente real</strong> y mantener libre la entrada de aire; los tipos servo disipan calor real en el transformador variable y en la motorización.</li>
+    </ul>
+
+    <h2>Dónde encaja la gama YOMIN</h2>
+    <p>YOMIN fabrica <a href="/products/voltage-stabilizer-regulator">estabilizadores trifásicos</a> de las familias TND/SVC y TNS. El equipo trifásico TND/SVC está declarado para 15 kVA en configuración trifásica y se construye como estabilizador de potencia tipo servo con regulación automática de tensión; la familia TNS añade una configuración trifásica con display LED en red de 50 Hz. Ambos se especifican por fase, capacidad y rango de entrada a corregir.</p>
+    <p>Al solicitar cotización, indique la carga por fase en lugar del total, la tensión de entrada más baja sostenida que haya medido y si el cuadro alimenta cargas monofásicas desde una red de cuatro hilos. Esas tres respuestas determinan si se requiere un diseño por fase y qué capacidad necesita cada fase.</p>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Por qué una fase sigue baja si mi estabilizador trifásico funciona?</h3>
+    <p>Porque el equipo probablemente corrige una señal de error única o una media de las tres fases. Con carga desequilibrada esa media puede quedar en banda mientras la fase cargada sigue baja y las ligeras suben. Lo que lo corrige es la regulación por fase respecto al neutro.</p>
+    <h3>¿Puedo dimensionar un estabilizador trifásico por kVA total?</h3>
+    <p>Solo si la carga está realmente equilibrada. En un cuadro de cuatro hilos con cargas monofásicas, dimensione cada fase para su propia carga más desfavorable, porque el rango de corrección lo consume primero la fase más pesada.</p>
+    <h3>¿Hace falta un estabilizador trifásico si las cargas son sobre todo motores?</h3>
+    <p>Normalmente basta un equipo que regule entre fases, porque los motores responden a la tensión de secuencia positiva y toleran la dispersión fase-neutro. Añada regulación por fase cuando el mismo cuadro alimente también electrónica, controles o iluminación monofásica.</p>
+    <h3>¿Qué pasa si se abre el neutro en una red de cuatro hilos?</h3>
+    <p>Las tensiones fase-neutro dejan de estar sujetas por el punto neutro y pueden subir muy por encima del nominal en las fases poco cargadas, dañando los equipos conectados. Por eso el neutro nunca se corta ni se fusiona en ese tipo de red, y por eso importa su calibre.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Especifica un estabilizador trifásico para un cuadro con carga monofásica mixta?</h2>
+    <p>Envíenos la carga por fase, la tensión de entrada más baja sostenida que haya medido y la configuración de la red. Fabricamos estabilizadores servo trifásicos de las familias TND/SVC y TNS y confirmaremos si se requiere regulación por fase y qué capacidad necesita cada una.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Escríbanos por WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy" width="2012" height="2011"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

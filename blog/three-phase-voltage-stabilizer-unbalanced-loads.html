@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three-Phase Voltage Stabilizer on an Unbalanced Load: Neutral Shift and Per-Phase Sizing | Yomin Electric</title>
+<meta name="description" content="Why a three-phase voltage stabilizer sized on total kVA still lets one phase sag: how neutral displacement works, which loads actually see it, and how to size and specify per-phase regulation.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/three-phase-voltage-stabilizer-unbalanced-loads/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Three-Phase Voltage Stabilizer on an Unbalanced Load: Neutral Shift and Per-Phase Sizing",
+      "description": "Why a three-phase voltage stabilizer sized on total kVA still lets one phase sag: how neutral displacement works, which loads actually see it, and how to size and specify per-phase regulation.",
+      "image": "https://www.yominelectric.com/assets/images/blog/three-phase-voltage-stabilizer-unbalanced-loads/hero.png",
+      "datePublished": "2026-11-28",
+      "dateModified": "2026-11-28",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why does one phase stay low when my three-phase stabilizer is working?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the unit is most likely correcting a single error signal or an average of the three phases. On an unbalanced load that average can sit in band while the loaded phase remains low and the light phases rise. Per-phase regulation against neutral is what fixes it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I size a three-phase stabilizer on total kVA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only if the load is genuinely balanced. On a four-wire panel with single-phase loads, size each phase for its own worst-case load, because the correction range is consumed by the heaviest phase first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a three-phase stabilizer needed if the loads are mostly motors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually a phase-to-phase regulating unit is adequate, because motors respond to positive-sequence voltage and tolerate phase-to-neutral spread. Add per-phase regulation when the same panel also feeds single-phase electronics, controls or lighting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if the neutral opens on a four-wire system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Phase-to-neutral voltages are no longer held by the neutral point and can rise far above nominal on lightly loaded phases, damaging connected equipment. That is why the neutral is never switched or fused in such a system and why its current rating matters."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Voltage Stabilizers</span></div>
+    <span class="bh-tag">Buyer's Guides</span>
+    <h1 class="bh-title">Three-Phase Voltage Stabilizer on an Unbalanced Load: Neutral Shift and Per-Phase Sizing</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>November 28, 2026</span>
+      <span class="divider"></span>
+      <span>11 min read</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/three-phase-voltage-stabilizer-unbalanced-loads/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/three-phase-voltage-stabilizer-unbalanced-loads/hero.png" alt="YOMIN three phase 15 kVA TND SVC series power stabilizer automatic voltage regulator for three-phase distribution boards" loading="eager" fetchpriority="high" decoding="async" width="1280" height="720">
+    </picture>
+    <p>Most three-phase voltage stabilizers are bought on a single number: total kVA. On a balanced load that is a reasonable shortcut. On the load most industrial sites actually have &mdash; a four-wire system where single-phase loads are spread unevenly across the three phases &mdash; it is the wrong number, and it produces the specific failure where two phases sit comfortably in band while the third one sags under the equipment that matters.</p>
+
+    <p>The direct answer is this: on an unbalanced load, what decides whether a stabilizer works is not its total capacity but whether it regulates each phase independently against neutral. A unit that senses and corrects a single average, or that corrects only one reference phase, cannot hold three different phase-to-neutral voltages at once. Sizing then has to be done per phase, on the worst-case imbalance, not on the sum.</p>
+
+    <h2>What an unbalanced load actually does</h2>
+    <p>In a three-phase four-wire system the neutral carries the difference between the phase currents. With a perfectly balanced load that difference is zero and the neutral point sits exactly at the centre of the voltage triangle. As soon as the load is unbalanced, current flows in the neutral, and the voltage drop along the neutral conductor &mdash; plus any impedance in the neutral path &mdash; displaces that centre point.</p>
+    <p>The consequence is easy to state and easy to underestimate: the heavily loaded phase sees a lower phase-to-neutral voltage, and the lightly loaded phases see a <em>higher</em> one. Nothing about the phase-to-phase voltages looks obviously wrong, which is why the problem is often missed during commissioning.</p>
+    <ul>
+      <li><strong>Undervoltage on the loaded phase</strong> causes contactors to chatter, motors to draw more current for the same output, and switch-mode supplies to drop out.</li>
+      <li><strong>Overvoltage on the light phases</strong> is the more expensive half. It stresses insulation, shortens capacitor and power-supply life, and trips overvoltage protection on equipment that has no fault of its own.</li>
+      <li><strong>Neutral current</strong> itself becomes a design item: harmonics from electronic loads add in the neutral rather than cancelling, so a neutral sized only for fundamental balance can be overloaded.</li>
+    </ul>
+    <p>A stabilizer that regulates only the average of the three phases makes this worse in a subtle way. It will happily hold the average in band while the loaded phase stays low and the light phases go higher &mdash; the regulation looks correct on the display and the equipment still trips.</p>
+
+    <h2>Which loads actually see the neutral shift</h2>
+    <p>Not every load cares, and knowing which ones do is what turns a vague concern into a specification.</p>
+    <table>
+      <thead>
+        <tr><th>Load</th><th>Responds to</th><th>Sensitivity to neutral shift</th><th>What the stabilizer must do</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Three-phase motor</td><td>Positive-sequence voltage</td><td>Low &mdash; it is largely indifferent to phase-to-neutral spread</td><td>Hold phase-to-phase voltage; per-phase correction is not the deciding factor</td></tr>
+        <tr><td>Single-phase electronics, PLC, instrumentation</td><td>Phase-to-neutral voltage</td><td>High &mdash; both sag and rise are damaging</td><td>Regulate each phase independently against neutral</td></tr>
+        <tr><td>Lighting and heating</td><td>Phase-to-neutral voltage</td><td>Moderate &mdash; output changes with voltage, life changes with overvoltage</td><td>Hold each phase in band to keep output and life predictable</td></tr>
+        <tr><td>Capacitor banks and filters</td><td>Phase-to-neutral voltage</td><td>High &mdash; reactive output rises with the square of voltage</td><td>Prevent the overvoltage phase from being pushed higher</td></tr>
+        <tr><td>Mixed panel, unknown split</td><td>Both</td><td>Unknown until measured</td><td>Measure the actual per-phase load before choosing a topology</td></tr>
+      </tbody>
+    </table>
+    <p>The practical rule that follows: if the panel is dominated by three-phase motors, a three-phase stabilizer regulating phase-to-phase voltage is adequate. If the panel feeds single-phase electronics, controls or lighting from a four-wire supply, per-phase regulation against neutral is not a luxury.</p>
+
+    <h2>The three regulation topologies and how they handle imbalance</h2>
+    <p>All three families are sold as "three-phase AVR", and they behave very differently once the load stops being symmetrical.</p>
+    <table>
+      <thead>
+        <tr><th>Topology</th><th>How it corrects</th><th>Unbalanced-load behaviour</th><th>Where it fits</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Relay type</td>
+          <td>Switches transformer taps in steps as voltage crosses thresholds</td>
+          <td>Corrects in coarse steps; three independent channels are possible but the steps are wide</td>
+          <td>Appliances and small single-phase or light three-phase loads where a few volts of error is acceptable</td>
+        </tr>
+        <tr>
+          <td>Servo type (motor-driven variac)</td>
+          <td>Motor drives a variable transformer continuously to the required ratio</td>
+          <td>Genuinely per-phase when built as three independent servo chains referenced to neutral</td>
+          <td>Mixed four-wire panels with significant single-phase load; the usual choice for industrial distribution</td>
+        </tr>
+        <tr>
+          <td>Static type (thyristor or IGBT with tapped transformer)</td>
+          <td>Electronic switching selects or synthesises the correction, with no moving parts</td>
+          <td>Fast per-phase correction, well suited to rapidly changing or highly unbalanced load</td>
+          <td>Sensitive processes, sites where correction speed matters more than purchase price</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The distinction that matters commercially is inside the servo family, not between families. A three-phase servo stabilizer can be built as three independent single-phase regulators sharing a frame, or as one three-phase regulator with a single error signal. Both are described as "three-phase servo stabilizer" in catalogues, and only the first one solves an unbalanced load. Ask which one you are being quoted, and ask what the unit references each phase to.</p>
+
+    <h2>One three-phase unit or three single-phase units?</h2>
+    <p>This is the decision that most often separates a working installation from an expensive one, and it is a genuine trade-off rather than a rule.</p>
+    <table>
+      <thead>
+        <tr><th>Approach</th><th>Advantages</th><th>Disadvantages</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Three independent single-phase units</td>
+          <td>Each phase regulated on its own error against neutral; a fault takes out one phase only; each unit sized to its own phase load</td>
+          <td>Three enclosures, three maintenance items, more panel space and more wiring</td>
+        </tr>
+        <tr>
+          <td>One three-phase unit with per-phase correction</td>
+          <td>Single enclosure, one commissioning step, shared control and protection, per-phase regulation retained</td>
+          <td>Higher unit cost than a single-error-signal design; repair affects all three phases</td>
+        </tr>
+        <tr>
+          <td>One three-phase unit with a single error signal</td>
+          <td>Lowest cost, smallest footprint, adequate for balanced three-phase motor load</td>
+          <td>Cannot hold three different phase-to-neutral voltages; the failure mode this article is about</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>For a panel with a handful of three-phase motors, the third row is often correct and honest. For a building distribution board feeding single-phase circuits, it usually is not, however attractive the price looks.</p>
+
+    <h2>Sizing: use the phase, not the total</h2>
+    <p>Sizing on total kVA assumes the load divides equally. On an unbalanced panel it does not, and a unit that is nominally large enough will saturate its correction range on the worst-loaded phase. A defensible sequence looks like this:</p>
+    <ol>
+      <li><strong>Measure the actual per-phase load</strong> at representative times, not from a nameplate schedule. Load diversity across a day is often more unbalanced than the design intent.</li>
+      <li><strong>Size the correction for the worst-loaded phase</strong>, then check that the same capacity is available to the other phases. Per-phase capacity is what limits correction, not the total.</li>
+      <li><strong>Take the lowest sustained input voltage</strong> from a week of logging, not from a single reading. The correction range has to cover the brownout that actually happens, and a unit that runs out of range behaves like no stabilizer at all &mdash; it simply passes the sag through.</li>
+      <li><strong>Add the starting load</strong> of motors and compressors, which is far above running current for a short period, and decide whether the stabilizer must ride through it or whether the start is staged.</li>
+      <li><strong>Apply an ambient derating</strong>. A stabilizer in a hot panel room is not the same product as the same unit on a test bench, and the correction range shrinks before the capacity does.</li>
+    </ol>
+    <p>Then check the neutral. The neutral conductor, the neutral terminal and any neutral link must be rated for the highest neutral current the panel can produce, including harmonic content, because that is the path the imbalance returns on.</p>
+
+    <h2>Installation points that decide whether it works</h2>
+    <ul>
+      <li><strong>Never switch or fuse the neutral</strong> in a four-wire system feeding single-phase loads. An open neutral turns a phase-to-neutral load into a phase-to-phase load and destroys it.</li>
+      <li><strong>Reference each phase to neutral</strong>, not to the other phases, if per-phase regulation is the requirement.</li>
+      <li><strong>Provide a maintenance bypass</strong> so the unit can be serviced without dropping the load. It also allows a before-and-after measurement, which is the only honest way to prove the stabilizer is doing anything.</li>
+      <li><strong>Check phase rotation</strong> on three-phase servo units before energising the load.</li>
+      <li><strong>Ventilate according to the actual ambient</strong>, and keep the unit's intake clear; servo types dissipate real heat in the variac and the motor drive.</li>
+    </ul>
+
+    <h2>Where the YOMIN range fits</h2>
+    <p>YOMIN builds <a href="/products/voltage-stabilizer-regulator">three-phase stabilizers</a> in the TND/SVC and TNS families. The TND/SVC three-phase unit is rated 15 kVA in the three-phase configuration and is built as a servo-type power stabilizer with automatic voltage regulation; the TNS family adds a three-phase configuration with LED display on a 50 Hz supply. Both are specified by phase, capacity and the input range you need to correct.</p>
+    <p>When you request a quote, give the per-phase load rather than the total, the lowest sustained input voltage you have measured, and whether the panel feeds single-phase loads from a four-wire supply. Those three answers determine whether a per-phase design is required and what capacity each phase needs.</p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>Why does one phase stay low when my three-phase stabilizer is working?</h3>
+    <p>Because the unit is most likely correcting a single error signal or an average of the three phases. On an unbalanced load that average can sit in band while the loaded phase remains low and the light phases rise. Per-phase regulation against neutral is what fixes it.</p>
+    <h3>Can I size a three-phase stabilizer on total kVA?</h3>
+    <p>Only if the load is genuinely balanced. On a four-wire panel with single-phase loads, size each phase for its own worst-case load, because the correction range is consumed by the heaviest phase first.</p>
+    <h3>Is a three-phase stabilizer needed if the loads are mostly motors?</h3>
+    <p>Usually a phase-to-phase regulating unit is adequate, because motors respond to positive-sequence voltage and tolerate phase-to-neutral spread. Add per-phase regulation when the same panel also feeds single-phase electronics, controls or lighting.</p>
+    <h3>What happens if the neutral opens on a four-wire system?</h3>
+    <p>Phase-to-neutral voltages are no longer held by the neutral point and can rise far above nominal on lightly loaded phases, damaging connected equipment. That is why the neutral is never switched or fused in such a system and why its current rating matters.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Specifying a three-phase stabilizer for a panel with mixed single-phase load?</h2>
+    <p>Send us the per-phase load, the lowest sustained input voltage you have measured and the supply configuration. We build three-phase servo stabilizers in the TND/SVC and TNS families and will confirm whether per-phase regulation is required and what capacity each phase needs.</p>
+    <a class="btn btn-primary" href="/contact">Request a quote</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Message us on WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy" width="2012" height="2011"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

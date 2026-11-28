@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stabilisateur triphasé sur charge déséquilibrée : déplacement du neutre et dimensionnement par phase | Yomin Electric</title>
+<meta name="description" content="Pourquoi un stabilisateur triphasé dimensionné sur le kVA total laisse encore chuter une phase : comment fonctionne le déplacement du neutre, quelles charges le subissent, et comment dimensionner et spécifier une régulation par phase.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/three-phase-voltage-stabilizer-unbalanced-loads/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads-fr">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Stabilisateur triphasé sur charge déséquilibrée : déplacement du neutre et dimensionnement par phase",
+      "description": "Pourquoi un stabilisateur triphasé dimensionné sur le kVA total laisse encore chuter une phase : comment fonctionne le déplacement du neutre, quelles charges le subissent, et comment dimensionner et spécifier une régulation par phase.",
+      "image": "https://www.yominelectric.com/assets/images/blog/three-phase-voltage-stabilizer-unbalanced-loads-fr/hero.png",
+      "datePublished": "2026-11-28",
+      "dateModified": "2026-11-28",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/three-phase-voltage-stabilizer-unbalanced-loads"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Pourquoi une phase reste-t-elle basse alors que mon stabilisateur triphasé fonctionne ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parce que l'appareil corrige probablement un signal d'erreur unique ou une moyenne des trois phases. Sur une charge déséquilibrée, cette moyenne peut rester dans la plage tandis que la phase chargée demeure basse et que les phases légères montent. C'est la régulation par phase par rapport au neutre qui corrige cela."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on dimensionner un stabilisateur triphasé sur le kVA total ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Seulement si la charge est vraiment équilibrée. Sur un tableau à quatre fils avec charges monophasées, dimensionnez chaque phase pour sa propre charge la plus défavorable, car la plage de correction est consommée d'abord par la phase la plus chargée."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un stabilisateur triphasé est-il utile si les charges sont surtout des moteurs ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un appareil régulant entre phases suffit généralement, car les moteurs répondent à la tension de séquence positive et tolèrent la dispersion phase-neutre. Ajoutez la régulation par phase quand le même tableau alimente aussi de l'électronique, des commandes ou de l'éclairage monophasés."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que se passe-t-il si le neutre s'ouvre sur un réseau à quatre fils ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les tensions phase-neutre ne sont plus tenues par le point neutre et peuvent monter très au-dessus du nominal sur les phases peu chargées, endommageant les équipements raccordés. C'est pourquoi le neutre n'est ni coupé ni fusionné dans un tel réseau, et pourquoi son calibre compte."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Stabilisateurs de tension</span></div>
+    <span class="bh-tag">Guides d'achat</span>
+    <h1 class="bh-title">Stabilisateur triphasé sur charge déséquilibrée : déplacement du neutre et dimensionnement par phase</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>28 novembre 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lecture</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/three-phase-voltage-stabilizer-unbalanced-loads/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/three-phase-voltage-stabilizer-unbalanced-loads/hero.png" alt="Stabilisateur de puissance YOMIN triphasé 15 kVA série TND SVC avec régulateur automatique de tension pour tableaux de distribution triphasés" loading="eager" fetchpriority="high" decoding="async" width="1280" height="720">
+    </picture>
+    <p>La plupart des stabilisateurs triphasés s'achètent sur un seul chiffre : le kVA total. Sur une charge équilibrée, c'est un raccourci raisonnable. Sur la charge que possèdent réellement la plupart des sites industriels &mdash; un réseau à quatre fils où des charges monophasées sont réparties inégalement sur les trois phases &mdash; c'est le mauvais chiffre, et il produit exactement la défaillance où deux phases restent confortablement dans la plage tandis que la troisième chute sous l'équipement qui compte.</p>
+
+    <p>La réponse directe est celle-ci : sur une charge déséquilibrée, ce qui décide de l'efficacité d'un stabilisateur n'est pas sa capacité totale mais le fait qu'il régule ou non chaque phase indépendamment par rapport au neutre. Un appareil qui mesure et corrige une moyenne unique, ou qui ne corrige qu'une phase de référence, ne peut pas maintenir trois tensions phase-neutre différentes simultanément. Le dimensionnement se fait alors par phase, sur le déséquilibre le plus défavorable, et non sur la somme.</p>
+
+    <h2>Ce que fait réellement une charge déséquilibrée</h2>
+    <p>Dans un réseau triphasé à quatre fils, le neutre transporte la différence entre les courants de phase. Avec une charge parfaitement équilibrée, cette différence est nulle et le point neutre se trouve exactement au centre du triangle des tensions. Dès que la charge est déséquilibrée, un courant circule dans le neutre, et la chute de tension le long du conducteur de neutre &mdash; plus toute impédance sur le chemin de neutre &mdash; déplace ce point central.</p>
+    <p>La conséquence est facile à énoncer et facile à sous-estimer : la phase fortement chargée voit une tension phase-neutre plus basse, et les phases peu chargées en voient une <em>plus haute</em>. Rien dans les tensions entre phases ne paraît anormal, ce qui explique pourquoi le problème est souvent manqué à la mise en service.</p>
+    <ul>
+      <li><strong>La sous-tension sur la phase chargée</strong> fait claquer les contacteurs, fait appeler plus de courant aux moteurs pour le même travail et fait décrocher les alimentations à découpage.</li>
+      <li><strong>La surtension sur les phases légères</strong> est la moitié la plus coûteuse. Elle sollicite l'isolation, raccourcit la vie des condensateurs et des alimentations, et déclenche les protections de surtension d'équipements qui n'ont aucune faute.</li>
+      <li><strong>Le courant de neutre</strong> devient lui-même un point de conception : les harmoniques des charges électroniques s'additionnent dans le neutre au lieu de s'annuler, si bien qu'un neutre dimensionné pour le seul équilibre fondamental peut être surchargé.</li>
+    </ul>
+    <p>Un stabilisateur qui ne régule que la moyenne des trois phases aggrave la situation de façon subtile. Il maintiendra volontiers la moyenne dans la plage alors que la phase chargée reste basse et que les phases légères montent : la régulation paraît correcte à l'affichage et l'équipement déclenche toujours.</p>
+
+    <h2>Quelles charges subissent vraiment le déplacement du neutre</h2>
+    <p>Toutes les charges ne s'en soucient pas, et savoir lesquelles transforment une inquiétude vague en spécification précise.</p>
+    <table>
+      <thead>
+        <tr><th>Charge</th><th>Répond à</th><th>Sensibilité au déplacement du neutre</th><th>Ce que doit faire le stabilisateur</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Moteur triphasé</td><td>Tension de séquence positive</td><td>Faible &mdash; largement indifférent à la dispersion phase-neutre</td><td>Maintenir la tension entre phases ; la correction par phase n'est pas déterminante</td></tr>
+        <tr><td>Électronique monophasée, automate, instrumentation</td><td>Tension phase-neutre</td><td>Élevée &mdash; la chute comme la hausse sont destructrices</td><td>Réguler chaque phase indépendamment par rapport au neutre</td></tr>
+        <tr><td>Éclairage et chauffage</td><td>Tension phase-neutre</td><td>Modérée &mdash; la puissance change avec la tension, la durée de vie avec la surtension</td><td>Maintenir chaque phase dans la plage pour rendre puissance et durée de vie prévisibles</td></tr>
+        <tr><td>Batteries de condensateurs et filtres</td><td>Tension phase-neutre</td><td>Élevée &mdash; la puissance réactive croît avec le carré de la tension</td><td>Empêcher que la phase en surtension soit poussée plus haut</td></tr>
+        <tr><td>Tableau mixte, répartition inconnue</td><td>Les deux</td><td>Inconnue jusqu'à la mesure</td><td>Mesurer la charge réelle par phase avant de choisir la topologie</td></tr>
+      </tbody>
+    </table>
+    <p>La règle pratique qui en découle : si le tableau est dominé par des moteurs triphasés, un stabilisateur triphasé régulant la tension entre phases suffit. Si le tableau alimente de l'électronique, des commandes ou de l'éclairage monophasés depuis un réseau à quatre fils, la régulation par phase par rapport au neutre n'est pas un luxe.</p>
+
+    <h2>Les trois topologies de régulation face au déséquilibre</h2>
+    <p>Les trois familles sont vendues comme « AVR triphasé » et se comportent très différemment dès que la charge cesse d'être symétrique.</p>
+    <table>
+      <thead>
+        <tr><th>Topologie</th><th>Mode de correction</th><th>Comportement en charge déséquilibrée</th><th>Usage adapté</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Type relais</td>
+          <td>Commute des prises de transformateur par paliers lorsque la tension franchit des seuils</td>
+          <td>Correction par paliers grossiers ; trois canaux indépendants sont possibles mais les paliers restent larges</td>
+          <td>Appareils et petites charges monophasées ou triphasées légères où quelques volts d'erreur sont acceptables</td>
+        </tr>
+        <tr>
+          <td>Type servo (variateurs à moteur)</td>
+          <td>Un moteur entraîne un transformateur variable en continu jusqu'au rapport requis</td>
+          <td>Véritablement par phase lorsqu'il est construit en trois chaînes servo indépendantes référencées au neutre</td>
+          <td>Tableaux mixtes à quatre fils avec charge monophasée importante ; le choix courant en distribution industrielle</td>
+        </tr>
+        <tr>
+          <td>Type statique (thyristors ou IGBT avec transformateur à prises)</td>
+          <td>La commutation électronique sélectionne ou synthétise la correction, sans pièce mobile</td>
+          <td>Correction par phase rapide, adaptée aux charges très déséquilibrées ou rapidement variables</td>
+          <td>Procédés sensibles et sites où la vitesse de correction prime sur le prix d'achat</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>La distinction qui compte commercialement se situe à l'intérieur de la famille servo, pas entre les familles. Un stabilisateur servo triphasé peut être construit comme trois régulateurs monophasés indépendants partageant un châssis, ou comme un seul régulateur triphasé à signal d'erreur unique. Les catalogues désignent les deux comme « stabilisateur servo triphasé », et seul le premier résout une charge déséquilibrée. Demandez lequel vous est proposé, et demandez à quoi l'appareil référence chaque phase.</p>
+
+    <h2>Un appareil triphasé ou trois appareils monophasés ?</h2>
+    <p>C'est la décision qui sépare le plus souvent une installation qui fonctionne d'une installation coûteuse, et c'est un vrai compromis, pas une règle.</p>
+    <table>
+      <thead>
+        <tr><th>Approche</th><th>Avantages</th><th>Inconvénients</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Trois appareils monophasés indépendants</td>
+          <td>Chaque phase régulée sur sa propre erreur par rapport au neutre ; une panne n'immobilise qu'une phase ; chaque appareil dimensionné sur sa charge</td>
+          <td>Trois enveloppes, trois points de maintenance, plus de place en armoire et plus de câblage</td>
+        </tr>
+        <tr>
+          <td>Un appareil triphasé à correction par phase</td>
+          <td>Une seule enveloppe, une mise en service, commande et protection communes, régulation par phase conservée</td>
+          <td>Coût supérieur à une conception à signal unique ; une réparation touche les trois phases</td>
+        </tr>
+        <tr>
+          <td>Un appareil triphasé à signal d'erreur unique</td>
+          <td>Coût le plus bas, encombrement minimal, suffisant pour une charge moteur triphasée équilibrée</td>
+          <td>Ne peut pas maintenir trois tensions phase-neutre différentes ; c'est le mode de défaillance décrit ici</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Pour un tableau avec quelques moteurs triphasés, la troisième ligne est souvent correcte et honnête. Pour un tableau de distribution de bâtiment alimentant des circuits monophasés, elle ne l'est généralement pas, quel que soit l'attrait du prix.</p>
+
+    <h2>Dimensionner : la phase, pas le total</h2>
+    <p>Dimensionner sur le kVA total suppose que la charge se répartit également. Sur un tableau déséquilibré, ce n'est pas le cas, et un appareil nominalement suffisant sature sa plage de correction sur la phase la plus chargée. Une démarche défendable ressemble à ceci :</p>
+    <ol>
+      <li><strong>Mesurer la charge réelle par phase</strong> à des moments représentatifs, et non d'après un tableau de puissances installées. La diversité sur une journée est souvent plus déséquilibrée que l'intention de conception.</li>
+      <li><strong>Dimensionner la correction pour la phase la plus chargée</strong>, puis vérifier que la même capacité est disponible pour les autres. C'est la capacité par phase qui limite la correction, pas le total.</li>
+      <li><strong>Relever la tension d'entrée la plus basse soutenue</strong> sur une semaine d'enregistrement, pas sur une lecture unique. La plage de correction doit couvrir la chute qui se produit réellement ; un appareil hors plage se comporte comme s'il n'existait pas et laisse passer la chute.</li>
+      <li><strong>Ajouter le courant de démarrage</strong> des moteurs et compresseurs, très supérieur au courant de fonctionnement pendant un court instant, et décider si le stabilisateur doit l'absorber ou si le démarrage doit être échelonné.</li>
+      <li><strong>Appliquer un déclassement en température</strong>. Un stabilisateur dans un local technique chaud n'est pas le même produit que sur un banc d'essai, et la plage de correction se réduit avant la capacité.</li>
+    </ol>
+    <p>Vérifiez ensuite le neutre. Le conducteur de neutre, la borne de neutre et toute barrette de neutre doivent être dimensionnés pour le courant de neutre maximal que le tableau peut produire, harmoniques compris, car c'est le chemin par lequel le déséquilibre revient.</p>
+
+    <h2>Points d'installation qui décident du résultat</h2>
+    <ul>
+      <li><strong>Ne jamais couper ni fusionner le neutre</strong> dans un réseau à quatre fils alimentant des charges monophasées. Un neutre ouvert transforme une charge phase-neutre en charge phase-phase et la détruit.</li>
+      <li><strong>Référencer chaque phase au neutre</strong>, et non aux autres phases, si la régulation par phase est exigée.</li>
+      <li><strong>Prévoir un by-pass de maintenance</strong> pour entretenir l'appareil sans couper la charge. Il permet aussi une mesure avant/après, seule preuve honnête que le stabilisateur fait quelque chose.</li>
+      <li><strong>Vérifier l'ordre des phases</strong> sur les appareils servo triphasés avant de mettre la charge sous tension.</li>
+      <li><strong>Ventiler selon l'ambiance réelle</strong> et laisser l'entrée d'air libre ; les types servo dissipent une vraie chaleur dans le transformateur variable et la motorisation.</li>
+    </ul>
+
+    <h2>Ce que propose la gamme YOMIN</h2>
+    <p>YOMIN fabrique des <a href="/products/voltage-stabilizer-regulator">stabilisateurs triphasés</a> dans les familles TND/SVC et TNS. L'appareil triphasé TND/SVC est donné pour 15 kVA en configuration triphasée et construit comme stabilisateur de puissance de type servo à régulation automatique de tension ; la famille TNS ajoute une configuration triphasée avec affichage LED sur réseau 50 Hz. Les deux se spécifient par phase, puissance et plage d'entrée à corriger.</p>
+    <p>Lors de votre demande de devis, donnez la charge par phase plutôt que le total, la tension d'entrée la plus basse soutenue que vous avez mesurée, et précisez si le tableau alimente des charges monophasées depuis un réseau à quatre fils. Ces trois réponses déterminent si une conception par phase est nécessaire et quelle puissance chaque phase requiert.</p>
+
+    <h2>Questions fréquentes</h2>
+    <h3>Pourquoi une phase reste-t-elle basse alors que mon stabilisateur triphasé fonctionne ?</h3>
+    <p>Parce que l'appareil corrige probablement un signal d'erreur unique ou une moyenne des trois phases. Sur une charge déséquilibrée, cette moyenne peut rester dans la plage tandis que la phase chargée demeure basse et que les phases légères montent. C'est la régulation par phase par rapport au neutre qui corrige cela.</p>
+    <h3>Peut-on dimensionner un stabilisateur triphasé sur le kVA total ?</h3>
+    <p>Seulement si la charge est vraiment équilibrée. Sur un tableau à quatre fils avec charges monophasées, dimensionnez chaque phase pour sa propre charge la plus défavorable, car la plage de correction est consommée d'abord par la phase la plus chargée.</p>
+    <h3>Un stabilisateur triphasé est-il utile si les charges sont surtout des moteurs ?</h3>
+    <p>Un appareil régulant entre phases suffit généralement, car les moteurs répondent à la tension de séquence positive et tolèrent la dispersion phase-neutre. Ajoutez la régulation par phase quand le même tableau alimente aussi de l'électronique, des commandes ou de l'éclairage monophasés.</p>
+    <h3>Que se passe-t-il si le neutre s'ouvre sur un réseau à quatre fils ?</h3>
+    <p>Les tensions phase-neutre ne sont plus tenues par le point neutre et peuvent monter très au-dessus du nominal sur les phases peu chargées, endommageant les équipements raccordés. C'est pourquoi le neutre n'est ni coupé ni fusionné dans un tel réseau, et pourquoi son calibre compte.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Vous spécifiez un stabilisateur triphasé pour un tableau à charge monophasée mixte ?</h2>
+    <p>Envoyez-nous la charge par phase, la tension d'entrée la plus basse soutenue que vous avez mesurée et la configuration du réseau. Nous fabriquons des stabilisateurs servo triphasés des familles TND/SVC et TNS et confirmerons si une régulation par phase est nécessaire et quelle puissance chaque phase requiert.</p>
+    <a class="btn btn-primary" href="/contact">Demander un devis</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Écrivez-nous sur WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy" width="2012" height="2011"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>

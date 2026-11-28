@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T0HYWYQ6NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T0HYWYQ6NF');
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/logo_transparent.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Par de apriete en bloques de terminales: por qué se calientan las conexiones y cómo verificarlo | Yomin Electric</title>
+<meta name="description" content="Por qué un bloque de terminales que parecía apretado en la instalación acaba recalentándose: cómo la fuerza de apriete se pierde por fluencia y ciclos térmicos, y las comprobaciones de par, reapriete y caída de tensión que realmente demuestran que una conexión es sana.">
+<meta property="og:image" content="https://www.yominelectric.com/assets/images/blog/terminal-block-tightening-torque-guide/card.png">
+<link rel="canonical" href="https://www.yominelectric.com/blog/terminal-block-tightening-torque-guide-es">
+<link rel="alternate" hreflang="en" href="https://www.yominelectric.com/blog/terminal-block-tightening-torque-guide">
+<link rel="alternate" hreflang="fr" href="https://www.yominelectric.com/blog/terminal-block-tightening-torque-guide-fr">
+<link rel="alternate" hreflang="es" href="https://www.yominelectric.com/blog/terminal-block-tightening-torque-guide-es">
+<link rel="alternate" hreflang="ar" href="https://www.yominelectric.com/blog/terminal-block-tightening-torque-guide-ar">
+<link rel="alternate" hreflang="x-default" href="https://www.yominelectric.com/blog/terminal-block-tightening-torque-guide">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/logo_transparent.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Par de apriete en bloques de terminales: por qué se calientan las conexiones y cómo verificarlo",
+      "description": "Por qué un bloque de terminales que parecía apretado en la instalación acaba recalentándose: cómo la fuerza de apriete se pierde por fluencia y ciclos térmicos, y las comprobaciones de par, reapriete y caída de tensión que realmente demuestran que una conexión es sana.",
+      "image": "https://www.yominelectric.com/assets/images/blog/terminal-block-tightening-torque-guide-es/hero.png",
+      "datePublished": "2026-11-28",
+      "dateModified": "2026-11-28",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "YOMIN Electric Co., Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.yominelectric.com/assets/images/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yominelectric.com/blog/terminal-block-tightening-torque-guide"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué par debo aplicar en un bloque de terminales?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El valor publicado por el fabricante para ese tamaño y material concretos, aplicado con una herramienta calibrada. No hay una cifra universal segura, porque el estado de la rosca, el diseño de la brida y la clase de conductor cambian la fuerza obtenida con un par dado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué se aflojó mi terminal si lo apreté correctamente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Porque el apriete inicial solo establece el montaje. La fluencia del conductor, el asentamiento de hilos, los ciclos térmicos y la vibración retiran precarga después. El reapriete tras el primer ciclo térmico es lo que recoge esa pérdida."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es mejor sobreapretar un poco que dejar una unión floja?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. El sobreapriete aplasta hilos, deforma el tornillo o la brida y puede agrietar la carcasa, y la fuerza de apriete cae una vez alcanzada la fluencia. Una unión sobreapretada es sospechosa aunque hoy mida bien."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo compruebo un bloque de terminales sin desmontar el cuadro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comparándolo con una unión idéntica en el mismo carril y a la misma corriente. Una comprobación de par calibrada muestra pérdida de precarga, una medición de caída de tensión muestra resistencia elevada y la termografía muestra una unión que ya disipa potencia anormal. Cada una es una comparación, no un juicio absoluto."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<nav id="nav" aria-label="Main navigation">
+  <a href="/" class="n-logo">
+    <img src="/logo_transparent.png" alt="Yomin Electric" style="height:33px;width:auto;object-fit:contain;display:block" width="44" height="44">
+  </a>
+  <ul class="n-ctr" role="menubar">
+    <li role="none"><a href="/" role="menuitem">Home</a></li>
+    <li role="none" class="n-drop"><a href="/products" role="menuitem" data-i18n="nav_products">Products <span class="n-arrow" style="font-size:10px;margin-left:4px">&#9662;</span></a>
+      <div class="n-mega">
+        <a href="/products/energy-meter"><span class="mega-icon">&#9889;</span><span class="mega-name">Energy Meters</span></a>
+        <a href="/products/voltage-stabilizer-regulator"><span class="mega-icon">&#128260;</span><span class="mega-name">Voltage Stabilizers</span></a>
+        <a href="/products/current-transformer"><span class="mega-icon">&#128260;</span><span class="mega-name">Current Transformers</span></a>
+        <a href="/products/variac-transformer"><span class="mega-icon">&#9881;&#65039;</span><span class="mega-name">Variac Transformers</span></a>
+        <a href="/products/screw-machine"><span class="mega-icon">&#128287;</span><span class="mega-name">Screw Machines</span></a>
+        <a href="/products/terminal-connector"><span class="mega-icon">&#128268;</span><span class="mega-name">Terminals &amp; Connectors</span></a>
+        <a href="/products/solar-pv-products"><span class="mega-icon">&#9728;&#65039;</span><span class="mega-name">Solar &amp; PV Products</span></a>
+        <a href="/products/fuse-protection"><span class="mega-icon">&#9888;&#65039;</span><span class="mega-name">Fuses &amp; Protection</span></a>
+        <a href="/products/socket-wiring"><span class="mega-icon">&#128295;</span><span class="mega-name">Sockets &amp; Wiring</span></a>
+        <a href="/products/tools-hardware"><span class="mega-icon">&#128736;&#65039;</span><span class="mega-name">Tools &amp; Hardware</span></a>
+        <a href="/products/security-seal"><span class="mega-icon">&#128274;</span><span class="mega-name">Security Seals</span></a>
+        <a href="/products/other"><span class="mega-icon">&#128230;</span><span class="mega-name">Other Products</span></a>
+        <a href="/products" style="color:var(--ac);font-weight:600"><span class="mega-icon">&#128194;</span><span class="mega-name">View All Products &rarr;</span></a>
+      </div>
+    </li>
+    <li role="none"><a href="/solutions" role="menuitem" data-i18n="nav_solutions">Solutions</a></li>
+    <li role="none"><a href="/process" role="menuitem" data-i18n="nav_process">Process</a></li>
+    <li role="none"><a href="/blog" role="menuitem" class="active">Blog</a></li>
+    <li role="none"><a href="/about" role="menuitem" data-i18n="nav_about">About</a></li>
+    <li role="none"><a href="/contact" role="menuitem" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="n-rt">
+    <div class="lsw" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+      <button class="lbtn" id="lbtn" aria-label="Current language: English">
+        <span id="lf"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span><span id="lc">EN</span>
+        <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l5 5 5-5"></path></svg>
+      </button>
+      <div class="ldrop" id="ldrop" role="listbox">
+        <button class="lopt act" data-lang="en" role="option"><span><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></span> English</button>
+        <button class="lopt" data-lang="fr" role="option"><span><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></span> Fran&ccedil;ais</button>
+        <button class="lopt" data-lang="es" role="option"><span><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></span> Espa&ntilde;ol</button>
+        <button class="lopt" data-lang="ar" role="option"><span>AR</span> &#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</button>
+      </div>
+    </div>
+    <div class="theme-pair">
+      <button class="tpbtn" id="btnDark" title="Dark mode" aria-label="Enable dark mode">&#127769;</button>
+      <button class="tpbtn" id="btnLight" title="Light mode" aria-label="Enable light mode">&#9728;&#65039;</button>
+    </div>
+    <a href="/contact" class="ncta" data-i18n="nav_cta">Get Quote</a>
+    <button class="ham" id="ham" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob" id="mob" aria-label="Mobile navigation menu">
+  <button class="mob-x" id="mobX" aria-label="Close menu">&#10005;</button>
+  <a href="/">Home</a>
+  <a href="/products" data-i18n="nav_products">Products</a>
+  <a href="/solutions" data-i18n="nav_solutions">Solutions</a>
+  <a href="/process" data-i18n="nav_process">Process</a>
+  <a href="/blog" class="active">Blog</a>
+  <a href="/about" data-i18n="nav_about">About</a>
+  <a href="/contact" data-i18n="nav_contact">Contact</a>
+  <div class="mob-lngs">
+    <button class="mlb act" data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" class="flag" alt="EN"></button>
+    <button class="mlb" data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" class="flag" alt="FR"></button>
+    <button class="mlb" data-lang="es"><img src="https://flagcdn.com/16x12/es.png" class="flag" alt="ES"></button>
+    <button class="mlb" data-lang="ar"><span>AR</span></button>
+  </div>
+</div>
+
+<main>
+  <section class="blog-hero">
+    <div class="bh-breadcrumb"><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <span>Terminales y conectores</span></div>
+    <span class="bh-tag">Guías de compra</span>
+    <h1 class="bh-title">Par de apriete en bloques de terminales: por qué se calientan las conexiones y cómo verificarlo</h1>
+    <div class="bh-meta">
+      <div class="avatar">ET</div>
+      <strong style="color:var(--tx)">ET Engineering Team</strong>
+      <span class="divider"></span>
+      <span>28 de noviembre de 2026</span>
+      <span class="divider"></span>
+      <span>11 min de lectura</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <picture>
+      <source srcset="/assets/images/blog/terminal-block-tightening-torque-guide/hero.webp" type="image/webp">
+      <img class="hero-img" src="/assets/images/blog/terminal-block-tightening-torque-guide/hero.png" alt="Bloque de terminales eléctrico YOMIN con tornillo de apriete de latón en carcasa de PC y PA para conexiones de conductores seguras y de baja resistencia" loading="eager" fetchpriority="high" decoding="async" width="1280" height="720">
+    </picture>
+    <p>Un bloque de terminales casi nunca falla porque alguien dejó el tornillo flojo. Falla porque la fuerza de apriete que hacía que el tornillo pareciera firme el día de la instalación se perdió sin hacer ruido, y ninguna inspección visual muestra esa pérdida hasta que la unión ya está caliente. El par de apriete solo sirve si se trata como el comienzo de un proceso y no como un gesto único con un destornillador.</p>
+
+    <p>La respuesta directa a la pregunta habitual es esta: el par correcto no es una cifra universal y nunca debe copiarse de otro terminal. Procede de la ficha técnica del fabricante para esa combinación concreta de tamaño y material, se aplica con una herramienta calibrada y se vuelve a verificar después del primer ciclo térmico de la unión. El resto de este artículo explica por qué es así y cómo integrar esa verificación en una instalación que aguante cinco años de ciclos de carga.</p>
+
+    <h2>Qué controla realmente el par de apriete</h2>
+    <p>El objetivo no es el par, sino la fuerza de apriete; el par es solo la forma más barata de aproximarla desde fuera. El tornillo presiona el conductor contra una superficie conductora, y la superficie de contacto real entre dos metales aparentemente planos es una fracción de su solape nominal, concentrada en asperezas microscópicas. La fuerza de apriete aplana esas asperezas y multiplica la superficie de contacto real, que es lo que hace caer la resistencia de contacto.</p>
+    <p>La cadena merece enunciarse con claridad porque explica todos los modos de fallo posteriores:</p>
+    <ul>
+      <li><strong>Más par</strong> &rarr; más fuerza de apriete &rarr; más superficie de contacto real</li>
+      <li><strong>Más superficie de contacto</strong> &rarr; menos resistencia de contacto &rarr; menos calentamiento I&sup2;R</li>
+      <li><strong>Menos calentamiento</strong> &rarr; menos oxidación en la unión &rarr; resistencia estable</li>
+    </ul>
+    <p>Recorra la misma cadena al revés y obtiene el mecanismo del fallo térmico: algo menos de fuerza, algo más de resistencia, algo más de calor, oxidación más rápida y de nuevo más resistencia. Es una espiral que tarda meses en hacerse visible.</p>
+    <p>Se derivan dos consecuencias prácticas. Primero, la mayor parte del par aplicado a un tornillo se consume en el rozamiento de la rosca y bajo la cabeza, de modo que la misma lectura produce fuerzas muy distintas en una rosca seca y en una lubricada. Segundo, como el par solo es un indicador indirecto, una llave dinamométrica demuestra que aplicó la consigna correcta, no que la unión sea eléctricamente sana.</p>
+
+    <h2>Por qué una unión bien apretada se afloja igualmente</h2>
+    <p>A los instaladores les sorprende encontrar floja una unión que apretaron según especificación. Existen cinco mecanismos y normalmente actúan juntos.</p>
+    <ul>
+      <li><strong>Fluencia y relajación.</strong> Los metales fluyen lentamente bajo carga sostenida. El cobre lo hace; el aluminio mucho más, y de ahí su fama de necesitar reaprietes.</li>
+      <li><strong>Ciclos térmicos.</strong> Tornillo, brida y conductor son materiales distintos con coeficientes de dilatación distintos. Cada ciclo de carga los desplaza entre sí una cantidad microscópica y la unión se afloja a saltos.</li>
+      <li><strong>Asentamiento de hilos.</strong> Un conductor de hilos finos sigue asentándose bajo la brida durante horas después de la instalación. Lo que parecía firme en el banco deja de serlo tras la primera hora en carga.</li>
+      <li><strong>Vibración.</strong> Motores, transformadores, compresores y cualquier equipo que viaje en camión aflojan una unión marginal.</li>
+      <li><strong>Fluencia del aislamiento y del terminal.</strong> Un casquillo blando o un aislamiento pinzado bajo la brida se relaja con el tiempo y retira la precarga del contacto metal-metal.</li>
+    </ul>
+    <p>Por eso el primer reapriete importa más que el apriete inicial. El apriete inicial establece el montaje; el reapriete tras el primer ciclo térmico recoge el asentamiento que el apriete inicial no podía impedir.</p>
+
+    <h2>El sobreapriete también es un modo de fallo</h2>
+    <p>Buscar un par más alto no es una dirección segura. Por encima de la cifra del fabricante la unión empeora, y empeora de formas difíciles de ver:</p>
+    <ul>
+      <li>Los hilos se aplastan o se cortan en el borde de la brida, reduciendo la sección de cobre que realmente conduce.</li>
+      <li>El tornillo o el cuerpo de apriete fluyen: la fuerza de apriete <em>cae</em> aunque el tornillo parezca inamovible.</li>
+      <li>El cuerpo del terminal o la carcasa se agrietan, sobre todo las carcasas moldeadas a temperatura ambiente elevada.</li>
+      <li>El conductor se acrituda y se vuelve frágil justo donde luego se aplicará un esfuerzo de flexión.</li>
+    </ul>
+    <p>Una unión sobreapretada una vez debe considerarse sospechosa aunque hoy mida bien, porque la fluencia plástica ya ha ocurrido.</p>
+
+    <h2>Qué hace variar el par requerido</h2>
+    <p>No existe una tabla de pares que cubra todos los terminales, y por eso el valor de la ficha debe acompañar a la referencia. Estas son las variables que mueven la cifra.</p>
+    <table>
+      <thead>
+        <tr><th>Variable</th><th>Efecto sobre la fuerza de apriete con el mismo par</th><th>Qué hacer</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Tamaño del terminal y del tornillo</td><td>Las roscas mayores necesitan más par para una fuerza equivalente; las pequeñas fluyen pronto</td><td>Usar el valor propio del tamaño, nunca una regla general</td></tr>
+        <tr><td>Estado de la rosca</td><td>Una rosca lubricada o tratada convierte mucho más par en fuerza que una seca y corroída</td><td>Mantener el estado de rosca indicado por el fabricante; no engrasar sin instrucción</td></tr>
+        <tr><td>Clase de conductor</td><td>Los conductores de hilos finos y con casquillo se asientan más que los rígidos</td><td>Prever una segunda pasada; reapretar tras el primer ciclo térmico</td></tr>
+        <tr><td>Material del conductor</td><td>El aluminio fluye y se relaja más que el cobre</td><td>Aplicar un intervalo de reapriete propio del aluminio e interfaces bimetálicas en uniones Cu/Al</td></tr>
+        <tr><td>Diseño de la brida</td><td>Una placa de presión o un cuerpo reparten la fuerza; un tornillo desnudo la concentra</td><td>Adaptar la brida a la clase de conductor en vez de forzar un solo diseño</td></tr>
+        <tr><td>Temperatura ambiente</td><td>Las carcasas se ablandan y los materiales se relajan antes en caliente</td><td>Derratear el conjunto por ambiente elevado, no solo por corriente</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Tres formas de demostrar que una conexión es sana</h2>
+    <p>Como el par demuestra la entrada y no el resultado, las instalaciones serias verifican también la unión mediante medición. Cada método responde a una pregunta distinta y ninguno sustituye a los otros.</p>
+    <table>
+      <thead>
+        <tr><th>Método</th><th>Qué detecta</th><th>Cuándo usarlo</th><th>Límites</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Comprobación de par calibrada</td>
+          <td>Si el par aplicado coincide con la cifra especificada y si la unión ha perdido precarga desde la instalación</td>
+          <td>En la puesta en marcha y en cada reapriete programado</td>
+          <td>Demuestra la entrada, no la calidad eléctrica de la unión</td>
+        </tr>
+        <tr>
+          <td>Medición de resistencia de contacto / caída de tensión</td>
+          <td>Una unión cuya resistencia ha subido por encima de sus vecinas, antes de convertirse en punto caliente</td>
+          <td>En alimentadores críticos, en la recepción y en el diagnóstico de fallos</td>
+          <td>Requiere una unión de referencia medida en las mismas condiciones; el límite de aceptación debe venir de la norma o del fabricante</td>
+        </tr>
+        <tr>
+          <td>Termografía infrarroja en carga</td>
+          <td>Uniones que ya disipan una potencia anormal y la dispersión entre uniones idénticas</td>
+          <td>Durante un ensayo en carga y en la inspección periódica</td>
+          <td>Necesita carga representativa y una unión comparable; encuentra defectos desarrollados, no incipientes</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>El principio de comparación es lo que hace utilizables los tres métodos. Una lectura de resistencia aislada dice muy poco, porque el valor aceptable depende de la sección, la corriente y la geometría de la unión. La misma unión comparada con una vecina idéntica en el mismo carril, a la misma corriente y al mismo ambiente dice casi todo.</p>
+
+    <h2>Una secuencia de puesta en marcha y mantenimiento que aguanta</h2>
+    <ol>
+      <li><strong>Cablear y apretar a la cifra de la ficha</strong> con herramienta calibrada y marcar cada tornillo con una línea testigo para que una comprobación posterior vea el movimiento de un vistazo.</li>
+      <li><strong>Energizar hasta el régimen térmico estable</strong> con una carga representativa del servicio normal, no con un ensayo en vacío.</li>
+      <li><strong>Escanear las uniones</strong> y comparar lo comparable. Toda unión sensiblemente más caliente que sus vecinas idénticas es un hallazgo, sea cual sea su temperatura absoluta.</li>
+      <li><strong>Aislar y reapretar</strong> a la misma cifra. Es la pasada que recoge el asentamiento de hilos y la relajación del primer ciclo.</li>
+      <li><strong>Registrar los valores</strong> por posición de borne. El registro es lo que convierte una comprobación puntual en un programa de mantenimiento.</li>
+      <li><strong>Fijar el intervalo según el servicio</strong>, no por costumbre: aluminio, ambiente caliente, vibración y carga continua a plena potencia lo acortan.</li>
+      <li><strong>Investigar, no solo reapretar,</strong> cualquier unión que se encontró caliente. Reapretar una unión decolorada restablece la lectura y oculta la oxidación que la causó.</li>
+    </ol>
+
+    <h2>Especificar los terminales para que la unión siga firme</h2>
+    <p>La decisión de fiabilidad más eficaz se toma en el pedido, no con el destornillador. Unos pocos puntos de especificación hacen casi todo el trabajo.</p>
+    <ul>
+      <li><strong>Tipo de brida según servicio.</strong> Un terminal de resorte almacena energía elástica y sigue al conductor que se asienta, mientras que una brida atornillada depende de que el tornillo no se mueva. Para vibración y ciclos térmicos esa diferencia importa más que la de precio.</li>
+      <li><strong>Material del cuerpo y del tornillo.</strong> Un camino de corriente de latón o aleación de cobre con tornillo tratado resiste mucho mejor la oxidación en la interfaz que un acero desnudo en un cuadro húmedo.</li>
+      <li><strong>Transiciones cobre-aluminio.</strong> Hacerlas en una interfaz bimetálica diseñada para ello, nunca pinzando aluminio desnudo y cobre desnudo bajo un mismo tornillo en ambiente húmedo.</li>
+      <li><strong>Carcasa y temperatura.</strong> Las carcasas de PA y PC se comportan de forma muy distinta a temperatura elevada; la clasificación de la carcasa debe servir al cuadro, no a la página del catálogo.</li>
+      <li><strong>Rango de conductores.</strong> Especifique el rango real que va a conectar, casquillos incluidos. Un terminal dado para un rango en conductor rígido puede no aceptar el mismo rango en hilos finos.</li>
+    </ul>
+    <p>Pida tres datos con cualquier oferta: el par de apriete por tamaño de borne, el rango de conductores por clase y la norma de producto a la que está diseñado el terminal. Para bloques de terminales de conductores de cobre, la IEC 60947-7-1 es la norma con la que trabaja la mayoría de los compradores, y un proveedor que no sabe nombrarla le está diciendo algo útil.</p>
+
+    <h2>Dónde encaja la gama YOMIN</h2>
+    <p>YOMIN fabrica <a href="/products/terminal-connector">bloques de terminales y conectores</a> para cuadros y distribución. El bloque con tornillo de apriete de latón y carcasa de PC y PA está pensado para conexiones de conductores y pletinas seguras y de baja resistencia, y la versión para carril DIN añade entrada y salida de cobre para el cableado de cuadro. Donde el asentamiento es el riesgo dominante, la serie TB autoblocante usa un camino de corriente de cobre con brida de bloqueo en lugar de confiar únicamente en la precarga del tornillo.</p>
+    <p>Al solicitar cotización, indique el rango de conductores por clase, la temperatura ambiente dentro del cuadro y si la unión verá vibración o carga continua. Esas tres respuestas deciden el tipo de brida y el material del cuerpo más rápido que cualquier comparación de catálogo.</p>
+
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Qué par debo aplicar en un bloque de terminales?</h3>
+    <p>El valor publicado por el fabricante para ese tamaño y material concretos, aplicado con una herramienta calibrada. No hay una cifra universal segura, porque el estado de la rosca, el diseño de la brida y la clase de conductor cambian la fuerza obtenida con un par dado.</p>
+    <h3>¿Por qué se aflojó mi terminal si lo apreté correctamente?</h3>
+    <p>Porque el apriete inicial solo establece el montaje. La fluencia del conductor, el asentamiento de hilos, los ciclos térmicos y la vibración retiran precarga después. El reapriete tras el primer ciclo térmico es lo que recoge esa pérdida.</p>
+    <h3>¿Es mejor sobreapretar un poco que dejar una unión floja?</h3>
+    <p>No. El sobreapriete aplasta hilos, deforma el tornillo o la brida y puede agrietar la carcasa, y la fuerza de apriete cae una vez alcanzada la fluencia. Una unión sobreapretada es sospechosa aunque hoy mida bien.</p>
+    <h3>¿Cómo compruebo un bloque de terminales sin desmontar el cuadro?</h3>
+    <p>Comparándolo con una unión idéntica en el mismo carril y a la misma corriente. Una comprobación de par calibrada muestra pérdida de precarga, una medición de caída de tensión muestra resistencia elevada y la termografía muestra una unión que ya disipa potencia anormal. Cada una es una comparación, no un juicio absoluto.</p>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Compra terminales para un cuadro que debe mantenerse firme?</h2>
+    <p>Envíenos el rango de conductores por clase, la temperatura ambiente dentro del cuadro y el servicio &mdash; vibración, carga continua o ciclado. Fabricamos bloques de terminales y conectores de tornillo y para carril DIN y confirmaremos el tipo de brida y el material adecuados a su unión.</p>
+    <a class="btn btn-primary" href="/contact">Solicitar cotización</a>
+    <a class="btn btn-secondary" href="https://wa.me/8619016543301" target="_blank" rel="noopener">Escríbanos por WhatsApp</a>
+  </section>
+</main>
+
+<footer>
+  <div class="fmq"><div class="fmqt"><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; ENERGY METERING &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; SMART METERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; CURRENT TRANSFORMERS &#183;</span><span class="fmqi">YOMIN ELECTRIC</span><span class="fmqi a">&#183; POWER QUALITY &#183;</span></div></div>
+  <div class="fgrid">
+    <div class="fbrand">
+      <div class="flogo"><img src="/logo_transparent.png" alt="Yomin Electric" style="height:38px;width:auto;object-fit:contain" loading="lazy" width="2012" height="2011"></div>
+      <p data-i18n="ft_ab">Zhejiang Yomin Electric Co., Ltd. &#8212; Precision energy metering solutions trusted by power utilities and industries in over 95 countries for 30 years.</p>
+      <div class="fci">&#128205; Qiaoqian Industry Area, Liushi Town, Yueqing City, Zhejiang, China &nbsp;|&nbsp; Hangzhou Office, Zhejiang, China</div>
+      <div class="fci"><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener" style="color:var(--ac);text-decoration:none">&#128506;&#65039; View on Google Maps</a> &#8212; Hong Kong Office</div>
+      <div class="fci">&#128222; <a href="https://wa.me/8619016543301">+86 190 1654 3301</a></div>
+      <div class="fci">&#9993;&#65039; <a href="/contact">salah.eddine@cnyomin.com</a></div>
+    </div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_pr">Products</span><ul><li><a href="/products/screw-machine">Screw Machines</a></li><li><a href="/products/energy-meter">DIN Rail Energy Meter</a></li><li><a href="/products/energy-meter">Smart Meter</a></li><li><a href="/products/energy-meter">Prepaid Meters</a></li><li><a href="/products/current-transformer">Current Transformers</a></li><li><a href="/products/energy-meter">RS485 Meters</a></li><li><a href="/products/other">Data Concentrators</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_co">Company</span><ul><li><a href="/about">About Yomin</a></li><li><a href="/blog">Blog</a></li><li><a href="/process">Our Process</a></li><li><a href="/solutions">Solutions</a></li><li><a href="/about#certifications">Certifications</a></li><li><a href="/about#factory">Workshop</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl">Support</span><ul><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="/shipping-policy">Shipping Policy</a></li><li><a href="/return-policy">Return Policy</a></li><li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li></ul></div>
+    <div class="fcol"><span class="fcol-ttl" data-i18n="ft_cn">Contact</span><ul><li><a href="/contact">Get a Quote</a></li><li><a href="/contact">Email Sales</a></li><li><a href="https://yomin.en.alibaba.com/">Alibaba Store</a></li><li><a href="/contact">Contact Form</a></li><li><a href="https://maps.app.goo.gl/jguiQDVxNwG8RQWEA" target="_blank" rel="noopener">&#128205; View on Google Maps</a></li></ul></div>
+  </div>
+  <div class="fbot" style="justify-content:center;text-align:center;flex-direction:column;gap:6px"><p data-i18n="ft_cp">&copy; 2026 Zhejiang Yomin Electric Co., Ltd. All rights reserved.</p><p>IEC 62053 &#183; IEC 61036 &#183; ANSI C12 &#183; CE &#183; RoHS</p></div>
+<div google-add-preferred-source-btn data-theme="dark"></div>
+<div><a href="https://businessfirms.co/company/zhejiang-yomin-electric" target="_blank"><img height="220" width="200" alt="company widget" src="https://businessfirms.co/images/bfirms-certified.png"  loading="lazy" decoding="async"></a></div>
+</footer>
+
+<script defer src="/assets/js/main.js"></script>
+<script defer src="/assets/js/i18n-es.js"></script>
+</body>
+</html>
